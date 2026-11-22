@@ -54,7 +54,11 @@ def next_script(st: dict, offset: int = 0) -> Path | None:
     done = {n[:-4] for n in names if n.endswith(".mp4")} | set(st["skipped"]) | ALREADY_PUBLISHED
     skip = offset
     from . import viral_lint
-    for p in candidates():
+    cands = candidates()
+    # scripts « moquerie de la personne » (mode strict) d'abord, puis le reste de la banque validée
+    strict_ok = [p for p in cands if viral_lint.check(json.loads(p.read_text(encoding="utf-8")), strict=True)["ok"]]
+    cands = strict_ok + [p for p in cands if p not in strict_ok]
+    for p in cands:
         sc = json.loads(p.read_text(encoding="utf-8"))
         sid = sc["id"]
         if sid in done or st["attempts"].get(sid, 0) >= MAX_ATTEMPTS:
