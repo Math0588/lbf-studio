@@ -3,79 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m015",
  "format": "A",
- "anchor": "« Là, je ne suis pas candidat devant vous » (06/2025), avant la candidature d'août 2026",
+ "anchor": "quatorze mois entre « pas candidat » (juin 2025) et la candidature sur TF1 (août 2026) : la file d'attente pour savoir, puis pour le programme.",
  "situation": "la file d'attente",
- "ressort": "boucle",
- "title_cover": "Pas candidat au guichet",
+ "ressort": "piques frontales sourcées (style tacle)",
+ "title_cover": "File de l'annonce",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "La file d'attente où personne n'est candidat au guichet.",
-  "Un an de file pour dire oui.",
-  "Ici, on arrive au guichet pour repartir réfléchir.",
-  "La poste la plus lente de France, et la plus réfléchie."
+  "Ici, la file d'attente pour savoir s'il est candidat a duré quatorze mois.",
+  "Glucksmannville : le suspense le plus long de la gauche.",
+  "Quatorze mois pour un oui.",
+  "Les glucksmanniens vont dire que c'était du teasing."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le guichet ferme : il est midi, retour au bout de la file.",
-  "Enfin candidat, et le guichet ferme pour midi.",
-  "Il est candidat, le guichet ne l'est plus."
+  "Quatorze mois de suspense pour un oui. Le programme : saison deux.",
+  "Un oui après quatorze mois. Le programme, saison deux.",
+  "Le suspense est fini. Le programme, pas commencé."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Après une longue attente.",
    "accent_words": [
-    "Glucksmann"
+    "longue attente"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Il a passé un an à se dire pas candidat, avant de l'être.",
+   "text": "À la mairie, la file pour savoir s'il est candidat date de 2025.",
    "accent_words": [
-    "pas candidat"
+    "date de 2025"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "Juin 2025 : pas candidat. Puis un an à faire mûrir la vision.",
+   "accent_words": [
+    "un an"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n3",
-   "text": "À la poste, la file d'attente marche pareil.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n4",
-   "text": "Au guichet, chaque client annonce : « Je ne suis pas candidat ».",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "text": "Août 2026 : enfin candidat, sur TF1. La file applaudit, épuisée.",
+   "accent_words": [
+    "épuisée"
+   ],
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Il retourne au bout de la file pour réfléchir avec la société civile.",
+   "text": "Nouvelle file : pour connaître le programme. Ticket numéro un.",
    "accent_words": [
-    "réfléchir avec la société civile"
+    "Ticket numéro un"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Un an plus tard, il arrive au guichet, enfin candidat.",
+   "text": "Quatorze mois de suspense pour un oui. Le programme : saison deux.",
    "accent_words": [
-    "enfin candidat"
+    "saison deux"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le guichet ferme : il est midi, retour au bout de la file.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton pire guichet, raconte-le en commentaire.",
-   "accent_words": [],
+   "text": "Envoie ça au pote qui met un an à répondre à un message.",
+   "accent_words": [
+    "un an"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -83,82 +83,118 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "building",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "sign"
+    "car"
    ],
-   "onscreen_text": "PAS CANDIDAT (1 AN)",
-   "comic_action": "Plongée sur une file devant la poste.",
-   "expected_result": "Ancrage."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
+   "expected_result": "La ville et son camp posés en une seconde."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "person",
-    "sign"
+    "table",
+    "screen",
+    "form_stack",
+    "person"
    ],
-   "onscreen_text": "« PAS CANDIDAT »",
-   "comic_action": "Le premier client arrive au guichet, bulle, puis fait demi-tour.",
-   "expected_result": "Règle."
+   "onscreen_text": "FILE : DEPUIS 2025",
+   "comic_action": "Guichet municipal : écran, pile de formulaires, file d'attente.",
+   "expected_result": "Le guichet porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5"
+    "n3"
    ],
    "camera": "orbit",
    "set": [
+    "table",
+    "form_stack",
     "person",
-    "sign"
+    "scroll"
    ],
-   "onscreen_text": "RETOUR AU BOUT",
-   "comic_action": "Orbite sur la file qui tourne en rond autour du bâtiment.",
-   "expected_result": "Boucle."
+   "onscreen_text": "JUIN 2025 : PAS CANDIDAT",
+   "comic_action": "Réunion n°300 : piles de comptes rendus ; le rouleau « PROGRAMME » reste vierge.",
+   "expected_result": "La vision sans programme."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
    ],
    "camera": "closeup",
    "set": [
-    "person",
-    "sign",
-    "text3d"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "GUICHET : FERMÉ",
-   "comic_action": "Le client, barbe d'un an, arrive ; le rideau du guichet tombe, horloge à midi.",
-   "expected_result": "Chute."
+   "onscreen_text": "AOÛT 2026 : CANDIDAT",
+   "comic_action": "Gros plan sur un écran géant en ville.",
+   "expected_result": "La pique s'affiche en écran."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "screen",
+    "form_stack",
+    "person"
+   ],
+   "onscreen_text": "PROGRAMME : TICKET N°1",
+   "comic_action": "Guichet municipal : écran, pile de formulaires, file d'attente.",
+   "expected_result": "Le guichet porte la pique."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "PROGRAMME : SAISON 2",
+   "comic_action": "Écran de la mairie : « À SUIVRE… » en lettres de générique, la file soupire.",
+   "expected_result": "La pique s'affiche en écran."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
+    "mairie",
     "person",
-    "tshirt"
+    "tshirt",
+    "banner"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Retour au bout de la file ; il porte « PLUTÔT GAUCHE. TRÈS FATIGUÉ. ».",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton pire guichet, raconte-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui met un an à répondre à un message."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -168,31 +204,40 @@
  "word_count": 84,
  "claims": [
   {
-   "segment": "n2",
+   "text": "À la mairie, la file pour savoir s'il est candidat date de 2025.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
+   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme ». Détourné dans la ville fictive."
+  },
+  {
+   "text": "Juin 2025 : pas candidat. Puis un an à faire mûrir la vision.",
    "claim_type": "fait_public",
-   "text": "Il a passé un an à se dire pas candidat, avant de l'être.",
-   "source_url": [
-    "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-    "https://www.internazionale.it/ultime-notizie-reuters/2026/08/23/french-politician-glucksmann-launches-presidential-bid-amid-fractured-left"
-   ]
+   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
+   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
+  },
+  {
+   "text": "Août 2026 : enfin candidat, sur TF1. La file applaudit, épuisée.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/presidentielle-2027-raphael-glucksmann-officialise-sa-candidature-et-participera-a-la",
+   "note": "Candidature annoncée au 20 heures de TF1 le 23/08/2026."
   }
  ],
  "sources": [
   {
    "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
    "date": "2025-06-23",
-   "statut": "fait public (citation rapportée)",
-   "usage": "Citation exacte, typée citation_exacte.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "citations rapportées",
+   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
   },
   {
-   "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/08/23/french-politician-glucksmann-launches-presidential-bid-amid-fractured-left",
+   "url": "https://lcp.fr/actualites/presidentielle-2027-raphael-glucksmann-officialise-sa-candidature-et-participera-a-la",
    "date": "2026-08-23",
-   "statut": "fait public (dépêche Reuters : déclaration de candidature)",
-   "usage": "Date de la candidature.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Candidature annoncée au 20 heures de TF1 le 23/08/2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Boucle : le délai réel entre « pas candidat » (06/2025) et la candidature (08/2026) transposé à une file d'attente. Mème d'ancrage : « Là, je ne suis pas candidat devant vous » (06/2025), avant la candidature d'août 2026. Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : quatorze mois entre « pas candidat » (juin 2025) et la candidature sur TF1 (août 2026) : la file d'attente pour savoir, puis pour le programme. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

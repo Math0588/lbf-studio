@@ -3,83 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m011",
  "format": "A",
- "anchor": "Neuf mois, 300 réunions, 150 auditions, puis un an de plus « pour transformer une vision en programme » (06/2025)",
+ "anchor": "un an de plus « pour transformer une vision en programme » (2025) et trois cents réunions, sur un chantier qui ne finit jamais.",
  "situation": "les travaux",
- "ressort": "bureaucratie récursive",
- "title_cover": "Le trou visionnaire",
+ "ressort": "piques frontales sourcées (style tacle)",
+ "title_cover": "Chantier vision",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Trois cents réunions pour un cône.",
-  "Ici, un trou dans le trottoir a une vision.",
-  "Neuf mois pour choisir la couleur d'un cône.",
-  "Le chantier le plus réfléchi de France."
+  "Ici, le chantier est en phase vision.",
+  "Glucksmannville : trois cents réunions, zéro pelleteuse.",
+  "Les travaux attendent le programme.",
+  "Les glucksmanniens vont dire que ça avance."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le trou est toujours là, mais il a désormais une vision.",
-  "Le trou n'est pas rebouché, mais il est accompagné.",
-  "Après un an d'auditions, on sait enfin ce qu'est un trou."
+  "Fin des travaux prévue : quand la vision aura un plan. Donc jamais.",
+  "Le chantier a une vision. Pas de béton.",
+  "Le trou est conceptualisé. Pas rebouché."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le chantier aussi.",
    "accent_words": [
-    "Glucksmann"
+    "Le chantier"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son mouvement a tenu trois cents réunions en neuf mois pour un projet.",
+   "text": "Travaux de la grand-rue depuis deux ans. Panneau : vision en cours.",
    "accent_words": [
-    "trois cents réunions"
+    "vision en cours"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Puis un an de plus, « pour transformer une vision en programme ».",
+   "text": "En 2025, il demandait un an « pour transformer une vision en programme ».",
    "accent_words": [
-    "transformer une vision en programme"
+    "une vision"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "À Glucksmannville, le chantier du trottoir suit la même méthode.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n5",
-   "text": "Neuf mois de réunions pour choisir la couleur du cône.",
+   "text": "Le chantier, lui, en est à la vision. Les pelleteuses attendent le programme.",
    "accent_words": [
-    "la couleur du cône"
+    "attendent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n6",
-   "text": "Un an d'auditions pour définir ce qu'est un trou.",
+   "id": "n5",
+   "text": "Trois cents réunions de chantier. Comme son mouvement en neuf mois.",
    "accent_words": [
-    "un trou"
+    "Trois cents"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n6",
+   "text": "Fin des travaux prévue : quand la vision aura un plan. Donc jamais.",
+   "accent_words": [
+    "Donc jamais"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le trou est toujours là, mais il a désormais une vision.",
+   "text": "Envoie ça au pote qui rénove son appart depuis trois ans.",
    "accent_words": [
-    "une vision"
+    "trois ans"
    ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton chantier le plus long, donne l'année de début en commentaire.",
-   "accent_words": [],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -87,85 +83,118 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "road",
+    "facade_row",
+    "lamp",
+    "person",
+    "car"
+   ],
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
+   "expected_result": "Le décor de rue posé."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
     "n2"
    ],
    "camera": "descend",
    "set": [
     "road",
-    "banner",
     "sign",
-    "person"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "300 RÉUNIONS",
-   "comic_action": "Plongée sur un trou dans le trottoir entouré de chaises en cercle.",
-   "expected_result": "Ancrage réel chiffré."
+   "onscreen_text": "VISION EN COURS",
+   "comic_action": "Plongée sur le nid-de-poule au milieu de la route, entouré de rubalise.",
+   "expected_result": "Le trou devient le personnage."
   },
   {
-   "id": "s2",
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
-    "table",
     "scroll",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "VISION → PROGRAMME",
-   "comic_action": "Un parchemin « VISION » passe dans une machine qui ressort… un parchemin « VISION (V2) ».",
-   "expected_result": "Bureaucratie."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4",
-    "n5"
-   ],
-   "camera": "street_dolly",
-   "set": [
-    "road",
-    "table",
-    "person"
-   ],
-   "onscreen_text": "9 MOIS : COULEUR DU CÔNE",
-   "comic_action": "Travelling sur une table de réunion couverte de nuanciers de cônes.",
-   "expected_result": "Escalade."
+   "onscreen_text": "« TRANSFORMER UNE VISION »",
+   "comic_action": "Un parchemin se déroule à n'en plus finir devant l'habitant.",
+   "expected_result": "Le texte interminable."
   },
   {
    "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "descend",
+   "set": [
+    "road",
+    "sign",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "PELLETEUSES : EN ATTENTE",
+   "comic_action": "Plongée sur le nid-de-poule au milieu de la route, entouré de rubalise.",
+   "expected_result": "Le trou devient le personnage."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "table",
+    "form_stack",
+    "person",
+    "scroll"
+   ],
+   "onscreen_text": "300 RÉUNIONS",
+   "comic_action": "Réunion n°300 : piles de comptes rendus ; le rouleau « PROGRAMME » reste vierge.",
+   "expected_result": "La vision sans programme."
+  },
+  {
+   "id": "s6",
    "narration_ids": [
     "n6"
    ],
    "camera": "closeup",
    "set": [
-    "road",
-    "text3d"
+    "sign",
+    "text3d",
+    "road"
    ],
-   "onscreen_text": "UN TROU = ?",
-   "comic_action": "Un expert mesure le trou avec gravité ; étiquette « DÉFINITION EN COURS ».",
-   "expected_result": "Récursivité."
+   "onscreen_text": "FIN DES TRAVAUX : JAMAIS",
+   "comic_action": "Panneau de chantier : la date de fin est un post-it qu'on recolle chaque matin.",
+   "expected_result": "La pique s'affiche en panneau."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n7"
    ],
    "camera": "return",
    "set": [
     "road",
-    "sign",
-    "tshirt"
+    "person",
+    "tshirt",
+    "sign"
    ],
-   "onscreen_text": "TROU AVEC VISION",
-   "comic_action": "Même trou, avec une plaque « VISION 2027 » ; t-shirt « RÉPONSES CONCRÈTES : CHARGEMENT… » sur la barrière.",
-   "expected_result": "Chute + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton chantier le plus long, donne l'année de début en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui rénove son appart depuis trois ans."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -175,27 +204,27 @@
  "word_count": 85,
  "claims": [
   {
-   "segment": "n2",
-   "claim_type": "fait_public",
-   "text": "Son mouvement a tenu trois cents réunions en neuf mois pour un projet.",
-   "source_url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays"
+   "text": "« pour transformer une vision en programme »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
+   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
   },
   {
-   "segment": "n3",
-   "claim_type": "citation_exacte",
-   "text": "Puis un an de plus, « pour transformer une vision en programme ».",
-   "source_url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays"
+   "text": "Trois cents réunions de chantier. Comme son mouvement en neuf mois.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
+   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
   }
  ],
  "sources": [
   {
    "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
    "date": "2025-06-23",
-   "statut": "fait public (bilan de Place publique et formule citée par Public Sénat)",
-   "usage": "Chiffres et formule repris à l'identique ; le reste est fiction.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "citations rapportées",
+   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Bureaucratie récursive à partir des chiffres réels (300 réunions, 9 mois, 1 an « pour transformer une vision en programme »). Mème d'ancrage : Neuf mois, 300 réunions, 150 auditions, puis un an de plus « pour transformer une vision en programme » (06/2025). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : un an de plus « pour transformer une vision en programme » (2025) et trois cents réunions, sur un chantier qui ne finit jamais. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

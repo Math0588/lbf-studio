@@ -3,83 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m021",
  "format": "A",
- "anchor": "Une gauche qui peut « rassembler, gouverner et gagner » (primaire, 10/2026)",
+ "anchor": "« il me rappelle Macron » (Atlantico 2024) et la coalition voulue par Macron, qu'il dit « décrédibiliser la politique » : visite officielle dans la ville voisine.",
  "situation": "la visite de la ville voisine",
- "ressort": "épisode raté",
- "title_cover": "Le pouf perdu",
+ "ressort": "piques frontales sourcées (style tacle)",
+ "title_cover": "Visite à Macronville",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Il est parti rassembler la ville voisine. Il a perdu le pouf.",
-  "Le pouf de l'unité a été renommé.",
-  "Trois camps et un seul regret : le pouf.",
-  "Rassembler les autres, diviser les siens."
+  "Ici, la visite chez le voisin passe inaperçue.",
+  "Glucksmannville en visite à Macronville : personne ne voit la différence.",
+  "Il refuse la coalition. Il connaît le chemin.",
+  "Les glucksmanniens vont crier à la ressemblance forcée."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Seul point d'accord entre les trois : le pouf leur manque.",
-  "Trois camps, un seul consensus : rendez-nous le pouf.",
-  "La ville voisine a un pouf, la nôtre a trois camps."
+  "Il repart. À Macronville, personne n'a remarqué qu'il était parti.",
+  "Il est venu, il est reparti. Personne n'a vu la différence.",
+  "Deux villes, un même costume."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. La ville voisine vote Macron.",
    "accent_words": [
-    "Glucksmann"
+    "la ville voisine"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Et le mot d'ordre, c'est rassembler, gouverner et gagner.",
+   "text": "Visite officielle à Macronville. Les habitants le reconnaissent tout de suite.",
    "accent_words": [
-    "rassembler"
+    "le reconnaissent"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "Une chronique de 2024 l'avait dit : « il me rappelle Macron ».",
+   "accent_words": [
+    "Macron"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n4",
+   "text": "Macron l'invite d'ailleurs dans une coalition, de Lisnard à Glucksmann.",
+   "accent_words": [
+    "coalition"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n3",
-   "text": "Alors le Médiateur municipal part rassembler la ville voisine.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "Il apporte un pouf géant, symbole de l'unité.",
-   "accent_words": [
-    "l'unité"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n5",
-   "text": "Marineville le remercie, renomme le pouf et le garde.",
+   "text": "Il répond que ça « décrédibilise la politique ». Puis il prend un selfie.",
    "accent_words": [
-    "renomme le pouf"
+    "un selfie"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n6",
-   "text": "De retour, sa propre ville s'est divisée en trois camps.",
+   "text": "Il repart. À Macronville, personne n'a remarqué qu'il était parti.",
    "accent_words": [
-    "en trois camps"
+    "personne n'a remarqué"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Seul point d'accord entre les trois : le pouf leur manque.",
+   "text": "Envoie ça au pote qui critique son boss et parle exactement comme lui.",
    "accent_words": [
-    "le pouf leur manque"
+    "comme lui"
    ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Abonne-toi, on va récupérer le pouf la prochaine fois.",
-   "accent_words": [],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -87,108 +83,173 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "mairie",
-    "person",
-    "text3d"
+    "roundabout",
+    "road",
+    "car_orbit",
+    "sign",
+    "mairie"
    ],
-   "onscreen_text": "RASSEMBLER",
-   "comic_action": "Plongée sur la mairie, le Médiateur charge un pouf géant sur son dos.",
-   "expected_result": "Ancrage."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur le rond-point central : les voitures tournent, la mairie au fond.",
+   "expected_result": "La ville posée, tout tourne en rond."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
+    "n2"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "car",
+    "road",
+    "person",
+    "lamp"
+   ],
+   "onscreen_text": "VISITE : MACRONVILLE",
+   "comic_action": "Travelling le long de la voiture municipale.",
+   "expected_result": "La pique en mouvement."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "« IL ME RAPPELLE MACRON »",
+   "comic_action": "Écran : silhouette du maire, puis le même costume bleu de la ville voisine se superpose.",
+   "expected_result": "La ressemblance, montrée."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
     "n4"
    ],
    "camera": "street_dolly",
    "set": [
+    "car",
+    "person",
     "road",
-    "sign",
-    "person"
+    "sign"
    ],
-   "onscreen_text": "DIRECTION : VILLE VOISINE",
-   "comic_action": "Travelling : il marche sur la route vers le panneau « MARINEVILLE ».",
-   "expected_result": "Le voyage."
+   "onscreen_text": "INVITATION",
+   "comic_action": "La voiture du maire voisin klaxonne et ouvre la portière ; le maire cubique hésite sur le trottoir.",
+   "expected_result": "La drague de la coalition."
   },
   {
-   "id": "s3",
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "person",
-    "mascot"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "POUF : RENOMMÉ",
-   "comic_action": "À Marineville, Gérard visse une plaque « POUF NOUVEAU » sur le pouf.",
-   "expected_result": "Épisode raté."
+   "onscreen_text": "« DÉCRÉDIBILISE LA POLITIQUE »",
+   "comic_action": "Gros plan sur un écran géant en ville.",
+   "expected_result": "La pique s'affiche en écran."
   },
   {
-   "id": "s4",
+   "id": "s6",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n6"
    ],
    "camera": "orbit",
    "set": [
-    "mairie",
-    "person",
-    "banner"
+    "roundabout",
+    "car_orbit",
+    "sign"
    ],
-   "onscreen_text": "3 CAMPS",
-   "comic_action": "Retour à Glucksmannville : trois groupes séparés par des banderoles, tous tristes.",
-   "expected_result": "Chute."
+   "onscreen_text": "PARTI ? QUI ?",
+   "comic_action": "La voiture du maire quitte Macronville ; un habitant salue la voiture suivante, identique, qui arrive en sens inverse.",
+   "expected_result": "Le rond-point porte la pique."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
-    "n8"
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "road",
+    "roundabout",
+    "car_orbit",
+    "person",
     "tshirt"
    ],
-   "onscreen_text": "ABONNE-TOI",
-   "comic_action": "Le Médiateur seul sur la route ; un t-shirt « LE PAYS BUGUE. MOI AUSSI. » sur un panneau.",
-   "expected_result": "CTA d'abonnement + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur le rond-point ; un habitant en t-shirt de la collection fait du stop au milieu.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "follow",
-  "text": "Abonne-toi, on va récupérer le pouf la prochaine fois."
+  "type": "share",
+  "text": "Envoie ça au pote qui critique son boss et parle exactement comme lui."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 73,
+ "word_count": 84,
  "claims": [
   {
-   "segment": "n2",
+   "text": "Visite officielle à Macronville. Les habitants le reconnaissent tout de suite.",
+   "claim_type": "fiction_satirique",
+   "source": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
+   "note": "« Il est cool ce Glucksmann, il me rappelle Macron ». Détourné dans la ville fictive."
+  },
+  {
+   "text": "« il me rappelle Macron »",
+   "claim_type": "citation_exacte",
+   "source": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
+   "note": "« Il est cool ce Glucksmann, il me rappelle Macron »."
+  },
+  {
+   "text": "Macron l'invite d'ailleurs dans une coalition, de Lisnard à Glucksmann.",
    "claim_type": "fait_public",
-   "text": "Et le mot d'ordre, c'est rassembler, gouverner et gagner.",
-   "source_url": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour"
+   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
+  },
+  {
+   "text": "« décrédibilise la politique »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann-afp-753ca015d95ec4b0d3e2f01c3cb76e945a72ac72",
+   "note": "Glucksmann : l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
   }
  ],
  "sources": [
   {
-   "url": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
-   "date": "2026-10-12",
-   "statut": "fait public (formule rapportée)",
-   "usage": "Triptyque cité à l'identique ; aucun chiffre électoral.",
-   "consulted": "2026-11-21"
+   "url": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
+   "date": "2024-04-03",
+   "consulted": "2026-11-22",
+   "statut": "opinion (titre de chronique cité à l'identique)",
+   "note": "« Il est cool ce Glucksmann, il me rappelle Macron »."
+  },
+  {
+   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait public (AFP)",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
+  },
+  {
+   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann-afp-753ca015d95ec4b0d3e2f01c3cb76e945a72ac72",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (AFP)",
+   "note": "Glucksmann : l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Épisode raté : vouloir rassembler à l'extérieur divise à l'intérieur. Clin d'œil de continuité avec Marineville (renommage). Mème d'ancrage : Une gauche qui peut « rassembler, gouverner et gagner » (primaire, 10/2026). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « il me rappelle Macron » (Atlantico 2024) et la coalition voulue par Macron, qu'il dit « décrédibiliser la politique » : visite officielle dans la ville voisine. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

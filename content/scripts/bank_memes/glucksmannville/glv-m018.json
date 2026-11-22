@@ -3,81 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m018",
  "format": "A",
- "anchor": "« Ce soir, la bataille de France commence » et « rien ne me fera lâcher » (soir de la primaire, 11/10/2026)",
+ "anchor": "« Ce soir, la bataille de France commence » (octobre 2026) déclarée au parc, avec des effectifs à 15 % dans les sondages.",
  "situation": "le parc",
- "ressort": "décalage d'échelle",
- "title_cover": "Bataille du croissant",
+ "ressort": "piques frontales sourcées (style tacle)",
+ "title_cover": "Le front du square",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "La bataille de France commence par un pigeon.",
-  "Quarante médiateurs contre un pigeon.",
-  "Six heures de dialogue, un croissant perdu.",
-  "Ici, la grande bataille se joue sur un banc."
+  "Ici, la bataille de France se joue au square.",
+  "Glucksmannville : le front est au bac à sable.",
+  "Grande bataille, petit parc.",
+  "Les glucksmanniens vont s'enrôler. Plutôt."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Communiqué officiel : victoire morale, le croissant était consensuel.",
-  "Le pigeon est reparti repu, la mairie a signé une victoire morale.",
-  "Bataille de France : un croissant, zéro miette."
+  "La bataille de France a commencé. Pour l'instant, elle se joue au bac à sable.",
+  "Le front est ouvert. Il fait trois mètres carrés.",
+  "Une bataille, un drapeau, un bac à sable."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Bataille comprise.",
    "accent_words": [
-    "Glucksmann"
+    "Bataille"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Il a lancé : « Ce soir, la bataille de France commence »",
+   "text": "Au parc, le maire déclare : « Ce soir, la bataille de France commence ».",
    "accent_words": [
-    "la bataille de France"
+    "bataille de France"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Au parc de Glucksmannville, la bataille commence aussi.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "L'ennemi : un pigeon qui mange un croissant sur un banc.",
+   "text": "Les pigeons se regroupent. Personne ne sait contre qui.",
    "accent_words": [
-    "un pigeon"
+    "contre qui"
    ],
    "claim_type": "fiction_satirique"
   },
   {
+   "id": "n4",
+   "text": "Effectifs mobilisés : autour de 15 % dans les sondages.",
+   "accent_words": [
+    "15 %"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
    "id": "n5",
-   "text": "La mairie déploie quarante médiateurs, deux poufs et une charte.",
-   "accent_words": [],
+   "text": "Arme principale : une vision. Munitions : en concertation.",
+   "accent_words": [
+    "en concertation"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Après six heures de dialogue, le pigeon a fini le croissant.",
+   "text": "La bataille de France a commencé. Pour l'instant, elle se joue au bac à sable.",
    "accent_words": [
-    "fini le croissant"
+    "bac à sable"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Communiqué officiel : victoire morale, le croissant était consensuel.",
+   "text": "Envoie ça au pote qui déclare la guerre à son voisin pour une haie.",
    "accent_words": [
-    "victoire morale"
+    "une haie"
    ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "L'animal qui terrorise ton parc, nomme-le en commentaire.",
-   "accent_words": [],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,108 +83,169 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
     "ground",
     "tree",
-    "bench"
+    "bench",
+    "lamp",
+    "person"
    ],
-   "onscreen_text": "LA BATAILLE COMMENCE",
-   "comic_action": "Plongée dramatique sur un parc paisible, musique épique.",
-   "expected_result": "Ancrage réel."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur le square : arbres, banc, réverbère.",
+   "expected_result": "Le square posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "banner",
+    "studio_light",
+    "person"
+   ],
+   "onscreen_text": "« LA BATAILLE DE FRANCE COMMENCE »",
+   "comic_action": "Le maire cubique lève le poing sur la tribune ; banderole « LA BATAILLE COMMENCE » ; la foule regarde sa montre.",
+   "expected_result": "Le grand mot face au petit effet."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
    ],
    "camera": "closeup",
    "set": [
     "bench",
-    "text3d"
+    "tree",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "ENNEMI : 1 PIGEON",
-   "comic_action": "Gros plan sur un pigeon cubique et son croissant.",
-   "expected_result": "Décalage d'échelle.",
-   "new_asset_request": "Pigeon cubique."
+   "onscreen_text": "ENNEMI : ?",
+   "comic_action": "Gros plan sur le banc du square et son panneau.",
+   "expected_result": "Le décor du gag."
   },
   {
-   "id": "s3",
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "sign"
+   ],
+   "onscreen_text": "EFFECTIFS : ~15 %",
+   "comic_action": "Écran de sondage : une barre monte… et s'arrête à mi-hauteur.",
+   "expected_result": "Le chiffre de sondage en jauge."
+  },
+  {
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "orbit",
    "set": [
-    "bench",
+    "table",
+    "form_stack",
     "person",
-    "table"
+    "scroll"
    ],
-   "onscreen_text": "40 MÉDIATEURS",
-   "comic_action": "Orbite : quarante médiateurs en cercle, deux poufs, une charte posée devant le pigeon.",
-   "expected_result": "Escalade."
+   "onscreen_text": "MUNITIONS : EN CONCERTATION",
+   "comic_action": "Réunion n°300 : piles de comptes rendus ; le rouleau « PROGRAMME » reste vierge.",
+   "expected_result": "La vision sans programme."
   },
   {
-   "id": "s4",
+   "id": "s6",
    "narration_ids": [
     "n6"
    ],
    "camera": "closeup",
    "set": [
     "bench",
-    "text3d"
+    "tree",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "CROISSANT : FINI",
-   "comic_action": "Le pigeon avale la dernière miette et s'en va.",
-   "expected_result": "Chute."
+   "onscreen_text": "FRONT : BAC À SABLE",
+   "comic_action": "Plan large : le maire plante un petit drapeau dans le bac à sable ; deux enfants le regardent, perplexes.",
+   "expected_result": "Le décor du gag."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "scroll",
-    "tshirt",
-    "tree"
+    "tree",
+    "bench",
+    "person",
+    "tshirt"
    ],
-   "onscreen_text": "VICTOIRE MORALE",
-   "comic_action": "Le Médiateur déroule un communiqué ; un passant en t-shirt « À GAUCHE DU CANAPÉ. » applaudit mollement.",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur le square ; un habitant en t-shirt de la collection sur le banc.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "L'animal qui terrorise ton parc, nomme-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui déclare la guerre à son voisin pour une haie."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 78,
+ "word_count": 82,
  "claims": [
   {
-   "segment": "n2",
+   "text": "« Ce soir, la bataille de France commence »",
    "claim_type": "citation_exacte",
-   "text": "Il a lancé : « Ce soir, la bataille de France commence »",
-   "source_url": "https://www.publicsenat.fr/actualites/politique/ce-soir-la-bataille-de-france-commence-apres-sa-victoire-a-la-primaire-de-la-gauche-raphael-glucksmann-assure-que-rien-ne-le-fera-l"
+   "source": "https://www.publicsenat.fr/actualites/politique/ce-soir-la-bataille-de-france-commence-apres-sa-victoire-a-la-primaire-de-la-gauche-raphael-glucksmann-assure-que-rien-ne-le-fera-l",
+   "note": "« Ce soir, la bataille de France commence » ; « rien ne me fera lâcher »."
+  },
+  {
+   "text": "Effectifs mobilisés : autour de 15 % dans les sondages.",
+   "claim_type": "fait_public",
+   "source": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
+   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant."
+  },
+  {
+   "text": "Arme principale : une vision. Munitions : en concertation.",
+   "claim_type": "fiction_satirique",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre ». Détourné dans la ville fictive."
   }
  ],
  "sources": [
   {
    "url": "https://www.publicsenat.fr/actualites/politique/ce-soir-la-bataille-de-france-commence-apres-sa-victoire-a-la-primaire-de-la-gauche-raphael-glucksmann-assure-que-rien-ne-le-fera-l",
    "date": "2026-10-11",
-   "statut": "fait public (citations rapportées)",
-   "usage": "Citations exactes, typées citation_exacte ; aucun score électoral montré.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "citations rapportées",
+   "note": "« Ce soir, la bataille de France commence » ; « rien ne me fera lâcher »."
+  },
+  {
+   "url": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
+   "date": "2026-10-16",
+   "consulted": "2026-11-22",
+   "statut": "fait (sondage)",
+   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant."
+  },
+  {
+   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "date": "2026-06-25",
+   "consulted": "2026-11-22",
+   "statut": "fait (analyse lexicale) + opinion rapportée",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Décalage d'échelle : la formule épique réelle appliquée à un pigeon de parc. Mème d'ancrage : « Ce soir, la bataille de France commence » et « rien ne me fera lâcher » (soir de la primaire, 11/10/2026). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « Ce soir, la bataille de France commence » (octobre 2026) déclarée au parc, avec des effectifs à 15 % dans les sondages. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

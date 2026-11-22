@@ -3,81 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m028",
  "format": "A",
- "anchor": "Le cliché d'électorat « centre-ville » (profil jugé trop urbain, Canal Saint-Martin ; électeurs plus âgés et plus aisés)",
+ "anchor": "« Lâchez-moi les baskets » (débat des européennes 2024 face à Manon Aubry) adressé à un client qui pose une question sur son colis.",
  "situation": "la livraison",
- "ressort": "électorat cliché",
- "title_cover": "Livreur du 5e",
+ "ressort": "piques frontales sourcées (style tacle)",
+ "title_cover": "Lâche les baskets",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Kombucha, levain, et tote bag de tote bags.",
-  "Cinq étages pour un merci très sincère.",
-  "Treize retours de chemises en lin par jour.",
-  "Ici, le pourboire, c'est un sticker."
+  "Ici, une question sur ton colis, et c'est l'incident.",
+  "Glucksmannville : la livraison en baskets blanches.",
+  "Rassembler, oui. Toucher les baskets, non.",
+  "Les glucksmanniens vont dire qu'il était provoqué."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le livreur, lui, habite à Marineville.",
-  "Le merci est sincère, le livreur rentre à Marineville.",
-  "Douze mille euros le mètre carré, zéro euro de pourboire."
+  "Il veut rassembler toute la gauche. Mais ne lui touche pas les baskets.",
+  "Colis : vision. Baskets : intouchables.",
+  "Le livreur rassemble. Sauf les questions."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. En baskets.",
    "accent_words": [
-    "Glucksmann"
+    "En baskets"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "On lui reproche un profil trop centre-ville, façon Canal Saint-Martin.",
+   "text": "Le livreur arrive en baskets blanches. Tu poses une question sur le colis.",
    "accent_words": [
-    "trop centre-ville"
+    "une question"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "Réponse : « Lâchez-moi les baskets ».",
+   "accent_words": [
+    "baskets"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n4",
+   "text": "La réplique date d'un débat de 2024, adressée à Manon Aubry.",
+   "accent_words": [
+    "Manon Aubry"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n3",
-   "text": "Ici, la livraison type : kombucha, levain, tote bag de tote bags.",
-   "accent_words": [
-    "tote bag de tote bags"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "Le livreur monte cinq étages, appartement à douze mille euros le mètre carré.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n5",
-   "text": "Pourboire : un merci très sincère et un sticker.",
+   "text": "Ton colis ? Une vision. Le contenu sera livré plus tard.",
    "accent_words": [
-    "merci très sincère"
+    "plus tard"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Quatorze colis par jour, dont treize retours de chemises en lin.",
+   "text": "Il veut rassembler toute la gauche. Mais ne lui touche pas les baskets.",
    "accent_words": [
-    "retours"
+    "les baskets"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le livreur, lui, habite à Marineville.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton pire client de livraison, raconte-le en commentaire.",
-   "accent_words": [],
+   "text": "Envoie ça au pote qui s'énerve quand on marche sur ses baskets.",
+   "accent_words": [
+    "ses baskets"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,83 +83,118 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "building",
     "road",
-    "person"
+    "facade_row",
+    "lamp",
+    "person",
+    "car"
    ],
-   "onscreen_text": "PROFIL CENTRE-VILLE",
-   "comic_action": "Plongée sur une rue de centre-ville chic, plantes aux balcons.",
-   "expected_result": "Ancrage (cliché d'électorat)."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
+   "expected_result": "Le décor de rue posé."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "person",
+    "road",
+    "sign",
+    "car"
+   ],
+   "onscreen_text": "UNE QUESTION ?",
+   "comic_action": "Livreur qui court avec un colis ; panneau de la mairie sur le trottoir.",
+   "expected_result": "La livraison porte la pique."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
-    "car",
-    "person",
-    "text3d"
+    "shop",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "KOMBUCHA · LEVAIN · TOTE",
-   "comic_action": "Le livreur sort de sa camionnette un sac contenant d'autres sacs.",
-   "expected_result": "Électorat cliché."
+   "onscreen_text": "« LÂCHEZ-MOI LES BASKETS »",
+   "comic_action": "Vitrine du magasin de baskets : une paire tenue par deux mains qui ne lâchent pas.",
+   "expected_result": "La réplique littéralisée."
   },
   {
-   "id": "s3",
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "orbit",
    "set": [
-    "building",
-    "person"
-   ],
-   "onscreen_text": "5e SANS ASCENSEUR",
-   "comic_action": "Orbite sur l'escalier en colimaçon, étiquette rouge 12 000 €/m².",
-   "expected_result": "Escalade chiffrée."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5",
-    "n6"
-   ],
-   "camera": "closeup",
-   "set": [
+    "tribune",
     "person",
-    "text3d"
+    "banner",
+    "studio_light"
    ],
-   "onscreen_text": "POURBOIRE : MERCI",
-   "comic_action": "Une main tend un sticker ; derrière, une pile de colis « RETOUR ».",
-   "expected_result": "Comptage."
+   "onscreen_text": "DÉBAT 2024",
+   "comic_action": "Le maire cubique à la tribune, projecteur, foule clairsemée.",
+   "expected_result": "Le discours porte la pique."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "person",
+    "road",
+    "sign",
+    "car"
+   ],
+   "onscreen_text": "CONTENU : PLUS TARD",
+   "comic_action": "Livreur qui court avec un colis ; panneau de la mairie sur le trottoir.",
+   "expected_result": "La livraison porte la pique."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "shop",
+    "sign",
+    "person"
+   ],
+   "onscreen_text": "NE PAS TOUCHER",
+   "comic_action": "Gros plan sur les baskets immaculées ; un client tend la main, le livreur recule d'un pas.",
+   "expected_result": "La réplique littéralisée."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
     "road",
-    "sign",
-    "tshirt"
+    "person",
+    "tshirt",
+    "sign"
    ],
-   "onscreen_text": "DIRECTION : MARINEVILLE",
-   "comic_action": "Le livreur repart vers le panneau « MARINEVILLE » ; un client au balcon porte « À GAUCHE DU CANAPÉ. ».",
-   "expected_result": "Chute + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton pire client de livraison, raconte-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui s'énerve quand on marche sur ses baskets."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -171,39 +204,53 @@
  "word_count": 77,
  "claims": [
   {
-   "segment": "n2",
+   "text": "« Lâchez-moi les baskets »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.ozap.com/actu/-lachez-moi-les-baskets-furieux-raphael-glucksmann-riposte-apres-des-attaques-de-manon-aubry-sur-bfmtv/644147",
+   "note": "« Lâchez-moi les baskets » (débat BFMTV des européennes)."
+  },
+  {
+   "text": "La réplique date d'un débat de 2024, adressée à Manon Aubry.",
    "claim_type": "fait_public",
-   "text": "On lui reproche un profil trop centre-ville, façon Canal Saint-Martin.",
-   "source_url": [
-    "https://www.publicsenat.fr/actualites/politique/dans-le-loir-et-cher-glucksmann-ne-veut-pas-opposer-le-rural-a-l-urbain-140374",
-    "https://www.jean-jaures.org/publication/de-macron-ou-melenchon-a-glucksmann-vers-un-renouveau-de-la-social-democratie/",
-    "https://lejournal.cnrs.fr/print/3123"
-   ]
+   "source": "https://www.ozap.com/actu/-lachez-moi-les-baskets-furieux-raphael-glucksmann-riposte-apres-des-attaques-de-manon-aubry-sur-bfmtv/644147",
+   "note": "« Lâchez-moi les baskets » (débat BFMTV des européennes)."
+  },
+  {
+   "text": "Ton colis ? Une vision. Le contenu sera livré plus tard.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
+   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme ». Détourné dans la ville fictive."
+  },
+  {
+   "text": "Il veut rassembler toute la gauche. Mais ne lui touche pas les baskets.",
+   "claim_type": "fiction_satirique",
+   "source": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
+   "note": "Une gauche qui peut « rassembler, gouverner et gagner ». Détourné dans la ville fictive."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/dans-le-loir-et-cher-glucksmann-ne-veut-pas-opposer-le-rural-a-l-urbain-140374",
-   "date": "2019-04-19",
-   "statut": "fait rapporté + cliché",
-   "usage": "Cliché de quartier (levain, vin nature, loyers), jamais lié à sa vie privée.",
-   "consulted": "2026-11-21"
+   "url": "https://www.ozap.com/actu/-lachez-moi-les-baskets-furieux-raphael-glucksmann-riposte-apres-des-attaques-de-manon-aubry-sur-bfmtv/644147",
+   "date": "2024-05-27",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte",
+   "note": "« Lâchez-moi les baskets » (débat BFMTV des européennes)."
   },
   {
-   "url": "https://www.jean-jaures.org/publication/de-macron-ou-melenchon-a-glucksmann-vers-un-renouveau-de-la-social-democratie/",
-   "date": "2024-03-28",
-   "statut": "fait (étude) ; chiffres non cités à l'antenne",
-   "usage": "Seule l'idée « plus âgés, plus aisés » est reprise.",
-   "consulted": "2026-11-21"
+   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
+   "date": "2025-06-23",
+   "consulted": "2026-11-22",
+   "statut": "citations rapportées",
+   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
   },
   {
-   "url": "https://lejournal.cnrs.fr/print/3123",
-   "date": "2022-06-07",
-   "statut": "cliché décrit et discuté (garde-fou)",
-   "usage": "La cible reste la mairie fictive, pas un groupe.",
-   "consulted": "2026-11-21"
+   "url": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
+   "date": "2026-10-12",
+   "consulted": "2026-11-22",
+   "statut": "fait public (formule rapportée)",
+   "note": "Une gauche qui peut « rassembler, gouverner et gagner »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Électorat cliché centre-ville (prix, objets) ; chute de géographie sociale entre deux villes de la série, sans viser un groupe protégé ni la vie privée. Mème d'ancrage : Le cliché d'électorat « centre-ville » (profil jugé trop urbain, Canal Saint-Martin ; électeurs plus âgés et plus aisés). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « Lâchez-moi les baskets » (débat des européennes 2024 face à Manon Aubry) adressé à un client qui pose une question sur son colis. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

@@ -3,81 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m007",
  "format": "A",
- "anchor": "Le live « Au QG » : une heure de parole puis 30 à 45 minutes de questions du chat, sur toutes les plateformes (06/11/2026)",
+ "anchor": "« rien ne me fera lâcher » (soir de primaire, octobre 2026) pendant une panne de courant… et des sondages autour de 15 %.",
  "situation": "la panne de courant",
- "ressort": "boucle",
- "title_cover": "Panne à la minute 1",
+ "ressort": "piques frontales sourcées (style tacle)",
+ "title_cover": "Rien ne lâche",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Un live sur toutes les plateformes. Une centrale en moins.",
-  "Ici, la République fait sauter les plombs.",
-  "Trois essais, trois pannes, même phrase.",
-  "La ville éclairée à la bougie, en attendant la fin du live."
+  "Ici, rien ne le fera lâcher. Le courant, si.",
+  "Glucksmannville : la panne de la détermination.",
+  "Il s'accroche. Personne ne tire.",
+  "Les glucksmanniens vont tenir la bougie."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Troisième essai : la ville s'éclaire désormais à la bougie.",
-  "Toute la ville à la bougie, et le maire qui reprend depuis le début.",
-  "La phrase sur la République n'a jamais dépassé la première minute."
+  "Rien ne le fera lâcher. Ça tombe bien : personne ne tire.",
+  "Il ne lâche rien. Personne ne lui demande rien.",
+  "Accroché à la corde, seul, très déterminé."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. À la bougie.",
    "accent_words": [
-    "Glucksmann"
+    "bougie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le maire diffuse son live Au QG sur toutes les plateformes.",
+   "text": "Panne générale. Le maire monte sur une chaise, lampe frontale.",
    "accent_words": [
-    "Au QG"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "Résultat : la centrale de la ville saute à la première minute.",
-   "accent_words": [
-    "saute à la première minute"
+    "lampe frontale"
    ],
    "claim_type": "fiction_satirique"
   },
   {
+   "id": "n3",
+   "text": "Il répète sa phrase de primaire : « rien ne me fera lâcher ».",
+   "accent_words": [
+    "lâcher"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
    "id": "n4",
-   "text": "Les écrans s'éteignent au milieu de « la République ».",
-   "accent_words": [],
+   "text": "Le disjoncteur, lui, a lâché. Deux fois.",
+   "accent_words": [
+    "Deux fois"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le courant revient : le maire reprend depuis le début.",
+   "text": "La lumière revient. Les sondages aussi : autour de 15 %.",
    "accent_words": [
-    "reprend depuis le début"
+    "15 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "La centrale resaute à la même phrase, pile au même mot.",
-   "accent_words": [],
+   "text": "Rien ne le fera lâcher. Ça tombe bien : personne ne tire.",
+   "accent_words": [
+    "personne ne tire"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Troisième essai : la ville s'éclaire désormais à la bougie.",
+   "text": "Envoie ça au pote qui jure ne jamais lâcher un truc que personne ne veut.",
    "accent_words": [
-    "à la bougie"
+    "personne ne veut"
    ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Abonne-toi : le live reprend la prochaine fois, depuis le début.",
-   "accent_words": [],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,107 +83,155 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "mairie",
-    "screen",
-    "lamp"
+    "road",
+    "facade_row",
+    "lamp",
+    "person",
+    "car"
    ],
-   "onscreen_text": "AU QG : PARTOUT",
-   "comic_action": "Plongée sur la mairie, tous les écrans de la ville allumés sur le même live.",
-   "expected_result": "Ancrage."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
+   "expected_result": "Le décor de rue posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "lamp",
-    "building"
+    "tribune",
+    "person",
+    "banner",
+    "studio_light"
    ],
-   "onscreen_text": "PANNE À 00:01",
-   "comic_action": "Les lampadaires s'éteignent en cascade, chronomètre 00:01.",
-   "expected_result": "Situation."
+   "onscreen_text": "PANNE GÉNÉRALE",
+   "comic_action": "Le maire cubique à la tribune, projecteur, foule clairsemée.",
+   "expected_result": "Le discours porte la pique."
   },
   {
    "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "banner",
+    "studio_light",
+    "person"
+   ],
+   "onscreen_text": "« RIEN NE ME FERA LÂCHER »",
+   "comic_action": "Le maire cubique lève le poing sur la tribune ; banderole « LA BATAILLE COMMENCE » ; la foule regarde sa montre.",
+   "expected_result": "Le grand mot face au petit effet."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "router_lectern",
+    "person",
+    "studio_light"
+   ],
+   "onscreen_text": "DISJONCTEUR : LÂCHÉ ×2",
+   "comic_action": "Gros plan sur le pupitre-routeur qui clignote.",
+   "expected_result": "Le pupitre porte la pique."
+  },
+  {
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "closeup",
    "set": [
     "screen",
-    "tribune",
-    "person"
+    "text3d",
+    "sign"
    ],
-   "onscreen_text": "REPRISE DEPUIS LE DÉBUT",
-   "comic_action": "Le maire, imperturbable, recommence au premier mot quand le courant revient.",
-   "expected_result": "Boucle."
+   "onscreen_text": "~15 %",
+   "comic_action": "Écran de sondage : une barre monte… et s'arrête à mi-hauteur.",
+   "expected_result": "Le chiffre de sondage en jauge."
   },
   {
-   "id": "s4",
+   "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "return",
+   "camera": "orbit",
    "set": [
-    "lamp",
-    "building"
+    "tribune",
+    "banner",
+    "studio_light",
+    "person"
    ],
-   "onscreen_text": "PANNE À 00:01 (BIS)",
-   "comic_action": "Même cadre qu'au plan 2 : les lampadaires s'éteignent exactement pareil.",
-   "expected_result": "La boucle se referme."
+   "onscreen_text": "PERSONNE NE TIRE",
+   "comic_action": "Le maire s'accroche des deux mains à une corde ; à l'autre bout de la corde, il n'y a personne.",
+   "expected_result": "Le grand mot face au petit effet."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n7"
    ],
-   "camera": "closeup",
+   "camera": "return",
    "set": [
-    "table",
-    "lamp",
-    "tshirt"
+    "road",
+    "person",
+    "tshirt",
+    "sign"
    ],
-   "onscreen_text": "ABONNE-TOI",
-   "comic_action": "Une famille regarde le live à la bougie ; le père porte « PLUTÔT GAUCHE. TRÈS FATIGUÉ. ».",
-   "expected_result": "CTA d'abonnement + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "follow",
-  "text": "Abonne-toi : le live reprend la prochaine fois, depuis le début."
+  "type": "share",
+  "text": "Envoie ça au pote qui jure ne jamais lâcher un truc que personne ne veut."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 83,
+ "word_count": 80,
  "claims": [
   {
-   "segment": "n2",
+   "text": "« rien ne me fera lâcher »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/ce-soir-la-bataille-de-france-commence-apres-sa-victoire-a-la-primaire-de-la-gauche-raphael-glucksmann-assure-que-rien-ne-le-fera-l",
+   "note": "« Ce soir, la bataille de France commence » ; « rien ne me fera lâcher »."
+  },
+  {
+   "text": "La lumière revient. Les sondages aussi : autour de 15 %.",
    "claim_type": "fait_public",
-   "text": "Le maire diffuse son live Au QG sur toutes les plateformes.",
-   "source_url": "https://lcp.fr/actualites/au-qg-raphael-glucksmann-lance-son-rendez-vous-de-campagne-numerique-ce-vendredi-444843"
+   "source": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
+   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant."
   }
  ],
  "sources": [
   {
-   "url": "https://lcp.fr/actualites/au-qg-raphael-glucksmann-lance-son-rendez-vous-de-campagne-numerique-ce-vendredi-444843",
-   "date": "2026-11-06",
-   "statut": "fait public (format de campagne annoncé)",
-   "usage": "Le format est appliqué au Wi-Fi et à la centrale électrique de la ville fictive.",
-   "consulted": "2026-11-21"
+   "url": "https://www.publicsenat.fr/actualites/politique/ce-soir-la-bataille-de-france-commence-apres-sa-victoire-a-la-primaire-de-la-gauche-raphael-glucksmann-assure-que-rien-ne-le-fera-l",
+   "date": "2026-10-11",
+   "consulted": "2026-11-22",
+   "statut": "citations rapportées",
+   "note": "« Ce soir, la bataille de France commence » ; « rien ne me fera lâcher »."
+  },
+  {
+   "url": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
+   "date": "2026-10-16",
+   "consulted": "2026-11-22",
+   "statut": "fait (sondage)",
+   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Boucle : le live diffusé partout (format réel) fait sauter la centrale, à la même phrase, à chaque reprise. Mème d'ancrage : Le live « Au QG » : une heure de parole puis 30 à 45 minutes de questions du chat, sur toutes les plateformes (06/11/2026). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « rien ne me fera lâcher » (soir de primaire, octobre 2026) pendant une panne de courant… et des sondages autour de 15 %. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

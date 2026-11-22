@@ -3,81 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m024",
  "format": "A",
- "anchor": "« Soyons sérieux » et « mettre une digue » (refus de la coalition suggérée par Macron, 07/11/2026)",
+ "anchor": "la « timidité sociale » du programme (Politis, juin 2026) et la fermeté réservée à LFI (« toute ambiguïté » serait une faute), à la cantine.",
  "situation": "la cantine",
- "ressort": "littéralisation",
- "title_cover": "La digue en purée",
+ "ressort": "piques frontales sourcées (style tacle)",
+ "title_cover": "Portions timides",
  "hook_variants": [
-  "Sa formule de novembre : « c'est de mettre une digue »",
-  "Ici, chaque assiette a sa digue en purée.",
-  "Petits pois à gauche, sauce à droite, digue au milieu.",
-  "La digue a tenu deux minutes.",
-  "La cantine qui construit des barrages."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, la cantine sert des portions timides.",
+  "Glucksmannville : le menu de la timidité sociale.",
+  "Petite purée, grand discours.",
+  "Les glucksmanniens vont dire que c'est équilibré."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Les enfants mangent la digue, le reste part à la poubelle.",
-  "Seule la digue a été mangée. Le reste est à la poubelle.",
-  "Deux digues, zéro légume consommé."
+  "Petites portions pour les salaires. Grande assiette pour les discours.",
+  "Le plateau est joli. L'assiette est vide.",
+  "Timide à table, ferme au voisin."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Sa formule de novembre : « c'est de mettre une digue »",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Portions modestes.",
    "accent_words": [
-    "mettre une digue"
+    "Portions modestes"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La cantine de Glucksmannville l'a pris au pied de la lettre.",
+   "text": "À la cantine, les portions sont sociales-démocrates : petites, mais bien présentées.",
    "accent_words": [
-    "au pied de la lettre"
+    "petites"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Chaque assiette a désormais une digue en purée, très haute.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "text": "Un sociologue y voit la « timidité sociale » de son programme.",
+   "accent_words": [
+    "timidité sociale"
+   ],
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Les petits pois de gauche ne doivent pas toucher la sauce de droite.",
+   "text": "Le cuisinier n'ose pas saler. Ni la purée, ni les salaires.",
    "accent_words": [
-    "la sauce de droite"
+    "les salaires"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La digue tient deux minutes, puis s'effondre en purée tiède.",
+   "text": "Contre LFI, en revanche, il est ferme : « toute ambiguïté » serait une faute.",
    "accent_words": [
-    "purée tiède"
+    "toute ambiguïté"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n6",
-   "text": "Le chef ajoute une deuxième digue, en semoule cette fois.",
-   "accent_words": [],
+   "text": "Petites portions pour les salaires. Grande assiette pour les discours.",
+   "accent_words": [
+    "Grande assiette"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Les enfants mangent la digue, le reste part à la poubelle.",
+   "text": "Envoie ça au pote qui laisse toujours la dernière part par politesse.",
    "accent_words": [
-    "le reste part à la poubelle"
+    "par politesse"
    ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton pire plat de cantine, note-le en commentaire.",
-   "accent_words": [],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,105 +83,161 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "building",
+    "banner",
+    "person",
+    "tree"
+   ],
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur l'école ; banderole au fronton.",
+   "expected_result": "L'école posée."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
     "n2"
    ],
    "camera": "closeup",
    "set": [
     "table",
-    "text3d"
+    "sign",
+    "person",
+    "fountain"
    ],
-   "onscreen_text": "METTRE UNE DIGUE",
-   "comic_action": "Plateau de cantine, étiquette 3D « DIGUE ».",
-   "expected_result": "Ancrage réel."
+   "onscreen_text": "PORTION SOCIALE-DÉMOCRATE",
+   "comic_action": "Table de restaurant ; la carte-ardoise affiche les prix.",
+   "expected_result": "Le restaurant porte la pique."
   },
   {
-   "id": "s2",
+   "id": "s3",
    "narration_ids": [
-    "n3",
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "« TIMIDITÉ SOCIALE »",
+   "comic_action": "Un mégaphone minuscule posé sur une table en mousse ; il chuchote.",
+   "expected_result": "La timidité sociale en objet."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
     "n4"
    ],
    "camera": "closeup",
    "set": [
     "table",
-    "person"
+    "sign",
+    "person",
+    "fountain"
    ],
-   "onscreen_text": "DIGUE EN PURÉE",
-   "comic_action": "Une dame de cantine érige un mur de purée au milieu de l'assiette.",
-   "expected_result": "Littéralisation."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n5"
-   ],
-   "camera": "window_pass",
-   "set": [
-    "table",
-    "person"
-   ],
-   "onscreen_text": "PURÉE TIÈDE",
-   "comic_action": "La digue s'affaisse, petits pois et sauce se mélangent.",
-   "expected_result": "Escalade."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n6"
-   ],
-   "camera": "orbit",
-   "set": [
-    "table",
-    "person"
-   ],
-   "onscreen_text": "DIGUE N°2 : SEMOULE",
-   "comic_action": "Orbite : le chef empile de la semoule, très concentré.",
-   "expected_result": "Aggravation."
+   "onscreen_text": "SEL : 0",
+   "comic_action": "Table de restaurant ; la carte-ardoise affiche les prix.",
+   "expected_result": "Le restaurant porte la pique."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "person",
+    "banner",
+    "studio_light"
+   ],
+   "onscreen_text": "« TOUTE AMBIGUÏTÉ »",
+   "comic_action": "Le maire cubique à la tribune, projecteur, foule clairsemée.",
+   "expected_result": "Le discours porte la pique."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "sign",
+    "person",
+    "fountain"
+   ],
+   "onscreen_text": "SALAIRES : MINI · DISCOURS : XXL",
+   "comic_action": "Plateau-repas : un minuscule ramequin étiqueté « SALAIRES », un plat géant étiqueté « DISCOURS ».",
+   "expected_result": "Le restaurant porte la pique."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "bin",
-    "table",
-    "tshirt"
+    "road",
+    "person",
+    "tshirt",
+    "sign"
    ],
-   "onscreen_text": "DIGUE MANGÉE",
-   "comic_action": "Les enfants n'ont mangé que les digues ; le surveillant porte « PLUTÔT GAUCHE. TRÈS FATIGUÉ. ».",
-   "expected_result": "Chute + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton pire plat de cantine, note-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui laisse toujours la dernière part par politesse."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 85,
+ "word_count": 82,
  "claims": [
   {
-   "segment": "n1",
+   "text": "À la cantine, les portions sont sociales-démocrates : petites, mais bien présentées.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/",
+   "note": "« Timidité sociale » du programme. Détourné dans la ville fictive."
+  },
+  {
+   "text": "« timidité sociale »",
    "claim_type": "citation_exacte",
-   "text": "Sa formule de novembre : « c'est de mettre une digue »",
-   "source_url": "https://www.lagazettefrance.fr/article/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann"
+   "source": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/",
+   "note": "« Timidité sociale » du programme."
+  },
+  {
+   "text": "« toute ambiguïté »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.sudradio.fr/politique/raphael-glucksmann-sur-lfi-toute-ambiguite-de-notre-part-est-une-faute-ethique-et-un-suicide-politique",
+   "note": "« Toute ambiguïté de notre part est une faute éthique et un suicide politique »."
   }
  ],
  "sources": [
   {
-   "url": "https://www.lagazettefrance.fr/article/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann",
-   "date": "2026-11-07",
-   "statut": "fait public (citations rapportées)",
-   "usage": "Fragments exacts, typés citation_exacte ; le passage de l'article sur l'immigration est écarté.",
-   "consulted": "2026-11-21"
+   "url": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/",
+   "date": "2026-06-11",
+   "consulted": "2026-11-22",
+   "statut": "opinion (entretien)",
+   "note": "« Timidité sociale » du programme."
+  },
+  {
+   "url": "https://www.sudradio.fr/politique/raphael-glucksmann-sur-lfi-toute-ambiguite-de-notre-part-est-une-faute-ethique-et-un-suicide-politique",
+   "date": "2026-02",
+   "consulted": "2026-11-22",
+   "statut": "citation rapportée",
+   "note": "« Toute ambiguïté de notre part est une faute éthique et un suicide politique »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Littéralisation d'un fragment exact (« c'est de mettre une digue »). Le contexte politique n'est pas détaillé. Mème d'ancrage : « Soyons sérieux » et « mettre une digue » (refus de la coalition suggérée par Macron, 07/11/2026). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : la « timidité sociale » du programme (Politis, juin 2026) et la fermeté réservée à LFI (« toute ambiguïté » serait une faute), à la cantine. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

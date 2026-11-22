@@ -3,79 +3,71 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m016",
  "format": "A",
- "anchor": "L'annonce de candidature jugée « récitée », ton grave, pesé, figé (réactions d'internautes et de communicants, 08/2026)",
+ "anchor": "l'annonce de candidature jugée apprise et récitée, au ton scolaire (août 2026), dans les annonces du métro.",
  "situation": "le métro",
- "ressort": "contamination",
+ "ressort": "piques frontales sourcées (style tacle)",
  "title_cover": "Métro récité",
  "hook_variants": [
-  "Son annonce de candidature, des internautes l'ont trouvée récitée par cœur.",
-  "Ici, même le métro récite sa leçon.",
-  "Pardon, je descends, avec gravité.",
-  "Le contrôleur a oublié la fin de l'amende.",
-  "Une rame entière figée sur un trou de mémoire."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, le métro récite ses annonces.",
+  "Glucksmannville : prochaine station, Prompteur.",
+  "Ton grave, rame à l'heure, mauvaise ligne.",
+  "Les glucksmanniens vont trouver la diction parfaite."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le métro reste bloqué à République jusqu'à l'arrivée du souffleur.",
-  "Le métro attend le souffleur. Le souffleur attend le métro.",
-  "Station République : bloquée sur un trou de mémoire."
+  "Le texte est parfait, appris au mot près. Dommage : c'était le mauvais métro.",
+  "Diction parfaite, direction ratée.",
+  "Le texte est su. Le trajet, non."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Son annonce de candidature, des internautes l'ont trouvée récitée par cœur.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Station suivante : Prompteur.",
    "accent_words": [
-    "récitée par cœur"
+    "Prompteur"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Dans le métro de Glucksmannville, tout le monde récite désormais.",
-   "accent_words": [],
+   "text": "Dans le métro, les annonces sont récitées par le maire. Ton grave, figé.",
+   "accent_words": [
+    "figé"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Le conducteur récite les stations, sans respirer.",
+   "text": "Son annonce de candidature, des internautes l'ont trouvée apprise par cœur.",
    "accent_words": [
-    "sans respirer"
+    "par cœur"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Les voyageurs récitent « Pardon, je descends » avec une immense gravité.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "text": "Des communicants parlent d'un ton scolaire. La rame freine, par respect.",
+   "accent_words": [
+    "scolaire"
+   ],
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le contrôleur récite l'amende, puis oublie la fin.",
+   "text": "Le texte est parfait, appris au mot près. Dommage : c'était le mauvais métro.",
    "accent_words": [
-    "oublie la fin"
+    "le mauvais métro"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Toute la rame se fige en attendant le mot suivant.",
+   "text": "Envoie ça au pote qui répète son vocal cinq fois avant de l'envoyer.",
    "accent_words": [
-    "le mot suivant"
+    "cinq fois"
    ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n7",
-   "text": "Le métro reste bloqué à République jusqu'à l'arrivée du souffleur.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ce que tu récitais par cœur à l'école, écris-le en commentaire.",
-   "accent_words": [],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -83,106 +75,138 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d"
+    "road",
+    "bus",
+    "sign",
+    "person",
+    "facade_row"
    ],
-   "onscreen_text": "RÉCITÉ PAR CŒUR",
-   "comic_action": "Écran dans une station : « RÉCITATION EN COURS ».",
-   "expected_result": "Ancrage."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur l'arrêt de bus ; le bus arrive.",
+   "expected_result": "Le transport du jour posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "bus",
-    "person"
+    "traffic_light",
+    "router_lectern",
+    "text3d"
    ],
-   "onscreen_text": "STATIONS SANS RESPIRER",
-   "comic_action": "À travers la vitre de la rame, le conducteur récite, rouge, les voyageurs immobiles.",
-   "expected_result": "Contamination.",
-   "new_asset_request": "Rame de métro simple (ou bus)."
+   "onscreen_text": "ANNONCE RÉCITÉE",
+   "comic_action": "Le feu tricolore récite son texte sur un prompteur, ton figé ; le texte défile.",
+   "expected_result": "Le discours appris par cœur."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
-    "person",
-    "bus"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "AMENDE : … ?",
-   "comic_action": "Le contrôleur ouvre la bouche, rien ne sort.",
-   "expected_result": "Le blocage."
+   "onscreen_text": "APPRISE PAR CŒUR",
+   "comic_action": "Gros plan sur un écran géant en ville.",
+   "expected_result": "La pique s'affiche en écran."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
     "bus",
+    "road",
+    "sign",
     "person"
    ],
-   "onscreen_text": "FIGÉS",
-   "comic_action": "Orbite : tous les voyageurs figés en plein geste.",
-   "expected_result": "Pic visuel."
+   "onscreen_text": "TON : SCOLAIRE",
+   "comic_action": "Travelling le long du bus ; écran de destination qui défile.",
+   "expected_result": "Le bus porte la pique."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "bus",
+    "road",
+    "sign",
+    "person"
+   ],
+   "onscreen_text": "MAUVAISE LIGNE",
+   "comic_action": "Le maire récite impeccablement devant le plan de la ligne ; le doigt de l'habitant montre que la rame part dans l'autre sens.",
+   "expected_result": "Le bus porte la pique."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
    ],
    "camera": "return",
    "set": [
-    "bus",
-    "sign",
-    "tshirt"
+    "road",
+    "person",
+    "tshirt",
+    "sign"
    ],
-   "onscreen_text": "RÉPUBLIQUE : BLOQUÉ",
-   "comic_action": "Le Prompteur municipal arrive en courant sur le quai ; un voyageur porte « À GAUCHE DU CANAPÉ. ».",
-   "expected_result": "Chute + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ce que tu récitais par cœur à l'école, écris-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui répète son vocal cinq fois avant de l'envoyer."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 79,
+ "word_count": 74,
  "claims": [
   {
-   "segment": "n1",
+   "text": "Dans le métro, les annonces sont récitées par le maire. Ton grave, figé.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.letribunaldunet.fr/politique/glucksmann-mauvais-orateur-experts-communication-2027-2.html",
+   "note": "Annonce jugée apprise, récitée, ton figé, « scolaire ». Détourné dans la ville fictive."
+  },
+  {
+   "text": "Son annonce de candidature, des internautes l'ont trouvée apprise par cœur.",
    "claim_type": "fait_public",
-   "text": "Son annonce de candidature, des internautes l'ont trouvée récitée par cœur.",
-   "source_url": "https://www.letribunaldunet.fr/politique/glucksmann-mauvais-orateur-experts-communication-2027-2.html"
+   "source": "https://www.letribunaldunet.fr/politique/glucksmann-mauvais-orateur-experts-communication-2027-2.html",
+   "note": "Annonce jugée apprise, récitée, ton figé, « scolaire »."
+  },
+  {
+   "text": "Des communicants parlent d'un ton scolaire. La rame freine, par respect.",
+   "claim_type": "fait_public",
+   "source": "https://www.letribunaldunet.fr/politique/glucksmann-mauvais-orateur-experts-communication-2027-2.html",
+   "note": "Annonce jugée apprise, récitée, ton figé, « scolaire »."
   }
  ],
  "sources": [
   {
    "url": "https://www.letribunaldunet.fr/politique/glucksmann-mauvais-orateur-experts-communication-2027-2.html",
    "date": "2026-08-27",
-   "statut": "opinion (internautes et experts en communication)",
-   "usage": "La comparaison de l'internaute (fable) n'est pas reprise ; rien sur l'anxiété (santé).",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "opinion d'internautes et de communicants",
+   "note": "Annonce jugée apprise, récitée, ton figé, « scolaire »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Contamination : la critique d'internautes (« récitée ») gagne tout le métro. Aucun gag sur l'anxiété ni la santé. Mème d'ancrage : L'annonce de candidature jugée « récitée », ton grave, pesé, figé (réactions d'internautes et de communicants, 08/2026). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : l'annonce de candidature jugée apprise et récitée, au ton scolaire (août 2026), dans les annonces du métro. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

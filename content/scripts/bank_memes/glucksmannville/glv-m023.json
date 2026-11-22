@@ -3,81 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m023",
  "format": "A",
- "anchor": "Le « procès en macronisme » : il rappellerait Macron, risque de « refaire du macronisme sous une bannière sociale-démocrate »",
+ "anchor": "les sondages d'après-primaire autour de 15 % (contre 13,83 % aux européennes 2024) au distributeur de billets.",
  "situation": "le distributeur de billets",
- "ressort": "inversion",
- "title_cover": "Distributeur en même temps",
+ "ressort": "piques frontales sourcées (style tacle)",
+ "title_cover": "Retrait à 15 %",
  "hook_variants": [
-  "Une chronique l'avait résumé : « il me rappelle Macron ».",
-  "Le distributeur qui donne et reprend en même temps.",
-  "Retrait de gauche, solde de droite.",
-  "Vingt euros donnés, vingt euros prélevés.",
-  "Ici, ton compte n'a pas bougé, mais il a été écouté."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, le distributeur te rend 15 %.",
+  "Glucksmannville : le DAB de la dynamique.",
+  "Cent euros demandés, quinze obtenus, champagne.",
+  "Les glucksmanniens vont parler de remontada."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ton compte n'a pas bougé, mais il a été très écouté.",
-  "Zéro euro, mais un dialogue de qualité.",
-  "Ton compte n'a jamais été aussi bien compris."
+  "Quinze sur cent. Ici, on appelle ça une dynamique.",
+  "Quinze pour cent, et des confettis.",
+  "Le distributeur appelle ça une percée."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Une chronique l'avait résumé : « il me rappelle Macron ».",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. À hauteur de 15 %.",
    "accent_words": [
-    "Macron"
+    "15 %"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le distributeur de Glucksmannville fonctionne donc en même temps.",
+   "text": "Au distributeur, tu demandes cent euros. Il t'en donne quinze.",
    "accent_words": [
-    "en même temps"
+    "quinze"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Il te donne vingt euros et te prélève vingt euros.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "text": "Après la primaire, les sondages le placent autour de 15 %.",
+   "accent_words": [
+    "15 %"
+   ],
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Il taxe les riches, puis rembourse les riches.",
+   "text": "Le reste ? Concertation en cours, veuillez patienter.",
    "accent_words": [
-    "rembourse les riches"
+    "Concertation"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "L'écran affiche « Retrait de gauche », puis « Solde de droite ».",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "text": "En 2024, il faisait 13,83 %. Le distributeur parle de croissance.",
+   "accent_words": [
+    "croissance"
+   ],
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Tu repars avec ton ticket et un vrai sentiment de dialogue.",
+   "text": "Quinze sur cent. Ici, on appelle ça une dynamique.",
    "accent_words": [
-    "dialogue"
+    "une dynamique"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Ton compte n'a pas bougé, mais il a été très écouté.",
+   "text": "Envoie ça au pote qui fête ses 15 % de batterie comme une victoire.",
    "accent_words": [
-    "très écouté"
+    "une victoire"
    ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton solde le vingt du mois, en un mot, en commentaire.",
-   "accent_words": [],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,115 +83,164 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "road",
+    "facade_row",
+    "lamp",
+    "person",
+    "car"
+   ],
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
+   "expected_result": "Le décor de rue posé."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
     "n2"
    ],
    "camera": "closeup",
    "set": [
     "screen",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "« IL ME RAPPELLE MACRON »",
-   "comic_action": "Une coupure de presse s'affiche sur l'écran du distributeur.",
-   "expected_result": "Ancrage (chronique citée)."
+   "onscreen_text": "100 € → 15 €",
+   "comic_action": "Gros plan sur un écran géant en ville.",
+   "expected_result": "La pique s'affiche en écran."
   },
   {
-   "id": "s2",
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
     "screen",
-    "person"
+    "text3d",
+    "sign"
    ],
-   "onscreen_text": "+20 € / −20 €",
-   "comic_action": "Un billet sort et rentre aussitôt.",
-   "expected_result": "Inversion."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4",
-    "n5"
-   ],
-   "camera": "orbit",
-   "set": [
-    "screen",
-    "building",
-    "text3d"
-   ],
-   "onscreen_text": "TAXE / REMBOURSE",
-   "comic_action": "Orbite : deux flèches rouges qui tournent en boucle sur l'écran.",
-   "expected_result": "Escalade."
+   "onscreen_text": "~15 %",
+   "comic_action": "Écran de sondage : une barre monte… et s'arrête à mi-hauteur.",
+   "expected_result": "Le chiffre de sondage en jauge."
   },
   {
    "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "gps"
+   ],
+   "onscreen_text": "VEUILLEZ PATIENTER",
+   "comic_action": "Écran de l'application municipale : chargement, mise à jour, chargement.",
+   "expected_result": "L'appli porte la pique."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "sign"
+   ],
+   "onscreen_text": "+1,17 POINT",
+   "comic_action": "Écran de sondage : une barre monte… et s'arrête à mi-hauteur.",
+   "expected_result": "Le chiffre de sondage en jauge."
+  },
+  {
+   "id": "s6",
    "narration_ids": [
     "n6"
    ],
    "camera": "closeup",
    "set": [
-    "person",
-    "scroll"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "TICKET + DIALOGUE",
-   "comic_action": "L'habitant lit un ticket très long : « Merci pour cet échange ».",
-   "expected_result": "Chute."
+   "onscreen_text": "DYNAMIQUE !",
+   "comic_action": "Le distributeur crache trois billets de cinq ; des confettis beiges tombent de l'écran.",
+   "expected_result": "La pique s'affiche en écran."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "screen",
-    "tshirt"
+    "road",
+    "person",
+    "tshirt",
+    "sign"
    ],
-   "onscreen_text": "SOLDE : ÉCOUTÉ",
-   "comic_action": "L'écran affiche « SOLDE : ÉCOUTÉ » ; t-shirt « LE PAYS BUGUE. MOI AUSSI. ».",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton solde le vingt du mois, en un mot, en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui fête ses 15 % de batterie comme une victoire."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 84,
+ "word_count": 76,
  "claims": [
   {
-   "segment": "n1",
-   "claim_type": "citation_exacte",
-   "text": "Une chronique l'avait résumé : « il me rappelle Macron ».",
-   "source_url": [
-    "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
-    "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron"
-   ]
+   "text": "Dans cette ville, tout le monde vote Glucksmann. À hauteur de 15 %.",
+   "claim_type": "fiction_satirique",
+   "source": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
+   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant. Détourné dans la ville fictive."
+  },
+  {
+   "text": "Au distributeur, tu demandes cent euros. Il t'en donne quinze.",
+   "claim_type": "fiction_satirique",
+   "source": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
+   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant. Détourné dans la ville fictive."
+  },
+  {
+   "text": "Après la primaire, les sondages le placent autour de 15 %.",
+   "claim_type": "fait_public",
+   "source": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
+   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant."
+  },
+  {
+   "text": "En 2024, il faisait 13,83 %. Le distributeur parle de croissance.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/resultats-europeennes-2024-jordan-bardella-en-tete-valerie-hayer-en-deuxieme-position-glucksmann-troisieme",
+   "note": "Européennes 2024 : liste « Réveiller l'Europe » troisième, 13,83 %."
   }
  ],
  "sources": [
   {
-   "url": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
-   "date": "2026-10-12",
-   "statut": "opinion (éditorial)",
-   "usage": "Idée seulement.",
-   "consulted": "2026-11-21"
+   "url": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
+   "date": "2026-10-16",
+   "consulted": "2026-11-22",
+   "statut": "fait (sondage)",
+   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant."
   },
   {
-   "url": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
-   "date": "2024-04-03",
-   "statut": "opinion (chronique ironique ; titre cité à l'identique)",
-   "usage": "Titre de chronique cité, attribué à « une chronique ».",
-   "consulted": "2026-11-21"
+   "url": "https://www.publicsenat.fr/actualites/politique/resultats-europeennes-2024-jordan-bardella-en-tete-valerie-hayer-en-deuxieme-position-glucksmann-troisieme",
+   "date": "2024-06-09",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Européennes 2024 : liste « Réveiller l'Europe » troisième, 13,83 %."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Inversion : le service bancaire annule chaque geste, illustrant la comparaison réelle à Macron (titre de chronique cité). Mème d'ancrage : Le « procès en macronisme » : il rappellerait Macron, risque de « refaire du macronisme sous une bannière sociale-démocrate ». Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : les sondages d'après-primaire autour de 15 % (contre 13,83 % aux européennes 2024) au distributeur de billets. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

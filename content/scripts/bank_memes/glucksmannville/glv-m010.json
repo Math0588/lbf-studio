@@ -3,81 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m010",
  "format": "A",
- "anchor": "« Notre gauche », répété sept fois dans le discours de lancement (analyse lexicale, 06/2026)",
+ "anchor": "la coalition voulue par Macron « de Lisnard à Glucksmann » et les « tentatives désespérées » dénoncées par son camp, en réunion de copro.",
  "situation": "la réunion de copro",
- "ressort": "comparaison",
- "title_cover": "Notre fuite",
+ "ressort": "piques frontales sourcées (style tacle)",
+ "title_cover": "Voisin du dessus",
  "hook_variants": [
-  "« Notre gauche », sept fois dans un discours : la copro a adoré.",
-  "Ici, la fuite d'eau appartient à tout le monde.",
-  "Une charte de la fuite partagée, votée à l'unanimité.",
-  "Notre fuite, notre seau, notre hall inondé.",
-  "La copro où l'on se noie ensemble."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, le voisin du dessus fait des avances.",
+  "Glucksmannville : la copro de la coalition.",
+  "Il refuse l'alliance. Il lève la main pareil.",
+  "Les glucksmanniens vont changer de serrure."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "L'eau atteint le hall, mais ensemble.",
-  "Le hall est inondé, mais personne n'a été exclu de la fuite.",
-  "La charte flotte dans le hall, signée par tous."
+  "Il refuse l'alliance. Mais en AG, ils lèvent la main pareil sur tout.",
+  "Pas d'alliance. Juste les mêmes votes.",
+  "Le voisin insiste. Le couloir sourit."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "« Notre gauche », sept fois dans un discours : la copro a adoré.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le voisin du dessus, non.",
    "accent_words": [
-    "Notre gauche"
+    "le voisin du dessus"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À la réunion, tout devient notre : notre ascenseur, notre fuite.",
+   "text": "Le voisin du dessus propose une alliance contre les deux bouts du couloir.",
    "accent_words": [
-    "notre"
+    "une alliance"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Notre fuite d'eau du cinquième coule chez notre voisin du quatrième.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "text": "En vrai, Macron veut une coalition de Lisnard à Glucksmann.",
+   "accent_words": [
+    "coalition"
+   ],
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le syndic propose de mettre le seau en commun.",
+   "text": "Son porte-parole répond : des « tentatives désespérées ».",
    "accent_words": [
-    "en commun"
+    "désespérées"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n5",
-   "text": "À Marineville, ils auraient juste renommé la fuite.",
+   "text": "Le voisin insiste. Il glisse des mots doux sous la porte.",
    "accent_words": [
-    "renommé la fuite"
+    "mots doux"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ici, on vote une charte de la fuite partagée, à l'unanimité.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n7",
-   "text": "L'eau atteint le hall, mais ensemble.",
+   "text": "Il refuse l'alliance. Mais en AG, ils lèvent la main pareil sur tout.",
    "accent_words": [
-    "ensemble"
+    "pareil sur tout"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n8",
-   "text": "La pire fuite de ton immeuble, raconte en commentaire.",
-   "accent_words": [],
+   "id": "n7",
+   "text": "Envoie ça au pote qui jure détester son voisin mais lui emprunte tout.",
+   "accent_words": [
+    "emprunte tout"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,108 +83,174 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "window_pass",
+   "camera": "descend",
    "set": [
     "building",
-    "table",
-    "person"
+    "road",
+    "person",
+    "car"
    ],
-   "onscreen_text": "NOTRE COPRO",
-   "comic_action": "Réunion de copropriété à travers la fenêtre ; panneau « NOTRE ».",
-   "expected_result": "Ancrage."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente le long d'une tour de bureaux jusqu'au trottoir.",
+   "expected_result": "Le quartier d'affaires posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "building",
+    "table",
     "person",
-    "bin"
+    "form_stack",
+    "building"
    ],
-   "onscreen_text": "NOTRE FUITE",
-   "comic_action": "Une goutte traverse le plafond du quatrième ; le syndic pose un seau au milieu de la table.",
-   "expected_result": "Le problème."
+   "onscreen_text": "ALLIANCE DU COULOIR",
+   "comic_action": "Réunion de copro autour d'une table ; pile de procès-verbaux.",
+   "expected_result": "La copro porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5"
+    "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "sign",
-    "text3d"
+    "car",
+    "person",
+    "road",
+    "sign"
    ],
-   "onscreen_text": "MARINEVILLE : RENOMMÉE",
-   "comic_action": "Insert : à Marineville, Gérard visse une plaque « FONTAINE » sous la même fuite.",
-   "expected_result": "Comparaison en une phrase."
+   "onscreen_text": "DE LISNARD À GLUCKSMANN",
+   "comic_action": "La voiture du maire voisin klaxonne et ouvre la portière ; le maire cubique hésite sur le trottoir.",
+   "expected_result": "La drague de la coalition."
   },
   {
    "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "« TENTATIVES DÉSESPÉRÉES »",
+   "comic_action": "Gros plan sur un écran géant en ville.",
+   "expected_result": "La pique s'affiche en écran."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "table",
+    "person",
+    "form_stack",
+    "building"
+   ],
+   "onscreen_text": "MOTS DOUX",
+   "comic_action": "Réunion de copro autour d'une table ; pile de procès-verbaux.",
+   "expected_result": "La copro porte la pique."
+  },
+  {
+   "id": "s6",
    "narration_ids": [
     "n6"
    ],
    "camera": "orbit",
    "set": [
     "table",
-    "scroll",
-    "person"
+    "person",
+    "form_stack",
+    "building"
    ],
-   "onscreen_text": "CHARTE DE LA FUITE",
-   "comic_action": "Orbite : tout le monde signe un parchemin les pieds dans l'eau.",
-   "expected_result": "Escalade."
+   "onscreen_text": "MÊMES MAINS LEVÉES",
+   "comic_action": "En assemblée de copro, les deux voisins lèvent la main exactement au même moment, à chaque point.",
+   "expected_result": "La copro porte la pique."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "building",
-    "fountain",
-    "tshirt"
+    "road",
+    "person",
+    "tshirt",
+    "sign"
    ],
-   "onscreen_text": "ENSEMBLE",
-   "comic_action": "Le hall transformé en fontaine ; un copropriétaire en t-shirt « J'AI UN AVIS. PAS DE MANDAT. » flotte sur une chaise.",
-   "expected_result": "Chute + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "La pire fuite de ton immeuble, raconte en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui jure détester son voisin mais lui emprunte tout."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 79,
+ "word_count": 82,
  "claims": [
   {
-   "segment": "n1",
+   "text": "Le voisin du dessus propose une alliance contre les deux bouts du couloir.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle. Détourné dans la ville fictive."
+  },
+  {
+   "text": "En vrai, Macron veut une coalition de Lisnard à Glucksmann.",
    "claim_type": "fait_public",
-   "text": "« Notre gauche », sept fois dans un discours : la copro a adoré.",
-   "source_url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais"
+   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
+  },
+  {
+   "text": "« tentatives désespérées »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann-afp-753ca015d95ec4b0d3e2f01c3cb76e945a72ac72",
+   "note": "Glucksmann : l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
+  },
+  {
+   "text": "Il refuse l'alliance. Mais en AG, ils lèvent la main pareil sur tout.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate. Détourné dans la ville fictive."
   }
  ],
  "sources": [
   {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "date": "2026-06-25",
-   "statut": "fait public (analyse lexicale)",
-   "usage": "Le possessif « notre » devient une étiquette collée sur tout.",
-   "consulted": "2026-11-21"
+   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait public (AFP)",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
+  },
+  {
+   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann-afp-753ca015d95ec4b0d3e2f01c3cb76e945a72ac72",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (AFP)",
+   "note": "Glucksmann : l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "date": "2026-10",
+   "consulted": "2026-11-22",
+   "statut": "opinion (éditorial, titre cité)",
+   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Comparaison avec Marineville (autre ville de la série) en une phrase ; le possessif réel « notre » appliqué à une fuite. Mème d'ancrage : « Notre gauche », répété sept fois dans le discours de lancement (analyse lexicale, 06/2026). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : la coalition voulue par Macron « de Lisnard à Glucksmann » et les « tentatives désespérées » dénoncées par son camp, en réunion de copro. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

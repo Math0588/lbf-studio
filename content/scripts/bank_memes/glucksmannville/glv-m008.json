@@ -3,81 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m008",
  "format": "A",
- "anchor": "« Notre gauche », répété sept fois dans le discours de lancement (analyse lexicale, 06/2026)",
+ "anchor": "« notre gauche », sept fois dans un discours, et « une vision plutôt qu'un programme » : le bus municipal qui dit notre à chaque arrêt.",
  "situation": "le bus",
- "ressort": "littéralisation",
+ "ressort": "piques frontales sourcées (style tacle)",
  "title_cover": "Notre bus",
  "hook_variants": [
-  "Dans son discours de lancement, « notre gauche » revient sept fois.",
-  "Ici, même le retard du bus est à nous.",
-  "Notre bus, notre arrêt, notre retard.",
-  "Le bus qui attend qu'on choisisse ensemble la direction.",
-  "Dans cette ville, tout est à nous. Rien ne bouge."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, le bus dit notre à chaque arrêt.",
+  "Glucksmannville : notre bus, notre retard.",
+  "Le seul bus de France sans terminus mais avec un possessif.",
+  "Les glucksmanniens vont dire notre trajet."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le panneau affiche : « Notre prochain bus, à définir ensemble ».",
-  "Le bus ne part jamais, mais il est à tout le monde.",
-  "Prochain bus : à définir ensemble, depuis mardi."
+  "Notre bus avance. Notre direction, elle, est en concertation.",
+  "Notre bus, notre vision, notre attente.",
+  "Tout est à nous, sauf la destination."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans son discours de lancement, « notre gauche » revient sept fois.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Notre bus, d'ailleurs.",
    "accent_words": [
-    "notre gauche"
+    "Notre bus"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À Glucksmannville, le bus a donc tout mis au possessif.",
-   "accent_words": [
-    "au possessif"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Notre bus, notre arrêt, notre retard de quarante minutes.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "Le chauffeur demande : « Vous allez où, dans notre direction ? »",
-   "accent_words": [
-    "dans notre direction"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n5",
-   "text": "Personne ne sait, mais tout le monde adore le mot notre.",
+   "text": "Le bus municipal s'appelle Notre Bus. Le chauffeur dit notre à chaque arrêt.",
    "accent_words": [
     "notre"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n6",
-   "text": "Le bus attend au terminus, en concertation.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "id": "n3",
+   "text": "Dans un seul discours, « notre gauche » revient sept fois.",
+   "accent_words": [
+    "sept fois"
+   ],
+   "claim_type": "citation_exacte"
   },
   {
-   "id": "n7",
-   "text": "Le panneau affiche : « Notre prochain bus, à définir ensemble ».",
+   "id": "n4",
+   "text": "Notre arrêt, notre trajet, notre retard.",
    "accent_words": [
-    "Notre"
+    "notre retard"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n8",
-   "text": "Ton pire retard de bus, en minutes, en commentaire.",
-   "accent_words": [],
+   "id": "n5",
+   "text": "Destination : une vision plutôt qu'un programme, selon un politologue.",
+   "accent_words": [
+    "une vision"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n6",
+   "text": "Notre bus avance. Notre direction, elle, est en concertation.",
+   "accent_words": [
+    "en concertation"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui dit nous alors qu'il n'a rien fait.",
+   "accent_words": [
+    "rien fait"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,106 +83,155 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d"
+    "road",
+    "bus",
+    "sign",
+    "person",
+    "facade_row"
    ],
-   "onscreen_text": "« NOTRE GAUCHE » ×7",
-   "comic_action": "Un écran affiche un compteur « NOTRE » qui monte à 7.",
-   "expected_result": "Ancrage réel."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur l'arrêt de bus ; le bus arrive.",
+   "expected_result": "Le transport du jour posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
    "camera": "street_dolly",
    "set": [
     "bus",
     "road",
-    "sign"
+    "sign",
+    "person"
    ],
-   "onscreen_text": "NOTRE RETARD : 40 MIN",
-   "comic_action": "Le bus de la ville couvert d'étiquettes « NOTRE » ; panneau d'arrêt « NOTRE ARRÊT ».",
-   "expected_result": "Littéralisation."
+   "onscreen_text": "NOTRE BUS",
+   "comic_action": "Travelling le long du bus ; écran de destination qui défile.",
+   "expected_result": "Le bus porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n3"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "bus",
+    "tribune",
+    "screen",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "DANS NOTRE DIRECTION ?",
-   "comic_action": "Bulle du chauffeur ; les voyageurs haussent les épaules en souriant.",
-   "expected_result": "Le mot remplace la direction."
+   "onscreen_text": "« NOTRE GAUCHE » ×7",
+   "comic_action": "Le maire cubique à la tribune ; compteur « NOTRE GAUCHE » qui monte 1…7 ; à côté, l'écran « PROGRAMME » reste blanc.",
+   "expected_result": "Le possessif compté."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
     "bus",
-    "sign"
+    "road",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "CONCERTATION",
-   "comic_action": "Orbite sur le bus immobile au terminus, moteur qui tremble.",
-   "expected_result": "Absurde visuel."
+   "onscreen_text": "NOTRE RETARD",
+   "comic_action": "Travelling le long du bus ; écran de destination qui défile.",
+   "expected_result": "Le bus porte la pique."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "DESTINATION : VISION",
+   "comic_action": "Gros plan sur un écran géant en ville.",
+   "expected_result": "La pique s'affiche en écran."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "bus",
+    "road",
+    "sign",
+    "person"
+   ],
+   "onscreen_text": "DIRECTION : EN CONCERTATION",
+   "comic_action": "L'écran de destination du bus défile « NOTRE… NOTRE… NOTRE… » sans jamais afficher de terminus.",
+   "expected_result": "Le bus porte la pique."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "sign",
-    "bus",
-    "tshirt"
+    "road",
+    "person",
+    "tshirt",
+    "sign"
    ],
-   "onscreen_text": "À DÉFINIR ENSEMBLE",
-   "comic_action": "Le panneau d'affichage ; un voyageur en t-shirt « À GAUCHE DU CANAPÉ. » attend, assis.",
-   "expected_result": "Chute + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton pire retard de bus, en minutes, en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui dit nous alors qu'il n'a rien fait."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 83,
+ "word_count": 72,
  "claims": [
   {
-   "segment": "n1",
+   "text": "Le bus municipal s'appelle Notre Bus. Le chauffeur dit notre à chaque arrêt.",
+   "claim_type": "fiction_satirique",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre ». Détourné dans la ville fictive."
+  },
+  {
+   "text": "« notre gauche »",
+   "claim_type": "citation_exacte",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
+  },
+  {
+   "text": "Destination : une vision plutôt qu'un programme, selon un politologue.",
    "claim_type": "fait_public",
-   "text": "Dans son discours de lancement, « notre gauche » revient sept fois.",
-   "source_url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais"
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
   }
  ],
  "sources": [
   {
    "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
    "date": "2026-06-25",
-   "statut": "fait public (analyse lexicale)",
-   "usage": "Le possessif « notre » devient une étiquette collée sur tout.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "fait (analyse lexicale) + opinion rapportée",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Littéralisation du tic relevé par l'analyse lexicale (« notre gauche », 7 fois). Mème d'ancrage : « Notre gauche », répété sept fois dans le discours de lancement (analyse lexicale, 06/2026). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « notre gauche », sept fois dans un discours, et « une vision plutôt qu'un programme » : le bus municipal qui dit notre à chaque arrêt. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

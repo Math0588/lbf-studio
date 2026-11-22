@@ -3,81 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m009",
  "format": "A",
- "anchor": "« Notre gauche », répété sept fois dans le discours de lancement (analyse lexicale, 06/2026)",
+ "anchor": "« centre gauche, voire centre » et la coalition proposée par Macron : un marché où tout est servi tiède.",
  "situation": "le marché",
- "ressort": "électorat cliché",
- "title_cover": "Notre levain",
+ "ressort": "piques frontales sourcées (style tacle)",
+ "title_cover": "Marché tiède",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, la tomate est moche mais engagée.",
-  "Cent dix euros, trois légumes et un débat.",
-  "Notre levain, notre vin nature, notre tomate à quatorze euros.",
-  "Le marché où tout est à nous, sauf le marché."
+  "Ici, même les débats sont servis tiède.",
+  "Glucksmannville : le marché à température ambiante.",
+  "Le seul piment de France prié de se modérer.",
+  "Les glucksmanniens vont trouver ça équilibré."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le maraîcher, lui, dit « mon » : il est propriétaire.",
-  "Tout est « notre », sauf la caisse : elle est au maraîcher.",
-  "Cent dix euros le panier, mais le débat est offert."
+  "Pas chaud, pas froid. Le seul engagement ferme de la ville : la température.",
+  "Tiède garanti, de l'entrée au dessert.",
+  "La seule chose ferme ici : le thermomètre."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Tiède, de préférence.",
    "accent_words": [
-    "Glucksmann"
+    "Tiède"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Et tout le monde dit « notre », comme dans « notre gauche ».",
+   "text": "Au marché, tout est servi tiède. Le café, la soupe, les débats.",
    "accent_words": [
-    "notre"
+    "tiède"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "Ses critiques le placent centre gauche, voire centre. Le thermomètre aussi.",
+   "accent_words": [
+    "voire centre"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n3",
-   "text": "Au marché, on achète notre levain à neuf euros le kilo.",
-   "accent_words": [
-    "notre"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n4",
-   "text": "Notre vin nature à vingt-deux euros, qui sent la cave.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "text": "Macron lui propose une coalition. Normal : au marché, ils vendent le même tiède.",
+   "accent_words": [
+    "le même tiède"
+   ],
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Notre tomate ancienne à quatorze euros, moche mais engagée.",
+   "text": "Le marchand de piment a été prié de se modérer.",
    "accent_words": [
-    "moche mais engagée"
+    "se modérer"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Panier moyen : cent dix euros, trois légumes et un débat.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n7",
-   "text": "Le maraîcher, lui, dit « mon » : il est propriétaire.",
+   "text": "Pas chaud, pas froid. Le seul engagement ferme de la ville : la température.",
    "accent_words": [
-    "propriétaire"
+    "la température"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n8",
-   "text": "Ton produit le plus cher au marché, prix en commentaire.",
-   "accent_words": [],
+   "id": "n7",
+   "text": "Envoie ça au pote qui ne donne jamais d'avis tranché.",
+   "accent_words": [
+    "tranché"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,107 +83,153 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
     "shop",
+    "facade_row",
     "person",
-    "banner"
+    "sign"
    ],
-   "onscreen_text": "NOTRE MARCHÉ",
-   "comic_action": "Plongée sur le marché bio, banderole « NOTRE MARCHÉ ».",
-   "expected_result": "Ancrage."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
+   "expected_result": "Le commerce du jour posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "text3d"
+    "sign",
+    "text3d",
+    "fountain"
    ],
-   "onscreen_text": "LEVAIN : 9 €/KG",
-   "comic_action": "Étiquettes rouges : levain, vin nature 22 €.",
-   "expected_result": "Électorat cliché chiffré."
+   "onscreen_text": "TOUT EST TIÈDE",
+   "comic_action": "Thermomètre municipal sur la fontaine, bloqué sur « TIÈDE ».",
+   "expected_result": "Le tiède en décor."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
-    "shop",
+    "sign",
     "text3d",
-    "person"
+    "fountain"
    ],
-   "onscreen_text": "TOMATE ENGAGÉE : 14 €",
-   "comic_action": "Une tomate difforme sur un présentoir à badge militant.",
-   "expected_result": "Escalade."
+   "onscreen_text": "CENTRE GAUCHE, VOIRE CENTRE",
+   "comic_action": "Thermomètre municipal sur la fontaine, bloqué sur « TIÈDE ».",
+   "expected_result": "Le tiède en décor."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "shop",
-    "person"
+    "car",
+    "person",
+    "road",
+    "sign"
    ],
-   "onscreen_text": "PANIER : 110 €",
-   "comic_action": "Orbite sur un client qui débat devant trois légumes dans son panier.",
-   "expected_result": "Comptage."
+   "onscreen_text": "MÊME ÉTAL",
+   "comic_action": "La voiture du maire voisin klaxonne et ouvre la portière ; le maire cubique hésite sur le trottoir.",
+   "expected_result": "La drague de la coalition."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "shop",
+    "table",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "PIMENT : MODÉRÉ",
+   "comic_action": "Travelling entre les étals du marché.",
+   "expected_result": "Le marché porte la pique."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "sign",
+    "text3d",
+    "fountain"
+   ],
+   "onscreen_text": "ENGAGEMENT : 20 °C",
+   "comic_action": "Le thermomètre géant de la place reste bloqué sur « TIÈDE » malgré un habitant qui souffle dessus.",
+   "expected_result": "Le tiède en décor."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
     "shop",
+    "tshirt",
     "person",
-    "tshirt"
+    "sign"
    ],
-   "onscreen_text": "« MON » MARCHÉ",
-   "comic_action": "Le maraîcher compte les billets, ravi ; un client porte « PLUTÔT GAUCHE. TRÈS FATIGUÉ. ».",
-   "expected_result": "Chute + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton produit le plus cher au marché, prix en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui ne donne jamais d'avis tranché."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 84,
+ "word_count": 82,
  "claims": [
   {
-   "segment": "n2",
+   "text": "Ses critiques le placent centre gauche, voire centre. Le thermomètre aussi.",
    "claim_type": "fait_public",
-   "text": "Et tout le monde dit « notre », comme dans « notre gauche ».",
-   "source_url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais"
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
+  },
+  {
+   "text": "Macron lui propose une coalition. Normal : au marché, ils vendent le même tiède.",
+   "claim_type": "fait_public",
+   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
   }
  ],
  "sources": [
   {
    "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
    "date": "2026-06-25",
-   "statut": "fait public (analyse lexicale)",
-   "usage": "Le possessif « notre » devient une étiquette collée sur tout.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "fait (analyse lexicale) + opinion rapportée",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
+  },
+  {
+   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait public (AFP)",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Électorat cliché centre-ville (levain, vin nature, prix), cible = la ville fictive ; chute sur le seul vrai propriétaire. Mème d'ancrage : « Notre gauche », répété sept fois dans le discours de lancement (analyse lexicale, 06/2026). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « centre gauche, voire centre » et la coalition proposée par Macron : un marché où tout est servi tiède. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

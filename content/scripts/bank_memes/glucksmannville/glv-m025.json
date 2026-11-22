@@ -3,81 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m025",
  "format": "A",
- "anchor": "« Soyons sérieux » et « mettre une digue » (refus de la coalition suggérée par Macron, 07/11/2026)",
+ "anchor": "« toute ambiguïté de notre part est une faute éthique » (février 2026), quand un député LFI lui donne « aucune chance » : la pharmacie de l'ambiguïté.",
  "situation": "la pharmacie",
- "ressort": "bureaucratie récursive",
- "title_cover": "Protocole de sérieux",
+ "ressort": "piques frontales sourcées (style tacle)",
+ "title_cover": "Ambiguïté en sirop",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Un sirop contre trois formulaires de sérieux.",
-  "Ici, on soigne la toux par attestation.",
-  "La pharmacie la plus sérieuse de France.",
-  "Ta toux attend une ordonnance de sérieux."
+  "Ici, l'ambiguïté se vend en pharmacie.",
+  "Glucksmannville : la demi-dose de conviction.",
+  "Une faute éthique, vendue sans ordonnance.",
+  "Les glucksmanniens vont dire que c'est de la nuance."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Pendant ce temps, ta toux est devenue une coalition.",
-  "Toujours pas de sirop, mais une toux très bien organisée.",
-  "Le dossier est sérieux, le patient beaucoup moins."
+  "Toute ambiguïté est une faute. Ici, on la vend en sirop.",
+  "Interdite en discours, vendue au comptoir.",
+  "L'ambiguïté soigne tout. Sauf l'ambiguïté."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Sur ordonnance.",
    "accent_words": [
-    "Glucksmann"
+    "ordonnance"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sa réponse à la grande coalition suggérée : « Soyons sérieux »",
+   "text": "Le pharmacien délivre tout en demi-dose. Par prudence.",
    "accent_words": [
-    "Soyons sérieux"
+    "demi-dose"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "En 2026 : « toute ambiguïté de notre part est une faute éthique ».",
+   "accent_words": [
+    "faute éthique"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n3",
-   "text": "À la pharmacie, soyons sérieux est devenu un protocole.",
+   "id": "n4",
+   "text": "Sur la boîte : gauche, centre, un peu des deux. Notice illisible.",
    "accent_words": [
-    "soyons sérieux"
+    "Notice illisible"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n4",
-   "text": "Tu demandes un sirop : formulaire de sérieux, en trois exemplaires.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n5",
-   "text": "Pour le formulaire, il faut une attestation de sérieux signée.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "text": "Un insoumis lui donne « aucune chance » au second tour. Repos conseillé.",
+   "accent_words": [
+    "aucune chance"
+   ],
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n6",
-   "text": "L'attestation exige une ordonnance pour être sérieux.",
+   "text": "Toute ambiguïté est une faute. Ici, on la vend en sirop.",
    "accent_words": [
-    "être sérieux"
+    "en sirop"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Pendant ce temps, ta toux est devenue une coalition.",
+   "text": "Envoie ça au pote qui répond peut-être à toutes les invitations.",
    "accent_words": [
-    "une coalition"
+    "peut-être"
    ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ta pire galère en pharmacie, raconte en commentaire.",
-   "accent_words": [],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,106 +83,160 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
     "shop",
+    "facade_row",
     "person",
-    "screen"
+    "sign"
    ],
-   "onscreen_text": "SOYONS SÉRIEUX",
-   "comic_action": "Comptoir de pharmacie, écran « SOYONS SÉRIEUX ».",
-   "expected_result": "Ancrage réel."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
+   "expected_result": "Le commerce du jour posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "shop",
-    "form_stack"
+    "table",
+    "screen",
+    "form_stack",
+    "person"
    ],
-   "onscreen_text": "PROTOCOLE DE SÉRIEUX",
-   "comic_action": "Le pharmacien tend trois formulaires identiques.",
-   "expected_result": "Bureaucratie."
+   "onscreen_text": "DEMI-DOSE",
+   "comic_action": "Guichet municipal : écran, pile de formulaires, file d'attente.",
+   "expected_result": "Le guichet porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "form_stack",
-    "person"
+    "tribune",
+    "person",
+    "banner",
+    "studio_light"
    ],
-   "onscreen_text": "ATTESTATION ×3",
-   "comic_action": "Le client tousse en remplissant une attestation qui demande une ordonnance.",
-   "expected_result": "Récursivité."
+   "onscreen_text": "« UNE FAUTE ÉTHIQUE »",
+   "comic_action": "Le maire cubique à la tribune, projecteur, foule clairsemée.",
+   "expected_result": "Le discours porte la pique."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n7"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "shop",
-    "person",
+    "sign",
+    "road",
     "text3d"
    ],
-   "onscreen_text": "TOUX : COALITION",
-   "comic_action": "Orbite : trois petits nuages de toux s'assemblent au-dessus du client.",
-   "expected_result": "Chute."
+   "onscreen_text": "NOTICE : ?",
+   "comic_action": "Panneau directionnel à deux flèches opposées, toutes deux étiquetées « PAR LÀ ».",
+   "expected_result": "L'ambiguïté en signalétique."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "sign"
+   ],
+   "onscreen_text": "« AUCUNE CHANCE »",
+   "comic_action": "Écran de sondage : une barre monte… et s'arrête à mi-hauteur.",
+   "expected_result": "Le chiffre de sondage en jauge."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "screen",
+    "form_stack",
+    "person"
+   ],
+   "onscreen_text": "AMBIGUÏTÉ : EN SIROP",
+   "comic_action": "Rayon de la pharmacie : des flacons étiquetés « AMBIGUÏTÉ — GOÛT CENTRE » s'alignent jusqu'au plafond.",
+   "expected_result": "Le guichet porte la pique."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
     "shop",
-    "tshirt"
+    "tshirt",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le t-shirt « RÉPONSES CONCRÈTES : CHARGEMENT… » sur le présentoir.",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ta pire galère en pharmacie, raconte en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui répond peut-être à toutes les invitations."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 74,
+ "word_count": 79,
  "claims": [
   {
-   "segment": "n2",
+   "text": "« toute ambiguïté de notre part est une faute éthique »",
    "claim_type": "citation_exacte",
-   "text": "Sa réponse à la grande coalition suggérée : « Soyons sérieux »",
-   "source_url": "https://www.lagazettefrance.fr/article/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann"
+   "source": "https://www.sudradio.fr/politique/raphael-glucksmann-sur-lfi-toute-ambiguite-de-notre-part-est-une-faute-ethique-et-un-suicide-politique",
+   "note": "« Toute ambiguïté de notre part est une faute éthique et un suicide politique »."
+  },
+  {
+   "text": "« aucune chance »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-raphael-glucksmann-n-a-aucune-chance-d-acceder-au-second-tour-estime-le-depute-lfi-hadrien-clouet_8159216.html",
+   "note": "Selon un député LFI, « aucune chance » d'accéder au second tour."
+  },
+  {
+   "text": "Toute ambiguïté est une faute. Ici, on la vend en sirop.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.sudradio.fr/politique/raphael-glucksmann-sur-lfi-toute-ambiguite-de-notre-part-est-une-faute-ethique-et-un-suicide-politique",
+   "note": "« Toute ambiguïté de notre part est une faute éthique et un suicide politique ». Détourné dans la ville fictive."
   }
  ],
  "sources": [
   {
-   "url": "https://www.lagazettefrance.fr/article/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann",
-   "date": "2026-11-07",
-   "statut": "fait public (citations rapportées)",
-   "usage": "Fragments exacts, typés citation_exacte ; le passage de l'article sur l'immigration est écarté.",
-   "consulted": "2026-11-21"
+   "url": "https://www.sudradio.fr/politique/raphael-glucksmann-sur-lfi-toute-ambiguite-de-notre-part-est-une-faute-ethique-et-un-suicide-politique",
+   "date": "2026-02",
+   "consulted": "2026-11-22",
+   "statut": "citation rapportée",
+   "note": "« Toute ambiguïté de notre part est une faute éthique et un suicide politique »."
+  },
+  {
+   "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-raphael-glucksmann-n-a-aucune-chance-d-acceder-au-second-tour-estime-le-depute-lfi-hadrien-clouet_8159216.html",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "opinion d'un adversaire",
+   "note": "Selon un député LFI, « aucune chance » d'accéder au second tour."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Bureaucratie récursive à partir d'une réplique réelle (« Soyons sérieux »). Mème d'ancrage : « Soyons sérieux » et « mettre une digue » (refus de la coalition suggérée par Macron, 07/11/2026). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « toute ambiguïté de notre part est une faute éthique » (février 2026), quand un député LFI lui donne « aucune chance » : la pharmacie de l'ambiguïté. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

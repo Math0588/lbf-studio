@@ -3,79 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m020",
  "format": "A",
- "anchor": "Une gauche qui peut « rassembler, gouverner et gagner » (primaire, 10/2026)",
+ "anchor": "« rassembler, gouverner et gagner » (primaire 2026) en rond-point géant, avec la sortie centre ouverte par la coalition de Macron.",
  "situation": "le rond-point",
- "ressort": "escalade",
+ "ressort": "piques frontales sourcées (style tacle)",
  "title_cover": "Tous au rond-point",
  "hook_variants": [
-  "Sa gauche doit « rassembler, gouverner et gagner », dans cet ordre.",
-  "Rassembler d'abord. Sortir, jamais.",
-  "Toute la ville coincée sur un rond-point, mais ensemble.",
-  "Étape un : rassembler. Étape deux : introuvable.",
-  "Le rond-point le plus uni de France."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, rassembler, c'est tourner en rond ensemble.",
+  "Glucksmannville : le rond-point de la gauche unie.",
+  "Tout le monde tourne. Personne ne sort.",
+  "Les glucksmanniens vont faire un tour de plus."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Mais la photo aérienne est magnifique.",
-  "Rassemblés, bloqués, mais quelle photo.",
-  "Étape une réussie, étapes deux et trois coincées au centre."
+  "Le rassemblement est réussi : tout le monde tourne en rond ensemble.",
+  "Rassemblés, oui. Immobiles, aussi.",
+  "Une seule sortie ouverte : celle du centre."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Sa gauche doit « rassembler, gouverner et gagner », dans cet ordre.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. En rond.",
    "accent_words": [
-    "rassembler, gouverner et gagner"
+    "En rond"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Au rond-point de Glucksmannville, on commence donc par rassembler.",
+   "text": "Pour rassembler la gauche, la mairie a construit un rond-point géant.",
    "accent_words": [
-    "rassembler"
+    "rond-point géant"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Toutes les voitures sont invitées au centre, pour se parler.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "text": "Sa formule : une gauche qui peut « rassembler, gouverner et gagner ».",
+   "accent_words": [
+    "rassembler"
+   ],
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Puis les bus, les piétons, les poussettes, le marché du dimanche.",
-   "accent_words": [],
+   "text": "Tout le monde tourne autour. Personne ne se rejoint.",
+   "accent_words": [
+    "Personne"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "À midi, toute la ville est rassemblée sur le rond-point.",
+   "text": "Macron, lui, veut le faire entrer dans sa coalition. Par la sortie centre.",
    "accent_words": [
-    "toute la ville"
+    "sortie centre"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Plus personne ne peut sortir pour gouverner, ni pour gagner.",
-   "accent_words": [],
+   "text": "Le rassemblement est réussi : tout le monde tourne en rond ensemble.",
+   "accent_words": [
+    "en rond ensemble"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Mais la photo aérienne est magnifique.",
+   "text": "Envoie ça au pote qui crée un groupe WhatsApp où personne ne répond.",
    "accent_words": [
-    "magnifique"
+    "personne ne répond"
    ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Le rond-point le plus bouché de ta ville, nomme-le en commentaire.",
-   "accent_words": [],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -83,106 +83,160 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
     "roundabout",
+    "road",
     "car_orbit",
-    "text3d"
+    "sign",
+    "mairie"
    ],
-   "onscreen_text": "RASSEMBLER",
-   "comic_action": "Plongée sur le rond-point, trois étiquettes 3D « RASSEMBLER / GOUVERNER / GAGNER ».",
-   "expected_result": "Ancrage réel."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur le rond-point central : les voitures tournent, la mairie au fond.",
+   "expected_result": "La ville posée, tout tourne en rond."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
-   ],
-   "camera": "street_dolly",
-   "set": [
-    "roundabout",
-    "car"
-   ],
-   "onscreen_text": "TOUS AU CENTRE",
-   "comic_action": "Les voitures montent sur l'îlot central pour discuter, portières ouvertes.",
-   "expected_result": "Escalade 1."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4",
-    "n5"
+    "n2"
    ],
    "camera": "orbit",
    "set": [
     "roundabout",
-    "bus",
+    "car_orbit",
+    "sign"
+   ],
+   "onscreen_text": "ROND-POINT DU RASSEMBLEMENT",
+   "comic_action": "Orbite autour du rond-point ; les voitures tournent sans sortir.",
+   "expected_result": "Le rond-point porte la pique."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "banner",
+    "studio_light",
     "person"
    ],
-   "onscreen_text": "+ BUS + MARCHÉ",
-   "comic_action": "Orbite : bus, piétons, poussettes et étals du marché s'entassent sur l'îlot.",
-   "expected_result": "Escalade 2."
+   "onscreen_text": "« RASSEMBLER, GOUVERNER, GAGNER »",
+   "comic_action": "Le maire cubique lève le poing sur la tribune ; banderole « LA BATAILLE COMMENCE » ; la foule regarde sa montre.",
+   "expected_result": "Le grand mot face au petit effet."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6"
+    "n4"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "car",
-    "person"
+    "roundabout",
+    "car_orbit",
+    "sign"
    ],
-   "onscreen_text": "GOUVERNER : BLOQUÉ",
-   "comic_action": "Les étiquettes « GOUVERNER » et « GAGNER » sont coincées sous une voiture.",
-   "expected_result": "Chute."
+   "onscreen_text": "PERSONNE NE SE REJOINT",
+   "comic_action": "Orbite autour du rond-point ; les voitures tournent sans sortir.",
+   "expected_result": "Le rond-point porte la pique."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "car",
+    "person",
+    "road",
+    "sign"
+   ],
+   "onscreen_text": "SORTIE : CENTRE",
+   "comic_action": "La voiture du maire voisin klaxonne et ouvre la portière ; le maire cubique hésite sur le trottoir.",
+   "expected_result": "La drague de la coalition."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "roundabout",
+    "car_orbit",
+    "sign"
+   ],
+   "onscreen_text": "RASSEMBLEMENT : EN ROND",
+   "comic_action": "Plongée : toutes les voitures de la ville tournent sur le rond-point, en file parfaite, sans qu'aucune ne sorte.",
+   "expected_result": "Le rond-point porte la pique."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
     "roundabout",
+    "car_orbit",
+    "person",
     "tshirt"
    ],
-   "onscreen_text": "PHOTO MAGNIFIQUE",
-   "comic_action": "Plan aérien très beau de la ville entassée ; un t-shirt « J'AI UN AVIS. PAS DE MANDAT. » au centre.",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur le rond-point ; un habitant en t-shirt de la collection fait du stop au milieu.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Le rond-point le plus bouché de ta ville, nomme-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui crée un groupe WhatsApp où personne ne répond."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 79,
+ "word_count": 81,
  "claims": [
   {
-   "segment": "n1",
+   "text": "Pour rassembler la gauche, la mairie a construit un rond-point géant.",
+   "claim_type": "fiction_satirique",
+   "source": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
+   "note": "Une gauche qui peut « rassembler, gouverner et gagner ». Détourné dans la ville fictive."
+  },
+  {
+   "text": "« rassembler, gouverner et gagner »",
    "claim_type": "citation_exacte",
-   "text": "Sa gauche doit « rassembler, gouverner et gagner », dans cet ordre.",
-   "source_url": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour"
+   "source": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
+   "note": "Une gauche qui peut « rassembler, gouverner et gagner »."
+  },
+  {
+   "text": "Macron, lui, veut le faire entrer dans sa coalition. Par la sortie centre.",
+   "claim_type": "fait_public",
+   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
   }
  ],
  "sources": [
   {
    "url": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
    "date": "2026-10-12",
+   "consulted": "2026-11-22",
    "statut": "fait public (formule rapportée)",
-   "usage": "Triptyque cité à l'identique ; aucun chiffre électoral.",
-   "consulted": "2026-11-21"
+   "note": "Une gauche qui peut « rassembler, gouverner et gagner »."
+  },
+  {
+   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait public (AFP)",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Escalade : le triptyque réel pris dans l'ordre, la première étape bloque les deux autres. Mème d'ancrage : Une gauche qui peut « rassembler, gouverner et gagner » (primaire, 10/2026). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « rassembler, gouverner et gagner » (primaire 2026) en rond-point géant, avec la sortie centre ouverte par la coalition de Macron. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

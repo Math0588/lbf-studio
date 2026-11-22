@@ -3,81 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m027",
  "format": "A",
- "anchor": "La « timidité sociale » de son programme (critique d'un politiste, 06/2026)",
+ "anchor": "« Glucksmann, la gauche en moins » (Politis, octobre 2026) : il a gagné une primaire, pas la gauche ; le conseil de quartier cherche la gauche.",
  "situation": "le conseil de quartier",
- "ressort": "promesse contre réalité",
- "title_cover": "Plan audacieux",
+ "ressort": "piques frontales sourcées (style tacle)",
+ "title_cover": "Avis de recherche",
  "hook_variants": [
-  "Un politiste a pointé la timidité sociale de son programme.",
-  "Un grand plan audacieux : repeindre un banc.",
-  "En beige, pour ne brusquer personne.",
-  "Le micro réglé sur chuchotement.",
-  "Ici, l'audace s'arrête à la moitié du banc."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, le conseil de quartier cherche la gauche.",
+  "Glucksmannville : avis de recherche, la gauche.",
+  "Il a gagné une primaire. La gauche, on la cherche.",
+  "Les glucksmanniens vont dire qu'elle est à côté."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Au vote final, le banc est repeint à moitié, par consensus.",
-  "Un demi-banc beige : le quartier n'a jamais été aussi audacieux.",
-  "Le banc est à moitié repeint, et l'autre moitié est à l'écoute."
+  "Le quartier a un maire, une vision, un levain. Manque la gauche.",
+  "Tout est là, sauf l'essentiel.",
+  "Le quartier a tout. Sauf ce qu'il annonce."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Un politiste a pointé la timidité sociale de son programme.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. À moitié.",
    "accent_words": [
-    "timidité sociale"
+    "À moitié"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Au conseil de quartier de Glucksmannville, c'est devenu une méthode.",
-   "accent_words": [],
+   "text": "Ordre du jour : où est passée la gauche ? Point reporté.",
+   "accent_words": [
+    "Point reporté"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Sur l'affiche : « Grand plan audacieux pour le quartier ».",
+   "text": "Le titre d'un édito d'octobre : « Glucksmann, la gauche en moins ».",
    "accent_words": [
-    "audacieux"
+    "la gauche en moins"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "En vrai, on propose de repeindre un banc, si possible.",
+   "text": "Le texte ajoute : il a gagné une primaire, pas la gauche.",
    "accent_words": [
-    "repeindre un banc"
+    "pas la gauche"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Plutôt en beige, pour ne pas brusquer les autres bancs.",
+   "text": "Le conseil adopte une motion. Elle est rédigée au centre.",
    "accent_words": [
-    "les autres bancs"
+    "au centre"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le micro est réglé sur chuchotement, pour plus d'écoute.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n7",
-   "text": "Au vote final, le banc est repeint à moitié, par consensus.",
+   "text": "Le quartier a un maire, une vision, un levain. Manque la gauche.",
    "accent_words": [
-    "repeint à moitié"
+    "Manque la gauche"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n8",
-   "text": "La décision la plus timide de ta mairie, en commentaire.",
-   "accent_words": [],
+   "id": "n7",
+   "text": "Envoie ça au pote qui se dit de gauche jusqu'à sa feuille d'impôts.",
+   "accent_words": [
+    "feuille d'impôts"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,106 +83,148 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "scroll",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person",
+    "car"
    ],
-   "onscreen_text": "TIMIDITÉ SOCIALE",
-   "comic_action": "Un parchemin avec le mot « TIMIDITÉ » en tout petit.",
-   "expected_result": "Ancrage (critique d'un politiste)."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
+   "expected_result": "La ville et son camp posés en une seconde."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "banner",
-    "sign",
-    "person"
+    "table",
+    "person",
+    "form_stack",
+    "building"
    ],
-   "onscreen_text": "PLAN AUDACIEUX",
-   "comic_action": "Grande banderole « PLAN AUDACIEUX » devant la salle.",
-   "expected_result": "La promesse."
+   "onscreen_text": "ORDRE DU JOUR : LA GAUCHE ?",
+   "comic_action": "Réunion de copro autour d'une table ; pile de procès-verbaux.",
+   "expected_result": "La copro porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
-    "bench",
+    "screen",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "REPEINDRE UN BANC ?",
-   "comic_action": "Un pot de peinture beige posé à côté d'un banc.",
-   "expected_result": "La réalité."
+   "onscreen_text": "« LA GAUCHE EN MOINS »",
+   "comic_action": "Gros plan sur un écran géant en ville.",
+   "expected_result": "La pique s'affiche en écran."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "tribune",
+    "ground",
     "person",
-    "table"
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "MICRO : CHUCHOTEMENT",
-   "comic_action": "Orbite : tout le monde se penche pour entendre l'orateur qui chuchote.",
-   "expected_result": "Escalade."
+   "onscreen_text": "PRIMAIRE ≠ GAUCHE",
+   "comic_action": "Plongée sur la place : une petite foule forme un « 66 % » ; autour, la ville est vide.",
+   "expected_result": "Le score relatif à la participation."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "table",
+    "person",
+    "form_stack",
+    "building"
+   ],
+   "onscreen_text": "MOTION : CENTRE",
+   "comic_action": "Réunion de copro autour d'une table ; pile de procès-verbaux.",
+   "expected_result": "La copro porte la pique."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "sign",
+    "text3d",
+    "road"
+   ],
+   "onscreen_text": "AVIS DE RECHERCHE : LA GAUCHE",
+   "comic_action": "Affiche « AVIS DE RECHERCHE » collée sur le panneau du quartier, silhouette en pointillés.",
+   "expected_result": "La pique s'affiche en panneau."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "bench",
-    "tshirt"
+    "mairie",
+    "person",
+    "tshirt",
+    "banner"
    ],
-   "onscreen_text": "BANC : 50 %",
-   "comic_action": "Le banc à moitié beige ; un habitant en t-shirt « PLUTÔT GAUCHE. TRÈS FATIGUÉ. » s'assoit sur la moitié sèche.",
-   "expected_result": "Chute + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "La décision la plus timide de ta mairie, en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui se dit de gauche jusqu'à sa feuille d'impôts."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 81,
+ "word_count": 82,
  "claims": [
   {
-   "segment": "n1",
+   "text": "« Glucksmann, la gauche en moins »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
+  },
+  {
+   "text": "Le texte ajoute : il a gagné une primaire, pas la gauche.",
    "claim_type": "fait_public",
-   "text": "Un politiste a pointé la timidité sociale de son programme.",
-   "source_url": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/"
+   "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
   }
  ],
  "sources": [
   {
-   "url": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/",
-   "date": "2026-06-11",
-   "statut": "opinion (entretien)",
-   "usage": "Attribuée à « un politiste ».",
-   "consulted": "2026-11-21"
+   "url": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "date": "2026-10",
+   "consulted": "2026-11-22",
+   "statut": "opinion (éditorial, titre cité)",
+   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Promesse contre réalité à partir d'une critique d'analyste ; la mollesse perçue devient un banc à moitié repeint. Mème d'ancrage : La « timidité sociale » de son programme (critique d'un politiste, 06/2026). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « Glucksmann, la gauche en moins » (Politis, octobre 2026) : il a gagné une primaire, pas la gauche ; le conseil de quartier cherche la gauche. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

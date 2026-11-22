@@ -50,7 +50,7 @@ def results(q: str) -> list[dict]:
 
 def score(q: str, must: list, r: dict) -> float:
     t = norm(r["title"] + " " + r["mp3"].rsplit("/", 1)[-1].replace("-", " ").replace("_", " "))
-    if any(norm(m) not in t for m in must):
+    if any(f" {norm(m)} " not in f" {t} " for m in must):   # mots entiers (« cap » ≠ « handicapés »)
         return -1
     qw = set(norm(q).split())
     return len(qw & set(t.split())) / max(1, len(qw)) - 0.01 * len(t.split())
@@ -58,8 +58,12 @@ def score(q: str, must: list, r: dict) -> float:
 
 def fetch(key: str, spec: dict) -> dict:
     q, must = spec["q"], spec.get("must", [])
-    res = results(q)
-    ranked = sorted(res, key=lambda r: score(q, must, r), reverse=True)
+    res, ranked = [], []
+    for qq in [q] + spec.get("alt", []):          # recherches alternatives si rien de conforme
+        res = results(qq)
+        ranked = sorted(res, key=lambda r: score(q, must, r), reverse=True)
+        if ranked and score(q, must, ranked[0]) >= 0:
+            break
     if spec.get("pick") is not None and spec["pick"] < len(ranked):
         best = ranked[spec["pick"]]
     else:

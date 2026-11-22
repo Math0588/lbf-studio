@@ -3,79 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m012",
  "format": "A",
- "anchor": "Neuf mois, 300 réunions, 150 auditions, puis un an de plus « pour transformer une vision en programme » (06/2025)",
+ "anchor": "le risque de « macronisme sous bannière sociale-démocrate » (Politis), le « mirage social-démocrate » et la coalition de Macron, au restaurant.",
  "situation": "le restaurant",
- "ressort": "promesse contre réalité",
- "title_cover": "Vision de l'assiette",
+ "ressort": "piques frontales sourcées (style tacle)",
+ "title_cover": "Menu rose, assiette bleue",
  "hook_variants": [
-  "Il s'est donné un an pour transformer une vision en programme.",
-  "Trente-huit euros pour une assiette vide et un carnet.",
-  "Ici, le plat arrive dans un an.",
-  "Le menu est une vision. Le plat, un programme.",
-  "Le restaurant où l'on paie la concertation."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, la carte est rose et l'assiette bleue.",
+  "Glucksmannville : le restaurant du macronisme rosé.",
+  "Nouveau menu, vieille recette.",
+  "Les glucksmanniens vont renvoyer l'assiette."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le plat arrivera après un an de réflexion collective.",
-  "Assiette vide, addition pleine, plat prévu dans un an.",
-  "Le carnet est délicieux, paraît-il."
+  "Rose sur la carte, bleu dans l'assiette. Le client paie le même prix.",
+  "Nouveau nom, même goût, même addition.",
+  "Le chef change la nappe. Pas la recette."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Il s'est donné un an pour transformer une vision en programme.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Menu unique.",
    "accent_words": [
-    "transformer une vision en programme"
+    "Menu unique"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le restaurant de Glucksmannville a fait pareil avec son menu.",
-   "accent_words": [],
+   "text": "Au restaurant social-démocrate, la carte est rose. Le plat est bleu Macron.",
+   "accent_words": [
+    "bleu Macron"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "À la carte : « Vision de l'assiette, un voyage partagé ».",
+   "text": "Pour Politis, le risque : refaire du macronisme sous bannière sociale-démocrate.",
    "accent_words": [
-    "Vision de l'assiette"
+    "macronisme"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le serveur t'apporte une assiette vide et un carnet.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "text": "Au menu du jour, le « mirage social-démocrate ». Servi froid.",
+   "accent_words": [
+    "mirage"
+   ],
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n5",
-   "text": "C'est la phase de concertation : note ce que tu aimerais manger.",
+   "text": "En dessert, Macron propose une coalition. Le chef joue l'offusqué.",
    "accent_words": [
-    "la phase de concertation"
+    "l'offusqué"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "L'addition, elle, arrive tout de suite : trente-huit euros.",
+   "text": "Rose sur la carte, bleu dans l'assiette. Le client paie le même prix.",
    "accent_words": [
-    "trente-huit euros"
+    "le même prix"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le plat arrivera après un an de réflexion collective.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Le pire plat payé trop cher, raconte-le en commentaire.",
-   "accent_words": [],
+   "text": "Envoie ça au pote qui renomme le même plat pour le vendre plus cher.",
+   "accent_words": [
+    "plus cher"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -83,83 +83,118 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "window_pass",
+   "camera": "descend",
    "set": [
     "shop",
-    "table",
-    "person"
+    "facade_row",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "UN AN DE RÉFLEXION",
-   "comic_action": "Vitrine d'un restaurant chic, ardoise « UN AN DE RÉFLEXION ».",
-   "expected_result": "Ancrage."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
+   "expected_result": "Le commerce du jour posé."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "sign",
+    "person",
+    "fountain"
+   ],
+   "onscreen_text": "CARTE ROSE / PLAT BLEU",
+   "comic_action": "Table de restaurant ; la carte-ardoise affiche les prix.",
+   "expected_result": "Le restaurant porte la pique."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "scroll"
+    "screen",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "VISION DE L'ASSIETTE",
-   "comic_action": "Le menu-parchemin s'ouvre sur un seul plat poétique.",
-   "expected_result": "La promesse."
+   "onscreen_text": "MACRONISME SOUS BANNIÈRE",
+   "comic_action": "Écran : silhouette du maire, puis le même costume bleu de la ville voisine se superpose.",
+   "expected_result": "La ressemblance, montrée."
   },
   {
-   "id": "s3",
+   "id": "s4",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n4"
    ],
    "camera": "closeup",
    "set": [
     "table",
+    "sign",
     "person",
-    "form_stack"
+    "fountain"
    ],
-   "onscreen_text": "ASSIETTE VIDE + CARNET",
-   "comic_action": "Le serveur pose une assiette vide et un carnet ; le client écrit « des pâtes ? ».",
-   "expected_result": "La réalité."
+   "onscreen_text": "« MIRAGE SOCIAL-DÉMOCRATE »",
+   "comic_action": "Table de restaurant ; la carte-ardoise affiche les prix.",
+   "expected_result": "Le restaurant porte la pique."
   },
   {
-   "id": "s4",
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "car",
+    "person",
+    "road",
+    "sign"
+   ],
+   "onscreen_text": "DESSERT : COALITION",
+   "comic_action": "La voiture du maire voisin klaxonne et ouvre la portière ; le maire cubique hésite sur le trottoir.",
+   "expected_result": "La drague de la coalition."
+  },
+  {
+   "id": "s6",
    "narration_ids": [
     "n6"
    ],
    "camera": "closeup",
    "set": [
     "table",
-    "text3d"
+    "sign",
+    "person",
+    "fountain"
    ],
-   "onscreen_text": "ADDITION : 38 €",
-   "comic_action": "L'addition arrive instantanément, étiquette rouge.",
-   "expected_result": "Chute chiffrée."
+   "onscreen_text": "MÊME PRIX",
+   "comic_action": "Le serveur retourne l'assiette : dessous, une étiquette « MACRONVILLE ».",
+   "expected_result": "Le restaurant porte la pique."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "table",
+    "shop",
     "tshirt",
-    "person"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "SERVI DANS 1 AN",
-   "comic_action": "Le client, en t-shirt « À GAUCHE DU CANAPÉ. », attend devant son assiette vide.",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Le pire plat payé trop cher, raconte-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui renomme le même plat pour le vendre plus cher."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -169,21 +204,53 @@
  "word_count": 81,
  "claims": [
   {
-   "segment": "n1",
+   "text": "Au restaurant social-démocrate, la carte est rose. Le plat est bleu Macron.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate. Détourné dans la ville fictive."
+  },
+  {
+   "text": "Pour Politis, le risque : refaire du macronisme sous bannière sociale-démocrate.",
    "claim_type": "fait_public",
-   "text": "Il s'est donné un an pour transformer une vision en programme.",
-   "source_url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays"
+   "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
+  },
+  {
+   "text": "« mirage social-démocrate »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.politis.fr/dossiers/2027-glucksmann-croit-au-mirage-social-democrate/",
+   "note": "« 2027 : Glucksmann croit au mirage social-démocrate »."
+  },
+  {
+   "text": "En dessert, Macron propose une coalition. Le chef joue l'offusqué.",
+   "claim_type": "fait_public",
+   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-   "date": "2025-06-23",
-   "statut": "fait public (bilan de Place publique et formule citée par Public Sénat)",
-   "usage": "Chiffres et formule repris à l'identique ; le reste est fiction.",
-   "consulted": "2026-11-21"
+   "url": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "date": "2026-10",
+   "consulted": "2026-11-22",
+   "statut": "opinion (éditorial, titre cité)",
+   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
+  },
+  {
+   "url": "https://www.politis.fr/dossiers/2027-glucksmann-croit-au-mirage-social-democrate/",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "opinion (titre de dossier)",
+   "note": "« 2027 : Glucksmann croit au mirage social-démocrate »."
+  },
+  {
+   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait public (AFP)",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Promesse contre réalité : la formule réelle « transformer une vision en programme » devient un menu sans plat. Mème d'ancrage : Neuf mois, 300 réunions, 150 auditions, puis un an de plus « pour transformer une vision en programme » (06/2025). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : le risque de « macronisme sous bannière sociale-démocrate » (Politis), le « mirage social-démocrate » et la coalition de Macron, au restaurant. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

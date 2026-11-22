@@ -1,54 +1,582 @@
 {
  "_note": "Sons mèmes réels cherchés sur myinstants.com (workflow « Banque de sons »). q = recherche, must = mots obligatoires dans le titre. role : chute / retournement / scandale / rapide / gene / bravo / quote. quote_match = expression de la narration qui déclenche la vraie réplique juste après la phrase. Un son n'entre au montage qu'avec approved=true dans manifest.json.",
- "fahh": {"q": "fahh", "role": ["chute", "retournement"]},
- "vine_boom": {"q": "vine boom", "must": ["boom"], "role": ["chute", "retournement"]},
- "bruh": {"q": "bruh", "must": ["bruh"], "role": ["retournement"]},
- "sad_violin": {"q": "sad violin", "must": ["violin"], "role": ["chute"]},
- "oh_my_god_wow": {"q": "oh my god wow", "must": ["wow"], "role": ["scandale"]},
- "ba_dum_tss": {"q": "ba dum tss", "must": ["tss"], "role": ["chute"]},
- "crickets": {"q": "crickets", "must": ["cricket"], "role": ["gene"]},
- "emotional_damage": {"q": "emotional damage", "must": ["emotional"], "role": ["chute"]},
- "oh_no_no_no": {"q": "oh no no no no laugh", "must": ["no"], "role": ["scandale"]},
- "dun_dun_dun": {"q": "dun dun dun", "must": ["dun"], "role": ["scandale"]},
- "mission_failed": {"q": "mission failed", "must": ["mission"], "role": ["chute"]},
- "applause": {"q": "applause", "must": ["applau"], "role": ["bravo"]},
- "tequila_heineken": {"q": "tequila heineken", "must": ["tequila"], "role": ["rapide"]},
- "je_pete_ma_biere": {"q": "je pete ma biere", "must": ["biere"], "role": ["scandale"]},
- "je_pete_ma_bulle": {"q": "je pete ma bulle", "must": ["bulle"], "role": ["scandale"]},
- "nan_mais_allo": {"q": "nan mais allo quoi", "must": ["allo"], "role": ["scandale"]},
- "cest_pas_faux": {"q": "c'est pas faux kaamelott", "must": ["faux"], "role": ["retournement"]},
- "pas_de_bras": {"q": "pas de bras pas de chocolat", "must": ["chocolat"], "role": ["chute"]},
- "ah_bah_bravo": {"q": "ah bah bravo", "must": ["bravo"], "role": ["bravo"]},
- "mais_cest_nimporte_quoi": {"q": "mais c'est n'importe quoi", "must": ["importe"], "role": ["scandale"]},
- "cest_honteux": {"q": "c'est honteux", "must": ["honteux"], "role": ["scandale"]},
- "quest_ce_que_jen_ai_a_foutre": {"q": "qu'est-ce que j'en ai à foutre", "must": ["foutre"], "role": ["retournement"]},
- "lysopaine": {"q": "lysopaine", "must": ["lysopa"], "role": ["chute"]},
- "cest_une_dinguerie": {"q": "c'est une dinguerie", "must": ["dinguerie"], "role": ["scandale"]},
- "quoi_feur": {"q": "quoi feur", "must": ["feur"], "role": ["retournement"]},
- "wesh_alors": {"q": "wesh alors", "must": ["wesh"], "role": ["rapide"]},
- "cest_pas_sorcier": {"q": "c'est pas sorcier generique", "must": ["sorcier"], "role": ["rapide"]},
- "et_bim": {"q": "et bim", "must": ["bim"], "role": ["chute"]},
- "ca_va_peter": {"q": "ça va peter", "must": ["peter"], "role": ["scandale"]},
- "macron_cest_notre_projet": {"q": "c'est notre projet macron", "must": ["projet"], "role": ["chute", "quote"], "cities": ["macronville"], "quote_match": "notre projet"},
- "macron_pognon_de_dingue": {"q": "pognon de dingue", "must": ["pognon"], "role": ["quote"], "cities": ["macronville"], "quote_match": "pognon de dingue"},
- "macron_en_meme_temps": {"q": "macron en meme temps", "must": ["temps"], "role": ["quote"], "cities": ["macronville"], "quote_match": "en même temps"},
- "macron_perlimpinpin": {"q": "poudre de perlimpinpin", "must": ["perlimpinpin"], "role": ["quote"], "cities": ["macronville"], "quote_match": "perlimpinpin"},
- "macron_for_sure": {"q": "macron for sure", "must": ["sure"], "role": ["quote", "chute"], "cities": ["macronville"], "quote_match": "for sure"},
- "macron_hey_hey": {"q": "macron hey hey", "must": ["hey"], "role": ["quote"], "cities": ["macronville"], "quote_match": "hey ! hey"},
- "macron_traverse_la_rue": {"q": "je traverse la rue macron", "must": ["rue"], "role": ["quote"], "cities": ["macronville"], "quote_match": "traverse la rue"},
- "macron_explosion": {"q": "macron explosion", "must": ["macron"], "role": ["chute"], "cities": ["macronville"]},
- "macron_du_fromage": {"q": "macron du fromage", "must": ["fromage"], "role": ["retournement"], "cities": ["macronville"]},
- "melenchon_la_republique_cest_moi": {"q": "la republique c'est moi melenchon", "must": ["publique"], "role": ["quote", "chute"], "cities": ["melenchonville"], "quote_match": "république, c'est moi"},
- "melenchon_ma_personne_est_sacree": {"q": "ma personne est sacree", "must": ["sacr"], "role": ["chute", "scandale"], "cities": ["melenchonville"]},
- "melenchon_bruit_et_fureur": {"q": "melenchon bruit et la fureur", "must": ["fureur"], "role": ["quote"], "cities": ["melenchonville"], "quote_match": "bruit et la fureur"},
- "melenchon": {"q": "melenchon", "must": ["melenchon"], "role": ["scandale"], "cities": ["melenchonville"]},
- "glucksmann_cap_clair": {"q": "il faut un cap clair", "must": ["cap"], "role": ["quote", "chute"], "cities": ["glucksmannville"], "quote_match": "cap clair"},
- "glucksmann_love": {"q": "glucksmann love", "must": ["glucksmann"], "role": ["quote"], "cities": ["glucksmannville"], "quote_match": "glucksmann love"},
- "bardella": {"q": "bardella", "must": ["bardella"], "role": ["chute"], "cities": ["bardellaville"]},
- "marine_le_pen": {"q": "marine le pen", "must": ["pen"], "role": ["chute"], "cities": ["marineville"]},
- "zemmour": {"q": "zemmour", "must": ["zemmour"], "role": ["chute"], "cities": ["zemmourville"]},
- "chirac_en_touche_une": {"q": "chirac ça m'en touche une", "must": ["touche"], "role": ["retournement"]},
- "chirac_abracadabrantesque": {"q": "abracadabrantesque", "must": ["abracadabr"], "role": ["scandale"]},
- "sarkozy_casse_toi": {"q": "casse toi pauvre con", "must": ["casse"], "role": ["chute"]},
- "hollande_moi_president": {"q": "moi president hollande", "must": ["president"], "role": ["retournement"]}
+ "fahh": {
+  "q": "fahh",
+  "role": [
+   "chute",
+   "retournement"
+  ]
+ },
+ "vine_boom": {
+  "q": "vine boom",
+  "must": [
+   "boom"
+  ],
+  "role": [
+   "chute",
+   "retournement"
+  ]
+ },
+ "bruh": {
+  "q": "bruh",
+  "must": [
+   "bruh"
+  ],
+  "role": [
+   "retournement"
+  ]
+ },
+ "sad_violin": {
+  "q": "sad violin",
+  "must": [
+   "violin"
+  ],
+  "role": [
+   "chute"
+  ]
+ },
+ "oh_my_god_wow": {
+  "q": "oh my god wow",
+  "must": [
+   "wow"
+  ],
+  "role": [
+   "scandale"
+  ]
+ },
+ "ba_dum_tss": {
+  "q": "ba dum tss",
+  "must": [
+   "tss"
+  ],
+  "role": [
+   "chute"
+  ]
+ },
+ "crickets": {
+  "q": "crickets",
+  "must": [
+   "cricket"
+  ],
+  "role": [
+   "gene"
+  ]
+ },
+ "emotional_damage": {
+  "q": "emotional damage",
+  "must": [
+   "emotional"
+  ],
+  "role": [
+   "chute"
+  ]
+ },
+ "oh_no_no_no": {
+  "q": "oh no no no no laugh",
+  "must": [
+   "no"
+  ],
+  "role": [
+   "scandale"
+  ]
+ },
+ "dun_dun_dun": {
+  "q": "dun dun dun",
+  "must": [
+   "dun"
+  ],
+  "role": [
+   "scandale"
+  ]
+ },
+ "mission_failed": {
+  "q": "mission failed",
+  "must": [
+   "mission"
+  ],
+  "role": [
+   "chute"
+  ]
+ },
+ "applause": {
+  "q": "applause",
+  "must": [
+   "applau"
+  ],
+  "role": [
+   "bravo"
+  ]
+ },
+ "tequila_heineken": {
+  "q": "tequila heineken",
+  "must": [
+   "tequila"
+  ],
+  "role": [
+   "rapide"
+  ]
+ },
+ "je_pete_ma_biere": {
+  "q": "je pete ma biere",
+  "must": [
+   "biere"
+  ],
+  "role": [
+   "scandale"
+  ]
+ },
+ "je_pete_ma_bulle": {
+  "q": "je pete ma bulle",
+  "must": [
+   "pete"
+  ],
+  "role": [
+   "scandale"
+  ],
+  "alt": [
+   "pete ma bulle",
+   "je pete un cable"
+  ]
+ },
+ "nan_mais_allo": {
+  "q": "nan mais allo quoi",
+  "must": [
+   "allo"
+  ],
+  "role": [
+   "scandale"
+  ],
+  "alt": [
+   "allo quoi nabilla",
+   "nabilla allo"
+  ]
+ },
+ "cest_pas_faux": {
+  "q": "c'est pas faux kaamelott",
+  "must": [
+   "faux"
+  ],
+  "role": [
+   "retournement"
+  ]
+ },
+ "pas_de_bras": {
+  "q": "pas de bras pas de chocolat",
+  "must": [
+   "bras"
+  ],
+  "role": [
+   "chute"
+  ],
+  "alt": [
+   "pas de bras",
+   "intouchables pas de bras"
+  ]
+ },
+ "ah_bah_bravo": {
+  "q": "ah bah bravo",
+  "must": [
+   "bravo"
+  ],
+  "role": [
+   "bravo"
+  ],
+  "alt": [
+   "bah bravo",
+   "bravo"
+  ]
+ },
+ "mais_cest_nimporte_quoi": {
+  "q": "mais c'est n'importe quoi",
+  "must": [
+   "importe quoi"
+  ],
+  "role": [
+   "scandale"
+  ],
+  "alt": [
+   "n'importe quoi",
+   "c'est n'importe quoi"
+  ]
+ },
+ "cest_honteux": {
+  "q": "c'est honteux",
+  "must": [
+   "honteux"
+  ],
+  "role": [
+   "scandale"
+  ]
+ },
+ "quest_ce_que_jen_ai_a_foutre": {
+  "q": "qu'est-ce que j'en ai à foutre",
+  "must": [
+   "foutre"
+  ],
+  "role": [
+   "retournement"
+  ]
+ },
+ "lysopaine": {
+  "q": "lysopaine",
+  "must": [
+   "lysopa"
+  ],
+  "role": [
+   "chute"
+  ]
+ },
+ "cest_une_dinguerie": {
+  "q": "c'est une dinguerie",
+  "must": [
+   "dinguerie"
+  ],
+  "role": [
+   "scandale"
+  ],
+  "alt": [
+   "dinguerie"
+  ]
+ },
+ "quoi_feur": {
+  "q": "quoi feur",
+  "must": [
+   "feur"
+  ],
+  "role": [
+   "retournement"
+  ]
+ },
+ "wesh_alors": {
+  "q": "wesh alors",
+  "must": [
+   "wesh"
+  ],
+  "role": [
+   "rapide"
+  ]
+ },
+ "cest_pas_sorcier": {
+  "q": "c'est pas sorcier generique",
+  "must": [
+   "sorcier"
+  ],
+  "role": [
+   "rapide"
+  ]
+ },
+ "et_bim": {
+  "q": "et bim",
+  "must": [
+   "bim"
+  ],
+  "role": [
+   "chute"
+  ]
+ },
+ "ca_va_peter": {
+  "q": "ça va peter",
+  "must": [
+   "peter"
+  ],
+  "role": [
+   "scandale"
+  ]
+ },
+ "macron_cest_notre_projet": {
+  "q": "c'est notre projet macron",
+  "must": [
+   "projet"
+  ],
+  "role": [
+   "chute",
+   "quote"
+  ],
+  "cities": [
+   "macronville"
+  ],
+  "quote_match": "notre projet"
+ },
+ "macron_pognon_de_dingue": {
+  "q": "pognon de dingue",
+  "must": [
+   "pognon"
+  ],
+  "role": [
+   "quote"
+  ],
+  "cities": [
+   "macronville"
+  ],
+  "quote_match": "pognon de dingue",
+  "alt": [
+   "pognon dingue",
+   "un pognon de dingue",
+   "macron pognon"
+  ]
+ },
+ "macron_en_meme_temps": {
+  "q": "macron en meme temps",
+  "must": [
+   "meme temps"
+  ],
+  "role": [
+   "quote"
+  ],
+  "cities": [
+   "macronville"
+  ],
+  "quote_match": "en même temps",
+  "alt": [
+   "en meme temps",
+   "et en meme temps"
+  ]
+ },
+ "macron_perlimpinpin": {
+  "q": "poudre de perlimpinpin",
+  "must": [
+   "perlimpinpin"
+  ],
+  "role": [
+   "quote"
+  ],
+  "cities": [
+   "macronville"
+  ],
+  "quote_match": "perlimpinpin"
+ },
+ "macron_for_sure": {
+  "q": "macron for sure",
+  "must": [
+   "sure"
+  ],
+  "role": [
+   "quote",
+   "chute"
+  ],
+  "cities": [
+   "macronville"
+  ],
+  "quote_match": "for sure"
+ },
+ "macron_hey_hey": {
+  "q": "macron hey hey nairobi",
+  "must": [
+   "hey hey"
+  ],
+  "role": [
+   "quote"
+  ],
+  "cities": [
+   "macronville"
+  ],
+  "quote_match": "hey ! hey",
+  "alt": [
+   "hey hey macron",
+   "macron hey"
+  ]
+ },
+ "macron_traverse_la_rue": {
+  "q": "je traverse la rue macron",
+  "must": [
+   "rue"
+  ],
+  "role": [
+   "quote"
+  ],
+  "cities": [
+   "macronville"
+  ],
+  "quote_match": "traverse la rue"
+ },
+ "macron_explosion": {
+  "q": "macron explosion",
+  "must": [
+   "macron"
+  ],
+  "role": [
+   "chute"
+  ],
+  "cities": [
+   "macronville"
+  ]
+ },
+ "macron_du_fromage": {
+  "q": "macron du fromage",
+  "must": [
+   "fromage"
+  ],
+  "role": [
+   "retournement"
+  ],
+  "cities": [
+   "macronville"
+  ]
+ },
+ "melenchon_la_republique_cest_moi": {
+  "q": "la republique c'est moi melenchon",
+  "must": [
+   "publique"
+  ],
+  "role": [
+   "quote",
+   "chute"
+  ],
+  "cities": [
+   "melenchonville"
+  ],
+  "quote_match": "république, c'est moi"
+ },
+ "melenchon_ma_personne_est_sacree": {
+  "q": "ma personne est sacree",
+  "must": [
+   "sacree"
+  ],
+  "role": [
+   "chute",
+   "scandale"
+  ],
+  "cities": [
+   "melenchonville"
+  ],
+  "alt": [
+   "personne est sacree",
+   "melenchon sacree"
+  ]
+ },
+ "melenchon_bruit_et_fureur": {
+  "q": "melenchon bruit et la fureur",
+  "must": [
+   "fureur"
+  ],
+  "role": [
+   "quote"
+  ],
+  "cities": [
+   "melenchonville"
+  ],
+  "quote_match": "bruit et la fureur",
+  "alt": [
+   "bruit et la fureur"
+  ]
+ },
+ "glucksmann_cap_clair": {
+  "q": "il faut un cap clair",
+  "must": [
+   "cap clair"
+  ],
+  "role": [
+   "quote",
+   "chute"
+  ],
+  "cities": [
+   "glucksmannville"
+  ],
+  "quote_match": "cap clair",
+  "alt": [
+   "cap clair",
+   "glucksmann cap clair",
+   "il faut un cap"
+  ]
+ },
+ "glucksmann_love": {
+  "q": "glucksmann love",
+  "must": [
+   "glucksmann love"
+  ],
+  "role": [
+   "quote"
+  ],
+  "cities": [
+   "glucksmannville"
+  ],
+  "quote_match": "glucksmann love",
+  "alt": [
+   "glucksmann love song"
+  ]
+ },
+ "bardella": {
+  "q": "bardella",
+  "must": [
+   "bardella"
+  ],
+  "role": [
+   "chute"
+  ],
+  "cities": [
+   "bardellaville"
+  ],
+  "_attention": "titre générique : à écouter avant validation"
+ },
+ "marine_le_pen": {
+  "q": "marine le pen",
+  "must": [
+   "pen"
+  ],
+  "role": [
+   "chute"
+  ],
+  "cities": [
+   "marineville"
+  ],
+  "_attention": "titre générique : à écouter avant validation"
+ },
+ "zemmour": {
+  "q": "zemmour",
+  "must": [
+   "zemmour"
+  ],
+  "role": [
+   "chute"
+  ],
+  "cities": [
+   "zemmourville"
+  ],
+  "_attention": "titre générique : à écouter avant validation"
+ },
+ "chirac_en_touche_une": {
+  "q": "chirac ça m'en touche une",
+  "must": [
+   "touche"
+  ],
+  "role": [
+   "retournement"
+  ],
+  "alt": [
+   "chirac en touche une",
+   "m'en touche une sans faire bouger l'autre",
+   "chirac"
+  ]
+ },
+ "chirac_abracadabrantesque": {
+  "q": "abracadabrantesque",
+  "must": [
+   "abracadabrantesque"
+  ],
+  "role": [
+   "scandale"
+  ],
+  "alt": [
+   "abracadabrantesque chirac",
+   "chirac abracadabra"
+  ]
+ },
+ "sarkozy_casse_toi": {
+  "q": "casse toi pauvre con",
+  "must": [
+   "casse"
+  ],
+  "role": [
+   "chute"
+  ]
+ },
+ "hollande_moi_president": {
+  "q": "moi president hollande",
+  "must": [
+   "president"
+  ],
+  "role": [
+   "retournement"
+  ]
+ }
 }

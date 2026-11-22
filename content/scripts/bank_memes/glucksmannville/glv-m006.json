@@ -3,79 +3,79 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m006",
  "format": "A",
- "anchor": "Le live « Au QG » : une heure de parole puis 30 à 45 minutes de questions du chat, sur toutes les plateformes (06/11/2026)",
+ "anchor": "le format du live « Au QG » (parole d'abord, questions ensuite) et son décor comparé à un placard : une box à sens unique.",
  "situation": "le Wi-Fi",
- "ressort": "escalade",
- "title_cover": "Wi-Fi Au QG",
+ "ressort": "piques frontales sourcées (style tacle)",
+ "title_cover": "Wifi Au QG",
  "hook_variants": [
-  "Son live Au QG, c'est une heure de parole avant les questions.",
-  "Ici, chaque page web commence par une heure de discours.",
-  "La météo ? Après le discours.",
-  "Le Wi-Fi qui te parle de la République avant de charger.",
-  "Deux discours pour lire un e-mail."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, le wifi parle, mais n'écoute pas.",
+  "Glucksmannville : la box Au QG.",
+  "Débit montant parfait, débit descendant en réflexion.",
+  "Les glucksmanniens vont redémarrer la box."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Réponse : « On en reparle au prochain live, merci pour le chat ».",
-  "Tu n'as toujours pas la météo, mais tu connais la République par cœur.",
-  "Le chat a posé sa question. Elle est reportée au prochain live."
+  "Connexion parfaite dans un sens. Dans l'autre, le réseau est en réflexion.",
+  "La box émet. Elle ne reçoit pas.",
+  "Connexion établie. Écoute en option."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Son live Au QG, c'est une heure de parole avant les questions.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. En wifi public.",
    "accent_words": [
-    "Au QG"
+    "wifi public"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À Glucksmannville, le Wi-Fi municipal fonctionne exactement pareil.",
-   "accent_words": [],
+   "text": "La box municipale s'appelle Au QG. Elle diffuse sur toutes les plateformes.",
+   "accent_words": [
+    "Au QG"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Avant chaque page, une heure de vidéo sur la République.",
+   "text": "Son vrai live Au QG : il parle d'abord, les questions après.",
    "accent_words": [
-    "la République"
+    "les questions après"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Tu veux la météo : d'abord le discours, ensuite la météo.",
-   "accent_words": [],
+   "text": "La box aussi : une heure de chargement, puis tu peux poser ta question.",
+   "accent_words": [
+    "une heure"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Tu veux tes e-mails : deux discours, dont un sous-titré.",
+   "text": "Les internautes, eux, ont surtout remarqué le décor : un placard.",
    "accent_words": [
-    "dont un sous-titré"
+    "un placard"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "À la fin, le chat a droit à une question, une seule.",
+   "text": "Connexion parfaite dans un sens. Dans l'autre, le réseau est en réflexion.",
    "accent_words": [
-    "une question"
+    "en réflexion"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Réponse : « On en reparle au prochain live, merci pour le chat ».",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton temps de chargement record, en commentaire.",
-   "accent_words": [],
+   "text": "Envoie ça au pote qui coupe la parole en visio.",
+   "accent_words": [
+    "coupe la parole"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -83,105 +83,160 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "router_lectern",
-    "screen"
+    "road",
+    "facade_row",
+    "lamp",
+    "person",
+    "car"
    ],
-   "onscreen_text": "AU QG : 1 H DE PAROLE",
-   "comic_action": "Le routeur-pupitre de la mairie affiche un live de discours.",
-   "expected_result": "Ancrage réel."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
+   "expected_result": "Le décor de rue posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "screen",
-    "person"
+    "text3d",
+    "gps"
    ],
-   "onscreen_text": "AVANT LA PAGE : 1 H",
-   "comic_action": "Un habitant tente d'ouvrir la météo : barre de progression « DISCOURS 1/1 ».",
-   "expected_result": "Escalade."
+   "onscreen_text": "BOX : AU QG",
+   "comic_action": "Écran de l'application municipale : chargement, mise à jour, chargement.",
+   "expected_result": "L'appli porte la pique."
   },
   {
    "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "tripod_camera",
+    "studio_light",
+    "table",
+    "screen"
+   ],
+   "onscreen_text": "PAROLE → QUESTIONS",
+   "comic_action": "Studio minuscule : caméra, petite lampe ; la porte du placard se referme sur le décor.",
+   "expected_result": "Le décor moqué par les internautes."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "gps"
+   ],
+   "onscreen_text": "CHARGEMENT : 1 H",
+   "comic_action": "Écran de l'application municipale : chargement, mise à jour, chargement.",
+   "expected_result": "L'appli porte la pique."
+  },
+  {
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "person"
+    "tripod_camera",
+    "studio_light",
+    "table",
+    "screen"
    ],
-   "onscreen_text": "E-MAIL : 2 DISCOURS",
-   "comic_action": "Deux fenêtres de discours empilées, l'une sous-titrée ; l'habitant s'endort.",
-   "expected_result": "Escalade."
+   "onscreen_text": "DÉCOR : PLACARD",
+   "comic_action": "Studio minuscule : caméra, petite lampe ; la porte du placard se referme sur le décor.",
+   "expected_result": "Le décor moqué par les internautes."
   },
   {
-   "id": "s4",
+   "id": "s6",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n6"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
     "screen",
-    "router_lectern",
-    "text3d"
+    "text3d",
+    "gps"
    ],
-   "onscreen_text": "1 QUESTION",
-   "comic_action": "Le chat défile, une seule question est retenue, bulle de réponse affichée.",
-   "expected_result": "Pic."
+   "onscreen_text": "↑ OK · ↓ EN RÉFLEXION",
+   "comic_action": "Écran de l'application municipale : chargement, mise à jour, chargement.",
+   "expected_result": "L'appli porte la pique."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
-    "n8"
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "screen",
-    "tshirt"
+    "road",
+    "person",
+    "tshirt",
+    "sign"
    ],
-   "onscreen_text": "CHARGEMENT…",
-   "comic_action": "Plan large de la ville : toutes les fenêtres en chargement ; t-shirt « RÉPONSES CONCRÈTES : CHARGEMENT… » sur un balcon.",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton temps de chargement record, en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui coupe la parole en visio."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 84,
+ "word_count": 82,
  "claims": [
   {
-   "segment": "n1",
+   "text": "La box municipale s'appelle Au QG. Elle diffuse sur toutes les plateformes.",
+   "claim_type": "fiction_satirique",
+   "source": "https://lcp.fr/actualites/au-qg-raphael-glucksmann-lance-son-rendez-vous-de-campagne-numerique-ce-vendredi-444843",
+   "note": "Live « Au QG » sur les plateformes, puis questions des internautes. Détourné dans la ville fictive."
+  },
+  {
+   "text": "Son vrai live Au QG : il parle d'abord, les questions après.",
    "claim_type": "fait_public",
-   "text": "Son live Au QG, c'est une heure de parole avant les questions.",
-   "source_url": "https://lcp.fr/actualites/au-qg-raphael-glucksmann-lance-son-rendez-vous-de-campagne-numerique-ce-vendredi-444843"
+   "source": "https://lcp.fr/actualites/au-qg-raphael-glucksmann-lance-son-rendez-vous-de-campagne-numerique-ce-vendredi-444843",
+   "note": "Live « Au QG » sur les plateformes, puis questions des internautes."
+  },
+  {
+   "text": "Les internautes, eux, ont surtout remarqué le décor : un placard.",
+   "claim_type": "fait_public",
+   "source": "https://www.20min.ch/fr/story/presidentielle-francaise-glucksmann-moque-sur-les-reseaux-vous-ne-faites-pas-le-taf-103670609",
+   "note": "Décor de l'émission « Au QG » comparé à un placard ; « vous ne faites pas le taf »."
   }
  ],
  "sources": [
   {
    "url": "https://lcp.fr/actualites/au-qg-raphael-glucksmann-lance-son-rendez-vous-de-campagne-numerique-ce-vendredi-444843",
    "date": "2026-11-06",
-   "statut": "fait public (format de campagne annoncé)",
-   "usage": "Le format est appliqué au Wi-Fi et à la centrale électrique de la ville fictive.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Live « Au QG » sur les plateformes, puis questions des internautes."
+  },
+  {
+   "url": "https://www.20min.ch/fr/story/presidentielle-francaise-glucksmann-moque-sur-les-reseaux-vous-ne-faites-pas-le-taf-103670609",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait public (moqueries d'internautes)",
+   "note": "Décor de l'émission « Au QG » comparé à un placard ; « vous ne faites pas le taf »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Escalade : le format réel (1 h de parole, puis 30-45 min de chat) devient la règle d'accès à internet. Mème d'ancrage : Le live « Au QG » : une heure de parole puis 30 à 45 minutes de questions du chat, sur toutes les plateformes (06/11/2026). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : le format du live « Au QG » (parole d'abord, questions ensuite) et son décor comparé à un placard : une box à sens unique. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }
