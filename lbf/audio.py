@@ -54,8 +54,21 @@ def build_narration(ep: dict, out: Path) -> dict:
     if ext_files:
         eng = "externe"
     voice_info = None
+    from . import tts_elevenlabs
+    if not ext_files and tts_elevenlabs.wanted():
+        # voix ElevenLabs par l'API (secret ELEVENLABS_API_KEY) : tout l'épisode, sinon rien
+        try:
+            for sid, s in segs.items():
+                durs[sid] = tts_elevenlabs.synthesize(s["text"], audio_dir / f"{sid}.wav")
+            eng = "elevenlabs_api"
+            voice_info = tts_elevenlabs.report()
+        except Exception as e:
+            durs = {}
+            print(f"[voix] ElevenLabs indisponible ({str(e)[:240]}) : secours {eng}", flush=True)
     last_id = ep["narration_segments"][-2]["id"] if len(ep["narration_segments"]) > 1 else None
     for sid, s in segs.items():
+        if eng == "elevenlabs_api":
+            break
         ls = ep.get("voice_length_scale")
         vname = (tts_azure.config.get("AZURE_VOICE") or tts_azure.DEFAULT_VOICE) if eng == "azure" \
             else tts.config.get("VOICE_MODEL")

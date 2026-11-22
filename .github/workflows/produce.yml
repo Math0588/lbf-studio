@@ -3,7 +3,7 @@
 name: Fabrication
 on:
   schedule:
-    - cron: "17 0,5,10,15,20 * * *"   # 5 passages par jour (consommation : 4 Reels par jour)
+    - cron: "17 0,5,10,15,20 * * *"   # secours : l horloge (horloge.yml) lance la fabrication quand la réserve baisse
   workflow_dispatch:
     inputs:
       max_videos:
@@ -20,6 +20,7 @@ on:
     paths: [".github/workflows/produce.yml"]
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: produce-${{ inputs.slot || '0' }}-${{ inputs.batch || 'a' }}
   cancel-in-progress: false
@@ -37,6 +38,9 @@ jobs:
       AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
       AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
       AZURE_VOICE: ${{ vars.AZURE_VOICE }}
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
+      ELEVENLABS_MODEL: ${{ vars.ELEVENLABS_MODEL }}
       VOICE_MODEL: fr_FR-siwis-medium
       MIN_FREE_DISK_GB: "3"
       BLENDER_PATH: /usr/local/bin/blender
@@ -96,3 +100,11 @@ jobs:
           git add state content/episodes content/sets 2>/dev/null || true
           git diff --cached --quiet || git commit -qm "fabrication : état $(date -u +%F' '%H:%M)"
           for i in 1 2 3 4; do git pull -q --rebase -X theirs && git push -q && break; sleep $((RANDOM % 20 + 5)); done || true
+      - name: Horloge toujours en marche (filet de sécurité)
+        if: always()
+        run: |
+          n=0
+          for st in in_progress queued pending waiting; do
+            n=$((n + $(gh run list --workflow horloge.yml --status $st --json databaseId -L 20 -q 'length' 2>/dev/null || echo 0)))
+          done
+          if [ "$n" = "0" ]; then gh workflow run horloge.yml --ref main && echo "horloge relancée"; else echo "horloge en marche"; fi

@@ -1,0 +1,31 @@
+# Horloge autonome (sans Claude) : déclenche la publication aux créneaux et la fabrication quand la réserve
+# baisse, puis se relance elle-même toutes les ~5 h 40. Voir lbf/horloge.py.
+name: Horloge
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 */3 * * *"   # filet de sécurité si la chaîne s'arrête (le cron GitHub part quand il veut)
+  push:
+    branches: [main]
+    paths: [".github/workflows/horloge.yml", "lbf/horloge.py"]
+permissions:
+  actions: write
+  contents: read
+concurrency:
+  group: horloge
+  cancel-in-progress: false
+jobs:
+  horloge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    env:
+      GH_TOKEN: ${{ github.token }}
+      DIFFUSION_TOKEN: ${{ secrets.DIFFUSION_TOKEN }}
+      RESERVE_MIN: ${{ vars.RESERVE_MIN || '10' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: lbf/horloge.py
+          sparse-checkout-cone-mode: false
+      - name: Horloge (≈ 5 h 40, puis relève)
+        run: python3 lbf/horloge.py
