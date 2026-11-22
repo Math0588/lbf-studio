@@ -560,6 +560,11 @@ def main():
 
 
 def publish_next(queue, pubs, assets, studio) -> bool:
+    import subprocess
+    subprocess.run(["git", "pull", "-q", "--rebase", "origin", "main"], cwd=ROOT, capture_output=True)
+    fresh = load("publications.json", [])
+    known = {(p.get("episode_id"), p.get("attempt_at")) for p in pubs}
+    pubs.extend(p for p in fresh if (p.get("episode_id"), p.get("attempt_at")) not in known)
     item = next_episode(queue, pubs, assets, studio)
     if not item:
         notify("reserve", "Réserve vide : aucune vidéo prête (la fabrication cloud tourne 5 fois par jour).")
