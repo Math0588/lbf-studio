@@ -268,6 +268,11 @@ def plan(script: dict) -> dict:
             else:
                 keys = [{"t": 0, "loc": [cx + 0.6, cy - 3.6, 2.95], "look": [cx, cy, 2.65]},
                         {"t": 1, "loc": [cx + 0.4, cy - 2.9, 2.85], "look": [cx, cy, 2.65]}]
+            if any(a.get("who") == "foule" or a.get("geste") == "manif" for a in acts) and j == 0:
+                # la foule / la manif doit se voir : plan large en plongée sur toute la scène
+                keys = [{"t": 0, "loc": [cx + 6, cy - 19, 9], "look": [cx, cy - 3, 1.6]},
+                        {"t": 1, "loc": [cx + 4, cy - 15, 7], "look": [cx, cy - 3, 1.8]}]
+                wide = True
             shots.append({"id": sid, "narration_ids": [nid], "keys": keys, "lens": 26 if wide else 33,
                           "lead_in": 0.08 if shots else 0.05, "tail": 0.12, "dof": False,
                           "comic_action": sc.get("comic_action", "")})
