@@ -229,7 +229,10 @@ def main():
     slot = int(os.environ.get("SLOT", "0") or 0)
     time.sleep(min(slot, 20) * 25)
     lost = []
-    while made < max_n and time.time() - t0 < budget:
+    first = True
+    # une vidéo peut prendre ~2 h : on n'en commence une nouvelle que s'il reste ce temps avant la limite
+    while made < max_n and (first or time.time() - t0 < budget - 7200):
+        first = False
         sc = next_script(st, 0, tuple(lost))
         if not sc:
             print("[studio] banque épuisée", flush=True)
