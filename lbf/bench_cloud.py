@@ -13,8 +13,9 @@ from . import audio, config, planner_v2, produce
 q = sys.argv[1] if len(sys.argv) > 1 else "cloud"
 script = json.loads((config.CONTENT / "scripts" / "melenchonville_pilot_01.json").read_text(encoding="utf-8"))
 # gestes de test
-script["scenes"][1]["gags"] = [{"type": "affiche", "texte": "TAXONS TOUT"}, {"type": "chien", "tee": "MÉLUCHE"}]
-script["scenes"][2]["gags"] = [{"type": "prix", "texte": "MATCHA 10,50 €"}]
+script["scenes"][1]["gags"] = [{"type": "animal", "espece": "vache", "tee": "MÉLUCHE"}, {"type": "perso", "qui": "alien"}]
+script["scenes"][2]["gags"] = [{"type": "animal", "espece": "pigeon"}, {"type": "perso", "qui": "mamie"}]
+script["scenes"][3]["gags"] = [{"type": "animal", "espece": "mouton", "tee": "TAXÉ"}, {"type": "animal", "espece": "tortue", "tee": "TAXÉE"}]
 script["scenes"][1]["actions"] = [{"who": "perso", "geste": "shrug", "visage": "blase"},
                                   {"who": "maire", "geste": "point", "visage": "fier", "quand": 0.1}]
 script["scenes"][2]["actions"] = [{"who": "foule", "geste": "manif"}, {"who": "maire", "geste": "cough", "visage": "blase", "objet": "matcha"}]

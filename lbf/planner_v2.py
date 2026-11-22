@@ -21,21 +21,22 @@ PASTEL = ["#F6E3C5", "#DDEBF7", "#F7D9D9", "#E3F2D9", "#FFF1B8", "#E8DDF5", "#FC
 MAYORS = {
     "bardellaville": {"suit": True, "sash": True, "shirt": "#1B2A4A", "pants": "#1B2A4A", "tie": "#1649FF",
                       "hair": "plaque", "hair_color": "#1C1C1C", "faces": ["sourire_pro", "parle_fier", "fier"]},
-    "melenchonville": {"suit": True, "sash": True, "shirt": "#3A3A3A", "pants": "#2B2B2B", "tie": "#B01E2F",
+    "melenchonville": {"suit": True, "sash": True, "col_mao": True, "shirt": "#2F3138", "pants": "#2B2B2B", "tie": "#B01E2F",
                        "hair": "chauve_cotes", "hair_color": "#BDBDBD", "glasses": True,
                        "faces": ["colere", "parle", "fier"]},
     "macronville": {"suit": True, "sash": True, "shirt": "#1F3B73", "pants": "#1F3B73", "tie": "#0B1B3F",
                     "hair": "court", "hair_color": "#6B4A2F", "iris": "bleu", "faces": ["sourire_pro", "parle", "fier"]},
     "zemmourville": {"suit": True, "sash": True, "shirt": "#2B2B33", "pants": "#2B2B33", "tie": "#5A1E2C",
-                     "hair": "chauve_cotes", "hair_color": "#3A3A3A", "glasses": True,
+                     "hair": "chauve_cotes", "hair_color": "#3A3A3A", "glasses": False,
                      "faces": ["blase", "parle", "colere"]},
     "marineville": {"suit": True, "sash": True, "shirt": "#22306B", "pants": "#22306B", "tie": "#22306B",
                     "hair": "long", "hair_color": "#E2C27A", "iris": "bleu", "faces": ["sourire_pro", "parle", "fier"]},
-    "glucksmannville": {"suit": True, "sash": True, "shirt": "#C8B79A", "pants": "#8A7B64", "tie": "#B9A68A",
+    "glucksmannville": {"suit": True, "sash": True, "open_collar": True, "shirt": "#2E3A4F", "pants": "#2E3A4F", "tie": "#B9A68A",
                         "hair": "meche", "hair_color": "#4A3626", "iris": "bleu", "faces": ["neutre", "parle", "blase"]},
     # Sylvain Durif, « le Christ cosmique » : tunique blanche, cheveux longs blancs
     "durifville": {"suit": False, "sash": True, "shirt": "#FFFDF7", "pants": "#FFFDF7", "hair": "long",
-                   "hair_color": "#EDEDED", "iris": "bleu", "faces": ["content", "parle", "fier"]},
+                   "hair_color": "#EDEDED", "beard": True, "beard_color": "#EDEDED", "iris": "bleu",
+                   "faces": ["content", "parle", "fier"]},
     # Teddy Riner : judogi blanc, ceinture noire (cravate), grand gabarit
     "rinerville": {"suit": False, "sash": True, "shirt": "#FFFDF7", "pants": "#FFFDF7", "tie": "#111827",
                    "hair": "court", "hair_color": "#1C1C1C", "skin": "#8D5524", "scale": 1.25,
@@ -169,7 +170,9 @@ def affiche(city: str, aid: str, at, texte: str | None = None, rot: float = 0) -
     m = MAYORS.get(city, {})
     return {"type": "affiche", "id": aid, "at": at, "rot": rot, "scale": 1.7, "bg": pg["bg"], "accent": pg["accent"],
             "texte": (texte or pg["slogans"][_stable(aid) % len(pg["slogans"])]), "hair": m.get("hair", "court"),
-            "hair_color": m.get("hair_color", "#3A2A1F"), "iris": m.get("iris", "brun"), "face": "fier"}
+            "hair_color": m.get("hair_color", "#3A2A1F"), "iris": m.get("iris", "brun"), "face": "fier",
+            "beard": m.get("beard", False), "beard_color": m.get("beard_color"), "glasses": m.get("glasses", False),
+            "skin": m.get("skin", "#E8B98F")}
 SURNAMES = {"bardellaville": "Bardella", "melenchonville": "Mélenchon", "macronville": "Macron",
             "zemmourville": "Zemmour", "marineville": "Marine|Le Pen", "glucksmannville": "Glucksmann",
             "durifville": "Durif", "rinerville": "Riner|Teddy"}
@@ -269,6 +272,20 @@ def plan(script: dict) -> dict:
                 extra.append({"type": "chien", "id": f"{sc['id']}_chien", "at": [cx + 1.6, cy - 1.8], "rot": -35,
                               "tee": g.get("tee") or SURNAMES.get(city, "").split("|")[0],
                               "tee_color": PROPAGANDE.get(city, {}).get("bg", "#1649FF")})
+            elif g.get("type") == "animal" and g.get("espece") in ("chat", "pigeon", "vache", "tortue", "mouton", "canard"):
+                big = g["espece"] == "vache"
+                extra.append({"type": "animal", "id": f"{sc['id']}_ani{gi}", "espece": g["espece"],
+                              "at": [cx + (3.2 if big else 1.7), cy - (0.5 if big else 1.6)], "rot": -40,
+                              "tee": g.get("tee") or SURNAMES.get(city, "").split("|")[0],
+                              "tee_color": PROPAGANDE.get(city, {}).get("bg", "#1649FF")})
+            elif g.get("type") == "perso" and g.get("qui") in ("alien", "robot", "bebe", "mamie"):
+                look = {"alien": {"skin": "#7BE07B", "hair": "chauve_cotes", "hair_color": "#7BE07B", "shirt": "#C0C7D1"},
+                        "robot": {"skin": "#B8C0CC", "hair": "court", "hair_color": "#8A93A3", "shirt": "#8A93A3",
+                                  "pants": "#5E6676"},
+                        "bebe": {"scale": 0.55, "hair": "court", "hair_color": "#C9A15B", "shirt": "#F78FB3"},
+                        "mamie": {"hair": "chignon", "hair_color": "#D9D9D9", "shirt": "#B983FF", "glasses": True}}[g["qui"]]
+                extra.append(_char(f"{sc['id']}_{g['qui']}", [cx - 2.6, cy - 1.4], 25, rnd,
+                                   ["content", "choque"], hold="pancarte" if g["qui"] in ("bebe", "mamie") else None, **look))
             elif g.get("type") == "gilets_jaunes":   # foule en gilet jaune (sur le rond-point si c'est la scène)
                 extra.append({"type": "crowd", "id": f"{sc['id']}_gj", "at": [cx - 2, cy - 7], "count": 10, "cols": 5,
                               "dx": 1.7, "dy": 1.7, "rot": 180, "shirt": "#F2D300", "hold": "pancarte",

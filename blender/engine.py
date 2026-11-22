@@ -914,7 +914,13 @@ def p_char(p, parent=None):
         hand = empty(f"{pid}_hand{side}", (0, 0, -0.95), 0, sh)
         box(f"{pid}_handb{side}", (0.3, 0.32, 0.22), (0, 0, 0), skin, hand)
         arms.append((sh, hand))
-    if p.get("suit"):
+    if p.get("suit") and p.get("col_mao"):      # veste à col Mao (sans cravate), col montant
+        box(f"{pid}_mao", (0.62, 0.6, 0.16), (0, 0, 2.2), shirt, r)
+        for i in range(3):
+            box(f"{pid}_btn{i}", (0.06, 0.02, 0.06), (0, -0.29, 1.95 - i * 0.22), mat("#111827", 0.4), r)
+    elif p.get("suit") and p.get("open_collar"):  # chemise ouverte, pas de cravate
+        box(f"{pid}_shirtv", (0.3, 0.02, 0.4), (0, -0.285, 1.95), mat("#FFFFFF", 0.6), r)
+    elif p.get("suit"):
         box(f"{pid}_shirtv", (0.36, 0.02, 0.6), (0, -0.285, 1.86), mat("#FFFFFF", 0.6), r)
         box(f"{pid}_tie", (0.14, 0.03, 0.55), (0, -0.3, 1.78), mat(p.get("tie", "#B01E2F"), 0.5), r)
     if p.get("sash"):
@@ -937,6 +943,8 @@ def p_char(p, parent=None):
         box(f"{pid}_hair{i}", sz, loc, hc, head)
     if p.get("hair") == "chignon":
         sphere(f"{pid}_bun", 0.24, (0, 0.38, 0.6), hc, head)
+    if p.get("beard"):   # barbe (ex. Durif)
+        box(f"{pid}_beard", (0.92, 0.14, 0.5), (0, -0.48, -0.32), mat(p.get("beard_color", p.get("hair_color", "#3A2A1F")), 0.9), head)
     if p.get("glasses"):
         for x in (-0.2, 0.2):
             torus(f"{pid}_gl{x}", 0.13, 0.025, (x, -0.51, 0.06), mat("#111827", 0.3), head, rot=(90, 0, 0), seg=24, ring=6)
@@ -1057,6 +1065,11 @@ def p_affiche(p):
     hc = mat(p.get("hair_color", "#3A2A1F"), 0.85)
     for i, (sz, loc) in enumerate(HAIR.get(p.get("hair", "court"), [])):
         box(pid + f"_h{i}", (sz[0], min(sz[1], 0.3), sz[2]), (loc[0], 0.1, loc[2]), hc, head)
+    if p.get("beard"):
+        box(pid + "_beard", (0.9, 0.3, 0.45), (0, 0.0, -0.32), mat(p.get("beard_color", "#EDEDED"), 0.9), head)
+    if p.get("glasses"):
+        for x in (-0.2, 0.2):
+            torus(pid + f"_gl{x}", 0.13, 0.025, (x, -0.09, 0.06), mat("#111827", 0.3), head, rot=(90, 0, 0), seg=24, ring=6)
     box(pid + "_band", (w, 0.03, 0.75), (0, -0.075, z + 0.55), mat("#111827", 0.5), parent=r)
     txt = (p.get("texte") or "").upper()[:22]
     sz = min(0.42, 2.3 / max(1, len(txt)) * 1.6)
@@ -1085,11 +1098,86 @@ def p_chien(p):
              rot=(90, 0, -90), fontname="Anton-Regular.ttf")
 
 
+def _tee_text(pid, r, word, z, half_w, color):
+    word = (word or "").upper()[:10]
+    if not word:
+        return
+    for k, (x, rz) in enumerate(((half_w + 0.01, 90), (-half_w - 0.01, -90))):
+        text(f"{pid}_tt{k}", word, 0.16, (x, 0, z), mat("#FFFDF7", 0.5), r, rot=(90, 0, rz),
+             fontname="Anton-Regular.ttf")
+
+
+def p_animal(p):
+    """Animaux et créatures cubiques qui « votent » (gag absurde) : chat, pigeon, vache, tortue, mouton, canard."""
+    pid, r = root(p, "animal")
+    sp = p.get("espece", "chat")
+    tee = p.get("tee")
+    tc = mat(p.get("tee_color", PAL["blue"]), 0.7)
+    black = mat("#111827", 0.3)
+    if sp == "chat":
+        fur = mat(p.get("color", "#E8913A"), 0.85)
+        box(pid + "_b", (0.4, 0.8, 0.38), (0, 0, 0.45), fur, r)
+        for x in (-0.13, 0.13):
+            for y in (-0.28, 0.28):
+                box(pid + f"_l{x}{y}", (0.1, 0.1, 0.28), (x, y, 0.14), fur, r)
+        box(pid + "_h", (0.38, 0.34, 0.34), (0, -0.52, 0.72), fur, r)
+        for x in (-0.11, 0.11):
+            box(pid + f"_e{x}", (0.09, 0.05, 0.14), (x, -0.5, 0.95), fur, r, rot=(0, 0, 0))
+            box(pid + f"_y{x}", (0.06, 0.02, 0.06), (x * 0.8, -0.7, 0.76), black, r)
+        box(pid + "_t", (0.07, 0.07, 0.55), (0, 0.42, 0.75), fur, r, rot=(-25, 0, 0))
+        if tee:
+            box(pid + "_tee", (0.44, 0.6, 0.4), (0, -0.02, 0.46), tc, r); _tee_text(pid, r, tee, 0.48, 0.22, "#FFF")
+    elif sp in ("pigeon", "canard"):
+        body = mat("#8C93A3" if sp == "pigeon" else "#F2D300", 0.6)
+        sphere(pid + "_b", 0.32, (0, 0, 0.45), body, r, scale=(0.9, 1.25, 0.9))
+        sphere(pid + "_h", 0.18, (0, -0.33, 0.78), body if sp == "canard" else mat("#5E6676", 0.6), r)
+        box(pid + "_bk", (0.08, 0.16 if sp == "canard" else 0.1, 0.05), (0, -0.52, 0.76), mat("#F28C28", 0.5), r)
+        for x in (-0.07, 0.07):
+            box(pid + f"_y{x}", (0.04, 0.02, 0.04), (x, -0.48, 0.84), black, r)
+            box(pid + f"_l{x}", (0.04, 0.04, 0.2), (x, 0, 0.1), mat("#F28C28", 0.5), r)
+        if tee:
+            box(pid + "_tee", (0.5, 0.5, 0.3), (0, 0, 0.45), tc, r); _tee_text(pid, r, tee, 0.45, 0.26, "#FFF")
+    elif sp == "vache":
+        white, spot = mat("#FFFDF7", 0.8), mat("#1F1F24", 0.8)
+        box(pid + "_b", (0.9, 1.6, 0.8), (0, 0, 1.05), white, r)
+        for i, (x, y, z) in enumerate(((0.46, 0.2, 1.2), (-0.46, -0.3, 1.0), (0.2, 0.5, 1.46))):
+            box(pid + f"_s{i}", (0.03 if abs(x) > 0.4 else 0.4, 0.4, 0.3 if abs(x) > 0.4 else 0.03), (x, y, z), spot, r)
+        for x in (-0.3, 0.3):
+            for y in (-0.6, 0.6):
+                box(pid + f"_l{x}{y}", (0.2, 0.2, 0.65), (x, y, 0.33), white, r)
+        box(pid + "_h", (0.6, 0.5, 0.55), (0, -1.0, 1.3), white, r)
+        box(pid + "_m", (0.5, 0.15, 0.25), (0, -1.28, 1.18), mat("#F7B6C2", 0.6), r)
+        for x in (-0.22, 0.22):
+            box(pid + f"_c{x}", (0.08, 0.08, 0.25), (x, -1.0, 1.66), mat("#E8DCC2", 0.5), r)
+            box(pid + f"_y{x}", (0.08, 0.02, 0.08), (x * 0.7, -1.26, 1.42), black, r)
+        if tee:
+            box(pid + "_tee", (0.94, 1.0, 0.84), (0, -0.1, 1.05), tc, r); _tee_text(pid, r, tee, 1.1, 0.47, "#FFF")
+    elif sp == "tortue":
+        sphere(pid + "_sh", 0.5, (0, 0, 0.3), mat("#3E7C3A", 0.6), r, scale=(1, 1.2, 0.6))
+        sphere(pid + "_h", 0.17, (0, -0.68, 0.3), mat("#8BC34A", 0.7), r)
+        for x in (-0.35, 0.35):
+            for y in (-0.35, 0.35):
+                box(pid + f"_l{x}{y}", (0.15, 0.15, 0.2), (x, y, 0.08), mat("#8BC34A", 0.7), r)
+        if tee:
+            text(pid + "_tt", tee.upper()[:8], 0.17, (0, 0, 0.63), mat("#FFFDF7", 0.5), r, rot=(0, 0, 0),
+                 fontname="Anton-Regular.ttf")
+    elif sp == "mouton":
+        wool = mat("#F4F1EA", 0.95)
+        for i, (x, y, z) in enumerate(((0, -0.25, 0.75), (0, 0.25, 0.75), (0.2, 0, 0.9), (-0.2, 0, 0.9), (0, 0, 0.6))):
+            sphere(pid + f"_w{i}", 0.38, (x, y, z), wool, r)
+        box(pid + "_h", (0.3, 0.35, 0.35), (0, -0.62, 0.85), mat("#2B2B2B", 0.7), r)
+        for x in (-0.18, 0.18):
+            for y in (-0.3, 0.3):
+                box(pid + f"_l{x}{y}", (0.1, 0.1, 0.45), (x, y, 0.22), mat("#2B2B2B", 0.7), r)
+        if tee:
+            box(pid + "_tee", (0.75, 0.6, 0.5), (0, 0, 0.78), tc, r); _tee_text(pid, r, tee, 0.8, 0.38, "#FFF")
+
+
 PROPS = {
     "ground": p_ground, "road": p_road, "roundabout": p_roundabout, "ring_light": p_ring_light,
     "building": p_building, "mairie": p_facade_set, "facade_set": p_facade_set, "facade_row": p_facade_row,
     "studio_light": p_studio_light, "tripod_camera": p_tripod_camera, "sign": p_sign, "car": p_car,
-    "affiche": p_affiche, "chien": p_chien,
+    "affiche": p_affiche, "chien": p_chien, "animal": p_animal,
     "car_orbit": p_car_orbit, "tree": p_tree, "lamp": p_lamp, "bench": p_bench, "bin": p_bin,
     "person": p_person, "tshirt": p_tshirt, "mascot": p_mascot, "shop": p_shop, "text3d": p_text3d,
     "tribune": p_tribune, "traffic_light": p_traffic_light, "form_stack": p_form_stack, "column": p_column,
