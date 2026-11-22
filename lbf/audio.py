@@ -49,7 +49,8 @@ def build_narration(ep: dict, out: Path) -> dict:
     from . import tts_azure, voix_externe
     eng = tts_azure.engine()
     ext = voix_externe.available(ep)
-    ext_files = voix_externe.split(ext, len(segs), audio_dir / "ext") if ext else None
+    ext_files = voix_externe.split(ext, len(segs), audio_dir / "ext",
+                                   [len(x["text"].split()) for x in ep["narration_segments"]]) if ext else None
     if ext_files:
         eng = "externe"
     voice_info = None
