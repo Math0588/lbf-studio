@@ -4,79 +4,79 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Distributeur en même temps",
- "anchor": "« en même temps » devenu mème, appliqué au distributeur de billets ; dette et ISF en arrière-plan.",
+ "title_cover": "L'aéroport des doléances",
+ "anchor": "les gilets jaunes et le grand débat : les cahiers de doléances s'empilent jusqu'aux nuages",
  "meme_key": "MEMETEMPS",
  "situation": "le distributeur de billets",
- "ressort": "piques frontales sourcées (style tacle)",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, le distributeur te débite en même temps.",
-  "Macronville : le DAB qui ne choisit jamais.",
-  "Ton solde est positif et négatif. En même temps.",
-  "Les macronistes vont retirer leurs likes en même temps."
+  "2018 : face aux gilets jaunes, il lance un grand débat national.",
+  "Les électeurs de Macron vont détester celle-là.",
+  "L'aéroport des doléances : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Même le chien a un gilet jaune."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Les seuls jamais débités : ceux qui ne paient plus l'ISF.",
-  "Ton compte est en même temps. La dette, en continu.",
-  "Le distributeur hésite. Les frais, jamais."
+  "Le maire lit une page : excellente question, on en reparle en 2027.",
+  "Des tonnes de doléances. Une seule réponse : excellente question.",
+  "Un avion s'y pose par erreur. On en fait l'aéroport des doléances."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Le distributeur aussi.",
+   "text": "Dans cette ville, tout le monde vote Macron. Même le chien a un gilet jaune.",
    "accent_words": [
-    "distributeur"
+    "jaune"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Retrait de cinquante euros : débité et crédité en même temps.",
+   "text": "2018 : face aux gilets jaunes, il lance un grand débat national.",
    "accent_words": [
-    "en même temps"
+    "national"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "La mairie distribue des cahiers de doléances. On écrit, on écrit, on écrit.",
+   "accent_words": [
+    "écrit"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Le tic présidentiel de 2017 est devenu un mème. Ici, il gère ton compte.",
-   "accent_words": [
-    "ton compte"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n4",
-   "text": "Comme les comptes publics : 3 595 milliards dans le rouge.",
+   "text": "Les cahiers s'empilent jusqu'au toit, puis jusqu'aux nuages.",
    "accent_words": [
-    "3 595 milliards"
+    "nuages"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les frais bancaires, eux, ne sont jamais en même temps. Ils sont toujours.",
+   "text": "Un avion s'y pose par erreur. On en fait l'aéroport des doléances.",
    "accent_words": [
-    "toujours"
+    "doléances"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Les seuls jamais débités : ceux qui ne paient plus l'ISF.",
+   "text": "Le maire lit une page : excellente question, on en reparle en 2027.",
    "accent_words": [
-    "l'ISF"
+    "2027"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui regarde son compte en fermant les yeux.",
+   "text": "Envoie ça au pote qui écrit des pavés auxquels personne ne répond.",
    "accent_words": [
-    "fermant les yeux"
+    "répond"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,15 +89,39 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "facade_row",
-    "lamp",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
-   "expected_result": "Le décor de rue posé."
+   "comic_action": "Descente sur la ville ; banderole « L'AÉROPORT DES DOLÉANCES » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "L'AÉROPORT DES DOLÉANCES"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -106,59 +130,138 @@
    ],
    "camera": "closeup",
    "set": [
-    "traffic_light",
-    "road",
-    "car"
+    "roundabout",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "DÉBIT / CRÉDIT",
-   "comic_action": "Feu allumé rouge et vert en même temps ; les voitures avancent et reculent.",
-   "expected_result": "Le tic devient un feu tricolore."
+   "onscreen_text": "GILETS JAUNES",
+   "comic_action": "Des gilets jaunes au rond-point ; le maire arrive avec un micro.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "arms_up",
+     "visage": "colere",
+     "objet": "pancarte",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "parle",
+     "objet": "micro",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "gilets_jaunes"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
+    "table",
+    "form_stack",
     "person"
    ],
-   "onscreen_text": "LE MÈME GÈRE TON COMPTE",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "onscreen_text": "CAHIERS DE DOLÉANCES",
+   "comic_action": "Des habitants remplissent des cahiers à la chaîne sur une table interminable.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "nod",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "fatigue",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "gilets_jaunes"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "building",
-    "text3d",
-    "screen",
-    "person"
+    "mairie",
+    "form_stack",
+    "text3d"
    ],
-   "onscreen_text": "SOLDE NATIONAL",
-   "comic_action": "Compteur géant sur la façade de la tour : les chiffres montent et débordent du bâtiment.",
-   "expected_result": "La dette en compteur municipal."
+   "onscreen_text": "JUSQU'AUX NUAGES",
+   "comic_action": "La pile de cahiers dépasse le toit de la mairie.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "DOLÉANCE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "form_stack",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "FRAIS : TOUJOURS",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "onscreen_text": "AÉROPORT DES DOLÉANCES",
+   "comic_action": "Un petit avion en carton atterrit sur la pile de cahiers.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "jump",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "VOL DOLÉANCES 39 €"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -167,14 +270,33 @@
    ],
    "camera": "closeup",
    "set": [
-    "building",
-    "sign",
-    "text3d",
-    "person"
+    "form_stack",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "ISF : JAMAIS DÉBITÉ",
-   "comic_action": "Panneau « ISF » dévissé de la tour et remplacé par un panneau minuscule « IFI ».",
-   "expected_result": "La suppression devient un changement d'enseigne."
+   "onscreen_text": "EXCELLENTE QUESTION",
+   "comic_action": "Le maire lit la première page et la repose, sourire de com'.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "colere",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ON EN REPARLE EN 2027"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -189,69 +311,64 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : les gilets jaunes et le grand débat : les cahiers de doléances s'empilent jusqu'aux nuages.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "L'AÉROPORT DES DOLÉANCES"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui regarde son compte en fermant les yeux."
+  "text": "Envoie ça au pote qui écrit des pavés auxquels personne ne répond."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 83,
+ "word_count": 85,
  "claims": [
   {
-   "text": "Retrait de cinquante euros : débité et crédité en même temps.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
-   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois. Détourné dans la ville fictive."
-  },
-  {
-   "text": "Le tic présidentiel de 2017 est devenu un mème. Ici, il gère ton compte.",
+   "text": "2018 : face aux gilets jaunes, il lance un grand débat national.",
    "claim_type": "fait_public",
-   "source": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
-   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois."
-  },
-  {
-   "text": "Comme les comptes publics : 3 595 milliards dans le rouge.",
-   "claim_type": "fait_public",
-   "source": "https://www.insee.fr/fr/statistiques/9053525",
-   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
-  },
-  {
-   "text": "Les seuls jamais débités : ceux qui ne paient plus l'ISF.",
-   "claim_type": "fait_public",
-   "source": "https://www.vie-publique.fr/en-bref/291443-impot-de-solidarite-sur-la-fortune-isf-le-cout-de-son-remplacement",
-   "note": "ISF supprimé et remplacé par l'IFI (immobilier seul) en 2018 ; origine du surnom « président des riches »."
+   "source": "https://fr.wikipedia.org/wiki/Mouvement_des_Gilets_jaunes",
+   "note": "Mouvement des Gilets jaunes, né en novembre 2018 : occupation de ronds-points dans toute la France ; réponse de l'exécutif : le grand débat national (2019), avec cahiers de doléances. Grand débat : près de sept heures face aux maires, veste tombée."
   }
  ],
  "sources": [
   {
-   "url": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
-   "date": "2017-05-08",
-   "consulted": "2026-11-22",
-   "statut": "fait (comptage presse) + mème",
-   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois."
-  },
-  {
-   "url": "https://www.insee.fr/fr/statistiques/9053525",
-   "date": "2026-09-29",
-   "consulted": "2026-11-22",
-   "statut": "fait public (Insee)",
-   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
-  },
-  {
-   "url": "https://www.vie-publique.fr/en-bref/291443-impot-de-solidarite-sur-la-fortune-isf-le-cout-de-son-remplacement",
-   "date": "non relevée",
+   "url": "https://fr.wikipedia.org/wiki/Mouvement_des_Gilets_jaunes",
+   "date": "consultée 2026-11-22",
    "consulted": "2026-11-22",
    "statut": "fait public",
-   "note": "ISF supprimé et remplacé par l'IFI (immobilier seul) en 2018 ; origine du surnom « président des riches »."
+   "note": "Mouvement des Gilets jaunes, né en novembre 2018 : occupation de ronds-points dans toute la France ; réponse de l'exécutif : le grand débat national (2019), avec cahiers de doléances."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
+   "date": "2019-01-15",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Grand débat : près de sept heures face aux maires, veste tombée."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « en même temps » devenu mème, appliqué au distributeur de billets ; dette et ISF en arrière-plan. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : les gilets jaunes et le grand débat : les cahiers de doléances s'empilent jusqu'aux nuages. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

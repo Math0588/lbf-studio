@@ -4,71 +4,71 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "La rue impossible",
- "anchor": "« je traverse la rue, je vous en trouve » (2018) face à une ville où la rue est barrée par les travaux, sauf pour le cortège.",
+ "title_cover": "Traverse la rue",
+ "anchor": "« je traverse la rue, je vous en trouve » : toute la ville traverse en boucle",
  "meme_key": "RUE",
  "situation": "les travaux",
- "ressort": "piques frontales sourcées (style tacle)",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, pour traverser la rue, il faut un cortège.",
-  "Macronville : la rue qu'on ne traverse plus.",
-  "Le conseil de 2018 est en travaux.",
-  "Les macronistes vont traverser cette vidéo sans s'arrêter."
+  "2018, à un chômeur : « je traverse la rue, je vous en trouve ».",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Traverse la rue : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Le passage piéton a un péage."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le seul qui l'a vraiment traversée ? Lui, en cortège, feux bloqués.",
-  "La rue est barrée pour tout le monde. Sauf pour le cortège.",
-  "Traverser la rue : réservé aux voitures officielles."
+  "Plus de rues que d'emplois. Le maire conseille de traverser plus vite.",
+  "Il suffisait de traverser la rue. Maintenant il y en a cent, et toujours pas de job.",
+  "La mairie crée une rue de plus. Puis dix. Puis cent."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Et personne ne traverse.",
+   "text": "Dans cette ville, tout le monde vote Macron. Le passage piéton a un péage.",
    "accent_words": [
-    "personne"
+    "péage"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La mairie a mis des travaux sur tous les passages piétons.",
+   "text": "2018, à un chômeur : « je traverse la rue, je vous en trouve ».",
    "accent_words": [
-    "travaux"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Pourtant, en 2018 : « je traverse la rue, je vous en trouve ».",
-   "accent_words": [
-    "traverse la rue"
+    "trouve"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "Huit ans plus tard, la rue est barrée. Le boulot, toujours en face.",
+   "id": "n3",
+   "text": "Toute la ville traverse pour trouver du boulot. Puis retraverse, en boucle.",
    "accent_words": [
-    "toujours en face"
+    "boucle"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Embouteillage de piétons. Les voitures attendent depuis mardi.",
+   "accent_words": [
+    "mardi"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Sept Premiers ministres, eux, ont traversé Matignon. Au pas de course.",
+   "text": "La mairie crée une rue de plus. Puis dix. Puis cent.",
    "accent_words": [
-    "Au pas de course"
+    "cent"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le seul qui l'a vraiment traversée ? Lui, en cortège, feux bloqués.",
+   "text": "Plus de rues que d'emplois. Le maire conseille de traverser plus vite.",
    "accent_words": [
-    "en cortège"
+    "vite"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -76,7 +76,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui cherche un job en face.",
    "accent_words": [
-    "l'autre côté"
+    "face"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,31 +89,74 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "facade_row",
-    "lamp",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
-   "expected_result": "Le décor de rue posé."
+   "comic_action": "Descente sur la ville ; banderole « TRAVERSE LA RUE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TRAVERSE LA RUE"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
     "road",
     "sign",
-    "person",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "PASSAGES : EN TRAVAUX",
-   "comic_action": "Plongée sur le nid-de-poule au milieu de la route, entouré de rubalise.",
-   "expected_result": "Le trou devient le personnage."
+   "onscreen_text": "« JE TRAVERSE LA RUE »",
+   "comic_action": "Un habitant demande du travail ; le maire montre le passage piéton d'un grand geste.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TRAVERSE LA RUE"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -123,61 +166,137 @@
    "camera": "street_dolly",
    "set": [
     "road",
-    "sign",
     "person",
-    "traffic_light"
+    "sign"
    ],
-   "onscreen_text": "« JE TRAVERSE LA RUE »",
-   "comic_action": "Un habitant traverse le passage piéton ; le panneau « EMPLOI » recule d'un mètre à chaque pas.",
-   "expected_result": "Le mème « traverser la rue » devient une infrastructure."
+   "onscreen_text": "TRAVERSÉE EN BOUCLE",
+   "comic_action": "Des centaines d'habitants traversent dans un sens, puis dans l'autre, sans s'arrêter.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "jump",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "spin",
+     "visage": "fatigue",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CHERCHE CDI"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
     "road",
-    "sign",
-    "person",
+    "car",
     "traffic_light"
    ],
-   "onscreen_text": "RUE BARRÉE",
-   "comic_action": "Un habitant traverse le passage piéton ; le panneau « EMPLOI » recule d'un mètre à chaque pas.",
-   "expected_result": "Le mème « traverser la rue » devient une infrastructure."
+   "onscreen_text": "BOUCHON DE PIÉTONS",
+   "comic_action": "Les voitures sont bloquées derrière un fleuve de piétons ; un conducteur dort au volant.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "colere",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "dort",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TRAVERSÉE 2 €"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "facade_row",
-    "person",
+    "road",
     "sign",
     "text3d"
    ],
-   "onscreen_text": "7 TRAVERSÉES DE MATIGNON",
-   "comic_action": "Une file d'adjoints passe devant la porte de la mairie ; un compteur « 1, 2, 3… 7 » s'allume.",
-   "expected_result": "La valse des Premiers ministres en compteur."
+   "onscreen_text": "+100 RUES",
+   "comic_action": "Des ouvriers peignent de nouveaux passages piétons partout, même sur les toits.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "UNE RUE = UN EMPLOI"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "car",
     "road",
     "person",
-    "lamp"
+    "text3d"
    ],
-   "onscreen_text": "CORTÈGE : PRIORITAIRE",
-   "comic_action": "Le cortège officiel traverse la rue barrée, barrières levées, feux bloqués au vert ; les piétons attendent derrière la rubalise.",
-   "expected_result": "La pique en mouvement."
+   "onscreen_text": "TRAVERSEZ PLUS VITE",
+   "comic_action": "Le maire, chronomètre en main, presse la foule épuisée.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "fall",
+     "visage": "fatigue",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PLUS VITE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -192,8 +311,28 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « je traverse la rue, je vous en trouve » : toute la ville traverse en boucle.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TRAVERSE LA RUE"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -205,25 +344,13 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 83,
+ "word_count": 82,
  "claims": [
   {
    "text": "« je traverse la rue, je vous en trouve »",
    "claim_type": "citation_exacte",
    "source": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
-   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
-  },
-  {
-   "text": "Huit ans plus tard, la rue est barrée. Le boulot, toujours en face.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
-   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements. Détourné dans la ville fictive."
-  },
-  {
-   "text": "Sept Premiers ministres, eux, ont traversé Matignon. Au pas de course.",
-   "claim_type": "fait_public",
-   "source": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
-   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018), dit à un horticulteur au chômage ; polémique et détournements. Florilège : « on met un pognon de dingue dans les minima sociaux » (06/2018), « je traverse la rue, je vous en trouve » (09/2018), « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde » (expression la plus fréquente)."
   }
  ],
  "sources": [
@@ -231,17 +358,17 @@
    "url": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
    "date": "2018-09-17",
    "consulted": "2026-11-22",
-   "statut": "citation exacte + mème",
-   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
+   "statut": "fait + mème",
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018), dit à un horticulteur au chômage ; polémique et détournements."
   },
   {
-   "url": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
-   "date": "2025-10",
+   "url": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
+   "date": "2021-08-11",
    "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
+   "statut": "fait (citations exactes vérifiées)",
+   "note": "Florilège : « on met un pognon de dingue dans les minima sociaux » (06/2018), « je traverse la rue, je vous en trouve » (09/2018), « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde » (expression la plus fréquente)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « je traverse la rue, je vous en trouve » (2018) face à une ville où la rue est barrée par les travaux, sauf pour le cortège. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « je traverse la rue, je vous en trouve » : toute la ville traverse en boucle. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

@@ -4,79 +4,79 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "La récré en hey",
- "anchor": "« Hey ! Hey ! » (Nairobi, 2026) pour imposer le silence en classe, devenu remix ; le silence jamais obtenu avec 82 % de défiance.",
+ "title_cover": "Toutes les notes baissent",
+ "anchor": "la note de la France dégradée par Fitch : la mairie dégrade toutes les notes de la ville",
  "meme_key": "HEYHEY",
  "situation": "l'école",
- "ressort": "piques frontales sourcées (style tacle)",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, le prof crie hey hey. La classe remixe.",
-  "Macronville : le silence version Nairobi.",
-  "La seule classe où le bilan tient sur une page.",
-  "Les macronistes vont faire hey hey en commentaire."
+  "Septembre 2025 : l'agence Fitch dégrade la note de la France.",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Toutes les notes baissent : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Le chien a 12 sur 20."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le silence ? Jamais obtenu. 82 % de défiance, ça fait du bruit.",
-  "Il voulait le silence. Il a eu un remix.",
-  "Hey hey : la classe danse, le bilan reste vide."
+  "Seul chiffre jamais dégradé : la dette, 3 595 milliards. Elle, elle monte.",
+  "La France a perdu sa note. La dette, elle, a pris du galon.",
+  "La chorale chante sans le la. Le bac se passe sur moins vingt."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Silence.",
+   "text": "Dans cette ville, tout le monde vote Macron. Le chien a 12 sur 20.",
    "accent_words": [
-    "Silence"
+    "20"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En classe, le prof réclame le silence : « Hey ! Hey ! ».",
+   "text": "Septembre 2025 : l'agence Fitch dégrade la note de la France.",
    "accent_words": [
-    "Hey ! Hey !"
-   ],
-   "claim_type": "citation_exacte"
-  },
-  {
-   "id": "n3",
-   "text": "La classe en fait un remix gospel. Comme Internet en mai 2026.",
-   "accent_words": [
-    "remix gospel"
+    "France"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "Le cours d'histoire porte sur son bilan. Le chapitre fait une page.",
+   "id": "n3",
+   "text": "La mairie, solidaire, dégrade toutes les notes de la ville.",
    "accent_words": [
-    "une page"
+    "ville"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Les élèves perdent deux points, les restos une étoile, le piano une note.",
+   "accent_words": [
+    "note"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Contrôle : citez une erreur du mandat. Le corrigé est vide.",
+   "text": "La chorale chante sans le la. Le bac se passe sur moins vingt.",
    "accent_words": [
-    "vide"
+    "vingt"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le silence ? Jamais obtenu. 82 % de défiance, ça fait du bruit.",
+   "text": "Seul chiffre jamais dégradé : la dette, 3 595 milliards. Elle, elle monte.",
    "accent_words": [
-    "du bruit"
+    "monte"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui n'arrive jamais à tenir sa classe.",
+   "text": "Envoie ça au pote qui se met toujours 20 sur 20.",
    "accent_words": [
-    "tenir sa classe"
+    "sur"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,14 +89,39 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
+    "ground",
+    "mairie",
     "banner",
     "person",
     "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur l'école ; banderole au fronton.",
-   "expected_result": "L'école posée."
+   "comic_action": "Descente sur la ville ; banderole « TOUTES LES NOTES BAISSENT » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUTES LES NOTES BAISSENT"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,46 +130,103 @@
    ],
    "camera": "orbit",
    "set": [
-    "tribune",
-    "person",
-    "studio_light",
-    "banner"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "« HEY ! HEY ! »",
-   "comic_action": "Le maire cubique lève les bras sur la tribune, bouche ouverte ; la foule se fige net.",
-   "expected_result": "« Hey ! Hey ! » en un plan."
+   "onscreen_text": "NOTE DÉGRADÉE",
+   "comic_action": "Un bulletin géant tombe sur la place : « FRANCE : A+ », le « AA- » barré en rouge.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUT VA BIEN"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "studio_light",
-    "person",
-    "screen",
-    "tribune"
+    "mairie",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "REMIX GOSPEL",
-   "comic_action": "Le maire cubique derrière une platine sur la tribune ; la foule danse, personne n'écoute le discours.",
-   "expected_result": "Le remix remplace le message."
+   "onscreen_text": "TOUTES LES NOTES -2",
+   "comic_action": "Un agent repasse au feutre rouge sur toutes les enseignes de la ville.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ÉTOILE EN MOINS"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "screen",
-    "person",
+    "shop",
     "table",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "CHAPITRE : 1 PAGE",
-   "comic_action": "Salle de classe : tableau-écran, pupitres, élèves qui lèvent la main.",
-   "expected_result": "L'école porte la pique."
+   "onscreen_text": "LE RESTO PERD SON ÉTOILE",
+   "comic_action": "Un chef décroche l'étoile de sa devanture ; un piano perd une touche.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "12/20"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -153,13 +235,33 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "mairie"
+    "studio_light",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "CORRIGÉ : VIDE",
-   "comic_action": "Écran géant sur la mairie : la liste « ERREURS » défile… vide. Le curseur clignote.",
-   "expected_result": "Le bilan reconnaît des erreurs sans en nommer aucune."
+   "onscreen_text": "BAC SUR -20",
+   "comic_action": "La chorale chante faux sous un projecteur ; des copies notées « -20 » volent.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BAISSEZ VOS NOTES"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -170,11 +272,31 @@
    "set": [
     "screen",
     "text3d",
-    "sign"
+    "building"
    ],
-   "onscreen_text": "82 % : BRUIT",
-   "comic_action": "Jauge de confiance municipale : l'aiguille tombe tout en bas, sous l'ancien record.",
-   "expected_result": "Le sondage en jauge."
+   "onscreen_text": "LA DETTE, ELLE, MONTE",
+   "comic_action": "Toutes les notes baissent sur les écrans ; seul le compteur de dette grimpe.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "EN HAUSSE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -189,69 +311,70 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : la note de la France dégradée par Fitch : la mairie dégrade toutes les notes de la ville.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUTES LES NOTES BAISSENT"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui n'arrive jamais à tenir sa classe."
+  "text": "Envoie ça au pote qui se met toujours 20 sur 20."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 82,
+ "word_count": 85,
  "claims": [
   {
-   "text": "« Hey ! Hey ! »",
-   "claim_type": "citation_exacte",
-   "source": "https://fr.euronews.com/2026/05/13/hey-hey-macron-vient-de-sortir-un-nouveau-tube",
-   "note": "« Hey ! Hey ! » à Nairobi (11/05/2026), « Je vais mettre de l'ordre », remix gospel ; remix « For sure » à 20 millions de vues selon son producteur."
-  },
-  {
-   "text": "La classe en fait un remix gospel. Comme Internet en mai 2026.",
+   "text": "Septembre 2025 : l'agence Fitch dégrade la note de la France.",
    "claim_type": "fait_public",
-   "source": "https://fr.euronews.com/2026/05/13/hey-hey-macron-vient-de-sortir-un-nouveau-tube",
-   "note": "« Hey ! Hey ! » à Nairobi (11/05/2026), « Je vais mettre de l'ordre », remix gospel ; remix « For sure » à 20 millions de vues selon son producteur."
+   "source": "https://www.lalibre.be/economie/conjoncture/2025/09/12/fitch-degrade-la-note-de-la-france-pointant-ses-finances-publiques-degradees-NTOHYWJ4WRFQDFTGUSTL7YRM2M/",
+   "note": "L'agence Fitch dégrade la note de la France (AA- à A+), en pointant ses finances publiques dégradées."
   },
   {
-   "text": "Contrôle : citez une erreur du mandat. Le corrigé est vide.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
-   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027. Détourné dans la ville fictive."
-  },
-  {
-   "text": "Le silence ? Jamais obtenu. 82 % de défiance, ça fait du bruit.",
+   "text": "Seul chiffre jamais dégradé : la dette, 3 595 milliards. Elle, elle monte.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/sondage-82-des-francais-ne-font-pas-confiance-a-emmanuel-macron-qui-bat-le-record-dimpopularite-de-francois-hollande-a-lelysee",
-   "note": "82 % des Français ne lui font pas confiance ; record d'impopularité de Hollande battu."
+   "source": "https://www.insee.fr/fr/statistiques/9053525",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
   }
  ],
  "sources": [
   {
-   "url": "https://fr.euronews.com/2026/05/13/hey-hey-macron-vient-de-sortir-un-nouveau-tube",
-   "date": "2026-05-13",
+   "url": "https://www.lalibre.be/economie/conjoncture/2025/09/12/fitch-degrade-la-note-de-la-france-pointant-ses-finances-publiques-degradees-NTOHYWJ4WRFQDFTGUSTL7YRM2M/",
+   "date": "2025-09-12",
    "consulted": "2026-11-22",
-   "statut": "fait public + mème",
-   "note": "« Hey ! Hey ! » à Nairobi (11/05/2026), « Je vais mettre de l'ordre », remix gospel ; remix « For sure » à 20 millions de vues selon son producteur."
+   "statut": "fait public",
+   "note": "L'agence Fitch dégrade la note de la France (AA- à A+), en pointant ses finances publiques dégradées."
   },
   {
-   "url": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
-   "date": "2026-11",
+   "url": "https://www.insee.fr/fr/statistiques/9053525",
+   "date": "2026-09-29",
    "consulted": "2026-11-22",
-   "statut": "fait rapporté",
-   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/sondage-82-des-francais-ne-font-pas-confiance-a-emmanuel-macron-qui-bat-le-record-dimpopularite-de-francois-hollande-a-lelysee",
-   "date": "2026",
-   "consulted": "2026-11-22",
-   "statut": "fait public (sondage Elabe)",
-   "note": "82 % des Français ne lui font pas confiance ; record d'impopularité de Hollande battu."
+   "statut": "fait public (statistique)",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « Hey ! Hey ! » (Nairobi, 2026) pour imposer le silence en classe, devenu remix ; le silence jamais obtenu avec 82 % de défiance. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : la note de la France dégradée par Fitch : la mairie dégrade toutes les notes de la ville. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

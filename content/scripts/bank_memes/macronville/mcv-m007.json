@@ -4,71 +4,71 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Douze heures au poireau",
- "anchor": "le Salon de l'agriculture 2026 (environ douze heures de déambulation, interpellations d'agriculteurs exaspérés) rejoué au marché : record de visite, zéro changement pour ceux qui y sont tous les jours.",
+ "title_cover": "Treize heures au marché",
+ "anchor": "les douze heures au Salon de l'agriculture : le marché municipal veut battre le record",
  "meme_key": "SALON",
  "situation": "le marché",
- "ressort": "piques frontales sourcées (style tacle)",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, le maire passe douze heures au marché. Le poireau aussi.",
-  "Macronville : la visite de marché la plus longue du monde.",
-  "Douze heures de poignées de main, zéro poireau acheté.",
-  "Les macronistes vont trouver ça très proche des gens."
+  "Salon de l'agriculture 2026 : il passe environ douze heures dans les allées.",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Treize heures au marché : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Les vaches ont un badge presse."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Record battu. Les paysans font ça tous les jours, sans caméra.",
-  "Douze heures de caméra. Les paysans, eux, sont toujours là.",
-  "Le poireau a tenu. Le maire, douze heures."
+  "Le lendemain, il est toujours là. Il réexplique la dette à un poireau.",
+  "Il a passé douze heures au Salon. Le poireau, lui, a tout compris.",
+  "Le marché ferme. Il reste. Les commerçants dorment sur les étals."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Au marché, au moins.",
+   "text": "Dans cette ville, tout le monde vote Macron. Les vaches ont un badge presse.",
    "accent_words": [
-    "Au marché"
+    "presse"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Au Salon de l'agriculture 2026, il a arpenté les allées environ douze heures.",
+   "text": "Salon de l'agriculture 2026 : il passe environ douze heures dans les allées.",
    "accent_words": [
-    "douze heures"
+    "allées"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Au marché de la ville, il vise le record : treize heures.",
+   "text": "Le marché municipal vise le record : treize heures.",
    "accent_words": [
-    "treize heures"
+    "heures"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Les paysans l'interpellent, exaspérés. Il réexplique. Plus lentement.",
+   "text": "Dixième heure : il serre toutes les mains, même celles des mannequins.",
    "accent_words": [
-    "Plus lentement"
+    "mannequins"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le poireau a attendu toute la journée. Le prix aussi.",
+   "text": "Le marché ferme. Il reste. Les commerçants dorment sur les étals.",
    "accent_words": [
-    "Le prix aussi"
+    "étals"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Record battu. Les paysans font ça tous les jours, sans caméra.",
+   "text": "Le lendemain, il est toujours là. Il réexplique la dette à un poireau.",
    "accent_words": [
-    "sans caméra"
+    "poireau"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -76,7 +76,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui fait le tour du marché sans rien acheter.",
    "accent_words": [
-    "sans rien acheter"
+    "acheter"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,14 +89,39 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "facade_row",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "sign"
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
-   "expected_result": "Le commerce du jour posé."
+   "comic_action": "Descente sur la ville ; banderole « TREIZE HEURES AU MARCHÉ » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TREIZE HEURES AU MARCHÉ"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -107,76 +132,171 @@
    "set": [
     "shop",
     "person",
-    "table",
-    "screen"
+    "text3d"
    ],
-   "onscreen_text": "SALON 2026 : 12 H",
-   "comic_action": "Le maire cubique serre des mains entre les étals ; l'horloge de l'écran accélère, les étals se vident.",
-   "expected_result": "La visite marathon."
+   "onscreen_text": "12 HEURES AU SALON",
+   "comic_action": "Le maire serre des mains de stand en stand ; une horloge géante tourne au-dessus.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "JE SUIS LÀ"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
     "shop",
-    "person",
-    "table",
-    "screen"
+    "column",
+    "text3d"
    ],
-   "onscreen_text": "OBJECTIF : 13 H",
-   "comic_action": "Le maire cubique serre des mains entre les étals ; l'horloge de l'écran accélère, les étals se vident.",
-   "expected_result": "La visite marathon."
+   "onscreen_text": "OBJECTIF : 13 HEURES",
+   "comic_action": "Un chronomètre géant démarre au-dessus du marché municipal.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FROMAGE GOÛTÉ 0 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "tribune",
+    "shop",
     "person",
-    "banner",
-    "studio_light"
+    "text3d"
    ],
-   "onscreen_text": "RÉEXPLICATION",
-   "comic_action": "Le maire cubique à la tribune, projecteur, foule clairsemée.",
-   "expected_result": "Le discours porte la pique."
+   "onscreen_text": "TOUTES LES MAINS",
+   "comic_action": "Le maire serre la main d'un mannequin de vitrine avec conviction.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "SALON"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
     "shop",
-    "table",
-    "person",
-    "sign"
+    "lamp",
+    "person"
    ],
-   "onscreen_text": "LE POIREAU ATTEND",
-   "comic_action": "Travelling entre les étals du marché.",
-   "expected_result": "Le marché porte la pique."
+   "onscreen_text": "IL NE PART PAS",
+   "comic_action": "Nuit tombée : les commerçants dorment sur leurs étals, le maire parle encore.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "fall",
+     "visage": "dort",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "FERMÉ (SAUF LUI)"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
     "shop",
-    "table",
     "person",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "EUX : TOUS LES JOURS",
-   "comic_action": "Le maire repart en voiture sous les flashs ; derrière lui, les maraîchers remballent leurs étals à la nuit tombée.",
-   "expected_result": "Le marché porte la pique."
+   "onscreen_text": "LA DETTE AU POIREAU",
+   "comic_action": "Le maire explique un graphique de la dette à un poireau posé sur une caisse.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "POIREAU 3 595 €"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,14 +305,34 @@
    ],
    "camera": "return",
    "set": [
-    "shop",
-    "tshirt",
+    "road",
     "person",
+    "tshirt",
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : les douze heures au Salon de l'agriculture : le marché municipal veut battre le record.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TREIZE HEURES AU MARCHÉ"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -204,25 +344,13 @@
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 79,
+ "word_count": 85,
  "claims": [
   {
-   "text": "Au Salon de l'agriculture 2026, il a arpenté les allées environ douze heures.",
+   "text": "Salon de l'agriculture 2026 : il passe environ douze heures dans les allées.",
    "claim_type": "fait_public",
    "source": "https://mediaterranee.com/2422026-salon-de-lagriculture-un-rail-geant-de-farine-pour-pieger-macron.html",
-   "note": "Salon de l'agriculture 2026 : environ douze heures dans les allées."
-  },
-  {
-   "text": "Au marché de la ville, il vise le record : treize heures.",
-   "claim_type": "fiction_satirique",
-   "source": "https://mediaterranee.com/2422026-salon-de-lagriculture-un-rail-geant-de-farine-pour-pieger-macron.html",
-   "note": "Salon de l'agriculture 2026 : environ douze heures dans les allées. Détourné dans la ville fictive."
-  },
-  {
-   "text": "Les paysans l'interpellent, exaspérés. Il réexplique. Plus lentement.",
-   "claim_type": "fait_public",
-   "source": "https://mediaterranee.com/2422026-salon-de-lagriculture-un-rail-geant-de-farine-pour-pieger-macron.html",
-   "note": "Salon de l'agriculture 2026 : environ douze heures dans les allées."
+   "note": "Salon de l'agriculture 2026 : environ douze heures dans les allées, interpellations d'agriculteurs."
   }
  ],
  "sources": [
@@ -230,10 +358,10 @@
    "url": "https://mediaterranee.com/2422026-salon-de-lagriculture-un-rail-geant-de-farine-pour-pieger-macron.html",
    "date": "2026-02-24",
    "consulted": "2026-11-22",
-   "statut": "fait (douze heures de visite, interpellations)",
-   "note": "Salon de l'agriculture 2026 : environ douze heures dans les allées."
+   "statut": "fait public",
+   "note": "Salon de l'agriculture 2026 : environ douze heures dans les allées, interpellations d'agriculteurs."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : le Salon de l'agriculture 2026 (environ douze heures de déambulation, interpellations d'agriculteurs exaspérés) rejoué au marché : record de visite, zéro changement pour ceux qui y sont tous les jours. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : les douze heures au Salon de l'agriculture : le marché municipal veut battre le record. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

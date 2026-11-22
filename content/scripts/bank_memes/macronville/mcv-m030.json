@@ -4,71 +4,71 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Cent rues, zéro job",
- "anchor": "« traverser la rue » (2018), mème national, appliqué au job d'été : stage non payé ou service national volontaire.",
+ "title_cover": "La rue open space",
+ "anchor": "« je traverse la rue, je vous en trouve » : les entreprises s'installent au milieu de la rue",
  "meme_key": "RUE",
  "situation": "les vacances",
- "ressort": "piques frontales sourcées (style tacle)",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, le job d'été se trouve en traversant cent rues.",
-  "Macronville : traverser la rue, édition vacances.",
-  "Cent traversées, un seul job : la traversée.",
-  "Les macronistes vont traverser la rue pour éviter cette vidéo."
+  "2018, à un chômeur : « je traverse la rue, je vous en trouve ».",
+  "Les électeurs de Macron vont détester celle-là.",
+  "La rue open space : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Le passage piéton a un service RH."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Après cent traversées, il trouve enfin un job : agent de passage piéton.",
-  "Il a trouvé un job : faire traverser les autres.",
-  "Cent rues traversées, toujours le même trottoir."
+  "Le maire traverse pour rentrer : on lui propose un stage non payé.",
+  "À force de traverser la rue, la rue est devenue un open space.",
+  "Plus une voiture ne passe. Les livreurs postulent pour pouvoir traverser."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Même en vacances.",
+   "text": "Dans cette ville, tout le monde vote Macron. Le passage piéton a un service RH.",
    "accent_words": [
-    "en vacances"
+    "RH"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Job d'été ? Le maire conseille de traverser la rue. Cent fois s'il le faut.",
+   "text": "2018, à un chômeur : « je traverse la rue, je vous en trouve ».",
    "accent_words": [
-    "Cent fois"
+    "trouve"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n3",
+   "text": "Les entreprises s'installent donc au milieu de la rue.",
+   "accent_words": [
+    "rue"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "En 2018, la phrase devient un mème national, repris partout.",
-   "accent_words": [
-    "mème national"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n4",
-   "text": "De l'autre côté : un stage non payé en start-up.",
+   "text": "Réunions sur les passages piétons, machine à café sur le rond-point.",
    "accent_words": [
-    "non payé"
+    "rond-point"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Sinon, le service national volontaire : dix mois au garde-à-vous.",
+   "text": "Plus une voiture ne passe. Les livreurs postulent pour pouvoir traverser.",
    "accent_words": [
-    "dix mois"
+    "traverser"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Après cent traversées, il trouve enfin un job : agent de passage piéton.",
+   "text": "Le maire traverse pour rentrer : on lui propose un stage non payé.",
    "accent_words": [
-    "agent de passage piéton"
+    "payé"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -76,7 +76,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui cherche un job d'été depuis mars.",
    "accent_words": [
-    "depuis mars"
+    "mars"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,94 +89,215 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "facade_row",
-    "lamp",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
-   "expected_result": "Le décor de rue posé."
+   "comic_action": "Descente sur la ville ; banderole « LA RUE OPEN SPACE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LA RUE OPEN SPACE"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
     "road",
     "sign",
-    "person",
-    "traffic_light"
+    "person"
    ],
-   "onscreen_text": "TRAVERSÉE N°100",
-   "comic_action": "Un habitant traverse le passage piéton ; le panneau « EMPLOI » recule d'un mètre à chaque pas.",
-   "expected_result": "Le mème « traverser la rue » devient une infrastructure."
+   "onscreen_text": "« JE TRAVERSE LA RUE »",
+   "comic_action": "Un jeune demande un job ; le maire lui montre le passage piéton d'un geste ample.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TRAVERSE !"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "road",
+    "table",
+    "screen"
    ],
-   "onscreen_text": "2018 : TRAVERSE LA RUE",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "onscreen_text": "BUREAUX SUR LA CHAUSSÉE",
+   "comic_action": "Des bureaux avec écrans sont posés en plein milieu de la rue.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "neutre",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BUREAU 3 000 €/MOIS"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "screen",
-    "text3d",
-    "building",
-    "banner"
+    "roundabout",
+    "table",
+    "person"
    ],
-   "onscreen_text": "STAGE : 0 €",
-   "comic_action": "Écran « LEVÉE DE FONDS » ; banderole « START-UP NATION » au-dessus d'un truc qui ne marche pas.",
-   "expected_result": "La formule fait ricaner."
+   "onscreen_text": "CAFÉ SUR LE ROND-POINT",
+   "comic_action": "Une machine à café trône sur le rond-point ; réunion debout sur le passage piéton.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "objet": "verre",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "STAGIAIRE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "tree",
-    "bench",
-    "person",
-    "sign"
+    "road",
+    "car",
+    "person"
    ],
-   "onscreen_text": "PLAN B : 10 MOIS",
-   "comic_action": "Les habitants du parc au garde-à-vous ; panneau « VOLONTAIRE (OBLIGATOIRE) ».",
-   "expected_result": "Le service national étendu au quotidien."
+   "onscreen_text": "LIVREURS EN ENTRETIEN",
+   "comic_action": "Un livreur passe un entretien d'embauche pour avoir le droit de traverser.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "cross_arms",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "POSTULEZ POUR PASSER"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
     "road",
-    "sign",
     "person",
-    "traffic_light"
+    "text3d"
    ],
-   "onscreen_text": "ENFIN UN JOB : LA RUE",
-   "comic_action": "Un jeune en gilet fluo tient un panneau « STOP » au milieu du passage piéton, souriant, épuisé.",
-   "expected_result": "Le mème « traverser la rue » devient une infrastructure."
+   "onscreen_text": "STAGE NON PAYÉ",
+   "comic_action": "Le maire traverse ; un recruteur lui tend une offre de stage non rémunéré.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BIENVENUE STAGIAIRE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -191,8 +312,28 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « je traverse la rue, je vous en trouve » : les entreprises s'installent au milieu de la rue.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LA RUE OPEN SPACE"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -204,37 +345,13 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 80,
+ "word_count": 85,
  "claims": [
   {
-   "text": "Job d'été ? Le maire conseille de traverser la rue. Cent fois s'il le faut.",
-   "claim_type": "fiction_satirique",
+   "text": "« je traverse la rue, je vous en trouve »",
+   "claim_type": "citation_exacte",
    "source": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
-   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements. Détourné dans la ville fictive."
-  },
-  {
-   "text": "En 2018, la phrase devient un mème national, repris partout.",
-   "claim_type": "fait_public",
-   "source": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
-   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
-  },
-  {
-   "text": "De l'autre côté : un stage non payé en start-up.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.elysee.fr/emmanuel-macron/2017/06/15/discours-du-president-de-la-republique-au-salon-vivatech-201",
-   "note": "« Start-up nation » (VivaTech 2017). Détourné dans la ville fictive."
-  },
-  {
-   "text": "Sinon, le service national volontaire : dix mois au garde-à-vous.",
-   "claim_type": "fait_public",
-   "source": "https://www.elysee.fr/emmanuel-macron/2025/11/27/deplacement-au-sein-de-la-27e-brigade-dinfanterie-de-montagne-de-varces",
-   "note": "Service national militaire volontaire de dix mois annoncé à Varces."
-  },
-  {
-   "text": "Après cent traversées, il trouve enfin un job : agent de passage piéton.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
-   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements. Détourné dans la ville fictive."
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018), dit à un horticulteur au chômage ; polémique et détournements. Florilège : « on met un pognon de dingue dans les minima sociaux » (06/2018), « je traverse la rue, je vous en trouve » (09/2018), « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde » (expression la plus fréquente)."
   }
  ],
  "sources": [
@@ -242,24 +359,17 @@
    "url": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
    "date": "2018-09-17",
    "consulted": "2026-11-22",
-   "statut": "citation exacte + mème",
-   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
+   "statut": "fait + mème",
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018), dit à un horticulteur au chômage ; polémique et détournements."
   },
   {
-   "url": "https://www.elysee.fr/emmanuel-macron/2017/06/15/discours-du-president-de-la-republique-au-salon-vivatech-201",
-   "date": "2017-06-15",
+   "url": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
+   "date": "2021-08-11",
    "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "« Start-up nation » (VivaTech 2017)."
-  },
-  {
-   "url": "https://www.elysee.fr/emmanuel-macron/2025/11/27/deplacement-au-sein-de-la-27e-brigade-dinfanterie-de-montagne-de-varces",
-   "date": "2025-11-27",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Service national militaire volontaire de dix mois annoncé à Varces."
+   "statut": "fait (citations exactes vérifiées)",
+   "note": "Florilège : « on met un pognon de dingue dans les minima sociaux » (06/2018), « je traverse la rue, je vous en trouve » (09/2018), « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde » (expression la plus fréquente)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « traverser la rue » (2018), mème national, appliqué au job d'été : stage non payé ou service national volontaire. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « je traverse la rue, je vous en trouve » : les entreprises s'installent au milieu de la rue. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }
