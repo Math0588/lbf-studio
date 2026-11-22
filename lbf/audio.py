@@ -307,7 +307,8 @@ def meme_cues(ep: dict, timeline: dict) -> list:
           (r"\b(vite|course|courant|rapide|en courant|fuient|partis)", ["tequila_heineken", "wesh_alors"]),
           (r"\b(explos|boum|bim|baston|bagarre|se battent)", ["et_bim", "vine_boom", "ca_va_peter"]),
           (r"\b(honte|scandale|n'importe quoi)", ["cest_honteux", "je_pete_ma_biere"]),
-          (r"\?\s*$|\?\s", ["bruh", "quoi_feur"])]
+          (r"\bquoi\s*\?", ["quoi_feur"]),
+          (r"\?", ["bruh", "dun_dun_dun"])]
     used_times = []
     for seg in segs[1:-2]:
         if len(used_times) >= 2:

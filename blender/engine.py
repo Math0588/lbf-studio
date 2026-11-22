@@ -965,7 +965,7 @@ def p_crowd(p):
         x = cx + (i % cols - (cols - 1) / 2) * p.get("dx", 1.7) + rnd.uniform(-0.3, 0.3)
         y = cy + (i // cols) * p.get("dy", 1.8) + rnd.uniform(-0.3, 0.3)
         cp = {"id": f"{p.get('id', 'crowd')}_{i}", "at": [x, y], "rot": p.get("rot", 0) + rnd.uniform(-12, 12),
-              "shirt": rnd.choice(shirts), "skin": rnd.choice(skins), "hair": rnd.choice(hairs),
+              "shirt": p.get("shirt") or rnd.choice(shirts), "skin": rnd.choice(skins), "hair": rnd.choice(hairs),
               "hair_color": rnd.choice(["#2B1D14", "#6B4423", "#C9A15B", "#1C1C1C", "#8A8A8A", "#B5542C"]),
               "faces": p.get("faces", ["neutre"]), "iris": rnd.choice(["brun", "bleu", "vert"]),
               "hold": p.get("hold") if rnd.random() < p.get("hold_ratio", 1.0) else None,

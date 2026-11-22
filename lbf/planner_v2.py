@@ -258,6 +258,10 @@ def plan(script: dict) -> dict:
                 extra.append({"type": "chien", "id": f"{sc['id']}_chien", "at": [cx + 1.6, cy - 1.8], "rot": -35,
                               "tee": g.get("tee") or SURNAMES.get(city, "").split("|")[0],
                               "tee_color": PROPAGANDE.get(city, {}).get("bg", "#1649FF")})
+            elif g.get("type") == "gilets_jaunes":   # foule en gilet jaune (sur le rond-point si c'est la scène)
+                extra.append({"type": "crowd", "id": f"{sc['id']}_gj", "at": [cx - 2, cy - 7], "count": 10, "cols": 5,
+                              "dx": 1.7, "dy": 1.7, "rot": 180, "shirt": "#F2D300", "hold": "pancarte",
+                              "hold_ratio": 0.4, "faces": ["colere"], "seed": k + 21})
             elif g.get("type") == "prix" and g.get("texte"):
                 extra.append({"type": "sign", "id": f"{sc['id']}_prix{gi}", "at": [gx, gy - 1], "w": 3.4, "h": 1.3,
                               "z": 1.4, "bg": "#FFFDF7",
