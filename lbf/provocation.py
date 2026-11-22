@@ -12,15 +12,19 @@ from __future__ import annotations
 import hashlib
 
 NAMES = {"bardellaville": "Bardella", "melenchonville": "Mélenchon", "macronville": "Macron",
-         "zemmourville": "Zemmour", "marineville": "Marine", "glucksmannville": "Glucksmann"}
+         "zemmourville": "Zemmour", "marineville": "Marine", "glucksmannville": "Glucksmann",
+         "durifville": "Durif", "rinerville": "Teddy Riner"}
 CITIES = {"bardellaville": "Bardellaville", "melenchonville": "Mélenchonville", "macronville": "Macronville",
-          "zemmourville": "Zemmourville", "marineville": "Marineville", "glucksmannville": "Glucksmannville"}
+          "zemmourville": "Zemmourville", "marineville": "Marineville", "glucksmannville": "Glucksmannville",
+          "durifville": "Durifville", "rinerville": "Rinerville"}
 
 # Rivalités : chaque vidéo provoque le camp d'en face (débat en commentaires), jamais d'insulte envers des électeurs.
 RIVAL = {"melenchonville": "bardellaville", "bardellaville": "melenchonville", "glucksmannville": "melenchonville",
+         "durifville": "macronville", "rinerville": "bardellaville",
          "zemmourville": "marineville", "marineville": "zemmourville", "macronville": "bardellaville"}
 FANS = {"melenchonville": "insoumis", "bardellaville": "pro-Bardella", "macronville": "macronistes",
-        "glucksmannville": "fans de Glucksmann", "zemmourville": "zemmouriens", "marineville": "pro-Marine"}
+        "glucksmannville": "fans de Glucksmann", "zemmourville": "zemmouriens", "marineville": "pro-Marine",
+        "durifville": "disciples cosmiques", "rinerville": "fans de Teddy"}
 HOOKS_CAMP = ["LES {fans} VONT HURLER", "LES {fans} VONT PLEURER", "LES {fans} : RESPIREZ",
               "{fans}, NE REGARDEZ PAS", "LES {rivaux} VONT ADORER"]
 HOOKS_SHORT = [
@@ -53,7 +57,8 @@ CAPTION_OPENERS = [
     "Dis-moi qui tu votes, je te dirai dans quelle ville tu habites 👇",
 ]
 NEXT = {"bardellaville": "macronville", "macronville": "melenchonville", "melenchonville": "zemmourville",
-        "zemmourville": "marineville", "marineville": "glucksmannville", "glucksmannville": "bardellaville"}
+        "zemmourville": "marineville", "marineville": "glucksmannville", "glucksmannville": "durifville",
+        "durifville": "rinerville", "rinerville": "bardellaville"}
 
 
 def _pick(seq, key: str, salt: str):

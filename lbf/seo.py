@@ -32,9 +32,14 @@ PEOPLE = {
                      "avec": "Reconquête", "tags": ["zemmour", "reconquete"]},
     "glucksmannville": {"nom": "Glucksmann", "full": "Raphaël Glucksmann", "parti": "Place publique",
                         "parti_long": "Place publique", "avec": "Place publique", "tags": ["glucksmann", "placepublique"]},
+    "durifville": {"nom": "Durif", "full": "Sylvain Durif", "parti": "candidat cosmique", "parti_long": "le Christ cosmique",
+                   "avec": "ses disciples", "tags": ["sylvaindurif", "christcosmique"]},
+    "rinerville": {"nom": "Teddy Riner", "full": "Teddy Riner", "parti": "le judo", "parti_long": "le judo français",
+                   "avec": "le tatami", "tags": ["teddyriner", "judo"]},
 }
 CITY = {"bardellaville": "Bardellaville", "marineville": "Marineville", "macronville": "Macronville",
-        "melenchonville": "Mélenchonville", "zemmourville": "Zemmourville", "glucksmannville": "Glucksmannville"}
+        "melenchonville": "Mélenchonville", "zemmourville": "Zemmourville", "glucksmannville": "Glucksmannville",
+        "durifville": "Durifville", "rinerville": "Rinerville"}
 ROTATING = ["presidentielle2027", "humour", "parodie"]
 
 FIRST_LINES = [
@@ -56,7 +61,8 @@ QUESTIONS = [
 ]
 SHARES = ["Envoie ça à ton pote qui vote {nom}.", "Envoie ça à quelqu'un qui défend {nom} à chaque repas de famille."]
 NEXT = {"bardellaville": "macronville", "macronville": "melenchonville", "melenchonville": "zemmourville",
-        "zemmourville": "marineville", "marineville": "glucksmannville", "glucksmannville": "bardellaville"}
+        "zemmourville": "marineville", "marineville": "glucksmannville", "glucksmannville": "durifville",
+        "durifville": "rinerville", "rinerville": "bardellaville"}
 
 
 def _pick(seq, key: str, salt: str):

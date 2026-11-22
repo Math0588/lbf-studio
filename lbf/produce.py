@@ -14,7 +14,7 @@ from pathlib import Path
 from . import audio, captions_v2, config, cover, editorial, qa, subtitles
 
 CITY_NAMES = {"bardellaville": "Bardellaville", "melenchonville": "Mélenchonville", "macronville": "Macronville",
-              "zemmourville": "Zemmourville", "marineville": "Marineville"}
+              "zemmourville": "Zemmourville", "marineville": "Marineville", "glucksmannville": "Glucksmannville", "durifville": "Durifville", "rinerville": "Rinerville"}
 
 
 def load_episode(path: Path) -> dict:

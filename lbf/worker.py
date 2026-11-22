@@ -24,7 +24,8 @@ from . import config, db, editorial, gagmatrix, planner_v2 as planner, produce, 
 
 OWNER = f"{socket.gethostname()}:{os.getpid()}"
 LOCK = config.DATA / "worker.lock"
-CITY_ORDER = ["bardellaville", "macronville", "melenchonville", "zemmourville", "marineville", "glucksmannville"]
+CITY_ORDER = ["bardellaville", "macronville", "melenchonville", "zemmourville", "marineville", "glucksmannville",
+              "durifville", "rinerville"]
 MAX_ATTEMPTS = 2
 
 
@@ -79,7 +80,9 @@ def bank_scripts() -> list[Path]:
         c = p.name.split("_pilot_")[0]
         per_city.setdefault(c, []).append(p)
     for c in CITY_ORDER:
-        bank = sorted((config.CONTENT / "scripts" / "bank" / c).glob("*.json"))
+        # banque « ultra » (scénarios les plus provocants) en tête, puis la banque de série
+        bank = sorted((config.CONTENT / "scripts" / "bank_ultra" / c).glob("*.json")) + \
+            sorted((config.CONTENT / "scripts" / "bank" / c).glob("*.json"))
         memes = sorted((config.CONTENT / "scripts" / "bank_memes" / c).glob("*.json"))
         mixed = []  # alterne scripts de série et scripts ancrés sur un mème réel
         for i in range(max(len(bank), len(memes))):

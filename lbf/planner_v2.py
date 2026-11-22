@@ -33,9 +33,17 @@ MAYORS = {
                     "hair": "long", "hair_color": "#E2C27A", "iris": "bleu", "faces": ["sourire_pro", "parle", "fier"]},
     "glucksmannville": {"suit": True, "sash": True, "shirt": "#C8B79A", "pants": "#8A7B64", "tie": "#B9A68A",
                         "hair": "meche", "hair_color": "#4A3626", "iris": "bleu", "faces": ["neutre", "parle", "blase"]},
+    # Sylvain Durif, « le Christ cosmique » : tunique blanche, cheveux longs blancs
+    "durifville": {"suit": False, "sash": True, "shirt": "#FFFDF7", "pants": "#FFFDF7", "hair": "long",
+                   "hair_color": "#EDEDED", "iris": "bleu", "faces": ["content", "parle", "fier"]},
+    # Teddy Riner : judogi blanc, ceinture noire (cravate), grand gabarit
+    "rinerville": {"suit": False, "sash": True, "shirt": "#FFFDF7", "pants": "#FFFDF7", "tie": "#111827",
+                   "hair": "court", "hair_color": "#1C1C1C", "skin": "#8D5524", "scale": 1.25,
+                   "faces": ["fier", "parle", "content"]},
 }
 NEXT_CITY = {"bardellaville": "Macronville", "macronville": "Mélenchonville", "melenchonville": "Zemmourville",
-             "zemmourville": "Marineville", "marineville": "Glucksmannville", "glucksmannville": "Bardellaville"}
+             "zemmourville": "Marineville", "marineville": "Glucksmannville", "glucksmannville": "Durifville",
+             "durifville": "Rinerville", "rinerville": "Bardellaville"}
 SPOTS = [(0, -50), (0, 40), (-44, 0), (44, 0), (-40, -50), (0, -92)]
 SHIRTS = ["#5B8DEF", "#F2B134", "#EF6F6C", "#7BC47F", "#B983FF", "#2EC4B6", "#F78FB3", "#FFFDF7"]
 HAIRS = ["court", "meche", "herisse", "long", "chignon", "casquette", "beret"]
@@ -124,6 +132,8 @@ PROPAGANDE = {
     "glucksmannville": {"bg": "#E8C9C0", "accent": "#9BC46B", "slogans": ["MATCHA POUR TOUS", "UN CAP. PEUT-ÊTRE.", "NOTRE GAUCHE"]},
     "zemmourville": {"bg": "#6B5A3E", "accent": "#D8CCB2", "slogans": ["C'ÉTAIT MIEUX AVANT", "BEN VOYONS", "RETOUR EN 1965"]},
     "marineville": {"bg": "#22306B", "accent": "#FFFDF7", "slogans": ["NOUVEAU NOM", "MÊME PROGRAMME", "MARINE ET C'EST TOUT"]},
+    "durifville": {"bg": "#7B4FD6", "accent": "#FFE066", "slogans": ["VOTEZ COSMIQUE", "LE GRAND MONARQUE", "VIBREZ FRANÇAIS"]},
+    "rinerville": {"bg": "#1649FF", "accent": "#FFFDF7", "slogans": ["IPPON POUR TOUS", "TATAMI OBLIGATOIRE", "11 FOIS CHAMPION"]},
 }
 
 
@@ -161,7 +171,8 @@ def affiche(city: str, aid: str, at, texte: str | None = None, rot: float = 0) -
             "texte": (texte or pg["slogans"][_stable(aid) % len(pg["slogans"])]), "hair": m.get("hair", "court"),
             "hair_color": m.get("hair_color", "#3A2A1F"), "iris": m.get("iris", "brun"), "face": "fier"}
 SURNAMES = {"bardellaville": "Bardella", "melenchonville": "Mélenchon", "macronville": "Macron",
-            "zemmourville": "Zemmour", "marineville": "Marine|Le Pen", "glucksmannville": "Glucksmann"}
+            "zemmourville": "Zemmour", "marineville": "Marine|Le Pen", "glucksmannville": "Glucksmann",
+            "durifville": "Durif", "rinerville": "Riner|Teddy"}
 
 
 def product_for(script: dict) -> str:

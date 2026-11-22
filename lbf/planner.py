@@ -44,6 +44,12 @@ STYLES = {
     "glucksmannville": {"sky": "#D9E4EA", "ground": "#B3BC9E", "mairie": "#EDE3D3", "mairie_style": "plain",
                         "bld": ["#E8DFD0", "#DCD6CB", "#E5E1D8", "#D8D2C2"], "sign_bg": "#B9A68A",
                         "signature": [{"type": "screen", "w": 5, "h": 3, "z": 3.5, "text": "IL FAUT UN CAP CLAIR"}]},
+    "durifville": {"sky": "#E6D7FF", "ground": "#9FD3A8", "mairie": "#F5E9FF", "mairie_style": "classic",
+                   "bld": ["#F2D7FF", "#D7F0FF", "#FFF0C7", "#DFFFE0"], "sign_bg": "#7B4FD6", "sun_color": "#FFE7FF",
+                   "signature": [{"type": "screen", "w": 5, "h": 3, "z": 3.5, "text": "MAIRIE COSMIQUE"}]},
+    "rinerville": {"sky": "#BFE0FF", "ground": "#8FC07A", "mairie": "#F4F4F4", "mairie_style": "modern",
+                   "bld": ["#E9EEF5", "#F6F1E7", "#DDE7F2", "#F0F0F0"], "sign_bg": "#1649FF",
+                   "signature": [{"type": "sign", "w": 6, "h": 2.4, "z": 3, "lines": [{"text": "TATAMI MUNICIPAL", "size": 0.5}]}]},
 }
 
 # Spots (centres des scènes de gag). La caméra arrive toujours par le sud (-Y) : couloirs dégagés.

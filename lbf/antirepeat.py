@@ -12,7 +12,7 @@ from pathlib import Path
 
 from . import config
 
-CITY_WORDS = r"bardellaville|m[ée]lenchonville|macronville|zemmourville|marineville|glucksmannville|ville"
+CITY_WORDS = r"bardellaville|m[ée]lenchonville|macronville|zemmourville|marineville|glucksmannville|durifville|rinerville|ville"
 STOP = set("le la les un une des de du d l à a au aux et ou en dans sur pour par avec ce cette ces qui que quoi "
            "il elle on ils elles se sa son ses leur leurs ne pas plus est sont été être fait faire tout tous "
            "même ici y n s c qu j t m".split())
