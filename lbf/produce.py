@@ -165,14 +165,18 @@ def produce(ep_path: Path, profile: str = "final", log=print) -> dict:
         cover.make_cover(still, ep["title_cover"], f"{ep['city_name']} · ép. {ep['episode_number']}",
                          pub / "cover.jpg")
         shutil.copy(mp4, pub / "video.mp4")
-        (pub / "caption.txt").write_text(ep["caption"], encoding="utf-8")
+        cap = ep["caption"]
+        if tl.get("voice", {}).get("engine") == "elevenlabs" and "elevenlabs" not in cap.lower():
+            cap = cap.rstrip() + "\n\n" + tl["voice"]["attribution"]   # mention exigée par l'offre gratuite
+        (pub / "caption.txt").write_text(cap, encoding="utf-8")
         if ep.get("seo"):
             (pub / "seo.json").write_text(json.dumps(ep["seo"], ensure_ascii=False, indent=2), encoding="utf-8")
         voice = tl["voice"]
         credits = ("Crédits et licences\n"
                    f"- {voice['attribution']}\n"
-                   + ("- Moteur de synthèse : Piper (piper1-gpl, GPL-3.0).\n" if voice.get("engine") != "azure"
-                      else "- Synthèse vocale : Azure AI Speech (voix neuronale standard).\n") +
+                   + ({"azure": "- Synthèse vocale : Azure AI Speech (voix neuronale standard).\n",
+                       "elevenlabs": "- Synthèse vocale : ElevenLabs.\n"}.get(voice.get("engine"),
+                                                                            "- Moteur de synthèse : Piper (piper1-gpl, GPL-3.0).\n")) +
                    "- Musique et effets : créations originales générées par le projet (lbf/audio.py).\n"
                    "- Fontes : Archivo Black et Anton, SIL Open Font License 1.1.\n"
                    "- Décors, personnages et mascotte : modélisés par le projet dans Blender (GPL pour le logiciel ; "

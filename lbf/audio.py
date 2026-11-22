@@ -46,8 +46,12 @@ def build_narration(ep: dict, out: Path) -> dict:
     segs = {s["id"]: s for s in ep["narration_segments"]}
     durs = {}
     import hashlib
-    from . import tts_azure
+    from . import tts_azure, voix_externe
     eng = tts_azure.engine()
+    ext = voix_externe.available(ep)
+    ext_files = voix_externe.split(ext, len(segs), audio_dir / "ext") if ext else None
+    if ext_files:
+        eng = "externe"
     voice_info = None
     last_id = ep["narration_segments"][-2]["id"] if len(ep["narration_segments"]) > 1 else None
     for sid, s in segs.items():
@@ -56,6 +60,14 @@ def build_narration(ep: dict, out: Path) -> dict:
             else tts.config.get("VOICE_MODEL")
         key = hashlib.sha1((eng + "|" + vname + "|" + str(ls) + "|" + s["text"]).encode()).hexdigest()
         wav, stamp = audio_dir / f"{sid}.wav", audio_dir / f"{sid}.key"
+        if eng == "externe":
+            import shutil as _sh
+            idx = list(segs).index(sid)
+            _sh.copyfile(ext_files[idx], wav)
+            with wave.open(str(wav), "rb") as wf:
+                durs[sid] = wf.getnframes() / float(wf.getframerate())
+            voice_info = {"engine": "elevenlabs", "attribution": voix_externe.ATTRIBUTION}
+            continue
         if wav.exists() and stamp.exists() and stamp.read_text() == key:   # cache : même texte, même voix
             with wave.open(str(wav), "rb") as wf:
                 durs[sid] = wf.getnframes() / float(wf.getframerate())
@@ -102,7 +114,7 @@ def build_narration(ep: dict, out: Path) -> dict:
         track[i:i + len(d)] += d[: len(track) - i]
     write_wav(out / "narration.wav", track)
     info = {"total": round(total, 3), "segments": timeline, "shots": shots, "quote_cues": quote_cues,
-            "voice": voice_info if eng == "azure" and voice_info else tts.voice_report(tts.config.get("VOICE_MODEL"))}
+            "voice": voice_info if eng in ("azure", "externe") and voice_info else tts.voice_report(tts.config.get("VOICE_MODEL"))}
     (out / "timeline.json").write_text(json.dumps(info, ensure_ascii=False, indent=2), encoding="utf-8")
     return info
 

@@ -1,0 +1,39 @@
+# Télécharge les narrations enregistrées (ElevenLabs) listées dans assets/voix/urls.json (liens signés valables ~2 h).
+name: Voix
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["assets/voix/urls.json"]
+permissions:
+  contents: write
+concurrency:
+  group: voix
+  cancel-in-progress: false
+jobs:
+  voix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Télécharger
+        run: |
+          python3 - <<'PY'
+          import json, urllib.request, pathlib
+          d = pathlib.Path("assets/voix"); m = json.loads((d / "urls.json").read_text(encoding="utf-8"))
+          for ep, v in m.items():
+              f = d / f"{ep}.mp3"; k = d / f"{ep}.key"
+              if f.exists() and k.exists() and k.read_text() == v["key"]:
+                  continue
+              try:
+                  f.write_bytes(urllib.request.urlopen(v["url"], timeout=60).read()); k.write_text(v["key"])
+                  print("ok", ep, f.stat().st_size)
+              except Exception as e:
+                  print("ÉCHEC", ep, e)
+          PY
+      - name: Enregistrer
+        run: |
+          git config user.name "LBF"; git config user.email "lbf-studio@users.noreply.github.com"
+          git add assets/voix
+          git diff --cached --quiet || git commit -qm "voix enregistrées"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
