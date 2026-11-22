@@ -3,75 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-15",
  "format": "A",
- "title_cover": "Arrondir les angles",
+ "title_cover": "Référendum boomerang",
  "hook_variants": [
-  "La mairie de Marineville recrute, profil recherché : lisse.",
-  "La mairie de Marineville recrute. Profil recherché : lisse.",
-  "La mairie de Marineville recrute. Profil recherché : lisse.",
-  "Ici, l'entretien d'embauche se passe à la ponceuse.",
-  "Trois candidats cubiques. Un seul ressortira parfaitement rond."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, l'urne municipale ne ferme jamais.",
+  "Marineville : quand on ne sait pas trancher, on fait voter.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : référendum boomerang."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La sphère est embauchée à l'accueil, et toutes les questions glissent dessus. Ici, c'est ça, la dédiabolisation : plus rien n'accroche.",
-  "La sphère est embauchée à l'accueil. Un habitant pose une question. Elle glisse. Une autre. Glisse aussi. Ici, rien n'accroche.",
-  "Le cube refusé ouvre une boutique en face : réponses avec des coins. Il y a la queue."
+  "Quand on ne sait pas trancher, on fait voter : la patate chaude, en grand.",
+  "Ici, la mairie organise un référendum pour la couleur des poubelles. Puis pour le résultat.",
+  "L'euro est resté. Le référendum, lui, revient pour les retraites."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "La mairie de Marineville recrute, profil recherché : lisse.",
+   "text": "Dans cette ville, tout le monde vote Marine. Et revote.",
    "accent_words": [
-    "lisse"
+    "revote"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Les candidats sont des cubes, et l'annonce exige d'arrondir les angles.",
+   "text": "En 2012, la sortie de l'euro devait passer par un référendum.",
    "accent_words": [
-    "angles"
+    "référendum"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Le recruteur sort une ponceuse : un cube ressort cylindre, l'autre sphère.",
+   "text": "L'euro est resté. Le référendum revient : pour les retraites.",
    "accent_words": [
-    "ponceuse"
+    "pour les retraites"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le troisième garde ses coins : dossier classé, trop d'aspérités.",
+   "text": "Ici, référendum sur la couleur des poubelles. Puis sur le résultat.",
    "accent_words": [
-    "aspérités"
+    "le résultat"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La sphère est embauchée à l'accueil, et toutes les questions glissent dessus.",
+   "text": "L'urne municipale ne ferme jamais : elle attend la bonne réponse.",
    "accent_words": [
-    "glissent"
+    "la bonne réponse"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ici, c'est ça, la dédiabolisation : plus rien n'accroche.",
+   "text": "Quand on ne sait pas trancher, on fait voter : la patate chaude, en grand.",
    "accent_words": [
-    "accroche"
+    "la patate chaude"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le pire conseil reçu avant un entretien ? En commentaire.",
+   "text": "Envoie ça au pote qui fait voter le groupe pour ne pas décider.",
    "accent_words": [
-    "commentaire"
+    "ne pas décider"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -80,118 +80,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "building",
-    "sign",
-    "person",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "PROFIL : LISSE",
-   "comic_action": "Devant la mairie, une file de candidats-cubes gris ; l'affiche de recrutement en lettres arrondies : « SAVOIR ARRONDIR LES ANGLES ».",
-   "expected_result": "L'expression va être prise au pied de la lettre."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; une urne géante devant la porte, fente qui clignote.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "scroll",
+    "table",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "RÉFÉRENDUM : EURO",
+   "comic_action": "Un parchemin officiel « RÉFÉRENDUM » qu'on enroule et range.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
-    "table",
+    "screen",
+    "text3d",
+    "mairie",
     "person"
    ],
-   "onscreen_text": "",
-   "comic_action": "Dans le bureau, le recruteur sort une ponceuse ; gerbe de poussière ; un cube ressort cylindre, un autre sphère brillante.",
-   "expected_result": "La normalisation est une opération physique.",
-   "new_asset_request": "Ponceuse (outil simple) ; animation de morphing cube → sphère."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4"
-   ],
-   "camera": "closeup",
-   "set": [
-    "table",
-    "person",
-    "form_stack",
-    "text3d"
-   ],
-   "onscreen_text": "TROP D'ASPÉRITÉS",
-   "comic_action": "Le troisième cube recule, protège ses coins ; son dossier est tamponné « TROP D'ASPÉRITÉS » et glisse dans un tiroir.",
-   "expected_result": "Les angles sont disqualifiants."
+   "onscreen_text": "RÉFÉRENDUM : RETRAITES",
+   "comic_action": "L'écran ressort le même parchemin, nouvelle étiquette.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "mairie",
-    "person",
-    "table",
-    "sign"
+    "bin",
+    "road",
+    "building",
+    "person"
    ],
-   "onscreen_text": "",
-   "comic_action": "Orbite autour de l'accueil : un habitant lance une question (bulle) vers la sphère embauchée ; la bulle glisse sur sa surface et s'envole ; une deuxième aussi. La sphère sourit. On laisse respirer.",
-   "expected_result": "Chute : la réponse lisse ne retient aucune question."
+   "onscreen_text": "RÉFÉRENDUM N°2 : LE N°1",
+   "comic_action": "Des poubelles de trois couleurs ; un bulletin sur chacune.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7"
+    "n5"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "tshirt",
-    "table",
+    "column",
+    "mairie",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le cube refusé, toujours anguleux, enfile un t-shirt « PLUTÔT GAUCHE. TRÈS FATIGUÉ. » en sortant.",
-   "expected_result": "CTA parlé unique + produit visible."
+   "onscreen_text": "URNE : OUVERTE (TOUJOURS)",
+   "comic_action": "Entre deux colonnes, l'urne recrache un bulletin « NON ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "ground",
+    "banner",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "PATATE CHAUDE NATIONALE",
+   "comic_action": "Sur la place, une patate géante passe de main en main. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt lance un sondage sur son téléphone.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Le pire conseil reçu avant un entretien ? En commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui fait voter le groupe pour ne pas décider."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 73,
- "claims": [],
+ "word_count": 81,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "En 2012, la sortie de l'euro devait passer par un référendum.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/sortie-de-l-euro-les-atermoiements-de-marine-le-pen-60007",
+   "note": "Sortie de l'euro au programme ; en 2012 elle la conditionnait à un référendum."
+  },
+  {
+   "segment": "n3",
+   "text": "L'euro est resté. Le référendum revient : pour les retraites.",
+   "claim_type": "fait_public",
+   "source": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
+   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
-   "published": "2023-01-25",
-   "consulted": "2026-11-21",
-   "status": "opinion / analyse (entretien avec un chercheur : dédiabolisation = changements cosmétiques, stratégie « veste et cravate »)",
-   "used_for": "Inspiration seulement : la cravate et le ponçage comme kit universel d'adoucissement d'image, appliqués à des objets fictifs."
+   "url": "https://www.publicsenat.fr/actualites/politique/sortie-de-l-euro-les-atermoiements-de-marine-le-pen-60007",
+   "date": "2017",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Sortie de l'euro au programme ; en 2012 elle la conditionnait à un référendum."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/les-affiches-tres-ressemblantes-d-emmanuel-macron-et-marine-le-pen-59437",
-   "published": "2017-04-26",
-   "consulted": "2026-11-21",
-   "status": "analyse de presse (affiche de second tour : photo jugée retouchée et rajeunie)",
-   "used_for": "Inspiration seulement : la retouche et le lissage appliqués à une façade ou à un candidat-cube fictif, jamais à une personne réelle."
-  },
-  {
-   "url": "https://fr.timesofisrael.com/marine-le-pen-fille-du-diable-devenue-mere-polie-de-lextreme-droite/",
-   "published": "2022-04-25",
-   "consulted": "2026-11-21",
-   "status": "blague (vérifié (analyse de presse) — usage partiel)",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Titre-jeu de mots sur la dédiabolisation et l'image « lissée » pour « rassurer », chats et pouvoir d'achat mis en avant. L'article contient aussi des passages s…"
+   "url": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
+   "date": "2026-11-17",
+   "consulted": "2026-11-22",
+   "statut": "fait public (présentation du programme)",
+   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Littéralisation d'expression (« arrondir les angles ») et satire de la communication lisse. Chute volontairement modifiée par rapport au synopsis (la sphère qui quitte son poste et roule pour toujours) : remplacée par des questions qui glissent sur elle, pour rester sur la communication et éviter toute lecture d'allusion à un emploi sans travail. Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 73 mots ; mèmes vérifiés intégrés comme thèmes (M8, M17, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = en 2012, la sortie de l'euro conditionnée à un référendum, puis abandonnée ; en 2026, un référendum envisagé pour sa réforme des retraites. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

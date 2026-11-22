@@ -3,75 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-20",
  "format": "A",
- "title_cover": "Le tapis du Nouveau Départ",
+ "title_cover": "Clignotant bloqué",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine… et court sur place.",
-  "La salle de sport de Marineville n'a qu'une machine : le tapis du Nouveau Départ.",
-  "Une seule machine dans cette salle de sport : le tapis du Nouveau Départ.",
-  "Ici, on court une heure pour arriver exactement au même miroir.",
-  "Nouvelle étape toutes les dix secondes. Zéro mètre parcouru."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, la mairie a tous ses bureaux du même côté.",
+  "Marineville : ni droite ni gauche, clignotant bloqué.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : clignotant bloqué."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Même la mairie trottine sur place, sous une enseigne neuve : en mouvement.",
-  "Le coach affiche le bilan : distance parcourue, zéro. Distance communiquée, quarante kilomètres.",
-  "Un habitant descend du tapis. Il est tout de suite rappelé : il était en train d'avancer pour de vrai."
+  "Ni droite ni gauche, mais le clignotant toujours du même côté.",
+  "Le panneau à l'entrée dit centre-ville. La flèche pointe à droite.",
+  "Ici, la mairie a mis tous ses bureaux du même côté du couloir."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine… et court sur place.",
+   "text": "Dans cette ville, tout le monde vote Marine. Ni à droite, paraît-il.",
    "accent_words": [
-    "Marine"
+    "paraît-il"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La salle de sport n'a qu'une machine : le tapis Nouveau Départ.",
+   "text": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau ».",
    "accent_words": [
-    "Nouveau Départ"
+    "l'oiseau"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "On court, l'écran crie nouvelle étape, le coach crie vous avancez.",
+   "text": "Un oiseau de campagne présidentielle, lancé à Orléans pour 2027.",
    "accent_words": [
-    "vous avancez"
+    "Orléans"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Une heure plus tard : même salle, même miroir.",
+   "text": "Ici, la mairie a mis tous ses bureaux du même côté du couloir.",
    "accent_words": [
-    "miroir"
+    "du même côté"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La caméra recule : toute la ville court sur des tapis.",
+   "text": "Le panneau d'entrée dit centre-ville. La flèche pointe à droite.",
    "accent_words": [
-    "tapis"
+    "à droite"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Même la mairie trottine sur place, sous une enseigne neuve : en mouvement.",
+   "text": "Ni droite ni gauche, mais le clignotant toujours du même côté.",
    "accent_words": [
-    "en mouvement"
+    "du même côté"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Tague ton pote qui court depuis trois ans sans avancer.",
+   "text": "Envoie ça au pote qui se dit apolitique avec un clignotant bloqué.",
    "accent_words": [
-    "avancer"
+    "apolitique"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -80,106 +80,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "window_pass",
+   "camera": "descend",
    "set": [
-    "building",
-    "person",
-    "screen",
-    "sign"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "NOUVEAU DÉPART",
-   "comic_action": "Par la vitrine de la salle de sport : une rangée de tapis de course, une enseigne « NOUVEAU DÉPART » vissée sur trois anciennes.",
-   "expected_result": "Le mouvement immobile est posé.",
-   "new_asset_request": "Tapis de course (new_asset:tapis_de_course)."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; toutes les fenêtres allumées côté droit.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
+    "lift_tribune",
+    "tribune",
     "person",
-    "text3d"
+    "banner"
    ],
-   "onscreen_text": "NOUVELLE ÉTAPE !",
-   "comic_action": "Gros plan sur l'écran du tapis : « NOUVELLE ÉTAPE ! » clignote en boucle ; le coureur transpire ; après une heure, « VOUS ÊTES AILLEURS » ; contrechamp : même miroir, même coach.",
-   "expected_result": "Le discours de progression masque l'immobilité.",
-   "new_asset_request": "Tapis de course (new_asset:tapis_de_course)."
+   "onscreen_text": "« NI DROITE NI GAUCHE »",
+   "comic_action": "La tribune s'élève, une plume plane au-dessus.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5"
+    "n3"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
-    "building",
-    "bus",
-    "person",
-    "road"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "",
-   "comic_action": "La caméra recule et monte : toute la ville court sur des tapis, piétons, chiens, et même le bus, roues tournant dans le vide.",
-   "expected_result": "Changement d'échelle : c'est le mode de vie de la ville entière."
+   "onscreen_text": "ORLÉANS · 2027",
+   "comic_action": "L'écran affiche une carte : une plume posée sur Orléans.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "window_pass",
    "set": [
-    "mairie",
-    "text3d",
-    "sign"
+    "table",
+    "screen",
+    "sign",
+    "building"
    ],
-   "onscreen_text": "EN MOUVEMENT",
-   "comic_action": "Plan large sur la mairie posée sur un tapis géant, qui trottine sur place et dégouline ; une enseigne neuve « EN MOUVEMENT » est vissée par-dessus. On laisse respirer.",
-   "expected_result": "Chute : l'institution s'agite pour ne pas bouger.",
-   "new_asset_request": "Tapis géant sous la mairie (new_asset:tapis_de_course, échelle bâtiment)."
+   "onscreen_text": "CÔTÉ : LE MÊME",
+   "comic_action": "Par la fenêtre : un couloir dont toutes les portes sont à droite.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "traffic_light",
+    "road",
+    "car",
+    "sign"
+   ],
+   "onscreen_text": "CENTRE-VILLE →",
+   "comic_action": "Un panneau « CENTRE » avec une flèche franche vers la droite.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "car",
+    "road",
+    "gps",
+    "sign"
+   ],
+   "onscreen_text": "CLIGNOTANT : BLOQUÉ",
+   "comic_action": "Gros plan sur un clignotant droit qui ne s'arrête jamais. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
-   "camera": "closeup",
+   "camera": "return",
    "set": [
+    "shop",
     "tshirt",
-    "screen",
-    "person"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le coach, sifflet au cou, porte un t-shirt « LE PAYS BUGUE. MOI AUSSI. » trempé.",
-   "expected_result": "CTA de partage + produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt tourne toujours du même côté.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Tague ton pote qui court depuis trois ans sans avancer."
+  "text": "Envoie ça au pote qui se dit apolitique avec un clignotant bloqué."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 78,
- "claims": [],
+ "word_count": 82,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
+   "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
+  },
+  {
+   "segment": "n3",
+   "text": "Un oiseau de campagne présidentielle, lancé à Orléans pour 2027.",
+   "claim_type": "fait_public",
+   "source": "https://fr.euronews.com/2026/10/25/orleans-marine-le-pen-lance-sa-campagne-au-lendemain-de-lacte-ii-de-la-mobilisation-social",
+   "note": "Lancement de campagne pour 2027 à Orléans, au lendemain de l'acte II de la mobilisation sociale."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
-   "published": "2018-06-01",
-   "consulted": "2026-11-21",
-   "status": "mème (vérifié (fait public))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Le Front national devient Rassemblement national ; la flamme du logo est conservée, désormais rangée dans un cercle. Base du running gag « on change le nom, pas…"
+   "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
+   "date": "2026-10-29",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (meeting d'Orléans, 25/10/2026) + fait (affiche)",
+   "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
+  },
+  {
+   "url": "https://fr.euronews.com/2026/10/25/orleans-marine-le-pen-lance-sa-campagne-au-lendemain-de-lacte-ii-de-la-mobilisation-social",
+   "date": "2026-10-25",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Lancement de campagne pour 2027 à Orléans, au lendemain de l'acte II de la mobilisation sociale."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mouvement immobile : la promesse de « nouveau départ » se traduit par un effort sur place, jusqu'à la mairie elle-même. Satire du slogan de progression, sans fait réel. Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 78 mots ; mèmes vérifiés intégrés comme thèmes (M2, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » (Orléans 2026) : ni droite ni gauche, mais toujours du même côté. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

@@ -3,91 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-11",
  "format": "B",
- "title_cover": "L'AG du nouveau nom",
+ "title_cover": "Rupture en douceur",
  "hook_variants": [
-  "Ordre du jour de l'AG : la fuite, puis le nom de la résidence.",
-  "Ordre du jour de l'AG : la fuite, puis le nom de la résidence. Devine ce qui passe d'abord.",
-  "AG de copro : la fuite ou le nom de la résidence ? Devinez.",
-  "Trois heures de débat pour ajouter apaisées à mouettes.",
-  "Ici, la fuite est reportée à la prochaine identité visuelle."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, on se sépare sans rupture brutale.",
+  "Marineville : on démolit les murs au coton-tige.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : rupture en douceur."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La plaque est vissée sous la fuite et rouille en direct. Le président rebaptise ça : patine.",
-  "Le plafond s'effondre. La résidence est aussitôt renommée Les Mouettes Ouvertes.",
-  "La fuite est inscrite à l'ordre du jour. Elle a un nouveau nom : infiltration de caractère."
+  "La rupture, version Marineville : on se quitte, mais on garde l'appartement.",
+  "Ici, les couples se séparent sans rupture brutale : ils déménagent d'un centimètre par an.",
+  "Le mur de la mairie est démoli au coton-tige."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ordre du jour de l'AG : la fuite, puis le nom de la résidence.",
+   "text": "Dans cette ville, tout le monde vote Marine. Rupture en douceur.",
    "accent_words": [
-    "nom"
+    "en douceur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Devine ce qui passe en premier.",
+   "text": "Septembre 2025 : « S'il n'y a pas de rupture, il y aura censure ».",
    "accent_words": [
-    "premier"
+    "rupture"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Trois heures pour passer des Mouettes aux Mouettes Apaisées.",
+   "text": "Octobre 2026, à Orléans : « pas une rupture brutale ».",
    "accent_words": [
-    "Apaisées"
+    "pas une rupture brutale"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Pendant ce temps, le plafond goutte sur la table, en rythme.",
+   "text": "Ici, les couples se séparent sans brusquer : ils déménagent d'un centimètre par an.",
    "accent_words": [
-    "rythme"
+    "un centimètre par an"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Unanimité pour une plaque dorée à huit cents euros.",
+   "text": "Le mur de la mairie est démoli au coton-tige.",
    "accent_words": [
-    "euros"
+    "coton-tige"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La fuite est reportée à la prochaine identité visuelle.",
+   "text": "La rupture, version Marineville : on se quitte, mais on garde l'appartement.",
    "accent_words": [
-    "identité visuelle"
+    "l'appartement"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "La plaque est vissée sous la fuite et rouille en direct.",
+   "text": "Envoie ça au pote qui annonce une rupture et rappelle une heure après.",
    "accent_words": [
-    "rouille"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Le président rebaptise ça : patine.",
-   "accent_words": [
-    "patine"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n9",
-   "text": "Ton pire souvenir d'AG, en commentaire.",
-   "accent_words": [
-    "commentaire"
+    "une heure après"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -96,107 +80,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "window_pass",
+   "camera": "descend",
    "set": [
-    "building",
-    "table",
-    "person",
-    "form_stack"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "1. FUITE · 2. NOM",
-   "comic_action": "Par la fenêtre : salle d'AG, ordre du jour au mur ; une main échange les deux lignes pour mettre « NOM » en premier.",
-   "expected_result": "Les priorités s'inversent sous nos yeux."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; une pancarte « TRAVAUX DE RUPTURE (DOUX) ».",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "person",
+    "tribune",
+    "studio_light",
     "text3d",
-    "screen"
+    "person"
    ],
-   "onscreen_text": "LES MOUETTES APAISÉES",
-   "comic_action": "Sur l'écran, les noms s'enchaînent ; au premier plan, une goutte tombe du plafond sur la table, régulière comme un métronome, et remplit un verre d'eau que personne ne remarque.",
-   "expected_result": "Le débat cosmétique ignore le vrai problème."
+   "onscreen_text": "« RUPTURE OU CENSURE »",
+   "comic_action": "Tribune : la maire cubique frappe le pupitre, projecteur rouge.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n3"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "table",
+    "lift_tribune",
+    "tribune",
     "person",
-    "sign",
-    "form_stack"
+    "banner"
    ],
-   "onscreen_text": "",
-   "comic_action": "Orbite : toutes les mains se lèvent pour la plaque dorée ; la fuite, sur sa feuille, est glissée sous la pile avec un post-it « prochaine identité visuelle ».",
-   "expected_result": "On reporte le fond, on vote la forme."
+   "onscreen_text": "« PAS BRUTALE »",
+   "comic_action": "La tribune s'élève sous une lumière rose, violons.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "building",
-    "sign",
+    "facade_row",
+    "facade_set",
     "person",
-    "text3d"
+    "banner"
    ],
-   "onscreen_text": "PATINE",
-   "comic_action": "Dans le hall : la plaque dorée neuve « LES MOUETTES APAISÉES », la goutte tombe dessus, la rouille apparaît en accéléré. Le président caresse la tache, satisfait. On laisse respirer.",
-   "expected_result": "Chute : l'échec est rebaptisé en qualité."
+   "onscreen_text": "DÉMÉNAGEMENT : 1 CM/AN",
+   "comic_action": "Deux façades qui s'écartent imperceptiblement.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n9"
+    "n5"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "tshirt",
-    "table",
-    "form_stack"
+    "column",
+    "mairie",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Sur la table d'AG, un t-shirt « PLUTÔT DROITE. TRÈS FATIGUÉ. » sert de serpillière sous la fuite.",
-   "expected_result": "CTA parlé unique + produit visible."
+   "onscreen_text": "DÉMOLITION : COTON-TIGE",
+   "comic_action": "Un ouvrier gratte une colonne avec un coton-tige.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "road",
+    "building",
+    "person",
+    "bin"
+   ],
+   "onscreen_text": "RUPTURE (MÊME ADRESSE)",
+   "comic_action": "Un camion de déménagement fait le tour du pâté de maisons et revient. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt rappelle, téléphone collé à l'oreille.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton pire souvenir d'AG, en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui annonce une rupture et rappelle une heure après."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 81,
- "claims": [],
+ "word_count": 85,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "« S'il n'y a pas de rupture, il y aura censure »",
+   "claim_type": "citation_exacte",
+   "source": "https://lcp.fr/index%2ephp/actualites/s-il-n-y-a-pas-de-rupture-il-y-aura-censure-declare-marine-le-pen-a-la-sortie-de",
+   "note": "« S'il n'y a pas de rupture, il y aura censure »."
+  },
+  {
+   "segment": "n3",
+   "text": "« pas une rupture brutale »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
+   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
-   "published": "2018-06-01",
-   "consulted": "2026-11-21",
-   "status": "mème (vérifié (fait public))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Le Front national devient Rassemblement national ; la flamme du logo est conservée, désormais rangée dans un cercle. Base du running gag « on change le nom, pas…"
+   "url": "https://lcp.fr/index%2ephp/actualites/s-il-n-y-a-pas-de-rupture-il-y-aura-censure-declare-marine-le-pen-a-la-sortie-de",
+   "date": "2025-09-17",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (LCP)",
+   "note": "« S'il n'y a pas de rupture, il y aura censure »."
+  },
+  {
+   "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
+   "date": "2026-10-25",
+   "consulted": "2026-11-22",
+   "statut": "fait public (analyse lexicale)",
+   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Priorités inversées en copropriété : le nom avant la fuite, puis la rouille rebaptisée « patine ». La décision collective représentée est celle d'une copro fictive, sans lien avec une élection. Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 81 mots ; mèmes vérifiés intégrés comme thèmes (M2, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = 2025 : « S'il n'y a pas de rupture, il y aura censure » ; Orléans 2026 : le changement, « pas une rupture brutale ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

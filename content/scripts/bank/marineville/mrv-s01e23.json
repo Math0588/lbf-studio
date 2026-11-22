@@ -3,75 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-19",
  "format": "A",
- "title_cover": "La carte dédiabolisée",
+ "title_cover": "Le pyromane pompier",
  "hook_variants": [
-  "Au restaurant de Marineville, la carte a été officiellement dédiabolisée.",
-  "Au restaurant de Marineville, la carte a été dédiabolisée.",
-  "Au restaurant de Marineville, la carte a été dédiabolisée. Le piment, non.",
-  "Œufs à la diable ? Pardon : œufs à l'ange.",
-  "Ici, la sauce piquante s'appelle sauce de caractère modéré."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, le maire change tous les trois mois.",
+  "Marineville : faire tomber, puis promettre la stabilité.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : le pyromane pompier."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le serveur, serein : ce n'est pas piquant, c'est une nouvelle sensibilité.",
-  "Le client réclame de l'eau. On lui sert un verre rebaptisé, toujours vide.",
-  "Le menu dédiabolisé est un succès : les clients pleurent, mais poliment."
+  "Faire tomber le gouvernement, puis vendre la stabilité : le pyromane fait pompier.",
+  "Ici, le maire change tous les trois mois. Plaques de bureau en scratch.",
+  "Une première sous la Ve République. Elle aime les records."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Au restaurant de Marineville, la carte a été officiellement dédiabolisée.",
+   "text": "Dans cette ville, tout le monde vote Marine. Le gouvernement, moins.",
    "accent_words": [
-    "dédiabolisée"
+    "moins"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Les œufs à la diable deviennent des œufs à l'ange.",
+   "text": "Décembre 2024 : son groupe vote la censure, le gouvernement Barnier tombe.",
    "accent_words": [
-    "ange"
+    "Barnier tombe"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Même recette : les cornes en poivron deviennent des oreilles de chat.",
+   "text": "Première censure adoptée après un 49.3 sous la Ve. Elle aime les records.",
    "accent_words": [
-    "oreilles de chat"
+    "les records"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le plat date de 1972 ; seul son nom date de 2018.",
+   "text": "Ici, le maire change tous les trois mois. Plaques de bureau en scratch.",
    "accent_words": [
-    "2018"
+    "en scratch"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le client goûte, vire au rouge vif et fume des oreilles.",
+   "text": "Les ministres reçoivent des badges visiteurs, valables une semaine.",
    "accent_words": [
-    "oreilles"
+    "badges visiteurs"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le serveur, serein : ce n'est pas piquant, c'est une nouvelle sensibilité.",
+   "text": "Faire tomber le gouvernement, puis vendre la stabilité : le pyromane fait pompier.",
    "accent_words": [
-    "sensibilité"
+    "le pyromane"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Renomme en commentaire un plat piquant, version apaisée.",
+   "text": "Envoie ça au pote qui casse tout et se plaint du bazar.",
    "accent_words": [
-    "apaisée"
+    "du bazar"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -82,109 +82,156 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "window_pass",
+   "camera": "descend",
    "set": [
-    "shop",
-    "table",
-    "sign",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "CARTE DÉDIABOLISÉE",
-   "comic_action": "Par la vitrine du restaurant : une ardoise où les mots « DIABLE » sont recouverts d'autocollants bleus en forme de nuage.",
-   "expected_result": "Le mot de com est littéralisé sur une carte de restaurant."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; un panneau « MAIRE DU MOIS ».",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "person",
-    "text3d"
+    "column",
+    "mairie",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "ŒUFS À L'ANGE",
-   "comic_action": "En cuisine, le chef verse exactement la même dose de piment ; puis il retire deux petites cornes rouges décoratives et les remplace par des oreilles de chat en poivron.",
-   "expected_result": "Seule la décoration change, la recette reste identique.",
-   "new_asset_request": "Petit œuf décoré (forme simple) avec cornes amovibles."
+   "onscreen_text": "GOUVERNEMENT : TOMBÉ",
+   "comic_action": "Une colonne s'effondre sous un projecteur.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "person",
-    "studio_light"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "",
-   "comic_action": "Le client goûte ; la lumière vire au rouge, de la fumée sort de chaque côté de sa tête.",
-   "expected_result": "Le fond n'a pas changé : ça pique pareil."
+   "onscreen_text": "RECORD : 1RE FOIS",
+   "comic_action": "L'écran affiche une médaille d'or « CENSURE ».",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "window_pass",
    "set": [
     "table",
-    "person",
-    "shop",
-    "text3d"
+    "screen",
+    "sign",
+    "building"
    ],
-   "onscreen_text": "NOUVELLE SENSIBILITÉ",
-   "comic_action": "Le serveur, plateau à la main, sourire figé, désigne la carte apaisée pendant que le client fume. On laisse respirer.",
-   "expected_result": "Chute : on renomme la sensation au lieu de changer le plat."
+   "onscreen_text": "PLAQUE : AMOVIBLE",
+   "comic_action": "Par la fenêtre : une plaque de maire qu'on arrache et remplace.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "person",
+    "road",
+    "building",
+    "sign"
+   ],
+   "onscreen_text": "BADGE : 7 JOURS",
+   "comic_action": "File de ministres cubiques, badges « VISITEUR » au cou.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "shop",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "CASERNE OUVERTE (PAR QUI ?)",
+   "comic_action": "Vitrine : un extincteur neuf vendu par quelqu'un qui tient une allumette. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
-   "camera": "closeup",
+   "camera": "return",
    "set": [
+    "shop",
     "tshirt",
-    "table",
-    "shop"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Sur le dossier de chaise du client, un t-shirt « À GAUCHE DU CANAPÉ. », légèrement roussi.",
-   "expected_result": "CTA parlé unique + produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt marche sur des débris, scandalisé.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Renomme en commentaire un plat piquant, version apaisée."
+  "type": "share",
+  "text": "Envoie ça au pote qui casse tout et se plaint du bazar."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 75,
- "claims": [],
- "sources": [
+ "word_count": 83,
+ "claims": [
   {
-   "url": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
-   "published": "2023-01-25",
-   "consulted": "2026-11-21",
-   "status": "opinion / analyse (entretien avec un chercheur : dédiabolisation = changements cosmétiques, stratégie « veste et cravate »)",
-   "used_for": "Inspiration seulement : la cravate et le ponçage comme kit universel d'adoucissement d'image, appliqués à des objets fictifs."
+   "segment": "n2",
+   "text": "Décembre 2024 : son groupe vote la censure, le gouvernement Barnier tombe.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/index%2Ephp/actualites/le-gouvernement-de-michel-barnier-censure-au-terme-d-une-journee-historique-a-l",
+   "note": "Gouvernement Barnier censuré ; le groupe RN vote la motion."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
-   "published": "2018-06-01",
-   "consulted": "2026-11-21",
-   "status": "mème (vérifié (fait public))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Le Front national devient Rassemblement national ; la flamme du logo est conservée, désormais rangée dans un cercle. Base du running gag « on change le nom, pas…"
+   "segment": "n3",
+   "text": "Première censure adoptée après un 49.3 sous la Ve. Elle aime les records.",
+   "claim_type": "fait_public",
+   "source": "https://www.vie-publique.fr/en-bref/296487-article-493-sur-le-plfss-2025-censure-du-gouvernement-barnier",
+   "note": "Première motion de censure adoptée après un 49.3 sous la Ve République."
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://lcp.fr/index%2Ephp/actualites/le-gouvernement-de-michel-barnier-censure-au-terme-d-une-journee-historique-a-l",
+   "date": "2024-12-04",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Gouvernement Barnier censuré ; le groupe RN vote la motion."
+  },
+  {
+   "url": "https://www.vie-publique.fr/en-bref/296487-article-493-sur-le-plfss-2025-censure-du-gouvernement-barnier",
+   "date": "2024-12",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Première motion de censure adoptée après un 49.3 sous la Ve République."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Synopsis signalé à relire : conservé car le gag vise strictement la communication. On littéralise le mot de com « dédiabolisation » (notion publique décrite par la presse comme des changements cosmétiques) sur une carte de restaurant : on change les noms et la déco, la recette reste la même. Aucune référence religieuse ni à un groupe ; « diable » n'est qu'un nom de plat existant (œufs à la diable). Aucune personne ni aucun parti nommé. Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 75 mots ; mèmes vérifiés intégrés comme thèmes (M2, M8, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = décembre 2024 : son groupe vote la censure, le gouvernement Barnier tombe, première censure adoptée après un 49.3 sous la Ve République. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }
