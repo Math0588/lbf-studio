@@ -4,79 +4,79 @@
  "synopsis_id": "mlv-m007-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Cardio 1 h 42",
- "anchor": "Lyon : 1 h 42 cramponné au pupitre, digressions sur Victor Hugo.",
+ "title_cover": "Retraite en 60 minutes",
+ "anchor": "Retraite à 60 ans : la mairie surenchérit, retraite après 60 minutes.",
  "meme_id": "MJ",
- "situation": "la salle de sport",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : la salle où l'on muscle surtout la tirade.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, le cardio se fait au pupitre.",
-  "Mélenchonville : 1 h 42 de cours, zéro calorie brûlée."
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien est retraité.",
+  "Mélenchon promet la retraite à 60 ans. La mairie a trouvé ça trop lent.",
+  "Les fans de Méluche vont me bloquer.",
+  "Bienvenue à Mélenchonville : retraite en 60 minutes.",
+  "Mélenchon en une vidéo : retraite en 60 minutes."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le muscle le plus travaillé de la ville ? Le micro.",
-  "Une heure quarante-deux d'effort, zéro kilo de programme perdu.",
-  "Le seul sport collectif : l'écouter."
+  "Une seule carrière sans retraite : candidat à l'Élysée depuis 2012.",
+  "Une seule carrière sans retraite : candidat à l'Élysée.",
+  "Tout le monde joue à la pétanque. Le terrain fait trois kilomètres."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Échauffement compris.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien est retraité.",
    "accent_words": [
-    "Échauffement compris"
+    "est retraité"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À Lyon, il a parlé une heure quarante-deux, cramponné au pupitre.",
+   "text": "Son programme 2027 promet la retraite à 60 ans.",
    "accent_words": [
-    "cramponné"
+    "60 ans"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, c'est la durée du cours de cardio. Gainage au pupitre inclus.",
+   "text": "La mairie trouve ça timide : retraite après soixante minutes de travail.",
    "accent_words": [
-    "Gainage"
+    "de travail"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le coach ne compte pas les pompes. Il compte les digressions.",
+   "text": "À 10 h, toute la ville est à la retraite. À 11 h, plus de boulangerie.",
    "accent_words": [
-    "digressions"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n5",
-   "text": "Série Victor Hugo, série médias, série Constituante.",
-   "accent_words": [
-    "Victor Hugo"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n6",
-   "text": "Le muscle le plus travaillé de la ville ? Le micro.",
-   "accent_words": [
-    "Le micro"
+    "de boulangerie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui parle pendant toute sa séance de sport.",
+   "id": "n5",
+   "text": "Tout le monde joue à la pétanque. Le terrain fait trois kilomètres.",
    "accent_words": [
-    "toute sa séance"
+    "trois kilomètres"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Une seule carrière sans retraite : candidat à l'Élysée depuis 2012.",
+   "accent_words": [
+    "depuis 2012"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui compte déjà ses trimestres.",
+   "accent_words": [
+    "ses trimestres"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,73 +90,150 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur une salle de sport : un pupitre au milieu des machines.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · RETRAITE EN 60 MINUTES",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "LA RETRAITE, VITE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "tribune",
-    "text3d",
-    "person"
+    "bench",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "1 H 42",
-   "comic_action": "Orbite : un coach agrippé au pupitre comme à une barre de traction.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "RETRAITE À 60 ANS",
+   "comic_action": "Banderole géante au-dessus des bancs publics.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "sourire_pro",
+     "objet": "pancarte"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LA RETRAITE, VITE"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "tribune",
-    "person",
-    "text3d"
+    "mairie",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "GAINAGE AU PUPITRE",
-   "comic_action": "Les sportifs tiennent la planche, mains sur des pupitres miniatures.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RETRAITE : 60 MINUTES",
+   "comic_action": "Arrêté : « RETRAITE AU BOUT D'UNE HEURE ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "jump",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CARRIÈRE : 1 HEURE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
+    "shop",
     "person",
-    "text3d",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "DIGRESSION N° 9",
-   "comic_action": "Gros plan sur le tableau : « POMPES 0 · DIGRESSIONS 9 ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "BOULANGERIE : RETRAITÉE",
+   "comic_action": "Le boulanger range son tablier à 10 h 01.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "wave",
+     "visage": "content",
+     "objet": "baguette"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FERMÉ DEPUIS 10 H"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
+    "ground",
     "person",
-    "screen",
-    "text3d"
+    "bench"
    ],
-   "onscreen_text": "CIRCUIT TRAINING",
-   "comic_action": "Travelling le long des machines : chacune porte une étiquette de digression.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PÉTANQUE GÉANTE",
+   "comic_action": "Un boulodrome qui s'étend jusqu'à l'horizon.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "POINTEUR"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -166,12 +243,25 @@
    "camera": "descend",
    "set": [
     "tribune",
-    "studio_light",
-    "person"
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "MUSCLE N° 1 : MICRO",
-   "comic_action": "Plan large : la salle vide, seul le micro brille sous un projecteur.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "CANDIDAT DEPUIS 2012",
+   "comic_action": "Le maire tamponne « SANS LIMITE » sur sa carte.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RETRAITE : JAMAIS"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,50 +275,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique fait une seule pompe, épuisé.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui parle pendant toute sa séance de sport."
+  "text": "Envoie ça au pote qui compte déjà ses trimestres."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 74,
+ "word_count": 82,
  "claims": [
   {
-   "text": "À Lyon, il a parlé une heure quarante-deux, cramponné au pupitre.",
+   "text": "Son programme 2027 promet la retraite à 60 ans.",
    "claim_type": "fait_public",
-   "source": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
-   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
+   "source": "https://www.economiematin.fr/?p=238883",
+   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, indexation des salaires sur l'inflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
   },
   {
-   "text": "Le coach ne compte pas les pompes. Il compte les digressions.",
+   "text": "Une seule carrière sans retraite : candidat à l'Élysée depuis 2012.",
    "claim_type": "fait_public",
-   "source": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
-   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
-  },
-  {
-   "text": "Série Victor Hugo, série médias, série Constituante.",
-   "claim_type": "fait_public",
-   "source": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
-   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
+   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "sources": [
   {
-   "url": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
-   "date": "2026-02-26",
+   "url": "https://www.economiematin.fr/?p=238883",
+   "date": "2026-11",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
+   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, indexation des salaires sur l'inflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "date": "2026-06",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Lyon : 1 h 42 cramponné au pupitre, digressions sur Victor Hugo. Cadre : la salle de sport. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Son programme 2027 promet la retraite à 60 ans. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

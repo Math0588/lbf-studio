@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-23",
  "format": "A",
- "title_cover": "La quatrième",
+ "title_cover": "La quatrième, la bonne",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, la même affiche est réimprimée tous les cinq ans.",
-  "Marineville : quatre départs, une seule ligne d'arrivée.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : la quatrième."
+  "Dans cette ville, tout le monde vote Marine. Encore.",
+  "Marineville réimprime la même affiche depuis 2012.",
+  "Ici, l'affiche a recouvert la colline.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : La quatrième, la bonne."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Quatre présidentielles : même Poulidor a fini par descendre du vélo.",
-  "Le marathon de la ville a quatre départs, et toujours la même ligne d'arrivée.",
-  "Ici, la mairie réimprime la même affiche tous les cinq ans, police plus douce."
+  "Marine y croit : la quatrième sera la bonne. Comme les trois autres.",
+  "La quatrième sera la bonne. Comme les trois autres.",
+  "On ne voit plus le ciel. Juste le même slogan, en quatre exemplaires."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -29,7 +29,7 @@
   },
   {
    "id": "n2",
-   "text": "2012, 2017, 2022, et la revoilà en campagne pour 2027.",
+   "text": "2012, 2017, 2022 : trois défaites. Et la revoilà en campagne pour 2027.",
    "accent_words": [
     "2027"
    ],
@@ -37,33 +37,33 @@
   },
   {
    "id": "n3",
-   "text": "Deux débats d'entre-deux-tours face à Macron, deux défaites.",
+   "text": "Alors la ville réimprime la même affiche tous les cinq ans, en plus grand.",
    "accent_words": [
-    "deux défaites"
+    "grand"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, la mairie réimprime la même affiche tous les cinq ans, police plus douce.",
+   "text": "L'affiche couvre la mairie, puis le quartier, puis la colline.",
    "accent_words": [
-    "police plus douce"
+    "colline"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le marathon de la ville a quatre départs, et la même ligne d'arrivée.",
+   "text": "On ne voit plus le ciel. Juste le même slogan, en quatre exemplaires.",
    "accent_words": [
-    "la même ligne"
+    "exemplaires"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Quatre présidentielles : même Poulidor a fini par descendre du vélo.",
+   "text": "Marine y croit : la quatrième sera la bonne. Comme les trois autres.",
    "accent_words": [
-    "Poulidor"
+    "bonne"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui croit que la quatrième sera la bonne.",
    "accent_words": [
-    "la quatrième"
+    "bonne"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,89 +89,173 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; quatre affiches identiques superposées.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "ENCORE",
+   "comic_action": "Descente sur la ville ; banderole « ENCORE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "fatigue"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    },
+    {
+     "type": "affiche",
+     "texte": "2027 : LA BONNE ?"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "lift_tribune",
-    "tribune",
-    "person",
-    "banner"
+    "screen",
+    "banner",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "2012 · 2017 · 2022 · 2027",
-   "comic_action": "La tribune s'élève quatre fois de suite, même décor.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "3 DÉFAITES, 4E CAMPAGNE",
+   "comic_action": "Soirée électorale : l'écran affiche « 3 DÉFAITES, 4E CAMPAGNE ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "tribune",
-    "router_lectern",
-    "studio_light",
-    "text3d"
+    "facade_row",
+    "sign",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "0 – 2",
-   "comic_action": "Plateau : un tableau de score qui affiche 0 – 2.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "LA MÊME AFFICHE, EN PLUS GRAND",
+   "comic_action": "Rangée de façades : enseigne « LA MÊME AFFICHE, EN PLUS GRAND ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LA BONNE, CETTE FOIS"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "AFFICHE : V4",
-   "comic_action": "Un colleur d'affiches recolle exactement la même, en plus arrondi.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "L'AFFICHE COUVRE LA COLLINE",
+   "comic_action": "Descente sur la ville ; banderole « L'AFFICHE COUVRE LA COLLINE » sur la mairie.",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shake"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "ground",
-    "banner",
-    "person",
-    "text3d"
+    "facade_row",
+    "sign",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "DÉPART N°4",
-   "comic_action": "Coureurs au départ ; la ligne d'arrivée affiche « 2e ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "4 FOIS LE MÊME SLOGAN",
+   "comic_action": "Rangée de façades : enseigne « 4 FOIS LE MÊME SLOGAN ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "facepalm"
+    },
+    {
+     "who": "perso",
+     "visage": "dort"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "road",
-    "building",
-    "person",
-    "bin"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "POULIDOR : RETRAITÉ",
-   "comic_action": "Un vélo posé contre un mur, plaque « IL A SU S'ARRÊTER ». Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "COMME LES TROIS AUTRES",
+   "comic_action": "Plan final, tenir une seconde : « COMME LES TROIS AUTRES ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +269,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt rejoue au loto, même grille.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI Y CROIT",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI Y CROIT ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,68 +292,43 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 77,
+ "word_count": 84,
  "claims": [
   {
    "segment": "n2",
-   "text": "2012, 2017, 2022, et la revoilà en campagne pour 2027.",
+   "text": "2012, 2017, 2022 : trois défaites. Et la revoilà en campagne pour 2027.",
    "claim_type": "fait_public",
-   "source": "https://fr.euronews.com/2026/10/25/orleans-marine-le-pen-lance-sa-campagne-au-lendemain-de-lacte-ii-de-la-mobilisation-social",
-   "note": "Lancement de campagne pour 2027 à Orléans, au lendemain de l'acte II de la mobilisation sociale.",
+   "source": "https://www.publicsenat.fr/actualites/politique/marine-le-pen-une-defaite-mais-une-ascension-electorale-60208",
+   "note": "2012 : troisième (17,9 %) ; 2017 : battue au second tour (33,9 %). ; Présidentielle 2022 : troisième défaite, à un niveau inégalé. ; Lancement de campagne pour 2027 à Orléans, au lendemain de l'acte II de la mobilisation sociale.",
    "sources_complementaires": [
-    "https://www.publicsenat.fr/actualites/politique/sortie-de-l-euro-les-atermoiements-de-marine-le-pen-60007",
-    "https://www.publicsenat.fr/actualites/non-classe/le-pen-reconnait-un-debat-d-entre-deux-tours-rate-60797",
-    "https://thenationalnews.com/world/europe/2022/04/22/who-is-marine-le-pen-the-far-right-candidate-who-has-led-a-kitten-campaign"
-   ]
-  },
-  {
-   "segment": "n3",
-   "text": "Deux débats d'entre-deux-tours face à Macron, deux défaites.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/non-classe/le-pen-reconnait-un-debat-d-entre-deux-tours-rate-60797",
-   "note": "Elle reconnaît un débat d'entre-deux-tours « raté ».",
-   "sources_complementaires": [
-    "https://www.vie-publique.fr/discours/285127-debat-televise-20042022-emmanuel-macron-marine-le-pen-candidats"
+    "https://www.dhnet.be/actu/monde/2022/04/24/presidentielle-2022-marine-le-pen-essuie-sa-troisieme-defaite-mais-a-un-niveau-eleve-inegale-IFARP5UCP5BFTDB75UW7JJIFMY/",
+    "https://fr.euronews.com/2026/10/25/orleans-marine-le-pen-lance-sa-campagne-au-lendemain-de-lacte-ii-de-la-mobilisation-social"
    ]
   }
  ],
  "sources": [
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/marine-le-pen-une-defaite-mais-une-ascension-electorale-60208",
+   "date": "2017-05",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "2012 : troisième (17,9 %) ; 2017 : battue au second tour (33,9 %)."
+  },
+  {
+   "url": "https://www.dhnet.be/actu/monde/2022/04/24/presidentielle-2022-marine-le-pen-essuie-sa-troisieme-defaite-mais-a-un-niveau-eleve-inegale-IFARP5UCP5BFTDB75UW7JJIFMY/",
+   "date": "2022-04-24",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : troisième défaite, à un niveau inégalé."
+  },
   {
    "url": "https://fr.euronews.com/2026/10/25/orleans-marine-le-pen-lance-sa-campagne-au-lendemain-de-lacte-ii-de-la-mobilisation-social",
    "date": "2026-10-25",
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Lancement de campagne pour 2027 à Orléans, au lendemain de l'acte II de la mobilisation sociale."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/sortie-de-l-euro-les-atermoiements-de-marine-le-pen-60007",
-   "date": "2017",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Sortie de l'euro au programme ; en 2012 elle la conditionnait à un référendum."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/non-classe/le-pen-reconnait-un-debat-d-entre-deux-tours-rate-60797",
-   "date": "2017",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Elle reconnaît un débat d'entre-deux-tours « raté »."
-  },
-  {
-   "url": "https://thenationalnews.com/world/europe/2022/04/22/who-is-marine-le-pen-the-far-right-candidate-who-has-led-a-kitten-campaign",
-   "date": "2022-04-22",
-   "consulted": "2026-11-22",
-   "statut": "mème de presse (surnom)",
-   "note": "« Kitten campaign » : campagne chaton de 2022, ton adouci."
-  },
-  {
-   "url": "https://www.vie-publique.fr/discours/285127-debat-televise-20042022-emmanuel-macron-marine-le-pen-candidats",
-   "date": "2022-04-20",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Deuxième débat d'entre-deux-tours face à Emmanuel Macron (2022)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = candidate en 2012, 2017, 2022, et à nouveau en campagne pour 2027 (lancement à Orléans, octobre 2026). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = trois défaites présidentielles (2012, 2017, 2022), candidate pour 2027. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

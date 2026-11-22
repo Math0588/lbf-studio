@@ -3,69 +3,69 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-31",
  "format": "B",
- "title_cover": "Critiquer, pas inviter",
+ "title_cover": "Tout le monde dehors",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Les journalistes, dehors.",
-  "Bardella a le droit de critiquer la presse. Et de la trier.",
-  "Bardellaville : la salle de presse est un parking.",
+  "Dans cette ville, tout le monde vote Bardella. Les journalistes, sur liste.",
+  "Bardellaville : tout le monde est refoulé, même le plombier.",
+  "Ici, on a le droit de critiquer. Et de fermer la porte.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Critiquer, pas inviter."
+  "Bienvenue à Bardellaville. Au programme : Tout le monde dehors."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Lui a le droit de critiquer. Eux, droit au trottoir.",
-  "Eux ont droit au trottoir.",
-  "Critiquer, oui. Inviter, non."
+  "Bardella répond au tollé sur X : « Vu et s'en tape ».",
+  "Vu et s'en tape.",
+  "Les habitants vivent enfermés, sans courrier, ni eau, ni nouvelles."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Les journalistes, dehors.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Les journalistes, sur liste.",
+   "accent_words": [
+    "sur liste"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Sa ligne : « on a le droit de critiquer les journalistes ». Puis : refoulés.",
+   "accent_words": [
+    "refoulés"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n3",
+   "text": "Alors la ville refoule aussi : le facteur reste dehors.",
    "accent_words": [
     "dehors"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n2",
-   "text": "Sa ligne, assumée : « on a le droit de critiquer les journalistes ».",
-   "accent_words": [
-    "journalistes"
-   ],
-   "claim_type": "citation_exacte"
-  },
-  {
-   "id": "n3",
-   "text": "Novembre 2026 : critiquer devient trier, à l'entrée de sa soirée.",
-   "accent_words": [
-    "trier"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n4",
-   "text": "Puis sa réponse sur X, en tampon officiel : « Vu et s'en tape ».",
+   "text": "Puis le livreur, le plombier, et le médecin.",
    "accent_words": [
-    "tape"
+    "médecin"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Prochaine étape : la conférence de presse sans la presse.",
+   "text": "Les habitants vivent enfermés, sans courrier, ni eau, ni nouvelles.",
    "accent_words": [
-    "sans la presse"
+    "nouvelles"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Lui a le droit de critiquer. Eux, droit au trottoir.",
+   "text": "Bardella répond au tollé sur X : « Vu et s'en tape ».",
    "accent_words": [
-    "trottoir"
+    "tape"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "JOURNALISTES : DEHORS",
-   "comic_action": "Descente sur la ville ; banderole « JOURNALISTES : DEHORS » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "onscreen_text": "JOURNALISTES : SUR LISTE",
+   "comic_action": "Descente sur la ville ; banderole « JOURNALISTES : SUR LISTE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "maire",
@@ -102,6 +102,12 @@
      "who": "foule",
      "geste": "point"
     }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
+    }
    ]
   },
   {
@@ -109,16 +115,16 @@
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "tribune",
-    "studio_light",
-    "screen",
-    "text3d"
+    "building",
+    "sign",
+    "person",
+    "banner"
    ],
    "onscreen_text": "« LE DROIT DE CRITIQUER »",
-   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « « LE DROIT DE CRITIQUER » ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "comic_action": "Porte d'entrée gardée ; panneau « « LE DROIT DE CRITIQUER » ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -130,7 +136,8 @@
      "who": "perso",
      "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -144,19 +151,24 @@
     "person",
     "banner"
    ],
-   "onscreen_text": "JOURNALISTES REFOULÉS",
-   "comic_action": "Porte d'entrée gardée ; panneau « JOURNALISTES REFOULÉS ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "FACTEUR : DEHORS",
+   "comic_action": "Porte d'entrée gardée ; panneau « FACTEUR : DEHORS ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
-     "who": "maire",
+     "who": "perso",
      "geste": "cross_arms",
      "visage": "fier"
     },
     {
-     "who": "perso",
-     "geste": "facepalm",
-     "visage": "colere"
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ENTRÉE : NON"
     }
    ]
   },
@@ -165,57 +177,55 @@
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
+    "road",
+    "sign",
     "person",
-    "studio_light"
+    "traffic_light"
    ],
-   "onscreen_text": "« VU ET S'EN TAPE »",
-   "comic_action": "Écran géant : « « VU ET S'EN TAPE » ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "MÉDECIN : DEHORS",
+   "comic_action": "Dans la rue, panneau « MÉDECIN : DEHORS ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro",
-     "objet": "phone"
+     "who": "foule",
+     "geste": "shrug"
     },
     {
-     "who": "foule",
-     "geste": "point",
-     "visage": "colere"
+     "who": "perso",
+     "geste": "cough",
+     "visage": "fatigue"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "tribune",
-    "studio_light",
-    "screen",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "CONFÉRENCE SANS PRESSE",
-   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « CONFÉRENCE SANS PRESSE ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "SANS NOUVELLES",
+   "comic_action": "Descente sur la ville ; banderole « SANS NOUVELLES » sur la mairie.",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro"
+     "who": "foule",
+     "visage": "fatigue"
     },
     {
      "who": "perso",
-     "geste": "facepalm",
-     "visage": "blase"
+     "visage": "dort"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -229,21 +239,23 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "EUX : LE TROTTOIR",
-   "comic_action": "Plan final, tenir une seconde : « EUX : LE TROTTOIR ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "« VU ET S'EN TAPE »",
+   "comic_action": "Plan final, tenir une seconde : « « VU ET S'EN TAPE » ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "bow",
-     "visage": "fier"
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "phone"
     },
     {
      "who": "perso",
      "geste": "cross_arms",
      "visage": "colere"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -259,7 +271,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE ANTI-PRESSE",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE ANTI-PRESSE ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -267,7 +279,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -279,28 +292,21 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 83,
+ "word_count": 81,
  "claims": [
   {
    "segment": "n2",
-   "text": "Sa ligne, assumée : « on a le droit de critiquer les journalistes ».",
+   "text": "Sa ligne : « on a le droit de critiquer les journalistes ». Puis : refoulés.",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/bardella-rn-on-a-le-droit-de-critiquer-les-journalistes-136926",
-   "note": "« on a le droit de critiquer les journalistes »."
-  },
-  {
-   "segment": "n3",
-   "text": "Novembre 2026 : critiquer devient trier, à l'entrée de sa soirée.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
-   "note": "Image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement du livre « Gouverner » ; reprend un mème préexistant. ; Tribune sur le tri des journalistes autour de la soirée de lancement.",
+   "note": "« on a le droit de critiquer les journalistes ». ; Image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement du livre « Gouverner » ; reprend un mème préexistant.",
    "sources_complementaires": [
-    "https://www.politis.fr/articles/2026/11/sur-le-gril-qui-est-journaliste-du-danger-de-faire-le-tri/"
+    "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851"
    ]
   },
   {
-   "segment": "n4",
-   "text": "Puis sa réponse sur X, en tampon officiel : « Vu et s'en tape ».",
+   "segment": "n6",
+   "text": "Bardella répond au tollé sur X : « Vu et s'en tape ».",
    "claim_type": "citation_exacte",
    "source": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
    "note": "Image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement du livre « Gouverner » ; reprend un mème préexistant."
@@ -320,15 +326,8 @@
    "consulted": "2026-11-22",
    "statut": "fait (publication sur X du 04/11/2026) ; texte exact de l'image",
    "note": "Image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement du livre « Gouverner » ; reprend un mème préexistant."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2026/11/sur-le-gril-qui-est-journaliste-du-danger-de-faire-le-tri/",
-   "date": "2026-11",
-   "consulted": "2026-11-22",
-   "statut": "opinion (tribune)",
-   "note": "Tribune sur le tri des journalistes autour de la soirée de lancement."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = « on a le droit de critiquer les journalistes », puis le tri à l'entrée. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « on a le droit de critiquer les journalistes », puis il les refoule. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

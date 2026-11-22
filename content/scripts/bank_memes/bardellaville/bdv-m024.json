@@ -4,23 +4,23 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Cent jours de valise",
- "anchor": "le livre « Gouverner » parle de cent jours à Matignon sans détailler méthode ni priorités (AFP) : des vacances de cent jours sans destination.",
+ "title_cover": "Cent jours de vacances",
+ "anchor": "les cent jours à Matignon, priorités et méthode non détaillées",
  "meme_key": "CENT",
- "situation": "Cent jours de valise",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "situation": "Cent jours de vacances",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, les vacances durent cent jours. La destination, jamais trouvée.",
-  "Bardellaville : quatre-vingt-dix-huit jours pour faire la valise.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : cent jours de valise."
+  "Dans cette ville, tout le monde vote Bardella. Et part cent jours.",
+  "Bardellaville part cent jours, sans destination.",
+  "Ici, le car tourne au rond-point depuis soixante jours.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Cent jours de vacances."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Jour cent : photo de l'aéroport, et on rentre.",
-  "Jour quatre-vingt-dix-neuf : on cherche la destination.",
-  "Jour cent : photo de l'aéroport, et on rentre."
+  "Bardella les accueille avec Gouverner, chapitre un.",
+  "Retour au chapitre un.",
+  "Jour cent : les habitants ont oublié où ils habitent."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -34,7 +34,7 @@
   },
   {
    "id": "n2",
-   "text": "Cent jours à Matignon, dit le livre. Priorités et méthode : non détaillées.",
+   "text": "Cent jours à Matignon, promet son livre. Priorités et méthode : non détaillées.",
    "accent_words": [
     "non détaillées"
    ],
@@ -42,33 +42,33 @@
   },
   {
    "id": "n3",
-   "text": "Trois livres en deux ans, et toujours pas d'itinéraire.",
+   "text": "Alors la ville part cent jours en vacances, sans destination.",
    "accent_words": [
-    "pas d'itinéraire"
+    "destination"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, les vacances durent cent jours : quatre-vingt-dix-huit pour faire la valise, en direct.",
+   "text": "Jour trente : le car tourne au rond-point. Jour soixante : toujours.",
    "accent_words": [
-    "en direct"
+    "toujours"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Jour quatre-vingt-dix-neuf : on cherche la destination.",
+   "text": "Jour cent : les habitants ont oublié où ils habitent.",
    "accent_words": [
-    "la destination"
+    "habitent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Jour cent : photo de l'aéroport, et on rentre.",
+   "text": "Bardella les accueille avec Gouverner, chapitre un.",
    "accent_words": [
-    "on rentre"
+    "un"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -94,9 +94,26 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; une valise géante ouverte sur le perron.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "DÉPART : CENT JOURS",
+   "comic_action": "Descente sur la ville ; banderole « DÉPART : CENT JOURS » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "J-100"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -110,41 +127,81 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "PRIORITÉS : ?",
-   "comic_action": "Le livre ouvert sur un itinéraire vierge.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "MÉTHODE : NON DÉTAILLÉE",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « MÉTHODE : NON DÉTAILLÉE ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "gps",
-    "car",
-    "screen",
-    "text3d"
+    "road",
+    "bus",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "ITINÉRAIRE : INTROUVABLE",
-   "comic_action": "Un GPS affiche « recherche du chemin » en boucle.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "DESTINATION : ?",
+   "comic_action": "Un bus passe ; son fronton affiche « DESTINATION : ? ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "wave"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "DESTINATION : ?"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "ring_light",
-    "tripod_camera",
-    "person",
-    "screen"
+    "road",
+    "car",
+    "gps",
+    "roundabout"
    ],
-   "onscreen_text": "J-98 : VALISE EN LIVE",
-   "comic_action": "Ring light : une valise qu'on remplit et vide devant la caméra.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "JOUR 60 : ROND-POINT",
+   "comic_action": "Une voiture tourne au rond-point ; le GPS affiche « JOUR 60 : ROND-POINT ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "visage": "fatigue"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -153,30 +210,55 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "car",
     "road",
-    "gps",
-    "sign"
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "DESTINATION : ?",
-   "comic_action": "Voiture chargée, moteur allumé, GPS vide.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "JOUR 100 : PERDUS",
+   "comic_action": "Dans la rue, panneau « JOUR 100 : PERDUS ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "person",
-    "ring_light",
-    "road",
-    "lamp"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "J100 : RETOUR",
-   "comic_action": "Selfie devant un panneau « DÉPARTS », puis demi-tour. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "GOUVERNER : CHAPITRE 1",
+   "comic_action": "Plan final, tenir une seconde : « GOUVERNER : CHAPITRE 1 ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -190,9 +272,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt défait sa valise, jamais partie.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE PRESSÉ",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE PRESSÉ ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -208,17 +299,10 @@
  "claims": [
   {
    "segment": "n2",
-   "text": "Cent jours à Matignon, dit le livre. Priorités et méthode : non détaillées.",
+   "text": "Cent jours à Matignon, promet son livre. Priorités et méthode : non détaillées.",
    "claim_type": "fait_public",
    "source": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
    "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
-  },
-  {
-   "segment": "n3",
-   "text": "Trois livres en deux ans, et toujours pas d'itinéraire.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
-   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
   }
  ],
  "sources": [
@@ -226,17 +310,10 @@
    "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
    "date": "2026-11-04",
    "consulted": "2026-11-22",
-   "statut": "fait + appréciation AFP",
+   "statut": "fait + opinion (appréciation AFP)",
    "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
-  },
-  {
-   "url": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
-   "date": "2026-11-04",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = le livre « Gouverner » parle de cent jours à Matignon sans détailler méthode ni priorités (AFP) : des vacances de cent jours sans destination. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = les cent jours à Matignon, priorités et méthode non détaillées. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

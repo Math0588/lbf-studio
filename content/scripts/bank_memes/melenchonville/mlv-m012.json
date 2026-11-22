@@ -4,79 +4,79 @@
  "synopsis_id": "mlv-m012-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Klaxon et fureur",
- "anchor": "« le bruit et la fureur », formule fétiche depuis 2010.",
+ "title_cover": "Concours de gueule",
+ "anchor": "« Le bruit et la fureur » : la ville organise le concours de la plus grande gueule.",
  "meme_id": "MQ",
- "situation": "le rond-point",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le rond-point du bruit et de la fureur.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, le klaxon est une opinion politique.",
-  "Mélenchonville : on tourne, on crie, on ne sort jamais."
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien gueule.",
+  "Mélenchon : le bruit et la fureur. La ville en a fait un concours.",
+  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
+  "Bienvenue à Mélenchonville : concours de gueule.",
+  "Mélenchon en une vidéo : concours de gueule."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Quinze ans de bruit et de fureur. Et toujours le même rond-point.",
-  "Beaucoup de bruit, zéro sortie.",
-  "Le rond-point de la fureur n'a pas de sortie Élysée."
+  "Beaucoup de gueule, pas grand-chose au bout : trois présidentielles le prouvent.",
+  "Beaucoup de gueule, pas grand-chose au bout : trois présidentielles le prouvent.",
+  "Le gagnant crie si fort que la ville voisine déménage avec ses meubles."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Au klaxon.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien gueule.",
    "accent_words": [
-    "Au klaxon"
+    "Même le chien gueule"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sa formule préférée depuis 2010 : le bruit et la fureur.",
+   "text": "Sa formule depuis 2010 : « le bruit et la fureur ».",
    "accent_words": [
     "la fureur"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Ici, le rond-point klaxonne tout seul. Toutes les dix secondes.",
+   "text": "La mairie lance le concours annuel de la plus grande gueule.",
    "accent_words": [
-    "klaxonne"
+    "grande gueule"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Les voitures tournent, crient, tournent encore. Personne ne sort.",
+   "text": "On s'entraîne dès le réveil. Les vitres explosent à 7 h.",
    "accent_words": [
-    "Personne ne sort"
+    "7 h"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La seule sortie indique Sixième République. Elle tourne avec les voitures.",
+   "text": "Le gagnant crie si fort que la ville voisine déménage avec ses meubles.",
    "accent_words": [
-    "Sixième République"
+    "ses meubles"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Quinze ans de bruit et de fureur. Et toujours le même rond-point.",
+   "text": "Beaucoup de gueule, pas grand-chose au bout : trois présidentielles le prouvent.",
    "accent_words": [
-    "le même rond-point"
+    "trois présidentielles le prouvent"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui tourne en rond depuis 2012.",
+   "text": "Envoie ça au pote qui crie le plus fort et perd le débat.",
    "accent_words": [
-    "tourne en rond"
+    "le débat"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "roundabout",
-    "car",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un rond-point saturé de voitures qui klaxonnent.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · CONCOURS DE GUEULE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "QUI CRIE GAGNE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,13 +128,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "text3d",
-    "roundabout"
+    "tribune",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "LE BRUIT ET LA FUREUR",
-   "comic_action": "Gros plan sur le panneau du rond-point, rebaptisé.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« LE BRUIT ET LA FUREUR »",
+   "comic_action": "Le micro sature, les vitres vibrent.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "colere",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "QUI CRIE GAGNE"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -120,13 +157,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "roundabout",
-    "car",
-    "text3d"
+    "tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "BIP BIP BIP",
-   "comic_action": "Orbite : le terre-plein central vibre à chaque coup de klaxon.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CONCOURS DE GUEULE",
+   "comic_action": "Podium, jury, sonomètre géant.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "INSCRIPTION : 1 CRI"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -135,13 +186,26 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "car_orbit",
-    "roundabout",
-    "person"
+    "facade_row",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "SORTIE : AUCUNE",
-   "comic_action": "Travelling : les voitures tournent en boucle, conducteurs penchés à la fenêtre.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "VITRES : EXPLOSÉES",
+   "comic_action": "Une rangée de fenêtres éclate en chaîne.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "WOUAF"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,13 +214,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "roundabout",
-    "text3d"
+    "road",
+    "car",
+    "facade_set"
    ],
-   "onscreen_text": "SORTIE VIE RÉP.",
-   "comic_action": "Le panneau de sortie est monté sur une voiture et tourne avec elle.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "VILLE VOISINE : PARTIE",
+   "comic_action": "Une ville entière s'éloigne sur des camions.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "arms_up",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SONOMÈTRE : CASSÉ"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +242,27 @@
    ],
    "camera": "descend",
    "set": [
-    "roundabout",
-    "car_orbit",
-    "text3d"
+    "lift_tribune",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "DEPUIS 2012",
-   "comic_action": "Plan large : le rond-point vu du ciel, une seule boucle rouge.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "3 PRÉSIDENTIELLES · 0",
+   "comic_action": "Le maire crie dans un micro débranché.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "colere",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RÉSULTAT : 0"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,39 +276,47 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique sort enfin du rond-point, à pied.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui tourne en rond depuis 2012."
+  "text": "Envoie ça au pote qui crie le plus fort et perd le débat."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 73,
+ "word_count": 84,
  "claims": [
   {
-   "text": "Sa formule préférée depuis 2010 : le bruit et la fureur.",
-   "claim_type": "fait_public",
+   "text": "Sa formule depuis 2010 : « le bruit et la fureur ».",
+   "claim_type": "citation_exacte",
    "source": "https://www.politis.fr/articles/2025/07/emotions-quand-la-colere-ne-suffit-pas/",
-   "note": "« Le bruit et la fureur », formule qu'il s'applique depuis 2010 ; reprise sans guillemets."
+   "note": "« Le bruit et la fureur » : formule qu'il revendique depuis 2010."
   },
   {
-   "text": "La seule sortie indique Sixième République. Elle tourne avec les voitures.",
+   "text": "Beaucoup de gueule, pas grand-chose au bout : trois présidentielles le prouvent.",
    "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
-   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
-  },
-  {
-   "text": "Quinze ans de bruit et de fureur. Et toujours le même rond-point.",
-   "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
@@ -225,24 +324,17 @@
    "url": "https://www.politis.fr/articles/2025/07/emotions-quand-la-colere-ne-suffit-pas/",
    "date": "2025-07",
    "consulted": "2026-11-22",
-   "statut": "fait (origine) / mème",
-   "note": "« Le bruit et la fureur », formule qu'il s'applique depuis 2010 ; reprise sans guillemets."
+   "statut": "citation_exacte",
+   "note": "« Le bruit et la fureur » : formule qu'il revendique depuis 2010."
   },
   {
-   "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
-   "date": "2026-11",
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "date": "2026-06",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « le bruit et la fureur », formule fétiche depuis 2010. Cadre : le rond-point. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Sa formule depuis 2010 : « le bruit et la fureur ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

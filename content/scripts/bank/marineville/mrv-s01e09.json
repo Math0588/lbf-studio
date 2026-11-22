@@ -3,33 +3,33 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-29",
  "format": "A",
- "title_cover": "Recyclage Renaissance",
+ "title_cover": "La décharge à discours",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, la déchetterie a un rayon slogans d'occasion.",
-  "Marineville : le recyclage, elle connaît.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : recyclage renaissance."
+  "Dans cette ville, tout le monde vote Marine. Tri sélectif interdit.",
+  "Marineville interdit le recyclage. Sauf les discours.",
+  "Ici, la décharge déborde jusqu'à la mairie.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : La décharge à discours."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Elle trouvait le recyclage tellement nul qu'elle a récupéré la poubelle.",
-  "Ici, la déchetterie municipale a un rayon slogans d'occasion.",
-  "En 2026, son grand mot de campagne : Renaissance. Vingt et une fois à Orléans."
+  "Marine le reprend à Villepinte, en 2017. Et « assume totalement ».",
+  "Recyclé, et assumé totalement.",
+  "On y retrouve un discours de Fillon, presque neuf."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine. Tri sélectif obligatoire.",
+   "text": "Dans cette ville, tout le monde vote Marine. Tri sélectif interdit.",
    "accent_words": [
-    "Tri sélectif"
+    "interdit"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2017, Macron ? « ce n'est pas le renouveau », « c'est le recyclage ».",
+   "text": "Sur Macron : « ce n'est pas le renouveau », « c'est le recyclage ».",
    "accent_words": [
     "recyclage"
    ],
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "En 2026, son grand mot de campagne : Renaissance. Vingt et une fois à Orléans.",
+   "text": "Alors la ville interdit le recyclage. Tout part à la décharge.",
    "accent_words": [
-    "Renaissance"
+    "décharge"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Renaissance, c'est aussi le nom du parti de Macron.",
+   "text": "La décharge déborde jusqu'à la mairie.",
    "accent_words": [
-    "le parti de Macron"
+    "mairie"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Ici, la déchetterie municipale a un rayon slogans d'occasion.",
+   "text": "On y retrouve un discours de Fillon, presque neuf.",
    "accent_words": [
-    "slogans d'occasion"
+    "presque neuf"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Elle trouvait le recyclage tellement nul qu'elle a récupéré la poubelle.",
+   "text": "Marine le reprend à Villepinte, en 2017. Et « assume totalement ».",
    "accent_words": [
-    "la poubelle"
+    "totalement"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui trie mieux ses déchets que ses slogans.",
+   "text": "Envoie ça au pote qui trie mieux ses déchets que ses discours.",
    "accent_words": [
-    "ses slogans"
+    "discours"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,25 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; trois bacs de tri devant la porte.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "TRI INTERDIT",
+   "comic_action": "Descente sur la ville ; banderole « TRI INTERDIT » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,77 +117,145 @@
    "camera": "orbit",
    "set": [
     "tribune",
-    "studio_light",
-    "text3d",
+    "lift_tribune",
+    "banner",
     "person"
    ],
    "onscreen_text": "« C'EST LE RECYCLAGE »",
-   "comic_action": "Tribune : la maire cubique pointe un bac de recyclage.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Meeting : la tribune s'élève, banderole « « C'EST LE RECYCLAGE » ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "descend",
+   "camera": "street_dolly",
    "set": [
-    "lift_tribune",
-    "tribune",
+    "road",
+    "sign",
     "person",
-    "banner"
+    "traffic_light"
    ],
-   "onscreen_text": "RENAISSANCE ×21",
-   "comic_action": "La tribune s'élève ; un compteur « renaissance » monte jusqu'à 21.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "RECYCLAGE INTERDIT",
+   "comic_action": "Dans la rue, panneau « RECYCLAGE INTERDIT ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RECYCLER : INTERDIT"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
+    "ground",
     "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "RENAISSANCE ®",
-   "comic_action": "L'écran affiche deux logos côte à côte, identiques au mot près.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "LA DÉCHARGE DÉBORDE",
+   "comic_action": "Descente sur la ville ; banderole « LA DÉCHARGE DÉBORDE » sur la mairie.",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cough"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "bin",
-    "road",
-    "building",
-    "person"
+    "router_lectern",
+    "form_stack",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "SLOGANS D'OCCASION",
-   "comic_action": "Une benne pleine de banderoles usagées ; une habitante en choisit une.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "UN DISCOURS DE FILLON",
+   "comic_action": "Pupitre couvert de fiches qui glissent ; en gros « UN DISCOURS DE FILLON ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "POUBELLE : RÉCUPÉRÉE",
-   "comic_action": "Vitrine : une poubelle bleue repeinte, étiquette « NEUF ». Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "« ASSUME TOTALEMENT »",
+   "comic_action": "Plan final, tenir une seconde : « « ASSUME TOTALEMENT » ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,42 +269,47 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt jette une banderole dans le bac jaune.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE RECYCLEUR",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE RECYCLEUR ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui trie mieux ses déchets que ses slogans."
+  "text": "Envoie ça au pote qui trie mieux ses déchets que ses discours."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 83,
+ "word_count": 76,
  "claims": [
   {
    "segment": "n2",
-   "text": "« ce n'est pas le renouveau » / « c'est le recyclage »",
+   "text": "Sur Macron : « ce n'est pas le renouveau », « c'est le recyclage ».",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/pour-m-le-pen-macron-ce-n-est-pas-le-renouveau-c-est-le-recyclage-59955",
    "note": "Sur Macron : « ce n'est pas le renouveau », « c'est le recyclage »."
   },
   {
-   "segment": "n3",
-   "text": "En 2026, son grand mot de campagne : Renaissance. Vingt et une fois à Orléans.",
-   "claim_type": "fait_public",
-   "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
-   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
-  },
-  {
-   "segment": "n4",
-   "text": "Renaissance, c'est aussi le nom du parti de Macron.",
-   "claim_type": "fait_public",
-   "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
-   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
+   "segment": "n6",
+   "text": "Marine le reprend à Villepinte, en 2017. Et « assume totalement ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/non-classe/plagiat-du-discours-de-fillon-marine-le-pen-assume-totalement-59941",
+   "note": "Discours du 1er mai 2017 à Villepinte : passages repris d'un discours de François Fillon ; elle « assume totalement ». ; Le FN parle d'un « clin d'œil » au discours de Fillon.",
+   "sources_complementaires": [
+    "https://www.publicsenat.fr/actualites/politique/discours-de-fillon-plagie-par-le-pen-un-clin-d-oeil-selon-le-fn-59946"
+   ]
   }
  ],
  "sources": [
@@ -228,17 +317,24 @@
    "url": "https://www.publicsenat.fr/actualites/politique/pour-m-le-pen-macron-ce-n-est-pas-le-renouveau-c-est-le-recyclage-59955",
    "date": "2017",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (titre Public Sénat)",
+   "statut": "citation exacte",
    "note": "Sur Macron : « ce n'est pas le renouveau », « c'est le recyclage »."
   },
   {
-   "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
-   "date": "2026-10-25",
+   "url": "https://www.publicsenat.fr/actualites/non-classe/plagiat-du-discours-de-fillon-marine-le-pen-assume-totalement-59941",
+   "date": "2017-05-02",
    "consulted": "2026-11-22",
-   "statut": "fait public (analyse lexicale)",
-   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
+   "statut": "fait + citation exacte",
+   "note": "Discours du 1er mai 2017 à Villepinte : passages repris d'un discours de François Fillon ; elle « assume totalement »."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/discours-de-fillon-plagie-par-le-pen-un-clin-d-oeil-selon-le-fn-59946",
+   "date": "2017-05-02",
+   "consulted": "2026-11-22",
+   "statut": "fait + citation",
+   "note": "Le FN parle d'un « clin d'œil » au discours de Fillon."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = 2017 : Macron, « ce n'est pas le renouveau », « c'est le recyclage » ; 2026 : son mot de campagne, « renaissance » (21 fois à Orléans), nom du parti de Macron. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « c'est le recyclage » (sur Macron), puis le discours repris à Fillon (2017). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

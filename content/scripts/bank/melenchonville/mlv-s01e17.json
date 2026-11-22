@@ -5,67 +5,67 @@
  "format": "A",
  "title_cover": "Le Père Noël rouge",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. Noël avant l'heure.",
-  "Mélenchon distribue tout à tout le monde. La facture arrive après.",
-  "Celle-là, Méluche ne la partagera pas.",
+  "Dans cette ville, tout le monde vote Mélenchon. Même le Père Noël.",
+  "La ville de Mélenchon a tout distribué. Même le Père Noël a fait grève.",
+  "Les fans de Méluche vont me bloquer.",
   "Bienvenue à Mélenchonville : le Père Noël rouge.",
   "Mélenchon en une vidéo : le Père Noël rouge."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Tout pour tout le monde, payé plus tard : même le Père Noël a un budget.",
-  "Tout est offert. Le devis, lui, arrive l'an prochain.",
-  "Et la facture ? Le chiffrage arrive début 2027. Après les cadeaux."
+  "La facture ? Chiffrage promis début 2027. Le Père Noël attend.",
+  "La facture ? Début 2027. Le Père Noël attend toujours.",
+  "Le Père Noël fait grève. Plus de cadeaux, que des pancartes."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Noël avant l'heure.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le Père Noël.",
    "accent_words": [
-    "Noël avant l'heure"
+    "Même le Père Noël"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son programme 2027 promet le SMIC à 1 700 euros net. Immédiatement.",
+   "text": "Son programme 2027 promet le SMIC à 1 700 euros net, la retraite à 60 ans.",
    "accent_words": [
-    "Immédiatement"
+    "60 ans"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "La retraite à 60 ans aussi. En deux étapes, mais promis.",
+   "text": "La mairie distribue tout. Le Père Noël est embauché à l'année.",
    "accent_words": [
-    "mais promis"
+    "à l'année"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Prix bloqués et point d'indice plus 10 %.",
+   "text": "Les lutins réclament le SMIC à 1 700. Le traîneau, prix bloqué.",
    "accent_words": [
-    "10 %"
+    "Le traîneau, prix bloqué"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Et la facture ? Le chiffrage arrive début 2027. Après les cadeaux.",
+   "text": "Le Père Noël fait grève. Plus de cadeaux, que des pancartes.",
    "accent_words": [
-    "Après les cadeaux"
+    "des pancartes"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Tout pour tout le monde, payé plus tard : même le Père Noël a un budget.",
+   "text": "La facture ? Chiffrage promis début 2027. Le Père Noël attend.",
    "accent_words": [
-    "un budget"
+    "Le Père Noël attend"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
@@ -90,8 +90,8 @@
     "person"
    ],
    "onscreen_text": "MÉLENCHONVILLE · LE PÈRE NOËL ROUGE",
-   "comic_action": "Descente sur la ville : banderole « LE PÈRE NOËL ROUGE », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "TOUT EST OFFERT"
     }
    ]
   },
@@ -117,21 +127,27 @@
     "banner",
     "text3d"
    ],
-   "onscreen_text": "SMIC : 1 700 € NET",
+   "onscreen_text": "SMIC 1 700 · RETRAITE 60 · PRIX BLOQUÉS",
    "comic_action": "Le maire distribue des enveloppes depuis la tribune.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
      "geste": "wave",
      "visage": "sourire_pro",
-     "objet": "pancarte"
+     "objet": "billets"
     },
     {
      "who": "foule",
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUT EST OFFERT"
     }
    ]
   },
@@ -142,18 +158,24 @@
    ],
    "camera": "orbit",
    "set": [
-    "bench",
-    "person",
-    "text3d"
+    "mascot",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "RETRAITE À 60 ANS",
-   "comic_action": "Un banc public se déplie en transat.",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "PÈRE NOËL : CDI",
+   "comic_action": "Un Père Noël signe un contrat au guichet de la mairie.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
      "who": "perso",
-     "geste": "jump",
+     "geste": "clap",
      "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CADEAUX : 365 JOURS/AN"
     }
    ]
   },
@@ -164,24 +186,25 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "shop",
+    "mascot",
     "sign",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "PRIX BLOQUÉS",
-   "comic_action": "Les étiquettes du magasin se figent sous un cadenas.",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "LUTINS EN GRÈVE",
+   "comic_action": "Des lutins défilent, pancartes à la main.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
      "who": "foule",
-     "geste": "cheer",
-     "visage": "content"
-    },
+     "geste": "manif",
+     "visage": "colere",
+     "objet": "pancarte"
+    }
+   ],
+   "gags": [
     {
-     "who": "perso",
-     "geste": "clap",
-     "visage": "content",
-     "quand": 0.4
+     "type": "prix",
+     "texte": "TRAÎNEAU : PRIX BLOQUÉ"
     }
    ]
   },
@@ -192,18 +215,24 @@
    ],
    "camera": "closeup",
    "set": [
-    "form_stack",
-    "table",
-    "text3d"
+    "mascot",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "FACTURE : PLUS TARD",
-   "comic_action": "Une facture géante reste coincée sous la hotte.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "PLUS DE CADEAUX",
+   "comic_action": "Le Père Noël assis sur sa hotte vide, bras croisés.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "shrug",
-     "visage": "sourire_pro"
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "EN GRÈVE"
     }
    ]
   },
@@ -214,24 +243,24 @@
    ],
    "camera": "descend",
    "set": [
-    "mascot",
-    "banner",
-    "text3d"
+    "form_stack",
+    "text3d",
+    "mascot"
    ],
-   "onscreen_text": "PÈRE NOËL : BUDGET VALIDÉ",
-   "comic_action": "Une mascotte de Père Noël tend un devis au maire.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "FACTURE : 2027",
+   "comic_action": "Une facture géante dépasse de la hotte.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "facepalm",
-     "visage": "choque"
-    },
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "point",
-     "visage": "content",
-     "quand": 0.5
+     "type": "prix",
+     "texte": "FACTURE : PLUS TARD"
     }
    ]
   },
@@ -248,7 +277,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -256,6 +285,12 @@
      "geste": "point",
      "visage": "sourire_pro",
      "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
     }
    ]
   }
@@ -269,31 +304,19 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 81,
+ "word_count": 84,
  "claims": [
   {
-   "text": "Son programme 2027 promet le SMIC à 1 700 euros net. Immédiatement.",
+   "text": "Son programme 2027 promet le SMIC à 1 700 euros net, la retraite à 60 ans.",
    "claim_type": "fait_public",
    "source": "https://www.economiematin.fr/?p=238883",
-   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
+   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, indexation des salaires sur l'inflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
   },
   {
-   "text": "La retraite à 60 ans aussi. En deux étapes, mais promis.",
+   "text": "La facture ? Chiffrage promis début 2027. Le Père Noël attend.",
    "claim_type": "fait_public",
    "source": "https://www.economiematin.fr/?p=238883",
-   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
-  },
-  {
-   "text": "Prix bloqués et point d'indice plus 10 %.",
-   "claim_type": "fait_public",
-   "source": "https://www.economiematin.fr/?p=238883",
-   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
-  },
-  {
-   "text": "Et la facture ? Le chiffrage arrive début 2027. Après les cadeaux.",
-   "claim_type": "fait_public",
-   "source": "https://www.economiematin.fr/?p=238883",
-   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
+   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, indexation des salaires sur l'inflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
   }
  ],
  "sources": [
@@ -302,9 +325,9 @@
    "date": "2026-11",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
+   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, indexation des salaires sur l'inflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Le Père Noël rouge. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Son programme 2027 promet le SMIC à 1 700 euros net, la retraite à 60 ans. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

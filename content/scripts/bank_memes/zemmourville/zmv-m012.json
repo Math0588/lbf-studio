@@ -5,68 +5,68 @@
  "format": "A",
  "length": "court",
  "title_cover": "Rond-point Austerlitz",
- "anchor": "l'admiration pour Napoléon et le slogan « Impossible n'est pas français ».",
+ "anchor": "L'admiration pour Napoléon : le rond-point Austerlitz sans sortie vers 2026.",
  "meme_id": "ZO",
- "situation": "le rond-point",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le rond-point mène à 1805.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, toutes les sorties sont des batailles.",
-  "Zemmourville : tourner en rond, mais avec panache."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien salue l'Empereur.",
+  "Zemmour admire Napoléon. Le rond-point de la ville ne sort plus de 1805.",
+  "Attention : vidéo garantie sans nostalgie. Presque.",
+  "Bienvenue à Zemmourville : rond-point Austerlitz.",
+  "Zemmour en une vidéo : rond-point Austerlitz."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "On tourne depuis 2021. Le compteur affiche : 7 %.",
-  "Austerlitz au centre, aucune sortie vers la victoire.",
-  "On tourne, on tourne, et c'est toujours 1805."
+  "Il se présente à l'élection du rond-point : 7 %.",
+  "Il se présente à l'élection du rond-point : 7 %.",
+  "Les automobilistes fondent un village au centre. Ils élisent un empereur."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Sens giratoire.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien salue l'Empereur.",
    "accent_words": [
-    "Sens giratoire"
+    "salue l'Empereur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Il admire Napoléon. Ici, le rond-point s'appelle Austerlitz.",
+   "text": "Il admire Napoléon. Son slogan : Impossible n'est pas français.",
    "accent_words": [
-    "Austerlitz"
+    "Impossible n'est pas français"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Toutes les sorties mènent à 1805. Aucune à 2027.",
+   "text": "La ville rebaptise son rond-point Austerlitz. Toutes les sorties mènent à 1805.",
    "accent_words": [
-    "Aucune à 2027"
+    "à 1805"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le GPS dit : faites demi-tour, c'était mieux avant.",
+   "text": "Les voitures tournent depuis des semaines. Personne ne trouve 2026.",
    "accent_words": [
-    "demi-tour"
+    "Personne ne trouve 2026"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Sur le panneau, son slogan de 2021 : Impossible n'est pas français. Sortir, si.",
+   "text": "Les automobilistes fondent un village au centre. Ils élisent un empereur.",
    "accent_words": [
-    "Sortir, si"
+    "Ils élisent un empereur"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "On tourne depuis 2021. Le compteur affiche : 7 %.",
+   "text": "Il se présente à l'élection du rond-point : 7 %.",
    "accent_words": [
     "7 %"
    ],
@@ -74,9 +74,9 @@
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui tourne en rond en se croyant empereur.",
+   "text": "Envoie ça au pote qui tourne en rond depuis des années.",
    "accent_words": [
-    "empereur"
+    "des années"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "roundabout",
-    "car",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un rond-point avec une colonne impériale au centre.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · ROND-POINT AUSTERLITZ",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "TOUTES LES SORTIES : 1805"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -106,12 +129,25 @@
    "camera": "closeup",
    "set": [
     "column",
-    "sign",
+    "arch",
     "text3d"
    ],
-   "onscreen_text": "ROND-POINT AUSTERLITZ",
-   "comic_action": "Gros plan sur la plaque dorée au pied de la colonne.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "NAPOLÉON",
+   "comic_action": "Un buste impérial au milieu du rond-point.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUTES LES SORTIES : 1805"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -122,41 +158,80 @@
    "set": [
     "roundabout",
     "sign",
-    "car"
+    "text3d"
    ],
-   "onscreen_text": "SORTIES : 1805",
-   "comic_action": "Orbite : tous les panneaux de sortie indiquent la même date.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SORTIE : 1805",
+   "comic_action": "Panneaux de sortie : « 1805 », « 1805 », « 1805 ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SORTIE 2026 : AUCUNE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "gps",
-    "car",
-    "text3d"
+    "roundabout",
+    "car_orbit",
+    "person"
    ],
-   "onscreen_text": "DEMI-TOUR",
-   "comic_action": "Gros plan sur le GPS de la voiture, voix solennelle.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TOUR N° 12 000",
+   "comic_action": "Voitures en boucle, conducteurs en pyjama.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "spin",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PERDU"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "car_orbit",
     "roundabout",
-    "sign"
+    "person",
+    "banner"
    ],
-   "onscreen_text": "SORTIR : IMPOSSIBLE",
-   "comic_action": "Travelling : les voitures tournent en boucle sous le slogan.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "VILLAGE DU ROND-POINT",
+   "comic_action": "Tentes et drapeaux au centre du rond-point.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ÉLECTION : EMPEREUR"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -166,12 +241,25 @@
    "camera": "descend",
    "set": [
     "roundabout",
-    "column",
-    "text3d"
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "COMPTEUR : 7 %",
-   "comic_action": "Plan large : le rond-point vu du ciel, les voitures dessinent un 7.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "ROND-POINT : 7 %",
+   "comic_action": "Un tableau électoral de fortune : « 7 % ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "7,07 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,36 +273,44 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique sort à pied, enjambant le terre-plein.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui tourne en rond en se croyant empereur."
+  "text": "Envoie ça au pote qui tourne en rond depuis des années."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 72,
+ "word_count": 77,
  "claims": [
   {
-   "text": "Il admire Napoléon. Ici, le rond-point s'appelle Austerlitz.",
+   "text": "Il admire Napoléon. Son slogan : Impossible n'est pas français.",
    "claim_type": "fait_public",
    "source": "https://fr.timesofisrael.com/de-quelle-extreme-droite-eric-zemmour-est-il-le-nom/",
-   "note": "Admiration revendiquée pour Napoléon ; slogan « Impossible n'est pas français »."
+   "note": "Admiration revendiquée pour Napoléon ; slogan de Villepinte « Impossible n'est pas français »."
   },
   {
-   "text": "Sur le panneau, son slogan de 2021 : Impossible n'est pas français. Sortir, si.",
-   "claim_type": "fait_public",
-   "source": "https://www.europe1.fr/node/127383",
-   "note": "Slogan de campagne « Impossible n'est pas français » (formule attribuée à Napoléon)."
-  },
-  {
-   "text": "On tourne depuis 2021. Le compteur affiche : 7 %.",
+   "text": "Il se présente à l'élection du rond-point : 7 %.",
    "claim_type": "fait_public",
    "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
@@ -226,14 +322,7 @@
    "date": "2021-12",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Admiration revendiquée pour Napoléon ; slogan « Impossible n'est pas français »."
-  },
-  {
-   "url": "https://www.europe1.fr/node/127383",
-   "date": "2021-12",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "Slogan de campagne « Impossible n'est pas français » (formule attribuée à Napoléon)."
+   "note": "Admiration revendiquée pour Napoléon ; slogan de Villepinte « Impossible n'est pas français »."
   },
   {
    "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
@@ -244,5 +333,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : l'admiration pour Napoléon et le slogan « Impossible n'est pas français ». Cadre : le rond-point. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Il admire Napoléon. Son slogan : Impossible n'est pas français. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

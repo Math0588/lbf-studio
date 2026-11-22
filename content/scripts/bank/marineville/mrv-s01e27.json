@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-24",
  "format": "A",
- "title_cover": "Cinéma censuré",
+ "title_cover": "Cinéma tout censuré",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, le cinéma ne passe que des bandes-annonces.",
-  "Marineville : le seul film autorisé, c'est la promesse.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : cinéma censuré."
+  "Dans cette ville, tout le monde vote Marine. Le cinéma, moins.",
+  "Marineville censure son propre cinéma.",
+  "Ici, on regarde un mur blanc. C'est reposant.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Cinéma tout censuré."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ici, le seul film autorisé, c'est la promesse : deux minutes, pas de fin.",
-  "Il reste la bande-annonce, en boucle, d'un film qui ne sortira jamais.",
-  "Les comédies sont coupées avant la chute, les drames avant les larmes."
+  "Marine adore : un film qu'on ne finit jamais. Comme ses campagnes.",
+  "Un film sans fin, comme ses campagnes.",
+  "Les spectateurs regardent un mur blanc. Ils trouvent ça reposant."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,47 +23,47 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Le cinéma, moins.",
    "accent_words": [
-    "Le cinéma"
+    "moins"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son mot d'ordre d'octobre 2025 : « Je censure tout ».",
+   "text": "Octobre 2025, au Sommet de l'élevage : « Je censure tout ».",
    "accent_words": [
-    "Je censure tout"
+    "tout"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "La même tirade finissait par : « La plaisanterie a assez duré ».",
+   "text": "Alors le cinéma de la ville censure tout : les films, les bandes-annonces.",
    "accent_words": [
-    "plaisanterie"
+    "bandes-annonces"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Au cinéma, les comédies sont coupées avant la chute.",
+   "text": "Puis les sièges, le pop-corn, et l'écran.",
    "accent_words": [
-    "avant la chute"
+    "écran"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Il reste la bande-annonce, en boucle, d'un film qui ne sortira jamais.",
+   "text": "Les spectateurs regardent un mur blanc. Ils trouvent ça reposant.",
    "accent_words": [
-    "jamais"
+    "reposant"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ici, le seul film autorisé, c'est la promesse : deux minutes, pas de fin.",
+   "text": "Marine adore : un film qu'on ne finit jamais. Comme ses campagnes.",
    "accent_words": [
-    "pas de fin"
+    "campagnes"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui coupe tout le monde avant la chute.",
    "accent_words": [
-    "avant la chute"
+    "chute"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,25 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; un cinéma en face, affiche « CENSURÉ » sur chaque film.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "LE CINÉMA, MOINS",
+   "comic_action": "Descente sur la ville ; banderole « LE CINÉMA, MOINS » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CENSURÉ"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,13 +117,26 @@
    "camera": "orbit",
    "set": [
     "tribune",
-    "studio_light",
-    "text3d",
+    "lift_tribune",
+    "banner",
     "person"
    ],
    "onscreen_text": "« JE CENSURE TOUT »",
-   "comic_action": "Tribune : la maire cubique abat un tampon géant.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Meeting : la tribune s'élève, banderole « « JE CENSURE TOUT » ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -118,12 +147,29 @@
    "set": [
     "screen",
     "text3d",
-    "mairie",
-    "person"
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "« ASSEZ DURÉ »",
-   "comic_action": "L'écran de la mairie coupe net une vidéo comique.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "FILMS CENSURÉS",
+   "comic_action": "Écran géant : « FILMS CENSURÉS ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FILM DU JOUR : CENSURÉ"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -132,14 +178,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "screen",
+    "text3d",
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "COUPÉ AVANT LA CHUTE",
-   "comic_action": "Cabine de projection : des ciseaux géants coupent la pellicule.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "POP-CORN CENSURÉ",
+   "comic_action": "Écran géant : « POP-CORN CENSURÉ ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -150,12 +208,23 @@
    "set": [
     "screen",
     "text3d",
-    "mairie",
-    "person"
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "PROCHAINEMENT (TOUJOURS)",
-   "comic_action": "Une salle de cinéma : la même bande-annonce repasse, public endormi.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "UN MUR BLANC",
+   "comic_action": "Écran géant : « UN MUR BLANC ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "visage": "dort"
+    },
+    {
+     "who": "perso",
+     "visage": "content"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -164,14 +233,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "FILM : SANS FIN",
-   "comic_action": "Une affiche de film « LA PROMESSE » entre deux colonnes. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "JAMAIS DE FIN",
+   "comic_action": "Plan final, tenir une seconde : « JAMAIS DE FIN ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "clap",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +267,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt coupe la parole à son reflet.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI COUPE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI COUPE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,18 +290,11 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 82,
+ "word_count": 77,
  "claims": [
   {
    "segment": "n2",
-   "text": "« Je censure tout »",
-   "claim_type": "citation_exacte",
-   "source": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
-   "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
-  },
-  {
-   "segment": "n3",
-   "text": "« La plaisanterie a assez duré »",
+   "text": "Octobre 2025, au Sommet de l'élevage : « Je censure tout ».",
    "claim_type": "citation_exacte",
    "source": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
    "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
@@ -221,10 +305,10 @@
    "url": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
    "date": "2025-10-08",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (LCP)",
+   "statut": "citation exacte",
    "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = octobre 2025 : « Je censure tout » ; le cinéma municipal applique au pied de la lettre. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « Je censure tout » (Sommet de l'élevage, octobre 2025). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

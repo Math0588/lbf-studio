@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m002",
  "format": "A",
- "anchor": "« ni l'aile droite ni l'aile gauche, je suis l'oiseau » (Orléans, 2026) : à l'auto-école, on n'apprend plus à tourner.",
- "situation": "Ni droite ni gauche",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
- "title_cover": "Ni droite ni gauche",
+ "anchor": "« ni l'aile droite ni l'aile gauche »",
+ "situation": "Permis tout droit",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
+ "title_cover": "Permis tout droit",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, l'auto-école n'apprend plus à tourner.",
-  "Marineville : ni droite ni gauche, souvent tout droit à droite.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : ni droite ni gauche."
+  "Dans cette ville, tout le monde vote Marine. Sur la ligne blanche.",
+  "Marineville : le permis se passe tout droit.",
+  "Ici, le moniteur d'auto-école nage.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Permis tout droit."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ni droite ni gauche, ça finit souvent tout droit… à droite.",
-  "Les élèves roulent pile sur la ligne blanche, clignotants des deux côtés.",
-  "L'examinateur valide tant que la voiture plane. Elle ne plane jamais."
+  "Marine leur remet le permis : ni droite ni gauche, tout droit dans l'eau.",
+  "Tout droit dans l'eau.",
+  "Ils arrivent tous à la mer. Le moniteur nage."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -26,47 +26,47 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Sur la ligne blanche.",
    "accent_words": [
-    "ligne blanche"
+    "blanche"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sa formule d'octobre : « ni l'aile droite ni l'aile gauche ».",
+   "text": "Sa formule : « ni l'aile droite ni l'aile gauche ».",
    "accent_words": [
-    "ni l'aile gauche"
+    "gauche"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Suite de la phrase, même meeting à Orléans : « je suis l'oiseau ».",
+   "text": "Alors l'auto-école supprime les virages à droite et à gauche.",
    "accent_words": [
-    "l'oiseau"
+    "gauche"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "À l'auto-école, on n'apprend plus à tourner. Clignotants des deux côtés.",
+   "text": "Les élèves passent le permis en ligne droite.",
    "accent_words": [
-    "des deux côtés"
+    "droite"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "L'examinateur valide tant que la voiture plane. Elle ne plane jamais.",
+   "text": "Ils arrivent tous à la mer. Le moniteur nage.",
    "accent_words": [
-    "ne plane jamais"
+    "nage"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ni droite ni gauche, ça finit souvent tout droit… à droite.",
+   "text": "Marine leur remet le permis : ni droite ni gauche, tout droit dans l'eau.",
    "accent_words": [
-    "à droite"
+    "eau"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -74,7 +74,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui met le clignotant à gauche et tourne à droite.",
    "accent_words": [
-    "tourne à droite"
+    "droite"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,9 +92,25 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur l'auto-école municipale ; une ligne blanche peinte jusqu'au perron.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "SUR LA LIGNE BLANCHE",
+   "comic_action": "Descente sur la ville ; banderole « SUR LA LIGNE BLANCHE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -104,29 +120,59 @@
    "camera": "orbit",
    "set": [
     "tribune",
-    "studio_light",
-    "text3d",
+    "lift_tribune",
+    "banner",
     "person"
    ],
-   "onscreen_text": "« NI DROITE NI GAUCHE »",
-   "comic_action": "Tribune : la maire cubique écarte les deux bras.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« NI L'AILE DROITE NI L'AILE GAUCHE »",
+   "comic_action": "Meeting : la tribune s'élève, banderole « « NI L'AILE DROITE NI L'AILE GAUCHE » ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "descend",
+   "camera": "street_dolly",
    "set": [
-    "lift_tribune",
-    "tribune",
-    "person",
-    "banner"
+    "road",
+    "car",
+    "gps",
+    "roundabout"
    ],
-   "onscreen_text": "« L'OISEAU »",
-   "comic_action": "Une plume tombe doucement sur la tribune.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "VIRAGES SUPPRIMÉS",
+   "comic_action": "Une voiture tourne au rond-point ; le GPS affiche « VIRAGES SUPPRIMÉS ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "VIRAGE : INTERDIT"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -135,14 +181,25 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "car",
     "road",
+    "car",
     "gps",
-    "sign"
+    "roundabout"
    ],
-   "onscreen_text": "CLIGNOTANTS : LES DEUX",
-   "comic_action": "Voiture d'auto-école : les deux clignotants s'allument en même temps.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PERMIS EN LIGNE DROITE",
+   "comic_action": "Une voiture tourne au rond-point ; le GPS affiche « PERMIS EN LIGNE DROITE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "point"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -151,30 +208,55 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "traffic_light",
     "road",
-    "car",
-    "sign"
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "VOL : NON VALIDÉ",
-   "comic_action": "Au feu, la voiture saute un peu et retombe.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LE MONITEUR NAGE",
+   "comic_action": "Dans la rue, panneau « LE MONITEUR NAGE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "fall"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "gps",
-    "car",
-    "screen",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "ITINÉRAIRE : →",
-   "comic_action": "Gros plan GPS : la flèche part tout droit puis s'incline à droite. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "TOUT DROIT DANS L'EAU",
+   "comic_action": "Plan final, tenir une seconde : « TOUT DROIT DANS L'EAU ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +270,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt fait signe à gauche, part à droite.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE AU VOLANT",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE AU VOLANT ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,18 +293,11 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 85,
+ "word_count": 78,
  "claims": [
   {
    "segment": "n2",
-   "text": "« ni l'aile droite ni l'aile gauche »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
-   "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
-  },
-  {
-   "segment": "n3",
-   "text": "« je suis l'oiseau »",
+   "text": "Sa formule : « ni l'aile droite ni l'aile gauche ».",
    "claim_type": "citation_exacte",
    "source": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
    "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
@@ -224,10 +308,10 @@
    "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
    "date": "2026-10-29",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (meeting d'Orléans, 25/10/2026) + fait (affiche)",
+   "statut": "citation exacte",
    "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « ni l'aile droite ni l'aile gauche, je suis l'oiseau » (Orléans, 2026) : à l'auto-école, on n'apprend plus à tourner. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « ni l'aile droite ni l'aile gauche ». Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-07",
  "format": "A",
- "title_cover": "Le plein à 5,5",
+ "title_cover": "Le rond-point éternel",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, chaque rond-point a sa pompe à essence.",
-  "Marineville : le plein moins cher, le trou plus profond.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : le plein à 5,5."
+  "Dans cette ville, tout le monde vote Marine. Au diesel.",
+  "Marineville tourne au rond-point depuis quatre ans.",
+  "Ici, le gazole est à cinq virgule cinq et la sortie introuvable.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Le rond-point éternel."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Baisser une taxe, facile. Dire qui paie le trou : l'option jamais cochée.",
-  "Le plein coûte moins cher, mais il faut trois tours de rond-point pour le payer.",
-  "Ici, chaque rond-point a sa pompe à essence."
+  "Marine promet le plein moins cher. La sortie, ce sera au prochain mandat.",
+  "La sortie, ce sera au prochain mandat.",
+  "Le maire fait sa tournée : quatre ans au même rond-point."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,13 +23,13 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Au diesel.",
    "accent_words": [
-    "Au diesel"
+    "diesel"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Promesse 2022 : TVA sur le carburant de vingt à cinq virgule cinq pour cent.",
+   "text": "Promesse 2022 : la TVA sur le carburant passe de vingt à cinq virgule cinq.",
    "accent_words": [
     "cinq virgule cinq"
    ],
@@ -37,33 +37,33 @@
   },
   {
    "id": "n3",
-   "text": "Voiture, gazole, ronds-points : son terrain, d'après les analystes.",
+   "text": "Alors la ville roule tellement qu'elle ne s'arrête plus.",
    "accent_words": [
-    "ronds-points"
+    "plus"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, chaque rond-point a sa pompe à essence.",
+   "text": "Les ronds-points tournent jour et nuit. Personne ne trouve la sortie.",
    "accent_words": [
-    "pompe à essence"
+    "sortie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le budget de la ville, lui, roule sur la réserve depuis des années.",
+   "text": "Le maire fait sa tournée : quatre ans au même rond-point.",
    "accent_words": [
-    "sur la réserve"
+    "rond-point"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Baisser une taxe, facile. Dire qui paie le trou : l'option jamais cochée.",
+   "text": "Marine promet le plein moins cher. La sortie, ce sera au prochain mandat.",
    "accent_words": [
-    "qui paie le trou"
+    "mandat"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui fait ses comptes au prix du gazole.",
    "accent_words": [
-    "du gazole"
+    "gazole"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,89 +89,172 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; un pistolet à essence géant planté devant.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "AU DIESEL",
+   "comic_action": "Descente sur la ville ; banderole « AU DIESEL » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "road",
+    "car",
+    "sign",
+    "traffic_light"
    ],
-   "onscreen_text": "TVA : 20 → 5,5",
-   "comic_action": "L'écran affiche le taux qui dégringole, ding de caisse.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "TVA CARBURANT : 5,5 %",
+   "comic_action": "Station-service ; panneau de prix « TVA CARBURANT : 5,5 % ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "roundabout",
-    "car_orbit",
     "road",
-    "sign"
+    "car",
+    "gps",
+    "roundabout"
    ],
-   "onscreen_text": "GAZOLE · ROND-POINT",
-   "comic_action": "Orbite autour d'un rond-point plein de voitures.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "LA VILLE ROULE NON-STOP",
+   "comic_action": "Une voiture tourne au rond-point ; le GPS affiche « LA VILLE ROULE NON-STOP ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "GAZOLE À 5,5 %"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "roundabout",
-    "car_orbit",
     "road",
-    "sign"
+    "car",
+    "gps",
+    "roundabout"
    ],
-   "onscreen_text": "POMPE AU CENTRE",
-   "comic_action": "Au centre du rond-point, une pompe à essence ; les voitures font le plein en tournant.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SORTIE INTROUVABLE",
+   "comic_action": "Une voiture tourne au rond-point ; le GPS affiche « SORTIE INTROUVABLE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "spin",
+     "visage": "fatigue"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "gps",
+    "road",
     "car",
-    "screen",
-    "text3d"
+    "gps",
+    "roundabout"
    ],
-   "onscreen_text": "BUDGET : RÉSERVE",
-   "comic_action": "Tableau de bord : voyant de réserve allumé, étiqueté « BUDGET ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "4 ANS AU ROND-POINT",
+   "comic_action": "Une voiture tourne au rond-point ; le GPS affiche « 4 ANS AU ROND-POINT ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie"
+    "screen"
    ],
-   "onscreen_text": "QUI PAIE ? ☐",
-   "comic_action": "Un formulaire : la case « financement » reste vide sous la loupe. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LA SORTIE ? PROCHAIN MANDAT",
+   "comic_action": "Plan final, tenir une seconde : « LA SORTIE ? PROCHAIN MANDAT ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +268,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt compte ses pièces devant une pompe.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE AU DIESEL",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE AU DIESEL ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,21 +291,14 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 80,
+ "word_count": 81,
  "claims": [
   {
    "segment": "n2",
-   "text": "Promesse 2022 : TVA sur le carburant de vingt à cinq virgule cinq pour cent.",
+   "text": "Promesse 2022 : la TVA sur le carburant passe de vingt à cinq virgule cinq.",
    "claim_type": "fait_public",
    "source": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/baisser-la-tva-de-20-a-55-pour-les-carburants-lelectricite-le-gaz-et-le-fioul-domestique",
-   "note": "TVA de 20 % à 5,5 % sur carburants, électricité, gaz, fioul."
-  },
-  {
-   "segment": "n3",
-   "text": "Voiture, gazole, ronds-points : son terrain, d'après les analystes.",
-   "claim_type": "fait_public",
-   "source": "https://www.jean-jaures.org/publication/2002-2022-les-ressorts-profonds-de-la-dynamique-frontiste/",
-   "note": "Périurbain, voiture, gazole, ronds-points."
+   "note": "Proposition 2022 : TVA de 20 % à 5,5 % sur carburants, électricité, gaz, fioul."
   }
  ],
  "sources": [
@@ -221,17 +306,10 @@
    "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/baisser-la-tva-de-20-a-55-pour-les-carburants-lelectricite-le-gaz-et-le-fioul-domestique",
    "date": "2022",
    "consulted": "2026-11-22",
-   "statut": "fait public (programme 2022)",
-   "note": "TVA de 20 % à 5,5 % sur carburants, électricité, gaz, fioul."
-  },
-  {
-   "url": "https://www.jean-jaures.org/publication/2002-2022-les-ressorts-profonds-de-la-dynamique-frontiste/",
-   "date": "2022-05-25",
-   "consulted": "2026-11-22",
-   "statut": "analyse (cliché économique/géographique, aucune caractéristique protégée)",
-   "note": "Périurbain, voiture, gazole, ronds-points."
+   "statut": "fait",
+   "note": "Proposition 2022 : TVA de 20 % à 5,5 % sur carburants, électricité, gaz, fioul."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = programme 2022 : TVA de 20 % à 5,5 % sur les carburants ; le cliché du périurbain, voiture, gazole et ronds-points. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = la TVA sur le carburant de 20 à 5,5 % (promesse 2022). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

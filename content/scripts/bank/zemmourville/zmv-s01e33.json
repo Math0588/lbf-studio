@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-31",
  "format": "D",
- "title_cover": "Game over, 7 %",
+ "title_cover": "Game over : Grandeur",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le jeu vidéo s'appelle Grandeur.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, chaque niveau finit en game over.",
-  "Zemmourville : un simulateur de victoire, sans victoire."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien a une manette.",
+  "Les défaites de Zemmour sont devenues un jeu vidéo. Personne ne passe le niveau un.",
+  "Ben voyons, encore une vidéo sur lui.",
+  "Bienvenue à Zemmourville : game over : Grandeur.",
+  "Zemmour en une vidéo : game over : Grandeur."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le jeu promet la grandeur. L'écran affiche toujours un chiffre.",
-  "Grandeur promise, un chiffre livré.",
-  "Trois niveaux, trois game over, une manette qui insiste."
+  "Le jeu s'appelle Grandeur. L'écran affiche game over.",
+  "Le jeu s'appelle Grandeur. L'écran affiche game over.",
+  "Niveau trois : ses coéquipiers quittent la partie."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Mode Grandeur.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien a une manette.",
    "accent_words": [
-    "Mode Grandeur"
+    "une manette"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, le jeu vidéo officiel s'appelle Grandeur. Graphismes de 1965, c'est voulu.",
+   "text": "Présidentielle 2022 : 7 %. Législatives : éliminé. Européennes 2024 : 5,47 %.",
    "accent_words": [
-    "1965"
+    "5,47 %"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Niveau un, présidentielle 2022 : 7 %. Quatrième, game over.",
+   "text": "La mairie en fait le jeu vidéo officiel : Grandeur.",
    "accent_words": [
-    "game over"
+    "Grandeur"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Niveau deux, législatives : autour de 4 %, aucun député. Game over.",
+   "text": "Niveau un, la présidentielle : le joueur perd. Niveau deux : il perd plus vite.",
    "accent_words": [
-    "aucun député"
+    "il perd plus vite"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Niveau trois, européennes 2024 : 5,47 %. La tête de liste quitte la partie.",
+   "text": "Niveau trois : ses coéquipiers quittent la partie.",
    "accent_words": [
-    "quitte la partie"
+    "la partie"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Le jeu promet la grandeur. L'écran affiche toujours un chiffre.",
+   "text": "Le jeu s'appelle Grandeur. L'écran affiche game over.",
    "accent_words": [
-    "un chiffre"
+    "L'écran affiche game over"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui relance la partie en jurant que c'est la dernière.",
+   "text": "Envoie ça au pote qui rage sur le niveau un depuis 2022.",
    "accent_words": [
-    "la dernière"
+    "depuis 2022"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "screen",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une salle d'arcade ; borne « GRANDEUR ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · GAME OVER : GRANDEUR",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "JOUEZ LA GRANDEUR"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -102,11 +125,24 @@
    "set": [
     "screen",
     "text3d",
-    "person"
+    "tribune"
    ],
-   "onscreen_text": "GRANDEUR — 1965",
-   "comic_action": "Écran d'accueil pixelisé, couleurs passées.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "7 % · ÉLIMINÉ · 5,47 %",
+   "comic_action": "Trois résultats s'affichent comme des niveaux de jeu.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "JOUEZ LA GRANDEUR"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,40 +152,81 @@
    "camera": "orbit",
    "set": [
     "screen",
-    "text3d"
+    "person",
+    "shop"
    ],
-   "onscreen_text": "NIVEAU 1 : 7 %",
-   "comic_action": "Orbite autour de la borne : « GAME OVER » clignote.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "JEU OFFICIEL : GRANDEUR",
+   "comic_action": "Une borne d'arcade dorée sur la place.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "jump",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PARTIE : 1 FRANC"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
     "screen",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "NIVEAU 2 : 4 %",
-   "comic_action": "Deuxième écran, même message.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "NIVEAU 2 : PERDU",
+   "comic_action": "La borne affiche « PERDU » deux fois.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "JOUEUR"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
     "screen",
     "person",
     "text3d"
    ],
-   "onscreen_text": "NIVEAU 3 : 5,47 %",
-   "comic_action": "Travelling : un joueur lâche la manette et sort de la salle.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "COÉQUIPIERS : PARTIS",
+   "comic_action": "Quatre manettes posées, une seule tenue.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "JOUEURS : 1"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -159,12 +236,25 @@
    "camera": "descend",
    "set": [
     "screen",
-    "building",
+    "banner",
     "text3d"
    ],
-   "onscreen_text": "GRANDEUR : 1 CHIFFRE",
-   "comic_action": "Plan large : la borne s'éteint ; reste un petit chiffre lumineux.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "GAME OVER",
+   "comic_action": "Écran figé : « GAME OVER — INSÉREZ UNE CANDIDATURE ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CONTINUER ? 2027"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -178,68 +268,68 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique insère une pièce, « 2027 » s'affiche.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui relance la partie en jurant que c'est la dernière."
+  "text": "Envoie ça au pote qui rage sur le niveau un depuis 2022."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 82,
+ "word_count": 80,
  "claims": [
   {
-   "text": "Ici, le jeu vidéo officiel s'appelle Grandeur. Graphismes de 1965, c'est voulu.",
-   "claim_type": "fait_public",
-   "source": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
-   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
-  },
-  {
-   "text": "Niveau un, présidentielle 2022 : 7 %. Quatrième, game over.",
+   "text": "Présidentielle 2022 : 7 %. Législatives : éliminé. Européennes 2024 : 5,47 %.",
    "claim_type": "fait_public",
    "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   },
   {
-   "text": "Niveau deux, législatives : autour de 4 %, aucun député. Game over.",
+   "text": "Présidentielle 2022 : 7 %. Législatives : éliminé. Européennes 2024 : 5,47 %.",
    "claim_type": "fait_public",
-   "source": "https://www.dhnet.be/actu/monde/2022/06/12/elections-legislatives-2022-le-parti-deric-zemmour-nobtiendrait-quentre-38-et-4-des-voix-2MNY4GFZ4FBEDOJ6SGEU3C5AFE/",
-   "note": "« Le résultat n'est pas à la hauteur de nos attentes » ; son parti autour de 4 %. / Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
+   "source": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
+   "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
   },
   {
-   "text": "Niveau trois, européennes 2024 : 5,47 %. La tête de liste quitte la partie.",
+   "text": "Présidentielle 2022 : 7 %. Législatives : éliminé. Européennes 2024 : 5,47 %.",
    "claim_type": "fait_public",
    "source": "https://wikiwand.com/en/articles/2024_European_Parliament_election_in_France",
-   "note": "Européennes 2024 : liste Reconquête 5,47 %, cinq sièges. / Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
+   "note": "Européennes 2024 : liste Reconquête 5,47 %, cinq sièges."
+  },
+  {
+   "text": "Niveau trois : ses coéquipiers quittent la partie.",
+   "claim_type": "fait_public",
+   "source": "https://www.touteleurope.eu/wp-content/uploads/2026/10/Infographie-81-Deputes-europeens-francais-par-groupe-politique-4-pages.pdf",
+   "note": "Après 2024, une seule eurodéputée siège pour Reconquête ; les quatre autres élus de la liste siègent ailleurs."
   }
  ],
  "sources": [
-  {
-   "url": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
-   "date": "2021-11-30",
-   "consulted": "2026-11-22",
-   "statut": "opinion rapportée",
-   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
-  },
   {
    "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "date": "2022-04",
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
-  },
-  {
-   "url": "https://www.dhnet.be/actu/monde/2022/06/12/elections-legislatives-2022-le-parti-deric-zemmour-nobtiendrait-quentre-38-et-4-des-voix-2MNY4GFZ4FBEDOJ6SGEU3C5AFE/",
-   "date": "2022-06-12",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "« Le résultat n'est pas à la hauteur de nos attentes » ; son parti autour de 4 %."
   },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
@@ -256,13 +346,13 @@
    "note": "Européennes 2024 : liste Reconquête 5,47 %, cinq sièges."
   },
   {
-   "url": "https://www.letemps.ch/monde/europe/eric-zemmour-exclut-marion-marechal-de-reconquete",
-   "date": "2024-06",
+   "url": "https://www.touteleurope.eu/wp-content/uploads/2026/10/Infographie-81-Deputes-europeens-francais-par-groupe-politique-4-pages.pdf",
+   "date": "2026-10",
    "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
+   "statut": "fait",
+   "note": "Après 2024, une seule eurodéputée siège pour Reconquête ; les quatre autres élus de la liste siègent ailleurs."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : les scores électoraux : 7,07 % (2022), environ 4 % (législatives 2022), 5,47 % (européennes 2024). Cadre : le simulateur « Grandeur ». Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Présidentielle 2022 : 7 %. Législatives : éliminé. Européennes 2024 : 5,47 %. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

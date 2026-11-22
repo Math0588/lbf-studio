@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-34",
  "format": "A",
- "title_cover": "Version adoucie",
+ "title_cover": "Tout en douceur",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, même les trottoirs ont des coins arrondis.",
-  "Marineville : on arrondit l'affiche, le programme coupe toujours.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : version adoucie."
+  "Dans cette ville, tout le monde vote Marine. Version adoucie.",
+  "Marineville : même les PV ont un cœur.",
+  "Ici, les bus freinent si doucement qu'ils n'arrivent pas.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Tout en douceur."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ils ont arrondi les angles de l'affiche. Le programme, lui, coupe toujours.",
-  "Les PV arrivent avec un cœur dessiné. Le montant, lui, n'a pas fondu.",
-  "Ici, les panneaux disent s'il te plaît."
+  "Marine a arrondi l'affiche. Le programme, un chercheur le dit cosmétique.",
+  "L'affiche arrondie, le programme cosmétique.",
+  "Les bus freinent si doucement qu'ils n'arrivent jamais."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,7 +23,7 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Version adoucie.",
    "accent_words": [
-    "Version adoucie"
+    "adoucie"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,35 +37,35 @@
   },
   {
    "id": "n3",
-   "text": "Un chercheur parle, lui, de changements cosmétiques.",
-   "accent_words": [
-    "cosmétiques"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "Ici, les trottoirs ont des coins arrondis, les panneaux disent s'il te plaît.",
+   "text": "Alors la mairie adoucit tout : trottoirs arrondis, panneaux qui disent s'il te plaît.",
    "accent_words": [
     "s'il te plaît"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n5",
-   "text": "Les PV arrivent avec un cœur dessiné. Le montant, lui, n'a pas fondu.",
+   "id": "n4",
+   "text": "Les PV arrivent avec un cœur dessiné. Le montant n'a pas fondu.",
    "accent_words": [
-    "n'a pas fondu"
+    "fondu"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Les bus freinent si doucement qu'ils n'arrivent jamais.",
+   "accent_words": [
+    "jamais"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ils ont arrondi les angles de l'affiche. Le programme, lui, coupe toujours.",
+   "text": "Marine a arrondi l'affiche. Le programme, un chercheur le dit cosmétique.",
    "accent_words": [
-    "coupe toujours"
+    "cosmétique"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
@@ -89,9 +89,25 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; les angles du bâtiment ont été poncés.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "VERSION ADOUCIE",
+   "comic_action": "Descente sur la ville ; banderole « VERSION ADOUCIE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,78 +116,142 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
     "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "IMAGE : ADOUCIE",
-   "comic_action": "Studio photo : un filtre flou passe sur un portrait cubique.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "IMAGE ADOUCIE",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « IMAGE ADOUCIE ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "shop",
-    "person",
+    "road",
     "sign",
-    "text3d"
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "COSMÉTIQUE",
-   "comic_action": "Vitrine : une palette de maquillage posée sur un dossier épais.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "STOP, S'IL TE PLAÎT",
+   "comic_action": "Dans la rue, panneau « STOP, S'IL TE PLAÎT ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "STOP, S'IL TE PLAÎT"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
-    "building",
-    "person",
-    "bin"
+    "screen",
+    "text3d",
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "STOP, S'IL TE PLAÎT",
-   "comic_action": "Un panneau stop à bords ronds, écrit en italique.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PV AVEC UN CŒUR",
+   "comic_action": "Compteur géant sur l'écran : « PV AVEC UN CŒUR ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "form_stack",
-    "text3d",
-    "mairie"
+    "road",
+    "bus",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "AMENDE ❤ 135 €",
-   "comic_action": "Un PV décoré d'un cœur, le montant en gras.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LE BUS N'ARRIVE JAMAIS",
+   "comic_action": "Un bus passe ; son fronton affiche « LE BUS N'ARRIVE JAMAIS ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "visage": "fatigue"
+    },
+    {
+     "who": "perso",
+     "visage": "dort"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "ANGLES : ARRONDIS · LAME : INTACTE",
-   "comic_action": "Une affiche aux coins ronds ; derrière, une lame dépasse. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "COSMÉTIQUE",
+   "comic_action": "Plan final, tenir une seconde : « COSMÉTIQUE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +265,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt admire une affiche en lettres rondes.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE TYPOGRAPHE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE TYPOGRAPHE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -206,11 +295,11 @@
    "text": "En 2022, son image est décrite comme adoucie, humanisée.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/la-violence-la-raideur-ideologique-d-eric-zemmour-ont-fait-de-marine-le-pen-une",
-   "note": "Image décrite comme adoucie, humanisée, « une femme qui aime les chats »."
+   "note": "Image décrite comme adoucie, humanisée, une femme qui aime les chats."
   },
   {
-   "segment": "n3",
-   "text": "Un chercheur parle, lui, de changements cosmétiques.",
+   "segment": "n6",
+   "text": "Marine a arrondi l'affiche. Le programme, un chercheur le dit cosmétique.",
    "claim_type": "fait_public",
    "source": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
    "note": "Dédiabolisation = changements cosmétiques, stratégie « veste et cravate »."
@@ -221,8 +310,8 @@
    "url": "https://www.publicsenat.fr/actualites/politique/la-violence-la-raideur-ideologique-d-eric-zemmour-ont-fait-de-marine-le-pen-une",
    "date": "2022-03-18",
    "consulted": "2026-11-22",
-   "statut": "opinion (débat télévisé)",
-   "note": "Image décrite comme adoucie, humanisée, « une femme qui aime les chats »."
+   "statut": "opinion",
+   "note": "Image décrite comme adoucie, humanisée, une femme qui aime les chats."
   },
   {
    "url": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
@@ -233,5 +322,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = 2022 : image décrite comme « adoucie », « humanisée » ; la dédiabolisation, un ravalement cosmétique. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = son image « adoucie » en 2022, dédiabolisation jugée cosmétique. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

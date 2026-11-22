@@ -4,23 +4,23 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Avant GTA VI",
- "anchor": "il jouera à GTA VI ; le mème « avant GTA VI » appliqué à son programme",
+ "title_cover": "Ville en mode GTA",
+ "anchor": "il annonce qu'il jouera à GTA VI",
  "meme_key": "CENT",
- "situation": "Avant GTA VI",
- "ressort": "un thème unique en escalade : truc connu, trois crans, chute retournée",
+ "situation": "Ville en mode GTA",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Bardella. Manette en main.",
-  "GTA VI est sorti. Le programme de Bardella, pas encore.",
-  "Bardellaville : tout arrive avant son programme.",
+  "Bardellaville passe en mode GTA.",
+  "Ici, le budget se boucle avec des codes de triche.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Avant GTA VI."
+  "Bienvenue à Bardellaville. Au programme : Ville en mode GTA."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "GTA VI est sorti avant son programme : le mème s'est réalisé.",
-  "GTA VI est sorti avant son programme.",
-  "Le mème avait raison."
+  "Bardella a fini le jeu. Son programme ? Toujours en chargement.",
+  "Le jeu fini, le programme en chargement.",
+  "Le budget municipal se boucle avec des codes de triche."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -42,33 +42,33 @@
   },
   {
    "id": "n3",
-   "text": "GTA VI a fini par sortir. Son programme chiffré, toujours en chargement.",
+   "text": "Alors la mairie passe la ville en mode GTA : la police poursuit les trottinettes.",
    "accent_words": [
-    "programme chiffré"
+    "trottinettes"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Les cent jours de Gouverner ? Méthode pas détaillée. Même GTA a un tutoriel.",
+   "text": "Les habitants gagnent des étoiles en traversant hors des clous.",
    "accent_words": [
-    "Méthode"
+    "clous"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les retraites ? « Nous verrons ». Sauvegarde impossible.",
+   "text": "Le budget municipal se boucle avec des codes de triche.",
    "accent_words": [
-    "Sauvegarde"
+    "codes de triche"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "GTA VI est sorti avant son programme : le mème s'est réalisé.",
+   "text": "Bardella a fini le jeu. Son programme ? Toujours en chargement.",
    "accent_words": [
-    "réalisé"
+    "chargement"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -96,7 +96,7 @@
    ],
    "onscreen_text": "MANETTE EN MAIN",
    "comic_action": "Descente sur la ville ; banderole « MANETTE EN MAIN » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "maire",
@@ -106,6 +106,12 @@
     {
      "who": "foule",
      "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "GTA"
     }
    ]
   },
@@ -123,7 +129,7 @@
    ],
    "onscreen_text": "IL VA JOUER À GTA VI",
    "comic_action": "Manette et écran de jeu : « IL VA JOUER À GTA VI ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -134,33 +140,38 @@
      "who": "perso",
      "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "tripod_camera",
-    "text3d",
-    "person"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "PROGRAMME : CHARGEMENT",
-   "comic_action": "Manette et écran de jeu : « PROGRAMME : CHARGEMENT ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "POURSUITE DE TROTTINETTES",
+   "comic_action": "Dans la rue, panneau « POURSUITE DE TROTTINETTES ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "shrug",
-     "visage": "sourire_pro"
+     "who": "foule",
+     "geste": "jump"
     },
     {
      "who": "perso",
-     "geste": "facepalm",
-     "visage": "fatigue"
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RECHERCHÉ : 3 ÉTOILES"
     }
    ]
   },
@@ -169,28 +180,28 @@
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "form_stack",
+    "road",
+    "sign",
     "person",
-    "text3d"
+    "traffic_light"
    ],
-   "onscreen_text": "PAS DE TUTORIEL",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « PAS DE TUTORIEL ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "5 ÉTOILES : PIÉTON",
+   "comic_action": "Dans la rue, panneau « 5 ÉTOILES : PIÉTON ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "shrug",
-     "visage": "sourire_pro"
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content"
     },
     {
-     "who": "perso",
-     "geste": "point",
-     "visage": "colere"
+     "who": "foule",
+     "geste": "jump"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -200,25 +211,26 @@
    "camera": "closeup",
    "set": [
     "screen",
-    "tripod_camera",
     "text3d",
-    "person"
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "SAUVEGARDE IMPOSSIBLE",
-   "comic_action": "Manette et écran de jeu : « SAUVEGARDE IMPOSSIBLE ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "BUDGET : CODE DE TRICHE",
+   "comic_action": "Compteur géant sur l'écran : « BUDGET : CODE DE TRICHE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
      "who": "maire",
-     "geste": "spin",
+     "geste": "wave",
      "visage": "sourire_pro"
     },
     {
      "who": "perso",
      "geste": "facepalm",
-     "visage": "blase"
+     "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -232,20 +244,22 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "AVANT GTA VI : CONFIRMÉ",
-   "comic_action": "Plan final, tenir une seconde : « AVANT GTA VI : CONFIRMÉ ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "PROGRAMME : CHARGEMENT",
+   "comic_action": "Plan final, tenir une seconde : « PROGRAMME : CHARGEMENT ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
-     "who": "perso",
-     "geste": "point",
-     "visage": "content"
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
     },
     {
-     "who": "foule",
-     "geste": "cheer"
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -261,7 +275,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE GAMER",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE GAMER ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -269,7 +283,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -281,7 +296,7 @@
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 81,
+ "word_count": 80,
  "claims": [
   {
    "segment": "n2",
@@ -292,20 +307,6 @@
    "sources_complementaires": [
     "https://www.letribunaldunet.fr/politique/bardella-gta-vi-grandes-gueules-rmc.html"
    ]
-  },
-  {
-   "segment": "n4",
-   "text": "Les cent jours de Gouverner ? Méthode pas détaillée. Même GTA a un tutoriel.",
-   "claim_type": "fait_public",
-   "source": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
-   "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
-  },
-  {
-   "segment": "n5",
-   "text": "Les retraites ? « Nous verrons ». Sauvegarde impossible.",
-   "claim_type": "citation_exacte",
-   "source": "https://www.boursorama.com/bourse/actualites/retraites-jordan-bardella-n-est-plus-si-presse-d-abroger-la-reforme-de-macron-101b949b9967c92520b3be1c9ef2c30f",
-   "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
   }
  ],
  "sources": [
@@ -322,22 +323,8 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Sur RMC (Les Grandes Gueules, 16/11/2026), il dit attendre et vouloir jouer à GTA VI ; contradiction relevée avec la droite qui critique ces jeux."
-  },
-  {
-   "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
-   "date": "2026-11-04",
-   "consulted": "2026-11-22",
-   "statut": "fait + opinion (appréciation AFP)",
-   "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
-  },
-  {
-   "url": "https://www.boursorama.com/bourse/actualites/retraites-jordan-bardella-n-est-plus-si-presse-d-abroger-la-reforme-de-macron-101b949b9967c92520b3be1c9ef2c30f",
-   "date": "2024-06-12",
-   "consulted": "2026-11-22",
-   "statut": "fait + citation exacte",
-   "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = il jouera à GTA VI ; le mème « avant GTA VI » appliqué à son programme. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = il annonce qu'il jouera à GTA VI. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

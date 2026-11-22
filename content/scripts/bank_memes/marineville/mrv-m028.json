@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m028",
  "format": "A",
- "anchor": "2018 : nouveau nom, nouveau cercle, mais la flamme du logo gardée ; panne générale, seule la flamme reste allumée.",
- "situation": "La flamme en LED",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
- "title_cover": "La flamme en LED",
+ "anchor": "la flamme du logo, calquée sur celle du MSI, gardée en 2018",
+ "situation": "Les flammes en LED",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
+ "title_cover": "Les flammes en LED",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, pendant la panne, une seule enseigne brille.",
-  "Marineville : on peut tout couper, sauf la flamme.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : la flamme en led."
+  "Dans cette ville, tout le monde vote Marine. Même pendant la panne.",
+  "Marineville : tout s'éteint, sauf la flamme.",
+  "Ici, les pompiers n'ont pas le droit d'éteindre.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Les flammes en LED."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "On peut tout couper, sauf la flamme : la seule chose qu'ils n'ont jamais voulu éteindre.",
-  "Devine laquelle : la flamme, en LED, sur batterie de secours.",
-  "Panne générale : toute la ville s'éteint, sauf une enseigne."
+  "Marine a tout changé en 2018 : le nom. La flamme, elle, reste.",
+  "Le nom a changé. La flamme reste.",
+  "Les pompiers veulent les éteindre. Interdit : patrimoine."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -26,55 +26,55 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Même pendant la panne.",
    "accent_words": [
-    "la panne"
+    "panne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Nouveau nom en 2018, nouveau cercle.",
+   "text": "La flamme du logo est calquée sur celle du MSI, héritier du parti de Mussolini.",
    "accent_words": [
-    "Nouveau nom"
+    "Mussolini"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Mais la flamme du logo, elle, a été gardée.",
+   "text": "Alors la ville garde une flamme allumée sur chaque bâtiment.",
    "accent_words": [
-    "la flamme"
+    "bâtiment"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Panne générale : toute la ville s'éteint, sauf une enseigne.",
+   "text": "Panne générale : tout s'éteint, sauf les flammes, en LED.",
    "accent_words": [
-    "sauf une enseigne"
+    "LED"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Devine laquelle : la flamme, en LED, sur batterie de secours.",
+   "text": "Les pompiers veulent les éteindre. Interdit : patrimoine.",
    "accent_words": [
-    "en LED"
+    "patrimoine"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "On peut tout couper, sauf la flamme : la seule chose qu'ils n'ont jamais voulu éteindre.",
+   "text": "Marine a tout changé en 2018 : le nom. La flamme, elle, reste.",
    "accent_words": [
-    "jamais voulu éteindre"
+    "reste"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui dit que le RN a tout changé.",
+   "text": "Envoie ça au pote qui trouve que la flamme, c'est juste joli.",
    "accent_words": [
-    "tout changé"
+    "joli"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,73 +92,141 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la ville éteinte ; une seule enseigne allumée.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "MÊME PENDANT LA PANNE",
+   "comic_action": "Descente sur la ville ; banderole « MÊME PENDANT LA PANNE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "scroll",
+    "column",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "NOUVEAU NOM, NOUVEAU ROND",
-   "comic_action": "Une enseigne neuve en forme de rond.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "FLAMME CALQUÉE SUR LE MSI",
+   "comic_action": "Parchemin d'archives déroulé entre deux colonnes ; en lettres 3D « FLAMME CALQUÉE SUR LE MSI ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shake"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
+    "banner",
+    "arch",
     "text3d",
-    "mairie",
-    "person"
+    "facade_set"
    ],
-   "onscreen_text": "FLAMME : GARDÉE",
-   "comic_action": "L'écran montre la flamme qui reste au centre.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "UNE FLAMME PAR BÂTIMENT",
+   "comic_action": "Sous une arche, on change l'enseigne ; banderole « UNE FLAMME PAR BÂTIMENT ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FLAMME : OBLIGATOIRE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "lamp",
-    "road",
-    "person",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "PANNE : 99 %",
-   "comic_action": "Rue : lampadaires éteints, une enseigne qui brille au loin.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TOUT S'ÉTEINT SAUF ELLES",
+   "comic_action": "Descente sur la ville ; banderole « TOUT S'ÉTEINT SAUF ELLES » sur la mairie.",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "shop",
-    "person",
+    "road",
     "sign",
-    "text3d"
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "FLAMME : BATTERIE DE SECOURS",
-   "comic_action": "Vitrine : une flamme en LED branchée sur un générateur.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "INTERDIT : PATRIMOINE",
+   "comic_action": "Dans la rue, panneau « INTERDIT : PATRIMOINE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "cough"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -167,14 +235,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "ÉTEINDRE : NON",
-   "comic_action": "Entre deux colonnes, la flamme brille seule dans la ville sombre. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LA FLAMME RESTE",
+   "comic_action": "Plan final, tenir une seconde : « LA FLAMME RESTE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,46 +269,62 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt allume une lampe de poche.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE ESTHÈTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE ESTHÈTE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui dit que le RN a tout changé."
+  "text": "Envoie ça au pote qui trouve que la flamme, c'est juste joli."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 76,
+ "word_count": 80,
  "claims": [
   {
    "segment": "n2",
-   "text": "Nouveau nom en 2018, nouveau cercle.",
+   "text": "La flamme du logo est calquée sur celle du MSI, héritier du parti de Mussolini.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
-   "note": "Le FN devient RN ; la flamme du logo est conservée, rangée dans un cercle."
+   "source": "https://www.publicsenat.fr/actualites/politique/de-l-activisme-radical-a-la-normalisation-retour-sur-les-50-ans-du-fn-222269",
+   "note": "FN créé le 5 octobre 1972, vitrine d'Ordre nouveau ; statuts déposés par un ancien Waffen-SS (Bousquet) et Jean-Marie Le Pen ; flamme calquée sur celle du MSI italien."
   },
   {
-   "segment": "n3",
-   "text": "Mais la flamme du logo, elle, a été gardée.",
+   "segment": "n6",
+   "text": "Marine a tout changé en 2018 : le nom. La flamme, elle, reste.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
-   "note": "Le FN devient RN ; la flamme du logo est conservée, rangée dans un cercle."
+   "note": "Le Front national devient Rassemblement national ; la flamme du logo est conservée, rangée dans un cercle."
   }
  ],
  "sources": [
   {
+   "url": "https://www.publicsenat.fr/actualites/politique/de-l-activisme-radical-a-la-normalisation-retour-sur-les-50-ans-du-fn-222269",
+   "date": "2022-10",
+   "consulted": "2026-11-22",
+   "statut": "fait (histoire)",
+   "note": "FN créé le 5 octobre 1972, vitrine d'Ordre nouveau ; statuts déposés par un ancien Waffen-SS (Bousquet) et Jean-Marie Le Pen ; flamme calquée sur celle du MSI italien."
+  },
+  {
    "url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
    "date": "2018-06-01",
    "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Le FN devient RN ; la flamme du logo est conservée, rangée dans un cercle."
+   "statut": "fait",
+   "note": "Le Front national devient Rassemblement national ; la flamme du logo est conservée, rangée dans un cercle."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = 2018 : nouveau nom, nouveau cercle, mais la flamme du logo gardée ; panne générale, seule la flamme reste allumée. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = la flamme du logo, calquée sur celle du MSI, gardée en 2018. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

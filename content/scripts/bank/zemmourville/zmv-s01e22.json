@@ -3,33 +3,33 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-17",
  "format": "A",
- "title_cover": "Mélancolie française",
+ "title_cover": "Mélancolie obligatoire",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : les bancs publics soupirent.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, on s'assoit pour regretter.",
-  "Zemmourville : le mobilier urbain est mélancolique."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien soupire.",
+  "Zemmour a écrit Mélancolie française. La ville a rendu la mélancolie obligatoire.",
+  "Attention : vidéo garantie sans nostalgie. Presque.",
+  "Bienvenue à Zemmourville : mélancolie obligatoire.",
+  "Zemmour en une vidéo : mélancolie obligatoire."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Seize ans de mélancolie en librairie. Elle rapporte plus que les élections.",
-  "La mélancolie se vend bien. Les voix, moins.",
-  "Un banc, un soupir, un best-seller."
+  "La mélancolie, il connaît : de 17 % en 2021 à 7 % en 2022.",
+  "La mélancolie, il connaît : de 17 % à 7 %.",
+  "La ville voisine vient faire du tourisme pour s'ennuyer. Énorme succès."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Soupir compris.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien soupire.",
    "accent_words": [
-    "Soupir compris"
+    "Même le chien soupire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2010, il publie Mélancolie française. Ici, c'est la devise du banc public.",
+   "text": "En 2010, il publie Mélancolie française.",
    "accent_words": [
     "Mélancolie française"
    ],
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "Chaque banc a sa plaque : ici, quelqu'un a regretté quelque chose.",
+   "text": "La mairie rend la mélancolie obligatoire. Sourire : amende.",
    "accent_words": [
-    "regretté"
+    "amende"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Puis le pavé de 2014, puis Destin français. Le banc soupire plus fort.",
+   "text": "La fête foraine ne joue que des valses tristes. Les clowns pleurent.",
    "accent_words": [
-    "soupire"
+    "Les clowns pleurent"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le banc ne regarde pas la rue. Il regarde derrière.",
+   "text": "La ville voisine vient faire du tourisme pour s'ennuyer. Énorme succès.",
    "accent_words": [
-    "derrière"
+    "Énorme succès"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Seize ans de mélancolie en librairie. Elle rapporte plus que les élections.",
+   "text": "La mélancolie, il connaît : de 17 % en 2021 à 7 % en 2022.",
    "accent_words": [
-    "plus que les élections"
+    "en 2022"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui soupire dès qu'on parle du présent.",
+   "text": "Envoie ça au pote qui écoute des chansons tristes en été.",
    "accent_words": [
-    "soupire"
+    "en été"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "bench",
-    "tree",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un parc : chaque banc porte une plaque de regret.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · MÉLANCOLIE OBLIGATOIRE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "SOYEZ TRISTES"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,43 +123,82 @@
    ],
    "camera": "closeup",
    "set": [
-    "bench",
-    "text3d",
-    "person"
+    "scroll",
+    "table",
+    "text3d"
    ],
    "onscreen_text": "MÉLANCOLIE FRANÇAISE",
-   "comic_action": "Gros plan sur une plaque gravée sur le dossier du banc.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "comic_action": "Un livre gris posé sous une lampe tamisée.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "SOYEZ TRISTES"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "bench",
+    "mairie",
     "sign",
-    "tree"
+    "person"
    ],
-   "onscreen_text": "ICI ON A REGRETTÉ",
-   "comic_action": "Travelling : une rangée de bancs, plaques différentes, même soupir.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SOURIRE : AMENDE",
+   "comic_action": "Un agent verbalise un passant souriant.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SOURIRE : 68 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "bench",
-    "text3d",
-    "person"
+    "mascot",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "SOUPIR ×3",
-   "comic_action": "Orbite : le banc s'affaisse un peu plus à chaque titre.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "FÊTE FORAINE TRISTE",
+   "comic_action": "Un manège tourne au ralenti, musique lente.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "TRISTE"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -145,13 +207,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "bench",
+    "bus",
     "person",
-    "tree"
+    "sign"
    ],
-   "onscreen_text": "VUE : DERRIÈRE",
-   "comic_action": "Les bancs sont tous tournés vers un mur.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TOURISME DE L'ENNUI",
+   "comic_action": "Un car de touristes s'arrête, tout le monde bâille.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "dort"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "VISITE : 2 H D'ENNUI"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +235,26 @@
    ],
    "camera": "descend",
    "set": [
-    "bench",
-    "tree",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "MÉLANCOLIE : RENTABLE",
-   "comic_action": "Plan large : le parc rempli de bancs, aucun promeneur.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "17 % → 7 %",
+   "comic_action": "Une pluie fine tombe sur le score.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "HUMEUR : 7 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,33 +268,53 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique retourne un banc vers la rue.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui soupire dès qu'on parle du présent."
+  "text": "Envoie ça au pote qui écoute des chansons tristes en été."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 81,
+ "word_count": 76,
  "claims": [
   {
-   "text": "En 2010, il publie Mélancolie française. Ici, c'est la devise du banc public.",
+   "text": "En 2010, il publie Mélancolie française.",
    "claim_type": "fait_public",
    "source": "https://www.critiqueslibres.com/i.php/vcrit/22535",
    "note": "Livre « Mélancolie française » (2010)."
   },
   {
-   "text": "Puis Le Suicide français, puis Destin français. Le banc soupire plus fort.",
+   "text": "La mélancolie, il connaît : de 17 % en 2021 à 7 % en 2022.",
    "claim_type": "fait_public",
-   "source": "https://actualitte.com/article/46032/numerique/le-suicide-francais-d-039-eric-zemmour-n-039-en-finit-pas-de-declencher-des-remous",
-   "note": "Le Suicide français (2014) : plus de 500 pages, best-seller. / Livre « Destin français » (Albin Michel, 2018)."
+   "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+  },
+  {
+   "text": "La mélancolie, il connaît : de 17 % en 2021 à 7 % en 2022.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
@@ -218,20 +326,20 @@
    "note": "Livre « Mélancolie française » (2010)."
   },
   {
-   "url": "https://actualitte.com/article/46032/numerique/le-suicide-francais-d-039-eric-zemmour-n-039-en-finit-pas-de-declencher-des-remous",
-   "date": "2014-10",
+   "url": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "date": "2021-10-07",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Le Suicide français (2014) : plus de 500 pages, best-seller."
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
   },
   {
-   "url": "https://search.worldcat.org/oclc/1052509571",
-   "date": "2018",
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Livre « Destin français » (Albin Michel, 2018)."
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « Mélancolie française » (2010) et sa bibliographie décliniste. Cadre : le banc du soupir. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2010, il publie Mélancolie française. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

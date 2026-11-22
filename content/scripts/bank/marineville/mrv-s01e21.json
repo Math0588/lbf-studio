@@ -3,33 +3,33 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-17",
  "format": "A",
- "title_cover": "Le rendez-vous chaton",
+ "title_cover": "Rendez-vous chaton",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, on ne contredit pas quelqu'un qui tient un chaton.",
-  "Marineville : le chaton, meilleur orateur du jour.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : le rendez-vous chaton."
+  "Dans cette ville, tout le monde vote Marine. Chaton sous le bras.",
+  "Marineville : chaque rendez-vous se fait avec un chaton.",
+  "Ici, la banque prête aux chatons.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Rendez-vous chaton."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le chaton n'a rien promis, rien chiffré : meilleure intervention de la journée.",
-  "Le budget est voté pendant que tout le monde fait guili-guili.",
-  "Le Premier ministre attendait un programme. Il a eu un chaton."
+  "Marine ressort de Matignon sans accord. Le chaton, lui, est ravi.",
+  "Sans accord. Le chaton, lui, est ravi.",
+  "La banque prête aux chatons. La ville croule sous les dettes."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine. Ronronnement inclus.",
+   "text": "Dans cette ville, tout le monde vote Marine. Chaton sous le bras.",
    "accent_words": [
-    "Ronronnement"
+    "bras"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Rendez-vous à Matignon, octobre 2025 : elle arrive avec un chaton dans une caisse.",
+   "text": "Octobre 2025 : elle arrive à Matignon avec un chaton.",
    "accent_words": [
     "chaton"
    ],
@@ -37,33 +37,33 @@
   },
   {
    "id": "n3",
-   "text": "Le Premier ministre attendait des propositions. Il a eu un chaton.",
+   "text": "Alors toute la ville vient aux rendez-vous avec un chaton.",
    "accent_words": [
-    "un chaton"
+    "chaton"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, le conseil municipal se tient caisse ouverte : impossible de contredire.",
+   "text": "Le contrôle fiscal tourne court : impossible de contredire un chaton.",
    "accent_words": [
-    "impossible"
+    "chaton"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le budget passe pendant que tout le monde fait guili-guili.",
+   "text": "La banque prête aux chatons. La ville croule sous les dettes.",
    "accent_words": [
-    "guili-guili"
+    "dettes"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le chaton n'a rien promis, rien chiffré : meilleure intervention de la journée.",
+   "text": "Marine ressort de Matignon sans accord. Le chaton, lui, est ravi.",
    "accent_words": [
-    "meilleure"
+    "ravi"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui gagne ses débats avec une photo de chat.",
    "accent_words": [
-    "photo de chat"
+    "chat"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,57 +89,113 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une caisse de transport sur le perron.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "CHATON SOUS LE BRAS",
+   "comic_action": "Descente sur la ville ; banderole « CHATON SOUS LE BRAS » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CHATON"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "table",
-    "screen",
+    "mascot",
+    "person",
     "sign",
-    "building"
+    "text3d"
    ],
-   "onscreen_text": "RDV MATIGNON : 1 CHATON",
-   "comic_action": "Un bureau officiel ; une caisse de transport posée sur le dossier budget.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "UN CHATON À MATIGNON",
+   "comic_action": "Mascotte chat au premier plan ; panneau « UN CHATON À MATIGNON ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "visage": "content",
+     "geste": "wave"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "mascot",
     "person",
-    "banner",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "PROPOSITION : MIAOU",
-   "comic_action": "La mascotte-chat sort de la caisse sous les flashs.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "RENDEZ-VOUS AVEC CHATON",
+   "comic_action": "Mascotte chat au premier plan ; panneau « RENDEZ-VOUS AVEC CHATON ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RDV : CHATON EXIGÉ"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "column",
-    "mairie",
+    "screen",
     "text3d",
-    "person"
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "CONTRADICTION : DÉSACTIVÉE",
-   "comic_action": "Entre deux colonnes, les élus fondent devant un chaton en peluche.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CONTRÔLE FISCAL ANNULÉ",
+   "comic_action": "Compteur géant sur l'écran : « CONTRÔLE FISCAL ANNULÉ ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "clap"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -148,30 +204,56 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
+    "screen",
     "text3d",
-    "mairie"
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "BUDGET : ADOPTÉ (GUILI)",
-   "comic_action": "Un tampon « ADOPTÉ » s'abat pendant que tous regardent le chaton.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PRÊTS AUX CHATONS",
+   "comic_action": "Compteur géant sur l'écran : « PRÊTS AUX CHATONS ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "objet": "billets",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "MEILLEUR ORATEUR : LE CHAT",
-   "comic_action": "L'écran affiche un trophée décerné au chaton. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LE CHATON EST RAVI",
+   "comic_action": "Plan final, tenir une seconde : « LE CHATON EST RAVI ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +267,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt brandit une photo de chat.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI A UN CHAT",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI A UN CHAT ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,21 +290,14 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 83,
+ "word_count": 78,
  "claims": [
   {
    "segment": "n2",
-   "text": "Rendez-vous à Matignon, octobre 2025 : elle arrive avec un chaton dans une caisse.",
+   "text": "Octobre 2025 : elle arrive à Matignon avec un chaton.",
    "claim_type": "fait_public",
    "source": "https://observatornews.ro/extern/marine-le-pen-a-venit-cu-un-pisoi-la-premierul-frantei-ea-a-decis-sal-salveze-633329.html",
-   "note": "Arrivée à Matignon avec un chaton dans une caisse."
-  },
-  {
-   "segment": "n3",
-   "text": "Le Premier ministre attendait des propositions. Il a eu un chaton.",
-   "claim_type": "fait_public",
-   "source": "https://observatornews.ro/extern/marine-le-pen-a-venit-cu-un-pisoi-la-premierul-frantei-ea-a-decis-sal-salveze-633329.html",
-   "note": "Arrivée à Matignon avec un chaton dans une caisse."
+   "note": "Arrivée à Matignon avec un chaton."
   }
  ],
  "sources": [
@@ -221,10 +305,11 @@
    "url": "https://observatornews.ro/extern/marine-le-pen-a-venit-cu-un-pisoi-la-premierul-frantei-ea-a-decis-sal-salveze-633329.html",
    "date": "2025-10-03",
    "consulted": "2026-11-22",
-   "statut": "fait (dépêche AFP reprise par la presse)",
-   "note": "Arrivée à Matignon avec un chaton dans une caisse."
+   "statut": "fait (presse roumaine, non revérifié en presse française)",
+   "note": "Arrivée à Matignon avec un chaton."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = octobre 2025 : elle arrive à Matignon avec un chaton dans une caisse ; le chaton comme réponse à tout. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = son arrivée à Matignon avec un chaton (octobre 2025). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ».",
+ "a_verifier": "chaton à Matignon : une seule source étrangère"
 }

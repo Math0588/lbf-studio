@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m014",
  "format": "A",
- "anchor": "activité d'élevage de chats mentionnée dans sa déclaration publique (HATVP) et diplôme dédié : le pouvoir d'achat, enfin livré… aux chats.",
+ "anchor": "l'activité d'élevage de chats mentionnée dans sa déclaration publique",
  "situation": "Pouvoir d'achat félin",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "title_cover": "Pouvoir d'achat félin",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, le rayon chats dépasse le rayon pâtes.",
-  "Marineville : le pouvoir d'achat a augmenté. Pour les chats.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : pouvoir d'achat félin."
+  "Dans cette ville, tout le monde vote Marine. Croquettes comprises.",
+  "Marineville : un chat par habitant, puis dix.",
+  "Ici, le rayon croquettes dépasse le rayon pâtes.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Pouvoir d'achat félin."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le pouvoir d'achat a enfin augmenté : pour les chats.",
-  "Les croquettes premium baissent. Le panier des humains, non.",
-  "Au supermarché, le rayon chats dépasse désormais le rayon pâtes."
+  "Marine tient parole : le pouvoir d'achat a augmenté. Pour les chats.",
+  "Le pouvoir d'achat a augmenté : pour les chats.",
+  "Les croquettes premium baissent. Le panier des humains, non."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -26,7 +26,7 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Croquettes comprises.",
    "accent_words": [
-    "Croquettes"
+    "comprises"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -34,23 +34,23 @@
    "id": "n2",
    "text": "Sa déclaration publique mentionne une activité d'élevage de chats.",
    "accent_words": [
-    "élevage de chats"
+    "chats"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "En 2021, elle annonce un diplôme pour travailler avec des chats.",
+   "text": "Alors la ville se lance dans l'élevage : un chat par habitant.",
    "accent_words": [
-    "diplôme"
+    "habitant"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Au supermarché, le rayon chats dépasse désormais le rayon pâtes.",
+   "text": "Puis trois. Puis dix. Le rayon croquettes dépasse le rayon pâtes.",
    "accent_words": [
-    "rayon pâtes"
+    "pâtes"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -58,15 +58,15 @@
    "id": "n5",
    "text": "Les croquettes premium baissent. Le panier des humains, non.",
    "accent_words": [
-    "des humains"
+    "non"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le pouvoir d'achat a enfin augmenté : pour les chats.",
+   "text": "Marine tient parole : le pouvoir d'achat a augmenté. Pour les chats.",
    "accent_words": [
-    "pour les chats"
+    "chats"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -92,9 +92,25 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; un sac de croquettes géant devant la porte.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "CROQUETTES COMPRISES",
+   "comic_action": "Descente sur la ville ; banderole « CROQUETTES COMPRISES » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CROQUETTES"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -103,14 +119,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
-    "table",
+    "mascot",
     "person",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "DÉCLARATION : CHATS",
-   "comic_action": "Un document officiel se déroule, une ligne surlignée d'une patte.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "ÉLEVAGE DE CHATS",
+   "comic_action": "Mascotte chat au premier plan ; panneau « ÉLEVAGE DE CHATS ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "visage": "content",
+     "geste": "wave"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -119,14 +147,30 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "mascot",
+    "person",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "DIPLÔME : FÉLIN",
-   "comic_action": "L'écran affiche un diplôme encadré.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "UN CHAT PAR HABITANT",
+   "comic_action": "Mascotte chat au premier plan ; panneau « UN CHAT PAR HABITANT ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CHAT OFFERT"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -135,30 +179,59 @@
    ],
    "camera": "window_pass",
    "set": [
-    "shop",
-    "person",
+    "facade_row",
     "sign",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "RAYON CHATS : XXL",
-   "comic_action": "Vitrine : un rayon croquettes immense, trois paquets de pâtes.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RAYON CROQUETTES XXL",
+   "comic_action": "Rangée de façades : enseigne « RAYON CROQUETTES XXL ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "shop",
+    "screen",
+    "text3d",
     "table",
-    "person",
-    "banner"
+    "form_stack"
    ],
-   "onscreen_text": "CROQUETTES ↓ · PANIER ↑",
-   "comic_action": "Ardoise de prix : croquettes en promo, le reste en hausse.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CROQUETTES EN BAISSE",
+   "comic_action": "Compteur géant sur l'écran : « CROQUETTES EN BAISSE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "manif"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PÂTES : +40 %"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -167,14 +240,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "POUVOIR D'ACHAT : FÉLIN",
-   "comic_action": "Entre deux colonnes, un chat en peluche assis sur un tas de pièces. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "POUVOIR D'ACHAT : LES CHATS",
+   "comic_action": "Plan final, tenir une seconde : « POUVOIR D'ACHAT : LES CHATS ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +274,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt mange des pâtes nature, son chat du saumon.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE AU CHAT GÂTÉ",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE AU CHAT GÂTÉ ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,7 +297,7 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 70,
+ "word_count": 74,
  "claims": [
   {
    "segment": "n2",
@@ -210,13 +305,6 @@
    "claim_type": "fait_public",
    "source": "https://www.hatvp.fr/livraison/dossiers/le-pen-marine-diam35065-depute-62.pdf",
    "note": "Activité d'élevage de chats mentionnée."
-  },
-  {
-   "segment": "n3",
-   "text": "En 2021, elle annonce un diplôme pour travailler avec des chats.",
-   "claim_type": "fait_public",
-   "source": "https://uk.news.yahoo.com/marine-le-pen-passes-professional-160314902.html",
-   "note": "Diplôme professionnel pour travailler avec des chats ; surnom d'entourage « cat mother »."
   }
  ],
  "sources": [
@@ -224,17 +312,10 @@
    "url": "https://www.hatvp.fr/livraison/dossiers/le-pen-marine-diam35065-depute-62.pdf",
    "date": "2026-01-30",
    "consulted": "2026-11-22",
-   "statut": "fait public (déclaration HATVP ; aucun montant repris)",
+   "statut": "fait (déclaration publique)",
    "note": "Activité d'élevage de chats mentionnée."
-  },
-  {
-   "url": "https://uk.news.yahoo.com/marine-le-pen-passes-professional-160314902.html",
-   "date": "2021-10-14",
-   "consulted": "2026-11-22",
-   "statut": "fait (déclaré par l'intéressée) + surnom rapporté",
-   "note": "Diplôme professionnel pour travailler avec des chats ; surnom d'entourage « cat mother »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = activité d'élevage de chats mentionnée dans sa déclaration publique (HATVP) et diplôme dédié : le pouvoir d'achat, enfin livré… aux chats. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = l'activité d'élevage de chats mentionnée dans sa déclaration publique. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

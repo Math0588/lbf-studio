@@ -5,73 +5,73 @@
  "format": "A",
  "title_cover": "Sondé 17, voté 7",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : ici, le passé est au programme.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, on regrette tout, même octobre 2021.",
-  "Zemmourville : la ville où le meilleur score date d'un sondage."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien a parié dessus.",
+  "Zemmour était à 17 % dans les sondages. La ville a commandé sa statue.",
+  "Ben voyons, encore une vidéo sur lui.",
+  "Bienvenue à Zemmourville : sondé 17, voté 7.",
+  "Zemmour en une vidéo : sondé 17, voté 7."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La nostalgie, chez lui, c'est surtout celle de ses sondages.",
-  "Sa période préférée de l'histoire ? Octobre 2021.",
-  "Avant, c'était dix-sept pour cent. Maintenant, c'est avant."
+  "Sondé à 17, voté à 7 : la seule statue qui rétrécit avec le temps.",
+  "Sondé à 17, voté à 7 : la seule statue qui rétrécit.",
+  "On la rétrécit de dix points. Elle tient sur une étagère."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Enfin, sept pour cent.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien a parié dessus.",
    "accent_words": [
-    "Enfin, sept pour cent"
+    "parié dessus"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, c'était mieux avant. Avant, c'était octobre 2021 : 17 % dans les sondages.",
+   "text": "Octobre 2021 : 17 % dans un sondage. Qualifié au second tour, sur le papier.",
    "accent_words": [
-    "octobre 2021"
+    "le papier"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Avril 2022 : 7,07 %. Le soufflé est retombé dans l'urne.",
+   "text": "La ville commande une statue du futur président.",
    "accent_words": [
-    "Le soufflé"
+    "futur président"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ses rivaux le disaient coincé en 1965. Ici, c'est le fuseau horaire officiel.",
+   "text": "Avril 2022 : 7 %. La statue est déjà coulée.",
    "accent_words": [
-    "1965"
+    "déjà coulée"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Son tic préféré : ben voyons. Ici, c'est la réponse à tout.",
+   "text": "On la rétrécit de dix points. Elle tient sur une étagère.",
    "accent_words": [
-    "ben voyons"
+    "une étagère"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La nostalgie, chez lui, c'est surtout celle de ses sondages.",
+   "text": "Sondé à 17, voté à 7 : la seule statue qui rétrécit avec le temps.",
    "accent_words": [
-    "ses sondages"
+    "le temps"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui dit que c'était mieux avant.",
+   "text": "Envoie ça au pote qui annonce sa victoire avant le match.",
    "accent_words": [
-    "mieux avant"
+    "le match"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -86,13 +86,35 @@
    "set": [
     "ground",
     "mairie",
-    "scroll",
-    "person",
-    "car"
+    "banner",
+    "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une mairie en château ; parchemin géant « C'ÉTAIT MIEUX AVANT » sur la façade.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · SONDÉ 17, VOTÉ 7",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "FUTUR PRÉSIDENT"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -103,57 +125,109 @@
    "set": [
     "screen",
     "text3d",
-    "person"
+    "tribune"
    ],
-   "onscreen_text": "OCT. 2021 : 17 %",
-   "comic_action": "Sur la place, un écran rétro diffuse en boucle le sondage d'octobre 2021 ; les habitants soupirent d'émotion.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "17 % · QUALIFIÉ",
+   "comic_action": "Un sondage triomphal projeté sur la mairie.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "FUTUR PRÉSIDENT"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "text3d",
+    "fountain",
+    "column",
     "person"
    ],
-   "onscreen_text": "AVRIL 2022 : 7,07 %",
-   "comic_action": "Gros plan : un soufflé doré gonfle, puis s'effondre sur la table ; étiquette « 7,07 % ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "STATUE COMMANDÉE",
+   "comic_action": "Un sculpteur attaque un bloc de marbre géant.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "STATUE : 17 MÈTRES"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "mairie",
+    "column",
     "text3d",
-    "sign"
+    "person"
    ],
-   "onscreen_text": "HEURE LOCALE : 1965",
-   "comic_action": "Orbite autour de l'horloge de la mairie, bloquée sur « 1965 ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "AVRIL : 7 %",
+   "comic_action": "Le bronze refroidit, le sculpteur se gratte la tête.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "SCULPTEUR"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
-    "person",
-    "sign",
-    "gps"
+    "shop",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "BEN VOYONS",
-   "comic_action": "Travelling : chaque passant interrogé répond la même chose ; même le GPS de la voiture.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "STATUE : 7 CM",
+   "comic_action": "Une statuette minuscule posée entre deux livres.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "STATUE : 7 CM"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -162,13 +236,26 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
-    "screen",
+    "column",
+    "banner",
     "text3d"
    ],
-   "onscreen_text": "NOSTALGIE : OCT. 2021",
-   "comic_action": "Plan large : la ville entière regarde l'écran du sondage de 2021, de dos, tête basse.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "17 → 7",
+   "comic_action": "La statuette posée sur l'immense socle vide.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "17 → 7"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -182,45 +269,47 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique règle sa montre sur 2021.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui dit que c'était mieux avant."
+  "text": "Envoie ça au pote qui annonce sa victoire avant le match."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 82,
+ "word_count": 84,
  "claims": [
   {
-   "text": "Ici, c'était mieux avant. Avant, c'était octobre 2021 : 17 % dans les sondages.",
+   "text": "Octobre 2021 : 17 % dans un sondage. Qualifié au second tour, sur le papier.",
    "claim_type": "fait_public",
    "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
    "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
   },
   {
-   "text": "Avril 2022 : 7,07 %. Le soufflé est retombé dans l'urne.",
+   "text": "Avril 2022 : 7 %. La statue est déjà coulée.",
    "claim_type": "fait_public",
    "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
-   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième. / « Eric Zemmour retombe comme un soufflé » (titre de presse, repris sans guillemets)."
-  },
-  {
-   "text": "Ses rivaux le disaient coincé en 1965. Ici, c'est le fuseau horaire officiel.",
-   "claim_type": "fait_public",
-   "source": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
-   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
-  },
-  {
-   "text": "Son tic préféré : ben voyons. Ici, c'est la réponse à tout.",
-   "claim_type": "fait_public",
-   "source": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
-   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
@@ -237,29 +326,8 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
-  },
-  {
-   "url": "https://fr.timesofisrael.com/france-eric-zemmour-retombe-comme-un-souffle/",
-   "date": "2022",
-   "consulted": "2026-11-22",
-   "statut": "image de presse",
-   "note": "« Eric Zemmour retombe comme un soufflé » (titre de presse, repris sans guillemets)."
-  },
-  {
-   "url": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
-   "date": "2021-11-30",
-   "consulted": "2026-11-22",
-   "statut": "opinion rapportée",
-   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
-  },
-  {
-   "url": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
-   "date": "2022-02-02",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : la nostalgie retournée contre lui : 17 % sondé en octobre 2021, 7,07 % en avril 2022, « 1965 », ben voyons. Cadre : la ville au GPS d'autrefois. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Octobre 2021 : 17 % dans un sondage. Qualifié au second tour, sur le papier. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

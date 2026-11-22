@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-33",
  "format": "B",
- "title_cover": "Campagne chaton",
+ "title_cover": "Police chaton",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, la police municipale patrouille avec des chatons.",
-  "Marineville : un chaton sur l'affiche, personne ne lit le reste.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : campagne chaton."
+  "Dans cette ville, tout le monde vote Marine. Ronron compris.",
+  "Marineville : la police municipale miaule.",
+  "Ici, les PV ont des traces de pattes.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Police chaton."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Un chaton sur l'affiche : personne ne lit ce qu'il y a dessous.",
-  "Les amendes arrivent dans une enveloppe rose, avec une patte imprimée.",
-  "Ici, la police municipale patrouille avec des chatons dans les bras."
+  "Marine, elle, a un diplôme pour travailler avec des chats. Cohérent.",
+  "Un diplôme pour les chats : cohérent.",
+  "Les chatons grandissent. La police municipale devient un élevage."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -31,47 +31,47 @@
    "id": "n2",
    "text": "En 2022, la presse parle de campagne chaton : ton adouci, chats en vedette.",
    "accent_words": [
-    "campagne chaton"
+    "chaton"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "À la télé : une femme qui aime les chats. Le programme garde ses griffes.",
-   "accent_words": [
-    "ses griffes"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "Ici, la police municipale patrouille avec des chatons dans les bras.",
+   "text": "Alors la mairie remplace les policiers par des chatons.",
    "accent_words": [
     "chatons"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n5",
-   "text": "Les amendes arrivent en enveloppe rose, patte imprimée.",
+   "id": "n4",
+   "text": "Les PV arrivent avec des traces de pattes.",
    "accent_words": [
-    "patte imprimée"
+    "pattes"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Les chatons grandissent. La police municipale devient un élevage.",
+   "accent_words": [
+    "élevage"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Un chaton sur l'affiche : personne ne lit ce qu'il y a dessous.",
+   "text": "Marine, elle, a un diplôme pour travailler avec des chats. Cohérent.",
    "accent_words": [
-    "dessous"
+    "Cohérent"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
    "text": "Envoie ça au pote qui fond devant un chaton, jamais devant un chiffrage.",
    "accent_words": [
-    "un chiffrage"
+    "chiffrage"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,25 +89,53 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; un panier à chat géant sur le perron.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "RONRON COMPRIS",
+   "comic_action": "Descente sur la ville ; banderole « RONRON COMPRIS » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CHATON"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
-    "lift_tribune",
-    "tribune",
+    "mascot",
     "person",
-    "banner"
+    "sign",
+    "text3d"
    ],
    "onscreen_text": "CAMPAGNE CHATON",
-   "comic_action": "La tribune s'élève, décorée de pelotes de laine.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Mascotte chat au premier plan ; panneau « CAMPAGNE CHATON ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "visage": "content",
+     "geste": "wave"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -116,14 +144,30 @@
    ],
    "camera": "closeup",
    "set": [
-    "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "mascot",
+    "person",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "CHATS ✓ · GRIFFES ✓",
-   "comic_action": "Plateau télé : un coussin moelleux, une griffe dépasse.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "POLICE CHATON",
+   "comic_action": "Mascotte chat au premier plan ; panneau « POLICE CHATON ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "POLICE MUNICIPALE : MIAOU"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -133,13 +177,25 @@
    "camera": "street_dolly",
    "set": [
     "road",
-    "building",
+    "sign",
     "person",
-    "bin"
+    "traffic_light"
    ],
-   "onscreen_text": "PATROUILLE CÂLINE",
-   "comic_action": "Deux agents cubiques patrouillent, chacun un chaton en peluche dans les bras.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PV À PATTES",
+   "comic_action": "Dans la rue, panneau « PV À PATTES ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "clap"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -148,30 +204,55 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
-    "text3d",
-    "mairie"
+    "mascot",
+    "person",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "AMENDE : 135 € (MIAOU)",
-   "comic_action": "Un tampon en forme de patte s'abat sur un avis d'amende.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "COMMISSARIAT = ÉLEVAGE",
+   "comic_action": "Mascotte chat au premier plan ; panneau « COMMISSARIAT = ÉLEVAGE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "À LIRE DESSOUS",
-   "comic_action": "Une affiche : un chaton géant, le texte en tout petit en bas. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "DIPLÔME CHAT : COHÉRENT",
+   "comic_action": "Plan final, tenir une seconde : « DIPLÔME CHAT : COHÉRENT ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +266,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt caresse une affiche de chat.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI FOND",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI FOND ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,7 +289,7 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 84,
+ "word_count": 74,
  "claims": [
   {
    "segment": "n2",
@@ -209,11 +299,11 @@
    "note": "« Kitten campaign » : campagne chaton de 2022, ton adouci."
   },
   {
-   "segment": "n3",
-   "text": "À la télé : une femme qui aime les chats. Le programme garde ses griffes.",
+   "segment": "n6",
+   "text": "Marine, elle, a un diplôme pour travailler avec des chats. Cohérent.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/la-violence-la-raideur-ideologique-d-eric-zemmour-ont-fait-de-marine-le-pen-une",
-   "note": "Image décrite comme adoucie, humanisée, « une femme qui aime les chats »."
+   "source": "https://uk.news.yahoo.com/marine-le-pen-passes-professional-160314902.html",
+   "note": "Diplôme professionnel pour travailler avec des chats ; surnom d'entourage « cat mother »."
   }
  ],
  "sources": [
@@ -221,17 +311,17 @@
    "url": "https://thenationalnews.com/world/europe/2022/04/22/who-is-marine-le-pen-the-far-right-candidate-who-has-led-a-kitten-campaign",
    "date": "2022-04-22",
    "consulted": "2026-11-22",
-   "statut": "mème de presse (surnom)",
+   "statut": "mème de presse",
    "note": "« Kitten campaign » : campagne chaton de 2022, ton adouci."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/la-violence-la-raideur-ideologique-d-eric-zemmour-ont-fait-de-marine-le-pen-une",
-   "date": "2022-03-18",
+   "url": "https://uk.news.yahoo.com/marine-le-pen-passes-professional-160314902.html",
+   "date": "2021-10-14",
    "consulted": "2026-11-22",
-   "statut": "opinion (débat télévisé)",
-   "note": "Image décrite comme adoucie, humanisée, « une femme qui aime les chats »."
+   "statut": "fait déclaré + surnom rapporté",
+   "note": "Diplôme professionnel pour travailler avec des chats ; surnom d'entourage « cat mother »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = 2022 : la presse parle de « campagne chaton » (ton adouci, chats en vedette) ; à la télé, « une femme qui aime les chats ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = la « campagne chaton » de 2022. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-15",
  "format": "A",
- "title_cover": "Référendum boomerang",
+ "title_cover": "Référendum permanent",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, l'urne municipale ne ferme jamais.",
-  "Marineville : quand on ne sait pas trancher, on fait voter.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : référendum boomerang."
+  "Dans cette ville, tout le monde vote Marine. Et revote.",
+  "Marineville : un référendum par jour.",
+  "Ici, on dort dans l'isoloir.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Référendum permanent."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Quand on ne sait pas trancher, on fait voter : la patate chaude, en grand.",
-  "Ici, la mairie organise un référendum pour la couleur des poubelles. Puis pour le résultat.",
-  "L'euro est resté. Le référendum, lui, revient pour les retraites."
+  "Marine attend la bonne réponse. Celle sur l'euro, on ne l'a jamais posée.",
+  "La question sur l'euro, jamais posée.",
+  "L'urne ne ferme plus. Les habitants dorment dans l'isoloir."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -29,7 +29,7 @@
   },
   {
    "id": "n2",
-   "text": "En 2012, la sortie de l'euro devait passer par un référendum.",
+   "text": "En 2012, la sortie de l'euro devait passer par un référendum. En 2026, ses retraites aussi.",
    "accent_words": [
     "référendum"
    ],
@@ -37,33 +37,33 @@
   },
   {
    "id": "n3",
-   "text": "L'euro est resté. Le référendum revient : pour les retraites.",
+   "text": "Alors la mairie organise un référendum pour tout.",
    "accent_words": [
-    "pour les retraites"
+    "tout"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, référendum sur la couleur des poubelles. Puis sur le résultat.",
+   "text": "Couleur des poubelles ? Référendum. Résultat contesté ? Référendum.",
    "accent_words": [
-    "le résultat"
+    "Référendum"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "L'urne municipale ne ferme jamais : elle attend la bonne réponse.",
+   "text": "L'urne ne ferme plus. Les habitants dorment dans l'isoloir.",
    "accent_words": [
-    "la bonne réponse"
+    "isoloir"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Quand on ne sait pas trancher, on fait voter : la patate chaude, en grand.",
+   "text": "Marine attend la bonne réponse. Celle sur l'euro, on ne l'a jamais posée.",
    "accent_words": [
-    "la patate chaude"
+    "posée"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui fait voter le groupe pour ne pas décider.",
    "accent_words": [
-    "ne pas décider"
+    "décider"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,41 +89,86 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une urne géante devant la porte, fente qui clignote.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "ON REVOTE",
+   "comic_action": "Descente sur la ville ; banderole « ON REVOTE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "arms_up"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "scroll",
-    "table",
-    "person",
-    "text3d"
+    "screen",
+    "banner",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "RÉFÉRENDUM : EURO",
-   "comic_action": "Un parchemin officiel « RÉFÉRENDUM » qu'on enroule et range.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "RÉFÉRENDUM, LE RETOUR",
+   "comic_action": "Soirée électorale : l'écran affiche « RÉFÉRENDUM, LE RETOUR ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
     "screen",
+    "banner",
     "text3d",
-    "mairie",
     "person"
    ],
-   "onscreen_text": "RÉFÉRENDUM : RETRAITES",
-   "comic_action": "L'écran ressort le même parchemin, nouvelle étiquette.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "RÉFÉRENDUM POUR TOUT",
+   "comic_action": "Soirée électorale : l'écran affiche « RÉFÉRENDUM POUR TOUT ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "arms_up"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RÉFÉRENDUM DU JOUR"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -132,14 +177,26 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "bin",
     "road",
-    "building",
-    "person"
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "RÉFÉRENDUM N°2 : LE N°1",
-   "comic_action": "Des poubelles de trois couleurs ; un bulletin sur chacune.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "POUBELLES : RÉFÉRENDUM",
+   "comic_action": "Dans la rue, panneau « POUBELLES : RÉFÉRENDUM ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "manif"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -148,14 +205,25 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "screen",
+    "banner",
     "text3d",
     "person"
    ],
-   "onscreen_text": "URNE : OUVERTE (TOUJOURS)",
-   "comic_action": "Entre deux colonnes, l'urne recrache un bulletin « NON ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DODO DANS L'ISOLOIR",
+   "comic_action": "Soirée électorale : l'écran affiche « DODO DANS L'ISOLOIR ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "visage": "dort"
+    },
+    {
+     "who": "perso",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -164,14 +232,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "ground",
-    "banner",
-    "person",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "PATATE CHAUDE NATIONALE",
-   "comic_action": "Sur la place, une patate géante passe de main en main. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "L'EURO ? JAMAIS POSÉE",
+   "comic_action": "Plan final, tenir une seconde : « L'EURO ? JAMAIS POSÉE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +266,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt lance un sondage sur son téléphone.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE INDÉCIS",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE INDÉCIS ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,21 +289,17 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 81,
+ "word_count": 78,
  "claims": [
   {
    "segment": "n2",
-   "text": "En 2012, la sortie de l'euro devait passer par un référendum.",
+   "text": "En 2012, la sortie de l'euro devait passer par un référendum. En 2026, ses retraites aussi.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/sortie-de-l-euro-les-atermoiements-de-marine-le-pen-60007",
-   "note": "Sortie de l'euro au programme ; en 2012 elle la conditionnait à un référendum."
-  },
-  {
-   "segment": "n3",
-   "text": "L'euro est resté. Le référendum revient : pour les retraites.",
-   "claim_type": "fait_public",
-   "source": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
-   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
+   "note": "Sortie de l'euro au programme 2017 ; en 2012, elle la conditionnait à un référendum. ; 62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé.",
+   "sources_complementaires": [
+    "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite"
+   ]
   }
  ],
  "sources": [
@@ -221,17 +307,17 @@
    "url": "https://www.publicsenat.fr/actualites/politique/sortie-de-l-euro-les-atermoiements-de-marine-le-pen-60007",
    "date": "2017",
    "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Sortie de l'euro au programme ; en 2012 elle la conditionnait à un référendum."
+   "statut": "fait",
+   "note": "Sortie de l'euro au programme 2017 ; en 2012, elle la conditionnait à un référendum."
   },
   {
    "url": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
    "date": "2026-11-17",
    "consulted": "2026-11-22",
-   "statut": "fait public (présentation du programme)",
+   "statut": "fait",
    "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = en 2012, la sortie de l'euro conditionnée à un référendum, puis abandonnée ; en 2026, un référendum envisagé pour sa réforme des retraites. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = le référendum : promis pour l'euro en 2012, envisagé pour les retraites en 2026. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

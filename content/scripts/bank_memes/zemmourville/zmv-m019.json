@@ -5,46 +5,46 @@
  "format": "A",
  "length": "court",
  "title_cover": "La buvette solennelle",
- "anchor": "la mise en scène solennelle de la candidature 2021.",
+ "anchor": "La mise en scène solennelle de la candidature 2021 appliquée à la buvette.",
  "meme_id": "ZA",
- "situation": "la fête municipale",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : la buvette annonce ses bières en symphonie.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, la tombola a la gravité d'un appel du 18 juin.",
-  "Zemmourville : la fête la plus solennelle du monde."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien trinque solennellement.",
+  "Zemmour s'est déclaré en grande pompe. La buvette sert pareil.",
+  "Ben voyons, encore une vidéo sur lui.",
+  "Bienvenue à Zemmourville : la buvette solennelle.",
+  "Zemmour en une vidéo : la buvette solennelle."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Mise en scène grandiose, ambiance de 1965, participation : 7 %.",
-  "Beaucoup de violons, peu de danseurs.",
-  "Une fête en grande pompe, une participation en petite forme."
+  "Mise en scène grandiose, résultat : 7 %.",
+  "Mise en scène grandiose, résultat : 7 %.",
+  "Le temps de l'annonce, la bière est tiède et la saucisse froide."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. La fête commence.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien trinque solennellement.",
    "accent_words": [
-    "La fête commence"
+    "trinque solennellement"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sa candidature de 2021 : texte lu devant des livres, sur du Beethoven.",
+   "text": "Sa candidature 2021 : texte lu devant des livres, sur Beethoven.",
    "accent_words": [
-    "Beethoven"
+    "sur Beethoven"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, la buvette annonce chaque bière de la même façon.",
+   "text": "La buvette municipale annonce chaque bière de la même façon.",
    "accent_words": [
-    "chaque bière"
+    "même façon"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -52,31 +52,31 @@
    "id": "n4",
    "text": "Une saucisse ? Appel solennel, micro d'époque, violons.",
    "accent_words": [
-    "violons"
+    "d'époque, violons"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La tombola dure une symphonie. Le gros lot : un pavé de cinq cents pages.",
+   "text": "Le temps de l'annonce, la bière est tiède et la saucisse froide.",
    "accent_words": [
-    "cinq cents pages"
+    "saucisse froide"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Mise en scène grandiose, ambiance de 1965, participation : 7 %.",
+   "text": "Mise en scène grandiose, résultat : 7 %.",
    "accent_words": [
-    "participation"
+    "7 %"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui fait un discours avant de couper le gâteau.",
+   "text": "Envoie ça au pote qui fait un discours pour commander un kebab.",
    "accent_words": [
-    "couper le gâteau"
+    "un kebab"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -94,9 +94,32 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur la place des fêtes ; buvette tendue de velours.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · LA BUVETTE SOLENNELLE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "UNE BIÈRE, SOLENNELLEMENT"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,13 +128,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "text3d",
-    "person"
+    "router_lectern",
+    "scroll",
+    "text3d"
    ],
-   "onscreen_text": "2021 : BEETHOVEN",
-   "comic_action": "Gros plan : un tourne-disque sur le comptoir de la buvette.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "LECTURE SOLENNELLE",
+   "comic_action": "Le maire lit devant une bibliothèque, violons en fond.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "UNE BIÈRE, SOLENNELLEMENT"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -121,12 +158,26 @@
    "camera": "orbit",
    "set": [
     "shop",
-    "person",
-    "text3d"
+    "router_lectern",
+    "person"
    ],
-   "onscreen_text": "BIÈRE : APPEL SOLENNEL",
-   "comic_action": "Orbite : le serveur lit la commande au micro d'époque.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "BIÈRE : ANNONCE OFFICIELLE",
+   "comic_action": "Le barman lit un parchemin derrière le comptoir.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "bow",
+     "visage": "fier",
+     "objet": "verre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PRESSION : 1 DISCOURS"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -135,13 +186,27 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "person",
     "table",
-    "sign"
+    "router_lectern",
+    "person"
    ],
-   "onscreen_text": "SAUCISSE SOLENNELLE",
-   "comic_action": "Travelling : la file attend, chapeau à la main.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SAUCISSE : APPEL SOLENNEL",
+   "comic_action": "Une saucisse présentée sur un coussin de velours.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "arms_up",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "AFFAMÉ"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,13 +215,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "form_stack",
+    "table",
     "text3d",
     "person"
    ],
-   "onscreen_text": "GROS LOT : 500 PAGES",
-   "comic_action": "Le gagnant reçoit un pavé, ploie sous le poids.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "BIÈRE : TIÈDE",
+   "comic_action": "Un client goûte, grimace, repose le verre.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "objet": "verre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SAUCISSE : FROIDE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +244,26 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
-    "banner",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "PARTICIPATION : 7 %",
-   "comic_action": "Plan large : la place presque vide, guirlandes qui pendent.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "RÉSULTAT : 7 %",
+   "comic_action": "Le rideau tombe sur un comptoir vide.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "7,07 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,36 +277,44 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique coupe le gâteau sans discours.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui fait un discours avant de couper le gâteau."
+  "text": "Envoie ça au pote qui fait un discours pour commander un kebab."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 81,
+ "word_count": 74,
  "claims": [
   {
-   "text": "Sa candidature de 2021 : texte lu devant des livres, sur du Beethoven.",
+   "text": "Sa candidature 2021 : texte lu devant des livres, sur Beethoven.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-l-election-presidentielle-191429",
    "note": "Vidéo de candidature : bibliothèque, micro d'époque, 7e symphonie de Beethoven, pastiche de l'appel du 18 juin."
   },
   {
-   "text": "La tombola dure une symphonie. Le gros lot : un pavé de cinq cents pages.",
-   "claim_type": "fait_public",
-   "source": "https://actualitte.com/article/46032/numerique/le-suicide-francais-d-039-eric-zemmour-n-039-en-finit-pas-de-declencher-des-remous",
-   "note": "Le Suicide français (2014) : plus de 500 pages, best-seller."
-  },
-  {
-   "text": "Mise en scène grandiose, ambiance de 1965, participation : 7 %.",
+   "text": "Mise en scène grandiose, résultat : 7 %.",
    "claim_type": "fait_public",
    "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
@@ -229,13 +329,6 @@
    "note": "Vidéo de candidature : bibliothèque, micro d'époque, 7e symphonie de Beethoven, pastiche de l'appel du 18 juin."
   },
   {
-   "url": "https://actualitte.com/article/46032/numerique/le-suicide-francais-d-039-eric-zemmour-n-039-en-finit-pas-de-declencher-des-remous",
-   "date": "2014-10",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Le Suicide français (2014) : plus de 500 pages, best-seller."
-  },
-  {
    "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "date": "2022-04",
    "consulted": "2026-11-22",
@@ -244,5 +337,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : la mise en scène solennelle de la candidature 2021. Cadre : la fête municipale. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Sa candidature 2021 : texte lu devant des livres, sur Beethoven. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

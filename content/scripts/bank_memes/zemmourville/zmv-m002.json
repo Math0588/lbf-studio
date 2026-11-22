@@ -5,64 +5,64 @@
  "format": "A",
  "length": "court",
  "title_cover": "Le métro symphonique",
- "anchor": "la vidéo de candidature 2021 (Beethoven, micro d'époque) et ses parodies.",
+ "anchor": "Sa vidéo de candidature (Beethoven, micro d'époque) appliquée aux annonces du métro.",
  "meme_id": "ZA",
- "situation": "le métro",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le métro annonce ses retards en symphonie.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, chaque station mérite un appel solennel.",
-  "Zemmourville : la RATP version Beethoven."
+  "Dans cette ville, tout le monde vote Zemmour. Même le métro est solennel.",
+  "Zemmour s'est déclaré sur Beethoven. Le métro annonce les arrêts pareil.",
+  "Celle-là, Zemmour ne la partagera pas.",
+  "Bienvenue à Zemmourville : le métro symphonique.",
+  "Zemmour en une vidéo : le métro symphonique."
  ],
  "selected_hook": 0,
  "ending_variants": [
   "Solennel, grandiose, en retard. Et à l'arrivée : 7 %.",
-  "Trois mouvements de symphonie, zéro mouvement de train.",
-  "L'annonce est grandiose, la rame est en panne."
+  "Solennel, grandiose, en retard. Et à l'arrivée : 7 %.",
+  "Incident voyageur ? Une symphonie entière avant de le dire."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. En symphonie.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le métro est solennel.",
    "accent_words": [
-    "En symphonie"
+    "est solennel"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sa vidéo de candidature : bibliothèque, vieux micro, septième de Beethoven.",
+   "text": "Sa vidéo de candidature 2021 : micro d'époque et symphonie de Beethoven.",
    "accent_words": [
-    "Beethoven"
+    "de Beethoven"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, chaque annonce du métro se fait pareil. Violons, ton grave, lecture lente.",
+   "text": "Le métro annonce chaque arrêt comme un appel historique, violons compris.",
    "accent_words": [
-    "lecture lente"
+    "violons compris"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Incident voyageur ? Deux minutes de symphonie avant de le dire.",
+   "text": "Annoncer la station prend quatre minutes. Les voyageurs ratent leur arrêt.",
    "accent_words": [
-    "symphonie"
+    "leur arrêt"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les internautes l'ont parodiée en masse. Ici, c'est le règlement de la RATP.",
+   "text": "Incident voyageur ? Une symphonie entière avant de le dire.",
    "accent_words": [
-    "le règlement"
+    "le dire"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
@@ -74,9 +74,9 @@
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui fait une annonce solennelle pour un apéro.",
+   "text": "Envoie ça au pote qui annonce sa pause comme un discours.",
    "accent_words": [
-    "un apéro"
+    "un discours"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "bus",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une station : haut-parleurs en pavillon de gramophone.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · LE MÉTRO SYMPHONIQUE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "ANNONCE SOLENNELLE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,43 +128,83 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "text3d",
-    "person"
+    "router_lectern",
+    "scroll",
+    "text3d"
    ],
-   "onscreen_text": "CANDIDATURE 2021",
-   "comic_action": "Gros plan sur un micro d'époque posé près d'une rame.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "BEETHOVEN · MICRO D'ÉPOQUE",
+   "comic_action": "Le maire lit devant une bibliothèque, violons en fond.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ANNONCE SOLENNELLE"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
     "bus",
-    "person",
-    "sign"
+    "sign",
+    "person"
    ],
-   "onscreen_text": "ANNONCE SOLENNELLE",
-   "comic_action": "Travelling : les voyageurs s'immobilisent, la main sur le cœur.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "ARRÊT : APPEL HISTORIQUE",
+   "comic_action": "Un haut-parleur de quai joue une symphonie.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ANNONCE : 4 MIN"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
     "bus",
-    "text3d",
-    "person"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "INCIDENT : 2 MIN DE VIOLONS",
-   "comic_action": "Orbite autour d'une rame à l'arrêt, notes de musique en 3D.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "ARRÊT : RATÉ",
+   "comic_action": "Des voyageurs collés aux portes qui se referment.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "EN RETARD"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,13 +213,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "text3d",
-    "person"
+    "bus",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "RÈGLEMENT : PARODIE",
-   "comic_action": "Un panneau de règlement intérieur rédigé en alexandrins.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "INCIDENT : SYMPHONIE",
+   "comic_action": "Le conducteur dirige un orchestre dans la cabine.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "dort"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "INFO TRAFIC : ALLEGRO"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +241,26 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "bus",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
    "onscreen_text": "ARRIVÉE : 7 %",
-   "comic_action": "Plan large : la rame entre en gare au ralenti, panneau « 7 % ».",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "comic_action": "Le panneau d'arrivée affiche « 7 % ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "7,07 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,33 +274,41 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique coupe le haut-parleur.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui fait une annonce solennelle pour un apéro."
+  "text": "Envoie ça au pote qui annonce sa pause comme un discours."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 80,
+ "word_count": 78,
  "claims": [
   {
-   "text": "Sa vidéo de candidature : bibliothèque, vieux micro, septième de Beethoven.",
+   "text": "Sa vidéo de candidature 2021 : micro d'époque et symphonie de Beethoven.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-l-election-presidentielle-191429",
    "note": "Vidéo de candidature : bibliothèque, micro d'époque, 7e symphonie de Beethoven, pastiche de l'appel du 18 juin."
-  },
-  {
-   "text": "Les internautes l'ont parodiée en masse. Ici, c'est le règlement de la RATP.",
-   "claim_type": "fait_public",
-   "source": "https://www.konbini.com/news/le-grand-nimporte-quoi-des-reseaux-sociaux-special-candidature-deric-zemmour/",
-   "note": "Parodies en masse de la vidéo de candidature."
   },
   {
    "text": "Solennel, grandiose, en retard. Et à l'arrivée : 7 %.",
@@ -229,13 +326,6 @@
    "note": "Vidéo de candidature : bibliothèque, micro d'époque, 7e symphonie de Beethoven, pastiche de l'appel du 18 juin."
   },
   {
-   "url": "https://www.konbini.com/news/le-grand-nimporte-quoi-des-reseaux-sociaux-special-candidature-deric-zemmour/",
-   "date": "2021-11",
-   "consulted": "2026-11-22",
-   "statut": "mème",
-   "note": "Parodies en masse de la vidéo de candidature."
-  },
-  {
    "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "date": "2022-04",
    "consulted": "2026-11-22",
@@ -244,5 +334,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : la vidéo de candidature 2021 (Beethoven, micro d'époque) et ses parodies. Cadre : le métro. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Sa vidéo de candidature 2021 : micro d'époque et symphonie de Beethoven. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

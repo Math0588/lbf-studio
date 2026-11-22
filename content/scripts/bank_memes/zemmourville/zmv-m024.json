@@ -4,79 +4,79 @@
  "synopsis_id": "zmv-m024-gm",
  "format": "A",
  "length": "court",
- "title_cover": "La ville sans élus",
- "anchor": "après 2022 : zéro député, le chef battu dans le Var.",
+ "title_cover": "La règle des 23 %",
+ "anchor": "Législatives 2022 dans le Var : 23 %, troisième, éliminé ; la ville décrète que 23 % suffit.",
  "meme_id": "ZM",
- "situation": "la visite de la ville voisine",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : la ville voisine a des élus, nous des chroniqueurs.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, on visite l'Assemblée comme un musée.",
-  "Zemmourville : zéro député, cent avis."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien arrive troisième.",
+  "Zemmour a fait 23 % dans le Var et perdu. La ville a changé les règles.",
+  "Attention : vidéo garantie sans nostalgie. Presque.",
+  "Bienvenue à Zemmourville : la règle des 23 %.",
+  "Zemmour en une vidéo : la règle des 23 %."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La voisine gouverne. Nous, on a un très bon avis sur la question.",
-  "La voisine décide, nous commentons.",
-  "Zéro élu, mais quelle éloquence."
+  "Avec cette règle, il aurait gagné. Mais il préfère les règles d'avant.",
+  "Avec cette règle, il aurait gagné. Il préfère les règles d'avant.",
+  "Tout le monde gagne. Plus personne ne comprend qui a gagné."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Sans député.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien arrive troisième.",
    "accent_words": [
-    "Sans député"
+    "arrive troisième"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Après 2022, son parti n'a aucun député à l'Assemblée.",
+   "text": "Législatives 2022 dans le Var : 23 %, troisième, éliminé.",
    "accent_words": [
-    "aucun député"
+    "23 %, troisième, éliminé"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, la ville visite sa voisine. Elle a des élus. Scandale.",
+   "text": "La ville décrète que 23 % suffit pour gagner. Nouvelle règle.",
    "accent_words": [
-    "Scandale"
+    "Nouvelle règle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "La voisine vote des lois. Nous, on commente les lois des autres.",
+   "text": "Le marathon est gagné par le 23e. Le loto, par le numéro 23.",
    "accent_words": [
-    "on commente"
+    "numéro 23"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Lui-même, battu au premier tour dans le Var en 2022.",
+   "text": "Tout le monde gagne. Plus personne ne comprend qui a gagné.",
    "accent_words": [
-    "battu"
+    "a gagné"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La voisine gouverne. Nous, on a un très bon avis sur la question.",
+   "text": "Avec cette règle, il aurait gagné. Mais il préfère les règles d'avant.",
    "accent_words": [
-    "très bon avis"
+    "règles d'avant"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui critique l'équipe mais ne s'inscrit jamais.",
+   "text": "Envoie ça au pote qui change les règles quand il perd.",
    "accent_words": [
-    "ne s'inscrit jamais"
+    "il perd"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "sign",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur la frontière : panneau « VILLE VOISINE — ÉLUS : OUI ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · LA RÈGLE DES 23 %",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "23 %, C'EST GAGNÉ"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,42 +128,82 @@
    ],
    "camera": "closeup",
    "set": [
-    "tribune",
-    "text3d"
+    "screen",
+    "text3d",
+    "tribune"
    ],
-   "onscreen_text": "DÉPUTÉS : 0",
-   "comic_action": "Gros plan sur un hémicycle miniature, tous les sièges vides.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "VAR : 23 % · ÉLIMINÉ",
+   "comic_action": "Une carte du Var avec un « 3E » rouge.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "23 %, C'EST GAGNÉ"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "road",
-    "person",
-    "sign"
+    "mairie",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "VISITE OFFICIELLE",
-   "comic_action": "Travelling : la délégation découvre une mairie avec des gens dedans.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "VICTOIRE À 23 %",
+   "comic_action": "Arrêté officiel : « 23 % = VICTOIRE ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "clap",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SEUIL : 23 %"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
+    "ground",
     "person",
-    "table",
-    "text3d"
+    "banner"
    ],
-   "onscreen_text": "COMMENTAIRE",
-   "comic_action": "Orbite : la délégation prend des notes en marmonnant.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "MARATHON : LE 23E GAGNE",
+   "comic_action": "Le 23e coureur soulève la coupe.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "23E"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -149,13 +212,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "text3d",
-    "person"
+    "road",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "VAR : 1ER TOUR",
-   "comic_action": "Un panneau de circonscription barré dans la valise du maire.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "TOUT LE MONDE A GAGNÉ",
+   "comic_action": "Une foule brandit des coupes identiques.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "VAINQUEURS : TOUS"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,13 +240,26 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "sign",
-    "text3d"
+    "banner",
+    "text3d",
+    "tribune"
    ],
-   "onscreen_text": "GOUVERNER / COMMENTER",
-   "comic_action": "Plan large : la frontière ; d'un côté des grues, de l'autre des micros.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "RÈGLES D'AVANT",
+   "comic_action": "Le maire déchire l'arrêté en soupirant.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "C'ÉTAIT MIEUX AVANT"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -184,43 +273,44 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique reste dans la ville voisine.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui critique l'équipe mais ne s'inscrit jamais."
+  "text": "Envoie ça au pote qui change les règles quand il perd."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 76,
+ "word_count": 81,
  "claims": [
   {
-   "text": "Après 2022, son parti n'a aucun député à l'Assemblée.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/jean-luc-mano-zemmour-est-passe-du-statut-de-chroniqueur-a-un-homme-politique-qui",
-   "note": "Du chroniqueur au chef de parti ; aucun député après 2022."
-  },
-  {
-   "text": "Lui-même, battu au premier tour dans le Var en 2022.",
+   "text": "Législatives 2022 dans le Var : 23 %, troisième, éliminé.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
    "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
   }
  ],
  "sources": [
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/jean-luc-mano-zemmour-est-passe-du-statut-de-chroniqueur-a-un-homme-politique-qui",
-   "date": "2022",
-   "consulted": "2026-11-22",
-   "statut": "fait + opinion",
-   "note": "Du chroniqueur au chef de parti ; aucun député après 2022."
-  },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
    "date": "2022-06-12",
@@ -230,5 +320,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : après 2022 : zéro député, le chef battu dans le Var. Cadre : la visite de la ville voisine. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Législatives 2022 dans le Var : 23 %, troisième, éliminé. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

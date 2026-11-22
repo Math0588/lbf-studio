@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-25",
  "format": "A",
- "title_cover": "Au nom du peuple",
+ "title_cover": "L'addition du peuple",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, le peuple est au menu, pas à table.",
-  "Marineville : au nom du peuple, l'addition au nom de qui ?",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : au nom du peuple."
+  "Dans cette ville, tout le monde vote Marine. Au nom du peuple.",
+  "Marineville : le peuple paie l'addition des patrons.",
+  "Ici, tout se fait au nom du peuple. Surtout les factures.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : L'addition du peuple."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Au nom du peuple, oui. Mais l'addition, c'est au nom de qui ?",
-  "Le menu du peuple est en vitrine. Le dîner, lui, se fait en salon privé.",
-  "Ici, la mairie sert le peuple : à table, mais côté plonge."
+  "Marine, elle, a dîné chez Drouant avec le CAC 40. Au nom de qui ?",
+  "Drouant avec le CAC 40 : au nom de qui ?",
+  "Il paie, en son propre nom, et ne comprend rien."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,7 +23,7 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Au nom du peuple.",
    "accent_words": [
-    "Au nom du peuple"
+    "peuple"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "Avril 2026 : dîner chez Drouant avec le CAC 40. Le peuple était en cuisine.",
+   "text": "Alors la mairie fait tout au nom du peuple : réservations, dîners, factures.",
    "accent_words": [
-    "en cuisine"
+    "factures"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, la mairie sert le peuple : à table, mais côté plonge.",
+   "text": "Le peuple reçoit l'addition du dîner des patrons.",
    "accent_words": [
-    "côté plonge"
+    "patrons"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le menu du peuple est en vitrine. Le dîner se fait en salon privé.",
+   "text": "Il paie, en son propre nom, et ne comprend rien.",
    "accent_words": [
-    "salon privé"
+    "rien"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Au nom du peuple, oui. Mais l'addition, c'est au nom de qui ?",
+   "text": "Marine, elle, a dîné chez Drouant avec le CAC 40. Au nom de qui ?",
    "accent_words": [
-    "au nom de qui"
+    "CAC 40"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
    "text": "Envoie ça au pote qui croit qu'elle dîne avec lui.",
    "accent_words": [
-    "avec lui"
+    "lui"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,89 +89,176 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; banderole « AU NOM DU PEUPLE ».",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "AU NOM DU PEUPLE",
+   "comic_action": "Descente sur la ville ; banderole « AU NOM DU PEUPLE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    },
+    {
+     "type": "affiche",
+     "texte": "AU NOM DU PEUPLE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "lift_tribune",
     "tribune",
-    "person",
-    "banner"
+    "lift_tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "SLOGAN 2017",
-   "comic_action": "La tribune s'élève sous la banderole.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "AU NOM DU PEUPLE",
+   "comic_action": "Meeting : la tribune s'élève, banderole « AU NOM DU PEUPLE ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "arch",
-    "column",
+    "table",
+    "building",
     "person",
-    "studio_light"
+    "text3d"
    ],
-   "onscreen_text": "DROUANT · PEUPLE EN CUISINE",
-   "comic_action": "Sous une arche, un dîner chic ; par la porte battante, la plonge.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "TOUT AU NOM DU PEUPLE",
+   "comic_action": "Salon feutré, table dressée ; carton « TOUT AU NOM DU PEUPLE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FACTURE : LE PEUPLE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "table",
-    "person",
     "screen",
-    "text3d"
+    "text3d",
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "PEUPLE : CÔTÉ PLONGE",
-   "comic_action": "Une cantine : les habitants lavent la vaisselle des invités.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "L'ADDITION DES PATRONS",
+   "comic_action": "Compteur géant sur l'écran : « L'ADDITION DES PATRONS ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "objet": "billets",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "screen",
+    "text3d",
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "MENU DU PEUPLE (VITRINE)",
-   "comic_action": "Vitrine : un menu populaire affiché ; rideau tiré sur le salon du fond.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "IL PAIE, IL COMPREND RIEN",
+   "comic_action": "Compteur géant sur l'écran : « IL PAIE, IL COMPREND RIEN ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "manif"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie"
+    "screen"
    ],
-   "onscreen_text": "ADDITION : AU NOM DE ?",
-   "comic_action": "Une addition interminable posée sur la table, case « nom » vide. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "DROUANT, AVEC LE CAC 40",
+   "comic_action": "Plan final, tenir une seconde : « DROUANT, AVEC LE CAC 40 ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "objet": "verre",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +272,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt mange un sandwich devant un restaurant chic.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE DU PEUPLE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE DU PEUPLE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,7 +295,7 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 84,
+ "word_count": 76,
  "claims": [
   {
    "segment": "n2",
@@ -209,14 +305,11 @@
    "note": "Campagne 2017 : slogan « Au nom du peuple », logo rose bleue, sans nom de parti ni flamme."
   },
   {
-   "segment": "n3",
-   "text": "Avril 2026 : dîner chez Drouant avec le CAC 40. Le peuple était en cuisine.",
+   "segment": "n6",
+   "text": "Marine, elle, a dîné chez Drouant avec le CAC 40. Au nom de qui ?",
    "claim_type": "fait_public",
    "source": "https://info.fr/drouant-medef-bardella-cac40-apprivoise-rn-presidentielle-2027/",
-   "note": "Dîner du 07/04/2026 chez Drouant avec des patrons du CAC 40 ; beaucoup en sortent atterrés, la jugeant furieusement étatiste.",
-   "sources_complementaires": [
-    "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html"
-   ]
+   "note": "Dîner du 07/04/2026 chez Drouant avec des patrons du CAC 40 ; beaucoup en sortent atterrés, la jugeant furieusement étatiste."
   }
  ],
  "sources": [
@@ -224,24 +317,17 @@
    "url": "https://www.europe1.fr/politique/dans-son-nouveau-qg-marine-le-pen-devoile-son-slogan-et-son-logo-de-campagne-2902292",
    "date": "2016-11-16",
    "consulted": "2026-11-22",
-   "statut": "fait public",
+   "statut": "fait",
    "note": "Campagne 2017 : slogan « Au nom du peuple », logo rose bleue, sans nom de parti ni flamme."
   },
   {
    "url": "https://info.fr/drouant-medef-bardella-cac40-apprivoise-rn-presidentielle-2027/",
    "date": "2026",
    "consulted": "2026-11-22",
-   "statut": "fait rapporté (d'après L'Opinion)",
+   "statut": "fait (récit de presse)",
    "note": "Dîner du 07/04/2026 chez Drouant avec des patrons du CAC 40 ; beaucoup en sortent atterrés, la jugeant furieusement étatiste."
-  },
-  {
-   "url": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
-   "date": "2026-07-08",
-   "consulted": "2026-11-22",
-   "statut": "fait public + analyse",
-   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne « parfois difficile à concilier »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = slogan 2017 « Au nom du peuple » ; avril 2026, dîner chez Drouant avec des patrons du CAC 40. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = le slogan « Au nom du peuple » (2017) et le dîner avec le CAC 40 (2026). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

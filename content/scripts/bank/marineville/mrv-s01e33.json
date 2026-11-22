@@ -3,27 +3,27 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-31",
  "format": "C",
- "title_cover": "Facture à 5,5",
+ "title_cover": "Radiateurs à 5,5",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, les radiateurs affichent cinq virgule cinq degrés.",
-  "Marineville : repeindre le compteur, pas réparer le chauffage.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : facture à 5,5."
+  "Dans cette ville, tout le monde vote Marine. En doudoune.",
+  "Marineville : les radiateurs à cinq virgule cinq degrés.",
+  "Ici, on dort en doudoune, facture allégée.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Radiateurs à 5,5."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Baisser la taxe, pas le prix : repeindre le compteur, pas réparer le chauffage.",
-  "La facture baisse de quelques euros : la mairie tire un feu d'artifice.",
-  "Les radiateurs municipaux affichent cinq virgule cinq degrés. Taux réduit."
+  "Marine savoure : promesse tenue, à cinq virgule cinq degrés.",
+  "Promesse tenue, à cinq virgule cinq degrés.",
+  "Les habitants dorment en doudoune, avec une facture allégée."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine. Au chauffage d'appoint.",
+   "text": "Dans cette ville, tout le monde vote Marine. En doudoune.",
    "accent_words": [
-    "chauffage d'appoint"
+    "doudoune"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -31,39 +31,39 @@
    "id": "n2",
    "text": "Promesse 2022 : TVA à cinq virgule cinq sur l'électricité et le gaz.",
    "accent_words": [
-    "électricité"
+    "gaz"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Sur le carburant aussi : de vingt à cinq virgule cinq.",
+   "text": "Alors la mairie baisse tout à cinq virgule cinq : les prix, et les radiateurs.",
    "accent_words": [
-    "carburant"
+    "radiateurs"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "La facture baisse de quelques euros : la mairie tire un feu d'artifice.",
+   "text": "Les radiateurs affichent cinq virgule cinq degrés. Taux réduit.",
    "accent_words": [
-    "feu d'artifice"
+    "réduit"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les radiateurs municipaux affichent cinq virgule cinq degrés. Taux réduit.",
+   "text": "Les habitants dorment en doudoune, avec une facture allégée.",
    "accent_words": [
-    "Taux réduit"
+    "allégée"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Baisser la taxe, pas le prix : repeindre le compteur, pas réparer le chauffage.",
+   "text": "Marine savoure : promesse tenue, à cinq virgule cinq degrés.",
    "accent_words": [
-    "le compteur"
+    "degrés"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui chauffe sa maison avec des promesses.",
    "accent_words": [
-    "des promesses"
+    "promesses"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,26 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; de la buée sur toutes les fenêtres.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "EN DOUDOUNE",
+   "comic_action": "Descente sur la ville ; banderole « EN DOUDOUNE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "fatigue"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -102,76 +119,143 @@
    "set": [
     "screen",
     "text3d",
-    "mairie",
-    "person"
+    "table",
+    "form_stack"
    ],
    "onscreen_text": "TVA ÉNERGIE : 5,5 %",
-   "comic_action": "L'écran affiche le taux qui baisse, ding de caisse.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Compteur géant sur l'écran : « TVA ÉNERGIE : 5,5 % ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "car",
-    "road",
-    "gps",
-    "sign"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "CARBURANT : 5,5 %",
-   "comic_action": "Une jauge d'essence qui remonte d'un cran.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "TOUT À 5,5",
+   "comic_action": "Descente sur la ville ; banderole « TOUT À 5,5 » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CHAUFFAGE : 5,5 °C"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "fountain",
+    "screen",
+    "text3d",
     "person",
-    "bench",
-    "tree"
+    "studio_light"
    ],
-   "onscreen_text": "ÉCONOMIE : 4 € · FEU D'ARTIFICE : 40 000 €",
-   "comic_action": "Feux d'artifice au-dessus de la fontaine.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "5,5 DEGRÉS",
+   "comic_action": "Écran géant : « 5,5 DEGRÉS ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shake"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "screen",
+    "road",
     "sign",
-    "building"
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "5,5 °C",
-   "comic_action": "Par la fenêtre : agents en doudoune devant un radiateur.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "FACTURE ALLÉGÉE, CHAMBRE GELÉE",
+   "comic_action": "Dans la rue, panneau « FACTURE ALLÉGÉE, CHAMBRE GELÉE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "visage": "dort"
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "COMPTEUR : REPEINT",
-   "comic_action": "Un compteur électrique repeint en bleu sur une façade gelée. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "PROMESSE TENUE : 5,5 °C",
+   "comic_action": "Plan final, tenir une seconde : « PROMESSE TENUE : 5,5 °C ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +269,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt souffle dans ses mains.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE FRILEUX",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE FRILEUX ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,21 +292,14 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 83,
+ "word_count": 77,
  "claims": [
   {
    "segment": "n2",
    "text": "Promesse 2022 : TVA à cinq virgule cinq sur l'électricité et le gaz.",
    "claim_type": "fait_public",
    "source": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/baisser-la-tva-de-20-a-55-pour-les-carburants-lelectricite-le-gaz-et-le-fioul-domestique",
-   "note": "TVA de 20 % à 5,5 % sur carburants, électricité, gaz, fioul."
-  },
-  {
-   "segment": "n3",
-   "text": "Sur le carburant aussi : de vingt à cinq virgule cinq.",
-   "claim_type": "fait_public",
-   "source": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/baisser-la-tva-de-20-a-55-pour-les-carburants-lelectricite-le-gaz-et-le-fioul-domestique",
-   "note": "TVA de 20 % à 5,5 % sur carburants, électricité, gaz, fioul."
+   "note": "Proposition 2022 : TVA de 20 % à 5,5 % sur carburants, électricité, gaz, fioul."
   }
  ],
  "sources": [
@@ -221,10 +307,10 @@
    "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/baisser-la-tva-de-20-a-55-pour-les-carburants-lelectricite-le-gaz-et-le-fioul-domestique",
    "date": "2022",
    "consulted": "2026-11-22",
-   "statut": "fait public (programme 2022)",
-   "note": "TVA de 20 % à 5,5 % sur carburants, électricité, gaz, fioul."
+   "statut": "fait",
+   "note": "Proposition 2022 : TVA de 20 % à 5,5 % sur carburants, électricité, gaz, fioul."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = programme 2022 : TVA à 5,5 % sur l'électricité, le gaz et le fioul ; une baisse de taxe qui ne répare pas le chauffage. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = la TVA à 5,5 % sur l'électricité et le gaz (promesse 2022). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

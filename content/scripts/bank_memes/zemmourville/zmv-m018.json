@@ -5,68 +5,68 @@
  "format": "A",
  "length": "court",
  "title_cover": "La panne nostalgique",
- "anchor": "nostalgie et déclinisme : la panne comme retour au bon vieux temps.",
+ "anchor": "Nostalgie : une panne de courant fêtée comme un retour au bon vieux temps.",
  "meme_id": "ZN",
- "situation": "la panne de courant",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : la panne de courant est une fête.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, on éteint tout pour retrouver avant.",
-  "Zemmourville : la ville qui préfère la bougie."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien vit à la bougie.",
+  "Zemmour aime l'avant. La ville a fêté la panne de courant.",
+  "Celle-là, Zemmour ne la partagera pas.",
+  "Bienvenue à Zemmourville : la panne nostalgique.",
+  "Zemmour en une vidéo : la panne nostalgique."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Seul problème : sans courant, impossible de revoir ses 3,81 millions de téléspectateurs.",
-  "Plus de courant, plus de replay, plus de débat.",
-  "La panne est nostalgique. Le frigo, beaucoup moins."
+  "Seul regret : impossible de revoir son débat à 3,81 millions.",
+  "Seul regret : impossible de revoir son débat à 3,81 millions.",
+  "Un an sans courant. Les frigos servent d'armoires à chaussures."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Même la lumière.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien vit à la bougie.",
    "accent_words": [
-    "Même la lumière"
+    "la bougie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Panne de courant générale. Ici, c'est une fête : enfin comme avant.",
+   "text": "Son grand thème : la nostalgie. On parle de déclinisme et de nostalgie.",
    "accent_words": [
-    "comme avant"
+    "de nostalgie"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Bougies, transistor, journal papier. La ville soupire de bonheur.",
+   "text": "Panne de courant générale. La ville fait la fête : enfin comme avant.",
    "accent_words": [
-    "soupire de bonheur"
+    "enfin comme avant"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le maire annonce : on garde la panne, c'est mieux avant.",
+   "text": "Bougies, transistor, journal papier. Le maire refuse de réparer.",
    "accent_words": [
-    "on garde la panne"
+    "de réparer"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Une fondation parle de déclinisme et de nostalgie. Ici, servis à la bougie.",
+   "text": "Un an sans courant. Les frigos servent d'armoires à chaussures.",
    "accent_words": [
-    "à la bougie"
+    "à chaussures"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Seul problème : sans courant, impossible de revoir ses 3,81 millions de téléspectateurs.",
+   "text": "Seul regret : impossible de revoir son débat à 3,81 millions.",
    "accent_words": [
     "3,81 millions"
    ],
@@ -74,9 +74,9 @@
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui dit qu'on vivait mieux sans téléphone, sur son téléphone.",
+   "text": "Envoie ça au pote qui trouve que la panne, c'est convivial.",
    "accent_words": [
-    "sur son téléphone"
+    "c'est convivial"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,58 +90,120 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "lamp",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un quartier éteint, bougies aux fenêtres.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · LA PANNE NOSTALGIQUE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "COMME AVANT"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "building",
-    "lamp",
-    "person"
+    "scroll",
+    "text3d",
+    "tribune"
    ],
-   "onscreen_text": "PANNE = FÊTE",
-   "comic_action": "La caméra glisse le long des fenêtres : bougies, sourires émus.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "NOSTALGIE",
+   "comic_action": "Le maire allume une bougie devant un vieux portrait.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "COMME AVANT"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "person",
-    "text3d"
+    "lamp",
+    "road",
+    "person"
    ],
-   "onscreen_text": "BOUGIES · TRANSISTOR",
-   "comic_action": "Gros plan sur une table avec chandelier et vieux poste radio.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PANNE : FÊTE",
+   "comic_action": "Rue plongée dans le noir, guirlande de bougies.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "COURANT : 0"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
     "mairie",
-    "person",
-    "scroll"
+    "lamp",
+    "person"
    ],
-   "onscreen_text": "ON GARDE LA PANNE",
-   "comic_action": "Orbite : le maire au balcon, un parchemin à la main.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RÉPARATION : REFUSÉE",
+   "comic_action": "Un électricien éconduit à la porte de la mairie.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "À LA BOUGIE"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,13 +212,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "lamp",
+    "building",
     "text3d",
     "person"
    ],
-   "onscreen_text": "NOSTALGIE À LA BOUGIE",
-   "comic_action": "Un cocktail flambé posé sous une bougie.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "FRIGO : ARMOIRE",
+   "comic_action": "Un frigo ouvert rempli de chaussures.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FRIGO : DÉCO"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +240,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
     "screen",
-    "text3d"
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "REPLAY : IMPOSSIBLE",
-   "comic_action": "Plan large : une télé éteinte au milieu de la place, tout le monde la fixe.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "DÉBAT : PAS DE COURANT",
+   "comic_action": "Une télé éteinte, une bougie posée dessus.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "3,81 M (PLUS DE PRISE)"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,30 +273,44 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique rallume le compteur.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui dit qu'on vivait mieux sans téléphone, sur son téléphone."
+  "text": "Envoie ça au pote qui trouve que la panne, c'est convivial."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 83,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Une fondation parle de déclinisme et de nostalgie. Ici, servis à la bougie.",
+   "text": "Son grand thème : la nostalgie. On parle de déclinisme et de nostalgie.",
    "claim_type": "fait_public",
    "source": "https://www.jean-jaures.org/publication/declinisme-et-nostalgie-un-cocktail-francais/",
    "note": "Fondation Jean-Jaurès : « Déclinisme et nostalgie, un cocktail français »."
   },
   {
-   "text": "Seul problème : sans courant, impossible de revoir ses 3,81 millions de téléspectateurs.",
+   "text": "Seul regret : impossible de revoir son débat à 3,81 millions.",
    "claim_type": "fait_public",
    "source": "https://www.dhnet.be/medias/television/2021/09/24/carton-daudience-pour-le-debat-de-bfm-un-effet-eric-zemmour-5XZXEB36JBA33MXAZP3IIKIEJA/",
    "note": "Débat Zemmour–Mélenchon (BFMTV, 23/09/2021) : 3,81 millions de téléspectateurs."
@@ -219,7 +321,7 @@
    "url": "https://www.jean-jaures.org/publication/declinisme-et-nostalgie-un-cocktail-francais/",
    "date": "2021",
    "consulted": "2026-11-22",
-   "statut": "analyse",
+   "statut": "fait",
    "note": "Fondation Jean-Jaurès : « Déclinisme et nostalgie, un cocktail français »."
   },
   {
@@ -231,5 +333,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : nostalgie et déclinisme : la panne comme retour au bon vieux temps. Cadre : la panne de courant. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Son grand thème : la nostalgie. On parle de déclinisme et de nostalgie. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

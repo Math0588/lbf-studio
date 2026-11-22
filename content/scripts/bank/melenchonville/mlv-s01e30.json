@@ -3,69 +3,69 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-30",
  "format": "A",
- "title_cover": "Prisonnier du carré",
+ "title_cover": "Maire en hologramme",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. En 2D.",
-  "Mélenchon en hologramme : partout, sauf au second tour.",
-  "Les fans de Méluche vont me bloquer.",
-  "Bienvenue à Mélenchonville : prisonnier du carré.",
-  "Mélenchon en une vidéo : prisonnier du carré."
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien est en 3D.",
+  "Mélenchon faisait meeting en hologramme. La ville a remplacé tous ses agents.",
+  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
+  "Bienvenue à Mélenchonville : maire en hologramme.",
+  "Mélenchon en une vidéo : maire en hologramme."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Partout en image, jamais au second tour : il n'est jamais sorti du carré.",
-  "Six hologrammes, zéro second tour : la technologie a ses limites.",
-  "Les internautes crient à Star Wars. La Force, elle, reste introuvable."
+  "Depuis, il n'apparaît en vrai qu'au premier tour.",
+  "Depuis, il n'apparaît en vrai qu'au premier tour.",
+  "Panne de courant. Plus de mairie, plus d'école, plus de maire."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. En 2D.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien est en 3D.",
    "accent_words": [
-    "En 2D"
+    "en 3D"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2017, il parle à Lyon et apparaît en hologramme à Aubervilliers.",
+   "text": "En 2017, il fait meeting en hologramme, coincé dans un carré de quatre mètres.",
    "accent_words": [
-    "à Aubervilliers"
+    "quatre mètres"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Règle d'or : rester dans un carré de quatre mètres sur quatre, sinon il disparaît.",
+   "text": "La mairie remplace donc tous les agents par des hologrammes.",
    "accent_words": [
-    "il disparaît"
+    "des hologrammes"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Fin de campagne : six hologrammes en même temps. Six carrés.",
+   "text": "Un usager dépasse du carré d'un pied : le guichetier disparaît.",
    "accent_words": [
-    "Six carrés"
+    "le guichetier disparaît"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les internautes crient à Star Wars. La Force, elle, reste introuvable.",
+   "text": "Panne de courant. Plus de mairie, plus d'école, plus de maire.",
    "accent_words": [
-    "reste introuvable"
+    "de maire"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Partout en image, jamais au second tour : il n'est jamais sorti du carré.",
+   "text": "Depuis, il n'apparaît en vrai qu'au premier tour.",
    "accent_words": [
-    "du carré"
+    "premier tour"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE · PRISONNIER DU CARRÉ",
-   "comic_action": "Descente sur la ville : banderole « PRISONNIER DU CARRÉ », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "onscreen_text": "MÉLENCHONVILLE · MAIRE EN HOLOGRAMME",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "VOTRE MAIRE EN 3D"
     }
    ]
   },
@@ -117,20 +127,20 @@
     "tribune",
     "studio_light"
    ],
-   "onscreen_text": "HOLOGRAMME 2017",
-   "comic_action": "Le maire grésille sur une scène, en projection bleutée.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "onscreen_text": "HOLOGRAMME · CARRÉ 4 × 4",
+   "comic_action": "Le maire grésille dans un carré tracé au sol.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
      "geste": "wave",
      "visage": "sourire_pro"
-    },
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "cheer",
-     "visage": "choque",
-     "quand": 0.3
+     "type": "affiche",
+     "texte": "VOTRE MAIRE EN 3D"
     }
    ]
   },
@@ -141,18 +151,24 @@
    ],
    "camera": "orbit",
    "set": [
-    "ground",
-    "text3d",
-    "sign"
+    "mairie",
+    "screen",
+    "person"
    ],
-   "onscreen_text": "CARRÉ : 4 M × 4 M",
-   "comic_action": "Un carré tracé au sol ; un pied dépasse, l'image saute.",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "GUICHETS EN HOLOGRAMME",
+   "comic_action": "Chaque guichet a son agent projeté et grésillant.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "shake",
+     "who": "perso",
+     "geste": "shrug",
      "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "GUICHET : 4 M × 4 M"
     }
    ]
   },
@@ -163,18 +179,24 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "screen",
-    "tribune",
-    "text3d"
+    "ground",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "× 6",
-   "comic_action": "Six carrés lumineux, six maires identiques.",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "HORS DU CARRÉ : DISPARU",
+   "comic_action": "Un pied franchit la ligne, l'agent s'évapore en pixels.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "spin",
-     "visage": "fier"
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PIXEL"
     }
    ]
   },
@@ -185,18 +207,24 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "lamp",
+    "building",
+    "text3d"
    ],
-   "onscreen_text": "STAR WARS ?",
-   "comic_action": "Un fan agite un sabre lumineux devant l'hologramme.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "PANNE : PLUS DE MAIRE",
+   "comic_action": "La ville plonge dans l'obscurité ; une bougie sur le pupitre.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
-     "who": "perso",
-     "geste": "point",
-     "visage": "content"
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MAIRE : HORS TENSION"
     }
    ]
   },
@@ -207,24 +235,24 @@
    ],
    "camera": "descend",
    "set": [
-    "ground",
-    "text3d",
-    "banner"
+    "tribune",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "SECOND TOUR : HORS DU CARRÉ",
-   "comic_action": "Le carré au sol rétrécit jusqu'à disparaître.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "EN VRAI : 1ER TOUR SEULEMENT",
+   "comic_action": "Le maire apparaît devant une urne, puis disparaît.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "fall",
-     "visage": "choque"
-    },
-    {
-     "who": "foule",
      "geste": "shrug",
-     "visage": "blase",
-     "quand": 0.4
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "À BIENTÔT AU 1ER TOUR"
     }
    ]
   },
@@ -241,7 +269,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -249,6 +277,12 @@
      "geste": "point",
      "visage": "sourire_pro",
      "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
     }
    ]
   }
@@ -262,37 +296,13 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 85,
+ "word_count": 80,
  "claims": [
   {
-   "text": "En 2017, il parle à Lyon et apparaît en hologramme à Aubervilliers.",
+   "text": "En 2017, il fait meeting en hologramme, coincé dans un carré de quatre mètres.",
    "claim_type": "fait_public",
    "source": "https://www.parismatch.be/actualites/politique/2017/02/05/jean-luc-melenchon-en-chair-en-os-et-en-hologramme-A5YAIOB4FRFYHLFZPCANXUXQVE/",
    "note": "Meeting double Lyon / Aubervilliers en hologramme ; selon Europe 1, il devait rester dans un carré de 4 m sur 4."
-  },
-  {
-   "text": "Règle d'or : rester dans un carré de quatre mètres sur quatre, sinon il disparaît.",
-   "claim_type": "fait_public",
-   "source": "https://www.parismatch.be/actualites/politique/2017/02/05/jean-luc-melenchon-en-chair-en-os-et-en-hologramme-A5YAIOB4FRFYHLFZPCANXUXQVE/",
-   "note": "Meeting double Lyon / Aubervilliers en hologramme ; selon Europe 1, il devait rester dans un carré de 4 m sur 4."
-  },
-  {
-   "text": "Fin de campagne : six hologrammes en même temps. Six carrés.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/non-classe/melenchon-six-hologrammes-pour-conclure-une-campagne-de-ferveur-populaire-58921",
-   "note": "Fin de campagne 2017 : six hologrammes simultanés."
-  },
-  {
-   "text": "Les internautes crient à Star Wars. La Force, elle, reste introuvable.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/non-classe/hologramme-melenchon-se-dedouble-et-reveille-la-force-sur-twitter-52657",
-   "note": "L'hologramme moqué sur Twitter façon Star Wars."
-  },
-  {
-   "text": "Partout en image, jamais au second tour : il n'est jamais sorti du carré.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850",
-   "note": "Second tour 2022 raté d'environ 421 420 voix."
   }
  ],
  "sources": [
@@ -302,29 +312,8 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Meeting double Lyon / Aubervilliers en hologramme ; selon Europe 1, il devait rester dans un carré de 4 m sur 4."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/non-classe/melenchon-six-hologrammes-pour-conclure-une-campagne-de-ferveur-populaire-58921",
-   "date": "2017-04-18",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Fin de campagne 2017 : six hologrammes simultanés."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/non-classe/hologramme-melenchon-se-dedouble-et-reveille-la-force-sur-twitter-52657",
-   "date": "2017-02",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "L'hologramme moqué sur Twitter façon Star Wars."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850",
-   "date": "2022-04-10",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Second tour 2022 raté d'environ 421 420 voix."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Prisonnier du carré. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2017, il fait meeting en hologramme, coincé dans un carré de quatre mètres. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

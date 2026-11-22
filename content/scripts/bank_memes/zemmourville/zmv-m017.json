@@ -4,79 +4,79 @@
  "synopsis_id": "zmv-m017-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Le chantier des colleurs",
- "anchor": "Génération Z, militants colleurs d'affiches, et le sondage d'octobre 2021.",
+ "title_cover": "Le soufflé géant",
+ "anchor": "« Il retombe comme un soufflé » : la ville tente le record du plus grand soufflé.",
  "meme_id": "ZR",
- "situation": "les travaux",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le chantier tient à la colle.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, le pont est inachevé mais placardé.",
-  "Zemmourville : les travaux de façade, au sens propre."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien a un fouet.",
+  "La presse disait que Zemmour retombait comme un soufflé. La ville a testé en géant.",
+  "Les zemmouriens vont me détester.",
+  "Bienvenue à Zemmourville : le soufflé géant.",
+  "Zemmour en une vidéo : le soufflé géant."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ici, les ouvrages tiennent à la colle. Comme les sondages d'octobre 2021.",
-  "Tout est collé, rien n'est construit.",
-  "Une affiche par brique, zéro brique posée."
+  "Comme en 2022 : 17 % en octobre, 7 % en avril.",
+  "Comme en 2022 : 17 % en octobre, 7 % en avril.",
+  "Puis il retombe d'un coup sur la mairie et deux voitures."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Chantier de nuit.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien a un fouet.",
    "accent_words": [
-    "Chantier de nuit"
+    "un fouet"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Génération Z : c'est le nom de ses militants colleurs d'affiches.",
+   "text": "En 2022, la presse écrit qu'il retombe comme un soufflé.",
    "accent_words": [
-    "colleurs d'affiches"
+    "un soufflé"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, le chantier ne construit rien. Il colle.",
+   "text": "La ville prépare le plus grand soufflé du monde, pour le record.",
    "accent_words": [
-    "Il colle"
+    "le record"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le pont n'est pas fini, mais il est entièrement recouvert de son visage.",
+   "text": "Il monte jusqu'au clocher. Les touristes affluent.",
    "accent_words": [
-    "son visage"
+    "Les touristes affluent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le chef de chantier promet la grandeur. Le béton promet des fissures.",
+   "text": "Puis il retombe d'un coup sur la mairie et deux voitures.",
    "accent_words": [
-    "des fissures"
+    "deux voitures"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ici, les ouvrages tiennent à la colle. Comme les sondages d'octobre 2021.",
+   "text": "Comme en 2022 : 17 % en octobre, 7 % en avril.",
    "accent_words": [
-    "octobre 2021"
+    "en avril"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui décore avant de construire.",
+   "text": "Envoie ça au pote qui se vante en octobre et se tait en avril.",
    "accent_words": [
-    "décore"
+    "en avril"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un chantier : la grue est couverte d'affiches.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · LE SOUFFLÉ GÉANT",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "LE PLUS GRAND SOUFFLÉ"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,43 +128,83 @@
    ],
    "camera": "closeup",
    "set": [
-    "banner",
+    "screen",
     "text3d",
-    "person"
+    "tribune"
    ],
-   "onscreen_text": "GÉNÉRATION Z",
-   "comic_action": "Gros plan sur un seau de colle siglé.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "RETOMBE COMME UN SOUFFLÉ",
+   "comic_action": "Une une de journal sur un pupitre de cuisine.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LE PLUS GRAND SOUFFLÉ"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "road",
+    "fountain",
     "person",
     "banner"
    ],
-   "onscreen_text": "CHANTIER : COLLAGE",
-   "comic_action": "Travelling : des ouvriers avec des brosses au lieu de truelles.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RECORD DU MONDE",
+   "comic_action": "Un moule géant posé sur la place.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "OBJECTIF : RECORD"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "road",
-    "banner",
+    "column",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "PONT : 50 %",
-   "comic_action": "Orbite autour d'un pont coupé en deux, tapissé d'affiches.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SOUFFLÉ : AU CLOCHER",
+   "comic_action": "Un soufflé dépasse les toits de la ville.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "GOURMAND"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,13 +213,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "person",
-    "sign",
+    "mairie",
+    "car",
     "text3d"
    ],
-   "onscreen_text": "GRANDEUR · FISSURES",
-   "comic_action": "Gros plan : une fissure traverse une affiche « GRANDEUR ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PATATRAS",
+   "comic_action": "Le soufflé s'effondre en écrasant la façade.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "DÉGÂTS : 1 MAIRIE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +241,26 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "banner",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "TENU À LA COLLE",
-   "comic_action": "Plan large : le pont s'affaisse doucement, les affiches restent.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "17 % → 7 %",
+   "comic_action": "Une courbe en forme de soufflé qui s'effondre.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "17 → 7"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,42 +274,62 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique pose enfin une brique.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui décore avant de construire."
+  "text": "Envoie ça au pote qui se vante en octobre et se tait en avril."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 76,
+ "word_count": 80,
  "claims": [
   {
-   "text": "Génération Z : c'est le nom de ses militants colleurs d'affiches.",
+   "text": "En 2022, la presse écrit qu'il retombe comme un soufflé.",
    "claim_type": "fait_public",
-   "source": "https://www.lyoncapitale.fr/actualite/a-lyon-le-groupe-generation-z-espere-une-candidature-de-zemmour-en-2022-leur-seule-option",
-   "note": "Génération Z : militants, collages d'affiches."
+   "source": "https://fr.timesofisrael.com/france-eric-zemmour-retombe-comme-un-souffle/",
+   "note": "Titre de presse : il « retombe comme un soufflé » (repris sans guillemets)."
   },
   {
-   "text": "Ici, les ouvrages tiennent à la colle. Comme les sondages d'octobre 2021.",
+   "text": "Comme en 2022 : 17 % en octobre, 7 % en avril.",
    "claim_type": "fait_public",
    "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
    "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+  },
+  {
+   "text": "Comme en 2022 : 17 % en octobre, 7 % en avril.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
   {
-   "url": "https://www.lyoncapitale.fr/actualite/a-lyon-le-groupe-generation-z-espere-une-candidature-de-zemmour-en-2022-leur-seule-option",
-   "date": "2021",
+   "url": "https://fr.timesofisrael.com/france-eric-zemmour-retombe-comme-un-souffle/",
+   "date": "2022",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Génération Z : militants, collages d'affiches."
+   "note": "Titre de presse : il « retombe comme un soufflé » (repris sans guillemets)."
   },
   {
    "url": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
@@ -228,8 +337,15 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+  },
+  {
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Génération Z, militants colleurs d'affiches, et le sondage d'octobre 2021. Cadre : les travaux. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2022, la presse écrit qu'il retombe comme un soufflé. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

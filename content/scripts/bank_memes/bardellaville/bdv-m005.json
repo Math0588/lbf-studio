@@ -4,37 +4,37 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Bras levés",
- "anchor": "la Bardellamania : téléphones levés et selfies",
+ "title_cover": "Selfie au réveil",
+ "anchor": "la Bardellamania : téléphones levés pour un selfie",
  "meme_key": "MANIA",
- "situation": "Bras levés",
- "ressort": "un thème unique en escalade : truc connu, trois crans, chute retournée",
+ "situation": "Selfie au réveil",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Bras levés.",
-  "La Bardellamania : des milliers de selfies, un seul programme absent.",
-  "Bardellaville : tout le monde lève les bras, personne la main.",
+  "Dans cette ville, tout le monde vote Bardella. Même la brosse à dents.",
+  "Bardellaville : selfie obligatoire au réveil.",
+  "Ici, même la brosse à dents est à son effigie.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Bras levés."
+  "Bienvenue à Bardellaville. Au programme : Selfie au réveil."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Des milliers de photos de lui. Aucune de son programme : il ne pose pas.",
-  "Son programme ne pose pas pour les photos.",
-  "Mille selfies, zéro mesure."
+  "Bardella efface les photos de son programme. Ça libère zéro octet.",
+  "Son programme en photo : zéro octet.",
+  "Les téléphones saturent. Plus de place pour une seule photo."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Bras levés.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Même la brosse à dents.",
    "accent_words": [
-    "Bras levés"
+    "brosse à dents"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À Châlons, l'AFP décrit une nuée de téléphones levés et des coudes pour un selfie.",
+   "text": "À Châlons, l'AFP décrit une nuée de téléphones levés pour un selfie avec lui.",
    "accent_words": [
     "selfie"
    ],
@@ -42,33 +42,33 @@
   },
   {
    "id": "n3",
-   "text": "Près d'une heure et demie d'attente pour une dédicace.",
+   "text": "Alors la mairie rend le selfie obligatoire au réveil.",
    "accent_words": [
-    "heure et demie"
+    "obligatoire"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Au Salon de l'agriculture, sans vaches : les selfies remplacent le bétail.",
+   "text": "Puis au déjeuner, au dîner, et sous la douche.",
    "accent_words": [
-    "remplacent"
+    "douche"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Bientôt, un selfie avec lui comptera comme mesure agricole.",
+   "text": "Les téléphones saturent. Plus de place pour une seule photo.",
    "accent_words": [
-    "mesure agricole"
+    "photo"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Des milliers de photos de lui. Aucune de son programme : il ne pose pas.",
+   "text": "Bardella efface les photos de son programme. Ça libère zéro octet.",
    "accent_words": [
-    "programme"
+    "zéro octet"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -94,17 +94,28 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BRAS LEVÉS",
-   "comic_action": "Descente sur la ville ; banderole « BRAS LEVÉS » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "onscreen_text": "BROSSE À DENTS BARDELLA",
+   "comic_action": "Descente sur la ville ; banderole « BROSSE À DENTS BARDELLA » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
-     "who": "foule",
-     "geste": "arms_up"
+     "who": "perso",
+     "objet": "brosse_a_dents",
+     "visage": "content"
     },
     {
-     "who": "perso",
-     "visage": "choque"
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
+    },
+    {
+     "type": "affiche",
+     "texte": "UN SELFIE PAR JOUR"
     }
    ]
   },
@@ -120,9 +131,9 @@
     "banner",
     "ring_light"
    ],
-   "onscreen_text": "COUDES POUR UN SELFIE",
-   "comic_action": "Travelling sur une file de téléphones levés ; banderole « COUDES POUR UN SELFIE ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "onscreen_text": "NUÉE DE TÉLÉPHONES",
+   "comic_action": "Travelling sur une file de téléphones levés ; banderole « NUÉE DE TÉLÉPHONES ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "foule",
@@ -135,32 +146,39 @@
      "visage": "sourire_pro",
      "objet": "ring_light"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "road",
-    "person",
+    "ground",
+    "mairie",
     "banner",
-    "ring_light"
+    "person"
    ],
-   "onscreen_text": "1 H 30 D'ATTENTE",
-   "comic_action": "Travelling sur une file de téléphones levés ; banderole « 1 H 30 D'ATTENTE ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "SELFIE OBLIGATOIRE",
+   "comic_action": "Descente sur la ville ; banderole « SELFIE OBLIGATOIRE » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
-     "who": "foule",
-     "geste": "shake"
+     "who": "perso",
+     "objet": "phone",
+     "visage": "fatigue"
     },
     {
-     "who": "perso",
-     "visage": "fatigue",
-     "geste": "facepalm"
+     "who": "foule",
+     "geste": "jump"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SELFIE : OBLIGATOIRE"
     }
    ]
   },
@@ -169,56 +187,57 @@
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "ground",
+    "screen",
+    "text3d",
     "person",
-    "ring_light",
-    "banner"
+    "studio_light"
    ],
-   "onscreen_text": "0 VACHE, 1000 SELFIES",
-   "comic_action": "Allées du Salon : perches à selfie levées ; banderole « 0 VACHE, 1000 SELFIES ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "SELFIE SOUS LA DOUCHE",
+   "comic_action": "Écran géant : « SELFIE SOUS LA DOUCHE ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro",
-     "objet": "ring_light"
+     "who": "perso",
+     "objet": "phone",
+     "visage": "choque"
     },
     {
      "who": "foule",
-     "geste": "cheer"
+     "objet": "phone",
+     "geste": "jump"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "ground",
+    "screen",
+    "text3d",
     "person",
-    "ring_light",
-    "banner"
+    "studio_light"
    ],
-   "onscreen_text": "SELFIE = MESURE AGRICOLE",
-   "comic_action": "Allées du Salon : perches à selfie levées ; banderole « SELFIE = MESURE AGRICOLE ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "MÉMOIRE PLEINE",
+   "comic_action": "Écran géant : « MÉMOIRE PLEINE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "nod",
-     "visage": "fier"
+     "who": "foule",
+     "geste": "shake"
     },
     {
      "who": "perso",
      "geste": "facepalm",
-     "visage": "colere"
+     "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -232,21 +251,23 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "PROGRAMME : NE POSE PAS",
-   "comic_action": "Plan final, tenir une seconde : « PROGRAMME : NE POSE PAS ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "ZÉRO OCTET LIBÉRÉ",
+   "comic_action": "Plan final, tenir une seconde : « ZÉRO OCTET LIBÉRÉ ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro"
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "objet": "phone"
     },
     {
      "who": "perso",
-     "geste": "shrug",
-     "visage": "blase"
+     "geste": "point",
+     "visage": "content"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -262,7 +283,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE SELFIE",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE SELFIE ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -270,7 +291,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -282,28 +304,14 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 85,
+ "word_count": 81,
  "claims": [
   {
    "segment": "n2",
-   "text": "À Châlons, l'AFP décrit une nuée de téléphones levés et des coudes pour un selfie.",
+   "text": "À Châlons, l'AFP décrit une nuée de téléphones levés pour un selfie avec lui.",
    "claim_type": "fait_public",
    "source": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
    "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
-  },
-  {
-   "segment": "n3",
-   "text": "Près d'une heure et demie d'attente pour une dédicace.",
-   "claim_type": "fait_public",
-   "source": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
-   "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
-  },
-  {
-   "segment": "n4",
-   "text": "Au Salon de l'agriculture, sans vaches : les selfies remplacent le bétail.",
-   "claim_type": "fait_public",
-   "source": "https://www.lagazettefrance.fr/article/le-pen-bardella-le-relais-de-la-flamme",
-   "note": "Salon de l'agriculture 2026, sans vaches (épidémie) : selfies à la chaîne dans les allées."
   }
  ],
  "sources": [
@@ -313,15 +321,8 @@
    "consulted": "2026-11-22",
    "statut": "fait (AFP)",
    "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
-  },
-  {
-   "url": "https://www.lagazettefrance.fr/article/le-pen-bardella-le-relais-de-la-flamme",
-   "date": "2026-02-26",
-   "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
-   "note": "Salon de l'agriculture 2026, sans vaches (épidémie) : selfies à la chaîne dans les allées."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = la Bardellamania : téléphones levés et selfies. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = la Bardellamania : téléphones levés pour un selfie. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

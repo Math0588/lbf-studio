@@ -3,67 +3,67 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-09",
  "format": "A",
- "title_cover": "Le grand ménage",
+ "title_cover": "Tri sélectif des avis",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. Ou dégage.",
-  "Mélenchon fait le ménage dans son camp. À fond.",
+  "Dans cette ville, tout le monde vote Mélenchon. Même les poubelles.",
+  "Chez Mélenchon, on trie les avis. La ville a suivi la consigne.",
   "Les fans de Méluche vont me bloquer.",
-  "Bienvenue à Mélenchonville : le grand ménage.",
-  "Mélenchon en une vidéo : le grand ménage."
+  "Bienvenue à Mélenchonville : tri sélectif des avis.",
+  "Mélenchon en une vidéo : tri sélectif des avis."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Quand il ne reste plus personne pour dire non, il appelle ça l'unanimité.",
-  "Plus personne pour dire non : chez lui, ça s'appelle l'unanimité.",
-  "Pour 2027 : aucune autre candidature proposée, aucune opposition."
+  "Ville vide, zéro opposition : l'unanimité parfaite.",
+  "Ville vide, zéro opposition : l'unanimité parfaite.",
+  "Il ne reste qu'un habitant. Il se trie lui-même, par prudence."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Ou dégage.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même les poubelles.",
    "accent_words": [
-    "Ou dégage"
+    "Même les poubelles"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Législatives 2024 : trois députés critiques ne sont pas réinvestis.",
+   "text": "En 2024, trois députés critiques sont écartés. Une sortante parle de « purge ».",
    "accent_words": [
-    "pas réinvestis"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "Une sortante parle carrément de « purge ». Ambiance.",
-   "accent_words": [
-    "Ambiance"
+    "purge"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "Ruffin prend la porte de lui-même. Divorce consommé.",
+   "id": "n3",
+   "text": "La mairie en fait un service public : le tri sélectif des avis.",
    "accent_words": [
-    "Divorce consommé"
+    "des avis"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Bac jaune pour les critiques, bac vert pour les hésitants.",
+   "accent_words": [
+    "les hésitants"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Pour 2027 : aucune autre candidature proposée, aucune opposition.",
+   "text": "Il ne reste qu'un habitant. Il se trie lui-même, par prudence.",
    "accent_words": [
-    "aucune opposition"
+    "par prudence"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Quand il ne reste plus personne pour dire non, il appelle ça l'unanimité.",
+   "text": "Ville vide, zéro opposition : l'unanimité parfaite.",
    "accent_words": [
-    "ça l'unanimité"
+    "l'unanimité parfaite"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE · LE GRAND MÉNAGE",
-   "comic_action": "Descente sur la ville : banderole « LE GRAND MÉNAGE », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "onscreen_text": "MÉLENCHONVILLE · TRI SÉLECTIF DES AVIS",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "TRIEZ VOS AVIS"
     }
    ]
   },
@@ -117,9 +127,9 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "PAS RÉINVESTIS",
+   "onscreen_text": "« PURGE »",
    "comic_action": "Trois chaises sorties sur le trottoir avec les encombrants.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
@@ -132,6 +142,12 @@
      "visage": "choque",
      "quand": 0.4
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "UN SEUL AVIS, LE BON"
+    }
    ]
   },
   {
@@ -141,19 +157,24 @@
    ],
    "camera": "orbit",
    "set": [
-    "person",
-    "text3d",
+    "bin",
+    "mairie",
     "sign"
    ],
-   "onscreen_text": "« PURGE »",
-   "comic_action": "Une militante brandit une pancarte « PURGE ».",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "TRI SÉLECTIF DES AVIS",
+   "comic_action": "Trois bacs colorés devant la mairie, étiquetés « AVIS ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
      "who": "perso",
-     "geste": "arms_up",
-     "visage": "colere",
-     "objet": "pancarte"
+     "geste": "nod",
+     "visage": "neutre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BAC JAUNE : CRITIQUES"
     }
    ]
   },
@@ -164,18 +185,24 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "facade_set",
-    "person",
-    "road"
+    "bin",
+    "road",
+    "person"
    ],
-   "onscreen_text": "RUFFIN : DEHORS",
-   "comic_action": "Une porte claque ; une silhouette s'éloigne sans se retourner.",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "BACS : PLEINS",
+   "comic_action": "Les bacs débordent de pancartes « JE NE SUIS PAS D'ACCORD ».",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
-     "who": "perso",
-     "geste": "wave",
-     "visage": "blase"
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "COLLECTE : TOUS LES JOURS"
     }
    ]
   },
@@ -186,24 +213,24 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
-    "person"
+    "bin",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "OPPOSITION : 0",
-   "comic_action": "Une urne interne ne contient qu'un seul bulletin.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "DERNIER HABITANT : TRIÉ",
+   "comic_action": "Le dernier habitant grimpe dans le bac jaune.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "clap",
-     "visage": "content"
-    },
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "nod",
-     "visage": "neutre",
-     "quand": 0.3
+     "type": "chien",
+     "tee": "TRIÉ"
     }
    ]
   },
@@ -218,14 +245,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "UNANIMITÉ (À 1)",
-   "comic_action": "Salle vide qui applaudit en playback.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "UNANIMITÉ : 100 %",
+   "comic_action": "Le maire seul sur la place, il s'applaudit.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "bow",
+     "geste": "clap",
      "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "100 % D'ACCORD"
     }
    ]
   },
@@ -242,7 +275,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -250,6 +283,12 @@
      "geste": "point",
      "visage": "sourire_pro",
      "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
     }
    ]
   }
@@ -263,31 +302,13 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 72,
+ "word_count": 79,
  "claims": [
   {
-   "text": "Législatives 2024 : trois députés critiques ne sont pas réinvestis.",
-   "claim_type": "fait_public",
-   "source": "https://www.letemps.ch/monde/europe/a-deux-semaines-des-legislatives-une-purge-au-sein-de-la-france-insoumise-chahute-deja-le-nouveau-front-populaire",
-   "note": "Législatives 2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge »."
-  },
-  {
-   "text": "Une sortante parle carrément de « purge ». Ambiance.",
+   "text": "En 2024, trois députés critiques sont écartés. Une sortante parle de « purge ».",
    "claim_type": "citation_exacte",
    "source": "https://www.letemps.ch/monde/europe/a-deux-semaines-des-legislatives-une-purge-au-sein-de-la-france-insoumise-chahute-deja-le-nouveau-front-populaire",
    "note": "Législatives 2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge »."
-  },
-  {
-   "text": "Ruffin prend la porte de lui-même. Divorce consommé.",
-   "claim_type": "fait_public",
-   "source": "https://www.slate.fr/politique/francois-ruffin-jean-luc-melenchon-rupture-divorce-lfi-france-insoumise-election-presidentielle-2027-strategie-gauche",
-   "note": "Ruffin–Mélenchon : « le divorce est désormais consommé »."
-  },
-  {
-   "text": "Pour 2027 : aucune autre candidature proposée, aucune opposition.",
-   "claim_type": "fait_public",
-   "source": "https://www.europe1.fr/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-930947",
-   "note": "Selon la direction de LFI (AFP) : aucune autre candidature proposée, aucune opposition exprimée."
   }
  ],
  "sources": [
@@ -297,22 +318,8 @@
    "consulted": "2026-11-22",
    "statut": "citation_exacte",
    "note": "Législatives 2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge »."
-  },
-  {
-   "url": "https://www.slate.fr/politique/francois-ruffin-jean-luc-melenchon-rupture-divorce-lfi-france-insoumise-election-presidentielle-2027-strategie-gauche",
-   "date": "2025",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Ruffin–Mélenchon : « le divorce est désormais consommé »."
-  },
-  {
-   "url": "https://www.europe1.fr/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-930947",
-   "date": "2026-05-03",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Selon la direction de LFI (AFP) : aucune autre candidature proposée, aucune opposition exprimée."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Le grand ménage. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2024, trois députés critiques sont écartés. Une sortante parle de « purge ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

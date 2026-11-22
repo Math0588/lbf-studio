@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-24",
  "format": "A",
- "title_cover": "Polémiste à vie",
+ "title_cover": "Tous chroniqueurs",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : la télé ne diffuse qu'une chronique.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, même la météo est polémique.",
-  "Zemmourville : le débat ne s'arrête jamais, le score si."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien a un avis.",
+  "Zemmour commentait tout à la télé. La ville commente au lieu de faire.",
+  "Les zemmouriens vont me détester.",
+  "Bienvenue à Zemmourville : tous chroniqueurs.",
+  "Zemmour en une vidéo : tous chroniqueurs."
  ],
  "selected_hook": 0,
  "ending_variants": [
+  "Commenter, il sait. Gagner, c'est une autre émission : zéro député.",
   "Commenter, il sait. Gagner, c'est une autre émission.",
-  "Champion du plateau, recalé de l'urne.",
-  "Un avis par soir, un député jamais."
+  "La ville tombe en ruines. Les débats sont passionnants."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Sur CNews.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien a un avis.",
    "accent_words": [
-    "Sur CNews"
+    "un avis"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "De 2019 à 2021, il commente tout, chaque soir, dans Face à l'info.",
+   "text": "Avant la politique, il commentait tout, chaque soir, à la télé.",
    "accent_words": [
-    "chaque soir"
+    "la télé"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, la télé est un parchemin. Mais l'émission ne s'arrête jamais.",
+   "text": "La ville s'y met : on commente au lieu de faire.",
    "accent_words": [
-    "jamais"
+    "de faire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le présentateur météo fait une chronique sur le déclin des nuages.",
+   "text": "Les pompiers commentent l'incendie. Les maçons commentent le mur.",
    "accent_words": [
-    "déclin des nuages"
+    "le mur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le polémiste devient candidat, puis chef de parti. Sans député.",
+   "text": "La ville tombe en ruines. Les débats sont passionnants.",
    "accent_words": [
-    "Sans député"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n6",
-   "text": "Commenter, il sait. Gagner, c'est une autre émission.",
-   "accent_words": [
-    "une autre émission"
+    "Les débats sont passionnants"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui a un avis sur tout, même sur la météo.",
+   "id": "n6",
+   "text": "Commenter, il sait. Gagner, c'est une autre émission : zéro député.",
    "accent_words": [
-    "la météo"
+    "zéro député"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui commente le match sans jamais jouer.",
+   "accent_words": [
+    "jamais jouer"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "screen",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un salon : la télé est un parchemin déroulé dans un cadre.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · TOUS CHRONIQUEURS",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "COMMENTEZ, NE FAITES RIEN"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,12 +124,26 @@
    "camera": "closeup",
    "set": [
     "screen",
-    "tripod_camera",
-    "studio_light"
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "CHAQUE SOIR",
-   "comic_action": "Plateau rétro : un fauteuil, un projecteur, une horloge bloquée sur 19 h.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "CHRONIQUE CHAQUE SOIR",
+   "comic_action": "Le maire derrière un bureau de plateau télé.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "COMMENTEZ, NE FAITES RIEN"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,43 +152,83 @@
    ],
    "camera": "orbit",
    "set": [
-    "scroll",
-    "screen",
-    "person"
+    "road",
+    "person",
+    "tripod_camera"
    ],
-   "onscreen_text": "ÉMISSION : ∞",
-   "comic_action": "Orbite autour du parchemin qui se déroule hors du cadre, jusque dans la rue.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TOUT LE MONDE COMMENTE",
+   "comic_action": "Des habitants parlent face caméra au lieu de travailler.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ACTION : 0"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
+    "building",
+    "car",
     "person"
    ],
-   "onscreen_text": "MÉTÉO : DÉCLIN",
-   "comic_action": "Carte météo : chaque nuage porte une étiquette « C'ÉTAIT MIEUX AVANT ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "POMPIERS : EN PLATEAU",
+   "comic_action": "Des pompiers débattent devant une maison qui fume.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cross_arms",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CHRONIQUEUR"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "person",
-    "tribune",
-    "sign"
+    "facade_row",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "DÉPUTÉS : 0",
-   "comic_action": "Travelling : le chroniqueur passe d'un fauteuil de plateau à une tribune vide.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "RUINES · DÉBAT EXCELLENT",
+   "comic_action": "Façades effondrées, panel souriant au premier plan.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "AUDIENCE : RECORD"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -161,12 +238,25 @@
    "camera": "descend",
    "set": [
     "screen",
-    "building",
+    "banner",
     "text3d"
    ],
-   "onscreen_text": "GAGNER : AUTRE CHAÎNE",
-   "comic_action": "Plan large : toutes les fenêtres montrent la même chronique, la mairie est vide.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "DÉPUTÉS : 0",
+   "comic_action": "Le générique de fin défile sur un hémicycle vide.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FIN DE L'ÉMISSION"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,33 +270,47 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique change de chaîne, c'est la même.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui a un avis sur tout, même sur la météo."
+  "text": "Envoie ça au pote qui commente le match sans jamais jouer."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 77,
+ "word_count": 76,
  "claims": [
   {
-   "text": "De 2019 à 2021, il commente tout, chaque soir, dans Face à l'info.",
+   "text": "Avant la politique, il commentait tout, chaque soir, à la télé.",
    "claim_type": "fait_public",
    "source": "https://www.slate.fr/story/199107/eric-zemmour-cnews-face-a-linfo-emission-transformation-paysage-mediatique-succes-avenir-medias",
-   "note": "Chroniqueur quotidien de Face à l'info (CNews, 2019-2021), « le polémiste »."
+   "note": "Chroniqueur quotidien de Face à l'info (CNews, 2019-2021), « le polémiste » ; avant : Ça se dispute, Zemmour et Naulleau."
   },
   {
-   "text": "Le polémiste devient candidat, puis chef de parti. Sans député.",
+   "text": "Commenter, il sait. Gagner, c'est une autre émission : zéro député.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/jean-luc-mano-zemmour-est-passe-du-statut-de-chroniqueur-a-un-homme-politique-qui",
-   "note": "Du chroniqueur au chef de parti ; aucun député après 2022."
+   "note": "Du chroniqueur au chef de parti ; aucun député après les législatives 2022."
   }
  ],
  "sources": [
@@ -215,16 +319,16 @@
    "date": "2021-01",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Chroniqueur quotidien de Face à l'info (CNews, 2019-2021), « le polémiste »."
+   "note": "Chroniqueur quotidien de Face à l'info (CNews, 2019-2021), « le polémiste » ; avant : Ça se dispute, Zemmour et Naulleau."
   },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/jean-luc-mano-zemmour-est-passe-du-statut-de-chroniqueur-a-un-homme-politique-qui",
    "date": "2022",
    "consulted": "2026-11-22",
-   "statut": "fait + opinion",
-   "note": "Du chroniqueur au chef de parti ; aucun député après 2022."
+   "statut": "fait",
+   "note": "Du chroniqueur au chef de parti ; aucun député après les législatives 2022."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le chroniqueur de Face à l'info devenu chef de parti sans député. Cadre : la télé en parchemin. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Avant la politique, il commentait tout, chaque soir, à la télé. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

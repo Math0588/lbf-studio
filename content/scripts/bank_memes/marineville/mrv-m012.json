@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m012",
  "format": "A",
- "anchor": "octobre 2025 : arrivée à Matignon avec un chaton dans une caisse ; aux entretiens d'embauche, on fait pareil.",
- "situation": "Embauché : le chaton",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
- "title_cover": "Embauché : le chaton",
+ "anchor": "son arrivée à Matignon avec un chaton (octobre 2025)",
+ "situation": "Le chaton embauché",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
+ "title_cover": "Le chaton embauché",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, on passe les entretiens d'embauche avec un chaton.",
-  "Marineville : un chaton suffit pour un entretien. Pour gouverner aussi ?",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : embauché : le chaton."
+  "Dans cette ville, tout le monde vote Marine. Chat sous le bras.",
+  "Marineville embauche un chaton chef de service.",
+  "Ici, l'entretien d'embauche se passe avec un chat.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Le chaton embauché."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ici, un chaton suffit pour un entretien. Pour gouverner, apparemment aussi.",
-  "Le recruteur demande ton expérience : tu ouvres la caisse.",
-  "Embauché. Le chaton, lui, devient chef de service."
+  "Marine, diplômée pour travailler avec des chats, le nomme directeur.",
+  "Le chaton, nommé directeur.",
+  "Le chaton est embauché. Il devient chef de service."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -26,13 +26,13 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Chat sous le bras.",
    "accent_words": [
-    "Chat sous le bras"
+    "bras"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Octobre 2025 : elle arrive à Matignon avec un chaton dans une caisse.",
+   "text": "Octobre 2025 : elle se présente à Matignon avec un chaton.",
    "accent_words": [
     "chaton"
    ],
@@ -40,23 +40,23 @@
   },
   {
    "id": "n3",
-   "text": "Elle a même un diplôme pour travailler avec des chats.",
+   "text": "Alors la mairie fait passer les entretiens d'embauche avec un chaton.",
    "accent_words": [
-    "diplôme"
+    "chaton"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, on passe les entretiens pareil. Ton expérience ? Tu ouvres la caisse.",
+   "text": "Le candidat ouvre la caisse. Le jury fond.",
    "accent_words": [
-    "la caisse"
+    "fond"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Embauché. Le chaton, lui, devient chef de service.",
+   "text": "Le chaton est embauché. Il devient chef de service.",
    "accent_words": [
     "chef de service"
    ],
@@ -64,17 +64,17 @@
   },
   {
    "id": "n6",
-   "text": "Ici, un chaton suffit pour un entretien. Pour gouverner, apparemment aussi.",
+   "text": "Marine, diplômée pour travailler avec des chats, le nomme directeur.",
    "accent_words": [
-    "apparemment aussi"
+    "directeur"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
    "text": "Envoie ça au pote qui sort une photo de chat pour éviter une question.",
    "accent_words": [
-    "éviter une question"
+    "question"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,25 +92,53 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une file d'habitants avec des caisses de transport.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "CHAT SOUS LE BRAS",
+   "comic_action": "Descente sur la ville ; banderole « CHAT SOUS LE BRAS » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CHATON"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "table",
-    "screen",
+    "mascot",
+    "person",
     "sign",
-    "building"
+    "text3d"
    ],
-   "onscreen_text": "MATIGNON : 1 CHATON",
-   "comic_action": "Bureau officiel ; une caisse posée sur le dossier.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "CHATON À MATIGNON",
+   "comic_action": "Mascotte chat au premier plan ; panneau « CHATON À MATIGNON ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "visage": "content",
+     "geste": "wave"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -119,46 +147,92 @@
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
-    "table",
+    "mascot",
     "person",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "DIPLÔMÉE : CHATS",
-   "comic_action": "Un diplôme encadré se déroule, tampon en forme de patte.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "ENTRETIEN AVEC CHATON",
+   "comic_action": "Mascotte chat au premier plan ; panneau « ENTRETIEN AVEC CHATON ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CV + CHATON"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "table",
+    "mascot",
     "person",
-    "screen",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "EXPÉRIENCE : MIAOU",
-   "comic_action": "Un recruteur fond devant un chaton en peluche.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LE JURY FOND",
+   "comic_action": "Mascotte chat au premier plan ; panneau « LE JURY FOND ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "visage": "content",
+     "geste": "clap"
+    },
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "mascot",
-    "person",
+    "ground",
+    "mairie",
     "banner",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "CHEF DE SERVICE : LE CHAT",
-   "comic_action": "La mascotte-chat s'installe dans un fauteuil de direction.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CHATON CHEF DE SERVICE",
+   "comic_action": "Descente sur la ville ; banderole « CHATON CHEF DE SERVICE » sur la mairie.",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "clap"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LE CHAT AU POUVOIR"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -167,14 +241,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "GOUVERNER : CHATON ?",
-   "comic_action": "Entre deux colonnes, un chaton en peluche sur un trône. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "CHATON DIRECTEUR",
+   "comic_action": "Plan final, tenir une seconde : « CHATON DIRECTEUR ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "content"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +275,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt brandit son téléphone, photo de chat.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI ESQUIVE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI ESQUIVE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,18 +298,18 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 81,
+ "word_count": 75,
  "claims": [
   {
    "segment": "n2",
-   "text": "Octobre 2025 : elle arrive à Matignon avec un chaton dans une caisse.",
+   "text": "Octobre 2025 : elle se présente à Matignon avec un chaton.",
    "claim_type": "fait_public",
    "source": "https://observatornews.ro/extern/marine-le-pen-a-venit-cu-un-pisoi-la-premierul-frantei-ea-a-decis-sal-salveze-633329.html",
-   "note": "Arrivée à Matignon avec un chaton dans une caisse."
+   "note": "Arrivée à Matignon avec un chaton."
   },
   {
-   "segment": "n3",
-   "text": "Elle a même un diplôme pour travailler avec des chats.",
+   "segment": "n6",
+   "text": "Marine, diplômée pour travailler avec des chats, le nomme directeur.",
    "claim_type": "fait_public",
    "source": "https://uk.news.yahoo.com/marine-le-pen-passes-professional-160314902.html",
    "note": "Diplôme professionnel pour travailler avec des chats ; surnom d'entourage « cat mother »."
@@ -224,17 +320,18 @@
    "url": "https://observatornews.ro/extern/marine-le-pen-a-venit-cu-un-pisoi-la-premierul-frantei-ea-a-decis-sal-salveze-633329.html",
    "date": "2025-10-03",
    "consulted": "2026-11-22",
-   "statut": "fait (dépêche AFP reprise par la presse)",
-   "note": "Arrivée à Matignon avec un chaton dans une caisse."
+   "statut": "fait (presse roumaine, non revérifié en presse française)",
+   "note": "Arrivée à Matignon avec un chaton."
   },
   {
    "url": "https://uk.news.yahoo.com/marine-le-pen-passes-professional-160314902.html",
    "date": "2021-10-14",
    "consulted": "2026-11-22",
-   "statut": "fait (déclaré par l'intéressée) + surnom rapporté",
+   "statut": "fait déclaré + surnom rapporté",
    "note": "Diplôme professionnel pour travailler avec des chats ; surnom d'entourage « cat mother »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = octobre 2025 : arrivée à Matignon avec un chaton dans une caisse ; aux entretiens d'embauche, on fait pareil. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = son arrivée à Matignon avec un chaton (octobre 2025). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ».",
+ "a_verifier": "chaton à Matignon : une seule source étrangère"
 }

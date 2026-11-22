@@ -4,31 +4,31 @@
  "synopsis_id": "mlv-m008-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Il manque 421 420",
- "anchor": "présidentielle 2022 : second tour raté d'environ 421 420 voix.",
+ "title_cover": "Les voix perdues",
+ "anchor": "Les 421 420 voix manquantes de 2022 : la ville part à leur recherche.",
  "meme_id": "MH",
- "situation": "le supermarché",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : il manque toujours 421 420 trucs.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, chaque caddie est à un cheveu d'être complet.",
-  "Mélenchonville : le supermarché du presque."
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien cherche.",
+  "Il manquait 421 420 voix à Mélenchon. La ville les cherche encore.",
+  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
+  "Bienvenue à Mélenchonville : les voix perdues.",
+  "Mélenchon en une vidéo : les voix perdues."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Quatre ans après, la ville recompte encore. Le résultat, lui, n'a pas bougé.",
-  "À un cheveu du second tour, à des kilomètres de l'Élysée.",
-  "On recompte, on recompte, c'est toujours troisième."
+  "Quatre ans après, il relance une campagne pour fouiller plus loin.",
+  "Quatre ans après, il relance une campagne pour fouiller plus loin.",
+  "On vide le lac. Un pédalo, deux caddies, zéro voix."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. À quelques voix près.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien cherche.",
    "accent_words": [
-    "À quelques voix près"
+    "Même le chien cherche"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -36,39 +36,39 @@
    "id": "n2",
    "text": "En 2022, il rate le second tour d'environ 421 420 voix.",
    "accent_words": [
-    "421 420"
+    "420 voix"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, chaque ticket de caisse affiche : moins 421 420.",
+   "text": "La mairie lance une battue géante pour retrouver les voix.",
    "accent_words": [
-    "moins 421 420"
+    "les voix"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le caddie est plein, mais il manque toujours quelque chose.",
+   "text": "On fouille les canapés, les caves, les poches. Trois voix et une télécommande.",
    "accent_words": [
-    "toujours"
+    "une télécommande"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La caissière recompte. Le client recompte. Le rayon recompte.",
+   "text": "On vide le lac. Un pédalo, deux caddies, zéro voix.",
    "accent_words": [
-    "recompte"
+    "zéro voix"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Quatre ans après, la ville recompte encore. Le résultat, lui, n'a pas bougé.",
+   "text": "Quatre ans après, il relance une campagne pour fouiller plus loin.",
    "accent_words": [
-    "n'a pas bougé"
+    "plus loin"
    ],
    "claim_type": "fait_public"
   },
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "shop",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur le supermarché ; enseigne « PRESQUE ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · LES VOIX PERDUES",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "RETROUVEZ NOS VOIX"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,28 +128,54 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
+    "lift_tribune",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "-421 420",
-   "comic_action": "Écran de caisse : un total rouge « -421 420 ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "−421 420 VOIX",
+   "comic_action": "Une tribune bloquée à un cheveu du palier.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "jump",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "RETROUVEZ NOS VOIX"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "form_stack",
-    "text3d"
+    "road",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "TICKET : -421 420",
-   "comic_action": "Un ticket sort, interminable, avec la même ligne en bas.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "BATTUE : 421 420 VOIX",
+   "comic_action": "Ligne d'habitants avec lampes torches dans les rues.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "manif",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RÉCOMPENSE : 1 BAGUETTE"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -135,28 +184,54 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "shop",
+    "building",
     "person",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "IL MANQUE UN TRUC",
-   "comic_action": "Travelling : un client pousse un caddie débordant, fouille, revient en arrière.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TROUVÉ : 3 VOIX",
+   "comic_action": "Un habitant brandit une télécommande poussiéreuse.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "RENIFLEUR"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
-    "person"
+    "fountain",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "RECOMPTAGE",
-   "comic_action": "Orbite autour de la caisse : tout le monde compte sur ses doigts.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LAC : 0 VOIX",
+   "comic_action": "Le lac vidé révèle un pédalo et des caddies.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "VOIX TROUVÉES : 3"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +240,27 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "text3d",
-    "person"
+    "tribune",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "TROISIÈME. TOUJOURS.",
-   "comic_action": "Plan large : l'enseigne « PRESQUE » clignote, le parking est vide.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "4E CAMPAGNE",
+   "comic_action": "Le maire distribue des pelles depuis la tribune.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RECHERCHES : SAISON 4"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +274,23 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique court après un caddie qui s'éloigne.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,7 +302,7 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 77,
+ "word_count": 79,
  "claims": [
   {
    "text": "En 2022, il rate le second tour d'environ 421 420 voix.",
@@ -208,10 +311,10 @@
    "note": "Second tour 2022 raté d'environ 421 420 voix."
   },
   {
-   "text": "Quatre ans après, la ville recompte encore. Le résultat, lui, n'a pas bougé.",
+   "text": "Quatre ans après, il relance une campagne pour fouiller plus loin.",
    "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/premier-tour-decouvrez-les-resultats-definitifs-109262",
-   "note": "Résultats définitifs 2022 : Mélenchon troisième (21,95 %)."
+   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "sources": [
@@ -223,13 +326,13 @@
    "note": "Second tour 2022 raté d'environ 421 420 voix."
   },
   {
-   "url": "https://lcp.fr/actualites/premier-tour-decouvrez-les-resultats-definitifs-109262",
-   "date": "2022-04",
+   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "date": "2026-06",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Résultats définitifs 2022 : Mélenchon troisième (21,95 %)."
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : présidentielle 2022 : second tour raté d'environ 421 420 voix. Cadre : le supermarché. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2022, il rate le second tour d'environ 421 420 voix. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

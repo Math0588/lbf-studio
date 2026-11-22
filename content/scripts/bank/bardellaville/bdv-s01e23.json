@@ -3,19 +3,19 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-23",
  "format": "A",
- "title_cover": "Une heure et demie",
+ "title_cover": "Une file, un maire",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Bardella. Et fait la queue.",
-  "Une heure et demie de queue pour Bardella. Pour un débat ? Zéro.",
   "Bardellaville : la file d'attente a son code postal.",
+  "Ici, on fait la queue pour faire la queue.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Une heure et demie."
+  "Bienvenue à Bardellaville. Au programme : Une file, un maire."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Une heure et demie pour une signature. Un débat ? Celui-là, il l'esquive.",
-  "Une heure et demie pour lui. Zéro minute pour un débat.",
-  "La file avance. Le programme, non."
+  "Au bout, Bardella signe. Le programme, lui, n'est pas en stock.",
+  "Au bout de la file : pas de programme.",
+  "Elle élit son propre maire, qui exige une heure et demie d'attente."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -29,43 +29,43 @@
   },
   {
    "id": "n2",
-   "text": "À la foire de Châlons, près d'une heure et demie d'attente pour une dédicace.",
+   "text": "À Châlons, près d'une heure et demie d'attente pour une dédicace.",
    "accent_words": [
-    "heure et demie"
+    "dédicace"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Une nuée de téléphones levés, des coudes, des selfies, raconte l'AFP.",
+   "text": "Alors on fait la queue pour faire la queue.",
    "accent_words": [
-    "selfies"
+    "queue"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Au Salon de l'agriculture, même sans vaches, la file à selfies tient bon.",
+   "text": "La file devient si longue qu'elle a son code postal.",
    "accent_words": [
-    "selfies"
+    "code postal"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Prochaine étape : la file classée monument historique.",
+   "text": "Elle élit son propre maire, qui exige une heure et demie d'attente.",
    "accent_words": [
-    "monument historique"
+    "attente"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Une heure et demie pour une signature. Un débat ? Celui-là, il l'esquive.",
+   "text": "Au bout, Bardella signe. Le programme, lui, n'est pas en stock.",
    "accent_words": [
-    "l'esquive"
+    "programme"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
@@ -91,7 +91,7 @@
    ],
    "onscreen_text": "FILE D'ATTENTE",
    "comic_action": "Descente sur la ville ; banderole « FILE D'ATTENTE » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "foule",
@@ -101,6 +101,12 @@
     {
      "who": "perso",
      "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
     }
    ]
   },
@@ -118,7 +124,7 @@
    ],
    "onscreen_text": "1 H 30 POUR UNE DÉDICACE",
    "comic_action": "Travelling sur une file de téléphones levés ; banderole « 1 H 30 POUR UNE DÉDICACE ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -130,7 +136,8 @@
      "who": "foule",
      "geste": "jump"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -144,19 +151,24 @@
     "banner",
     "ring_light"
    ],
-   "onscreen_text": "COUDES ET SELFIES",
-   "comic_action": "Travelling sur une file de téléphones levés ; banderole « COUDES ET SELFIES ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "QUEUE POUR LA QUEUE",
+   "comic_action": "Travelling sur une file de téléphones levés ; banderole « QUEUE POUR LA QUEUE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
      "who": "foule",
-     "objet": "phone",
-     "geste": "jump"
+     "visage": "fatigue"
     },
     {
      "who": "perso",
-     "geste": "fall",
-     "visage": "choque"
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ATTENTE : 1 H 30"
     }
    ]
   },
@@ -165,34 +177,6 @@
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
-   "set": [
-    "ground",
-    "person",
-    "ring_light",
-    "banner"
-   ],
-   "onscreen_text": "SALON : 0 VACHE, 1000 SELFIES",
-   "comic_action": "Allées du Salon : perches à selfie levées ; banderole « SALON : 0 VACHE, 1000 SELFIES ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
-   "actions": [
-    {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro",
-     "objet": "ring_light"
-    },
-    {
-     "who": "foule",
-     "geste": "cheer"
-    }
-   ]
-  },
-  {
-   "id": "s5",
-   "narration_ids": [
-    "n5"
-   ],
    "camera": "window_pass",
    "set": [
     "facade_row",
@@ -200,9 +184,9 @@
     "text3d",
     "person"
    ],
-   "onscreen_text": "FILE CLASSÉE MONUMENT",
-   "comic_action": "Rangée de façades : enseigne « FILE CLASSÉE MONUMENT ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "LA FILE A SON CODE POSTAL",
+   "comic_action": "Rangée de façades : enseigne « LA FILE A SON CODE POSTAL ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
      "who": "foule",
@@ -210,10 +194,38 @@
     },
     {
      "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "lift_tribune",
+    "banner",
+    "person"
+   ],
+   "onscreen_text": "LA FILE ÉLIT SON MAIRE",
+   "comic_action": "Meeting : la tribune s'élève, banderole « LA FILE ÉLIT SON MAIRE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
      "geste": "facepalm",
      "visage": "fatigue"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -227,9 +239,9 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "DÉBAT : 0 MINUTE",
-   "comic_action": "Plan final, tenir une seconde : « DÉBAT : 0 MINUTE ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "PROGRAMME : RUPTURE",
+   "comic_action": "Plan final, tenir une seconde : « PROGRAMME : RUPTURE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
@@ -238,10 +250,11 @@
     },
     {
      "who": "perso",
-     "geste": "facepalm",
+     "geste": "cross_arms",
      "visage": "colere"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -257,7 +270,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE DANS LA FILE",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE DANS LA FILE ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -265,7 +278,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -277,35 +291,14 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 85,
+ "word_count": 79,
  "claims": [
   {
    "segment": "n2",
-   "text": "À la foire de Châlons, près d'une heure et demie d'attente pour une dédicace.",
+   "text": "À Châlons, près d'une heure et demie d'attente pour une dédicace.",
    "claim_type": "fait_public",
    "source": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
    "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
-  },
-  {
-   "segment": "n3",
-   "text": "Une nuée de téléphones levés, des coudes, des selfies, raconte l'AFP.",
-   "claim_type": "fait_public",
-   "source": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
-   "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
-  },
-  {
-   "segment": "n4",
-   "text": "Au Salon de l'agriculture, même sans vaches, la file à selfies tient bon.",
-   "claim_type": "fait_public",
-   "source": "https://www.lagazettefrance.fr/article/le-pen-bardella-le-relais-de-la-flamme",
-   "note": "Salon de l'agriculture 2026, sans vaches (épidémie) : selfies à la chaîne dans les allées."
-  },
-  {
-   "segment": "n6",
-   "text": "Une heure et demie pour une signature. Un débat ? Celui-là, il l'esquive.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
-   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   }
  ],
  "sources": [
@@ -315,22 +308,8 @@
    "consulted": "2026-11-22",
    "statut": "fait (AFP)",
    "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
-  },
-  {
-   "url": "https://www.lagazettefrance.fr/article/le-pen-bardella-le-relais-de-la-flamme",
-   "date": "2026-02-26",
-   "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
-   "note": "Salon de l'agriculture 2026, sans vaches (épidémie) : selfies à la chaîne dans les allées."
-  },
-  {
-   "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
-   "date": "2024-03-04",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = la Bardellamania : une heure et demie de queue pour une dédicace. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = une heure et demie de queue pour une dédicace à Châlons. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

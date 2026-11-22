@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m003",
  "format": "A",
- "anchor": "« je suis l'oiseau » (Orléans, 2026) : la ville veut se percher, le programme reste en haut de l'arbre.",
- "situation": "Le programme perché",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
- "title_cover": "Le programme perché",
+ "anchor": "« je suis l'oiseau » (Orléans, octobre 2026)",
+ "situation": "Mairie dans un arbre",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
+ "title_cover": "Mairie dans un arbre",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, les bancs du parc sont dans les arbres.",
-  "Marineville : l'oiseau, c'est elle ; les miettes, c'est le programme.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : le programme perché."
+  "Dans cette ville, tout le monde vote Marine. Perchée.",
+  "Marineville : la mairie est dans un arbre.",
+  "Ici, les pigeons signent les dossiers.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Mairie dans un arbre."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "L'oiseau, c'est elle. Les miettes, c'est le programme.",
-  "La mairie distribue des nichoirs à la place des logements.",
-  "Le programme est en haut de l'arbre : personne ne peut le lire."
+  "Marine, perchée, jette des miettes : c'est le programme.",
+  "Les miettes, c'est le programme.",
+  "Les dossiers tombent des branches. Les pigeons les signent."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -40,33 +40,33 @@
   },
   {
    "id": "n3",
-   "text": "Un discours où le mot renaissance revient vingt et une fois.",
+   "text": "Alors la mairie déménage dans un arbre.",
    "accent_words": [
-    "vingt et une fois"
+    "arbre"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, les bancs du parc sont dans les arbres. On y monte à l'échelle.",
+   "text": "Pour un acte de naissance, il faut grimper à l'échelle.",
    "accent_words": [
-    "à l'échelle"
+    "échelle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La mairie distribue des nichoirs à la place des logements.",
+   "text": "Les dossiers tombent des branches. Les pigeons les signent.",
    "accent_words": [
-    "nichoirs"
+    "signent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "L'oiseau, c'est elle. Les miettes, c'est le programme.",
+   "text": "Marine, perchée, jette des miettes : c'est le programme.",
    "accent_words": [
-    "les miettes"
+    "programme"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -74,7 +74,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui attend que ça tombe du ciel.",
    "accent_words": [
-    "du ciel"
+    "ciel"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,25 +92,54 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; un nid géant posé sur le toit.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "PERCHÉE",
+   "comic_action": "Descente sur la ville ; banderole « PERCHÉE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "lift_tribune",
     "tribune",
-    "person",
-    "banner"
+    "lift_tribune",
+    "banner",
+    "person"
    ],
    "onscreen_text": "« JE SUIS L'OISEAU »",
-   "comic_action": "Tribune qui s'élève comme un perchoir.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Meeting : la tribune s'élève, banderole « « JE SUIS L'OISEAU » ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -119,46 +148,87 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "lamp",
+    "tree",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "RENAISSANCE ×21",
-   "comic_action": "L'écran affiche un oiseau qui répète le même mot.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "LA MAIRIE DANS UN ARBRE",
+   "comic_action": "Un oiseau en carton perché sur un lampadaire ; panneau « LA MAIRIE DANS UN ARBRE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MAIRIE : 2E BRANCHE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "tree",
-    "bench",
     "lamp",
-    "person"
+    "tree",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "BANCS : EN HAUTEUR",
-   "comic_action": "Au parc, des bancs accrochés aux branches, échelles posées contre les troncs.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "ACTE DE NAISSANCE : ÉCHELLE",
+   "comic_action": "Un oiseau en carton perché sur un lampadaire ; panneau « ACTE DE NAISSANCE : ÉCHELLE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "fatigue",
+     "geste": "shake"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "lamp",
+    "tree",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "LOGEMENT : NICHOIR",
-   "comic_action": "Rangée de façades : à chaque fenêtre, un nichoir numéroté.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LES PIGEONS SIGNENT",
+   "comic_action": "Un oiseau en carton perché sur un lampadaire ; panneau « LES PIGEONS SIGNENT ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -167,14 +237,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "fountain",
-    "person",
-    "bench",
-    "tree"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "PROGRAMME : MIETTES",
-   "comic_action": "Près de la fontaine, quelques miettes sur une affiche « PROGRAMME ». Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LES MIETTES : LE PROGRAMME",
+   "comic_action": "Plan final, tenir une seconde : « LES MIETTES : LE PROGRAMME ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +271,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt regarde le ciel, bouche ouverte.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI ATTEND",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI ATTEND ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,21 +294,14 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 73,
+ "word_count": 65,
  "claims": [
   {
    "segment": "n2",
-   "text": "« je suis l'oiseau »",
+   "text": "Octobre 2026, à Orléans : « je suis l'oiseau ».",
    "claim_type": "citation_exacte",
    "source": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
    "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
-  },
-  {
-   "segment": "n3",
-   "text": "Un discours où le mot renaissance revient vingt et une fois.",
-   "claim_type": "fait_public",
-   "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
-   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
   }
  ],
  "sources": [
@@ -224,17 +309,10 @@
    "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
    "date": "2026-10-29",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (meeting d'Orléans, 25/10/2026) + fait (affiche)",
+   "statut": "citation exacte",
    "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
-  },
-  {
-   "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
-   "date": "2026-10-25",
-   "consulted": "2026-11-22",
-   "statut": "fait public (analyse lexicale)",
-   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « je suis l'oiseau » (Orléans, 2026) : la ville veut se percher, le programme reste en haut de l'arbre. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « je suis l'oiseau » (Orléans, octobre 2026). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

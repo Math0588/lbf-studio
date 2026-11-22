@@ -5,78 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Vacances impériales",
- "anchor": "l'admiration pour Napoléon : des vacances qui finissent en exil.",
+ "anchor": "L'admiration pour Napoléon : des vacances qui finissent à Sainte-Hélène.",
  "meme_id": "ZO",
- "situation": "les vacances",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : les vacances sont napoléoniennes.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, on bronze à Austerlitz et on finit à Sainte-Hélène.",
-  "Zemmourville : le club de vacances impérial."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien porte un bicorne.",
+  "Zemmour admire Napoléon. Le club de vacances propose la formule Empire.",
+  "Ben voyons, encore une vidéo sur lui.",
+  "Bienvenue à Zemmourville : vacances impériales.",
+  "Zemmour en une vidéo : vacances impériales."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ici, même les vacances finissent en défaite. Comme en avril 2022.",
-  "Austerlitz au départ, Sainte-Hélène à l'arrivée.",
-  "Les vacances de la grandeur se terminent en exil."
+  "Comme sa campagne de 2022 : grandeur au départ, 7 % à l'arrivée.",
+  "Grandeur au départ, 7 % à l'arrivée.",
+  "Le séjour finit à Sainte-Hélène. Sans wifi, sans retour."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. En vacances.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien porte un bicorne.",
    "accent_words": [
-    "En vacances"
+    "un bicorne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Il admire Napoléon. Ici, les vacances se passent à reconstituer ses batailles.",
+   "text": "Il admire Napoléon. Son slogan de 2021 : Impossible n'est pas français.",
    "accent_words": [
-    "ses batailles"
+    "Impossible n'est pas français"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Plage d'Austerlitz le lundi, plage de Wagram le mardi.",
+   "text": "Le club de vacances municipal propose la formule Empire.",
    "accent_words": [
-    "Wagram"
+    "formule Empire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le maire veut corriger l'image : il réserve Sainte-Hélène pour la fin du séjour.",
+   "text": "Lundi Austerlitz, mardi Wagram, mercredi Iéna. Tout le monde est épuisé.",
    "accent_words": [
-    "Sainte-Hélène"
+    "est épuisé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les touristes n'ont pas compris. L'exil, ce n'était pas l'option détente.",
+   "text": "Le séjour finit à Sainte-Hélène. Sans wifi, sans retour.",
    "accent_words": [
-    "l'option détente"
+    "Sans wifi, sans retour"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ici, même les vacances finissent en défaite. Comme en avril 2022.",
+   "text": "Comme sa campagne de 2022 : grandeur au départ, 7 % à l'arrivée.",
    "accent_words": [
-    "avril 2022"
+    "à l'arrivée"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui transforme chaque vacance en reconstitution historique.",
+   "text": "Envoie ça au pote qui organise des vacances trop chargées.",
    "accent_words": [
-    "reconstitution"
+    "trop chargées"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,58 +90,120 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "car",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un camping en forme de bivouac impérial.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · VACANCES IMPÉRIALES",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "VACANCES EMPIRE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "person",
-    "banner",
+    "column",
+    "arch",
     "text3d"
    ],
-   "onscreen_text": "CAMPING IMPÉRIAL",
-   "comic_action": "Orbite : des vacanciers en bicorne autour de canons gonflables.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "NAPOLÉON",
+   "comic_action": "Une affiche de club de vacances à l'effigie impériale.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "VACANCES EMPIRE"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "person",
+    "shop",
     "sign",
-    "road"
+    "person"
    ],
-   "onscreen_text": "LUNDI : AUSTERLITZ",
-   "comic_action": "Travelling : panneaux de plages aux noms de batailles.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "FORMULE EMPIRE",
+   "comic_action": "Brochure : « TOUT COMPRIS, BATAILLES INCLUSES ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FORMULE : 7 JOURS"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "sign",
-    "text3d",
-    "person"
+    "ground",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "FIN : SAINTE-HÉLÈNE",
-   "comic_action": "Gros plan sur un billet de bateau « ALLER SIMPLE ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LUNDI : AUSTERLITZ",
+   "comic_action": "Des vacanciers en tenue d'époque chargent sur la plage.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "manif",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "VACANCIER"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,13 +212,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "person",
-    "bench",
-    "text3d"
+    "sign",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "EXIL ≠ DÉTENTE",
-   "comic_action": "Des vacanciers sur un rocher, valises à la main, mine déconfite.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TERMINUS : SAINTE-HÉLÈNE",
+   "comic_action": "Panneau « SAINTE-HÉLÈNE — PAS DE RETOUR ».",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "WIFI : AUCUN"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +241,26 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
+    "screen",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "AVRIL 2022",
-   "comic_action": "Plan large : le camping se vide, une seule tente reste.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "ARRIVÉE : 7 %",
+   "comic_action": "Le bateau du retour affiche « 7 % ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "7,07 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,14 +274,28 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique troque son bicorne contre un chapeau de paille.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui transforme chaque vacance en reconstitution historique."
+  "text": "Envoie ça au pote qui organise des vacances trop chargées."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -202,13 +305,13 @@
  "word_count": 78,
  "claims": [
   {
-   "text": "Il admire Napoléon. Ici, les vacances se passent à reconstituer ses batailles.",
+   "text": "Il admire Napoléon. Son slogan de 2021 : Impossible n'est pas français.",
    "claim_type": "fait_public",
    "source": "https://fr.timesofisrael.com/de-quelle-extreme-droite-eric-zemmour-est-il-le-nom/",
-   "note": "Admiration revendiquée pour Napoléon ; slogan « Impossible n'est pas français »."
+   "note": "Admiration revendiquée pour Napoléon ; slogan de Villepinte « Impossible n'est pas français »."
   },
   {
-   "text": "Ici, même les vacances finissent en défaite. Comme en avril 2022.",
+   "text": "Comme sa campagne de 2022 : grandeur au départ, 7 % à l'arrivée.",
    "claim_type": "fait_public",
    "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
@@ -220,7 +323,7 @@
    "date": "2021-12",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Admiration revendiquée pour Napoléon ; slogan « Impossible n'est pas français »."
+   "note": "Admiration revendiquée pour Napoléon ; slogan de Villepinte « Impossible n'est pas français »."
   },
   {
    "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
@@ -231,5 +334,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : l'admiration pour Napoléon : des vacances qui finissent en exil. Cadre : les vacances. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Il admire Napoléon. Son slogan de 2021 : Impossible n'est pas français. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

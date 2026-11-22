@@ -5,73 +5,73 @@
  "format": "A",
  "title_cover": "Marche arrière",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : la salle de sport fait reculer.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, le tapis de course remonte le temps.",
-  "Zemmourville : 17, 7, 4. Le seul cardio qui descend."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien recule.",
+  "Zemmour est passé de 17 % à 7 %. La ville a appliqué la courbe.",
+  "Celle-là, Zemmour ne la partagera pas.",
+  "Bienvenue à Zemmourville : marche arrière.",
+  "Zemmour en une vidéo : marche arrière."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Seul exercice réussi : il recule plus vite que la France qu'il décrit.",
-  "Il voulait faire reculer le pays. Il a fait reculer sa courbe.",
-  "Marche arrière enclenchée depuis 2021."
+  "Rentrée 2026 : environ 4 %. Même la marche arrière accélère.",
+  "Rentrée 2026 : environ 4 %. Même la marche arrière accélère.",
+  "Les ascenseurs descendent quand on appuie sur monter."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. En marche arrière.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien recule.",
    "accent_words": [
-    "En marche arrière"
+    "Même le chien recule"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, les tapis de course roulent à l'envers. C'était mieux avant.",
+   "text": "17 % dans un sondage d'octobre 2021, 7 % en avril 2022.",
    "accent_words": [
-    "à l'envers"
+    "avril 2022"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "La mairie applique la courbe : tout recule.",
+   "accent_words": [
+    "tout recule"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Octobre 2021 : 17 % dans un sondage. Avril 2022 : 7 %.",
-   "accent_words": [
-    "7 %"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n4",
-   "text": "Rentrée 2026 : environ 4 %. Le tapis recule encore.",
+   "text": "Les voitures roulent en marche arrière. Les tapis de course aussi.",
    "accent_words": [
-    "recule encore"
+    "course aussi"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le coach appelle ça un retour aux sources. La courbe appelle ça une chute.",
+   "text": "Les ascenseurs descendent quand on appuie sur monter.",
    "accent_words": [
-    "une chute"
+    "sur monter"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Seul exercice réussi : il recule plus vite que la France qu'il décrit.",
+   "text": "Rentrée 2026 : environ 4 %. Même la marche arrière accélère.",
    "accent_words": [
-    "recule plus vite"
+    "arrière accélère"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui fait du sport à reculons.",
+   "text": "Envoie ça au pote qui recule pour mieux sauter, et ne saute jamais.",
    "accent_words": [
-    "à reculons"
+    "saute jamais"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,57 +85,120 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une salle de sport : tous les tapis roulent à l'envers.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · MARCHE ARRIÈRE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "EN ARRIÈRE, TOUTE !"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "person",
-    "sign",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "TAPIS : MARCHE ARRIÈRE",
-   "comic_action": "Travelling : des sportifs courent à reculons, sourire aux lèvres.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "17 % → 7 %",
+   "comic_action": "Une flèche géante pointe vers l'arrière.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "EN ARRIÈRE, TOUTE !"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
-    "text3d"
+    "mairie",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "17 → 7",
-   "comic_action": "L'écran du tapis affiche une pente descendante.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "TOUT RECULE",
+   "comic_action": "Panneau officiel « SENS UNIQUE : EN ARRIÈRE ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "nod",
+     "visage": "neutre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SENS : ARRIÈRE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "person",
-    "text3d"
+    "road",
+    "car",
+    "person"
    ],
-   "onscreen_text": "→ 4",
-   "comic_action": "Orbite : le tapis accélère en arrière, le coureur s'accroche.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "VOITURES : EN ARRIÈRE",
+   "comic_action": "Embouteillage de voitures qui reculent.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "À RECULONS"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -144,13 +207,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "person",
-    "text3d",
-    "sign"
+    "lift_tribune",
+    "building",
+    "text3d"
    ],
-   "onscreen_text": "RETOUR AUX SOURCES",
-   "comic_action": "Le coach montre fièrement un graphique qui plonge.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "ASCENSEUR : ↓",
+   "comic_action": "Un habitant appuie sur « monter », la cabine plonge.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ÉTAGE : −3"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -159,13 +235,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
+    "screen",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "RECORD : RECUL",
-   "comic_action": "Plan large : la salle entière glisse en arrière dans la rue.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "2026 : 4 %",
+   "comic_action": "La flèche arrière clignote plus vite.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "4 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -179,30 +268,50 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique sort de la salle en marche arrière.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui fait du sport à reculons."
+  "text": "Envoie ça au pote qui recule pour mieux sauter, et ne saute jamais."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 82,
+ "word_count": 75,
  "claims": [
   {
-   "text": "Octobre 2021 : 17 % dans un sondage. Avril 2022 : 7 %.",
+   "text": "17 % dans un sondage d'octobre 2021, 7 % en avril 2022.",
    "claim_type": "fait_public",
    "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
-   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour. / Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
   },
   {
-   "text": "Rentrée 2026 : environ 4 %. Le tapis recule encore.",
+   "text": "17 % dans un sondage d'octobre 2021, 7 % en avril 2022.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  },
+  {
+   "text": "Rentrée 2026 : environ 4 %. Même la marche arrière accélère.",
    "claim_type": "fait_public",
    "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
    "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
@@ -227,10 +336,10 @@
    "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
    "date": "2026-09",
    "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
+   "statut": "fait",
    "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : la courbe en marche arrière : 17 % (2021), 7 % (2022), environ 4 % (2026). Cadre : la salle de sport. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : 17 % dans un sondage d'octobre 2021, 7 % en avril 2022. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

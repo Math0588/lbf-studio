@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-21",
  "format": "A",
- "title_cover": "Bibliographie faire-part",
+ "title_cover": "Lecture obligatoire",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le circuit touristique passe par ses livres.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, la visite guidée a des titres de faire-part.",
-  "Zemmourville : le tourisme de la mélancolie."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien soupire.",
+  "Les livres de Zemmour sont au programme de l'école. Ça s'est mal passé.",
+  "Attention : vidéo garantie sans nostalgie. Presque.",
+  "Bienvenue à Zemmourville : lecture obligatoire.",
+  "Zemmour en une vidéo : lecture obligatoire."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Mélancolie, suicide, destin, dernier mot : bibliographie ou faire-part ?",
-  "Quatre livres, quatre enterrements, un seul auteur.",
-  "Le guide pleure à chaque étape. Le libraire, non."
+  "Mélancolie, destin, dernier mot… et à la fin, 7 %.",
+  "Mélancolie, destin, dernier mot… et à la fin, 7 %.",
+  "Les profs démissionnent en alexandrins. La cantine sert de la madeleine."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Visite guidée.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien soupire.",
    "accent_words": [
-    "Visite guidée"
+    "Même le chien soupire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le circuit suit ses livres. Étape une : Mélancolie française, 2010.",
+   "text": "Ses livres : Mélancolie française, Destin français, La France n'a pas dit son dernier mot.",
    "accent_words": [
-    "Mélancolie française"
+    "dernier mot"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Étape deux : le pavé du déclin, 2014. Le guide baisse la voix.",
+   "text": "La mairie les met au programme de l'école. Lecture obligatoire.",
    "accent_words": [
-    "baisse la voix"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "Étape trois : Destin français, 2018. On sent que ça finit mal.",
-   "accent_words": [
-    "ça finit mal"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n5",
-   "text": "Étape quatre : La France n'a pas dit son dernier mot. Si : sept pour cent.",
-   "accent_words": [
-    "sept pour cent"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n6",
-   "text": "Mélancolie, déclin, destin, dernier mot : bibliographie ou faire-part ?",
-   "accent_words": [
-    "faire-part"
+    "Lecture obligatoire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui offre des livres déprimants à chaque anniversaire.",
+   "id": "n4",
+   "text": "Les élèves reviennent mélancoliques. La récré devient un salon de thé triste.",
    "accent_words": [
-    "déprimants"
+    "thé triste"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Les profs démissionnent en alexandrins. La cantine sert de la madeleine.",
+   "accent_words": [
+    "la madeleine"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Mélancolie, destin, dernier mot… et à la fin, 7 %.",
+   "accent_words": [
+    "7 %"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui offre des livres déprimants à Noël.",
+   "accent_words": [
+    "à Noël"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,58 +85,120 @@
    "camera": "descend",
    "set": [
     "ground",
-    "arch",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une arche « CIRCUIT DES REGRETS ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · LECTURE OBLIGATOIRE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "LISEZ, SOUPIREZ"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "arch",
-    "sign",
-    "person"
+    "scroll",
+    "table",
+    "text3d"
    ],
-   "onscreen_text": "ÉTAPE 1 : MÉLANCOLIE",
-   "comic_action": "Travelling : un guide en costume d'époque lève son parapluie.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "MÉLANCOLIE · DESTIN · DERNIER MOT",
+   "comic_action": "Trois livres empilés sur un pupitre.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LISEZ, SOUPIREZ"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "column",
-    "sign",
+    "building",
+    "form_stack",
     "person"
    ],
-   "onscreen_text": "ÉTAPE 2",
-   "comic_action": "Devant une colonne, le guide chuchote, les touristes se penchent.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PROGRAMME SCOLAIRE",
+   "comic_action": "Un cartable déborde de livres tristes.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "DEVOIRS : 500 PAGES"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "fountain",
-    "text3d",
-    "person"
+    "bench",
+    "person",
+    "tree"
    ],
-   "onscreen_text": "ÉTAPE 3 : DESTIN",
-   "comic_action": "Orbite autour d'une fontaine à sec.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "RÉCRÉ MÉLANCOLIQUE",
+   "comic_action": "Des élèves sirotent du thé en regardant la pluie.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "TRISTE"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -145,13 +207,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "text3d",
-    "person"
+    "table",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "ÉTAPE 4 : 7 %",
-   "comic_action": "Un panneau « DERNIER MOT » ; dessous, quelqu'un a gribouillé « 7 % ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "CANTINE : MADELEINE",
+   "comic_action": "Plateaux-repas avec une seule madeleine.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MENU : MADELEINE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +235,26 @@
    ],
    "camera": "descend",
    "set": [
-    "arch",
-    "scroll",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "BIBLIOGRAPHIE = FAIRE-PART",
-   "comic_action": "Plan large : le parchemin de la ville se déroule comme un faire-part bordé de gris.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "FIN : 7 %",
+   "comic_action": "Dernière page d'un livre : « 7 % ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ÉPILOGUE : 7 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,45 +268,59 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique offre un pavé, emballé.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui offre des livres déprimants à chaque anniversaire."
+  "text": "Envoie ça au pote qui offre des livres déprimants à Noël."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 84,
+ "word_count": 81,
  "claims": [
   {
-   "text": "Le circuit suit ses livres. Étape une : Mélancolie française, 2010.",
+   "text": "Ses livres : Mélancolie française, Destin français, La France n'a pas dit son dernier mot.",
    "claim_type": "fait_public",
    "source": "https://www.critiqueslibres.com/i.php/vcrit/22535",
    "note": "Livre « Mélancolie française » (2010)."
   },
   {
-   "text": "Étape deux : Le Suicide français, 2014. Le guide baisse la voix.",
-   "claim_type": "fait_public",
-   "source": "https://actualitte.com/article/46032/numerique/le-suicide-francais-d-039-eric-zemmour-n-039-en-finit-pas-de-declencher-des-remous",
-   "note": "Le Suicide français (2014) : plus de 500 pages, best-seller."
-  },
-  {
-   "text": "Étape trois : Destin français, 2018. On sent que ça finit mal.",
+   "text": "Ses livres : Mélancolie française, Destin français, La France n'a pas dit son dernier mot.",
    "claim_type": "fait_public",
    "source": "https://search.worldcat.org/oclc/1052509571",
    "note": "Livre « Destin français » (Albin Michel, 2018)."
   },
   {
-   "text": "Étape quatre : La France n'a pas dit son dernier mot. Si : sept pour cent.",
+   "text": "Ses livres : Mélancolie française, Destin français, La France n'a pas dit son dernier mot.",
    "claim_type": "fait_public",
    "source": "https://www.fnac.com/a16213716/Eric-Zemmour-La-France-n-a-pas-dit-son-dernier-mot",
-   "note": "Livre « La France n'a pas dit son dernier mot » (2021). / Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+   "note": "Livre « La France n'a pas dit son dernier mot » (2021)."
+  },
+  {
+   "text": "Mélancolie, destin, dernier mot… et à la fin, 7 %.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
@@ -228,13 +330,6 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Livre « Mélancolie française » (2010)."
-  },
-  {
-   "url": "https://actualitte.com/article/46032/numerique/le-suicide-francais-d-039-eric-zemmour-n-039-en-finit-pas-de-declencher-des-remous",
-   "date": "2014-10",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Le Suicide français (2014) : plus de 500 pages, best-seller."
   },
   {
    "url": "https://search.worldcat.org/oclc/1052509571",
@@ -259,5 +354,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : ses titres de livres : mélancolie, suicide, destin, dernier mot. Cadre : le circuit touristique. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Ses livres : Mélancolie française, Destin français, La France n'a pas dit son dernier mot. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

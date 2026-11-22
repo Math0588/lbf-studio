@@ -4,79 +4,79 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Colis : vu",
- "anchor": "image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement de son livre : devenue l'accusé de réception des livreurs.",
+ "title_cover": "Poubelle presse",
+ "anchor": "journalistes refoulés de sa soirée, une tribune dénonce un tri",
  "meme_key": "VU",
- "situation": "Colis : vu",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "situation": "Poubelle presse",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, ton colis est vu. Pas livré, vu.",
-  "Bardellaville : tout est vu, rien n'arrive.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : colis : vu."
+  "Dans cette ville, tout le monde vote Bardella. Tri sélectif obligatoire.",
+  "Bardellaville : la presse va au bac jaune.",
+  "Ici, le seul journal est la liste des invités.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Poubelle presse."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Tout est vu, rien n'est livré : la mairie appelle ça un programme.",
-  "Ton frigo est livré sur le toit. Tampon : vu.",
-  "Le livreur sonne, tamponne VU sur ton colis, et repart avec."
+  "Bardella répond aux critiques sur X : « Vu et s'en tape ».",
+  "Vu et s'en tape.",
+  "Il ne reste qu'un journal : la liste des invités."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Ton colis : vu.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Tri sélectif obligatoire.",
    "accent_words": [
-    "vu"
+    "sélectif"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Après l'éviction de journalistes, son image sur X : Vu et s'en tape.",
-   "accent_words": [
-    "Vu et s'en tape"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "Une tribune dénonce un tri des journalistes. Ici, on trie les colis pareil.",
+   "text": "Novembre 2026 : journalistes refoulés de sa soirée, une tribune dénonce un tri.",
    "accent_words": [
     "tri"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "Le livreur sonne, tamponne VU sur ton colis, et repart avec.",
+   "id": "n3",
+   "text": "Alors la mairie trie aussi : bac jaune pour la presse, bac vert pour les fans.",
    "accent_words": [
-    "repart avec"
+    "fans"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Les kiosques partent au recyclage, journaux compris.",
+   "accent_words": [
+    "journaux compris"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Ton frigo est livré sur le toit. Tampon : vu.",
+   "text": "Il ne reste qu'un journal : la liste des invités.",
    "accent_words": [
-    "sur le toit"
+    "invités"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Tout est vu, rien n'est livré : la mairie appelle ça un programme.",
+   "text": "Bardella répond aux critiques sur X : « Vu et s'en tape ».",
    "accent_words": [
-    "un programme"
+    "tape"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui laisse tout le monde en vu.",
+   "text": "Envoie ça au pote qui trie ses invités à l'entrée.",
    "accent_words": [
-    "en vu"
+    "entrée"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -94,25 +94,54 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; une montagne de colis tamponnés devant la porte.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "TRI SÉLECTIF",
+   "comic_action": "Descente sur la ville ; banderole « TRI SÉLECTIF » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "TRI"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "table",
-    "form_stack",
-    "text3d",
-    "mairie"
+    "building",
+    "sign",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "VU ET S'EN TAPE",
-   "comic_action": "Un tampon rouge s'abat sur un bordereau de livraison.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "TRI DES JOURNALISTES",
+   "comic_action": "Porte d'entrée gardée ; panneau « TRI DES JOURNALISTES ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -121,14 +150,32 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "person",
     "road",
-    "building",
-    "sign"
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "TRI SÉLECTIF",
-   "comic_action": "Un livreur sépare les colis : « fans » à gauche, « questions » à la benne.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "BAC JAUNE : LA PRESSE",
+   "comic_action": "Dans la rue, panneau « BAC JAUNE : LA PRESSE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BAC JAUNE : PRESSE"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -138,45 +185,83 @@
    "camera": "street_dolly",
    "set": [
     "road",
-    "building",
+    "sign",
     "person",
-    "bin"
+    "traffic_light"
    ],
-   "onscreen_text": "LIVRÉ : NON · VU : OUI",
-   "comic_action": "Un livreur tamponne un carton sur le perron puis le remet dans son camion.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "KIOSQUES RECYCLÉS",
+   "comic_action": "Dans la rue, panneau « KIOSQUES RECYCLÉS ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
-    "facade_row",
-    "facade_set",
+    "building",
+    "sign",
     "person",
     "banner"
    ],
-   "onscreen_text": "FRIGO : SUR LE TOIT",
-   "comic_action": "Façade : un frigo en équilibre sur une gouttière, étiquette « VU ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "UN SEUL JOURNAL",
+   "comic_action": "Porte d'entrée gardée ; panneau « UN SEUL JOURNAL ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    },
+    {
+     "who": "foule",
+     "geste": "nod"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "PROGRAMME : VU",
-   "comic_action": "L'écran affiche une case « LIVRÉ » jamais cochée. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "« VU ET S'EN TAPE »",
+   "comic_action": "Plan final, tenir une seconde : « « VU ET S'EN TAPE » ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -190,35 +275,47 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt regarde son téléphone, message lu, pas de réponse.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE VIDEUR",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE VIDEUR ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui laisse tout le monde en vu."
+  "text": "Envoie ça au pote qui trie ses invités à l'entrée."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 83,
+ "word_count": 80,
  "claims": [
   {
    "segment": "n2",
-   "text": "Après l'éviction de journalistes, son image sur X : Vu et s'en tape.",
+   "text": "Novembre 2026 : journalistes refoulés de sa soirée, une tribune dénonce un tri.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
-   "note": "Image « Vu et s'en tape » publiée après l'éviction de journalistes de la soirée de lancement du livre « Gouverner »."
+   "note": "Image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement du livre « Gouverner » ; reprend un mème préexistant. ; Tribune sur le tri des journalistes autour de la soirée de lancement.",
+   "sources_complementaires": [
+    "https://www.politis.fr/articles/2026/11/sur-le-gril-qui-est-journaliste-du-danger-de-faire-le-tri/"
+   ]
   },
   {
-   "segment": "n3",
-   "text": "Une tribune dénonce un tri des journalistes. Ici, on trie les colis pareil.",
-   "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2026/11/sur-le-gril-qui-est-journaliste-du-danger-de-faire-le-tri/",
-   "note": "Tribune sur le tri des journalistes autour de la soirée de lancement."
+   "segment": "n6",
+   "text": "Bardella répond aux critiques sur X : « Vu et s'en tape ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
+   "note": "Image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement du livre « Gouverner » ; reprend un mème préexistant."
   }
  ],
  "sources": [
@@ -226,17 +323,17 @@
    "url": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
    "date": "2026-11-05",
    "consulted": "2026-11-22",
-   "statut": "fait public (publication X du 04/11/2026) + mème préexistant",
-   "note": "Image « Vu et s'en tape » publiée après l'éviction de journalistes de la soirée de lancement du livre « Gouverner »."
+   "statut": "fait (publication sur X du 04/11/2026) ; texte exact de l'image",
+   "note": "Image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement du livre « Gouverner » ; reprend un mème préexistant."
   },
   {
    "url": "https://www.politis.fr/articles/2026/11/sur-le-gril-qui-est-journaliste-du-danger-de-faire-le-tri/",
    "date": "2026-11",
    "consulted": "2026-11-22",
-   "statut": "opinion",
+   "statut": "opinion (tribune)",
    "note": "Tribune sur le tri des journalistes autour de la soirée de lancement."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement de son livre : devenue l'accusé de réception des livreurs. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = journalistes refoulés de sa soirée, une tribune dénonce un tri. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

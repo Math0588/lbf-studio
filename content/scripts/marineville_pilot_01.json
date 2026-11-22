@@ -3,75 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-01",
  "format": "A",
- "title_cover": "Nouveau nom, même rond",
+ "title_cover": "Nouveau nom chaque semaine",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, on change l'enseigne et on garde la boutique.",
-  "Marineville : nouvel itinéraire, même rond-point.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : nouveau nom, même rond."
+  "Dans cette ville, tout le monde vote Marine. Ville au nom provisoire.",
+  "Marineville change de nom chaque semaine.",
+  "Ici, plus personne ne sait où il habite.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Nouveau nom chaque semaine."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Changer l'enseigne pour garder la boutique : un ravalement, pas une rupture.",
-  "Ici, le rond-point s'appelle Avenue Nouvelle. Il tourne toujours dans le même sens.",
-  "La flamme, elle, reste. On l'a juste rangée dans un rond."
+  "Marine, elle, n'a jamais changé d'adresse : même flamme, même rond.",
+  "Même flamme, même rond.",
+  "Plus personne ne sait où il habite. Le facteur pleure."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine. Le parti a changé de nom.",
+   "text": "Dans cette ville, tout le monde vote Marine. Ville au nom provisoire.",
    "accent_words": [
-    "changé de nom"
+    "provisoire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2018, le Front national devient Rassemblement national.",
+   "text": "En 2018, le Front national devient Rassemblement national. La flamme, elle, reste.",
    "accent_words": [
-    "Rassemblement national"
+    "reste"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "La flamme, elle, reste. On l'a juste rangée dans un rond.",
+   "text": "Alors la ville change de nom aussi. Puis chaque semaine.",
    "accent_words": [
-    "dans un rond"
+    "semaine"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, le rond-point s'appelle Avenue Nouvelle. Il tourne toujours dans le même sens.",
+   "text": "Marineville devient Rassembleville, puis Flammeville, puis Nouvelleville.",
    "accent_words": [
-    "même sens"
+    "Nouvelleville"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le GPS annonce : nouvel itinéraire. Même cercle, même sortie.",
+   "text": "Plus personne ne sait où il habite. Le facteur pleure.",
    "accent_words": [
-    "Même cercle"
+    "pleure"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Changer l'enseigne pour garder la boutique : un ravalement, pas une rupture.",
+   "text": "Marine, elle, n'a jamais changé d'adresse : même flamme, même rond.",
    "accent_words": [
-    "un ravalement"
+    "rond"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
    "text": "Envoie ça au pote qui croit que le RN, c'est plus du tout le FN.",
    "accent_words": [
-    "plus du tout"
+    "FN"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,89 +89,181 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une enseigne neuve vissée par-dessus l'ancienne, qui dépasse.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "NOM PROVISOIRE",
+   "comic_action": "Descente sur la ville ; banderole « NOM PROVISOIRE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    },
+    {
+     "type": "affiche",
+     "texte": "NOUVEAU NOM"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "banner",
+    "arch",
+    "text3d",
+    "facade_set"
    ],
-   "onscreen_text": "FRONT → RASSEMBLEMENT",
-   "comic_action": "Rangée de façades : un ouvrier change trois lettres sur une enseigne.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "FN → RN, MÊME FLAMME",
+   "comic_action": "Sous une arche, on change l'enseigne ; banderole « FN → RN, MÊME FLAMME ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "roundabout",
-    "car_orbit",
-    "road",
-    "sign"
+    "facade_row",
+    "sign",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "FLAMME : RANGÉE",
-   "comic_action": "Orbite autour du rond-point : au centre, une flamme dans un cercle.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "NOUVEAU NOM CHAQUE SEMAINE",
+   "comic_action": "Rangée de façades : enseigne « NOUVEAU NOM CHAQUE SEMAINE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "NOM DE LA SEMAINE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "roundabout",
-    "car_orbit",
-    "road",
-    "sign"
+    "facade_row",
+    "sign",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "AVENUE NOUVELLE (RONDE)",
-   "comic_action": "Un panneau neuf « AVENUE NOUVELLE » ; les voitures continuent de tourner.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "FLAMMEVILLE ? NOUVELLEVILLE ?",
+   "comic_action": "Rangée de façades : enseigne « FLAMMEVILLE ? NOUVELLEVILLE ? ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "gps",
-    "car",
-    "screen",
-    "text3d"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "NOUVEL ITINÉRAIRE : ↻",
-   "comic_action": "Gros plan GPS : la flèche fait le tour du cadran et revient au départ.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LE FACTEUR EST PERDU",
+   "comic_action": "Dans la rue, panneau « LE FACTEUR EST PERDU ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ADRESSE : ?"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "RAVALEMENT ≠ RUPTURE",
-   "comic_action": "Un peintre repeint une façade en bleu ; derrière, rien n'a bougé. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "MÊME FLAMME, MÊME ROND",
+   "comic_action": "Plan final, tenir une seconde : « MÊME FLAMME, MÊME ROND ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +277,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt fait un tour de rond-point de plus.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE CONVAINCU",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE CONVAINCU ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,28 +300,14 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 83,
+ "word_count": 77,
  "claims": [
   {
    "segment": "n2",
-   "text": "En 2018, le Front national devient Rassemblement national.",
+   "text": "En 2018, le Front national devient Rassemblement national. La flamme, elle, reste.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
-   "note": "Le FN devient RN ; la flamme du logo est conservée, rangée dans un cercle."
-  },
-  {
-   "segment": "n3",
-   "text": "La flamme, elle, reste. On l'a juste rangée dans un rond.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
-   "note": "Le FN devient RN ; la flamme du logo est conservée, rangée dans un cercle."
-  },
-  {
-   "segment": "n6",
-   "text": "Changer l'enseigne pour garder la boutique : un ravalement, pas une rupture.",
-   "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
-   "note": "Dédiabolisation = changements cosmétiques, stratégie « veste et cravate »."
+   "note": "Le Front national devient Rassemblement national ; la flamme du logo est conservée, rangée dans un cercle."
   }
  ],
  "sources": [
@@ -228,17 +315,10 @@
    "url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
    "date": "2018-06-01",
    "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Le FN devient RN ; la flamme du logo est conservée, rangée dans un cercle."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
-   "date": "2023-01-25",
-   "consulted": "2026-11-22",
-   "statut": "opinion / analyse (chercheur)",
-   "note": "Dédiabolisation = changements cosmétiques, stratégie « veste et cravate »."
+   "statut": "fait",
+   "note": "Le Front national devient Rassemblement national ; la flamme du logo est conservée, rangée dans un cercle."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = 2018 : le Front national devient Rassemblement national, la flamme du logo est gardée et rangée dans un cercle ; la dédiabolisation lue comme des changements cosmétiques. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = le Front national rebaptisé Rassemblement national (2018), flamme gardée. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

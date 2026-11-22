@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-33",
  "format": "C",
- "title_cover": "Mise à jour ratée",
+ "title_cover": "Cinq élus, un reste",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : chaque mise à jour supprime un allié.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, on fête une élection en virant la tête de liste.",
-  "Zemmourville : le patrimoine, version désinstallée."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien est parti.",
+  "Zemmour avait cinq eurodéputés. Il en reste un. La ville a copié.",
+  "Les zemmouriens vont me détester.",
+  "Bienvenue à Zemmourville : cinq élus, un reste.",
+  "Zemmour en une vidéo : cinq élus, un reste."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Version 2024 : cinq élus au départ, et la tête de liste dehors.",
-  "Cinq pour cent, puis la porte.",
-  "La mise à jour a réussi. L'équipe, non."
+  "Cinq élus, quatre départs : le seul score où il garde 20 %.",
+  "Cinq élus, quatre départs : le seul score où il garde 20 %.",
+  "À la chorale : un chanteur, en canon avec lui-même."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Version 2024.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien est parti.",
    "accent_words": [
-    "Version 2024"
+    "est parti"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Européennes 2024 : sa liste fait 5,47 %. La mise à jour s'installe.",
+   "text": "Européennes 2024 : cinq élus. Quatre s'en vont, il en reste un.",
    "accent_words": [
-    "5,47 %"
+    "reste un"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Trois jours plus tard, la tête de liste est exclue du parti.",
+   "text": "Au foot, la ville applique : onze joueurs, deux à la fin.",
    "accent_words": [
-    "exclue"
+    "la fin"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Il parle de « record du monde de la trahison ». La mise à jour plante.",
+   "text": "Au bus : cinquante passagers, un seul au terminus.",
    "accent_words": [
-    "plante"
+    "au terminus"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Ici, chaque appli supprime ses alliés après une victoire.",
+   "text": "À la chorale : un chanteur, en canon avec lui-même.",
    "accent_words": [
-    "ses alliés"
+    "avec lui-même"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Version 2024 : cinq élus au départ, et la tête de liste dehors.",
+   "text": "Cinq élus, quatre départs : le seul score où il garde 20 %.",
    "accent_words": [
-    "dehors"
+    "20 %"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui se brouille avec tous après une soirée.",
+   "text": "Envoie ça au pote dont le groupe de vacances se vide.",
    "accent_words": [
-    "se brouille"
+    "se vide"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "screen",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un quartier : barre « MISE À JOUR 2024 » sur la façade.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · CINQ ÉLUS, UN RESTE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "TOUS ENSEMBLE (OU PAS)"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,11 +124,25 @@
    "camera": "closeup",
    "set": [
     "screen",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "INSTALLATION : 5,47 %",
-   "comic_action": "Barre de progression qui s'arrête à 5,47 %.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "5 ÉLUS → 1",
+   "comic_action": "Cinq silhouettes, quatre s'éloignent.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUS ENSEMBLE (OU PAS)"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -114,42 +151,83 @@
    ],
    "camera": "orbit",
    "set": [
+    "ground",
     "person",
-    "sign",
     "text3d"
    ],
-   "onscreen_text": "TÊTE DE LISTE : SUPPRIMÉE",
-   "comic_action": "Orbite : une icône de personnage glisse vers la corbeille.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "FOOT : 2 JOUEURS",
+   "comic_action": "Deux joueurs seuls sur un terrain immense.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ÉQUIPE : 2/11"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d"
+    "bus",
+    "road",
+    "person"
    ],
-   "onscreen_text": "RECORD DU MONDE",
-   "comic_action": "Écran bleu rétro : « RECORD DU MONDE DE LA TRAHISON — REDÉMARRER ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "BUS : 1 PASSAGER",
+   "comic_action": "Un bus s'arrête, un seul voyageur descend.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "wave",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "DERNIER"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
+    "tribune",
     "person",
-    "screen",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "CONTACTS SUPPRIMÉS",
-   "comic_action": "Travelling : des habitants voient leurs répertoires se vider.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CHORALE : 1 VOIX",
+   "comic_action": "Un choriste seul sur des gradins vides.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CHORALE : SOLO"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -158,13 +236,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "text3d",
-    "person"
+    "screen",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "5 ÉLUS · 1 DEHORS",
-   "comic_action": "Plan large : la porte de la mairie s'ouvre, un personnage est déposé sur le trottoir.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "1 SUR 5 = 20 %",
+   "comic_action": "Un camembert géant : une seule part reste.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FIDÉLITÉ : 20 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -178,45 +269,53 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique restaure ses contacts.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui se brouille avec tous après une soirée."
+  "text": "Envoie ça au pote dont le groupe de vacances se vide."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 85,
+ "word_count": 80,
  "claims": [
   {
-   "text": "Européennes 2024 : sa liste fait 5,47 %. La mise à jour s'installe.",
+   "text": "Européennes 2024 : cinq élus. Quatre s'en vont, il en reste un.",
    "claim_type": "fait_public",
    "source": "https://wikiwand.com/en/articles/2024_European_Parliament_election_in_France",
    "note": "Européennes 2024 : liste Reconquête 5,47 %, cinq sièges."
   },
   {
-   "text": "Trois jours plus tard, la tête de liste est exclue du parti.",
+   "text": "Européennes 2024 : cinq élus. Quatre s'en vont, il en reste un.",
    "claim_type": "fait_public",
-   "source": "https://www.letemps.ch/monde/europe/eric-zemmour-exclut-marion-marechal-de-reconquete",
-   "note": "Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
+   "source": "https://www.touteleurope.eu/wp-content/uploads/2026/10/Infographie-81-Deputes-europeens-francais-par-groupe-politique-4-pages.pdf",
+   "note": "Après 2024, une seule eurodéputée siège pour Reconquête ; les quatre autres élus de la liste siègent ailleurs."
   },
   {
-   "text": "« record du monde de la trahison »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.letemps.ch/monde/europe/eric-zemmour-exclut-marion-marechal-de-reconquete",
-   "note": "Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
-  },
-  {
-   "text": "Version 2024 : cinq élus au départ, et la tête de liste dehors.",
+   "text": "Cinq élus, quatre départs : le seul score où il garde 20 %.",
    "claim_type": "fait_public",
-   "source": "https://wikiwand.com/en/articles/2024_European_Parliament_election_in_France",
-   "note": "Européennes 2024 : liste Reconquête 5,47 %, cinq sièges. / Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
+   "source": "https://www.touteleurope.eu/wp-content/uploads/2026/10/Infographie-81-Deputes-europeens-francais-par-groupe-politique-4-pages.pdf",
+   "note": "Après 2024, une seule eurodéputée siège pour Reconquête ; les quatre autres élus de la liste siègent ailleurs."
   }
  ],
  "sources": [
@@ -228,13 +327,13 @@
    "note": "Européennes 2024 : liste Reconquête 5,47 %, cinq sièges."
   },
   {
-   "url": "https://www.letemps.ch/monde/europe/eric-zemmour-exclut-marion-marechal-de-reconquete",
-   "date": "2024-06",
+   "url": "https://www.touteleurope.eu/wp-content/uploads/2026/10/Infographie-81-Deputes-europeens-francais-par-groupe-politique-4-pages.pdf",
+   "date": "2026-10",
    "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
+   "statut": "fait",
+   "note": "Après 2024, une seule eurodéputée siège pour Reconquête ; les quatre autres élus de la liste siègent ailleurs."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : européennes 2024 : 5,47 %, puis exclusion de la tête de liste et « record du monde de la trahison ». Cadre : la mise à jour « Patrimoine ». Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Européennes 2024 : cinq élus. Quatre s'en vont, il en reste un. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

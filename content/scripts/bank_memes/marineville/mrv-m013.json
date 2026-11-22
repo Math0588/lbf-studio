@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m013",
  "format": "A",
- "anchor": "octobre 2025 : chaton apporté à Matignon dans une caisse ; 2022, la « campagne chaton » : dans le bus, chacun transporte le sien.",
+ "anchor": "la « campagne chaton » de 2022",
  "situation": "Bus à chatons",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "title_cover": "Bus à chatons",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, le bus transporte quarante caisses et zéro passager assis.",
-  "Marineville : mignon, fermé, et on ne voit rien dedans.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : bus à chatons."
+  "Dans cette ville, tout le monde vote Marine. Le bus miaule.",
+  "Marineville : le bus est rempli de chatons.",
+  "Ici, le contrôleur caresse au lieu de contrôler.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Bus à chatons."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Une politique des transports en caisse : mignonne, fermée, et on ne voit rien dedans.",
-  "Le contrôleur ne vérifie plus les tickets : il caresse.",
-  "Dans le bus, quarante caisses de transport, zéro place assise."
+  "Marine signe le décret : bus gratuit pour les chats. Les humains paient.",
+  "Gratuit pour les chats, payant pour toi.",
+  "Le contrôleur ne vérifie plus les tickets : il caresse."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -26,13 +26,13 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Le bus miaule.",
    "accent_words": [
-    "Le bus miaule"
+    "miaule"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Depuis le chaton apporté à Matignon, chacun transporte le sien.",
+   "text": "En 2022, la presse parle de campagne chaton.",
    "accent_words": [
     "chaton"
    ],
@@ -40,17 +40,17 @@
   },
   {
    "id": "n3",
-   "text": "La presse parlait déjà de campagne chaton en 2022.",
+   "text": "Alors chaque habitant prend le bus avec son chaton.",
    "accent_words": [
-    "campagne chaton"
+    "chaton"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Dans le bus, quarante caisses de transport, zéro place assise.",
+   "text": "Quarante caisses de transport, zéro place assise.",
    "accent_words": [
-    "zéro place assise"
+    "assise"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -58,15 +58,15 @@
    "id": "n5",
    "text": "Le contrôleur ne vérifie plus les tickets : il caresse.",
    "accent_words": [
-    "il caresse"
+    "caresse"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Une politique des transports en caisse : mignonne, fermée, et on ne voit rien dedans.",
+   "text": "Marine signe le décret : bus gratuit pour les chats. Les humains paient.",
    "accent_words": [
-    "rien dedans"
+    "paient"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -74,7 +74,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui emmène son chat partout pour qu'on l'aime.",
    "accent_words": [
-    "qu'on l'aime"
+    "aime"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,41 +92,85 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; un bus garé, des oreilles de chat aux fenêtres.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "LE BUS MIAULE",
+   "comic_action": "Descente sur la ville ; banderole « LE BUS MIAULE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MIAOU"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "bus",
-    "road",
+    "mascot",
     "person",
-    "sign"
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "1 PASSAGER = 1 CHATON",
-   "comic_action": "Un bus bondé de caisses de transport.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "CAMPAGNE CHATON",
+   "comic_action": "Mascotte chat au premier plan ; panneau « CAMPAGNE CHATON ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "visage": "content",
+     "geste": "wave"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "road",
+    "bus",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "CAMPAGNE CHATON (SAISON 2)",
-   "comic_action": "L'écran affiche une affiche de campagne avec un chat.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "BUS + CHATON",
+   "comic_action": "Un bus passe ; son fronton affiche « BUS + CHATON ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "visage": "content"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TICKET CHATON : 0 €"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -136,29 +180,52 @@
    "camera": "street_dolly",
    "set": [
     "road",
-    "building",
+    "bus",
     "person",
-    "bin"
+    "sign"
    ],
-   "onscreen_text": "PLACES : 0",
-   "comic_action": "Travelling le long du bus : des habitants debout, caisses sur les sièges.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "0 PLACE ASSISE",
+   "comic_action": "Un bus passe ; son fronton affiche « 0 PLACE ASSISE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "fatigue",
+     "geste": "shrug"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "table",
+    "road",
+    "bus",
     "person",
-    "screen",
-    "text3d"
+    "sign"
    ],
-   "onscreen_text": "CONTRÔLE : CÂLIN",
-   "comic_action": "Un contrôleur gratte une caisse au lieu de poinçonner un ticket.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LE CONTRÔLEUR CARESSE",
+   "comic_action": "Un bus passe ; son fronton affiche « LE CONTRÔLEUR CARESSE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "clap"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -167,14 +234,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "CONTENU : ?",
-   "comic_action": "Entre deux colonnes, une caisse de transport cadenassée. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "CHATS GRATUITS, HUMAINS PAYANTS",
+   "comic_action": "Plan final, tenir une seconde : « CHATS GRATUITS, HUMAINS PAYANTS ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +268,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt promène une caisse vide.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE AU CHAT",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE AU CHAT ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,18 +291,11 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 77,
+ "word_count": 70,
  "claims": [
   {
    "segment": "n2",
-   "text": "Depuis le chaton apporté à Matignon, chacun transporte le sien.",
-   "claim_type": "fait_public",
-   "source": "https://observatornews.ro/extern/marine-le-pen-a-venit-cu-un-pisoi-la-premierul-frantei-ea-a-decis-sal-salveze-633329.html",
-   "note": "Arrivée à Matignon avec un chaton dans une caisse."
-  },
-  {
-   "segment": "n3",
-   "text": "La presse parlait déjà de campagne chaton en 2022.",
+   "text": "En 2022, la presse parle de campagne chaton.",
    "claim_type": "fait_public",
    "source": "https://thenationalnews.com/world/europe/2022/04/22/who-is-marine-le-pen-the-far-right-candidate-who-has-led-a-kitten-campaign",
    "note": "« Kitten campaign » : campagne chaton de 2022, ton adouci."
@@ -221,20 +303,13 @@
  ],
  "sources": [
   {
-   "url": "https://observatornews.ro/extern/marine-le-pen-a-venit-cu-un-pisoi-la-premierul-frantei-ea-a-decis-sal-salveze-633329.html",
-   "date": "2025-10-03",
-   "consulted": "2026-11-22",
-   "statut": "fait (dépêche AFP reprise par la presse)",
-   "note": "Arrivée à Matignon avec un chaton dans une caisse."
-  },
-  {
    "url": "https://thenationalnews.com/world/europe/2022/04/22/who-is-marine-le-pen-the-far-right-candidate-who-has-led-a-kitten-campaign",
    "date": "2022-04-22",
    "consulted": "2026-11-22",
-   "statut": "mème de presse (surnom)",
+   "statut": "mème de presse",
    "note": "« Kitten campaign » : campagne chaton de 2022, ton adouci."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = octobre 2025 : chaton apporté à Matignon dans une caisse ; 2022, la « campagne chaton » : dans le bus, chacun transporte le sien. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = la « campagne chaton » de 2022. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

@@ -3,33 +3,33 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-31",
  "format": "A",
- "title_cover": "Planète great again",
+ "title_cover": "Forêt en carton",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "2017, face à Trump, il lance : « Make our planet great again ».",
+  "2017, face à Trump : « Make our planet great again ».",
   "Les électeurs de Macron vont détester celle-là.",
-  "Planète great again : l'histoire en trente secondes.",
-  "Dans cette ville, tout le monde vote Macron. In English, please."
+  "Forêt en carton : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Les poubelles trient en anglais."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Make our planet great again : au moins, le slogan était bio.",
-  "Il a sauvé la planète en anglais. En français, ça traîne.",
-  "Puis la Convention climat, reprise « sans filtre ». Le filtre est arrivé."
+  "Le maire pose devant les ruines. Le slogan, lui, reste recyclable.",
+  "Il a sauvé la planète en anglais. En vrai, c'était du carton.",
+  "Il pleut. La forêt en carton s'effondre sur la piste cyclable promise."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. In English, please.",
+   "text": "Dans cette ville, tout le monde vote Macron. Les poubelles trient en anglais.",
    "accent_words": [
-    "please"
+    "anglais"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "2017, face à Trump, il lance : « Make our planet great again ».",
+   "text": "2017, face à Trump : « Make our planet great again ».",
    "accent_words": [
     "again"
    ],
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "Même année, il promet le glyphosate interdit sous trois ans.",
+   "text": "La mairie lance l'écologie version slogan : chaque arbre reçoit un hashtag.",
    "accent_words": [
-    "ans"
+    "hashtag"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "2019 : finalement, on n'y arrivera pas. La planète attendra.",
+   "text": "Pas d'argent pour planter ? On imprime des arbres en photo, grandeur nature.",
    "accent_words": [
-    "attendra"
+    "nature"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Puis la Convention climat, reprise « sans filtre ». Le filtre est arrivé.",
+   "text": "Il pleut. La forêt en carton s'effondre sur la piste cyclable promise.",
    "accent_words": [
-    "arrivé"
+    "promise"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Make our planet great again : au moins, le slogan était bio.",
+   "text": "Le maire pose devant les ruines. Le slogan, lui, reste recyclable.",
    "accent_words": [
-    "bio"
+    "recyclable"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui trie ses déchets puis prend l'avion pour Bali.",
+   "text": "Envoie ça au pote écolo qui part à Bali en avion.",
    "accent_words": [
-    "Bali"
+    "avion"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -91,7 +91,7 @@
     "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la ville ; banderole « PLANÈTE GREAT AGAIN » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "comic_action": "Descente sur la ville ; banderole « FORÊT EN CARTON » sur la mairie ; le maire caricaturé salue, sourire figé.",
    "expected_result": "La ville et le thème posés en une image.",
    "actions": [
     {
@@ -105,6 +105,16 @@
      "geste": "clap",
      "visage": "neutre",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "FORÊT EN CARTON"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
     }
    ]
   },
@@ -120,8 +130,8 @@
     "text3d"
    ],
    "onscreen_text": "MAKE OUR PLANET GREAT AGAIN",
-   "comic_action": "Le maire face caméra, slogan en anglais sur écran géant, globe terrestre en mousse sous le bras.",
-   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "comic_action": "Le maire face caméra, globe en mousse sous le bras, slogan géant derrière lui.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
    "actions": [
     {
      "who": "maire",
@@ -135,6 +145,12 @@
      "visage": "content",
      "quand": 0.4
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "GREAT AGAIN"
+    }
    ]
   },
   {
@@ -144,13 +160,13 @@
    ],
    "camera": "closeup",
    "set": [
-    "ground",
+    "tree",
     "sign",
     "text3d"
    ],
-   "onscreen_text": "GLYPHOSATE : 3 ANS",
-   "comic_action": "Il plante un panneau « INTERDIT DANS 3 ANS » dans un champ.",
-   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "onscreen_text": "#ARBRE",
+   "comic_action": "Un agent colle des étiquettes hashtag sur chaque arbre.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
    "actions": [
     {
      "who": "maire",
@@ -160,9 +176,15 @@
     },
     {
      "who": "perso",
-     "geste": "clap",
-     "visage": "content",
-     "quand": 0.5
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "HASHTAG 500 €"
     }
    ]
   },
@@ -173,25 +195,31 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "ground",
-    "sign",
+    "tree",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "FINALEMENT, NON",
-   "comic_action": "Le panneau se replie tout seul comme un transat.",
-   "expected_result": "Escalade 2 : encore plus gros.",
+   "onscreen_text": "ARBRES EN PHOTO",
+   "comic_action": "Des panneaux photo d'arbres grandeur nature remplacent les vrais.",
+   "expected_result": "Conséquence : ça dégénère.",
    "actions": [
-    {
-     "who": "maire",
-     "geste": "shrug",
-     "visage": "sourire_pro",
-     "quand": 0.0
-    },
     {
      "who": "perso",
      "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
      "visage": "blase",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BIO"
     }
    ]
   },
@@ -202,25 +230,31 @@
    ],
    "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
+    "tree",
+    "road",
     "text3d"
    ],
-   "onscreen_text": "« SANS FILTRE »",
-   "comic_action": "Les propositions des citoyens passent dans une passoire géante ; il n'en ressort que trois.",
-   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "onscreen_text": "FORÊT EN CARTON : K.O.",
+   "comic_action": "La pluie tombe ; les arbres en carton s'affaissent sur une piste cyclable peinte au sol.",
+   "expected_result": "Pire conséquence : l'absurde total.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "nod",
-     "visage": "sourire_pro",
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
      "quand": 0.0
     },
     {
-     "who": "foule",
-     "geste": "cross_arms",
-     "visage": "colere",
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PISTE CYCLABLE (BIENTÔT)"
     }
    ]
   },
@@ -231,25 +265,31 @@
    ],
    "camera": "closeup",
    "set": [
-    "banner",
-    "text3d",
-    "person"
+    "tree",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "SLOGAN 100 % BIO",
-   "comic_action": "La banderole « MAKE OUR PLANET GREAT AGAIN » reçoit un tampon « BIO » ; le champ derrière n'a pas changé.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "SLOGAN RECYCLABLE",
+   "comic_action": "Le maire pose, pouce levé, devant la forêt effondrée.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
      "geste": "arms_up",
-     "visage": "fier",
+     "visage": "sourire_pro",
      "quand": 0.0
     },
     {
-     "who": "perso",
-     "geste": "shrug",
+     "who": "foule",
+     "geste": "facepalm",
      "visage": "blase",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "100 % SLOGAN"
     }
    ]
   },
@@ -266,7 +306,7 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « Make our planet great again » (2017) face au glyphosate et au « sans filtre ».",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « Make our planet great again » : l'écologie en slogan, version ville.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -281,43 +321,31 @@
      "visage": "sourire_pro",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "FORÊT EN CARTON"
+    }
    ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui trie ses déchets puis prend l'avion pour Bali."
+  "text": "Envoie ça au pote écolo qui part à Bali en avion."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 83,
+ "word_count": 84,
  "claims": [
   {
    "text": "« Make our planet great again »",
    "claim_type": "citation_exacte",
    "source": "https://www.lalibre.be/international/2017/06/02/macron-a-trump-make-our-planet-great-again-video-SOOIAKDDVBEV7PTBTMDSCB4FMA/",
    "note": "« Make our planet great again » (vidéo du 01/06/2017, réponse à Trump)."
-  },
-  {
-   "text": "Même année, il promet le glyphosate interdit sous trois ans.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/sortie-du-glyphosate-on-n-y-arrivera-pas-a-100-en-trois-ans-selon-macron-137218",
-   "note": "Promesse du 27/11/2017 : glyphosate interdit « au plus tard dans trois ans » ; en janvier 2019, il admet qu'on n'y arrivera pas à 100 %."
-  },
-  {
-   "text": "2019 : finalement, on n'y arrivera pas. La planète attendra.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/sortie-du-glyphosate-on-n-y-arrivera-pas-a-100-en-trois-ans-selon-macron-137218",
-   "note": "Promesse du 27/11/2017 : glyphosate interdit « au plus tard dans trois ans » ; en janvier 2019, il admet qu'on n'y arrivera pas à 100 %."
-  },
-  {
-   "text": "« sans filtre »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.politis.fr/articles/2021/03/cent-filtres-et-cent-reproches-42886/",
-   "note": "En 2019, il promet que les propositions de la Convention citoyenne pour le climat seront reprises « sans filtre » ; le projet de loi de 2021 en est loin."
   }
  ],
  "sources": [
@@ -327,22 +355,8 @@
    "consulted": "2026-11-22",
    "statut": "citation exacte",
    "note": "« Make our planet great again » (vidéo du 01/06/2017, réponse à Trump)."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/sortie-du-glyphosate-on-n-y-arrivera-pas-a-100-en-trois-ans-selon-macron-137218",
-   "date": "2019-01",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Promesse du 27/11/2017 : glyphosate interdit « au plus tard dans trois ans » ; en janvier 2019, il admet qu'on n'y arrivera pas à 100 %."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2021/03/cent-filtres-et-cent-reproches-42886/",
-   "date": "2021-03",
-   "consulted": "2026-11-22",
-   "statut": "fait public + citation exacte",
-   "note": "En 2019, il promet que les propositions de la Convention citoyenne pour le climat seront reprises « sans filtre » ; le projet de loi de 2021 en est loin."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — « Make our planet great again » (2017) face au glyphosate et au « sans filtre ». Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « Make our planet great again » : l'écologie en slogan, version ville. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

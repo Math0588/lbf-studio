@@ -4,79 +4,79 @@
  "synopsis_id": "mlv-m011-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Le parc des fâchés",
- "anchor": "« Fâchés mais pas fachos », la formule pour les électeurs en colère.",
+ "title_cover": "Coalition à une chaise",
+ "anchor": "« Coalition » ou « ralliement » : une table avec une seule chaise.",
  "meme_id": "MK",
- "situation": "le parc",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le parc où il faut être en colère pour entrer.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, même les pigeons sont fâchés.",
-  "Mélenchonville : la sieste est interdite, le cri obligatoire."
+  "Dans cette ville, tout le monde vote Mélenchon. Même les chaises se rallient.",
+  "Mélenchon propose une coalition. Il y a une seule chaise.",
+  "Les fans de Méluche vont me bloquer.",
+  "Bienvenue à Mélenchonville : coalition à une chaise.",
+  "Mélenchon en une vidéo : coalition à une chaise."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ici, la colère est un service public. Le bruit et la fureur aussi.",
-  "La colère est gratuite. Le calme, taxé.",
-  "Fâchés, oui. Apaisés, jamais."
+  "Une coalition chez lui, c'est un ralliement avec des chaises en moins.",
+  "Une coalition chez lui, c'est un ralliement avec des chaises en moins.",
+  "La file des ralliés fait le tour du rond-point. Toujours pas d'apéro."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Fâché, mais poli.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même les chaises se rallient.",
    "accent_words": [
-    "Fâché, mais poli"
+    "se rallient"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sa formule pour les électeurs en colère : « Fâchés mais pas fachos ».",
+   "text": "À gauche, on débat : coalition ou ralliement autour de lui ?",
    "accent_words": [
-    "Fâchés"
+    "de lui"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, le parc est réservé aux fâchés. Badge obligatoire à l'entrée.",
+   "text": "La mairie dresse la table de coalition. Une seule chaise : la sienne.",
    "accent_words": [
-    "Badge obligatoire"
+    "la sienne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le pigeon est fâché. Le banc est fâché. Le jardinier engueule les tulipes.",
+   "text": "Les autres invités se rallient debout, derrière lui.",
    "accent_words": [
-    "les tulipes"
+    "derrière lui"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Un promeneur souriant ? Expulsé pour manque de colère.",
+   "text": "La file des ralliés fait le tour du rond-point. Toujours pas d'apéro.",
    "accent_words": [
-    "Expulsé"
+    "Toujours pas d'apéro"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ici, la colère est un service public. Le bruit et la fureur aussi.",
+   "text": "Une coalition chez lui, c'est un ralliement avec des chaises en moins.",
    "accent_words": [
-    "service public"
+    "en moins"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui est fâché dès le réveil.",
+   "text": "Envoie ça au pote qui appelle compromis le fait de faire comme lui.",
    "accent_words": [
-    "dès le réveil"
+    "comme lui"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "tree",
-    "bench",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un parc : portique d'entrée « RÉSERVÉ AUX FÂCHÉS ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · COALITION À UNE CHAISE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "RALLIEZ-VOUS"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,43 +128,82 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "text3d",
-    "person"
+    "table",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "FÂCHÉS MAIS PAS FACHOS",
-   "comic_action": "Gros plan sur le panneau d'entrée, lettres en relief.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "COALITION OU RALLIEMENT ?",
+   "comic_action": "Table ronde ; une seule chaise, façon trône.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "RALLIEZ-VOUS"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "person",
-    "sign",
-    "tree"
+    "table",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "BADGE : FÂCHÉ",
-   "comic_action": "Travelling : un gardien contrôle les sourcils froncés à l'entrée.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "1 TABLE · 1 CHAISE",
+   "comic_action": "Une immense table, une chaise, des invités debout.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CHAISES : 1"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "bench",
-    "tree",
-    "person"
+    "table",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "TOUT LE MONDE EST FÂCHÉ",
-   "comic_action": "Orbite : un pigeon boude, un jardinier sermonne un massif de fleurs.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RALLIÉS : DEBOUT",
+   "comic_action": "File d'invités debout, assiette à la main.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "DEBOUT"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,13 +212,27 @@
    ],
    "camera": "closeup",
    "set": [
+    "roundabout",
     "person",
-    "sign",
-    "tree"
+    "road"
    ],
-   "onscreen_text": "EXPULSÉ : TROP CALME",
-   "comic_action": "Un habitant qui sifflote est raccompagné à la grille.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "FILE : AUTOUR DU ROND-POINT",
+   "comic_action": "Une file d'attente qui s'enroule autour du rond-point.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "manif",
+     "visage": "fatigue",
+     "objet": "verre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "APÉRO : PAS ENCORE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,14 +241,26 @@
    ],
    "camera": "descend",
    "set": [
-    "tree",
-    "bench",
-    "text3d",
-    "person"
+    "table",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "COLÈRE : SERVICE PUBLIC",
-   "comic_action": "Plan large : tout le parc crie, un seul promeneur zen au milieu, menotté par des fleurs.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "COALITION = RALLIEMENT",
+   "comic_action": "Le maire seul assis, tous les autres tournés vers lui.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUS DERRIÈRE MOI"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -186,51 +274,52 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique s'assoit, fâché contre le banc.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui est fâché dès le réveil."
+  "text": "Envoie ça au pote qui appelle compromis le fait de faire comme lui."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 81,
+ "word_count": 83,
  "claims": [
   {
-   "text": "« Fâchés mais pas fachos »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.publicsenat.fr/actualites/politique/fn-melenchon-reitere-son-appel-aux-electeurs-faches-mais-pas-fachos-77625",
-   "note": "« Fâchés mais pas fachos »."
-  },
-  {
-   "text": "Ici, la colère est un service public. Le bruit et la fureur aussi.",
+   "text": "À gauche, on débat : coalition ou ralliement autour de lui ?",
    "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2025/07/emotions-quand-la-colere-ne-suffit-pas/",
-   "note": "« Le bruit et la fureur », formule qu'il s'applique depuis 2010 ; reprise sans guillemets."
+   "source": "https://lcp.fr/actualites/presidentielle-2027-marine-tondelier-prete-a-une-coalition-autour-de-jean-luc-melenchon",
+   "note": "Le débat « coalition » ou « ralliement » autour de Mélenchon."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/fn-melenchon-reitere-son-appel-aux-electeurs-faches-mais-pas-fachos-77625",
-   "date": "2017",
+   "url": "https://lcp.fr/actualites/presidentielle-2027-marine-tondelier-prete-a-une-coalition-autour-de-jean-luc-melenchon",
+   "date": "2026",
    "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "« Fâchés mais pas fachos »."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2025/07/emotions-quand-la-colere-ne-suffit-pas/",
-   "date": "2025-07",
-   "consulted": "2026-11-22",
-   "statut": "fait (origine) / mème",
-   "note": "« Le bruit et la fureur », formule qu'il s'applique depuis 2010 ; reprise sans guillemets."
+   "statut": "fait",
+   "note": "Le débat « coalition » ou « ralliement » autour de Mélenchon."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « Fâchés mais pas fachos », la formule pour les électeurs en colère. Cadre : le parc. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : À gauche, on débat : coalition ou ralliement autour de lui ? Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

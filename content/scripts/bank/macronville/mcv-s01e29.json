@@ -3,27 +3,27 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-29",
  "format": "A",
- "title_cover": "Monsieur le président",
+ "title_cover": "Titre complet exigé",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
   "2018 : un collégien l'appelle Manu. Il exige « Monsieur le président de la République ».",
   "Les électeurs de Macron vont détester celle-là.",
-  "Monsieur le président : l'histoire en trente secondes.",
-  "Dans cette ville, tout le monde vote Macron. Monsieur le président, pardon."
+  "Titre complet exigé : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Le chien s'appelle Monsieur le Chien."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Finalement, Manu, c'était plus court. Comme la liste de ses réussites.",
-  "Il voulait son titre complet. Il a eu un bilan abrégé.",
-  "Monsieur le président de la République : 82 % de défiance."
+  "Le maire attend à l'accueil : son annonce n'est pas finie. Depuis 2018.",
+  "Il voulait son titre complet. La ville ne finit plus ses phrases.",
+  "Les conversations durent des heures. Les bus repartent à vide."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Monsieur le président, pardon.",
+   "text": "Dans cette ville, tout le monde vote Macron. Le chien s'appelle Monsieur le Chien.",
    "accent_words": [
-    "président"
+    "Chien"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "Monsieur le président de la République a usé sept Premiers ministres.",
+   "text": "La mairie généralise : titre complet obligatoire pour tous.",
    "accent_words": [
-    "ministres"
+    "tous"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Monsieur le président de la République a dissous l'Assemblée. Surprise.",
+   "text": "Bonjour Monsieur le Boulanger de la Rue Principale… La baguette refroidit.",
    "accent_words": [
-    "Surprise"
+    "refroidit"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Monsieur le président de la République : 82 % de défiance.",
+   "text": "Les conversations durent des heures. Les bus repartent à vide.",
    "accent_words": [
-    "défiance"
+    "vide"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Finalement, Manu, c'était plus court. Comme la liste de ses réussites.",
+   "text": "Le maire attend à l'accueil : son annonce n'est pas finie. Depuis 2018.",
    "accent_words": [
-    "réussites"
+    "2018"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui exige du Monsieur sur son badge de stagiaire.",
+   "text": "Envoie ça au pote qui exige du Monsieur en stage.",
    "accent_words": [
-    "stagiaire"
+    "stage"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -91,7 +91,7 @@
     "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la ville ; banderole « MONSIEUR LE PRÉSIDENT » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "comic_action": "Descente sur la ville ; banderole « TITRE COMPLET EXIGÉ » sur la mairie ; le maire caricaturé salue, sourire figé.",
    "expected_result": "La ville et le thème posés en une image.",
    "actions": [
     {
@@ -105,6 +105,16 @@
      "geste": "clap",
      "visage": "neutre",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TITRE COMPLET EXIGÉ"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
     }
    ]
   },
@@ -120,8 +130,8 @@
     "sign"
    ],
    "onscreen_text": "« MONSIEUR LE PRÉSIDENT »",
-   "comic_action": "Un passant lance « Ça va Manu ? » ; le maire se raidit et pointe un badge doré à son titre complet.",
-   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "comic_action": "Un passant lance « Ça va Manu ? » ; le maire se raidit et pointe un badge doré.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
    "actions": [
     {
      "who": "perso",
@@ -135,6 +145,12 @@
      "visage": "colere",
      "quand": 0.3
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "MONSIEUR LE PRÉSIDENT"
+    }
    ]
   },
   {
@@ -144,25 +160,31 @@
    ],
    "camera": "orbit",
    "set": [
-    "facade_row",
-    "text3d",
-    "person"
+    "sign",
+    "person",
+    "mairie"
    ],
-   "onscreen_text": "7 PREMIERS MINISTRES",
-   "comic_action": "Sept Premiers ministres défilent ; chacun doit réciter le titre complet avant de partir avec son carton.",
-   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "onscreen_text": "TITRE COMPLET OBLIGATOIRE",
+   "comic_action": "Un panneau à l'entrée de la ville : « TITRES COMPLETS EXIGÉS ».",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
    "actions": [
-    {
-     "who": "foule",
-     "geste": "bow",
-     "visage": "fatigue",
-     "quand": 0.0
-    },
     {
      "who": "maire",
      "geste": "nod",
      "visage": "fier",
-     "quand": 0.5
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MONSIEUR LE CHIEN"
     }
    ]
   },
@@ -173,25 +195,32 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
-    "text3d",
-    "person"
+    "shop",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "DISSOLUTION SURPRISE",
-   "comic_action": "Le maire appuie sur un gros bouton : la mairie se défait en cubes ; seule la plaque du titre reste accrochée.",
-   "expected_result": "Escalade 2 : encore plus gros.",
+   "onscreen_text": "MONSIEUR LE BOULANGER DE…",
+   "comic_action": "Un client récite un titre interminable ; la baguette refroidit dans la main du boulanger.",
+   "expected_result": "Conséquence : ça dégénère.",
    "actions": [
     {
-     "who": "maire",
+     "who": "perso",
      "geste": "arms_up",
-     "visage": "fier",
+     "visage": "parle",
+     "objet": "baguette",
      "quand": 0.0
     },
     {
      "who": "foule",
      "geste": "fall",
-     "visage": "choque",
-     "quand": 0.4
+     "visage": "dort",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BONJOUR 15 MIN"
     }
    ]
   },
@@ -202,25 +231,31 @@
    ],
    "camera": "window_pass",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "bus",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "82 % DE DÉFIANCE",
-   "comic_action": "Un écran affiche 82 % sous un titre interminable qui ne tient pas dans le cadre.",
-   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "onscreen_text": "BUS PARTIS À VIDE",
+   "comic_action": "À l'arrêt, deux voisins se saluent encore ; le bus repart sans eux.",
+   "expected_result": "Pire conséquence : l'absurde total.",
    "actions": [
     {
      "who": "foule",
-     "geste": "cross_arms",
-     "visage": "blase",
+     "geste": "bow",
+     "visage": "fatigue",
      "quand": 0.0
     },
     {
-     "who": "maire",
-     "geste": "shake",
-     "visage": "choque",
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "SALUEZ CORRECTEMENT"
     }
    ]
   },
@@ -231,25 +266,31 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "text3d",
-    "person"
+    "mairie",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "MANU, C'ÉTAIT PLUS COURT",
-   "comic_action": "Une pancarte « MANU » tient en un mot ; la liste des réussites, à côté, tient sur un post-it.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "ANNONCE EN COURS DEPUIS 2018",
+   "comic_action": "Le maire attend à l'accueil pendant que la secrétaire lit un parchemin sans fin.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
    "actions": [
     {
-     "who": "foule",
-     "geste": "clap",
-     "visage": "content",
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fatigue",
      "quand": 0.0
     },
     {
-     "who": "maire",
-     "geste": "facepalm",
-     "visage": "fatigue",
-     "quand": 0.4
+     "who": "perso",
+     "geste": "arms_up",
+     "visage": "parle",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PATIENCE, MONSIEUR"
     }
    ]
   },
@@ -266,7 +307,7 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « Monsieur le président de la République » exigé d'un collégien (2018).",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « Monsieur le président de la République » exigé d'un collégien : toute la ville en titres complets.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -281,43 +322,31 @@
      "visage": "sourire_pro",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TITRE COMPLET EXIGÉ"
+    }
    ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui exige du Monsieur sur son badge de stagiaire."
+  "text": "Envoie ça au pote qui exige du Monsieur en stage."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 84,
+ "word_count": 83,
  "claims": [
   {
    "text": "« Monsieur le président de la République »",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/macron-recadre-sechement-un-jeune-qui-l-avait-appele-manu-87239",
    "note": "Au Mont-Valérien (18/06/2018), un collégien l'appelle « Manu » ; il exige « Monsieur le président de la République », ou « Monsieur »."
-  },
-  {
-   "text": "Monsieur le président de la République a usé sept Premiers ministres.",
-   "claim_type": "fait_public",
-   "source": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
-   "note": "Sept Premiers ministres depuis 2017 (Philippe, Castex, Borne, Attal, Barnier, Bayrou, Lecornu) ; record de Mitterrand égalé selon la presse."
-  },
-  {
-   "text": "Monsieur le président de la République a dissous l'Assemblée. Surprise.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/dissolution-de-lassemblee-nationale-quelles-consequences",
-   "note": "Dissolution de l'Assemblée annoncée le soir des européennes (09/06/2024)."
-  },
-  {
-   "text": "Monsieur le président de la République : 82 % de défiance.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/sondage-82-des-francais-ne-font-pas-confiance-a-emmanuel-macron-qui-bat-le-record-dimpopularite-de-francois-hollande-a-lelysee",
-   "note": "82 % des Français ne lui font pas confiance ; il bat le record d'impopularité de François Hollande."
   }
  ],
  "sources": [
@@ -327,29 +356,8 @@
    "consulted": "2026-11-22",
    "statut": "fait public",
    "note": "Au Mont-Valérien (18/06/2018), un collégien l'appelle « Manu » ; il exige « Monsieur le président de la République », ou « Monsieur »."
-  },
-  {
-   "url": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
-   "date": "2025-10",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Sept Premiers ministres depuis 2017 (Philippe, Castex, Borne, Attal, Barnier, Bayrou, Lecornu) ; record de Mitterrand égalé selon la presse."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/dissolution-de-lassemblee-nationale-quelles-consequences",
-   "date": "2024-06-10",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Dissolution de l'Assemblée annoncée le soir des européennes (09/06/2024)."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/sondage-82-des-francais-ne-font-pas-confiance-a-emmanuel-macron-qui-bat-le-record-dimpopularite-de-francois-hollande-a-lelysee",
-   "date": "2026",
-   "consulted": "2026-11-22",
-   "statut": "fait public (sondage)",
-   "note": "82 % des Français ne lui font pas confiance ; il bat le record d'impopularité de François Hollande."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — « Monsieur le président de la République » exigé d'un collégien (2018). Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « Monsieur le président de la République » exigé d'un collégien : toute la ville en titres complets. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

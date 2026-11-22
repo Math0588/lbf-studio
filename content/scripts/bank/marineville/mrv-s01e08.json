@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-16",
  "format": "A",
- "title_cover": "Cartes de presse",
+ "title_cover": "Des non-croissants",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, la carte de presse se retire au guichet de la mairie.",
-  "Marineville : défendre la République, choisir qui la regarde.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : cartes de presse."
+  "Dans cette ville, tout le monde vote Marine. Les journalistes, sur liste.",
+  "Marineville décide qui est journaliste. Et boulanger.",
+  "Ici, on mange des non-croissants.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Des non-croissants."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Elle veut défendre la République, mais choisit qui a le droit de la regarder.",
-  "Ici, la carte de presse se retire au guichet municipal, sur présentation d'un sourire.",
-  "En 2022, Quotidien n'est pas accrédité à son QG."
+  "Barthès conclut qu'elle distribue désormais les cartes de presse.",
+  "Elle distribue les cartes de presse.",
+  "Plus rien n'est officiel. La ville mange des non-croissants."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -29,49 +29,49 @@
   },
   {
    "id": "n2",
-   "text": "En 2022, Quotidien n'est pas accrédité à son QG.",
-   "accent_words": [
-    "pas accrédité"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "Sa justification : chez Quotidien, ce ne seraient pas des journalistes.",
+   "text": "En 2022, elle estime que chez Quotidien, ce ne sont pas des journalistes.",
    "accent_words": [
     "pas des journalistes"
    ],
    "claim_type": "fait_public"
   },
   {
+   "id": "n3",
+   "text": "Alors la mairie décide qui est journaliste. Et qui est boulanger.",
+   "accent_words": [
+    "boulanger"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
    "id": "n4",
-   "text": "Barthès en conclut qu'elle distribue désormais les cartes de presse.",
+   "text": "Le boulanger n'a pas sa carte : son pain n'est pas du pain.",
+   "accent_words": [
+    "pain"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Plus rien n'est officiel. La ville mange des non-croissants.",
+   "accent_words": [
+    "non-croissants"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Barthès conclut qu'elle distribue désormais les cartes de presse.",
    "accent_words": [
     "cartes de presse"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n5",
-   "text": "Ici, la carte se retire au guichet municipal, sur présentation d'un sourire.",
-   "accent_words": [
-    "d'un sourire"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n6",
-   "text": "Elle veut défendre la République, mais choisit qui a le droit de la regarder.",
-   "accent_words": [
-    "qui a le droit"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n7",
    "text": "Envoie ça au pote qui ne regarde que les émissions qui lui donnent raison.",
    "accent_words": [
-    "lui donnent raison"
+    "raison"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,41 +89,89 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; un vigile avec une liste devant la porte.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "JOURNALISTES : SUR LISTE",
+   "comic_action": "Descente sur la ville ; banderole « JOURNALISTES : SUR LISTE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "point"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
-    "person",
-    "road",
     "building",
-    "sign"
+    "sign",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "QUOTIDIEN : REFUSÉ",
-   "comic_action": "File de journalistes ; un micro siglé est écarté de la porte.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "PAS DES JOURNALISTES",
+   "comic_action": "Porte d'entrée gardée ; panneau « PAS DES JOURNALISTES ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "tribune",
-    "studio_light",
-    "text3d",
-    "person"
+    "building",
+    "sign",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "JOURNALISTE ? NON.",
-   "comic_action": "Tribune : un tampon « NON » sur une carte de presse.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "QUI EST BOULANGER ?",
+   "comic_action": "Porte d'entrée gardée ; panneau « QUI EST BOULANGER ? ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CARTE DE BOULANGER"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -132,30 +180,54 @@
    ],
    "camera": "window_pass",
    "set": [
-    "table",
-    "screen",
+    "facade_row",
     "sign",
-    "building"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "CARTES DE PRESSE : AU GUICHET",
-   "comic_action": "Guichet de mairie : un présentoir de cartes de presse, la maire cubique choisit.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "CE N'EST PAS DU PAIN",
+   "comic_action": "Rangée de façades : enseigne « CE N'EST PAS DU PAIN ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "objet": "baguette",
+     "geste": "facepalm"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "table",
-    "form_stack",
+    "facade_row",
+    "sign",
     "text3d",
-    "mairie"
+    "person"
    ],
-   "onscreen_text": "SOURIRE OBLIGATOIRE",
-   "comic_action": "Un agent tamponne une carte uniquement quand l'habitant sourit.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "NON-CROISSANTS",
+   "comic_action": "Rangée de façades : enseigne « NON-CROISSANTS ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -164,14 +236,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "RÉPUBLIQUE : SUR INVITATION",
-   "comic_action": "Entre deux colonnes, un cordon de velours et une liste d'invités. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "ELLE DISTRIBUE LES CARTES",
+   "comic_action": "Plan final, tenir une seconde : « ELLE DISTRIBUE LES CARTES ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "clap",
+     "visage": "content"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +270,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt zappe dès qu'on le contredit.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE TÉLÉSPECTATEUR",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE TÉLÉSPECTATEUR ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,35 +293,21 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 82,
+ "word_count": 81,
  "claims": [
   {
    "segment": "n2",
-   "text": "En 2022, Quotidien n'est pas accrédité à son QG.",
+   "text": "En 2022, elle estime que chez Quotidien, ce ne sont pas des journalistes.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/-il-n-y-a-pas-de-journalistes-chez-quotidien-marine-le-pen-tacle-l-emission-de-tmc-en-pleine-conference-de-presse/615834",
-   "note": "Quotidien non accrédité à son QG ; pour elle, pas des journalistes ; Yann Barthès ironise : elle distribue désormais les cartes de presse."
-  },
-  {
-   "segment": "n3",
-   "text": "Sa justification : chez Quotidien, ce ne seraient pas des journalistes.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/-il-n-y-a-pas-de-journalistes-chez-quotidien-marine-le-pen-tacle-l-emission-de-tmc-en-pleine-conference-de-presse/615834",
-   "note": "Quotidien non accrédité à son QG ; pour elle, pas des journalistes ; Yann Barthès ironise : elle distribue désormais les cartes de presse."
-  },
-  {
-   "segment": "n4",
-   "text": "Barthès en conclut qu'elle distribue désormais les cartes de presse.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/-il-n-y-a-pas-de-journalistes-chez-quotidien-marine-le-pen-tacle-l-emission-de-tmc-en-pleine-conference-de-presse/615834",
-   "note": "Quotidien non accrédité à son QG ; pour elle, pas des journalistes ; Yann Barthès ironise : elle distribue désormais les cartes de presse."
+   "note": "Quotidien non accrédité ; pour elle, pas des journalistes ; Yann Barthès ironise : elle distribue désormais les cartes de presse."
   },
   {
    "segment": "n6",
-   "text": "Elle veut défendre la République, mais choisit qui a le droit de la regarder.",
+   "text": "Barthès conclut qu'elle distribue désormais les cartes de presse.",
    "claim_type": "fait_public",
-   "source": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
-   "note": "Mème / fait servant de base à une exagération de la ville (segment typé fiction_satirique). « Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
+   "source": "https://www.ozap.com/actu/-il-n-y-a-pas-de-journalistes-chez-quotidien-marine-le-pen-tacle-l-emission-de-tmc-en-pleine-conference-de-presse/615834",
+   "note": "Quotidien non accrédité ; pour elle, pas des journalistes ; Yann Barthès ironise : elle distribue désormais les cartes de presse."
   }
  ],
  "sources": [
@@ -235,17 +315,10 @@
    "url": "https://www.ozap.com/actu/-il-n-y-a-pas-de-journalistes-chez-quotidien-marine-le-pen-tacle-l-emission-de-tmc-en-pleine-conference-de-presse/615834",
    "date": "2022-04-12",
    "consulted": "2026-11-22",
-   "statut": "fait public (formulation exacte variable selon les médias : paraphrase sans guillemets)",
-   "note": "Quotidien non accrédité à son QG ; pour elle, pas des journalistes ; Yann Barthès ironise : elle distribue désormais les cartes de presse."
-  },
-  {
-   "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
-   "date": "2026-10-29",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte (meeting d'Orléans, 25/10/2026) + fait (affiche)",
-   "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
+   "statut": "fait + citation",
+   "note": "Quotidien non accrédité ; pour elle, pas des journalistes ; Yann Barthès ironise : elle distribue désormais les cartes de presse."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = 2022 : Quotidien non accrédité à son QG ; pour elle, pas des journalistes ; Yann Barthès ironise : elle distribue désormais les cartes de presse. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = Quotidien : « pas des journalistes » (2022). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

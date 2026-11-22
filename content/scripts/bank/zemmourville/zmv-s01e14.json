@@ -3,33 +3,33 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-07",
  "format": "A",
- "title_cover": "Dictée sans fin",
+ "title_cover": "Pas de dernier mot",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : la dictée ne finit jamais.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, le point final est interdit.",
-  "Zemmourville : l'école où le dernier mot revient à l'urne."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien parle encore.",
+  "Zemmour n'a jamais dit son dernier mot. La ville a interdit les derniers mots.",
+  "Attention : vidéo garantie sans nostalgie. Presque.",
+  "Bienvenue à Zemmourville : pas de dernier mot.",
+  "Zemmour en une vidéo : pas de dernier mot."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le dernier mot, ce sont les urnes qui l'ont dit : sept pour cent.",
-  "Deux livres sur le dernier mot, un seul vrai : celui des électeurs.",
-  "Il n'a pas dit son dernier mot. Les urnes, si."
+  "Le dernier mot, ce sont les électeurs qui l'ont dit : 7 %.",
+  "Le dernier mot, ce sont les électeurs qui l'ont dit : 7 %.",
+  "Les profs ne concluent plus un cours. Le bac n'a jamais de fin."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Dictée.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien parle encore.",
    "accent_words": [
-    "Dictée"
+    "parle encore"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son livre de 2021 : La France n'a pas dit son dernier mot.",
+   "text": "Son livre de 2023 s'intitule : Je n'ai pas dit mon dernier mot.",
    "accent_words": [
     "dernier mot"
    ],
@@ -37,33 +37,33 @@
   },
   {
    "id": "n3",
-   "text": "Ici, la dictée de l'école ne se termine jamais. Dernier mot interdit.",
+   "text": "La mairie interdit les derniers mots. Plus personne ne finit ses phrases.",
    "accent_words": [
-    "interdit"
+    "ses phrases"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "En 2023, nouveau livre : Je n'ai pas dit mon dernier mot.",
+   "text": "Les dîners durent jusqu'à l'aube. Les au revoir, trois jours.",
    "accent_words": [
-    "mon dernier mot"
+    "trois jours"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La maîtresse corrige : la France et lui parlent beaucoup, sans conclure.",
+   "text": "Les profs ne concluent plus un cours. Le bac n'a jamais de fin.",
    "accent_words": [
-    "sans conclure"
+    "de fin"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le dernier mot, ce sont les urnes qui l'ont dit : sept pour cent.",
+   "text": "Le dernier mot, ce sont les électeurs qui l'ont dit : 7 %.",
    "accent_words": [
-    "sept pour cent"
+    "7 %"
    ],
    "claim_type": "fait_public"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui veut toujours avoir le dernier mot.",
    "accent_words": [
-    "le dernier mot"
+    "dernier mot"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une école : tableau à craie géant dans la cour.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · PAS DE DERNIER MOT",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "NE CONCLUEZ JAMAIS"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,13 +123,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "text3d",
-    "person",
-    "table"
+    "scroll",
+    "table",
+    "text3d"
    ],
-   "onscreen_text": "DICTÉE N° 1",
-   "comic_action": "Le titre écrit à la craie, sans point final.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PAS DIT MON DERNIER MOT",
+   "comic_action": "Deux livres sur un pupitre, titres en lettres d'or.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "NE CONCLUEZ JAMAIS"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,27 +152,55 @@
    ],
    "camera": "orbit",
    "set": [
-    "table",
-    "person",
-    "form_stack"
+    "mairie",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "POINT FINAL : INTERDIT",
-   "comic_action": "Orbite : les élèves écrivent depuis le matin, les copies débordent.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DERNIER MOT : INTERDIT",
+   "comic_action": "Panneau « TOUTE PHRASE DOIT CONTINUER ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "POINT FINAL : 135 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "text3d",
-    "scroll"
+    "table",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "DICTÉE N° 2",
-   "comic_action": "Le maître efface le tableau et écrit la suite.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "AU REVOIR : 3 JOURS",
+   "comic_action": "Des invités en manteau sur le pas de la porte depuis des heures.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "dort",
+     "objet": "verre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BAVARD"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -144,13 +209,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
+    "building",
     "form_stack",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "CONCLUSION : ABSENTE",
-   "comic_action": "Une copie rendue, entourée de rouge : « ET LA CONCLUSION ? ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "BAC : SANS FIN",
+   "comic_action": "Une copie de bac qui déborde par la fenêtre.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ÉPREUVE : EN COURS"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -159,13 +237,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
+    "screen",
     "text3d",
-    "person"
+    "banner"
    ],
    "onscreen_text": "DERNIER MOT : 7 %",
-   "comic_action": "Plan large : sur le tableau de la cour, quelqu'un écrit « 7 % » et met enfin un point.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "comic_action": "Une urne prend la parole : « 7 % ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FIN : 7 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -179,9 +270,23 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique pose la craie.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -193,35 +298,22 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 83,
+ "word_count": 85,
  "claims": [
   {
-   "text": "Son livre de 2021 : La France n'a pas dit son dernier mot.",
-   "claim_type": "fait_public",
-   "source": "https://www.fnac.com/a16213716/Eric-Zemmour-La-France-n-a-pas-dit-son-dernier-mot",
-   "note": "Livre « La France n'a pas dit son dernier mot » (2021)."
-  },
-  {
-   "text": "En 2023, nouveau livre : Je n'ai pas dit mon dernier mot.",
+   "text": "Son livre de 2023 s'intitule : Je n'ai pas dit mon dernier mot.",
    "claim_type": "fait_public",
    "source": "https://www.lalibre.be/international/europe/2023/03/11/je-nai-pas-dit-mon-dernier-mot-eric-zemmour-sort-du-silence-apres-la-presidentielle-francaise-53S6BYKBXVCV5H5PWXT73SS45U/",
    "note": "Livre « Je n'ai pas dit mon dernier mot » (2023)."
   },
   {
-   "text": "Le dernier mot, ce sont les urnes qui l'ont dit : sept pour cent.",
+   "text": "Le dernier mot, ce sont les électeurs qui l'ont dit : 7 %.",
    "claim_type": "fait_public",
    "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
-  {
-   "url": "https://www.fnac.com/a16213716/Eric-Zemmour-La-France-n-a-pas-dit-son-dernier-mot",
-   "date": "2021-09-15",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Livre « La France n'a pas dit son dernier mot » (2021)."
-  },
   {
    "url": "https://www.lalibre.be/international/europe/2023/03/11/je-nai-pas-dit-mon-dernier-mot-eric-zemmour-sort-du-silence-apres-la-presidentielle-francaise-53S6BYKBXVCV5H5PWXT73SS45U/",
    "date": "2023-03-11",
@@ -238,5 +330,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « La France n'a pas dit son dernier mot » (2021) puis « Je n'ai pas dit mon dernier mot » (2023). Cadre : la dictée à l'école. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Son livre de 2023 s'intitule : Je n'ai pas dit mon dernier mot. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

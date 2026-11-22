@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-04",
  "format": "A",
- "title_cover": "Retombé en diligence",
+ "title_cover": "Ben voyons partout",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le tram est une diligence.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, on voyage comme en 1850, et on arrive à 7 %.",
-  "Zemmourville : départ à 17, arrivée à 7."
+  "Dans cette ville, tout le monde vote Zemmour. Même le perroquet dit ben voyons.",
+  "Zemmour répond ben voyons. La ville répond ben voyons à tout.",
+  "Celle-là, Zemmour ne la partagera pas.",
+  "Bienvenue à Zemmourville : ben voyons partout.",
+  "Zemmour en une vidéo : ben voyons partout."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Il voulait remonter le temps. Il a surtout descendu les sondages.",
-  "Dix chevaux perdus entre deux sondages.",
-  "Ça part au galop, ça finit au pas."
+  "Et son score de 2022, 7 % ? Ben voyons.",
+  "Son score de 2022 ? Ben voyons.",
+  "Le standard des pompiers ne répond plus que ben voyons. Ça brûle."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. En diligence.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le perroquet dit ben voyons.",
    "accent_words": [
-    "En diligence"
+    "ben voyons"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, le tram a été remplacé par une diligence. Plus authentique.",
+   "text": "Son tic de langage le plus célèbre : ben voyons.",
    "accent_words": [
-    "authentique"
+    "ben voyons"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Départ en fanfare : 17 % dans un sondage d'octobre 2021.",
+   "text": "La mairie l'adopte comme réponse officielle à tout.",
    "accent_words": [
-    "17 %"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "Arrivée en avril 2022 : 7 %. La diligence a perdu dix chevaux en route.",
-   "accent_words": [
-    "dix chevaux"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n5",
-   "text": "La presse parlait d'un soufflé qui retombe. Ici, c'est le menu du relais.",
-   "accent_words": [
-    "soufflé"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n6",
-   "text": "Il voulait remonter le temps. Il a surtout descendu les sondages.",
-   "accent_words": [
-    "descendu les sondages"
+    "à tout"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui démarre fort et finit à pied.",
+   "id": "n4",
+   "text": "Le bus ne passe pas ? Ben voyons. La fuite d'eau ? Ben voyons.",
    "accent_words": [
-    "à pied"
+    "Ben voyons"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Le standard des pompiers ne répond plus que ben voyons. Ça brûle.",
+   "accent_words": [
+    "Ça brûle"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Et son score de 2022, 7 % ? Ben voyons.",
+   "accent_words": [
+    "Ben voyons"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui répond ben voyons à tout.",
+   "accent_words": [
+    "à tout"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,59 +85,121 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "car",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une avenue : une diligence à chevaux sur les rails du tram.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · BEN VOYONS PARTOUT",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "BEN VOYONS"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
-    "car",
-    "person",
-    "sign"
+    "tribune",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "LIGNE 1 : DILIGENCE",
-   "comic_action": "Travelling : la diligence cahote sur les rails, les voyageurs secoués.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "BEN VOYONS",
+   "comic_action": "Le maire lève un sourcil au micro.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BEN VOYONS"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "car",
-    "text3d",
+    "mairie",
+    "sign",
     "person"
    ],
-   "onscreen_text": "DÉPART : 17 %",
-   "comic_action": "Gros plan : le cocher fouette, un compteur « 17 » sur la diligence.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "RÉPONSE OFFICIELLE : BEN VOYONS",
+   "comic_action": "Tampon « BEN VOYONS » sur chaque dossier.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "nod",
+     "visage": "neutre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FORMULAIRE : BEN VOYONS"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "car",
-    "text3d",
-    "road"
+    "bus",
+    "road",
+    "person"
    ],
-   "onscreen_text": "ARRIVÉE : 7 %",
-   "comic_action": "Orbite : la diligence arrive avec un seul cheval épuisé.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "BUS : BEN VOYONS",
+   "comic_action": "Un habitant trempé attend un bus qui ne vient pas.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BEN VOYONS"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -146,13 +208,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "text3d",
+    "building",
+    "car",
     "person"
    ],
-   "onscreen_text": "MENU : SOUFFLÉ RETOMBÉ",
-   "comic_action": "Au relais, un aubergiste sert un soufflé plat comme une crêpe.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "POMPIERS : BEN VOYONS",
+   "comic_action": "Un téléphone répète « ben voyons » devant une fumée.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "URGENCE : BEN VOYONS"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -161,13 +236,26 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "car",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "17 → 7",
-   "comic_action": "Plan large : la diligence dévale une pente en forme de courbe de sondage.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "7 % ? BEN VOYONS",
+   "comic_action": "Écran géant : « 7 % », sous-titré « ben voyons ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "7,07 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -181,48 +269,56 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique pousse la diligence.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui démarre fort et finit à pied."
+  "text": "Envoie ça au pote qui répond ben voyons à tout."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 82,
+ "word_count": 78,
  "claims": [
   {
-   "text": "Départ en fanfare : 17 % dans un sondage d'octobre 2021.",
+   "text": "Son tic de langage le plus célèbre : ben voyons.",
    "claim_type": "fait_public",
-   "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
-   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+   "source": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
+   "note": "« Ben voyons ! » : tic de langage qui clôt la discussion, devenu slogan de fans (repris sans guillemets)."
   },
   {
-   "text": "Arrivée en avril 2022 : 7 %. La diligence a perdu dix chevaux en route.",
+   "text": "Et son score de 2022, 7 % ? Ben voyons.",
    "claim_type": "fait_public",
    "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
-  },
-  {
-   "text": "La presse parlait d'un soufflé qui retombe. Ici, c'est le menu du relais.",
-   "claim_type": "fait_public",
-   "source": "https://fr.timesofisrael.com/france-eric-zemmour-retombe-comme-un-souffle/",
-   "note": "« Eric Zemmour retombe comme un soufflé » (titre de presse, repris sans guillemets)."
   }
  ],
  "sources": [
   {
-   "url": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
-   "date": "2021-10-07",
+   "url": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
+   "date": "2022-02-02",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+   "note": "« Ben voyons ! » : tic de langage qui clôt la discussion, devenu slogan de fans (repris sans guillemets)."
   },
   {
    "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
@@ -230,15 +326,8 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
-  },
-  {
-   "url": "https://fr.timesofisrael.com/france-eric-zemmour-retombe-comme-un-souffle/",
-   "date": "2022",
-   "consulted": "2026-11-22",
-   "statut": "image de presse",
-   "note": "« Eric Zemmour retombe comme un soufflé » (titre de presse, repris sans guillemets)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le soufflé : 17 % dans un sondage d'octobre 2021, 7 % en avril 2022. Cadre : la diligence qui remplace le tram. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Son tic de langage le plus célèbre : ben voyons. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

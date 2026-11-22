@@ -4,79 +4,79 @@
  "synopsis_id": "mlv-m029-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Questions en commentaire",
- "anchor": "« le moins possible » sur les chaînes d'info, ses propres médias : le maire filtre jusqu'aux habitants.",
+ "title_cover": "Saison 4",
+ "anchor": "Quatrième candidature : la ville rediffuse les trois premières saisons.",
  "meme_id": "ML",
- "situation": "le conseil de quartier",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le conseil de quartier passe en live.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, les questions gênantes sont masquées.",
-  "Mélenchonville : la démocratie participative, commentaires filtrés."
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien connaît la fin.",
+  "Mélenchon, saison 4. La ville connaît déjà la fin.",
+  "Les insoumis vont me détester.",
+  "Bienvenue à Mélenchonville : saison 4.",
+  "Mélenchon en une vidéo : saison 4."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Il voulait éviter les journalistes. Il a fini par éviter les habitants.",
-  "Plus de journalistes, plus d'habitants, plus de questions.",
-  "Le live tourne. La salle est vide."
+  "Saison 4 annoncée : même acteur, même fin, budget plus gros.",
+  "Saison 4 : même acteur, même fin, budget plus gros.",
+  "Les touristes partent avant le final. Ils savent qu'il finit quatrième."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Sans journalistes.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien connaît la fin.",
    "accent_words": [
-    "Sans journalistes"
+    "la fin"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Il passe « le moins possible » sur les chaînes d'info. Au conseil de quartier aussi.",
+   "text": "2027 : sa quatrième candidature présidentielle.",
    "accent_words": [
-    "aussi"
+    "sa quatrième candidature présidentielle"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Les questions se posent en commentaire. Le maire répond en live, à lui-même.",
+   "text": "La mairie rediffuse ses trois campagnes en boucle sur la place.",
    "accent_words": [
-    "à lui-même"
+    "la place"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Un habitant pose une question gênante. Commentaire masqué.",
+   "text": "Les habitants connaissent les répliques par cœur. Ils spoilent les touristes.",
    "accent_words": [
-    "masqué"
+    "Ils spoilent les touristes"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Ses médias revendiquent une centaine de millions de vues. Le conseil, trois spectateurs.",
+   "text": "Les touristes partent avant le final. Ils savent qu'il finit quatrième.",
    "accent_words": [
-    "trois spectateurs"
+    "finit quatrième"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Il voulait éviter les journalistes. Il a fini par éviter les habitants.",
+   "text": "Saison 4 annoncée : même acteur, même fin, budget plus gros.",
    "accent_words": [
-    "les habitants"
+    "plus gros"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui supprime les commentaires qui le contredisent.",
+   "text": "Envoie ça au pote qui regarde la même série pour la quatrième fois.",
    "accent_words": [
-    "supprime"
+    "quatrième fois"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur une salle de quartier filmée par une seule caméra.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · SAISON 4",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "SAISON 4"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,13 +128,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "tripod_camera",
-    "person",
+    "screen",
+    "banner",
     "text3d"
    ],
-   "onscreen_text": "LE MOINS POSSIBLE",
-   "comic_action": "Une seule caméra, appartenant à la mairie, filme la salle.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "SAISON 4",
+   "comic_action": "Affiche « SAISON 4 » déroulée sur la mairie.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "SAISON 4"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -122,41 +158,80 @@
    "set": [
     "screen",
     "person",
-    "ring_light"
+    "bench"
    ],
-   "onscreen_text": "LIVE",
-   "comic_action": "Orbite : le maire sous ring light, répondant à un écran de commentaires.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "REDIFFUSION : 2012-2022",
+   "comic_action": "Écran géant sur la place, bancs pleins.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SÉANCE : 24 H/24"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
     "screen",
-    "text3d",
-    "person"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "COMMENTAIRE MASQUÉ",
-   "comic_action": "Gros plan : un commentaire disparaît sous un bandeau gris.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SPOILER",
+   "comic_action": "Un habitant chuchote la fin à l'oreille d'un touriste.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "SPOILER"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
+    "road",
     "person",
-    "bench",
     "sign"
    ],
-   "onscreen_text": "100 M · 3",
-   "comic_action": "Travelling : trois chaises occupées dans une salle de cent.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "FINAL : 4E",
+   "comic_action": "Des touristes repartent avec leurs valises avant la fin.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FIN : CONNUE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +240,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "text3d",
-    "person"
+    "screen",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "HABITANTS : ÉVITÉS",
-   "comic_action": "Plan large : la salle se vide, le live continue avec des cœurs automatiques.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "MÊME FIN, PLUS CHER",
+   "comic_action": "Bande-annonce : la même scène, avec des feux d'artifice.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BUDGET : × 2"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,44 +273,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique lève la main, l'écran le floute.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui supprime les commentaires qui le contredisent."
+  "text": "Envoie ça au pote qui regarde la même série pour la quatrième fois."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 83,
+ "word_count": 77,
  "claims": [
   {
-   "text": "« le moins possible »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
-   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
+   "text": "2027 : sa quatrième candidature présidentielle.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   },
   {
-   "text": "Ses médias revendiquent une centaine de millions de vues. Le conseil, trois spectateurs.",
+   "text": "Les touristes partent avant le final. Ils savent qu'il finit quatrième.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
-   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
-   "date": "2026",
+   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "date": "2026-06",
    "consulted": "2026-11-22",
-   "statut": "fait + citation",
-   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
+   "statut": "fait",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+  },
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « le moins possible » sur les chaînes d'info, ses propres médias : le maire filtre jusqu'aux habitants. Cadre : le conseil de quartier. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : 2027 : sa quatrième candidature présidentielle. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

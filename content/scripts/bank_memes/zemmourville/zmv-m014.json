@@ -4,79 +4,79 @@
  "synopsis_id": "zmv-m014-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Ben voyons, embauché",
- "anchor": "« Ben voyons », tic de langage devenu slogan de fans.",
+ "title_cover": "Embauché au ben voyons",
+ "anchor": "« Ben voyons » devenu le seul critère d'embauche de la mairie.",
  "meme_id": "ZS",
- "situation": "l'entretien d'embauche",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : l'entretien d'embauche se fait en ben voyons.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, deux mots suffisent pour tout.",
-  "Zemmourville : le CV tient en une expression."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien a un CDI.",
+  "Le tic de Zemmour est devenu le critère d'embauche de la mairie.",
+  "Celle-là, Zemmour ne la partagera pas.",
+  "Bienvenue à Zemmourville : embauché au ben voyons.",
+  "Zemmour en une vidéo : embauché au ben voyons."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Embauché. Personne ne sait pour quoi faire, mais avec assurance.",
-  "Deux mots, zéro programme, embauché.",
-  "Ben voyons : la réponse à tout, sauf au programme."
+  "Lui aussi postule à l'Élysée avec ça. Réponse : 7 %.",
+  "Lui aussi postule à l'Élysée avec ça. Réponse : 7 %.",
+  "La mairie se remplit d'agents qui répondent ben voyons. Plus rien ne marche."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Entretien en cours.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien a un CDI.",
    "accent_words": [
-    "Entretien en cours"
+    "un CDI"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ben voyons : son tic de langage le plus célèbre.",
+   "text": "Son tic le plus célèbre : ben voyons. Ses fans en ont fait un slogan.",
    "accent_words": [
-    "tic de langage"
+    "un slogan"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ses fans en ont fait un slogan. Ici, c'est la grille d'entretien.",
+   "text": "La mairie en fait le seul critère d'embauche.",
    "accent_words": [
-    "la grille d'entretien"
+    "critère d'embauche"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Vos compétences ? Ben voyons. Votre expérience ? Ben voyons.",
+   "text": "Tes compétences ? Ben voyons. Ton expérience ? Ben voyons. Embauché.",
    "accent_words": [
-    "Votre expérience"
+    "Embauché"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Votre programme ? Silence. Puis : ben voyons.",
+   "text": "La mairie se remplit d'agents qui répondent ben voyons. Plus rien ne marche.",
    "accent_words": [
-    "Silence"
+    "Plus rien ne marche"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Embauché. Personne ne sait pour quoi faire, mais avec assurance.",
+   "text": "Lui aussi postule à l'Élysée avec ça. Réponse : 7 %.",
    "accent_words": [
-    "avec assurance"
+    "7 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui a réussi un entretien sans rien dire.",
+   "text": "Envoie ça au pote qui répond ben voyons en réunion.",
    "accent_words": [
-    "sans rien dire"
+    "en réunion"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un bureau ; plaque « RECRUTEMENT — BEN VOYONS SARL ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · EMBAUCHÉ AU BEN VOYONS",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "BEN VOYONS = EMBAUCHÉ"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,13 +128,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "text3d",
-    "person",
-    "table"
+    "tribune",
+    "studio_light",
+    "text3d"
    ],
    "onscreen_text": "BEN VOYONS",
-   "comic_action": "Gros plan sur la plaque de la porte.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "comic_action": "Le maire au micro, sourcil levé.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BEN VOYONS = EMBAUCHÉ"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -120,43 +157,82 @@
    ],
    "camera": "orbit",
    "set": [
-    "form_stack",
+    "mairie",
     "table",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "GRILLE : 2 MOTS",
-   "comic_action": "Orbite autour d'une grille d'évaluation qui n'a qu'une colonne.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "CRITÈRE : BEN VOYONS",
+   "comic_action": "Un jury d'entretien avec une seule case à cocher.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "nod",
+     "visage": "neutre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CV : BEN VOYONS"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
     "table",
     "person",
     "text3d"
    ],
-   "onscreen_text": "COMPÉTENCES : BEN VOYONS",
-   "comic_action": "Le recruteur hoche la tête, coche les cases.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "EMBAUCHÉ",
+   "comic_action": "Un candidat serre la main du jury, deux mots suffisent.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "STAGIAIRE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
+    "mairie",
     "person",
-    "table",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "PROGRAMME : …",
-   "comic_action": "Travelling : long silence, une mouche passe.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "MAIRIE : BEN VOYONS",
+   "comic_action": "Des guichetiers répondent la même chose à la file.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SERVICE : EN PANNE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +241,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
+    "screen",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "EMBAUCHÉ",
-   "comic_action": "Plan large : poignée de main, contrat vierge.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "ÉLYSÉE : 7 %",
+   "comic_action": "Une lettre de refus avec « 7 % » en gros.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CANDIDATURE : REFUSÉE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,33 +274,47 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique sort du bureau, embauché.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui a réussi un entretien sans rien dire."
+  "text": "Envoie ça au pote qui répond ben voyons en réunion."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 73,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Ben voyons : son tic de langage le plus célèbre.",
+   "text": "Son tic le plus célèbre : ben voyons. Ses fans en ont fait un slogan.",
    "claim_type": "fait_public",
    "source": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
-   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
+   "note": "« Ben voyons ! » : tic de langage qui clôt la discussion, devenu slogan de fans (repris sans guillemets)."
   },
   {
-   "text": "Ses fans en ont fait un slogan. Ici, c'est la grille d'entretien.",
+   "text": "Lui aussi postule à l'Élysée avec ça. Réponse : 7 %.",
    "claim_type": "fait_public",
-   "source": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
-   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
@@ -220,9 +323,16 @@
    "date": "2022-02-02",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
+   "note": "« Ben voyons ! » : tic de langage qui clôt la discussion, devenu slogan de fans (repris sans guillemets)."
+  },
+  {
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « Ben voyons », tic de langage devenu slogan de fans. Cadre : l'entretien d'embauche. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Son tic le plus célèbre : ben voyons. Ses fans en ont fait un slogan. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

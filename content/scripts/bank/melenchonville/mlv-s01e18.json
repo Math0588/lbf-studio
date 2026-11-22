@@ -3,33 +3,33 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-18",
  "format": "A",
- "title_cover": "Matignon, pas appelé",
+ "title_cover": "40 000 Premiers ministres",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. Premier ministre, au moins.",
-  "Mélenchon voulait être Premier ministre. Il attend encore l'appel.",
-  "Les fans de Méluche vont me bloquer.",
-  "Bienvenue à Mélenchonville : matignon, pas appelé.",
-  "Mélenchon en une vidéo : matignon, pas appelé."
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien veut Matignon.",
+  "Mélenchon voulait être Premier ministre. Toute la ville aussi.",
+  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
+  "Bienvenue à Mélenchonville : 40 000 Premiers ministres.",
+  "Mélenchon en une vidéo : 40 000 Premiers ministres."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Élisez-moi Premier ministre, élisez-moi président : il demande tout, il n'obtient rien.",
-  "Il a demandé Matignon, puis l'Élysée. Réponse : messagerie.",
-  "Matignon n'a jamais appelé. Alors il vise l'étage au-dessus : l'Élysée, quatrième essai."
+  "Comme le sien en 2022 : Matignon n'a jamais appelé.",
+  "Quarante mille Premiers ministres, et Matignon n'en appelle aucun.",
+  "Chacun attend qu'on l'appelle. Tous les téléphones restent muets."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Premier ministre, au moins.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien veut Matignon.",
    "accent_words": [
-    "Premier ministre, au moins"
+    "veut Matignon"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Législatives 2022, son slogan : « Élisez-moi Premier ministre ».",
+   "text": "En 2022, son slogan : « Élisez-moi Premier ministre ».",
    "accent_words": [
     "Élisez-moi Premier ministre"
    ],
@@ -37,35 +37,35 @@
   },
   {
    "id": "n3",
-   "text": "Petit détail : il n'était même pas candidat à la députation.",
+   "text": "Toute la ville copie l'affiche. Chaque habitant se déclare Premier ministre.",
    "accent_words": [
-    "la députation"
+    "Premier ministre"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Et un Premier ministre, c'est le président qui le nomme. Pas l'affiche.",
+   "text": "Quarante mille Premiers ministres, personne pour sortir les poubelles.",
    "accent_words": [
-    "Pas l'affiche"
+    "les poubelles"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Matignon n'a jamais appelé. Alors il vise l'étage au-dessus : l'Élysée, quatrième essai.",
+   "text": "Chacun attend qu'on l'appelle. Tous les téléphones restent muets.",
    "accent_words": [
-    "l'Élysée, quatrième essai"
+    "restent muets"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Élisez-moi Premier ministre, élisez-moi président : il demande tout, il n'obtient rien.",
+   "text": "Comme le sien en 2022 : Matignon n'a jamais appelé.",
    "accent_words": [
-    "n'obtient rien"
+    "Matignon n'a jamais appelé"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE · MATIGNON, PAS APPELÉ",
-   "comic_action": "Descente sur la ville : banderole « MATIGNON, PAS APPELÉ », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "onscreen_text": "MÉLENCHONVILLE · 40 000 PREMIERS MINISTRES",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "ÉLISEZ-MOI PREMIER MINISTRE"
     }
    ]
   },
@@ -119,13 +129,19 @@
    ],
    "onscreen_text": "« ÉLISEZ-MOI PREMIER MINISTRE »",
    "comic_action": "Affiche géante déroulée sur la façade.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
      "geste": "point",
      "visage": "fier",
      "objet": "pancarte"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ÉLISEZ-MOI PREMIER MINISTRE"
     }
    ]
   },
@@ -136,18 +152,25 @@
    ],
    "camera": "orbit",
    "set": [
-    "form_stack",
-    "sign",
-    "text3d"
+    "facade_row",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "CANDIDAT DÉPUTÉ : NON",
-   "comic_action": "Un bulletin vierge s'envole au vent.",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "40 000 AFFICHES",
+   "comic_action": "Chaque fenêtre affiche « ÉLISEZ-MOI PREMIER MINISTRE ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
-     "who": "perso",
-     "geste": "facepalm",
-     "visage": "choque"
+     "who": "foule",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "pancarte"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PREMIER MINISTRE"
     }
    ]
   },
@@ -158,19 +181,24 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "mairie",
-    "sign",
-    "text3d"
+    "bin",
+    "road",
+    "person"
    ],
-   "onscreen_text": "NOMINATION : PAS LUI",
-   "comic_action": "Le téléphone de la mairie ne sonne pas.",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "POUBELLES : PERSONNE",
+   "comic_action": "Les poubelles débordent ; chacun pointe le voisin.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "shrug",
-     "visage": "blase",
-     "objet": "phone"
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SORTIR LES POUBELLES : PAS MON RÔLE"
     }
    ]
   },
@@ -181,18 +209,25 @@
    ],
    "camera": "closeup",
    "set": [
-    "lift_tribune",
-    "text3d",
-    "banner"
+    "person",
+    "bench",
+    "text3d"
    ],
-   "onscreen_text": "ÉTAGE SUIVANT : ÉLYSÉE",
-   "comic_action": "La tribune-ascenseur saute un étage… et redescend.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "APPELS : 0",
+   "comic_action": "Des habitants fixent leur téléphone, assis en rang.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "arms_up",
-     "visage": "fier"
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RÉSEAU : 0 APPEL"
     }
    ]
   },
@@ -203,24 +238,25 @@
    ],
    "camera": "descend",
    "set": [
-    "tribune",
-    "banner",
-    "text3d"
+    "mairie",
+    "text3d",
+    "sign"
    ],
-   "onscreen_text": "DEMANDÉ : TOUT · OBTENU : 0",
-   "comic_action": "Deux affiches côte à côte, tampon « REFUSÉ ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "MATIGNON : JAMAIS APPELÉ",
+   "comic_action": "Le téléphone du maire, sous cloche, ne sonne pas.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "fall",
-     "visage": "choque"
-    },
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "shrug",
-     "visage": "blase",
-     "quand": 0.4
+     "type": "prix",
+     "texte": "MESSAGERIE VIDE"
     }
    ]
   },
@@ -237,7 +273,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -245,6 +281,12 @@
      "geste": "point",
      "visage": "sourire_pro",
      "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
     }
    ]
   }
@@ -258,31 +300,19 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 82,
+ "word_count": 74,
  "claims": [
   {
-   "text": "Législatives 2022, son slogan : « Élisez-moi Premier ministre ».",
+   "text": "En 2022, son slogan : « Élisez-moi Premier ministre ».",
    "claim_type": "citation_exacte",
    "source": "https://www.lnc.nc/article-direct/politique/france/melenchon-veut-etre-elu-premier-ministre-aux-legislatives",
    "note": "« Élisez-moi Premier ministre » (législatives 2022) ; il n'a pas été nommé."
   },
   {
-   "text": "Petit détail : il n'était même pas candidat à la députation.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/legislatives-jean-luc-melenchon-ne-sera-pas-candidat-112719",
-   "note": "Législatives 2022 : il annonce qu'il ne sera pas candidat à la députation, tout en demandant à être Premier ministre."
-  },
-  {
-   "text": "Et un Premier ministre, c'est le président qui le nomme. Pas l'affiche.",
+   "text": "Comme le sien en 2022 : Matignon n'a jamais appelé.",
    "claim_type": "fait_public",
    "source": "https://www.lnc.nc/article-direct/politique/france/melenchon-veut-etre-elu-premier-ministre-aux-legislatives",
    "note": "« Élisez-moi Premier ministre » (législatives 2022) ; il n'a pas été nommé."
-  },
-  {
-   "text": "Matignon n'a jamais appelé. Alors il vise l'étage au-dessus : l'Élysée, quatrième essai.",
-   "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "sources": [
@@ -292,22 +322,8 @@
    "consulted": "2026-11-22",
    "statut": "citation_exacte",
    "note": "« Élisez-moi Premier ministre » (législatives 2022) ; il n'a pas été nommé."
-  },
-  {
-   "url": "https://lcp.fr/actualites/legislatives-jean-luc-melenchon-ne-sera-pas-candidat-112719",
-   "date": "2022-05-12",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Législatives 2022 : il annonce qu'il ne sera pas candidat à la députation, tout en demandant à être Premier ministre."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "date": "2026-06",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Matignon, pas appelé. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2022, son slogan : « Élisez-moi Premier ministre ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

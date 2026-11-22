@@ -4,79 +4,79 @@
  "synopsis_id": "mlv-m024-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Tortue contre lièvre",
- "anchor": "la tortue, totem de campagne, face à la fable.",
+ "title_cover": "Rationnement de mots",
+ "anchor": "6 821 mots au Bourget : la ville tombe en pénurie de mots.",
  "meme_id": "MG",
- "situation": "la visite de la ville voisine",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : la ville tortue, jumelée avec la ville lièvre.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, on court lentement, par conviction.",
-  "Mélenchonville : la fable de La Fontaine, quatrième tentative."
+  "Dans cette ville, tout le monde vote Mélenchon. Même le perroquet est épuisé.",
+  "Mélenchon a utilisé tous les mots. La ville est en pénurie.",
+  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
+  "Bienvenue à Mélenchonville : rationnement de mots.",
+  "Mélenchon en une vidéo : rationnement de mots."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La Fontaine n'avait pas prévu la quatrième candidature.",
-  "La tortue gagne dans la fable. Pas au premier tour.",
-  "Rien ne sert de courir. Surtout depuis 2012."
+  "Lui a gardé un mot en réserve, jamais utilisé : élu.",
+  "Il a gardé un mot en réserve, jamais utilisé : élu.",
+  "On se dit bonjour par gestes. Les disputes se font en mime."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Lentement.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le perroquet est épuisé.",
    "accent_words": [
-    "Lentement"
+    "est épuisé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son totem, c'est la tortue de la fable. Rien ne sert de courir.",
+   "text": "Au Bourget, il prononce 6 821 mots en une heure sept.",
    "accent_words": [
-    "la tortue"
+    "heure sept"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, la ville avance en tortue. La ville voisine, en lièvre.",
+   "text": "Résultat : pénurie. Il a utilisé tous les mots de la ville.",
    "accent_words": [
-    "en lièvre"
+    "la ville"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Dans la fable, le lièvre traîne et la tortue gagne.",
+   "text": "La mairie rationne : dix mots par habitant et par jour.",
    "accent_words": [
-    "la tortue gagne"
+    "par jour"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Dans la vraie vie, la tortue court depuis 2012 et finit troisième.",
+   "text": "On se dit bonjour par gestes. Les disputes se font en mime.",
    "accent_words": [
-    "finit troisième"
+    "en mime"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La Fontaine n'avait pas prévu la quatrième candidature.",
+   "text": "Lui a gardé un mot en réserve, jamais utilisé : élu.",
    "accent_words": [
-    "quatrième candidature"
+    "élu"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui dit j'arrive et arrive trois heures après.",
+   "text": "Envoie ça au pote qui raconte son week-end pendant quarante minutes.",
    "accent_words": [
-    "trois heures"
+    "quarante minutes"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "mascot",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur la frontière : une tortue géante côté Mélenchonville, un lièvre en face.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · RATIONNEMENT DE MOTS",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "ÉCONOMISEZ LES MOTS"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,43 +128,83 @@
    ],
    "camera": "closeup",
    "set": [
-    "mascot",
-    "sign",
-    "text3d"
+    "tribune",
+    "text3d",
+    "studio_light"
    ],
-   "onscreen_text": "RIEN NE SERT DE COURIR",
-   "comic_action": "La mascotte tortue pose devant le panneau d'entrée de la ville.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "6 821 MOTS",
+   "comic_action": "Une avalanche de lettres tombe de la tribune.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ÉCONOMISEZ LES MOTS"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "road",
-    "mascot",
-    "car"
+    "shop",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "TORTUE VS LIÈVRE",
-   "comic_action": "Travelling : côté tortue, un bus au pas ; côté lièvre, des voitures qui filent.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PÉNURIE DE MOTS",
+   "comic_action": "Rayon « MOTS » vide au supermarché.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MOTS : RUPTURE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "scroll",
-    "text3d",
+    "mairie",
+    "form_stack",
     "person"
    ],
-   "onscreen_text": "LA FONTAINE",
-   "comic_action": "Orbite autour d'un livre de fables ouvert sur un pupitre.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "10 MOTS PAR JOUR",
+   "comic_action": "Un guichet distribue des tickets de rationnement.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TICKET : 10 MOTS"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,13 +213,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "mascot",
-    "text3d",
-    "sign"
+    "road",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "2012 → 3E",
-   "comic_action": "La tortue franchit une ligne d'arrivée ; panneau « 3e ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "DISPUTE EN MIME",
+   "comic_action": "Deux voisins se disputent en silence, à grands gestes.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CHUT"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +241,26 @@
    ],
    "camera": "descend",
    "set": [
-    "mascot",
-    "road",
+    "tribune",
+    "banner",
     "text3d"
    ],
-   "onscreen_text": "TENTATIVE N° 4",
-   "comic_action": "Plan large : la tortue repart de la ligne de départ, dossard « 4 ».",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "MOT INUTILISÉ : ÉLU",
+   "comic_action": "Le maire tient un coffret « ÉLU », encore sous plastique.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ÉLU : NEUF, JAMAIS SERVI"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,64 +274,52 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique double la tortue en trottinette.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui dit j'arrive et arrive trois heures après."
+  "text": "Envoie ça au pote qui raconte son week-end pendant quarante minutes."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 75,
+ "word_count": 81,
  "claims": [
   {
-   "text": "Son totem, c'est la tortue de la fable. Rien ne sert de courir.",
+   "text": "Au Bourget, il prononce 6 821 mots en une heure sept.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
-  },
-  {
-   "text": "Dans la vraie vie, la tortue court depuis 2012 et finit troisième.",
-   "claim_type": "fait_public",
-   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; Union populaire (2022)."
-  },
-  {
-   "text": "La Fontaine n'avait pas prévu la quatrième candidature.",
-   "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
+   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
-   "date": "2026-06-07",
+   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
+   "date": "2026-11",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
-  },
-  {
-   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "date": "consulté 2026-11-22",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; Union populaire (2022)."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "date": "2026-06",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : la tortue, totem de campagne, face à la fable. Cadre : la visite de la ville voisine. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Au Bourget, il prononce 6 821 mots en une heure sept. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

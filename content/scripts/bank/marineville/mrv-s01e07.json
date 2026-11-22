@@ -3,33 +3,33 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-10",
  "format": "A",
- "title_cover": "Ravalement de façade",
+ "title_cover": "Cravates partout",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, on repeint la façade, jamais les murs porteurs.",
-  "Marineville : de loin, on dirait presque une autre maison.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : ravalement de façade."
+  "Dans cette ville, tout le monde vote Marine. En cravate, même le chien.",
+  "Marineville : même les égouts portent une cravate.",
+  "Ici, les gargouilles sont en costume.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Cravates partout."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ravalement réussi : de loin, on dirait presque une autre maison.",
-  "Les gargouilles portent des cravates. Elles grimacent pareil.",
-  "Ici, on a repeint la façade de la mairie. Les fissures sont retouchées."
+  "Marine admire : de loin, on dirait presque une autre ville.",
+  "De loin, presque une autre ville.",
+  "On cravate même les égouts. Ça sent pareil, en costume."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine. Façade neuve.",
+   "text": "Dans cette ville, tout le monde vote Marine. En cravate, même le chien.",
    "accent_words": [
-    "Façade neuve"
+    "cravate"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Un chercheur résume la dédiabolisation : des changements cosmétiques.",
+   "text": "Un chercheur résume la dédiabolisation : des changements cosmétiques, veste et cravate.",
    "accent_words": [
     "cosmétiques"
    ],
@@ -37,33 +37,33 @@
   },
   {
    "id": "n3",
-   "text": "Sa formule : la stratégie veste et cravate.",
+   "text": "Alors la ville met des cravates à tout : lampadaires, poubelles.",
    "accent_words": [
-    "veste et cravate"
+    "poubelles"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, on a repeint la façade de la mairie. Les fissures sont retouchées.",
+   "text": "Les gargouilles de la mairie portent des cravates. Elles grimacent pareil.",
    "accent_words": [
-    "retouchées"
+    "pareil"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les gargouilles portent des cravates. Elles grimacent pareil.",
+   "text": "On cravate même les égouts. Ça sent pareil, en costume.",
    "accent_words": [
-    "grimacent pareil"
+    "pareil"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ravalement réussi : de loin, on dirait presque une autre maison.",
+   "text": "Marine admire : de loin, on dirait presque une autre ville.",
    "accent_words": [
-    "presque"
+    "ville"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,89 +89,171 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; échafaudage et bâches bleu tendre.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "TOUT EN CRAVATE",
+   "comic_action": "Descente sur la ville ; banderole « TOUT EN CRAVATE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CRAVATE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "person",
+    "shop",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "CHANGEMENTS : COSMÉTIQUES",
-   "comic_action": "L'écran affiche un pinceau qui repasse sur la même brique.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "DÉDIABOLISATION : COSMÉTIQUE",
+   "comic_action": "Vitrine de cravates ; étiquette « DÉDIABOLISATION : COSMÉTIQUE ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "VESTE + CRAVATE",
-   "comic_action": "Une cravate est nouée autour d'une colonne.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "POUBELLES EN CRAVATE",
+   "comic_action": "Dans la rue, panneau « POUBELLES EN CRAVATE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "clap"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CRAVATE OBLIGATOIRE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "FISSURES : RETOUCHÉES",
-   "comic_action": "Un peintre passe du correcteur sur une fissure qui réapparaît aussitôt.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "GARGOUILLES EN CRAVATE",
+   "comic_action": "Descente sur la ville ; banderole « GARGOUILLES EN CRAVATE » sur la mairie.",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "column",
-    "mairie",
-    "text3d",
-    "person"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "GARGOUILLES EN CRAVATE",
-   "comic_action": "Gros plan sur une gargouille cravatée, toujours aussi menaçante.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "ÉGOUTS EN COSTUME",
+   "comic_action": "Dans la rue, panneau « ÉGOUTS EN COSTUME ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cough"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "DE LOIN : PRESQUE",
-   "comic_action": "Travelling arrière : de loin la façade est neuve ; de près, rien n'a changé. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "PRESQUE UNE AUTRE VILLE",
+   "comic_action": "Plan final, tenir une seconde : « PRESQUE UNE AUTRE VILLE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +267,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt caresse un mur fraîchement repeint.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE CRÉPI",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE CRÉPI ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,18 +290,11 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 70,
+ "word_count": 79,
  "claims": [
   {
    "segment": "n2",
-   "text": "Un chercheur résume la dédiabolisation : des changements cosmétiques.",
-   "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
-   "note": "Dédiabolisation = changements cosmétiques, stratégie « veste et cravate »."
-  },
-  {
-   "segment": "n3",
-   "text": "Sa formule : la stratégie veste et cravate.",
+   "text": "Un chercheur résume la dédiabolisation : des changements cosmétiques, veste et cravate.",
    "claim_type": "fait_public",
    "source": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
    "note": "Dédiabolisation = changements cosmétiques, stratégie « veste et cravate »."
@@ -226,5 +310,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = dédiabolisation lue par un chercheur comme des changements cosmétiques (stratégie « veste et cravate »). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = la dédiabolisation « cosmétique », stratégie veste et cravate. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

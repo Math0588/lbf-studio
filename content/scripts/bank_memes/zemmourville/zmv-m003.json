@@ -4,79 +4,79 @@
  "synopsis_id": "zmv-m003-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Bus cite Racine",
- "anchor": "Port-Marly (2026) : Chateaubriand, Racine, Virgile, Homère.",
+ "title_cover": "Le GPS ben voyons",
+ "anchor": "Son tic « ben voyons » installé dans tous les GPS.",
  "meme_id": "ZE",
- "situation": "le bus",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le bus récite Racine.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, les arrêts sont en alexandrins.",
-  "Zemmourville : la ligne la plus littéraire, la moins ponctuelle."
+  "Dans cette ville, tout le monde vote Zemmour. Même le GPS.",
+  "Le tic de Zemmour est dans tous les GPS de la ville. Bon courage.",
+  "Ben voyons, encore une vidéo sur lui.",
+  "Bienvenue à Zemmourville : le GPS ben voyons.",
+  "Zemmour en une vidéo : le GPS ben voyons."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le bus est cultivé, poétique, majestueux. Et il roule à 4 %.",
-  "Racine au micro, retard au compteur.",
-  "Le bus cite Homère, mais n'arrive jamais à Ithaque."
+  "Le GPS l'emmène quand même quelque part : quatrième place, 2022.",
+  "Le GPS l'emmène quand même quelque part : quatrième place.",
+  "Les voitures tournent au rond-point depuis mardi."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Prochain arrêt : Virgile.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le GPS.",
    "accent_words": [
-    "Prochain arrêt : Virgile"
+    "Même le GPS"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À Port-Marly, il cite Chateaubriand, Racine, Virgile et Homère.",
+   "text": "Son tic de langage le plus célèbre : ben voyons.",
    "accent_words": [
-    "Homère"
+    "ben voyons"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, le chauffeur annonce chaque arrêt avec une citation.",
+   "text": "La mairie l'installe dans tous les GPS de la ville.",
    "accent_words": [
-    "une citation"
+    "la ville"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le maire veut moderniser. Il ajoute un écran. L'écran affiche du Racine.",
+   "text": "Tu demandes la route ? Ben voyons. Tu rates la sortie ? Ben voyons.",
    "accent_words": [
-    "du Racine"
+    "Ben voyons"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les passagers ratent leur arrêt. Ils étaient à la césure.",
+   "text": "Les voitures tournent au rond-point depuis mardi.",
    "accent_words": [
-    "la césure"
+    "depuis mardi"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le bus est cultivé, poétique, majestueux. Et il roule à 4 %.",
+   "text": "Le GPS l'emmène quand même quelque part : quatrième place, 2022.",
    "accent_words": [
-    "à 4 %"
+    "quatrième place, 2022"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui cite des philosophes pour annuler un dîner.",
+   "text": "Envoie ça au pote qui répond ben voyons à tout.",
    "accent_words": [
-    "philosophes"
+    "à tout"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "bus",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un bus bordeaux ; girouette « VIRGILE ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · LE GPS BEN VOYONS",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "BEN VOYONS"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -106,57 +129,110 @@
    "camera": "closeup",
    "set": [
     "tribune",
-    "text3d",
-    "person"
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "PORT-MARLY 2026",
-   "comic_action": "Gros plan sur un pupitre entouré de bustes.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "BEN VOYONS",
+   "comic_action": "Le maire hausse un sourcil au micro.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BEN VOYONS"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "bus",
-    "person",
-    "sign"
+    "gps",
+    "car",
+    "text3d"
    ],
-   "onscreen_text": "ARRÊT : RACINE",
-   "comic_action": "Travelling : le chauffeur déclame au micro, les passagers prennent des notes.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "GPS : BEN VOYONS",
+   "comic_action": "Un écran de GPS affiche « BEN VOYONS » en guise d'itinéraire.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ITINÉRAIRE : BEN VOYONS"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "bus",
-    "screen",
-    "text3d"
+    "car",
+    "road",
+    "person"
    ],
-   "onscreen_text": "ÉCRAN : RACINE",
-   "comic_action": "L'écran neuf du bus affiche un vers en police gothique.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SORTIE RATÉE",
+   "comic_action": "Une voiture rate la sortie, le GPS ricane.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PERDU"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "bus",
-    "person",
+    "roundabout",
+    "car_orbit",
     "text3d"
    ],
-   "onscreen_text": "ARRÊT RATÉ",
-   "comic_action": "Orbite : le bus repart, des passagers courent derrière.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "ROND-POINT : DEPUIS MARDI",
+   "comic_action": "Des voitures tournent sans fin, campings installés au centre.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "spin",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TOUR N° 4 812"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +241,26 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "bus",
-    "text3d"
+    "gps",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "VITESSE : 4 %",
-   "comic_action": "Plan large : le bus avance au pas, doublé par un piéton.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "DESTINATION : 4E",
+   "comic_action": "Le GPS annonce : « VOUS ÊTES ARRIVÉ : 4E ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "7,07 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,51 +274,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique descend à la mauvaise station.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui cite des philosophes pour annuler un dîner."
+  "text": "Envoie ça au pote qui répond ben voyons à tout."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 76,
+ "word_count": 73,
  "claims": [
   {
-   "text": "À Port-Marly, il cite Chateaubriand, Racine, Virgile et Homère.",
+   "text": "Son tic de langage le plus célèbre : ben voyons.",
    "claim_type": "fait_public",
-   "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-zemmour-le-pourfendeur-de-la-modernite-qui-parlait-dia",
-   "note": "Port-Marly (13/09/2026, 55 min) : Chateaubriand, Racine, Virgile, Homère, Napoléon."
+   "source": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
+   "note": "« Ben voyons ! » : tic de langage qui clôt la discussion, devenu slogan de fans (repris sans guillemets)."
   },
   {
-   "text": "Le bus est cultivé, poétique, majestueux. Et il roule à 4 %.",
+   "text": "Le GPS l'emmène quand même quelque part : quatrième place, 2022.",
    "claim_type": "fait_public",
-   "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
-   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
   {
-   "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-zemmour-le-pourfendeur-de-la-modernite-qui-parlait-dia",
-   "date": "2026-09-29",
+   "url": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
+   "date": "2022-02-02",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Port-Marly (13/09/2026, 55 min) : Chateaubriand, Racine, Virgile, Homère, Napoléon."
+   "note": "« Ben voyons ! » : tic de langage qui clôt la discussion, devenu slogan de fans (repris sans guillemets)."
   },
   {
-   "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
-   "date": "2026-09",
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
    "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
-   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Port-Marly (2026) : Chateaubriand, Racine, Virgile, Homère. Cadre : le bus. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Son tic de langage le plus célèbre : ben voyons. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

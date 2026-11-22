@@ -3,75 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-36",
  "format": "A",
- "title_cover": "Pile ou face",
+ "title_cover": "Cinq catégories de pain",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, le guichet retraites a deux portes et cinq cases.",
-  "Marineville : la retraite à pile ou face.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : pile ou face."
+  "Dans cette ville, tout le monde vote Marine. Par catégorie.",
+  "Marineville : même le pain a cinq catégories.",
+  "Ici, une baguette exige ton premier bulletin de salaire.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Cinq catégories de pain."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Soixante, soixante-deux, voire on verra : la retraite à pile ou face.",
-  "Le formulaire a cinq cases : une par catégorie, aucune pour comprendre.",
-  "À la mairie, le guichet retraites a deux portes : entrée à soixante, sortie à soixante-deux."
+  "Des rivaux parlent de « catalogue de contradictions ». La mairie l'a classé : catégorie six.",
+  "Catalogue de contradictions : catégorie six.",
+  "La boulangerie embauche un notaire. La file dure trois jours."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine. La retraite, ça se complique.",
+   "text": "Dans cette ville, tout le monde vote Marine. Par catégorie.",
    "accent_words": [
-    "ça se complique"
+    "Par catégorie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sa réforme : départ à soixante-deux, voire soixante, plus une capitalisation obligatoire.",
+   "text": "Sa réforme 2026 : cinq catégories selon l'âge du premier emploi.",
    "accent_words": [
-    "capitalisation obligatoire"
+    "emploi"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Des rivaux parlent de « catalogue de contradictions ». Ici, on dit catalogue de printemps.",
+   "text": "Alors la mairie classe tout en cinq catégories : le pain, l'eau, les chaussettes.",
    "accent_words": [
-    "catalogue de contradictions"
+    "chaussettes"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le formulaire a cinq cases : une par catégorie, aucune pour comprendre.",
+   "text": "Pour acheter une baguette, il faut ton premier bulletin de salaire.",
    "accent_words": [
-    "cinq cases"
+    "salaire"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Au guichet retraites : entrée à soixante, sortie à soixante-deux.",
+   "text": "La boulangerie embauche un notaire. La file dure trois jours.",
    "accent_words": [
-    "soixante-deux"
+    "jours"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Soixante, soixante-deux, voire on verra : la retraite à pile ou face.",
+   "text": "Des rivaux parlent de « catalogue de contradictions ». La mairie l'a classé : catégorie six.",
    "accent_words": [
-    "pile ou face"
+    "six"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui croit qu'il partira à soixante ans.",
+   "text": "Envoie ça au pote qui croit avoir compris sa catégorie.",
    "accent_words": [
-    "soixante ans"
+    "catégorie"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,25 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; un panneau « RETRAITES » avec trois flèches opposées.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "PAR CATÉGORIE",
+   "comic_action": "Descente sur la ville ; banderole « PAR CATÉGORIE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CATÉGORIE 3"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,14 +116,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
+    "scroll",
+    "form_stack",
+    "table",
     "person"
    ],
-   "onscreen_text": "62 · VOIRE 60 · + BOURSE",
-   "comic_action": "Écran : trois chiffres qui clignotent tour à tour.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "CINQ CATÉGORIES",
+   "comic_action": "Formulaire de retraite déplié ; en gros « CINQ CATÉGORIES ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -116,62 +144,115 @@
    ],
    "camera": "window_pass",
    "set": [
-    "shop",
-    "person",
+    "facade_row",
     "sign",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "CATALOGUE PRINTEMPS-ÉTÉ",
-   "comic_action": "Vitrine : un catalogue qu'on feuillette, chaque page contredit la précédente.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "LE PAIN EN 5 CATÉGORIES",
+   "comic_action": "Rangée de façades : enseigne « LE PAIN EN 5 CATÉGORIES ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BAGUETTE : CATÉGORIE 4"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "form_stack",
+    "road",
     "person",
-    "text3d"
+    "banner",
+    "ring_light"
    ],
-   "onscreen_text": "CATÉGORIE : 1 À 5",
-   "comic_action": "Un formulaire à cinq cases ; un habitant les coche toutes, perdu.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "BULLETIN DE SALAIRE EXIGÉ",
+   "comic_action": "Travelling sur une file de téléphones levés ; banderole « BULLETIN DE SALAIRE EXIGÉ ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "objet": "baguette",
+     "geste": "facepalm"
+    },
+    {
+     "who": "foule",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "screen",
-    "sign",
-    "building"
+    "road",
+    "person",
+    "banner",
+    "ring_light"
    ],
-   "onscreen_text": "ENTRÉE 60 · SORTIE 62",
-   "comic_action": "Par la fenêtre : un habitant entre par une porte « 60 » et ressort par « 62 ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "FILE : 3 JOURS",
+   "comic_action": "Travelling sur une file de téléphones levés ; banderole « FILE : 3 JOURS ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "visage": "fatigue"
+    },
+    {
+     "who": "perso",
+     "visage": "dort"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie"
+    "screen"
    ],
-   "onscreen_text": "PILE OU FACE",
-   "comic_action": "Une pièce géante tourne sur la table, sans jamais retomber. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "« CATALOGUE DE CONTRADICTIONS »",
+   "comic_action": "Plan final, tenir une seconde : « « CATALOGUE DE CONTRADICTIONS » ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,42 +266,44 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt prépare son pot de départ, perplexe.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE CATÉGORIE 5",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE CATÉGORIE 5 ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui croit qu'il partira à soixante ans."
+  "text": "Envoie ça au pote qui croit avoir compris sa catégorie."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 85,
+ "word_count": 82,
  "claims": [
   {
    "segment": "n2",
-   "text": "Sa réforme : départ à soixante-deux, voire soixante, plus une capitalisation obligatoire.",
+   "text": "Sa réforme 2026 : cinq catégories selon l'âge du premier emploi.",
    "claim_type": "fait_public",
    "source": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
    "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
   },
   {
-   "segment": "n3",
-   "text": "« catalogue de contradictions »",
+   "segment": "n6",
+   "text": "Des rivaux parlent de « catalogue de contradictions ». La mairie l'a classé : catégorie six.",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/catalogue-de-contradictions-vaste-arnaque-financiere-la-reforme-des-retraites-du-rn-suscite-la-critique-de-certains-candidats",
-   "note": "« catalogue de contradictions », « vaste arnaque financière »."
-  },
-  {
-   "segment": "n4",
-   "text": "Le formulaire a cinq cases : une par catégorie, aucune pour comprendre.",
-   "claim_type": "fait_public",
-   "source": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
-   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
+   "note": "Des candidats rivaux : « catalogue de contradictions », « vaste arnaque financière »."
   }
  ],
  "sources": [
@@ -228,17 +311,17 @@
    "url": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
    "date": "2026-11-17",
    "consulted": "2026-11-22",
-   "statut": "fait public (présentation du programme)",
+   "statut": "fait",
    "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
   },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/catalogue-de-contradictions-vaste-arnaque-financiere-la-reforme-des-retraites-du-rn-suscite-la-critique-de-certains-candidats",
    "date": "2026-11",
    "consulted": "2026-11-22",
-   "statut": "citation (critiques de candidats rivaux)",
-   "note": "« catalogue de contradictions », « vaste arnaque financière »."
+   "statut": "citation exacte (rivaux)",
+   "note": "Des candidats rivaux : « catalogue de contradictions », « vaste arnaque financière »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = réforme du 17/11/2026 : 62 voire 60 ans, capitalisation obligatoire, cinq catégories ; des rivaux parlent de « catalogue de contradictions ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = sa réforme des retraites 2026 : cinq catégories selon le premier emploi. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

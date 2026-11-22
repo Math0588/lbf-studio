@@ -56,9 +56,13 @@ def next_script(st: dict, offset: int = 0) -> Path | None:
     from . import viral_lint
     cands = candidates()
 
+    from . import voix_externe
+
     def rank(p):
         sc = json.loads(p.read_text(encoding="utf-8"))
         histoire = any(x.get("gags") or x.get("actions") for x in sc.get("scenes", []))
+        if histoire and voix_externe.available(sc):
+            return -1                      # voix enregistrée prête : on la fabrique en premier
         return 0 if histoire else (1 if viral_lint.check(sc, strict=True)["ok"] else 2)
     # histoires absurdes avec gags et gestes d'abord, puis « moquerie de la personne », puis le reste validé
     cands = sorted(cands, key=rank)
@@ -68,6 +72,8 @@ def next_script(st: dict, offset: int = 0) -> Path | None:
         if sid in done or st["attempts"].get(sid, 0) >= MAX_ATTEMPTS:
             continue
         if not viral_lint.check(sc)["ok"]:   # ancien script « soft » ou incomplet : jamais fabriqué
+            continue
+        if sc.get("a_verifier"):              # fait pas assez sourcé : en attente de vérification
             continue
         if skip:
             skip -= 1

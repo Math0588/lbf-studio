@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-21",
  "format": "A",
- "title_cover": "Cat mother",
+ "title_cover": "Diplôme pour caresser",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, la mairie a un service entier dédié aux chats.",
-  "Marineville : être un chat, le seul statut vraiment protégé.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : cat mother."
+  "Dans cette ville, tout le monde vote Marine. Les chats votent double.",
+  "Marineville : un diplôme pour caresser un chat.",
+  "Ici, les chats ont pris la mairie.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Diplôme pour caresser."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ici, être un chat, c'est le seul statut vraiment protégé.",
-  "Ton dossier de logement passe après celui du siamois du troisième.",
-  "Les chats ont leur arrêté : sieste protégée de quatorze à vingt heures."
+  "Marine, diplômée, est la seule autorisée à leur parler.",
+  "La seule autorisée à leur parler.",
+  "Les chats, sans diplômés, s'organisent : ils prennent la mairie."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,13 +23,13 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Les chats votent double.",
    "accent_words": [
-    "votent double"
+    "double"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La presse britannique rapporte son surnom d'entourage : cat mother.",
+   "text": "Elle a passé un diplôme pour travailler avec des chats. Son entourage l'appelle cat mother.",
    "accent_words": [
     "cat mother"
    ],
@@ -37,33 +37,33 @@
   },
   {
    "id": "n3",
-   "text": "Diplôme pour travailler avec des chats, élevage déclaré : le CV est cohérent.",
+   "text": "Alors la mairie exige un diplôme pour adopter un chat.",
    "accent_words": [
-    "élevage déclaré"
+    "chat"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, un service municipal entier est dédié aux chats : guichet, tampon, ronron.",
+   "text": "Puis pour le caresser. Puis pour le regarder.",
    "accent_words": [
-    "ronron"
+    "regarder"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Ton dossier de logement passe après celui du siamois du troisième.",
+   "text": "Les chats, sans diplômés, s'organisent : ils prennent la mairie.",
    "accent_words": [
-    "du siamois"
+    "mairie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ici, être un chat, c'est le seul statut vraiment protégé.",
+   "text": "Marine, diplômée, est la seule autorisée à leur parler.",
    "accent_words": [
-    "vraiment protégé"
+    "parler"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui parle plus à son chat qu'à ses voisins.",
    "accent_words": [
-    "à ses voisins"
+    "voisins"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,25 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une chatière géante dans la porte principale.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "LES CHATS VOTENT DOUBLE",
+   "comic_action": "Descente sur la ville ; banderole « LES CHATS VOTENT DOUBLE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MIAOU"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,14 +116,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "mascot",
+    "person",
+    "sign",
+    "text3d"
    ],
    "onscreen_text": "CAT MOTHER",
-   "comic_action": "L'écran affiche une couronne posée sur une pelote de laine.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Mascotte chat au premier plan ; panneau « CAT MOTHER ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "visage": "content",
+     "geste": "wave"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -116,46 +144,92 @@
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
-    "table",
+    "mascot",
     "person",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "CV : CHATS",
-   "comic_action": "Un parchemin-CV se déroule : chaque ligne contient « chat ».",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "DIPLÔME POUR ADOPTER",
+   "comic_action": "Mascotte chat au premier plan ; panneau « DIPLÔME POUR ADOPTER ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CHAT : DIPLÔME EXIGÉ"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "mascot",
     "person",
-    "banner",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "SERVICE FÉLIN",
-   "comic_action": "La mascotte-chat tamponne des dossiers derrière un guichet.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DIPLÔME POUR REGARDER",
+   "comic_action": "Mascotte chat au premier plan ; panneau « DIPLÔME POUR REGARDER ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "person",
-    "road",
-    "building",
-    "sign"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "PRIORITÉ : SIAMOIS",
-   "comic_action": "File d'attente : un chat en peluche double tout le monde.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LES CHATS À LA MAIRIE",
+   "comic_action": "Descente sur la ville ; banderole « LES CHATS À LA MAIRIE » sur la mairie.",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LE CHAT AU POUVOIR"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,14 +238,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "STATUT PROTÉGÉ : CHAT",
-   "comic_action": "Entre deux colonnes, un chat sur un coussin, sous vitrine blindée. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LA SEULE DIPLÔMÉE",
+   "comic_action": "Plan final, tenir une seconde : « LA SEULE DIPLÔMÉE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +272,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt chuchote à une peluche.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE À CHAT",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE À CHAT ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,24 +295,14 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 82,
+ "word_count": 77,
  "claims": [
   {
    "segment": "n2",
-   "text": "La presse britannique rapporte son surnom d'entourage : cat mother.",
+   "text": "Elle a passé un diplôme pour travailler avec des chats. Son entourage l'appelle cat mother.",
    "claim_type": "fait_public",
    "source": "https://uk.news.yahoo.com/marine-le-pen-passes-professional-160314902.html",
    "note": "Diplôme professionnel pour travailler avec des chats ; surnom d'entourage « cat mother »."
-  },
-  {
-   "segment": "n3",
-   "text": "Diplôme pour travailler avec des chats, élevage déclaré : le CV est cohérent.",
-   "claim_type": "fait_public",
-   "source": "https://uk.news.yahoo.com/marine-le-pen-passes-professional-160314902.html",
-   "note": "Diplôme professionnel pour travailler avec des chats ; surnom d'entourage « cat mother ».",
-   "sources_complementaires": [
-    "https://www.hatvp.fr/livraison/dossiers/le-pen-marine-diam35065-depute-62.pdf"
-   ]
   }
  ],
  "sources": [
@@ -224,17 +310,10 @@
    "url": "https://uk.news.yahoo.com/marine-le-pen-passes-professional-160314902.html",
    "date": "2021-10-14",
    "consulted": "2026-11-22",
-   "statut": "fait (déclaré par l'intéressée) + surnom rapporté",
+   "statut": "fait déclaré + surnom rapporté",
    "note": "Diplôme professionnel pour travailler avec des chats ; surnom d'entourage « cat mother »."
-  },
-  {
-   "url": "https://www.hatvp.fr/livraison/dossiers/le-pen-marine-diam35065-depute-62.pdf",
-   "date": "2026-01-30",
-   "consulted": "2026-11-22",
-   "statut": "fait public (déclaration HATVP ; aucun montant repris)",
-   "note": "Activité d'élevage de chats mentionnée."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = diplôme professionnel pour travailler avec des chats (2021), surnom d'entourage « cat mother », activité d'élevage déclarée. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = son diplôme pour travailler avec des chats ; surnom d'entourage « cat mother ». Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

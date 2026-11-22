@@ -3,70 +3,70 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m006",
  "format": "A",
- "anchor": "« La plaisanterie a assez duré » (octobre 2025) : au conseil de quartier, la seule motion possible est la censure.",
- "situation": "Motion unique",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
- "title_cover": "Motion unique",
+ "anchor": "« La plaisanterie a assez duré » (octobre 2025)",
+ "situation": "Blagues interdites",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
+ "title_cover": "Blagues interdites",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, le conseil de quartier n'a qu'une motion : la censure.",
-  "Marineville : la démocratie locale a une seule touche, supprimer.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : motion unique."
+  "Dans cette ville, tout le monde vote Marine. Sérieusement.",
+  "Marineville interdit les blagues.",
+  "Ici, même les chats ne ronronnent plus.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Blagues interdites."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ici, la démocratie locale a une seule touche : supprimer.",
-  "Un habitant demande un passage piéton : censuré. Un banc : censuré.",
-  "Une habitante demande ce qu'on construit, alors : censurée aussi."
+  "Marine lance sa quatrième présidentielle. La seule plaisanterie autorisée.",
+  "La seule plaisanterie autorisée : une quatrième campagne.",
+  "La ville devient si sérieuse que même les chats ne ronronnent plus."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine. Les autres motions, non.",
+   "text": "Dans cette ville, tout le monde vote Marine. Sérieusement.",
    "accent_words": [
-    "motions"
+    "Sérieusement"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sa formule fétiche de 2025 : « La plaisanterie a assez duré ».",
+   "text": "Sa formule de 2025 : « La plaisanterie a assez duré ».",
    "accent_words": [
-    "plaisanterie"
+    "duré"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Dans la même phrase : « Je censure tout ».",
+   "text": "Alors la mairie interdit les blagues. Le clown est licencié.",
    "accent_words": [
-    "Je censure tout"
+    "clown"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Au conseil de quartier, une seule motion possible : la censure.",
+   "text": "Puis le carnaval, puis le premier avril.",
    "accent_words": [
-    "la censure"
+    "premier avril"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Un habitant demande un passage piéton : censuré. Un banc : censuré aussi.",
+   "text": "La ville devient si sérieuse que même les chats ne ronronnent plus.",
    "accent_words": [
-    "censuré aussi"
+    "ronronnent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ici, la démocratie locale a une seule touche : supprimer.",
+   "text": "Marine lance sa quatrième présidentielle. La seule plaisanterie autorisée.",
    "accent_words": [
-    "supprimer"
+    "autorisée"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -92,9 +92,26 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une urne marquée « CENSURE » à l'entrée.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "SÉRIEUSEMENT",
+   "comic_action": "Descente sur la ville ; banderole « SÉRIEUSEMENT » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -104,77 +121,143 @@
    "camera": "orbit",
    "set": [
     "tribune",
-    "studio_light",
-    "text3d",
+    "lift_tribune",
+    "banner",
     "person"
    ],
-   "onscreen_text": "« ASSEZ DURÉ »",
-   "comic_action": "Tribune : la maire cubique tape du poing.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« LA PLAISANTERIE A ASSEZ DURÉ »",
+   "comic_action": "Meeting : la tribune s'élève, banderole « « LA PLAISANTERIE A ASSEZ DURÉ » ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
+    "ground",
     "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "« JE CENSURE TOUT »",
-   "comic_action": "L'écran affiche la phrase, un tampon rouge par-dessus.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "CLOWN LICENCIÉ",
+   "comic_action": "Descente sur la ville ; banderole « CLOWN LICENCIÉ » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BLAGUES : INTERDITES"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "column",
-    "mairie",
+    "facade_row",
+    "sign",
     "text3d",
     "person"
    ],
-   "onscreen_text": "MOTION UNIQUE",
-   "comic_action": "Entre deux colonnes, un pupitre avec un seul bouton rouge.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "1ER AVRIL SUPPRIMÉ",
+   "comic_action": "Rangée de façades : enseigne « 1ER AVRIL SUPPRIMÉ ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
-    "building",
+    "mascot",
     "person",
-    "bin"
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "BANC : CENSURÉ",
-   "comic_action": "Un banc est emporté par un agent pendant qu'on le réclame.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LES CHATS NE RONRONNENT PLUS",
+   "comic_action": "Mascotte chat au premier plan ; panneau « LES CHATS NE RONRONNENT PLUS ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "blase"
+    },
+    {
+     "who": "foule",
+     "visage": "dort"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "TOUCHE UNIQUE : SUPPR",
-   "comic_action": "Vitrine : un clavier géant réduit à la touche « SUPPR ». Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LA SEULE BLAGUE AUTORISÉE",
+   "comic_action": "Plan final, tenir une seconde : « LA SEULE BLAGUE AUTORISÉE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +271,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt coupe un micro.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE SÉRIEUX",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE SÉRIEUX ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,18 +294,11 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 81,
+ "word_count": 71,
  "claims": [
   {
    "segment": "n2",
-   "text": "« La plaisanterie a assez duré »",
-   "claim_type": "citation_exacte",
-   "source": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
-   "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
-  },
-  {
-   "segment": "n3",
-   "text": "« Je censure tout »",
+   "text": "Sa formule de 2025 : « La plaisanterie a assez duré ».",
    "claim_type": "citation_exacte",
    "source": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
    "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
@@ -224,10 +309,10 @@
    "url": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
    "date": "2025-10-08",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (LCP)",
+   "statut": "citation exacte",
    "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « La plaisanterie a assez duré » (octobre 2025) : au conseil de quartier, la seule motion possible est la censure. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « La plaisanterie a assez duré » (octobre 2025). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

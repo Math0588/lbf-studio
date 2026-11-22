@@ -4,79 +4,79 @@
  "synopsis_id": "mlv-m006-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Délégué Premier ministre",
- "anchor": "« Élisez-moi Premier ministre » (législatives 2022).",
+ "title_cover": "La statue du maire",
+ "anchor": "« La République, c'est moi ! » : la ville en tire des statues.",
  "meme_id": "MI",
- "situation": "l'école",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le délégué de classe réclame Matignon.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, on vise Matignon dès la sixième.",
-  "Mélenchonville : le troisième tour se joue à la récré."
+  "Dans cette ville, tout le monde vote Mélenchon. Garde-à-vous, même le chien.",
+  "Mélenchon est la République. La ville lui a fait des statues. Partout.",
+  "Celle-là, Méluche ne la partagera pas.",
+  "Bienvenue à Mélenchonville : la statue du maire.",
+  "Mélenchon en une vidéo : la statue du maire."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Fin d'année : ni délégué, ni directeur. Mais il se représente.",
-  "Toujours candidat, jamais nommé.",
-  "Le seul délégué qui exige un gouvernement."
+  "Toutes ces statues, et pas un seul président élu dans la collection.",
+  "Toutes ces statues, et pas un président élu dans la collection.",
+  "Pénurie de bronze. On fond les casseroles, les cloches, la fontaine."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Même en classe.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Garde-à-vous, même le chien.",
    "accent_words": [
-    "Même en classe"
+    "Garde-à-vous, même le chien"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Élection du délégué. Un élève colle son affiche : « Élisez-moi Premier ministre ».",
+   "text": "En 2018, face caméra : « La République, c'est moi ! ».",
    "accent_words": [
-    "Premier ministre"
+    "La République, c'est moi"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "C'était son slogan aux législatives 2022. Matignon n'a jamais appelé.",
+   "text": "La mairie en conclut qu'il faut une statue géante du maire.",
    "accent_words": [
-    "jamais appelé"
+    "du maire"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le délégué refuse d'être délégué. Il veut le bureau du directeur.",
+   "text": "Puis une par rue. Puis une par appartement. On dort debout.",
    "accent_words": [
-    "directeur"
+    "On dort debout"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Chaque récré devient un troisième tour. Le bac à sable vote une motion.",
+   "text": "Pénurie de bronze. On fond les casseroles, les cloches, la fontaine.",
    "accent_words": [
-    "troisième tour"
+    "la fontaine"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Fin d'année : ni délégué, ni directeur. Mais il se représente.",
+   "text": "Toutes ces statues, et pas un seul président élu dans la collection.",
    "accent_words": [
-    "il se représente"
+    "la collection"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui veut être chef avant d'avoir été élu.",
+   "text": "Envoie ça au pote qui fait voter le groupe puis décide seul.",
    "accent_words": [
-    "chef"
+    "décide seul"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur une école ; affiches électorales sur le préau.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · LA STATUE DU MAIRE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "LA RÉPUBLIQUE, C'EST LUI"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,28 +128,55 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "person",
+    "tribune",
+    "studio_light",
     "text3d"
    ],
-   "onscreen_text": "ÉLISEZ-MOI PREMIER MINISTRE",
-   "comic_action": "Un élève scotche une affiche plus grande que lui sur le tableau de la classe.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« LA RÉPUBLIQUE, C'EST MOI ! »",
+   "comic_action": "Le maire crie au micro, les drapeaux claquent.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "colere",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LA RÉPUBLIQUE, C'EST LUI"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
-    "text3d",
+    "fountain",
+    "column",
     "person"
    ],
-   "onscreen_text": "MATIGNON : 0 APPEL",
-   "comic_action": "Le téléphone de la classe reste muet ; l'élève le fixe.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "STATUE GÉANTE",
+   "comic_action": "Une statue colossale se dresse au milieu de la place.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "bow",
+     "visage": "neutre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "STATUE : 12 MÈTRES"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -135,28 +185,54 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "building",
-    "person",
-    "sign"
+    "facade_row",
+    "column",
+    "person"
    ],
-   "onscreen_text": "BUREAU DU DIRECTEUR",
-   "comic_action": "Travelling : l'élève traîne sa chaise jusqu'au bureau du directeur.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "UNE STATUE PAR SALON",
+   "comic_action": "Un salon minuscule occupé par une statue, le canapé dehors.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "STATUE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "person",
-    "table",
-    "form_stack"
+    "fountain",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "3E TOUR",
-   "comic_action": "Orbite autour du bac à sable : seaux levés, vote à main levée.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PÉNURIE DE BRONZE",
+   "comic_action": "La fontaine disparaît dans un chaudron.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CASSEROLE : RÉQUISITIONNÉE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +241,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
+    "column",
     "banner",
     "text3d"
    ],
-   "onscreen_text": "CANDIDAT 2027",
-   "comic_action": "Plan large : l'école vide, une nouvelle affiche « 2027 » collée sur le préau.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "PRÉSIDENT ÉLU : 0",
+   "comic_action": "Les statues alignées ; le socle « PRÉSIDENT » est vide.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SOCLE : DISPONIBLE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,57 +274,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique décolle l'affiche, une autre apparaît dessous.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui veut être chef avant d'avoir été élu."
+  "text": "Envoie ça au pote qui fait voter le groupe puis décide seul."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 82,
+ "word_count": 81,
  "claims": [
   {
-   "text": "« Élisez-moi Premier ministre »",
+   "text": "En 2018, face caméra : « La République, c'est moi ! ».",
    "claim_type": "citation_exacte",
-   "source": "https://www.lnc.nc/article-direct/politique/france/melenchon-veut-etre-elu-premier-ministre-aux-legislatives",
-   "note": "« Élisez-moi Premier ministre » (législatives 2022) ; il n'a pas été nommé."
+   "source": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
+   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
   },
   {
-   "text": "C'était son slogan aux législatives 2022. Matignon n'a jamais appelé.",
+   "text": "Toutes ces statues, et pas un seul président élu dans la collection.",
    "claim_type": "fait_public",
-   "source": "https://www.lnc.nc/article-direct/politique/france/melenchon-veut-etre-elu-premier-ministre-aux-legislatives",
-   "note": "« Élisez-moi Premier ministre » (législatives 2022) ; il n'a pas été nommé."
-  },
-  {
-   "text": "Fin d'année : ni délégué, ni directeur. Mais il se représente.",
-   "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
   {
-   "url": "https://www.lnc.nc/article-direct/politique/france/melenchon-veut-etre-elu-premier-ministre-aux-legislatives",
-   "date": "2022-04",
+   "url": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
+   "date": "2018-10-17",
    "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "« Élisez-moi Premier ministre » (législatives 2022) ; il n'a pas été nommé."
+   "statut": "citation_exacte",
+   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
   },
   {
-   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "date": "2026-06",
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « Élisez-moi Premier ministre » (législatives 2022). Cadre : l'école. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2018, face caméra : « La République, c'est moi ! ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

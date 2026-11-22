@@ -5,78 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "L'annonce de l'annonce",
- "anchor": "la candidature 2027 annoncée en plusieurs temps (BFMTV puis TF1).",
+ "anchor": "Candidature 2026 en deux temps : septembre, puis novembre au 20 h.",
  "meme_id": "ZC",
- "situation": "la mairie",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : la mairie annonce ses annonces.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, une candidature se déclare en trois épisodes.",
-  "Zemmourville : officiellement, presque, bientôt."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien prévient avant.",
+  "Zemmour annonce qu'il va annoncer. La ville aussi.",
+  "Attention : vidéo garantie sans nostalgie. Presque.",
+  "Bienvenue à Zemmourville : l'annonce de l'annonce.",
+  "Zemmour en une vidéo : l'annonce de l'annonce."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Trois annonces, environ 4 %. Il annonce plus vite qu'il ne monte.",
-  "Candidat, officiellement candidat, toujours à 4 %.",
-  "L'annonce monte, le score non."
+  "Deux annonces, et toujours environ 4 % dans les sondages.",
+  "Deux annonces, et toujours environ 4 %.",
+  "Les panneaux saturent d'annonces d'annonces. Plus de place pour l'info."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Bientôt officiellement.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien prévient avant.",
    "accent_words": [
-    "Bientôt officiellement"
+    "prévient avant"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Septembre 2026, sur BFMTV : il est candidat. Mais ce n'est pas officiel.",
+   "text": "En 2026, il se dit candidat en septembre, puis l'officialise en novembre.",
    "accent_words": [
-    "pas officiel"
+    "en novembre"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, la mairie annonce qu'elle va annoncer une annonce.",
+   "text": "La mairie applique : chaque annonce est annoncée avant.",
    "accent_words": [
-    "une annonce"
+    "annoncée avant"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Novembre, au 20 h de TF1 : cette fois, c'est officiel.",
+   "text": "Le boulanger annonce qu'il va annoncer le pain du jour.",
    "accent_words": [
-    "officiel"
+    "du jour"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le panneau de la mairie : candidat, officiellement candidat, très officiellement candidat.",
+   "text": "Les panneaux saturent d'annonces d'annonces. Plus de place pour l'info.",
    "accent_words": [
-    "très officiellement"
+    "pour l'info"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Trois annonces, environ 4 %. Il annonce plus vite qu'il ne monte.",
+   "text": "Deux annonces, et toujours environ 4 % dans les sondages.",
    "accent_words": [
-    "plus vite"
+    "les sondages"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui annonce trois fois qu'il part de la soirée.",
+   "text": "Envoie ça au pote qui annonce trois fois qu'il arrive.",
    "accent_words": [
-    "trois fois"
+    "qu'il arrive"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -91,12 +91,35 @@
    "set": [
     "ground",
     "mairie",
-    "scroll",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur la mairie : un héraut, trompette levée.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · L'ANNONCE DE L'ANNONCE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "ANNONCE À VENIR"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -106,12 +129,26 @@
    "camera": "closeup",
    "set": [
     "screen",
-    "text3d",
-    "person"
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "CANDIDAT*",
-   "comic_action": "Un écran rétro, bandeau « CANDIDAT » avec astérisque géant.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "CANDIDAT · PUIS OFFICIEL",
+   "comic_action": "Deux plateaux télé, le même maire, deux dates.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ANNONCE À VENIR"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -121,41 +158,82 @@
    "camera": "orbit",
    "set": [
     "mairie",
-    "scroll",
+    "sign",
     "person"
    ],
    "onscreen_text": "ANNONCE D'ANNONCE",
-   "comic_action": "Orbite : le héraut déroule un parchemin qui dit « PARCHEMIN À VENIR ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "comic_action": "Affiche : « PROCHAINEMENT : UNE ANNONCE ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ANNONCE : BIENTÔT"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
+    "shop",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "OFFICIEL",
-   "comic_action": "La même annonce, cette fois avec un tampon « OFFICIEL ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PAIN : ANNONCE PRÉVUE",
+   "comic_action": "Le boulanger tend une affiche au lieu d'une baguette.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "bow",
+     "visage": "fier",
+     "objet": "baguette"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "IMPATIENT"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
     "sign",
-    "mairie",
+    "road",
     "text3d"
    ],
-   "onscreen_text": "TRÈS OFFICIEL",
-   "comic_action": "Travelling sur trois panneaux successifs, de plus en plus grands.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PANNEAUX SATURÉS",
+   "comic_action": "Une colonne Morris débordante d'affiches « BIENTÔT ».",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "INFO : AUCUNE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,13 +242,26 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
+    "screen",
     "text3d",
-    "scroll"
+    "banner"
    ],
-   "onscreen_text": "3 ANNONCES · 4 %",
-   "comic_action": "Plan large : les parchemins s'empilent, la jauge reste en bas.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "SONDAGES : 4 %",
+   "comic_action": "Le compteur reste à « 4 % » entre les deux annonces.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "4 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -184,36 +275,50 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique bâille devant le héraut.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui annonce trois fois qu'il part de la soirée."
+  "text": "Envoie ça au pote qui annonce trois fois qu'il arrive."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 80,
+ "word_count": 74,
  "claims": [
   {
-   "text": "Septembre 2026, sur BFMTV : il est candidat. Mais ce n'est pas officiel.",
+   "text": "En 2026, il se dit candidat en septembre, puis l'officialise en novembre.",
    "claim_type": "fait_public",
    "source": "https://www.parismatch.be/actualites/monde/2026/09/18/eric-zemmour-confirme-sa-candidature-a-lelection-presidentielle-francaise-5CKEL6PZ4BDONOUKVHMMCG65NU/",
    "note": "Septembre 2026 sur BFMTV : candidat, mais pas encore de déclaration officielle."
   },
   {
-   "text": "Novembre, au 20 h de TF1 : cette fois, c'est officiel.",
+   "text": "En 2026, il se dit candidat en septembre, puis l'officialise en novembre.",
    "claim_type": "fait_public",
    "source": "https://fr.euronews.com/2026/11/10/eric-zemmour-annonce-sa-candidature-a-la-presidentielle",
    "note": "Candidature officialisée au 20 h de TF1 le 10/11/2026."
   },
   {
-   "text": "Trois annonces, environ 4 %. Il annonce plus vite qu'il ne monte.",
+   "text": "Deux annonces, et toujours environ 4 % dans les sondages.",
    "claim_type": "fait_public",
    "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
    "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
@@ -238,10 +343,10 @@
    "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
    "date": "2026-09",
    "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
+   "statut": "fait",
    "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : la candidature 2027 annoncée en plusieurs temps (BFMTV puis TF1). Cadre : la mairie. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2026, il se dit candidat en septembre, puis l'officialise en novembre. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

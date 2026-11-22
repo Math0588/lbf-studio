@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m023",
  "format": "A",
- "anchor": "campagne au seul prénom (2017, affiche 2026) : à l'école, les élèves copient la méthode.",
+ "anchor": "la campagne 2017 au prénom seul, nom et parti effacés",
  "situation": "Copies sans nom",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "title_cover": "Copies sans nom",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, les copies n'ont plus de nom.",
-  "Marineville : changer d'étiquette, garder le cartable.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : copies sans nom."
+  "Dans cette ville, tout le monde vote Marine. Prénom seul.",
+  "Marineville : plus de nom sur les copies.",
+  "Ici, trente Lucas se battent pour un vingt sur vingt.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Copies sans nom."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Vieux truc de cour de récré : changer d'étiquette, garder le cartable.",
-  "Trente Lucas, une seule bonne note, et personne ne sait à qui.",
-  "Le prof rend les copies au hasard ; les parents signent sans regarder."
+  "Marine a gardé la recette : changer l'étiquette, garder le cartable.",
+  "Changer l'étiquette, garder le cartable.",
+  "Les trente réclament le vingt sur vingt. Bagarre dans la cour."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -26,47 +26,47 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Prénom seul.",
    "accent_words": [
-    "Prénom seul"
+    "Prénom"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Elle fait campagne avec son prénom, sans nom de famille.",
+   "text": "Campagne 2017 : prénom seul, nom de famille et parti effacés des documents.",
    "accent_words": [
-    "son prénom"
+    "documents"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "En 2017, la presse ironisait : on renouvelle Marine, pas le programme.",
-   "accent_words": [
-    "pas le programme"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "À l'école, les élèves copient la méthode : plus de nom sur les copies.",
+   "text": "Alors l'école supprime les noms sur les copies.",
    "accent_words": [
     "copies"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n5",
-   "text": "Trente Lucas, une seule bonne note, et personne ne sait à qui.",
+   "id": "n4",
+   "text": "Trente Lucas, une seule bonne note. Personne ne sait à qui.",
    "accent_words": [
     "à qui"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n6",
-   "text": "Vieux truc de cour de récré : changer d'étiquette, garder le cartable.",
+   "id": "n5",
+   "text": "Les trente réclament le vingt sur vingt. Bagarre dans la cour.",
    "accent_words": [
-    "garder le cartable"
+    "cour"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Marine a gardé la recette : changer l'étiquette, garder le cartable.",
+   "accent_words": [
+    "cartable"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -74,7 +74,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui oublie son nom quand il a tout faux.",
    "accent_words": [
-    "tout faux"
+    "faux"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,25 +92,54 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur l'école municipale ; un tableau d'appel avec des prénoms seulement.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "PRÉNOM SEUL",
+   "comic_action": "Descente sur la ville ; banderole « PRÉNOM SEUL » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
     "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "sign",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "PRÉNOM : OUI · NOM : NON",
-   "comic_action": "Rangée de façades : affiches au seul prénom.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "NOM ET PARTI EFFACÉS",
+   "comic_action": "Rangée de façades : enseigne « NOM ET PARTI EFFACÉS ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -119,35 +148,35 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "table",
+    "form_stack",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "PROGRAMME : INCHANGÉ",
-   "comic_action": "L'écran : deux colonnes, « image : neuve », « programme : idem ».",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "COPIES SANS NOM",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « COPIES SANS NOM ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "NOM : FACULTATIF"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
-   ],
-   "camera": "window_pass",
-   "set": [
-    "table",
-    "person",
-    "screen",
-    "text3d"
-   ],
-   "onscreen_text": "COPIES : ANONYMES",
-   "comic_action": "Une pile de copies sans nom sur la table du prof.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
-  },
-  {
-   "id": "s5",
-   "narration_ids": [
-    "n5"
    ],
    "camera": "closeup",
    "set": [
@@ -156,25 +185,79 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "20/20 : À QUI ?",
-   "comic_action": "Une copie notée 20 brandie devant trente élèves identiques.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "30 LUCAS, 1 NOTE",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « 30 LUCAS, 1 NOTE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "point"
+    }
+   ],
+   "gags": []
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
+   ],
+   "onscreen_text": "BAGARRE DANS LA COUR",
+   "comic_action": "Dans la rue, panneau « BAGARRE DANS LA COUR ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "manif",
+     "visage": "colere"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "ÉTIQUETTE NEUVE · CARTABLE VIEUX",
-   "comic_action": "Vitrine : un vieux cartable avec une étiquette neuve. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "GARDER LE CARTABLE",
+   "comic_action": "Plan final, tenir une seconde : « GARDER LE CARTABLE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +271,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt efface son nom sur une feuille.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE ANONYME",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE ANONYME ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,24 +294,14 @@
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 83,
+ "word_count": 77,
  "claims": [
   {
    "segment": "n2",
-   "text": "Elle fait campagne avec son prénom, sans nom de famille.",
+   "text": "Campagne 2017 : prénom seul, nom de famille et parti effacés des documents.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
-   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme ».",
-   "sources_complementaires": [
-    "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne"
-   ]
-  },
-  {
-   "segment": "n3",
-   "text": "En 2017, la presse ironisait : on renouvelle Marine, pas le programme.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
-   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme »."
+   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés."
   }
  ],
  "sources": [
@@ -227,17 +309,10 @@
    "url": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
    "date": "2017-02-06",
    "consulted": "2026-11-22",
-   "statut": "fait public + analyse de presse",
-   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme »."
-  },
-  {
-   "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
-   "date": "2026-10-29",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte (meeting d'Orléans, 25/10/2026) + fait (affiche)",
-   "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
+   "statut": "fait + analyse",
+   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = campagne au seul prénom (2017, affiche 2026) : à l'école, les élèves copient la méthode. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = la campagne 2017 au prénom seul, nom et parti effacés. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

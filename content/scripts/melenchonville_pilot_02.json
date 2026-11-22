@@ -3,67 +3,67 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-02",
  "format": "B",
- "title_cover": "Méluche hors antenne",
+ "title_cover": "Annoncé au 20 h",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le maire est partout, sauf à la télé.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, le maire boude les journalistes et parle aux likes.",
-  "Mélenchonville : la seule mairie qui tourne sur TikTok."
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien.",
+  "Mélenchon annonce tout au 20 h. La ville aussi.",
+  "Les fans de Méluche vont me bloquer.",
+  "Bienvenue à Mélenchonville : annoncé au 20 h.",
+  "Mélenchon en une vidéo : annoncé au 20 h."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Deux millions de likes en un mois. Le seul scrutin qu'il remporte.",
-  "Il boude la télé, mais la télé ne l'avait pas invité.",
-  "Zéro plateau, deux millions de likes, toujours pas élu."
+  "Et en novembre, il boycotte le 20 h. TF1 : il n'était pas invité.",
+  "Et en novembre, il boycotte le 20 h. Il n'était pas invité.",
+  "Le journal dure toute la nuit. Les présentateurs dorment sur place."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. En hologramme.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien.",
    "accent_words": [
-    "En hologramme"
+    "Même le chien"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Depuis 2017, il meetingue en hologramme. Le maire est un projecteur.",
+   "text": "Ses candidatures ? Toujours annoncées au 20 h de TF1 : 2016, 2020, 2026.",
    "accent_words": [
-    "projecteur"
+    "2016, 2020, 2026"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Les chaînes d'info ? Il promet d'y passer « le moins possible ». Tenu.",
+   "text": "La ville copie : chaque annonce passe par le 20 h.",
    "accent_words": [
-    "Tenu"
+    "20 h"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Il boycotte le 20 h de TF1. TF1 : il n'était plus invité.",
+   "text": "Le boulanger annonce sa baguette au 20 h. Le chien, sa promenade.",
    "accent_words": [
-    "plus invité"
+    "Le chien, sa promenade"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Sur TikTok, il chante Wejdene : « Tu hors de ma vue ». Malaise.",
+   "text": "Le journal dure toute la nuit. Les présentateurs dorment sur place.",
    "accent_words": [
-    "Malaise"
+    "sur place"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Deux millions de likes en un mois. Le seul scrutin qu'il remporte.",
+   "text": "Et en novembre, il boycotte le 20 h. TF1 : il n'était pas invité.",
    "accent_words": [
-    "seul scrutin"
+    "il n'était pas invité"
    ],
    "claim_type": "fait_public"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui s'informe en edits de Méluche.",
    "accent_words": [
-    "edits"
+    "de Méluche"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -87,75 +87,147 @@
     "ground",
     "mairie",
     "banner",
-    "person",
-    "studio_light"
+    "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur la mairie : au balcon, le maire est une projection bleutée qui grésille.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · ANNONCÉ AU 20 H",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "ANNONCEZ AU 20 H"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "tribune",
+    "screen",
     "studio_light",
-    "person",
     "text3d"
    ],
-   "onscreen_text": "MAIRE EN 2D",
-   "comic_action": "Orbite autour de la tribune : un habitant passe la main à travers le maire projeté.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "ANNONCÉ AU 20 H × 3",
+   "comic_action": "Trois écrans montrent le même plateau du 20 h.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ANNONCEZ AU 20 H"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
     "screen",
-    "tripod_camera",
-    "studio_light",
-    "table"
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "CHAÎNES D'INFO : ABSENT",
-   "comic_action": "Plateau télé vide : une chaise avec un carton « INVITÉ », la caméra filme le vide.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "TOUT AU 20 H",
+   "comic_action": "File d'habitants devant un studio de télé.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "manif",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PASSAGE AU JT : 1 MIN"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
     "screen",
-    "text3d",
-    "table"
+    "shop",
+    "person"
    ],
-   "onscreen_text": "BOYCOTT ? PAS INVITÉ",
-   "comic_action": "Écran du 20 h : le bandeau « IL BOYCOTTE » glisse et devient « IL N'ÉTAIT PAS INVITÉ ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "BAGUETTE : ANNONCÉE AU JT",
+   "comic_action": "Le boulanger, solennel, présente une baguette à la caméra.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "bow",
+     "visage": "fier",
+     "objet": "baguette"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "EN DIRECT"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "person",
-    "ring_light",
-    "tripod_camera",
-    "sign"
+    "studio_light",
+    "screen",
+    "person"
    ],
-   "onscreen_text": "TU HORS DE MA VUE",
-   "comic_action": "Rue de nuit : un habitant se filme sous ring light en chantant ; les passants détournent les yeux.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "JT : 9 HEURES",
+   "comic_action": "Présentateurs affalés sur le bureau du JT.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "dort"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "JT : 20 H – 5 H"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,14 +236,26 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
     "screen",
     "text3d",
-    "person"
+    "sign"
    ],
-   "onscreen_text": "2 000 000 ❤ · 0 ÉLYSÉE",
-   "comic_action": "Un compteur de likes géant explose sur la façade ; à côté, un panneau « ÉLYSÉE » reste éteint.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "BOYCOTT D'UN NON-INVITÉ",
+   "comic_action": "Le maire claque la porte d'un studio vide.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "INVITATION : AUCUNE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +269,23 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique regarde un edit au ralenti, violons à fond.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,53 +297,34 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 84,
+ "word_count": 83,
  "claims": [
   {
-   "text": "Depuis 2017, il meetingue en hologramme. Le maire est un projecteur.",
+   "text": "Ses candidatures ? Toujours annoncées au 20 h de TF1 : 2016, 2020, 2026.",
    "claim_type": "fait_public",
-   "source": "https://www.parismatch.be/actualites/politique/2017/02/05/jean-luc-melenchon-en-chair-en-os-et-en-hologramme-A5YAIOB4FRFYHLFZPCANXUXQVE/",
-   "note": "Meeting double Lyon/Aubervilliers en hologramme ; selon Europe 1, il devait rester dans un carré de 4 m sur 4."
+   "source": "https://lcp.fr/actualites/presidentielle-jean-luc-melenchon-officialise-sa-candidature-pour-2027-435851",
+   "note": "Candidature annoncée au 20 h de TF1, comme ses annonces de février 2016 et novembre 2020."
   },
   {
-   "text": "« le moins possible »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
-   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
-  },
-  {
-   "text": "Il boycotte le 20 h de TF1. TF1 : il n'était plus invité.",
+   "text": "Et en novembre, il boycotte le 20 h. TF1 : il n'était pas invité.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/furieux-contre-tf1-jean-luc-melenchon-annule-sa-venue-au-20-heures-ce-soir/657784",
-   "note": "Novembre 2026 : il annonce sur X annuler sa venue au 20 h de TF1. / TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
+   "note": "Novembre 2026 : il annonce sur X annuler sa venue au 20 h de TF1."
   },
   {
-   "text": "« Tu hors de ma vue »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.journaldugeek.com/2020/07/09/macron-melenchon-clash-tiktok/",
-   "note": "TikTok en réponse à Macron, paroles de Wejdene « Tu hors de ma vue », renvoi vers Parcoursup ; réactions moqueuses."
-  },
-  {
-   "text": "Deux millions de likes en un mois. Le seul scrutin qu'il remporte.",
+   "text": "Et en novembre, il boycotte le 20 h. TF1 : il n'était pas invité.",
    "claim_type": "fait_public",
-   "source": "https://www.sudradio.fr/sud-radio/presidentielle-2027-melenchon-prend-la-tete-de-la-bataille-sur-les-reseaux-sociaux",
-   "note": "Plus de 2,1 millions de likes TikTok en septembre 2026 ; 1,2 million de mentions."
+   "source": "https://www.ozap.com/actu/affaire-de-jean-luc-melenchon-au-20-heures-tf1-dement-le-leader-de-lfi-et-affirme-quil-netait-pas-invite-ce-lundi-soir/657792",
+   "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
   }
  ],
  "sources": [
   {
-   "url": "https://www.parismatch.be/actualites/politique/2017/02/05/jean-luc-melenchon-en-chair-en-os-et-en-hologramme-A5YAIOB4FRFYHLFZPCANXUXQVE/",
-   "date": "2017-02-05",
+   "url": "https://lcp.fr/actualites/presidentielle-jean-luc-melenchon-officialise-sa-candidature-pour-2027-435851",
+   "date": "2026-05-03",
    "consulted": "2026-11-22",
-   "statut": "fait + mème",
-   "note": "Meeting double Lyon/Aubervilliers en hologramme ; selon Europe 1, il devait rester dans un carré de 4 m sur 4."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
-   "date": "2026",
-   "consulted": "2026-11-22",
-   "statut": "fait + citation",
-   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
+   "statut": "fait",
+   "note": "Candidature annoncée au 20 h de TF1, comme ses annonces de février 2016 et novembre 2020."
   },
   {
    "url": "https://www.ozap.com/actu/furieux-contre-tf1-jean-luc-melenchon-annule-sa-venue-au-20-heures-ce-soir/657784",
@@ -260,22 +339,8 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
-  },
-  {
-   "url": "https://www.journaldugeek.com/2020/07/09/macron-melenchon-clash-tiktok/",
-   "date": "2020-07-09",
-   "consulted": "2026-11-22",
-   "statut": "fait + mème",
-   "note": "TikTok en réponse à Macron, paroles de Wejdene « Tu hors de ma vue », renvoi vers Parcoursup ; réactions moqueuses."
-  },
-  {
-   "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-melenchon-prend-la-tete-de-la-bataille-sur-les-reseaux-sociaux",
-   "date": "2026-10",
-   "consulted": "2026-11-22",
-   "statut": "fait (rapporté)",
-   "note": "Plus de 2,1 millions de likes TikTok en septembre 2026 ; 1,2 million de mentions."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : il boude les médias mais il est partout : hologramme, « le moins possible », 20 h de TF1, Wejdene, likes TikTok. Cadre : la mairie en hologramme. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Ses candidatures ? Toujours annoncées au 20 h de TF1 : 2016, 2020, 2026. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

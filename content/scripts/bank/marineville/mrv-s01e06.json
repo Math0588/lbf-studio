@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-06",
  "format": "A",
- "title_cover": "Une rose, une flamme",
+ "title_cover": "Roses partout",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, toutes les enseignes sont remplacées par des fleurs.",
-  "Marineville : une rose sur la flamme, c'est de la déco.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : une rose, une flamme."
+  "Dans cette ville, tout le monde vote Marine. Derrière une fleur.",
+  "Marineville : des roses à la place des enseignes.",
+  "Ici, on paie ses impôts chez le fleuriste.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Roses partout."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Une rose sur la flamme : pas éteindre le feu, le décorer.",
-  "Ici, toutes les enseignes sont des fleurs. Personne ne trouve la poste.",
-  "Le slogan : Au nom du peuple. Le nom du parti, lui, au vestiaire."
+  "Marine, elle, a fini par ressortir la flamme. Les roses, ça fane.",
+  "Les roses, ça fane. La flamme, non.",
+  "Les touristes paient leurs impôts chez le fleuriste."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,49 +23,49 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Derrière une fleur.",
    "accent_words": [
-    "Derrière une fleur"
+    "fleur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Campagne 2017 : une rose bleue en logo. Ni nom de parti, ni flamme.",
+   "text": "Campagne 2017 : en logo, une rose bleue. Ni nom de parti, ni flamme.",
    "accent_words": [
-    "rose bleue"
+    "flamme"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Slogan : Au nom du peuple. Le nom du parti ? Au vestiaire.",
+   "text": "Alors la ville remplace toutes ses enseignes par des roses bleues.",
    "accent_words": [
-    "Au vestiaire"
+    "roses bleues"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, toutes les enseignes sont des fleurs. Personne ne trouve la poste.",
+   "text": "Personne ne trouve plus la poste, la mairie, ni la pharmacie.",
    "accent_words": [
-    "la poste"
+    "pharmacie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le fleuriste municipal est débordé : chaque ravalement réclame un bouquet.",
+   "text": "Les touristes paient leurs impôts chez le fleuriste.",
    "accent_words": [
-    "un bouquet"
+    "fleuriste"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Une rose sur la flamme : pas éteindre le feu, le décorer.",
+   "text": "Marine, elle, a fini par ressortir la flamme. Les roses, ça fane.",
    "accent_words": [
-    "le décorer"
+    "flamme"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
@@ -89,41 +89,86 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une rose bleue géante cache le fronton.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "DERRIÈRE UNE FLEUR",
+   "comic_action": "Descente sur la ville ; banderole « DERRIÈRE UNE FLEUR » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "banner",
+    "arch",
+    "text3d",
+    "facade_set"
    ],
-   "onscreen_text": "ROSE BLEUE · NOM : ?",
-   "comic_action": "Affiches identiques : une rose bleue, aucun sigle.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "ROSE BLEUE, SANS FLAMME",
+   "comic_action": "Sous une arche, on change l'enseigne ; banderole « ROSE BLEUE, SANS FLAMME ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "studio_light",
-    "tripod_camera",
-    "table",
+    "facade_row",
+    "sign",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "VESTIAIRE : LE PARTI",
-   "comic_action": "Coulisses : un cintre porte une veste marquée du sigle, rangée au fond.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "TOUT EN ROSES BLEUES",
+   "comic_action": "Rangée de façades : enseigne « TOUT EN ROSES BLEUES ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "clap"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ENSEIGNE : UNE ROSE"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -133,13 +178,25 @@
    "camera": "street_dolly",
    "set": [
     "road",
-    "building",
+    "sign",
     "person",
-    "bin"
+    "traffic_light"
    ],
-   "onscreen_text": "POSTE ? ROSE.",
-   "comic_action": "Une rue où chaque façade porte la même fleur ; un facteur tourne en rond.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "OÙ EST LA POSTE ?",
+   "comic_action": "Dans la rue, panneau « OÙ EST LA POSTE ? ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -148,14 +205,26 @@
    ],
    "camera": "window_pass",
    "set": [
-    "shop",
-    "person",
+    "facade_row",
     "sign",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "FLEURISTE : COMPLET",
-   "comic_action": "Vitrine de fleuriste vide, carnet de commandes « mairie » qui déborde.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "IMPÔTS CHEZ LE FLEURISTE",
+   "comic_action": "Rangée de façades : enseigne « IMPÔTS CHEZ LE FLEURISTE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "objet": "billets",
+     "geste": "facepalm"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -164,14 +233,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "FEU DÉCORÉ",
-   "comic_action": "Entre deux colonnes, une flamme ornée d'un nœud et d'une rose. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LA FLAMME REVIENT",
+   "comic_action": "Plan final, tenir une seconde : « LA FLAMME REVIENT ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +267,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt tend un bouquet, l'air coupable.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE FLEURISTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE FLEURISTE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,21 +290,21 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 85,
+ "word_count": 79,
  "claims": [
   {
    "segment": "n2",
-   "text": "Campagne 2017 : une rose bleue en logo. Ni nom de parti, ni flamme.",
+   "text": "Campagne 2017 : en logo, une rose bleue. Ni nom de parti, ni flamme.",
    "claim_type": "fait_public",
    "source": "https://www.europe1.fr/politique/dans-son-nouveau-qg-marine-le-pen-devoile-son-slogan-et-son-logo-de-campagne-2902292",
    "note": "Campagne 2017 : slogan « Au nom du peuple », logo rose bleue, sans nom de parti ni flamme."
   },
   {
-   "segment": "n3",
-   "text": "Slogan : Au nom du peuple. Le nom du parti ? Au vestiaire.",
+   "segment": "n6",
+   "text": "Marine, elle, a fini par ressortir la flamme. Les roses, ça fane.",
    "claim_type": "fait_public",
-   "source": "https://www.europe1.fr/politique/dans-son-nouveau-qg-marine-le-pen-devoile-son-slogan-et-son-logo-de-campagne-2902292",
-   "note": "Campagne 2017 : slogan « Au nom du peuple », logo rose bleue, sans nom de parti ni flamme."
+   "source": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
+   "note": "Le Front national devient Rassemblement national ; la flamme du logo est conservée, rangée dans un cercle."
   }
  ],
  "sources": [
@@ -221,10 +312,17 @@
    "url": "https://www.europe1.fr/politique/dans-son-nouveau-qg-marine-le-pen-devoile-son-slogan-et-son-logo-de-campagne-2902292",
    "date": "2016-11-16",
    "consulted": "2026-11-22",
-   "statut": "fait public",
+   "statut": "fait",
    "note": "Campagne 2017 : slogan « Au nom du peuple », logo rose bleue, sans nom de parti ni flamme."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
+   "date": "2018-06-01",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Le Front national devient Rassemblement national ; la flamme du logo est conservée, rangée dans un cercle."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = campagne 2017 : slogan « Au nom du peuple », logo rose bleue sans nom de parti ni flamme. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = le logo rose bleue de 2017, sans nom de parti ni flamme. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

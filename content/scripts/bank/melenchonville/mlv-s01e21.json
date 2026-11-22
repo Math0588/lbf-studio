@@ -5,31 +5,31 @@
  "format": "A",
  "title_cover": "Fiscal Kombat",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. Insert coin.",
-  "Mélenchon contre les riches : le jeu vidéo, puis le dîner.",
-  "Celle-là, Méluche ne la partagera pas.",
+  "Dans cette ville, tout le monde vote Mélenchon. Même les impôts.",
+  "Les soutiens de Mélenchon secouaient les riches dans un jeu. La ville l'a fait en vrai.",
+  "Les fans de Méluche vont me bloquer.",
   "Bienvenue à Mélenchonville : fiscal Kombat.",
   "Mélenchon en une vidéo : fiscal Kombat."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Fiscal Kombat en 2017, dîner cordial en 2026 : mode coopératif activé.",
-  "Du combat au dîner : le boss final a payé l'apéro.",
-  "Bilan : ambiance cordiale. Personne n'a été secoué."
+  "Le gagnant remporte trois heures de dîner avec treize patrons. Comme lui.",
+  "Le vainqueur gagne un dîner avec des patrons. La boucle est bouclée.",
+  "Tournoi géant : tout le monde secoue tout le monde."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Insert coin.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même les impôts.",
    "accent_words": [
-    "Insert coin"
+    "Même les impôts"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "2017 : ses soutiens lancent Fiscal Kombat, un jeu où l'on secoue les riches.",
+   "text": "En 2017, ses soutiens lancent Fiscal Kombat : un jeu où on secoue les riches.",
    "accent_words": [
     "les riches"
    ],
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "Niveau deux : au Bourget, sa salle scande Taxer les riches.",
+   "text": "La mairie en fait la déclaration d'impôts : on secoue, ça paie.",
    "accent_words": [
-    "les riches"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "Boss final : un dîner de trois heures avec treize grands patrons.",
-   "accent_words": [
-    "grands patrons"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n5",
-   "text": "Bilan : ambiance cordiale. Personne n'a été secoué.",
-   "accent_words": [
-    "Personne n'a été secoué"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n6",
-   "text": "Fiscal Kombat en 2017, dîner cordial en 2026 : mode coopératif activé.",
-   "accent_words": [
-    "mode coopératif activé"
+    "on secoue, ça paie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui rage contre les riches sur sa console dernier cri.",
+   "id": "n4",
+   "text": "Les habitants s'entraînent sur leur banquier. Le banquier s'entraîne aussi.",
    "accent_words": [
-    "dernier cri"
+    "Le banquier s'entraîne aussi"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Tournoi géant : tout le monde secoue tout le monde.",
+   "accent_words": [
+    "le monde"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Le gagnant remporte trois heures de dîner avec treize patrons. Comme lui.",
+   "accent_words": [
+    "Comme lui"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui rage contre les riches sur sa console à 800 balles.",
+   "accent_words": [
+    "800 balles"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,8 +90,8 @@
     "person"
    ],
    "onscreen_text": "MÉLENCHONVILLE · FISCAL KOMBAT",
-   "comic_action": "Descente sur la ville : banderole « FISCAL KOMBAT », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "SECOUEZ LES RICHES"
     }
    ]
   },
@@ -119,7 +129,7 @@
    ],
    "onscreen_text": "FISCAL KOMBAT",
    "comic_action": "Écran d'arcade : un personnage secoue un homme en costume, des pièces tombent.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
@@ -132,6 +142,12 @@
      "visage": "content",
      "quand": 0.4
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "SECOUEZ LES RICHES"
+    }
    ]
   },
   {
@@ -141,18 +157,25 @@
    ],
    "camera": "orbit",
    "set": [
-    "tribune",
+    "mairie",
     "person",
-    "banner"
+    "form_stack"
    ],
-   "onscreen_text": "NIVEAU 2 : TAXER LES RICHES",
-   "comic_action": "La foule crie en rythme, compteur de combo à l'écran.",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "IMPÔTS : PAR SECOUSSE",
+   "comic_action": "Au guichet, un agent secoue un contribuable la tête en bas.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
-     "who": "foule",
-     "geste": "arms_up",
-     "visage": "colere"
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "objet": "billets"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SECOUSSE : 3 ÉTOILES"
     }
    ]
   },
@@ -163,19 +186,24 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "table",
+    "shop",
     "person",
-    "studio_light"
+    "text3d"
    ],
-   "onscreen_text": "BOSS FINAL : 13 PATRONS",
-   "comic_action": "Table de banquet éclairée comme une arène.",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "BANQUIER : EN GARDE",
+   "comic_action": "Deux personnes en garde devant une banque.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro",
-     "objet": "verre"
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "FIGHT"
     }
    ]
   },
@@ -186,19 +214,30 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "text3d",
-    "person"
+    "fountain",
+    "person",
+    "road"
    ],
-   "onscreen_text": "K.O. : AUCUN",
-   "comic_action": "Les patrons trinquent ; la barre de vie ne bouge pas.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "TOURNOI GÉNÉRAL",
+   "comic_action": "Mêlée géante, pluie de pièces dans la fontaine.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
+     "who": "foule",
+     "geste": "manif",
+     "visage": "colere"
+    },
+    {
      "who": "perso",
-     "geste": "shrug",
-     "visage": "blase",
-     "objet": "verre"
+     "geste": "fall",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "COMBO × 99"
     }
    ]
   },
@@ -209,18 +248,25 @@
    ],
    "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
-    "table"
+    "table",
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "MODE COOPÉRATIF",
-   "comic_action": "Écran « 2 JOUEURS » : le maire et un patron sur la même manette.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "GROS LOT : DÎNER",
+   "comic_action": "Le gagnant arrive à une table de patrons, la manette à la main.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "clap",
-     "visage": "sourire_pro"
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "verre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "1ER PRIX : DÎNER CORDIAL"
     }
    ]
   },
@@ -237,7 +283,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -246,40 +292,34 @@
      "visage": "sourire_pro",
      "objet": "phone"
     }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
    ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui rage contre les riches sur sa console dernier cri."
+  "text": "Envoie ça au pote qui rage contre les riches sur sa console à 800 balles."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 81,
+ "word_count": 85,
  "claims": [
   {
-   "text": "2017 : ses soutiens lancent Fiscal Kombat, un jeu où l'on secoue les riches.",
+   "text": "En 2017, ses soutiens lancent Fiscal Kombat : un jeu où on secoue les riches.",
    "claim_type": "fait_public",
    "source": "https://kulturegeek.fr/news-108364/fiscal-kombat-jeu-melenchon-combat-vraiment-gros-fraudeurs-fisc",
    "note": "Fiscal Kombat (2017), jeu de soutiens : secouer des riches pour remplir la cagnotte."
   },
   {
-   "text": "Niveau deux : au Bourget, sa salle scande Taxer les riches.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
-   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
-  },
-  {
-   "text": "Boss final : un dîner de trois heures avec treize grands patrons.",
-   "claim_type": "fait_public",
-   "source": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
-   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
-  },
-  {
-   "text": "Bilan : ambiance cordiale. Personne n'a été secoué.",
+   "text": "Le gagnant remporte trois heures de dîner avec treize patrons. Comme lui.",
    "claim_type": "fait_public",
    "source": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
    "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
@@ -294,13 +334,6 @@
    "note": "Fiscal Kombat (2017), jeu de soutiens : secouer des riches pour remplir la cagnotte."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
-   "date": "2026-11-07",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
-  },
-  {
    "url": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
    "date": "2026-11-17",
    "consulted": "2026-11-22",
@@ -309,5 +342,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Fiscal Kombat. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2017, ses soutiens lancent Fiscal Kombat : un jeu où on secoue les riches. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

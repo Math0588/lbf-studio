@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-29",
  "format": "A",
- "title_cover": "Racine sur la plaque",
+ "title_cover": "Tout compte double",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : les plaques de rue citent Racine.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, même le code postal est en alexandrins.",
-  "Zemmourville : Virgile sur les boîtes aux lettres."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien compte pour deux.",
+  "Au Trocadéro, l'entourage de Zemmour comptait double. La ville aussi.",
+  "Les zemmouriens vont me détester.",
+  "Bienvenue à Zemmourville : tout compte double.",
+  "Zemmour en une vidéo : tout compte double."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Homère a écrit l'Odyssée. Lui, une épopée à 7 %.",
-  "Les classiques sur la plaque, le score dans le caniveau.",
-  "Une odyssée électorale, sans Ithaque."
+  "Dans les urnes, on ne compte pas double : 7 %.",
+  "Dans les urnes, on ne compte pas double : 7 %.",
+  "Le recensement annonce le double d'habitants. On cherche les absents partout."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. En latin.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien compte pour deux.",
    "accent_words": [
-    "En latin"
+    "pour deux"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À Port-Marly, en 2026 : Chateaubriand, Racine, Virgile, Homère, en cinquante-cinq minutes.",
+   "text": "Trocadéro 2022 : 100 000 selon son entourage, environ 50 000 selon la presse.",
    "accent_words": [
-    "Homère"
+    "la presse"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, chaque plaque de rue cite un classique. Même la boîte aux lettres.",
+   "text": "La mairie compte pareil : tout est multiplié par deux.",
    "accent_words": [
-    "la boîte aux lettres"
+    "par deux"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Les voisins offrent un QR code. On répond par un parchemin.",
+   "text": "Deux baguettes facturées pour une. Les habitants paient double.",
    "accent_words": [
-    "un parchemin"
+    "Les habitants paient double"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La plaque de la mairie annonce : ici sera gagnée une élection. Futur antérieur.",
+   "text": "Le recensement annonce le double d'habitants. On cherche les absents partout.",
    "accent_words": [
-    "Futur antérieur"
+    "absents partout"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Homère a écrit l'Odyssée. Lui, une épopée à 7 %.",
+   "text": "Dans les urnes, on ne compte pas double : 7 %.",
    "accent_words": [
-    "une épopée"
+    "7 %"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui signe ses textos en latin.",
+   "text": "Envoie ça au pote qui compte double ses abonnés.",
    "accent_words": [
-    "en latin"
+    "ses abonnés"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,43 +85,93 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "sign",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une rue : plaques en marbre gravées de citations.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · TOUT COMPTE DOUBLE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "COMPTEZ DOUBLE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "tribune",
-    "text3d",
-    "person"
+    "person",
+    "banner"
    ],
-   "onscreen_text": "55 MIN · 4 CLASSIQUES",
-   "comic_action": "Orbite autour d'un pupitre entouré de bustes.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "100 000 (OU 50 000)",
+   "comic_action": "Une foule et un compteur qui affiche le double.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "COMPTEZ DOUBLE"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "sign",
+    "mairie",
     "text3d",
     "person"
    ],
-   "onscreen_text": "BOÎTE AUX LETTRES : VIRGILE",
-   "comic_action": "Gros plan : une boîte aux lettres gravée d'un vers latin.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TOUT × 2",
+   "comic_action": "Un agent recense une personne, écrit « 2 ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "POPULATION × 2"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -130,13 +180,27 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "scroll",
+    "shop",
     "person",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "QR CODE → PARCHEMIN",
-   "comic_action": "Travelling : un voisin tend son téléphone, reçoit un rouleau de deux mètres.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "BAGUETTE : × 2",
+   "comic_action": "Le client paie deux fois, repart avec une baguette.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "objet": "baguette"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "1 BAGUETTE = 2 PRIX"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -145,13 +209,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "mairie",
-    "sign",
+    "road",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "ICI SERA GAGNÉE…",
-   "comic_action": "Plaque solennelle sur la mairie, verbe au futur, rouille au présent.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "HABITANTS FANTÔMES",
+   "comic_action": "Des agents fouillent sous les bancs avec des lampes.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "INTROUVABLE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +237,26 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "column",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "ÉPOPÉE : 7 %",
-   "comic_action": "Plan large : une colonne antique, au sommet un petit « 7 % ».",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "URNES : 7 %",
+   "comic_action": "Une urne transparente affiche « 7 % ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "7,07 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,30 +270,44 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique scanne une plaque, rien ne charge.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui signe ses textos en latin."
+  "text": "Envoie ça au pote qui compte double ses abonnés."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 80,
+ "word_count": 78,
  "claims": [
   {
-   "text": "À Port-Marly, en 2026 : Chateaubriand, Racine, Virgile, Homère, en cinquante-cinq minutes.",
+   "text": "Trocadéro 2022 : 100 000 selon son entourage, environ 50 000 selon la presse.",
    "claim_type": "fait_public",
-   "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-zemmour-le-pourfendeur-de-la-modernite-qui-parlait-dia",
-   "note": "Port-Marly (13/09/2026, 55 min) : Chateaubriand, Racine, Virgile, Homère, Napoléon."
+   "source": "https://vl-media.fr/?p=334652",
+   "note": "Trocadéro : entre 50 000 et 60 000 personnes selon la presse, 100 000 selon l'entourage du candidat."
   },
   {
-   "text": "Homère a écrit l'Odyssée. Lui, une épopée à 7 %.",
+   "text": "Dans les urnes, on ne compte pas double : 7 %.",
    "claim_type": "fait_public",
    "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
@@ -211,11 +315,11 @@
  ],
  "sources": [
   {
-   "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-zemmour-le-pourfendeur-de-la-modernite-qui-parlait-dia",
-   "date": "2026-09-29",
+   "url": "https://vl-media.fr/?p=334652",
+   "date": "2022-03-28",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Port-Marly (13/09/2026, 55 min) : Chateaubriand, Racine, Virgile, Homère, Napoléon."
+   "note": "Trocadéro : entre 50 000 et 60 000 personnes selon la presse, 100 000 selon l'entourage du candidat."
   },
   {
    "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
@@ -226,5 +330,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Port-Marly (2026) : Chateaubriand, Racine, Virgile, Homère. Cadre : les plaques de rue. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Trocadéro 2022 : 100 000 selon son entourage, environ 50 000 selon la presse. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

@@ -5,65 +5,65 @@
  "format": "A",
  "title_cover": "Juste Marine",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, plus personne n'a de nom de famille.",
-  "Marineville : on change l'emballage tous les cinq ans.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : juste marine."
+  "Dans cette ville, tout le monde vote Marine. Les noms de famille, supprimés.",
+  "Marineville : que des prénoms, plus de noms.",
+  "Ici, le facteur a quatre cents Kevin.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Juste Marine."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Changer l'emballage tous les cinq ans : le seul renouvellement qu'on lui connaît.",
-  "Plaques de rue : que des prénoms. Le GPS t'envoie rue Marine.",
-  "Ici, la mairie a fait pareil : nouvelle enseigne, mêmes dossiers."
+  "Marine, elle, a gardé son prénom. Le reste, on ne dit toujours pas.",
+  "Le reste, on ne dit toujours pas.",
+  "Le recensement convoque les Kevin un par un. Il dure dix ans."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine. Le reste, on ne dit pas.",
+   "text": "Dans cette ville, tout le monde vote Marine. Les noms de famille, supprimés.",
    "accent_words": [
-    "on ne dit pas"
+    "supprimés"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Campagne 2017 : nom de famille et sigle du parti effacés des affiches.",
+   "text": "Campagne 2017 : sur les affiches, Marine. Ni nom de famille, ni parti.",
    "accent_words": [
-    "effacés"
+    "Marine"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "La presse ironise : on renouvelle Marine plutôt que le programme.",
+   "text": "Alors la ville supprime tous les noms de famille. Que des prénoms.",
    "accent_words": [
-    "plutôt que le programme"
+    "prénoms"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, la mairie a fait pareil : nouvelle enseigne, mêmes dossiers.",
+   "text": "Le facteur a quatre cents Kevin et un seul courrier.",
    "accent_words": [
-    "mêmes dossiers"
+    "courrier"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Plaques de rue : que des prénoms. Le GPS t'envoie rue Marine.",
+   "text": "Le recensement convoque les Kevin un par un. Il dure dix ans.",
    "accent_words": [
-    "rue Marine"
+    "dix ans"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Changer l'emballage tous les cinq ans : le seul renouvellement qu'on lui connaît.",
+   "text": "Marine, elle, a gardé son prénom. Le reste, on ne dit toujours pas.",
    "accent_words": [
-    "l'emballage"
+    "toujours pas"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui confond nouvelle étiquette et nouvelle recette.",
    "accent_words": [
-    "nouvelle recette"
+    "recette"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,89 +89,175 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une plaque où seul le prénom est lisible, le reste recouvert.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "PRÉNOMS SEULEMENT",
+   "comic_action": "Descente sur la ville ; banderole « PRÉNOMS SEULEMENT » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    },
+    {
+     "type": "affiche",
+     "texte": "MARINE ET C'EST TOUT"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
     "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "sign",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "NOM : MASQUÉ",
-   "comic_action": "Des affiches où un bandeau bleu cache tout sauf le prénom.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "MARINE, C'EST TOUT",
+   "comic_action": "Rangée de façades : enseigne « MARINE, C'EST TOUT ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "screen",
+    "facade_row",
+    "sign",
     "text3d",
-    "mairie",
     "person"
    ],
-   "onscreen_text": "PROGRAMME : INCHANGÉ",
-   "comic_action": "L'écran affiche deux colonnes : « image : neuve », « programme : idem ».",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "QUE DES PRÉNOMS",
+   "comic_action": "Rangée de façades : enseigne « QUE DES PRÉNOMS ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "NOM : SUPPRIMÉ"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "screen",
+    "road",
     "sign",
-    "building"
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "ENSEIGNE NEUVE · DOSSIERS VIEUX",
-   "comic_action": "Par la fenêtre : une plaque dorée neuve, des classeurs jaunis derrière.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "400 KEVIN, 1 LETTRE",
+   "comic_action": "Dans la rue, panneau « 400 KEVIN, 1 LETTRE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "fatigue"
+    },
+    {
+     "who": "foule",
+     "geste": "manif"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "gps",
-    "car",
-    "screen",
-    "text3d"
+    "road",
+    "person",
+    "banner",
+    "ring_light"
    ],
-   "onscreen_text": "DESTINATION : RUE MARINE",
-   "comic_action": "Gros plan GPS : toutes les adresses mènent à la même rue.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RECENSEMENT : 10 ANS",
+   "comic_action": "Travelling sur une file de téléphones levés ; banderole « RECENSEMENT : 10 ANS ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "visage": "fatigue"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "NOUVEL EMBALLAGE · MÊME RECETTE",
-   "comic_action": "Vitrine : un paquet rewrappé, l'ancienne étiquette qui dépasse. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LE RESTE ? CHUT",
+   "comic_action": "Plan final, tenir une seconde : « LE RESTE ? CHUT ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +271,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt recolle une étiquette par-dessus une autre.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE ÉTIQUETTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE ÉTIQUETTE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,21 +294,14 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 85,
+ "word_count": 84,
  "claims": [
   {
    "segment": "n2",
-   "text": "Campagne 2017 : nom de famille et sigle du parti effacés des affiches.",
+   "text": "Campagne 2017 : sur les affiches, Marine. Ni nom de famille, ni parti.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
-   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme »."
-  },
-  {
-   "segment": "n3",
-   "text": "La presse ironise : on renouvelle Marine plutôt que le programme.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
-   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme »."
+   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés."
   }
  ],
  "sources": [
@@ -221,10 +309,10 @@
    "url": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
    "date": "2017-02-06",
    "consulted": "2026-11-22",
-   "statut": "fait public + analyse de presse",
-   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme »."
+   "statut": "fait + analyse",
+   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = campagne 2017 centrée sur le seul prénom « Marine », nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = la campagne 2017 au prénom seul, sans nom de famille ni parti. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

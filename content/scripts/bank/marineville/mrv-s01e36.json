@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-35",
  "format": "A",
- "title_cover": "Harmonie obligatoire",
+ "title_cover": "Une seule note",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, la fanfare n'a qu'une partition.",
-  "Marineville : tout le monde chante, personne ne choisit la chanson.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : harmonie obligatoire."
+  "Dans cette ville, tout le monde vote Marine. En harmonie, obligatoire.",
+  "Marineville ne chante qu'une seule note.",
+  "Ici, chanter faux vaut un recommandé.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Une seule note."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "L'harmonie, version Marineville : tout le monde chante, personne ne choisit la chanson.",
-  "Le voisin qui chante faux reçoit un courrier recommandé.",
-  "Les chorales répètent le même refrain, à l'unisson, sans couplet."
+  "Marine dirige l'orchestre. Il ne joue qu'une partition : la sienne.",
+  "Une seule partition : la sienne.",
+  "La chorale ne compte plus qu'un membre : le chef."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,7 +23,7 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. En harmonie, obligatoire.",
    "accent_words": [
-    "obligatoire"
+    "harmonie"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -31,28 +31,20 @@
    "id": "n2",
    "text": "À Orléans, son camp joue la carte de l'ordre et de l'harmonie.",
    "accent_words": [
-    "l'harmonie"
+    "harmonie"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Objectif affiché : insuffler de l'optimisme.",
+   "text": "Alors la ville impose l'harmonie : tout le monde chante la même note.",
    "accent_words": [
-    "insuffler"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "Ici, la fanfare n'a qu'une partition, et un seul instrument : le sifflet.",
-   "accent_words": [
-    "le sifflet"
+    "note"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n5",
+   "id": "n4",
    "text": "Le voisin qui chante faux reçoit un courrier recommandé.",
    "accent_words": [
     "recommandé"
@@ -60,10 +52,18 @@
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n6",
-   "text": "L'harmonie, version Marineville : tout le monde chante, personne ne choisit la chanson.",
+   "id": "n5",
+   "text": "La chorale ne compte plus qu'un membre : le chef.",
    "accent_words": [
-    "la chanson"
+    "chef"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Marine dirige l'orchestre. Il ne joue qu'une partition : la sienne.",
+   "accent_words": [
+    "partition"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui veut de l'ordre partout, sauf dans sa chambre.",
    "accent_words": [
-    "sa chambre"
+    "chambre"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,73 +89,143 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une fanfare alignée au millimètre.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "HARMONIE OBLIGATOIRE",
+   "comic_action": "Descente sur la ville ; banderole « HARMONIE OBLIGATOIRE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "LA"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "lift_tribune",
     "tribune",
-    "person",
-    "banner"
+    "lift_tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "ORDRE + HARMONIE",
-   "comic_action": "La tribune s'élève ; deux banderoles « ORDRE » et « HARMONIE ».",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "ORDRE ET HARMONIE",
+   "comic_action": "Meeting : la tribune s'élève, banderole « ORDRE ET HARMONIE ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
+    "ground",
     "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "OPTIMISME : OBLIGATOIRE",
-   "comic_action": "L'écran affiche un smiley géant qui ne cligne jamais.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "UNE SEULE NOTE",
+   "comic_action": "Descente sur la ville ; banderole « UNE SEULE NOTE » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "NOTE AUTORISÉE : LA"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "ground",
-    "banner",
+    "road",
+    "sign",
     "person",
-    "text3d"
+    "traffic_light"
    ],
-   "onscreen_text": "INSTRUMENT UNIQUE : SIFFLET",
-   "comic_action": "Une fanfare de siffleurs défile au pas.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CHANTER FAUX : RECOMMANDÉ",
+   "comic_action": "Dans la rue, panneau « CHANTER FAUX : RECOMMANDÉ ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "point"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "road",
-    "building",
-    "person",
-    "bin"
+    "tribune",
+    "lift_tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "FAUSSE NOTE : RECOMMANDÉ",
-   "comic_action": "Un facteur remet une lettre officielle à un habitant qui fredonnait.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CHORALE : 1 MEMBRE",
+   "comic_action": "Meeting : la tribune s'élève, banderole « CHORALE : 1 MEMBRE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -164,14 +234,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "CHANSON : IMPOSÉE",
-   "comic_action": "Entre deux colonnes, une chorale chante, le chef d'orchestre porte un sifflet. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "UNE PARTITION : LA SIENNE",
+   "comic_action": "Plan final, tenir une seconde : « UNE PARTITION : LA SIENNE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +268,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt enjambe une pile de linge.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE BORDÉLIQUE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE BORDÉLIQUE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,7 +291,7 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 77,
+ "word_count": 79,
  "claims": [
   {
    "segment": "n2",
@@ -207,13 +299,6 @@
    "claim_type": "fait_public",
    "source": "https://www.letemps.ch/en/world/france/in-orleans-the-rn-marshals-its-forces-for-the-presidential-race-and-plays-the-order-and-harmony-card",
    "note": "À Orléans, le RN joue la carte de l'ordre et de l'harmonie."
-  },
-  {
-   "segment": "n3",
-   "text": "Objectif affiché : insuffler de l'optimisme.",
-   "claim_type": "fait_public",
-   "source": "https://www.lalibre.be/dernieres-depeches/2026/10/25/pour-son-premier-meeting-de-campagne-le-pen-veut-insuffler-de-loptimisme-dans-un-pays-en-crise-QXFUPYUA7JB7ZIVYMIAHQRYFM4/",
-   "note": "Premier meeting : « insuffler de l'optimisme » dans un pays en crise."
   }
  ],
  "sources": [
@@ -221,17 +306,10 @@
    "url": "https://www.letemps.ch/en/world/france/in-orleans-the-rn-marshals-its-forces-for-the-presidential-race-and-plays-the-order-and-harmony-card",
    "date": "2026-10",
    "consulted": "2026-11-22",
-   "statut": "analyse de presse",
+   "statut": "fait + analyse",
    "note": "À Orléans, le RN joue la carte de l'ordre et de l'harmonie."
-  },
-  {
-   "url": "https://www.lalibre.be/dernieres-depeches/2026/10/25/pour-son-premier-meeting-de-campagne-le-pen-veut-insuffler-de-loptimisme-dans-un-pays-en-crise-QXFUPYUA7JB7ZIVYMIAHQRYFM4/",
-   "date": "2026-10-25",
-   "consulted": "2026-11-22",
-   "statut": "fait (titre de dépêche AFP)",
-   "note": "Premier meeting : « insuffler de l'optimisme » dans un pays en crise."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = à Orléans, le RN joue la carte de l'ordre et de l'harmonie ; « insuffler de l'optimisme » pour 2027. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = l'ordre et l'harmonie, carte jouée à Orléans. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m018",
  "format": "A",
- "anchor": "elle envisage un référendum pour faire adopter sa réforme des retraites (17/11/2026) ; des rivaux parlent de « catalogue de contradictions ».",
+ "anchor": "le référendum envisagé pour sa réforme des retraites",
  "situation": "Référendum de copro",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "title_cover": "Référendum de copro",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, on fait un référendum pour changer une ampoule.",
-  "Marineville : oui, ou oui mais en douceur.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : référendum de copro."
+  "Dans cette ville, tout le monde vote Marine. Et revote.",
+  "Marineville organise un référendum pour une ampoule.",
+  "Ici, le non est écrit au dos, en tout petit.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Référendum de copro."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Un référendum à trois pages de question : pas une consultation, un piège à oui.",
-  "Le non est imprimé en taille deux, au dos.",
-  "Question unique : oui, ou oui mais en douceur."
+  "Des rivaux parlent de « catalogue de contradictions ». Le syndic, lui, parle de succès.",
+  "Le syndic parle de succès.",
+  "L'immeuble vote dans l'obscurité. Résultat : oui, évidemment."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -40,41 +40,41 @@
   },
   {
    "id": "n3",
-   "text": "Des rivaux parlent de « catalogue de contradictions ».",
+   "text": "Alors le syndic organise un référendum pour l'ampoule du hall.",
    "accent_words": [
-    "catalogue de contradictions"
+    "hall"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le syndic applique : référendum pour changer l'ampoule du hall.",
+   "text": "Question : oui, ou oui en douceur. Le non est au dos, en tout petit.",
    "accent_words": [
-    "l'ampoule"
+    "petit"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Question : oui, ou oui en douceur. Le non est au dos, en tout petit.",
+   "text": "L'immeuble vote dans l'obscurité. Résultat : oui, évidemment.",
    "accent_words": [
-    "au dos"
+    "oui"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Un référendum à trois pages de question : pas une consultation, un piège à oui.",
+   "text": "Des rivaux parlent de « catalogue de contradictions ». Le syndic, lui, parle de succès.",
    "accent_words": [
-    "un piège à oui"
+    "succès"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
    "text": "Envoie ça au pote qui coche oui sans lire.",
    "accent_words": [
-    "sans lire"
+    "lire"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,89 +92,171 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la résidence municipale ; une urne dans le hall.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "ON REVOTE",
+   "comic_action": "Descente sur la ville ; banderole « ON REVOTE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "arms_up"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "OUI"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "lift_tribune",
-    "tribune",
-    "person",
-    "banner"
+    "screen",
+    "banner",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "RÉFÉRENDUM : RETRAITES",
-   "comic_action": "La tribune s'élève, une urne géante posée dessus.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "RÉFÉRENDUM RETRAITES",
+   "comic_action": "Soirée électorale : l'écran affiche « RÉFÉRENDUM RETRAITES ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
-    "person",
-    "text3d"
+    "screen",
+    "banner",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "CATALOGUE DE CONTRADICTIONS",
-   "comic_action": "Un catalogue épais s'ouvre : chaque page contredit la suivante.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "RÉFÉRENDUM DE L'AMPOULE",
+   "comic_action": "Soirée électorale : l'écran affiche « RÉFÉRENDUM DE L'AMPOULE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "AMPOULE : OUI / OUI EN DOUCEUR"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "lamp",
-    "road",
-    "person",
-    "text3d"
+    "screen",
+    "banner",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "AMPOULE : RÉFÉRENDUM",
-   "comic_action": "Un lampadaire éteint ; une file d'habitants avec des bulletins.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LE NON EST AU DOS",
+   "comic_action": "Soirée électorale : l'écran affiche « LE NON EST AU DOS ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "scroll",
-    "table",
-    "person",
-    "text3d"
+    "screen",
+    "banner",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "OUI · OUI (DOUX) · NON",
-   "comic_action": "Un bulletin géant ; le « non » minuscule au verso.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RÉSULTAT : OUI",
+   "comic_action": "Soirée électorale : l'écran affiche « RÉSULTAT : OUI ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie"
+    "screen"
    ],
-   "onscreen_text": "PIÈGE À OUI",
-   "comic_action": "Un tampon « OUI » s'abat tout seul sur chaque bulletin. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "« CATALOGUE DE CONTRADICTIONS »",
+   "comic_action": "Plan final, tenir une seconde : « « CATALOGUE DE CONTRADICTIONS » ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "clap",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +270,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt signe un contrat sans le lire.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI COCHE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI COCHE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,7 +293,7 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 77,
+ "word_count": 76,
  "claims": [
   {
    "segment": "n2",
@@ -212,11 +303,11 @@
    "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
   },
   {
-   "segment": "n3",
-   "text": "« catalogue de contradictions »",
+   "segment": "n6",
+   "text": "Des rivaux parlent de « catalogue de contradictions ». Le syndic, lui, parle de succès.",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/catalogue-de-contradictions-vaste-arnaque-financiere-la-reforme-des-retraites-du-rn-suscite-la-critique-de-certains-candidats",
-   "note": "« catalogue de contradictions », « vaste arnaque financière »."
+   "note": "Des candidats rivaux : « catalogue de contradictions », « vaste arnaque financière »."
   }
  ],
  "sources": [
@@ -224,17 +315,17 @@
    "url": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
    "date": "2026-11-17",
    "consulted": "2026-11-22",
-   "statut": "fait public (présentation du programme)",
+   "statut": "fait",
    "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
   },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/catalogue-de-contradictions-vaste-arnaque-financiere-la-reforme-des-retraites-du-rn-suscite-la-critique-de-certains-candidats",
    "date": "2026-11",
    "consulted": "2026-11-22",
-   "statut": "citation (critiques de candidats rivaux)",
-   "note": "« catalogue de contradictions », « vaste arnaque financière »."
+   "statut": "citation exacte (rivaux)",
+   "note": "Des candidats rivaux : « catalogue de contradictions », « vaste arnaque financière »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = elle envisage un référendum pour faire adopter sa réforme des retraites (17/11/2026) ; des rivaux parlent de « catalogue de contradictions ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = le référendum envisagé pour sa réforme des retraites. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-14",
  "format": "A",
- "title_cover": "Stop, plaisanterie",
+ "title_cover": "Stop partout",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, le panneau stop est l'emblème de la ville.",
-  "Marineville : un programme qui tient sur un panneau.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : stop, plaisanterie."
+  "Dans cette ville, tout le monde vote Marine. Stop.",
+  "Marineville dit stop à tout.",
+  "Ici, même la plaisanterie est au chômage.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Stop partout."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Un programme qui tient sur un panneau stop : la plaisanterie dure, en effet.",
-  "Les travaux ? Stop. Les bus ? Stop. Les idées ? Stop aussi.",
-  "Les feux passent du rouge au rouge, avec un orange pour le suspense."
+  "Marine, elle, repart pour une quatrième présidentielle. La plaisanterie continue.",
+  "Quatrième présidentielle : la plaisanterie continue.",
+  "Même les humoristes s'arrêtent. La plaisanterie pointe au chômage."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -29,49 +29,49 @@
   },
   {
    "id": "n2",
-   "text": "Octobre 2025 : « Là, maintenant, stop. La plaisanterie a assez duré ».",
+   "text": "Octobre 2025 : « Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré ».",
    "accent_words": [
-    "stop"
+    "duré"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "La même phrase commençait par : « Je censure tout ».",
+   "text": "Alors la ville dit stop à tout : bus, travaux, feux verts.",
    "accent_words": [
-    "Je censure tout"
+    "feux verts"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, le panneau stop est devenu l'emblème de la ville.",
+   "text": "Les panneaux stop se multiplient. Plus personne n'avance.",
    "accent_words": [
-    "l'emblème"
+    "avance"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les travaux ? Stop. Les bus ? Stop. Les idées ? Stop aussi.",
+   "text": "Même les humoristes s'arrêtent. La plaisanterie pointe au chômage.",
    "accent_words": [
-    "Stop aussi"
+    "chômage"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Un programme qui tient sur un panneau stop : la plaisanterie dure, en effet.",
+   "text": "Marine, elle, repart pour une quatrième présidentielle. La plaisanterie continue.",
    "accent_words": [
-    "la plaisanterie dure"
+    "continue"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui dit stop à tout sauf à lui-même.",
+   "text": "Envoie ça au pote qui dit stop à tout, sauf à lui-même.",
    "accent_words": [
-    "sauf à lui-même"
+    "lui-même"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,26 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; un panneau stop géant à la place de l'horloge.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "STOP",
+   "comic_action": "Descente sur la ville ; banderole « STOP » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "STOP"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,29 +118,59 @@
    "camera": "orbit",
    "set": [
     "tribune",
-    "studio_light",
-    "text3d",
+    "lift_tribune",
+    "banner",
     "person"
    ],
-   "onscreen_text": "« STOP »",
-   "comic_action": "Tribune : la maire cubique lève la main, tout se fige.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« LÀ, MAINTENANT, STOP »",
+   "comic_action": "Meeting : la tribune s'élève, banderole « « LÀ, MAINTENANT, STOP » ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "« JE CENSURE TOUT »",
-   "comic_action": "L'écran affiche la phrase entière, un bandeau gris qui recouvre tout.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "STOP À TOUT",
+   "comic_action": "Dans la rue, panneau « STOP À TOUT ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "STOP"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -132,14 +179,26 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "traffic_light",
     "road",
     "car",
-    "sign"
+    "gps",
+    "roundabout"
    ],
-   "onscreen_text": "EMBLÈME : STOP",
-   "comic_action": "Chaque coin de rue a son panneau stop ; les voitures ne repartent jamais.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PLUS PERSONNE N'AVANCE",
+   "comic_action": "Une voiture tourne au rond-point ; le GPS affiche « PLUS PERSONNE N'AVANCE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -148,30 +207,55 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "bus",
     "road",
+    "sign",
     "person",
-    "sign"
+    "traffic_light"
    ],
-   "onscreen_text": "BUS : STOP",
-   "comic_action": "Un bus figé à un arrêt, chauffeur qui bâille.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LA PLAISANTERIE AU CHÔMAGE",
+   "comic_action": "Dans la rue, panneau « LA PLAISANTERIE AU CHÔMAGE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "fatigue"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "road",
-    "building",
-    "person",
-    "bin"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "PLAISANTERIE : EN COURS",
-   "comic_action": "Une rue entière à l'arrêt, panneaux stop à perte de vue. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "4E CANDIDATURE",
+   "comic_action": "Plan final, tenir une seconde : « 4E CANDIDATURE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,35 +269,47 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt lève la main devant la vitrine.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI DIT STOP",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI DIT STOP ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui dit stop à tout sauf à lui-même."
+  "text": "Envoie ça au pote qui dit stop à tout, sauf à lui-même."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 82,
+ "word_count": 76,
  "claims": [
   {
    "segment": "n2",
-   "text": "« Là, maintenant, stop. La plaisanterie a assez duré »",
+   "text": "Octobre 2025 : « Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré ».",
    "claim_type": "citation_exacte",
    "source": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
    "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
   },
   {
-   "segment": "n3",
-   "text": "« Je censure tout »",
-   "claim_type": "citation_exacte",
-   "source": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
-   "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
+   "segment": "n6",
+   "text": "Marine, elle, repart pour une quatrième présidentielle. La plaisanterie continue.",
+   "claim_type": "fait_public",
+   "source": "https://fr.euronews.com/2026/10/25/orleans-marine-le-pen-lance-sa-campagne-au-lendemain-de-lacte-ii-de-la-mobilisation-social",
+   "note": "Lancement de campagne pour 2027 à Orléans, au lendemain de l'acte II de la mobilisation sociale. ; Présidentielle 2022 : troisième défaite, à un niveau inégalé.",
+   "sources_complementaires": [
+    "https://www.dhnet.be/actu/monde/2022/04/24/presidentielle-2022-marine-le-pen-essuie-sa-troisieme-defaite-mais-a-un-niveau-eleve-inegale-IFARP5UCP5BFTDB75UW7JJIFMY/"
+   ]
   }
  ],
  "sources": [
@@ -221,10 +317,24 @@
    "url": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
    "date": "2025-10-08",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (LCP)",
+   "statut": "citation exacte",
    "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
+  },
+  {
+   "url": "https://fr.euronews.com/2026/10/25/orleans-marine-le-pen-lance-sa-campagne-au-lendemain-de-lacte-ii-de-la-mobilisation-social",
+   "date": "2026-10-25",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Lancement de campagne pour 2027 à Orléans, au lendemain de l'acte II de la mobilisation sociale."
+  },
+  {
+   "url": "https://www.dhnet.be/actu/monde/2022/04/24/presidentielle-2022-marine-le-pen-essuie-sa-troisieme-defaite-mais-a-un-niveau-eleve-inegale-IFARP5UCP5BFTDB75UW7JJIFMY/",
+   "date": "2022-04-24",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : troisième défaite, à un niveau inégalé."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = octobre 2025 : « Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » ; la ville réduite au panneau stop. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré ». Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

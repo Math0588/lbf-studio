@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-26",
  "format": "A",
- "title_cover": "Panneaux à son échelle",
+ "title_cover": "Problème d'échelle",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : les panneaux sont à son échelle.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, le code de la route a un problème d'échelle.",
-  "Zemmourville : la seule auto-école où 6 dépasse 50."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien voit grand.",
+  "Zemmour trouvait sa colonne trop petite. La ville a tout agrandi.",
+  "Celle-là, Zemmour ne la partagera pas.",
+  "Bienvenue à Zemmourville : problème d'échelle.",
+  "Zemmour en une vidéo : problème d'échelle."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le vrai problème d'échelle, c'est entre son ego et ses scores.",
-  "Graphique corrigé, score inchangé.",
-  "Le problème d'échelle est réglé. Le problème de score, non."
+  "Colonne géante, chiffre minuscule : toujours autour de 4 %.",
+  "Colonne géante, chiffre minuscule : toujours autour de 4 %.",
+  "Les habitants vivent à l'ombre de sa colonne. Les tomates refusent de pousser."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Au code.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien voit grand.",
    "accent_words": [
-    "Au code"
+    "voit grand"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2025, il reproche à France Info un « problème d'échelle » sur un graphique.",
+   "text": "En 2025, il dénonce un « problème d'échelle » : sa colonne paraît trop petite.",
    "accent_words": [
-    "graphique"
+    "trop petite"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Sa colonne à 6 % paraissait plus petite qu'une autre à 5,5 %.",
+   "text": "La mairie corrige : tout ce qui est à lui devient géant.",
    "accent_words": [
-    "plus petite"
+    "devient géant"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, l'auto-école a corrigé : son panneau fait trois mètres.",
+   "text": "Sa colonne fait trois étages. Son affiche cache le soleil.",
    "accent_words": [
-    "trois mètres"
+    "le soleil"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Question du code : quelle colonne est la plus grande ? Réponse obligatoire : la sienne.",
+   "text": "Les habitants vivent à l'ombre de sa colonne. Les tomates refusent de pousser.",
    "accent_words": [
-    "la sienne"
+    "de pousser"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le vrai problème d'échelle, c'est entre son ego et ses scores.",
+   "text": "Colonne géante, chiffre minuscule : toujours autour de 4 %.",
    "accent_words": [
-    "son ego"
+    "4 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui zoome sur ses notes.",
+   "text": "Envoie ça au pote qui zoome sur ses abonnés pour faire plus.",
    "accent_words": [
-    "zoome"
+    "faire plus"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "sign",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une auto-école : un panneau géant écrase tous les autres.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · PROBLÈME D'ÉCHELLE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "PLUS GRAND QUE NATURE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -102,11 +125,24 @@
    "set": [
     "screen",
     "text3d",
-    "person"
+    "tribune"
    ],
-   "onscreen_text": "PROBLÈME D'ÉCHELLE",
-   "comic_action": "Un graphique projeté en salle de code, colonnes de travers.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« PROBLÈME D'ÉCHELLE »",
+   "comic_action": "Un graphique télé : sa colonne entourée en rouge.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PLUS GRAND QUE NATURE"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,12 +151,26 @@
    ],
    "camera": "orbit",
    "set": [
-    "screen",
-    "text3d"
+    "column",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "6 % < 5,5 % ?",
-   "comic_action": "Orbite autour de deux colonnes 3D qui se jaugent.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "TOUT EN GÉANT",
+   "comic_action": "Des ouvriers montent une colonne qui dépasse la mairie.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "clap",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ÉCHELLE : × 100"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -129,13 +179,26 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "sign",
-    "road",
-    "car"
+    "column",
+    "banner",
+    "building"
    ],
-   "onscreen_text": "PANNEAU : 3 M",
-   "comic_action": "Travelling : un panneau « 6 % » de trois mètres masque tous les autres.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "AFFICHE : CACHE LE SOLEIL",
+   "comic_action": "L'ombre de l'affiche plonge la place dans la nuit.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "À L'OMBRE"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -144,13 +207,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
+    "tree",
     "person",
     "text3d"
    ],
-   "onscreen_text": "RÉPONSE : LA SIENNE",
-   "comic_action": "QCM à l'écran : une seule case cochable.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TOMATES : EN GRÈVE",
+   "comic_action": "Un potager triste, des tomates vertes à jamais.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SOLEIL : 0 H"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -159,13 +235,26 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "sign",
-    "text3d"
+    "column",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "EGO / SCORE",
-   "comic_action": "Plan large : un panneau d'ego géant, un panneau de score minuscule.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "4 %",
+   "comic_action": "En haut de la colonne immense, un tout petit « 4 % ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "4 % (EN GRAND)"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -179,33 +268,47 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique mesure un panneau au mètre ruban.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui zoome sur ses notes."
+  "text": "Envoie ça au pote qui zoome sur ses abonnés pour faire plus."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 84,
+ "word_count": 85,
  "claims": [
   {
-   "text": "« problème d'échelle »",
+   "text": "En 2025, il dénonce un « problème d'échelle » : sa colonne paraît trop petite.",
    "claim_type": "citation_exacte",
    "source": "https://ladepeche.nc/2025/11/12/france-info-raillee-apres-la-diffusion-dun-graphique-trompeur-sur-la-presidentielle",
    "note": "Il dénonce sur X un « problème d'échelle » : sa colonne à 6 % plus petite qu'une colonne à 5,5 %."
   },
   {
-   "text": "Sa colonne à 6 % paraissait plus petite qu'une autre à 5,5 %.",
+   "text": "Colonne géante, chiffre minuscule : toujours autour de 4 %.",
    "claim_type": "fait_public",
-   "source": "https://ladepeche.nc/2025/11/12/france-info-raillee-apres-la-diffusion-dun-graphique-trompeur-sur-la-presidentielle",
-   "note": "Il dénonce sur X un « problème d'échelle » : sa colonne à 6 % plus petite qu'une colonne à 5,5 %."
+   "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
+   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "sources": [
@@ -213,10 +316,17 @@
    "url": "https://ladepeche.nc/2025/11/12/france-info-raillee-apres-la-diffusion-dun-graphique-trompeur-sur-la-presidentielle",
    "date": "2025-11-12",
    "consulted": "2026-11-22",
-   "statut": "citation exacte",
+   "statut": "citation_exacte",
    "note": "Il dénonce sur X un « problème d'échelle » : sa colonne à 6 % plus petite qu'une colonne à 5,5 %."
+  },
+  {
+   "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
+   "date": "2026-09",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le « problème d'échelle » reproché à un graphique de sondage (2025). Cadre : l'auto-école. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2025, il dénonce un « problème d'échelle » : sa colonne paraît trop petite. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m010",
  "format": "A",
- "anchor": "Orléans, octobre 2026 : le changement, mais « pas une rupture brutale » ; après « S'il n'y a pas de rupture, il y aura censure » (2025).",
- "situation": "Changement au feutre",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
- "title_cover": "Changement au feutre",
+ "anchor": "le changement « pas une rupture brutale » (Orléans)",
+ "situation": "Pelleteuses en feutre",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
+ "title_cover": "Pelleteuses en feutre",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, la nouvelle route avance d'un mètre par mandat.",
-  "Marineville : les pelleteuses ont des patins en feutre.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : changement au feutre."
+  "Dans cette ville, tout le monde vote Marine. En douceur.",
+  "Marineville construit une route d'un mètre par mandat.",
+  "Ici, les pelleteuses ont des patins en feutre.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Pelleteuses en feutre."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Un changement sans rupture, c'est un ravalement : même maison, autre couleur.",
-  "Les pelleteuses ont des patins en feutre, pour ne brusquer personne.",
-  "La mairie lance la nouvelle route : un mètre par mandat."
+  "Marine inaugure le premier mètre : changement sans rupture, promesse tenue.",
+  "Un mètre de changement, sans rupture.",
+  "Le chantier dure deux siècles. Les ouvriers s'endorment."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -26,47 +26,47 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. En douceur.",
    "accent_words": [
-    "En douceur"
+    "douceur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le changement, promis à Orléans, mais « pas une rupture brutale ».",
+   "text": "À Orléans, le changement promis : « pas une rupture brutale ».",
    "accent_words": [
-    "pas une rupture brutale"
+    "brutale"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "En 2025 : « S'il n'y a pas de rupture, il y aura censure ».",
+   "text": "Alors la mairie construit la nouvelle route à un mètre par mandat.",
    "accent_words": [
-    "rupture"
+    "mandat"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "La mairie lance la nouvelle route : un mètre par mandat.",
+   "text": "Les pelleteuses ont des patins en feutre.",
    "accent_words": [
-    "un mètre par mandat"
+    "feutre"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les pelleteuses ont des patins en feutre, pour ne brusquer personne.",
+   "text": "Le chantier dure deux siècles. Les ouvriers s'endorment.",
    "accent_words": [
-    "patins en feutre"
+    "s'endorment"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Un changement sans rupture, c'est un ravalement : même maison, autre couleur.",
+   "text": "Marine inaugure le premier mètre : changement sans rupture, promesse tenue.",
    "accent_words": [
-    "même maison"
+    "tenue"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -74,7 +74,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui promet de changer, mais pas brutalement.",
    "accent_words": [
-    "pas brutalement"
+    "brutalement"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,41 +92,87 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une pelleteuse avec un nœud rose.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "EN DOUCEUR",
+   "comic_action": "Descente sur la ville ; banderole « EN DOUCEUR » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "lift_tribune",
     "tribune",
-    "person",
-    "banner"
+    "lift_tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "« PAS BRUTALE »",
-   "comic_action": "La tribune s'élève sous une lumière tamisée.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« PAS UNE RUPTURE BRUTALE »",
+   "comic_action": "Meeting : la tribune s'élève, banderole « « PAS UNE RUPTURE BRUTALE » ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "sourire_pro",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "clap"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "« RUPTURE OU CENSURE »",
-   "comic_action": "L'écran affiche l'ancienne phrase, puis la nouvelle par-dessus.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "1 MÈTRE PAR MANDAT",
+   "comic_action": "Dans la rue, panneau « 1 MÈTRE PAR MANDAT ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CHANTIER : 1 M/MANDAT"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -136,13 +182,25 @@
    "camera": "street_dolly",
    "set": [
     "road",
-    "building",
+    "sign",
     "person",
-    "bin"
+    "traffic_light"
    ],
-   "onscreen_text": "AVANCEMENT : 1 M",
-   "comic_action": "Une route où un seul mètre est goudronné, ruban coupé.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PELLETEUSES EN FEUTRE",
+   "comic_action": "Dans la rue, panneau « PELLETEUSES EN FEUTRE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -151,30 +209,54 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "car",
     "road",
-    "gps",
-    "sign"
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "PELLETEUSE EN FEUTRE",
-   "comic_action": "Gros plan sur des chenilles enveloppées de feutre.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CHANTIER : 2 SIÈCLES",
+   "comic_action": "Dans la rue, panneau « CHANTIER : 2 SIÈCLES ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "visage": "dort"
+    },
+    {
+     "who": "perso",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "MÊME MAISON",
-   "comic_action": "Façade repeinte en bleu ; derrière, rien n'a bougé. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "PROMESSE TENUE : 1 MÈTRE",
+   "comic_action": "Plan final, tenir une seconde : « PROMESSE TENUE : 1 MÈTRE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "clap",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +270,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt fait un pas, puis recule.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI CHANGE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI CHANGE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,21 +293,14 @@
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 82,
+ "word_count": 71,
  "claims": [
   {
    "segment": "n2",
-   "text": "« pas une rupture brutale »",
+   "text": "À Orléans, le changement promis : « pas une rupture brutale ».",
    "claim_type": "citation_exacte",
    "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
    "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
-  },
-  {
-   "segment": "n3",
-   "text": "« S'il n'y a pas de rupture, il y aura censure »",
-   "claim_type": "citation_exacte",
-   "source": "https://lcp.fr/index%2ephp/actualites/s-il-n-y-a-pas-de-rupture-il-y-aura-censure-declare-marine-le-pen-a-la-sortie-de",
-   "note": "« S'il n'y a pas de rupture, il y aura censure »."
   }
  ],
  "sources": [
@@ -224,17 +308,10 @@
    "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
    "date": "2026-10-25",
    "consulted": "2026-11-22",
-   "statut": "fait public (analyse lexicale)",
+   "statut": "fait + citation exacte",
    "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
-  },
-  {
-   "url": "https://lcp.fr/index%2ephp/actualites/s-il-n-y-a-pas-de-rupture-il-y-aura-censure-declare-marine-le-pen-a-la-sortie-de",
-   "date": "2025-09-17",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte (LCP)",
-   "note": "« S'il n'y a pas de rupture, il y aura censure »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = Orléans, octobre 2026 : le changement, mais « pas une rupture brutale » ; après « S'il n'y a pas de rupture, il y aura censure » (2025). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = le changement « pas une rupture brutale » (Orléans). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

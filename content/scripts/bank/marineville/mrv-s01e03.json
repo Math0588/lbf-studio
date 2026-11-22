@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-03",
  "format": "A",
- "title_cover": "L'oiseau et l'échiquier",
+ "title_cover": "L'oiseau sans ailes",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, la place de la mairie est un échiquier renversé.",
-  "Marineville : neuf ans après, le mème a gagné.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : l'oiseau et l'échiquier."
+  "Dans cette ville, tout le monde vote Marine. Même les pigeons.",
+  "Marineville : plus de droite, plus de gauche, tout droit dans la mer.",
+  "Je suis l'oiseau, dit-elle. La ville a essayé.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : L'oiseau sans ailes."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Neuf ans plus tard, elle se proclame l'oiseau. Le mème a gagné.",
-  "Le pigeon renverse les pièces et repart en se croyant vainqueur.",
-  "Octobre 2026, en meeting : « je suis l'oiseau »."
+  "Marine, elle, plane. Un oiseau sans ailes, ça s'appelle un caillou.",
+  "Un oiseau sans ailes : un caillou.",
+  "Tout droit jusqu'à la mer. Les pigeons rigolent, perchés."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,13 +23,13 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Même les pigeons.",
    "accent_words": [
-    "les pigeons"
+    "pigeons"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Octobre 2026, en meeting : « je suis l'oiseau ».",
+   "text": "En meeting : « ni l'aile droite ni l'aile gauche, je suis l'oiseau ».",
    "accent_words": [
     "l'oiseau"
    ],
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "En 2017, X résumait son débat : une partie d'échecs contre un pigeon.",
+   "text": "Alors la ville supprime les ailes : plus de droite, plus de gauche.",
    "accent_words": [
-    "échecs"
+    "gauche"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le pigeon renverse les pièces et repart en se croyant vainqueur.",
+   "text": "Les voitures ne peuvent plus tourner. Elles vont tout droit.",
    "accent_words": [
-    "vainqueur"
+    "tout droit"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Ici, la place de la mairie est un échiquier. Les pièces sont toutes par terre.",
+   "text": "Tout droit jusqu'à la mer. Les pigeons rigolent, perchés.",
    "accent_words": [
-    "par terre"
+    "perchés"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Neuf ans plus tard, elle se proclame l'oiseau. Le mème a gagné.",
+   "text": "Marine, elle, plane. Un oiseau sans ailes, ça s'appelle un caillou.",
    "accent_words": [
-    "Le mème a gagné"
+    "caillou"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui se souvient du débat de 2017.",
+   "text": "Envoie ça au pote qui croit qu'elle plane au-dessus des partis.",
    "accent_words": [
-    "2017"
+    "au-dessus"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,89 +89,172 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; des pigeons alignés sur le toit comme un public.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "MÊME LES PIGEONS",
+   "comic_action": "Descente sur la ville ; banderole « MÊME LES PIGEONS » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "lift_tribune",
     "tribune",
-    "person",
-    "banner"
+    "lift_tribune",
+    "banner",
+    "person"
    ],
    "onscreen_text": "« JE SUIS L'OISEAU »",
-   "comic_action": "La tribune s'élève ; une plume géante plane au-dessus.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Meeting : la tribune s'élève, banderole « « JE SUIS L'OISEAU » ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
-    "router_lectern",
-    "studio_light",
-    "text3d"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "DÉBAT 2017 : ÉCHECS",
-   "comic_action": "Plateau : un échiquier géant posé entre deux pupitres.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "NI DROITE NI GAUCHE",
+   "comic_action": "Dans la rue, panneau « NI DROITE NI GAUCHE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TOURNER : INTERDIT"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "text3d",
-    "person",
-    "studio_light"
+    "road",
+    "car",
+    "gps",
+    "roundabout"
    ],
-   "onscreen_text": "ÉCHEC ET… BAZAR",
-   "comic_action": "Les pièces tombent de la table une à une ; une plume se pose sur le roi.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "TOUT DROIT",
+   "comic_action": "Une voiture tourne au rond-point ; le GPS affiche « TOUT DROIT ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "point"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "column",
-    "mairie",
-    "text3d",
-    "person"
+    "lamp",
+    "tree",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "PARTIE EN COURS (DEPUIS 2017)",
-   "comic_action": "Entre deux colonnes, un échiquier géant renversé sur le pavé.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DIRECTION : LA MER",
+   "comic_action": "Un oiseau en carton perché sur un lampadaire ; panneau « DIRECTION : LA MER ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "fall"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "MÈME : 1 · DÉBAT : 0",
-   "comic_action": "L'écran affiche un tableau de score. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "UN CAILLOU",
+   "comic_action": "Plan final, tenir une seconde : « UN CAILLOU ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,42 +268,37 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt ramasse une pièce d'échecs.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI PLANE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI PLANE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui se souvient du débat de 2017."
+  "text": "Envoie ça au pote qui croit qu'elle plane au-dessus des partis."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 83,
+ "word_count": 79,
  "claims": [
   {
    "segment": "n2",
-   "text": "« je suis l'oiseau »",
+   "text": "En meeting : « ni l'aile droite ni l'aile gauche, je suis l'oiseau ».",
    "claim_type": "citation_exacte",
    "source": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
    "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
-  },
-  {
-   "segment": "n3",
-   "text": "En 2017, X résumait son débat : une partie d'échecs contre un pigeon.",
-   "claim_type": "fait_public",
-   "source": "https://www.slate.fr/story/144999/resume-debat-le-pen-macron-critique-amazon-2005",
-   "note": "Paraphrase du mème, sans guillemets."
-  },
-  {
-   "segment": "n4",
-   "text": "Le pigeon renverse les pièces et repart en se croyant vainqueur.",
-   "claim_type": "fait_public",
-   "source": "https://www.slate.fr/story/144999/resume-debat-le-pen-macron-critique-amazon-2005",
-   "note": "Paraphrase du mème, sans guillemets."
   }
  ],
  "sources": [
@@ -228,17 +306,10 @@
    "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
    "date": "2026-10-29",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (meeting d'Orléans, 25/10/2026) + fait (affiche)",
+   "statut": "citation exacte",
    "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
-  },
-  {
-   "url": "https://www.slate.fr/story/144999/resume-debat-le-pen-macron-critique-amazon-2005",
-   "date": "2017-05",
-   "consulted": "2026-11-22",
-   "statut": "mème (comparaison échecs / pigeon issue d'une critique Amazon de 2005, partagée pendant le débat)",
-   "note": "Paraphrase du mème, sans guillemets."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « je suis l'oiseau » (Orléans, 2026) ; en 2017, son débat résumé sur X par la partie d'échecs contre un pigeon (mème issu d'une critique Amazon de 2005). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « ni l'aile droite ni l'aile gauche, je suis l'oiseau » (Orléans, 2026). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

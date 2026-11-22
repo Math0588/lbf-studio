@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-20",
  "format": "A",
- "title_cover": "Clignotant bloqué",
+ "title_cover": "Clignotants confisqués",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, la mairie a tous ses bureaux du même côté.",
-  "Marineville : ni droite ni gauche, clignotant bloqué.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : clignotant bloqué."
+  "Dans cette ville, tout le monde vote Marine. Ni à droite, paraît-il.",
+  "Marineville : interdit de tourner, sauf à droite.",
+  "Ici, les voitures planent au-dessus des carrefours.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Clignotants confisqués."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ni droite ni gauche, mais le clignotant toujours du même côté.",
-  "Le panneau à l'entrée dit centre-ville. La flèche pointe à droite.",
-  "Ici, la mairie a mis tous ses bureaux du même côté du couloir."
+  "Marine plane. Mais son clignotant reste bloqué du même côté.",
+  "Le clignotant, toujours du même côté.",
+  "Elles atterrissent toutes du même côté : à droite."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -29,7 +29,7 @@
   },
   {
    "id": "n2",
-   "text": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau ».",
+   "text": "En meeting : « ni l'aile droite ni l'aile gauche, je suis l'oiseau ».",
    "accent_words": [
     "l'oiseau"
    ],
@@ -37,33 +37,33 @@
   },
   {
    "id": "n3",
-   "text": "Un oiseau de campagne présidentielle, lancé à Orléans pour 2027.",
+   "text": "Alors la mairie interdit de tourner. Les clignotants sont confisqués.",
    "accent_words": [
-    "Orléans"
+    "confisqués"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, la mairie a mis tous ses bureaux du même côté du couloir.",
+   "text": "Les voitures montent sur des rampes pour planer au-dessus des carrefours.",
    "accent_words": [
-    "du même côté"
+    "planer"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le panneau d'entrée dit centre-ville. La flèche pointe à droite.",
+   "text": "Elles atterrissent toutes du même côté : à droite.",
    "accent_words": [
-    "à droite"
+    "droite"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ni droite ni gauche, mais le clignotant toujours du même côté.",
+   "text": "Marine plane. Mais son clignotant reste bloqué du même côté.",
    "accent_words": [
-    "du même côté"
+    "côté"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui se dit apolitique avec un clignotant bloqué.",
    "accent_words": [
-    "apolitique"
+    "bloqué"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,57 +89,114 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; toutes les fenêtres allumées côté droit.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "NI À DROITE, PARAÎT-IL",
+   "comic_action": "Descente sur la ville ; banderole « NI À DROITE, PARAÎT-IL » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "lift_tribune",
     "tribune",
-    "person",
-    "banner"
+    "lift_tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "« NI DROITE NI GAUCHE »",
-   "comic_action": "La tribune s'élève, une plume plane au-dessus.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« NI L'AILE DROITE NI L'AILE GAUCHE »",
+   "comic_action": "Meeting : la tribune s'élève, banderole « « NI L'AILE DROITE NI L'AILE GAUCHE » ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "road",
+    "car",
+    "gps",
+    "roundabout"
    ],
-   "onscreen_text": "ORLÉANS · 2027",
-   "comic_action": "L'écran affiche une carte : une plume posée sur Orléans.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "CLIGNOTANTS CONFISQUÉS",
+   "comic_action": "Une voiture tourne au rond-point ; le GPS affiche « CLIGNOTANTS CONFISQUÉS ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CLIGNOTANT : INTERDIT"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "screen",
-    "sign",
-    "building"
+    "road",
+    "car",
+    "gps",
+    "roundabout"
    ],
-   "onscreen_text": "CÔTÉ : LE MÊME",
-   "comic_action": "Par la fenêtre : un couloir dont toutes les portes sont à droite.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LES VOITURES PLANENT",
+   "comic_action": "Une voiture tourne au rond-point ; le GPS affiche « LES VOITURES PLANENT ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "jump"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -148,30 +205,55 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "traffic_light",
     "road",
-    "car",
-    "sign"
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "CENTRE-VILLE →",
-   "comic_action": "Un panneau « CENTRE » avec une flèche franche vers la droite.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "ATTERRISSAGE : À DROITE",
+   "comic_action": "Dans la rue, panneau « ATTERRISSAGE : À DROITE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "fall"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "car",
-    "road",
-    "gps",
-    "sign"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "CLIGNOTANT : BLOQUÉ",
-   "comic_action": "Gros plan sur un clignotant droit qui ne s'arrête jamais. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "CLIGNOTANT BLOQUÉ",
+   "comic_action": "Plan final, tenir une seconde : « CLIGNOTANT BLOQUÉ ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +267,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt tourne toujours du même côté.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE APOLITIQUE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE APOLITIQUE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,21 +290,14 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 82,
+ "word_count": 78,
  "claims": [
   {
    "segment": "n2",
-   "text": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau »",
+   "text": "En meeting : « ni l'aile droite ni l'aile gauche, je suis l'oiseau ».",
    "claim_type": "citation_exacte",
    "source": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
    "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
-  },
-  {
-   "segment": "n3",
-   "text": "Un oiseau de campagne présidentielle, lancé à Orléans pour 2027.",
-   "claim_type": "fait_public",
-   "source": "https://fr.euronews.com/2026/10/25/orleans-marine-le-pen-lance-sa-campagne-au-lendemain-de-lacte-ii-de-la-mobilisation-social",
-   "note": "Lancement de campagne pour 2027 à Orléans, au lendemain de l'acte II de la mobilisation sociale."
   }
  ],
  "sources": [
@@ -221,17 +305,10 @@
    "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
    "date": "2026-10-29",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (meeting d'Orléans, 25/10/2026) + fait (affiche)",
+   "statut": "citation exacte",
    "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
-  },
-  {
-   "url": "https://fr.euronews.com/2026/10/25/orleans-marine-le-pen-lance-sa-campagne-au-lendemain-de-lacte-ii-de-la-mobilisation-social",
-   "date": "2026-10-25",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Lancement de campagne pour 2027 à Orléans, au lendemain de l'acte II de la mobilisation sociale."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » (Orléans 2026) : ni droite ni gauche, mais toujours du même côté. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « ni l'aile droite ni l'aile gauche, je suis l'oiseau ». Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

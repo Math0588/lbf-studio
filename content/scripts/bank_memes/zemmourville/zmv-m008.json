@@ -4,45 +4,45 @@
  "synopsis_id": "zmv-m008-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Le problème d'échelle",
- "anchor": "le « problème d'échelle » reproché à un graphique (novembre 2025).",
+ "title_cover": "Étiquettes géantes",
+ "anchor": "Le « problème d'échelle » appliqué aux étiquettes du supermarché.",
  "meme_id": "ZG",
- "situation": "le supermarché",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : les étiquettes de prix font deux mètres.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, chaque graphique est corrigé à la main.",
-  "Zemmourville : le supermarché à la bonne échelle, la sienne."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien voit grand.",
+  "Zemmour avait un problème d'échelle. Le supermarché a agrandi ses étiquettes.",
+  "Attention : vidéo garantie sans nostalgie. Presque.",
+  "Bienvenue à Zemmourville : étiquettes géantes.",
+  "Zemmour en une vidéo : étiquettes géantes."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "L'échelle est corrigée. Le score, lui, reste à environ 4 %.",
-  "Taille réelle du score : petite.",
-  "Graphique agrandi, pourcentage inchangé."
+  "L'échelle est corrigée. Le score, lui, reste autour de 4 %.",
+  "L'échelle est corrigée. Le score, lui, reste autour de 4 %.",
+  "Les clients achètent les étiquettes. Les yaourts restent en rayon."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Prix agrandis.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien voit grand.",
    "accent_words": [
-    "Prix agrandis"
+    "voit grand"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Fin 2025, il dénonce un « problème d'échelle » dans un graphique de sondage.",
+   "text": "En 2025, il dénonce un « problème d'échelle » sur un graphique de sondage.",
    "accent_words": [
-    "graphique"
+    "de sondage"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Ici, le supermarché a réglé le problème : ses étiquettes font deux mètres.",
+   "text": "Le supermarché règle le problème : ses étiquettes font deux mètres.",
    "accent_words": [
     "deux mètres"
    ],
@@ -50,33 +50,33 @@
   },
   {
    "id": "n4",
-   "text": "Le yaourt à 6 % de matière grasse écrase le rayon. Le reste, illisible.",
+   "text": "Le yaourt à 6 % écrase tout le rayon.",
    "accent_words": [
-    "illisible"
+    "le rayon"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le gérant mesure les colonnes au mètre ruban. Les chiffres, jamais.",
+   "text": "Les clients achètent les étiquettes. Les yaourts restent en rayon.",
    "accent_words": [
-    "jamais"
+    "en rayon"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "L'échelle est corrigée. Le score, lui, reste à environ 4 %.",
+   "text": "L'échelle est corrigée. Le score, lui, reste autour de 4 %.",
    "accent_words": [
-    "environ 4 %"
+    "4 %"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui conteste l'arbitre à chaque défaite.",
+   "text": "Envoie ça au pote qui zoome sur ses abonnés.",
    "accent_words": [
-    "l'arbitre"
+    "ses abonnés"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "shop",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un supermarché aux étiquettes démesurées.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · ÉTIQUETTES GÉANTES",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "TOUT EN GRAND"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -107,41 +130,80 @@
    "set": [
     "screen",
     "text3d",
-    "person"
+    "tribune"
    ],
-   "onscreen_text": "PROBLÈME D'ÉCHELLE",
-   "comic_action": "Un écran de caisse affiche un graphique, colonnes de travers.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« PROBLÈME D'ÉCHELLE »",
+   "comic_action": "Un graphique télé : sa colonne entourée en rouge.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUT EN GRAND"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
     "shop",
     "sign",
     "person"
    ],
-   "onscreen_text": "ÉTIQUETTE : 2 M",
-   "comic_action": "Travelling : un client se faufile entre deux étiquettes géantes.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "ÉTIQUETTES : 2 MÈTRES",
+   "comic_action": "Des étiquettes géantes dépassent des rayons.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "YAOURT : 6 % (EN GÉANT)"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
     "shop",
     "text3d",
     "person"
    ],
-   "onscreen_text": "6 % > TOUT",
-   "comic_action": "Orbite : un pot de yaourt géant « 6 % » au milieu du rayon.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LE 6 % ÉCRASE TOUT",
+   "comic_action": "Une étiquette « 6 % » cache tout le rayon frais.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CLIENT"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,13 +212,26 @@
    ],
    "camera": "closeup",
    "set": [
+    "shop",
     "person",
-    "table",
     "text3d"
    ],
-   "onscreen_text": "MÈTRE RUBAN",
-   "comic_action": "Gros plan : le gérant mesure une colonne de carton, sourit.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "ÉTIQUETTES : VENDUES",
+   "comic_action": "Des clients repartent avec des étiquettes sous le bras.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "YAOURTS : INVENDUS"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +240,26 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
+    "screen",
     "text3d",
-    "sign"
+    "banner"
    ],
-   "onscreen_text": "SCORE : TAILLE RÉELLE",
-   "comic_action": "Plan large : les étiquettes géantes, un minuscule « 4 % » au fond.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "SCORE : 4 %",
+   "comic_action": "En haut d'une étiquette immense : « 4 % ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "4 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,30 +273,44 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique cherche le prix à la loupe.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui conteste l'arbitre à chaque défaite."
+  "text": "Envoie ça au pote qui zoome sur ses abonnés."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 83,
+ "word_count": 77,
  "claims": [
   {
-   "text": "« problème d'échelle »",
+   "text": "En 2025, il dénonce un « problème d'échelle » sur un graphique de sondage.",
    "claim_type": "citation_exacte",
    "source": "https://ladepeche.nc/2025/11/12/france-info-raillee-apres-la-diffusion-dun-graphique-trompeur-sur-la-presidentielle",
    "note": "Il dénonce sur X un « problème d'échelle » : sa colonne à 6 % plus petite qu'une colonne à 5,5 %."
   },
   {
-   "text": "L'échelle est corrigée. Le score, lui, reste à environ 4 %.",
+   "text": "L'échelle est corrigée. Le score, lui, reste autour de 4 %.",
    "claim_type": "fait_public",
    "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
    "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
@@ -219,17 +321,17 @@
    "url": "https://ladepeche.nc/2025/11/12/france-info-raillee-apres-la-diffusion-dun-graphique-trompeur-sur-la-presidentielle",
    "date": "2025-11-12",
    "consulted": "2026-11-22",
-   "statut": "citation exacte",
+   "statut": "citation_exacte",
    "note": "Il dénonce sur X un « problème d'échelle » : sa colonne à 6 % plus petite qu'une colonne à 5,5 %."
   },
   {
    "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
    "date": "2026-09",
    "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
+   "statut": "fait",
    "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le « problème d'échelle » reproché à un graphique (novembre 2025). Cadre : le supermarché. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2025, il dénonce un « problème d'échelle » sur un graphique de sondage. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

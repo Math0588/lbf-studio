@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m015",
  "format": "A",
- "anchor": "diplôme professionnel pour travailler avec des chats (2021), surnom d'entourage « cat mother » : la fac n'a plus qu'une licence.",
+ "anchor": "son diplôme pour travailler avec des chats (annoncé en 2021)",
  "situation": "Licence chat",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "title_cover": "Licence chat",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, la fac n'a qu'une licence : chat.",
-  "Marineville : la reconversion la plus ambitieuse de France.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : licence chat."
+  "Dans cette ville, tout le monde vote Marine. Diplôme en griffes.",
+  "Marineville : l'université ne délivre plus qu'une licence chat.",
+  "Ici, le doyen dort pendant les examens.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Licence chat."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Diplômée pour élever des chats, candidate pour diriger un pays : quelle reconversion.",
-  "Le doyen est un chat : il dort pendant les questions, tout le monde trouve ça mignon.",
-  "L'université n'a qu'une licence : chat, option pouvoir d'achat."
+  "Marine, major de promo, se présente pour diriger un pays.",
+  "Major de promo, candidate à l'Élysée.",
+  "Les diplômés trouvent du travail : coussin professionnel."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -26,7 +26,7 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Diplôme en griffes.",
    "accent_words": [
-    "Diplôme en griffes"
+    "griffes"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -34,39 +34,39 @@
    "id": "n2",
    "text": "En 2021, elle annonce un diplôme pour travailler avec des chats.",
    "accent_words": [
-    "diplôme"
+    "chats"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Son entourage la surnomme cat mother, raconte la presse britannique.",
+   "text": "Alors l'université ne propose plus qu'une licence : chat.",
    "accent_words": [
-    "cat mother"
+    "chat"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "L'université n'a plus qu'une licence : chat, option pouvoir d'achat.",
+   "text": "Le doyen est un chat. Il dort pendant les examens.",
    "accent_words": [
-    "option pouvoir d'achat"
+    "examens"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le doyen est un chat : il dort pendant les questions. C'est mignon.",
+   "text": "Les diplômés trouvent du travail : coussin professionnel.",
    "accent_words": [
-    "mignon"
+    "coussin"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Diplômée pour élever des chats, candidate pour diriger un pays : quelle reconversion.",
+   "text": "Marine, major de promo, se présente pour diriger un pays.",
    "accent_words": [
-    "quelle reconversion"
+    "pays"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -74,7 +74,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui met son chat sur son CV.",
    "accent_words": [
-    "son CV"
+    "CV"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,9 +92,25 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la fac municipale ; une chatière dans la grande porte.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "DIPLÔME EN GRIFFES",
+   "comic_action": "Descente sur la ville ; banderole « DIPLÔME EN GRIFFES » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MIAOU"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -103,14 +119,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
-    "table",
+    "mascot",
     "person",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "DIPLÔME : CHATS",
-   "comic_action": "Un parchemin officiel scellé d'une patte.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "DIPLÔME CHAT",
+   "comic_action": "Mascotte chat au premier plan ; panneau « DIPLÔME CHAT ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -119,62 +147,114 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "table",
+    "form_stack",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "CAT MOTHER",
-   "comic_action": "L'écran affiche une couronne sur une pelote de laine.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "LICENCE CHAT",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « LICENCE CHAT ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "LICENCE : CHAT"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "column",
-    "mairie",
-    "text3d",
-    "person"
+    "mascot",
+    "person",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "LICENCE UNIQUE : CHAT",
-   "comic_action": "Entre deux colonnes, une affiche « INSCRIPTIONS : CHAT ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LE DOYEN DORT",
+   "comic_action": "Mascotte chat au premier plan ; panneau « LE DOYEN DORT ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "dort"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "tribune",
-    "studio_light",
-    "text3d",
-    "person"
+    "mascot",
+    "person",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "DOYEN : ZZZ",
-   "comic_action": "À la tribune de l'amphi, un chat en peluche roulé en boule.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "MÉTIER : COUSSIN",
+   "comic_action": "Mascotte chat au premier plan ; panneau « MÉTIER : COUSSIN ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "clap"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "RECONVERSION : AMBITIEUSE",
-   "comic_action": "Vitrine : un CV avec deux lignes, « chats » et « présidente ». Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "MAJOR : CANDIDATE",
+   "comic_action": "Plan final, tenir une seconde : « MAJOR : CANDIDATE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +268,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt tend un CV avec une photo de chat.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE AU CV FÉLIN",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE AU CV FÉLIN ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,18 +291,11 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 79,
+ "word_count": 70,
  "claims": [
   {
    "segment": "n2",
    "text": "En 2021, elle annonce un diplôme pour travailler avec des chats.",
-   "claim_type": "fait_public",
-   "source": "https://uk.news.yahoo.com/marine-le-pen-passes-professional-160314902.html",
-   "note": "Diplôme professionnel pour travailler avec des chats ; surnom d'entourage « cat mother »."
-  },
-  {
-   "segment": "n3",
-   "text": "Son entourage la surnomme cat mother, raconte la presse britannique.",
    "claim_type": "fait_public",
    "source": "https://uk.news.yahoo.com/marine-le-pen-passes-professional-160314902.html",
    "note": "Diplôme professionnel pour travailler avec des chats ; surnom d'entourage « cat mother »."
@@ -224,10 +306,10 @@
    "url": "https://uk.news.yahoo.com/marine-le-pen-passes-professional-160314902.html",
    "date": "2021-10-14",
    "consulted": "2026-11-22",
-   "statut": "fait (déclaré par l'intéressée) + surnom rapporté",
+   "statut": "fait déclaré + surnom rapporté",
    "note": "Diplôme professionnel pour travailler avec des chats ; surnom d'entourage « cat mother »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = diplôme professionnel pour travailler avec des chats (2021), surnom d'entourage « cat mother » : la fac n'a plus qu'une licence. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = son diplôme pour travailler avec des chats (annoncé en 2021). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

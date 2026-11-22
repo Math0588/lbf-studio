@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m005",
  "format": "A",
- "anchor": "« Je censure tout » (octobre 2025) : au stade, l'arbitre censure tout le monde et se proclame champion.",
- "situation": "Arbitre champion",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
- "title_cover": "Arbitre champion",
+ "anchor": "« Je censure tout » (octobre 2025)",
+ "situation": "L'arbitre censure",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
+ "title_cover": "L'arbitre censure",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, l'arbitre siffle tout le monde, puis gagne.",
-  "Marineville : on ne gagne pas le match, on l'annule.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : arbitre champion."
+  "Dans cette ville, tout le monde vote Marine. L'arbitre siffle tout.",
+  "Marineville : l'arbitre censure le ballon.",
+  "Ici, le stade est vide et l'arbitre siffle le vent.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : L'arbitre censure."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Zéro joueur sur le terrain, et l'arbitre se proclame champion.",
-  "Premier carton rouge : le ballon, trop rond.",
-  "Deuxième : les deux équipes. Troisième : le public."
+  "Marine se proclame championne. Seule sur le terrain, invaincue.",
+  "Championne, seule sur le terrain.",
+  "Le stade est vide. L'arbitre siffle le vent."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -26,47 +26,47 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. L'arbitre siffle tout.",
    "accent_words": [
-    "siffle tout"
+    "siffle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sa règle d'or depuis 2025 : « Je censure tout ».",
+   "text": "Sa règle depuis 2025 : « Je censure tout ».",
    "accent_words": [
-    "censure"
+    "tout"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Une phrase lancée contre le gouvernement, devenue mème.",
+   "text": "Alors l'arbitre du match municipal censure le ballon : trop rond.",
    "accent_words": [
-    "devenue mème"
+    "rond"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Premier carton rouge : le ballon, trop rond.",
+   "text": "Puis les deux équipes, puis le public.",
    "accent_words": [
-    "trop rond"
+    "public"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Deuxième : les deux équipes. Troisième : le public.",
+   "text": "Le stade est vide. L'arbitre siffle le vent.",
    "accent_words": [
-    "le public"
+    "vent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Zéro joueur sur le terrain, et l'arbitre se proclame champion.",
+   "text": "Marine se proclame championne. Seule sur le terrain, invaincue.",
    "accent_words": [
-    "champion"
+    "invaincue"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -74,7 +74,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui siffle tout le monde sauf son équipe.",
    "accent_words": [
-    "son équipe"
+    "équipe"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,57 +92,115 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur le stade municipal ; un sifflet géant sur le toit des tribunes.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "L'ARBITRE SIFFLE TOUT",
+   "comic_action": "Descente sur la ville ; banderole « L'ARBITRE SIFFLE TOUT » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
+    "tribune",
+    "lift_tribune",
+    "banner",
     "person"
    ],
    "onscreen_text": "« JE CENSURE TOUT »",
-   "comic_action": "L'écran du stade affiche la phrase en lettres rouges.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Meeting : la tribune s'élève, banderole « « JE CENSURE TOUT » ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "ring_light",
-    "tripod_camera",
+    "road",
+    "sign",
     "person",
-    "screen"
+    "traffic_light"
    ],
-   "onscreen_text": "MÈME : JE CENSURE TOUT",
-   "comic_action": "Ring light : la phrase tourne en boucle en autocollant animé.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "BALLON : TROP ROND",
+   "comic_action": "Dans la rue, panneau « BALLON : TROP ROND ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CARTON ROUGE : LE BALLON"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "ground",
-    "banner",
+    "road",
+    "sign",
     "person",
-    "text3d"
+    "traffic_light"
    ],
-   "onscreen_text": "CARTON : LE BALLON",
-   "comic_action": "L'arbitre brandit un carton devant le ballon.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PUBLIC CENSURÉ",
+   "comic_action": "Dans la rue, panneau « PUBLIC CENSURÉ ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "fall"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -151,14 +209,26 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "person",
     "road",
-    "building",
-    "sign"
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "PUBLIC : EXPULSÉ",
-   "comic_action": "Les supporters sortent du stade en file indienne.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "IL SIFFLE LE VENT",
+   "comic_action": "Dans la rue, panneau « IL SIFFLE LE VENT ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "fatigue"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -167,14 +237,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "CHAMPIONNE PAR CENSURE",
-   "comic_action": "L'arbitre soulève la coupe, seul dans le stade. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "CHAMPIONNE, SEULE",
+   "comic_action": "Plan final, tenir une seconde : « CHAMPIONNE, SEULE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +271,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt siffle sa propre ombre.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE ARBITRE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE ARBITRE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,19 +294,12 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 69,
+ "word_count": 68,
  "claims": [
   {
    "segment": "n2",
-   "text": "« Je censure tout »",
+   "text": "Sa règle depuis 2025 : « Je censure tout ».",
    "claim_type": "citation_exacte",
-   "source": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
-   "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
-  },
-  {
-   "segment": "n3",
-   "text": "Une phrase lancée contre le gouvernement, devenue mème.",
-   "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
    "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
   }
@@ -224,10 +309,10 @@
    "url": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
    "date": "2025-10-08",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (LCP)",
+   "statut": "citation exacte",
    "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « Je censure tout » (octobre 2025) : au stade, l'arbitre censure tout le monde et se proclame champion. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « Je censure tout » (octobre 2025). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

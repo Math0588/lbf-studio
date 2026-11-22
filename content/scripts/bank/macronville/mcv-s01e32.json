@@ -3,27 +3,27 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-32",
  "format": "C",
- "title_cover": "Nouveau logo",
+ "title_cover": "Interdit de s'arrêter",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
   "2016 : il crée En Marche. Initiales : E.M., comme Emmanuel Macron.",
   "Les électeurs de Macron vont détester celle-là.",
-  "Nouveau logo : l'histoire en trente secondes.",
-  "Dans cette ville, tout le monde vote Macron. Nouveau logo."
+  "Interdit de s'arrêter : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Toutes les rues s'appellent E.M."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Trois noms, un bilan : 3 595 milliards de dette. Elle, personne ne l'a rebaptisée.",
-  "Il a changé trois fois le nom du parti. La dette, elle, a gardé le sien.",
-  "Son expression fétiche : « transformation profonde ». Du logo, surtout."
+  "Le maire, lui, n'a jamais marché : tout le trajet en cortège.",
+  "En Marche, puis Renaissance. Lui n'a jamais quitté la voiture.",
+  "Puis le parti devient Renaissance. Tout s'arrête : il faut renaître."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Nouveau logo.",
+   "text": "Dans cette ville, tout le monde vote Macron. Toutes les rues s'appellent E.M.",
    "accent_words": [
-    "logo"
+    "E.M."
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,35 +37,35 @@
   },
   {
    "id": "n3",
-   "text": "Puis La République en marche. Le même monogramme, avec plus de mots.",
+   "text": "La mairie prend le nom au mot : interdiction de s'arrêter de marcher.",
    "accent_words": [
-    "mots"
+    "marcher"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "2022 : rebaptisé Renaissance. Le parti renaît, le bilan non.",
+   "text": "On mange en marchant, on dort en marchant, sans jamais se parler.",
    "accent_words": [
-    "non"
+    "parler"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Son expression fétiche : « transformation profonde ». Du logo, surtout.",
+   "text": "Puis le parti devient Renaissance. Tout s'arrête : il faut renaître.",
    "accent_words": [
-    "surtout"
+    "renaître"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Trois noms, un bilan : 3 595 milliards de dette. Elle, personne ne l'a rebaptisée.",
+   "text": "Le maire, lui, n'a jamais marché : tout le trajet en cortège.",
    "accent_words": [
-    "rebaptisée"
+    "cortège"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
@@ -91,7 +91,7 @@
     "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la ville ; banderole « NOUVEAU LOGO » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "comic_action": "Descente sur la ville ; banderole « INTERDIT DE S'ARRÊTER » sur la mairie ; le maire caricaturé salue, sourire figé.",
    "expected_result": "La ville et le thème posés en une image.",
    "actions": [
     {
@@ -105,6 +105,16 @@
      "geste": "clap",
      "visage": "neutre",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "INTERDIT DE S'ARRÊTER"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
     }
    ]
   },
@@ -120,8 +130,8 @@
     "person"
    ],
    "onscreen_text": "EN MARCHE = E.M.",
-   "comic_action": "Une banderole « EN MARCHE ! » ; les lettres E et M s'allument en grand, comme une signature.",
-   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "comic_action": "Une banderole « EN MARCHE ! » ; les lettres E et M s'allument en grand.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
    "actions": [
     {
      "who": "maire",
@@ -134,6 +144,12 @@
      "geste": "facepalm",
      "visage": "blase",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "EN MARCHE !"
     }
    ]
   },
@@ -144,25 +160,31 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "banner",
+    "road",
     "sign",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "LA RÉPUBLIQUE EN MARCHE",
-   "comic_action": "La banderole s'allonge, s'allonge, jusqu'à sortir du cadre.",
-   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "onscreen_text": "INTERDIT DE S'ARRÊTER",
+   "comic_action": "Un panneau « ARRÊT INTERDIT » à chaque coin de rue ; les habitants marchent sur place au feu rouge.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "arms_up",
-     "visage": "content",
+     "who": "foule",
+     "geste": "jump",
+     "visage": "fatigue",
      "quand": 0.0
     },
     {
-     "who": "foule",
-     "geste": "shrug",
-     "visage": "blase",
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "EN MARCHE"
     }
    ]
   },
@@ -173,25 +195,31 @@
    ],
    "camera": "orbit",
    "set": [
-    "banner",
-    "mairie",
-    "text3d"
+    "road",
+    "person",
+    "table"
    ],
-   "onscreen_text": "RENAISSANCE",
-   "comic_action": "On repeint la façade : « RENAISSANCE » ; derrière la peinture fraîche, rien n'a bougé.",
-   "expected_result": "Escalade 2 : encore plus gros.",
+   "onscreen_text": "MANGER EN MARCHANT",
+   "comic_action": "Un habitant mange une soupe en marchant ; un autre dort debout en avançant.",
+   "expected_result": "Conséquence : ça dégénère.",
    "actions": [
     {
      "who": "perso",
-     "geste": "point",
-     "visage": "choque",
+     "geste": "shrug",
+     "visage": "fatigue",
      "quand": 0.0
     },
     {
-     "who": "maire",
-     "geste": "clap",
-     "visage": "sourire_pro",
+     "who": "foule",
+     "geste": "fall",
+     "visage": "dort",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SOUPE À EMPORTER 6 €"
     }
    ]
   },
@@ -202,25 +230,31 @@
    ],
    "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
+    "banner",
+    "road",
     "person"
    ],
-   "onscreen_text": "« TRANSFORMATION PROFONDE »",
-   "comic_action": "Un écran affiche un logo qui change de couleur toutes les secondes, et rien d'autre.",
-   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "onscreen_text": "RENAISSANCE",
+   "comic_action": "La banderole change pour « RENAISSANCE » ; toute la foule s'arrête net et se regarde.",
+   "expected_result": "Pire conséquence : l'absurde total.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "nod",
-     "visage": "fier",
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "choque",
      "quand": 0.0
     },
     {
-     "who": "foule",
+     "who": "perso",
      "geste": "facepalm",
      "visage": "fatigue",
-     "quand": 0.5
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "RENAISSANCE"
     }
    ]
   },
@@ -231,25 +265,31 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "building"
+    "car",
+    "car_orbit",
+    "person"
    ],
-   "onscreen_text": "3 595 MDS : MÊME NOM",
-   "comic_action": "Le compteur de dette, lui, garde son étiquette d'origine, en très gros.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "LUI : EN CORTÈGE",
+   "comic_action": "Le maire passe en voiture officielle au milieu des marcheurs épuisés.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "shrug",
+     "geste": "wave",
      "visage": "sourire_pro",
      "quand": 0.0
     },
     {
-     "who": "perso",
-     "geste": "point",
-     "visage": "choque",
+     "who": "foule",
+     "geste": "fall",
+     "visage": "fatigue",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "CONTINUEZ À MARCHER"
     }
    ]
   },
@@ -266,7 +306,7 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : les changements de nom du parti (En Marche, LREM, Renaissance) et la « transformation profonde ».",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : En Marche (initiales E.M.) pris au pied de la lettre, puis Renaissance.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -281,6 +321,12 @@
      "visage": "sourire_pro",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "INTERDIT DE S'ARRÊTER"
+    }
    ]
   }
  ],
@@ -293,7 +339,7 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 81,
+ "word_count": 84,
  "claims": [
   {
    "text": "2016 : il crée En Marche. Initiales : E.M., comme Emmanuel Macron.",
@@ -302,28 +348,10 @@
    "note": "En Marche ! (EM, mêmes initiales que son fondateur), puis La République en marche, puis Renaissance (2022)."
   },
   {
-   "text": "Puis La République en marche. Le même monogramme, avec plus de mots.",
-   "claim_type": "fait_public",
-   "source": "https://en.wikipedia.org/wiki/Renaissance_(French_political_party)",
-   "note": "En Marche ! (EM, mêmes initiales que son fondateur), puis La République en marche, puis Renaissance (2022)."
-  },
-  {
-   "text": "2022 : rebaptisé Renaissance. Le parti renaît, le bilan non.",
-   "claim_type": "fait_public",
+   "text": "Puis le parti devient Renaissance. Tout s'arrête : il faut renaître.",
+   "claim_type": "fiction_satirique",
    "source": "https://telquel.ma/instant-t/2022/05/05/france-le-parti-presidentiel-lrem-change-de-nom-et-devient-renaissance_1765644/",
-   "note": "Le parti présidentiel LREM change de nom et devient Renaissance."
-  },
-  {
-   "text": "« transformation profonde »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
-   "note": "Florilège : « on met un pognon de dingue dans les minima sociaux » (06/2018), « je traverse la rue, je vous en trouve » (09/2018), « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde » (expression la plus fréquente)."
-  },
-  {
-   "text": "Trois noms, un bilan : 3 595 milliards de dette. Elle, personne ne l'a rebaptisée.",
-   "claim_type": "fait_public",
-   "source": "https://www.insee.fr/fr/statistiques/9053525",
-   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
+   "note": "Le parti présidentiel LREM change de nom et devient Renaissance. Exagération satirique évidente, présentée comme telle."
   }
  ],
  "sources": [
@@ -340,22 +368,8 @@
    "consulted": "2026-11-22",
    "statut": "fait public",
    "note": "Le parti présidentiel LREM change de nom et devient Renaissance."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
-   "date": "2021-08-11",
-   "consulted": "2026-11-22",
-   "statut": "fait (citations exactes vérifiées)",
-   "note": "Florilège : « on met un pognon de dingue dans les minima sociaux » (06/2018), « je traverse la rue, je vous en trouve » (09/2018), « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde » (expression la plus fréquente)."
-  },
-  {
-   "url": "https://www.insee.fr/fr/statistiques/9053525",
-   "date": "2026-09-29",
-   "consulted": "2026-11-22",
-   "statut": "fait public (statistique)",
-   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — les changements de nom du parti (En Marche, LREM, Renaissance) et la « transformation profonde ». Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : En Marche (initiales E.M.) pris au pied de la lettre, puis Renaissance. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

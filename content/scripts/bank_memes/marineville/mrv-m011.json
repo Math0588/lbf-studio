@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m011",
  "format": "A",
- "anchor": "« S'il n'y a pas de rupture, il y aura censure » (2025) puis « pas une rupture brutale » (Orléans, 2026) : le Wi-Fi municipal coupe en douceur.",
- "situation": "Wi-Fi en fondu",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
- "title_cover": "Wi-Fi en fondu",
+ "anchor": "« S'il n'y a pas de rupture, il y aura censure », puis « pas une rupture brutale »",
+ "situation": "Wifi de la rupture",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
+ "title_cover": "Wifi de la rupture",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, le Wi-Fi coupe, puis s'excuse en douceur.",
-  "Marineville : la rupture a fait une rupture.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : wi-fi en fondu."
+  "Dans cette ville, tout le monde vote Marine. Connexion instable.",
+  "Marineville : le wifi rompt, puis s'excuse.",
+  "Ici, les visios se font en morse.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Wifi de la rupture."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La rupture pour les autres, la douceur pour soi : pas une ligne, de la 3G.",
-  "Ici, le Wi-Fi municipal coupe sans prévenir, puis s'excuse en douceur.",
-  "La barre de chargement avance, recule, et annonce une renaissance."
+  "Marine, un an plus tard : « pas une rupture brutale ». Connexion instable.",
+  "Pas une rupture brutale : connexion instable.",
+  "La ville vit en wifi intermittent. Les visios se font en morse."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -26,13 +26,13 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Connexion instable.",
    "accent_words": [
-    "Connexion instable"
+    "instable"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2025 : « S'il n'y a pas de rupture, il y aura censure ».",
+   "text": "2025 : « S'il n'y a pas de rupture, il y aura censure ».",
    "accent_words": [
     "censure"
    ],
@@ -40,41 +40,41 @@
   },
   {
    "id": "n3",
-   "text": "En 2026 : « pas une rupture brutale ». Rupture de la rupture.",
+   "text": "Alors la box internet de la ville coupe tout, sans prévenir.",
    "accent_words": [
-    "pas une rupture brutale"
+    "sans prévenir"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, le Wi-Fi coupe sans prévenir, puis s'excuse en douceur.",
+   "text": "Puis elle se reconnecte, et s'excuse en douceur.",
    "accent_words": [
-    "en douceur"
+    "douceur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La barre de chargement avance, recule, et annonce une renaissance.",
+   "text": "La ville vit en wifi intermittent. Les visios se font en morse.",
    "accent_words": [
-    "une renaissance"
+    "morse"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La rupture pour les autres, la douceur pour soi : pas une ligne, de la 3G.",
+   "text": "Marine, un an plus tard : « pas une rupture brutale ». Connexion instable.",
    "accent_words": [
-    "de la 3G"
+    "instable"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
    "text": "Envoie ça au pote qui change d'avis à chaque saison.",
    "accent_words": [
-    "à chaque saison"
+    "saison"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,41 +92,88 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une antenne qui clignote, hésitante.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "CONNEXION INSTABLE",
+   "comic_action": "Descente sur la ville ; banderole « CONNEXION INSTABLE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "objet": "phone",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "tribune",
     "studio_light",
-    "text3d",
-    "person"
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "« RUPTURE ! »",
-   "comic_action": "Tribune : la maire cubique frappe le pupitre.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« IL Y AURA CENSURE »",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « « IL Y AURA CENSURE » ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
-    "lift_tribune",
-    "tribune",
+    "screen",
+    "text3d",
     "person",
-    "banner"
+    "studio_light"
    ],
-   "onscreen_text": "« PAS BRUTALE »",
-   "comic_action": "La même tribune, lumière rose, violons.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "COUPURE SANS PRÉVENIR",
+   "comic_action": "Écran géant : « COUPURE SANS PRÉVENIR ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "perso",
+     "objet": "phone",
+     "geste": "facepalm"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "WIFI : RUPTURE"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -137,44 +184,82 @@
    "set": [
     "screen",
     "text3d",
-    "mairie",
-    "person"
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "CONNEXION : DÉSOLÉE",
-   "comic_action": "L'écran affiche une erreur avec un petit cœur.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RECONNEXION EN DOUCEUR",
+   "comic_action": "Écran géant : « RECONNEXION EN DOUCEUR ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    },
+    {
+     "who": "foule",
+     "geste": "nod"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "table",
     "screen",
-    "sign",
-    "building"
+    "text3d",
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "CHARGEMENT : RENAISSANCE",
-   "comic_action": "Par la fenêtre : une barre de progression qui fait des allers-retours.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "VISIO EN MORSE",
+   "comic_action": "Écran géant : « VISIO EN MORSE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "visage": "fatigue"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "RÉSEAU : 3G",
-   "comic_action": "Vitrine : un vieux téléphone qui affiche une barre de réseau. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "« PAS UNE RUPTURE BRUTALE »",
+   "comic_action": "Plan final, tenir une seconde : « « PAS UNE RUPTURE BRUTALE » ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +273,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt retourne sa veste.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE GIROUETTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE GIROUETTE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,18 +296,18 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 84,
+ "word_count": 79,
  "claims": [
   {
    "segment": "n2",
-   "text": "« S'il n'y a pas de rupture, il y aura censure »",
+   "text": "2025 : « S'il n'y a pas de rupture, il y aura censure ».",
    "claim_type": "citation_exacte",
    "source": "https://lcp.fr/index%2ephp/actualites/s-il-n-y-a-pas-de-rupture-il-y-aura-censure-declare-marine-le-pen-a-la-sortie-de",
    "note": "« S'il n'y a pas de rupture, il y aura censure »."
   },
   {
-   "segment": "n3",
-   "text": "« pas une rupture brutale »",
+   "segment": "n6",
+   "text": "Marine, un an plus tard : « pas une rupture brutale ». Connexion instable.",
    "claim_type": "citation_exacte",
    "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
    "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
@@ -224,17 +318,17 @@
    "url": "https://lcp.fr/index%2ephp/actualites/s-il-n-y-a-pas-de-rupture-il-y-aura-censure-declare-marine-le-pen-a-la-sortie-de",
    "date": "2025-09-17",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (LCP)",
+   "statut": "citation exacte",
    "note": "« S'il n'y a pas de rupture, il y aura censure »."
   },
   {
    "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
    "date": "2026-10-25",
    "consulted": "2026-11-22",
-   "statut": "fait public (analyse lexicale)",
+   "statut": "fait + citation exacte",
    "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « S'il n'y a pas de rupture, il y aura censure » (2025) puis « pas une rupture brutale » (Orléans, 2026) : le Wi-Fi municipal coupe en douceur. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « S'il n'y a pas de rupture, il y aura censure », puis « pas une rupture brutale ». Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

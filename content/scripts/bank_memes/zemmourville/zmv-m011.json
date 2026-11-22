@@ -5,46 +5,46 @@
  "format": "A",
  "length": "court",
  "title_cover": "Le jardinier chroniqueur",
- "anchor": "le chroniqueur de télé quotidien devenu commentateur de tout.",
+ "anchor": "Le chroniqueur télé devenu commentateur de tout, jusqu'au jardin.",
  "meme_id": "ZL",
- "situation": "le parc",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le jardinier ne jardine pas, il polémique.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, chaque pelouse a son éditorial.",
-  "Zemmourville : le parc le mieux commenté de France."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien a une chronique.",
+  "Zemmour commentait tout. Le jardinier de la ville commente les pelouses.",
+  "Ben voyons, encore une vidéo sur lui.",
+  "Bienvenue à Zemmourville : le jardinier chroniqueur.",
+  "Zemmour en une vidéo : le jardinier chroniqueur."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le parc est en friche, mais la chronique est excellente.",
-  "Friche totale, éditorial parfait.",
-  "Il commente la pousse, il ne plante rien."
+  "Commenter, oui. Récolter : zéro député.",
+  "Commenter, oui. Récolter : zéro député.",
+  "Le parc devient une jungle. La chronique est excellente."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Sans arrosage.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien a une chronique.",
    "accent_words": [
-    "Sans arrosage"
+    "une chronique"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Avant la politique, il était chroniqueur télé tous les soirs.",
+   "text": "Il a été chroniqueur télé, tous les soirs, pendant des années.",
    "accent_words": [
-    "chroniqueur"
+    "des années"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, le jardinier ne jardine pas. Il commente les pelouses.",
+   "text": "Le jardinier municipal fait pareil : il commente les pelouses.",
    "accent_words": [
-    "commente"
+    "il commente les pelouses"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -58,25 +58,25 @@
   },
   {
    "id": "n5",
-   "text": "Chaque soir, débat avec les pigeons. Ben voyons.",
+   "text": "Le parc devient une jungle. La chronique est excellente.",
    "accent_words": [
-    "Ben voyons"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n6",
-   "text": "Le parc est en friche, mais la chronique est excellente.",
-   "accent_words": [
-    "excellente"
+    "La chronique est excellente"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui critique le boulot des autres sans bosser.",
+   "id": "n6",
+   "text": "Commenter, oui. Récolter : zéro député.",
    "accent_words": [
-    "sans bosser"
+    "zéro député"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui commente le barbecue sans tenir la pince.",
+   "accent_words": [
+    "la pince"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "tree",
-    "bench",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un parc en friche ; un fauteuil de plateau au milieu.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · LE JARDINIER CHRONIQUEUR",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "COMMENTEZ LES PELOUSES"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,43 +128,84 @@
    ],
    "camera": "closeup",
    "set": [
-    "tripod_camera",
+    "screen",
     "studio_light",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "CHRONIQUEUR",
-   "comic_action": "Un plateau télé installé sous un arbre.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "CHRONIQUEUR CHAQUE SOIR",
+   "comic_action": "Le maire derrière un bureau de plateau télé.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "COMMENTEZ LES PELOUSES"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
     "tree",
-    "person",
-    "sign"
+    "ground",
+    "person"
    ],
-   "onscreen_text": "CHRONIQUE PELOUSE",
-   "comic_action": "Travelling : le jardinier parle face caméra, arrosoir plein à ses pieds.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "JARDINIER : EN CHRONIQUE",
+   "comic_action": "Un jardinier parle face caméra, sécateur en main.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TONTE : 0"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
     "tree",
     "text3d",
     "person"
    ],
-   "onscreen_text": "FEUILLE : DÉCLIN",
-   "comic_action": "Orbite autour d'un arbre : chaque feuille qui tombe déclenche un bandeau « ALERTE ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "FEUILLE TOMBÉE : DÉCLIN",
+   "comic_action": "Gros plan sur une feuille qui tombe au ralenti.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "POLÉMISTE"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,13 +214,26 @@
    ],
    "camera": "closeup",
    "set": [
+    "tree",
     "bench",
-    "person",
     "text3d"
    ],
-   "onscreen_text": "BEN VOYONS",
-   "comic_action": "Gros plan : le jardinier pointe un pigeon du doigt, le pigeon roucoule.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PARC : JUNGLE",
+   "comic_action": "Des herbes géantes avalent les bancs.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "AUDIENCE : TOP"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +242,26 @@
    ],
    "camera": "descend",
    "set": [
-    "tree",
-    "bench",
+    "ground",
+    "banner",
     "text3d"
    ],
-   "onscreen_text": "FRICHE · CHRONIQUE",
-   "comic_action": "Plan large : herbes hautes partout, un fauteuil impeccable au centre.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "RÉCOLTE : 0 DÉPUTÉ",
+   "comic_action": "Un panier de récolte vide.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RÉCOLTE : 0"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,33 +275,47 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique prend l'arrosoir.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui critique le boulot des autres sans bosser."
+  "text": "Envoie ça au pote qui commente le barbecue sans tenir la pince."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 71,
+ "word_count": 73,
  "claims": [
   {
-   "text": "Avant la politique, il était chroniqueur télé tous les soirs.",
+   "text": "Il a été chroniqueur télé, tous les soirs, pendant des années.",
    "claim_type": "fait_public",
    "source": "https://www.slate.fr/story/199107/eric-zemmour-cnews-face-a-linfo-emission-transformation-paysage-mediatique-succes-avenir-medias",
-   "note": "Chroniqueur quotidien de Face à l'info (CNews, 2019-2021), « le polémiste »."
+   "note": "Chroniqueur quotidien de Face à l'info (CNews, 2019-2021), « le polémiste » ; avant : Ça se dispute, Zemmour et Naulleau."
   },
   {
-   "text": "Chaque soir, débat avec les pigeons. Ben voyons.",
+   "text": "Commenter, oui. Récolter : zéro député.",
    "claim_type": "fait_public",
-   "source": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
-   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
+   "source": "https://www.publicsenat.fr/actualites/politique/jean-luc-mano-zemmour-est-passe-du-statut-de-chroniqueur-a-un-homme-politique-qui",
+   "note": "Du chroniqueur au chef de parti ; aucun député après les législatives 2022."
   }
  ],
  "sources": [
@@ -220,16 +324,16 @@
    "date": "2021-01",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Chroniqueur quotidien de Face à l'info (CNews, 2019-2021), « le polémiste »."
+   "note": "Chroniqueur quotidien de Face à l'info (CNews, 2019-2021), « le polémiste » ; avant : Ça se dispute, Zemmour et Naulleau."
   },
   {
-   "url": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
-   "date": "2022-02-02",
+   "url": "https://www.publicsenat.fr/actualites/politique/jean-luc-mano-zemmour-est-passe-du-statut-de-chroniqueur-a-un-homme-politique-qui",
+   "date": "2022",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
+   "note": "Du chroniqueur au chef de parti ; aucun député après les législatives 2022."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le chroniqueur de télé quotidien devenu commentateur de tout. Cadre : le parc. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Il a été chroniqueur télé, tous les soirs, pendant des années. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

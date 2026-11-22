@@ -4,23 +4,23 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Retraite à la carte",
- "anchor": "Marine Le Pen promet 62 voire 60 ans ; Jordan Bardella prend ses distances et trouve le dossier inflammable : deux âges de départ, un seul parti.",
+ "title_cover": "Retraite pile ou face",
+ "anchor": "la retraite : Marine Le Pen promet 62 voire 60, lui examine un report",
  "meme_key": "RETRAITES",
- "situation": "Retraite à la carte",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "situation": "Retraite pile ou face",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, l'âge de la retraite dépend de la porte.",
-  "Bardellaville : même parti, deux horloges.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : retraite à la carte."
+  "Dans cette ville, tout le monde vote Bardella. Et Le Pen. Pas pareil.",
+  "Bardellaville : la retraite se joue à pile ou face.",
+  "Ici, la pièce a roulé sous le meuble.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Retraite pile ou face."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Même programme, deux âges de départ : la retraite à pile ou face.",
-  "Ici, la mairie a deux horloges : celle de la présidente et celle du président.",
-  "Lui prend ses distances et parle d'un dossier inflammable."
+  "Bardella et Le Pen cherchent la pièce. Chacun la veut de son côté.",
+  "Chacun veut la pièce de son côté.",
+  "La pièce roule sous un meuble. Toute la ville reste au travail."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -34,41 +34,41 @@
   },
   {
    "id": "n2",
-   "text": "Retraites : Marine Le Pen promet soixante-deux, voire soixante ans.",
+   "text": "Retraite : Le Pen promet soixante-deux, voire soixante. Lui examine un report.",
    "accent_words": [
-    "voire soixante"
+    "report"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Lui prend ses distances et trouve le dossier inflammable.",
+   "text": "Alors la ville tire l'âge de départ à pile ou face.",
    "accent_words": [
-    "inflammable"
+    "pile ou face"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, la mairie a deux horloges : celle de la présidente, celle du président.",
+   "text": "Pile, tu pars à soixante. Face, tu pars à quatre-vingts.",
    "accent_words": [
-    "deux horloges"
+    "quatre-vingts"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Tu pars à soixante ou à soixante-quatre, selon la porte que tu prends.",
+   "text": "La pièce roule sous un meuble. Toute la ville reste au travail.",
    "accent_words": [
-    "la porte"
+    "travail"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Même programme, deux âges de départ : la retraite à pile ou face.",
+   "text": "Bardella et Le Pen cherchent la pièce. Chacun la veut de son côté.",
    "accent_words": [
-    "pile ou face"
+    "côté"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -76,7 +76,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui croit savoir à quel âge il partira.",
    "accent_words": [
-    "quel âge"
+    "partira"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -94,9 +94,26 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; deux horloges sur la façade, qui ne donnent pas la même heure.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "PAS PAREIL",
+   "comic_action": "Descente sur la ville ; banderole « PAS PAREIL » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PILE OU FACE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,78 +122,144 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
+    "scroll",
+    "form_stack",
+    "table",
     "person"
    ],
-   "onscreen_text": "62 VOIRE 60",
-   "comic_action": "Écran : une flèche oscille entre 60 et 62.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "62 ? 60 ? REPORT ?",
+   "comic_action": "Formulaire de retraite déplié ; en gros « 62 ? 60 ? REPORT ? ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "neutre"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "tribune",
-    "router_lectern",
-    "studio_light",
-    "text3d"
+    "screen",
+    "text3d",
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "DOSSIER INFLAMMABLE",
-   "comic_action": "Pupitre : il pose le dossier retraites à bout de bras, avec des gants.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "ÂGE DE DÉPART : PILE OU FACE",
+   "comic_action": "Compteur géant sur l'écran : « ÂGE DE DÉPART : PILE OU FACE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "jump"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PILE : 60 / FACE : 80"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "column",
-    "mairie",
-    "text3d",
+    "scroll",
+    "form_stack",
+    "table",
     "person"
    ],
-   "onscreen_text": "HEURE A ≠ HEURE B",
-   "comic_action": "Entre deux colonnes, deux horloges se disputent l'aiguille.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "FACE : 80 ANS",
+   "comic_action": "Formulaire de retraite déplié ; en gros « FACE : 80 ANS ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shake"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "screen",
+    "road",
     "sign",
-    "building"
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "PORTE A : 60 · PORTE B : 64",
-   "comic_action": "Deux portes de guichet, deux âges affichés, un habitant hésite.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LA PIÈCE SOUS LE MEUBLE",
+   "comic_action": "Dans la rue, panneau « LA PIÈCE SOUS LE MEUBLE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "visage": "fatigue"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie"
+    "screen"
    ],
-   "onscreen_text": "PILE : 60 · FACE : ?",
-   "comic_action": "Une pièce géante tourne sur la table, ne retombe jamais. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "CHACUN SON CÔTÉ",
+   "comic_action": "Plan final, tenir une seconde : « CHACUN SON CÔTÉ ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -190,9 +273,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt lance une pièce, la rate.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI COMPTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI COMPTE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -204,21 +296,17 @@
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 84,
+ "word_count": 83,
  "claims": [
   {
    "segment": "n2",
-   "text": "Retraites : Marine Le Pen promet soixante-deux, voire soixante ans.",
+   "text": "Retraite : Le Pen promet soixante-deux, voire soixante. Lui examine un report.",
    "claim_type": "fait_public",
    "source": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
-   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
-  },
-  {
-   "segment": "n3",
-   "text": "Lui prend ses distances et trouve le dossier inflammable.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/au-rn-la-reforme-des-retraites-divise-jordan-bardella-et-marine-le-pen-sur-le-programme-pour-la-presidentielle-2027",
-   "note": "Bardella prend ses distances avec la réforme de Marine Le Pen, dit « examiner » un report de l'âge légal, juge le dossier inflammable (d'après Le Monde, mai 2026)."
+   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé. ; Bardella prend ses distances avec la réforme de Marine Le Pen, dit « examiner » un report de l'âge légal, juge le dossier inflammable (d'après Le Monde, mai 2026).",
+   "sources_complementaires": [
+    "https://www.publicsenat.fr/actualites/politique/au-rn-la-reforme-des-retraites-divise-jordan-bardella-et-marine-le-pen-sur-le-programme-pour-la-presidentielle-2027"
+   ]
   }
  ],
  "sources": [
@@ -226,7 +314,7 @@
    "url": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
    "date": "2026-11-17",
    "consulted": "2026-11-22",
-   "statut": "fait public (présentation du programme)",
+   "statut": "fait",
    "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
   },
   {
@@ -238,5 +326,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = Marine Le Pen promet 62 voire 60 ans ; Jordan Bardella prend ses distances et trouve le dossier inflammable : deux âges de départ, un seul parti. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = la retraite : Marine Le Pen promet 62 voire 60, lui examine un report. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

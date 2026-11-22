@@ -3,33 +3,33 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-13",
  "format": "A",
- "title_cover": "Méluche en ralenti",
+ "title_cover": "La ville au ralenti",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. En slow motion.",
-  "Mélenchon a des fans. Et des edits. Beaucoup d'edits.",
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien marche au ralenti.",
+  "Les fans de Mélenchon font des edits au ralenti. La ville vit au ralenti.",
   "Les fans de Méluche vont me bloquer.",
-  "Bienvenue à Mélenchonville : méluche en ralenti.",
-  "Mélenchon en une vidéo : méluche en ralenti."
+  "Bienvenue à Mélenchonville : la ville au ralenti.",
+  "Mélenchon en une vidéo : la ville au ralenti."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Des millions de vues au ralenti, et le seul truc qui n'arrive jamais : l'Élysée.",
-  "Des millions de vues au ralenti. Le second tour, lui, n'arrive jamais.",
-  "Chaque meeting, chaque colère, chaque hologramme : son edit, sa musique."
+  "Le seul truc qui n'arrive pas, même au ralenti : son second tour.",
+  "Même au ralenti, le second tour n'arrive pas.",
+  "Les pompiers arrivent en slow motion. L'incendie s'est éteint seul."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. En slow motion.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien marche au ralenti.",
    "accent_words": [
-    "En slow motion"
+    "au ralenti"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ses fans l'appellent Méluche et le montent en edits : ralentis, musique épique.",
+   "text": "Ses fans, les zinzinsoumis, le montent en edits : ralentis, musique épique.",
    "accent_words": [
     "ralentis, musique épique"
    ],
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "Ils se surnomment les zinzinsoumis. Ça résume tout.",
+   "text": "La mairie impose le ralenti partout, pour les edits.",
    "accent_words": [
-    "Ça résume tout"
+    "les edits"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Septembre 2026 : plus de deux millions de likes sur TikTok.",
+   "text": "Le bus met trois jours pour faire deux arrêts. Avec violons.",
    "accent_words": [
-    "sur TikTok"
+    "Avec violons"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Chaque meeting, chaque colère, chaque hologramme : son edit, sa musique.",
+   "text": "Les pompiers arrivent en slow motion. L'incendie s'est éteint seul.",
    "accent_words": [
-    "son edit, sa musique"
+    "L'incendie s'est éteint seul"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Des millions de vues au ralenti, et le seul truc qui n'arrive jamais : l'Élysée.",
+   "text": "Le seul truc qui n'arrive pas, même au ralenti : son second tour.",
    "accent_words": [
-    "l'Élysée"
+    "son second tour"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui monte des edits de politiciens à 2 h du matin.",
+   "text": "Envoie ça au pote qui met des violons sur ses stories.",
    "accent_words": [
-    "du matin"
+    "ses stories"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE · MÉLUCHE EN RALENTI",
-   "comic_action": "Descente sur la ville : banderole « MÉLUCHE EN RALENTI », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "onscreen_text": "MÉLENCHONVILLE · LA VILLE AU RALENTI",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "TOUT EN SLOW MOTION"
     }
    ]
   },
@@ -117,9 +127,9 @@
     "ring_light",
     "person"
    ],
-   "onscreen_text": "MÉLUCHE · EDIT",
+   "onscreen_text": "EDITS · ZINZINSOUMIS",
    "comic_action": "Écran géant : le maire au ralenti, effets dorés.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
@@ -132,6 +142,12 @@
      "visage": "content",
      "quand": 0.4
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUT EN SLOW MOTION"
+    }
    ]
   },
   {
@@ -141,19 +157,24 @@
    ],
    "camera": "orbit",
    "set": [
-    "ring_light",
-    "tripod_camera",
+    "mairie",
+    "sign",
     "person"
    ],
-   "onscreen_text": "ZINZINSOUMIS",
-   "comic_action": "Trois fans filment l'écran avec leurs téléphones.",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "RALENTI OBLIGATOIRE",
+   "comic_action": "Arrêté municipal affiché ; un passant lève le pied lentement.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
-     "who": "foule",
-     "geste": "cheer",
-     "visage": "content",
-     "objet": "phone"
+     "who": "perso",
+     "geste": "nod",
+     "visage": "neutre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "VITESSE MAX : 0,5"
     }
    ]
   },
@@ -164,19 +185,24 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "bus",
+    "road",
+    "text3d"
    ],
-   "onscreen_text": "2 MILLIONS DE LIKES",
-   "comic_action": "Compteur de cœurs qui explose sur l'écran.",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "BUS : 3 JOURS",
+   "comic_action": "Le bus avance au pas, des violonistes sur le toit.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
-     "who": "perso",
-     "geste": "jump",
-     "visage": "content",
-     "objet": "phone"
+     "who": "foule",
+     "geste": "nod",
+     "visage": "dort"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PROCHAIN ARRÊT : JEUDI"
     }
    ]
   },
@@ -187,19 +213,24 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "studio_light",
-    "tribune"
+    "car",
+    "building",
+    "person"
    ],
-   "onscreen_text": "UN EDIT PAR COLÈRE",
-   "comic_action": "Mur d'écrans : le même cri, en ralenti, sous dix angles.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "POMPIERS : AU RALENTI",
+   "comic_action": "Camion de pompiers au ralenti, paillettes dans l'air.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "arms_up",
-     "visage": "colere",
-     "objet": "micro"
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "SLOW"
     }
    ]
   },
@@ -214,20 +245,20 @@
     "sign",
     "text3d"
    ],
-   "onscreen_text": "ÉLYSÉE : CHARGEMENT…",
-   "comic_action": "Panneau « ÉLYSÉE » qui recule à chaque pas du cortège.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "SECOND TOUR : CHARGEMENT…",
+   "comic_action": "Barre de chargement géante bloquée à 99 %.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
      "geste": "shrug",
      "visage": "blase"
-    },
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "facepalm",
-     "visage": "fatigue",
-     "quand": 0.4
+     "type": "prix",
+     "texte": "CHARGEMENT 99 %"
     }
    ]
   },
@@ -244,7 +275,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -253,81 +284,42 @@
      "visage": "sourire_pro",
      "objet": "phone"
     }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
    ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui monte des edits de politiciens à 2 h du matin."
+  "text": "Envoie ça au pote qui met des violons sur ses stories."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 84,
+ "word_count": 80,
  "claims": [
   {
-   "text": "Ses fans l'appellent Méluche et le montent en edits : ralentis, musique épique.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/melenchon-leader-de-la-gauche-radicale-devenu-le-meilleur-ennemi-de-macron-77692",
-   "note": "Surnom « Méluche »."
-  },
-  {
-   "text": "Ses fans l'appellent Méluche et le montent en edits : ralentis, musique épique.",
+   "text": "Ses fans, les zinzinsoumis, le montent en edits : ralentis, musique épique.",
    "claim_type": "fait_public",
    "source": "https://www.ladn.eu/media-mutants/comment-la-france-insoumise-a-fait-de-ledit-video-son-arme-pour-2027/",
    "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique) ; fans surnommés « zinzinsoumis »."
-  },
-  {
-   "text": "Ils se surnomment les zinzinsoumis. Ça résume tout.",
-   "claim_type": "fait_public",
-   "source": "https://www.ladn.eu/media-mutants/comment-la-france-insoumise-a-fait-de-ledit-video-son-arme-pour-2027/",
-   "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique) ; fans surnommés « zinzinsoumis »."
-  },
-  {
-   "text": "Septembre 2026 : plus de deux millions de likes sur TikTok.",
-   "claim_type": "fait_public",
-   "source": "https://www.sudradio.fr/sud-radio/presidentielle-2027-melenchon-prend-la-tete-de-la-bataille-sur-les-reseaux-sociaux",
-   "note": "Plus de 2,1 millions de likes TikTok en septembre 2026 ; 1,2 million de mentions."
-  },
-  {
-   "text": "Des millions de vues au ralenti, et le seul truc qui n'arrive jamais : l'Élysée.",
-   "claim_type": "fait_public",
-   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/melenchon-leader-de-la-gauche-radicale-devenu-le-meilleur-ennemi-de-macron-77692",
-   "date": "2017",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Surnom « Méluche »."
-  },
   {
    "url": "https://www.ladn.eu/media-mutants/comment-la-france-insoumise-a-fait-de-ledit-video-son-arme-pour-2027/",
    "date": "2026",
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique) ; fans surnommés « zinzinsoumis »."
-  },
-  {
-   "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-melenchon-prend-la-tete-de-la-bataille-sur-les-reseaux-sociaux",
-   "date": "2026-10",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Plus de 2,1 millions de likes TikTok en septembre 2026 ; 1,2 million de mentions."
-  },
-  {
-   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "date": "consulté 2026-11-22",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Méluche en ralenti. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Ses fans, les zinzinsoumis, le montent en edits : ralentis, musique épique. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

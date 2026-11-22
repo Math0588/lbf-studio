@@ -3,27 +3,27 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-23",
  "format": "A",
- "title_cover": "Jupiter descend",
+ "title_cover": "Retour à l'envoyeur",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
   "Dès 2017, surnom : Jupiter, roi des dieux, maître de la foudre.",
   "Les électeurs de Macron vont détester celle-là.",
-  "Jupiter descend : l'histoire en trente secondes.",
-  "Dans cette ville, tout le monde vote Macron. D'en bas."
+  "Retour à l'envoyeur : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Le paratonnerre a la cote."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le roi des dieux finit sur X : « parfois des erreurs ». L'Olympe en story.",
-  "Jupiter est descendu de l'Olympe. Par l'escalier de service.",
-  "Jupiter dégringole : 82 % ne lui font plus confiance."
+  "Jupiter descend vérifier. Il se prend son propre éclair. La foule applaudit.",
+  "Jupiter a lancé la foudre dix ans. Elle a fini par revenir.",
+  "Les habitants s'équipent de paratonnerres. Plus aucun éclair n'atteint le sol."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. D'en bas.",
+   "text": "Dans cette ville, tout le monde vote Macron. Le paratonnerre a la cote.",
    "accent_words": [
-    "bas"
+    "cote"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,39 +37,39 @@
   },
   {
    "id": "n3",
-   "text": "Jupiter tonne : réforme des retraites au 49.3, sans vote.",
+   "text": "La mairie l'installe donc sur un nuage, au-dessus de la place.",
    "accent_words": [
-    "vote"
+    "place"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Jupiter foudroie : dissolution de l'Assemblée un soir d'élection.",
+   "text": "Il gouverne à coups d'éclairs : un par réforme, deux par question.",
    "accent_words": [
-    "d'élection"
+    "question"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Jupiter dégringole : 82 % ne lui font plus confiance.",
+   "text": "Les habitants s'équipent de paratonnerres. Plus aucun éclair n'atteint le sol.",
    "accent_words": [
-    "confiance"
+    "sol"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le roi des dieux finit sur X : « parfois des erreurs ». L'Olympe en story.",
+   "text": "Jupiter descend vérifier. Il se prend son propre éclair. La foule applaudit.",
    "accent_words": [
-    "story"
+    "applaudit"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui parle à tout le monde comme s'il était sur un nuage.",
+   "text": "Envoie ça au pote qui te parle du haut de son nuage.",
    "accent_words": [
     "nuage"
    ],
@@ -91,7 +91,7 @@
     "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la ville ; banderole « JUPITER DESCEND » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "comic_action": "Descente sur la ville ; banderole « RETOUR À L'ENVOYEUR » sur la mairie ; le maire caricaturé salue, sourire figé.",
    "expected_result": "La ville et le thème posés en une image.",
    "actions": [
     {
@@ -106,6 +106,16 @@
      "visage": "neutre",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "RETOUR À L'ENVOYEUR"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
+    }
    ]
   },
   {
@@ -117,12 +127,11 @@
    "set": [
     "column",
     "lift_tribune",
-    "studio_light",
-    "person"
+    "studio_light"
    ],
    "onscreen_text": "JUPITER",
-   "comic_action": "Le maire monte sur une tribune élévatrice entre deux colonnes, éclair en carton à la main.",
-   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "comic_action": "Le maire sur une tribune élévatrice entre deux colonnes, éclair en carton à la main.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
    "actions": [
     {
      "who": "maire",
@@ -136,6 +145,12 @@
      "visage": "neutre",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "JUPITER"
+    }
    ]
   },
   {
@@ -146,24 +161,30 @@
    "camera": "street_dolly",
    "set": [
     "lift_tribune",
-    "text3d",
-    "person"
+    "column",
+    "text3d"
    ],
-   "onscreen_text": "49.3",
-   "comic_action": "Il lance l'éclair ; il frappe une Assemblée miniature, les mains levées disparaissent.",
-   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "onscreen_text": "SUR UN NUAGE",
+   "comic_action": "La tribune monte si haut qu'on ne voit plus que ses chaussures.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
    "actions": [
     {
      "who": "maire",
-     "geste": "point",
-     "visage": "colere",
+     "geste": "wave",
+     "visage": "sourire_pro",
      "quand": 0.0
     },
     {
-     "who": "foule",
-     "geste": "fall",
+     "who": "perso",
+     "geste": "point",
      "visage": "choque",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "D'EN HAUT"
     }
    ]
   },
@@ -174,25 +195,31 @@
    ],
    "camera": "orbit",
    "set": [
-    "mairie",
+    "lift_tribune",
     "text3d",
     "person"
    ],
-   "onscreen_text": "DISSOLUTION",
-   "comic_action": "Deuxième éclair : la mairie se défait en cubes.",
-   "expected_result": "Escalade 2 : encore plus gros.",
+   "onscreen_text": "1 ÉCLAIR PAR RÉFORME",
+   "comic_action": "Des éclairs tombent sur la place à chaque annonce ; les habitants courent.",
+   "expected_result": "Conséquence : ça dégénère.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "arms_up",
-     "visage": "fier",
+     "who": "foule",
+     "geste": "jump",
+     "visage": "choque",
      "quand": 0.0
     },
     {
-     "who": "perso",
-     "geste": "shake",
-     "visage": "choque",
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "FOUDROYÉ"
     }
    ]
   },
@@ -203,13 +230,48 @@
    ],
    "camera": "descend",
    "set": [
-    "lift_tribune",
-    "screen",
+    "building",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "82 %",
-   "comic_action": "La tribune redescend toute seule ; l'écran derrière affiche 82 %.",
-   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "onscreen_text": "PARATONNERRES",
+   "comic_action": "Chaque habitant porte un paratonnerre sur la tête ; les éclairs dévient.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PARATONNERRE 19,90 €"
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "lift_tribune",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "RETOUR À L'ENVOYEUR",
+   "comic_action": "La tribune redescend ; le dernier éclair rebondit sur un paratonnerre et revient sur le maire.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
@@ -221,37 +283,13 @@
      "who": "foule",
      "geste": "clap",
      "visage": "content",
-     "quand": 0.5
+     "quand": 0.4
     }
-   ]
-  },
-  {
-   "id": "s6",
-   "narration_ids": [
-    "n6"
    ],
-   "camera": "closeup",
-   "set": [
-    "screen",
-    "ring_light",
-    "text3d"
-   ],
-   "onscreen_text": "« PARFOIS DES ERREURS »",
-   "comic_action": "Jupiter, redescendu, tape son post sous un ring light.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
-   "actions": [
+   "gags": [
     {
-     "who": "maire",
-     "geste": "shrug",
-     "visage": "sourire_pro",
-     "objet": "phone",
-     "quand": 0.0
-    },
-    {
-     "who": "perso",
-     "geste": "facepalm",
-     "visage": "blase",
-     "quand": 0.5
+     "type": "affiche",
+     "texte": "RETOUR À L'ENVOYEUR"
     }
    ]
   },
@@ -268,7 +306,7 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : le surnom Jupiter, roi des dieux, jusqu'à la chute.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : le surnom Jupiter : la mairie l'installe sur un nuage, foudre comprise.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -283,12 +321,18 @@
      "visage": "sourire_pro",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "RETOUR À L'ENVOYEUR"
+    }
    ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui parle à tout le monde comme s'il était sur un nuage."
+  "text": "Envoie ça au pote qui te parle du haut de son nuage."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -302,30 +346,6 @@
    "claim_type": "fait_public",
    "source": "https://www.slate.fr/story/147960/macron-jupiter-mais-quels-dieux-les-autres",
    "note": "Le surnom Jupiter, roi des dieux et maître de la foudre, installé dès 2017."
-  },
-  {
-   "text": "Jupiter tonne : réforme des retraites au 49.3, sans vote.",
-   "claim_type": "fait_public",
-   "source": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
-   "note": "Réforme des retraites (départ à 64 ans) adoptée par le 49.3, sans vote des députés."
-  },
-  {
-   "text": "Jupiter foudroie : dissolution de l'Assemblée un soir d'élection.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/dissolution-de-lassemblee-nationale-quelles-consequences",
-   "note": "Dissolution de l'Assemblée annoncée le soir des européennes (09/06/2024)."
-  },
-  {
-   "text": "Jupiter dégringole : 82 % ne lui font plus confiance.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/sondage-82-des-francais-ne-font-pas-confiance-a-emmanuel-macron-qui-bat-le-record-dimpopularite-de-francois-hollande-a-lelysee",
-   "note": "82 % des Français ne lui font pas confiance ; il bat le record d'impopularité de François Hollande."
-  },
-  {
-   "text": "« parfois des erreurs »",
-   "claim_type": "citation_exacte",
-   "source": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
-   "note": "Bilan publié sur X dix ans après sa candidature : « il y a eu parfois des erreurs », « j'ai fait de mon mieux »."
   }
  ],
  "sources": [
@@ -335,36 +355,8 @@
    "consulted": "2026-11-22",
    "statut": "opinion / mème",
    "note": "Le surnom Jupiter, roi des dieux et maître de la foudre, installé dès 2017."
-  },
-  {
-   "url": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
-   "date": "2023-03-16",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Réforme des retraites (départ à 64 ans) adoptée par le 49.3, sans vote des députés."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/dissolution-de-lassemblee-nationale-quelles-consequences",
-   "date": "2024-06-10",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Dissolution de l'Assemblée annoncée le soir des européennes (09/06/2024)."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/sondage-82-des-francais-ne-font-pas-confiance-a-emmanuel-macron-qui-bat-le-record-dimpopularite-de-francois-hollande-a-lelysee",
-   "date": "2026",
-   "consulted": "2026-11-22",
-   "statut": "fait public (sondage)",
-   "note": "82 % des Français ne lui font pas confiance ; il bat le record d'impopularité de François Hollande."
-  },
-  {
-   "url": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
-   "date": "2026-11-17",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte (post X)",
-   "note": "Bilan publié sur X dix ans après sa candidature : « il y a eu parfois des erreurs », « j'ai fait de mon mieux »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — le surnom Jupiter, roi des dieux, jusqu'à la chute. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : le surnom Jupiter : la mairie l'installe sur un nuage, foudre comprise. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

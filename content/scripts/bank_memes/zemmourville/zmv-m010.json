@@ -4,79 +4,79 @@
  "synopsis_id": "zmv-m010-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Le match-débat",
- "anchor": "le débat Zemmour–Mélenchon de 2021 : 3,81 millions de téléspectateurs.",
+ "title_cover": "Le stade des débats",
+ "anchor": "Le débat de 2021 à 3,81 millions : le stade remplace les matchs par des débats.",
  "meme_id": "ZQ",
- "situation": "le stade",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le stade programme des débats.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, un clash télé remplit plus qu'une finale.",
-  "Zemmourville : l'audimat comme seule victoire."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien arbitre.",
+  "Le débat de Zemmour a fait 3,81 millions. Le stade ne programme plus que ça.",
+  "Celle-là, Zemmour ne la partagera pas.",
+  "Bienvenue à Zemmourville : le stade des débats.",
+  "Zemmour en une vidéo : le stade des débats."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le stade est plein à chaque débat. À chaque élection, beaucoup moins.",
-  "Champion d'audience, éliminé au vote.",
-  "Le clash cartonne, l'urne zappe."
+  "Le stade est plein à chaque débat. Aux élections, beaucoup moins : 7 %.",
+  "Le stade est plein à chaque débat. Aux élections, beaucoup moins.",
+  "Les supporters font la ola à chaque formule. Le score reste nul."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Coup d'envoi.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien arbitre.",
    "accent_words": [
-    "Coup d'envoi"
+    "Même le chien arbitre"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Septembre 2021, débat contre Mélenchon : 3,81 millions de téléspectateurs.",
+   "text": "Septembre 2021 : son débat contre Mélenchon fait 3,81 millions de téléspectateurs.",
    "accent_words": [
-    "3,81 millions"
+    "de téléspectateurs"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, le stade ne programme plus de matchs. Que des débats.",
+   "text": "Le stade remplace les matchs par des débats.",
    "accent_words": [
-    "Que des débats"
+    "des débats"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Deux polémistes, deux micros, quatre-vingt-dix minutes de ben voyons.",
+   "text": "L'arbitre compte les ben voyons. Carton jaune au cinquième.",
    "accent_words": [
-    "ben voyons"
+    "Carton jaune au cinquième"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "L'arbitre ne siffle rien. L'audimat explose.",
+   "text": "Les supporters font la ola à chaque formule. Le score reste nul.",
    "accent_words": [
-    "L'audimat explose"
+    "Le score reste nul"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le stade est plein à chaque débat. À chaque élection, beaucoup moins.",
+   "text": "Le stade est plein à chaque débat. Aux élections, beaucoup moins : 7 %.",
    "accent_words": [
-    "beaucoup moins"
+    "7 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui regarde les clashs mais jamais le match.",
+   "text": "Envoie ça au pote qui gagne les débats et perd les matchs.",
    "accent_words": [
-    "les clashs"
+    "les matchs"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,43 +90,93 @@
    "camera": "descend",
    "set": [
     "ground",
-    "person",
+    "mairie",
     "banner",
-    "scroll"
+    "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un stade : deux pupitres au rond central.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · LE STADE DES DÉBATS",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "DÉBAT, PAS MATCH"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "tribune",
     "screen",
+    "studio_light",
     "text3d"
    ],
-   "onscreen_text": "3,81 M",
-   "comic_action": "Orbite autour des deux pupitres sous les projecteurs.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "3,81 MILLIONS",
+   "comic_action": "Deux pupitres sous les projecteurs, audimat qui grimpe.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "DÉBAT, PAS MATCH"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
-    "person",
-    "banner"
+    "ground",
+    "tribune",
+    "person"
    ],
-   "onscreen_text": "PROGRAMME : DÉBATS",
-   "comic_action": "Le tableau d'affichage remplace les équipes par deux micros.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "STADE : DÉBATS",
+   "comic_action": "Deux pupitres au rond central.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BILLET : 1 DÉBAT"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -135,13 +185,26 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "tribune",
+    "ground",
     "person",
     "text3d"
    ],
-   "onscreen_text": "90 MIN DE BEN VOYONS",
-   "comic_action": "Travelling le long des tribunes : les supporters reprennent en chœur.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "BEN VOYONS : CARTON JAUNE",
+   "comic_action": "L'arbitre brandit un carton jaune au pupitre.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ARBITRE"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,12 +213,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d"
+    "ground",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "AUDIMAT ↑",
-   "comic_action": "Gros plan : la courbe d'audience perce le haut de l'écran.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "OLA · 0 – 0",
+   "comic_action": "La ola fait le tour du stade, tableau à 0-0.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "arms_up",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SCORE : 0 – 0"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,13 +241,26 @@
    ],
    "camera": "descend",
    "set": [
-    "person",
-    "banner",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "DÉBAT PLEIN · URNE VIDE",
-   "comic_action": "Plan large : tribunes bondées, urne seule sur la pelouse.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "URNES : 7 %",
+   "comic_action": "Tribunes pleines, urne quasi vide à côté.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "7,07 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -184,33 +274,47 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique ramasse un ballon oublié.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui regarde les clashs mais jamais le match."
+  "text": "Envoie ça au pote qui gagne les débats et perd les matchs."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 70,
+ "word_count": 79,
  "claims": [
   {
-   "text": "Septembre 2021, débat contre Mélenchon : 3,81 millions de téléspectateurs.",
+   "text": "Septembre 2021 : son débat contre Mélenchon fait 3,81 millions de téléspectateurs.",
    "claim_type": "fait_public",
    "source": "https://www.dhnet.be/medias/television/2021/09/24/carton-daudience-pour-le-debat-de-bfm-un-effet-eric-zemmour-5XZXEB36JBA33MXAZP3IIKIEJA/",
    "note": "Débat Zemmour–Mélenchon (BFMTV, 23/09/2021) : 3,81 millions de téléspectateurs."
   },
   {
-   "text": "Deux polémistes, deux micros, quatre-vingt-dix minutes de ben voyons.",
+   "text": "Le stade est plein à chaque débat. Aux élections, beaucoup moins : 7 %.",
    "claim_type": "fait_public",
-   "source": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
-   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
@@ -222,13 +326,13 @@
    "note": "Débat Zemmour–Mélenchon (BFMTV, 23/09/2021) : 3,81 millions de téléspectateurs."
   },
   {
-   "url": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
-   "date": "2022-02-02",
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le débat Zemmour–Mélenchon de 2021 : 3,81 millions de téléspectateurs. Cadre : le stade. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Septembre 2021 : son débat contre Mélenchon fait 3,81 millions de téléspectateurs. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

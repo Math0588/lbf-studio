@@ -4,31 +4,31 @@
  "synopsis_id": "zmv-m020-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Le dernier mot",
- "anchor": "« La France n'a pas dit son dernier mot » (2021) et « Je n'ai pas dit mon dernier mot » (2023).",
+ "title_cover": "Le marchandage sans fin",
+ "anchor": "« La France n'a pas dit son dernier mot » : au marché, personne ne conclut.",
  "meme_id": "ZJ",
- "situation": "le marché",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : au marché, personne n'a le dernier mot.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, un marchandage dure deux tomes.",
-  "Zemmourville : le marché qui ne conclut jamais."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien négocie.",
+  "Zemmour n'a pas dit son dernier mot. Au marché, personne ne conclut.",
+  "Attention : vidéo garantie sans nostalgie. Presque.",
+  "Bienvenue à Zemmourville : le marchandage sans fin.",
+  "Zemmour en une vidéo : le marchandage sans fin."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Les tomates ont pourri pendant la négociation. Conclusion : le compost.",
-  "Pas de dernier mot, pas de tomates.",
-  "Deux tomes de négociation, zéro vente."
+  "Au final, c'est le compost qui a le dernier mot. Comme les urnes en 2022.",
+  "Au final, c'est le compost qui a le dernier mot.",
+  "Les tomates pourrissent. La négociation continue."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Au marché, on négocie encore.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien négocie.",
    "accent_words": [
-    "Au marché, on négocie encore"
+    "Même le chien négocie"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -42,35 +42,35 @@
   },
   {
    "id": "n3",
-   "text": "Ici, au marché, personne ne conclut. Le marchandage dure depuis 2021.",
+   "text": "Au marché, plus personne ne dit son dernier mot.",
+   "accent_words": [
+    "dernier mot"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Le marchandage d'une tomate dure depuis 2021.",
    "accent_words": [
     "depuis 2021"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n4",
-   "text": "Le maraîcher ne finit jamais sa phrase. Il en fait un tome deux.",
+   "id": "n5",
+   "text": "Les tomates pourrissent. La négociation continue.",
    "accent_words": [
-    "tome deux"
+    "La négociation continue"
    ],
    "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n5",
-   "text": "Tome deux, en 2023 : Je n'ai pas dit mon dernier mot.",
-   "accent_words": [
-    "Tome deux"
-   ],
-   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Les tomates ont pourri pendant la négociation. Conclusion : le compost.",
+   "text": "Au final, c'est le compost qui a le dernier mot. Comme les urnes en 2022.",
    "accent_words": [
-    "le compost"
+    "en 2022"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "shop",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un marché : chaque étal porte un phylactère inachevé.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · LE MARCHANDAGE SANS FIN",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "NE CONCLUEZ JAMAIS"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,43 +128,83 @@
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "sign",
+    "scroll",
+    "table",
     "text3d"
    ],
-   "onscreen_text": "DERNIER MOT ?",
-   "comic_action": "Gros plan sur une ardoise de prix sans chiffre final.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PAS DIT SON DERNIER MOT",
+   "comic_action": "Un livre posé sur une caisse de tomates.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "NE CONCLUEZ JAMAIS"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
     "shop",
     "person",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "MARCHANDAGE : 2021",
-   "comic_action": "Travelling : clients et marchands se toisent, cagettes intactes.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DERNIER MOT : JAMAIS",
+   "comic_action": "Un client et un maraîcher face à face, bouche ouverte.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "parle"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PRIX : EN DISCUSSION"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "form_stack",
+    "shop",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "TOME 2",
-   "comic_action": "Orbite : le maraîcher écrit sur un cahier à côté des poireaux.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "NÉGOCIATION : DEPUIS 2021",
+   "comic_action": "Un calendrier dont les pages s'envolent au-dessus de l'étal.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "NÉGOCIATEUR"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,12 +213,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "form_stack",
+    "shop",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "2023",
-   "comic_action": "Un deuxième pavé posé sur la balance, aiguille au maximum.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "TOMATES : POURRIES",
+   "comic_action": "Une tomate fripée au milieu de la discussion.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TOMATE : 2021"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,13 +241,26 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
     "bin",
-    "text3d"
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "DERNIER MOT : COMPOST",
-   "comic_action": "Plan large : une benne à compost déborde de tomates.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "DERNIER MOT : LE COMPOST",
+   "comic_action": "Les tomates finissent dans le bac à compost.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "7,07 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -184,9 +274,23 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique paie le prix affiché.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -198,7 +302,7 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 83,
+ "word_count": 72,
  "claims": [
   {
    "text": "En 2021, il publie La France n'a pas dit son dernier mot.",
@@ -207,10 +311,10 @@
    "note": "Livre « La France n'a pas dit son dernier mot » (2021)."
   },
   {
-   "text": "Tome deux, en 2023 : Je n'ai pas dit mon dernier mot.",
+   "text": "Au final, c'est le compost qui a le dernier mot. Comme les urnes en 2022.",
    "claim_type": "fait_public",
-   "source": "https://www.lalibre.be/international/europe/2023/03/11/je-nai-pas-dit-mon-dernier-mot-eric-zemmour-sort-du-silence-apres-la-presidentielle-francaise-53S6BYKBXVCV5H5PWXT73SS45U/",
-   "note": "Livre « Je n'ai pas dit mon dernier mot » (2023)."
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
@@ -222,13 +326,13 @@
    "note": "Livre « La France n'a pas dit son dernier mot » (2021)."
   },
   {
-   "url": "https://www.lalibre.be/international/europe/2023/03/11/je-nai-pas-dit-mon-dernier-mot-eric-zemmour-sort-du-silence-apres-la-presidentielle-francaise-53S6BYKBXVCV5H5PWXT73SS45U/",
-   "date": "2023-03-11",
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Livre « Je n'ai pas dit mon dernier mot » (2023)."
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « La France n'a pas dit son dernier mot » (2021) et « Je n'ai pas dit mon dernier mot » (2023). Cadre : le marché. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2021, il publie La France n'a pas dit son dernier mot. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

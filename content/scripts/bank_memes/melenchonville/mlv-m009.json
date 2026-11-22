@@ -4,79 +4,79 @@
  "synopsis_id": "mlv-m009-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Dîner à quatorze",
- "anchor": "le dîner de trois heures avec treize grands patrons (17/11/2026).",
+ "title_cover": "Télé interdite",
+ "anchor": "« Le moins possible » sur les chaînes d'info : la ville interdit la télé.",
  "meme_id": "MP",
- "situation": "le restaurant",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le restaurant où l'on dîne avec ses ennemis.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, le grand capital a sa table réservée.",
-  "Mélenchonville : la lutte des classes, servie à la carte."
+  "Dans cette ville, tout le monde vote Mélenchon. Même la télé est en veille.",
+  "Mélenchon passe le moins possible à la télé. La ville l'a interdite.",
+  "Les insoumis vont me détester.",
+  "Bienvenue à Mélenchonville : télé interdite.",
+  "Mélenchon en une vidéo : télé interdite."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Trois heures avec le CAC 40, zéro accord. Il appelle ça le rapport de force.",
-  "Trois heures de dîner, et chacun reste sur sa position.",
-  "Le rapport de force se négocie au fromage."
+  "Pas grave : TF1 ne l'invitait même pas.",
+  "Pas grave : TF1 ne l'invitait même pas.",
+  "Le voisin installe des rideaux. Plus personne ne sait rien."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Réservation pour quatorze.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même la télé est en veille.",
    "accent_words": [
-    "Réservation pour quatorze"
+    "en veille"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En novembre, il dîne trois heures avec treize grands patrons.",
+   "text": "Il promet de passer « le moins possible » sur les chaînes d'info.",
    "accent_words": [
-    "treize grands patrons"
+    "chaînes d'info"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Ici, le restaurant a une table pour quatorze. Pain partagé, addition non.",
+   "text": "La mairie va plus loin : télés interdites. Les antennes deviennent des portemanteaux.",
    "accent_words": [
-    "addition non"
+    "des portemanteaux"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ambiance cordiale, désaccords intacts. Personne ne touche à l'addition.",
+   "text": "Les habitants s'informent par la fenêtre du voisin.",
    "accent_words": [
-    "désaccords intacts"
+    "du voisin"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le serveur propose de taxer le dessert. Les patrons reprennent du fromage.",
+   "text": "Le voisin installe des rideaux. Plus personne ne sait rien.",
    "accent_words": [
-    "taxer le dessert"
+    "sait rien"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Trois heures avec le CAC 40, zéro accord. Il appelle ça le rapport de force.",
+   "text": "Pas grave : TF1 ne l'invitait même pas.",
    "accent_words": [
-    "rapport de force"
+    "même pas"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui dîne avec ceux qu'il clashe sur X.",
+   "text": "Envoie ça au pote qui ne regarde plus la télé mais connaît tous les programmes.",
    "accent_words": [
-    "clashe"
+    "les programmes"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,73 +90,148 @@
    "camera": "descend",
    "set": [
     "ground",
-    "shop",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un restaurant chic ; ardoise « TABLE DE 14 ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · TÉLÉ INTERDITE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "ÉTEIGNEZ LA TÉLÉ"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "table",
-    "person",
+    "screen",
+    "tripod_camera",
     "text3d"
    ],
-   "onscreen_text": "13 + 1",
-   "comic_action": "Orbite autour d'une table : treize costumes, une écharpe rouge.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« LE MOINS POSSIBLE »",
+   "comic_action": "Le maire débranche une caméra de plateau.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ÉTEIGNEZ LA TÉLÉ"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "person",
-    "sign"
+    "building",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "PAIN : PARTAGÉ",
-   "comic_action": "Gros plan : la corbeille de pain passe, l'addition reste posée au milieu.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TÉLÉ : INTERDITE",
+   "comic_action": "Des manteaux accrochés aux antennes sur les toits.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TÉLÉ : 135 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "text3d",
-    "person"
+    "facade_row",
+    "person",
+    "lamp"
    ],
-   "onscreen_text": "DÉSACCORDS : INTACTS",
-   "comic_action": "L'addition fait le tour de la table et revient au centre.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "INFOS : CHEZ LE VOISIN",
+   "comic_action": "Des têtes collées à la vitre d'un voisin qui regarde le JT.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CURIEUX"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "table",
+    "building",
     "person",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "DESSERT TAXÉ",
-   "comic_action": "Travelling : le serveur pose une étiquette « TAXE » sur le gâteau.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RIDEAUX : FERMÉS",
+   "comic_action": "Le rideau tombe ; la foule soupire.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "INFOS : 0"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +240,26 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "table",
-    "text3d"
+    "screen",
+    "text3d",
+    "sign"
    ],
-   "onscreen_text": "RAPPORT DE FORCE",
-   "comic_action": "Plan large : le restaurant s'éteint, les convives repartent chacun dans leur voiture.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "TF1 : PAS INVITÉ",
+   "comic_action": "Plateau du 20 h, chaise vide étiquetée « PAS INVITÉ ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "INVITATION : AUCUNE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,14 +273,28 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique finit le fromage.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui dîne avec ceux qu'il clashe sur X."
+  "text": "Envoie ça au pote qui ne regarde plus la télé mais connaît tous les programmes."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -202,27 +304,34 @@
  "word_count": 81,
  "claims": [
   {
-   "text": "En novembre, il dîne trois heures avec treize grands patrons.",
-   "claim_type": "fait_public",
-   "source": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
-   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
+   "text": "Il promet de passer « le moins possible » sur les chaînes d'info.",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
+   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
   },
   {
-   "text": "Ambiance cordiale, désaccords intacts. Personne ne touche à l'addition.",
+   "text": "Pas grave : TF1 ne l'invitait même pas.",
    "claim_type": "fait_public",
-   "source": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
-   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
+   "source": "https://www.ozap.com/actu/affaire-de-jean-luc-melenchon-au-20-heures-tf1-dement-le-leader-de-lfi-et-affirme-quil-netait-pas-invite-ce-lundi-soir/657792",
+   "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
   }
  ],
  "sources": [
   {
-   "url": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
-   "date": "2026-11-17",
+   "url": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "citation_exacte",
+   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
+  },
+  {
+   "url": "https://www.ozap.com/actu/affaire-de-jean-luc-melenchon-au-20-heures-tf1-dement-le-leader-de-lfi-et-affirme-quil-netait-pas-invite-ce-lundi-soir/657792",
+   "date": "2026-11",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
+   "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le dîner de trois heures avec treize grands patrons (17/11/2026). Cadre : le restaurant. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Il promet de passer « le moins possible » sur les chaînes d'info. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

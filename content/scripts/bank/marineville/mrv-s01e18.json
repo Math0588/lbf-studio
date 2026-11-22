@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-13",
  "format": "A",
- "title_cover": "Soixante, au feeling",
+ "title_cover": "Bougies amovibles",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, l'horloge de la mairie recule de deux ans à chaque campagne.",
-  "Marineville : une promesse plus flexible que la retraite.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : soixante, au feeling."
+  "Dans cette ville, tout le monde vote Marine. L'âge de départ, au feeling.",
+  "Marineville : l'horloge recule à chaque campagne.",
+  "Ici, les bougies de départ sont amovibles.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Bougies amovibles."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Une promesse qui bouge plus que la retraite elle-même : ça, c'est flexible.",
-  "Les gâteaux de départ sont livrés avec des bougies amovibles.",
-  "Ici, l'horloge de la mairie recule de deux ans à chaque campagne."
+  "Marine a trouvé le mot magique : voire. Ça promet tout, ça n'engage à rien.",
+  "Voire : ça promet tout, ça n'engage à rien.",
+  "Un retraité est rappelé au travail, puis renvoyé chez lui, deux fois."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,47 +23,47 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. L'âge de départ, au feeling.",
    "accent_words": [
-    "au feeling"
+    "feeling"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La retraite à soixante ans : longtemps promise, puis lâchée pour soixante-deux.",
-   "accent_words": [
-    "soixante-deux"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "Puis revient en 2026 : soixante-deux, voire soixante.",
+   "text": "Retraite : soixante, puis soixante-deux, puis voire soixante.",
    "accent_words": [
     "voire soixante"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "Ici, l'horloge de la mairie recule de deux ans à chaque campagne.",
+   "id": "n3",
+   "text": "Alors l'horloge de la mairie avance et recule à chaque campagne.",
    "accent_words": [
-    "recule"
+    "campagne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n5",
-   "text": "Les gâteaux de départ sont livrés avec des bougies amovibles.",
+   "id": "n4",
+   "text": "Les gâteaux de départ ont des bougies amovibles.",
    "accent_words": [
     "amovibles"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n6",
-   "text": "Une promesse qui bouge plus que la retraite elle-même : ça, c'est flexible.",
+   "id": "n5",
+   "text": "Un retraité est rappelé au travail, puis renvoyé chez lui, deux fois.",
    "accent_words": [
-    "flexible"
+    "deux fois"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Marine a trouvé le mot magique : voire. Ça promet tout, ça n'engage à rien.",
+   "accent_words": [
+    "rien"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui a déjà fêté sa retraite à soixante ans, en rêve.",
    "accent_words": [
-    "en rêve"
+    "rêve"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,26 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une horloge qui hésite entre deux heures.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "ÂGE AU FEELING",
+   "comic_action": "Descente sur la ville ; banderole « ÂGE AU FEELING » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "60 ? 62 ?"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,78 +117,143 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
+    "scroll",
+    "form_stack",
+    "table",
     "person"
    ],
-   "onscreen_text": "60 → 62",
-   "comic_action": "L'écran affiche le chiffre qui glisse, puis s'arrête.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "60 → 62 → VOIRE 60",
+   "comic_action": "Formulaire de retraite déplié ; en gros « 60 → 62 → VOIRE 60 ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "tribune",
-    "studio_light",
-    "text3d",
+    "ground",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "62 VOIRE 60",
-   "comic_action": "Tribune : un panneau à deux faces qui tourne au vent.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "L'HORLOGE RECULE",
+   "comic_action": "Descente sur la ville ; banderole « L'HORLOGE RECULE » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "spin"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "HEURE : SELON CAMPAGNE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "column",
-    "mairie",
+    "facade_row",
+    "sign",
     "text3d",
     "person"
    ],
-   "onscreen_text": "HORLOGE ÉLECTORALE",
-   "comic_action": "Entre deux colonnes, un agent recule l'horloge à la manivelle.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "BOUGIES AMOVIBLES",
+   "comic_action": "Rangée de façades : enseigne « BOUGIES AMOVIBLES ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "table",
+    "road",
+    "sign",
     "person",
-    "screen",
-    "text3d"
+    "traffic_light"
    ],
-   "onscreen_text": "BOUGIES : AMOVIBLES",
-   "comic_action": "Un gâteau de départ ; on retire et remet des bougies.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RETRAITÉ YO-YO",
+   "comic_action": "Dans la rue, panneau « RETRAITÉ YO-YO ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "spin",
+     "visage": "fatigue"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "scroll",
-    "table",
-    "person",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "PROMESSE : ÉLASTIQUE",
-   "comic_action": "Un parchemin qu'on étire comme un élastique. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "VOIRE : LE MOT MAGIQUE",
+   "comic_action": "Plan final, tenir une seconde : « VOIRE : LE MOT MAGIQUE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +267,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt souffle des bougies qui se rallument.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI RÊVE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI RÊVE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,21 +290,17 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 83,
+ "word_count": 82,
  "claims": [
   {
    "segment": "n2",
-   "text": "La retraite à soixante ans : longtemps promise, puis lâchée pour soixante-deux.",
+   "text": "Retraite : soixante, puis soixante-deux, puis voire soixante.",
    "claim_type": "fait_public",
    "source": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
-   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne « parfois difficile à concilier »."
-  },
-  {
-   "segment": "n3",
-   "text": "Puis revient en 2026 : soixante-deux, voire soixante.",
-   "claim_type": "fait_public",
-   "source": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
-   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
+   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne parfois difficile à concilier. ; 62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé.",
+   "sources_complementaires": [
+    "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite"
+   ]
   }
  ],
  "sources": [
@@ -221,17 +308,17 @@
    "url": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
    "date": "2026-07-08",
    "consulted": "2026-11-22",
-   "statut": "fait public + analyse",
-   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne « parfois difficile à concilier »."
+   "statut": "fait + analyse",
+   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne parfois difficile à concilier."
   },
   {
    "url": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
    "date": "2026-11-17",
    "consulted": "2026-11-22",
-   "statut": "fait public (présentation du programme)",
+   "statut": "fait",
    "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = la retraite à 60 ans, longtemps promise, lâchée pour 62, puis « 62, voire 60 » (franceinfo). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = la retraite à 60 ans : promise, lâchée pour 62, puis « voire 60 ». Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

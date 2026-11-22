@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-30",
  "format": "A",
- "title_cover": "Gagner par forfait",
+ "title_cover": "Victoire par forfait",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, le boxeur réclame le titre : son rival a pris sa retraite.",
-  "Marineville : sa meilleure alliée, c'est la Constitution.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : gagner par forfait."
+  "Dans cette ville, tout le monde vote Marine. Enfin sans Macron.",
+  "Marineville gagne enfin. Contre une chaise vide.",
+  "Ici, les adversaires doivent prendre leur retraite.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Victoire par forfait."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Sa meilleure chance de battre Macron, c'est la Constitution.",
-  "Le boxeur municipal réclame le titre : son rival a pris sa retraite.",
-  "Ici, le club d'échecs fait jouer l'adversaire en visio, micro coupé."
+  "Marine a sa chance en 2027 : Macron ne peut plus se représenter.",
+  "Sa meilleure chance : la Constitution.",
+  "La chaise tient trois rounds. Le public hurle."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,55 +23,55 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Enfin sans Macron.",
    "accent_words": [
-    "sans Macron"
+    "sans"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Deux débats face à lui, en 2017 et en 2022. Deux défaites.",
+   "text": "Deux débats face à Macron, en 2017 et 2022. Deux défaites.",
    "accent_words": [
-    "Deux défaites"
+    "défaites"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "En 2027, Macron ne peut plus se représenter.",
+   "text": "Alors le club de boxe exige que les adversaires prennent leur retraite.",
    "accent_words": [
-    "ne peut plus"
+    "retraite"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, le boxeur municipal réclame le titre : son rival a pris sa retraite.",
+   "text": "Le champion du quartier gagne enfin : contre une chaise vide.",
    "accent_words": [
-    "sa retraite"
+    "vide"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le club d'échecs fait jouer l'adversaire en visio, micro coupé.",
+   "text": "La chaise tient trois rounds. Le public hurle.",
    "accent_words": [
-    "micro coupé"
+    "hurle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Sa meilleure chance de battre Macron, c'est la Constitution.",
+   "text": "Marine a sa chance en 2027 : Macron ne peut plus se représenter.",
    "accent_words": [
-    "la Constitution"
+    "représenter"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
    "text": "Envoie ça au pote qui fête une victoire par forfait.",
    "accent_words": [
-    "par forfait"
+    "forfait"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,25 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; un ring de boxe vide au milieu de la place.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "ENFIN SANS MACRON",
+   "comic_action": "Descente sur la ville ; banderole « ENFIN SANS MACRON » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,25 +121,55 @@
     "studio_light",
     "text3d"
    ],
-   "onscreen_text": "2017 · 2022 : 0 – 2",
-   "comic_action": "Plateau : un tableau de score qui affiche 0 – 2.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "2 DÉBATS, 2 DÉFAITES",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « 2 DÉBATS, 2 DÉFAITES ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "scroll",
-    "table",
+    "road",
+    "sign",
     "person",
-    "text3d"
+    "traffic_light"
    ],
-   "onscreen_text": "ARTICLE 6",
-   "comic_action": "Un parchemin de la Constitution se déroule, une ligne surlignée.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "ADVERSAIRES À LA RETRAITE",
+   "comic_action": "Dans la rue, panneau « ADVERSAIRES À LA RETRAITE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ADVERSAIRE : RETRAITÉ"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -132,30 +178,54 @@
    ],
    "camera": "orbit",
    "set": [
-    "ground",
-    "banner",
-    "person",
+    "tribune",
+    "router_lectern",
+    "studio_light",
     "text3d"
    ],
-   "onscreen_text": "CHAMPION PAR ABSENCE",
-   "comic_action": "Un boxeur cubique lève les bras seul dans un ring vide.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "VICTOIRE CONTRE UNE CHAISE",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « VICTOIRE CONTRE UNE CHAISE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "text3d",
-    "person",
-    "studio_light"
+    "tribune",
+    "router_lectern",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "ADVERSAIRE : MUET",
-   "comic_action": "Un échiquier ; en face, un écran éteint.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LA CHAISE TIENT",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « LA CHAISE TIENT ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "jump"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -164,14 +234,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "ALLIÉE : LA CONSTITUTION",
-   "comic_action": "Entre deux colonnes, le parchemin posé sur un piédestal. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "MACRON NE PEUT PLUS",
+   "comic_action": "Plan final, tenir une seconde : « MACRON NE PEUT PLUS ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +268,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt soulève une coupe, seul.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE CHAMPION",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE CHAMPION ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,49 +291,49 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 74,
+ "word_count": 76,
  "claims": [
   {
    "segment": "n2",
-   "text": "Deux débats face à lui, en 2017 et en 2022. Deux défaites.",
+   "text": "Deux débats face à Macron, en 2017 et 2022. Deux défaites.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/non-classe/le-pen-reconnait-un-debat-d-entre-deux-tours-rate-60797",
-   "note": "Elle reconnaît un débat d'entre-deux-tours « raté ».",
+   "source": "https://www.vie-publique.fr/discours/285127-debat-televise-20042022-emmanuel-macron-marine-le-pen-candidats",
+   "note": "Deuxième débat d'entre-deux-tours face à Emmanuel Macron (2022). ; 2012 : troisième (17,9 %) ; 2017 : battue au second tour (33,9 %).",
    "sources_complementaires": [
-    "https://www.vie-publique.fr/discours/285127-debat-televise-20042022-emmanuel-macron-marine-le-pen-candidats"
+    "https://www.publicsenat.fr/actualites/politique/marine-le-pen-une-defaite-mais-une-ascension-electorale-60208"
    ]
   },
   {
-   "segment": "n3",
-   "text": "En 2027, Macron ne peut plus se représenter.",
+   "segment": "n6",
+   "text": "Marine a sa chance en 2027 : Macron ne peut plus se représenter.",
    "claim_type": "fait_public",
    "source": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
-   "note": "Emmanuel Macron ne peut pas se représenter en 2027."
+   "note": "Deux mandats consécutifs maximum : Emmanuel Macron ne peut pas se représenter en 2027."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/non-classe/le-pen-reconnait-un-debat-d-entre-deux-tours-rate-60797",
-   "date": "2017",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Elle reconnaît un débat d'entre-deux-tours « raté »."
-  },
-  {
    "url": "https://www.vie-publique.fr/discours/285127-debat-televise-20042022-emmanuel-macron-marine-le-pen-candidats",
    "date": "2022-04-20",
    "consulted": "2026-11-22",
-   "statut": "fait public",
+   "statut": "fait",
    "note": "Deuxième débat d'entre-deux-tours face à Emmanuel Macron (2022)."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/marine-le-pen-une-defaite-mais-une-ascension-electorale-60208",
+   "date": "2017-05",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "2012 : troisième (17,9 %) ; 2017 : battue au second tour (33,9 %)."
   },
   {
    "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
    "date": "1958 (révision 2008)",
    "consulted": "2026-11-22",
-   "statut": "fait public (article 6 : pas plus de deux mandats consécutifs)",
-   "note": "Emmanuel Macron ne peut pas se représenter en 2027."
+   "statut": "fait",
+   "note": "Deux mandats consécutifs maximum : Emmanuel Macron ne peut pas se représenter en 2027."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = deux débats d'entre-deux-tours face à Emmanuel Macron (2017, 2022), deux défaites ; en 2027, il ne peut plus se représenter (Constitution). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = deux défaites face à Macron (2017, 2022) ; il ne peut plus se représenter. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

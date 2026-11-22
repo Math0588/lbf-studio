@@ -3,33 +3,33 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-08",
  "format": "A",
- "title_cover": "Gadgets de meeting",
+ "title_cover": "La ville qui sent",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. Ça sent le spectacle.",
-  "Mélenchon a tout essayé en meeting. Sauf gagner.",
+  "Dans cette ville, tout le monde vote Mélenchon. Même les poubelles sentent bon.",
+  "Mélenchon a parfumé un meeting. La ville a parfumé tout le reste.",
   "Celle-là, Méluche ne la partagera pas.",
-  "Bienvenue à Mélenchonville : gadgets de meeting.",
-  "Mélenchon en une vidéo : gadgets de meeting."
+  "Bienvenue à Mélenchonville : la ville qui sent.",
+  "Mélenchon en une vidéo : la ville qui sent."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le parfum de la victoire, il l'a diffusé. Personne ne l'a jamais senti.",
-  "Hologramme, parfum, 360 degrés : tout le spectacle, sauf le second tour.",
-  "Puis six hologrammes en même temps. Six fois rien."
+  "Seul parfum jamais diffusé en ville : celui de la victoire.",
+  "Lavande, poudre à canon, encens : tout sauf l'odeur du pouvoir.",
+  "Les habitants sortent masqués. Comme à Nantes, plus personne ne sent rien."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Ça sent le spectacle.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même les poubelles sentent bon.",
    "accent_words": [
-    "Ça sent le spectacle"
+    "sentent bon"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2022 à Nantes, il organise un meeting olfactif : parfums diffusés dans la salle.",
+   "text": "En 2022 à Nantes, il fait un meeting olfactif : du parfum dans la salle.",
    "accent_words": [
     "la salle"
    ],
@@ -37,39 +37,39 @@
   },
   {
    "id": "n3",
-   "text": "Petit souci : le public portait des masques. Personne n'a rien senti.",
+   "text": "La mairie parfume chaque rue. Rue de la Révolution : poudre à canon.",
    "accent_words": [
-    "Personne n'a rien senti"
+    "poudre à canon"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "En 2017, déjà, il tenait meeting en hologramme. Ni odeur, ni présence.",
+   "text": "Les diffuseurs s'emballent. Les pigeons tombent, étourdis par la lavande.",
    "accent_words": [
-    "Ni odeur, ni présence"
+    "la lavande"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Puis six hologrammes en même temps. Six fois rien.",
+   "text": "Les habitants sortent masqués. Comme à Nantes, plus personne ne sent rien.",
    "accent_words": [
-    "Six fois rien"
+    "sent rien"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Le parfum de la victoire, il l'a diffusé. Personne ne l'a jamais senti.",
+   "text": "Seul parfum jamais diffusé en ville : celui de la victoire.",
    "accent_words": [
-    "jamais senti"
+    "celui de la victoire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui allume trois bougies parfumées pour un apéro.",
+   "text": "Envoie ça au pote qui allume trois bougies pour un apéro.",
    "accent_words": [
     "un apéro"
    ],
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE · GADGETS DE MEETING",
-   "comic_action": "Descente sur la ville : banderole « GADGETS DE MEETING », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "onscreen_text": "MÉLENCHONVILLE · LA VILLE QUI SENT",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "RESPIREZ LA RÉVOLUTION"
     }
    ]
   },
@@ -118,20 +128,20 @@
     "person"
    ],
    "onscreen_text": "MEETING OLFACTIF",
-   "comic_action": "Des nuages colorés s'échappent de diffuseurs au-dessus de la foule.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "comic_action": "Nuages colorés qui s'échappent de diffuseurs au-dessus de la foule.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
      "geste": "arms_up",
      "visage": "content",
      "objet": "micro"
-    },
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "shake",
-     "visage": "choque",
-     "quand": 0.4
+     "type": "affiche",
+     "texte": "RESPIREZ LA RÉVOLUTION"
     }
    ]
   },
@@ -142,18 +152,24 @@
    ],
    "camera": "orbit",
    "set": [
-    "person",
-    "studio_light",
-    "text3d"
+    "road",
+    "sign",
+    "lamp"
    ],
-   "onscreen_text": "ODEUR : 0",
-   "comic_action": "Gros plan sur des spectateurs masqués qui haussent les épaules.",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "RUE DE LA RÉVOLUTION",
+   "comic_action": "Plaque de rue avec un diffuseur fumant accroché dessous.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
-     "who": "foule",
-     "geste": "shrug",
-     "visage": "blase"
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PARFUM : POUDRE"
     }
    ]
   },
@@ -164,18 +180,24 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "screen",
-    "tribune",
-    "studio_light"
+    "tree",
+    "bench",
+    "person"
    ],
-   "onscreen_text": "HOLOGRAMME 2017",
-   "comic_action": "Le maire grésille en projection sur la scène vide.",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "LAVANDE : DOSE × 100",
+   "comic_action": "Des pigeons tombent des arbres comme des fruits mûrs.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro"
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "SNIFF"
     }
    ]
   },
@@ -186,24 +208,24 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "screen",
-    "tribune"
+    "road",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "× 6",
-   "comic_action": "Six projections identiques saluent en même temps.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "MASQUES OBLIGATOIRES",
+   "comic_action": "Rue de passants masqués qui haussent les épaules.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "spin",
-     "visage": "fier"
-    },
-    {
      "who": "foule",
-     "geste": "facepalm",
-     "visage": "choque",
-     "quand": 0.5
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ODEUR : 0"
     }
    ]
   },
@@ -218,14 +240,20 @@
     "banner",
     "text3d"
    ],
-   "onscreen_text": "PARFUM DE VICTOIRE : ÉVENTÉ",
-   "comic_action": "Un flacon géant « VICTOIRE » se vide en fumée.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "PARFUM DE VICTOIRE : ÉPUISÉ",
+   "comic_action": "Un flacon « VICTOIRE » vide, posé sur le pupitre.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
      "geste": "facepalm",
      "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RUPTURE DE STOCK"
     }
    ]
   },
@@ -242,7 +270,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -251,12 +279,18 @@
      "visage": "sourire_pro",
      "objet": "phone"
     }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
    ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui allume trois bougies parfumées pour un apéro."
+  "text": "Envoie ça au pote qui allume trois bougies pour un apéro."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -266,28 +300,16 @@
  "word_count": 85,
  "claims": [
   {
-   "text": "En 2022 à Nantes, il organise un meeting olfactif : parfums diffusés dans la salle.",
+   "text": "En 2022 à Nantes, il fait un meeting olfactif : du parfum dans la salle.",
    "claim_type": "fait_public",
    "source": "https://www.euronews.com/2022/01/16/videos-sounds-and-smells-french-far-left-candidate-s-unusual-rally-to-reinvigorate-campaig",
    "note": "Nantes : meeting immersif et olfactif, vidéo à 360°, public masqué."
   },
   {
-   "text": "Petit souci : le public portait des masques. Personne n'a rien senti.",
+   "text": "Les habitants sortent masqués. Comme à Nantes, plus personne ne sent rien.",
    "claim_type": "fait_public",
    "source": "https://www.euronews.com/2022/01/16/videos-sounds-and-smells-french-far-left-candidate-s-unusual-rally-to-reinvigorate-campaig",
    "note": "Nantes : meeting immersif et olfactif, vidéo à 360°, public masqué."
-  },
-  {
-   "text": "En 2017, déjà, il tenait meeting en hologramme. Ni odeur, ni présence.",
-   "claim_type": "fait_public",
-   "source": "https://www.parismatch.be/actualites/politique/2017/02/05/jean-luc-melenchon-en-chair-en-os-et-en-hologramme-A5YAIOB4FRFYHLFZPCANXUXQVE/",
-   "note": "Meeting double Lyon / Aubervilliers en hologramme ; selon Europe 1, il devait rester dans un carré de 4 m sur 4."
-  },
-  {
-   "text": "Puis six hologrammes en même temps. Six fois rien.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/non-classe/melenchon-six-hologrammes-pour-conclure-une-campagne-de-ferveur-populaire-58921",
-   "note": "Fin de campagne 2017 : six hologrammes simultanés."
   }
  ],
  "sources": [
@@ -297,22 +319,8 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Nantes : meeting immersif et olfactif, vidéo à 360°, public masqué."
-  },
-  {
-   "url": "https://www.parismatch.be/actualites/politique/2017/02/05/jean-luc-melenchon-en-chair-en-os-et-en-hologramme-A5YAIOB4FRFYHLFZPCANXUXQVE/",
-   "date": "2017-02-05",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Meeting double Lyon / Aubervilliers en hologramme ; selon Europe 1, il devait rester dans un carré de 4 m sur 4."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/non-classe/melenchon-six-hologrammes-pour-conclure-une-campagne-de-ferveur-populaire-58921",
-   "date": "2017-04-18",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Fin de campagne 2017 : six hologrammes simultanés."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Gadgets de meeting. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2022 à Nantes, il fait un meeting olfactif : du parfum dans la salle. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

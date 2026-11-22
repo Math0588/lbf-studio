@@ -4,79 +4,79 @@
  "synopsis_id": "mlv-m010-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Buvette à 26 000",
- "anchor": "Saint-Denis : 26 000 revendiqués pour 10 000 attendus.",
+ "title_cover": "Fan-club municipal",
+ "anchor": "« Méluche » : la mairie se transforme en fan-club.",
  "meme_id": "MR",
- "situation": "le stade",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le stade où chaque supporter compte triple.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, dix mille spectateurs deviennent vingt-six mille.",
-  "Mélenchonville : le comptage des foules est un sport olympique."
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien a un poster.",
+  "Méluche a des fans. La mairie est devenue un fan-club.",
+  "Celle-là, Méluche ne la partagera pas.",
+  "Bienvenue à Mélenchonville : fan-club municipal.",
+  "Mélenchon en une vidéo : fan-club municipal."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Tribunes pleines en théorie, troisième place en vrai. Le comptage maison ne vote pas.",
-  "Le stade est plein. Les urnes, moins.",
-  "Les chiffres gonflent, le score reste."
+  "Une star a des disques d'or. Méluche, surtout des quatrièmes places.",
+  "Une star a des disques d'or. Méluche, des quatrièmes places.",
+  "Il signe même les arrêtés municipaux avec un cœur."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Tribunes pleines.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien a un poster.",
    "accent_words": [
-    "Tribunes pleines"
+    "un poster"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À Saint-Denis, dix mille personnes attendues. Vingt-six mille revendiquées.",
+   "text": "Méluche : son surnom, de la presse à ses fans.",
    "accent_words": [
-    "revendiquées"
+    "ses fans"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, le stade compte les supporters avec la même calculette.",
+   "text": "La mairie devient un fan-club. Les impôts se paient en goodies.",
    "accent_words": [
-    "calculette"
+    "en goodies"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Trois pelés à la buvette ? Vingt-six mille, d'après l'organisation.",
+   "text": "Concert tous les soirs sur la place. La ville ne dort plus.",
    "accent_words": [
-    "d'après l'organisation"
+    "dort plus"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La pelouse est tondue en forme de tortue, le totem du club.",
+   "text": "Il signe même les arrêtés municipaux avec un cœur.",
    "accent_words": [
-    "tortue"
+    "un cœur"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Tribunes pleines en théorie, troisième place en vrai. Le comptage maison ne vote pas.",
+   "text": "Une star a des disques d'or. Méluche, surtout des quatrièmes places.",
    "accent_words": [
-    "ne vote pas"
+    "quatrièmes places"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui arrondit toujours ses chiffres au-dessus.",
+   "text": "Envoie ça au pote qui appelle les politiques par leur surnom.",
    "accent_words": [
-    "au-dessus"
+    "leur surnom"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,43 +90,92 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un stade aux tribunes peintes en trompe-l'œil.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · FAN-CLUB MUNICIPAL",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "MÉLUCHE, ON T'AIME"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "person",
+    "banner",
     "text3d",
-    "banner"
+    "person"
    ],
-   "onscreen_text": "10 000 → 26 000",
-   "comic_action": "Orbite autour d'un tableau d'affichage qui ajoute des zéros.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "MÉLUCHE",
+   "comic_action": "Néon « MÉLUCHE » façon salle de concert.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "MÉLUCHE, ON T'AIME"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "text3d",
+    "mairie",
+    "shop",
     "person"
    ],
-   "onscreen_text": "CALCULETTE MAISON",
-   "comic_action": "Gros plan : une calculette où chaque touche affiche « 26 000 ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "IMPÔTS : EN GOODIES",
+   "comic_action": "Guichet où l'on paie avec des porte-clés et des posters.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "clap",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "IMPÔT : 3 POSTERS"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -135,28 +184,60 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "shop",
-    "person",
-    "sign"
+    "tribune",
+    "studio_light",
+    "person"
    ],
-   "onscreen_text": "BUVETTE : 26 000",
-   "comic_action": "Travelling : trois supporters accoudés au comptoir, compteur géant derrière eux.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CONCERT CHAQUE SOIR",
+   "comic_action": "Scène, projecteurs, fumée ; voisins en pyjama aux fenêtres.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "GROUPIE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
-    "mascot",
-    "ground",
+    "table",
+    "form_stack",
     "text3d"
    ],
-   "onscreen_text": "TOTEM : TORTUE",
-   "comic_action": "Vue aérienne : une tortue géante dessinée dans la pelouse.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "ARRÊTÉ SIGNÉ ❤",
+   "comic_action": "Une pile d'arrêtés signés d'un cœur rouge.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "sourire_pro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "AUTOGRAPHE : 5 €"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +246,26 @@
    ],
    "camera": "descend",
    "set": [
-    "person",
+    "lift_tribune",
     "text3d",
     "banner"
    ],
-   "onscreen_text": "3E À L'ARRIVÉE",
-   "comic_action": "Plan large : les tribunes en carton tombent comme des dominos.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "DISQUES D'OR : 0",
+   "comic_action": "Vitrine : trois médailles en chocolat.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "4E · 4E · 3E"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,57 +279,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique compte les chaises vides.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui arrondit toujours ses chiffres au-dessus."
+  "text": "Envoie ça au pote qui appelle les politiques par leur surnom."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 75,
+ "word_count": 78,
  "claims": [
   {
-   "text": "À Saint-Denis, dix mille personnes attendues. Vingt-six mille revendiquées.",
+   "text": "Méluche : son surnom, de la presse à ses fans.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
+   "source": "https://www.publicsenat.fr/actualites/politique/melenchon-leader-de-la-gauche-radicale-devenu-le-meilleur-ennemi-de-macron-77692",
+   "note": "Surnom « Méluche »."
   },
   {
-   "text": "La pelouse est tondue en forme de tortue, le totem du club.",
+   "text": "Une star a des disques d'or. Méluche, surtout des quatrièmes places.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
-  },
-  {
-   "text": "Tribunes pleines en théorie, troisième place en vrai. Le comptage maison ne vote pas.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/premier-tour-decouvrez-les-resultats-definitifs-109262",
-   "note": "Résultats définitifs 2022 : Mélenchon troisième (21,95 %)."
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
-   "date": "2026-06-07",
+   "url": "https://www.publicsenat.fr/actualites/politique/melenchon-leader-de-la-gauche-radicale-devenu-le-meilleur-ennemi-de-macron-77692",
+   "date": "2017",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
+   "note": "Surnom « Méluche »."
   },
   {
-   "url": "https://lcp.fr/actualites/premier-tour-decouvrez-les-resultats-definitifs-109262",
-   "date": "2022-04",
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Résultats définitifs 2022 : Mélenchon troisième (21,95 %)."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Saint-Denis : 26 000 revendiqués pour 10 000 attendus. Cadre : le stade. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Méluche : son surnom, de la presse à ses fans. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

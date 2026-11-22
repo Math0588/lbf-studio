@@ -4,61 +4,61 @@
  "synopsis_id": "zmv-m022-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Voyage en 1965",
- "anchor": "l'annonce de 2021 jugée coincée en 1965 : l'office du tourisme vend le passé.",
+ "title_cover": "Séjour en 1965",
+ "anchor": "L'annonce jugée digne de 1965 : l'office du tourisme vend des séjours en 1965.",
  "meme_id": "ZB",
- "situation": "le tourisme",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : l'office du tourisme vend 1965.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, le voyage dans le temps est subventionné.",
-  "Zemmourville : destination passé, retour jamais."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien a une valise d'époque.",
+  "Zemmour a une annonce de 1965. L'office du tourisme vend des séjours en 1965.",
+  "Celle-là, Zemmour ne la partagera pas.",
+  "Bienvenue à Zemmourville : séjour en 1965.",
+  "Zemmour en une vidéo : séjour en 1965."
  ],
  "selected_hook": 0,
  "ending_variants": [
   "Le voyage est complet. Comme son score de 2022 : bouclé à 7 %.",
-  "Séjour en 1965, retour à 7 %.",
-  "On part en vacances pour regretter."
+  "Le voyage est complet. Comme son score : bouclé à 7 %.",
+  "La ville voisine propose 2026. Personne n'y va : trop récent."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. En 1965.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien a une valise d'époque.",
    "accent_words": [
-    "En 1965"
+    "valise d'époque"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ses rivaux jugeaient son annonce de 2021 coincée en 1965.",
+   "text": "Ses rivaux jugeaient son annonce de 2021 digne de 1965.",
    "accent_words": [
-    "coincée en 1965"
+    "de 1965"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, l'office du tourisme vend donc des séjours en 1965.",
+   "text": "L'office du tourisme vend donc des séjours en 1965.",
    "accent_words": [
-    "séjours"
+    "en 1965"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Télé à une chaîne, téléphone à cadran, sondage à 17 %.",
+   "text": "Télé à une chaîne, téléphone à cadran, Minitel trop moderne.",
    "accent_words": [
-    "17 %"
+    "trop moderne"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La ville voisine propose 2026. Personne n'y va, c'est trop récent.",
+   "text": "La ville voisine propose 2026. Personne n'y va : trop récent.",
    "accent_words": [
     "trop récent"
    ],
@@ -74,9 +74,9 @@
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui pose devant des vieilles voitures en vacances.",
+   "text": "Envoie ça au pote qui vit encore dans les années 60.",
    "accent_words": [
-    "vieilles voitures"
+    "années 60"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "arch",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un office du tourisme ; affiche « SÉJOURS EN 1965 ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · SÉJOUR EN 1965",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "VOYAGEZ EN 1965"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,13 +128,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
+    "screen",
     "text3d",
-    "person"
+    "tribune"
    ],
-   "onscreen_text": "COINCÉ EN 1965",
-   "comic_action": "Gros plan sur une brochure jaunie.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "DIGNE DE 1965",
+   "comic_action": "Une vieille télé grésille au-dessus du guichet.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "VOYAGEZ EN 1965"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -121,12 +157,25 @@
    "camera": "orbit",
    "set": [
     "shop",
-    "person",
-    "sign"
+    "sign",
+    "person"
    ],
-   "onscreen_text": "SÉJOUR 1965",
-   "comic_action": "Orbite autour d'un comptoir couvert de cartes postales sépia.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SÉJOUR : 1965",
+   "comic_action": "Affiche rétro « VISITEZ 1965 ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SÉJOUR : 1965 FRANCS"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -135,13 +184,27 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "person",
     "table",
-    "text3d"
+    "screen",
+    "person"
    ],
-   "onscreen_text": "ÉQUIPEMENTS D'ÉPOQUE",
-   "comic_action": "Travelling dans la chambre d'hôtel : poste de télé, téléphone, coupure de sondage encadrée.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "TÉLÉPHONE À CADRAN",
+   "comic_action": "Un touriste compose un numéro très lentement.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "TOURISTE"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -152,11 +215,24 @@
    "set": [
     "sign",
     "road",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "2026 : TROP RÉCENT",
-   "comic_action": "Un panneau « VILLE VOISINE — 2026 », route déserte.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "2026 : PERSONNE",
+   "comic_action": "Un car pour « 2026 » part à vide.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "2026 : 0 RÉSERVATION"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +241,26 @@
    ],
    "camera": "descend",
    "set": [
-    "arch",
+    "screen",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "COMPLET À 7 %",
-   "comic_action": "Plan large : l'arche « 1965 », trois touristes dessous.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "COMPLET · 7 %",
+   "comic_action": "Tampon « COMPLET » sur un billet « 1965 ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "7,07 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,33 +274,41 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique part vers la ville voisine.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui pose devant des vieilles voitures en vacances."
+  "text": "Envoie ça au pote qui vit encore dans les années 60."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 78,
+ "word_count": 80,
  "claims": [
   {
-   "text": "Ses rivaux jugeaient son annonce de 2021 coincée en 1965.",
+   "text": "Ses rivaux jugeaient son annonce de 2021 digne de 1965.",
    "claim_type": "fait_public",
    "source": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
-   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
-  },
-  {
-   "text": "Télé à une chaîne, téléphone à cadran, sondage à 17 %.",
-   "claim_type": "fait_public",
-   "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
-   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+   "note": "Adversaires : annonce jugée « momifiée », digne de la présidentielle de 1965 (paraphrase)."
   },
   {
    "text": "Le voyage est complet. Comme son score de 2022 : bouclé à 7 %.",
@@ -225,15 +322,8 @@
    "url": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
    "date": "2021-11-30",
    "consulted": "2026-11-22",
-   "statut": "opinion rapportée",
-   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
-  },
-  {
-   "url": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
-   "date": "2021-10-07",
-   "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+   "note": "Adversaires : annonce jugée « momifiée », digne de la présidentielle de 1965 (paraphrase)."
   },
   {
    "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
@@ -244,5 +334,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : l'annonce de 2021 jugée coincée en 1965 : l'office du tourisme vend le passé. Cadre : le tourisme. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Ses rivaux jugeaient son annonce de 2021 digne de 1965. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

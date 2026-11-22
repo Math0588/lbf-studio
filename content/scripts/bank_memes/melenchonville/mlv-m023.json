@@ -4,79 +4,79 @@
  "synopsis_id": "mlv-m023-gm",
  "format": "A",
  "length": "court",
- "title_cover": "À 421 420 mètres",
- "anchor": "2022 : le second tour raté de 421 420 voix, en boucle.",
+ "title_cover": "La ville qui hurle",
+ "anchor": "« La République, c'est moi ! » hurlé : la ville ne parle plus qu'en criant.",
  "meme_id": "MH",
- "situation": "les vacances",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : la plage est toujours à 421 420 mètres.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, le GPS dit : vous êtes presque arrivé, depuis 2012.",
-  "Mélenchonville : les vacances qui s'arrêtent avant la mer."
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien hurle.",
+  "Mélenchon hurle. Toute la ville s'est mise à hurler.",
+  "Les fans de Méluche vont me bloquer.",
+  "Bienvenue à Mélenchonville : la ville qui hurle.",
+  "Mélenchon en une vidéo : la ville qui hurle."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Chaque été, la plage est en vue. Chaque été, troisième place sur le parking.",
-  "La mer en vue, jamais les pieds dans l'eau.",
-  "Presque arrivé : le slogan de chaque été."
+  "Tout le monde l'entend. Personne ne l'élit : quatrième, quatrième, troisième.",
+  "Tout le monde l'entend. Personne ne l'élit.",
+  "La mairie hurle ses arrêtés si fort que la ville voisine les applique aussi."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Presque arrivé.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien hurle.",
    "accent_words": [
-    "Presque arrivé"
+    "Même le chien hurle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2022, il rate le second tour à 421 420 voix près.",
+   "text": "En 2018, face caméra, il hurle : « La République, c'est moi ! ».",
    "accent_words": [
-    "421 420"
+    "La République, c'est moi"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Ici, le GPS des vacances s'arrête toujours à 421 420 mètres de la plage.",
+   "text": "La ville l'imite : on ne parle plus, on hurle. Même pour dire bonjour.",
    "accent_words": [
-    "de la plage"
+    "Même pour dire bonjour"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Demi-tour, recalcul, rond-point. On recommence en 2027.",
+   "text": "Les vitres explosent. On remplace les fenêtres par des matelas.",
    "accent_words": [
-    "en 2027"
+    "des matelas"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le passager demande : on arrive ? Réponse : presque, depuis 2012.",
+   "text": "La mairie hurle ses arrêtés si fort que la ville voisine les applique aussi.",
    "accent_words": [
-    "depuis 2012"
+    "applique aussi"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Chaque été, la plage est en vue. Chaque été, troisième place sur le parking.",
+   "text": "Tout le monde l'entend. Personne ne l'élit : quatrième, quatrième, troisième.",
    "accent_words": [
-    "troisième place"
+    "quatrième, quatrième, troisième"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui rate toujours la sortie d'autoroute.",
+   "text": "Envoie ça au pote qui s'engueule avec le GPS.",
    "accent_words": [
-    "la sortie"
+    "le GPS"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "car",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur une voiture chargée de valises, GPS au tableau de bord.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · LA VILLE QUI HURLE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "PARLEZ PLUS FORT"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,43 +128,83 @@
    ],
    "camera": "closeup",
    "set": [
-    "gps",
-    "text3d",
-    "car"
+    "tribune",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "-421 420",
-   "comic_action": "Gros plan sur le GPS : « ARRIVÉE : -421 420 ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« LA RÉPUBLIQUE, C'EST MOI ! »",
+   "comic_action": "Le maire crie au micro, la foule recule.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "colere",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PARLEZ PLUS FORT"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
     "road",
-    "car",
-    "sign"
+    "person",
+    "shop"
    ],
-   "onscreen_text": "PLAGE : 421 KM",
-   "comic_action": "Travelling : la voiture s'arrête net devant un panneau, la mer visible au loin.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "BONJOUR (EN HURLANT)",
+   "comic_action": "Deux voisins se hurlent « bonjour » à vingt centimètres.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "WOUAF"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "roundabout",
-    "car",
-    "gps"
+    "facade_row",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "RECALCUL : 2027",
-   "comic_action": "Orbite : la voiture refait le tour du rond-point, le GPS affiche « 2027 ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "FENÊTRES : MATELAS",
+   "comic_action": "Des matelas vissés aux fenêtres des immeubles.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "VITRE : 0"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,13 +213,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "car",
+    "mairie",
     "person",
-    "text3d"
+    "road"
    ],
-   "onscreen_text": "PRESQUE",
-   "comic_action": "Dans l'habitacle, le passager soupire, le conducteur sourit.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "ARRÊTÉ ENTENDU À 20 KM",
+   "comic_action": "Les habitants d'à côté obéissent, la main en cornet.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PORTÉE : 20 KM"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +241,26 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "car",
-    "text3d"
+    "lift_tribune",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "PARKING : 3E PLACE",
-   "comic_action": "Plan large : un parking de plage, la voiture garée sur l'emplacement « 3 ».",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "4E · 4E · 3E",
+   "comic_action": "Le maire crie devant une urne qui se bouche les oreilles.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shake",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ÉLU : NON"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,77 +274,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique finit à pied, serviette sur l'épaule.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui rate toujours la sortie d'autoroute."
+  "text": "Envoie ça au pote qui s'engueule avec le GPS."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 79,
+ "word_count": 84,
  "claims": [
   {
-   "text": "En 2022, il rate le second tour à 421 420 voix près.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850",
-   "note": "Second tour 2022 raté d'environ 421 420 voix."
+   "text": "En 2018, face caméra, il hurle : « La République, c'est moi ! ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
+   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
   },
   {
-   "text": "Demi-tour, recalcul, rond-point. On recommence en 2027.",
+   "text": "Tout le monde l'entend. Personne ne l'élit : quatrième, quatrième, troisième.",
    "claim_type": "fait_public",
-   "source": "https://www.lalibre.be/international/europe/2026/05/03/jean-luc-melenchon-officialise-sa-candidature-a-la-presidentielle-2027-62WVGQMVUREGHCOMM2PKZ2DE7M/",
-   "note": "Candidature 2027 officialisée au 20 h de TF1 : quatrième campagne."
-  },
-  {
-   "text": "Le passager demande : on arrive ? Réponse : presque, depuis 2012.",
-   "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
-  },
-  {
-   "text": "Chaque été, la plage est en vue. Chaque été, troisième place sur le parking.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/premier-tour-decouvrez-les-resultats-definitifs-109262",
-   "note": "Résultats définitifs 2022 : Mélenchon troisième (21,95 %)."
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850",
-   "date": "2022-04-10",
+   "url": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
+   "date": "2018-10-17",
    "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Second tour 2022 raté d'environ 421 420 voix."
+   "statut": "citation_exacte",
+   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
   },
   {
-   "url": "https://www.lalibre.be/international/europe/2026/05/03/jean-luc-melenchon-officialise-sa-candidature-a-la-presidentielle-2027-62WVGQMVUREGHCOMM2PKZ2DE7M/",
-   "date": "2026-05-03",
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Candidature 2027 officialisée au 20 h de TF1 : quatrième campagne."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "date": "2026-06",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
-  },
-  {
-   "url": "https://lcp.fr/actualites/premier-tour-decouvrez-les-resultats-definitifs-109262",
-   "date": "2022-04",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Résultats définitifs 2022 : Mélenchon troisième (21,95 %)."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : 2022 : le second tour raté de 421 420 voix, en boucle. Cadre : les vacances. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2018, face caméra, il hurle : « La République, c'est moi ! ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

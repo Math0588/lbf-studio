@@ -3,67 +3,67 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-09",
  "format": "A",
- "title_cover": "Patrons atterrés",
+ "title_cover": "Dix pour cent",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, le dîner du CAC 40 se finit avant le dessert.",
-  "Marineville : décevoir le patron et le salarié en même temps.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : patrons atterrés."
+  "Dans cette ville, tout le monde vote Marine. Plus dix pour cent.",
+  "Marineville : dix pour cent de plus sur tout, même le soleil.",
+  "Ici, la ville fond, mais à plus dix pour cent.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Dix pour cent."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Plaire au patron et au salarié en même temps : même Macron a abandonné.",
-  "Patrons déçus, salariés qui attendent leurs dix pour cent : tout le monde est servi.",
-  "Ici, la cantine du CAC 40 se vide avant le dessert."
+  "Marine leur offre le dessert, plus dix pour cent. Ils partent avant.",
+  "Les patrons partent avant le dessert.",
+  "Les patrons, eux, sortent du dîner atterrés, raconte la presse."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine. Les patrons, moins.",
+   "text": "Dans cette ville, tout le monde vote Marine. Plus dix pour cent.",
    "accent_words": [
-    "Les patrons"
+    "Plus dix pour cent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Avril 2026 : dîner chez Drouant avec le CAC 40.",
-   "accent_words": [
-    "Drouant"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "Beaucoup en sortent atterrés, la trouvant furieusement étatiste, raconte la presse.",
-   "accent_words": [
-    "atterrés"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "Aux salariés, dix pour cent de hausse promis. Payés par les atterrés ?",
+   "text": "Avril 2026, dîner avec des patrons. Aux salariés : dix pour cent promis.",
    "accent_words": [
     "dix pour cent"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n5",
-   "text": "Ici, la cantine du CAC 40 se vide avant le dessert.",
+   "id": "n3",
+   "text": "Alors la mairie promet dix pour cent de soleil.",
    "accent_words": [
-    "se vide"
+    "soleil"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n6",
-   "text": "Plaire au patron et au salarié en même temps : même Macron a abandonné.",
+   "id": "n4",
+   "text": "Le soleil brille dix pour cent de plus. La ville fond.",
    "accent_words": [
-    "même Macron"
+    "fond"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Les patrons, eux, sortent du dîner atterrés, raconte la presse.",
+   "accent_words": [
+    "atterrés"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n6",
+   "text": "Marine leur offre le dessert, plus dix pour cent. Ils partent avant.",
+   "accent_words": [
+    "avant"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui veut plaire au patron et à la caissière.",
    "accent_words": [
-    "la caissière"
+    "caissière"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,57 +89,115 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; un restaurant chic éclairé en face.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "+10 % SUR TOUT",
+   "comic_action": "Descente sur la ville ; banderole « +10 % SUR TOUT » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "+10 %"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "arch",
-    "column",
+    "table",
+    "building",
     "person",
-    "studio_light"
+    "text3d"
    ],
-   "onscreen_text": "DÎNER CAC 40",
-   "comic_action": "Sous une arche, une longue table nappée, chandeliers, costumes.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "+10 % PROMIS",
+   "comic_action": "Salon feutré, table dressée ; carton « +10 % PROMIS ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "person",
-    "road",
-    "building",
-    "sign"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "SORTIE : ATTERRÉS",
-   "comic_action": "Des costumes quittent le restaurant à la file, mines défaites.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "+10 % DE SOLEIL",
+   "comic_action": "Descente sur la ville ; banderole « +10 % DE SOLEIL » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SOLEIL : +10 %"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "+10 % (PAYÉ PAR ?)",
-   "comic_action": "L'écran affiche une flèche « +10 % » qui cherche un payeur.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "LA VILLE FOND",
+   "comic_action": "Dans la rue, panneau « LA VILLE FOND ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "fatigue"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -149,13 +207,24 @@
    "camera": "window_pass",
    "set": [
     "table",
+    "building",
     "person",
-    "screen",
     "text3d"
    ],
-   "onscreen_text": "DESSERT · PUIS PERSONNE",
-   "comic_action": "Une cantine dorée se vide dès que le maître d'hôtel ouvre un dossier.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PATRONS ATTERRÉS",
+   "comic_action": "Salon feutré, table dressée ; carton « PATRONS ATTERRÉS ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "facepalm"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -164,14 +233,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "EN MÊME TEMPS : ÉCHEC",
-   "comic_action": "Entre deux colonnes, une balance qui penche des deux côtés. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "DESSERT : +10 %",
+   "comic_action": "Plan final, tenir une seconde : « DESSERT : +10 % ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +267,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt tient deux menus différents.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE DIPLOMATE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE DIPLOMATE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,49 +290,39 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 83,
+ "word_count": 80,
  "claims": [
   {
    "segment": "n2",
-   "text": "Avril 2026 : dîner chez Drouant avec le CAC 40.",
+   "text": "Avril 2026, dîner avec des patrons. Aux salariés : dix pour cent promis.",
    "claim_type": "fait_public",
-   "source": "https://info.fr/drouant-medef-bardella-cac40-apprivoise-rn-presidentielle-2027/",
-   "note": "Dîner du 07/04/2026 chez Drouant avec des patrons du CAC 40 ; beaucoup en sortent atterrés, la jugeant furieusement étatiste.",
-   "sources_complementaires": [
-    "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html"
-   ]
+   "source": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
+   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne parfois difficile à concilier."
   },
   {
-   "segment": "n3",
-   "text": "Beaucoup en sortent atterrés, la trouvant furieusement étatiste, raconte la presse.",
+   "segment": "n5",
+   "text": "Les patrons, eux, sortent du dîner atterrés, raconte la presse.",
    "claim_type": "fait_public",
    "source": "https://info.fr/drouant-medef-bardella-cac40-apprivoise-rn-presidentielle-2027/",
    "note": "Dîner du 07/04/2026 chez Drouant avec des patrons du CAC 40 ; beaucoup en sortent atterrés, la jugeant furieusement étatiste."
-  },
-  {
-   "segment": "n4",
-   "text": "Aux salariés, dix pour cent de hausse promis. Payés par les atterrés ?",
-   "claim_type": "fait_public",
-   "source": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
-   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne « parfois difficile à concilier »."
   }
  ],
  "sources": [
   {
-   "url": "https://info.fr/drouant-medef-bardella-cac40-apprivoise-rn-presidentielle-2027/",
-   "date": "2026",
-   "consulted": "2026-11-22",
-   "statut": "fait rapporté (d'après L'Opinion)",
-   "note": "Dîner du 07/04/2026 chez Drouant avec des patrons du CAC 40 ; beaucoup en sortent atterrés, la jugeant furieusement étatiste."
-  },
-  {
    "url": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
    "date": "2026-07-08",
    "consulted": "2026-11-22",
-   "statut": "fait public + analyse",
-   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne « parfois difficile à concilier »."
+   "statut": "fait + analyse",
+   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne parfois difficile à concilier."
+  },
+  {
+   "url": "https://info.fr/drouant-medef-bardella-cac40-apprivoise-rn-presidentielle-2027/",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "fait (récit de presse)",
+   "note": "Dîner du 07/04/2026 chez Drouant avec des patrons du CAC 40 ; beaucoup en sortent atterrés, la jugeant furieusement étatiste."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = avril 2026 : dîner chez Drouant avec des patrons du CAC 40, beaucoup en sortent atterrés, la jugeant « furieusement étatiste » (d'après L'Opinion) ; aux salariés, +10 % promis. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = le dîner avec les grands patrons et les +10 % promis aux salariés. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

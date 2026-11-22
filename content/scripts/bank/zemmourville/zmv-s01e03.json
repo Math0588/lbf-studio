@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-03",
  "format": "A",
- "title_cover": "Le pavé au grenier",
+ "title_cover": "Retour au Minitel",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le cloud, c'est un grenier.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, sauvegarder un fichier prend cinq cents pages.",
-  "Zemmourville : la ville où tout est archivé en déclin."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien regrette.",
+  "Zemmour dit que c'était mieux avant. La ville a reculé ses horloges.",
+  "Les zemmouriens vont me détester.",
+  "Bienvenue à Zemmourville : retour au Minitel.",
+  "Zemmour en une vidéo : retour au Minitel."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le grenier est plein de déclin. Les sondages aussi : environ 4 % à la rentrée.",
-  "Cinq cents pages de déclin, zéro sauvegarde.",
-  "Le cloud a gagné. Le grenier fait la tête."
+  "Mieux avant, c'est vrai : avant, il était à 17 % dans les sondages.",
+  "Avant, il était à 17 %. Ça, c'était vraiment mieux.",
+  "Puis aux pigeons voyageurs. Ils se perdent, faute de GPS."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. En papier.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien regrette.",
    "accent_words": [
-    "En papier"
+    "Même le chien regrette"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, pas de cloud. On stocke tout dans un pavé.",
+   "text": "Son fonds de commerce : la nostalgie, le déclin, le c'était mieux avant.",
    "accent_words": [
-    "un pavé"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Le modèle : son pavé de 2014, plus de cinq cents pages, best-seller.",
-   "accent_words": [
-    "best-seller"
+    "mieux avant"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "Cinq cents pages pour dire que tout va mal. Le grenier s'est effondré.",
+   "id": "n3",
+   "text": "La ville recule toutes ses horloges. Direction 1965.",
    "accent_words": [
-    "effondré"
+    "Direction 1965"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Retour au Minitel : commander une pizza prend trois jours.",
+   "accent_words": [
+    "trois jours"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Ton fichier perdu ? Il est page 312, entre deux déclins.",
+   "text": "Puis aux pigeons voyageurs. Ils se perdent, faute de GPS.",
    "accent_words": [
-    "page 312"
+    "de GPS"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le grenier est plein de déclin. Les sondages aussi : environ 4 % à la rentrée.",
+   "text": "Mieux avant, c'est vrai : avant, il était à 17 % dans les sondages.",
    "accent_words": [
-    "environ 4 %"
+    "les sondages"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui imprime encore ses mails.",
+   "text": "Envoie ça au pote qui dit que c'était mieux avant.",
    "accent_words": [
-    "imprime"
+    "mieux avant"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un grenier : des cartons de pavés à la place des serveurs.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · RETOUR AU MINITEL",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "C'ÉTAIT MIEUX AVANT"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,13 +123,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "form_stack",
-    "table",
-    "person"
+    "scroll",
+    "text3d",
+    "tribune"
    ],
-   "onscreen_text": "CLOUD = PAVÉ",
-   "comic_action": "Un habitant glisse une clé USB dans un énorme livre ; rien ne se passe.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "C'ÉTAIT MIEUX AVANT",
+   "comic_action": "Le maire soupire devant un vieux calendrier.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "C'ÉTAIT MIEUX AVANT"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,28 +151,54 @@
    ],
    "camera": "orbit",
    "set": [
-    "form_stack",
-    "text3d",
+    "column",
+    "mairie",
     "person"
    ],
-   "onscreen_text": "2014 · 500 PAGES",
-   "comic_action": "Orbite autour d'une pile de livres qui monte jusqu'aux poutres.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "HORLOGES : 1965",
+   "comic_action": "Un agent fait tourner les aiguilles de l'horloge à l'envers.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "spin",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "HEURE : 1965"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "building",
-    "form_stack",
+    "screen",
+    "table",
     "person"
    ],
-   "onscreen_text": "PLANCHER : EFFONDRÉ",
-   "comic_action": "La caméra glisse le long de la façade : le grenier traverse les étages.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "MINITEL : 3 JOURS",
+   "comic_action": "Un habitant tape sur un Minitel, la pizza froide à côté.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PIZZA : J+3"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -145,13 +207,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
-    "text3d",
+    "tree",
+    "gps",
     "person"
    ],
-   "onscreen_text": "FICHIER : P. 312",
-   "comic_action": "Gros plan : un doigt suit une ligne ; un dossier dessiné entre deux paragraphes.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PIGEONS : PERDUS",
+   "comic_action": "Des pigeons tournent en rond au-dessus du rond-point.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "NOSTALGIQUE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +235,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
+    "screen",
     "text3d",
-    "form_stack"
+    "banner"
    ],
-   "onscreen_text": "DÉCLIN : 4 %",
-   "comic_action": "Plan large : la maison penche sous le poids des pavés.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "AVANT : 17 %",
+   "comic_action": "Un vieux sondage encadré, avec un ruban de deuil.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "17 % (EN 2021)"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,51 +268,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique remonte au grenier avec une imprimante.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui imprime encore ses mails."
+  "text": "Envoie ça au pote qui dit que c'était mieux avant."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 82,
+ "word_count": 77,
  "claims": [
   {
-   "text": "Le modèle : Le Suicide français, plus de cinq cents pages, best-seller en 2014.",
+   "text": "Son fonds de commerce : la nostalgie, le déclin, le c'était mieux avant.",
    "claim_type": "fait_public",
-   "source": "https://actualitte.com/article/46032/numerique/le-suicide-francais-d-039-eric-zemmour-n-039-en-finit-pas-de-declencher-des-remous",
-   "note": "Le Suicide français (2014) : plus de 500 pages, best-seller."
+   "source": "https://www.jean-jaures.org/publication/declinisme-et-nostalgie-un-cocktail-francais/",
+   "note": "Fondation Jean-Jaurès : « Déclinisme et nostalgie, un cocktail français »."
   },
   {
-   "text": "Le grenier est plein de déclin. Les sondages aussi : environ 4 % à la rentrée.",
+   "text": "Mieux avant, c'est vrai : avant, il était à 17 % dans les sondages.",
    "claim_type": "fait_public",
-   "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
-   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
+   "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
   }
  ],
  "sources": [
   {
-   "url": "https://actualitte.com/article/46032/numerique/le-suicide-francais-d-039-eric-zemmour-n-039-en-finit-pas-de-declencher-des-remous",
-   "date": "2014-10",
+   "url": "https://www.jean-jaures.org/publication/declinisme-et-nostalgie-un-cocktail-francais/",
+   "date": "2021",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Le Suicide français (2014) : plus de 500 pages, best-seller."
+   "note": "Fondation Jean-Jaurès : « Déclinisme et nostalgie, un cocktail français »."
   },
   {
-   "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
-   "date": "2026-09",
+   "url": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "date": "2021-10-07",
    "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
-   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
+   "statut": "fait",
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Le Suicide français (2014), pavé décliniste de plus de 500 pages. Cadre : le cloud au grenier. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Son fonds de commerce : la nostalgie, le déclin, le c'était mieux avant. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

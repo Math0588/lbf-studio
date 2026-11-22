@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-28",
  "format": "A",
- "title_cover": "Calimero en chef",
+ "title_cover": "Bureau des plaintes",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, le plus grand bâtiment est le bureau des réclamations.",
-  "Marineville : c'est toujours la faute des autres.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : calimero en chef."
+  "Dans cette ville, tout le monde vote Marine. Et râle en chœur.",
+  "Marineville : tout le monde est Calimero.",
+  "Ici, le bureau des plaintes est le plus grand bâtiment.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Bureau des plaintes."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Traiter les autres de Calimero après quinze ans à se plaindre du système : expertise.",
-  "Le service est ouvert sept jours sur sept : c'est toujours la faute des autres.",
-  "La mairie a même un hymne : c'est trop injuste, en boucle."
+  "Marine y dépose la sienne : quinze ans contre le système, c'est trop injuste.",
+  "C'est trop injuste, dit-elle aussi.",
+  "Le bureau des plaintes devient le plus grand bâtiment de la ville."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,7 +23,7 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Et râle en chœur.",
    "accent_words": [
-    "en chœur"
+    "râle"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -31,39 +31,39 @@
    "id": "n2",
    "text": "À Marseille, elle surnomme le Premier ministre « Calimero Lecornu ».",
    "accent_words": [
-    "Calimero"
+    "Lecornu"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Elle fustigeait alors son allocution sur le budget.",
+   "text": "Alors la ville traite tout le monde de Calimero : le boulanger, le bus.",
    "accent_words": [
-    "allocution"
+    "bus"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, le bureau des réclamations est le plus grand bâtiment de la ville.",
+   "text": "Les Calimero se vexent et se plaignent, en boucle.",
    "accent_words": [
-    "réclamations"
+    "en boucle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La mairie a même un hymne : c'est trop injuste, en boucle.",
+   "text": "Le bureau des plaintes devient le plus grand bâtiment de la ville.",
    "accent_words": [
-    "trop injuste"
+    "ville"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Traiter les autres de Calimero après quinze ans à se plaindre du système : expertise.",
+   "text": "Marine y dépose la sienne : quinze ans contre le système, c'est trop injuste.",
    "accent_words": [
-    "de l'expertise"
+    "injuste"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui traite les autres de pleurnichards en râlant.",
    "accent_words": [
-    "en râlant"
+    "râlant"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,26 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; un panneau « RÉCLAMATIONS » plus grand que la façade.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "ON RÂLE EN CHŒUR",
+   "comic_action": "Descente sur la ville ; banderole « ON RÂLE EN CHŒUR » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "manif",
+     "visage": "colere"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,29 +118,58 @@
    "camera": "orbit",
    "set": [
     "tribune",
-    "studio_light",
-    "text3d",
+    "lift_tribune",
+    "banner",
     "person"
    ],
-   "onscreen_text": "« CALIMERO »",
-   "comic_action": "Tribune : la maire cubique pointe un petit poussin en peluche.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« CALIMERO LECORNU »",
+   "comic_action": "Meeting : la tribune s'élève, banderole « « CALIMERO LECORNU » ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "BUDGET : FUSTIGÉ",
-   "comic_action": "L'écran affiche un discours budgétaire barré d'une croix.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "TOUS CALIMERO",
+   "comic_action": "Dans la rue, panneau « TOUS CALIMERO ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CALIMERO DU JOUR"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -132,30 +178,54 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "facade_row",
-    "facade_set",
+    "road",
+    "sign",
     "person",
-    "banner"
+    "traffic_light"
    ],
-   "onscreen_text": "RÉCLAMATIONS : 12 ÉTAGES",
-   "comic_action": "Une tour de bureaux entière marquée « RÉCLAMATIONS ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PLAINTES EN BOUCLE",
+   "comic_action": "Dans la rue, panneau « PLAINTES EN BOUCLE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "manif",
+     "visage": "colere"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
     "ground",
+    "mairie",
     "banner",
-    "person",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "HYMNE : TROP INJUSTE",
-   "comic_action": "La fanfare joue une complainte ; les habitants chantent en pleurnichant.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LE BUREAU DES PLAINTES",
+   "comic_action": "Descente sur la ville ; banderole « LE BUREAU DES PLAINTES » sur la mairie.",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "visage": "fatigue"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -164,14 +234,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "EXPERTE EN CALIMERO",
-   "comic_action": "Entre deux colonnes, un diplôme encadré « CALIMERO, NIVEAU EXPERT ». Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "C'EST TROP INJUSTE",
+   "comic_action": "Plan final, tenir une seconde : « C'EST TROP INJUSTE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "colere"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +268,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt râle contre la vitrine.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI RÂLE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI RÂLE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,19 +291,12 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 83,
+ "word_count": 84,
  "claims": [
   {
    "segment": "n2",
-   "text": "« Calimero Lecornu »",
+   "text": "À Marseille, elle surnomme le Premier ministre « Calimero Lecornu ».",
    "claim_type": "citation_exacte",
-   "source": "https://www.europe1.fr/politique/calimero-lecornu-a-marseille-marine-le-pen-fustige-lallocutation-budgetaire-du-premier-ministre-880087",
-   "note": "« Calimero Lecornu » : à Marseille, elle fustige l'allocution budgétaire du Premier ministre."
-  },
-  {
-   "segment": "n3",
-   "text": "Elle fustigeait alors son allocution sur le budget.",
-   "claim_type": "fait_public",
    "source": "https://www.europe1.fr/politique/calimero-lecornu-a-marseille-marine-le-pen-fustige-lallocutation-budgetaire-du-premier-ministre-880087",
    "note": "« Calimero Lecornu » : à Marseille, elle fustige l'allocution budgétaire du Premier ministre."
   }
@@ -221,10 +306,10 @@
    "url": "https://www.europe1.fr/politique/calimero-lecornu-a-marseille-marine-le-pen-fustige-lallocutation-budgetaire-du-premier-ministre-880087",
    "date": "2026-01 (selon résumé de recherche)",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (titre Europe 1)",
+   "statut": "citation exacte",
    "note": "« Calimero Lecornu » : à Marseille, elle fustige l'allocution budgétaire du Premier ministre."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = janvier 2026, à Marseille : elle surnomme le Premier ministre « Calimero Lecornu ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « Calimero Lecornu » (Marseille). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

@@ -4,79 +4,79 @@
  "synopsis_id": "mlv-m017-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Chantier en edit",
- "anchor": "les edits vidéo pro-Mélenchon (ralentis, musique épique).",
+ "title_cover": "Le peuple, c'est lui",
+ "anchor": "« le peuple, sa représentation, c'est moi » (2026) : les habitants deviennent inutiles.",
  "meme_id": "MM",
- "situation": "les travaux",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : les travaux avancent en ralenti, musique épique.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, chaque coup de pelle a son edit.",
-  "Mélenchonville : le chantier le plus viral, le moins fini."
+  "Dans cette ville, tout le monde vote Mélenchon. Le peuple, c'est lui.",
+  "Mélenchon est le peuple. La ville a donc renvoyé les habitants.",
+  "Les insoumis vont me détester.",
+  "Bienvenue à Mélenchonville : le peuple, c'est lui.",
+  "Mélenchon en une vidéo : le peuple, c'est lui."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ici, on a les plus beaux travaux de France. En vidéo seulement.",
-  "Des millions de vues, zéro mètre de route.",
-  "Le chantier est beau à l'écran, troué en vrai."
+  "Le peuple, c'est lui. Dommage qu'il ne se soit jamais élu président.",
+  "Le peuple, c'est lui. Dommage qu'il ne se soit jamais élu président.",
+  "Il remplit seul la salle de meeting. Il s'applaudit, se répond."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Et en ralenti.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Le peuple, c'est lui.",
    "accent_words": [
-    "Et en ralenti"
+    "Le peuple, c'est lui"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ses fans montent des edits : musique épique, ralentis, effets dorés.",
+   "text": "En 2026, il précise : « le peuple, sa représentation, c'est moi ».",
    "accent_words": [
-    "effets dorés"
+    "c'est moi"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Ici, le chantier fait pareil. Chaque coup de pelle en slow motion.",
+   "text": "La mairie applique : il est le peuple. Les habitants ne servent plus.",
    "accent_words": [
-    "slow motion"
+    "servent plus"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ses fans s'appellent les zinzinsoumis. Ici, ce sont les ouvriers.",
+   "text": "Il fait seul les courses de toute la ville. Quarante mille caddies.",
    "accent_words": [
-    "zinzinsoumis"
+    "Quarante mille caddies"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le chantier cartonne en ligne. Sur place, il n'a pas avancé d'un mètre.",
+   "text": "Il remplit seul la salle de meeting. Il s'applaudit, se répond.",
    "accent_words": [
-    "d'un mètre"
+    "Il s'applaudit, se répond"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ici, on a les plus beaux travaux de France. En vidéo seulement.",
+   "text": "Le peuple, c'est lui. Dommage qu'il ne se soit jamais élu président.",
    "accent_words": [
-    "En vidéo"
+    "élu président"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui filme sa vie plus qu'il ne la vit.",
+   "text": "Envoie ça au pote qui parle au nom du groupe sans demander.",
    "accent_words": [
-    "filme sa vie"
+    "sans demander"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "person",
-    "tripod_camera"
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un chantier : une caméra sur trépied à chaque coin.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · LE PEUPLE, C'EST LUI",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "LE PEUPLE, C'EST LUI"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,58 +128,110 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "column",
+    "arch",
+    "text3d"
    ],
-   "onscreen_text": "EDIT OFFICIEL",
-   "comic_action": "Écran de chantier : un clip doré tourne en boucle.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« LE PEUPLE, C'EST MOI »",
+   "comic_action": "Une statue de roi rend sa couronne au maire.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LE PEUPLE, C'EST LUI"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
+    "mairie",
     "person",
-    "road",
-    "tripod_camera"
+    "road"
    ],
-   "onscreen_text": "SLOW MOTION",
-   "comic_action": "Travelling : un ouvrier soulève une pelletée au ralenti, poussière dorée.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "HABITANTS : INUTILES",
+   "comic_action": "Des habitants renvoyés chez eux avec un carton.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "HABITANTS : EN TROP"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
+    "shop",
     "person",
-    "text3d",
-    "studio_light"
+    "text3d"
    ],
-   "onscreen_text": "OUVRIERS ZINZINSOUMIS",
-   "comic_action": "Gros plan : un ouvrier casqué tient une pancarte « ZINZINSOUMIS », violons en fond.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "40 000 CADDIES",
+   "comic_action": "Le maire pousse un train infini de caddies.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shake",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CADDIE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "road",
-    "sign",
-    "screen"
+    "tribune",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "4 M DE VUES · 0 M",
-   "comic_action": "Orbite : compteur de vues énorme, trou béant dans la route.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SALLE : LUI × 1",
+   "comic_action": "Le maire au pupitre, puis au premier rang, puis au fond.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "clap",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PUBLIC : 1"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +240,26 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "screen",
-    "text3d"
+    "lift_tribune",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "EN VIDÉO SEULEMENT",
-   "comic_action": "Plan large : écran géant montrant une route parfaite, devant une route défoncée.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "ÉLU PRÉSIDENT : JAMAIS",
+   "comic_action": "Une urne où il glisse son bulletin… qui ressort.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BULLETIN : REFUSÉ"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,44 +273,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique trébuche dans le trou, au ralenti.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui filme sa vie plus qu'il ne la vit."
+  "text": "Envoie ça au pote qui parle au nom du groupe sans demander."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 82,
+ "word_count": 85,
  "claims": [
   {
-   "text": "Ses fans montent des edits : musique épique, ralentis, effets dorés.",
-   "claim_type": "fait_public",
-   "source": "https://www.ladn.eu/media-mutants/comment-la-france-insoumise-a-fait-de-ledit-video-son-arme-pour-2027/",
-   "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique), fans surnommés « zinzinsoumis »."
+   "text": "En 2026, il précise : « le peuple, sa représentation, c'est moi ».",
+   "claim_type": "citation_exacte",
+   "source": "https://lcp.fr/actualites/la-republique-c-est-moi-jean-luc-melenchon-assume-un-moment-d-audace-deraisonnable",
+   "note": "Mardis de l'Essec (27/10/2026) : il assume une « audace déraisonnable », « je n'ai pas de regrets », pas au sens du Roi-Soleil mais « le peuple, sa représentation, c'est moi »."
   },
   {
-   "text": "Ses fans s'appellent les zinzinsoumis. Ici, ce sont les ouvriers.",
+   "text": "Le peuple, c'est lui. Dommage qu'il ne se soit jamais élu président.",
    "claim_type": "fait_public",
-   "source": "https://www.ladn.eu/media-mutants/comment-la-france-insoumise-a-fait-de-ledit-video-son-arme-pour-2027/",
-   "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique), fans surnommés « zinzinsoumis »."
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
   {
-   "url": "https://www.ladn.eu/media-mutants/comment-la-france-insoumise-a-fait-de-ledit-video-son-arme-pour-2027/",
-   "date": "2026",
+   "url": "https://lcp.fr/actualites/la-republique-c-est-moi-jean-luc-melenchon-assume-un-moment-d-audace-deraisonnable",
+   "date": "2026-10-28",
    "consulted": "2026-11-22",
-   "statut": "mème",
-   "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique), fans surnommés « zinzinsoumis »."
+   "statut": "citation_exacte",
+   "note": "Mardis de l'Essec (27/10/2026) : il assume une « audace déraisonnable », « je n'ai pas de regrets », pas au sens du Roi-Soleil mais « le peuple, sa représentation, c'est moi »."
+  },
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : les edits vidéo pro-Mélenchon (ralentis, musique épique). Cadre : les travaux. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2026, il précise : « le peuple, sa représentation, c'est moi ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

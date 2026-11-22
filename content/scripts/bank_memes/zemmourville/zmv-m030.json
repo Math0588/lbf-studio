@@ -4,79 +4,79 @@
  "synopsis_id": "zmv-m030-gm",
  "format": "A",
  "length": "court",
- "title_cover": "L'amphi Versailles",
- "anchor": "géographie du vote 2022 : fort à Versailles et dans les beaux quartiers.",
+ "title_cover": "Cantine au déclin",
+ "anchor": "« Du déclin jusqu'à la nausée » : la cantine en sert à tous les repas.",
  "meme_id": "ZT",
- "situation": "l'université",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : l'amphi se tient dans la galerie des Glaces.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, la fac a un dress code en tweed.",
-  "Zemmourville : l'université où le cours s'arrête avant 1789."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien a la nausée.",
+  "On avait prévenu : avec Zemmour, du déclin jusqu'à la nausée. La cantine a suivi.",
+  "Celle-là, Zemmour ne la partagera pas.",
+  "Bienvenue à Zemmourville : cantine au déclin.",
+  "Zemmour en une vidéo : cantine au déclin."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le miroir de la galerie flatte. Les urnes, elles, affichent 7 %.",
-  "Les miroirs flattent, les urnes non.",
-  "Un amphi doré pour un score modeste."
+  "Le plat le plus dur à avaler reste le sien : 4 % à la rentrée.",
+  "Le plat le plus dur à avaler reste le sien : 4 % à la rentrée.",
+  "Les élèves réclament des frites. On leur sert une chronique."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Amphi Versailles.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien a la nausée.",
    "accent_words": [
-    "Amphi Versailles"
+    "la nausée"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2022, il est fort à Versailles. Ici, l'amphi est donc la galerie des Glaces.",
+   "text": "Un blogueur prévenait : avec lui, du déclin jusqu'à la nausée.",
    "accent_words": [
-    "galerie des Glaces"
+    "la nausée"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Le cours magistral commence par un soupir. Puis un deuxième.",
+   "text": "La cantine sert donc du déclin à tous les repas.",
    "accent_words": [
-    "un deuxième"
+    "les repas"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Dress code : veste en tweed, chevalière, avis tranché sur 1789.",
+   "text": "Entrée déclin, plat déclin, dessert c'était mieux avant.",
    "accent_words": [
-    "1789"
+    "mieux avant"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les débats durent des heures. La conclusion est toujours : avant.",
+   "text": "Les élèves réclament des frites. On leur sert une chronique.",
    "accent_words": [
-    "avant"
+    "une chronique"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le miroir de la galerie flatte. Les urnes, elles, affichent 7 %.",
+   "text": "Le plat le plus dur à avaler reste le sien : 4 % à la rentrée.",
    "accent_words": [
-    "7 %"
+    "la rentrée"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui a un avis sur 1789 mais pas sur son loyer.",
+   "text": "Envoie ça au pote qui ressert le même sujet à chaque repas.",
    "accent_words": [
-    "son loyer"
+    "chaque repas"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,43 +90,93 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "column",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un amphi installé dans une galerie dorée.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · CANTINE AU DÉCLIN",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "DÉCLIN À VOLONTÉ"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "column",
+    "scroll",
     "text3d",
-    "person"
+    "tribune"
    ],
-   "onscreen_text": "AMPHI DES GLACES",
-   "comic_action": "Orbite dans une galerie de miroirs, bancs d'amphi au milieu.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "DÉCLIN JUSQU'À LA NAUSÉE",
+   "comic_action": "Un plat fumant étiqueté « DÉCLIN » sur le pupitre.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "DÉCLIN À VOLONTÉ"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "tribune",
+    "table",
     "person",
     "text3d"
    ],
-   "onscreen_text": "SOUPIR N° 2",
-   "comic_action": "Gros plan sur le professeur, les yeux au plafond doré.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CANTINE : DÉCLIN",
+   "comic_action": "Plateaux identiques, étiquette « DÉCLIN ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MENU : DÉCLIN"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -135,13 +185,26 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "person",
-    "sign",
-    "text3d"
+    "table",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "DRESS CODE",
-   "comic_action": "Travelling : étudiants en tweed, chevalière sur le pupitre.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DESSERT : C'ÉTAIT MIEUX AVANT",
+   "comic_action": "Un dessert en forme de vieille horloge.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CANTINIER"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,13 +213,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
+    "building",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "CONCLUSION : AVANT",
-   "comic_action": "Les copies empilées, toutes finissent par le même mot.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "FRITES : NON · CHRONIQUE : OUI",
+   "comic_action": "Une dame de cantine tend un micro au lieu d'une assiette.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "manif",
+     "visage": "colere",
+     "objet": "pancarte"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FRITES : 0"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +242,26 @@
    ],
    "camera": "descend",
    "set": [
-    "column",
-    "building",
+    "table",
+    "banner",
     "text3d"
    ],
-   "onscreen_text": "MIROIR · 7 %",
-   "comic_action": "Plan large : dans chaque miroir, le chiffre 7 se reflète à l'infini.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "PLAT DU JOUR : 4 %",
+   "comic_action": "Une assiette avec un « 4 % » en purée.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "4 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,51 +275,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique se regarde dans un miroir, sans tweed.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui a un avis sur 1789 mais pas sur son loyer."
+  "text": "Envoie ça au pote qui ressert le même sujet à chaque repas."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 84,
+ "word_count": 81,
  "claims": [
   {
-   "text": "En 2022, il est fort à Versailles. Ici, l'amphi est donc la galerie des Glaces.",
+   "text": "Un blogueur prévenait : avec lui, du déclin jusqu'à la nausée.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/geographie-du-vote-une-france-eclatee-en-trois-202165",
-   "note": "2022 : deuxième dans les 16e, 7e et 8e arrondissements de Paris, fort à Versailles."
+   "source": "https://www.slate.fr/story/215283/blog-sagalovitsch-avec-zemmour-compagnie-on-va-bouffer-declin-francais-nausee",
+   "note": "Blog Slate : « on va bouffer du déclin jusqu'à la nausée » (paraphrasé sans guillemets)."
   },
   {
-   "text": "Le miroir de la galerie flatte. Les urnes, elles, affichent 7 %.",
+   "text": "Le plat le plus dur à avaler reste le sien : 4 % à la rentrée.",
    "claim_type": "fait_public",
-   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
-   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+   "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
+   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/geographie-du-vote-une-france-eclatee-en-trois-202165",
-   "date": "2022-04",
+   "url": "https://www.slate.fr/story/215283/blog-sagalovitsch-avec-zemmour-compagnie-on-va-bouffer-declin-francais-nausee",
+   "date": "2021-09",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "2022 : deuxième dans les 16e, 7e et 8e arrondissements de Paris, fort à Versailles."
+   "note": "Blog Slate : « on va bouffer du déclin jusqu'à la nausée » (paraphrasé sans guillemets)."
   },
   {
-   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
-   "date": "2022-04",
+   "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
+   "date": "2026-09",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : géographie du vote 2022 : fort à Versailles et dans les beaux quartiers. Cadre : l'université. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Un blogueur prévenait : avec lui, du déclin jusqu'à la nausée. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

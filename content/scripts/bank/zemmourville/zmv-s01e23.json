@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-18",
  "format": "A",
- "title_cover": "Tri par siècle",
+ "title_cover": "Tout au destin",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : les poubelles sont classées par siècle.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, le présent va direct à la décharge.",
-  "Zemmourville : le tri sélectif historique."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien attend son destin.",
+  "Zemmour a écrit Destin français. La ville a tout confié au destin.",
+  "Les zemmouriens vont me détester.",
+  "Bienvenue à Zemmourville : tout au destin.",
+  "Zemmour en une vidéo : tout au destin."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Toute l'histoire est recyclée. Sauf 2022 et ses 7 % : jetés sans tri.",
-  "Mille ans d'histoire triés, une élection jetée.",
-  "Le passé est recyclé, le présent incinéré."
+  "Le destin a tranché en 2022 : quatrième.",
+  "Le destin a tranché en 2022 : quatrième.",
+  "Le destin oublie les poubelles. Trois semaines."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Le tri aussi.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien attend son destin.",
    "accent_words": [
-    "Le tri aussi"
+    "son destin"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, on ne trie pas par matière. On trie par siècle.",
-   "accent_words": [
-    "par siècle"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Bac Napoléon, bac Louis XIV. Le présent part à la décharge.",
-   "accent_words": [
-    "la décharge"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "Le guide de tri, c'est Destin français, son livre de 2018.",
+   "text": "En 2018, il publie Destin français.",
    "accent_words": [
     "Destin français"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n5",
-   "text": "Un pot de yaourt de 2026 ? Refusé : pas assez de destin.",
+   "id": "n3",
+   "text": "La mairie confie tout au destin. Plus de plans, plus d'horaires.",
    "accent_words": [
-    "pas assez de destin"
+    "plus d'horaires"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Le bus passe quand le destin le veut. Parfois mardi.",
+   "accent_words": [
+    "Parfois mardi"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Le destin oublie les poubelles. Trois semaines.",
+   "accent_words": [
+    "Trois semaines"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Toute l'histoire est recyclée. Sauf 2022 et ses 7 % : jetés sans tri.",
+   "text": "Le destin a tranché en 2022 : quatrième.",
    "accent_words": [
-    "jetés sans tri"
+    "quatrième"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui garde des cartons de 1998 au cas où.",
+   "text": "Envoie ça au pote qui laisse le destin choisir le resto.",
    "accent_words": [
-    "au cas où"
+    "le resto"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "bin",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une rue : poubelles étiquetées par siècle.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · TOUT AU DESTIN",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "LAISSEZ FAIRE LE DESTIN"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,43 +123,82 @@
    ],
    "camera": "closeup",
    "set": [
-    "bin",
-    "text3d",
-    "person"
+    "scroll",
+    "table",
+    "text3d"
    ],
-   "onscreen_text": "TRI PAR SIÈCLE",
-   "comic_action": "Gros plan : poubelles « XVIIe », « XIXe », « XXe (avant 1970) ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DESTIN FRANÇAIS",
+   "comic_action": "Un gros livre posé comme un oracle.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LAISSEZ FAIRE LE DESTIN"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "bin",
-    "road",
+    "mairie",
+    "sign",
     "person"
    ],
-   "onscreen_text": "PRÉSENT → DÉCHARGE",
-   "comic_action": "Travelling : un téléphone récent est jeté dans une benne « HORS D'ÉPOQUE ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "HORAIRES : LE DESTIN",
+   "comic_action": "Panneau des horaires remplacé par une roue de loterie.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "neutre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "OUVERTURE : SI LE DESTIN VEUT"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "form_stack",
-    "bin",
-    "text3d"
+    "bus",
+    "road",
+    "person"
    ],
-   "onscreen_text": "GUIDE : DESTIN FRANÇAIS",
-   "comic_action": "Orbite autour d'un pavé posé sur chaque couvercle.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "BUS : PEUT-ÊTRE MARDI",
+   "comic_action": "Des usagers jouent aux dés à l'arrêt de bus.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PATIENT"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -146,12 +208,25 @@
    "camera": "closeup",
    "set": [
     "bin",
-    "person",
-    "sign"
+    "road",
+    "text3d"
    ],
-   "onscreen_text": "REFUSÉ : 2026",
-   "comic_action": "Le couvercle se referme sur la main de l'habitant.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "POUBELLES : J+21",
+   "comic_action": "Montagne de sacs ; un pigeon plante un drapeau dessus.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "COLLECTE : LE DESTIN"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +235,26 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "bin",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "2022 : SANS TRI",
-   "comic_action": "Plan large : une benne « 2022 » part directement à l'incinérateur.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "DESTIN : 4E",
+   "comic_action": "La roue de loterie s'arrête sur « 4 ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "7,07 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,30 +268,44 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique trie un pot de yaourt, refusé.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui garde des cartons de 1998 au cas où."
+  "text": "Envoie ça au pote qui laisse le destin choisir le resto."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 84,
+ "word_count": 67,
  "claims": [
   {
-   "text": "Le guide de tri, c'est Destin français, son livre de 2018.",
+   "text": "En 2018, il publie Destin français.",
    "claim_type": "fait_public",
    "source": "https://search.worldcat.org/oclc/1052509571",
    "note": "Livre « Destin français » (Albin Michel, 2018)."
   },
   {
-   "text": "Toute l'histoire est recyclée. Sauf 2022 et ses 7 % : jetés sans tri.",
+   "text": "Le destin a tranché en 2022 : quatrième.",
    "claim_type": "fait_public",
    "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
@@ -226,5 +328,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « Destin français » (2018) : l'histoire de France triée, le présent jeté. Cadre : le tri des déchets. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2018, il publie Destin français. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

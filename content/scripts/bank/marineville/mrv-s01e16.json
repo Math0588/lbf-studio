@@ -3,18 +3,18 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-11",
  "format": "B",
- "title_cover": "Rupture en douceur",
+ "title_cover": "Rupture au coton-tige",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, on se sépare sans rupture brutale.",
-  "Marineville : on démolit les murs au coton-tige.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : rupture en douceur."
+  "Dans cette ville, tout le monde vote Marine. Rupture en douceur.",
+  "Marineville rompt avec tout. Au coton-tige.",
+  "Ici, on se sépare d'un centimètre par an.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Rupture au coton-tige."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La rupture, version Marineville : on se quitte, mais on garde l'appartement.",
-  "Ici, les couples se séparent sans rupture brutale : ils déménagent d'un centimètre par an.",
+  "Marine, à Orléans, confirme : « pas une rupture brutale ».",
+  "Pas une rupture brutale, promis.",
   "Le mur de la mairie est démoli au coton-tige."
  ],
  "selected_ending": 0,
@@ -23,31 +23,31 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Marine. Rupture en douceur.",
    "accent_words": [
-    "en douceur"
+    "douceur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Septembre 2025 : « S'il n'y a pas de rupture, il y aura censure ».",
+   "text": "En 2025 : « S'il n'y a pas de rupture, il y aura censure ».",
    "accent_words": [
-    "rupture"
+    "censure"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Octobre 2026, à Orléans : « pas une rupture brutale ».",
+   "text": "Alors la ville rompt avec tout. Mais doucement.",
    "accent_words": [
-    "pas une rupture brutale"
+    "doucement"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, les couples se séparent sans brusquer : ils déménagent d'un centimètre par an.",
+   "text": "Les couples se séparent d'un centimètre par an.",
    "accent_words": [
-    "un centimètre par an"
+    "an"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -61,17 +61,17 @@
   },
   {
    "id": "n6",
-   "text": "La rupture, version Marineville : on se quitte, mais on garde l'appartement.",
+   "text": "Marine, à Orléans, confirme : « pas une rupture brutale ».",
    "accent_words": [
-    "l'appartement"
+    "brutale"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
    "text": "Envoie ça au pote qui annonce une rupture et rappelle une heure après.",
    "accent_words": [
-    "une heure après"
+    "après"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,25 +89,54 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une pancarte « TRAVAUX DE RUPTURE (DOUX) ».",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "RUPTURE EN DOUCEUR",
+   "comic_action": "Descente sur la ville ; banderole « RUPTURE EN DOUCEUR » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "tribune",
     "studio_light",
-    "text3d",
-    "person"
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "« RUPTURE OU CENSURE »",
-   "comic_action": "Tribune : la maire cubique frappe le pupitre, projecteur rouge.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« IL Y AURA CENSURE »",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « « IL Y AURA CENSURE » ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -116,14 +145,31 @@
    ],
    "camera": "descend",
    "set": [
-    "lift_tribune",
-    "tribune",
-    "person",
-    "banner"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "« PAS BRUTALE »",
-   "comic_action": "La tribune s'élève sous une lumière rose, violons.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "ROMPRE DOUCEMENT",
+   "comic_action": "Descente sur la ville ; banderole « ROMPRE DOUCEMENT » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RUPTURE : 1 CM/AN"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -132,46 +178,83 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "facade_row",
-    "facade_set",
+    "road",
+    "sign",
     "person",
-    "banner"
+    "traffic_light"
    ],
-   "onscreen_text": "DÉMÉNAGEMENT : 1 CM/AN",
-   "comic_action": "Deux façades qui s'écartent imperceptiblement.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "1 CM PAR AN",
+   "comic_action": "Dans la rue, panneau « 1 CM PAR AN ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "fatigue"
+    },
+    {
+     "who": "foule",
+     "visage": "dort"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "column",
+    "ground",
     "mairie",
-    "text3d",
+    "banner",
     "person"
    ],
-   "onscreen_text": "DÉMOLITION : COTON-TIGE",
-   "comic_action": "Un ouvrier gratte une colonne avec un coton-tige.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DÉMOLITION AU COTON-TIGE",
+   "comic_action": "Descente sur la ville ; banderole « DÉMOLITION AU COTON-TIGE » sur la mairie.",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "visage": "fatigue"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "road",
-    "building",
-    "person",
-    "bin"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "RUPTURE (MÊME ADRESSE)",
-   "comic_action": "Un camion de déménagement fait le tour du pâté de maisons et revient. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "« PAS UNE RUPTURE BRUTALE »",
+   "comic_action": "Plan final, tenir une seconde : « « PAS UNE RUPTURE BRUTALE » ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "sourire_pro",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +268,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt rappelle, téléphone collé à l'oreille.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI RAPPELLE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI RAPPELLE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,18 +291,18 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 85,
+ "word_count": 75,
  "claims": [
   {
    "segment": "n2",
-   "text": "« S'il n'y a pas de rupture, il y aura censure »",
+   "text": "En 2025 : « S'il n'y a pas de rupture, il y aura censure ».",
    "claim_type": "citation_exacte",
    "source": "https://lcp.fr/index%2ephp/actualites/s-il-n-y-a-pas-de-rupture-il-y-aura-censure-declare-marine-le-pen-a-la-sortie-de",
    "note": "« S'il n'y a pas de rupture, il y aura censure »."
   },
   {
-   "segment": "n3",
-   "text": "« pas une rupture brutale »",
+   "segment": "n6",
+   "text": "Marine, à Orléans, confirme : « pas une rupture brutale ».",
    "claim_type": "citation_exacte",
    "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
    "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
@@ -221,17 +313,17 @@
    "url": "https://lcp.fr/index%2ephp/actualites/s-il-n-y-a-pas-de-rupture-il-y-aura-censure-declare-marine-le-pen-a-la-sortie-de",
    "date": "2025-09-17",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (LCP)",
+   "statut": "citation exacte",
    "note": "« S'il n'y a pas de rupture, il y aura censure »."
   },
   {
    "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
    "date": "2026-10-25",
    "consulted": "2026-11-22",
-   "statut": "fait public (analyse lexicale)",
+   "statut": "fait + citation exacte",
    "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = 2025 : « S'il n'y a pas de rupture, il y aura censure » ; Orléans 2026 : le changement, « pas une rupture brutale ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « S'il n'y a pas de rupture, il y aura censure », puis « pas une rupture brutale ». Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

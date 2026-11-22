@@ -3,40 +3,32 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-08",
  "format": "A",
- "title_cover": "Nostalgie d'Austerlitz",
+ "title_cover": "Austerlitz chaque week-end",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : la madeleine a la forme d'un bicorne.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, la nostalgie commence en 1805.",
-  "Zemmourville : la pâtisserie qui commémore des batailles."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien porte un bicorne.",
+  "Zemmour regrette Austerlitz. La ville la rejoue tous les week-ends.",
+  "Les zemmouriens vont me détester.",
+  "Bienvenue à Zemmourville : austerlitz chaque week-end.",
+  "Zemmour en une vidéo : austerlitz chaque week-end."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Regretter 1805, c'est pratique : cette bataille-là, il ne peut plus la perdre.",
-  "Austerlitz, oui. Les Trente Glorieuses, trop récentes.",
-  "Nostalgique de 1805, battu en 2022."
+  "Waterloo, il connaît : avril 2022, quatrième.",
+  "Waterloo, il connaît : en 2022, quatrième.",
+  "La reconstitution dure tant qu'elle déborde jusqu'à Waterloo."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Nostalgiques.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien porte un bicorne.",
    "accent_words": [
-    "Nostalgiques"
+    "un bicorne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, chacun a sa madeleine. Lui, c'est Austerlitz.",
-   "accent_words": [
-    "Austerlitz"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
    "text": "Un journal l'a décrit nostalgique d'Austerlitz plus que des Trente Glorieuses.",
    "accent_words": [
     "Trente Glorieuses"
@@ -44,34 +36,42 @@
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "Pas les congés payés, pas le plein emploi : les canons de 1805.",
+   "id": "n3",
+   "text": "La ville rejoue Austerlitz tous les week-ends.",
    "accent_words": [
-    "canons"
+    "les week-ends"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Les commerçants ferment, réquisitionnés en grognards.",
+   "accent_words": [
+    "en grognards"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le pâtissier sert la madeleine en bicorne. Trois euros, d'époque.",
+   "text": "La reconstitution dure tant qu'elle déborde jusqu'à Waterloo.",
    "accent_words": [
-    "d'époque"
+    "jusqu'à Waterloo"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Regretter 1805, c'est pratique : cette bataille-là, il ne peut plus la perdre.",
+   "text": "Waterloo, il connaît : avril 2022, quatrième.",
    "accent_words": [
-    "la perdre"
+    "avril 2022, quatrième"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote nostalgique d'une époque qu'il n'a pas connue.",
+   "text": "Envoie ça au pote qui raconte la même victoire depuis vingt ans.",
    "accent_words": [
-    "pas connue"
+    "vingt ans"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "shop",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une pâtisserie : vitrine de madeleines en bicorne.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · AUSTERLITZ CHAQUE WEEK-END",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "VIVE L'EMPEREUR"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,13 +123,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "text3d",
-    "person"
+    "column",
+    "arch",
+    "text3d"
    ],
-   "onscreen_text": "MADELEINE : 1805",
-   "comic_action": "Gros plan sur une madeleine en forme de bicorne.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "NOSTALGIE : AUSTERLITZ",
+   "comic_action": "Un tableau de bataille accroché dans le bureau du maire.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "VIVE L'EMPEREUR"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,13 +151,26 @@
    ],
    "camera": "orbit",
    "set": [
-    "shop",
-    "sign",
-    "text3d"
+    "ground",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "1805 > 1945-1975",
-   "comic_action": "Orbite : deux étagères, l'une « AUSTERLITZ » pleine, l'autre « TRENTE GLORIEUSES » vide.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "AUSTERLITZ : SAMEDI 14 H",
+   "comic_action": "Des habitants en costume d'époque chargent sur la pelouse.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "manif",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BATAILLE : 14 H"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -130,13 +179,26 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "person",
     "shop",
+    "person",
     "sign"
    ],
-   "onscreen_text": "CANONS > CONGÉS",
-   "comic_action": "Travelling : un client demande un éclair, on lui sert un boulet en chocolat.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "FERMÉ : PARTI À LA GUERRE",
+   "comic_action": "Rideau baissé, pancarte « RÉQUISITIONNÉ ».",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "GROGNARD"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -145,13 +207,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "text3d",
-    "person"
+    "sign",
+    "road",
+    "text3d"
    ],
-   "onscreen_text": "3 € D'ÉPOQUE",
-   "comic_action": "Le pâtissier rend la monnaie en pièces anciennes.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PROCHAINE ÉTAPE : WATERLOO",
+   "comic_action": "Le cortège passe sous un panneau « WATERLOO ».",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "WATERLOO : 2 KM"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +235,26 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
+    "screen",
     "text3d",
-    "scroll"
+    "banner"
    ],
-   "onscreen_text": "1805 : DÉJÀ GAGNÉE",
-   "comic_action": "Plan large : la vitrine illuminée, le reste de la rue en 2026.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "WATERLOO : 2022",
+   "comic_action": "Un drapeau blanc s'agite au-dessus du score.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "4E PLACE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,33 +268,47 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique croque le bicorne.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote nostalgique d'une époque qu'il n'a pas connue."
+  "text": "Envoie ça au pote qui raconte la même victoire depuis vingt ans."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 75,
+ "word_count": 65,
  "claims": [
-  {
-   "text": "Ici, chacun a sa madeleine. Lui, c'est Austerlitz.",
-   "claim_type": "fait_public",
-   "source": "https://www.irishexaminer.com/opinion/commentanalysis/arid-30904832.html",
-   "note": "Portrait en « historien pop », nostalgique d'Austerlitz plus que des Trente Glorieuses."
-  },
   {
    "text": "Un journal l'a décrit nostalgique d'Austerlitz plus que des Trente Glorieuses.",
    "claim_type": "fait_public",
    "source": "https://www.irishexaminer.com/opinion/commentanalysis/arid-30904832.html",
    "note": "Portrait en « historien pop », nostalgique d'Austerlitz plus que des Trente Glorieuses."
+  },
+  {
+   "text": "Waterloo, il connaît : avril 2022, quatrième.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
@@ -214,10 +316,17 @@
    "url": "https://www.irishexaminer.com/opinion/commentanalysis/arid-30904832.html",
    "date": "2021",
    "consulted": "2026-11-22",
-   "statut": "opinion",
+   "statut": "fait",
    "note": "Portrait en « historien pop », nostalgique d'Austerlitz plus que des Trente Glorieuses."
+  },
+  {
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : l'« historien pop » nostalgique d'Austerlitz plus que des Trente Glorieuses. Cadre : la pâtisserie et la madeleine. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Un journal l'a décrit nostalgique d'Austerlitz plus que des Trente Glorieuses. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

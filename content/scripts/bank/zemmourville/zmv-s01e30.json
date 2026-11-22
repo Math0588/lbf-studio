@@ -5,73 +5,73 @@
  "format": "A",
  "title_cover": "Binge du déclin",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : les vacances, c'est quatre épisodes de déclin.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, on part à la mer pour regarder des archives.",
-  "Zemmourville : le club de vacances le plus déprimant de France."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien regarde en boucle.",
+  "Le livre de Zemmour sur le déclin est devenu une série. La ville ne sort plus.",
+  "Attention : vidéo garantie sans nostalgie. Presque.",
+  "Bienvenue à Zemmourville : binge du déclin.",
+  "Zemmour en une vidéo : binge du déclin."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La saison deux ? Pas commandée. Comme le second tour.",
-  "Pas de saison deux, pas de second tour.",
-  "Les vacances sont finies. Le déclin, non."
+  "Saison deux ? Pas commandée. Comme son second tour.",
+  "Saison deux ? Pas commandée. Comme son second tour.",
+  "Le déclin devient enfin visible : à force de regarder la série."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. En vacances.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien regarde en boucle.",
    "accent_words": [
-    "En vacances"
+    "en boucle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, les vacances se passent devant une seule série : le déclin, saison 2014.",
-   "accent_words": [
-    "une seule série"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "Adapté de son livre, en quatre épisodes documentaires.",
+   "text": "Son best-seller de 2014 sur le déclin devient une série en quatre épisodes.",
    "accent_words": [
     "quatre épisodes"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "Épisode un : tout va mal. Épisode quatre : c'était mieux avant.",
+   "id": "n3",
+   "text": "La mairie la diffuse en boucle sur la place.",
    "accent_words": [
-    "mieux avant"
+    "la place"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Les habitants ne sortent plus. Le marché ferme, faute de clients.",
+   "accent_words": [
+    "de clients"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Pendant ce temps, la mer est vide. Personne ne veut voir le présent.",
+   "text": "Le déclin devient enfin visible : à force de regarder la série.",
    "accent_words": [
-    "le présent"
+    "la série"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La saison deux ? Pas commandée. Comme le second tour.",
+   "text": "Saison deux ? Pas commandée. Comme son second tour.",
    "accent_words": [
-    "le second tour"
+    "Comme son second tour"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui passe ses vacances devant des docus déprimants.",
+   "text": "Envoie ça au pote qui binge des séries déprimantes.",
    "accent_words": [
-    "docus déprimants"
+    "séries déprimantes"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "screen",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une plage : tous les transats tournés vers un écran.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · BINGE DU DÉCLIN",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "REGARDEZ LE DÉCLIN"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,12 +124,25 @@
    "camera": "closeup",
    "set": [
     "screen",
-    "person",
-    "bench"
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "SÉRIE DE L'ÉTÉ",
-   "comic_action": "Gros plan : l'écran de plage diffuse le générique.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "LE DÉCLIN : LA SÉRIE",
+   "comic_action": "Écran géant, générique sombre sur la place.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "REGARDEZ LE DÉCLIN"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,41 +152,81 @@
    "camera": "orbit",
    "set": [
     "screen",
-    "text3d"
+    "bench",
+    "person"
    ],
-   "onscreen_text": "4 ÉPISODES",
-   "comic_action": "Orbite : quatre jaquettes géantes alignées sur le sable.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "REDIFFUSION : 24 H/24",
+   "comic_action": "Bancs pleins devant l'écran, couvertures sur les genoux.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ÉPISODE 4 (ENCORE)"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
+    "shop",
     "text3d",
     "person"
    ],
-   "onscreen_text": "ÉP. 4 : AVANT",
-   "comic_action": "La télécommande enchaîne, les vacanciers soupirent en chœur.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "MARCHÉ : FERMÉ",
+   "comic_action": "Étals vides, un ballot d'herbe qui roule.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CANAPÉ"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "person",
-    "bench",
-    "sign"
+    "facade_row",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "MER : VIDE",
-   "comic_action": "Travelling : la mer, magnifique, sans personne.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DÉCLIN : CONSTATÉ",
+   "comic_action": "Façades délabrées, tout le monde devant l'écran.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TRAVAUX : ANNULÉS"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -161,11 +237,24 @@
    "set": [
     "screen",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "SAISON 2 : ANNULÉE",
-   "comic_action": "Plan large : l'écran s'éteint, il pleut sur la plage.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "SAISON 2 : NON",
+   "comic_action": "Écran « ANNULÉE » sur fond de générique.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "2E TOUR : ANNULÉ"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -179,36 +268,50 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique plonge enfin dans la mer.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui passe ses vacances devant des docus déprimants."
+  "text": "Envoie ça au pote qui binge des séries déprimantes."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 79,
+ "word_count": 77,
  "claims": [
   {
-   "text": "Ici, les vacances se passent devant une seule série : Le Suicide français.",
+   "text": "Son best-seller de 2014 sur le déclin devient une série en quatre épisodes.",
    "claim_type": "fait_public",
    "source": "https://actualitte.com/article/119898/adaptation/la-serie-inspiree-du-livre-de-zemmour-agace-passablement",
-   "note": "Adaptation du Suicide français en série documentaire de quatre épisodes (Planète+)."
+   "note": "Adaptation du best-seller de 2014 en série documentaire de quatre épisodes (Planète+)."
   },
   {
-   "text": "Adapté de son livre, en quatre épisodes documentaires.",
+   "text": "Son best-seller de 2014 sur le déclin devient une série en quatre épisodes.",
    "claim_type": "fait_public",
-   "source": "https://actualitte.com/article/119898/adaptation/la-serie-inspiree-du-livre-de-zemmour-agace-passablement",
-   "note": "Adaptation du Suicide français en série documentaire de quatre épisodes (Planète+)."
+   "source": "https://actualitte.com/article/46032/numerique/le-suicide-francais-d-039-eric-zemmour-n-039-en-finit-pas-de-declencher-des-remous",
+   "note": "Best-seller décliniste de 2014 : plus de 500 pages (titre non cité)."
   },
   {
-   "text": "La saison deux ? Pas commandée. Comme le second tour.",
+   "text": "Saison deux ? Pas commandée. Comme son second tour.",
    "claim_type": "fait_public",
    "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
@@ -220,7 +323,14 @@
    "date": "2025",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Adaptation du Suicide français en série documentaire de quatre épisodes (Planète+)."
+   "note": "Adaptation du best-seller de 2014 en série documentaire de quatre épisodes (Planète+)."
+  },
+  {
+   "url": "https://actualitte.com/article/46032/numerique/le-suicide-francais-d-039-eric-zemmour-n-039-en-finit-pas-de-declencher-des-remous",
+   "date": "2014-10",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Best-seller décliniste de 2014 : plus de 500 pages (titre non cité)."
   },
   {
    "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
@@ -231,5 +341,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Le Suicide français adapté en série documentaire de quatre épisodes. Cadre : les vacances. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Son best-seller de 2014 sur le déclin devient une série en quatre épisodes. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

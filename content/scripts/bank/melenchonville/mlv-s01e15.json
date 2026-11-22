@@ -5,25 +5,25 @@
  "format": "A",
  "title_cover": "Bruit et fureur",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. Bouchez-vous les oreilles.",
-  "Mélenchon : le bruit, la fureur, et c'est tout.",
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien aboie en majuscules.",
+  "La formule de Mélenchon : le bruit et la fureur. La ville l'a appliquée.",
   "Les insoumis vont me détester.",
   "Bienvenue à Mélenchonville : bruit et fureur.",
   "Mélenchon en une vidéo : bruit et fureur."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le bruit et la fureur, oui. Le pouvoir, en sourdine.",
-  "Seize ans de bruit et de fureur. Le pouvoir, toujours en sourdine.",
-  "Seize ans de vacarme. Résultat : quatrième, quatrième, troisième."
+  "Seul endroit silencieux : sa vitrine de victoires présidentielles.",
+  "Seul endroit silencieux : sa vitrine de victoires présidentielles.",
+  "La ville voisine construit un mur antibruit. Puis un deuxième. Puis déménage."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Bouchez-vous les oreilles.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien aboie en majuscules.",
    "accent_words": [
-    "Bouchez-vous les oreilles"
+    "en majuscules"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,35 +37,35 @@
   },
   {
    "id": "n3",
-   "text": "Le bruit : en 2018, face caméra, il hurle « La République, c'est moi ! ».",
+   "text": "La mairie l'inscrit au règlement : bruit et fureur obligatoires pour tous.",
    "accent_words": [
-    "c'est moi"
+    "pour tous"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "La fureur : il boycotte TF1. TF1 répond qu'il n'était pas invité.",
+   "text": "Klaxons à 6 h, casseroles à midi, engueulade obligatoire à la boulangerie.",
    "accent_words": [
-    "pas invité"
+    "la boulangerie"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Seize ans de vacarme. Résultat : quatrième, quatrième, troisième.",
+   "text": "La ville voisine construit un mur antibruit. Puis un deuxième. Puis déménage.",
    "accent_words": [
-    "quatrième, quatrième, troisième"
+    "Puis déménage"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le bruit et la fureur, oui. Le pouvoir, en sourdine.",
+   "text": "Seul endroit silencieux : sa vitrine de victoires présidentielles.",
    "accent_words": [
-    "Le pouvoir, en sourdine"
+    "victoires présidentielles"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
@@ -90,8 +90,8 @@
     "person"
    ],
    "onscreen_text": "MÉLENCHONVILLE · BRUIT ET FUREUR",
-   "comic_action": "Descente sur la ville : banderole « BRUIT ET FUREUR », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "DU BRUIT ! DE LA FUREUR !"
     }
    ]
   },
@@ -119,19 +129,19 @@
    ],
    "onscreen_text": "« LE BRUIT ET LA FUREUR »",
    "comic_action": "Le maire au micro, les vitres vibrent.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
      "geste": "arms_up",
      "visage": "colere",
      "objet": "micro"
-    },
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "shake",
-     "visage": "choque",
-     "quand": 0.3
+     "type": "affiche",
+     "texte": "DU BRUIT ! DE LA FUREUR !"
     }
    ]
   },
@@ -142,25 +152,24 @@
    ],
    "camera": "orbit",
    "set": [
-    "tribune",
-    "ring_light",
+    "mairie",
+    "sign",
     "person"
    ],
-   "onscreen_text": "« LA RÉPUBLIQUE, C'EST MOI ! »",
-   "comic_action": "Le cri fait tomber les lampes du plafond.",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "BRUIT OBLIGATOIRE",
+   "comic_action": "Panneau officiel « SILENCE INTERDIT » à l'entrée de la ville.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "point",
-     "visage": "colere",
-     "objet": "micro"
-    },
-    {
      "who": "perso",
-     "geste": "fall",
-     "visage": "choque",
-     "quand": 0.4
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SILENCE : AMENDE"
     }
    ]
   },
@@ -171,24 +180,31 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
+    "shop",
+    "car",
     "person"
    ],
-   "onscreen_text": "BOYCOTT D'UN NON-INVITÉ",
-   "comic_action": "Le maire claque la porte d'un studio… vide.",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "ENGUEULADE OBLIGATOIRE",
+   "comic_action": "La boulangère et un client se hurlent dessus, baguette en main.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "cross_arms",
-     "visage": "colere"
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "baguette"
     },
     {
      "who": "foule",
-     "geste": "facepalm",
-     "visage": "blase",
+     "geste": "shake",
+     "visage": "colere",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "WOUF"
     }
    ]
   },
@@ -199,18 +215,24 @@
    ],
    "camera": "closeup",
    "set": [
-    "lift_tribune",
-    "text3d",
-    "banner"
+    "facade_row",
+    "road",
+    "car"
    ],
-   "onscreen_text": "4E · 4E · 3E",
-   "comic_action": "Tribune qui monte et redescend en trois secousses.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "VILLE VOISINE : DÉMÉNAGÉE",
+   "comic_action": "Une ville entière part sur des camions de déménagement.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "shake",
-     "visage": "colere"
+     "who": "foule",
+     "geste": "manif",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MUR ANTIBRUIT N° 2"
     }
    ]
   },
@@ -221,25 +243,24 @@
    ],
    "camera": "descend",
    "set": [
-    "tribune",
-    "banner",
-    "text3d"
+    "shop",
+    "text3d",
+    "sign"
    ],
-   "onscreen_text": "POUVOIR : MUET",
-   "comic_action": "Le maire crie, aucun son ne sort ; sous-titre « MUET ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "VICTOIRES PRÉSIDENTIELLES : 0",
+   "comic_action": "Une vitrine vide, une seule araignée dedans.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "arms_up",
-     "visage": "colere",
-     "objet": "micro"
-    },
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "shrug",
-     "visage": "blase",
-     "quand": 0.4
+     "type": "prix",
+     "texte": "VITRINE VIDE DEPUIS 2012"
     }
    ]
   },
@@ -256,7 +277,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -264,6 +285,12 @@
      "geste": "point",
      "visage": "sourire_pro",
      "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
     }
    ]
   }
@@ -277,7 +304,7 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 83,
+ "word_count": 84,
  "claims": [
   {
    "text": "Sa formule fétiche depuis 2010 : « le bruit et la fureur ».",
@@ -286,28 +313,10 @@
    "note": "« Le bruit et la fureur » : formule qu'il revendique depuis 2010."
   },
   {
-   "text": "Le bruit : en 2018, face caméra, il hurle « La République, c'est moi ! ».",
-   "claim_type": "citation_exacte",
-   "source": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
-   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
-  },
-  {
-   "text": "La fureur : il boycotte TF1. TF1 répond qu'il n'était pas invité.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/furieux-contre-tf1-jean-luc-melenchon-annule-sa-venue-au-20-heures-ce-soir/657784",
-   "note": "Novembre 2026 : il annonce sur X annuler sa venue au 20 h de TF1."
-  },
-  {
-   "text": "La fureur : il boycotte TF1. TF1 répond qu'il n'était pas invité.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/affaire-de-jean-luc-melenchon-au-20-heures-tf1-dement-le-leader-de-lfi-et-affirme-quil-netait-pas-invite-ce-lundi-soir/657792",
-   "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
-  },
-  {
-   "text": "Seize ans de vacarme. Résultat : quatrième, quatrième, troisième.",
+   "text": "Seul endroit silencieux : sa vitrine de victoires présidentielles.",
    "claim_type": "fait_public",
    "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
@@ -319,34 +328,13 @@
    "note": "« Le bruit et la fureur » : formule qu'il revendique depuis 2010."
   },
   {
-   "url": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
-   "date": "2018-10-17",
-   "consulted": "2026-11-22",
-   "statut": "citation_exacte",
-   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
-  },
-  {
-   "url": "https://www.ozap.com/actu/furieux-contre-tf1-jean-luc-melenchon-annule-sa-venue-au-20-heures-ce-soir/657784",
-   "date": "2026-11",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Novembre 2026 : il annonce sur X annuler sa venue au 20 h de TF1."
-  },
-  {
-   "url": "https://www.ozap.com/actu/affaire-de-jean-luc-melenchon-au-20-heures-tf1-dement-le-leader-de-lfi-et-affirme-quil-netait-pas-invite-ce-lundi-soir/657792",
-   "date": "2026-11",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
-  },
-  {
    "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
    "date": "consulté 2026-11-22",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Bruit et fureur. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Sa formule fétiche depuis 2010 : « le bruit et la fureur ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

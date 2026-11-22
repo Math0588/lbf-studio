@@ -4,31 +4,31 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Audience minimum",
- "anchor": "les débats sous condition d'audience (chaîne trop petite)",
+ "title_cover": "Un stade, un guichet",
+ "anchor": "le débat refusé : chaîne « trop petite » ; son 20 heures au plus bas",
  "meme_key": "DEBAT",
- "situation": "Audience minimum",
- "ressort": "un thème unique en escalade : truc connu, trois crans, chute retournée",
+ "situation": "Un stade, un guichet",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Débats sur abonnement.",
-  "Bardella ne débat que devant assez de monde. Problème.",
-  "Bardellaville : débat réservé aux grandes audiences.",
+  "Dans cette ville, tout le monde vote Bardella. Devant un million, minimum.",
+  "Bardellaville : un stade pour un acte de naissance.",
+  "Ici, pas de réponse sous un million de spectateurs.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Audience minimum."
+  "Bienvenue à Bardellaville. Au programme : Un stade, un guichet."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Il mesure l'audience des autres. La sienne, il la vide.",
-  "Il mesure l'audience des autres, il vide la sienne.",
-  "Trop petite, la chaîne. Trop petite, l'audience."
+  "Son 20 heures fait le plus bas niveau : trop petit pour lui-même.",
+  "Trop petit pour lui-même.",
+  "Il faut louer un stade pour un acte de naissance."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Débats sur abonnement.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Devant un million, minimum.",
    "accent_words": [
-    "abonnement"
+    "million"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -42,35 +42,35 @@
   },
   {
    "id": "n3",
-   "text": "Seule grande tête de liste absente. Les autres débattent, lui compte l'audience.",
+   "text": "Alors la mairie exige un million de spectateurs par réponse.",
    "accent_words": [
-    "compte l'audience"
+    "spectateurs"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ironie : son passage au 20 heures fait le plus bas niveau d'audience.",
+   "text": "Le guichet exige un public. Les habitants amènent leurs cousins.",
    "accent_words": [
-    "plus bas niveau"
+    "cousins"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Trop petite, la chaîne. Trop petite, l'audience. Bientôt, trop petite, la France.",
+   "text": "Il faut louer un stade pour un acte de naissance.",
    "accent_words": [
-    "France"
+    "acte de naissance"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Il mesure l'audience des autres. La sienne, il la vide.",
+   "text": "Son 20 heures fait le plus bas niveau : trop petit pour lui-même.",
    "accent_words": [
-    "vide"
+    "lui-même"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
@@ -94,9 +94,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "DÉBATS SUR ABONNEMENT",
-   "comic_action": "Descente sur la ville ; banderole « DÉBATS SUR ABONNEMENT » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "onscreen_text": "1 MILLION MINIMUM",
+   "comic_action": "Descente sur la ville ; banderole « 1 MILLION MINIMUM » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "maire",
@@ -104,8 +104,14 @@
      "visage": "fier"
     },
     {
-     "who": "perso",
-     "visage": "choque"
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
     }
    ]
   },
@@ -123,7 +129,7 @@
    ],
    "onscreen_text": "CHAÎNE TROP PETITE",
    "comic_action": "Plateau de débat, deux pupitres ; en grand « CHAÎNE TROP PETITE ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -134,23 +140,24 @@
      "who": "foule",
      "geste": "facepalm"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "tribune",
-    "router_lectern",
-    "studio_light",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "IL COMPTE L'AUDIENCE",
-   "comic_action": "Plateau de débat, deux pupitres ; en grand « IL COMPTE L'AUDIENCE ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "RÉPONSE : 1 MILLION REQUIS",
+   "comic_action": "Descente sur la ville ; banderole « RÉPONSE : 1 MILLION REQUIS » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
      "who": "maire",
@@ -159,8 +166,13 @@
     },
     {
      "who": "perso",
-     "geste": "facepalm",
-     "visage": "blase"
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PUBLIC MINIMUM : 1 M"
     }
    ]
   },
@@ -169,55 +181,56 @@
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
-    "studio_light",
-    "screen",
-    "text3d"
+    "road",
+    "person",
+    "banner",
+    "ring_light"
    ],
-   "onscreen_text": "20 H : PLUS BAS NIVEAU",
-   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « 20 H : PLUS BAS NIVEAU ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "GUICHET + PUBLIC",
+   "comic_action": "Travelling sur une file de téléphones levés ; banderole « GUICHET + PUBLIC ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "fall",
-     "visage": "choque"
+     "who": "foule",
+     "geste": "wave"
     },
     {
-     "who": "foule",
-     "visage": "dort"
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
     "screen",
+    "banner",
     "text3d",
-    "person",
-    "studio_light"
+    "person"
    ],
-   "onscreen_text": "TROP PETITE, LA FRANCE ?",
-   "comic_action": "Écran géant : « TROP PETITE, LA FRANCE ? ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "UN STADE POUR UN PAPIER",
+   "comic_action": "Soirée électorale : l'écran affiche « UN STADE POUR UN PAPIER ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "cross_arms",
-     "visage": "fier"
+     "who": "foule",
+     "geste": "cheer"
     },
     {
      "who": "perso",
      "geste": "facepalm",
-     "visage": "colere"
+     "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -231,21 +244,21 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "SON AUDIENCE : VIDÉE",
-   "comic_action": "Plan final, tenir une seconde : « SON AUDIENCE : VIDÉE ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "TROP PETIT POUR LUI-MÊME",
+   "comic_action": "Plan final, tenir une seconde : « TROP PETIT POUR LUI-MÊME ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "shrug",
+     "geste": "fall",
      "visage": "choque"
     },
     {
-     "who": "perso",
-     "geste": "point",
-     "visage": "content"
+     "who": "foule",
+     "visage": "dort"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -261,7 +274,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE DIFFICILE",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE DIFFICILE ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -269,7 +282,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -281,7 +295,7 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 85,
+ "word_count": 82,
  "claims": [
   {
    "segment": "n2",
@@ -291,15 +305,8 @@
    "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   },
   {
-   "segment": "n3",
-   "text": "Seule grande tête de liste absente. Les autres débattent, lui compte l'audience.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
-   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
-  },
-  {
-   "segment": "n4",
-   "text": "Ironie : son passage au 20 heures fait le plus bas niveau d'audience.",
+   "segment": "n6",
+   "text": "Son 20 heures fait le plus bas niveau : trop petit pour lui-même.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/audiences-access-20h-jordan-bardella-fait-chuter-le-20-heures-de-france-2-a-son-plus-bas-niveau-quotidien-en-forte-hausse-sur-tmc/654472",
    "note": "Son passage fait chuter le 20 heures de France 2 à son plus bas niveau ; Quotidien en forte hausse sur TMC."
@@ -322,5 +329,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = les débats sous condition d'audience (chaîne trop petite). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = le débat refusé : chaîne « trop petite » ; son 20 heures au plus bas. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

@@ -4,49 +4,49 @@
  "synopsis_id": "zmv-m005-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Le déclin au menu",
- "anchor": "Le Suicide français, best-seller de 2014, adapté en série en quatre épisodes.",
+ "title_cover": "Menu déclin",
+ "anchor": "Le best-seller décliniste devenu série en quatre épisodes, servi en quatre plats.",
  "meme_id": "ZK",
- "situation": "la cantine",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : la cantine sert du déclin en quatre services.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, le menu est adapté d'un best-seller.",
-  "Zemmourville : la cantine avec un avertissement en entrée."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien mange triste.",
+  "Le déclin de Zemmour est une série en quatre épisodes. Le resto en fait un menu.",
+  "Les zemmouriens vont me détester.",
+  "Bienvenue à Zemmourville : menu déclin.",
+  "Zemmour en une vidéo : menu déclin."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Les élèves demandent des frites. On leur sert une chronique.",
-  "Quatre plats, zéro vitamine, beaucoup de nostalgie.",
-  "Le déclin est servi. Le dessert, toujours d'avant."
+  "Le chef promet un deuxième service. Comme son second tour : jamais servi.",
+  "Le chef promet un deuxième service. Comme le second tour : jamais servi.",
+  "Dessert : une purée de 1965, servie tiède. Les clients pleurent."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. À la cantine.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien mange triste.",
    "accent_words": [
-    "À la cantine"
+    "mange triste"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son best-seller de 2014 sur le déclin a été adapté en série documentaire.",
+   "text": "Son best-seller de 2014 sur le déclin devient une série en quatre épisodes.",
    "accent_words": [
-    "série documentaire"
+    "quatre épisodes"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Quatre épisodes. Ici, c'est le menu : quatre plats de déclin.",
+   "text": "Le resto municipal en fait un menu en quatre plats.",
    "accent_words": [
     "quatre plats"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
@@ -58,25 +58,25 @@
   },
   {
    "id": "n5",
-   "text": "Dessert : une purée de 1965, servie tiède.",
+   "text": "Dessert : une purée de 1965, servie tiède. Les clients pleurent.",
    "accent_words": [
-    "1965"
+    "Les clients pleurent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Les élèves demandent des frites. On leur sert une chronique.",
+   "text": "Le chef promet un deuxième service. Comme son second tour : jamais servi.",
    "accent_words": [
-    "une chronique"
+    "jamais servi"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui gâche chaque repas avec les infos.",
+   "text": "Envoie ça au pote qui commande toujours le même plat triste.",
    "accent_words": [
-    "chaque repas"
+    "plat triste"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une cantine : ardoise « MENU EN 4 ÉPISODES ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · MENU DÉCLIN",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "AU MENU : LE DÉCLIN"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -106,12 +129,25 @@
    "camera": "closeup",
    "set": [
     "screen",
-    "text3d",
-    "person"
+    "table",
+    "text3d"
    ],
-   "onscreen_text": "LA SÉRIE",
-   "comic_action": "Un écran au-dessus du self diffuse un générique sombre.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "LE DÉCLIN EN 4 ÉPISODES",
+   "comic_action": "Un écran au-dessus d'une table de restaurant.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "AU MENU : LE DÉCLIN"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -120,33 +156,31 @@
    ],
    "camera": "orbit",
    "set": [
+    "shop",
     "table",
-    "text3d",
     "person"
    ],
-   "onscreen_text": "4 PLATS DE DÉCLIN",
-   "comic_action": "Orbite autour d'un plateau à quatre compartiments, tous gris.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "MENU EN 4 ÉPISODES",
+   "comic_action": "Ardoise : « ÉPISODE 1, 2, 3, 4 ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "nod",
+     "visage": "neutre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MENU : 4 PLATS TRISTES"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
-   ],
-   "camera": "closeup",
-   "set": [
-    "table",
-    "sign",
-    "text3d"
-   ],
-   "onscreen_text": "ENTRÉE · PLAT",
-   "comic_action": "Gros plan sur l'ardoise, écriture à la plume.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
-  },
-  {
-   "id": "s5",
-   "narration_ids": [
-    "n5"
    ],
    "camera": "street_dolly",
    "set": [
@@ -154,9 +188,50 @@
     "person",
     "text3d"
    ],
+   "onscreen_text": "PLAT : TOUT FOUT LE CAMP",
+   "comic_action": "Une assiette dont le contenu s'enfuit.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "AFFAMÉ"
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "text3d",
+    "person"
+   ],
    "onscreen_text": "DESSERT : 1965",
-   "comic_action": "Travelling : la cantinière sert une purée sépia.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "comic_action": "Un serveur pose un bol fumant étiqueté « 1965 ».",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "DESSERT : TIÈDE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -166,12 +241,25 @@
    "camera": "descend",
    "set": [
     "table",
-    "text3d",
-    "person"
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "FRITES → CHRONIQUE",
-   "comic_action": "Plan large : chaque plateau reçoit un micro au lieu d'un dessert.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "2E SERVICE : JAMAIS",
+   "comic_action": "La cuisine éteint les lumières avant le deuxième service.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "2E TOUR : RUPTURE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,33 +273,47 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique repose son plateau, plein.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui gâche chaque repas avec les infos."
+  "text": "Envoie ça au pote qui commande toujours le même plat triste."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 75,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Son best-seller de 2014, Le Suicide français, a été adapté en série documentaire.",
+   "text": "Son best-seller de 2014 sur le déclin devient une série en quatre épisodes.",
    "claim_type": "fait_public",
    "source": "https://actualitte.com/article/119898/adaptation/la-serie-inspiree-du-livre-de-zemmour-agace-passablement",
-   "note": "Adaptation du Suicide français en série documentaire de quatre épisodes (Planète+). / Le Suicide français (2014) : plus de 500 pages, best-seller."
+   "note": "Adaptation du best-seller de 2014 en série documentaire de quatre épisodes (Planète+)."
   },
   {
-   "text": "Quatre épisodes. Ici, c'est le menu : quatre plats de déclin.",
+   "text": "Le chef promet un deuxième service. Comme son second tour : jamais servi.",
    "claim_type": "fait_public",
-   "source": "https://actualitte.com/article/119898/adaptation/la-serie-inspiree-du-livre-de-zemmour-agace-passablement",
-   "note": "Adaptation du Suicide français en série documentaire de quatre épisodes (Planète+)."
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
@@ -220,16 +322,16 @@
    "date": "2025",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Adaptation du Suicide français en série documentaire de quatre épisodes (Planète+)."
+   "note": "Adaptation du best-seller de 2014 en série documentaire de quatre épisodes (Planète+)."
   },
   {
-   "url": "https://actualitte.com/article/46032/numerique/le-suicide-francais-d-039-eric-zemmour-n-039-en-finit-pas-de-declencher-des-remous",
-   "date": "2014-10",
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Le Suicide français (2014) : plus de 500 pages, best-seller."
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Le Suicide français, best-seller de 2014, adapté en série en quatre épisodes. Cadre : la cantine. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Son best-seller de 2014 sur le déclin devient une série en quatre épisodes. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

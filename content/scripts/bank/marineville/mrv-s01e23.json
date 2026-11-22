@@ -3,27 +3,27 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-19",
  "format": "A",
- "title_cover": "Le pyromane pompier",
+ "title_cover": "Maire en scratch",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, le maire change tous les trois mois.",
-  "Marineville : faire tomber, puis promettre la stabilité.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : le pyromane pompier."
+  "Dans cette ville, tout le monde vote Marine. Le maire, provisoire.",
+  "Marineville change de maire tous les trois mois.",
+  "Ici, les plaques de bureau sont en scratch.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Maire en scratch."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Faire tomber le gouvernement, puis vendre la stabilité : le pyromane fait pompier.",
-  "Ici, le maire change tous les trois mois. Plaques de bureau en scratch.",
-  "Une première sous la Ve République. Elle aime les records."
+  "Marine prévient : « Je censurerai tous les gouvernements jusqu'à obtenir la dissolution ».",
+  "Tous les gouvernements, jusqu'à la dissolution.",
+  "Le photographe officiel n'a plus le temps de faire le portrait."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine. Le gouvernement, moins.",
+   "text": "Dans cette ville, tout le monde vote Marine. Le maire, provisoire.",
    "accent_words": [
-    "moins"
+    "provisoire"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -31,47 +31,47 @@
    "id": "n2",
    "text": "Décembre 2024 : son groupe vote la censure, le gouvernement Barnier tombe.",
    "accent_words": [
-    "Barnier tombe"
+    "tombe"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Première censure adoptée après un 49.3 sous la Ve. Elle aime les records.",
+   "text": "Alors la mairie change de maire tous les trois mois. Plaques en scratch.",
    "accent_words": [
-    "les records"
+    "scratch"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, le maire change tous les trois mois. Plaques de bureau en scratch.",
+   "text": "Les adjoints reçoivent des badges visiteurs, valables une semaine.",
    "accent_words": [
-    "en scratch"
+    "semaine"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les ministres reçoivent des badges visiteurs, valables une semaine.",
+   "text": "Le photographe officiel n'a plus le temps de faire le portrait.",
    "accent_words": [
-    "badges visiteurs"
+    "portrait"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Faire tomber le gouvernement, puis vendre la stabilité : le pyromane fait pompier.",
+   "text": "Marine prévient : « Je censurerai tous les gouvernements jusqu'à obtenir la dissolution ».",
    "accent_words": [
-    "le pyromane"
+    "dissolution"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
    "text": "Envoie ça au pote qui casse tout et se plaint du bazar.",
    "accent_words": [
-    "du bazar"
+    "bazar"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,25 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; un panneau « MAIRE DU MOIS ».",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "MAIRE PROVISOIRE",
+   "comic_action": "Descente sur la ville ; banderole « MAIRE PROVISOIRE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,30 +116,59 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "form_stack",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "GOUVERNEMENT : TOMBÉ",
-   "comic_action": "Une colonne s'effondre sous un projecteur.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "BARNIER CENSURÉ",
+   "comic_action": "Tribune de l'hémicycle : tampon géant « BARNIER CENSURÉ ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
+    "ground",
     "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "RECORD : 1RE FOIS",
-   "comic_action": "L'écran affiche une médaille d'or « CENSURE ».",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "PLAQUES EN SCRATCH",
+   "comic_action": "Descente sur la ville ; banderole « PLAQUES EN SCRATCH » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MAIRE DU TRIMESTRE"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -132,46 +177,84 @@
    ],
    "camera": "window_pass",
    "set": [
-    "table",
-    "screen",
+    "building",
     "sign",
-    "building"
+    "person",
+    "banner"
    ],
-   "onscreen_text": "PLAQUE : AMOVIBLE",
-   "comic_action": "Par la fenêtre : une plaque de maire qu'on arrache et remplace.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "BADGE : 1 SEMAINE",
+   "comic_action": "Porte d'entrée gardée ; panneau « BADGE : 1 SEMAINE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
+    "screen",
+    "text3d",
     "person",
-    "road",
-    "building",
-    "sign"
+    "studio_light"
    ],
-   "onscreen_text": "BADGE : 7 JOURS",
-   "comic_action": "File de ministres cubiques, badges « VISITEUR » au cou.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PORTRAIT : PAS LE TEMPS",
+   "comic_action": "Écran géant : « PORTRAIT : PAS LE TEMPS ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "fatigue"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "CASERNE OUVERTE (PAR QUI ?)",
-   "comic_action": "Vitrine : un extincteur neuf vendu par quelqu'un qui tient une allumette. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "« JE CENSURERAI TOUS LES GOUVERNEMENTS »",
+   "comic_action": "Plan final, tenir une seconde : « « JE CENSURERAI TOUS LES GOUVERNEMENTS » ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +268,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt marche sur des débris, scandalisé.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE CASSEUR",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE CASSEUR ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,21 +291,24 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 83,
+ "word_count": 82,
  "claims": [
   {
    "segment": "n2",
    "text": "Décembre 2024 : son groupe vote la censure, le gouvernement Barnier tombe.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/index%2Ephp/actualites/le-gouvernement-de-michel-barnier-censure-au-terme-d-une-journee-historique-a-l",
-   "note": "Gouvernement Barnier censuré ; le groupe RN vote la motion."
+   "note": "Gouvernement Barnier censuré ; le groupe RN vote la motion. ; Première motion de censure adoptée après un 49.3 sous la Ve République.",
+   "sources_complementaires": [
+    "https://www.vie-publique.fr/en-bref/296487-article-493-sur-le-plfss-2025-censure-du-gouvernement-barnier"
+   ]
   },
   {
-   "segment": "n3",
-   "text": "Première censure adoptée après un 49.3 sous la Ve. Elle aime les records.",
-   "claim_type": "fait_public",
-   "source": "https://www.vie-publique.fr/en-bref/296487-article-493-sur-le-plfss-2025-censure-du-gouvernement-barnier",
-   "note": "Première motion de censure adoptée après un 49.3 sous la Ve République."
+   "segment": "n6",
+   "text": "Marine prévient : « Je censurerai tous les gouvernements jusqu'à obtenir la dissolution ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/crise-politique-je-censurerai-tous-les-gouvernements-jusqua-obtenir-la-dissolution-assure-marine-le-pen",
+   "note": "« Je censurerai tous les gouvernements jusqu'à obtenir la dissolution »."
   }
  ],
  "sources": [
@@ -221,17 +316,24 @@
    "url": "https://lcp.fr/index%2Ephp/actualites/le-gouvernement-de-michel-barnier-censure-au-terme-d-une-journee-historique-a-l",
    "date": "2024-12-04",
    "consulted": "2026-11-22",
-   "statut": "fait public",
+   "statut": "fait",
    "note": "Gouvernement Barnier censuré ; le groupe RN vote la motion."
   },
   {
    "url": "https://www.vie-publique.fr/en-bref/296487-article-493-sur-le-plfss-2025-censure-du-gouvernement-barnier",
    "date": "2024-12",
    "consulted": "2026-11-22",
-   "statut": "fait public",
+   "statut": "fait",
    "note": "Première motion de censure adoptée après un 49.3 sous la Ve République."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/crise-politique-je-censurerai-tous-les-gouvernements-jusqua-obtenir-la-dissolution-assure-marine-le-pen",
+   "date": "2025-10",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (titre de presse)",
+   "note": "« Je censurerai tous les gouvernements jusqu'à obtenir la dissolution »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = décembre 2024 : son groupe vote la censure, le gouvernement Barnier tombe, première censure adoptée après un 49.3 sous la Ve République. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = son groupe vote la censure, le gouvernement Barnier tombe (décembre 2024). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

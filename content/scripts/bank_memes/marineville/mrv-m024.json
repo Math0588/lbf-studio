@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m024",
  "format": "A",
- "anchor": "« de la stratégie de la cravate à la stratégie de la cravache » (formule d'un politologue, 2025) : à la cantine, le service change de ton.",
+ "anchor": "« de la cravate à la cravache » (analyse d'un politologue)",
  "situation": "Purée à la cravache",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "title_cover": "Purée à la cravache",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, la cantine sert en cravate, puis à la cravache.",
-  "Marineville : la cravate pour la photo, la cravache pour après.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : purée à la cravache."
+  "Dans cette ville, tout le monde vote Marine. En cravate. Pour l'instant.",
+  "Marineville sert la purée à la cravache.",
+  "Ici, la cantine sourit, puis supprime le dessert.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Purée à la cravache."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La cravate, c'est pour la photo. La cravache, c'est pour après.",
-  "Puis la purée arrive à la cravache, deux louches, sans discuter.",
-  "À la cantine, les dames de service portent la cravate et sourient."
+  "Marine sort la cravate pour la photo. La cravache, c'est pour après.",
+  "La cravate pour la photo, la cravache pour après.",
+  "Les élèves mangent au garde-à-vous. Le dessert est supprimé."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -40,33 +40,33 @@
   },
   {
    "id": "n3",
-   "text": "Un chercheur parlait déjà de dédiabolisation veste et cravate.",
+   "text": "Alors la cantine sert en cravate, avec le sourire.",
    "accent_words": [
-    "veste et cravate"
+    "sourire"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "À la cantine, on sert en cravate, avec le sourire.",
+   "text": "Puis la purée arrive à la cravache : deux louches, sans discuter.",
    "accent_words": [
-    "avec le sourire"
+    "discuter"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Puis la purée arrive à la cravache : deux louches, sans discuter.",
+   "text": "Les élèves mangent au garde-à-vous. Le dessert est supprimé.",
    "accent_words": [
-    "sans discuter"
+    "supprimé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La cravate, c'est pour la photo. La cravache, c'est pour après.",
+   "text": "Marine sort la cravate pour la photo. La cravache, c'est pour après.",
    "accent_words": [
-    "pour après"
+    "après"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -74,7 +74,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui se fait avoir par un col bien repassé.",
    "accent_words": [
-    "col bien repassé"
+    "repassé"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,41 +92,87 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une cravate géante nouée autour du beffroi.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "EN CRAVATE, POUR L'INSTANT",
+   "comic_action": "Descente sur la ville ; banderole « EN CRAVATE, POUR L'INSTANT » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CRAVATE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "person",
+    "shop",
+    "sign",
+    "text3d"
    ],
    "onscreen_text": "CRAVATE → CRAVACHE",
-   "comic_action": "Studio : une cravate posée sur la table se raidit en cravache.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Vitrine de cravates ; étiquette « CRAVATE → CRAVACHE ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "screen",
+    "facade_row",
+    "sign",
     "text3d",
-    "mairie",
     "person"
    ],
-   "onscreen_text": "VESTE ET CRAVATE",
-   "comic_action": "L'écran montre un costume vide sur un cintre.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "CANTINE EN CRAVATE",
+   "comic_action": "Rangée de façades : enseigne « CANTINE EN CRAVATE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MENU EN CRAVATE"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -135,30 +181,53 @@
    ],
    "camera": "window_pass",
    "set": [
-    "table",
-    "person",
-    "screen",
-    "text3d"
+    "facade_row",
+    "sign",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "SERVICE : CRAVATE",
-   "comic_action": "Une cantine : le personnel sourit, cravate impeccable.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PURÉE À LA CRAVACHE",
+   "comic_action": "Rangée de façades : enseigne « PURÉE À LA CRAVACHE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shake"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "table",
+    "facade_row",
+    "sign",
     "text3d",
-    "person",
-    "studio_light"
+    "person"
    ],
-   "onscreen_text": "SERVICE : CRAVACHE",
-   "comic_action": "Une louche claque sur l'assiette, purée qui gicle.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DESSERT SUPPRIMÉ",
+   "comic_action": "Rangée de façades : enseigne « DESSERT SUPPRIMÉ ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cross_arms"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -167,14 +236,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "APRÈS LA PHOTO",
-   "comic_action": "Entre deux colonnes, un photographe range son appareil ; la cravache sort. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LA CRAVACHE APRÈS",
+   "comic_action": "Plan final, tenir une seconde : « LA CRAVACHE APRÈS ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +270,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt repasse un col, très concentré.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE NAÏF",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE NAÏF ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -209,14 +300,7 @@
    "text": "Un politologue résume : de la stratégie de la cravate à celle de la cravache.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/ue-immigration-marine-le-pen-repasse-a-loffensive-la-strategie-de-la-cravate-a-laisse-place-a-une-strategie-de-la-cravache",
-   "note": "« De la stratégie de la cravate à la stratégie de la cravache »."
-  },
-  {
-   "segment": "n3",
-   "text": "Un chercheur parlait déjà de dédiabolisation veste et cravate.",
-   "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
-   "note": "Dédiabolisation = changements cosmétiques, stratégie « veste et cravate »."
+   "note": "De la stratégie de la cravate à la stratégie de la cravache."
   }
  ],
  "sources": [
@@ -224,17 +308,10 @@
    "url": "https://www.publicsenat.fr/actualites/politique/ue-immigration-marine-le-pen-repasse-a-loffensive-la-strategie-de-la-cravate-a-laisse-place-a-une-strategie-de-la-cravache",
    "date": "2025-06-10",
    "consulted": "2026-11-22",
-   "statut": "opinion (formule d'un politologue) ; le fond de l'article est écarté",
-   "note": "« De la stratégie de la cravate à la stratégie de la cravache »."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
-   "date": "2023-01-25",
-   "consulted": "2026-11-22",
-   "statut": "opinion / analyse (chercheur)",
-   "note": "Dédiabolisation = changements cosmétiques, stratégie « veste et cravate »."
+   "statut": "opinion (politologue)",
+   "note": "De la stratégie de la cravate à la stratégie de la cravache."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « de la stratégie de la cravate à la stratégie de la cravache » (formule d'un politologue, 2025) : à la cantine, le service change de ton. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « de la cravate à la cravache » (analyse d'un politologue). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

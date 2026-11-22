@@ -5,71 +5,71 @@
  "format": "A",
  "title_cover": "Impossible à 4 %",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : impossible n'est pas français, mais quatre pour cent, si.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, on annonce sa candidature en plusieurs épisodes.",
-  "Zemmourville : même les sondages regrettent 2022."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien tente l'impossible.",
+  "Pour Zemmour, impossible n'est pas français. La ville a tenté l'impossible.",
+  "Attention : vidéo garantie sans nostalgie. Presque.",
+  "Bienvenue à Zemmourville : impossible à 4 %.",
+  "Zemmour en une vidéo : impossible à 4 %."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "En 2022, sept pour cent. En 2026, quatre. Le c'était mieux avant marche enfin.",
-  "Sept, puis quatre : la seule chose qui décline vraiment, c'est son score.",
-  "Candidat, puis officiellement candidat. Score : toujours officieux."
+  "Défi le plus impossible : le faire passer au-dessus de 4 %.",
+  "L'impossible ultime : le faire passer au-dessus de 4 %.",
+  "Tous échouent. Les coureurs tombent, le soufflé retombe."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Pour l'instant.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien tente l'impossible.",
    "accent_words": [
-    "Pour l'instant"
+    "tente l'impossible"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Septembre 2026 : il se dit candidat. Mais pas officiellement.",
+   "text": "Son slogan de 2021 : « Impossible n'est pas français ».",
    "accent_words": [
-    "pas officiellement"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "Novembre : officialisé au 20 h. Sondages de rentrée : environ 4 %.",
-   "accent_words": [
-    "environ 4 %"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "Son slogan de 2021 : « Impossible n'est pas français ». Les sondages, eux, sont français.",
-   "accent_words": [
-    "sont français"
+    "Impossible n'est pas français"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n5",
-   "text": "Il admire Napoléon. Il en a surtout gardé Waterloo.",
+   "id": "n3",
+   "text": "La mairie lance donc les défis impossibles de la ville.",
    "accent_words": [
-    "Waterloo"
+    "la ville"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Marathon en marche arrière. Soufflé qui ne retombe jamais.",
+   "accent_words": [
+    "retombe jamais"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Tous échouent. Les coureurs tombent, le soufflé retombe.",
+   "accent_words": [
+    "soufflé retombe"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "En 2022, sept pour cent. En 2026, quatre. Le c'était mieux avant marche enfin.",
+   "text": "Défi le plus impossible : le faire passer au-dessus de 4 %.",
    "accent_words": [
-    "marche enfin"
+    "4 %"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote pour qui impossible n'existe pas, sauf ranger.",
+   "text": "Envoie ça au pote pour qui rien n'est impossible, sauf ranger.",
    "accent_words": [
     "sauf ranger"
    ],
@@ -86,12 +86,35 @@
    "set": [
     "ground",
     "mairie",
-    "scroll",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur la mairie-château ; un héraut déroule un parchemin d'annonce.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · IMPOSSIBLE À 4 %",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "L'IMPOSSIBLE, C'EST NOUS"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,13 +123,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "banner",
+    "tribune",
+    "text3d"
    ],
-   "onscreen_text": "CANDIDAT (PAS OFFICIEL)",
-   "comic_action": "Écran de BFM rétro : bandeau « CANDIDAT » avec un astérisque géant.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« IMPOSSIBLE N'EST PAS FRANÇAIS »",
+   "comic_action": "Banderole napoléonienne au-dessus de la tribune.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "L'IMPOSSIBLE, C'EST NOUS"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,43 +152,82 @@
    ],
    "camera": "orbit",
    "set": [
-    "screen",
-    "text3d",
-    "tribune"
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "OFFICIEL · 4 %",
-   "comic_action": "Orbite autour d'un pupitre solennel ; derrière, un graphique avec une colonne minuscule.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "DÉFIS IMPOSSIBLES",
+   "comic_action": "Tableau des défis affiché devant la mairie.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "DÉFI N° 1"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "banner",
-    "text3d",
-    "person"
+    "ground",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "IMPOSSIBLE N'EST PAS FRANÇAIS",
-   "comic_action": "Gros plan sur la banderole ; un coup de vent la plie jusqu'à ne laisser que « IMPOSSIBLE ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "MARATHON À RECULONS",
+   "comic_action": "Des coureurs reculent, un chef surveille un soufflé.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "jump",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CHALLENGER"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
-    "sign",
-    "person"
+    "ground",
+    "person",
+    "table"
    ],
-   "onscreen_text": "SORTIE : WATERLOO",
-   "comic_action": "Travelling : panneau directionnel « AUSTERLITZ » barré, « WATERLOO » à côté, flèche vers la mairie.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "TOUS ÉCHOUENT",
+   "comic_action": "Coureurs au sol, soufflé effondré à côté.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RÉUSSITE : 0 %"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +236,26 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
+    "screen",
     "text3d",
-    "scroll"
+    "banner"
    ],
-   "onscreen_text": "7 → 4",
-   "comic_action": "Plan large : le parchemin de la façade se déroule, « C'ÉTAIT MIEUX AVANT » souligné de rouge.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "DÉFI ULTIME : > 4 %",
+   "comic_action": "Une barre « 4 % » que personne n'arrive à soulever.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "4 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,97 +269,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique range un bicorne dans un carton.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote pour qui impossible n'existe pas, sauf ranger."
+  "text": "Envoie ça au pote pour qui rien n'est impossible, sauf ranger."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 83,
+ "word_count": 74,
  "claims": [
   {
-   "text": "Septembre 2026 : il se dit candidat. Mais pas officiellement.",
-   "claim_type": "fait_public",
-   "source": "https://www.parismatch.be/actualites/monde/2026/09/18/eric-zemmour-confirme-sa-candidature-a-lelection-presidentielle-francaise-5CKEL6PZ4BDONOUKVHMMCG65NU/",
-   "note": "Septembre 2026 sur BFMTV : candidat, mais pas encore de déclaration officielle."
-  },
-  {
-   "text": "Novembre : officialisé au 20 h. Sondages de rentrée : environ 4 %.",
-   "claim_type": "fait_public",
-   "source": "https://fr.euronews.com/2026/11/10/eric-zemmour-annonce-sa-candidature-a-la-presidentielle",
-   "note": "Candidature officialisée au 20 h de TF1 le 10/11/2026. / Crédité d'environ 4 % dans les sondages de la rentrée 2026."
-  },
-  {
-   "text": "« Impossible n'est pas français »",
+   "text": "Son slogan de 2021 : « Impossible n'est pas français ».",
    "claim_type": "citation_exacte",
    "source": "https://www.europe1.fr/node/127383",
    "note": "Slogan de campagne « Impossible n'est pas français » (formule attribuée à Napoléon)."
   },
   {
-   "text": "Il admire Napoléon. Il en a surtout gardé Waterloo.",
+   "text": "Défi le plus impossible : le faire passer au-dessus de 4 %.",
    "claim_type": "fait_public",
-   "source": "https://fr.timesofisrael.com/de-quelle-extreme-droite-eric-zemmour-est-il-le-nom/",
-   "note": "Admiration revendiquée pour Napoléon ; slogan « Impossible n'est pas français »."
-  },
-  {
-   "text": "En 2022, sept pour cent. En 2026, quatre. Le c'était mieux avant marche enfin.",
-   "claim_type": "fait_public",
-   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
-   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième. / Crédité d'environ 4 % dans les sondages de la rentrée 2026."
+   "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
+   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "sources": [
   {
-   "url": "https://www.parismatch.be/actualites/monde/2026/09/18/eric-zemmour-confirme-sa-candidature-a-lelection-presidentielle-francaise-5CKEL6PZ4BDONOUKVHMMCG65NU/",
-   "date": "2026-09-18",
+   "url": "https://www.europe1.fr/node/127383",
+   "date": "2021-12",
    "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Septembre 2026 sur BFMTV : candidat, mais pas encore de déclaration officielle."
-  },
-  {
-   "url": "https://fr.euronews.com/2026/11/10/eric-zemmour-annonce-sa-candidature-a-la-presidentielle",
-   "date": "2026-11-10",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Candidature officialisée au 20 h de TF1 le 10/11/2026."
+   "statut": "citation_exacte",
+   "note": "Slogan de campagne « Impossible n'est pas français » (formule attribuée à Napoléon)."
   },
   {
    "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
    "date": "2026-09",
    "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
+   "statut": "fait",
    "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
-  },
-  {
-   "url": "https://www.europe1.fr/node/127383",
-   "date": "2021-12",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "Slogan de campagne « Impossible n'est pas français » (formule attribuée à Napoléon)."
-  },
-  {
-   "url": "https://fr.timesofisrael.com/de-quelle-extreme-droite-eric-zemmour-est-il-le-nom/",
-   "date": "2021-12",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Admiration revendiquée pour Napoléon ; slogan « Impossible n'est pas français »."
-  },
-  {
-   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
-   "date": "2022-04",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : candidature 2027 annoncée en plusieurs temps, environ 4 % à la rentrée 2026, « Impossible n'est pas français ». Cadre : la mairie et ses annonces. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Son slogan de 2021 : « Impossible n'est pas français ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

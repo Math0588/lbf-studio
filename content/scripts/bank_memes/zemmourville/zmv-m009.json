@@ -5,78 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Menu 1965",
- "anchor": "l'annonce de 2021 jugée digne de 1965 : promesse grandiose, réalité de cantine.",
+ "anchor": "L'annonce de 2021 jugée digne de 1965 : le restaurant municipal repasse en 1965.",
  "meme_id": "ZB",
- "situation": "le restaurant",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le menu n'a pas changé depuis 1965.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, la carte est d'époque, l'addition non.",
-  "Zemmourville : la gastronomie du passé, réchauffée."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien paie en francs.",
+  "L'annonce de Zemmour sentait 1965. Le restaurant de la ville y est resté.",
+  "Les zemmouriens vont me détester.",
+  "Bienvenue à Zemmourville : menu 1965.",
+  "Zemmour en une vidéo : menu 1965."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Promesse de grand chef, résultat de cantine : 7 %.",
-  "Menu 1965, addition 2026, saveur 7 %.",
-  "Grand chef annoncé, œuf mayo servi."
+  "Le restaurant est complet. Seule table vide : celle du second tour.",
+  "Le restaurant est complet. Seule table vide : celle du second tour.",
+  "On demande une carte bleue ? On reçoit un carnet de chèques en cuir."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Menu d'époque.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien paie en francs.",
    "accent_words": [
-    "Menu d'époque"
+    "en francs"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2021, un rival compare son annonce à une candidature de 1965.",
+   "text": "En 2021, ses rivaux jugent son annonce digne de 1965.",
    "accent_words": [
-    "1965"
+    "de 1965"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, le restaurant a pris ça comme un compliment. Menu 1965, prix 2026.",
+   "text": "Le restaurant municipal repasse en 1965 : menu, prix, serveurs.",
    "accent_words": [
-    "prix 2026"
+    "menu, prix, serveurs"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "La carte annonce une cuisine grandiose. On vous sert un œuf mayo.",
+   "text": "On paie en anciens francs. La caisse ne rend pas la monnaie de 2026.",
    "accent_words": [
-    "un œuf mayo"
+    "de 2026"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le serveur promet la tradition. Le micro-ondes date de l'époque.",
+   "text": "On demande une carte bleue ? On reçoit un carnet de chèques en cuir.",
    "accent_words": [
-    "de l'époque"
+    "en cuir"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Promesse de grand chef, résultat de cantine : 7 %.",
+   "text": "Le restaurant est complet. Seule table vide : celle du second tour.",
    "accent_words": [
-    "7 %"
+    "celle du second tour"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui commande le plat du jour de 1965.",
+   "text": "Envoie ça au pote qui commande toujours le menu de grand-mère.",
    "accent_words": [
-    "1965"
+    "de grand-mère"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "shop",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un restaurant ; ardoise « MENU 1965 ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · MENU 1965",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "RESTAURANT 1965"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -107,11 +130,24 @@
    "set": [
     "screen",
     "text3d",
-    "person"
+    "tribune"
    ],
-   "onscreen_text": "1965",
-   "comic_action": "Une télé à tube dans un coin du restaurant, grain d'époque.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "DIGNE DE 1965",
+   "comic_action": "Une vieille télé diffuse l'annonce, grain d'époque.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "RESTAURANT 1965"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -120,18 +156,60 @@
    ],
    "camera": "orbit",
    "set": [
+    "shop",
     "table",
-    "sign",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "MENU 1965 · PRIX 2026",
-   "comic_action": "Orbite : la carte en lettres dorées, addition en euros récents.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RESTO 1965",
+   "comic_action": "Serveurs en nœud papillon, nappes à carreaux.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "bow",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MENU : 3 FRANCS"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "shop",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "PAIEMENT : ANCIENS FRANCS",
+   "comic_action": "Un client vide une boîte de vieilles pièces.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "objet": "billets"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CLIENT"
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
    ],
    "camera": "closeup",
    "set": [
@@ -139,24 +217,22 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "GRANDIOSE : ŒUF MAYO",
-   "comic_action": "Gros plan : cloche argentée soulevée, un œuf mayo seul.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
-  },
-  {
-   "id": "s5",
-   "narration_ids": [
-    "n5"
+   "onscreen_text": "CB : NON · CHÉQUIER : OUI",
+   "comic_action": "Le serveur tend un chéquier sur un plateau d'argent.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase"
+    }
    ],
-   "camera": "street_dolly",
-   "set": [
-    "table",
-    "person",
-    "sign"
-   ],
-   "onscreen_text": "MICRO-ONDES 1965",
-   "comic_action": "Travelling en cuisine : un micro-ondes antique qui fume.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CB : INCONNUE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +241,26 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "text3d",
-    "person"
+    "table",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "NOTE : 7 %",
-   "comic_action": "Plan large : un guide gastronomique décerne « 7 % » à la façade.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "TABLE 2E TOUR : VIDE",
+   "comic_action": "Une table dressée, étiquette « 2E TOUR », personne.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RÉSERVÉ (DEPUIS 2022)"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,30 +274,44 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique trempe son pain dans l'œuf mayo.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui commande le plat du jour de 1965."
+  "text": "Envoie ça au pote qui commande toujours le menu de grand-mère."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 79,
+ "word_count": 85,
  "claims": [
   {
-   "text": "En 2021, un rival compare son annonce à une candidature de 1965.",
+   "text": "En 2021, ses rivaux jugent son annonce digne de 1965.",
    "claim_type": "fait_public",
    "source": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
-   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
+   "note": "Adversaires : annonce jugée « momifiée », digne de la présidentielle de 1965 (paraphrase)."
   },
   {
-   "text": "Promesse de grand chef, résultat de cantine : 7 %.",
+   "text": "Le restaurant est complet. Seule table vide : celle du second tour.",
    "claim_type": "fait_public",
    "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
@@ -219,8 +322,8 @@
    "url": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
    "date": "2021-11-30",
    "consulted": "2026-11-22",
-   "statut": "opinion rapportée",
-   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
+   "statut": "fait",
+   "note": "Adversaires : annonce jugée « momifiée », digne de la présidentielle de 1965 (paraphrase)."
   },
   {
    "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
@@ -231,5 +334,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : l'annonce de 2021 jugée digne de 1965 : promesse grandiose, réalité de cantine. Cadre : le restaurant. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2021, ses rivaux jugent son annonce digne de 1965. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

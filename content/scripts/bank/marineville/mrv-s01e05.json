@@ -3,49 +3,49 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-05",
  "format": "A",
- "title_cover": "Pas dogmatique",
+ "title_cover": "Tapissée de francs",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, les francs servent de sous-bocks.",
-  "Marineville : le pilier du programme est parti à la benne.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : pas dogmatique."
+  "Dans cette ville, tout le monde vote Marine. En francs, au cas où.",
+  "Marineville imprime des francs. Juste au cas où.",
+  "Ici, la mairie est tapissée de francs.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Tapissée de francs."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Pas dogmatique : ce qu'on dit quand le pilier du programme part à la benne.",
-  "Ici, la mairie a imprimé des francs. Ils servent de sous-bocks.",
-  "Deux ans plus tard, abandon. Explication du parti : on n'est pas dogmatique."
+  "L'explication du parti : « on n'est pas dogmatique ». Le papier peint non plus.",
+  "Pas dogmatique, le papier peint non plus.",
+  "Puis du papier peint. Toute la mairie est tapissée de francs."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine. En euros, finalement.",
+   "text": "Dans cette ville, tout le monde vote Marine. En francs, au cas où.",
    "accent_words": [
-    "En euros"
+    "francs"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2017, la sortie de l'euro est au programme.",
+   "text": "En 2017, elle promet la sortie de l'euro. Puis le parti l'abandonne.",
    "accent_words": [
-    "sortie de l'euro"
+    "abandonne"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Deux ans plus tard, abandon. Explication du parti : on n'est pas dogmatique.",
+   "text": "Alors la ville imprime des francs, juste au cas où. Des millions.",
    "accent_words": [
-    "pas dogmatique"
+    "millions"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, la mairie a imprimé des francs. Ils servent de sous-bocks.",
+   "text": "Les francs ne servent à rien. On en fait des sous-bocks.",
    "accent_words": [
     "sous-bocks"
    ],
@@ -53,25 +53,25 @@
   },
   {
    "id": "n5",
-   "text": "Le distributeur crache encore des francs, version collector.",
+   "text": "Puis du papier peint. Toute la mairie est tapissée de francs.",
    "accent_words": [
-    "collector"
+    "francs"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Pas dogmatique : ce qu'on dit quand le pilier du programme part à la benne.",
+   "text": "L'explication du parti : « on n'est pas dogmatique ». Le papier peint non plus.",
    "accent_words": [
-    "à la benne"
+    "plus"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui avait déjà ressorti son porte-monnaie en francs.",
+   "text": "Envoie ça au pote qui avait ressorti son porte-monnaie en francs.",
    "accent_words": [
-    "en francs"
+    "francs"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,25 +89,55 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une vitrine « BUREAU DE CHANGE : FERMÉ ».",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "EN FRANCS",
+   "comic_action": "Descente sur la ville ; banderole « EN FRANCS » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "objet": "billets",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
-    "lift_tribune",
-    "tribune",
-    "person",
-    "banner"
+    "screen",
+    "text3d",
+    "shop",
+    "person"
    ],
-   "onscreen_text": "SORTIE DE L'EURO",
-   "comic_action": "La tribune s'élève sous une banderole « FRANC ».",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "SORTIE DE L'EURO : ABANDONNÉE",
+   "comic_action": "Caisse de boutique : l'écran affiche « SORTIE DE L'EURO : ABANDONNÉE ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -118,60 +148,113 @@
    "set": [
     "screen",
     "text3d",
-    "mairie",
-    "person"
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "PAS DOGMATIQUE",
-   "comic_action": "L'écran affiche la banderole « FRANC » qu'on décroche discrètement.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "DES MILLIONS DE FRANCS",
+   "comic_action": "Compteur géant sur l'écran : « DES MILLIONS DE FRANCS ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "objet": "billets",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "1 BAGUETTE = 6 FRANCS"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "table",
-    "person",
     "screen",
-    "text3d"
+    "text3d",
+    "shop",
+    "person"
    ],
-   "onscreen_text": "FRANCS : SOUS-BOCKS",
-   "comic_action": "Au café municipal, des billets en francs sous chaque verre.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "FRANCS = SOUS-BOCKS",
+   "comic_action": "Caisse de boutique : l'écran affiche « FRANCS = SOUS-BOCKS ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "objet": "verre",
+     "geste": "shrug"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "descend",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "FRANCS : ÉDITION COLLECTOR",
-   "comic_action": "Un distributeur sort des billets en francs ; le commerçant les refuse.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "MAIRIE TAPISSÉE DE FRANCS",
+   "comic_action": "Descente sur la ville ; banderole « MAIRIE TAPISSÉE DE FRANCS » sur la mairie.",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "facepalm"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "bin",
-    "road",
-    "building",
-    "person"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "PILIER : À LA BENNE",
-   "comic_action": "Un camion-poubelle emporte une colonne marquée « EURO ». Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "« PAS DOGMATIQUE »",
+   "comic_action": "Plan final, tenir une seconde : « « PAS DOGMATIQUE » ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,33 +268,45 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt tend une pièce de dix francs.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE NOSTALGIQUE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE NOSTALGIQUE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui avait déjà ressorti son porte-monnaie en francs."
+  "text": "Envoie ça au pote qui avait ressorti son porte-monnaie en francs."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 79,
+ "word_count": 85,
  "claims": [
   {
    "segment": "n2",
-   "text": "En 2017, la sortie de l'euro est au programme.",
+   "text": "En 2017, elle promet la sortie de l'euro. Puis le parti l'abandonne.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/sortie-de-l-euro-les-atermoiements-de-marine-le-pen-60007",
-   "note": "Sortie de l'euro au programme ; en 2012 elle la conditionnait à un référendum."
+   "note": "Sortie de l'euro au programme 2017 ; en 2012, elle la conditionnait à un référendum. ; Abandon de la sortie de l'euro : « on n'est pas dogmatique » (Nicolas Bay).",
+   "sources_complementaires": [
+    "https://www.publicsenat.fr/actualites/politique/abandon-de-la-sortie-de-l-euro-au-rn-on-n-est-pas-dogmatique-explique-nicolas-bay"
+   ]
   },
   {
-   "segment": "n3",
-   "text": "Deux ans plus tard, abandon. Explication du parti : on n'est pas dogmatique.",
-   "claim_type": "fait_public",
+   "segment": "n6",
+   "text": "L'explication du parti : « on n'est pas dogmatique ». Le papier peint non plus.",
+   "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/abandon-de-la-sortie-de-l-euro-au-rn-on-n-est-pas-dogmatique-explique-nicolas-bay",
    "note": "Abandon de la sortie de l'euro : « on n'est pas dogmatique » (Nicolas Bay)."
   }
@@ -221,17 +316,17 @@
    "url": "https://www.publicsenat.fr/actualites/politique/sortie-de-l-euro-les-atermoiements-de-marine-le-pen-60007",
    "date": "2017",
    "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Sortie de l'euro au programme ; en 2012 elle la conditionnait à un référendum."
+   "statut": "fait",
+   "note": "Sortie de l'euro au programme 2017 ; en 2012, elle la conditionnait à un référendum."
   },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/abandon-de-la-sortie-de-l-euro-au-rn-on-n-est-pas-dogmatique-explique-nicolas-bay",
    "date": "2019 (date exacte non relevée)",
    "consulted": "2026-11-22",
-   "statut": "fait public",
+   "statut": "fait + citation exacte (Nicolas Bay)",
    "note": "Abandon de la sortie de l'euro : « on n'est pas dogmatique » (Nicolas Bay)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = sortie de l'euro au programme en 2017, puis abandonnée (« on n'est pas dogmatique », explique le parti). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = la sortie de l'euro promise en 2017, puis abandonnée. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

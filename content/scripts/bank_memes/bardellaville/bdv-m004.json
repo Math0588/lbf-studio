@@ -4,31 +4,31 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Pouvoir d'achat garanti",
- "anchor": "plus d'un million de droits d'auteur : le pouvoir d'achat, le sien",
+ "title_cover": "Ville d'écrivains",
+ "anchor": "plus d'un million d'euros de droits d'auteur",
  "meme_key": "LIVRES",
- "situation": "Pouvoir d'achat garanti",
- "ressort": "un thème unique en escalade : truc connu, trois crans, chute retournée",
+ "situation": "Ville d'écrivains",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Pouvoir d'achat garanti.",
-  "Le pouvoir d'achat de Bardella a augmenté. Le sien.",
-  "Bardellaville : promesse tenue, pour un seul habitant.",
+  "Dans cette ville, tout le monde vote Bardella. Et achète ses livres en double.",
+  "Bardellaville : trente mille écrivains, zéro lecteur.",
+  "Ici, les maisons sont en livres.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Pouvoir d'achat garanti."
+  "Bienvenue à Bardellaville. Au programme : Ville d'écrivains."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le candidat du pouvoir d'achat a tenu parole : le sien.",
-  "Promesse tenue : son pouvoir d'achat.",
-  "Un million de droits, zéro pour toi."
+  "Bardella, lui, a gardé le million. Au sec.",
+  "Le million, lui, est au sec.",
+  "Il pleut. La ville en papier s'effondre."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Pouvoir d'achat garanti.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Et achète ses livres en double.",
    "accent_words": [
-    "garanti"
+    "double"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -36,39 +36,39 @@
    "id": "n2",
    "text": "Ses livres lui ont rapporté plus d'un million d'euros de droits d'auteur.",
    "accent_words": [
-    "un million"
+    "droits d'auteur"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Le deuxième, c'était « celui des Français », disait-il. Les Français paient quand même.",
+   "text": "Alors toute la ville se met à écrire : chaque habitant publie son livre.",
    "accent_words": [
-    "paient"
+    "livre"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Trois livres en deux ans : le pouvoir d'achat, il l'a trouvé.",
+   "text": "Trente mille auteurs, zéro lecteur. Les livres servent de murs.",
    "accent_words": [
-    "trouvé"
+    "murs"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Prochaine promesse : la dédicace remboursée par la Sécu.",
+   "text": "Il pleut. La ville en papier s'effondre.",
    "accent_words": [
-    "Sécu"
+    "s'effondre"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le candidat du pouvoir d'achat a tenu parole : le sien.",
+   "text": "Bardella, lui, a gardé le million. Au sec.",
    "accent_words": [
-    "le sien"
+    "million"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -94,18 +94,24 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "POUVOIR D'ACHAT GARANTI",
-   "comic_action": "Descente sur la ville ; banderole « POUVOIR D'ACHAT GARANTI » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "onscreen_text": "LIVRES EN DOUBLE",
+   "comic_action": "Descente sur la ville ; banderole « LIVRES EN DOUBLE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "arms_up",
-     "visage": "content"
+     "who": "foule",
+     "objet": "billets",
+     "geste": "shrug"
     },
     {
-     "who": "foule",
-     "geste": "cheer"
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
     }
    ]
   },
@@ -121,21 +127,22 @@
     "table",
     "form_stack"
    ],
-   "onscreen_text": "1 MILLION €",
-   "comic_action": "Compteur géant sur l'écran : « 1 MILLION € ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "onscreen_text": "1 MILLION DE DROITS",
+   "comic_action": "Compteur géant sur l'écran : « 1 MILLION DE DROITS ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
      "geste": "cheer",
-     "visage": "content"
+     "visage": "content",
+     "objet": "billets"
     },
     {
      "who": "perso",
-     "visage": "choque",
-     "geste": "point"
+     "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -149,19 +156,23 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "« CELUI DES FRANÇAIS »",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « « CELUI DES FRANÇAIS » ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "TOUT LE MONDE PUBLIE",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « TOUT LE MONDE PUBLIE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "bow",
-     "visage": "sourire_pro"
+     "who": "foule",
+     "geste": "nod"
     },
     {
      "who": "perso",
-     "geste": "facepalm",
-     "visage": "colere"
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ÉCRIS TON LIVRE"
     }
    ]
   },
@@ -170,56 +181,56 @@
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "form_stack",
+    "road",
+    "sign",
     "person",
-    "text3d"
+    "traffic_light"
    ],
-   "onscreen_text": "TROUVÉ : SON POUVOIR D'ACHAT",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « TROUVÉ : SON POUVOIR D'ACHAT ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "LES LIVRES = DES MURS",
+   "comic_action": "Dans la rue, panneau « LES LIVRES = DES MURS ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "content"
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
     },
     {
      "who": "foule",
-     "objet": "phone",
-     "geste": "jump"
+     "geste": "shrug"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
-    "table",
-    "form_stack"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "DÉDICACE REMBOURSÉE",
-   "comic_action": "Compteur géant sur l'écran : « DÉDICACE REMBOURSÉE ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "LA VILLE S'EFFONDRE",
+   "comic_action": "Dans la rue, panneau « LA VILLE S'EFFONDRE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro"
+     "who": "foule",
+     "geste": "fall"
     },
     {
      "who": "perso",
-     "geste": "facepalm",
+     "geste": "fall",
      "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -233,21 +244,23 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "LE SIEN",
-   "comic_action": "Plan final, tenir une seconde : « LE SIEN ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "LE MILLION AU SEC",
+   "comic_action": "Plan final, tenir une seconde : « LE MILLION AU SEC ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
      "geste": "cheer",
-     "visage": "content"
+     "visage": "content",
+     "objet": "billets"
     },
     {
      "who": "perso",
      "geste": "cross_arms",
      "visage": "colere"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -263,7 +276,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE GÉNÉREUX",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE GÉNÉREUX ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -271,7 +284,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -283,7 +297,7 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 80,
+ "word_count": 76,
  "claims": [
   {
    "segment": "n2",
@@ -294,20 +308,6 @@
    "sources_complementaires": [
     "https://www.24matins.fr/jordan-bardella-a-deja-gagne-plus-dun-million-deuros-avec-ses-livres-1419059"
    ]
-  },
-  {
-   "segment": "n3",
-   "text": "Le deuxième, c'était « celui des Français », disait-il. Les Français paient quand même.",
-   "claim_type": "citation_exacte",
-   "source": "https://www.europe1.fr/politique/ce-livre-nest-pas-le-mien-cest-celui-des-francais-en-sondant-le-pays-jordan-bardella-se-prepare-a-lexercice-du-pouvoir-869191",
-   "note": "Livre « Ce que veulent les Français » : « Ce livre n'est pas le mien, c'est celui des Français »."
-  },
-  {
-   "segment": "n4",
-   "text": "Trois livres en deux ans : le pouvoir d'achat, il l'a trouvé.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
-   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
   }
  ],
  "sources": [
@@ -324,22 +324,8 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Plus d'un million d'euros de droits d'auteur (déclaration HATVP)."
-  },
-  {
-   "url": "https://www.europe1.fr/politique/ce-livre-nest-pas-le-mien-cest-celui-des-francais-en-sondant-le-pays-jordan-bardella-se-prepare-a-lexercice-du-pouvoir-869191",
-   "date": "2025-10-29",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "Livre « Ce que veulent les Français » : « Ce livre n'est pas le mien, c'est celui des Français »."
-  },
-  {
-   "url": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
-   "date": "2026-11-04",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = plus d'un million de droits d'auteur : le pouvoir d'achat, le sien. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = plus d'un million d'euros de droits d'auteur. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

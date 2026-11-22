@@ -5,68 +5,68 @@
  "format": "A",
  "length": "court",
  "title_cover": "La baguette d'avant",
- "anchor": "le « c'était mieux avant » : déclinisme et nostalgie, jusqu'au pain.",
+ "anchor": "Le « c'était mieux avant » appliqué à la boulangerie.",
  "meme_id": "ZN",
- "situation": "la boulangerie",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : la baguette du jour est interdite.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, le pain frais est un signe de déclin.",
-  "Zemmourville : la boulangerie qui vend du passé."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien mange rassis.",
+  "Zemmour regrette avant. La boulangerie ne vend plus que du pain d'avant.",
+  "Les zemmouriens vont me détester.",
+  "Bienvenue à Zemmourville : la baguette d'avant.",
+  "Zemmour en une vidéo : la baguette d'avant."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le pain d'avant était meilleur, c'est sûr. Le score d'avant aussi : 17 %.",
-  "Pain rassis, nostalgie fraîche.",
-  "Avant, le pain était meilleur. Les sondages aussi."
+  "Le pain d'avant était meilleur. Son score d'avant aussi : 17 %.",
+  "Le pain d'avant était meilleur. Son score d'avant aussi : 17 %.",
+  "Le pain frais est interdit. La ville trempe du 1974 dans son café."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. C'était mieux avant.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien mange rassis.",
    "accent_words": [
-    "C'était mieux avant"
+    "mange rassis"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, la baguette n'est jamais fraîche. Elle est d'avant.",
+   "text": "Sa marque de fabrique : la nostalgie, le c'était mieux avant.",
    "accent_words": [
-    "d'avant"
+    "mieux avant"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "La boulangerie ne vend plus que la baguette d'avant.",
+   "accent_words": [
+    "baguette d'avant"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Celle du jour est soldée. Celle de 1974 sur liste d'attente.",
+   "id": "n4",
+   "text": "Celle d'hier coûte plus cher. Celle de 1974 est sur liste d'attente.",
    "accent_words": [
     "liste d'attente"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n4",
-   "text": "Une fondation a résumé l'humeur : déclinisme et nostalgie, cocktail français.",
-   "accent_words": [
-    "cocktail français"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n5",
-   "text": "Le boulanger rend la monnaie en francs et en soupirs.",
+   "text": "Le pain frais est interdit. La ville trempe du 1974 dans son café.",
    "accent_words": [
-    "en soupirs"
+    "son café"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le pain d'avant était meilleur, c'est sûr. Le score d'avant aussi : 17 %.",
+   "text": "Le pain d'avant était meilleur. Son score d'avant aussi : 17 %.",
    "accent_words": [
     "17 %"
    ],
@@ -74,9 +74,9 @@
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui dit que les bonbons coûtaient un franc.",
+   "text": "Envoie ça au pote qui dit que la baguette était meilleure dans les années 90.",
    "accent_words": [
-    "un franc"
+    "années 90"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "shop",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une boulangerie à l'ancienne : enseigne « PAIN D'AVANT ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · LA BAGUETTE D'AVANT",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "LE PAIN D'AVANT"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -106,42 +129,82 @@
    "camera": "closeup",
    "set": [
     "shop",
-    "sign",
-    "text3d"
+    "text3d",
+    "tribune"
    ],
-   "onscreen_text": "BAGUETTE D'AVANT",
-   "comic_action": "Gros plan : une baguette sous cloche, étiquette « 1974 ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "C'ÉTAIT MIEUX AVANT",
+   "comic_action": "Le maire contemple une vieille photo de boulangerie.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LE PAIN D'AVANT"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
     "shop",
-    "person",
-    "sign"
+    "sign",
+    "person"
    ],
-   "onscreen_text": "1974 : LISTE D'ATTENTE",
-   "comic_action": "Travelling : une file d'habitants devant le panier des pains rassis.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "BAGUETTE D'AVANT",
+   "comic_action": "Vitrine de baguettes dures comme du bois.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "baguette"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BAGUETTE D'HIER : 3 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "table",
+    "shop",
     "text3d",
     "person"
    ],
-   "onscreen_text": "DÉCLINISME + NOSTALGIE",
-   "comic_action": "Orbite : le boulanger sert un cocktail dans une flûte à champagne poussiéreuse.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "1974 : LISTE D'ATTENTE",
+   "comic_action": "Une file de clients pour une baguette sous cloche.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "manif",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "1974 : RUPTURE"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -154,9 +217,23 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "MONNAIE : FRANCS",
-   "comic_action": "Gros plan sur des pièces anciennes déposées une à une, soupir à chaque pièce.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PAIN FRAIS : INTERDIT",
+   "comic_action": "Un client tente de tremper une baguette pétrifiée.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "objet": "baguette"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "RASSIS"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +242,26 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
+    "screen",
     "text3d",
-    "scroll"
+    "banner"
    ],
    "onscreen_text": "AVANT : 17 %",
-   "comic_action": "Plan large : l'enseigne s'allume « 17 % » au néon, puis grésille.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "comic_action": "Un sondage de 2021 encadré au-dessus du four.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "17 % (2021)"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,30 +275,44 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique croque une baguette, elle craque comme du bois.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui dit que les bonbons coûtaient un franc."
+  "text": "Envoie ça au pote qui dit que la baguette était meilleure dans les années 90."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 78,
+ "word_count": 85,
  "claims": [
   {
-   "text": "Une fondation a résumé l'humeur : déclinisme et nostalgie, cocktail français.",
+   "text": "Sa marque de fabrique : la nostalgie, le c'était mieux avant.",
    "claim_type": "fait_public",
    "source": "https://www.jean-jaures.org/publication/declinisme-et-nostalgie-un-cocktail-francais/",
    "note": "Fondation Jean-Jaurès : « Déclinisme et nostalgie, un cocktail français »."
   },
   {
-   "text": "Le pain d'avant était meilleur, c'est sûr. Le score d'avant aussi : 17 %.",
+   "text": "Le pain d'avant était meilleur. Son score d'avant aussi : 17 %.",
    "claim_type": "fait_public",
    "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
    "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
@@ -219,7 +323,7 @@
    "url": "https://www.jean-jaures.org/publication/declinisme-et-nostalgie-un-cocktail-francais/",
    "date": "2021",
    "consulted": "2026-11-22",
-   "statut": "analyse",
+   "statut": "fait",
    "note": "Fondation Jean-Jaurès : « Déclinisme et nostalgie, un cocktail français »."
   },
   {
@@ -231,5 +335,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le « c'était mieux avant » : déclinisme et nostalgie, jusqu'au pain. Cadre : la boulangerie. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Sa marque de fabrique : la nostalgie, le c'était mieux avant. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-10",
  "format": "A",
- "title_cover": "Dossier au finish",
+ "title_cover": "À la dernière minute",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : l'entretien se passe au passé simple.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, on rend ses dossiers à la dernière minute, comme le patron.",
-  "Zemmourville : dans cinq ans ? Avant."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien est en retard.",
+  "Zemmour a eu ses parrainages à la dernière minute. La ville vit à 23 h 59.",
+  "Ben voyons, encore une vidéo sur lui.",
+  "Bienvenue à Zemmourville : à la dernière minute.",
+  "Zemmour en une vidéo : à la dernière minute."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le recruteur conclut : profil intéressant, mais bien meilleur en 2021.",
-  "Embauché à la dernière minute, viré au premier tour.",
-  "Excellent profil en 2021. En 2022, moins."
+  "Toujours in extremis. Sauf la défaite : quatrième, pile à l'heure.",
+  "Toujours in extremis. La défaite, elle, arrive pile à l'heure.",
+  "Le réveillon commence le 1er janvier à minuit moins une."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Entretien d'embauche.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien est en retard.",
    "accent_words": [
-    "Entretien d'embauche"
+    "en retard"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Question du recruteur : où vous voyez-vous dans cinq ans ? Réponse : avant.",
+   "text": "En 2022, il obtient ses 500 parrainages début mars. Date limite : le 4.",
    "accent_words": [
-    "avant"
+    "le 4"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Votre dossier ? Bouclé à trois jours de la date limite.",
+   "text": "La ville adopte la méthode : tout à la dernière minute.",
    "accent_words": [
-    "date limite"
+    "dernière minute"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Comme ses parrainages en 2022 : les 500 franchis début mars, limite le 4.",
+   "text": "Les mariés disent oui à minuit moins une. Le boulanger cuit à l'ouverture.",
    "accent_words": [
-    "limite le 4"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n5",
-   "text": "Expérience : chroniqueur, écrivain, candidat. Résultat : 7 %.",
-   "accent_words": [
-    "7 %"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n6",
-   "text": "Le recruteur conclut : profil intéressant, mais bien meilleur en 2021.",
-   "accent_words": [
-    "en 2021"
+    "à l'ouverture"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui rend tous ses dossiers à la dernière minute.",
+   "id": "n5",
+   "text": "Le réveillon commence le 1er janvier à minuit moins une.",
    "accent_words": [
-    "la dernière minute"
+    "moins une"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Toujours in extremis. Sauf la défaite : quatrième, pile à l'heure.",
+   "accent_words": [
+    "quatrième, pile à l'heure"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui rend tout à la dernière seconde.",
+   "accent_words": [
+    "dernière seconde"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un bureau ; affiche « ON RECRUTE (AVANT) ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · À LA DERNIÈRE MINUTE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "TOUT À 23 H 59"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,13 +123,26 @@
    ],
    "camera": "closeup",
    "set": [
+    "form_stack",
     "table",
-    "person",
     "text3d"
    ],
-   "onscreen_text": "DANS 5 ANS ? AVANT",
-   "comic_action": "Le candidat montre du doigt le calendrier… de l'année précédente.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "500 PARRAINAGES : IN EXTREMIS",
+   "comic_action": "Une pile de signatures arrive en courant au guichet.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "jump",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUT À 23 H 59"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,28 +151,54 @@
    ],
    "camera": "orbit",
    "set": [
-    "form_stack",
-    "table",
-    "text3d"
+    "mairie",
+    "column",
+    "person"
    ],
-   "onscreen_text": "J-3",
-   "comic_action": "Orbite : un dossier arrive en courant, haletant, tampon « LIMITE ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TOUT À 23 H 59",
+   "comic_action": "L'horloge de la mairie bloquée sur 23 h 59.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "neutre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "OUVERTURE : 23 H 59"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "form_stack",
-    "text3d",
-    "person"
+    "arch",
+    "person",
+    "shop"
    ],
-   "onscreen_text": "500 PARRAINAGES · J-3",
-   "comic_action": "Un compteur de signatures franchit 500 au dernier moment.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "OUI À 23 H 59",
+   "comic_action": "Des mariés courent sous l'arche, montre en main.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "jump",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "EN RETARD"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -145,13 +207,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
-    "text3d",
-    "person"
+    "table",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "RÉSULTAT : 7 %",
-   "comic_action": "Un CV en parchemin ; la dernière ligne surlignée.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "RÉVEILLON : À LA BOURRE",
+   "comic_action": "Une table de fête dressée en catastrophe.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "fatigue",
+     "objet": "verre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BONNE ANNÉE (PRESQUE)"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +236,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "table",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "PROFIL : 2021",
-   "comic_action": "Plan large : le recruteur range le dossier dans un tiroir « ARCHIVES ».",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "DÉFAITE : À L'HEURE",
+   "comic_action": "Un réveil sonne pile sur « 4E PLACE ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "4E · À L'HEURE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,30 +269,44 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique arrive en courant, trop tard.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui rend tous ses dossiers à la dernière minute."
+  "text": "Envoie ça au pote qui rend tout à la dernière seconde."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 82,
+ "word_count": 84,
  "claims": [
   {
-   "text": "Comme ses parrainages en 2022 : les 500 franchis début mars, limite le 4.",
+   "text": "En 2022, il obtient ses 500 parrainages début mars. Date limite : le 4.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-marine-le-pen-eric-zemmour-et-nicolas-dupont-aignan-obtiennent",
    "note": "500 parrainages franchis début mars 2022, date limite le 4 mars."
   },
   {
-   "text": "Expérience : chroniqueur, écrivain, candidat. Résultat : 7 %.",
+   "text": "Toujours in extremis. Sauf la défaite : quatrième, pile à l'heure.",
    "claim_type": "fait_public",
    "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
@@ -226,5 +329,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : les 500 parrainages de 2022, franchis à quelques jours de la date limite. Cadre : l'entretien d'embauche. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2022, il obtient ses 500 parrainages début mars. Date limite : le 4. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

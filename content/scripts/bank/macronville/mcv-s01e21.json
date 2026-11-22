@@ -3,27 +3,27 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-21",
  "format": "A",
- "title_cover": "Marchand de poudre",
+ "title_cover": "Ville en paillettes",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
   "Débat 2017 : le programme d'en face ? De la « poudre de perlimpinpin ».",
   "Les électeurs de Macron vont détester celle-là.",
-  "Marchand de poudre : l'histoire en trente secondes.",
-  "Dans cette ville, tout le monde vote Macron. Comme par magie."
+  "Ville en paillettes : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. La pharmacie vend des baguettes magiques."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La poudre de perlimpinpin, il connaissait bien. C'est lui qui la vendait.",
-  "Il accusait les autres de vendre de la poudre. Il en avait le monopole.",
-  "Puis un plongeon dans la Seine avant les JO. Toujours au sec."
+  "Le maire inaugure une ville entièrement en perlimpinpin. Il appelle ça le bilan.",
+  "Il dénonçait la poudre de perlimpinpin. Il en a fait un plan de relance.",
+  "On saupoudre l'école, la poste, le budget. Tout brille, plus rien ne marche."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Comme par magie.",
+   "text": "Dans cette ville, tout le monde vote Macron. La pharmacie vend des baguettes magiques.",
    "accent_words": [
-    "magie"
+    "magiques"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,33 +37,33 @@
   },
   {
    "id": "n3",
-   "text": "Lui promet plus personne à la rue avant fin 2017. Pschitt.",
+   "text": "La mairie en commande dix tonnes. Pour réparer les routes.",
    "accent_words": [
-    "Pschitt"
+    "routes"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Puis le glyphosate interdit sous trois ans. Re-pschitt.",
+   "text": "Les nids-de-poule sont saupoudrés. Ils restent. Mais ils brillent.",
    "accent_words": [
-    "pschitt"
+    "brillent"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Puis un plongeon dans la Seine avant les JO. Toujours au sec.",
+   "text": "On saupoudre l'école, la poste, le budget. Tout brille, plus rien ne marche.",
    "accent_words": [
-    "sec"
+    "marche"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La poudre de perlimpinpin, il connaissait bien. C'est lui qui la vendait.",
+   "text": "Le maire inaugure une ville entièrement en perlimpinpin. Il appelle ça le bilan.",
    "accent_words": [
-    "vendait"
+    "bilan"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -91,7 +91,7 @@
     "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la ville ; banderole « MARCHAND DE POUDRE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "comic_action": "Descente sur la ville ; banderole « VILLE EN PAILLETTES » sur la mairie ; le maire caricaturé salue, sourire figé.",
    "expected_result": "La ville et le thème posés en une image.",
    "actions": [
     {
@@ -105,6 +105,16 @@
      "geste": "clap",
      "visage": "neutre",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "VILLE EN PAILLETTES"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
     }
    ]
   },
@@ -121,7 +131,7 @@
    ],
    "onscreen_text": "« POUDRE DE PERLIMPINPIN »",
    "comic_action": "Le maire souffle sur un pupitre adverse ; un nuage de poudre scintillante s'en échappe.",
-   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
    "actions": [
     {
      "who": "maire",
@@ -135,6 +145,12 @@
      "visage": "content",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PERLIMPINPIN"
+    }
    ]
   },
   {
@@ -144,14 +160,13 @@
    ],
    "camera": "window_pass",
    "set": [
-    "bench",
-    "lamp",
-    "person",
-    "text3d"
+    "car",
+    "text3d",
+    "sign"
    ],
-   "onscreen_text": "ZÉRO À LA RUE ? PSCHITT",
-   "comic_action": "Il saupoudre de la poudre sur un banc public ; le banc reste occupé, la poudre retombe.",
-   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "onscreen_text": "10 TONNES DE POUDRE",
+   "comic_action": "Un camion déverse de la poudre scintillante devant la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
    "actions": [
     {
      "who": "maire",
@@ -161,9 +176,15 @@
     },
     {
      "who": "perso",
-     "geste": "shrug",
-     "visage": "fatigue",
+     "geste": "point",
+     "visage": "choque",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "POUDRE 10 000 € LE KG"
     }
    ]
   },
@@ -174,26 +195,31 @@
    ],
    "camera": "closeup",
    "set": [
+    "road",
     "ground",
-    "sign",
-    "text3d",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "GLYPHOSATE : 3 ANS",
-   "comic_action": "Il saupoudre un champ ; le panneau « INTERDIT DANS 3 ANS » se transforme en « PLUS TARD ».",
-   "expected_result": "Escalade 2 : encore plus gros.",
+   "onscreen_text": "TROUS QUI BRILLENT",
+   "comic_action": "Les nids-de-poule pailletés étincellent ; une voiture tombe dedans quand même.",
+   "expected_result": "Conséquence : ça dégénère.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "nod",
-     "visage": "sourire_pro",
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque",
      "quand": 0.0
     },
     {
-     "who": "perso",
+     "who": "foule",
      "geste": "facepalm",
      "visage": "blase",
-     "quand": 0.5
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PAILLETTES"
     }
    ]
   },
@@ -204,25 +230,31 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "fountain",
-    "sign",
+    "building",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "SEINE : TOUJOURS AU SEC",
-   "comic_action": "Le maire, bonnet de bain sur la tête, s'arrête au bord de la fontaine et repart en peignoir.",
-   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "onscreen_text": "TOUT BRILLE, RIEN NE MARCHE",
+   "comic_action": "École, poste, mairie : tout scintille ; aucune porte ne s'ouvre.",
+   "expected_result": "Pire conséquence : l'absurde total.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "shake",
-     "visage": "choque",
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
      "quand": 0.0
     },
     {
-     "who": "foule",
-     "geste": "point",
-     "visage": "content",
-     "quand": 0.5
+     "who": "perso",
+     "geste": "arms_up",
+     "visage": "colere",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ÇA BRILLE"
     }
    ]
   },
@@ -233,13 +265,13 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "text3d",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "MARCHAND DE POUDRE",
-   "comic_action": "Le maire derrière un stand de marché, sachets « PERLIMPINPIN » à vendre, sourire commercial.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "LE BILAN",
+   "comic_action": "Le maire coupe le ruban d'une ville entièrement pailletée.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
@@ -248,10 +280,16 @@
      "quand": 0.0
     },
     {
-     "who": "perso",
+     "who": "foule",
      "geste": "facepalm",
      "visage": "choque",
-     "quand": 0.4
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BILAN 100 % PERLIMPINPIN"
     }
    ]
   },
@@ -268,7 +306,7 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « poudre de perlimpinpin » (2017), retournée contre ses propres promesses.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : la « poudre de perlimpinpin » (2017) commandée par tonnes pour réparer la ville.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -283,6 +321,12 @@
      "visage": "sourire_pro",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "VILLE EN PAILLETTES"
+    }
    ]
   }
  ],
@@ -295,31 +339,13 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 80,
+ "word_count": 85,
  "claims": [
   {
    "text": "« poudre de perlimpinpin »",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
    "note": "Florilège : « on met un pognon de dingue dans les minima sociaux » (06/2018), « je traverse la rue, je vous en trouve » (09/2018), « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde » (expression la plus fréquente)."
-  },
-  {
-   "text": "Lui promet plus personne à la rue avant fin 2017. Pschitt.",
-   "claim_type": "fait_public",
-   "source": "https://www.brut.media/fr/news/plus-personne-dans-les-rues-le-voeu-d-emmanuel-macron-en-2017-e6480f0f-7327-4510-a548-bc1be2457538",
-   "note": "Orléans, 27/07/2017 : il dit ne plus vouloir, d'ici la fin de l'année, de femmes et d'hommes dans les rues ; promesse non tenue. Rappel de la promesse d'Orléans (27/07/2017) et de son échec."
-  },
-  {
-   "text": "Puis le glyphosate interdit sous trois ans. Re-pschitt.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/sortie-du-glyphosate-on-n-y-arrivera-pas-a-100-en-trois-ans-selon-macron-137218",
-   "note": "Promesse du 27/11/2017 : glyphosate interdit « au plus tard dans trois ans » ; en janvier 2019, il admet qu'on n'y arrivera pas à 100 %."
-  },
-  {
-   "text": "Puis un plongeon dans la Seine avant les JO. Toujours au sec.",
-   "claim_type": "fait_public",
-   "source": "https://www.lalibre.be/international/europe/2024/07/19/apres-anne-hidalgo-et-amelie-oudea-castera-emmanuel-macron-va-t-il-plonger-dans-la-seine-lelysee-repond-UG6RAIOSWFFJJG2NNDHLC25SQU/",
-   "note": "Il avait promis de se baigner dans la Seine ; Hidalgo et la ministre des Sports l'ont fait avant les JO, pas lui ; l'Élysée répond qu'il le fera, « pas forcément » avant les Jeux."
   }
  ],
  "sources": [
@@ -329,36 +355,8 @@
    "consulted": "2026-11-22",
    "statut": "fait (citations exactes vérifiées)",
    "note": "Florilège : « on met un pognon de dingue dans les minima sociaux » (06/2018), « je traverse la rue, je vous en trouve » (09/2018), « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde » (expression la plus fréquente)."
-  },
-  {
-   "url": "https://www.brut.media/fr/news/plus-personne-dans-les-rues-le-voeu-d-emmanuel-macron-en-2017-e6480f0f-7327-4510-a548-bc1be2457538",
-   "date": "non relevée",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Orléans, 27/07/2017 : il dit ne plus vouloir, d'ici la fin de l'année, de femmes et d'hommes dans les rues ; promesse non tenue."
-  },
-  {
-   "url": "https://globalvoices.org/2018/03/06/is-france-finally-facing-up-to-its-homelessness-problem/",
-   "date": "2018-03-06",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Rappel de la promesse d'Orléans (27/07/2017) et de son échec."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/sortie-du-glyphosate-on-n-y-arrivera-pas-a-100-en-trois-ans-selon-macron-137218",
-   "date": "2019-01",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Promesse du 27/11/2017 : glyphosate interdit « au plus tard dans trois ans » ; en janvier 2019, il admet qu'on n'y arrivera pas à 100 %."
-  },
-  {
-   "url": "https://www.lalibre.be/international/europe/2024/07/19/apres-anne-hidalgo-et-amelie-oudea-castera-emmanuel-macron-va-t-il-plonger-dans-la-seine-lelysee-repond-UG6RAIOSWFFJJG2NNDHLC25SQU/",
-   "date": "2024-07-19",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Il avait promis de se baigner dans la Seine ; Hidalgo et la ministre des Sports l'ont fait avant les JO, pas lui ; l'Élysée répond qu'il le fera, « pas forcément » avant les Jeux."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — « poudre de perlimpinpin » (2017), retournée contre ses propres promesses. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : la « poudre de perlimpinpin » (2017) commandée par tonnes pour réparer la ville. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

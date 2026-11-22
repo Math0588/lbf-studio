@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m022",
  "format": "A",
- "anchor": "affiche 2026 « avec Marine, défendons la République » : le prénom seul, comme en 2017.",
- "situation": "Prénom seulement",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
- "title_cover": "Prénom seulement",
+ "anchor": "l'affiche « avec Marine, défendons la République », sans nom de famille",
+ "situation": "Boîtes sans nom",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
+ "title_cover": "Boîtes sans nom",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, plus aucun nom de famille sur les boîtes aux lettres.",
-  "Marineville : une marque qui cache son nom.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : prénom seulement."
+  "Dans cette ville, tout le monde vote Marine. Sans nom.",
+  "Marineville retire les noms des boîtes aux lettres.",
+  "Ici, le facteur a quatre cents Gérard.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Boîtes sans nom."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Une marque qui cache son nom, c'est rarement pour une recette nouvelle.",
-  "Le facteur distribue au hasard : quatre cents Gérard, un seul courrier.",
-  "Les impôts, eux, retrouvent tout le monde. Nom, prénom, adresse."
+  "Marine garde le prénom. Le nom et la flamme, en réserve.",
+  "Le nom et la flamme, en réserve.",
+  "Les Gérard ouvrent les lettres des autres. Toute la ville connaît tes impôts."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -34,39 +34,39 @@
    "id": "n2",
    "text": "Sur l'affiche : « avec Marine, défendons la République ». Le nom ? Égaré.",
    "accent_words": [
-    "avec Marine"
+    "Égaré"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Déjà en 2017, nom de famille et sigle du parti disparaissaient des documents.",
-   "accent_words": [
-    "disparaissaient"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "Ici, la mairie a supprimé les noms de famille des boîtes aux lettres.",
+   "text": "Alors la mairie retire les noms de famille des boîtes aux lettres.",
    "accent_words": [
     "boîtes aux lettres"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n5",
+   "id": "n4",
    "text": "Le facteur distribue au hasard : quatre cents Gérard, un seul courrier.",
    "accent_words": [
-    "un seul courrier"
+    "courrier"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Les Gérard ouvrent les lettres des autres. Toute la ville connaît tes impôts.",
+   "accent_words": [
+    "impôts"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Une marque qui cache son nom, c'est rarement pour une recette nouvelle.",
+   "text": "Marine garde le prénom. Le nom et la flamme, en réserve.",
    "accent_words": [
-    "une recette nouvelle"
+    "en réserve"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -74,7 +74,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui l'appelle juste Marine, comme une collègue.",
    "accent_words": [
-    "une collègue"
+    "collègue"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,41 +92,91 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une plaque où seul le prénom est gravé.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "SANS NOM",
+   "comic_action": "Descente sur la ville ; banderole « SANS NOM » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    },
+    {
+     "type": "affiche",
+     "texte": "MARINE ET C'EST TOUT"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
     "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "sign",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "AVEC MARINE",
-   "comic_action": "Rangée de façades couvertes de la même affiche au prénom.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« AVEC MARINE »",
+   "comic_action": "Rangée de façades : enseigne « « AVEC MARINE » ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "2017 : NOM MASQUÉ",
-   "comic_action": "L'écran affiche une vieille affiche, bandeau bleu sur le nom.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "BOÎTES SANS NOM",
+   "comic_action": "Dans la rue, panneau « BOÎTES SANS NOM ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "NOM : RETIRÉ"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -136,13 +186,25 @@
    "camera": "street_dolly",
    "set": [
     "road",
-    "building",
+    "sign",
     "person",
-    "bin"
+    "traffic_light"
    ],
-   "onscreen_text": "BOÎTES : PRÉNOMS",
-   "comic_action": "Travelling sur des boîtes aux lettres : « Gérard », « Gérard », « Gérard ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "400 GÉRARD",
+   "comic_action": "Dans la rue, panneau « 400 GÉRARD ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "fatigue"
+    },
+    {
+     "who": "foule",
+     "geste": "manif"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -151,30 +213,55 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "bus",
     "road",
+    "sign",
     "person",
-    "sign"
+    "traffic_light"
    ],
-   "onscreen_text": "400 GÉRARD",
-   "comic_action": "Un facteur perdu devant un mur de boîtes identiques.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TOUT LE MONDE CONNAÎT TES IMPÔTS",
+   "comic_action": "Dans la rue, panneau « TOUT LE MONDE CONNAÎT TES IMPÔTS ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "RECETTE : LA MÊME",
-   "comic_action": "Vitrine : un produit sans étiquette, l'ancienne collée au dos. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LE NOM, EN RÉSERVE",
+   "comic_action": "Plan final, tenir une seconde : « LE NOM, EN RÉSERVE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +275,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt salue une affiche par son prénom.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE FAMILIER",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE FAMILIER ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,21 +298,14 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 85,
+ "word_count": 83,
  "claims": [
   {
    "segment": "n2",
-   "text": "« avec Marine, défendons la République »",
+   "text": "Sur l'affiche : « avec Marine, défendons la République ». Le nom ? Égaré.",
    "claim_type": "citation_exacte",
    "source": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
    "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
-  },
-  {
-   "segment": "n3",
-   "text": "Déjà en 2017, nom de famille et sigle du parti disparaissaient des documents.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
-   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme »."
   }
  ],
  "sources": [
@@ -224,17 +313,10 @@
    "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
    "date": "2026-10-29",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (meeting d'Orléans, 25/10/2026) + fait (affiche)",
+   "statut": "citation exacte",
    "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
-   "date": "2017-02-06",
-   "consulted": "2026-11-22",
-   "statut": "fait public + analyse de presse",
-   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = affiche 2026 « avec Marine, défendons la République » : le prénom seul, comme en 2017. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = l'affiche « avec Marine, défendons la République », sans nom de famille. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

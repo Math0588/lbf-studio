@@ -3,75 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-32",
  "format": "D",
- "title_cover": "Simulateur de présidente",
+ "title_cover": "Retraite en Bourse",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, le simulateur de présidente n'a que trois boutons.",
-  "Marineville : game over, on recommence, pour la quatrième fois.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : simulateur de présidente."
+  "Dans cette ville, tout le monde vote Marine. Et boursicote.",
+  "Marineville joue sa retraite en Bourse.",
+  "Ici, le boulanger surveille le CAC 40.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Retraite en Bourse."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Game over ? Le jeu propose de recommencer. Pour la quatrième fois.",
-  "Le bouton A est grisé depuis 2017.",
-  "A : chiffrer. B : censurer. C : sortir un chaton."
+  "Marine, candidate du peuple, vient d'inventer le fonds de pension patriote.",
+  "Le fonds de pension patriote.",
+  "Le CAC baisse. Les retraités repartent travailler."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine. Partie en cours.",
+   "text": "Dans cette ville, tout le monde vote Marine. Et boursicote.",
    "accent_words": [
-    "Partie en cours"
+    "boursicote"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Simulateur de présidente : un budget à boucler, trois boutons.",
+   "text": "Sa réforme ajoute une capitalisation obligatoire : environ quatre-vingt-un mille euros par salarié.",
    "accent_words": [
-    "trois boutons"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "A : chiffrer. B : « Je censure tout ». C : sortir un chaton.",
-   "accent_words": [
-    "Je censure tout"
-   ],
-   "claim_type": "citation_exacte"
-  },
-  {
-   "id": "n4",
-   "text": "Le chaton, elle l'a vraiment sorti à Matignon en 2025.",
-   "accent_words": [
-    "chaton"
+    "quatre-vingt-un mille euros"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n5",
-   "text": "Le bouton A est grisé depuis 2017.",
+   "id": "n3",
+   "text": "Alors la ville joue toute sa retraite en Bourse.",
    "accent_words": [
-    "grisé"
+    "Bourse"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Le boulanger suit les cours du CAC 40 au lieu du four.",
+   "accent_words": [
+    "four"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Le CAC baisse. Les retraités repartent travailler.",
+   "accent_words": [
+    "travailler"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Game over ? Le jeu propose de recommencer. Pour la quatrième fois.",
+   "text": "Marine, candidate du peuple, vient d'inventer le fonds de pension patriote.",
    "accent_words": [
-    "quatrième fois"
+    "patriote"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui relance toujours la même partie.",
+   "text": "Envoie ça au pote qui gère sa retraite comme un ticket à gratter.",
    "accent_words": [
-    "la même partie"
+    "ticket à gratter"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,26 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; écran « PRESS START » géant sur la façade.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "TOUT LE MONDE BOURSICOTE",
+   "comic_action": "Descente sur la ville ; banderole « TOUT LE MONDE BOURSICOTE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "objet": "billets",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -102,60 +119,113 @@
    "set": [
     "screen",
     "text3d",
-    "mairie",
-    "person"
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "A · B · C",
-   "comic_action": "L'écran affiche trois gros boutons colorés.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CAPITALISATION : 81 000 €",
+   "comic_action": "Compteur géant sur l'écran : « CAPITALISATION : 81 000 € ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "tribune",
-    "studio_light",
+    "screen",
     "text3d",
-    "person"
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "B : CENSURE",
-   "comic_action": "La manette tremble ; le curseur glisse vers B.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "RETRAITE EN BOURSE",
+   "comic_action": "Compteur géant sur l'écran : « RETRAITE EN BOURSE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "objet": "billets",
+     "geste": "jump"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CAC 40 : PANIQUE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "mascot",
-    "person",
-    "banner",
-    "text3d"
+    "facade_row",
+    "sign",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "BONUS : CHATON",
-   "comic_action": "La mascotte-chat bondit à l'écran, +100 points.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "LE PAIN BRÛLE",
+   "comic_action": "Rangée de façades : enseigne « LE PAIN BRÛLE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "objet": "phone",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "cough"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "shop",
-    "person",
+    "road",
     "sign",
-    "text3d"
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "A : INDISPONIBLE",
-   "comic_action": "Gros plan : le bouton « CHIFFRER » sous plastique, jamais utilisé.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RETOUR AU TRAVAIL",
+   "comic_action": "Dans la rue, panneau « RETOUR AU TRAVAIL ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "visage": "fatigue"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -164,14 +234,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "CONTINUER ? (4/4)",
-   "comic_action": "Entre deux colonnes, l'écran affiche « REJOUER » en clignotant. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "FONDS DE PENSION PATRIOTE",
+   "comic_action": "Plan final, tenir une seconde : « FONDS DE PENSION PATRIOTE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,14 +268,23 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE GAMER",
-   "comic_action": "Retour à la boutique : un passant en t-shirt appuie sur « rejouer ».",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE JOUEUR",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE JOUEUR ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui relance toujours la même partie."
+  "text": "Envoie ça au pote qui gère sa retraite comme un ticket à gratter."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -202,36 +294,22 @@
  "word_count": 75,
  "claims": [
   {
-   "segment": "n3",
-   "text": "« Je censure tout »",
-   "claim_type": "citation_exacte",
-   "source": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
-   "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
-  },
-  {
-   "segment": "n4",
-   "text": "Le chaton, elle l'a vraiment sorti à Matignon en 2025.",
+   "segment": "n2",
+   "text": "Sa réforme ajoute une capitalisation obligatoire : environ quatre-vingt-un mille euros par salarié.",
    "claim_type": "fait_public",
-   "source": "https://observatornews.ro/extern/marine-le-pen-a-venit-cu-un-pisoi-la-premierul-frantei-ea-a-decis-sal-salveze-633329.html",
-   "note": "Arrivée à Matignon avec un chaton dans une caisse."
+   "source": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
+   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
   }
  ],
  "sources": [
   {
-   "url": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
-   "date": "2025-10-08",
+   "url": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
+   "date": "2026-11-17",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (LCP)",
-   "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
-  },
-  {
-   "url": "https://observatornews.ro/extern/marine-le-pen-a-venit-cu-un-pisoi-la-premierul-frantei-ea-a-decis-sal-salveze-633329.html",
-   "date": "2025-10-03",
-   "consulted": "2026-11-22",
-   "statut": "fait (dépêche AFP reprise par la presse)",
-   "note": "Arrivée à Matignon avec un chaton dans une caisse."
+   "statut": "fait",
+   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = les réflexes publics en jeu vidéo : « Je censure tout » (2025), chaton à Matignon (2025), « pas une rupture brutale » (2026), quatrième candidature. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = la capitalisation obligatoire de sa réforme (~81 000 € par salarié). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-06",
  "format": "A",
- "title_cover": "La baguette chevalière",
+ "title_cover": "Le Var rayé",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : la boulangerie a un dress code.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, la baguette se paie en chevalière.",
-  "Zemmourville : le quartier où le pain a un pedigree."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien boude le Var.",
+  "Zemmour a perdu dans le Var. La ville a rayé le Var de la carte.",
+  "Attention : vidéo garantie sans nostalgie. Presque.",
+  "Bienvenue à Zemmourville : le Var rayé.",
+  "Zemmour en une vidéo : le Var rayé."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Fort dans le 16e, 7 % dans le pays : un succès de quartier.",
-  "Un triomphe dans trois arrondissements. Ailleurs, on cherche encore.",
-  "Succès local, échec national, beurre AOP."
+  "Rayer le Var n'efface pas le score : troisième, 23 %.",
+  "Rayer le Var n'efface pas le score : troisième, 23 %.",
+  "Le Var envoie des cartes postales. Retour à l'expéditeur."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Mocassins exigés.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien boude le Var.",
    "accent_words": [
-    "Mocassins exigés"
+    "le Var"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2022, il finit deuxième dans les 16e, 7e et 8e arrondissements de Paris.",
+   "text": "Législatives 2022 : éliminé dès le premier tour dans le Var.",
    "accent_words": [
-    "deuxième"
+    "le Var"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, la boulangerie a donc un voiturier et un code vestimentaire.",
+   "text": "La ville décrète que le Var n'existe plus. Rayé des cartes.",
    "accent_words": [
-    "code vestimentaire"
+    "Rayé des cartes"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Baguette tradition, mocassins à glands, pull sur les épaules. Paiement en chevalière.",
+   "text": "Les GPS refusent d'y aller. Les vacanciers atterrissent en Bretagne.",
    "accent_words": [
-    "chevalière"
+    "en Bretagne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le croissant d'hier coûte plus cher : il est d'époque.",
+   "text": "Le Var envoie des cartes postales. Retour à l'expéditeur.",
    "accent_words": [
-    "d'époque"
+    "Retour à l'expéditeur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Fort dans le 16e, 7 % dans le pays : un succès de quartier.",
+   "text": "Rayer le Var n'efface pas le score : troisième, 23 %.",
    "accent_words": [
-    "succès de quartier"
+    "troisième, 23 %"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui porte un pull sur les épaules en juillet.",
+   "text": "Envoie ça au pote qui supprime la photo où il a perdu.",
    "accent_words": [
-    "en juillet"
+    "a perdu"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,59 +85,120 @@
    "camera": "descend",
    "set": [
     "ground",
-    "shop",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une boulangerie avec un voiturier devant la porte.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · LE VAR RAYÉ",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "LE VAR N'EXISTE PAS"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "shop",
+    "screen",
     "text3d",
-    "person"
+    "sign"
    ],
-   "onscreen_text": "16E · 7E · 8E",
-   "comic_action": "Orbite autour de la boutique : trois plaques d'arrondissement dorées.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "VAR : ÉLIMINÉ",
+   "comic_action": "Une carte de France où le Var clignote en rouge.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LE VAR N'EXISTE PAS"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "car",
-    "person",
-    "sign"
+    "mairie",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "DRESS CODE",
-   "comic_action": "Travelling : un voiturier gare un vélo comme une berline.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "VAR : RAYÉ",
+   "comic_action": "Un agent rature le Var au feutre sur la carte de la mairie.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "VAR : INCONNU"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "person",
-    "table",
-    "text3d"
+    "gps",
+    "car",
+    "road"
    ],
-   "onscreen_text": "PAIEMENT : CHEVALIÈRE",
-   "comic_action": "Gros plan : une main tamponne la caisse avec sa chevalière.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "GPS : VAR INTROUVABLE",
+   "comic_action": "Une voiture chargée de bouées arrive sous la pluie bretonne.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "EN VACANCES"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -146,13 +207,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "sign",
+    "building",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "CROISSANT D'ÉPOQUE",
-   "comic_action": "Étiquette : « croissant de la veille — édition limitée ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CARTE POSTALE : REFUSÉE",
+   "comic_action": "Le facteur renvoie une pile de cartes postales ensoleillées.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "EXPÉDITEUR INCONNU"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -161,13 +235,26 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "road",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "SUCCÈS DE QUARTIER",
-   "comic_action": "Plan large : la boulangerie illuminée, le reste de la ville éteint.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "3E · 23 %",
+   "comic_action": "La rature s'efface, le score reste.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "23,19 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -181,51 +268,58 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique entre sans mocassins, scandale.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui porte un pull sur les épaules en juillet."
+  "text": "Envoie ça au pote qui supprime la photo où il a perdu."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 84,
+ "word_count": 78,
  "claims": [
   {
-   "text": "En 2022, il finit deuxième dans les 16e, 7e et 8e arrondissements de Paris.",
+   "text": "Législatives 2022 : éliminé dès le premier tour dans le Var.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/geographie-du-vote-une-france-eclatee-en-trois-202165",
-   "note": "2022 : deuxième dans les 16e, 7e et 8e arrondissements de Paris, fort à Versailles."
+   "source": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
+   "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
   },
   {
-   "text": "Fort dans le 16e, 7 % dans le pays : un succès de quartier.",
+   "text": "Rayer le Var n'efface pas le score : troisième, 23 %.",
    "claim_type": "fait_public",
-   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
-   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+   "source": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
+   "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/geographie-du-vote-une-france-eclatee-en-trois-202165",
-   "date": "2022-04",
+   "url": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
+   "date": "2022-06-12",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "2022 : deuxième dans les 16e, 7e et 8e arrondissements de Paris, fort à Versailles."
-  },
-  {
-   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
-   "date": "2022-04",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+   "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : géographie du vote 2022 : deuxième dans les 16e, 7e et 8e arrondissements, 7 % dans le pays. Cadre : la boulangerie du quartier chic. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Législatives 2022 : éliminé dès le premier tour dans le Var. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

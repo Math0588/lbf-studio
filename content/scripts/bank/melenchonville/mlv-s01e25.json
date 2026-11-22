@@ -3,33 +3,33 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-25",
  "format": "A",
- "title_cover": "Fâché avec tous",
+ "title_cover": "Ville des fâchés",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. Tout le monde est fâché.",
-  "Mélenchon parle aux fâchés. Normal, il l'est avec tout le monde.",
-  "Celle-là, Méluche ne la partagera pas.",
-  "Bienvenue à Mélenchonville : fâché avec tous.",
-  "Mélenchon en une vidéo : fâché avec tous."
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien boude.",
+  "Mélenchon parlait aux fâchés. La ville a rendu la colère obligatoire.",
+  "Les fans de Méluche vont me bloquer.",
+  "Bienvenue à Mélenchonville : ville des fâchés.",
+  "Mélenchon en une vidéo : ville des fâchés."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Pas facho, d'accord. Juste fâché avec tout le monde.",
-  "Pas facho, juste fâché. Avec absolument tout le monde.",
-  "Fâché avec le PS, rupture actée. Fâché avec Ruffin, divorce consommé."
+  "Fâchés avec tout le monde, comme lui avec le PS, Ruffin et TF1.",
+  "Fâché avec tout le monde : il a montré l'exemple.",
+  "Un passant sourit. Expulsé pour manque de colère."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Tout le monde est fâché.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien boude.",
    "accent_words": [
-    "est fâché"
+    "Même le chien boude"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "2017, aux électeurs en colère : « Fâchés mais pas fachos ».",
+   "text": "En 2017, il parle aux électeurs en colère : « Fâchés mais pas fachos ».",
    "accent_words": [
     "Fâchés mais pas fachos"
    ],
@@ -37,35 +37,35 @@
   },
   {
    "id": "n3",
-   "text": "Fâché, lui ? En 2018, il hurle « La République, c'est moi ! ».",
+   "text": "La mairie rend la colère obligatoire. Badge FÂCHÉ à l'entrée.",
    "accent_words": [
-    "c'est moi"
+    "Badge FÂCHÉ à l'entrée"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Fâché avec TF1, qui ne l'avait même pas invité.",
+   "text": "Le pigeon est fâché, le banc est fâché, le jardinier engueule les tulipes.",
    "accent_words": [
-    "pas invité"
+    "les tulipes"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Fâché avec le PS, rupture actée. Fâché avec Ruffin, divorce consommé.",
+   "text": "Un passant sourit. Expulsé pour manque de colère.",
    "accent_words": [
-    "divorce consommé"
+    "de colère"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Pas facho, d'accord. Juste fâché avec tout le monde.",
+   "text": "Fâchés avec tout le monde, comme lui avec le PS, Ruffin et TF1.",
    "accent_words": [
-    "le monde"
+    "et TF1"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE · FÂCHÉ AVEC TOUS",
-   "comic_action": "Descente sur la ville : banderole « FÂCHÉ AVEC TOUS », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "onscreen_text": "MÉLENCHONVILLE · VILLE DES FÂCHÉS",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "FÂCHÉS MAIS PAS FACHOS"
     }
    ]
   },
@@ -119,19 +129,19 @@
    ],
    "onscreen_text": "« FÂCHÉS MAIS PAS FACHOS »",
    "comic_action": "Banderole tendue au-dessus d'une foule renfrognée.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
      "geste": "point",
      "visage": "colere",
      "objet": "micro"
-    },
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "cross_arms",
-     "visage": "colere",
-     "quand": 0.3
+     "type": "affiche",
+     "texte": "FÂCHÉS MAIS PAS FACHOS"
     }
    ]
   },
@@ -142,19 +152,24 @@
    ],
    "camera": "orbit",
    "set": [
-    "tribune",
-    "studio_light",
-    "text3d"
+    "sign",
+    "road",
+    "person"
    ],
-   "onscreen_text": "« LA RÉPUBLIQUE, C'EST MOI ! »",
-   "comic_action": "Le maire crie, les vitres tremblent.",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "BADGE FÂCHÉ OBLIGATOIRE",
+   "comic_action": "Un agent épingle un badge sur chaque passant.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "arms_up",
-     "visage": "colere",
-     "objet": "micro"
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SOURIRE : INTERDIT"
     }
    ]
   },
@@ -165,24 +180,24 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
+    "tree",
+    "bench",
     "person"
    ],
-   "onscreen_text": "TF1 : PAS INVITÉ",
-   "comic_action": "Le maire tourne le dos à un plateau télé vide.",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "TOUT LE MONDE EST FÂCHÉ",
+   "comic_action": "Un jardinier hurle sur un massif de tulipes.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "cross_arms",
-     "visage": "colere"
-    },
-    {
      "who": "perso",
-     "geste": "facepalm",
-     "visage": "blase",
-     "quand": 0.5
+     "geste": "point",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "FÂCHÉ"
     }
    ]
   },
@@ -193,18 +208,30 @@
    ],
    "camera": "closeup",
    "set": [
-    "facade_set",
     "road",
-    "person"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "PS : NON · RUFFIN : NON",
-   "comic_action": "Deux portes qui claquent l'une après l'autre.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "EXPULSÉ : SOURIRE",
+   "comic_action": "Deux agents raccompagnent un souriant hors de la ville.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
-     "who": "foule",
-     "geste": "shake",
+     "who": "perso",
+     "geste": "fall",
      "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "colere",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SOURIRE : 135 €"
     }
    ]
   },
@@ -215,18 +242,24 @@
    ],
    "camera": "descend",
    "set": [
-    "tribune",
-    "banner",
-    "person"
+    "facade_set",
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "FÂCHÉ AVEC TOUT LE MONDE",
-   "comic_action": "Le maire seul à la tribune, poings serrés, salle vide.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "PS · RUFFIN · TF1 : FÂCHÉ",
+   "comic_action": "Trois portes claquent l'une après l'autre derrière le maire.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
      "geste": "cross_arms",
      "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "FÂCHÉ AVEC TOUT LE MONDE"
     }
    ]
   },
@@ -243,7 +276,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -251,6 +284,12 @@
      "geste": "point",
      "visage": "sourire_pro",
      "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
     }
    ]
   }
@@ -264,40 +303,22 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 79,
+ "word_count": 82,
  "claims": [
   {
-   "text": "2017, aux électeurs en colère : « Fâchés mais pas fachos ».",
+   "text": "En 2017, il parle aux électeurs en colère : « Fâchés mais pas fachos ».",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/fn-melenchon-reitere-son-appel-aux-electeurs-faches-mais-pas-fachos-77625",
    "note": "« Fâchés mais pas fachos »."
   },
   {
-   "text": "Fâché, lui ? En 2018, il hurle « La République, c'est moi ! ».",
-   "claim_type": "citation_exacte",
-   "source": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
-   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
-  },
-  {
-   "text": "Fâché avec TF1, qui ne l'avait même pas invité.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/furieux-contre-tf1-jean-luc-melenchon-annule-sa-venue-au-20-heures-ce-soir/657784",
-   "note": "Novembre 2026 : il annonce sur X annuler sa venue au 20 h de TF1."
-  },
-  {
-   "text": "Fâché avec TF1, qui ne l'avait même pas invité.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/affaire-de-jean-luc-melenchon-au-20-heures-tf1-dement-le-leader-de-lfi-et-affirme-quil-netait-pas-invite-ce-lundi-soir/657792",
-   "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
-  },
-  {
-   "text": "Fâché avec le PS, rupture actée. Fâché avec Ruffin, divorce consommé.",
+   "text": "Fâchés avec tout le monde, comme lui avec le PS, Ruffin et TF1.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
    "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
   },
   {
-   "text": "Fâché avec le PS, rupture actée. Fâché avec Ruffin, divorce consommé.",
+   "text": "Fâchés avec tout le monde, comme lui avec le PS, Ruffin et TF1.",
    "claim_type": "fait_public",
    "source": "https://www.slate.fr/politique/francois-ruffin-jean-luc-melenchon-rupture-divorce-lfi-france-insoumise-election-presidentielle-2027-strategie-gauche",
    "note": "Ruffin–Mélenchon : « le divorce est désormais consommé »."
@@ -310,27 +331,6 @@
    "consulted": "2026-11-22",
    "statut": "citation_exacte",
    "note": "« Fâchés mais pas fachos »."
-  },
-  {
-   "url": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
-   "date": "2018-10-17",
-   "consulted": "2026-11-22",
-   "statut": "citation_exacte",
-   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
-  },
-  {
-   "url": "https://www.ozap.com/actu/furieux-contre-tf1-jean-luc-melenchon-annule-sa-venue-au-20-heures-ce-soir/657784",
-   "date": "2026-11",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Novembre 2026 : il annonce sur X annuler sa venue au 20 h de TF1."
-  },
-  {
-   "url": "https://www.ozap.com/actu/affaire-de-jean-luc-melenchon-au-20-heures-tf1-dement-le-leader-de-lfi-et-affirme-quil-netait-pas-invite-ce-lundi-soir/657792",
-   "date": "2026-11",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
   },
   {
    "url": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
@@ -348,5 +348,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Fâché avec tous. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2017, il parle aux électeurs en colère : « Fâchés mais pas fachos ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

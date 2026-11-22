@@ -3,67 +3,67 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-30",
  "format": "B",
- "title_cover": "Dissolution",
+ "title_cover": "Dissolution en sachet",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "9 juin 2024, soir des européennes : il dissout l'Assemblée. Par surprise.",
+  "Soir des européennes 2024 : il dissout l'Assemblée. Surprise générale.",
   "Les électeurs de Macron vont détester celle-là.",
-  "Dissolution : l'histoire en trente secondes.",
-  "Dans cette ville, tout le monde vote Macron. Ou plus personne."
+  "Dissolution en sachet : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Le conseil municipal est vendu en sachet."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Une dissolution pour y voir clair. Depuis, on voit surtout des cartons.",
-  "Il a dissous pour clarifier. La seule chose claire, c'est le chaos.",
-  "Et pour tenir debout, son camp suspend sa propre réforme des retraites."
+  "Le maire hésite. Puis il redissout. Sept fois.",
+  "Il dissout pour clarifier. À la fin, même l'eau était trouble.",
+  "Il ne reste qu'une poudre. On la reconstitue avec de l'eau. C'est pire qu'avant."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Ou plus personne.",
+   "text": "Dans cette ville, tout le monde vote Macron. Le conseil municipal est vendu en sachet.",
    "accent_words": [
-    "personne"
+    "sachet"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "9 juin 2024, soir des européennes : il dissout l'Assemblée. Par surprise.",
+   "text": "Soir des européennes 2024 : il dissout l'Assemblée. Surprise générale.",
    "accent_words": [
-    "surprise"
+    "générale"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Puis Barnier, Bayrou, Lecornu : un Premier ministre par saison.",
+   "text": "La mairie trouve l'idée géniale : on dissout tout ce qui ne marche pas.",
    "accent_words": [
-    "saison"
+    "pas"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Lecornu tient vingt-sept jours, démissionne, puis revient quatre jours après.",
+   "text": "Le club de foot, la chorale, le comité des fêtes. Puis le rond-point.",
    "accent_words": [
-    "après"
+    "rond-point"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Et pour tenir debout, son camp suspend sa propre réforme des retraites.",
+   "text": "Il ne reste qu'une poudre. On la reconstitue avec de l'eau. C'est pire qu'avant.",
    "accent_words": [
-    "retraites"
+    "avant"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Une dissolution pour y voir clair. Depuis, on voit surtout des cartons.",
+   "text": "Le maire hésite. Puis il redissout. Sept fois.",
    "accent_words": [
-    "cartons"
+    "fois"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -91,7 +91,7 @@
     "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la ville ; banderole « DISSOLUTION » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "comic_action": "Descente sur la ville ; banderole « DISSOLUTION EN SACHET » sur la mairie ; le maire caricaturé salue, sourire figé.",
    "expected_result": "La ville et le thème posés en une image.",
    "actions": [
     {
@@ -105,6 +105,16 @@
      "geste": "clap",
      "visage": "neutre",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "DISSOLUTION EN SACHET"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
     }
    ]
   },
@@ -121,7 +131,7 @@
    ],
    "onscreen_text": "DISSOLUTION : 21 H",
    "comic_action": "Soir d'élection : le maire appuie sur un gros bouton rouge ; la mairie se défait en cubes.",
-   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
    "actions": [
     {
      "who": "maire",
@@ -135,6 +145,12 @@
      "visage": "choque",
      "quand": 0.4
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "DISSOLUTION"
+    }
    ]
   },
   {
@@ -144,25 +160,32 @@
    ],
    "camera": "window_pass",
    "set": [
-    "facade_row",
+    "table",
     "text3d",
     "person"
    ],
-   "onscreen_text": "UN PM PAR SAISON",
-   "comic_action": "Trois Premiers ministres passent la porte, chacun sous une saison différente : neige, feuilles, soleil.",
-   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "onscreen_text": "ON DISSOUT TOUT",
+   "comic_action": "Le maire tient un verre d'eau et un sachet marqué « COMITÉ ».",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
    "actions": [
     {
-     "who": "foule",
-     "geste": "wave",
-     "visage": "blase",
+     "who": "maire",
+     "geste": "nod",
+     "visage": "content",
+     "objet": "verre",
      "quand": 0.0
     },
     {
-     "who": "maire",
-     "geste": "clap",
-     "visage": "sourire_pro",
-     "quand": 0.5
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SACHET DE CONSEIL 1 €"
     }
    ]
   },
@@ -173,25 +196,31 @@
    ],
    "camera": "closeup",
    "set": [
-    "mairie",
-    "person",
-    "sign"
+    "roundabout",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "27 JOURS + 4",
-   "comic_action": "Le même homme sort avec un carton, refait demi-tour, rentre ; compteur « 27 + 4 ».",
-   "expected_result": "Escalade 2 : encore plus gros.",
+   "onscreen_text": "ROND-POINT DISSOUS",
+   "comic_action": "Le rond-point fond comme un cachet effervescent ; les voitures tournent autour du vide.",
+   "expected_result": "Conséquence : ça dégénère.",
    "actions": [
     {
-     "who": "perso",
-     "geste": "spin",
-     "visage": "fatigue",
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
      "quand": 0.0
     },
     {
-     "who": "maire",
-     "geste": "nod",
-     "visage": "sourire_pro",
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "DISSOUS"
     }
    ]
   },
@@ -202,25 +231,31 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "bench",
-    "text3d",
+    "fountain",
+    "table",
     "person"
    ],
-   "onscreen_text": "RÉFORME SUSPENDUE",
-   "comic_action": "La réforme des retraites est glissée sous un banc pour caler la mairie bancale.",
-   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "onscreen_text": "RECONSTITUÉ À L'EAU",
+   "comic_action": "On verse de l'eau sur une poudre ; un conseil municipal bancal se redresse.",
+   "expected_result": "Pire conséquence : l'absurde total.",
    "actions": [
     {
-     "who": "maire",
+     "who": "perso",
      "geste": "shrug",
-     "visage": "sourire_pro",
+     "visage": "choque",
      "quand": 0.0
     },
     {
-     "who": "perso",
-     "geste": "point",
-     "visage": "choque",
+     "who": "foule",
+     "geste": "clap",
+     "visage": "blase",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "VERSION 2"
     }
    ]
   },
@@ -232,24 +267,30 @@
    "camera": "closeup",
    "set": [
     "mairie",
-    "person",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "ON Y VOIT CLAIR ?",
-   "comic_action": "Plan large : des cartons de déménagement partout devant la mairie ; le maire allume une lampe torche.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "×7",
+   "comic_action": "Le maire appuie encore sur le bouton, encore, encore ; un compteur affiche 7.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "shrug",
-     "visage": "sourire_pro",
+     "geste": "point",
+     "visage": "fier",
      "quand": 0.0
     },
     {
      "who": "foule",
      "geste": "facepalm",
-     "visage": "blase",
+     "visage": "colere",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ON RECOMMENCE"
     }
    ]
   },
@@ -266,7 +307,7 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : la dissolution surprise de juin 2024 et ses suites.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : la dissolution de 2024 : la mairie dissout tout ce qui ne marche pas.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -281,6 +322,12 @@
      "visage": "sourire_pro",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "DISSOLUTION EN SACHET"
+    }
    ]
   }
  ],
@@ -293,31 +340,19 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 78,
+ "word_count": 85,
  "claims": [
   {
-   "text": "9 juin 2024, soir des européennes : il dissout l'Assemblée. Par surprise.",
+   "text": "Soir des européennes 2024 : il dissout l'Assemblée. Surprise générale.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/dissolution-de-lassemblee-nationale-quelles-consequences",
    "note": "Dissolution de l'Assemblée annoncée le soir des européennes (09/06/2024)."
   },
   {
-   "text": "Puis Barnier, Bayrou, Lecornu : un Premier ministre par saison.",
-   "claim_type": "fait_public",
+   "text": "Le maire hésite. Puis il redissout. Sept fois.",
+   "claim_type": "fiction_satirique",
    "source": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
-   "note": "Sept Premiers ministres depuis 2017 (Philippe, Castex, Borne, Attal, Barnier, Bayrou, Lecornu) ; record de Mitterrand égalé selon la presse."
-  },
-  {
-   "text": "Lecornu tient vingt-sept jours, démissionne, puis revient quatre jours après.",
-   "claim_type": "fait_public",
-   "source": "https://www.sudradio.fr/sud-radio/27-jours-24h-chrono-sebastien-lecornu-un-premier-ministre-de-tous-les-records",
-   "note": "Lecornu, Premier ministre le plus éphémère de la Ve République (27 jours). Lecornu démissionne le 06/10/2025 ; Macron le reconduit le 10/10/2025."
-  },
-  {
-   "text": "Et pour tenir debout, son camp suspend sa propre réforme des retraites.",
-   "claim_type": "fait_public",
-   "source": "https://www.letemps.ch/monde/la-suspension-de-la-reforme-des-retraites-est-approuvee-par-l-assemblee-nationale-fracturant-la-gauche-au-passage",
-   "note": "Suspension de la réforme des retraites votée à l'Assemblée (255 voix contre 146), concession pour sauver le gouvernement."
+   "note": "Sept Premiers ministres depuis 2017 (Philippe, Castex, Borne, Attal, Barnier, Bayrou, Lecornu) ; record de Mitterrand égalé selon la presse. Exagération satirique évidente, présentée comme telle."
   }
  ],
  "sources": [
@@ -334,29 +369,8 @@
    "consulted": "2026-11-22",
    "statut": "fait public",
    "note": "Sept Premiers ministres depuis 2017 (Philippe, Castex, Borne, Attal, Barnier, Bayrou, Lecornu) ; record de Mitterrand égalé selon la presse."
-  },
-  {
-   "url": "https://www.sudradio.fr/sud-radio/27-jours-24h-chrono-sebastien-lecornu-un-premier-ministre-de-tous-les-records",
-   "date": "2025-10",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Lecornu, Premier ministre le plus éphémère de la Ve République (27 jours)."
-  },
-  {
-   "url": "https://www.parismatch.be/actualites/monde/2025/10/10/france-emmanuel-macron-reconduit-sebastien-lecornu-comme-premier-ministre-LIQZQK4X7JCTTF65GLJQZJ7EME/",
-   "date": "2025-10-10",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Lecornu démissionne le 06/10/2025 ; Macron le reconduit le 10/10/2025."
-  },
-  {
-   "url": "https://www.letemps.ch/monde/la-suspension-de-la-reforme-des-retraites-est-approuvee-par-l-assemblee-nationale-fracturant-la-gauche-au-passage",
-   "date": "2025-11-12",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Suspension de la réforme des retraites votée à l'Assemblée (255 voix contre 146), concession pour sauver le gouvernement."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — la dissolution surprise de juin 2024 et ses suites. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : la dissolution de 2024 : la mairie dissout tout ce qui ne marche pas. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

@@ -4,79 +4,79 @@
  "synopsis_id": "mlv-m005-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Tortue au self",
- "anchor": "Gergovie : la « formation romaine de la tortue » ; la tortue totem.",
+ "title_cover": "Faites mieux",
+ "anchor": "« Faites mieux » (2022), puis quatrième candidature (2026).",
  "meme_id": "MG",
- "situation": "la cantine",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : la cantine avance en formation romaine.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, on fait la queue en tortue.",
-  "Mélenchonville : le self le plus lent de l'Empire."
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien fait mieux.",
+  "Mélenchon a dit « faites mieux ». La ville a tout refait. Puis lui aussi.",
+  "Les insoumis vont me détester.",
+  "Bienvenue à Mélenchonville : faites mieux.",
+  "Mélenchon en une vidéo : faites mieux."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La formation tortue avance depuis 2012. Toujours pas arrivée au dessert.",
-  "La tortue avance, le dessert recule.",
-  "Formation parfaite, service jamais terminé."
+  "Sur l'affiche de 2026 : lui, quatrième candidature. Faire mieux, c'est refaire.",
+  "Faire mieux, chez lui, c'est refaire pareil.",
+  "Les jeunes fabriquent même un meilleur candidat. Ils l'affichent sur la mairie."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Rangés en tortue.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien fait mieux.",
    "accent_words": [
-    "Rangés en tortue"
+    "fait mieux"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À Gergovie, il vante la « formation romaine de la tortue ».",
+   "text": "Soir de défaite 2022, il lance aux jeunes : « Faites mieux ».",
    "accent_words": [
-    "tortue"
+    "Faites mieux"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Ici, la file de la cantine avance pareil : plateaux levés, boucliers serrés.",
+   "text": "La ville obéit. Le boulanger fait des croissants carrés.",
    "accent_words": [
-    "boucliers"
+    "croissants carrés"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Personne ne double. Personne n'avance non plus.",
+   "text": "Le plombier fait mieux : il remplace chaque fuite par une fontaine.",
    "accent_words": [
-    "n'avance"
+    "une fontaine"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le totem du parti, c'est la tortue. Le menu du jour aussi : soupe lente.",
+   "text": "Les jeunes fabriquent même un meilleur candidat. Ils l'affichent sur la mairie.",
    "accent_words": [
-    "soupe lente"
+    "la mairie"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La formation tortue avance depuis 2012. Toujours pas arrivée au dessert.",
+   "text": "Sur l'affiche de 2026 : lui, quatrième candidature. Faire mieux, c'est refaire.",
    "accent_words": [
-    "au dessert"
+    "Faire mieux, c'est refaire"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui met une heure à choisir son plateau.",
+   "text": "Envoie ça au pote qui annonce son départ et reste jusqu'à 6 h.",
    "accent_words": [
-    "une heure"
+    "6 h"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur la cantine : une file en carapace de plateaux.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · FAITES MIEUX",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "FAITES MIEUX"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,13 +128,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "mascot",
-    "text3d",
+    "tribune",
+    "studio_light",
     "person"
    ],
-   "onscreen_text": "FORMATION TORTUE",
-   "comic_action": "La mascotte tortue en casque romain fait la démonstration devant le self.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« FAITES MIEUX »",
+   "comic_action": "Le maire pointe la jeunesse du premier rang.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "FAITES MIEUX"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -120,13 +157,27 @@
    ],
    "camera": "orbit",
    "set": [
+    "shop",
     "person",
-    "table",
     "text3d"
    ],
-   "onscreen_text": "PLATEAUX EN BOUCLIER",
-   "comic_action": "Orbite autour d'une file compacte, plateaux en carapace au-dessus des têtes.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CROISSANT : CARRÉ",
+   "comic_action": "Une vitrine de croissants parfaitement carrés.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "fier",
+     "objet": "baguette"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CROISSANT 2.0"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -135,13 +186,26 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "person",
-    "table",
-    "sign"
+    "fountain",
+    "building",
+    "person"
    ],
-   "onscreen_text": "0 M/H",
-   "comic_action": "Travelling : la file ne bouge pas d'un centimètre.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "FUITE → FONTAINE",
+   "comic_action": "Une fontaine jaillit au milieu d'une cuisine.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "arms_up",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MOUILLÉ"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,13 +214,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "sign",
-    "text3d"
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "SOUPE LENTE",
-   "comic_action": "L'ardoise du jour : « SOUPE LENTE (SERVIE EN 2027) ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "LE NOUVEAU CANDIDAT",
+   "comic_action": "Une affiche géante se déroule sur la façade.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LE MEILLEUR CANDIDAT"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +242,32 @@
    ],
    "camera": "descend",
    "set": [
-    "table",
-    "person",
-    "text3d"
+    "banner",
+    "text3d",
+    "tribune"
    ],
-   "onscreen_text": "DESSERT : 2027 ?",
-   "comic_action": "Plan large : la file en carapace, le chariot des desserts à l'autre bout, intact.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "4E CANDIDATURE",
+   "comic_action": "L'affiche se retourne : c'est encore lui.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "NOUVEAU : PAS VRAIMENT"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,36 +281,50 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique double la tortue, scandale.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui met une heure à choisir son plateau."
+  "text": "Envoie ça au pote qui annonce son départ et reste jusqu'à 6 h."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 81,
+ "word_count": 84,
  "claims": [
   {
-   "text": "« formation romaine de la tortue »",
+   "text": "Soir de défaite 2022, il lance aux jeunes : « Faites mieux ».",
    "claim_type": "citation_exacte",
-   "source": "https://www.sudradio.fr/societe/en-visite-a-gergovie-les-lecons-dhistoire-du-tacticien-melenchon",
-   "note": "Leçon d'histoire à Gergovie, éloge de la « formation romaine de la tortue »."
+   "source": "https://www.politis.fr/articles/2026/05/parti-pris-candidature-melenchon-faites-mieux-quil-disait/",
+   "note": "Soir du 10/04/2022, aux jeunes : « Faites mieux » ; promesse de passage de relais, démentie par la candidature 2027."
   },
   {
-   "text": "Le totem du parti, c'est la tortue. Le menu du jour aussi : soupe lente.",
+   "text": "Soir de défaite 2022, il lance aux jeunes : « Faites mieux ».",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
+   "source": "https://vl-media.fr/cest-pas-loin-hein-faites-mieux-merci-un-discours-dadieu-pour-melenchon/",
+   "note": "Discours du 10/04/2022 : « C'est pas loin hein, faites mieux, merci »."
   },
   {
-   "text": "La formation tortue avance depuis 2012. Toujours pas arrivée au dessert.",
+   "text": "Sur l'affiche de 2026 : lui, quatrième candidature. Faire mieux, c'est refaire.",
    "claim_type": "fait_public",
    "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
    "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
@@ -222,18 +332,18 @@
  ],
  "sources": [
   {
-   "url": "https://www.sudradio.fr/societe/en-visite-a-gergovie-les-lecons-dhistoire-du-tacticien-melenchon",
-   "date": "2026-10",
+   "url": "https://www.politis.fr/articles/2026/05/parti-pris-candidature-melenchon-faites-mieux-quil-disait/",
+   "date": "2026-05",
    "consulted": "2026-11-22",
-   "statut": "fait + citation",
-   "note": "Leçon d'histoire à Gergovie, éloge de la « formation romaine de la tortue »."
+   "statut": "citation_exacte",
+   "note": "Soir du 10/04/2022, aux jeunes : « Faites mieux » ; promesse de passage de relais, démentie par la candidature 2027."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
-   "date": "2026-06-07",
+   "url": "https://vl-media.fr/cest-pas-loin-hein-faites-mieux-merci-un-discours-dadieu-pour-melenchon/",
+   "date": "2022-04-10",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
+   "note": "Discours du 10/04/2022 : « C'est pas loin hein, faites mieux, merci »."
   },
   {
    "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
@@ -244,5 +354,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Gergovie : la « formation romaine de la tortue » ; la tortue totem. Cadre : la cantine. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Soir de défaite 2022, il lance aux jeunes : « Faites mieux ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

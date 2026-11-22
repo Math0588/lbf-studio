@@ -4,79 +4,79 @@
  "synopsis_id": "zmv-m027-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Retrait à 4 %",
- "anchor": "environ 4 % à la rentrée 2026, contre 17 % en octobre 2021.",
+ "title_cover": "Distributeur à 4 %",
+ "anchor": "Environ 4 % à la rentrée 2026 : le distributeur ne donne que 4 %.",
  "meme_id": "ZF",
- "situation": "le distributeur de billets",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le distributeur te donne 4 %.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, retirer cent euros en rapporte quatre.",
-  "Zemmourville : la banque de la nostalgie."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien est à découvert.",
+  "Zemmour est à 4 %. Le distributeur de la ville aussi.",
+  "Ben voyons, encore une vidéo sur lui.",
+  "Bienvenue à Zemmourville : distributeur à 4 %.",
+  "Zemmour en une vidéo : distributeur à 4 %."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La banque appelle ça une dévaluation. La ville appelle ça la grandeur.",
-  "Quatre euros, un discours, zéro billet de plus.",
-  "Dévaluation assumée, grandeur proclamée."
+  "En 2021, le distributeur donnait 17. C'était mieux avant.",
+  "En 2021, le distributeur donnait 17. C'était mieux avant.",
+  "Les habitants font la queue toute la journée pour remplir un caddie."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Retrait limité.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien est à découvert.",
    "accent_words": [
-    "Retrait limité"
+    "à découvert"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, le distributeur ne donne que 4 % de ce que tu demandes.",
+   "text": "Rentrée 2026 : environ 4 % dans les sondages.",
    "accent_words": [
-    "4 %"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "C'est son score dans les sondages de rentrée 2026, à peu près.",
-   "accent_words": [
-    "à peu près"
+    "les sondages"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "Cent euros demandés, quatre donnés. Et un discours sur le franc.",
+   "id": "n3",
+   "text": "Le distributeur de la ville ne donne plus que 4 % de la somme.",
    "accent_words": [
-    "le franc"
+    "la somme"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Cent euros demandés, quatre donnés. Et un ticket de nostalgie.",
+   "accent_words": [
+    "de nostalgie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "En 2021, il en donnait 17. Le distributeur aussi regrette avant.",
+   "text": "Les habitants font la queue toute la journée pour remplir un caddie.",
    "accent_words": [
-    "regrette avant"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n6",
-   "text": "La banque appelle ça une dévaluation. La ville appelle ça la grandeur.",
-   "accent_words": [
-    "la grandeur"
+    "un caddie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui retire vingt euros et dit que c'était mieux avant.",
+   "id": "n6",
+   "text": "En 2021, le distributeur donnait 17. C'était mieux avant.",
    "accent_words": [
-    "mieux avant"
+    "C'était mieux avant"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui retire vingt euros et pleure en ressortant.",
+   "accent_words": [
+    "en ressortant"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "shop",
-    "screen",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un distributeur de billets à façade en pierre.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · DISTRIBUTEUR À 4 %",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "RETIREZ 4 %"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -107,11 +130,24 @@
    "set": [
     "screen",
     "text3d",
-    "person"
+    "tribune"
    ],
-   "onscreen_text": "RETRAIT : 4 %",
-   "comic_action": "Gros plan sur l'écran : « MONTANT ACCORDÉ : 4 % ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SONDAGES : 4 %",
+   "comic_action": "Le score clignote sur l'écran du distributeur.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "RETIREZ 4 %"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -120,12 +156,27 @@
    ],
    "camera": "orbit",
    "set": [
+    "shop",
     "screen",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "SONDAGE : ≈ 4 %",
-   "comic_action": "Orbite autour de la borne, graphique en fond.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "RETRAIT : 4 %",
+   "comic_action": "Un client attend, le distributeur crache une pièce.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "objet": "billets"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RETRAIT MAX : 4 %"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -134,13 +185,27 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "person",
-    "screen",
-    "sign"
+    "shop",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "4 € + DISCOURS",
-   "comic_action": "Travelling : l'habitant recule, le distributeur parle encore.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "100 € → 4 €",
+   "comic_action": "Un ticket sort : « C'ÉTAIT MIEUX AVANT ».",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "objet": "billets"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "FAUCHÉ"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -149,13 +214,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "shop",
+    "person",
+    "road"
    ],
-   "onscreen_text": "2021 : 17",
-   "comic_action": "Une affichette jaunie « EN 2021 : 17 » scotchée sur la borne.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "QUEUE : TOUTE LA JOURNÉE",
+   "comic_action": "File d'attente qui fait le tour du pâté de maisons.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ATTENTE : 8 H"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,13 +242,26 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
+    "screen",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "DÉVALUATION = GRANDEUR",
-   "comic_action": "Plan large : la file devant le DAB repart les mains presque vides.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "2021 : 17",
+   "comic_action": "Une photo jaunie du distributeur affichant « 17 ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "17 (2021)"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -184,30 +275,44 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique compte ses quatre euros.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui retire vingt euros et dit que c'était mieux avant."
+  "text": "Envoie ça au pote qui retire vingt euros et pleure en ressortant."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 83,
+ "word_count": 80,
  "claims": [
   {
-   "text": "C'est son score dans les sondages de rentrée 2026, à peu près.",
+   "text": "Rentrée 2026 : environ 4 % dans les sondages.",
    "claim_type": "fait_public",
    "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
    "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   },
   {
-   "text": "En 2021, il en donnait 17. Le distributeur aussi regrette avant.",
+   "text": "En 2021, le distributeur donnait 17. C'était mieux avant.",
    "claim_type": "fait_public",
    "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
    "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
@@ -218,7 +323,7 @@
    "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
    "date": "2026-09",
    "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
+   "statut": "fait",
    "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   },
   {
@@ -230,5 +335,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : environ 4 % à la rentrée 2026, contre 17 % en octobre 2021. Cadre : le distributeur de billets. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Rentrée 2026 : environ 4 % dans les sondages. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

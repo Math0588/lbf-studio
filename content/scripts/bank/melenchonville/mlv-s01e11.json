@@ -3,27 +3,27 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-11",
  "format": "A",
- "title_cover": "Taxer, mais payant",
+ "title_cover": "Taxer qui ?",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. Sortez la carte bleue.",
-  "Mélenchon veut taxer les riches. Son programme, lui, est payant.",
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien paie l'impôt.",
+  "La ville de Mélenchon a taxé les riches. Puis il n'y en avait plus.",
   "Les insoumis vont me détester.",
-  "Bienvenue à Mélenchonville : taxer, mais payant.",
-  "Mélenchon en une vidéo : taxer, mais payant."
+  "Bienvenue à Mélenchonville : taxer qui ?.",
+  "Mélenchon en une vidéo : taxer qui ?."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Taxer les riches au micro, dîner avec eux à table : le programme est complet.",
-  "Taxer les riches au micro, dîner avec eux à table : programme complet.",
-  "Ambiance cordiale, désaccords intacts. L'addition reste un mystère."
+  "À la fin, il ne reste qu'un contribuable : la tortue. Il la taxe.",
+  "Il ne restait qu'un contribuable : la tortue. Taxée.",
+  "Baston générale sur la place : qui taxe qui ?"
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Sortez la carte bleue.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien paie l'impôt.",
    "accent_words": [
-    "Sortez la carte bleue"
+    "paie l'impôt"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "Au même meeting, son programme est vendu sur place. Payant.",
+   "text": "La ville applique : les riches partent en courant, leurs yachts sur le dos.",
    "accent_words": [
-    "Payant"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "Le même mois, il dîne trois heures avec treize grands patrons.",
-   "accent_words": [
-    "grands patrons"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n5",
-   "text": "Ambiance cordiale, désaccords intacts. L'addition reste un mystère.",
-   "accent_words": [
-    "L'addition reste un mystère"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n6",
-   "text": "Taxer les riches au micro, dîner avec eux à table : le programme est complet.",
-   "accent_words": [
-    "le programme est complet"
+    "le dos"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui veut taxer les riches mais pas son abonnement.",
+   "id": "n4",
+   "text": "Plus personne à taxer. Les habitants se taxent entre eux.",
    "accent_words": [
-    "son abonnement"
+    "entre eux"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Baston générale sur la place : qui taxe qui ?",
+   "accent_words": [
+    "qui taxe qui"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "À la fin, il ne reste qu'un contribuable : la tortue. Il la taxe.",
+   "accent_words": [
+    "Il la taxe"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui veut taxer les riches mais pas son forfait.",
+   "accent_words": [
+    "son forfait"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE · TAXER, MAIS PAYANT",
-   "comic_action": "Descente sur la ville : banderole « TAXER, MAIS PAYANT », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "onscreen_text": "MÉLENCHONVILLE · TAXER QUI ?",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "TAXER LES RICHES"
     }
    ]
   },
@@ -118,14 +128,13 @@
     "banner"
    ],
    "onscreen_text": "« TAXER LES RICHES »",
-   "comic_action": "Foule qui scande, poings levés, sous les projecteurs.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "comic_action": "La foule scande, poings levés, sous les projecteurs.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "foule",
      "geste": "arms_up",
-     "visage": "colere",
-     "quand": 0.0
+     "visage": "colere"
     },
     {
      "who": "maire",
@@ -133,6 +142,12 @@
      "visage": "fier",
      "objet": "micro",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TAXER LES RICHES"
     }
    ]
   },
@@ -143,19 +158,25 @@
    ],
    "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
-    "sign"
+    "road",
+    "person",
+    "car"
    ],
-   "onscreen_text": "PROGRAMME : EN VENTE",
-   "comic_action": "Stand de programmes avec étiquette de prix et terminal de carte.",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "LES RICHES S'ENFUIENT",
+   "comic_action": "Des hommes en costume courent, un bateau sur les épaules.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
      "who": "perso",
-     "geste": "shrug",
-     "visage": "blase",
-     "objet": "pancarte"
+     "geste": "jump",
+     "visage": "choque",
+     "objet": "billets"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "YACHT À EMPORTER"
     }
    ]
   },
@@ -166,19 +187,25 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "table",
+    "shop",
     "person",
-    "studio_light"
+    "text3d"
    ],
-   "onscreen_text": "DÎNER : 13 PATRONS",
-   "comic_action": "Grande table dressée, treize chaises en cuir.",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "TAXE SUR LE VOISIN",
+   "comic_action": "Deux voisins s'échangent un ticket de taxe par la fenêtre.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro",
-     "objet": "verre"
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "billets"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TAXE BAGUETTE : 50 %"
     }
    ]
   },
@@ -189,24 +216,30 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "text3d",
-    "person"
+    "fountain",
+    "person",
+    "road"
    ],
-   "onscreen_text": "ADDITION : ?",
-   "comic_action": "Un serveur pose l'addition au centre ; personne ne la prend.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "QUI TAXE QUI ?",
+   "comic_action": "Mêlée sur la place, des billets volent autour de la fontaine.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
-     "who": "perso",
-     "geste": "shrug",
-     "visage": "neutre"
+     "who": "foule",
+     "geste": "manif",
+     "visage": "colere"
     },
     {
-     "who": "foule",
-     "geste": "point",
+     "who": "perso",
+     "geste": "fall",
      "visage": "choque",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "TAXÉ"
     }
    ]
   },
@@ -217,19 +250,24 @@
    ],
    "camera": "descend",
    "set": [
-    "table",
-    "tribune",
-    "text3d"
+    "mascot",
+    "text3d",
+    "mairie"
    ],
-   "onscreen_text": "TAXER… PUIS DÎNER",
-   "comic_action": "Écran partagé : le meeting à gauche, le dîner à droite.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "LA TORTUE : TAXÉE",
+   "comic_action": "Le maire tend un avis d'imposition à sa mascotte tortue.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "bow",
-     "visage": "sourire_pro",
-     "objet": "verre"
+     "geste": "point",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TORTUE : 90 %"
     }
    ]
   },
@@ -246,7 +284,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -255,19 +293,25 @@
      "visage": "sourire_pro",
      "objet": "phone"
     }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
    ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui veut taxer les riches mais pas son abonnement."
+  "text": "Envoie ça au pote qui veut taxer les riches mais pas son forfait."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 79,
+ "word_count": 84,
  "claims": [
   {
    "text": "Au Bourget, sa salle scande « Taxer les riches ».",
@@ -276,22 +320,10 @@
    "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
   },
   {
-   "text": "Au même meeting, son programme est vendu sur place. Payant.",
+   "text": "À la fin, il ne reste qu'un contribuable : la tortue. Il la taxe.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
-   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
-  },
-  {
-   "text": "Le même mois, il dîne trois heures avec treize grands patrons.",
-   "claim_type": "fait_public",
-   "source": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
-   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
-  },
-  {
-   "text": "Ambiance cordiale, désaccords intacts. L'addition reste un mystère.",
-   "claim_type": "fait_public",
-   "source": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
-   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
+   "source": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
+   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
   }
  ],
  "sources": [
@@ -303,13 +335,13 @@
    "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
   },
   {
-   "url": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
-   "date": "2026-11-17",
+   "url": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
+   "date": "2026-06-07",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
+   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Taxer, mais payant. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Au Bourget, sa salle scande « Taxer les riches ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

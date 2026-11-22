@@ -4,79 +4,79 @@
  "synopsis_id": "mlv-m016-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Tri en 1 069",
- "anchor": "le programme de 1 069 mesures devenu guide du tri.",
+ "title_cover": "Les enchères du SMIC",
+ "anchor": "SMIC promis : 1 400 € (2022), 1 700 € (2027) ; la mairie en fait des enchères.",
  "meme_id": "MA",
- "situation": "la collecte des déchets",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : jeter une canette demande 1 069 étapes.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, le tri sélectif a un programme complet.",
-  "Mélenchonville : les poubelles débordent, mais le guide est parfait."
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien veut plus.",
+  "Mélenchon monte le SMIC à chaque campagne. La mairie a lancé les enchères.",
+  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
+  "Bienvenue à Mélenchonville : les enchères du SMIC.",
+  "Mélenchon en une vidéo : les enchères du SMIC."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La ville est la plus organisée de France. Et la plus sale.",
-  "Mille soixante-neuf mesures, zéro ramassage.",
-  "Le programme est trié. Les poubelles, non."
+  "Le chiffrage ? Promis pour début 2027. Les enchères continuent.",
+  "Le chiffrage arrive début 2027. Les enchères, elles, continuent.",
+  "Le boulanger gagne plus que la banque. La banque bosse chez lui."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Le tri aussi.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien veut plus.",
    "accent_words": [
-    "Le tri aussi"
+    "veut plus"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son programme fait 1 069 mesures. Ici, c'est le guide du tri sélectif.",
+   "text": "Le SMIC promis : 1 400 euros en 2022, 1 700 en 2027.",
    "accent_words": [
-    "guide du tri"
+    "en 2027"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Bouteille en plastique : mesure 212. Bouchon : mesure 843.",
+   "text": "La mairie lance des enchères : le SMIC prend cent euros par semaine.",
    "accent_words": [
-    "mesure 843"
+    "par semaine"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "La Sixième République est en fin de guide, juste avant les encombrants.",
+   "text": "Un an plus tard, le SMIC dépasse le budget de la ville.",
    "accent_words": [
-    "les encombrants"
+    "la ville"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le camion attend que la rue ait fini de lire. Il attend depuis mars.",
+   "text": "Le boulanger gagne plus que la banque. La banque bosse chez lui.",
    "accent_words": [
-    "depuis mars"
+    "chez lui"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La ville est la plus organisée de France. Et la plus sale.",
+   "text": "Le chiffrage ? Promis pour début 2027. Les enchères continuent.",
    "accent_words": [
-    "la plus sale"
+    "Les enchères continuent"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui lit la notice sans jamais monter le meuble.",
+   "text": "Envoie ça au pote qui monte son prix dès que tu demandes.",
    "accent_words": [
-    "la notice"
+    "tu demandes"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "bin",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur une rue : les poubelles débordent, un livret épais sur chaque couvercle.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · LES ENCHÈRES DU SMIC",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "QUI DIT MIEUX ?"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,59 +128,112 @@
    ],
    "camera": "closeup",
    "set": [
-    "bin",
-    "form_stack",
+    "tribune",
+    "banner",
     "text3d"
    ],
-   "onscreen_text": "GUIDE : 1 069 MESURES",
-   "comic_action": "Gros plan : un livret de mille pages scotché sur la poubelle jaune.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "1 400 → 1 700",
+   "comic_action": "Le maire tape du marteau comme un commissaire-priseur.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "QUI DIT MIEUX ?"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "bin",
-    "text3d",
+    "mairie",
+    "screen",
     "person"
    ],
-   "onscreen_text": "BOUCHON : P. 843",
-   "comic_action": "Un habitant feuillette, bouteille dans une main, bouchon dans l'autre.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SMIC : +100 € / SEMAINE",
+   "comic_action": "Panneau d'enchères qui grimpe tout seul.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ADJUGÉ : 1 800"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "bin",
-    "sign",
-    "text3d"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "VIE RÉP. → ENCOMBRANTS",
-   "comic_action": "Orbite autour d'un tas d'encombrants : une pancarte « VIe RÉPUBLIQUE » posée dessus.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "SMIC > BUDGET",
+   "comic_action": "Le panneau dépasse le toit de la mairie.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SMIC : 6 900 €"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
-    "car",
+    "shop",
     "person",
-    "bin"
+    "text3d"
    ],
-   "onscreen_text": "CAMION EN ATTENTE",
-   "comic_action": "Travelling : le camion-benne garé, l'éboueur lit lui aussi.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LA BANQUE : APPRENTIE",
+   "comic_action": "Un banquier en costume pétrit la pâte.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "content",
+     "objet": "billets"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "RICHE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -166,13 +242,26 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "bin",
-    "text3d"
+    "form_stack",
+    "text3d",
+    "table"
    ],
-   "onscreen_text": "ORGANISÉE · SALE",
-   "comic_action": "Plan large : montagnes de sacs, chacun étiqueté parfaitement.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "CHIFFRAGE : 2027",
+   "comic_action": "Une calculette encore dans son emballage.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BUDGET : PLUS TARD"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -186,14 +275,28 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique jette tout dans la même poubelle.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui lit la notice sans jamais monter le meuble."
+  "text": "Envoie ça au pote qui monte son prix dès que tu demandes."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -203,27 +306,40 @@
  "word_count": 85,
  "claims": [
   {
-   "text": "Son programme fait 1 069 mesures. Ici, c'est le guide du tri sélectif.",
+   "text": "Le SMIC promis : 1 400 euros en 2022, 1 700 en 2027.",
    "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
-   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
+   "source": "https://www.institutmontaigne.org/presidentielle-2022/jean-luc-melenchon/augmenter-le-smic-a-1-400-e-net",
+   "note": "Présidentielle 2022 : SMIC à 1 400 € net."
   },
   {
-   "text": "La Sixième République est en fin de guide, juste avant les encombrants.",
+   "text": "Le SMIC promis : 1 400 euros en 2022, 1 700 en 2027.",
    "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
-   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
+   "source": "https://www.economiematin.fr/?p=238883",
+   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, indexation des salaires sur l'inflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
+  },
+  {
+   "text": "Le chiffrage ? Promis pour début 2027. Les enchères continuent.",
+   "claim_type": "fait_public",
+   "source": "https://www.economiematin.fr/?p=238883",
+   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, indexation des salaires sur l'inflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
   }
  ],
  "sources": [
   {
-   "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+   "url": "https://www.institutmontaigne.org/presidentielle-2022/jean-luc-melenchon/augmenter-le-smic-a-1-400-e-net",
+   "date": "2022-02",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : SMIC à 1 400 € net."
+  },
+  {
+   "url": "https://www.economiematin.fr/?p=238883",
    "date": "2026-11",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
+   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, indexation des salaires sur l'inflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le programme de 1 069 mesures devenu guide du tri. Cadre : la collecte des déchets. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Le SMIC promis : 1 400 euros en 2022, 1 700 en 2027. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-05",
  "format": "C",
- "title_cover": "Zéro député",
+ "title_cover": "Le soufflé",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le futur n'est pas compatible.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, on est bloqué en version 2022.",
-  "Zemmourville : l'appli qui plante au premier tour."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien cuisine.",
+  "Zemmour est monté à 17 %, retombé à 7. La ville en a fait un dessert.",
+  "Ben voyons, encore une vidéo sur lui.",
+  "Bienvenue à Zemmourville : le soufflé.",
+  "Zemmour en une vidéo : le soufflé."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Message système : « Le résultat n'est pas à la hauteur de nos attentes ».",
-  "Zéro député, mise à jour annulée.",
-  "Le système redémarre. Le score, non."
+  "La presse l'avait écrit : il retombe comme un soufflé.",
+  "La presse l'avait écrit : il retombe comme un soufflé.",
+  "Les touristes viennent le voir s'effondrer. Ils applaudissent."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Mise à jour refusée.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien cuisine.",
    "accent_words": [
-    "Mise à jour refusée"
+    "Même le chien cuisine"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, le futur a été désinstallé. On reste sur la version 2022.",
+   "text": "Octobre 2021 : 17 % dans un sondage. Avril 2022 : 7 % dans les urnes.",
    "accent_words": [
-    "version 2022"
+    "les urnes"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "La mairie en fait la spécialité locale : le soufflé Zemmour.",
+   "accent_words": [
+    "le soufflé Zemmour"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Version 2022 : présidentielle à 7 %, puis législatives autour de 4 %.",
-   "accent_words": [
-    "autour de 4 %"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n4",
-   "text": "Bilan : zéro député. Lui-même éliminé au premier tour dans le Var.",
+   "text": "Il monte à 17 centimètres au four, retombe à 7 dans l'assiette.",
    "accent_words": [
-    "zéro député"
+    "dans l'assiette"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Troisième de sa circonscription, avec 23 %. Bug signalé.",
+   "text": "Les touristes viennent le voir s'effondrer. Ils applaudissent.",
    "accent_words": [
-    "Bug signalé"
+    "Ils applaudissent"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "La presse l'avait écrit : il retombe comme un soufflé.",
+   "accent_words": [
+    "un soufflé"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n6",
-   "text": "Message système : « Le résultat n'est pas à la hauteur de nos attentes ».",
-   "accent_words": [
-    "Message système"
-   ],
-   "claim_type": "citation_exacte"
-  },
-  {
    "id": "n7",
-   "text": "Envoie ça au pote qui refuse toutes les mises à jour.",
+   "text": "Envoie ça au pote qui promet tout en octobre et rien en avril.",
    "accent_words": [
-    "mises à jour"
+    "en avril"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "screen",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un quartier : chaque écran affiche « VERSION 2022 ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · LE SOUFFLÉ",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "LE SOUFFLÉ ZEMMOUR"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -102,11 +125,24 @@
    "set": [
     "screen",
     "text3d",
-    "person"
+    "tribune"
    ],
-   "onscreen_text": "FUTUR : DÉSINSTALLÉ",
-   "comic_action": "Barre de progression « DÉSINSTALLATION DU FUTUR » qui atteint 100 %.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "17 % → 7 %",
+   "comic_action": "Une courbe géante plonge sur l'écran.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LE SOUFFLÉ ZEMMOUR"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,27 +151,54 @@
    ],
    "camera": "orbit",
    "set": [
-    "screen",
-    "text3d"
+    "shop",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "7 % → 4 %",
-   "comic_action": "Orbite autour de deux écrans : deux jauges qui descendent.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "SPÉCIALITÉ : LE SOUFFLÉ",
+   "comic_action": "Vitrine de pâtisserie avec une rangée de soufflés.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "clap",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SOUFFLÉ : 17 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
+    "table",
     "text3d",
     "person"
    ],
-   "onscreen_text": "DÉPUTÉS : 0",
-   "comic_action": "Un hémicycle miniature, tous les sièges vides.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "17 CM → 7 CM",
+   "comic_action": "Un soufflé s'affaisse en direct devant le client.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "GOURMAND"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -144,12 +207,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d"
+    "shop",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "ERREUR : 3E",
-   "comic_action": "Message d'erreur rétro : « TROISIÈME — RÉESSAYER ? ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "SPECTACLE : L'EFFONDREMENT",
+   "comic_action": "Une foule de touristes filme le soufflé qui retombe.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SÉANCE : TOUTES LES HEURES"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -158,13 +236,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
     "screen",
-    "text3d"
+    "text3d",
+    "sign"
    ],
-   "onscreen_text": "PAS À LA HAUTEUR",
-   "comic_action": "Plan large : tous les écrans du quartier affichent la même phrase, curseur qui clignote.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "« RETOMBE COMME UN SOUFFLÉ »",
+   "comic_action": "Une une de journal encadrée au-dessus du four.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "RECETTE DE 2022"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -178,48 +269,63 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique clique « plus tard ».",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui refuse toutes les mises à jour."
+  "text": "Envoie ça au pote qui promet tout en octobre et rien en avril."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 84,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Version 2022 : présidentielle à 7 %, puis législatives autour de 4 %.",
+   "text": "Octobre 2021 : 17 % dans un sondage. Avril 2022 : 7 % dans les urnes.",
+   "claim_type": "fait_public",
+   "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+  },
+  {
+   "text": "Octobre 2021 : 17 % dans un sondage. Avril 2022 : 7 % dans les urnes.",
    "claim_type": "fait_public",
    "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
-   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième. / « Le résultat n'est pas à la hauteur de nos attentes » ; son parti autour de 4 %."
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   },
   {
-   "text": "Bilan : zéro député. Lui-même éliminé au premier tour dans le Var.",
+   "text": "La presse l'avait écrit : il retombe comme un soufflé.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
-   "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
-  },
-  {
-   "text": "Troisième de sa circonscription, avec 23 %. Bug signalé.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
-   "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
-  },
-  {
-   "text": "« Le résultat n'est pas à la hauteur de nos attentes »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.dhnet.be/actu/monde/2022/06/12/elections-legislatives-2022-le-parti-deric-zemmour-nobtiendrait-quentre-38-et-4-des-voix-2MNY4GFZ4FBEDOJ6SGEU3C5AFE/",
-   "note": "« Le résultat n'est pas à la hauteur de nos attentes » ; son parti autour de 4 %."
+   "source": "https://fr.timesofisrael.com/france-eric-zemmour-retombe-comme-un-souffle/",
+   "note": "Titre de presse : il « retombe comme un soufflé » (repris sans guillemets)."
   }
  ],
  "sources": [
+  {
+   "url": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "date": "2021-10-07",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+  },
   {
    "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "date": "2022-04",
@@ -228,20 +334,13 @@
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   },
   {
-   "url": "https://www.dhnet.be/actu/monde/2022/06/12/elections-legislatives-2022-le-parti-deric-zemmour-nobtiendrait-quentre-38-et-4-des-voix-2MNY4GFZ4FBEDOJ6SGEU3C5AFE/",
-   "date": "2022-06-12",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "« Le résultat n'est pas à la hauteur de nos attentes » ; son parti autour de 4 %."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
-   "date": "2022-06-12",
+   "url": "https://fr.timesofisrael.com/france-eric-zemmour-retombe-comme-un-souffle/",
+   "date": "2022",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
+   "note": "Titre de presse : il « retombe comme un soufflé » (repris sans guillemets)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : législatives 2022 : environ 4 %, zéro député, lui-même éliminé dans le Var, « pas à la hauteur de nos attentes ». Cadre : le futur désinstallé. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Octobre 2021 : 17 % dans un sondage. Avril 2022 : 7 % dans les urnes. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

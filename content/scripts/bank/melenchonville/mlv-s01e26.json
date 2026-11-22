@@ -3,27 +3,27 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-26",
  "format": "A",
- "title_cover": "Gergovie, puis Alésia",
+ "title_cover": "En formation tortue",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. Cours d'histoire.",
-  "Mélenchon donne des cours d'histoire. Il oublie toujours la fin.",
-  "Les fans de Méluche vont me bloquer.",
-  "Bienvenue à Mélenchonville : gergovie, puis Alésia.",
-  "Mélenchon en une vidéo : gergovie, puis Alésia."
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien a un bouclier.",
+  "Mélenchon adore la formation romaine de la tortue. La ville s'y est mise.",
+  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
+  "Bienvenue à Mélenchonville : en formation tortue.",
+  "Mélenchon en une vidéo : en formation tortue."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Gagner Gergovie, perdre Alésia : il rejoue le film à chaque présidentielle depuis 2012.",
-  "Il connaît Gergovie par cœur. Alésia, il la vit tous les cinq ans.",
-  "Lui aussi gagne des batailles : vingt-six mille revendiqués à Saint-Denis."
+  "Gergovie, puis Alésia : le film qu'il rejoue à chaque présidentielle depuis 2012.",
+  "Gergovie, puis Alésia : le film qu'il rejoue tous les cinq ans.",
+  "Trois jours plus tard, elle arrive à Alésia. Aïe."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Cours d'histoire.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien a un bouclier.",
    "accent_words": [
-    "Cours d'histoire"
+    "un bouclier"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,31 +37,31 @@
   },
   {
    "id": "n3",
-   "text": "La tortue, c'est déjà son totem de campagne. Ça tombe bien.",
+   "text": "La ville se déplace en tortue. Même pour aller au pain.",
    "accent_words": [
-    "Ça tombe bien"
+    "au pain"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Gergovie, c'est la victoire gauloise. Quelques mois plus tard, il y a Alésia.",
+   "text": "Boucliers serrés, on ne voit rien. La tortue rate la boulangerie.",
    "accent_words": [
-    "a Alésia"
+    "la boulangerie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Lui aussi gagne des batailles : vingt-six mille revendiqués à Saint-Denis.",
+   "text": "Trois jours plus tard, elle arrive à Alésia. Aïe.",
    "accent_words": [
-    "à Saint-Denis"
+    "Aïe"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Gagner Gergovie, perdre Alésia : il rejoue le film à chaque présidentielle depuis 2012.",
+   "text": "Gergovie, puis Alésia : le film qu'il rejoue à chaque présidentielle depuis 2012.",
    "accent_words": [
     "depuis 2012"
    ],
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE · GERGOVIE, PUIS ALÉSIA",
-   "comic_action": "Descente sur la ville : banderole « GERGOVIE, PUIS ALÉSIA », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "onscreen_text": "MÉLENCHONVILLE · EN FORMATION TORTUE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "EN TORTUE, CAMARADES"
     }
    ]
   },
@@ -119,19 +129,19 @@
    ],
    "onscreen_text": "« FORMATION DE LA TORTUE »",
    "comic_action": "Des militants avancent serrés sous des pancartes en boucliers.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
      "geste": "point",
      "visage": "fier",
      "objet": "micro"
-    },
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "nod",
-     "visage": "neutre",
-     "quand": 0.4
+     "type": "affiche",
+     "texte": "EN TORTUE, CAMARADES"
     }
    ]
   },
@@ -142,18 +152,24 @@
    ],
    "camera": "orbit",
    "set": [
-    "mascot",
-    "banner",
-    "text3d"
+    "road",
+    "shop",
+    "person"
    ],
-   "onscreen_text": "TOTEM : LA TORTUE",
-   "comic_action": "Une mascotte tortue salue devant la tribune.",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "EN TORTUE AU PAIN",
+   "comic_action": "Un bloc d'habitants sous des boucliers avance vers la boulangerie.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "content"
+     "who": "foule",
+     "geste": "manif",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BOUCLIER OBLIGATOIRE"
     }
    ]
   },
@@ -164,18 +180,25 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "column",
-    "text3d",
-    "sign"
+    "shop",
+    "road",
+    "text3d"
    ],
-   "onscreen_text": "GERGOVIE → ALÉSIA",
-   "comic_action": "Panneau historique : flèche rouge vers « ALÉSIA ».",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "BOULANGERIE : RATÉE",
+   "comic_action": "La tortue humaine passe devant la boulangerie sans s'arrêter.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
      "who": "perso",
      "geste": "facepalm",
-     "visage": "choque"
+     "visage": "choque",
+     "objet": "baguette"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PERDU"
     }
    ]
   },
@@ -186,18 +209,24 @@
    ],
    "camera": "closeup",
    "set": [
-    "tribune",
-    "person",
-    "banner"
+    "sign",
+    "road",
+    "arch"
    ],
-   "onscreen_text": "26 000 REVENDIQUÉS",
-   "comic_action": "Foule en formation tortue qui applaudit.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "BIENVENUE À ALÉSIA",
+   "comic_action": "Panneau « ALÉSIA » ; la tortue humaine s'arrête net.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
      "who": "foule",
-     "geste": "cheer",
-     "visage": "content"
+     "geste": "shake",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ALÉSIA : 0 BOULANGERIE"
     }
    ]
   },
@@ -214,18 +243,18 @@
    ],
    "onscreen_text": "ALÉSIA : 2012 · 2017 · 2022",
    "comic_action": "La mascotte tortue se retrouve sur le dos.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
      "geste": "fall",
      "visage": "choque"
-    },
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "point",
-     "visage": "content",
-     "quand": 0.4
+     "type": "affiche",
+     "texte": "PROCHAINE BATAILLE : 2027"
     }
    ]
   },
@@ -242,7 +271,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -250,6 +279,12 @@
      "geste": "point",
      "visage": "sourire_pro",
      "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
     }
    ]
   }
@@ -263,7 +298,7 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 85,
+ "word_count": 84,
  "claims": [
   {
    "text": "À Gergovie, il fait l'éloge de la « formation romaine de la tortue ».",
@@ -272,22 +307,10 @@
    "note": "Leçon d'histoire à Gergovie, éloge de la « formation romaine de la tortue »."
   },
   {
-   "text": "La tortue, c'est déjà son totem de campagne. Ça tombe bien.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
-  },
-  {
-   "text": "Lui aussi gagne des batailles : vingt-six mille revendiqués à Saint-Denis.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
-  },
-  {
-   "text": "Gagner Gergovie, perdre Alésia : il rejoue le film à chaque présidentielle depuis 2012.",
+   "text": "Gergovie, puis Alésia : le film qu'il rejoue à chaque présidentielle depuis 2012.",
    "claim_type": "fait_public",
    "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
@@ -299,20 +322,13 @@
    "note": "Leçon d'histoire à Gergovie, éloge de la « formation romaine de la tortue »."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
-   "date": "2026-06-07",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
-  },
-  {
    "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
    "date": "consulté 2026-11-22",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Gergovie, puis Alésia. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : À Gergovie, il fait l'éloge de la « formation romaine de la tortue ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

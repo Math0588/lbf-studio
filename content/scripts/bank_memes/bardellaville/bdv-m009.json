@@ -5,22 +5,22 @@
  "format": "A",
  "length": "court",
  "title_cover": "Il sait pour toi",
- "anchor": "« Ce que veulent les Français » : il sait ce que tu veux",
+ "anchor": "son livre « Ce que veulent les Français »",
  "meme_key": "CQVLF",
  "situation": "Il sait pour toi",
- "ressort": "un thème unique en escalade : truc connu, trois crans, chute retournée",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Bardella. Il sait pour toi.",
-  "Bardella sait ce que tu veux. Il l'a écrit.",
-  "Bardellaville : tes envies, en librairie, prix fort.",
+  "Bardellaville : le livre décide ce que tu veux.",
+  "Ici, tu voulais une pizza, tu as de la soupe.",
   "Les fans de Bardella vont me détester.",
   "Bienvenue à Bardellaville. Au programme : Il sait pour toi."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Il sait ce que veulent les Français. Pas comment le payer.",
-  "Il sait ce que tu veux. Pas comment le payer.",
-  "Le livre des Français, le chèque pour lui."
+  "Bardella, lui, sait ce qu'il veut : plus d'un million de droits d'auteur.",
+  "Lui sait ce qu'il veut : le million.",
+  "Tu voulais des vacances ? Le livre dit dédicace. Tu fais la queue."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -36,41 +36,41 @@
    "id": "n2",
    "text": "Son deuxième livre s'intitule Ce que veulent les Français.",
    "accent_words": [
-    "Ce que veulent les Français"
+    "Français"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Sa formule : « Ce livre n'est pas le mien, c'est celui des Français ».",
+   "text": "Alors la mairie décide ce que veut chaque habitant, par écrit.",
    "accent_words": [
-    "Français"
+    "par écrit"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ce que veulent les Français, apparemment : lui verser plus d'un million de droits.",
+   "text": "Tu voulais une pizza ? Le livre dit soupe. Tu manges de la soupe.",
    "accent_words": [
-    "un million"
+    "soupe"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Prochain tome : ce que pensent les Français, rédigé sans eux.",
+   "text": "Tu voulais des vacances ? Le livre dit dédicace. Tu fais la queue.",
    "accent_words": [
-    "sans eux"
+    "dédicace"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Il sait ce que veulent les Français. Pas comment le payer.",
+   "text": "Bardella, lui, sait ce qu'il veut : plus d'un million de droits d'auteur.",
    "accent_words": [
-    "payer"
+    "droits d'auteur"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
@@ -96,7 +96,7 @@
    ],
    "onscreen_text": "IL SAIT POUR TOI",
    "comic_action": "Descente sur la ville ; banderole « IL SAIT POUR TOI » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "maire",
@@ -106,6 +106,12 @@
     {
      "who": "perso",
      "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
     }
    ]
   },
@@ -123,7 +129,7 @@
    ],
    "onscreen_text": "CE QUE VEULENT LES FRANÇAIS",
    "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « CE QUE VEULENT LES FRANÇAIS ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -134,7 +140,8 @@
      "who": "foule",
      "geste": "clap"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -148,19 +155,24 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "« CELUI DES FRANÇAIS »",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « « CELUI DES FRANÇAIS » ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "TES ENVIES, PAR ÉCRIT",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « TES ENVIES, PAR ÉCRIT ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
      "who": "maire",
-     "geste": "nod",
+     "geste": "point",
      "visage": "fier"
     },
     {
      "who": "perso",
-     "geste": "shrug",
-     "visage": "blase"
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TA VOLONTÉ : PAGE 12"
     }
    ]
   },
@@ -169,56 +181,56 @@
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "screen",
+    "facade_row",
+    "sign",
     "text3d",
-    "table",
-    "form_stack"
+    "person"
    ],
-   "onscreen_text": "1 MILLION DE DROITS",
-   "comic_action": "Compteur géant sur l'écran : « 1 MILLION DE DROITS ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "PIZZA ? SOUPE",
+   "comic_action": "Rangée de façades : enseigne « PIZZA ? SOUPE ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
-    {
-     "who": "maire",
-     "geste": "cheer",
-     "visage": "content"
-    },
     {
      "who": "perso",
      "geste": "facepalm",
      "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "form_stack",
+    "road",
     "person",
-    "text3d"
+    "banner",
+    "ring_light"
    ],
-   "onscreen_text": "TOME 4 : SANS EUX",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « TOME 4 : SANS EUX ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "VACANCES ? DÉDICACE",
+   "comic_action": "Travelling sur une file de téléphones levés ; banderole « VACANCES ? DÉDICACE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro"
+     "who": "foule",
+     "visage": "fatigue"
     },
     {
      "who": "perso",
-     "geste": "point",
-     "visage": "colere"
+     "geste": "facepalm",
+     "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -232,21 +244,23 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "COMMENT PAYER ? MYSTÈRE",
-   "comic_action": "Plan final, tenir une seconde : « COMMENT PAYER ? MYSTÈRE ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "LUI : 1 MILLION",
+   "comic_action": "Plan final, tenir une seconde : « LUI : 1 MILLION ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "shrug",
-     "visage": "sourire_pro"
+     "geste": "cheer",
+     "visage": "content",
+     "objet": "billets"
     },
     {
      "who": "perso",
      "geste": "cross_arms",
-     "visage": "blase"
+     "visage": "colere"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -262,7 +276,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE INDÉCIS",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE INDÉCIS ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -270,7 +284,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -292,15 +307,8 @@
    "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
   },
   {
-   "segment": "n3",
-   "text": "Sa formule : « Ce livre n'est pas le mien, c'est celui des Français ».",
-   "claim_type": "citation_exacte",
-   "source": "https://www.europe1.fr/politique/ce-livre-nest-pas-le-mien-cest-celui-des-francais-en-sondant-le-pays-jordan-bardella-se-prepare-a-lexercice-du-pouvoir-869191",
-   "note": "Livre « Ce que veulent les Français » : « Ce livre n'est pas le mien, c'est celui des Français »."
-  },
-  {
-   "segment": "n4",
-   "text": "Ce que veulent les Français, apparemment : lui verser plus d'un million de droits.",
+   "segment": "n6",
+   "text": "Bardella, lui, sait ce qu'il veut : plus d'un million de droits d'auteur.",
    "claim_type": "fait_public",
    "source": "https://www.letribunaldunet.fr/politique/bardella-million-euros-livres-declaration-revenus.html",
    "note": "1 035 178 € de droits d'auteur avant impôts déclarés à la HATVP (livres chez Fayard)."
@@ -315,13 +323,6 @@
    "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
   },
   {
-   "url": "https://www.europe1.fr/politique/ce-livre-nest-pas-le-mien-cest-celui-des-francais-en-sondant-le-pays-jordan-bardella-se-prepare-a-lexercice-du-pouvoir-869191",
-   "date": "2025-10-29",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "Livre « Ce que veulent les Français » : « Ce livre n'est pas le mien, c'est celui des Français »."
-  },
-  {
    "url": "https://www.letribunaldunet.fr/politique/bardella-million-euros-livres-declaration-revenus.html",
    "date": "2026",
    "consulted": "2026-11-22",
@@ -330,5 +331,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = « Ce que veulent les Français » : il sait ce que tu veux. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = son livre « Ce que veulent les Français ». Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

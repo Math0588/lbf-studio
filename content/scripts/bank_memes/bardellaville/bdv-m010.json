@@ -4,29 +4,29 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Toujours faim",
- "anchor": "« toujours faim » (son running gag TikTok) appliqué à tout",
+ "title_cover": "Le conseil brunch",
+ "anchor": "« toujours faim », surtout avant un débat (TikTok)",
  "meme_key": "BONBONS",
- "situation": "Toujours faim",
- "ressort": "un thème unique en escalade : truc connu, trois crans, chute retournée",
+ "situation": "Le conseil brunch",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Toujours faim.",
-  "Bardella a toujours faim. De tout, sauf d'une chose.",
-  "Bardellaville : l'appétit, pas le débat.",
+  "Dans cette ville, tout le monde vote Bardella. Et a toujours faim.",
+  "Bardellaville : le conseil municipal est un brunch.",
+  "Ici, le budget passe entre deux croissants.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Toujours faim."
+  "Bienvenue à Bardellaville. Au programme : Le conseil brunch."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Toujours faim de tout. Sauf de débats.",
-  "Faim de tout, sauf de débats.",
-  "Le seul régime qu'il tient : zéro débat."
+  "Bardella, lui, saute le débat et garde le dessert.",
+  "Il saute le débat, garde le dessert.",
+  "Le conseil municipal devient un brunch. Le budget passe entre deux croissants."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Toujours faim.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Et a toujours faim.",
    "accent_words": [
     "faim"
    ],
@@ -42,33 +42,33 @@
   },
   {
    "id": "n3",
-   "text": "Faim de selfies : une heure et demie de file à Châlons.",
+   "text": "Alors la mairie installe un buffet devant chaque débat.",
    "accent_words": [
-    "selfies"
+    "débat"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Faim de livres : trois en deux ans.",
+   "text": "Les élus mangent tellement qu'ils oublient de débattre.",
    "accent_words": [
-    "livres"
+    "débattre"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Faim de droits d'auteur : plus d'un million.",
+   "text": "Le conseil municipal devient un brunch. Le budget passe entre deux croissants.",
    "accent_words": [
-    "un million"
+    "brunch"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Toujours faim de tout. Sauf de débats.",
+   "text": "Bardella, lui, saute le débat et garde le dessert.",
    "accent_words": [
-    "débats"
+    "dessert"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -96,16 +96,21 @@
    ],
    "onscreen_text": "TOUJOURS FAIM",
    "comic_action": "Descente sur la ville ; banderole « TOUJOURS FAIM » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
-     "who": "maire",
-     "visage": "content",
-     "geste": "wave"
+     "who": "perso",
+     "visage": "content"
     },
     {
      "who": "foule",
      "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "J'AI FAIM"
     }
    ]
   },
@@ -123,7 +128,7 @@
    ],
    "onscreen_text": "FAIM AVANT LE DÉBAT",
    "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « FAIM AVANT LE DÉBAT ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -135,33 +140,38 @@
      "who": "perso",
      "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "road",
-    "person",
+    "tribune",
+    "lift_tribune",
     "banner",
-    "ring_light"
+    "person"
    ],
-   "onscreen_text": "FAIM DE SELFIES",
-   "comic_action": "Travelling sur une file de téléphones levés ; banderole « FAIM DE SELFIES ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "BUFFET AVANT DÉBAT",
+   "comic_action": "Meeting : la tribune s'élève, banderole « BUFFET AVANT DÉBAT ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro",
-     "objet": "ring_light"
+     "who": "foule",
+     "geste": "cheer"
     },
     {
-     "who": "foule",
-     "geste": "jump"
+     "who": "perso",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BUFFET À VOLONTÉ"
     }
    ]
   },
@@ -170,20 +180,48 @@
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
-    "person",
-    "text3d"
+    "tribune",
+    "lift_tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "FAIM DE LIVRES",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « FAIM DE LIVRES ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "ON OUBLIE DE DÉBATTRE",
+   "comic_action": "Meeting : la tribune s'élève, banderole « ON OUBLIE DE DÉBATTRE ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "bow",
+     "who": "foule",
+     "visage": "dort"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "descend",
+   "set": [
+    "ground",
+    "mairie",
+    "banner",
+    "person"
+   ],
+   "onscreen_text": "CONSEIL = BRUNCH",
+   "comic_action": "Descente sur la ville ; banderole « CONSEIL = BRUNCH » sur la mairie.",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "objet": "verre",
      "visage": "content"
     },
     {
@@ -191,35 +229,8 @@
      "geste": "facepalm",
      "visage": "blase"
     }
-   ]
-  },
-  {
-   "id": "s5",
-   "narration_ids": [
-    "n5"
    ],
-   "camera": "closeup",
-   "set": [
-    "screen",
-    "text3d",
-    "table",
-    "form_stack"
-   ],
-   "onscreen_text": "FAIM DE MILLIONS",
-   "comic_action": "Compteur géant sur l'écran : « FAIM DE MILLIONS ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
-   "actions": [
-    {
-     "who": "maire",
-     "geste": "cheer",
-     "visage": "content"
-    },
-    {
-     "who": "perso",
-     "geste": "facepalm",
-     "visage": "colere"
-    }
-   ]
+   "gags": []
   },
   {
    "id": "s6",
@@ -233,21 +244,22 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "SAUF DE DÉBATS",
-   "comic_action": "Plan final, tenir une seconde : « SAUF DE DÉBATS ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "PAS DE DÉBAT, LE DESSERT",
+   "comic_action": "Plan final, tenir une seconde : « PAS DE DÉBAT, LE DESSERT ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "cross_arms",
-     "visage": "fier"
+     "visage": "content",
+     "geste": "wave"
     },
     {
      "who": "perso",
-     "geste": "point",
+     "geste": "cross_arms",
      "visage": "colere"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -263,7 +275,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE AFFAMÉ",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE AFFAMÉ ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -271,7 +283,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -283,7 +296,7 @@
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 73,
+ "word_count": 78,
  "claims": [
   {
    "segment": "n2",
@@ -291,27 +304,6 @@
    "claim_type": "fait_public",
    "source": "https://certop.cnrs.fr/wp-content/uploads/2024/07/Jordan-Bardella-sur-TikTok-affiche-son-addiction-aux-bonbons-et-ca-en-dit-long-sur-sa-strategie-de-com.pdf",
    "note": "Blague récurrente de son TikTok : il a toujours faim et pioche des bonbons, surtout avant un débat."
-  },
-  {
-   "segment": "n3",
-   "text": "Faim de selfies : une heure et demie de file à Châlons.",
-   "claim_type": "fait_public",
-   "source": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
-   "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
-  },
-  {
-   "segment": "n4",
-   "text": "Faim de livres : trois en deux ans.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
-   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
-  },
-  {
-   "segment": "n5",
-   "text": "Faim de droits d'auteur : plus d'un million.",
-   "claim_type": "fait_public",
-   "source": "https://www.letribunaldunet.fr/politique/bardella-million-euros-livres-declaration-revenus.html",
-   "note": "1 035 178 € de droits d'auteur avant impôts déclarés à la HATVP (livres chez Fayard)."
   }
  ],
  "sources": [
@@ -321,29 +313,8 @@
    "consulted": "2026-11-22",
    "statut": "fait (contenu public de son compte TikTok) + opinion (analyse)",
    "note": "Blague récurrente de son TikTok : il a toujours faim et pioche des bonbons, surtout avant un débat."
-  },
-  {
-   "url": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
-   "date": "2026-08-29",
-   "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
-   "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
-  },
-  {
-   "url": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
-   "date": "2026-11-04",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
-  },
-  {
-   "url": "https://www.letribunaldunet.fr/politique/bardella-million-euros-livres-declaration-revenus.html",
-   "date": "2026",
-   "consulted": "2026-11-22",
-   "statut": "fait (déclaration HATVP rapportée)",
-   "note": "1 035 178 € de droits d'auteur avant impôts déclarés à la HATVP (livres chez Fayard)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = « toujours faim » (son running gag TikTok) appliqué à tout. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « toujours faim », surtout avant un débat (TikTok). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

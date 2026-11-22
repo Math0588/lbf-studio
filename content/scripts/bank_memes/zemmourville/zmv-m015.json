@@ -4,79 +4,79 @@
  "synopsis_id": "zmv-m015-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Record du monde",
- "anchor": "juin 2024 : exclusion de la tête de liste et « record du monde de la trahison ».",
+ "title_cover": "Championnat de la copro",
+ "anchor": "« record du monde de la trahison » : la copropriété organise le championnat.",
  "meme_id": "ZP",
- "situation": "la réunion de copropriété",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : la copro décerne le record de la trahison.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, parler au voisin, c'est trahir.",
-  "Zemmourville : l'immeuble où l'on finit seul champion."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien a trahi.",
+  "Zemmour a vu le record du monde de la trahison. La copro a voulu le battre.",
+  "Ben voyons, encore une vidéo sur lui.",
+  "Bienvenue à Zemmourville : championnat de la copro.",
+  "Zemmour en une vidéo : championnat de la copro."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "À la fin, un seul copropriétaire. Champion du monde, tout seul.",
-  "Un seul copropriétaire, champion du monde.",
-  "Le record tient. L'immeuble, plus personne."
+  "Champion du monde, tout seul. Comme lui avec une seule eurodéputée restante.",
+  "Champion du monde, tout seul. Comme lui avec une seule eurodéputée.",
+  "Le troisième trahit le quatrième. Il ne reste qu'un copropriétaire."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Réunion de copro.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien a trahi.",
    "accent_words": [
-    "Réunion de copro"
+    "a trahi"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Juin 2024 : il dénonce le « record du monde de la trahison ».",
+   "text": "En 2024, il dénonce le « record du monde de la trahison ».",
    "accent_words": [
-    "trahison"
+    "la trahison"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Après les européennes à 5,47 %. Ici, la copro en fait un championnat.",
+   "text": "La copropriété organise le championnat de la trahison.",
    "accent_words": [
-    "championnat"
+    "la trahison"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le gardien vote contre le syndic : trahison. Le syndic change de serrure.",
+   "text": "Le gardien vote contre le syndic. Le syndic change les serrures.",
    "accent_words": [
-    "change de serrure"
+    "les serrures"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le troisième étage parle au voisin : haute trahison.",
+   "text": "Le troisième trahit le quatrième. Il ne reste qu'un copropriétaire.",
    "accent_words": [
-    "haute trahison"
+    "qu'un copropriétaire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "À la fin, un seul copropriétaire. Champion du monde, tout seul.",
+   "text": "Champion du monde, tout seul. Comme lui avec une seule eurodéputée restante.",
    "accent_words": [
-    "tout seul"
+    "eurodéputée restante"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui vire tout le monde de sa soirée.",
+   "text": "Envoie ça au pote qui change de groupe à chaque soirée.",
    "accent_words": [
-    "sa soirée"
+    "chaque soirée"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un immeuble : coupe dorée dans le hall.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · CHAMPIONNAT DE LA COPRO",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "TRAHISSEZ VOS VOISINS"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,13 +128,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "column",
-    "text3d",
-    "person"
+    "tribune",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "RECORD DU MONDE",
-   "comic_action": "Gros plan sur une coupe gravée posée dans le hall.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« RECORD DU MONDE DE LA TRAHISON »",
+   "comic_action": "Le maire, doigt accusateur, au micro.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TRAHISSEZ VOS VOISINS"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -120,43 +157,82 @@
    ],
    "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
+    "building",
+    "banner",
     "person"
    ],
    "onscreen_text": "CHAMPIONNAT DE LA COPRO",
-   "comic_action": "Orbite : un tableau des scores accroché au tableau d'affichage.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "comic_action": "Banderole « CHAMPIONNAT » sur la façade de l'immeuble.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "INSCRIPTION : 1 COUP BAS"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
     "building",
     "person",
     "text3d"
    ],
-   "onscreen_text": "TRAHISON N° 1",
-   "comic_action": "Le syndic remplace la serrure de la loge en pleine nuit.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SERRURES : CHANGÉES",
+   "comic_action": "Le gardien bloqué dehors, clé tordue à la main.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "GARDIEN"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
     "building",
-    "person",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "HAUTE TRAHISON",
-   "comic_action": "La caméra glisse aux fenêtres : deux voisins se saluent, sirène.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "COPROPRIÉTAIRES : 1",
+   "comic_action": "Un seul habitant aux fenêtres d'un immeuble vide.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "AG : 1 PRÉSENT"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -166,12 +242,25 @@
    "camera": "descend",
    "set": [
     "building",
-    "column",
+    "banner",
     "text3d"
    ],
-   "onscreen_text": "CHAMPION · SEUL",
-   "comic_action": "Plan large : l'immeuble vide, une seule fenêtre allumée.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "CHAMPION : SEUL",
+   "comic_action": "Coupe géante dans une cour vide.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ÉQUIPE : 1"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,33 +274,47 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique emménage, regard méfiant du syndic.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui vire tout le monde de sa soirée."
+  "text": "Envoie ça au pote qui change de groupe à chaque soirée."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 83,
+ "word_count": 78,
  "claims": [
   {
-   "text": "« record du monde de la trahison »",
+   "text": "En 2024, il dénonce le « record du monde de la trahison ».",
    "claim_type": "citation_exacte",
    "source": "https://www.letemps.ch/monde/europe/eric-zemmour-exclut-marion-marechal-de-reconquete",
-   "note": "Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
+   "note": "Juin 2024 : exclusion de la tête de liste des européennes ; il parle de « record du monde de la trahison »."
   },
   {
-   "text": "Après les européennes à 5,47 %. Ici, la copro en fait un championnat.",
+   "text": "Champion du monde, tout seul. Comme lui avec une seule eurodéputée restante.",
    "claim_type": "fait_public",
-   "source": "https://wikiwand.com/en/articles/2024_European_Parliament_election_in_France",
-   "note": "Européennes 2024 : liste Reconquête 5,47 %, cinq sièges."
+   "source": "https://www.touteleurope.eu/wp-content/uploads/2026/10/Infographie-81-Deputes-europeens-francais-par-groupe-politique-4-pages.pdf",
+   "note": "Après 2024, une seule eurodéputée siège pour Reconquête ; les quatre autres élus de la liste siègent ailleurs."
   }
  ],
  "sources": [
@@ -219,17 +322,17 @@
    "url": "https://www.letemps.ch/monde/europe/eric-zemmour-exclut-marion-marechal-de-reconquete",
    "date": "2024-06",
    "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
+   "statut": "citation_exacte",
+   "note": "Juin 2024 : exclusion de la tête de liste des européennes ; il parle de « record du monde de la trahison »."
   },
   {
-   "url": "https://wikiwand.com/en/articles/2024_European_Parliament_election_in_France",
-   "date": "consulté 2026-11-22",
+   "url": "https://www.touteleurope.eu/wp-content/uploads/2026/10/Infographie-81-Deputes-europeens-francais-par-groupe-politique-4-pages.pdf",
+   "date": "2026-10",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Européennes 2024 : liste Reconquête 5,47 %, cinq sièges."
+   "note": "Après 2024, une seule eurodéputée siège pour Reconquête ; les quatre autres élus de la liste siègent ailleurs."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : juin 2024 : exclusion de la tête de liste et « record du monde de la trahison ». Cadre : la réunion de copropriété. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2024, il dénonce le « record du monde de la trahison ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

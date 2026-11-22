@@ -3,33 +3,33 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-10",
  "format": "A",
- "title_cover": "Quoi qu'il en coûte",
+ "title_cover": "Baguette à mille euros",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Mars 2020, il sort le chéquier : « quoi qu'il en coûte ».",
+  "Mars 2020, il promet de payer « quoi qu'il en coûte ».",
   "Les électeurs de Macron vont détester celle-là.",
-  "Quoi qu'il en coûte : l'histoire en trente secondes.",
-  "Dans cette ville, tout le monde vote Macron. Quoi qu'il en coûte."
+  "Baguette à mille euros : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Les ronds-points sont payés en chèque."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "« Quoi qu'il en coûte », il avait dit. Personne n'avait demandé à qui.",
-  "Quoi qu'il en coûte : la phrase était gratuite, la facture beaucoup moins.",
-  "Puis Fitch dégrade la note. La facture a même un bulletin."
+  "Solution du maire : la facture aux habitants. Quoi qu'il en coûte.",
+  "Quoi qu'il en coûte : la phrase était gratuite, la facture non.",
+  "Caisse vide : on paie en promesses, puis en selfies."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Quoi qu'il en coûte.",
+   "text": "Dans cette ville, tout le monde vote Macron. Les ronds-points sont payés en chèque.",
    "accent_words": [
-    "Quoi qu'il en coûte"
+    "chèque"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Mars 2020, il sort le chéquier : « quoi qu'il en coûte ».",
+   "text": "Mars 2020, il promet de payer « quoi qu'il en coûte ».",
    "accent_words": [
     "coûte"
    ],
@@ -37,35 +37,35 @@
   },
   {
    "id": "n3",
-   "text": "Il en a coûté : 3 595 milliards de dette publique.",
+   "text": "La mairie ne vérifie plus aucun prix. Un banc ? Un million.",
    "accent_words": [
-    "publique"
+    "million"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Puis 119 % du PIB. Plus haut qu'au pic du Covid.",
+   "text": "Les commerçants pigent : baguette à mille euros, payée par la mairie.",
    "accent_words": [
-    "Covid"
+    "mairie"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Puis Fitch dégrade la note. La facture a même un bulletin.",
+   "text": "Caisse vide : on paie en promesses, puis en selfies.",
    "accent_words": [
-    "bulletin"
+    "selfies"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "« Quoi qu'il en coûte », il avait dit. Personne n'avait demandé à qui.",
+   "text": "Solution du maire : la facture aux habitants. Quoi qu'il en coûte.",
    "accent_words": [
-    "qui"
+    "coûte"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
@@ -91,7 +91,7 @@
     "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la ville ; banderole « QUOI QU'IL EN COÛTE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "comic_action": "Descente sur la ville ; banderole « BAGUETTE À MILLE EUROS » sur la mairie ; le maire caricaturé salue, sourire figé.",
    "expected_result": "La ville et le thème posés en une image.",
    "actions": [
     {
@@ -106,6 +106,16 @@
      "visage": "neutre",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BAGUETTE À MILLE EUROS"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
+    }
    ]
   },
   {
@@ -116,17 +126,18 @@
    "camera": "street_dolly",
    "set": [
     "tribune",
-    "screen",
-    "text3d"
+    "text3d",
+    "person"
    ],
    "onscreen_text": "« QUOI QU'IL EN COÛTE »",
-   "comic_action": "Le maire sort un chéquier géant et signe sans regarder ; les chèques s'envolent au-dessus de la place.",
-   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "comic_action": "Le maire signe un chéquier géant sans regarder ; les chèques s'envolent.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
    "actions": [
     {
      "who": "maire",
      "geste": "arms_up",
      "visage": "fier",
+     "objet": "billets",
      "quand": 0.0
     },
     {
@@ -134,6 +145,12 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "QUOI QU'IL EN COÛTE"
     }
    ]
   },
@@ -144,25 +161,31 @@
    ],
    "camera": "orbit",
    "set": [
-    "screen",
+    "bench",
     "text3d",
-    "building"
+    "sign"
    ],
-   "onscreen_text": "3 595 MILLIARDS",
-   "comic_action": "Un compteur géant sur une tour grimpe sans s'arrêter jusqu'à 3 595 milliards.",
-   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "onscreen_text": "BANC : 1 000 000 €",
+   "comic_action": "Un banc tout simple est livré avec une étiquette à un million.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
    "actions": [
     {
      "who": "perso",
-     "geste": "shake",
+     "geste": "point",
      "visage": "choque",
      "quand": 0.0
     },
     {
      "who": "maire",
-     "geste": "shrug",
+     "geste": "clap",
      "visage": "sourire_pro",
-     "quand": 0.5
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BANC 1 000 000 €"
     }
    ]
   },
@@ -173,25 +196,32 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "text3d",
-    "person"
+    "shop",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "119 % DU PIB",
-   "comic_action": "La tour du compteur dépasse la colonne « PIC COVID » et continue de monter.",
-   "expected_result": "Escalade 2 : encore plus gros.",
+   "onscreen_text": "BAGUETTE : 1 000 €",
+   "comic_action": "Le boulanger tend une baguette ; la mairie paie avec une brouette de billets.",
+   "expected_result": "Conséquence : ça dégénère.",
    "actions": [
     {
-     "who": "foule",
-     "geste": "point",
-     "visage": "choque",
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content",
+     "objet": "baguette",
      "quand": 0.0
     },
     {
      "who": "maire",
-     "geste": "clap",
+     "geste": "nod",
      "visage": "sourire_pro",
-     "quand": 0.5
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BAGUETTE 1 000 €"
     }
    ]
   },
@@ -202,25 +232,32 @@
    ],
    "camera": "window_pass",
    "set": [
-    "screen",
-    "text3d",
+    "mairie",
+    "ring_light",
     "person"
    ],
-   "onscreen_text": "NOTE DÉGRADÉE",
-   "comic_action": "Un bulletin de notes géant tombe sur la place : « FRANCE : A+ », le « AA- » barré en rouge.",
-   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "onscreen_text": "PAYÉ EN SELFIES",
+   "comic_action": "Un fournisseur repart avec un selfie dédicacé du maire en guise de paiement.",
+   "expected_result": "Pire conséquence : l'absurde total.",
    "actions": [
     {
      "who": "perso",
      "geste": "facepalm",
-     "visage": "fatigue",
+     "visage": "choque",
      "quand": 0.0
     },
     {
      "who": "maire",
-     "geste": "shrug",
-     "visage": "blase",
-     "quand": 0.4
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "phone",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "MERCI POUR VOTRE PATIENCE"
     }
    ]
   },
@@ -235,9 +272,9 @@
     "form_stack",
     "person"
    ],
-   "onscreen_text": "À QUI ?",
-   "comic_action": "Le maire repousse la facture sur la table ; elle glisse jusqu'à un habitant.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "LA FACTURE ? À VOUS.",
+   "comic_action": "Le maire glisse la facture géante vers les habitants, sourire de com'.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
@@ -246,10 +283,16 @@
      "quand": 0.0
     },
     {
-     "who": "perso",
+     "who": "foule",
      "geste": "fall",
      "visage": "choque",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "QUOI QU'IL VOUS EN COÛTE"
     }
    ]
   },
@@ -266,7 +309,7 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « quoi qu'il en coûte » (2020) et la facture qui suit.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « quoi qu'il en coûte » (2020) appliqué aux prix de la ville.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -280,6 +323,12 @@
      "geste": "shrug",
      "visage": "sourire_pro",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BAGUETTE À MILLE EUROS"
     }
    ]
   }
@@ -300,30 +349,6 @@
    "claim_type": "citation_exacte",
    "source": "https://www.elysee.fr/emmanuel-macron/2020/03/12/adresse-aux-francais",
    "note": "« Quoi qu'il en coûte » (adresse aux Français du 12/03/2020)."
-  },
-  {
-   "text": "Il en a coûté : 3 595 milliards de dette publique.",
-   "claim_type": "fait_public",
-   "source": "https://www.insee.fr/fr/statistiques/9053525",
-   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
-  },
-  {
-   "text": "Puis 119 % du PIB. Plus haut qu'au pic du Covid.",
-   "claim_type": "fait_public",
-   "source": "https://fr.euronews.com/2026/09/29/la-dette-publique-francaise-senvole-a-119-du-pib",
-   "note": "Dette publique à 119 % du PIB, au-dessus du pic du Covid."
-  },
-  {
-   "text": "Puis Fitch dégrade la note. La facture a même un bulletin.",
-   "claim_type": "fait_public",
-   "source": "https://www.lalibre.be/economie/conjoncture/2025/09/12/fitch-degrade-la-note-de-la-france-pointant-ses-finances-publiques-degradees-NTOHYWJ4WRFQDFTGUSTL7YRM2M/",
-   "note": "L'agence Fitch dégrade la note de la France (AA- à A+), en pointant ses finances publiques dégradées."
-  },
-  {
-   "text": "« Quoi qu'il en coûte »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.elysee.fr/emmanuel-macron/2020/03/12/adresse-aux-francais",
-   "note": "« Quoi qu'il en coûte » (adresse aux Français du 12/03/2020)."
   }
  ],
  "sources": [
@@ -333,29 +358,8 @@
    "consulted": "2026-11-22",
    "statut": "citation exacte",
    "note": "« Quoi qu'il en coûte » (adresse aux Français du 12/03/2020)."
-  },
-  {
-   "url": "https://www.insee.fr/fr/statistiques/9053525",
-   "date": "2026-09-29",
-   "consulted": "2026-11-22",
-   "statut": "fait public (statistique)",
-   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
-  },
-  {
-   "url": "https://fr.euronews.com/2026/09/29/la-dette-publique-francaise-senvole-a-119-du-pib",
-   "date": "2026-09-29",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Dette publique à 119 % du PIB, au-dessus du pic du Covid."
-  },
-  {
-   "url": "https://www.lalibre.be/economie/conjoncture/2025/09/12/fitch-degrade-la-note-de-la-france-pointant-ses-finances-publiques-degradees-NTOHYWJ4WRFQDFTGUSTL7YRM2M/",
-   "date": "2025-09-12",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "L'agence Fitch dégrade la note de la France (AA- à A+), en pointant ses finances publiques dégradées."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — « quoi qu'il en coûte » (2020) et la facture qui suit. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « quoi qu'il en coûte » (2020) appliqué aux prix de la ville. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-08",
  "format": "A",
- "title_cover": "Le dauphin à contre-courant",
+ "title_cover": "Deux horloges",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, la mairie a deux maires et un seul pupitre.",
-  "Marineville : même son dauphin nage dans l'autre sens.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : le dauphin à contre-courant."
+  "Dans cette ville, tout le monde vote Marine. Son dauphin, à moitié.",
+  "Marineville a deux horloges : la sienne et celle de Bardella.",
+  "Ici, l'âge de départ dépend de la porte.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Deux horloges."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Même son dauphin ne nage pas dans son sens.",
-  "Ici, la mairie a deux maires et un seul pupitre : ils parlent en même temps.",
-  "Le tandem affiche ses divergences dans la presse."
+  "Marine et son dauphin se disputent l'horloge. Le tandem affiche ses divergences.",
+  "Le tandem affiche ses divergences.",
+  "Un employé passe par les deux portes. Il est retraité et en activité."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -29,49 +29,49 @@
   },
   {
    "id": "n2",
-   "text": "Retraites : elle promet un retour à soixante-deux, voire soixante.",
+   "text": "Retraites : elle promet soixante-deux, voire soixante. Bardella prend ses distances.",
    "accent_words": [
-    "voire soixante"
+    "distances"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Bardella, lui, trouve le dossier inflammable et prend ses distances.",
+   "text": "Alors la mairie installe deux horloges : une à elle, une à lui.",
    "accent_words": [
-    "inflammable"
+    "lui"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le tandem affiche ses divergences dans la presse.",
+   "text": "Les habitants partent en retraite selon la porte qu'ils prennent.",
+   "accent_words": [
+    "prennent"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Un employé passe par les deux portes. Il est retraité et en activité.",
+   "accent_words": [
+    "activité"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Marine et son dauphin se disputent l'horloge. Le tandem affiche ses divergences.",
    "accent_words": [
     "divergences"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n5",
-   "text": "Ici, deux maires pour un pupitre : ils parlent en même temps.",
-   "accent_words": [
-    "en même temps"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n6",
-   "text": "Même son dauphin ne nage pas dans son sens.",
-   "accent_words": [
-    "son dauphin"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n7",
    "text": "Envoie ça au pote qui croyait que le RN parlait d'une seule voix.",
    "accent_words": [
-    "une seule voix"
+    "voix"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,25 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; deux drapeaux qui flottent dans des sens opposés.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "LE DAUPHIN À MOITIÉ",
+   "comic_action": "Descente sur la ville ; banderole « LE DAUPHIN À MOITIÉ » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,30 +116,59 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
+    "scroll",
+    "form_stack",
+    "table",
     "person"
    ],
-   "onscreen_text": "62 VOIRE 60",
-   "comic_action": "Écran : une flèche qui recule doucement de 64 vers 60.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "62 VOIRE 60 ? IL RECULE",
+   "comic_action": "Formulaire de retraite déplié ; en gros « 62 VOIRE 60 ? IL RECULE ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "tribune",
-    "router_lectern",
-    "studio_light",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "DOSSIER INFLAMMABLE",
-   "comic_action": "Deux pupitres du même parti : l'un tend un dossier, l'autre recule.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "DEUX HORLOGES",
+   "comic_action": "Descente sur la ville ; banderole « DEUX HORLOGES » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "HEURE DE MARINE / DE JORDAN"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -132,30 +177,54 @@
    ],
    "camera": "closeup",
    "set": [
-    "studio_light",
-    "tripod_camera",
+    "scroll",
+    "form_stack",
     "table",
     "person"
    ],
-   "onscreen_text": "TANDEM : DÉSYNCHRONISÉ",
-   "comic_action": "Un vélo tandem : chaque pédalier tourne dans un sens différent.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "LA BONNE PORTE ?",
+   "comic_action": "Formulaire de retraite déplié ; en gros « LA BONNE PORTE ? ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "point"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
-    "studio_light",
-    "text3d",
-    "person"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "DEUX VOIX · UN MICRO",
-   "comic_action": "À la tribune, deux personnages cubiques se disputent le micro.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RETRAITÉ ET ACTIF",
+   "comic_action": "Dans la rue, panneau « RETRAITÉ ET ACTIF ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "spin",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -164,14 +233,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "fountain",
-    "person",
-    "bench",
-    "tree"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "DAUPHIN : SENS INVERSE",
-   "comic_action": "Fontaine municipale : une statue de dauphin tournée dans l'autre direction. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "DIVERGENCES",
+   "comic_action": "Plan final, tenir une seconde : « DIVERGENCES ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "colere"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +267,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt écoute deux haut-parleurs qui se contredisent.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI Y CROYAIT",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI Y CROYAIT ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,25 +290,21 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 74,
+ "word_count": 84,
  "claims": [
   {
    "segment": "n2",
-   "text": "Retraites : elle promet un retour à soixante-deux, voire soixante.",
+   "text": "Retraites : elle promet soixante-deux, voire soixante. Bardella prend ses distances.",
    "claim_type": "fait_public",
    "source": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
-   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
+   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé. ; Bardella prend ses distances avec la réforme de Marine Le Pen, dit « examiner » un report de l'âge légal, juge le dossier inflammable (d'après Le Monde, mai 2026).",
+   "sources_complementaires": [
+    "https://www.publicsenat.fr/actualites/politique/au-rn-la-reforme-des-retraites-divise-jordan-bardella-et-marine-le-pen-sur-le-programme-pour-la-presidentielle-2027"
+   ]
   },
   {
-   "segment": "n3",
-   "text": "Bardella, lui, trouve le dossier inflammable et prend ses distances.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/au-rn-la-reforme-des-retraites-divise-jordan-bardella-et-marine-le-pen-sur-le-programme-pour-la-presidentielle-2027",
-   "note": "Bardella prend ses distances avec la réforme de Marine Le Pen, dit « examiner » un report de l'âge légal, juge le dossier inflammable (d'après Le Monde, mai 2026)."
-  },
-  {
-   "segment": "n4",
-   "text": "Le tandem affiche ses divergences dans la presse.",
+   "segment": "n6",
+   "text": "Marine et son dauphin se disputent l'horloge. Le tandem affiche ses divergences.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/retraites-demission-de-darmanin-economie-le-tandem-bardella-le-pen-affiche-ses-divergences",
    "note": "Le tandem Bardella-Le Pen affiche ses divergences (retraites, économie)."
@@ -228,7 +315,7 @@
    "url": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
    "date": "2026-11-17",
    "consulted": "2026-11-22",
-   "statut": "fait public (présentation du programme)",
+   "statut": "fait",
    "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
   },
   {
@@ -247,5 +334,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = retraites : elle promet 62 voire 60 ans ; Jordan Bardella prend ses distances, le tandem affiche ses divergences. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = les divergences sur la retraite entre Marine Le Pen et Jordan Bardella. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

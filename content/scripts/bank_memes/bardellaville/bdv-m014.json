@@ -4,23 +4,23 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Gendre sans chiffrage",
- "anchor": "l'étiquette « gendre idéal » : plaire à tous, ne répondre à personne",
+ "title_cover": "Gendres idéaux",
+ "anchor": "l'étiquette « gendre idéal » de la presse people",
  "meme_key": "GENDRE",
- "situation": "Gendre sans chiffrage",
- "ressort": "un thème unique en escalade : truc connu, trois crans, chute retournée",
+ "situation": "Gendres idéaux",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Bardella. Ta belle-mère aussi.",
-  "Bardella, gendre idéal. Programme, pas idéal.",
-  "Bardellaville : il plaît à tout le monde.",
+  "Bardellaville : des gendres idéaux à tous les postes.",
+  "Ici, la ville s'écroule poliment.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Gendre sans chiffrage."
+  "Bienvenue à Bardellaville. Au programme : Gendres idéaux."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le gendre idéal plaît à tout le monde, et ne répond à personne.",
-  "Il plaît à tout le monde, ne répond à personne.",
-  "Des fleurs, jamais de chiffrage."
+  "Bardella les décore tous : plaire à tout le monde, ne répondre à personne.",
+  "Plaire à tout le monde, ne répondre à personne.",
+  "La ville s'écroule, mais elle s'écroule poliment."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -42,31 +42,31 @@
   },
   {
    "id": "n3",
-   "text": "Le gendre idéal ne contrarie personne : à la télé, interview tout en douceur.",
+   "text": "Alors la mairie embauche des gendres idéaux à tous les postes.",
    "accent_words": [
-    "douceur"
+    "postes"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Il ne fâche pas les patrons non plus : deux heures avec le Medef.",
+   "text": "Ils sourient, apportent des fleurs, et ne réparent rien.",
    "accent_words": [
-    "Medef"
+    "rien"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Bientôt, il apportera des fleurs au lieu d'un chiffrage.",
+   "text": "La ville s'écroule, mais elle s'écroule poliment.",
    "accent_words": [
-    "fleurs"
+    "poliment"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le gendre idéal plaît à tout le monde, et ne répond à personne.",
+   "text": "Bardella les décore tous : plaire à tout le monde, ne répondre à personne.",
    "accent_words": [
     "personne"
    ],
@@ -96,7 +96,7 @@
    ],
    "onscreen_text": "TA BELLE-MÈRE AUSSI",
    "comic_action": "Descente sur la ville ; banderole « TA BELLE-MÈRE AUSSI » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "foule",
@@ -105,6 +105,12 @@
     {
      "who": "perso",
      "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "GENDRE IDÉAL"
     }
    ]
   },
@@ -122,7 +128,7 @@
    ],
    "onscreen_text": "LE GENDRE IDÉAL",
    "comic_action": "Écran géant : « LE GENDRE IDÉAL ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -133,33 +139,38 @@
      "who": "foule",
      "geste": "clap"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "tribune",
-    "studio_light",
-    "screen",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "INTERVIEW EN DOUCEUR",
-   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « INTERVIEW EN DOUCEUR ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "GENDRES À TOUS LES POSTES",
+   "comic_action": "Descente sur la ville ; banderole « GENDRES À TOUS LES POSTES » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "nod",
-     "visage": "sourire_pro"
+     "who": "foule",
+     "geste": "bow"
     },
     {
      "who": "perso",
-     "geste": "facepalm",
-     "visage": "blase"
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "SOURIS, TU ES FILMÉ"
     }
    ]
   },
@@ -168,48 +179,20 @@
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "building",
+    "road",
+    "sign",
     "person",
-    "text3d"
+    "traffic_light"
    ],
-   "onscreen_text": "2 H AVEC LE MEDEF",
-   "comic_action": "Salon feutré, table dressée ; carton « 2 H AVEC LE MEDEF ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "FLEURS, ZÉRO RÉPARATION",
+   "comic_action": "Dans la rue, panneau « FLEURS, ZÉRO RÉPARATION ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
+     "who": "foule",
      "geste": "bow",
-     "visage": "sourire_pro"
-    },
-    {
-     "who": "perso",
-     "geste": "shrug",
-     "visage": "choque"
-    }
-   ]
-  },
-  {
-   "id": "s5",
-   "narration_ids": [
-    "n5"
-   ],
-   "camera": "window_pass",
-   "set": [
-    "table",
-    "building",
-    "person",
-    "text3d"
-   ],
-   "onscreen_text": "DES FLEURS, PAS DE CHIFFRAGE",
-   "comic_action": "Salon feutré, table dressée ; carton « DES FLEURS, PAS DE CHIFFRAGE ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
-   "actions": [
-    {
-     "who": "maire",
-     "geste": "wave",
      "visage": "sourire_pro"
     },
     {
@@ -217,7 +200,36 @@
      "geste": "facepalm",
      "visage": "colere"
     }
-   ]
+   ],
+   "gags": []
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
+   ],
+   "onscreen_text": "ÉCROULEMENT POLI",
+   "comic_action": "Dans la rue, panneau « ÉCROULEMENT POLI ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "fall"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -231,9 +243,9 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "NE RÉPOND À PERSONNE",
-   "comic_action": "Plan final, tenir une seconde : « NE RÉPOND À PERSONNE ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "NE RÉPONDRE À PERSONNE",
+   "comic_action": "Plan final, tenir une seconde : « NE RÉPONDRE À PERSONNE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
@@ -245,7 +257,8 @@
      "geste": "cross_arms",
      "visage": "blase"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -261,7 +274,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE CONQUIS",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE CONQUIS ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -269,7 +282,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -281,7 +295,7 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 82,
+ "word_count": 73,
  "claims": [
   {
    "segment": "n2",
@@ -289,20 +303,6 @@
    "claim_type": "fait_public",
    "source": "https://www.purebreak.com/diapo/-c-est-le-gendre-ideal-delphine-wespiser-assume-adorer-jordan-bardella-et-lui-predit-un-avenir-presidentiel/248250",
    "note": "Étiquette « gendre idéal » (rien sur la vie privée)."
-  },
-  {
-   "segment": "n3",
-   "text": "Le gendre idéal ne contrarie personne : à la télé, interview tout en douceur.",
-   "claim_type": "fait_public",
-   "source": "https://www.yahoo.com/news/soft-focus-interview-positions-bardella-084104725.html",
-   "note": "Portrait télévisé « soft-focus » : séances de sport, ambiance intime, peu de questions politiques."
-  },
-  {
-   "segment": "n4",
-   "text": "Il ne fâche pas les patrons non plus : deux heures avec le Medef.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/bardella-rencontre-en-tete-a-tete-le-medef-une-premiere-pour-le-rn-435456",
-   "note": "Tête-à-tête de plus de deux heures avec le Medef, une première pour le RN (20/04/2026 selon la presse)."
   }
  ],
  "sources": [
@@ -312,22 +312,8 @@
    "consulted": "2026-11-22",
    "statut": "opinion / cliché",
    "note": "Étiquette « gendre idéal » (rien sur la vie privée)."
-  },
-  {
-   "url": "https://www.yahoo.com/news/soft-focus-interview-positions-bardella-084104725.html",
-   "date": "2025-06-03",
-   "consulted": "2026-11-22",
-   "statut": "fait + opinion (Reuters)",
-   "note": "Portrait télévisé « soft-focus » : séances de sport, ambiance intime, peu de questions politiques."
-  },
-  {
-   "url": "https://lcp.fr/actualites/bardella-rencontre-en-tete-a-tete-le-medef-une-premiere-pour-le-rn-435456",
-   "date": "2026-04",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Tête-à-tête de plus de deux heures avec le Medef, une première pour le RN (20/04/2026 selon la presse)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = l'étiquette « gendre idéal » : plaire à tous, ne répondre à personne. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = l'étiquette « gendre idéal » de la presse people. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

@@ -3,67 +3,67 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-27",
  "format": "A",
- "title_cover": "TF1, puis boycott",
+ "title_cover": "Boycott des non-invitations",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. Sauf TF1.",
-  "Mélenchon boycotte TF1. TF1 ne l'avait pas invité.",
-  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
-  "Bienvenue à Mélenchonville : tF1, puis boycott.",
-  "Mélenchon en une vidéo : tF1, puis boycott."
+  "Dans cette ville, tout le monde vote Mélenchon. Même la télé boude.",
+  "Mélenchon a boycotté TF1, qui ne l'avait pas invité. La ville a adoré l'idée.",
+  "Les insoumis vont me détester.",
+  "Bienvenue à Mélenchonville : boycott des non-invitations.",
+  "Mélenchon en une vidéo : boycott des non-invitations."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Boycotter qui ne t'invite pas : la seule bataille gagnée d'avance.",
-  "Il boycotte ceux qui ne l'invitent pas. Imbattable.",
-  "Il promet de passer « le moins possible » sur les chaînes d'info. Facile."
+  "Lui non plus : l'Élysée ne l'a jamais invité depuis 2012.",
+  "L'Élysée ne l'a jamais invité non plus. Boycott réussi.",
+  "Bientôt, ils boycottent l'Élysée. Personne ne remarque la différence."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Sauf TF1.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même la télé boude.",
    "accent_words": [
-    "Sauf TF1"
+    "Même la télé boude"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ses candidatures ? Annoncées au 20 h de TF1, en 2016, 2020 et 2026.",
+   "text": "En 2026, il boycotte le 20 h de TF1. TF1 : il n'était pas invité.",
    "accent_words": [
-    "et 2026"
+    "il n'était pas invité"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Novembre 2026 : sur X, il boycotte le 20 h de TF1.",
+   "text": "La ville copie : on boycotte tout ce qui ne nous invite pas.",
    "accent_words": [
-    "de TF1"
+    "invite pas"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "TF1 répond qu'il n'était même pas invité ce soir-là.",
+   "text": "Les mariages d'inconnus, les anniversaires des voisins : boycottés.",
    "accent_words": [
-    "ce soir-là"
+    "boycottés"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Il promet de passer « le moins possible » sur les chaînes d'info. Facile.",
+   "text": "Bientôt, ils boycottent l'Élysée. Personne ne remarque la différence.",
    "accent_words": [
-    "Facile"
+    "la différence"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Boycotter qui ne t'invite pas : la seule bataille gagnée d'avance.",
+   "text": "Lui non plus : l'Élysée ne l'a jamais invité depuis 2012.",
    "accent_words": [
-    "gagnée d'avance"
+    "depuis 2012"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE · TF1, PUIS BOYCOTT",
-   "comic_action": "Descente sur la ville : banderole « TF1, PUIS BOYCOTT », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "onscreen_text": "MÉLENCHONVILLE · BOYCOTT DES NON-INVITATIONS",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -104,6 +104,16 @@
      "visage": "content",
      "quand": 0.3
     }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "ON BOYCOTTE TOUT"
+    }
    ]
   },
   {
@@ -114,17 +124,23 @@
    "camera": "closeup",
    "set": [
     "screen",
-    "studio_light",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "ANNONCÉ SUR TF1 × 3",
-   "comic_action": "Trois écrans montrent le même plateau du 20 h.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "onscreen_text": "BOYCOTT D'UN NON-INVITÉ",
+   "comic_action": "Le maire claque la porte d'un studio vide.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro"
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ON BOYCOTTE TOUT"
     }
    ]
   },
@@ -135,19 +151,24 @@
    ],
    "camera": "orbit",
    "set": [
-    "screen",
-    "person",
-    "text3d"
+    "mairie",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "BOYCOTT TF1",
-   "comic_action": "Le maire tape un message rageur sur son téléphone.",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "BOYCOTT GÉNÉRAL",
+   "comic_action": "Liste de boycott affichée à la mairie, longue comme le bras.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
-     "who": "maire",
+     "who": "perso",
      "geste": "point",
-     "visage": "colere",
-     "objet": "phone"
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "LISTE : 1 200 BOYCOTTS"
     }
    ]
   },
@@ -158,24 +179,24 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "table",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "TF1 : PAS INVITÉ",
-   "comic_action": "Plateau du 20 h, chaise vide étiquetée « NON INVITÉ ».",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "ANNIVERSAIRE : BOYCOTTÉ",
+   "comic_action": "Un habitant tourne le dos à une fête où personne ne l'attendait.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
      "who": "perso",
-     "geste": "facepalm",
-     "visage": "choque"
-    },
+     "geste": "cross_arms",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "point",
-     "visage": "content",
-     "quand": 0.4
+     "type": "chien",
+     "tee": "PAS INVITÉ"
     }
    ]
   },
@@ -186,18 +207,25 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "tripod_camera",
-    "text3d"
+    "mairie",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "« LE MOINS POSSIBLE »",
-   "comic_action": "Une caméra éteinte, voyant rouge coupé.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "ÉLYSÉE : BOYCOTTÉ",
+   "comic_action": "Pancartes « BOYCOTT » devant un palais qui ne regarde pas.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "cross_arms",
-     "visage": "fier"
+     "who": "foule",
+     "geste": "manif",
+     "visage": "fier",
+     "objet": "pancarte"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ÉLYSÉE : RIEN REMARQUÉ"
     }
    ]
   },
@@ -208,18 +236,24 @@
    ],
    "camera": "descend",
    "set": [
-    "screen",
-    "banner",
+    "mairie",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "VICTOIRE PAR FORFAIT",
-   "comic_action": "Coupe dorée posée sur une chaise de plateau vide.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "INVITATION : JAMAIS REÇUE",
+   "comic_action": "Une boîte aux lettres présidentielle vide, toile d'araignée.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "arms_up",
-     "visage": "fier"
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "INVITATIONS : 0"
     }
    ]
   },
@@ -236,7 +270,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -244,6 +278,12 @@
      "geste": "point",
      "visage": "sourire_pro",
      "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
     }
    ]
   }
@@ -257,41 +297,22 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 83,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Ses candidatures ? Annoncées au 20 h de TF1, en 2016, 2020 et 2026.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/presidentielle-jean-luc-melenchon-officialise-sa-candidature-pour-2027-435851",
-   "note": "Candidature annoncée au 20 h de TF1, comme ses annonces de février 2016 et novembre 2020."
-  },
-  {
-   "text": "Novembre 2026 : sur X, il boycotte le 20 h de TF1.",
+   "text": "En 2026, il boycotte le 20 h de TF1. TF1 : il n'était pas invité.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/furieux-contre-tf1-jean-luc-melenchon-annule-sa-venue-au-20-heures-ce-soir/657784",
    "note": "Novembre 2026 : il annonce sur X annuler sa venue au 20 h de TF1."
   },
   {
-   "text": "TF1 répond qu'il n'était même pas invité ce soir-là.",
+   "text": "En 2026, il boycotte le 20 h de TF1. TF1 : il n'était pas invité.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/affaire-de-jean-luc-melenchon-au-20-heures-tf1-dement-le-leader-de-lfi-et-affirme-quil-netait-pas-invite-ce-lundi-soir/657792",
    "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
-  },
-  {
-   "text": "Il promet de passer « le moins possible » sur les chaînes d'info. Facile.",
-   "claim_type": "citation_exacte",
-   "source": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
-   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
   }
  ],
  "sources": [
-  {
-   "url": "https://lcp.fr/actualites/presidentielle-jean-luc-melenchon-officialise-sa-candidature-pour-2027-435851",
-   "date": "2026-05-03",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Candidature annoncée au 20 h de TF1, comme ses annonces de février 2016 et novembre 2020."
-  },
   {
    "url": "https://www.ozap.com/actu/furieux-contre-tf1-jean-luc-melenchon-annule-sa-venue-au-20-heures-ce-soir/657784",
    "date": "2026-11",
@@ -305,15 +326,8 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
-   "date": "2026",
-   "consulted": "2026-11-22",
-   "statut": "citation_exacte",
-   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : TF1, puis boycott. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2026, il boycotte le 20 h de TF1. TF1 : il n'était pas invité. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

@@ -3,25 +3,25 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-18",
  "format": "A",
- "title_cover": "Majorité absolue",
+ "title_cover": "Eau de défiance",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Sondage 2026 : 82 % des Français ne lui font pas confiance.",
+  "Sondage 2026 : 82 % ne lui font pas confiance. Record de Hollande battu.",
   "Les électeurs de Macron vont détester celle-là.",
-  "Majorité absolue : l'histoire en trente secondes.",
-  "Dans cette ville, tout le monde vote Macron. Sur le papier."
+  "Eau de défiance : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Enfin, sur le papier."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "82 % contre lui : enfin, une majorité absolue.",
-  "Il a enfin rassemblé les Français. Contre lui.",
-  "Sur X : « j'ai fait de mon mieux ». Les 82 % ont lu."
+  "Seul succès à l'export. Le maire la présente à Davos. For sure.",
+  "Son impopularité est devenue la seule ressource naturelle de la ville.",
+  "La ville la met en bouteille : eau de défiance, gazeuse, vendue partout."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Sur le papier.",
+   "text": "Dans cette ville, tout le monde vote Macron. Enfin, sur le papier.",
    "accent_words": [
     "papier"
    ],
@@ -29,49 +29,49 @@
   },
   {
    "id": "n2",
-   "text": "Sondage 2026 : 82 % des Français ne lui font pas confiance.",
+   "text": "Sondage 2026 : 82 % ne lui font pas confiance. Record de Hollande battu.",
    "accent_words": [
-    "confiance"
+    "battu"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Il bat le record d'impopularité de François Hollande. Hollande !",
+   "text": "La mairie installe un baromètre de confiance géant sur la place.",
    "accent_words": [
-    "Hollande"
+    "place"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Même sa coalition de Lisnard à Glucksmann se fait recaler.",
+   "text": "L'aiguille tombe si bas qu'elle creuse le sol. Une source jaillit.",
    "accent_words": [
-    "recaler"
+    "jaillit"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Sur X : « j'ai fait de mon mieux ». Les 82 % ont lu.",
+   "text": "La ville la met en bouteille : eau de défiance, gazeuse, vendue partout.",
    "accent_words": [
-    "lu"
+    "partout"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "82 % contre lui : enfin, une majorité absolue.",
+   "text": "Seul succès à l'export. Le maire la présente à Davos. For sure.",
    "accent_words": [
-    "majorité absolue"
+    "sure"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui lui fait encore confiance. S'il en reste un.",
+   "text": "Envoie ça au dernier pote qui lui fait confiance.",
    "accent_words": [
-    "reste"
+    "confiance"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -91,7 +91,7 @@
     "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la ville ; banderole « MAJORITÉ ABSOLUE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "comic_action": "Descente sur la ville ; banderole « EAU DE DÉFIANCE » sur la mairie ; le maire caricaturé salue, sourire figé.",
    "expected_result": "La ville et le thème posés en une image.",
    "actions": [
     {
@@ -105,6 +105,16 @@
      "geste": "clap",
      "visage": "neutre",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "EAU DE DÉFIANCE"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
     }
    ]
   },
@@ -120,8 +130,8 @@
     "person"
    ],
    "onscreen_text": "82 % : PAS CONFIANCE",
-   "comic_action": "Un écran géant affiche 82 % ; la jauge de confiance tombe dans le rouge.",
-   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "comic_action": "Un écran géant affiche 82 % ; la foule croise les bras.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
    "actions": [
     {
      "who": "foule",
@@ -135,6 +145,12 @@
      "visage": "choque",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "FAITES-MOI CONFIANCE"
+    }
    ]
   },
   {
@@ -144,25 +160,31 @@
    ],
    "camera": "closeup",
    "set": [
-    "tribune",
+    "column",
     "text3d",
     "person"
    ],
-   "onscreen_text": "RECORD DE HOLLANDE : BATTU",
-   "comic_action": "Le maire monte sur un podium « RECORD D'IMPOPULARITÉ », médaille autour du cou.",
-   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "onscreen_text": "BAROMÈTRE GÉANT",
+   "comic_action": "Un baromètre de vingt mètres est installé sur une colonne, au centre de la place.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
    "actions": [
     {
      "who": "maire",
-     "geste": "arms_up",
+     "geste": "point",
      "visage": "fier",
      "quand": 0.0
     },
     {
-     "who": "foule",
-     "geste": "facepalm",
-     "visage": "choque",
+     "who": "perso",
+     "geste": "nod",
+     "visage": "neutre",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BAROMÈTRE 2 MILLIONS €"
     }
    ]
   },
@@ -173,25 +195,31 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "table",
-    "person",
+    "column",
+    "ground",
     "text3d"
    ],
-   "onscreen_text": "INVITATION REFUSÉE",
-   "comic_action": "Il tend des cartons d'invitation ; chaque passant les refuse poliment.",
-   "expected_result": "Escalade 2 : encore plus gros.",
+   "onscreen_text": "L'AIGUILLE CREUSE",
+   "comic_action": "L'aiguille descend, traverse le cadran, puis le sol ; un jet d'eau jaillit.",
+   "expected_result": "Conséquence : ça dégénère.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro",
+     "who": "foule",
+     "geste": "jump",
+     "visage": "choque",
      "quand": 0.0
     },
     {
      "who": "perso",
-     "geste": "cross_arms",
-     "visage": "blase",
+     "geste": "point",
+     "visage": "choque",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "-82 %"
     }
    ]
   },
@@ -202,25 +230,31 @@
    ],
    "camera": "orbit",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "shop",
+    "fountain",
+    "text3d"
    ],
-   "onscreen_text": "« J'AI FAIT DE MON MIEUX »",
-   "comic_action": "Le post s'affiche sur l'écran ; dessous, un compteur de réactions qui rigolent.",
-   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "onscreen_text": "SOURCE DE LA DÉFIANCE",
+   "comic_action": "Une usine d'embouteillage ; des bouteilles étiquetées « EAU DE DÉFIANCE ».",
+   "expected_result": "Pire conséquence : l'absurde total.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "nod",
-     "visage": "sourire_pro",
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content",
      "quand": 0.0
     },
     {
      "who": "foule",
-     "geste": "facepalm",
-     "visage": "blase",
+     "geste": "clap",
+     "visage": "content",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "EAU DE DÉFIANCE 3 €"
     }
    ]
   },
@@ -231,26 +265,31 @@
    ],
    "camera": "closeup",
    "set": [
-    "mairie",
-    "text3d",
+    "tribune",
+    "screen",
     "person"
    ],
-   "onscreen_text": "MAJORITÉ ABSOLUE",
-   "comic_action": "La foule se rassemble enfin, unie, derrière une pancarte « CONTRE ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "MADE IN DÉFIANCE",
+   "comic_action": "Le maire présente une bouteille sur une scène internationale, sourire de com'.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
    "actions": [
     {
-     "who": "foule",
+     "who": "maire",
      "geste": "arms_up",
-     "visage": "content",
-     "objet": "pancarte",
+     "visage": "sourire_pro",
      "quand": 0.0
     },
     {
-     "who": "maire",
+     "who": "foule",
      "geste": "facepalm",
-     "visage": "choque",
+     "visage": "blase",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "FOR SURE"
     }
    ]
   },
@@ -267,7 +306,7 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : l'impopularité record (82 % de défiance).",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : le record d'impopularité (82 % de défiance) mesuré par un baromètre géant.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -282,49 +321,37 @@
      "visage": "sourire_pro",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "EAU DE DÉFIANCE"
+    }
    ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui lui fait encore confiance. S'il en reste un."
+  "text": "Envoie ça au dernier pote qui lui fait confiance."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 80,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Sondage 2026 : 82 % des Français ne lui font pas confiance.",
+   "text": "Sondage 2026 : 82 % ne lui font pas confiance. Record de Hollande battu.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/sondage-82-des-francais-ne-font-pas-confiance-a-emmanuel-macron-qui-bat-le-record-dimpopularite-de-francois-hollande-a-lelysee",
    "note": "82 % des Français ne lui font pas confiance ; il bat le record d'impopularité de François Hollande."
   },
   {
-   "text": "Il bat le record d'impopularité de François Hollande. Hollande !",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/sondage-82-des-francais-ne-font-pas-confiance-a-emmanuel-macron-qui-bat-le-record-dimpopularite-de-francois-hollande-a-lelysee",
-   "note": "82 % des Français ne lui font pas confiance ; il bat le record d'impopularité de François Hollande."
-  },
-  {
-   "text": "Même sa coalition de Lisnard à Glucksmann se fait recaler.",
-   "claim_type": "fait_public",
-   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
-   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle. Glucksmann juge que l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
-  },
-  {
-   "text": "« j'ai fait de mon mieux »",
-   "claim_type": "citation_exacte",
-   "source": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
-   "note": "Bilan publié sur X dix ans après sa candidature : « il y a eu parfois des erreurs », « j'ai fait de mon mieux »."
-  },
-  {
-   "text": "82 % contre lui : enfin, une majorité absolue.",
+   "text": "Seul succès à l'export. Le maire la présente à Davos. For sure.",
    "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/politique/sondage-82-des-francais-ne-font-pas-confiance-a-emmanuel-macron-qui-bat-le-record-dimpopularite-de-francois-hollande-a-lelysee",
-   "note": "82 % des Français ne lui font pas confiance ; il bat le record d'impopularité de François Hollande. Exagération satirique évidente, présentée comme telle."
+   "source": "https://www.sudradio.fr/sud-radio/for-sure-quand-macron-devient-un-phenomene-viral-sur-les-reseaux-sociaux",
+   "note": "« For sure » répété au Forum de Davos (20/01/2026), remixé sur TikTok, Instagram, X ; l'article rappelle que « c'est notre projet » et « poudre de perlimpinpin » avaient déjà été massivement détournés en 2017. Exagération satirique évidente, présentée comme telle."
   }
  ],
  "sources": [
@@ -336,27 +363,13 @@
    "note": "82 % des Français ne lui font pas confiance ; il bat le record d'impopularité de François Hollande."
   },
   {
-   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
-   "date": "2026-11",
+   "url": "https://www.sudradio.fr/sud-radio/for-sure-quand-macron-devient-un-phenomene-viral-sur-les-reseaux-sociaux",
+   "date": "2026-01-29",
    "consulted": "2026-11-22",
-   "statut": "fait public (dépêche AFP)",
-   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
-  },
-  {
-   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann-afp-753ca015d95ec4b0d3e2f01c3cb76e945a72ac72",
-   "date": "2026-11",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte (dépêche AFP)",
-   "note": "Glucksmann juge que l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
-  },
-  {
-   "url": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
-   "date": "2026-11-17",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte (post X)",
-   "note": "Bilan publié sur X dix ans après sa candidature : « il y a eu parfois des erreurs », « j'ai fait de mon mieux »."
+   "statut": "mème (viralité rapportée)",
+   "note": "« For sure » répété au Forum de Davos (20/01/2026), remixé sur TikTok, Instagram, X ; l'article rappelle que « c'est notre projet » et « poudre de perlimpinpin » avaient déjà été massivement détournés en 2017."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — l'impopularité record (82 % de défiance). Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : le record d'impopularité (82 % de défiance) mesuré par un baromètre géant. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

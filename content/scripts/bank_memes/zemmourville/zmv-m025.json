@@ -4,79 +4,79 @@
  "synopsis_id": "zmv-m025-gm",
  "format": "A",
  "length": "court",
- "title_cover": "La box en alexandrins",
- "anchor": "Port-Marly (2026) : les classiques partout, jusqu'au mot de passe.",
+ "title_cover": "Le wifi en alexandrins",
+ "anchor": "Port-Marly (2026) et ses classiques : le wifi exige un mot de passe en alexandrin.",
  "meme_id": "ZE",
- "situation": "le Wi-Fi",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le Wi-Fi exige des alexandrins.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, la connexion se gagne en vers.",
-  "Zemmourville : le débit le plus littéraire de France."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien rime.",
+  "Zemmour cite Racine. La box de la ville exige des alexandrins.",
+  "Les zemmouriens vont me détester.",
+  "Bienvenue à Zemmourville : le wifi en alexandrins.",
+  "Zemmour en une vidéo : le wifi en alexandrins."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La box est cultivée, élégante, nostalgique. Et elle ne marche pas.",
-  "Douze syllabes pour se connecter, zéro mégaoctet.",
-  "La box récite. Le réseau, lui, se tait."
+  "Le débit plafonne à 4 %, comme ses sondages.",
+  "Le débit plafonne à 4 %, comme ses sondages.",
+  "La ville passe ses soirées à versifier pour regarder une série."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Connexion classique.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien rime.",
    "accent_words": [
-    "Connexion classique"
+    "Même le chien rime"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À Port-Marly, il convoque Racine, Chateaubriand, Virgile et Homère en cinquante-cinq minutes.",
+   "text": "À Port-Marly, il convoque Racine, Chateaubriand, Virgile et Homère.",
    "accent_words": [
-    "Homère"
+    "et Homère"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, la box exige un mot de passe en alexandrin. Douze syllabes, césure au milieu.",
+   "text": "La box municipale exige un mot de passe en alexandrin.",
    "accent_words": [
-    "Douze syllabes"
+    "en alexandrin"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Rime pauvre ? Connexion refusée.",
+   "text": "Rime pauvre ? Connexion refusée. Il faut recommencer.",
    "accent_words": [
-    "Connexion refusée"
+    "Il faut recommencer"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le débit plafonne à 4 %, comme ses sondages de rentrée.",
+   "text": "La ville passe ses soirées à versifier pour regarder une série.",
    "accent_words": [
-    "4 %"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n6",
-   "text": "La box est cultivée, élégante, nostalgique. Et elle ne marche pas.",
-   "accent_words": [
-    "ne marche pas"
+    "une série"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui a un mot de passe de trente caractères.",
+   "id": "n6",
+   "text": "Le débit plafonne à 4 %, comme ses sondages.",
    "accent_words": [
-    "trente caractères"
+    "ses sondages"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui met un mot de passe impossible au wifi.",
+   "accent_words": [
+    "au wifi"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "router_lectern",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un salon : la box trône sur un pupitre de lecture.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · LE WIFI EN ALEXANDRINS",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "CONNEXION EN VERS"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,13 +128,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "router_lectern",
-    "text3d",
-    "person"
+    "tribune",
+    "scroll",
+    "text3d"
    ],
-   "onscreen_text": "55 MIN · 4 CLASSIQUES",
-   "comic_action": "Gros plan sur des livres empilés sous la box.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "RACINE · HOMÈRE · VIRGILE",
+   "comic_action": "Le maire déclame, un parchemin à la main.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "CONNEXION EN VERS"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -122,40 +159,82 @@
    "set": [
     "router_lectern",
     "screen",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "MOT DE PASSE : 12 SYLLABES",
-   "comic_action": "Orbite : un habitant compte sur ses doigts devant l'écran.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "MOT DE PASSE : 12 PIEDS",
+   "comic_action": "Un écran : « SAISISSEZ VOTRE ALEXANDRIN ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CÉSURE OBLIGATOIRE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
     "screen",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "RIME PAUVRE",
-   "comic_action": "L'écran affiche une croix rouge calligraphiée.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RIME PAUVRE : REFUSÉ",
+   "comic_action": "Écran rouge « ACCÈS REFUSÉ — RIME PAUVRE ».",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "colere",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "POÈTE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "router_lectern",
+    "bench",
     "person",
     "screen"
    ],
-   "onscreen_text": "DÉBIT : 4 %",
-   "comic_action": "Travelling : la barre de chargement s'arrête à 4 %.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "SOIRÉE VERSIFICATION",
+   "comic_action": "Des habitants comptent les syllabes sur leurs doigts.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SÉRIE : PAS ENCORE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,13 +243,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "router_lectern",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "CULTIVÉE · EN PANNE",
-   "comic_action": "Plan large : tout le quartier déclame devant ses box.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "DÉBIT : 4 %",
+   "comic_action": "Barre de chargement bloquée à 4 %.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "4 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -184,30 +276,44 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique se connecte au Wi-Fi du voisin.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui a un mot de passe de trente caractères."
+  "text": "Envoie ça au pote qui met un mot de passe impossible au wifi."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 77,
+ "word_count": 72,
  "claims": [
   {
-   "text": "À Port-Marly, il convoque Racine, Chateaubriand, Virgile et Homère en cinquante-cinq minutes.",
+   "text": "À Port-Marly, il convoque Racine, Chateaubriand, Virgile et Homère.",
    "claim_type": "fait_public",
    "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-zemmour-le-pourfendeur-de-la-modernite-qui-parlait-dia",
-   "note": "Port-Marly (13/09/2026, 55 min) : Chateaubriand, Racine, Virgile, Homère, Napoléon."
+   "note": "Port-Marly (13/09/2026, 55 min) : « civilisation », « siècle », « histoire » ; Chateaubriand, Racine, Virgile, Homère, Napoléon."
   },
   {
-   "text": "Le débit plafonne à 4 %, comme ses sondages de rentrée.",
+   "text": "Le débit plafonne à 4 %, comme ses sondages.",
    "claim_type": "fait_public",
    "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
    "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
@@ -219,16 +325,16 @@
    "date": "2026-09-29",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Port-Marly (13/09/2026, 55 min) : Chateaubriand, Racine, Virgile, Homère, Napoléon."
+   "note": "Port-Marly (13/09/2026, 55 min) : « civilisation », « siècle », « histoire » ; Chateaubriand, Racine, Virgile, Homère, Napoléon."
   },
   {
    "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
    "date": "2026-09",
    "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
+   "statut": "fait",
    "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Port-Marly (2026) : les classiques partout, jusqu'au mot de passe. Cadre : le Wi-Fi. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : À Port-Marly, il convoque Racine, Chateaubriand, Virgile et Homère. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

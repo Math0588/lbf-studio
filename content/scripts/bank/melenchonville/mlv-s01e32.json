@@ -3,27 +3,27 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-32",
  "format": "D",
- "title_cover": "Personne sacrée",
+ "title_cover": "Personne ne touche",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. Ne touchez à rien.",
-  "Mélenchon est sacré. C'est lui qui le dit.",
-  "Les insoumis vont me détester.",
-  "Bienvenue à Mélenchonville : personne sacrée.",
-  "Mélenchon en une vidéo : personne sacrée."
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien a une auréole.",
+  "Mélenchon a dit « ma personne est sacrée ». Toute la ville s'est déclarée sacrée.",
+  "Celle-là, Méluche ne la partagera pas.",
+  "Bienvenue à Mélenchonville : personne ne touche.",
+  "Mélenchon en une vidéo : personne ne touche."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Lui, on n'y touche pas. Ses scores, si : quatrième, quatrième, troisième.",
-  "Lui, on n'y touche pas. Ses défaites, tout le monde les connaît.",
-  "Si sacré que personne, chez lui, ne se présente contre lui."
+  "Sa personne est sacrée. Ses scores, non : quatrième, quatrième, troisième.",
+  "Lui, on n'y touche pas. Ses scores, tout le monde les connaît.",
+  "Le métro devient impossible : un passager par rame."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Ne touchez à rien.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien a une auréole.",
    "accent_words": [
-    "Ne touchez à rien"
+    "une auréole"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,31 +37,31 @@
   },
   {
    "id": "n3",
-   "text": "Même jour : « La République, c'est moi ! ».",
+   "text": "Toute la ville se déclare sacrée. Interdit de toucher qui que ce soit.",
    "accent_words": [
-    "La République, c'est moi"
+    "ce soit"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "En 2026, il parle d'« audace déraisonnable ». Pas d'excuse.",
+   "text": "Le coiffeur coupe à trois mètres, avec une perche.",
    "accent_words": [
-    "Pas d'excuse"
+    "une perche"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Si sacré que personne, chez lui, ne se présente contre lui.",
+   "text": "Le métro devient impossible : un passager par rame.",
    "accent_words": [
-    "contre lui"
+    "un passager par rame"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Lui, on n'y touche pas. Ses scores, si : quatrième, quatrième, troisième.",
+   "text": "Sa personne est sacrée. Ses scores, non : quatrième, quatrième, troisième.",
    "accent_words": [
     "quatrième, quatrième, troisième"
    ],
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE · PERSONNE SACRÉE",
-   "comic_action": "Descente sur la ville : banderole « PERSONNE SACRÉE », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "onscreen_text": "MÉLENCHONVILLE · PERSONNE NE TOUCHE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "MA PERSONNE EST SACRÉE"
     }
    ]
   },
@@ -119,19 +129,19 @@
    ],
    "onscreen_text": "« MA PERSONNE EST SACRÉE »",
    "comic_action": "Le maire tend le bras vers la caméra pour faire reculer tout le monde.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
      "geste": "point",
      "visage": "colere",
      "objet": "phone"
-    },
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "shake",
-     "visage": "choque",
-     "quand": 0.4
+     "type": "affiche",
+     "texte": "MA PERSONNE EST SACRÉE"
     }
    ]
   },
@@ -142,19 +152,24 @@
    ],
    "camera": "orbit",
    "set": [
-    "tribune",
-    "studio_light",
+    "road",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "« LA RÉPUBLIQUE, C'EST MOI ! »",
-   "comic_action": "Une auréole lumineuse s'allume au-dessus du pupitre.",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "TOUT LE MONDE EST SACRÉ",
+   "comic_action": "Les passants marchent avec des auréoles et un mètre de distance.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "arms_up",
-     "visage": "colere",
-     "objet": "micro"
+     "who": "foule",
+     "geste": "cross_arms",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "SACRÉ"
     }
    ]
   },
@@ -165,18 +180,24 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "screen",
-    "tribune",
-    "text3d"
+    "shop",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "« AUDACE DÉRAISONNABLE »",
-   "comic_action": "Un écran rejoue la scène, le maire hoche la tête.",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "COIFFEUR : À LA PERCHE",
+   "comic_action": "Un coiffeur tend des ciseaux au bout d'un manche à balai.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "nod",
-     "visage": "fier"
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "COUPE À DISTANCE : 40 €"
     }
    ]
   },
@@ -187,18 +208,24 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
-    "person"
+    "bus",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "CANDIDATS CONTRE LUI : 0",
-   "comic_action": "Urne avec un seul bulletin, sous vitrine.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "1 PASSAGER PAR RAME",
+   "comic_action": "Un passager seul dans un wagon, la file sur le quai jusqu'au bout.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
      "who": "foule",
-     "geste": "bow",
-     "visage": "neutre"
+     "geste": "shrug",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ATTENTE : 3 H"
     }
    ]
   },
@@ -214,13 +241,19 @@
     "banner"
    ],
    "onscreen_text": "4E · 4E · 3E",
-   "comic_action": "L'auréole grésille et s'éteint.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "comic_action": "L'auréole du maire grésille et s'éteint.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
      "geste": "facepalm",
      "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "AURÉOLE : HORS SERVICE"
     }
    ]
   },
@@ -237,7 +270,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -245,6 +278,12 @@
      "geste": "point",
      "visage": "sourire_pro",
      "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
     }
    ]
   }
@@ -258,7 +297,7 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 79,
+ "word_count": 80,
  "claims": [
   {
    "text": "En 2018, en direct, il lance : « ma personne est sacrée ».",
@@ -267,28 +306,10 @@
    "note": "« Personne ne me touche, ma personne est sacrée, je suis parlementaire » : vidéo en direct publique du 16/10/2018. Seule la phrase filmée est reprise."
   },
   {
-   "text": "Même jour : « La République, c'est moi ! ».",
-   "claim_type": "citation_exacte",
-   "source": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
-   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
-  },
-  {
-   "text": "En 2026, il parle d'« audace déraisonnable ». Pas d'excuse.",
-   "claim_type": "citation_exacte",
-   "source": "https://lcp.fr/actualites/la-republique-c-est-moi-jean-luc-melenchon-assume-un-moment-d-audace-deraisonnable",
-   "note": "Mardis de l'Essec (27/10/2026) : il assume une « audace déraisonnable », « je n'ai pas de regrets », pas au sens du Roi-Soleil mais « le peuple, sa représentation, c'est moi »."
-  },
-  {
-   "text": "Si sacré que personne, chez lui, ne se présente contre lui.",
-   "claim_type": "fait_public",
-   "source": "https://www.europe1.fr/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-930947",
-   "note": "Selon la direction de LFI (AFP) : aucune autre candidature proposée, aucune opposition exprimée."
-  },
-  {
-   "text": "Lui, on n'y touche pas. Ses scores, si : quatrième, quatrième, troisième.",
+   "text": "Sa personne est sacrée. Ses scores, non : quatrième, quatrième, troisième.",
    "claim_type": "fait_public",
    "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
@@ -300,34 +321,13 @@
    "note": "« Personne ne me touche, ma personne est sacrée, je suis parlementaire » : vidéo en direct publique du 16/10/2018. Seule la phrase filmée est reprise."
   },
   {
-   "url": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
-   "date": "2018-10-17",
-   "consulted": "2026-11-22",
-   "statut": "citation_exacte",
-   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
-  },
-  {
-   "url": "https://lcp.fr/actualites/la-republique-c-est-moi-jean-luc-melenchon-assume-un-moment-d-audace-deraisonnable",
-   "date": "2026-10-28",
-   "consulted": "2026-11-22",
-   "statut": "citation_exacte",
-   "note": "Mardis de l'Essec (27/10/2026) : il assume une « audace déraisonnable », « je n'ai pas de regrets », pas au sens du Roi-Soleil mais « le peuple, sa représentation, c'est moi »."
-  },
-  {
-   "url": "https://www.europe1.fr/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-930947",
-   "date": "2026-05-03",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Selon la direction de LFI (AFP) : aucune autre candidature proposée, aucune opposition exprimée."
-  },
-  {
    "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
    "date": "consulté 2026-11-22",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Personne sacrée. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2018, en direct, il lance : « ma personne est sacrée ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

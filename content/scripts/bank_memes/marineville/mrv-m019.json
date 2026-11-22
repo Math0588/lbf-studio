@@ -3,70 +3,70 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m019",
  "format": "A",
- "anchor": "la retraite à 60 ans, devenue 62, puis « 62, voire 60 » : le mot magique « voire ».",
+ "anchor": "la retraite : 60, puis 62, puis « 62 voire 60 »",
  "situation": "Le mois voire",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "title_cover": "Le mois voire",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, le calendrier a un mois de plus : le mois voire.",
-  "Marineville : voire, ça promet tout et ça n'engage à rien.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : le mois voire."
+  "Dans cette ville, tout le monde vote Marine. À soixante ans. Voire.",
+  "Marineville ajoute un treizième mois : le mois voire.",
+  "Ici, les impôts tombent en voire.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Le mois voire."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Voire, c'est le mot magique : ça promet tout, ça n'engage à rien.",
-  "Ici, l'âge de départ change avec la météo.",
-  "Les habitants préparent leur pot de départ au crayon à papier."
+  "Marine vit en voire depuis 2012 : ça promet tout, ça n'engage à rien.",
+  "Voire : ça promet tout, ça n'engage à rien.",
+  "Les impôts tombent en voire. Le Trésor attend encore."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine. À soixante ans. Ou pas.",
+   "text": "Dans cette ville, tout le monde vote Marine. À soixante ans. Voire.",
    "accent_words": [
-    "Ou pas"
+    "Voire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La retraite à soixante ans, devenue soixante-deux, d'après franceinfo.",
+   "text": "La retraite : soixante, puis soixante-deux, puis soixante-deux voire soixante.",
    "accent_words": [
-    "soixante-deux"
+    "voire"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Nouvelle version en 2026 : soixante-deux, voire soixante.",
+   "text": "Alors le calendrier municipal ajoute un mois : le mois voire.",
    "accent_words": [
-    "voire soixante"
+    "voire"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, l'âge de départ change avec la météo.",
+   "text": "En voire, tout est possible. Rien n'est obligatoire.",
    "accent_words": [
-    "la météo"
+    "obligatoire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le calendrier municipal a un mois de plus : le mois voire.",
+   "text": "Les impôts tombent en voire. Le Trésor attend encore.",
    "accent_words": [
-    "le mois voire"
+    "encore"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Voire, c'est le mot magique : ça promet tout, ça n'engage à rien.",
+   "text": "Marine vit en voire depuis 2012 : ça promet tout, ça n'engage à rien.",
    "accent_words": [
-    "n'engage à rien"
+    "rien"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -92,9 +92,26 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; une horloge sans aiguilles.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "À 60 ANS. VOIRE.",
+   "comic_action": "Descente sur la ville ; banderole « À 60 ANS. VOIRE. » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "VOIRE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -103,46 +120,87 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
+    "scroll",
+    "form_stack",
+    "table",
     "person"
    ],
-   "onscreen_text": "60 → 62",
-   "comic_action": "L'écran affiche le chiffre qui glisse de 60 à 62.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "62 VOIRE 60",
+   "comic_action": "Formulaire de retraite déplié ; en gros « 62 VOIRE 60 ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "tribune",
-    "studio_light",
+    "facade_row",
+    "sign",
     "text3d",
     "person"
    ],
-   "onscreen_text": "62 VOIRE 60",
-   "comic_action": "Tribune : un panneau qui tourne sur lui-même.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "LE MOIS VOIRE",
+   "comic_action": "Rangée de façades : enseigne « LE MOIS VOIRE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "clap"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "13E MOIS : VOIRE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "traffic_light",
-    "road",
-    "car",
-    "sign"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "SOLEIL : 60 · PLUIE : 62",
-   "comic_action": "Un panneau météo affiche l'âge de départ du jour.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TOUT EST POSSIBLE",
+   "comic_action": "Descente sur la ville ; banderole « TOUT EST POSSIBLE » sur la mairie.",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -151,14 +209,25 @@
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
+    "screen",
+    "text3d",
     "table",
-    "person",
-    "text3d"
+    "form_stack"
    ],
-   "onscreen_text": "MOIS : VOIRE",
-   "comic_action": "Un calendrier se déroule : entre deux mois, une page « VOIRE ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "IMPÔTS EN VOIRE",
+   "comic_action": "Compteur géant sur l'écran : « IMPÔTS EN VOIRE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -167,14 +236,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "VOIRE ™",
-   "comic_action": "Entre deux colonnes, le mot « VOIRE » gravé en lettres d'or. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "ÇA N'ENGAGE À RIEN",
+   "comic_action": "Plan final, tenir une seconde : « ÇA N'ENGAGE À RIEN ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +270,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt gonfle des ballons, puis les dégonfle.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE PRESSÉ",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE PRESSÉ ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,21 +293,14 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 78,
+ "word_count": 79,
  "claims": [
   {
    "segment": "n2",
-   "text": "La retraite à soixante ans, devenue soixante-deux, d'après franceinfo.",
+   "text": "La retraite : soixante, puis soixante-deux, puis soixante-deux voire soixante.",
    "claim_type": "fait_public",
    "source": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
-   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne « parfois difficile à concilier »."
-  },
-  {
-   "segment": "n3",
-   "text": "Nouvelle version en 2026 : soixante-deux, voire soixante.",
-   "claim_type": "fait_public",
-   "source": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
-   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
+   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne parfois difficile à concilier."
   }
  ],
  "sources": [
@@ -224,17 +308,10 @@
    "url": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
    "date": "2026-07-08",
    "consulted": "2026-11-22",
-   "statut": "fait public + analyse",
-   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne « parfois difficile à concilier »."
-  },
-  {
-   "url": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
-   "date": "2026-11-17",
-   "consulted": "2026-11-22",
-   "statut": "fait public (présentation du programme)",
-   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
+   "statut": "fait + analyse",
+   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne parfois difficile à concilier."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = la retraite à 60 ans, devenue 62, puis « 62, voire 60 » : le mot magique « voire ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = la retraite : 60, puis 62, puis « 62 voire 60 ». Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

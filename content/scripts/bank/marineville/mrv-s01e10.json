@@ -3,75 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-22",
  "format": "A",
- "title_cover": "Chats démasqués",
+ "title_cover": "Bal des chats masqués",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, la mairie ne communique qu'en photos de chats.",
-  "Marineville : quand le programme griffe, on montre le ronron.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : chats démasqués."
+  "Dans cette ville, tout le monde vote Marine. Les chats aussi, masqués.",
+  "Marineville : tous les chats sont masqués.",
+  "Ici, le refuge est un bal masqué.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Bal des chats masqués."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Quand le programme griffe, on montre le ronron.",
-  "Hausse des impôts ? Un chaton dans un carton. Bus supprimé ? Deux chatons.",
-  "Ici, la mairie communique uniquement par photos de chats."
+  "Marine renomme son compte : les chats démasqués. Dédiabolisation terminée.",
+  "Les chats démasqués : dédiabolisation terminée.",
+  "Le refuge devient un bal masqué. Les chiens paniquent."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine. Les chats aussi, en cachette.",
+   "text": "Dans cette ville, tout le monde vote Marine. Les chats aussi, masqués.",
    "accent_words": [
-    "en cachette"
+    "masqués"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2020, la presse révèle un compte Instagram consacré à ses chats : les chats masqués.",
+   "text": "En 2020, la presse révèle son compte Instagram de chats : les chats masqués.",
    "accent_words": [
-    "chats masqués"
+    "masqués"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Rebaptisé les chats démasqués. Même le compte a fait sa dédiabolisation.",
+   "text": "Alors tous les chats de la ville se masquent. Plus personne ne reconnaît le sien.",
    "accent_words": [
-    "dédiabolisation"
+    "sien"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, la mairie communique uniquement par photos de chats.",
+   "text": "Les familles adoptent les chats des voisins par erreur.",
    "accent_words": [
-    "photos de chats"
+    "erreur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Hausse des impôts ? Un chaton dans un carton. Bus supprimé ? Deux chatons.",
+   "text": "Le refuge devient un bal masqué. Les chiens paniquent.",
    "accent_words": [
-    "Deux chatons"
+    "paniquent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Quand le programme griffe, on montre le ronron.",
+   "text": "Marine renomme son compte : les chats démasqués. Dédiabolisation terminée.",
    "accent_words": [
-    "le ronron"
+    "démasqués"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
    "text": "Envoie ça au pote qui craque dès qu'on lui montre un chat.",
    "accent_words": [
-    "un chat"
+    "chat"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,25 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; des oreilles de chat dépassent des fenêtres.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "CHATS MASQUÉS",
+   "comic_action": "Descente sur la ville ; banderole « CHATS MASQUÉS » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MIAOU"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,14 +116,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "ring_light",
-    "tripod_camera",
+    "mascot",
     "person",
-    "screen"
+    "sign",
+    "text3d"
    ],
    "onscreen_text": "LES CHATS MASQUÉS",
-   "comic_action": "Ring light : un chat en peluche avec un loup sur les yeux.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Mascotte chat au premier plan ; panneau « LES CHATS MASQUÉS ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "visage": "content",
+     "objet": "phone"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -116,46 +144,92 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "mascot",
+    "person",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "MASQUÉS → DÉMASQUÉS",
-   "comic_action": "L'écran : le nom du compte se modifie lettre par lettre.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "QUI EST TON CHAT ?",
+   "comic_action": "Mascotte chat au premier plan ; panneau « QUI EST TON CHAT ? ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CHAT MASQUÉ"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "mascot",
+    "road",
+    "sign",
     "person",
-    "banner",
-    "text3d"
+    "traffic_light"
    ],
-   "onscreen_text": "COMMUNIQUÉ : MIAOU",
-   "comic_action": "La mascotte-chat lit le communiqué officiel, la presse fond.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CHATS ÉCHANGÉS",
+   "comic_action": "Dans la rue, panneau « CHATS ÉCHANGÉS ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "point"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "bus",
-    "road",
+    "mascot",
     "person",
-    "sign"
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "BUS SUPPRIMÉ : 2 CHATONS",
-   "comic_action": "À l'arrêt de bus fermé, deux chatons en peluche dans un carton.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "BAL MASQUÉ FÉLIN",
+   "comic_action": "Mascotte chat au premier plan ; panneau « BAL MASQUÉ FÉLIN ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "spin"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PANIQUE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,14 +238,28 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "GRIFFES : HORS CHAMP",
-   "comic_action": "Entre deux colonnes, une patte de chat cache une affiche de programme. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LES CHATS DÉMASQUÉS",
+   "comic_action": "Plan final, tenir une seconde : « LES CHATS DÉMASQUÉS ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,9 +273,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt fond devant une photo de chaton.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI CRAQUE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI CRAQUE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -199,21 +296,21 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 83,
+ "word_count": 81,
  "claims": [
   {
    "segment": "n2",
-   "text": "En 2020, la presse révèle un compte Instagram consacré à ses chats : les chats masqués.",
+   "text": "En 2020, la presse révèle son compte Instagram de chats : les chats masqués.",
    "claim_type": "fait_public",
    "source": "https://www.letribunaldunet.fr/actualites/marine-le-pen-compte-instagram-secret-chat.html",
-   "note": "Compte Instagram « les chats masqués », renommé « les chats démasqués »."
+   "note": "Compte Instagram consacré à ses chats, « les chats masqués », renommé « les chats démasqués »."
   },
   {
-   "segment": "n3",
-   "text": "Rebaptisé les chats démasqués. Même le compte a fait sa dédiabolisation.",
+   "segment": "n6",
+   "text": "Marine renomme son compte : les chats démasqués. Dédiabolisation terminée.",
    "claim_type": "fait_public",
    "source": "https://www.letribunaldunet.fr/actualites/marine-le-pen-compte-instagram-secret-chat.html",
-   "note": "Compte Instagram « les chats masqués », renommé « les chats démasqués »."
+   "note": "Compte Instagram consacré à ses chats, « les chats masqués », renommé « les chats démasqués »."
   }
  ],
  "sources": [
@@ -221,10 +318,10 @@
    "url": "https://www.letribunaldunet.fr/actualites/marine-le-pen-compte-instagram-secret-chat.html",
    "date": "2020-01-31",
    "consulted": "2026-11-22",
-   "statut": "fait public rapporté par la presse",
-   "note": "Compte Instagram « les chats masqués », renommé « les chats démasqués »."
+   "statut": "fait (rapporté par la presse)",
+   "note": "Compte Instagram consacré à ses chats, « les chats masqués », renommé « les chats démasqués »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = 2020 : un compte Instagram consacré à ses chats, « les chats masqués », renommé « les chats démasqués ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = le compte Instagram « les chats masqués », devenu « les chats démasqués ». Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

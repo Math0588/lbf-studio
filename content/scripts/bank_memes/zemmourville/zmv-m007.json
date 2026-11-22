@@ -5,78 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Musculation à 4 %",
- "anchor": "environ 4 % dans les sondages de la rentrée 2026.",
+ "anchor": "Environ 4 % dans les sondages de la rentrée 2026, appliqué à la salle de sport.",
  "meme_id": "ZF",
- "situation": "la salle de sport",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : la salle de sport plafonne à 4 %.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, les haltères pèsent comme les sondages.",
-  "Zemmourville : la musculation de la grandeur, version légère."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien fait de la muscu.",
+  "Zemmour est à 4 %. La salle de sport aussi.",
+  "Ben voyons, encore une vidéo sur lui.",
+  "Bienvenue à Zemmourville : musculation à 4 %.",
+  "Zemmour en une vidéo : musculation à 4 %."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ici, on appelle ça une sèche. Les autres appellent ça une fonte.",
-  "Quatre kilos, quatre pour cent, grande ambition.",
-  "La sèche continue. La fonte aussi."
+  "En 2021, il soulevait 17 %. La forme d'avant.",
+  "En 2021, il soulevait 17 %. La forme d'avant.",
+  "Les champions de la ville courent le cent mètres en quatre heures."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Charge légère.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien fait de la muscu.",
    "accent_words": [
-    "Charge légère"
+    "la muscu"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Rentrée 2026 : il est crédité d'environ 4 % dans les sondages.",
+   "text": "Rentrée 2026 : environ 4 % dans les sondages.",
    "accent_words": [
-    "4 %"
+    "les sondages"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, la salle de sport s'aligne. Haltères de quatre kilos maximum.",
+   "text": "La salle de sport s'aligne : haltères de quatre kilos maximum.",
    "accent_words": [
-    "quatre kilos"
+    "kilos maximum"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le coach promet la grandeur. Le tapis plafonne à quatre kilomètres-heure.",
+   "text": "Le tapis roule à 4 km/h. Les vélos font quatre tours.",
    "accent_words": [
-    "plafonne"
+    "quatre tours"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "En 2021, il soulevait 17 %. La forme d'avant, évidemment.",
+   "text": "Les champions de la ville courent le cent mètres en quatre heures.",
    "accent_words": [
-    "17 %"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n6",
-   "text": "Ici, on appelle ça une sèche. Les autres appellent ça une fonte.",
-   "accent_words": [
-    "une fonte"
+    "quatre heures"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui soulève deux kilos en se filmant.",
+   "id": "n6",
+   "text": "En 2021, il soulevait 17 %. La forme d'avant.",
    "accent_words": [
-    "deux kilos"
+    "La forme d'avant"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui va à la salle une fois par an.",
+   "accent_words": [
+    "par an"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une salle de sport ; enseigne « GRANDEUR FITNESS ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · MUSCULATION À 4 %",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "FORCE : 4 %"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -106,11 +129,25 @@
    "camera": "closeup",
    "set": [
     "screen",
-    "text3d"
+    "text3d",
+    "tribune"
    ],
-   "onscreen_text": "SONDAGE : 4 %",
-   "comic_action": "L'écran de la salle affiche la jauge du jour.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "SONDAGES : 4 %",
+   "comic_action": "Le score s'affiche sur l'écran de la salle de sport.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "FORCE : 4 %"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -119,13 +156,26 @@
    ],
    "camera": "orbit",
    "set": [
+    "shop",
     "person",
-    "text3d",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "MAX : 4 KG",
-   "comic_action": "Orbite : un râtelier d'haltères minuscules.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "HALTÈRES : 4 KG MAX",
+   "comic_action": "Un culturiste soulève un minuscule haltère rose.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "arms_up",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "HALTÈRE : 4 KG"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -134,13 +184,26 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "person",
-    "screen",
-    "sign"
+    "shop",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "4 KM/H",
-   "comic_action": "Travelling : des sportifs marchent lentement, très sérieux.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TAPIS : 4 KM/H",
+   "comic_action": "Un sportif marche très lentement sur un tapis.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "nod",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "SPORTIF"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -149,13 +212,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "ground",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "2021 : 17 KG",
-   "comic_action": "Une photo encadrée d'un haltère « 17 » au mur, éclairée comme une relique.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "100 M : 4 HEURES",
+   "comic_action": "Ligne d'arrivée, chronomètre à 4 heures.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RECORD : 4 H"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,13 +240,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
+    "screen",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "SÈCHE OU FONTE ?",
-   "comic_action": "Plan large : la salle se vide, un haltère fond comme une bougie.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "2021 : 17 %",
+   "comic_action": "Une vieille photo du maire soulevant un « 17 ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "17 % (VINTAGE)"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -184,30 +273,44 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique soulève l'haltère d'une main.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui soulève deux kilos en se filmant."
+  "text": "Envoie ça au pote qui va à la salle une fois par an."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 77,
+ "word_count": 80,
  "claims": [
   {
-   "text": "Rentrée 2026 : il est crédité d'environ 4 % dans les sondages.",
+   "text": "Rentrée 2026 : environ 4 % dans les sondages.",
    "claim_type": "fait_public",
    "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
    "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   },
   {
-   "text": "En 2021, il soulevait 17 %. La forme d'avant, évidemment.",
+   "text": "En 2021, il soulevait 17 %. La forme d'avant.",
    "claim_type": "fait_public",
    "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
    "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
@@ -218,7 +321,7 @@
    "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
    "date": "2026-09",
    "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
+   "statut": "fait",
    "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   },
   {
@@ -230,5 +333,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : environ 4 % dans les sondages de la rentrée 2026. Cadre : la salle de sport. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Rentrée 2026 : environ 4 % dans les sondages. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-30",
  "format": "A",
- "title_cover": "Ouvert hier",
+ "title_cover": "Déjouer les pronostics",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : tout ouvre hier.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, les rendez-vous se prennent dans le passé.",
-  "Zemmourville : le site internet le plus nostalgique de France."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien surprend.",
+  "Zemmour avait promis de déjouer les pronostics. La ville déjoue tout.",
+  "Celle-là, Zemmour ne la partagera pas.",
+  "Bienvenue à Zemmourville : déjouer les pronostics.",
+  "Zemmour en une vidéo : déjouer les pronostics."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Des milliers d'affiches, une seule promesse : le futur, c'était hier.",
-  "Ouvert hier, fermé au premier tour.",
-  "Le futur était prévu. Hier."
+  "Promesse tenue : il a déjoué les sondages. Vers le bas : 7 %.",
+  "Promesse tenue : il a déjoué les sondages. Vers le bas.",
+  "Plus rien n'arrive comme prévu. Même le facteur sonne quatre fois."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Affiche collée.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien surprend.",
    "accent_words": [
-    "Affiche collée"
+    "Même le chien surprend"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ses jeunes militants s'appellent Génération Z. Spécialité : coller des affiches la nuit.",
+   "text": "Au Trocadéro, il promet de « déjouer tous les pronostics ».",
    "accent_words": [
-    "la nuit"
+    "les pronostics"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Ici, ils ont aussi collé le site de la mairie. Rendez-vous : hier.",
+   "text": "La mairie s'y met : elle déjoue toutes les prévisions.",
    "accent_words": [
-    "hier"
+    "les prévisions"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Chaque créneau est déjà passé. Comme ses 17 % d'octobre 2021.",
+   "text": "Soleil annoncé ? Grêle. Bus prévu à 8 h ? Il passe à minuit.",
    "accent_words": [
-    "17 %"
+    "Il passe à minuit"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les colleurs recouvrent même les horaires d'ouverture. Ouvert : avant.",
+   "text": "Plus rien n'arrive comme prévu. Même le facteur sonne quatre fois.",
    "accent_words": [
-    "Ouvert : avant"
+    "quatre fois"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Des milliers d'affiches, une seule promesse : le futur, c'était hier.",
+   "text": "Promesse tenue : il a déjoué les sondages. Vers le bas : 7 %.",
    "accent_words": [
-    "c'était hier"
+    "7 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui te donne rendez-vous et arrive après.",
+   "text": "Envoie ça au pote qui jure qu'il va surprendre tout le monde.",
    "accent_words": [
-    "arrive après"
+    "le monde"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,53 +89,117 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur la mairie : chaque mur recouvert d'affiches fraîches.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · DÉJOUER LES PRONOSTICS",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "DÉJOUEZ TOUT"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "person",
-    "banner",
-    "lamp"
+    "tribune",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "GÉNÉRATION Z",
-   "comic_action": "Travelling nocturne : des colleurs, seau et brosse, sous les lampadaires.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« DÉJOUER TOUS LES PRONOSTICS »",
+   "comic_action": "Le maire, poing levé, devant une foule tricolore.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "DÉJOUEZ TOUT"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
+    "mairie",
     "screen",
-    "text3d",
     "person"
    ],
-   "onscreen_text": "RDV : HIER",
-   "comic_action": "L'écran de prise de rendez-vous est recouvert d'une affiche ; seule date visible : la veille.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PRÉVISIONS : DÉJOUÉES",
+   "comic_action": "Le panneau météo de la mairie affiche le contraire du ciel.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MÉTÉO : FAUSSE EXPRÈS"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d"
+    "bus",
+    "road",
+    "person"
    ],
-   "onscreen_text": "OCT. 2021",
-   "comic_action": "Orbite : un calendrier où toutes les cases sont grisées.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "BUS : MINUIT",
+   "comic_action": "Un usager en short sous la grêle, à l'arrêt de bus.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "SURPRIS"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -144,13 +208,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "banner",
+    "building",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "OUVERT : AVANT",
-   "comic_action": "Gros plan sur la porte de la mairie, horaires sous trois couches d'affiches.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "FACTEUR : 4 FOIS",
+   "comic_action": "Le facteur sonne, sonne, sonne, sonne.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "IMPRÉVISIBLE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -159,13 +236,26 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
-    "banner",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "FUTUR : HIER",
-   "comic_action": "Plan large : la mairie entièrement papier-peinte, porte introuvable.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "DÉJOUÉ : 7 %",
+   "comic_action": "La courbe des sondages plonge sous les pieds du maire.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "7,07 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -179,51 +269,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique décolle une affiche, une autre dessous.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui te donne rendez-vous et arrive après."
+  "text": "Envoie ça au pote qui jure qu'il va surprendre tout le monde."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 79,
+ "word_count": 84,
  "claims": [
   {
-   "text": "Ses jeunes militants s'appellent Génération Z. Spécialité : coller des affiches la nuit.",
-   "claim_type": "fait_public",
-   "source": "https://www.lyoncapitale.fr/actualite/a-lyon-le-groupe-generation-z-espere-une-candidature-de-zemmour-en-2022-leur-seule-option",
-   "note": "Génération Z : militants, collages d'affiches."
+   "text": "Au Trocadéro, il promet de « déjouer tous les pronostics ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/au-trocadero-zemmour-en-appelle-aux-patriotes-et-a-la-droite-pour-dejouer-tous-les",
+   "note": "Trocadéro, 27/03/2022 : appel « aux patriotes » et à « la droite » pour « déjouer tous les pronostics » ; aucun comptage de la préfecture."
   },
   {
-   "text": "Chaque créneau est déjà passé. Comme ses 17 % d'octobre 2021.",
+   "text": "Promesse tenue : il a déjoué les sondages. Vers le bas : 7 %.",
    "claim_type": "fait_public",
-   "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
-   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
   {
-   "url": "https://www.lyoncapitale.fr/actualite/a-lyon-le-groupe-generation-z-espere-une-candidature-de-zemmour-en-2022-leur-seule-option",
-   "date": "2021",
+   "url": "https://www.publicsenat.fr/actualites/politique/au-trocadero-zemmour-en-appelle-aux-patriotes-et-a-la-droite-pour-dejouer-tous-les",
+   "date": "2022-03-27",
    "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Génération Z : militants, collages d'affiches."
+   "statut": "citation_exacte",
+   "note": "Trocadéro, 27/03/2022 : appel « aux patriotes » et à « la droite » pour « déjouer tous les pronostics » ; aucun comptage de la préfecture."
   },
   {
-   "url": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
-   "date": "2021-10-07",
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Génération Z, ses colleurs d'affiches nocturnes. Cadre : le site de la mairie. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Au Trocadéro, il promet de « déjouer tous les pronostics ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

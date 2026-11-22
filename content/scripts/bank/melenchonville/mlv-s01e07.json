@@ -3,73 +3,73 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-07",
  "format": "A",
- "title_cover": "L'union, version 4",
+ "title_cover": "La ville sans nom",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. Unis, paraît-il.",
-  "Mélenchon change le nom de l'union tous les deux ans. Pas le chef.",
+  "Dans cette ville, tout le monde vote Mélenchon. Même le panneau hésite.",
+  "La gauche de Mélenchon change de nom. La ville aussi. Elle s'est perdue.",
   "Les insoumis vont me détester.",
-  "Bienvenue à Mélenchonville : l'union, version 4.",
-  "Mélenchon en une vidéo : l'union, version 4."
+  "Bienvenue à Mélenchonville : la ville sans nom.",
+  "Mélenchon en une vidéo : la ville sans nom."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Quatre noms en quatre ans, un seul candidat au bout. L'union, c'est lui.",
-  "L'union change de nom. Le chef, jamais.",
-  "Juillet : rupture actée avec le PS. L'union rétrécit à vue d'œil."
+  "Quatre noms, une constante : le même candidat sur toutes les cartes.",
+  "Quatre noms, une seule constante : le même candidat.",
+  "Les habitants ne savent plus où ils habitent. Ils dorment au rond-point."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Unis, paraît-il.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le panneau hésite.",
    "accent_words": [
-    "Unis, paraît-il"
+    "Même le panneau hésite"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Présidentielle 2022 : l'Union populaire. Législatives : la NUPES.",
-   "accent_words": [
-    "la NUPES"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "2024 : nouveau nom, Nouveau Front populaire. Même chef d'orchestre.",
-   "accent_words": [
-    "Même chef d'orchestre"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "Municipales 2026 : LFI enterre le Nouveau Front populaire.",
+   "text": "Sa gauche change de nom : Union populaire, NUPES, Nouveau Front populaire.",
    "accent_words": [
     "Front populaire"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n5",
-   "text": "Juillet : rupture actée avec le PS. L'union rétrécit à vue d'œil.",
+   "id": "n3",
+   "text": "La ville fait pareil : elle change de nom tous les deux ans.",
    "accent_words": [
-    "vue d'œil"
+    "deux ans"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Les GPS craquent. Le facteur livre au mauvais pays.",
+   "accent_words": [
+    "mauvais pays"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Les habitants ne savent plus où ils habitent. Ils dorment au rond-point.",
+   "accent_words": [
+    "Ils dorment au rond-point"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Quatre noms en quatre ans, un seul candidat au bout. L'union, c'est lui.",
+   "text": "Quatre noms, une constante : le même candidat sur toutes les cartes.",
    "accent_words": [
-    "L'union, c'est lui"
+    "les cartes"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui renomme le groupe WhatsApp après chaque embrouille.",
+   "text": "Envoie ça au pote qui renomme le groupe WhatsApp à chaque embrouille.",
    "accent_words": [
     "chaque embrouille"
    ],
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE · L'UNION, VERSION 4",
-   "comic_action": "Descente sur la ville : banderole « L'UNION, VERSION 4 », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "onscreen_text": "MÉLENCHONVILLE · LA VILLE SANS NOM",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "UNION, VERSION 4"
     }
    ]
   },
@@ -117,20 +127,20 @@
     "road",
     "text3d"
    ],
-   "onscreen_text": "UNION POPULAIRE → NUPES",
-   "comic_action": "On dévisse un panneau pour en visser un autre.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "onscreen_text": "UNION POP. → NUPES → NFP",
+   "comic_action": "On dévisse un panneau pour en visser un autre, puis un autre.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
      "geste": "point",
      "visage": "sourire_pro"
-    },
+    }
+   ],
+   "gags": [
     {
-     "who": "perso",
-     "geste": "shrug",
-     "visage": "blase",
-     "quand": 0.5
+     "type": "affiche",
+     "texte": "L'UNION, SAISON 3"
     }
    ]
   },
@@ -142,17 +152,23 @@
    "camera": "orbit",
    "set": [
     "sign",
-    "banner",
+    "road",
     "person"
    ],
-   "onscreen_text": "NOUVEAU FRONT POPULAIRE",
-   "comic_action": "Troisième panneau neuf ; même silhouette au premier rang.",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "BIENVENUE À… ?",
+   "comic_action": "Le panneau d'entrée tourne comme une roue de loterie.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "fier"
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "NOM : EN COURS"
     }
    ]
   },
@@ -163,18 +179,25 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "bin",
-    "sign",
-    "text3d"
+    "gps",
+    "car",
+    "road"
    ],
-   "onscreen_text": "NFP : À LA BENNE",
-   "comic_action": "Le panneau finit dans une benne à ordures.",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "GPS : PERDU",
+   "comic_action": "Un GPS fume sur le tableau de bord.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
      "who": "perso",
      "geste": "facepalm",
-     "visage": "choque"
+     "visage": "choque",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "DESTINATION INCONNUE"
     }
    ]
   },
@@ -185,24 +208,24 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "person",
-    "text3d"
+    "roundabout",
+    "bench",
+    "person"
    ],
-   "onscreen_text": "PS : RUPTURE ACTÉE",
-   "comic_action": "La grande table d'union perd une chaise après l'autre.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "DOMICILE : ROND-POINT",
+   "comic_action": "Des habitants en pyjama sur le rond-point.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
      "who": "foule",
-     "geste": "shrug",
-     "visage": "fatigue"
-    },
+     "geste": "nod",
+     "visage": "dort"
+    }
+   ],
+   "gags": [
     {
-     "who": "maire",
-     "geste": "cross_arms",
-     "visage": "fier",
-     "quand": 0.4
+     "type": "chien",
+     "tee": "PERDU"
     }
    ]
   },
@@ -215,17 +238,22 @@
    "set": [
     "tribune",
     "banner",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "L'UNION, C'EST LUI",
-   "comic_action": "Une table de banquet, une seule chaise occupée.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "MÊME CANDIDAT",
+   "comic_action": "Quatre panneaux différents, la même affiche dessous.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "arms_up",
-     "visage": "fier",
-     "objet": "micro"
+     "geste": "bow",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "2012 · 2017 · 2022 · 2027"
     }
    ]
   },
@@ -242,7 +270,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -251,46 +279,34 @@
      "visage": "sourire_pro",
      "objet": "phone"
     }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
    ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui renomme le groupe WhatsApp après chaque embrouille."
+  "text": "Envoie ça au pote qui renomme le groupe WhatsApp à chaque embrouille."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 75,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Présidentielle 2022 : l'Union populaire. Législatives : la NUPES.",
+   "text": "Sa gauche change de nom : Union populaire, NUPES, Nouveau Front populaire.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/article/politique/la-nupes-presente-son-programme-et-fait-du-parlement-le-moyen-de-regler-d",
    "note": "2022 : Union populaire à la présidentielle, puis NUPES aux législatives ; 2024 : Nouveau Front populaire."
   },
   {
-   "text": "2024 : nouveau nom, Nouveau Front populaire. Même chef d'orchestre.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/article/politique/la-nupes-presente-son-programme-et-fait-du-parlement-le-moyen-de-regler-d",
-   "note": "2022 : Union populaire à la présidentielle, puis NUPES aux législatives ; 2024 : Nouveau Front populaire."
-  },
-  {
-   "text": "Municipales 2026 : LFI enterre le Nouveau Front populaire.",
-   "claim_type": "fait_public",
-   "source": "https://www.economiematin.fr/municipales-2026-lfi-enterre-le-nfp",
-   "note": "Municipales 2026 : LFI enterre le Nouveau Front populaire."
-  },
-  {
-   "text": "Juillet : rupture actée avec le PS. L'union rétrécit à vue d'œil.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
-   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
-  },
-  {
-   "text": "Quatre noms en quatre ans, un seul candidat au bout. L'union, c'est lui.",
+   "text": "Quatre noms, une constante : le même candidat sur toutes les cartes.",
    "claim_type": "fait_public",
    "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
    "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
@@ -305,20 +321,6 @@
    "note": "2022 : Union populaire à la présidentielle, puis NUPES aux législatives ; 2024 : Nouveau Front populaire."
   },
   {
-   "url": "https://www.economiematin.fr/municipales-2026-lfi-enterre-le-nfp",
-   "date": "2025",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Municipales 2026 : LFI enterre le Nouveau Front populaire."
-  },
-  {
-   "url": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
-   "date": "2026-07",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
-  },
-  {
    "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
    "date": "2026-06",
    "consulted": "2026-11-22",
@@ -327,5 +329,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : L'union, version 4. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Sa gauche change de nom : Union populaire, NUPES, Nouveau Front populaire. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

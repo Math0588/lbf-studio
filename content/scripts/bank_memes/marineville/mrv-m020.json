@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m020",
  "format": "A",
- "anchor": "avril 2026 : dîner avec de grands patrons ; aux salariés, dix pour cent de hausse promis (franceinfo).",
+ "anchor": "le dîner avec de grands patrons et les +10 % promis aux salariés",
  "situation": "Homard en photo",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "title_cover": "Homard en photo",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, le restaurant a deux salles : homard d'un côté, photo de homard de l'autre.",
-  "Marineville : le peuple au menu, les patrons à table.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : homard en photo."
+  "Dans cette ville, tout le monde vote Marine. À deux tables.",
+  "Marineville : homard d'un côté, photo de homard de l'autre.",
+  "Ici, tes dix pour cent valent un pixel.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Homard en photo."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le peuple au menu, les patrons à table : voilà le dîner populaire.",
-  "L'addition des patrons arrive, comme par hasard, à la table d'à côté.",
-  "Le restaurant a deux salles : homard d'un côté, photo de homard de l'autre."
+  "Marine passe entre les tables : le peuple au menu, les patrons à table.",
+  "Le peuple au menu, les patrons à table.",
+  "L'addition des patrons atterrit à la table d'à côté."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -32,41 +32,41 @@
   },
   {
    "id": "n2",
-   "text": "En avril, elle dîne avec de grands patrons.",
-   "accent_words": [
-    "grands patrons"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "Aux salariés, elle promet dix pour cent de hausse.",
+   "text": "Dîner avec des patrons en avril. Aux salariés : dix pour cent promis.",
    "accent_words": [
     "dix pour cent"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "Le restaurant a deux salles : homard d'un côté, photo de homard de l'autre.",
+   "id": "n3",
+   "text": "Alors le resto municipal sert homard d'un côté, photo de homard de l'autre.",
    "accent_words": [
-    "photo de homard"
+    "homard"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Les salariés reçoivent dix pour cent de la photo. Un pixel.",
+   "accent_words": [
+    "pixel"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "L'addition des patrons arrive, comme par hasard, à la table d'à côté.",
+   "text": "L'addition des patrons atterrit à la table d'à côté.",
    "accent_words": [
-    "la table d'à côté"
+    "côté"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le peuple au menu, les patrons à table : voilà le dîner populaire.",
+   "text": "Marine passe entre les tables : le peuple au menu, les patrons à table.",
    "accent_words": [
-    "dîner populaire"
+    "table"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -92,57 +92,114 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; un restaurant à deux entrées en face.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "DEUX TABLES",
+   "comic_action": "Descente sur la ville ; banderole « DEUX TABLES » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "arch",
-    "column",
+    "table",
+    "building",
     "person",
-    "studio_light"
+    "text3d"
    ],
-   "onscreen_text": "DÎNER PATRONS",
-   "comic_action": "Sous une arche, une table chic, chandeliers.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "DÎNER PATRONS, +10 % SALARIÉS",
+   "comic_action": "Salon feutré, table dressée ; carton « DÎNER PATRONS, +10 % SALARIÉS ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "objet": "verre",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "table",
+    "building",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "+10 % (PROMIS)",
-   "comic_action": "L'écran affiche une flèche « +10 % » encore emballée.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "HOMARD / PHOTO DE HOMARD",
+   "comic_action": "Salon feutré, table dressée ; carton « HOMARD / PHOTO DE HOMARD ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "HOMARD : 0 € (EN PHOTO)"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "table",
-    "person",
     "screen",
-    "text3d"
+    "text3d",
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "HOMARD (EN PHOTO)",
-   "comic_action": "Une table avec une photo plastifiée de homard dans l'assiette.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "10 % : UN PIXEL",
+   "comic_action": "Écran géant : « 10 % : UN PIXEL ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -151,14 +208,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
+    "screen",
     "text3d",
-    "mairie"
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "ADDITION : CÔTÉ SALARIÉS",
-   "comic_action": "Un serveur dépose une note interminable devant des salariés.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "L'ADDITION À CÔTÉ",
+   "comic_action": "Compteur géant sur l'écran : « L'ADDITION À CÔTÉ ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "objet": "billets",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "point"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -167,14 +236,28 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "DÎNER POPULAIRE",
-   "comic_action": "Entre deux colonnes, un menu « PEUPLE » posé sur l'assiette d'un costume. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LE PEUPLE AU MENU",
+   "comic_action": "Plan final, tenir une seconde : « LE PEUPLE AU MENU ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "verre"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +271,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt fixe sa fiche de paie.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI ATTEND",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI ATTEND ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,21 +294,14 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 78,
+ "word_count": 82,
  "claims": [
   {
    "segment": "n2",
-   "text": "En avril, elle dîne avec de grands patrons.",
+   "text": "Dîner avec des patrons en avril. Aux salariés : dix pour cent promis.",
    "claim_type": "fait_public",
    "source": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
-   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne « parfois difficile à concilier »."
-  },
-  {
-   "segment": "n3",
-   "text": "Aux salariés, elle promet dix pour cent de hausse.",
-   "claim_type": "fait_public",
-   "source": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
-   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne « parfois difficile à concilier »."
+   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne parfois difficile à concilier."
   }
  ],
  "sources": [
@@ -224,10 +309,10 @@
    "url": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
    "date": "2026-07-08",
    "consulted": "2026-11-22",
-   "statut": "fait public + analyse",
-   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne « parfois difficile à concilier »."
+   "statut": "fait + analyse",
+   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne parfois difficile à concilier."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = avril 2026 : dîner avec de grands patrons ; aux salariés, dix pour cent de hausse promis (franceinfo). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = le dîner avec de grands patrons et les +10 % promis aux salariés. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

@@ -3,19 +3,19 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-23",
  "format": "A",
- "title_cover": "26 000 selon lui",
+ "title_cover": "26 000 selon nous",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Mélenchon. Selon les organisateurs.",
-  "Mélenchon compte ses foules. Avec une calculette généreuse.",
-  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
-  "Bienvenue à Mélenchonville : 26 000 selon lui.",
-  "Mélenchon en une vidéo : 26 000 selon lui."
+  "Mélenchon compte large. La ville compte pareil.",
+  "Les insoumis vont me détester.",
+  "Bienvenue à Mélenchonville : 26 000 selon nous.",
+  "Mélenchon en une vidéo : 26 000 selon nous."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Vingt-six mille revendiqués, des millions de likes, et dans les urnes : troisième.",
-  "Revendiqué : énorme. Compté dans l'urne : troisième.",
-  "Deux millions de likes sur TikTok : ça, au moins, c'est compté."
+  "Dans l'urne, on compte sans calculette : troisième.",
+  "Dans l'urne, on compte sans calculette : troisième.",
+  "L'État envoie un TGV pour la foule. Il repart avec trois passagers et un chien."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -37,31 +37,31 @@
   },
   {
    "id": "n3",
-   "text": "Deux fois et demie la prévision. Même la calculette est insoumise.",
+   "text": "La mairie compte désormais pareil. Trois habitants ? Vingt-six mille.",
    "accent_words": [
-    "est insoumise"
+    "Vingt-six mille"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ses médias revendiquent aussi la centaine de millions de vues. Toujours en revendiqué.",
+   "text": "Elle commande vingt-six mille baguettes. Trois sont mangées. Le reste fait un mur.",
    "accent_words": [
-    "Toujours en revendiqué"
+    "un mur"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Deux millions de likes sur TikTok : ça, au moins, c'est compté.",
+   "text": "L'État envoie un TGV pour la foule. Il repart avec trois passagers et un chien.",
    "accent_words": [
-    "c'est compté"
+    "un chien"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Vingt-six mille revendiqués, des millions de likes, et dans les urnes : troisième.",
+   "text": "Dans l'urne, on compte sans calculette : troisième.",
    "accent_words": [
     "troisième"
    ],
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE · 26 000 SELON LUI",
-   "comic_action": "Descente sur la ville : banderole « 26 000 SELON LUI », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "onscreen_text": "MÉLENCHONVILLE · 26 000 SELON NOUS",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "26 000 (SELON NOUS)"
     }
    ]
   },
@@ -119,19 +129,19 @@
    ],
    "onscreen_text": "10 000 → 26 000",
    "comic_action": "Compteur de foule qui s'emballe au-dessus d'une salle à moitié pleine.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
      "geste": "arms_up",
      "visage": "fier",
      "objet": "micro"
-    },
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "cheer",
-     "visage": "content",
-     "quand": 0.3
+     "type": "affiche",
+     "texte": "26 000 (SELON NOUS)"
     }
    ]
   },
@@ -142,18 +152,24 @@
    ],
    "camera": "orbit",
    "set": [
-    "screen",
+    "mairie",
     "text3d",
     "person"
    ],
-   "onscreen_text": "CALCULETTE INSOUMISE",
-   "comic_action": "Une calculette géante affiche des chiffres qui gonflent.",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "3 HABITANTS = 26 000",
+   "comic_action": "Un agent recense trois personnes et écrit « 26 000 ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
      "who": "perso",
      "geste": "shrug",
-     "visage": "blase"
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "POPULATION : 26 000*"
     }
    ]
   },
@@ -164,18 +180,25 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "screen",
-    "ring_light",
-    "text3d"
+    "shop",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "100 MILLIONS (REVENDIQUÉS)",
-   "comic_action": "Compteur de vues avec une petite étoile « selon nous ».",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "MUR DE BAGUETTES",
+   "comic_action": "Un mur de baguettes bloque la rue principale.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "point",
-     "visage": "fier"
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "objet": "baguette"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BAGUETTES : 25 997 EN TROP"
     }
    ]
   },
@@ -186,19 +209,24 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
+    "bus",
+    "road",
     "person"
    ],
-   "onscreen_text": "2 MILLIONS DE LIKES",
-   "comic_action": "Des cœurs pleuvent sur la place.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "TGV : 3 PASSAGERS",
+   "comic_action": "Un train immense, trois voyageurs et un chien en t-shirt à bord.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
-     "who": "perso",
-     "geste": "jump",
-     "visage": "content",
-     "objet": "phone"
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PASSAGER N° 4"
     }
    ]
   },
@@ -209,24 +237,24 @@
    ],
    "camera": "descend",
    "set": [
-    "lift_tribune",
+    "table",
     "text3d",
     "banner"
    ],
-   "onscreen_text": "URNES : 3E",
-   "comic_action": "Une urne transparente s'allume avec « 3E » dessus.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "URNE : 3E",
+   "comic_action": "Une urne transparente affiche « 3E ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
      "geste": "fall",
      "visage": "choque"
-    },
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "facepalm",
-     "visage": "fatigue",
-     "quand": 0.4
+     "type": "prix",
+     "texte": "COMPTAGE OFFICIEL : 3E"
     }
    ]
   },
@@ -243,7 +271,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -251,6 +279,12 @@
      "geste": "point",
      "visage": "sourire_pro",
      "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
     }
    ]
   }
@@ -264,7 +298,7 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 83,
+ "word_count": 80,
  "claims": [
   {
    "text": "À Saint-Denis, dix mille personnes attendues. Son camp en revendique vingt-six mille.",
@@ -273,22 +307,10 @@
    "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
   },
   {
-   "text": "Ses médias revendiquent aussi la centaine de millions de vues. Toujours en revendiqué.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
-   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
-  },
-  {
-   "text": "Deux millions de likes sur TikTok : ça, au moins, c'est compté.",
-   "claim_type": "fait_public",
-   "source": "https://www.sudradio.fr/sud-radio/presidentielle-2027-melenchon-prend-la-tete-de-la-bataille-sur-les-reseaux-sociaux",
-   "note": "Plus de 2,1 millions de likes TikTok en septembre 2026 ; 1,2 million de mentions."
-  },
-  {
-   "text": "Vingt-six mille revendiqués, des millions de likes, et dans les urnes : troisième.",
+   "text": "Dans l'urne, on compte sans calculette : troisième.",
    "claim_type": "fait_public",
    "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
@@ -300,27 +322,13 @@
    "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
-   "date": "2026",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
-  },
-  {
-   "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-melenchon-prend-la-tete-de-la-bataille-sur-les-reseaux-sociaux",
-   "date": "2026-10",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Plus de 2,1 millions de likes TikTok en septembre 2026 ; 1,2 million de mentions."
-  },
-  {
    "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
    "date": "consulté 2026-11-22",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %, 7 712 520 voix) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : 26 000 selon lui. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : À Saint-Denis, dix mille personnes attendues. Son camp en revendique vingt-six mille. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

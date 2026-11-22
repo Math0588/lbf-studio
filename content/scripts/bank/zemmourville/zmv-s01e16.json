@@ -5,73 +5,73 @@
  "format": "A",
  "title_cover": "Licence de déclin",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : la fac ne délivre qu'un diplôme, en déclin.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, le cours magistral s'appelle : tout fout le camp.",
-  "Zemmourville : la seule filière qui recrute, c'est la déprime."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien décline.",
+  "Zemmour vend du déclin. La fac a ouvert une licence de déclinologie.",
+  "Celle-là, Zemmour ne la partagera pas.",
+  "Bienvenue à Zemmourville : licence de déclin.",
+  "Zemmour en une vidéo : licence de déclin."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Débouché unique de la filière : commentateur. Jamais élu.",
-  "Le déclin est partout. Surtout dans les sondages.",
-  "Licence en déclin, mention : 4 %."
+  "Le déclin le plus net reste le sien : de 17 % à 7 %.",
+  "Le déclin le plus net reste le sien : de 17 % à 7 %.",
+  "Plus personne ne construit. Les ponts déclinent tranquillement."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Diplôme en déclin.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien décline.",
    "accent_words": [
-    "Diplôme en déclin"
+    "Même le chien décline"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, l'université n'a qu'une filière : la Déclinologie.",
+   "text": "Son grand thème : le déclin. Une fondation parle de déclinisme et de nostalgie.",
    "accent_words": [
-    "Déclinologie"
+    "de nostalgie"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "La fac ouvre une licence de déclinologie. Mille inscrits.",
+   "accent_words": [
+    "Mille inscrits"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Le manuel de référence : son pavé du déclin, plus de cinq cents pages.",
-   "accent_words": [
-    "cinq cents pages"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n4",
-   "text": "Un blogueur a résumé l'ambiance : du déclin jusqu'à la nausée.",
+   "text": "Les diplômés trouvent tous un poste : commentateur de déclin.",
    "accent_words": [
-    "la nausée"
+    "commentateur de déclin"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Partiel : prouver que tout était mieux avant. Bonus si avant, c'est 1965.",
+   "text": "Plus personne ne construit. Les ponts déclinent tranquillement.",
    "accent_words": [
-    "1965"
+    "Les ponts déclinent tranquillement"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Débouché unique de la filière : commentateur. Jamais élu.",
+   "text": "Le déclin le plus net reste le sien : de 17 % à 7 %.",
    "accent_words": [
-    "Jamais élu"
+    "7 %"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui commence chaque phrase par : c'est foutu.",
+   "text": "Envoie ça au pote qui trouve que tout était mieux avant, même la pluie.",
    "accent_words": [
-    "c'est foutu"
+    "la pluie"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une fac ; fronton « FACULTÉ DE DÉCLINOLOGIE ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · LICENCE DE DÉCLIN",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "FACULTÉ DU DÉCLIN"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,13 +123,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "building",
-    "text3d",
-    "person"
+    "scroll",
+    "tribune",
+    "text3d"
    ],
-   "onscreen_text": "DÉCLINOLOGIE",
-   "comic_action": "Gros plan sur le fronton gravé.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DÉCLINISME ET NOSTALGIE",
+   "comic_action": "Un graphique qui ne fait que descendre derrière le pupitre.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "FACULTÉ DU DÉCLIN"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,43 +152,83 @@
    ],
    "camera": "orbit",
    "set": [
-    "form_stack",
-    "table",
-    "person"
+    "building",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "MANUEL : 500 PAGES",
-   "comic_action": "Orbite : chaque étudiant porte le pavé à deux mains.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "LICENCE DE DÉCLINOLOGIE",
+   "comic_action": "File d'étudiants devant un amphi « DÉCLIN ».",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "manif",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "INSCRIPTION : 1 000"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
+    "screen",
     "person",
-    "text3d"
+    "tripod_camera"
    ],
-   "onscreen_text": "COURS : DÉCLIN",
-   "comic_action": "Le professeur projette une courbe qui ne fait que descendre.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "DÉBOUCHÉ : COMMENTATEUR",
+   "comic_action": "Des jeunes diplômés commentent un pont qui s'effrite.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "DIPLÔMÉ"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
+    "road",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "BONUS : 1965",
-   "comic_action": "Travelling : copies qui commencent toutes par « Jadis ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PONTS : EN DÉCLIN",
+   "comic_action": "Un pont penche doucement, sous les applaudissements.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TRAVAUX : AUCUN"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +237,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
+    "screen",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "DÉBOUCHÉ : COMMENTATEUR",
-   "comic_action": "Plan large : les diplômés sortent tous avec un micro, aucun avec une écharpe tricolore.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "17 % → 7 %",
+   "comic_action": "Une courbe plonge sur l'écran du campus.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "COURBE : EN BAISSE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,77 +270,78 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique jette sa toque de diplômé, elle retombe.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui commence chaque phrase par : c'est foutu."
+  "text": "Envoie ça au pote qui trouve que tout était mieux avant, même la pluie."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 78,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Le manuel de référence : Le Suicide français, plus de cinq cents pages.",
+   "text": "Son grand thème : le déclin. Une fondation parle de déclinisme et de nostalgie.",
    "claim_type": "fait_public",
-   "source": "https://actualitte.com/article/46032/numerique/le-suicide-francais-d-039-eric-zemmour-n-039-en-finit-pas-de-declencher-des-remous",
-   "note": "Le Suicide français (2014) : plus de 500 pages, best-seller."
+   "source": "https://www.jean-jaures.org/publication/declinisme-et-nostalgie-un-cocktail-francais/",
+   "note": "Fondation Jean-Jaurès : « Déclinisme et nostalgie, un cocktail français »."
   },
   {
-   "text": "Un blogueur a résumé l'ambiance : du déclin jusqu'à la nausée.",
+   "text": "Le déclin le plus net reste le sien : de 17 % à 7 %.",
    "claim_type": "fait_public",
-   "source": "https://www.slate.fr/story/215283/blog-sagalovitsch-avec-zemmour-compagnie-on-va-bouffer-declin-francais-nausee",
-   "note": "Blog Slate : « on va bouffer du déclin jusqu'à la nausée » (paraphrasé sans guillemets)."
+   "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
   },
   {
-   "text": "Partiel : prouver que tout était mieux avant. Bonus si avant, c'est 1965.",
+   "text": "Le déclin le plus net reste le sien : de 17 % à 7 %.",
    "claim_type": "fait_public",
-   "source": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
-   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
-  },
-  {
-   "text": "Débouché unique de la filière : commentateur. Jamais élu.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/jean-luc-mano-zemmour-est-passe-du-statut-de-chroniqueur-a-un-homme-politique-qui",
-   "note": "Du chroniqueur au chef de parti ; aucun député après 2022."
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
   {
-   "url": "https://actualitte.com/article/46032/numerique/le-suicide-francais-d-039-eric-zemmour-n-039-en-finit-pas-de-declencher-des-remous",
-   "date": "2014-10",
+   "url": "https://www.jean-jaures.org/publication/declinisme-et-nostalgie-un-cocktail-francais/",
+   "date": "2021",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Le Suicide français (2014) : plus de 500 pages, best-seller."
+   "note": "Fondation Jean-Jaurès : « Déclinisme et nostalgie, un cocktail français »."
   },
   {
-   "url": "https://www.slate.fr/story/215283/blog-sagalovitsch-avec-zemmour-compagnie-on-va-bouffer-declin-francais-nausee",
-   "date": "2021-09",
+   "url": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "date": "2021-10-07",
    "consulted": "2026-11-22",
-   "statut": "opinion",
-   "note": "Blog Slate : « on va bouffer du déclin jusqu'à la nausée » (paraphrasé sans guillemets)."
+   "statut": "fait",
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
   },
   {
-   "url": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
-   "date": "2021-11-30",
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
    "consulted": "2026-11-22",
-   "statut": "opinion rapportée",
-   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/jean-luc-mano-zemmour-est-passe-du-statut-de-chroniqueur-a-un-homme-politique-qui",
-   "date": "2022",
-   "consulted": "2026-11-22",
-   "statut": "fait + opinion",
-   "note": "Du chroniqueur au chef de parti ; aucun député après 2022."
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le déclinisme permanent et Le Suicide français comme manuel. Cadre : l'université de Déclinologie. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Son grand thème : le déclin. Une fondation parle de déclinisme et de nostalgie. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

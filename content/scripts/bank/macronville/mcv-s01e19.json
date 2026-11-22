@@ -3,27 +3,27 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-19",
  "format": "A",
- "title_cover": "Chef de guerre",
+ "title_cover": "La guerre au pigeon",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
   "Mars 2020, face au virus : « Nous sommes en guerre ».",
   "Les électeurs de Macron vont détester celle-là.",
-  "Chef de guerre : l'histoire en trente secondes.",
-  "Dans cette ville, tout le monde vote Macron. Garde-à-vous."
+  "La guerre au pigeon : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Le marché a un état-major."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "« Nous sommes en guerre », disait-il. Bilan : sept Premiers ministres tombés.",
-  "Il voulait une armée. Il a surtout une file de Premiers ministres démissionnaires.",
-  "Fin 2025 : service national volontaire de dix mois. Volontaires recherchés."
+  "Le maire proclame la victoire. Pas d'ennemi, mais une superbe conférence de presse.",
+  "Il a déclaré la guerre. La seule bataille gagnée : celle de l'audience.",
+  "On cherche l'ennemi partout. On embarque un pigeon, puis la météo."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Garde-à-vous.",
+   "text": "Dans cette ville, tout le monde vote Macron. Le marché a un état-major.",
    "accent_words": [
-    "Garde-à-vous"
+    "état-major"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,35 +37,35 @@
   },
   {
    "id": "n3",
-   "text": "En 2017 déjà, aux militaires : « Je suis votre chef ».",
+   "text": "La mairie mobilise : la boulangerie devient caserne, la baguette est rationnée.",
    "accent_words": [
-    "chef"
+    "rationnée"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le chef d'état-major démissionne six jours après. Premier soldat perdu.",
+   "text": "Revue des troupes : trois retraités, un chien et une trottinette.",
    "accent_words": [
-    "perdu"
+    "trottinette"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Fin 2025 : service national volontaire de dix mois. Volontaires recherchés.",
+   "text": "On cherche l'ennemi partout. On embarque un pigeon, puis la météo.",
    "accent_words": [
-    "recherchés"
+    "météo"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "« Nous sommes en guerre », disait-il. Bilan : sept Premiers ministres tombés.",
+   "text": "Le maire proclame la victoire. Pas d'ennemi, mais une superbe conférence de presse.",
    "accent_words": [
-    "tombés"
+    "presse"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
@@ -91,7 +91,7 @@
     "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la ville ; banderole « CHEF DE GUERRE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "comic_action": "Descente sur la ville ; banderole « LA GUERRE AU PIGEON » sur la mairie ; le maire caricaturé salue, sourire figé.",
    "expected_result": "La ville et le thème posés en une image.",
    "actions": [
     {
@@ -105,6 +105,16 @@
      "geste": "clap",
      "visage": "neutre",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LA GUERRE AU PIGEON"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
     }
    ]
   },
@@ -120,8 +130,8 @@
     "person"
    ],
    "onscreen_text": "« NOUS SOMMES EN GUERRE »",
-   "comic_action": "Le maire en posture martiale à la tribune ; derrière lui, un virus en mousse géant.",
-   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "comic_action": "Le maire en posture martiale à la tribune ; un virus en mousse géant flotte derrière lui.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
    "actions": [
     {
      "who": "maire",
@@ -136,6 +146,12 @@
      "visage": "choque",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "MOBILISATION"
+    }
    ]
   },
   {
@@ -145,25 +161,32 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "tribune",
-    "text3d",
+    "shop",
+    "sign",
     "person"
    ],
-   "onscreen_text": "« JE SUIS VOTRE CHEF »",
-   "comic_action": "Il tapote son badge « CHEF » devant une rangée de soldats en carton.",
-   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "onscreen_text": "BOULANGERIE-CASERNE",
+   "comic_action": "Le boulanger en casque distribue une demi-baguette par personne.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "cross_arms",
-     "visage": "fier",
+     "who": "perso",
+     "geste": "bow",
+     "visage": "neutre",
+     "objet": "baguette",
      "quand": 0.0
     },
     {
-     "who": "perso",
-     "geste": "nod",
-     "visage": "neutre",
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "fatigue",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RATION 1/2 BAGUETTE"
     }
    ]
   },
@@ -174,25 +197,31 @@
    ],
    "camera": "orbit",
    "set": [
-    "mairie",
+    "road",
     "person",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "DÉMISSION J+6",
-   "comic_action": "Un général en carton sort de la mairie avec sa valise ; calendrier : J+6.",
-   "expected_result": "Escalade 2 : encore plus gros.",
+   "onscreen_text": "LES TROUPES",
+   "comic_action": "Revue des troupes : trois retraités, un chien et une trottinette, au garde-à-vous.",
+   "expected_result": "Conséquence : ça dégénère.",
    "actions": [
     {
-     "who": "perso",
-     "geste": "wave",
-     "visage": "blase",
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
      "quand": 0.0
     },
     {
-     "who": "maire",
-     "geste": "shake",
-     "visage": "choque",
-     "quand": 0.5
+     "who": "perso",
+     "geste": "nod",
+     "visage": "fatigue",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "SOLDAT"
     }
    ]
   },
@@ -203,25 +232,31 @@
    ],
    "camera": "descend",
    "set": [
+    "lamp",
     "sign",
-    "person",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "VOLONTAIRES RECHERCHÉS",
-   "comic_action": "Une affiche « SERVICE VOLONTAIRE 10 MOIS » ; un seul habitant s'approche, puis repart.",
-   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "onscreen_text": "ENNEMI : LE PIGEON",
+   "comic_action": "Un pigeon est escorté par deux agents ; un nuage reçoit une contravention.",
+   "expected_result": "Pire conséquence : l'absurde total.",
    "actions": [
     {
-     "who": "perso",
-     "geste": "shrug",
-     "visage": "blase",
+     "who": "foule",
+     "geste": "point",
+     "visage": "colere",
      "quand": 0.0
     },
     {
-     "who": "maire",
-     "geste": "point",
-     "visage": "sourire_pro",
-     "quand": 0.3
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "L'ENNEMI ÉCOUTE"
     }
    ]
   },
@@ -232,25 +267,32 @@
    ],
    "camera": "closeup",
    "set": [
-    "facade_row",
-    "text3d",
-    "person"
+    "tribune",
+    "ring_light",
+    "tripod_camera"
    ],
-   "onscreen_text": "7 TOMBÉS AU FRONT",
-   "comic_action": "Sept chaises renversées devant la mairie, chacune étiquetée « PREMIER MINISTRE ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "VICTOIRE (EN DIRECT)",
+   "comic_action": "Le maire proclame la victoire devant trois caméras ; personne ne sait contre qui.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "bow",
-     "visage": "sourire_pro",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro",
      "quand": 0.0
     },
     {
      "who": "foule",
-     "geste": "facepalm",
-     "visage": "choque",
-     "quand": 0.5
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "VICTOIRE"
     }
    ]
   },
@@ -267,7 +309,7 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : la posture de chef de guerre (« Nous sommes en guerre », « Je suis votre chef »).",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « Nous sommes en guerre » (2020) : la ville se mobilise, sans ennemi.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -282,6 +324,12 @@
      "visage": "sourire_pro",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LA GUERRE AU PIGEON"
+    }
    ]
   }
  ],
@@ -294,37 +342,13 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 79,
+ "word_count": 84,
  "claims": [
   {
    "text": "« Nous sommes en guerre »",
    "claim_type": "citation_exacte",
    "source": "https://uk.ambafrance.org/We-are-at-war-with-COVID-19-says-President-in-national-broadcast",
    "note": "« Nous sommes en guerre » (adresse du 16/03/2020), contre le virus."
-  },
-  {
-   "text": "« Je suis votre chef »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.publicsenat.fr/actualites/politique/je-suis-votre-chef-fermete-autoritarisme-ou-aveu-de-faiblesse-76010",
-   "note": "« Je suis votre chef » (hôtel de Brienne, 13/07/2017), au sujet du chef d'état-major des armées."
-  },
-  {
-   "text": "Le chef d'état-major démissionne six jours après. Premier soldat perdu.",
-   "claim_type": "fait_public",
-   "source": "https://www.lalibre.be/international/2017/07/19/historique-en-desaccord-budgetaire-avec-le-president-de-la-republique-le-chef-detat-major-demissionne-Q53O7ALNCFHJ5P7RUY7OD6PZPY/",
-   "note": "Le chef d'état-major des armées démissionne le 19/07/2017 après un désaccord budgétaire."
-  },
-  {
-   "text": "Fin 2025 : service national volontaire de dix mois. Volontaires recherchés.",
-   "claim_type": "fait_public",
-   "source": "https://www.elysee.fr/emmanuel-macron/2025/11/27/deplacement-au-sein-de-la-27e-brigade-dinfanterie-de-montagne-de-varces",
-   "note": "Annonce d'un service national militaire volontaire de dix mois (Varces)."
-  },
-  {
-   "text": "« Nous sommes en guerre »",
-   "claim_type": "citation_exacte",
-   "source": "https://uk.ambafrance.org/We-are-at-war-with-COVID-19-says-President-in-national-broadcast",
-   "note": "« Nous sommes en guerre » (adresse du 16/03/2020), contre le virus. Sept Premiers ministres depuis 2017 (Philippe, Castex, Borne, Attal, Barnier, Bayrou, Lecornu) ; record de Mitterrand égalé selon la presse."
   }
  ],
  "sources": [
@@ -334,36 +358,8 @@
    "consulted": "2026-11-22",
    "statut": "citation exacte",
    "note": "« Nous sommes en guerre » (adresse du 16/03/2020), contre le virus."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/je-suis-votre-chef-fermete-autoritarisme-ou-aveu-de-faiblesse-76010",
-   "date": "2017-07",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "« Je suis votre chef » (hôtel de Brienne, 13/07/2017), au sujet du chef d'état-major des armées."
-  },
-  {
-   "url": "https://www.lalibre.be/international/2017/07/19/historique-en-desaccord-budgetaire-avec-le-president-de-la-republique-le-chef-detat-major-demissionne-Q53O7ALNCFHJ5P7RUY7OD6PZPY/",
-   "date": "2017-07-19",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Le chef d'état-major des armées démissionne le 19/07/2017 après un désaccord budgétaire."
-  },
-  {
-   "url": "https://www.elysee.fr/emmanuel-macron/2025/11/27/deplacement-au-sein-de-la-27e-brigade-dinfanterie-de-montagne-de-varces",
-   "date": "2025-11-27",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Annonce d'un service national militaire volontaire de dix mois (Varces)."
-  },
-  {
-   "url": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
-   "date": "2025-10",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Sept Premiers ministres depuis 2017 (Philippe, Castex, Borne, Attal, Barnier, Bayrou, Lecornu) ; record de Mitterrand égalé selon la presse."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — la posture de chef de guerre (« Nous sommes en guerre », « Je suis votre chef »). Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « Nous sommes en guerre » (2020) : la ville se mobilise, sans ennemi. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

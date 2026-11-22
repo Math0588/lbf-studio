@@ -4,31 +4,31 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Distributeur calibré",
- "anchor": "critique d'un candidat aux réponses calibrées, lisses et creuses (chronique Libération) : le distributeur de billets répond pareil.",
+ "title_cover": "Distributeurs de réponses",
+ "anchor": "les réponses calibrées et creuses",
  "meme_key": "CREUX",
- "situation": "Distributeur calibré",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "situation": "Distributeurs de réponses",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, le distributeur de billets répond comme lui.",
-  "Bardellaville : élocution parfaite, compte à découvert.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : distributeur calibré."
+  "Dans cette ville, tout le monde vote Bardella. Réponses en distributeur.",
+  "Bardellaville : une réponse calibrée pour deux euros.",
+  "Ici, le distributeur dit excellente question.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Distributeurs de réponses."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ton compte reste à découvert, mais l'élocution est parfaite.",
-  "Tu insistes : excellente question, merci de l'avoir posée. Ticket vide.",
-  "Tu demandes cinquante euros : il te parle de pouvoir d'achat."
+  "Bardella encaisse la monnaie, et répond : « Nous verrons ».",
+  "Il encaisse, et répond nous verrons.",
+  "Les distributeurs se multiplient. Les pièces, elles, disparaissent."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Réponses calibrées.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Réponses en distributeur.",
    "accent_words": [
-    "calibrées"
+    "distributeur"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -36,47 +36,47 @@
    "id": "n2",
    "text": "Une chronique le décrit en candidat aux réponses calibrées et creuses.",
    "accent_words": [
-    "creuses"
+    "calibrées"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Son livre promet cent jours, sans méthode détaillée. Le distributeur aussi.",
+   "text": "Alors la mairie installe des distributeurs de réponses à chaque coin de rue.",
    "accent_words": [
-    "sans méthode"
+    "coin de rue"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Tu demandes cinquante euros : il te parle de pouvoir d'achat.",
+   "text": "Tu mets une pièce, tu demandes un logement. Il sort : excellente question.",
    "accent_words": [
-    "pouvoir d'achat"
+    "excellente question"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Tu insistes : excellente question, merci de l'avoir posée. Ticket vide.",
+   "text": "Les distributeurs se multiplient. Les pièces, elles, disparaissent.",
    "accent_words": [
-    "Ticket vide"
+    "disparaissent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ton compte reste à découvert, mais l'élocution est parfaite.",
+   "text": "Bardella encaisse la monnaie, et répond : « Nous verrons ».",
    "accent_words": [
-    "parfaite"
+    "verrons"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui le trouve clair sans pouvoir dire sur quoi.",
+   "text": "Envoie ça au pote qui le trouve clair sans savoir sur quoi.",
    "accent_words": [
-    "sur quoi"
+    "quoi"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -94,9 +94,26 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; un distributeur de billets doré encastré dans la façade.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "DISTRIBUTEUR DE RÉPONSES",
+   "comic_action": "Descente sur la ville ; banderole « DISTRIBUTEUR DE RÉPONSES » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,78 +122,146 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
+    "studio_light",
     "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "CALIBRÉ · CREUX",
-   "comic_action": "Écran : une réponse sort d'un moule, puis sonne creux.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "CALIBRÉES ET CREUSES",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « CALIBRÉES ET CREUSES ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "sourire_pro",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "form_stack",
+    "road",
+    "sign",
     "person",
-    "text3d"
+    "traffic_light"
    ],
-   "onscreen_text": "MÉTHODE : ——",
-   "comic_action": "Un livre ouvert sur une page blanche, posé contre le distributeur.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "UN DISTRIBUTEUR PAR RUE",
+   "comic_action": "Dans la rue, panneau « UN DISTRIBUTEUR PAR RUE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RÉPONSE : 2 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "shop",
+    "screen",
+    "text3d",
     "person",
-    "sign",
-    "text3d"
+    "studio_light"
    ],
-   "onscreen_text": "RETRAIT : DISCOURS",
-   "comic_action": "Un habitant tape son code ; l'écran affiche « POUVOIR D'ACHAT ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "EXCELLENTE QUESTION",
+   "comic_action": "Écran géant : « EXCELLENTE QUESTION ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "objet": "billets",
+     "geste": "facepalm"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "table",
     "screen",
-    "sign",
-    "building"
+    "text3d",
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "TICKET : VIDE",
-   "comic_action": "Le distributeur crache un ticket blanc, poliment.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PIÈCES DISPARUES",
+   "comic_action": "Compteur géant sur l'écran : « PIÈCES DISPARUES ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie"
+    "screen"
    ],
-   "onscreen_text": "SOLDE : -300 € · DICTION : 20/20",
-   "comic_action": "Un relevé bancaire tamponné « BIEN DIT ». Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "« NOUS VERRONS »",
+   "comic_action": "Plan final, tenir une seconde : « « NOUS VERRONS » ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cheer",
+     "visage": "content",
+     "objet": "billets"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -190,21 +275,30 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt hoche la tête devant un discours muet.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE BLUFFÉ",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE BLUFFÉ ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui le trouve clair sans pouvoir dire sur quoi."
+  "text": "Envoie ça au pote qui le trouve clair sans savoir sur quoi."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 76,
+ "word_count": 79,
  "claims": [
   {
    "segment": "n2",
@@ -214,11 +308,11 @@
    "note": "Candidat aux réponses calibrées et creuses."
   },
   {
-   "segment": "n3",
-   "text": "Son livre promet cent jours, sans méthode détaillée. Le distributeur aussi.",
-   "claim_type": "fait_public",
-   "source": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
-   "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
+   "segment": "n6",
+   "text": "Bardella encaisse la monnaie, et répond : « Nous verrons ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.boursorama.com/bourse/actualites/retraites-jordan-bardella-n-est-plus-si-presse-d-abroger-la-reforme-de-macron-101b949b9967c92520b3be1c9ef2c30f",
+   "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
   }
  ],
  "sources": [
@@ -230,13 +324,13 @@
    "note": "Candidat aux réponses calibrées et creuses."
   },
   {
-   "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
-   "date": "2026-11-04",
+   "url": "https://www.boursorama.com/bourse/actualites/retraites-jordan-bardella-n-est-plus-si-presse-d-abroger-la-reforme-de-macron-101b949b9967c92520b3be1c9ef2c30f",
+   "date": "2024-06-12",
    "consulted": "2026-11-22",
-   "statut": "fait + appréciation AFP",
-   "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
+   "statut": "fait + citation exacte",
+   "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = critique d'un candidat aux réponses calibrées, lisses et creuses (chronique Libération) : le distributeur de billets répond pareil. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = les réponses calibrées et creuses. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

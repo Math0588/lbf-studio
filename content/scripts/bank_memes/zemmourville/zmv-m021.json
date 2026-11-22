@@ -4,69 +4,69 @@
  "synopsis_id": "zmv-m021-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Le colis officialisé",
- "anchor": "candidature 2027 annoncée en septembre, officialisée en novembre.",
+ "title_cover": "Colis livré deux fois",
+ "anchor": "Candidature 2026 annoncée deux fois : la Poste livre chaque colis deux fois.",
  "meme_id": "ZC",
- "situation": "la livraison",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : les colis s'annoncent avant d'arriver.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, la livraison a une conférence de presse.",
-  "Zemmourville : le suivi de colis en trois épisodes."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien reçoit deux fois.",
+  "Zemmour a annoncé sa candidature deux fois. La Poste livre tout deux fois.",
+  "Les zemmouriens vont me détester.",
+  "Bienvenue à Zemmourville : colis livré deux fois.",
+  "Zemmour en une vidéo : colis livré deux fois."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le colis est livré en trois temps. Le contenu : environ 4 %.",
-  "Trois avis de passage, un colis léger.",
-  "Livré officiellement, ouvert à 4 %."
+  "Deux annonces, un seul contenu : environ 4 %.",
+  "Deux annonces, un seul contenu : environ 4 %.",
+  "Les boîtes aux lettres débordent de doublons."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Livraison officielle.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien reçoit deux fois.",
    "accent_words": [
-    "Livraison officielle"
+    "deux fois"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sa candidature 2027 : annoncée en septembre, officialisée en novembre.",
+   "text": "Sa candidature 2027 : annoncée en septembre 2026, officialisée en novembre.",
    "accent_words": [
-    "officialisée"
+    "en novembre"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, le colis fait pareil. D'abord il arrive. Puis officiellement.",
+   "text": "La Poste fait pareil : chaque colis est livré deux fois.",
    "accent_words": [
-    "officiellement"
+    "deux fois"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Avis de passage : votre colis est candidat à la livraison.",
+   "text": "D'abord il arrive. Puis il arrive officiellement, avec tampon.",
    "accent_words": [
-    "candidat"
+    "avec tampon"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Deuxième avis : la livraison sera officialisée au 20 h.",
+   "text": "Les boîtes aux lettres débordent de doublons.",
    "accent_words": [
-    "au 20 h"
+    "de doublons"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le colis est livré en trois temps. Le contenu : environ 4 %.",
+   "text": "Deux annonces, un seul contenu : environ 4 %.",
    "accent_words": [
     "environ 4 %"
    ],
@@ -74,9 +74,9 @@
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui t'annonce son arrivée trois fois avant de venir.",
+   "text": "Envoie ça au pote qui t'envoie deux fois le même vocal.",
    "accent_words": [
-    "trois fois"
+    "même vocal"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "car",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une camionnette de livraison à drapeaux.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · COLIS LIVRÉ DEUX FOIS",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "LIVRÉ, PUIS LIVRÉ"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,58 +128,111 @@
    ],
    "camera": "closeup",
    "set": [
-    "car",
-    "text3d",
-    "person"
+    "screen",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "SEPT. → NOV.",
-   "comic_action": "Gros plan sur deux étiquettes de colis, dates différentes.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "ANNONCÉE · PUIS OFFICIELLE",
+   "comic_action": "Deux plateaux télé, deux dates, la même annonce.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LIVRÉ, PUIS LIVRÉ"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "road",
-    "car",
-    "person"
+    "building",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "LIVRÉ (OFFICIEUX)",
-   "comic_action": "Travelling : le livreur dépose le colis, le reprend, le redépose.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "COLIS × 2",
+   "comic_action": "Le facteur sonne deux fois avec le même carton.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "LIVRAISON : 2 FOIS"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "sign",
-    "text3d",
+    "building",
+    "form_stack",
     "person"
    ],
-   "onscreen_text": "AVIS : CANDIDAT",
-   "comic_action": "Un avis de passage plié en forme de profession de foi.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LIVRÉ OFFICIELLEMENT",
+   "comic_action": "Le facteur tamponne un colis déjà ouvert.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "FACTEUR"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "screen",
-    "car",
-    "text3d"
+    "building",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "OFFICIALISÉ AU 20 H",
-   "comic_action": "Orbite : une télé sur le toit de la camionnette diffuse le flash spécial.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "DOUBLONS PARTOUT",
+   "comic_action": "Une avalanche de colis identiques dans le hall.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "STOCK : × 2"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +241,26 @@
    ],
    "camera": "descend",
    "set": [
-    "car",
-    "road",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
    "onscreen_text": "CONTENU : 4 %",
-   "comic_action": "Plan large : le colis s'ouvre, minuscule objet au fond.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "comic_action": "On ouvre le colis : un petit « 4 % » dedans.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "4 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,36 +274,50 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique signe le troisième bon.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui t'annonce son arrivée trois fois avant de venir."
+  "text": "Envoie ça au pote qui t'envoie deux fois le même vocal."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 77,
+ "word_count": 72,
  "claims": [
   {
-   "text": "Sa candidature 2027 : annoncée en septembre, officialisée en novembre.",
+   "text": "Sa candidature 2027 : annoncée en septembre 2026, officialisée en novembre.",
    "claim_type": "fait_public",
    "source": "https://www.parismatch.be/actualites/monde/2026/09/18/eric-zemmour-confirme-sa-candidature-a-lelection-presidentielle-francaise-5CKEL6PZ4BDONOUKVHMMCG65NU/",
-   "note": "Septembre 2026 sur BFMTV : candidat, mais pas encore de déclaration officielle. / Candidature officialisée au 20 h de TF1 le 10/11/2026."
+   "note": "Septembre 2026 sur BFMTV : candidat, mais pas encore de déclaration officielle."
   },
   {
-   "text": "Deuxième avis : la livraison sera officialisée au 20 h.",
+   "text": "Sa candidature 2027 : annoncée en septembre 2026, officialisée en novembre.",
    "claim_type": "fait_public",
    "source": "https://fr.euronews.com/2026/11/10/eric-zemmour-annonce-sa-candidature-a-la-presidentielle",
    "note": "Candidature officialisée au 20 h de TF1 le 10/11/2026."
   },
   {
-   "text": "Le colis est livré en trois temps. Le contenu : environ 4 %.",
+   "text": "Deux annonces, un seul contenu : environ 4 %.",
    "claim_type": "fait_public",
    "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
    "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
@@ -239,10 +342,10 @@
    "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
    "date": "2026-09",
    "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
+   "statut": "fait",
    "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : candidature 2027 annoncée en septembre, officialisée en novembre. Cadre : la livraison. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Sa candidature 2027 : annoncée en septembre 2026, officialisée en novembre. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

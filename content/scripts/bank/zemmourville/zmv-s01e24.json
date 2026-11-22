@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-19",
  "format": "A",
- "title_cover": "Retour aux pavés",
+ "title_cover": "Retour en 1965",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : les travaux remontent le temps.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, on remplace l'asphalte par des pavés, par principe.",
-  "Zemmourville : le chantier de la nostalgie."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien a 60 ans de retard.",
+  "L'annonce de Zemmour sentait 1965, disaient ses rivaux. La ville y est retournée.",
+  "Celle-là, Zemmour ne la partagera pas.",
+  "Bienvenue à Zemmourville : retour en 1965.",
+  "Zemmour en une vidéo : retour en 1965."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La route est magnifique, comme en 1850. Les livreurs, un peu moins.",
-  "Route de 1850, retards de 2026.",
-  "Le progrès est démonté, pavé par pavé."
+  "En 1965, personne ne connaissait les sondages à 4 %. Lui, si.",
+  "En 1965, personne ne connaissait les sondages à 4 %. Lui, si.",
+  "Les jeunes demandent le wifi. On leur tend une carte postale."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Travaux d'époque.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien a 60 ans de retard.",
    "accent_words": [
-    "Travaux d'époque"
+    "de retard"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, les travaux ne modernisent pas. Ils remontent le temps.",
+   "text": "En 2021, ses rivaux jugent son annonce digne de 1965.",
    "accent_words": [
-    "remontent le temps"
+    "de 1965"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Phase un : on arrache l'asphalte pour remettre des pavés.",
+   "text": "La ville le prend pour un compliment : elle repasse en 1965.",
    "accent_words": [
-    "des pavés"
+    "elle repasse en 1965"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ses rivaux le disaient coincé en 1965. Ici, c'est la date du chantier.",
+   "text": "Télé à une chaîne, téléphone à cadran. Le Minitel ? Trop moderne.",
    "accent_words": [
-    "1965"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n5",
-   "text": "Une fondation parle d'un cocktail de déclinisme et de nostalgie. C'est le budget voirie.",
-   "accent_words": [
-    "budget voirie"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n6",
-   "text": "La route est magnifique, comme en 1850. Les livreurs, un peu moins.",
-   "accent_words": [
-    "Les livreurs"
+    "Trop moderne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui dit que c'était mieux sans GPS.",
+   "id": "n5",
+   "text": "Les jeunes demandent le wifi. On leur tend une carte postale.",
    "accent_words": [
-    "sans GPS"
+    "carte postale"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "En 1965, personne ne connaissait les sondages à 4 %. Lui, si.",
+   "accent_words": [
+    "Lui, si"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui vit encore dans les années 60.",
+   "accent_words": [
+    "années 60"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,58 +85,121 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un chantier : on arrache l'asphalte.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · RETOUR EN 1965",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "BIENVENUE EN 1965"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
-    "person",
-    "sign"
+    "screen",
+    "text3d",
+    "tribune"
    ],
-   "onscreen_text": "TRAVAUX : MARCHE ARRIÈRE",
-   "comic_action": "Travelling : un ouvrier démonte un abribus pour poser un abreuvoir.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DIGNE DE 1965",
+   "comic_action": "Une vieille télé diffuse l'annonce en grain d'époque.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BIENVENUE EN 1965"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "road",
+    "facade_row",
     "person",
-    "text3d"
+    "sign"
    ],
-   "onscreen_text": "PHASE 1 : PAVÉS",
-   "comic_action": "Gros plan : un pavé posé avec émotion, larme à l'œil.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "ANNÉE OFFICIELLE : 1965",
+   "comic_action": "Les façades se couvrent de réclames d'époque.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CALENDRIER : 1965"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "sign",
-    "road",
-    "text3d"
+    "screen",
+    "table",
+    "person"
    ],
-   "onscreen_text": "CHANTIER : 1965",
-   "comic_action": "Orbite autour d'un panneau de chantier daté de 1965.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "MINITEL : TROP MODERNE",
+   "comic_action": "Un habitant compose un numéro sur un cadran géant.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "RÉTRO"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -145,13 +208,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
+    "bench",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "BUDGET : NOSTALGIE",
-   "comic_action": "Un budget municipal en camembert : une seule part, « NOSTALGIE ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "WIFI : CARTE POSTALE",
+   "comic_action": "Un ado reçoit une carte postale à la place du code wifi.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "WIFI : NON"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +237,26 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "car",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "ROUTE 1850",
-   "comic_action": "Plan large : une camionnette de livraison rebondit sur les pavés, colis qui volent.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "2026 : 4 %",
+   "comic_action": "Une télé d'époque affiche « 4 % » en sépia.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "4 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,33 +270,47 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique se perd sur la route pavée.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui dit que c'était mieux sans GPS."
+  "text": "Envoie ça au pote qui vit encore dans les années 60."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 80,
+ "word_count": 84,
  "claims": [
   {
-   "text": "Ses rivaux le disaient coincé en 1965. Ici, c'est la date du chantier.",
+   "text": "En 2021, ses rivaux jugent son annonce digne de 1965.",
    "claim_type": "fait_public",
    "source": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
-   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
+   "note": "Adversaires : annonce jugée « momifiée », digne de la présidentielle de 1965 (paraphrase)."
   },
   {
-   "text": "Une fondation parle d'un cocktail de déclinisme et de nostalgie. C'est le budget voirie.",
+   "text": "En 1965, personne ne connaissait les sondages à 4 %. Lui, si.",
    "claim_type": "fait_public",
-   "source": "https://www.jean-jaures.org/publication/declinisme-et-nostalgie-un-cocktail-francais/",
-   "note": "Fondation Jean-Jaurès : « Déclinisme et nostalgie, un cocktail français »."
+   "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
+   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "sources": [
@@ -214,17 +318,17 @@
    "url": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
    "date": "2021-11-30",
    "consulted": "2026-11-22",
-   "statut": "opinion rapportée",
-   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
+   "statut": "fait",
+   "note": "Adversaires : annonce jugée « momifiée », digne de la présidentielle de 1965 (paraphrase)."
   },
   {
-   "url": "https://www.jean-jaures.org/publication/declinisme-et-nostalgie-un-cocktail-francais/",
-   "date": "2021",
+   "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
+   "date": "2026-09",
    "consulted": "2026-11-22",
-   "statut": "analyse",
-   "note": "Fondation Jean-Jaurès : « Déclinisme et nostalgie, un cocktail français »."
+   "statut": "fait",
+   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : déclinisme et nostalgie : la ville remonte le temps, pavé par pavé. Cadre : les travaux de voirie. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2021, ses rivaux jugent son annonce digne de 1965. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-12",
  "format": "B",
- "title_cover": "Ben voyons, plombier",
+ "title_cover": "Zéro élu",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le plombier répond ben voyons.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, toute fuite se règle par une formule.",
-  "Zemmourville : ben voyons remplace le devis."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien siège.",
+  "Le parti de Zemmour n'a aucun député. La ville a un conseil fidèle : zéro élu.",
+  "Celle-là, Zemmour ne la partagera pas.",
+  "Bienvenue à Zemmourville : zéro élu.",
+  "Zemmour en une vidéo : zéro élu."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ben voyons répond à tout. Sauf à la question : et le programme ?",
-  "Ben voyons, oui. Le robinet, non.",
-  "Une formule pour tout, une solution pour rien."
+  "Zéro député à l'Assemblée, zéro élu à la mairie : enfin la cohérence.",
+  "Zéro député, zéro élu : enfin la cohérence.",
+  "Le budget est voté par le chien, seul présent."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Ben voyons.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien siège.",
    "accent_words": [
-    "Ben voyons"
+    "Même le chien siège"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son tic le plus connu : ben voyons. Ses fans en ont fait un slogan.",
+   "text": "Après les législatives 2022, son parti n'a aucun député.",
    "accent_words": [
-    "un slogan"
+    "aucun député"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, le plombier répond pareil. Une fuite ? Ben voyons.",
+   "text": "La ville se dote d'un conseil municipal fidèle : zéro élu.",
    "accent_words": [
-    "Une fuite"
+    "zéro élu"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "La tache au plafond grandit. Ben voyons.",
+   "text": "Les votes se font à zéro voix contre zéro. Égalité parfaite.",
    "accent_words": [
-    "grandit"
+    "Égalité parfaite"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "L'eau monte. Le plombier, ancien chroniqueur télé, commente la fuite.",
+   "text": "Le budget est voté par le chien, seul présent.",
    "accent_words": [
-    "commente"
+    "seul présent"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ben voyons répond à tout. Sauf à la question : et le programme ?",
+   "text": "Zéro député à l'Assemblée, zéro élu à la mairie : enfin la cohérence.",
    "accent_words": [
-    "le programme"
+    "enfin la cohérence"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui répond ben voyons à tous tes messages.",
+   "text": "Envoie ça au pote qui organise une soirée où personne ne vient.",
    "accent_words": [
-    "ben voyons"
+    "ne vient"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un immeuble : de l'eau coule du balcon.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · ZÉRO ÉLU",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "ZÉRO ÉLU, ZÉRO SOUCI"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,58 +123,110 @@
    ],
    "camera": "closeup",
    "set": [
-    "banner",
+    "screen",
     "text3d",
-    "person"
+    "sign"
    ],
-   "onscreen_text": "BEN VOYONS",
-   "comic_action": "Une banderole « BEN VOYONS » sur la camionnette du plombier.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "DÉPUTÉS : 0",
+   "comic_action": "Un hémicycle miniature, tous les sièges vides.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ZÉRO ÉLU, ZÉRO SOUCI"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "person",
-    "text3d",
-    "sign"
+    "mairie",
+    "table",
+    "person"
    ],
-   "onscreen_text": "FUITE ? BEN VOYONS",
-   "comic_action": "Le plombier regarde la fuite, hausse les épaules, ne bouge pas.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CONSEIL : 0 ÉLU",
+   "comic_action": "Grande table du conseil, chaises vides.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "QUORUM : 0"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "building",
-    "person",
+    "table",
+    "form_stack",
     "text3d"
    ],
-   "onscreen_text": "TACHE : +200 %",
-   "comic_action": "La caméra glisse d'étage en étage : la tache s'étend sur tout l'immeuble.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "0 – 0",
+   "comic_action": "Une urne vide qu'on secoue pour vérifier.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RÉSULTAT : 0 – 0"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
+    "table",
     "person",
-    "tripod_camera",
-    "studio_light"
+    "text3d"
    ],
-   "onscreen_text": "CHRONIQUE DE LA FUITE",
-   "comic_action": "Orbite : le plombier face caméra, de l'eau jusqu'aux genoux, en pleine chronique.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "BUDGET : VOTÉ PAR LE CHIEN",
+   "comic_action": "Le chien en t-shirt pose sa patte sur un tampon.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CONSEILLER"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +235,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "text3d",
-    "person"
+    "mairie",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "PROGRAMME : ?",
-   "comic_action": "Plan large : l'immeuble est une fontaine, le plombier sourit.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "COHÉRENCE : 100 %",
+   "comic_action": "Le maire seul sur les marches, salle vide derrière.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "FIDÈLE À ZÉRO"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,51 +268,52 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique ferme lui-même le robinet.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui répond ben voyons à tous tes messages."
+  "text": "Envoie ça au pote qui organise une soirée où personne ne vient."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 78,
+ "word_count": 77,
  "claims": [
   {
-   "text": "Son tic le plus connu : ben voyons. Ses fans en ont fait un slogan.",
+   "text": "Après les législatives 2022, son parti n'a aucun député.",
    "claim_type": "fait_public",
-   "source": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
-   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
-  },
-  {
-   "text": "L'eau monte. Le plombier, ancien chroniqueur télé, commente la fuite.",
-   "claim_type": "fait_public",
-   "source": "https://www.slate.fr/story/199107/eric-zemmour-cnews-face-a-linfo-emission-transformation-paysage-mediatique-succes-avenir-medias",
-   "note": "Chroniqueur quotidien de Face à l'info (CNews, 2019-2021), « le polémiste »."
+   "source": "https://www.publicsenat.fr/actualites/politique/jean-luc-mano-zemmour-est-passe-du-statut-de-chroniqueur-a-un-homme-politique-qui",
+   "note": "Du chroniqueur au chef de parti ; aucun député après les législatives 2022."
   }
  ],
  "sources": [
   {
-   "url": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
-   "date": "2022-02-02",
+   "url": "https://www.publicsenat.fr/actualites/politique/jean-luc-mano-zemmour-est-passe-du-statut-de-chroniqueur-a-un-homme-politique-qui",
+   "date": "2022",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
-  },
-  {
-   "url": "https://www.slate.fr/story/199107/eric-zemmour-cnews-face-a-linfo-emission-transformation-paysage-mediatique-succes-avenir-medias",
-   "date": "2021-01",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Chroniqueur quotidien de Face à l'info (CNews, 2019-2021), « le polémiste »."
+   "note": "Du chroniqueur au chef de parti ; aucun député après les législatives 2022."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « Ben voyons », tic de langage devenu slogan. Cadre : la fuite d'eau. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Après les législatives 2022, son parti n'a aucun député. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

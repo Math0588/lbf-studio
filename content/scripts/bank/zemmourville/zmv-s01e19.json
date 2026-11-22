@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-14",
  "format": "A",
- "title_cover": "Service inélégant",
+ "title_cover": "Appel du 18 juin, bis",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le serveur a un geste pour chaque client.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, l'élégance française a un doigt de trop.",
-  "Zemmourville : le restaurant où l'accueil est inélégant, mais assumé."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien est solennel.",
+  "Zemmour a pastiché l'appel du 18 juin. La ville annonce tout pareil.",
+  "Les zemmouriens vont me détester.",
+  "Bienvenue à Zemmourville : appel du 18 juin, bis.",
+  "Zemmour en une vidéo : appel du 18 juin, bis."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ici, la grandeur de la France se mesure à un doigt.",
-  "Grandeur de la France, finesse de la réplique : un doigt.",
-  "Le geste a fait le tour du monde. Le programme, moins."
+  "Un appel historique pour un résultat de 7 %.",
+  "Un appel historique pour un résultat de 7 %.",
+  "Plus personne n'ose proposer un apéro sans micro d'époque."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Service compris.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien est solennel.",
    "accent_words": [
-    "Service compris"
+    "est solennel"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Novembre 2021, à Marseille, il répond à une passante par un doigt d'honneur.",
+   "text": "En 2021, il annonce sa candidature façon appel du 18 juin, micro d'époque.",
    "accent_words": [
-    "doigt d'honneur"
+    "micro d'époque"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Il a reconnu ensuite un geste inélégant. Ici, c'est la carte de visite du restaurant.",
+   "text": "La ville fait pareil : chaque annonce devient un appel solennel.",
    "accent_words": [
-    "inélégant"
+    "appel solennel"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le serveur salue chaque client de la même façon. Élégance d'époque.",
+   "text": "Appel du 18 pour le marché. Appel du 19 pour les poubelles.",
    "accent_words": [
-    "Élégance d'époque"
+    "les poubelles"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le plat de la veille est réchauffé. La rancune aussi.",
+   "text": "Plus personne n'ose proposer un apéro sans micro d'époque.",
    "accent_words": [
-    "La rancune"
+    "micro d'époque"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ici, la grandeur de la France se mesure à un doigt.",
+   "text": "Un appel historique pour un résultat de 7 %.",
    "accent_words": [
-    "un doigt"
+    "7 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui répond aux critiques avec un emoji.",
+   "text": "Envoie ça au pote qui annonce ses vacances comme un discours historique.",
    "accent_words": [
-    "un emoji"
+    "discours historique"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "shop",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un restaurant à nappes à carreaux ; enseigne « L'ÉLÉGANCE ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · APPEL DU 18 JUIN, BIS",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "APPEL SOLENNEL"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,13 +123,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "person",
-    "text3d",
-    "sign"
+    "router_lectern",
+    "scroll",
+    "text3d"
    ],
-   "onscreen_text": "MARSEILLE, 2021",
-   "comic_action": "Une photo d'archive floutée encadrée au-dessus du bar, légende « NOTRE FONDATEUR ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PASTICHE DU 18 JUIN",
+   "comic_action": "Le maire lit devant une bibliothèque, micro ancien.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "APPEL SOLENNEL"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,13 +152,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "table",
-    "sign",
+    "mairie",
+    "router_lectern",
     "person"
    ],
-   "onscreen_text": "CARTE DE VISITE",
-   "comic_action": "Orbite : sur chaque table, une carte de visite en forme de main.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "ANNONCES SOLENNELLES",
+   "comic_action": "Un agent annonce la fermeture du parc d'une voix grave.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "bow",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "APPEL N° 1 214"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -130,13 +181,27 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "person",
-    "table",
-    "text3d"
+    "bin",
+    "router_lectern",
+    "person"
    ],
-   "onscreen_text": "ACCUEIL MAISON",
-   "comic_action": "Travelling : le serveur lève la main vers chaque table, la caméra coupe juste avant.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "APPEL DU 19 : POUBELLES",
+   "comic_action": "Discours grave devant une benne à ordures.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "arms_up",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "SOLENNEL"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -146,12 +211,26 @@
    "camera": "closeup",
    "set": [
     "table",
-    "text3d",
-    "person"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "PLAT DE LA VEILLE",
-   "comic_action": "Une assiette fumante, étiquette « RANCUNE — SERVIE TIÈDE ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "APÉRO : APPEL OFFICIEL",
+   "comic_action": "Un convive lit l'invitation d'apéro sur un parchemin.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "blase",
+     "objet": "verre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "APÉRO : 18 H (SOLENNEL)"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +239,26 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
+    "screen",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "GRANDEUR : 1 DOIGT",
-   "comic_action": "Plan large : l'enseigne « L'ÉLÉGANCE » perd une lettre à chaque seconde.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "RÉSULTAT : 7 %",
+   "comic_action": "Le micro d'époque grésille et s'éteint.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "7,07 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,44 +272,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique laisse un pourboire poli.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui répond aux critiques avec un emoji."
+  "text": "Envoie ça au pote qui annonce ses vacances comme un discours historique."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 81,
+ "word_count": 79,
  "claims": [
   {
-   "text": "Novembre 2021, à Marseille, il répond à une passante par un doigt d'honneur.",
+   "text": "En 2021, il annonce sa candidature façon appel du 18 juin, micro d'époque.",
    "claim_type": "fait_public",
-   "source": "https://www.malaymail.com/news/world/2021/11/28/frances-zemmour-shows-finger-to-critic-as-campaign-woes-mount/2024272",
-   "note": "Marseille, 27/11/2021 : doigt d'honneur à une passante ; il reconnaît ensuite un geste inélégant."
+   "source": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-l-election-presidentielle-191429",
+   "note": "Vidéo de candidature : bibliothèque, micro d'époque, 7e symphonie de Beethoven, pastiche de l'appel du 18 juin."
   },
   {
-   "text": "Il a reconnu ensuite un geste inélégant. Ici, c'est la carte de visite du restaurant.",
+   "text": "Un appel historique pour un résultat de 7 %.",
    "claim_type": "fait_public",
-   "source": "https://www.malaymail.com/news/world/2021/11/28/frances-zemmour-shows-finger-to-critic-as-campaign-woes-mount/2024272",
-   "note": "Marseille, 27/11/2021 : doigt d'honneur à une passante ; il reconnaît ensuite un geste inélégant."
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
   {
-   "url": "https://www.malaymail.com/news/world/2021/11/28/frances-zemmour-shows-finger-to-critic-as-campaign-woes-mount/2024272",
-   "date": "2021-11-28",
+   "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-l-election-presidentielle-191429",
+   "date": "2021-11-30",
    "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
-   "note": "Marseille, 27/11/2021 : doigt d'honneur à une passante ; il reconnaît ensuite un geste inélégant."
+   "statut": "fait",
+   "note": "Vidéo de candidature : bibliothèque, micro d'époque, 7e symphonie de Beethoven, pastiche de l'appel du 18 juin."
+  },
+  {
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le doigt d'honneur de Marseille (novembre 2021), reconnu ensuite comme inélégant. Cadre : le restaurant. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2021, il annonce sa candidature façon appel du 18 juin, micro d'époque. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

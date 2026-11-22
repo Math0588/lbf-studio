@@ -5,73 +5,73 @@
  "format": "A",
  "title_cover": "Terminus Waterloo",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le métro va d'Austerlitz à Waterloo.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, chaque station est une bataille.",
-  "Zemmourville : la ligne qui finit toujours en 1815."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien porte un bicorne.",
+  "Zemmour admire Napoléon. Le métro de la ville finit à Waterloo.",
+  "Ben voyons, encore une vidéo sur lui.",
+  "Bienvenue à Zemmourville : terminus Waterloo.",
+  "Zemmour en une vidéo : terminus Waterloo."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Terminus : Waterloo. Score affiché à l'arrêt : 7 %.",
-  "Départ Austerlitz, arrivée Waterloo.",
-  "La ligne est glorieuse, le terminus moins."
+  "Son Waterloo à lui : avril 2022, 7 %.",
+  "Son Waterloo à lui : avril 2022, 7 %.",
+  "Dernière station : Waterloo. Tout le monde descend."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Ligne Napoléon.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien porte un bicorne.",
    "accent_words": [
-    "Ligne Napoléon"
+    "un bicorne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Il admire Napoléon. Ici, la ligne de métro en porte le nom.",
+   "text": "Il admire Napoléon. Son slogan : Impossible n'est pas français.",
    "accent_words": [
-    "Napoléon"
+    "Impossible n'est pas français"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Prochaine station : Austerlitz. Toute la rame applaudit.",
+   "text": "La ville rebaptise ses stations de métro : Austerlitz, Iéna, Wagram.",
    "accent_words": [
-    "Austerlitz"
+    "Austerlitz, Iéna, Wagram"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Station suivante : Impossible-n'est-pas-français. Correspondance ratée.",
+   "text": "Les rames les desservent dans l'ordre. Tout le monde chante.",
    "accent_words": [
-    "Correspondance ratée"
+    "Tout le monde chante"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le conducteur annonce les stations d'avant. On descend en 1815.",
+   "text": "Dernière station : Waterloo. Tout le monde descend.",
    "accent_words": [
-    "1815"
+    "Tout le monde descend"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Terminus : Waterloo. Score affiché à l'arrêt : 7 %.",
+   "text": "Son Waterloo à lui : avril 2022, 7 %.",
    "accent_words": [
-    "Waterloo"
+    "avril 2022, 7 %"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui se prend pour Napoléon en réunion.",
+   "text": "Envoie ça au pote qui fanfaronne jusqu'au terminus.",
    "accent_words": [
-    "Napoléon"
+    "jusqu'au terminus"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "bus",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une bouche de métro « LIGNE NAPOLÉON ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · TERMINUS WATERLOO",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "EN AVANT, L'EMPIRE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,57 +123,110 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "text3d",
-    "person"
+    "column",
+    "arch",
+    "text3d"
    ],
-   "onscreen_text": "LIGNE N",
-   "comic_action": "Gros plan sur le plan de ligne : un bicorne à chaque station.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "NAPOLÉON · IMPOSSIBLE",
+   "comic_action": "Un buste impérial trône sur le bureau du maire.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "EN AVANT, L'EMPIRE"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
+    "sign",
     "bus",
-    "person",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "AUSTERLITZ",
-   "comic_action": "Travelling dans la rame : les voyageurs se lèvent et saluent.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "STATIONS IMPÉRIALES",
+   "comic_action": "Plan de métro aux noms de batailles.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "LIGNE 1 : L'EMPIRE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "sign",
-    "text3d"
+    "bus",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "CORRESPONDANCE RATÉE",
-   "comic_action": "Le panneau de correspondance s'éteint au moment où la rame arrive.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "RAME EN CHANSON",
+   "comic_action": "Wagon bondé de voyageurs qui chantent, le poing levé.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "GROGNARD"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
+    "sign",
     "bus",
-    "person",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "1815",
-   "comic_action": "Orbite : la rame ralentit, la date défile à l'envers.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TERMINUS : WATERLOO",
+   "comic_action": "La rame s'arrête, panneau « WATERLOO », mines défaites.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TERMINUS : WATERLOO"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -159,13 +235,26 @@
    ],
    "camera": "descend",
    "set": [
-    "bus",
+    "screen",
     "text3d",
-    "sign"
+    "banner"
    ],
-   "onscreen_text": "TERMINUS : WATERLOO",
-   "comic_action": "Plan large : le quai désert, panneau « WATERLOO — 7 % ».",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "WATERLOO : 7 %",
+   "comic_action": "Un drapeau blanc s'agite au-dessus du score.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "7,07 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -179,36 +268,44 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique reprend la rame en sens inverse.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui se prend pour Napoléon en réunion."
+  "text": "Envoie ça au pote qui fanfaronne jusqu'au terminus."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 67,
+ "word_count": 70,
  "claims": [
   {
-   "text": "Il admire Napoléon. Ici, la ligne de métro en porte le nom.",
+   "text": "Il admire Napoléon. Son slogan : Impossible n'est pas français.",
    "claim_type": "fait_public",
    "source": "https://fr.timesofisrael.com/de-quelle-extreme-droite-eric-zemmour-est-il-le-nom/",
-   "note": "Admiration revendiquée pour Napoléon ; slogan « Impossible n'est pas français »."
+   "note": "Admiration revendiquée pour Napoléon ; slogan de Villepinte « Impossible n'est pas français »."
   },
   {
-   "text": "Station suivante : Impossible-n'est-pas-français. Correspondance ratée.",
-   "claim_type": "fait_public",
-   "source": "https://www.europe1.fr/node/127383",
-   "note": "Slogan de campagne « Impossible n'est pas français » (formule attribuée à Napoléon)."
-  },
-  {
-   "text": "Terminus : Waterloo. Score affiché à l'arrêt : 7 %.",
+   "text": "Son Waterloo à lui : avril 2022, 7 %.",
    "claim_type": "fait_public",
    "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
    "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
@@ -220,14 +317,7 @@
    "date": "2021-12",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Admiration revendiquée pour Napoléon ; slogan « Impossible n'est pas français »."
-  },
-  {
-   "url": "https://www.europe1.fr/node/127383",
-   "date": "2021-12",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "Slogan de campagne « Impossible n'est pas français » (formule attribuée à Napoléon)."
+   "note": "Admiration revendiquée pour Napoléon ; slogan de Villepinte « Impossible n'est pas français »."
   },
   {
    "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
@@ -238,5 +328,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : l'admiration pour Napoléon, d'Austerlitz à Waterloo. Cadre : le métro. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Il admire Napoléon. Son slogan : Impossible n'est pas français. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

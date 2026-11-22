@@ -3,67 +3,67 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-24",
  "format": "A",
- "title_cover": "Primaire sans match",
+ "title_cover": "Fini avant d'avoir commencé",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. Match plié d'avance.",
-  "Mélenchon a gagné la primaire. Il n'y avait pas de primaire.",
-  "Les insoumis vont me détester.",
-  "Bienvenue à Mélenchonville : primaire sans match.",
-  "Mélenchon en une vidéo : primaire sans match."
+  "Dans cette ville, tout le monde vote Mélenchon. Le match est déjà fini.",
+  "Mélenchon a déclaré la primaire finie. Il n'y en avait pas. La ville a copié.",
+  "Celle-là, Méluche ne la partagera pas.",
+  "Bienvenue à Mélenchonville : fini avant d'avoir commencé.",
+  "Mélenchon en une vidéo : fini avant d'avoir commencé."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La primaire, il la gagne contre personne. La présidentielle, il la perd contre tout le monde.",
-  "Champion sans match, perdant à chaque vrai match.",
-  "Juillet : il rompt avec le PS et laisse quelques mois aux Écologistes."
+  "Seule chose jamais finie : sa course à l'Élysée, quatrième départ.",
+  "Tout est fini avant de commencer. Sauf sa course à l'Élysée.",
+  "Le repas est fini avant l'entrée. Tout le monde a faim."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Match plié d'avance.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Le match est déjà fini.",
    "accent_words": [
-    "Match plié d'avance"
+    "déjà fini"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Juin 2026 à Saint-Denis, il proclame : « La primaire est finie ».",
+   "text": "En juin, il proclame « La primaire est finie ». Il n'y en a pas eu.",
    "accent_words": [
-    "La primaire est finie"
+    "pas eu"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Quelle primaire ? Aucune n'a eu lieu. Victoire par forfait.",
+   "text": "La ville copie : tout est fini avant de commencer.",
    "accent_words": [
-    "Victoire par forfait"
+    "de commencer"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Son camp l'investit sans autre candidature, sans opposition.",
+   "text": "Le match est fini avant le coup d'envoi. Victoire, évidemment.",
    "accent_words": [
-    "sans opposition"
+    "Victoire, évidemment"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Juillet : il rompt avec le PS et laisse quelques mois aux Écologistes.",
+   "text": "Le repas est fini avant l'entrée. Tout le monde a faim.",
    "accent_words": [
-    "aux Écologistes"
+    "a faim"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La primaire, il la gagne contre personne. La présidentielle, il la perd contre tout le monde.",
+   "text": "Seule chose jamais finie : sa course à l'Élysée, quatrième départ.",
    "accent_words": [
-    "le monde"
+    "quatrième départ"
    ],
    "claim_type": "fait_public"
   },
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE · PRIMAIRE SANS MATCH",
-   "comic_action": "Descente sur la ville : banderole « PRIMAIRE SANS MATCH », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "onscreen_text": "MÉLENCHONVILLE · FINI AVANT D'AVOIR COMMENCÉ",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "C'EST DÉJÀ FINI"
     }
    ]
   },
@@ -119,13 +129,19 @@
    ],
    "onscreen_text": "« LA PRIMAIRE EST FINIE »",
    "comic_action": "Le maire siffle la fin d'un match qui n'a pas commencé.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
      "geste": "arms_up",
      "visage": "fier",
      "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "C'EST DÉJÀ FINI"
     }
    ]
   },
@@ -136,18 +152,24 @@
    ],
    "camera": "orbit",
    "set": [
-    "ground",
+    "mairie",
     "sign",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "PRIMAIRE : 0 MATCH",
-   "comic_action": "Terrain vide, cages sans gardien.",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "TOUT EST FINI",
+   "comic_action": "Panneau « TERMINÉ » accroché sur tout ce qui bouge.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
      "who": "perso",
      "geste": "shrug",
-     "visage": "blase"
+     "visage": "neutre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FIN (AVANT LE DÉBUT)"
     }
    ]
   },
@@ -158,18 +180,24 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "table",
-    "form_stack",
+    "ground",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "ADVERSAIRES : 0",
-   "comic_action": "Une feuille de match avec une seule équipe.",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "MATCH : TERMINÉ (0 MIN)",
+   "comic_action": "Joueurs qui saluent le public avant d'avoir touché le ballon.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
      "who": "foule",
-     "geste": "clap",
-     "visage": "sourire_pro"
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ARBITRE"
     }
    ]
   },
@@ -180,24 +208,25 @@
    ],
    "camera": "closeup",
    "set": [
-    "facade_set",
-    "sign",
-    "person"
+    "table",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "PS : CARTON ROUGE",
-   "comic_action": "Carton rouge brandi devant une porte rose.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "REPAS : FINI (À JEUN)",
+   "comic_action": "Table dressée, assiettes vides, convives affamés.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "point",
-     "visage": "colere"
-    },
-    {
      "who": "perso",
-     "geste": "fall",
-     "visage": "choque",
-     "quand": 0.4
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "objet": "verre"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "DESSERT : DÉJÀ MANGÉ"
     }
    ]
   },
@@ -208,24 +237,24 @@
    ],
    "camera": "descend",
    "set": [
-    "lift_tribune",
+    "road",
     "banner",
     "text3d"
    ],
-   "onscreen_text": "PRIMAIRE 1 · PRÉSIDENTIELLE 0",
-   "comic_action": "Tableau de score qui bascule.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "COURSE : 4E DÉPART",
+   "comic_action": "La ligne de départ, encore lui, dossard « 4 ».",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "fall",
-     "visage": "choque"
-    },
+     "geste": "arms_up",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "point",
-     "visage": "content",
-     "quand": 0.5
+     "type": "prix",
+     "texte": "DÉPART N° 4"
     }
    ]
   },
@@ -242,7 +271,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -250,6 +279,12 @@
      "geste": "point",
      "visage": "sourire_pro",
      "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
     }
    ]
   }
@@ -266,28 +301,16 @@
  "word_count": 83,
  "claims": [
   {
-   "text": "Juin 2026 à Saint-Denis, il proclame : « La primaire est finie ».",
+   "text": "En juin, il proclame « La primaire est finie ». Il n'y en a pas eu.",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
    "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
   },
   {
-   "text": "Son camp l'investit sans autre candidature, sans opposition.",
+   "text": "Seule chose jamais finie : sa course à l'Élysée, quatrième départ.",
    "claim_type": "fait_public",
-   "source": "https://www.europe1.fr/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-930947",
-   "note": "Selon la direction de LFI (AFP) : aucune autre candidature proposée, aucune opposition exprimée."
-  },
-  {
-   "text": "Juillet : il rompt avec le PS et laisse quelques mois aux Écologistes.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
-   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
-  },
-  {
-   "text": "La primaire, il la gagne contre personne. La présidentielle, il la perd contre tout le monde.",
-   "claim_type": "fait_public",
-   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "sources": [
@@ -299,27 +322,13 @@
    "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
   },
   {
-   "url": "https://www.europe1.fr/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-930947",
-   "date": "2026-05-03",
+   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "date": "2026-06",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Selon la direction de LFI (AFP) : aucune autre candidature proposée, aucune opposition exprimée."
-  },
-  {
-   "url": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
-   "date": "2026-07",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
-  },
-  {
-   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "date": "consulté 2026-11-22",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Primaire sans match. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En juin, il proclame « La primaire est finie ». Il n'y en a pas eu. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

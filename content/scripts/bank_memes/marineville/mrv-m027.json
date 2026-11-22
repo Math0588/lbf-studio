@@ -3,78 +3,78 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m027",
  "format": "A",
- "anchor": "2018 : nouveau nom, flamme gardée et rangée dans un cercle : au marché, chaque stand fait pareil.",
- "situation": "Onze enseignes",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
- "title_cover": "Onze enseignes",
+ "anchor": "le premier trésorier du FN (1972), ancien Waffen-SS ; changement de nom en 2018",
+ "situation": "La porte repeinte",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
+ "title_cover": "La porte repeinte",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, chaque stand du marché a changé de nom. Pas de produit.",
-  "Marineville : l'odeur, elle, n'a pas déménagé.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : onze enseignes."
+  "Dans cette ville, tout le monde vote Marine. Les archives, à la cave.",
+  "Marineville repeint la porte de la cave à chaque élection.",
+  "Ici, la porte a quarante couches de peinture.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : La porte repeinte."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le fromager rebaptise son camembert. L'odeur, elle, n'a pas déménagé.",
-  "Le poissonnier devient Rassemblement de la Marée. Les sardines n'ont rien remarqué.",
-  "On change l'étiquette, on garde la flamme, et on appelle ça du neuf."
+  "Marine a changé le nom en 2018. Pas l'arbre généalogique du parti.",
+  "Ils ont changé le nom. Pas l'arbre généalogique.",
+  "La porte est si épaisse qu'elle bloque la rue."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine. Sous une nouvelle enseigne.",
+   "text": "Dans cette ville, tout le monde vote Marine. Les archives, à la cave.",
    "accent_words": [
-    "nouvelle enseigne"
+    "cave"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le parti a changé de nom en 2018.",
+   "text": "Le parti naît en 1972. Premier trésorier : Pierre Bousquet, ancien de la Waffen-SS.",
    "accent_words": [
-    "changé de nom"
+    "Waffen-SS"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Mais il a gardé la flamme, rangée dans un cercle.",
+   "text": "Alors la ville range ses archives à la cave, derrière une porte repeinte.",
    "accent_words": [
-    "la flamme"
+    "repeinte"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Au marché, le poissonnier devient Rassemblement de la Marée. Les sardines n'ont rien vu.",
+   "text": "Chaque élection, on repeint la porte. Elle a quarante couches.",
    "accent_words": [
-    "sardines"
+    "couches"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "On change l'étiquette, on garde la flamme, et on appelle ça du neuf.",
+   "text": "La porte est si épaisse qu'elle bloque la rue.",
    "accent_words": [
-    "du neuf"
+    "rue"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le fromager rebaptise son camembert. L'odeur, elle, n'a pas déménagé.",
+   "text": "Marine a changé le nom en 2018. Pas l'arbre généalogique du parti.",
    "accent_words": [
-    "L'odeur"
+    "arbre généalogique"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui achète tout ce qui est marqué nouveau.",
+   "text": "Envoie ça au pote qui ne descend jamais à la cave.",
    "accent_words": [
-    "nouveau"
+    "cave"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,25 +92,57 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; onze enseignes empilées sur la façade.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "ARCHIVES À LA CAVE",
+   "comic_action": "Descente sur la ville ; banderole « ARCHIVES À LA CAVE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    },
+    {
+     "type": "affiche",
+     "texte": "NOUVEAU NOM"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "scroll",
+    "column",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "NOUVEAU NOM",
-   "comic_action": "Un ouvrier visse une enseigne neuve par-dessus l'ancienne.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "1972 : TRÉSORIER EX-WAFFEN-SS",
+   "comic_action": "Parchemin d'archives déroulé entre deux colonnes ; en lettres 3D « 1972 : TRÉSORIER EX-WAFFEN-SS ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shake"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -119,62 +151,116 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
+    "scroll",
+    "column",
     "text3d",
-    "mairie",
     "person"
    ],
-   "onscreen_text": "FLAMME : CONSERVÉE",
-   "comic_action": "L'écran montre une flamme glissée dans un rond.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "PORTE REPEINTE",
+   "comic_action": "Parchemin d'archives déroulé entre deux colonnes ; en lettres 3D « PORTE REPEINTE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CAVE : NE PAS OUVRIR"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "shop",
-    "table",
-    "person",
-    "banner"
+    "scroll",
+    "column",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "RASSEMBLEMENT DE LA MARÉE",
-   "comic_action": "Un étal de poissons sous une enseigne neuve.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "40 COUCHES DE PEINTURE",
+   "comic_action": "Parchemin d'archives déroulé entre deux colonnes ; en lettres 3D « 40 COUCHES DE PEINTURE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "shop",
-    "person",
+    "road",
     "sign",
-    "text3d"
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "NEUF (OU PRESQUE)",
-   "comic_action": "Vitrine : un produit avec trois étiquettes superposées.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LA PORTE BLOQUE LA RUE",
+   "comic_action": "Dans la rue, panneau « LA PORTE BLOQUE LA RUE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "table",
-    "person",
-    "screen",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "ODEUR : INCHANGÉE",
-   "comic_action": "Un fromage avec une étiquette neuve ; les passants se bouchent le nez. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "PAS L'ARBRE GÉNÉALOGIQUE",
+   "comic_action": "Plan final, tenir une seconde : « PAS L'ARBRE GÉNÉALOGIQUE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,46 +274,72 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt achète un paquet « NOUVEAU ».",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI Y CROIT",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI Y CROIT ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui achète tout ce qui est marqué nouveau."
+  "text": "Envoie ça au pote qui ne descend jamais à la cave."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 79,
+ "word_count": 82,
  "claims": [
   {
    "segment": "n2",
-   "text": "Le parti a changé de nom en 2018.",
+   "text": "Le parti naît en 1972. Premier trésorier : Pierre Bousquet, ancien de la Waffen-SS.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
-   "note": "Le FN devient RN ; la flamme du logo est conservée, rangée dans un cercle."
+   "source": "https://en.wikipedia.org/wiki/Pierre_Bousquet",
+   "note": "Pierre Bousquet, ancien de la division Charlemagne de la Waffen-SS, membre fondateur et premier trésorier du Front national (1972). ; FN créé le 5 octobre 1972, vitrine d'Ordre nouveau ; statuts déposés par un ancien Waffen-SS (Bousquet) et Jean-Marie Le Pen ; flamme calquée sur celle du MSI italien.",
+   "sources_complementaires": [
+    "https://www.publicsenat.fr/actualites/politique/de-l-activisme-radical-a-la-normalisation-retour-sur-les-50-ans-du-fn-222269"
+   ]
   },
   {
-   "segment": "n3",
-   "text": "Mais il a gardé la flamme, rangée dans un cercle.",
+   "segment": "n6",
+   "text": "Marine a changé le nom en 2018. Pas l'arbre généalogique du parti.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
-   "note": "Le FN devient RN ; la flamme du logo est conservée, rangée dans un cercle."
+   "note": "Le Front national devient Rassemblement national ; la flamme du logo est conservée, rangée dans un cercle."
   }
  ],
  "sources": [
   {
+   "url": "https://en.wikipedia.org/wiki/Pierre_Bousquet",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait (encyclopédie)",
+   "note": "Pierre Bousquet, ancien de la division Charlemagne de la Waffen-SS, membre fondateur et premier trésorier du Front national (1972)."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/de-l-activisme-radical-a-la-normalisation-retour-sur-les-50-ans-du-fn-222269",
+   "date": "2022-10",
+   "consulted": "2026-11-22",
+   "statut": "fait (histoire)",
+   "note": "FN créé le 5 octobre 1972, vitrine d'Ordre nouveau ; statuts déposés par un ancien Waffen-SS (Bousquet) et Jean-Marie Le Pen ; flamme calquée sur celle du MSI italien."
+  },
+  {
    "url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
    "date": "2018-06-01",
    "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Le FN devient RN ; la flamme du logo est conservée, rangée dans un cercle."
+   "statut": "fait",
+   "note": "Le Front national devient Rassemblement national ; la flamme du logo est conservée, rangée dans un cercle."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = 2018 : nouveau nom, flamme gardée et rangée dans un cercle : au marché, chaque stand fait pareil. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = le premier trésorier du FN (1972), ancien Waffen-SS ; changement de nom en 2018. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

@@ -3,22 +3,22 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m008",
  "format": "A",
- "anchor": "elle reprend « renaissance » et un soleil levant ; la ville voisine a déjà la sienne : le vrai rassemblement, c'est le logo.",
+ "anchor": "« renaissance » : son mot de campagne, et le parti présidentiel",
  "situation": "Deux Renaissance",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "title_cover": "Deux Renaissance",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, la ville voisine a le même nom et le même soleil.",
-  "Marineville : la vraie union nationale, c'est le logo.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : deux renaissance."
+  "Dans cette ville, tout le monde vote Marine. Ou l'inverse.",
+  "Marineville et la ville d'en face portent le même nom.",
+  "Ici, les touristes applaudissent le mauvais meeting.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Deux Renaissance."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Deux camps, un seul nom, un seul soleil : la vraie union nationale, c'est le logo.",
-  "Les touristes se trompent de meeting et applaudissent quand même.",
-  "Le facteur livre les tracts au hasard : personne ne voit la différence."
+  "Marine dément toute ressemblance. Sauf le nom. Et le soleil.",
+  "Aucune ressemblance, sauf le nom.",
+  "Les deux maires se croisent. Ils portent le même badge."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -32,30 +32,22 @@
   },
   {
    "id": "n2",
-   "text": "Son premier meeting promet une renaissance.",
+   "text": "À Orléans, elle promet une renaissance. Renaissance, c'est aussi le parti présidentiel.",
    "accent_words": [
-    "renaissance"
+    "présidentiel"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Renaissance, c'est aussi le parti présidentiel.",
+   "text": "Alors deux villes s'appellent Renaissance : la sienne, et celle d'en face.",
    "accent_words": [
-    "parti présidentiel"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "Ici, la ville voisine a déjà sa Renaissance, son soleil, ses affiches.",
-   "accent_words": [
-    "déjà"
+    "face"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n5",
+   "id": "n4",
    "text": "Les touristes se trompent de meeting et applaudissent quand même.",
    "accent_words": [
     "quand même"
@@ -63,10 +55,18 @@
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n6",
-   "text": "Deux camps, un seul nom, un seul soleil : la vraie union nationale, c'est le logo.",
+   "id": "n5",
+   "text": "Les deux maires se croisent. Ils portent le même badge.",
    "accent_words": [
-    "le logo"
+    "badge"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Marine dément toute ressemblance. Sauf le nom. Et le soleil.",
+   "accent_words": [
+    "nom"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -74,7 +74,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui jure que tout les oppose.",
    "accent_words": [
-    "tout les oppose"
+    "oppose"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,57 +92,115 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur deux mairies jumelles, même logo.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "OU L'INVERSE",
+   "comic_action": "Descente sur la ville ; banderole « OU L'INVERSE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "lift_tribune",
     "tribune",
-    "person",
-    "banner"
+    "lift_tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "PROMESSE : RENAISSANCE",
-   "comic_action": "La tribune s'élève, lumière dorée.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "DEUX RENAISSANCE",
+   "comic_action": "Meeting : la tribune s'élève, banderole « DEUX RENAISSANCE ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "screen",
+    "facade_row",
+    "sign",
     "text3d",
-    "mairie",
     "person"
    ],
-   "onscreen_text": "RENAISSANCE = RENAISSANCE",
-   "comic_action": "L'écran affiche deux logos identiques qui se superposent.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "RENAISSANCE 1 ET 2",
+   "comic_action": "Rangée de façades : enseigne « RENAISSANCE 1 ET 2 ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RENAISSANCE ? LAQUELLE ?"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "tribune",
+    "lift_tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "VILLE VOISINE : IDEM",
-   "comic_action": "Deux rangées de façades identiques face à face.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "APPLAUDIS PAR ERREUR",
+   "comic_action": "Meeting : la tribune s'élève, banderole « APPLAUDIS PAR ERREUR ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "clap"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
@@ -151,14 +209,26 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "person",
     "road",
-    "building",
-    "sign"
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "MAUVAIS MEETING · BRAVO",
-   "comic_action": "Une file de touristes entre dans la mauvaise salle, applaudit.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LE MÊME BADGE",
+   "comic_action": "Dans la rue, panneau « LE MÊME BADGE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -167,14 +237,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "UNION : LE LOGO",
-   "comic_action": "Entre deux colonnes, deux mains signent le même logo. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "SAUF LE NOM",
+   "comic_action": "Plan final, tenir une seconde : « SAUF LE NOM ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -188,9 +271,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt compare deux badges identiques.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI JURE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI JURE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -202,18 +294,11 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 70,
+ "word_count": 74,
  "claims": [
   {
    "segment": "n2",
-   "text": "Son premier meeting promet une renaissance.",
-   "claim_type": "fait_public",
-   "source": "https://www.lagazettefrance.fr/article/lors-d-un-premier-meeting-sous-tension-marine-le-pen-promet-une-renaissance",
-   "note": "Premier meeting : elle promet une renaissance (soleil levant)."
-  },
-  {
-   "segment": "n3",
-   "text": "Renaissance, c'est aussi le parti présidentiel.",
+   "text": "À Orléans, elle promet une renaissance. Renaissance, c'est aussi le parti présidentiel.",
    "claim_type": "fait_public",
    "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
    "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
@@ -221,20 +306,13 @@
  ],
  "sources": [
   {
-   "url": "https://www.lagazettefrance.fr/article/lors-d-un-premier-meeting-sous-tension-marine-le-pen-promet-une-renaissance",
-   "date": "2026-10-25",
-   "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
-   "note": "Premier meeting : elle promet une renaissance (soleil levant)."
-  },
-  {
    "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
    "date": "2026-10-25",
    "consulted": "2026-11-22",
-   "statut": "fait public (analyse lexicale)",
+   "statut": "fait + citation exacte",
    "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = elle reprend « renaissance » et un soleil levant ; la ville voisine a déjà la sienne : le vrai rassemblement, c'est le logo. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « renaissance » : son mot de campagne, et le parti présidentiel. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

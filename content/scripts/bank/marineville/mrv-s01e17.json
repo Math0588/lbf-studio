@@ -3,19 +3,19 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-12",
  "format": "A",
- "title_cover": "Optimisme soufflé",
+ "title_cover": "Ventilateurs d'optimisme",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine.",
-  "Ici, on remplace le chauffage par des ventilateurs.",
-  "Marineville : du vent, mais tricolore.",
-  "Les électeurs de Marine vont me détester.",
-  "Bienvenue à Marineville : optimisme soufflé."
+  "Dans cette ville, tout le monde vote Marine. Avec un ventilateur.",
+  "Marineville se chauffe à l'optimisme.",
+  "Ici, on souffle sur les factures.",
+  "Les fans de Marine vont me détester.",
+  "Bienvenue à Marineville. Au programme : Ventilateurs d'optimisme."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "L'optimisme insufflé, c'est du vent. Mais du vent tricolore.",
-  "Facture d'énergie trop haute ? On souffle dessus.",
-  "Ici, la mairie distribue des ventilateurs pour remplacer le chauffage."
+  "Marine souffle plus fort. La facture, elle, ne bouge pas.",
+  "La facture, elle, ne bouge pas.",
+  "La ville gèle, mais très optimiste."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -29,7 +29,7 @@
   },
   {
    "id": "n2",
-   "text": "Premier meeting, à Orléans : elle veut insuffler de l'optimisme.",
+   "text": "Premier meeting à Orléans : elle veut insuffler de l'optimisme.",
    "accent_words": [
     "insuffler"
    ],
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "La veille, la rue manifestait pour la deuxième fois. Elle, elle soufflait.",
+   "text": "Alors la mairie distribue des ventilateurs à la place du chauffage.",
    "accent_words": [
-    "elle soufflait"
+    "chauffage"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ici, la mairie distribue des ventilateurs à la place du chauffage.",
+   "text": "Facture d'énergie trop haute ? On souffle dessus.",
    "accent_words": [
-    "ventilateurs"
+    "dessus"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Facture d'énergie trop haute ? On souffle dessus.",
+   "text": "La ville gèle, mais très optimiste.",
    "accent_words": [
-    "On souffle dessus"
+    "optimiste"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "L'optimisme insufflé, c'est du vent. Mais du vent tricolore.",
+   "text": "Marine souffle plus fort. La facture, elle, ne bouge pas.",
    "accent_words": [
-    "du vent"
+    "pas"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui croit qu'on paie son loyer avec de l'optimisme.",
+   "text": "Envoie ça au pote qui paie son loyer avec de l'optimisme.",
    "accent_words": [
-    "de l'optimisme"
+    "optimisme"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,73 +89,144 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MARINEVILLE",
-   "comic_action": "Descente sur la mairie ; un ventilateur géant fait claquer les drapeaux.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "AVEC UN VENTILATEUR",
+   "comic_action": "Descente sur la ville ; banderole « AVEC UN VENTILATEUR » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MARINE"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "lift_tribune",
     "tribune",
-    "person",
-    "banner"
+    "lift_tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "OPTIMISME : INSUFFLÉ",
-   "comic_action": "La tribune s'élève, cheveux au vent artificiel.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "INSUFFLER L'OPTIMISME",
+   "comic_action": "Meeting : la tribune s'élève, banderole « INSUFFLER L'OPTIMISME ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "person",
-    "road",
-    "building",
-    "sign"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "ACTE II · PUIS SOUFFLE",
-   "comic_action": "Une rue de manifestants avec pancartes ; un ventilateur les décoiffe.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "VENTILATEUR = CHAUFFAGE",
+   "comic_action": "Descente sur la ville ; banderole « VENTILATEUR = CHAUFFAGE » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CHAUFFAGE : OPTIMISME"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "screen",
+    "text3d",
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "CHAUFFAGE → VENTILO",
-   "comic_action": "Vitrine : des ventilateurs étiquetés « radiateur ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "ON SOUFFLE SUR LA FACTURE",
+   "comic_action": "Compteur géant sur l'écran : « ON SOUFFLE SUR LA FACTURE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "table",
+    "road",
+    "sign",
     "person",
-    "screen",
-    "text3d"
+    "traffic_light"
    ],
-   "onscreen_text": "FACTURE : SOUFFLÉE",
-   "comic_action": "Un habitant souffle sur sa facture, qui ne bouge pas.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "GELÉE MAIS OPTIMISTE",
+   "comic_action": "Dans la rue, panneau « GELÉE MAIS OPTIMISTE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "content"
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -164,14 +235,27 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "VENT TRICOLORE",
-   "comic_action": "Entre deux colonnes, un drapeau gonflé par un ventilateur. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LA FACTURE NE BOUGE PAS",
+   "comic_action": "Plan final, tenir une seconde : « LA FACTURE NE BOUGE PAS ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -185,35 +269,37 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt tend un sourire au propriétaire.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE OPTIMISTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE OPTIMISTE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui croit qu'on paie son loyer avec de l'optimisme."
+  "text": "Envoie ça au pote qui paie son loyer avec de l'optimisme."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 74,
+ "word_count": 67,
  "claims": [
   {
    "segment": "n2",
-   "text": "Premier meeting, à Orléans : elle veut insuffler de l'optimisme.",
+   "text": "Premier meeting à Orléans : elle veut insuffler de l'optimisme.",
    "claim_type": "fait_public",
    "source": "https://www.lalibre.be/dernieres-depeches/2026/10/25/pour-son-premier-meeting-de-campagne-le-pen-veut-insuffler-de-loptimisme-dans-un-pays-en-crise-QXFUPYUA7JB7ZIVYMIAHQRYFM4/",
-   "note": "Premier meeting : « insuffler de l'optimisme » dans un pays en crise."
-  },
-  {
-   "segment": "n3",
-   "text": "La veille, la rue manifestait pour la deuxième fois. Elle, elle soufflait.",
-   "claim_type": "fait_public",
-   "source": "https://fr.euronews.com/2026/10/25/orleans-marine-le-pen-lance-sa-campagne-au-lendemain-de-lacte-ii-de-la-mobilisation-social",
-   "note": "Lancement de campagne pour 2027 à Orléans, au lendemain de l'acte II de la mobilisation sociale."
+   "note": "Premier meeting : insuffler de l'optimisme dans un pays en crise."
   }
  ],
  "sources": [
@@ -221,17 +307,10 @@
    "url": "https://www.lalibre.be/dernieres-depeches/2026/10/25/pour-son-premier-meeting-de-campagne-le-pen-veut-insuffler-de-loptimisme-dans-un-pays-en-crise-QXFUPYUA7JB7ZIVYMIAHQRYFM4/",
    "date": "2026-10-25",
    "consulted": "2026-11-22",
-   "statut": "fait (titre de dépêche AFP)",
-   "note": "Premier meeting : « insuffler de l'optimisme » dans un pays en crise."
-  },
-  {
-   "url": "https://fr.euronews.com/2026/10/25/orleans-marine-le-pen-lance-sa-campagne-au-lendemain-de-lacte-ii-de-la-mobilisation-social",
-   "date": "2026-10-25",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Lancement de campagne pour 2027 à Orléans, au lendemain de l'acte II de la mobilisation sociale."
+   "statut": "fait (AFP)",
+   "note": "Premier meeting : insuffler de l'optimisme dans un pays en crise."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = premier meeting à Orléans pour « insuffler de l'optimisme », au lendemain de l'acte II de la mobilisation sociale. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « insuffler de l'optimisme » (premier meeting, Orléans). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

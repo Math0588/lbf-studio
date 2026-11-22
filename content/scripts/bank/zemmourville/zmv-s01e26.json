@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-23",
  "format": "A",
- "title_cover": "Conseil sans élus",
+ "title_cover": "Concours de parodies",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le conseil de quartier ne compte que des commentateurs.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, on vote des avis, pas des projets.",
-  "Zemmourville : zéro élu, mille opinions."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien fait des parodies.",
+  "La vidéo de Zemmour a été parodiée en masse. La ville en a fait un concours.",
+  "Attention : vidéo garantie sans nostalgie. Presque.",
+  "Bienvenue à Zemmourville : concours de parodies.",
+  "Zemmour en une vidéo : concours de parodies."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le conseil ne vote rien, mais il a une opinion sur tout.",
-  "Zéro décision, cent chroniques.",
-  "Le quartier est mal géré, mais très bien commenté."
+  "Le plus drôle reste l'original : 7 % à l'arrivée.",
+  "La meilleure parodie reste l'original : 7 % à l'arrivée.",
+  "La parodie la plus vue dépasse l'original. L'original se déguise en parodie."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Sans élus.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien fait des parodies.",
    "accent_words": [
-    "Sans élus"
+    "des parodies"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, le conseil de quartier n'a pas d'élus. Que des chroniqueurs.",
+   "text": "Sa vidéo de candidature de 2021 a été parodiée en masse.",
    "accent_words": [
-    "chroniqueurs"
+    "en masse"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "La mairie en fait un concours annuel de parodies.",
+   "accent_words": [
+    "de parodies"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Comme son parti après 2022 : zéro député à l'Assemblée.",
-   "accent_words": [
-    "zéro député"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n4",
-   "text": "Lui-même, battu dès le premier tour dans le Var.",
+   "text": "Mille parodies, puis dix mille. La ville ne fait plus que ça.",
    "accent_words": [
-    "premier tour"
+    "que ça"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Chaque séance, on commente les décisions des autres. Aucune à soi.",
+   "text": "La parodie la plus vue dépasse l'original. L'original se déguise en parodie.",
    "accent_words": [
-    "Aucune à soi"
+    "en parodie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le conseil ne vote rien, mais il a une opinion sur tout.",
+   "text": "Le plus drôle reste l'original : 7 % à l'arrivée.",
    "accent_words": [
-    "une opinion"
+    "7 % à l'arrivée"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui analyse le match sans jamais jouer.",
+   "text": "Envoie ça au pote qui refait toutes les tendances TikTok.",
    "accent_words": [
-    "sans jamais jouer"
+    "tendances TikTok"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "scroll",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur une salle de quartier : chaises de plateau télé.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · CONCOURS DE PARODIES",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "PARODIEZ-MOI"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,13 +123,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "person",
-    "tripod_camera"
+    "screen",
+    "ring_light",
+    "person"
    ],
-   "onscreen_text": "CONSEIL : CHRONIQUEURS",
-   "comic_action": "Autour de la table, chacun a son micro-cravate et son fauteuil de plateau.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PARODIES EN MASSE",
+   "comic_action": "Un mur d'écrans rejoue la même scène, en mille versions.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PARODIEZ-MOI"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,42 +151,84 @@
    ],
    "camera": "orbit",
    "set": [
-    "tribune",
-    "text3d"
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "DÉPUTÉS : 0",
-   "comic_action": "Orbite autour d'un hémicycle miniature vide.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "CONCOURS DE PARODIES",
+   "comic_action": "Inscriptions au guichet, micros d'époque fournis.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "clap",
+     "visage": "content",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "INSCRIPTION : 1 MICRO"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "text3d",
-    "sign",
+    "ring_light",
+    "tripod_camera",
     "person"
    ],
-   "onscreen_text": "VAR : 1ER TOUR",
-   "comic_action": "Un panneau de circonscription barré.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "10 000 PARODIES",
+   "comic_action": "Chaque fenêtre a un habitant qui se filme.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "FIGURANT"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "person",
     "screen",
-    "table"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "DÉCISIONS : 0",
-   "comic_action": "Travelling : les chroniqueurs analysent la mairie voisine sur grand écran.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "ORIGINAL : DÉGUISÉ",
+   "comic_action": "Le maire porte une fausse moustache devant la caméra.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "VUES : PARODIE 1 – ORIGINAL 0"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -159,13 +237,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
+    "screen",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "0 VOTE · 1 000 AVIS",
-   "comic_action": "Plan large : la salle déborde de bulles de dialogue, le registre des délibérations est vierge.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "LE PLUS DRÔLE : 7 %",
+   "comic_action": "Le jury décerne la palme à la vidéo d'origine.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "7,07 %"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -179,51 +270,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique propose de voter, tout le monde le regarde.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui analyse le match sans jamais jouer."
+  "text": "Envoie ça au pote qui refait toutes les tendances TikTok."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 74,
+ "word_count": 78,
  "claims": [
   {
-   "text": "Comme son parti après 2022 : zéro député à l'Assemblée.",
+   "text": "Sa vidéo de candidature de 2021 a été parodiée en masse.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/jean-luc-mano-zemmour-est-passe-du-statut-de-chroniqueur-a-un-homme-politique-qui",
-   "note": "Du chroniqueur au chef de parti ; aucun député après 2022."
+   "source": "https://www.konbini.com/news/le-grand-nimporte-quoi-des-reseaux-sociaux-special-candidature-deric-zemmour/",
+   "note": "Parodies en masse de la vidéo de candidature."
   },
   {
-   "text": "Lui-même, battu dès le premier tour dans le Var.",
+   "text": "Le plus drôle reste l'original : 7 % à l'arrivée.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
-   "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/jean-luc-mano-zemmour-est-passe-du-statut-de-chroniqueur-a-un-homme-politique-qui",
-   "date": "2022",
-   "consulted": "2026-11-22",
-   "statut": "fait + opinion",
-   "note": "Du chroniqueur au chef de parti ; aucun député après 2022."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
-   "date": "2022-06-12",
+   "url": "https://www.konbini.com/news/le-grand-nimporte-quoi-des-reseaux-sociaux-special-candidature-deric-zemmour/",
+   "date": "2021-11",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
+   "note": "Parodies en masse de la vidéo de candidature."
+  },
+  {
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le chroniqueur devenu chef de parti : zéro député après 2022. Cadre : le conseil de quartier. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : Sa vidéo de candidature de 2021 a été parodiée en masse. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

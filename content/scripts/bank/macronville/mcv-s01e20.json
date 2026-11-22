@@ -3,67 +3,67 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-20",
  "format": "A",
- "title_cover": "Horloge en panne",
+ "title_cover": "Midi à 21 heures",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Son surnom : le maître des horloges. Tout est calé, rien ne dépasse.",
+  "Surnom : le maître des horloges. Lui seul décide de l'heure.",
   "Les électeurs de Macron vont détester celle-là.",
-  "Horloge en panne : l'histoire en trente secondes.",
-  "Dans cette ville, tout le monde vote Macron. À l'heure, en théorie."
+  "Midi à 21 heures : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Le coucou a un chef de cabinet."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le maître des horloges. Dommage que personne n'ait remonté le pays.",
-  "Il maîtrisait le temps. Le temps, lui, n'a pas suivi.",
-  "Puis un Premier ministre démissionne et revient en quatre jours."
+  "Le maître des horloges admire son œuvre. Il est l'heure. De quoi ?",
+  "Maître des horloges : il a surtout cassé le réveil de tout le monde.",
+  "Un soir d'élection, un bouton : toute la ville est dissoute."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. À l'heure, en théorie.",
+   "text": "Dans cette ville, tout le monde vote Macron. Le coucou a un chef de cabinet.",
    "accent_words": [
-    "théorie"
+    "chef de cabinet"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son surnom : le maître des horloges. Tout est calé, rien ne dépasse.",
+   "text": "Surnom : le maître des horloges. Lui seul décide de l'heure.",
    "accent_words": [
-    "dépasse"
+    "l'heure"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Juin 2024 : il dissout l'Assemblée un soir d'élection. Surprise totale.",
+   "text": "On lui confie les horloges. Il les règle selon son humeur.",
    "accent_words": [
-    "totale"
+    "humeur"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Puis des mois d'affaires courantes. L'horloge tourne à vide.",
+   "text": "Midi sonne à 21 heures. Les coqs démissionnent.",
    "accent_words": [
-    "vide"
+    "démissionnent"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Puis un Premier ministre démissionne et revient en quatre jours.",
+   "text": "Un soir d'élection, un bouton : toute la ville est dissoute.",
    "accent_words": [
-    "jours"
+    "dissoute"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le maître des horloges. Dommage que personne n'ait remonté le pays.",
+   "text": "Le maître des horloges admire son œuvre. Il est l'heure. De quoi ?",
    "accent_words": [
-    "remonté"
+    "quoi"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -91,7 +91,7 @@
     "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la ville ; banderole « HORLOGE EN PANNE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "comic_action": "Descente sur la ville ; banderole « MIDI À 21 HEURES » sur la mairie ; le maire caricaturé salue, sourire figé.",
    "expected_result": "La ville et le thème posés en une image.",
    "actions": [
     {
@@ -105,6 +105,16 @@
      "geste": "clap",
      "visage": "neutre",
      "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "MIDI À 21 HEURES"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
     }
    ]
   },
@@ -121,7 +131,7 @@
    ],
    "onscreen_text": "MAÎTRE DES HORLOGES",
    "comic_action": "Le maire règle une horloge géante sur une colonne, l'air satisfait.",
-   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
    "actions": [
     {
      "who": "maire",
@@ -135,6 +145,12 @@
      "visage": "neutre",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "L'HEURE, C'EST MOI"
+    }
    ]
   },
   {
@@ -144,25 +160,31 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
-    "text3d",
-    "person"
+    "column",
+    "building",
+    "text3d"
    ],
-   "onscreen_text": "DISSOLUTION : 21 H",
-   "comic_action": "L'horloge sonne 21 heures ; la mairie se défait en cubes.",
-   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "onscreen_text": "HORLOGES À SON HUMEUR",
+   "comic_action": "Toutes les horloges de la ville affichent une heure différente.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "arms_up",
-     "visage": "fier",
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque",
      "quand": 0.0
     },
     {
-     "who": "foule",
-     "geste": "fall",
-     "visage": "choque",
+     "who": "maire",
+     "geste": "spin",
+     "visage": "content",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "QUELLE HEURE ?"
     }
    ]
   },
@@ -173,25 +195,31 @@
    ],
    "camera": "window_pass",
    "set": [
-    "column",
-    "text3d",
+    "shop",
+    "lamp",
     "person"
    ],
-   "onscreen_text": "AFFAIRES COURANTES",
-   "comic_action": "Les aiguilles tournent dans le vide, de plus en plus vite ; personne ne regarde.",
-   "expected_result": "Escalade 2 : encore plus gros.",
+   "onscreen_text": "MIDI À 21 H",
+   "comic_action": "Le marché ouvre sous les réverbères ; un coq tend sa lettre de démission.",
+   "expected_result": "Conséquence : ça dégénère.",
    "actions": [
     {
      "who": "foule",
-     "geste": "shrug",
-     "visage": "blase",
+     "geste": "shake",
+     "visage": "fatigue",
      "quand": 0.0
     },
     {
-     "who": "maire",
-     "geste": "spin",
-     "visage": "sourire_pro",
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
      "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CROISSANT DE MINUIT 7 €"
     }
    ]
   },
@@ -203,24 +231,30 @@
    "camera": "closeup",
    "set": [
     "mairie",
-    "person",
-    "sign"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "4 JOURS ALLER-RETOUR",
-   "comic_action": "Le Premier ministre sort par la porte de gauche, rentre par celle de droite.",
-   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "onscreen_text": "VILLE DISSOUTE",
+   "comic_action": "Il appuie sur un bouton ; les bâtiments se défont en cubes.",
+   "expected_result": "Pire conséquence : l'absurde total.",
    "actions": [
     {
-     "who": "perso",
-     "geste": "spin",
-     "visage": "fatigue",
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
      "quand": 0.0
     },
     {
-     "who": "maire",
-     "geste": "clap",
-     "visage": "sourire_pro",
-     "quand": 0.5
+     "who": "foule",
+     "geste": "fall",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BONNE NUIT"
     }
    ]
   },
@@ -235,21 +269,27 @@
     "text3d",
     "person"
    ],
-   "onscreen_text": "PAYS : PAS REMONTÉ",
-   "comic_action": "L'horloge s'arrête ; le maire tourne la clé, elle lui reste dans la main.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "L'HEURE DE QUOI ?",
+   "comic_action": "Le maire seul devant l'horloge géante, au milieu des cubes ; les aiguilles tournent dans le vide.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "shake",
-     "visage": "choque",
+     "geste": "shrug",
+     "visage": "sourire_pro",
      "quand": 0.0
     },
     {
-     "who": "perso",
+     "who": "foule",
      "geste": "facepalm",
      "visage": "blase",
-     "quand": 0.4
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "IL EST L'HEURE"
     }
    ]
   },
@@ -266,7 +306,7 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : le surnom « maître des horloges » face au chaos.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : le « maître des horloges » règle toutes les horloges de la ville.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -281,6 +321,12 @@
      "visage": "sourire_pro",
      "quand": 0.5
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "MIDI À 21 HEURES"
+    }
    ]
   }
  ],
@@ -293,37 +339,19 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 79,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Son surnom : le maître des horloges. Tout est calé, rien ne dépasse.",
+   "text": "Surnom : le maître des horloges. Lui seul décide de l'heure.",
    "claim_type": "fait_public",
    "source": "https://www.lequotidiendupharmacien.fr/nom-de-nom",
    "note": "Surnoms « Jupiter » et « maître des horloges », employés par dérision."
   },
   {
-   "text": "Juin 2024 : il dissout l'Assemblée un soir d'élection. Surprise totale.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/dissolution-de-lassemblee-nationale-quelles-consequences",
-   "note": "Dissolution de l'Assemblée annoncée le soir des européennes (09/06/2024)."
-  },
-  {
-   "text": "Puis des mois d'affaires courantes. L'horloge tourne à vide.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
-   "note": "Valse des ministres, mois d'affaires courantes : une année politique record."
-  },
-  {
-   "text": "Puis un Premier ministre démissionne et revient en quatre jours.",
-   "claim_type": "fait_public",
-   "source": "https://www.parismatch.be/actualites/monde/2025/10/10/france-emmanuel-macron-reconduit-sebastien-lecornu-comme-premier-ministre-LIQZQK4X7JCTTF65GLJQZJ7EME/",
-   "note": "Lecornu démissionne le 06/10/2025 ; Macron le reconduit le 10/10/2025."
-  },
-  {
-   "text": "Le maître des horloges. Dommage que personne n'ait remonté le pays.",
+   "text": "Un soir d'élection, un bouton : toute la ville est dissoute.",
    "claim_type": "fiction_satirique",
-   "source": "https://www.lequotidiendupharmacien.fr/nom-de-nom",
-   "note": "Surnoms « Jupiter » et « maître des horloges », employés par dérision. Exagération satirique évidente, présentée comme telle."
+   "source": "https://www.publicsenat.fr/actualites/politique/dissolution-de-lassemblee-nationale-quelles-consequences",
+   "note": "Dissolution de l'Assemblée annoncée le soir des européennes (09/06/2024). Exagération satirique évidente, présentée comme telle."
   }
  ],
  "sources": [
@@ -340,22 +368,8 @@
    "consulted": "2026-11-22",
    "statut": "fait public",
    "note": "Dissolution de l'Assemblée annoncée le soir des européennes (09/06/2024)."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
-   "date": "2025",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Valse des ministres, mois d'affaires courantes : une année politique record."
-  },
-  {
-   "url": "https://www.parismatch.be/actualites/monde/2025/10/10/france-emmanuel-macron-reconduit-sebastien-lecornu-comme-premier-ministre-LIQZQK4X7JCTTF65GLJQZJ7EME/",
-   "date": "2025-10-10",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Lecornu démissionne le 06/10/2025 ; Macron le reconduit le 10/10/2025."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — le surnom « maître des horloges » face au chaos. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : le « maître des horloges » règle toutes les horloges de la ville. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

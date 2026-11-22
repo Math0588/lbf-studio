@@ -4,79 +4,79 @@
  "synopsis_id": "mlv-m030-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Amphi ralliement",
- "anchor": "« coalition » ou « ralliement » : la dissertation sans fin.",
+ "title_cover": "Une seule vedette",
+ "anchor": "La candidate locale citée une fois à Lyon : chaque habitant cité une fois par an.",
  "meme_id": "MN",
- "situation": "l'université",
- "ressort": "piques frontales : setup court → retournement sec (style tacle)",
+ "situation": "le politicien lui-même",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre qui dégénère (STYLE_TACLE, mise à jour 3)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : l'amphi débat de vocabulaire depuis septembre.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, la dissertation a toujours la même conclusion.",
-  "Mélenchonville : thèse, antithèse, ralliement."
+  "Dans cette ville, tout le monde vote Mélenchon. Même la statue s'efface.",
+  "Mélenchon cite les autres une fois. La ville a appliqué la règle.",
+  "Celle-là, Méluche ne la partagera pas.",
+  "Bienvenue à Mélenchonville : une seule vedette.",
+  "Mélenchon en une vidéo : une seule vedette."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Synthèse : tout le monde est d'accord pour qu'il décide. Note : dix-huit.",
-  "Coalition ou ralliement : même chef, autre mot.",
-  "La synthèse est toujours la même : lui."
+  "Seul nom affiché partout : le sien, sur quatre affiches présidentielles.",
+  "Seul nom affiché partout : le sien, sur quatre affiches.",
+  "Les noms disparaissent des boîtes aux lettres. Le facteur livre au hasard."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Amphi plein.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même la statue s'efface.",
    "accent_words": [
-    "Amphi plein"
+    "Même la statue s'efface"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À gauche, on débat : coalition ou ralliement autour de lui ?",
+   "text": "À Lyon, au meeting d'une candidate locale, il ne la cite qu'une fois.",
    "accent_words": [
-    "coalition"
+    "qu'une fois"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, l'amphi en fait un partiel de linguistique. Quatre heures.",
+   "text": "La mairie applique : chaque habitant est cité une fois par an, maximum.",
    "accent_words": [
-    "Quatre heures"
+    "an, maximum"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Thèse : une coalition, c'est un ralliement qui a fait de la philo.",
+   "text": "Le boulanger devient un monsieur. La maîtresse, une dame.",
    "accent_words": [
-    "Thèse"
+    "La maîtresse, une dame"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Antithèse : un ralliement, c'est une coalition avec un seul chef.",
+   "text": "Les noms disparaissent des boîtes aux lettres. Le facteur livre au hasard.",
    "accent_words": [
-    "un seul chef"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n6",
-   "text": "Synthèse : tout le monde est d'accord pour qu'il décide. Note : dix-huit.",
-   "accent_words": [
-    "qu'il décide"
+    "au hasard"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui a une thèse sur tout et zéro synthèse.",
+   "id": "n6",
+   "text": "Seul nom affiché partout : le sien, sur quatre affiches présidentielles.",
    "accent_words": [
-    "zéro synthèse"
+    "affiches présidentielles"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui prend le micro au karaoké et le garde.",
+   "accent_words": [
+    "le garde"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,13 +90,36 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un amphi ; au tableau : « COALITION OU RALLIEMENT ? ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · UNE SEULE VEDETTE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "UNE SEULE VEDETTE"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,13 +128,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "text3d",
+    "tribune",
     "person",
-    "table"
+    "studio_light"
    ],
-   "onscreen_text": "SUJET : COALITION OU RALLIEMENT",
-   "comic_action": "Gros plan sur le sujet de dissertation au tableau.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "CANDIDATE CITÉE : 1 FOIS",
+   "comic_action": "La candidate dans l'ombre, projecteur sur lui.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "UNE SEULE VEDETTE"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -120,28 +157,54 @@
    ],
    "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
+    "mairie",
+    "sign",
     "person"
    ],
-   "onscreen_text": "4 H",
-   "comic_action": "Orbite : l'amphi rempli, copies qui s'empilent.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "1 CITATION PAR AN",
+   "comic_action": "Registre officiel des citations, une case par habitant.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "QUOTA : 1"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "scroll",
-    "text3d",
-    "person"
+    "shop",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "THÈSE",
-   "comic_action": "Un étudiant lit sa copie, debout, poing levé.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LE BOULANGER : UN MONSIEUR",
+   "comic_action": "Une enseigne repeinte : « CHEZ UN MONSIEUR ».",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ANONYME"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,13 +213,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "tribune",
-    "text3d",
-    "person"
+    "building",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "ANTITHÈSE",
-   "comic_action": "Un autre étudiant répond depuis un pupitre.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "BOÎTES SANS NOM",
+   "comic_action": "Le facteur jette les lettres en l'air au pied de l'immeuble.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "DESTINATAIRE : QUELQU'UN"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +241,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "table",
+    "facade_row",
+    "banner",
     "text3d"
    ],
-   "onscreen_text": "SYNTHÈSE : LUI",
-   "comic_action": "Plan large : toutes les copies portent la même conclusion, un seul nom.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "SON NOM × 4",
+   "comic_action": "Quatre affiches identiques, quatre dates.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "2012 · 2017 · 2022 · 2027"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,44 +274,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique rend copie blanche.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui a une thèse sur tout et zéro synthèse."
+  "text": "Envoie ça au pote qui prend le micro au karaoké et le garde."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 82,
+ "word_count": 83,
  "claims": [
   {
-   "text": "À gauche, on débat : coalition ou ralliement autour de lui ?",
+   "text": "À Lyon, au meeting d'une candidate locale, il ne la cite qu'une fois.",
    "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/presidentielle-2027-marine-tondelier-prete-a-une-coalition-autour-de-jean-luc-melenchon",
-   "note": "Le débat « coalition » ou « ralliement » autour de Mélenchon."
+   "source": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
+   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
   },
   {
-   "text": "Antithèse : un ralliement, c'est une coalition avec un seul chef.",
+   "text": "Seul nom affiché partout : le sien, sur quatre affiches présidentielles.",
    "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/presidentielle-2027-marine-tondelier-prete-a-une-coalition-autour-de-jean-luc-melenchon",
-   "note": "Le débat « coalition » ou « ralliement » autour de Mélenchon."
+   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "sources": [
   {
-   "url": "https://lcp.fr/actualites/presidentielle-2027-marine-tondelier-prete-a-une-coalition-autour-de-jean-luc-melenchon",
-   "date": "2026",
+   "url": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
+   "date": "2026-02-26",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Le débat « coalition » ou « ralliement » autour de Mélenchon."
+   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "date": "2026-06",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « coalition » ou « ralliement » : la dissertation sans fin. Cadre : l'université. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : À Lyon, au meeting d'une candidate locale, il ne la cite qu'une fois. Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

@@ -3,27 +3,27 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-06",
  "format": "A",
- "title_cover": "La République, c'est lui",
+ "title_cover": "Adressé à la République",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon. Pardon : la République.",
-  "Mélenchon a trouvé qui était la République. Lui.",
+  "Dans cette ville, tout le monde vote Mélenchon. Même le chien salue.",
+  "Mélenchon a dit « La République, c'est moi ». La Poste l'a cru.",
   "Attention : vidéo plus courte qu'un discours de Mélenchon.",
-  "Bienvenue à Mélenchonville : la République, c'est lui.",
-  "Mélenchon en une vidéo : la République, c'est lui."
+  "Bienvenue à Mélenchonville : adressé à la République.",
+  "Mélenchon en une vidéo : adressé à la République."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La République, c'est lui. Les électeurs : quatrième, quatrième, troisième.",
-  "La République, c'est lui. Le pays, toujours pas.",
-  "Dictateur ? Il manque un détail : avoir été élu président."
+  "La République, c'est lui. La dette de la République aussi.",
+  "La République, c'est lui. Les dettes de la République aussi.",
+  "La boîte aux lettres explose. Le facteur réclame une prime."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Pardon : la République.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même le chien salue.",
    "accent_words": [
-    "la République"
+    "Même le chien salue"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "Louis XIV se contentait de l'État. Lui prend la République entière.",
+   "text": "La Poste le prend au mot : le courrier de la République arrive chez lui.",
    "accent_words": [
-    "République entière"
+    "chez lui"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Huit ans plus tard, il parle d'« audace déraisonnable ». Et ne regrette rien.",
+   "text": "Les impôts, les amendes, les factures d'électricité de la République. Tout.",
    "accent_words": [
-    "Et ne regrette rien"
+    "Tout"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Dictateur ? Il manque un détail : avoir été élu président.",
+   "text": "La boîte aux lettres explose. Le facteur réclame une prime.",
    "accent_words": [
-    "avoir été élu président"
+    "une prime"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La République, c'est lui. Les électeurs : quatrième, quatrième, troisième.",
+   "text": "La République, c'est lui. La dette de la République aussi.",
    "accent_words": [
-    "quatrième, quatrième, troisième"
+    "République aussi"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui se proclame chef au foot à cinq.",
+   "text": "Envoie ça au pote qui se proclame chef et paie l'addition.",
    "accent_words": [
-    "à cinq"
+    "paie l'addition"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE · LA RÉPUBLIQUE, C'EST LUI",
-   "comic_action": "Descente sur la ville : banderole « LA RÉPUBLIQUE, C'EST LUI », foule massée devant la mairie.",
-   "expected_result": "La ville et son thème posés en une image.",
+   "onscreen_text": "MÉLENCHONVILLE · ADRESSÉ À LA RÉPUBLIQUE",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « MÉLUCHE » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
    "actions": [
     {
      "who": "maire",
@@ -103,6 +103,16 @@
      "geste": "cheer",
      "visage": "content",
      "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    },
+    {
+     "type": "affiche",
+     "texte": "LA RÉPUBLIQUE, C'EST LUI"
     }
    ]
   },
@@ -118,8 +128,8 @@
     "text3d"
    ],
    "onscreen_text": "« LA RÉPUBLIQUE, C'EST MOI ! »",
-   "comic_action": "Le maire, micro en main, crie face à l'objectif ; la foule recule.",
-   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "comic_action": "Le maire crie au micro ; la foule recule d'un pas.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
    "actions": [
     {
      "who": "maire",
@@ -133,6 +143,12 @@
      "visage": "choque",
      "quand": 0.3
     }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LA RÉPUBLIQUE, C'EST MOI"
+    }
    ]
   },
   {
@@ -142,18 +158,24 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "arch",
-    "text3d"
+    "building",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "LOUIS XIV, BATTU",
-   "comic_action": "Une colonne à l'effigie d'un roi s'incline devant une banderole « MOI ».",
-   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "onscreen_text": "LIVRÉ À : LA RÉPUBLIQUE",
+   "comic_action": "Un facteur dépose une montagne de lettres sur son paillasson.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "spin",
-     "visage": "fier"
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "DESTINATAIRE : LUI"
     }
    ]
   },
@@ -164,18 +186,24 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "screen",
-    "tribune",
-    "text3d"
+    "form_stack",
+    "text3d",
+    "building"
    ],
-   "onscreen_text": "« AUDACE DÉRAISONNABLE »",
-   "comic_action": "Un écran rejoue la scène ; le maire hoche la tête, satisfait.",
-   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "onscreen_text": "FACTURES DE LA RÉPUBLIQUE",
+   "comic_action": "Les enveloppes s'empilent jusqu'au deuxième étage.",
+   "expected_result": "Ça dégénère : conséquence visible.",
    "actions": [
     {
      "who": "maire",
-     "geste": "nod",
-     "visage": "fier"
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "À RÉGLER SOUS 30 JOURS"
     }
    ]
   },
@@ -186,24 +214,24 @@
    ],
    "camera": "closeup",
    "set": [
-    "mairie",
-    "sign",
+    "building",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "PRÉSIDENT : JAMAIS ÉLU",
-   "comic_action": "Panneau « PALAIS » barré d'une croix rouge.",
-   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "onscreen_text": "BOÎTE AUX LETTRES : K.O.",
+   "comic_action": "La boîte aux lettres éclate en confettis de courrier.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "shrug",
-     "visage": "sourire_pro"
-    },
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "point",
-     "visage": "content",
-     "quand": 0.4
+     "type": "affiche",
+     "texte": "LA POSTE A DIT OUI"
     }
    ]
   },
@@ -214,24 +242,24 @@
    ],
    "camera": "descend",
    "set": [
-    "lift_tribune",
-    "text3d",
-    "banner"
+    "mairie",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "4E · 4E · 3E",
-   "comic_action": "Une tribune monte, s'arrête, redescend : 4, 4, 3.",
-   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "onscreen_text": "DETTE : C'EST LUI",
+   "comic_action": "Le maire, enseveli sous les enveloppes, lève un doigt.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "fall",
-     "visage": "choque"
-    },
+     "geste": "shrug",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "clap",
-     "visage": "content",
-     "quand": 0.5
+     "type": "prix",
+     "texte": "TOTAL : 3 000 MILLIARDS"
     }
    ]
   },
@@ -248,7 +276,7 @@
     "shop"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
    "expected_result": "Partage ciblé, produit visible.",
    "actions": [
     {
@@ -257,43 +285,31 @@
      "visage": "sourire_pro",
      "objet": "phone"
     }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "MÉLUCHE"
+    }
    ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui se proclame chef au foot à cinq."
+  "text": "Envoie ça au pote qui se proclame chef et paie l'addition."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 84,
+ "word_count": 83,
  "claims": [
   {
    "text": "En 2018, face caméra, il hurle : « La République, c'est moi ! ».",
    "claim_type": "citation_exacte",
    "source": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
    "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
-  },
-  {
-   "text": "Huit ans plus tard, il parle d'« audace déraisonnable ». Et ne regrette rien.",
-   "claim_type": "citation_exacte",
-   "source": "https://lcp.fr/actualites/la-republique-c-est-moi-jean-luc-melenchon-assume-un-moment-d-audace-deraisonnable",
-   "note": "Mardis de l'Essec (27/10/2026) : il assume une « audace déraisonnable », « je n'ai pas de regrets », pas au sens du Roi-Soleil mais « le peuple, sa représentation, c'est moi »."
-  },
-  {
-   "text": "Dictateur ? Il manque un détail : avoir été élu président.",
-   "claim_type": "fait_public",
-   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
-  },
-  {
-   "text": "La République, c'est lui. Les électeurs : quatrième, quatrième, troisième.",
-   "claim_type": "fait_public",
-   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
@@ -303,22 +319,8 @@
    "consulted": "2026-11-22",
    "statut": "citation_exacte",
    "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
-  },
-  {
-   "url": "https://lcp.fr/actualites/la-republique-c-est-moi-jean-luc-melenchon-assume-un-moment-d-audace-deraisonnable",
-   "date": "2026-10-28",
-   "consulted": "2026-11-22",
-   "statut": "citation_exacte",
-   "note": "Mardis de l'Essec (27/10/2026) : il assume une « audace déraisonnable », « je n'ai pas de regrets », pas au sens du Roi-Soleil mais « le peuple, sa représentation, c'est moi »."
-  },
-  {
-   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "date": "consulté 2026-11-22",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : La République, c'est lui. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2018, face caméra, il hurle : « La République, c'est moi ! ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

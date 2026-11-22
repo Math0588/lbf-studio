@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-16",
  "format": "A",
- "title_cover": "Record de trahison",
+ "title_cover": "JO de la trahison",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour.",
-  "Bienvenue à Zemmourville : le club où chaque joueur finit chez l'adversaire.",
-  "Les électeurs de Zemmour vont me détester.",
-  "Ici, la VAR est en sépia et le mercato en trahison.",
-  "Zemmourville : le stade du record du monde."
+  "Dans cette ville, tout le monde vote Zemmour. Même le chien a changé de maître.",
+  "Zemmour a dénoncé le record du monde de la trahison. La ville en a fait des JO.",
+  "Ben voyons, encore une vidéo sur lui.",
+  "Bienvenue à Zemmourville : jO de la trahison.",
+  "Zemmour en une vidéo : jO de la trahison."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Plus de joueurs, plus de titre. Mais un record du monde, quand même.",
-  "Un record du monde, zéro joueur.",
-  "La VAR confirme : c'était mieux avant le mercato."
+  "Le record reste à lui : cinq élus en 2024, quatre partis.",
+  "Le record reste à lui : cinq élus, quatre partis.",
+  "Les médaillés se trahissent entre eux. L'or file chez le bronze."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour. Au stade.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Même le chien a changé de maître.",
    "accent_words": [
-    "Au stade"
+    "de maître"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Après les européennes 2024, sa tête de liste part chez le voisin.",
+   "text": "En 2024, il dénonce le « record du monde de la trahison ».",
    "accent_words": [
-    "chez le voisin"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "Il parle de « record du monde de la trahison ». Ici, c'est un trophée.",
-   "accent_words": [
-    "un trophée"
+    "la trahison"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "La VAR revoit l'action en sépia. Verdict : c'était mieux avant le transfert.",
+   "id": "n3",
+   "text": "La ville organise les Jeux olympiques de la trahison.",
    "accent_words": [
-    "avant le transfert"
+    "la trahison"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Épreuves : changer de camp en relais, lâcher son équipe en apnée.",
+   "accent_words": [
+    "en apnée"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Chaque semaine, un joueur passe en face. Record battu chaque semaine.",
+   "text": "Les médaillés se trahissent entre eux. L'or file chez le bronze.",
    "accent_words": [
-    "Record battu"
+    "le bronze"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Plus de joueurs, plus de titre. Mais un record du monde, quand même.",
+   "text": "Le record reste à lui : cinq élus en 2024, quatre partis.",
    "accent_words": [
-    "un record du monde"
+    "quatre partis"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui crie trahison pour un rien.",
+   "text": "Envoie ça au pote qui change de groupe à chaque soirée.",
    "accent_words": [
-    "trahison"
+    "chaque soirée"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,72 +85,149 @@
    "camera": "descend",
    "set": [
     "ground",
-    "person",
+    "mairie",
     "banner",
-    "scroll"
+    "person"
    ],
-   "onscreen_text": "ZEMMOURVILLE",
-   "comic_action": "Descente sur un stade en sépia ; écran géant de la VAR.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "ZEMMOURVILLE · JO DE LA TRAHISON",
+   "comic_action": "Descente sur la ville : un chien en t-shirt « ZEMMOUR » trotte devant la mairie pavoisée.",
+   "expected_result": "La ville et son détail absurde en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    },
+    {
+     "type": "affiche",
+     "texte": "TRAHIR, C'EST GAGNER"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "person",
-    "sign",
-    "banner"
+    "tribune",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "TRANSFERT",
-   "comic_action": "Travelling : une joueuse traverse le terrain avec son sac vers l'autre banc.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« RECORD DU MONDE DE LA TRAHISON »",
+   "comic_action": "Le maire tend un doigt accusateur au micro.",
+   "expected_result": "Le point de départ connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TRAHIR, C'EST GAGNER"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "column",
-    "text3d",
+    "ground",
+    "banner",
     "person"
    ],
-   "onscreen_text": "RECORD DU MONDE",
-   "comic_action": "Une coupe dorée gravée « TRAHISON » sous un projecteur.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "JO DE LA TRAHISON",
+   "comic_action": "Anneaux olympiques emmêlés au-dessus du stade.",
+   "expected_result": "On le prend au pied de la lettre dans la ville.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ENTRÉE : TRAHISON"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
+    "ground",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "VAR : SÉPIA",
-   "comic_action": "Écran géant : ralenti jauni, l'arbitre hoche la tête avec nostalgie.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RELAIS : CHANGEMENT DE CAMP",
+   "comic_action": "Un relayeur passe le témoin… à l'équipe adverse.",
+   "expected_result": "Ça dégénère : conséquence visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "jump",
+     "visage": "content"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "TRAÎTRE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
+    "tribune",
     "person",
-    "banner",
     "text3d"
    ],
-   "onscreen_text": "RECORD N° 52",
-   "comic_action": "Orbite : le banc se vide joueur après joueur.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "OR → BRONZE",
+   "comic_action": "Podium : les médailles changent de cou en boucle.",
+   "expected_result": "Ça dégénère encore plus : pire conséquence.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "spin",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MÉDAILLE : À RENDRE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -159,13 +236,26 @@
    ],
    "camera": "descend",
    "set": [
-    "person",
-    "column",
+    "screen",
+    "banner",
     "text3d"
    ],
-   "onscreen_text": "0 JOUEUR · 1 RECORD",
-   "comic_action": "Plan large : un seul entraîneur sur le banc, la coupe sur les genoux.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "RECORD : 4 SUR 5",
+   "comic_action": "Tableau de records avec son nom en haut.",
+   "expected_result": "Chute : tout retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RECORD : IMBATTU"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -179,33 +269,47 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique change de tribune.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main ; le chien en t-shirt passe.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZEMMOUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui crie trahison pour un rien."
+  "text": "Envoie ça au pote qui change de groupe à chaque soirée."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 84,
+ "word_count": 83,
  "claims": [
   {
-   "text": "Après les européennes 2024, sa tête de liste part chez le voisin.",
-   "claim_type": "fait_public",
-   "source": "https://www.letemps.ch/monde/europe/eric-zemmour-exclut-marion-marechal-de-reconquete",
-   "note": "Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
-  },
-  {
-   "text": "« record du monde de la trahison »",
+   "text": "En 2024, il dénonce le « record du monde de la trahison ».",
    "claim_type": "citation_exacte",
    "source": "https://www.letemps.ch/monde/europe/eric-zemmour-exclut-marion-marechal-de-reconquete",
-   "note": "Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
+   "note": "Juin 2024 : exclusion de la tête de liste des européennes ; il parle de « record du monde de la trahison »."
+  },
+  {
+   "text": "Le record reste à lui : cinq élus en 2024, quatre partis.",
+   "claim_type": "fait_public",
+   "source": "https://www.touteleurope.eu/wp-content/uploads/2026/10/Infographie-81-Deputes-europeens-francais-par-groupe-politique-4-pages.pdf",
+   "note": "Après 2024, une seule eurodéputée siège pour Reconquête ; les quatre autres élus de la liste siègent ailleurs."
   }
  ],
  "sources": [
@@ -213,10 +317,17 @@
    "url": "https://www.letemps.ch/monde/europe/eric-zemmour-exclut-marion-marechal-de-reconquete",
    "date": "2024-06",
    "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
+   "statut": "citation_exacte",
+   "note": "Juin 2024 : exclusion de la tête de liste des européennes ; il parle de « record du monde de la trahison »."
+  },
+  {
+   "url": "https://www.touteleurope.eu/wp-content/uploads/2026/10/Infographie-81-Deputes-europeens-francais-par-groupe-politique-4-pages.pdf",
+   "date": "2026-10",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Après 2024, une seule eurodéputée siège pour Reconquête ; les quatre autres élus de la liste siègent ailleurs."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : juin 2024 : « record du monde de la trahison ». Cadre : le match et la VAR sépia. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
+ "editorial_notes": "Réécriture « histoire absurde » 22/11/2026 (STYLE_TACLE, mise à jour 3) — point de départ : En 2024, il dénonce le « record du monde de la trahison ». Puis pris au pied de la lettre jusqu'à l'absurde évident. Citations « » exactes et sourcées ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

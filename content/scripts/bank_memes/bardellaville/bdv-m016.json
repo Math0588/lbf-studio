@@ -4,71 +4,71 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Le prof en carton",
- "anchor": "surnom moqueur « Bard-est-pas-là » (absences au Parlement européen, critiques d'adversaires ; aucun chiffre repris) : à la fac, le prof est une silhouette en carton.",
+ "title_cover": "La ville fantôme",
+ "anchor": "le « député fantôme » du Parlement européen",
  "meme_key": "ABSENT",
- "situation": "Le prof en carton",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "situation": "La ville fantôme",
+ "ressort": "histoire absurde : truc connu pris au pied de la lettre, la ville dégénère, chute sur lui",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, le prof est une silhouette en carton.",
-  "Bardellaville : le carton répond aussi bien que l'original.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : le prof en carton."
+  "Dans cette ville, tout le monde vote Bardella. Enfin, ses fantômes.",
+  "Bardellaville : une ville entière de fantômes.",
+  "Ici, on mange du pain fantôme.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : La ville fantôme."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Les étudiants questionnent le carton. Il répond aussi bien que l'original.",
-  "Le cours est diffusé en story : vingt-quatre heures, puis plus rien.",
-  "À la fac, l'amphi est plein, le prof est une silhouette en carton."
+  "Bardella apparaît une seule fois : pour la photo, puis disparaît.",
+  "Il n'apparaît que pour la photo.",
+  "La mairie est hantée par des dossiers que personne ne signe."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Le prof, moins.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Enfin, ses fantômes.",
    "accent_words": [
-    "Le prof"
+    "fantômes"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Bard-est-pas-là : le surnom moqueur circule en ligne depuis 2024.",
-   "accent_words": [
-    "Bard-est-pas-là"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "Ses adversaires parlent de député fantôme à Bruxelles.",
+   "text": "Au Parlement européen, ses adversaires parlent de député fantôme.",
    "accent_words": [
     "député fantôme"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "À la fac, l'amphi est plein, le prof est une silhouette en carton.",
+   "id": "n3",
+   "text": "Alors toute la ville devient fantôme : on travaille, mais invisible.",
    "accent_words": [
-    "en carton"
+    "invisible"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Le boulanger est fantôme. Le pain aussi. On mange de l'air.",
+   "accent_words": [
+    "air"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le cours est diffusé en story : vingt-quatre heures, puis plus rien.",
+   "text": "La mairie est hantée par des dossiers que personne ne signe.",
    "accent_words": [
-    "plus rien"
+    "signe"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Les étudiants questionnent le carton. Il répond aussi bien que l'original.",
+   "text": "Bardella apparaît une seule fois : pour la photo, puis disparaît.",
    "accent_words": [
-    "l'original"
+    "photo"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -94,89 +94,171 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la fac municipale ; un amphi plein, l'estrade vide.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "VILLE FANTÔME",
+   "comic_action": "Descente sur la ville ; banderole « VILLE FANTÔME » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shake"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "FANTÔME"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
+    "tribune",
+    "lift_tribune",
+    "banner",
     "person"
    ],
-   "onscreen_text": "BARD-EST-PAS-LÀ",
-   "comic_action": "L'écran de l'amphi affiche le surnom en néon clignotant.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "DÉPUTÉ FANTÔME",
+   "comic_action": "Meeting : la tribune s'élève, banderole « DÉPUTÉ FANTÔME ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "column",
+    "ground",
     "mairie",
-    "text3d",
+    "banner",
     "person"
    ],
-   "onscreen_text": "FANTÔME OFFICIEL",
-   "comic_action": "Entre deux colonnes, un drap blanc assis sur un siège d'hémicycle.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "TRAVAIL INVISIBLE",
+   "comic_action": "Descente sur la ville ; banderole « TRAVAIL INVISIBLE » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BUREAU : INVISIBLE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "tribune",
-    "studio_light",
+    "facade_row",
+    "sign",
     "text3d",
     "person"
    ],
-   "onscreen_text": "PROF : CARTON",
-   "comic_action": "Sur l'estrade, une silhouette en carton ; les étudiants prennent des notes quand même.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PAIN FANTÔME",
+   "comic_action": "Rangée de façades : enseigne « PAIN FANTÔME ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "ring_light",
-    "tripod_camera",
-    "person",
-    "screen"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "COURS : EXPIRÉ",
-   "comic_action": "Ring light et trépied : la story du cours s'efface à l'écran.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DOSSIERS HANTÉS",
+   "comic_action": "Descente sur la ville ; banderole « DOSSIERS HANTÉS » sur la mairie.",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
+    "tribune",
     "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "RÉPONSE : IDENTIQUE",
-   "comic_action": "Un étudiant tend un micro au carton ; silence parfait. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "APPARITION : LA PHOTO",
+   "comic_action": "Plan final, tenir une seconde : « APPARITION : LA PHOTO ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "ring_light"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -190,9 +272,18 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt pose une silhouette en carton à son bureau.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE CONVAINCU",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE CONVAINCU ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -204,39 +295,25 @@
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 74,
+ "word_count": 73,
  "claims": [
   {
    "segment": "n2",
-   "text": "Bard-est-pas-là : le surnom moqueur circule en ligne depuis 2024.",
-   "claim_type": "fait_public",
-   "source": "https://www.connexionfrance.com/news/jordan-bardella-his-unflattering-nickname-and-15m-tik-tok-fans/663977",
-   "note": "Surnom « Bard-est-pas-là » ; environ 1,5 million d'abonnés TikTok en 2024."
-  },
-  {
-   "segment": "n3",
-   "text": "Ses adversaires parlent de député fantôme à Bruxelles.",
+   "text": "Au Parlement européen, ses adversaires parlent de député fantôme.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
-   "note": "Thème du « député fantôme » ; aucun chiffre repris."
+   "note": "Critiques sur l'assiduité au Parlement européen (thème du député fantôme) ; aucun chiffre repris."
   }
  ],
  "sources": [
-  {
-   "url": "https://www.connexionfrance.com/news/jordan-bardella-his-unflattering-nickname-and-15m-tik-tok-fans/663977",
-   "date": "2024-06-11",
-   "consulted": "2026-11-22",
-   "statut": "mème (surnom rapporté comme circulant ; aucun chiffre d'absentéisme repris)",
-   "note": "Surnom « Bard-est-pas-là » ; environ 1,5 million d'abonnés TikTok en 2024."
-  },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
    "date": "2024",
    "consulted": "2026-11-22",
    "statut": "opinion (critiques d'adversaires)",
-   "note": "Thème du « député fantôme » ; aucun chiffre repris."
+   "note": "Critiques sur l'assiduité au Parlement européen (thème du député fantôme) ; aucun chiffre repris."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = surnom moqueur « Bard-est-pas-là » (absences au Parlement européen, critiques d'adversaires ; aucun chiffre repris) : à la fac, le prof est une silhouette en carton. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = le « député fantôme » du Parlement européen. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }
