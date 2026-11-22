@@ -3,84 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-26",
  "format": "A",
- "title_cover": "Auto-école Le Rétroviseur",
+ "title_cover": "Panneaux à son échelle",
  "hook_variants": [
-  "Ici, les voitures d'auto-école n'ont pas de pare-brise, que des rétroviseurs.",
-  "Ici, les voitures d'auto-école n'ont pas de pare-brise. Seulement des rétroviseurs.",
-  "Dans cette auto-école, regarder devant toi, c'est une faute éliminatoire.",
-  "Ici, le code de la route te demande à quelle époque tu préfères un carrefour.",
-  "Ici, on obtient son permis en faisant le rond-point en marche arrière."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : les panneaux sont à son échelle.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, le code de la route a un problème d'échelle.",
+  "Zemmourville : la seule auto-école où 6 dépasse 50."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Admis : excellente vision du passé.",
-  "Le candidat fait le rond-point en marche arrière. L'examinateur tamponne : admis, excellente vision du passé.",
-  "Le candidat est admis. Il a percuté l'avenir. Personne n'a rien vu."
+  "Le vrai problème d'échelle, c'est entre son ego et ses scores.",
+  "Graphique corrigé, score inchangé.",
+  "Le problème d'échelle est réglé. Le problème de score, non."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, les voitures d'auto-école n'ont pas de pare-brise, que des rétroviseurs.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Au code.",
    "accent_words": [
-    "rétroviseurs"
+    "Au code"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Question du code : à quelle époque préférez-vous ce carrefour ?",
+   "text": "En 2025, il reproche à France Info un « problème d'échelle » sur un graphique.",
    "accent_words": [
-    "époque"
+    "graphique"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Le moniteur : ne regarde jamais devant, devant c'est l'inconnu.",
+   "text": "Sa colonne à 6 % paraissait plus petite qu'une autre à 5,5 %.",
    "accent_words": [
-    "l'inconnu"
+    "plus petite"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Lui, Barbour et chevalière, n'a jamais dépassé 1965.",
+   "text": "Ici, l'auto-école a corrigé : son panneau fait trois mètres.",
    "accent_words": [
-    "Barbour",
-    "1965"
+    "trois mètres"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Voiture d'examen : une DS au cuir craquelé.",
+   "text": "Question du code : quelle colonne est la plus grande ? Réponse obligatoire : la sienne.",
    "accent_words": [
-    "DS"
+    "la sienne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le candidat fait le rond-point en marche arrière.",
+   "text": "Le vrai problème d'échelle, c'est entre son ego et ses scores.",
    "accent_words": [
-    "en marche arrière"
+    "son ego"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Admis : excellente vision du passé.",
+   "text": "Envoie ça au pote qui zoome sur ses notes.",
    "accent_words": [
-    "excellente vision du passé"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "T'as raté ton permis combien de fois ?",
-   "accent_words": [
-    "combien de fois"
+    "zoome"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -93,15 +84,14 @@
    ],
    "camera": "descend",
    "set": [
-    "car",
+    "ground",
     "road",
     "sign",
-    "person",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "AUTO-ÉCOLE LE RÉTROVISEUR",
-   "comic_action": "Plongée sur une voiture d'auto-école : à la place du pare-brise, une plaque opaque couverte de rétroviseurs de toutes tailles.",
-   "expected_result": "Image absurde immédiate : conduire sans voir devant."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur une auto-école : un panneau géant écrase tous les autres.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
@@ -111,91 +101,122 @@
    "camera": "closeup",
    "set": [
     "screen",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "À QUELLE ÉPOQUE LE PRÉFÉREZ-VOUS ?",
-   "comic_action": "Gros plan sur l'écran du code : un carrefour dessiné, et quatre réponses « A : 1900 », « B : 1930 », « C : 1960 », « D : avant ».",
-   "expected_result": "Le code de la route devient un questionnaire de nostalgie."
+   "onscreen_text": "PROBLÈME D'ÉCHELLE",
+   "comic_action": "Un graphique projeté en salle de code, colonnes de travers.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "car",
-    "person",
-    "sign"
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "DEVANT = L'INCONNU",
-   "comic_action": "Le moniteur pose la main sur les yeux de l'élève dès qu'il tente de regarder vers l'avant.",
-   "expected_result": "Escalade : regarder devant est interdit."
+   "onscreen_text": "6 % < 5,5 % ?",
+   "comic_action": "Orbite autour de deux colonnes 3D qui se jaugent.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "roundabout",
-    "car",
-    "mascot",
     "sign",
-    "text3d"
+    "road",
+    "car"
    ],
-   "onscreen_text": "ADMIS : VISION DU PASSÉ",
-   "comic_action": "Orbite : la voiture fait le tour du rond-point à reculons ; au centre, le Coq Sépia tient son rétroviseur. L'examinateur tamponne un parchemin. Pause.",
-   "expected_result": "La chute : le permis récompense exactement l'inverse de la conduite."
+   "onscreen_text": "PANNEAU : 3 M",
+   "comic_action": "Travelling : un panneau « 6 % » de trois mètres masque tous les autres.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "RÉPONSE : LA SIENNE",
+   "comic_action": "QCM à l'écran : une seule case cochable.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "road",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "EGO / SCORE",
+   "comic_action": "Plan large : un panneau d'ego géant, un panneau de score minuscule.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « PLUTÔT DROITE. TRÈS FATIGUÉ. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, presque entièrement sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique mesure un panneau au mètre ruban.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "T'as raté ton permis combien de fois ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui zoome sur ses notes."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 70,
- "claims": [],
- "sources": [
+ "word_count": 84,
+ "claims": [
   {
-   "url": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
-   "published": "2021-11-30",
-   "consulted": "2026-11-21",
-   "statut": "opinion",
-   "used_for": "Inspiration seulement (blague) : Moqueries de responsables politiques sur l'annonce : extrême droite « momifiée dans un passé fantasmé », mise en scène « grandiloquente », « déclaration à l'élection présidentielle de 1965 » (Alexis Corbière). Reprises ici comme thèmes (année 1965, momification, grandiloquence), jamais citées."
+   "text": "« problème d'échelle »",
+   "claim_type": "citation_exacte",
+   "source": "https://ladepeche.nc/2025/11/12/france-info-raillee-apres-la-diffusion-dun-graphique-trompeur-sur-la-presidentielle",
+   "note": "Il dénonce sur X un « problème d'échelle » : sa colonne à 6 % plus petite qu'une colonne à 5,5 %."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/geographie-du-vote-une-france-eclatee-en-trois-202165",
-   "published": "2022-04",
-   "consulted": "2026-11-21",
-   "statut": "fait (géographie) / mème (cliché)",
-   "used_for": "Inspiration seulement (cliché électorat) : Géographie : Zemmour 2e dans les 16e, 7e et 8e arrondissements de Paris ; fort à Versailles. Base du cliché satirique « bourgeois nostalgique » (mocassins à glands, Barbour, pull noué sur les épaules, chevalière) — on ne vise que goûts et posture."
+   "text": "Sa colonne à 6 % paraissait plus petite qu'une autre à 5,5 %.",
+   "claim_type": "fait_public",
+   "source": "https://ladepeche.nc/2025/11/12/france-info-raillee-apres-la-diffusion-dun-graphique-trompeur-sur-la-presidentielle",
+   "note": "Il dénonce sur X un « problème d'échelle » : sa colonne à 6 % plus petite qu'une colonne à 5,5 %."
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://ladepeche.nc/2025/11/12/france-info-raillee-apres-la-diffusion-dun-graphique-trompeur-sur-la-presidentielle",
+   "date": "2025-11-12",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte",
+   "note": "Il dénonce sur X un « problème d'échelle » : sa colonne à 6 % plus petite qu'une colonne à 5,5 %."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Littéralisation de « regarder dans le rétro ». Continuité : rond-point central et Coq Sépia au rétroviseur (zmv-evt-002, zmv-evt-003). Aucun personnage réel. Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z2, Z9, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le « problème d'échelle » reproché à un graphique de sondage (2025). Cadre : l'auto-école. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

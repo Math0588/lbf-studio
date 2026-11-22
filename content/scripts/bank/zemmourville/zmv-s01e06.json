@@ -3,51 +3,49 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-06",
  "format": "A",
- "title_cover": "La baguette de 1974",
+ "title_cover": "La baguette chevalière",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour… et la baguette fraîche est interdite.",
-  "Ici, la baguette fraîche est interdite. Trop jeune pour avoir un avis.",
-  "Dans cette ville, plus le pain est dur, plus il est cher.",
-  "Ici, le boulanger ne dit pas « rassis ». Il dit « chargé d'histoire ».",
-  "Cette ville a une baguette classée monument historique."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : la boulangerie a un dress code.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, la baguette se paie en chevalière.",
+  "Zemmourville : le quartier où le pain a un pedigree."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La baguette de 1974 trône sur une colonne, sous cloche.",
-  "Sur la place, la baguette de 1974 trône sur une colonne. La dernière à avoir eu du goût.",
-  "La baguette de 1974 est classée. Les miettes ont un guide."
+  "Fort dans le 16e, 7 % dans le pays : un succès de quartier.",
+  "Un triomphe dans trois arrondissements. Ailleurs, on cherche encore.",
+  "Succès local, échec national, beurre AOP."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour… et la baguette fraîche est interdite.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Mocassins exigés.",
    "accent_words": [
-    "baguette fraîche",
-    "interdite"
+    "Mocassins exigés"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Celle du jour est soldée, celle d'avant-hier sur liste d'attente.",
+   "text": "En 2022, il finit deuxième dans les 16e, 7e et 8e arrondissements de Paris.",
    "accent_words": [
-    "sur liste d'attente"
+    "deuxième"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Plus elle est dure, plus elle est chère : neuf francs le quignon.",
+   "text": "Ici, la boulangerie a donc un voiturier et un code vestimentaire.",
    "accent_words": [
-    "chère",
-    "neuf francs"
+    "code vestimentaire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "L'expert, chevalière au doigt, la sonne comme une cloche.",
+   "text": "Baguette tradition, mocassins à glands, pull sur les épaules. Paiement en chevalière.",
    "accent_words": [
     "chevalière"
    ],
@@ -55,26 +53,25 @@
   },
   {
    "id": "n5",
-   "text": "Elle n'est pas rassise : elle a de la mémoire.",
+   "text": "Le croissant d'hier coûte plus cher : il est d'époque.",
    "accent_words": [
-    "mémoire"
+    "d'époque"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La baguette de 1974 trône sur une colonne, sous cloche.",
+   "text": "Fort dans le 16e, 7 % dans le pays : un succès de quartier.",
    "accent_words": [
-    "1974"
+    "succès de quartier"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Tranche en commentaire : pain frais ou pain d'hier ?",
+   "text": "Envoie ça au pote qui porte un pull sur les épaules en juillet.",
    "accent_words": [
-    "frais",
-    "d'hier"
+    "en juillet"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -87,110 +84,148 @@
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "shop",
-    "sign",
-    "person",
-    "lamp",
-    "text3d"
+    "scroll",
+    "person"
    ],
-   "onscreen_text": "PAIN FRAIS : INTERDIT",
-   "comic_action": "Plongée sur la boulangerie « Au Pain d'Hier ». Un panneau barré rouge sur la vitrine : une baguette fumante. File d'attente devant… le rayon des pains durs.",
-   "expected_result": "Le produit frais est l'interdit ; la file est du mauvais côté."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur une boulangerie avec un voiturier devant la porte.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
+   "camera": "orbit",
+   "set": [
+    "shop",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "16E · 7E · 8E",
+   "comic_action": "Orbite autour de la boutique : trois plaques d'arrondissement dorées.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "shop",
+    "car",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "DRESS CODE",
+   "comic_action": "Travelling : un voiturier gare un vélo comme une berline.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "person",
+    "table",
+    "text3d"
+   ],
+   "onscreen_text": "PAIEMENT : CHEVALIÈRE",
+   "comic_action": "Gros plan : une main tamponne la caisse avec sa chevalière.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
    "camera": "closeup",
    "set": [
     "shop",
     "sign",
     "text3d"
    ],
-   "onscreen_text": "DU JOUR : -50 %",
-   "comic_action": "Gros plan sur les étiquettes : « Du jour : -50 % », « Veille : 4 € », « Avant-hier : LISTE D'ATTENTE ». Une étiquette « Jadis : SUR DEVIS » apparaît.",
-   "expected_result": "Inversion de valeur claire en une étiquette."
+   "onscreen_text": "CROISSANT D'ÉPOQUE",
+   "comic_action": "Étiquette : « croissant de la veille — édition limitée ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s3",
+   "id": "s6",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n6"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "table",
-    "person",
-    "sign"
+    "shop",
+    "road",
+    "text3d"
    ],
-   "onscreen_text": "EXPERTISE EN COURS",
-   "comic_action": "Un expert en gants blancs frappe une baguette sur la table : « DONG » affiché en grosses lettres. Le prix monte à chaque coup.",
-   "expected_result": "Escalade : la dureté devient un critère de luxe."
+   "onscreen_text": "SUCCÈS DE QUARTIER",
+   "comic_action": "Plan large : la boulangerie illuminée, le reste de la ville éteint.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
   },
   {
-   "id": "s4",
+   "id": "s7",
    "narration_ids": [
-    "n5"
-   ],
-   "camera": "orbit",
-   "set": [
-    "column",
-    "fountain",
-    "person",
-    "sign",
-    "text3d",
-    "mascot"
-   ],
-   "onscreen_text": "BAGUETTE DE 1974",
-   "comic_action": "Orbite lente autour de la colonne de la place de la Grandeur Passée : une baguette dorée trône au sommet, éclairée comme un trésor. À ses pieds, des habitants immobiles, tête baissée. La fontaine est à sec.",
-   "expected_result": "La chute : la nostalgie a transformé un pain en relique nationale."
-  },
-  {
-   "id": "s5",
-   "narration_ids": [
-    "n6",
     "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « J'AI UN AVIS. PAS DE MANDAT. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, rouge vif, une seule plume sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique entre sans mocassins, scandale.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Tranche en commentaire : pain frais ou pain d'hier ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui porte un pull sur les épaules en juillet."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 76,
- "claims": [],
+ "word_count": 84,
+ "claims": [
+  {
+   "text": "En 2022, il finit deuxième dans les 16e, 7e et 8e arrondissements de Paris.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/geographie-du-vote-une-france-eclatee-en-trois-202165",
+   "note": "2022 : deuxième dans les 16e, 7e et 8e arrondissements de Paris, fort à Versailles."
+  },
+  {
+   "text": "Fort dans le 16e, 7 % dans le pays : un succès de quartier.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  }
+ ],
  "sources": [
   {
    "url": "https://www.publicsenat.fr/actualites/politique/geographie-du-vote-une-france-eclatee-en-trois-202165",
-   "published": "2022-04",
-   "consulted": "2026-11-21",
-   "statut": "fait (géographie) / mème (cliché)",
-   "used_for": "Inspiration seulement (cliché électorat) : Géographie : Zemmour 2e dans les 16e, 7e et 8e arrondissements de Paris ; fort à Versailles. Base du cliché satirique « bourgeois nostalgique » (mocassins à glands, Barbour, pull noué sur les épaules, chevalière) — on ne vise que goûts et posture."
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "2022 : deuxième dans les 16e, 7e et 8e arrondissements de Paris, fort à Versailles."
   },
   {
-   "url": "https://www.ipsos.com/fr-fr/presidentielle-2022-eric-zemmour-une-percee-et-des-limites",
-   "published": "2021-10",
-   "consulted": "2026-11-21",
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (cliché électorat) : Intentions de vote plus fortes chez les plus de 60 ans (17 %) que chez les moins de 35 ans (13 %). Base du cliché « retraité qui paie en francs »."
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Inversion de valeur (le vieux vaut plus que le neuf) et patrimonialisation absurde. Le « trop jeune pour avoir un avis » vise la posture du chroniqueur qui disqualifie le présent. Aucune personne réelle. Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z9, Z10, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : géographie du vote 2022 : deuxième dans les 16e, 7e et 8e arrondissements, 7 % dans le pays. Cadre : la boulangerie du quartier chic. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

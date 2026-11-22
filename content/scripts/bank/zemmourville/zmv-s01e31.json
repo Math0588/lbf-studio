@@ -3,67 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-29",
  "format": "A",
- "title_cover": "La plaque au futur antérieur",
+ "title_cover": "Racine sur la plaque",
  "hook_variants": [
-  "Ici, pour la ville voisine, le GPS refuse : destination trop récente.",
-  "Ici, pour visiter la ville voisine, le GPS refuse : destination trop récente.",
-  "Dans cette ville, offrir un QR code, c'est une provocation.",
-  "Ici, on visse des plaques commémoratives sur des bâtiments neufs.",
-  "Cette ville a visité sa voisine. Elle l'a trouvée trop jeune."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : les plaques de rue citent Racine.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, même le code postal est en alexandrins.",
+  "Zemmourville : Virgile sur les boîtes aux lettres."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La délégation pose une plaque : il y aura eu quelque chose ici.",
-  "La délégation visse une plaque sur le bâtiment neuf : ici, il y aura eu quelque chose de bien.",
-  "La ville voisine a reçu une plaque. Elle l'a mise au musée."
+  "Homère a écrit l'Odyssée. Lui, une épopée à 7 %.",
+  "Les classiques sur la plaque, le score dans le caniveau.",
+  "Une odyssée électorale, sans Ithaque."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, pour la ville voisine, le GPS refuse : destination trop récente.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. En latin.",
    "accent_words": [
-    "destination trop récente"
+    "En latin"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Les voisins offrent un QR code, on répond par un parchemin de quarante mètres.",
+   "text": "À Port-Marly, en 2026 : Chateaubriand, Racine, Virgile, Homère, en cinquante-cinq minutes.",
    "accent_words": [
-    "parchemin de quarante mètres"
+    "Homère"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Médiathèque neuve, verdict du Chroniqueur : magnifique, dans cinquante ans.",
+   "text": "Ici, chaque plaque de rue cite un classique. Même la boîte aux lettres.",
    "accent_words": [
-    "magnifique, dans cinquante ans"
+    "la boîte aux lettres"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Aucune plaque commémorative : scandale.",
+   "text": "Les voisins offrent un QR code. On répond par un parchemin.",
    "accent_words": [
-    "scandale"
+    "un parchemin"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La délégation pose une plaque : il y aura eu quelque chose ici.",
+   "text": "La plaque de la mairie annonce : ici sera gagnée une élection. Futur antérieur.",
    "accent_words": [
-    "il y aura eu"
+    "Futur antérieur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "On visite quelle ville voisine la prochaine fois ?",
+   "text": "Homère a écrit l'Odyssée. Lui, une épopée à 7 %.",
    "accent_words": [
-    "quelle ville voisine"
+    "une épopée"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui signe ses textos en latin.",
+   "accent_words": [
+    "en latin"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -76,102 +84,147 @@
    ],
    "camera": "descend",
    "set": [
-    "car",
-    "gps",
+    "ground",
     "road",
     "sign",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "DESTINATION TROP RÉCENTE",
-   "comic_action": "Plongée sur une voiture officielle à la sortie de la ville : le GPS Jadis affiche un refus en lettres gothiques, sa manivelle tourne toute seule vers l'arrière.",
-   "expected_result": "Continuité : le GPS du pilote refuse d'aller vers du neuf."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur une rue : plaques en marbre gravées de citations.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "scroll",
-    "person",
-    "screen"
+    "tribune",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "QR CODE VS 40 M",
-   "comic_action": "Un habitant de la ville voisine tend un petit écran avec un QR code ; en face, le Chroniqueur déroule un parchemin qui sort du cadre.",
-   "expected_result": "Choc d'époques à l'échelle visuelle."
+   "onscreen_text": "55 MIN · 4 CLASSIQUES",
+   "comic_action": "Orbite autour d'un pupitre entouré de bustes.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "sign",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "BOÎTE AUX LETTRES : VIRGILE",
+   "comic_action": "Gros plan : une boîte aux lettres gravée d'un vers latin.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
     "n4"
    ],
    "camera": "street_dolly",
    "set": [
-    "building",
+    "scroll",
     "person",
-    "sign",
-    "text3d"
+    "sign"
    ],
-   "onscreen_text": "MAGNIFIQUE. DANS 50 ANS.",
-   "comic_action": "Travelling devant une médiathèque moderne vitrée. Le Chroniqueur municipal l'inspecte avec une loupe, cherche une plaque sur chaque mur, ne trouve rien, s'indigne.",
-   "expected_result": "Escalade : le neuf n'a pas le droit d'être beau."
+   "onscreen_text": "QR CODE → PARCHEMIN",
+   "comic_action": "Travelling : un voisin tend son téléphone, reçoit un rouleau de deux mètres.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s4",
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "closeup",
    "set": [
-    "building",
+    "mairie",
     "sign",
-    "person",
-    "text3d",
-    "mascot"
+    "text3d"
    ],
-   "onscreen_text": "ICI, IL Y AURA EU QUELQUE CHOSE DE BIEN",
-   "comic_action": "Gros plan : la délégation visse une plaque émaillée sépia sur la façade vitrée. La plaque jure complètement avec le bâtiment. Pause.",
-   "expected_result": "La chute : la nostalgie est si dominante qu'elle s'applique à l'avenir, au futur antérieur."
+   "onscreen_text": "ICI SERA GAGNÉE…",
+   "comic_action": "Plaque solennelle sur la mairie, verbe au futur, rouille au présent.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s5",
+   "id": "s6",
    "narration_ids": [
     "n6"
    ],
+   "camera": "descend",
+   "set": [
+    "road",
+    "column",
+    "text3d"
+   ],
+   "onscreen_text": "ÉPOPÉE : 7 %",
+   "comic_action": "Plan large : une colonne antique, au sommet un petit « 7 % ».",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « À DROITE DU CANAPÉ. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, entièrement sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique scanne une plaque, rien ne charge.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "On visite quelle ville voisine la prochaine fois ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui signe ses textos en latin."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 63,
- "claims": [],
+ "word_count": 80,
+ "claims": [
+  {
+   "text": "À Port-Marly, en 2026 : Chateaubriand, Racine, Virgile, Homère, en cinquante-cinq minutes.",
+   "claim_type": "fait_public",
+   "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-zemmour-le-pourfendeur-de-la-modernite-qui-parlait-dia",
+   "note": "Port-Marly (13/09/2026, 55 min) : Chateaubriand, Racine, Virgile, Homère, Napoléon."
+  },
+  {
+   "text": "Homère a écrit l'Odyssée. Lui, une épopée à 7 %.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.slate.fr/story/199107/eric-zemmour-cnews-face-a-linfo-emission-transformation-paysage-mediatique-succes-avenir-medias",
-   "published": "2021-01",
-   "consulted": "2026-11-21",
+   "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-zemmour-le-pourfendeur-de-la-modernite-qui-parlait-dia",
+   "date": "2026-09-29",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (surnom) : Le « chroniqueur » / « polémiste » : des décennies de plateaux (Ça se dispute, Zemmour et Naulleau, Face à l'info sur CNews 2019-2021). Surnom usuel « le polémiste ». Inspire le maire fictif « le Chroniqueur »."
+   "note": "Port-Marly (13/09/2026, 55 min) : Chateaubriand, Racine, Virgile, Homère, Napoléon."
+  },
+  {
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Effet retard grammatical (futur antérieur). La ville voisine reste fictive et non identifiée. CTA « la prochaine fois », conformément au brief. Continuité : GPS Jadis (zmv-gag-01, étape 3) et plaque (zmv-evt-013). Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z5, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Port-Marly (2026) : Chateaubriand, Racine, Virgile, Homère. Cadre : les plaques de rue. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

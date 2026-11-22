@@ -3,86 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-27",
  "format": "A",
- "title_cover": "Métro, prochaine époque",
+ "title_cover": "Terminus Waterloo",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour…",
-  "Ici, le métro ne t'annonce pas la prochaine station. Il te raconte ce qu'elle était avant.",
-  "Dans ce métro, le terminus de la ligne, c'est le Big Bang.",
-  "Ici, chaque annonce de station cite Napoléon. Même à la piscine.",
-  "Dans ce métro, l'annonce dure plus longtemps que le trajet."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : le métro va d'Austerlitz à Waterloo.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, chaque station est une bataille.",
+  "Zemmourville : la ligne qui finit toujours en 1815."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Évidemment, c'était mieux avant le Big Bang.",
-  "Le plan du métro est une frise chronologique. Terminus : Big Bang. C'était mieux.",
-  "Tout le monde rate son arrêt. Mais tout le monde a un avis sur Austerlitz."
+  "Terminus : Waterloo. Score affiché à l'arrêt : 7 %.",
+  "Départ Austerlitz, arrivée Waterloo.",
+  "La ligne est glorieuse, le terminus moins."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour…",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Ligne Napoléon.",
    "accent_words": [
-    "Zemmour"
+    "Ligne Napoléon"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le métro annonce les stations d'avant.",
+   "text": "Il admire Napoléon. Ici, la ligne de métro en porte le nom.",
    "accent_words": [
-    "stations d'avant"
+    "Napoléon"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Prochaine station, Gare : autrefois un champ, avant un glacier.",
+   "text": "Prochaine station : Austerlitz. Toute la rame applaudit.",
    "accent_words": [
-    "champ",
-    "glacier"
+    "Austerlitz"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Chaque annonce cite Napoléon, même à la station Piscine.",
+   "text": "Station suivante : Impossible-n'est-pas-français. Correspondance ratée.",
    "accent_words": [
-    "Napoléon",
-    "Piscine"
+    "Correspondance ratée"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "L'annonce dure plus que le trajet : tout le monde rate son arrêt.",
+   "text": "Le conducteur annonce les stations d'avant. On descend en 1815.",
    "accent_words": [
-    "rate son arrêt"
+    "1815"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le plan est une frise chronologique, terminus Big Bang.",
+   "text": "Terminus : Waterloo. Score affiché à l'arrêt : 7 %.",
    "accent_words": [
-    "frise chronologique",
-    "Big Bang"
+    "Waterloo"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Évidemment, c'était mieux avant le Big Bang.",
+   "text": "Envoie ça au pote qui se prend pour Napoléon en réunion.",
    "accent_words": [
-    "mieux"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "La station où tu rates toujours ton arrêt ?",
-   "accent_words": [
-    "rates"
+    "Napoléon"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -91,121 +80,163 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "arch",
-    "column",
-    "lamp",
-    "sign",
-    "text3d"
+    "ground",
+    "road",
+    "bus",
+    "person"
    ],
-   "onscreen_text": "PROCHAINE STATION : AVANT",
-   "comic_action": "Plongée sur une entrée de métro monumentale en arche, éclairée de réverbères. Le panneau de station affiche une liste d'époques au lieu d'un nom.",
-   "expected_result": "Le transport du quotidien a l'air d'un musée d'histoire."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur une bouche de métro « LIGNE NAPOLÉON ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d"
+    "sign",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "GARE → CHAMP → FORÊT → GLACIER",
-   "comic_action": "Gros plan sur l'écran de rame : le nom de la station se transforme successivement en époques, avec des illustrations sépia.",
-   "expected_result": "Régression géologique absurde."
+   "onscreen_text": "LIGNE N",
+   "comic_action": "Gros plan sur le plan de ligne : un bicorne à chaque station.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "bus",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "AUSTERLITZ",
+   "comic_action": "Travelling dans la rame : les voyageurs se lèvent et saluent.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "person",
-    "sign"
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "STATION PISCINE (NAPOLÉON)",
-   "comic_action": "Un panneau « PISCINE » s'ajoute un sous-titre napoléonien ; un passager en maillot de bain soupire.",
-   "expected_result": "Escalade : la référence napoléonienne est plaquée partout."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5"
-   ],
-   "camera": "street_dolly",
-   "set": [
-    "column",
-    "person",
-    "lamp",
-    "sign"
-   ],
-   "onscreen_text": "ARRÊT RATÉ",
-   "comic_action": "Travelling sur un quai : des passagers sortent, regardent autour d'eux, et réalisent qu'ils sont très loin de chez eux, carnets de notes à la main.",
-   "expected_result": "On rate tout, mais on est cultivé."
+   "onscreen_text": "CORRESPONDANCE RATÉE",
+   "comic_action": "Le panneau de correspondance s'éteint au moment où la rame arrive.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n5"
    ],
    "camera": "orbit",
    "set": [
-    "screen",
-    "arch",
-    "sign",
-    "text3d",
-    "mascot"
+    "bus",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "TERMINUS : BIG BANG. C'ÉTAIT MIEUX.",
-   "comic_action": "Orbite autour du grand plan de ligne : une frise qui recule jusqu'à un point lumineux final. Le Coq Sépia, de plus en plus décoloré, contemple le terminus dans son rétro. Pause.",
-   "expected_result": "La chute : la nostalgie remonte si loin qu'elle regrette l'univers avant l'univers."
+   "onscreen_text": "1815",
+   "comic_action": "Orbite : la rame ralentit, la date défile à l'envers.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s6",
    "narration_ids": [
-    "n8"
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "bus",
+    "text3d",
+    "sign"
+   ],
+   "onscreen_text": "TERMINUS : WATERLOO",
+   "comic_action": "Plan large : le quai désert, panneau « WATERLOO — 7 % ».",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « À GAUCHE DU CANAPÉ. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, presque entièrement sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique reprend la rame en sens inverse.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "La station où tu rates toujours ton arrêt ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui se prend pour Napoléon en réunion."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 71,
- "claims": [],
+ "word_count": 67,
+ "claims": [
+  {
+   "text": "Il admire Napoléon. Ici, la ligne de métro en porte le nom.",
+   "claim_type": "fait_public",
+   "source": "https://fr.timesofisrael.com/de-quelle-extreme-droite-eric-zemmour-est-il-le-nom/",
+   "note": "Admiration revendiquée pour Napoléon ; slogan « Impossible n'est pas français »."
+  },
+  {
+   "text": "Station suivante : Impossible-n'est-pas-français. Correspondance ratée.",
+   "claim_type": "fait_public",
+   "source": "https://www.europe1.fr/node/127383",
+   "note": "Slogan de campagne « Impossible n'est pas français » (formule attribuée à Napoléon)."
+  },
+  {
+   "text": "Terminus : Waterloo. Score affiché à l'arrêt : 7 %.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  }
+ ],
  "sources": [
   {
    "url": "https://fr.timesofisrael.com/de-quelle-extreme-droite-eric-zemmour-est-il-le-nom/",
-   "published": "2021-12",
-   "consulted": "2026-11-21",
+   "date": "2021-12",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (mème) : Admiration revendiquée pour Napoléon ; slogan du meeting de Villepinte (5/12/2021) « Impossible n'est pas français », formule attribuée à Napoléon. Inspire Waterloo, Austerlitz, la grandeur."
+   "note": "Admiration revendiquée pour Napoléon ; slogan « Impossible n'est pas français »."
+  },
+  {
+   "url": "https://www.europe1.fr/node/127383",
+   "date": "2021-12",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte",
+   "note": "Slogan de campagne « Impossible n'est pas français » (formule attribuée à Napoléon)."
+  },
+  {
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Objet qui se comporte comme un discours. La référence napoléonienne systématique caricature la nostalgie du début du XIXe relevée par la presse. Aucune citation, aucune personne réelle. Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z6, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : l'admiration pour Napoléon, d'Austerlitz à Waterloo. Cadre : le métro. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

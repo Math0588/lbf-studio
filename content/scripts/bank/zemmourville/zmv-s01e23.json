@@ -3,33 +3,33 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-18",
  "format": "A",
- "title_cover": "Le tri par siècle",
+ "title_cover": "Tri par siècle",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour…",
-  "Ici, le tri sélectif ne se fait pas par matière. Il se fait par siècle.",
-  "Dans cette ville, la poubelle « après 1970 » est déclarée irrécupérable.",
-  "Ici, ton vieux smartphone va dans le bac « Décadence ».",
-  "Ici, le camion poubelle passe en marche arrière. En jouant une valse."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : les poubelles sont classées par siècle.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, le présent va direct à la décharge.",
+  "Zemmourville : le tri sélectif historique."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le Chroniqueur prononce l'éloge… du siècle d'avant.",
-  "Le bac vingt-et-unième siècle, lui, part entier, en cortège. Le Chroniqueur prononce l'éloge… du siècle d'avant.",
-  "Le vingt-et-unième siècle est ramassé une fois par siècle."
+  "Toute l'histoire est recyclée. Sauf 2022 et ses 7 % : jetés sans tri.",
+  "Mille ans d'histoire triés, une élection jetée.",
+  "Le passé est recyclé, le présent incinéré."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour…",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Le tri aussi.",
    "accent_words": [
-    "Zemmour"
+    "Le tri aussi"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "On trie les déchets par siècle.",
+   "text": "Ici, on ne trie pas par matière. On trie par siècle.",
    "accent_words": [
     "par siècle"
    ],
@@ -37,66 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "Bac vert pour le dix-huitième, bac jaune pour le dix-neuvième.",
+   "text": "Bac Napoléon, bac Louis XIV. Le présent part à la décharge.",
    "accent_words": [
-    "dix-huitième"
+    "la décharge"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Bac gris : après 1970, irrécupérable.",
+   "text": "Le guide de tri, c'est Destin français, son livre de 2018.",
    "accent_words": [
-    "irrécupérable"
+    "Destin français"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Ton vieux smartphone part dans le bac Décadence.",
+   "text": "Un pot de yaourt de 2026 ? Refusé : pas assez de destin.",
    "accent_words": [
-    "Décadence"
+    "pas assez de destin"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le camion passe en marche arrière, sur une valse.",
+   "text": "Toute l'histoire est recyclée. Sauf 2022 et ses 7 % : jetés sans tri.",
    "accent_words": [
-    "marche arrière",
-    "valse"
+    "jetés sans tri"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "La déchetterie, évidemment, s'appelle Waterloo.",
+   "text": "Envoie ça au pote qui garde des cartons de 1998 au cas où.",
    "accent_words": [
-    "Waterloo"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Le bac vingt-et-unième siècle part entier, en cortège funèbre.",
-   "accent_words": [
-    "vingt-et-unième siècle"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n9",
-   "text": "Le Chroniqueur prononce l'éloge… du siècle d'avant.",
-   "accent_words": [
-    "siècle d'avant"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n10",
-   "text": "Ta box internet, tu la mets dans quel bac ?",
-   "accent_words": [
-    "quel bac"
+    "au cas où"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -105,38 +80,66 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "bin",
+    "ground",
     "road",
-    "sign",
-    "text3d"
+    "bin",
+    "person"
    ],
-   "onscreen_text": "TRI PAR SIÈCLE",
-   "comic_action": "Plongée sur un point de collecte : trois bacs alignés avec des étiquettes en chiffres romains au lieu de « verre », « papier », « emballages ».",
-   "expected_result": "Règle absurde immédiatement lisible."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur une rue : poubelles étiquetées par siècle.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
    "camera": "closeup",
    "set": [
     "bin",
-    "sign",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "APRÈS 1970 : IRRÉCUPÉRABLE",
-   "comic_action": "Gros plan sur le bac gris : son étiquette s'agrandit, la date est soulignée en rouge cire.",
-   "expected_result": "La date-pivot du « déclin » devient une consigne de tri."
+   "onscreen_text": "TRI PAR SIÈCLE",
+   "comic_action": "Gros plan : poubelles « XVIIe », « XIXe », « XXe (avant 1970) ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "bin",
+    "road",
+    "person"
+   ],
+   "onscreen_text": "PRÉSENT → DÉCHARGE",
+   "comic_action": "Travelling : un téléphone récent est jeté dans une benne « HORS D'ÉPOQUE ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "form_stack",
+    "bin",
+    "text3d"
+   ],
+   "onscreen_text": "GUIDE : DESTIN FRANÇAIS",
+   "comic_action": "Orbite autour d'un pavé posé sur chaque couvercle.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
@@ -146,90 +149,82 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "BAC DÉCADENCE",
-   "comic_action": "Un habitant jette un smartphone dans un bac étiqueté « DÉCADENCE » qui se referme avec dédain.",
-   "expected_result": "La modernité est un déchet par définition."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n6",
-    "n7"
-   ],
-   "camera": "street_dolly",
-   "set": [
-    "car",
-    "road",
-    "bin",
-    "lamp"
-   ],
-   "onscreen_text": "",
-   "comic_action": "Travelling : le camion de collecte (voiture peinte en benne) remonte la rue en marche arrière, en tournant lentement comme dans une valse.",
-   "expected_result": "Escalade : même la collecte est passéiste."
-  },
-  {
-   "id": "s5",
-   "narration_ids": [
-    "n8",
-    "n9"
-   ],
-   "camera": "orbit",
-   "set": [
-    "bin",
-    "person",
-    "road",
-    "lamp",
-    "text3d",
-    "mascot"
-   ],
-   "onscreen_text": "ÉLOGE DU SIÈCLE D'AVANT",
-   "comic_action": "Orbite : un cortège lent porte un bac assombri. Devant, le Chroniqueur municipal, lunettes rondes, lit un éloge sur un pupitre portatif. Les lampes baissent en signe de deuil. Pause.",
-   "expected_result": "La chute : le siècle présent est enterré, et son éloge funèbre parle du précédent."
+   "onscreen_text": "REFUSÉ : 2026",
+   "comic_action": "Le couvercle se referme sur la main de l'habitant.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s6",
    "narration_ids": [
-    "n10"
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "road",
+    "bin",
+    "text3d"
+   ],
+   "onscreen_text": "2022 : SANS TRI",
+   "comic_action": "Plan large : une benne « 2022 » part directement à l'incinérateur.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « À GAUCHE DU CANAPÉ. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, aux trois quarts sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique trie un pot de yaourt, refusé.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ta box internet, tu la mets dans quel bac ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui garde des cartons de 1998 au cas où."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 78,
- "claims": [],
- "sources": [
+ "word_count": 84,
+ "claims": [
   {
-   "url": "https://www.slate.fr/story/199107/eric-zemmour-cnews-face-a-linfo-emission-transformation-paysage-mediatique-succes-avenir-medias",
-   "published": "2021-01",
-   "consulted": "2026-11-21",
-   "statut": "fait",
-   "used_for": "Inspiration seulement (surnom) : Le « chroniqueur » / « polémiste » : des décennies de plateaux (Ça se dispute, Zemmour et Naulleau, Face à l'info sur CNews 2019-2021). Surnom usuel « le polémiste ». Inspire le maire fictif « le Chroniqueur »."
+   "text": "Le guide de tri, c'est Destin français, son livre de 2018.",
+   "claim_type": "fait_public",
+   "source": "https://search.worldcat.org/oclc/1052509571",
+   "note": "Livre « Destin français » (Albin Michel, 2018)."
   },
   {
-   "url": "https://fr.timesofisrael.com/de-quelle-extreme-droite-eric-zemmour-est-il-le-nom/",
-   "published": "2021-12",
-   "consulted": "2026-11-21",
+   "text": "Toute l'histoire est recyclée. Sauf 2022 et ses 7 % : jetés sans tri.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://search.worldcat.org/oclc/1052509571",
+   "date": "2018",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (mème) : Admiration revendiquée pour Napoléon ; slogan du meeting de Villepinte (5/12/2021) « Impossible n'est pas français », formule attribuée à Napoléon. Inspire Waterloo, Austerlitz, la grandeur."
+   "note": "Livre « Destin français » (Albin Michel, 2018)."
+  },
+  {
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Catégorisation absurde par époque. « Après 1970 » évoque la datation décliniste du déclin, sans viser aucun groupe ni aucune population : uniquement des objets. Couleur de bac « grise » choisie par prudence lexicale. Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z5, Z6, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « Destin français » (2018) : l'histoire de France triée, le présent jeté. Cadre : le tri des déchets. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

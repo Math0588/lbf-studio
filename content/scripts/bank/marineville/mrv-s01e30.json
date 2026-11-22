@@ -3,75 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-27",
  "format": "A",
- "title_cover": "Le colis poursuivi",
+ "title_cover": "Les slogans d'en face",
  "hook_variants": [
-  "À Marineville, les livreurs ne cherchent plus l'adresse : ils la poursuivent.",
-  "À Marineville, les livreurs ne cherchent plus l'adresse. Ils la poursuivent.",
-  "À Marineville, les livreurs ne cherchent plus l'adresse. Ils la poursuivent.",
-  "Le temps de sonner, la rue avait changé de nom.",
-  "Cette étiquette de colis fait quatre mètres. Elle liste les anciens noms."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, la mairie a racheté les vieux panneaux de la ville voisine.",
+  "Marineville : dix ans contre Macron, et ses slogans en cadeau.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : les slogans d'en face."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le colis finit à la mairie, seul prénom que tout le monde connaît. Gérard l'ouvre : une nouvelle enseigne, évidemment.",
-  "Le colis finit à la mairie, seul nom que tout le monde connaît. Gérard l'ouvre : une nouvelle enseigne.",
-  "Le livreur repart. Sur son camion, quelqu'un a vissé un nouveau logo."
+  "Dix ans contre Macron pour finir avec ses slogans : son plus bel hommage.",
+  "Ici, la mairie a racheté les vieux panneaux de la ville voisine. Juste repeints.",
+  "Vingt et une fois à Orléans. Le copyright, lui, est en face."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "À Marineville, les livreurs ne cherchent plus l'adresse : ils la poursuivent.",
+   "text": "Dans cette ville, tout le monde vote Marine. Ou Macron.",
    "accent_words": [
-    "poursuivent"
+    "Ou Macron"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le temps de sonner, Gérard a vissé : rue des Tilleuls Nouvelle.",
+   "text": "Son mot de campagne : Renaissance. Le nom du parti de Macron.",
    "accent_words": [
-    "Nouvelle"
+    "Renaissance"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Adresse inconnue : nouvelle étiquette, avec tous les anciens noms.",
+   "text": "Vingt et une fois à Orléans. Le copyright, lui, est en face.",
    "accent_words": [
-    "anciens noms"
+    "copyright"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Trois tours de pâté de maisons, et l'étiquette fait la taille du colis.",
+   "text": "Ni droite ni gauche : le ni-ni aussi, c'était la marque d'en face.",
    "accent_words": [
-    "colis"
+    "la marque d'en face"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le colis finit à la mairie, seul prénom que tout le monde connaît.",
+   "text": "Ici, la mairie rachète les vieux panneaux d'en face. Juste repeints.",
    "accent_words": [
-    "connaît"
+    "Juste repeints"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Gérard l'ouvre : une nouvelle enseigne, évidemment.",
+   "text": "Dix ans contre Macron pour finir avec ses slogans : son plus bel hommage.",
    "accent_words": [
-    "enseigne"
+    "hommage"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Ta pire histoire de livraison, en commentaire.",
+   "text": "Envoie ça au pote qui déteste Macron et recycle ses slogans.",
    "accent_words": [
-    "commentaire"
+    "ses slogans"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -80,105 +80,165 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "car",
-    "road",
-    "building",
-    "sign",
+    "ground",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "RUE DES TILLEULS",
-   "comic_action": "La caméra suit la camionnette du livreur qui se gare ; pendant qu'il sonne, derrière lui, Gérard visse « NOUVELLE » sous la plaque de rue.",
-   "expected_result": "L'adresse change plus vite que la livraison."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; deux logos identiques sur la façade.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "descend",
+   "set": [
+    "lift_tribune",
+    "tribune",
+    "person",
+    "banner"
+   ],
+   "onscreen_text": "RENAISSANCE (BIS)",
+   "comic_action": "La tribune s'élève ; le mot s'affiche, un ® clignote à côté.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
-    "person",
-    "text3d"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "ADRESSE INCONNUE",
-   "comic_action": "Gros plan sur l'étiquette du colis qui se déroule comme un parchemin, liste de noms barrés, jusqu'au caniveau.",
-   "expected_result": "La bureaucratie de l'adresse."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4"
-   ],
-   "camera": "descend",
-   "set": [
-    "road",
-    "building",
-    "scroll",
-    "car"
-   ],
-   "onscreen_text": "",
-   "comic_action": "Vue du ciel : l'étiquette a fait le tour complet du pâté de maisons et rejoint le livreur par derrière.",
-   "expected_result": "Effet retard : le papier suit la boucle de la ville."
+   "onscreen_text": "RENAISSANCE ×21",
+   "comic_action": "L'écran affiche un compteur qui monte jusqu'à 21, puis un ® clignote.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "orbit",
    "set": [
-    "mairie",
-    "person",
-    "sign",
+    "tribune",
+    "router_lectern",
+    "studio_light",
     "text3d"
    ],
-   "onscreen_text": "LIVRÉ : MAIRIE",
-   "comic_action": "Le colis est remis à la mairie ; Gérard l'ouvre : une enseigne neuve, qu'il visse aussitôt sur la pile. On laisse respirer.",
-   "expected_result": "Chute : la seule chose qui circule dans la ville, ce sont les enseignes."
+   "onscreen_text": "NI-NI : DÉJÀ PRIS",
+   "comic_action": "Deux pupitres : sur l'autre, une vieille étiquette « NI-NI » à moitié arrachée.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "facade_row",
+    "facade_set",
+    "person",
+    "banner"
+   ],
+   "onscreen_text": "PANNEAUX D'OCCASION",
+   "comic_action": "Un peintre repasse en bleu des panneaux encore marqués de l'autre camp.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "column",
+    "mairie",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "HOMMAGE INVOLONTAIRE",
+   "comic_action": "Entre deux colonnes, une plaque dorée « MERCI POUR LES SLOGANS ». Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
-   "camera": "closeup",
+   "camera": "return",
    "set": [
+    "shop",
     "tshirt",
-    "car",
-    "scroll"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Dans la camionnette, sous une pile de colis, dépasse un t-shirt « LE PAYS BUGUE. MOI AUSSI. ».",
-   "expected_result": "CTA parlé unique + produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt porte un badge d'en face.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ta pire histoire de livraison, en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui déteste Macron et recycle ses slogans."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 74,
- "claims": [],
+ "word_count": 83,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "Son mot de campagne : Renaissance. Le nom du parti de Macron.",
+   "claim_type": "fait_public",
+   "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
+   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
+  },
+  {
+   "segment": "n3",
+   "text": "Vingt et une fois à Orléans. Le copyright, lui, est en face.",
+   "claim_type": "fait_public",
+   "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
+   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
+  },
+  {
+   "segment": "n4",
+   "text": "Ni droite ni gauche : le ni-ni aussi, c'était la marque d'en face.",
+   "claim_type": "fait_public",
+   "source": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
+   "note": "Mème / fait servant de base à une exagération de la ville (segment typé fiction_satirique). « Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
-   "published": "2017-02-06",
-   "consulted": "2026-11-21",
-   "status": "surnom (vérifié (fait public rapporté + analyse/opinion de presse))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Campagne 2017 centrée sur le seul prénom « Marine » : nom de famille et nom du parti effacés des documents de campagne. Le prénom seul est devenu une marque, ab…"
+   "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
+   "date": "2026-10-25",
+   "consulted": "2026-11-22",
+   "statut": "fait public (analyse lexicale)",
+   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
+  },
+  {
+   "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
+   "date": "2026-10-29",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (meeting d'Orléans, 25/10/2026) + fait (affiche)",
+   "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Effet retard et boucle : l'adresse fuit devant le livreur. Continuité : plaques « Nouvelle » (mrv-evt-012), millefeuille de la mairie. Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 74 mots ; mèmes vérifiés intégrés comme thèmes (M1, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = son mot de campagne « Renaissance », nom du parti de Macron ; son « ni l'aile droite ni l'aile gauche », vieux refrain d'en face. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

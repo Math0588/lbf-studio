@@ -5,81 +5,73 @@
  "format": "A",
  "title_cover": "Ouvert hier",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour… et la mairie est ouverte hier.",
-  "Ici, la mairie est ouverte. Hier. De neuf heures à dix-sept heures.",
-  "Dans cette mairie, la prochaine disponibilité, c'est la semaine dernière.",
-  "Ici, tu arrives toujours avec un jour de retard. Comme tout le monde.",
-  "Dans cette mairie, l'accueil ne répond pas. Il commente."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : tout ouvre hier.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, les rendez-vous se prennent dans le passé.",
+  "Zemmourville : le site internet le plus nostalgique de France."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Tout le monde ressort ravi : reçu hier.",
-  "L'horloge tourne à l'envers, la file avance à reculons. Tout le monde ressort content : reçu hier.",
-  "Tu as enfin ton rendez-vous. Il a eu lieu. Il s'est très bien passé."
+  "Des milliers d'affiches, une seule promesse : le futur, c'était hier.",
+  "Ouvert hier, fermé au premier tour.",
+  "Le futur était prévu. Hier."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour… et la mairie est ouverte hier.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Affiche collée.",
+   "accent_words": [
+    "Affiche collée"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Ses jeunes militants s'appellent Génération Z. Spécialité : coller des affiches la nuit.",
+   "accent_words": [
+    "la nuit"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "Ici, ils ont aussi collé le site de la mairie. Rendez-vous : hier.",
    "accent_words": [
     "hier"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n2",
-   "text": "Le site ne propose que des dates passées.",
-   "accent_words": [
-    "dates passées"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Tu viens aujourd'hui, donc avec un jour de retard.",
-   "accent_words": [
-    "un jour de retard"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n4",
-   "text": "Au guichet, le Chroniqueur ne répond pas : il commente ta question.",
+   "text": "Chaque créneau est déjà passé. Comme ses 17 % d'octobre 2021.",
    "accent_words": [
-    "commente"
+    "17 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Vingt minutes, avec un ben voyons à la fin.",
+   "text": "Les colleurs recouvrent même les horaires d'ouverture. Ouvert : avant.",
    "accent_words": [
-    "ben voyons"
+    "Ouvert : avant"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "L'horloge tourne à l'envers, la file avance à reculons.",
+   "text": "Des milliers d'affiches, une seule promesse : le futur, c'était hier.",
    "accent_words": [
-    "à l'envers"
+    "c'était hier"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Tout le monde ressort ravi : reçu hier.",
+   "text": "Envoie ça au pote qui te donne rendez-vous et arrive après.",
    "accent_words": [
-    "reçu hier"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Les horaires de ta mairie, c'est quoi ?",
-   "accent_words": [
-    "ta mairie"
+    "arrive après"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,28 +84,29 @@
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "mairie",
-    "sign",
-    "lamp",
-    "text3d"
+    "banner",
+    "person"
    ],
-   "onscreen_text": "OUVERT HIER, 9 H – 17 H",
-   "comic_action": "Plongée sur la mairie de pierre : l'horloge du fronton tourne visiblement à l'envers ; la plaque d'horaires affiche « OUVERT HIER ».",
-   "expected_result": "La règle absurde est lisible dès la première image (continuité zmv-evt-000)."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur la mairie : chaque mur recouvert d'affiches fraîches.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d"
+    "person",
+    "banner",
+    "lamp"
    ],
-   "onscreen_text": "PROCHAIN CRÉNEAU : SEM. DERNIÈRE",
-   "comic_action": "Gros plan sur l'écran de prise de rendez-vous : un calendrier où seules les cases passées sont cliquables, les autres sont grisées.",
-   "expected_result": "Le service numérique confirme l'impossible."
+   "onscreen_text": "GÉNÉRATION Z",
+   "comic_action": "Travelling nocturne : des colleurs, seau et brosse, sous les lampadaires.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
@@ -122,92 +115,115 @@
    ],
    "camera": "closeup",
    "set": [
-    "person",
-    "sign",
-    "table"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "RETARD : 1 JOUR",
-   "comic_action": "Un habitant arrive essoufflé au guichet ; un agent lui tend un ticket « RETARD : 1 JOUR » d'un air compatissant.",
-   "expected_result": "Escalade : on est en retard par définition."
+   "onscreen_text": "RDV : HIER",
+   "comic_action": "L'écran de prise de rendez-vous est recouvert d'une affiche ; seule date visible : la veille.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n4"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "person",
+    "screen",
     "text3d"
    ],
-   "onscreen_text": "IL NE RÉPOND PAS. IL COMMENTE.",
-   "comic_action": "Le Chroniqueur municipal, lunettes rondes, fait de grands gestes au guichet, regard dans le vide, pendant que l'habitant attend sa réponse, formulaire à la main.",
-   "expected_result": "La posture du chroniqueur remplace le service."
+   "onscreen_text": "OCT. 2021",
+   "comic_action": "Orbite : un calendrier où toutes les cases sont grisées.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "mairie",
-    "person",
     "sign",
-    "lamp",
-    "mascot"
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "REÇU HIER",
-   "comic_action": "Travelling : la file d'attente avance pas à pas… à reculons, jusqu'à ressortir par la grande porte. Les gens sourient, satisfaits. Le Coq Sépia les regarde partir dans son rétroviseur.",
-   "expected_result": "La chute : personne n'a été servi, tout le monde est content."
+   "onscreen_text": "OUVERT : AVANT",
+   "comic_action": "Gros plan sur la porte de la mairie, horaires sous trois couches d'affiches.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s6",
    "narration_ids": [
-    "n8"
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "mairie",
+    "banner",
+    "text3d"
+   ],
+   "onscreen_text": "FUTUR : HIER",
+   "comic_action": "Plan large : la mairie entièrement papier-peinte, porte introuvable.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « PLUTÔT GAUCHE. TRÈS FATIGUÉ. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, entièrement sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique décolle une affiche, une autre dessous.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Les horaires de ta mairie, c'est quoi ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui te donne rendez-vous et arrive après."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 77,
- "claims": [],
- "sources": [
+ "word_count": 79,
+ "claims": [
   {
-   "url": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
-   "published": "2022-02-02",
-   "consulted": "2026-11-21",
-   "statut": "fait",
-   "used_for": "Inspiration seulement (tic de langage) : « Ben voyons ! » : tic de langage de Zemmour qui clôt la discussion ; devenu slogan repris par ses fans. Chez nous, il sort de la bouche d'habitants ou du Chroniqueur fictif, jamais attribué à la personne réelle."
+   "text": "Ses jeunes militants s'appellent Génération Z. Spécialité : coller des affiches la nuit.",
+   "claim_type": "fait_public",
+   "source": "https://www.lyoncapitale.fr/actualite/a-lyon-le-groupe-generation-z-espere-une-candidature-de-zemmour-en-2022-leur-seule-option",
+   "note": "Génération Z : militants, collages d'affiches."
   },
   {
-   "url": "https://www.slate.fr/story/199107/eric-zemmour-cnews-face-a-linfo-emission-transformation-paysage-mediatique-succes-avenir-medias",
-   "published": "2021-01",
-   "consulted": "2026-11-21",
+   "text": "Chaque créneau est déjà passé. Comme ses 17 % d'octobre 2021.",
+   "claim_type": "fait_public",
+   "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://www.lyoncapitale.fr/actualite/a-lyon-le-groupe-generation-z-espere-une-candidature-de-zemmour-en-2022-leur-seule-option",
+   "date": "2021",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (surnom) : Le « chroniqueur » / « polémiste » : des décennies de plateaux (Ça se dispute, Zemmour et Naulleau, Face à l'info sur CNews 2019-2021). Surnom usuel « le polémiste ». Inspire le maire fictif « le Chroniqueur »."
+   "note": "Génération Z : militants, collages d'affiches."
+  },
+  {
+   "url": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "date": "2021-10-07",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Inversion temporelle. « Il ne répond pas, il commente » moque la posture du chroniqueur (parcours médiatique public), sans citation. Continuité : horloge à l'envers (zmv-evt-000). Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z3, Z5, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Génération Z, ses colleurs d'affiches nocturnes. Cadre : le site de la mairie. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

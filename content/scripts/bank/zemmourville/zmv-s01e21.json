@@ -3,75 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-16",
  "format": "A",
- "title_cover": "La VAR sépia",
+ "title_cover": "Record de trahison",
  "hook_variants": [
-  "Ici, l'arbitrage vidéo ne diffuse que des matchs d'avant.",
-  "Dans ce stade, le tableau d'affichage ne donne jamais le score.",
-  "Ici, l'arbitre revoit le penalty… d'un match de 1958.",
-  "Dans ce stade, le match n'est pas commenté. Il est chroniqué.",
-  "Ici, les deux équipes finissent en larmes. Ensemble."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : le club où chaque joueur finit chez l'adversaire.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, la VAR est en sépia et le mercato en trahison.",
+  "Zemmourville : le stade du record du monde."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "L'arbitre siffle : match nul, comme tout aujourd'hui.",
-  "Les deux équipes regardent le ralenti et pleurent ensemble. L'arbitre siffle : match nul, comme tout aujourd'hui.",
-  "Le match est annulé : il ressemblait trop à aujourd'hui."
+  "Plus de joueurs, plus de titre. Mais un record du monde, quand même.",
+  "Un record du monde, zéro joueur.",
+  "La VAR confirme : c'était mieux avant le mercato."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, l'arbitrage vidéo ne diffuse que des matchs d'avant.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Au stade.",
    "accent_words": [
-    "matchs d'avant"
+    "Au stade"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Pour un penalty, l'arbitre revoit un vieux match sépia, pour comparer.",
+   "text": "Après les européennes 2024, sa tête de liste part chez le voisin.",
    "accent_words": [
-    "sépia"
+    "chez le voisin"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Le tableau ne donne pas le score, juste : avant, on jouait mieux.",
+   "text": "Il parle de « record du monde de la trahison ». Ici, c'est un trophée.",
    "accent_words": [
-    "avant, on jouait mieux"
+    "un trophée"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "En tribune, on ne commente pas, on chronique, au passé simple.",
+   "text": "La VAR revoit l'action en sépia. Verdict : c'était mieux avant le transfert.",
    "accent_words": [
-    "chronique"
+    "avant le transfert"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les deux équipes regardent le ralenti et pleurent ensemble.",
+   "text": "Chaque semaine, un joueur passe en face. Record battu chaque semaine.",
    "accent_words": [
-    "pleurent ensemble"
+    "Record battu"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "L'arbitre siffle : match nul, comme tout aujourd'hui.",
+   "text": "Plus de joueurs, plus de titre. Mais un record du monde, quand même.",
    "accent_words": [
-    "match nul"
+    "un record du monde"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le meilleur match de ta vie, c'était quand ?",
+   "text": "Envoie ça au pote qui crie trahison pour un rien.",
    "accent_words": [
-    "quand"
+    "trahison"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,102 +85,138 @@
    "camera": "descend",
    "set": [
     "ground",
-    "screen",
-    "tribune",
     "person",
-    "text3d"
+    "banner",
+    "scroll"
    ],
-   "onscreen_text": "VAR : ARCHIVES",
-   "comic_action": "Plongée sur un stade : l'écran géant ne montre pas l'action, mais un vieux match sépia à l'image qui saute. Les joueurs actuels attendent, mains sur les hanches.",
-   "expected_result": "La technologie de l'arbitrage sert à regarder le passé."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur un stade en sépia ; écran géant de la VAR.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
     "person",
-    "text3d"
+    "sign",
+    "banner"
    ],
-   "onscreen_text": "POUR COMPARER",
-   "comic_action": "Un arbitre court vers l'écran de bord de terrain, regarde un ralenti sépia, hoche la tête avec mélancolie.",
-   "expected_result": "La décision n'est pas prise, elle est comparée."
+   "onscreen_text": "TRANSFERT",
+   "comic_action": "Travelling : une joueuse traverse le terrain avec son sac vers l'autre banc.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "column",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "RECORD DU MONDE",
+   "comic_action": "Une coupe dorée gravée « TRAHISON » sous un projecteur.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
     "n4"
    ],
    "camera": "closeup",
    "set": [
     "screen",
-    "banner",
     "text3d"
    ],
-   "onscreen_text": "AVANT, ON JOUAIT MIEUX.",
-   "comic_action": "Le tableau d'affichage, à la place du score, affiche une seule phrase en lettres gothiques. Puis, en tribune, une cabine de commentateurs avec une plaque « FACE À HIER ».",
-   "expected_result": "Escalade : même l'information devient chronique nostalgique."
+   "onscreen_text": "VAR : SÉPIA",
+   "comic_action": "Écran géant : ralenti jauni, l'arbitre hoche la tête avec nostalgie.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s4",
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "orbit",
    "set": [
-    "ground",
     "person",
-    "screen",
-    "lamp",
-    "text3d",
-    "mascot"
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "MATCH NUL. COMME TOUT.",
-   "comic_action": "Orbite autour du rond central : les vingt-deux petits joueurs s'arrêtent, se tournent vers l'écran géant, et se tombent dans les bras en pleurant. L'arbitre siffle, solennel. Le Coq Sépia, en tribune, regarde dans son rétroviseur.",
-   "expected_result": "La chute : la nostalgie remplace le jeu, et le verdict sur l'époque tient lieu de score."
+   "onscreen_text": "RECORD N° 52",
+   "comic_action": "Orbite : le banc se vide joueur après joueur.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s5",
+   "id": "s6",
    "narration_ids": [
-    "n6",
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "person",
+    "column",
+    "text3d"
+   ],
+   "onscreen_text": "0 JOUEUR · 1 RECORD",
+   "comic_action": "Plan large : un seul entraîneur sur le banc, la coupe sur les genoux.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « LE PAYS BUGUE. MOI AUSSI. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, aux trois quarts sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique change de tribune.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Le meilleur match de ta vie, c'était quand ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui crie trahison pour un rien."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 70,
- "claims": [],
+ "word_count": 84,
+ "claims": [
+  {
+   "text": "Après les européennes 2024, sa tête de liste part chez le voisin.",
+   "claim_type": "fait_public",
+   "source": "https://www.letemps.ch/monde/europe/eric-zemmour-exclut-marion-marechal-de-reconquete",
+   "note": "Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
+  },
+  {
+   "text": "« record du monde de la trahison »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.letemps.ch/monde/europe/eric-zemmour-exclut-marion-marechal-de-reconquete",
+   "note": "Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.slate.fr/story/199107/eric-zemmour-cnews-face-a-linfo-emission-transformation-paysage-mediatique-succes-avenir-medias",
-   "published": "2021-01",
-   "consulted": "2026-11-21",
-   "statut": "fait",
-   "used_for": "Inspiration seulement (surnom) : Le « chroniqueur » / « polémiste » : des décennies de plateaux (Ça se dispute, Zemmour et Naulleau, Face à l'info sur CNews 2019-2021). Surnom usuel « le polémiste ». Inspire le maire fictif « le Chroniqueur »."
+   "url": "https://www.letemps.ch/monde/europe/eric-zemmour-exclut-marion-marechal-de-reconquete",
+   "date": "2024-06",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte",
+   "note": "Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Comparaison systématique. La plaque « FACE À HIER » parodie le titre d'une émission où il fut chroniqueur (fait public, Wikipédia), sans citation. Image sépia plutôt qu'une mention de couleur, par prudence lexicale. Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z5, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : juin 2024 : « record du monde de la trahison ». Cadre : le match et la VAR sépia. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

@@ -3,84 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-19",
  "format": "A",
- "title_cover": "Retour à la voie romaine",
+ "title_cover": "Retour aux pavés",
  "hook_variants": [
-  "Ici, les travaux ne construisent rien : ils remontent le temps.",
-  "Ici, les travaux ne construisent rien. Ils remontent le temps.",
-  "Dans cette ville, la fin des travaux est prévue en 52 avant notre ère.",
-  "Ici, on enlève le bitume pour retrouver la voie romaine.",
-  "Cette ville a des travaux en avance. Sur le passé."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : les travaux remontent le temps.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, on remplace l'asphalte par des pavés, par principe.",
+  "Zemmourville : le chantier de la nostalgie."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "L'ouvrier regarde sa montre : on est en retard.",
-  "Fin des travaux prévue : 52 avant notre ère. L'ouvrier regarde sa montre : on est en retard.",
-  "Les fouilles ont trouvé l'âge d'or. Il était en travaux."
+  "La route est magnifique, comme en 1850. Les livreurs, un peu moins.",
+  "Route de 1850, retards de 2026.",
+  "Le progrès est démonté, pavé par pavé."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, les travaux ne construisent rien : ils remontent le temps.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Travaux d'époque.",
+   "accent_words": [
+    "Travaux d'époque"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Ici, les travaux ne modernisent pas. Ils remontent le temps.",
    "accent_words": [
     "remontent le temps"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n2",
-   "text": "Phase un : on retire l'asphalte pour les pavés, larmes de joie.",
-   "accent_words": [
-    "pavés"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n3",
-   "text": "Phase deux : la terre battue.",
+   "text": "Phase un : on arrache l'asphalte pour remettre des pavés.",
    "accent_words": [
-    "terre battue"
+    "des pavés"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Phase trois : on creuse jusqu'à la voie romaine.",
+   "text": "Ses rivaux le disaient coincé en 1965. Ici, c'est la date du chantier.",
    "accent_words": [
-    "voie romaine"
+    "1965"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Coût : quatorze millions, payés en sesterces.",
+   "text": "Une fondation parle d'un cocktail de déclinisme et de nostalgie. C'est le budget voirie.",
    "accent_words": [
-    "quatorze millions",
-    "sesterces"
+    "budget voirie"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Fin prévue : 52 avant notre ère.",
+   "text": "La route est magnifique, comme en 1850. Les livreurs, un peu moins.",
    "accent_words": [
-    "52 avant notre ère"
+    "Les livreurs"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "L'ouvrier regarde sa montre : on est en retard.",
+   "text": "Envoie ça au pote qui dit que c'était mieux sans GPS.",
    "accent_words": [
-    "en retard"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Les travaux les plus longs de ta ville ?",
-   "accent_words": [
-    "longs"
+    "sans GPS"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -93,15 +84,14 @@
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "road",
-    "traffic_light",
-    "sign",
-    "person",
-    "text3d"
+    "scroll",
+    "person"
    ],
-   "onscreen_text": "TRAVAUX : RETOUR EN ARRIÈRE",
-   "comic_action": "Plongée sur une rue en chantier : des ouvriers ne posent pas de bitume, ils l'enlèvent en le roulant comme un tapis.",
-   "expected_result": "Le chantier défait au lieu de construire."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur un chantier : on arrache l'asphalte.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
@@ -112,87 +102,129 @@
    "set": [
     "road",
     "person",
-    "sign",
-    "text3d"
+    "sign"
    ],
-   "onscreen_text": "PHASE 1 : PAVÉS",
-   "comic_action": "Travelling : sous le bitume enroulé apparaissent des pavés ; des habitants applaudissent et s'essuient les yeux.",
-   "expected_result": "La régression est fêtée comme un progrès."
+   "onscreen_text": "TRAVAUX : MARCHE ARRIÈRE",
+   "comic_action": "Travelling : un ouvrier démonte un abribus pour poser un abreuvoir.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
-    "ground",
-    "sign",
+    "road",
     "person",
-    "column"
+    "text3d"
    ],
-   "onscreen_text": "PHASE 3 : L'ÂGE D'OR",
-   "comic_action": "Les pavés disparaissent, la terre se creuse, une colonne antique émerge, puis plus rien qu'un trou. Le panneau de phase change à chaque étape.",
-   "expected_result": "Escalade : le chantier fouille vers un âge d'or introuvable."
+   "onscreen_text": "PHASE 1 : PAVÉS",
+   "comic_action": "Gros plan : un pavé posé avec émotion, larme à l'œil.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5"
+    "n4"
    ],
    "camera": "orbit",
    "set": [
-    "road",
     "sign",
-    "person",
-    "traffic_light",
-    "text3d",
-    "mascot"
+    "road",
+    "text3d"
    ],
-   "onscreen_text": "FIN : 52 AV. NOTRE ÈRE",
-   "comic_action": "Orbite autour d'un immense panneau de chantier émaillé. Au fond du trou, un ouvrier minuscule regarde sa montre et soupire. Le feu tricolore du chantier reste bloqué au rouge.",
-   "expected_result": "La chute : même un objectif dans le passé est « en retard »."
+   "onscreen_text": "CHANTIER : 1965",
+   "comic_action": "Orbite autour d'un panneau de chantier daté de 1965.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "form_stack",
+    "text3d"
+   ],
+   "onscreen_text": "BUDGET : NOSTALGIE",
+   "comic_action": "Un budget municipal en camembert : une seule part, « NOSTALGIE ».",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "road",
+    "car",
+    "text3d"
+   ],
+   "onscreen_text": "ROUTE 1850",
+   "comic_action": "Plan large : une camionnette de livraison rebondit sur les pavés, colis qui volent.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « J'AI UN AVIS. PAS DE MANDAT. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, aux trois quarts sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique se perd sur la route pavée.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Les travaux les plus longs de ta ville ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui dit que c'était mieux sans GPS."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 70,
- "claims": [],
+ "word_count": 80,
+ "claims": [
+  {
+   "text": "Ses rivaux le disaient coincé en 1965. Ici, c'est la date du chantier.",
+   "claim_type": "fait_public",
+   "source": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
+   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
+  },
+  {
+   "text": "Une fondation parle d'un cocktail de déclinisme et de nostalgie. C'est le budget voirie.",
+   "claim_type": "fait_public",
+   "source": "https://www.jean-jaures.org/publication/declinisme-et-nostalgie-un-cocktail-francais/",
+   "note": "Fondation Jean-Jaurès : « Déclinisme et nostalgie, un cocktail français »."
+  }
+ ],
  "sources": [
   {
-   "url": "https://fr.timesofisrael.com/de-quelle-extreme-droite-eric-zemmour-est-il-le-nom/",
-   "published": "2021-12",
-   "consulted": "2026-11-21",
-   "statut": "fait",
-   "used_for": "Inspiration seulement (mème) : Admiration revendiquée pour Napoléon ; slogan du meeting de Villepinte (5/12/2021) « Impossible n'est pas français », formule attribuée à Napoléon. Inspire Waterloo, Austerlitz, la grandeur."
+   "url": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
+   "date": "2021-11-30",
+   "consulted": "2026-11-22",
+   "statut": "opinion rapportée",
+   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
+  },
+  {
+   "url": "https://www.jean-jaures.org/publication/declinisme-et-nostalgie-un-cocktail-francais/",
+   "date": "2021",
+   "consulted": "2026-11-22",
+   "statut": "analyse",
+   "note": "Fondation Jean-Jaurès : « Déclinisme et nostalgie, un cocktail français »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Escalade régressive ; « 52 avant notre ère » est une date neutre, sans référence confessionnelle. Continuité : panneau de chantier permanent (zmv-evt-010). Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z6, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : déclinisme et nostalgie : la ville remonte le temps, pavé par pavé. Cadre : les travaux de voirie. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

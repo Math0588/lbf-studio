@@ -3,83 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-17",
  "format": "A",
- "title_cover": "Le banc du soupir",
+ "title_cover": "Mélancolie française",
  "hook_variants": [
-  "Ici, pour t'asseoir sur un banc, il faut soupirer.",
-  "Dans ce parc, les bancs ne s'ouvrent qu'aux nostalgiques.",
-  "Ici, un « ah, de mon temps » vaut une heure d'assise.",
-  "Dans ce parc, le meilleur soupireur a gagné un pigeon attitré.",
-  "Ici, un enfant de sept ans a un banc d'honneur. Il a dit la phrase magique."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : les bancs publics soupirent.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, on s'assoit pour regretter.",
+  "Zemmourville : le mobilier urbain est mélancolique."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le banc s'illumine : banc d'honneur.",
-  "Puis un gamin de sept ans lâche : c'était mieux avant. Le banc s'illumine. Plaque : Pépé Junior, banc d'honneur.",
-  "Le gamin a sept ans et déjà une chronique hebdomadaire."
+  "Seize ans de mélancolie en librairie. Elle rapporte plus que les élections.",
+  "La mélancolie se vend bien. Les voix, moins.",
+  "Un banc, un soupir, un best-seller."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, pour t'asseoir sur un banc, il faut soupirer.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Soupir compris.",
    "accent_words": [
-    "soupirer"
+    "Soupir compris"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Petit soupir : cinq minutes.",
+   "text": "En 2010, il publie Mélancolie française. Ici, c'est la devise du banc public.",
    "accent_words": [
-    "cinq minutes"
+    "Mélancolie française"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Un ah, de mon temps : une heure.",
+   "text": "Chaque banc a sa plaque : ici, quelqu'un a regretté quelque chose.",
    "accent_words": [
-    "ah, de mon temps"
+    "regretté"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Sans soupir, le banc se replie et te jette dans l'herbe.",
+   "text": "Puis Le Suicide français, puis Destin français. Le banc soupire plus fort.",
    "accent_words": [
-    "jette dans l'herbe"
+    "soupire"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Les retraités s'entraînent, le champion gagne un pigeon attitré.",
+   "text": "Le banc ne regarde pas la rue. Il regarde derrière.",
    "accent_words": [
-    "pigeon attitré"
+    "derrière"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Puis un gamin de sept ans lâche : c'était mieux avant.",
+   "text": "Seize ans de mélancolie en librairie. Elle rapporte plus que les élections.",
    "accent_words": [
-    "c'était mieux avant"
+    "plus que les élections"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le banc s'illumine : banc d'honneur.",
+   "text": "Envoie ça au pote qui soupire dès qu'on parle du présent.",
    "accent_words": [
-    "banc d'honneur"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton meilleur soupir de vieux ?",
-   "accent_words": [
-    "soupir de vieux"
+    "soupire"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,37 +84,64 @@
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "bench",
     "tree",
-    "lamp",
-    "person",
-    "sign",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "ASSISE : SUR SOUPIR",
-   "comic_action": "Plongée sur un parc : des bancs fermés comme des tiroirs. Un passant soupire, une bulle « HAAAA » s'affiche, le banc s'ouvre.",
-   "expected_result": "La règle absurde est visible en une action."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur un parc : chaque banc porte une plaque de regret.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
    "camera": "closeup",
    "set": [
     "bench",
-    "screen",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "SOUPIR = 5 MIN",
-   "comic_action": "Un petit compteur sur l'accoudoir affiche le temps d'assise selon le soupir : « 5 min », puis « 1 h » pour « de mon temps ».",
-   "expected_result": "Barème absurde de la nostalgie."
+   "onscreen_text": "MÉLANCOLIE FRANÇAISE",
+   "comic_action": "Gros plan sur une plaque gravée sur le dossier du banc.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
+    "n3"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "bench",
+    "sign",
+    "tree"
+   ],
+   "onscreen_text": "ICI ON A REGRETTÉ",
+   "comic_action": "Travelling : une rangée de bancs, plaques différentes, même soupir.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
     "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "bench",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "SOUPIR ×3",
+   "comic_action": "Orbite : le banc s'affaisse un peu plus à chaque titre.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
    ],
    "camera": "closeup",
    "set": [
@@ -130,82 +149,89 @@
     "person",
     "tree"
    ],
-   "onscreen_text": "",
-   "comic_action": "Un passant s'assoit sans soupirer : le banc se replie d'un coup et le dépose dans l'herbe.",
-   "expected_result": "Gag physique : pas de nostalgie, pas de place."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5"
-   ],
-   "camera": "street_dolly",
-   "set": [
-    "bench",
-    "person",
-    "screen",
-    "sign"
-   ],
-   "onscreen_text": "TUTO : LE SOUPIR LONG",
-   "comic_action": "Travelling le long d'une allée : des promeneurs de tous âges s'entraînent devant un petit écran tuto ; un champion assis, un pigeon posé sur l'épaule comme une médaille.",
-   "expected_result": "Escalade : la nostalgie devient une discipline sportive."
-  },
-  {
-   "id": "s5",
-   "narration_ids": [
-    "n6",
-    "n7"
-   ],
-   "camera": "orbit",
-   "set": [
-    "bench",
-    "person",
-    "fountain",
-    "sign",
-    "text3d",
-    "mascot"
-   ],
-   "onscreen_text": "PÉPÉ JUNIOR, 7 ANS",
-   "comic_action": "Orbite autour d'un tout petit personnage qui soupire avec gravité. Le banc s'illumine en doré, une plaque monte de terre. La fontaine à sec crache une seule goutte d'émotion.",
-   "expected_result": "La chute : la posture « c'était mieux avant » est si absurde qu'un enfant qui n'a rien connu la récite."
+   "onscreen_text": "VUE : DERRIÈRE",
+   "comic_action": "Les bancs sont tous tournés vers un mur.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s6",
    "narration_ids": [
-    "n8"
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "bench",
+    "tree",
+    "text3d"
+   ],
+   "onscreen_text": "MÉLANCOLIE : RENTABLE",
+   "comic_action": "Plan large : le parc rempli de bancs, aucun promeneur.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « PLUTÔT DROITE. TRÈS FATIGUÉ. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, aux trois quarts sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique retourne un banc vers la rue.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton meilleur soupir de vieux ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui soupire dès qu'on parle du présent."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 65,
- "claims": [],
+ "word_count": 80,
+ "claims": [
+  {
+   "text": "En 2010, il publie Mélancolie française. Ici, c'est la devise du banc public.",
+   "claim_type": "fait_public",
+   "source": "https://www.critiqueslibres.com/i.php/vcrit/22535",
+   "note": "Livre « Mélancolie française » (2010)."
+  },
+  {
+   "text": "Puis Le Suicide français, puis Destin français. Le banc soupire plus fort.",
+   "claim_type": "fait_public",
+   "source": "https://actualitte.com/article/46032/numerique/le-suicide-francais-d-039-eric-zemmour-n-039-en-finit-pas-de-declencher-des-remous",
+   "note": "Le Suicide français (2014) : plus de 500 pages, best-seller. / Livre « Destin français » (Albin Michel, 2018)."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.ipsos.com/fr-fr/presidentielle-2022-eric-zemmour-une-percee-et-des-limites",
-   "published": "2021-10",
-   "consulted": "2026-11-21",
+   "url": "https://www.critiqueslibres.com/i.php/vcrit/22535",
+   "date": "2010",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (cliché électorat) : Intentions de vote plus fortes chez les plus de 60 ans (17 %) que chez les moins de 35 ans (13 %). Base du cliché « retraité qui paie en francs »."
+   "note": "Livre « Mélancolie française » (2010)."
+  },
+  {
+   "url": "https://actualitte.com/article/46032/numerique/le-suicide-francais-d-039-eric-zemmour-n-039-en-finit-pas-de-declencher-des-remous",
+   "date": "2014-10",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Le Suicide français (2014) : plus de 500 pages, best-seller."
+  },
+  {
+   "url": "https://search.worldcat.org/oclc/1052509571",
+   "date": "2018",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Livre « Destin français » (Albin Michel, 2018)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Récompense absurde, inversion d'âge : un enfant qui n'a connu aucun « avant » récite la formule. Moque la posture « c'était mieux avant » analysée comme marque de fabrique nostalgique. Expression courante, jamais attribuée à une personne. Aucun groupe visé. Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z10, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « Mélancolie française » (2010) et sa bibliographie décliniste. Cadre : le banc du soupir. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

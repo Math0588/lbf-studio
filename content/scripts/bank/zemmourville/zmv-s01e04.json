@@ -3,84 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-04",
  "format": "A",
- "title_cover": "Diligence, ligne 1",
+ "title_cover": "Retombé en diligence",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour…",
-  "Ici, pour moderniser la nostalgie, on a remplacé le tram par une diligence.",
-  "Dans cette ville, le retard du bus s'annonce en siècles.",
-  "Ici, l'appli de transport affiche : « Prochain passage : quand le cheval voudra ».",
-  "Cette ville a un bus électrique. Il est au musée."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : le tram est une diligence.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, on voyage comme en 1850, et on arrive à 7 %.",
+  "Zemmourville : départ à 17, arrivée à 7."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le bus électrique dort au musée, étiquette : erreur de jeunesse.",
-  "Et le bus électrique ? Au musée : « Erreur de jeunesse ». Le seul à l'heure.",
-  "Le bus électrique est sous vitrine. Les touristes le prennent en photo. Pas en transport."
+  "Il voulait remonter le temps. Il a surtout descendu les sondages.",
+  "Dix chevaux perdus entre deux sondages.",
+  "Ça part au galop, ça finit au pas."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour…",
+   "text": "Dans cette ville, tout le monde vote Zemmour. En diligence.",
    "accent_words": [
-    "Zemmour"
+    "En diligence"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Alors le tram a été remplacé par une diligence.",
+   "text": "Ici, le tram a été remplacé par une diligence. Plus authentique.",
    "accent_words": [
-    "diligence"
+    "authentique"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "L'appli affiche : prochain passage quand le cheval voudra.",
+   "text": "Départ en fanfare : 17 % dans un sondage d'octobre 2021.",
    "accent_words": [
-    "quand le cheval voudra"
+    "17 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le Cocher annonce les retards en siècles, motif : authenticité.",
+   "text": "Arrivée en avril 2022 : 7 %. La diligence a perdu dix chevaux en route.",
    "accent_words": [
-    "en siècles",
-    "authenticité"
+    "dix chevaux"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Ticket : deux francs cinquante, et pas un centime d'euro.",
+   "text": "La presse parlait d'un soufflé qui retombe. Ici, c'est le menu du relais.",
    "accent_words": [
-    "deux francs cinquante"
+    "soufflé"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "À bord, le Wi-Fi, c'est le journal de 1926, lu à voix haute.",
+   "text": "Il voulait remonter le temps. Il a surtout descendu les sondages.",
    "accent_words": [
-    "journal de 1926"
+    "descendu les sondages"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le bus électrique dort au musée, étiquette : erreur de jeunesse.",
+   "text": "Envoie ça au pote qui démarre fort et finit à pied.",
    "accent_words": [
-    "erreur de jeunesse"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton pire retard de bus, en siècles ?",
-   "accent_words": [
-    "en siècles"
+    "à pied"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,110 +80,165 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "road",
-    "bus",
-    "person",
-    "sign",
-    "lamp",
-    "text3d"
+    "car",
+    "person"
    ],
-   "onscreen_text": "LIGNE 1 → AUTREFOIS",
-   "comic_action": "Plongée sur un arrêt de tram aux rails pavés. Le véhicule qui arrive est un bus habillé de panneaux de bois peint, girouette « DILIGENCE – LIGNE 1 – DIRECTION AUTREFOIS ». Le Cocher en haut-de-forme est assis sur le toit, lanterne à la main.",
-   "expected_result": "Image immédiate : un transport public déguisé en carrosse."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur une avenue : une diligence à chevaux sur les rails du tram.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "road",
+    "car",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "LIGNE 1 : DILIGENCE",
+   "comic_action": "Travelling : la diligence cahote sur les rails, les voyageurs secoués.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "sign",
+    "car",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "PASSAGE : QUAND LE CHEVAL VOUDRA",
-   "comic_action": "Gros plan sur l'écran d'arrêt : l'horaire « 3 min » se transforme en lettres gothiques. Un usager regarde sa montre, puis le ciel.",
-   "expected_result": "Le service public promet l'imprévisibilité comme une valeur."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4",
-    "n5"
-   ],
-   "camera": "street_dolly",
-   "set": [
-    "road",
-    "bus",
-    "sign",
-    "person",
-    "text3d"
-   ],
-   "onscreen_text": "RETARD : 2 SIÈCLES",
-   "comic_action": "Travelling à côté de la diligence au pas. Le Cocher brandit un panneau « RETARD : 2 SIÈCLES – AUTHENTIQUE ». Les passagers à bord lisent un journal sépia géant.",
-   "expected_result": "Escalade : le retard devient un argument patrimonial."
+   "onscreen_text": "DÉPART : 17 %",
+   "comic_action": "Gros plan : le cocher fouette, un compteur « 17 » sur la diligence.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6"
+    "n4"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "bus",
-    "sign",
+    "car",
     "text3d",
-    "mascot"
+    "road"
    ],
-   "onscreen_text": "ERREUR DE JEUNESSE",
-   "comic_action": "Travelling devant la vitrine du Musée des Erreurs de Jeunesse : un bus électrique blanc, impeccable, exposé derrière la vitre, étiquette « ERREUR DE JEUNESSE, XXIe s. ». Horloge au-dessus : « À L'HEURE ». Pause.",
-   "expected_result": "La chute : le seul transport ponctuel de la ville est un objet de musée."
+   "onscreen_text": "ARRIVÉE : 7 %",
+   "comic_action": "Orbite : la diligence arrive avec un seul cheval épuisé.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "MENU : SOUFFLÉ RETOMBÉ",
+   "comic_action": "Au relais, un aubergiste sert un soufflé plat comme une crêpe.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "road",
+    "car",
+    "text3d"
+   ],
+   "onscreen_text": "17 → 7",
+   "comic_action": "Plan large : la diligence dévale une pente en forme de courbe de sondage.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « PLUTÔT DROITE. TRÈS FATIGUÉ. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, rouge vif, une seule plume sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique pousse la diligence.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton pire retard de bus, en siècles ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui démarre fort et finit à pied."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 78,
- "claims": [],
+ "word_count": 82,
+ "claims": [
+  {
+   "text": "Départ en fanfare : 17 % dans un sondage d'octobre 2021.",
+   "claim_type": "fait_public",
+   "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+  },
+  {
+   "text": "Arrivée en avril 2022 : 7 %. La diligence a perdu dix chevaux en route.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  },
+  {
+   "text": "La presse parlait d'un soufflé qui retombe. Ici, c'est le menu du relais.",
+   "claim_type": "fait_public",
+   "source": "https://fr.timesofisrael.com/france-eric-zemmour-retombe-comme-un-souffle/",
+   "note": "« Eric Zemmour retombe comme un soufflé » (titre de presse, repris sans guillemets)."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.ipsos.com/fr-fr/presidentielle-2022-eric-zemmour-une-percee-et-des-limites",
-   "published": "2021-10",
-   "consulted": "2026-11-21",
+   "url": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "date": "2021-10-07",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (cliché électorat) : Intentions de vote plus fortes chez les plus de 60 ans (17 %) que chez les moins de 35 ans (13 %). Base du cliché « retraité qui paie en francs »."
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+  },
+  {
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  },
+  {
+   "url": "https://fr.timesofisrael.com/france-eric-zemmour-retombe-comme-un-souffle/",
+   "date": "2022",
+   "consulted": "2026-11-22",
+   "statut": "image de presse",
+   "note": "« Eric Zemmour retombe comme un soufflé » (titre de presse, repris sans guillemets)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Inversion musée/usage : ce qui marche est exposé, ce qui ne marche pas circule. Moque le « c'était mieux avant » appliqué au service public. Aucun fait réel, aucune personne réelle. Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z10, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le soufflé : 17 % dans un sondage d'octobre 2021, 7 % en avril 2022. Cadre : la diligence qui remplace le tram. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

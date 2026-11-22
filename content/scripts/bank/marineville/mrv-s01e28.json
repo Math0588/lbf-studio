@@ -3,75 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-25",
  "format": "A",
- "title_cover": "Le petit train circulaire",
+ "title_cover": "Au nom du peuple",
  "hook_variants": [
-  "Le petit train de Marineville promet un nouveau monument à chaque tour.",
-  "Le petit train de Marineville vous promet un nouveau monument à chaque tour.",
-  "Trois tours, trois noms, une seule fontaine.",
-  "La guide change de chapeau. La fontaine, non.",
-  "Le nouveau monument de Marineville est un panneau. Qui annonce le monument."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, le peuple est au menu, pas à table.",
+  "Marineville : au nom du peuple, l'addition au nom de qui ?",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : au nom du peuple."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Dernier tour, panneau neuf : Le Nouveau Monument. Le nouveau monument, c'est le panneau.",
-  "Dernier tour : panneau neuf, Le Nouveau Monument. Le nouveau monument, c'est le panneau.",
-  "Les touristes repartent avec trois cartes postales. Même photo, trois légendes."
+  "Au nom du peuple, oui. Mais l'addition, c'est au nom de qui ?",
+  "Le menu du peuple est en vitrine. Le dîner, lui, se fait en salon privé.",
+  "Ici, la mairie sert le peuple : à table, mais côté plonge."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Le petit train de Marineville promet un nouveau monument à chaque tour.",
+   "text": "Dans cette ville, tout le monde vote Marine. Au nom du peuple.",
    "accent_words": [
-    "tour"
+    "Au nom du peuple"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Fontaine Historique, puis Fontaine Moderne, puis Espace Aquatique Apaisé.",
+   "text": "Slogan de 2017 : Au nom du peuple.",
    "accent_words": [
-    "Apaisé"
+    "Au nom du peuple"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Les touristes prennent trois fois la même photo, la guide change de chapeau.",
+   "text": "Avril 2026 : dîner chez Drouant avec le CAC 40. Le peuple était en cuisine.",
    "accent_words": [
-    "chapeau"
+    "en cuisine"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Billet : douze euros, et l'eau tourne en boucle, gratuitement.",
+   "text": "Ici, la mairie sert le peuple : à table, mais côté plonge.",
    "accent_words": [
-    "boucle"
+    "côté plonge"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Dernier tour, panneau neuf : Le Nouveau Monument.",
+   "text": "Le menu du peuple est en vitrine. Le dîner se fait en salon privé.",
    "accent_words": [
-    "Nouveau Monument"
+    "salon privé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le nouveau monument, c'est le panneau.",
+   "text": "Au nom du peuple, oui. Mais l'addition, c'est au nom de qui ?",
    "accent_words": [
-    "panneau"
+    "au nom de qui"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le monument le plus surcoté de ta ville ? En commentaire.",
+   "text": "Envoie ça au pote qui croit qu'elle dîne avec lui.",
    "accent_words": [
-    "commentaire"
+    "avec lui"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -84,102 +84,164 @@
    ],
    "camera": "descend",
    "set": [
-    "roundabout",
-    "bus",
-    "fountain",
-    "mairie"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "",
-   "comic_action": "Descente : un petit train (bus peint en wagonnets) tourne autour du rond-point central où trône une fontaine ordinaire.",
-   "expected_result": "Le circuit est un cercle autour d'un seul objet.",
-   "new_asset_request": "Optionnel : habillage petit train pour le bus."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; banderole « AU NOM DU PEUPLE ».",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "fountain",
-    "sign",
-    "text3d",
-    "bus"
+    "lift_tribune",
+    "tribune",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "FONTAINE HISTORIQUE",
-   "comic_action": "Orbite synchronisée avec le train : à chaque passage, le panneau devant la fontaine change (« HISTORIQUE », « MODERNE », « ESPACE AQUATIQUE APAISÉ ») ; la fontaine ne bouge pas.",
-   "expected_result": "Répétition rebaptisée."
+   "onscreen_text": "SLOGAN 2017",
+   "comic_action": "La tribune s'élève sous la banderole.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "bus",
+    "arch",
+    "column",
     "person",
-    "fountain"
+    "studio_light"
    ],
-   "onscreen_text": "",
-   "comic_action": "Dans le wagon, les touristes lèvent leurs téléphones, même cadrage, trois fois ; la guide échange son chapeau à chaque tour ; l'eau de la fontaine fait le même arc.",
-   "expected_result": "La mise en scène tourne autour du même contenu."
+   "onscreen_text": "DROUANT · PEUPLE EN CUISINE",
+   "comic_action": "Sous une arche, un dîner chic ; par la porte battante, la plonge.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "window_pass",
    "set": [
-    "fountain",
-    "sign",
-    "text3d",
-    "bus",
-    "roundabout"
+    "table",
+    "person",
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "LE NOUVEAU MONUMENT",
-   "comic_action": "Retour au cadre du début : un grand panneau neuf « LE NOUVEAU MONUMENT » sort du sol devant la fontaine et la cache complètement. Les touristes photographient le panneau. On laisse respirer.",
-   "expected_result": "Chute : la communication devient elle-même l'attraction."
+   "onscreen_text": "PEUPLE : CÔTÉ PLONGE",
+   "comic_action": "Une cantine : les habitants lavent la vaisselle des invités.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7"
+    "n5"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "shop",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "MENU DU PEUPLE (VITRINE)",
+   "comic_action": "Vitrine : un menu populaire affiché ; rideau tiré sur le salon du fond.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
    ],
    "camera": "closeup",
    "set": [
-    "tshirt",
-    "bus",
-    "fountain"
+    "table",
+    "form_stack",
+    "text3d",
+    "mairie"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La guide, chapeau numéro quatre, porte un t-shirt « PLUTÔT DROITE. TRÈS FATIGUÉ. ».",
-   "expected_result": "CTA parlé unique + produit visible."
+   "onscreen_text": "ADDITION : AU NOM DE ?",
+   "comic_action": "Une addition interminable posée sur la table, case « nom » vide. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt mange un sandwich devant un restaurant chic.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Le monument le plus surcoté de ta ville ? En commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui croit qu'elle dîne avec lui."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 69,
- "claims": [],
+ "word_count": 84,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "Slogan de 2017 : Au nom du peuple.",
+   "claim_type": "fait_public",
+   "source": "https://www.europe1.fr/politique/dans-son-nouveau-qg-marine-le-pen-devoile-son-slogan-et-son-logo-de-campagne-2902292",
+   "note": "Campagne 2017 : slogan « Au nom du peuple », logo rose bleue, sans nom de parti ni flamme."
+  },
+  {
+   "segment": "n3",
+   "text": "Avril 2026 : dîner chez Drouant avec le CAC 40. Le peuple était en cuisine.",
+   "claim_type": "fait_public",
+   "source": "https://info.fr/drouant-medef-bardella-cac40-apprivoise-rn-presidentielle-2027/",
+   "note": "Dîner du 07/04/2026 chez Drouant avec des patrons du CAC 40 ; beaucoup en sortent atterrés, la jugeant furieusement étatiste.",
+   "sources_complementaires": [
+    "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html"
+   ]
+  }
+ ],
  "sources": [
   {
-   "url": "https://fr.timesofisrael.com/fn-le-front-change-le-fond-reste-le-meme-estime-la-presse/",
-   "published": "2018-03-12",
-   "consulted": "2026-11-21",
-   "status": "blague (vérifié (moquerie de presse / opinion))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Jeu de mots de presse sur le changement de nom : la façade change, le fond reste. On ne reprend PAS la formule (punchline d'autrui) : on la transforme en gags v…"
+   "url": "https://www.europe1.fr/politique/dans-son-nouveau-qg-marine-le-pen-devoile-son-slogan-et-son-logo-de-campagne-2902292",
+   "date": "2016-11-16",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Campagne 2017 : slogan « Au nom du peuple », logo rose bleue, sans nom de parti ni flamme."
+  },
+  {
+   "url": "https://info.fr/drouant-medef-bardella-cac40-apprivoise-rn-presidentielle-2027/",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "fait rapporté (d'après L'Opinion)",
+   "note": "Dîner du 07/04/2026 chez Drouant avec des patrons du CAC 40 ; beaucoup en sortent atterrés, la jugeant furieusement étatiste."
+  },
+  {
+   "url": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
+   "date": "2026-07-08",
+   "consulted": "2026-11-22",
+   "statut": "fait public + analyse",
+   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne « parfois difficile à concilier »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Répétition rebaptisée : trois noms pour une seule fontaine, puis le panneau qui devient le monument. Satire de l'annonce qui remplace la réalisation. Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 69 mots ; mèmes vérifiés intégrés comme thèmes (M3, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = slogan 2017 « Au nom du peuple » ; avril 2026, dîner chez Drouant avec des patrons du CAC 40. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

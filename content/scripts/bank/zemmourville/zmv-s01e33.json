@@ -3,85 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-31",
  "format": "D",
- "title_cover": "Simulateur : Grandeur",
+ "title_cover": "Game over, 7 %",
  "hook_variants": [
-  "Simulateur de président, édition Zemmourville : deux boutons, avant et encore avant.",
-  "Simulateur de président, édition Zemmourville : deux boutons seulement. Avant, et encore avant.",
-  "Ici, dans le simulateur, construire une école fait perdre des points.",
-  "Dans ce jeu, le seul game over possible, c'est le futur.",
-  "Ici, les graphismes datent de 1965. C'est voulu."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : le jeu vidéo s'appelle Grandeur.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, chaque niveau finit en game over.",
+  "Zemmourville : un simulateur de victoire, sans victoire."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Un joueur avance d'une case : game over, vous avez atteint le futur.",
-  "Un joueur avance d'une seule case. Écran rouge : game over, vous avez atteint le futur. Désolé.",
-  "Le meilleur score : zéro case. Le joueur a reçu une colonne en pierre."
+  "Le jeu promet la grandeur. L'écran affiche toujours un chiffre.",
+  "Grandeur promise, un chiffre livré.",
+  "Trois niveaux, trois game over, une manette qui insiste."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Simulateur de président, édition Zemmourville : deux boutons, avant et encore avant.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Mode Grandeur.",
    "accent_words": [
-    "avant",
-    "encore avant"
+    "Mode Grandeur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Graphismes de 1965, c'est voulu.",
+   "text": "Ici, le jeu vidéo officiel s'appelle Grandeur. Graphismes de 1965, c'est voulu.",
    "accent_words": [
     "1965"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Le jeu s'appelle Grandeur, version disquette.",
-   "accent_words": [
-    "Grandeur"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "Pour construire une école, la liste s'arrête au dix-neuvième siècle.",
-   "accent_words": [
-    "dix-neuvième siècle"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n5",
-   "text": "Chaque inauguration fait perdre des points de grandeur.",
-   "accent_words": [
-    "perdre"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n6",
-   "text": "Record jamais battu : sept pour cent, comme au premier tour de 2022.",
-   "accent_words": [
-    "sept pour cent"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n7",
-   "text": "Un joueur avance d'une case : game over, vous avez atteint le futur.",
+   "id": "n3",
+   "text": "Niveau un, présidentielle 2022 : 7 %. Quatrième, game over.",
    "accent_words": [
-    "game over",
-    "le futur"
+    "game over"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n4",
+   "text": "Niveau deux, législatives : autour de 4 %, aucun député. Game over.",
+   "accent_words": [
+    "aucun député"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n5",
+   "text": "Niveau trois, européennes 2024 : 5,47 %. La tête de liste quitte la partie.",
+   "accent_words": [
+    "quitte la partie"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n6",
+   "text": "Le jeu promet la grandeur. L'écran affiche toujours un chiffre.",
+   "accent_words": [
+    "un chiffre"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n8",
-   "text": "Quel bouton tu ajouterais au simulateur ?",
+   "id": "n7",
+   "text": "Envoie ça au pote qui relance la partie en jurant que c'est la dernière.",
    "accent_words": [
-    "bouton"
+    "la dernière"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -94,122 +84,185 @@
    ],
    "camera": "descend",
    "set": [
+    "ground",
+    "building",
     "screen",
-    "mairie",
-    "banner",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "AVANT · ENCORE AVANT",
-   "comic_action": "Plongée sur un écran géant devant la mairie : une interface de jeu avec seulement deux énormes boutons dorés.",
-   "expected_result": "Format simulateur reconnaissable, choix absurdement limité."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur une salle d'arcade ; borne « GRANDEUR ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
    "camera": "closeup",
    "set": [
     "screen",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "GRANDEUR (GRAPHISMES 1965)",
-   "comic_action": "L'écran affiche un écran-titre à gros pixels, sépia, avec une musique de fanfare en sourdine.",
-   "expected_result": "La forme du jeu est déjà rétro."
+   "onscreen_text": "GRANDEUR — 1965",
+   "comic_action": "Écran d'accueil pixelisé, couleurs passées.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "screen",
+    "text3d"
+   ],
+   "onscreen_text": "NIVEAU 1 : 7 %",
+   "comic_action": "Orbite autour de la borne : « GAME OVER » clignote.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "closeup",
    "set": [
     "screen",
-    "person",
     "text3d"
    ],
-   "onscreen_text": "EN QUELLE ANNÉE ? … 1899",
-   "comic_action": "Un joueur clique « construire une école » ; une liste déroulante d'années s'arrête net en 1899.",
-   "expected_result": "Escalade : l'avenir n'est pas proposé."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5",
-    "n6"
-   ],
-   "camera": "orbit",
-   "set": [
-    "screen",
-    "banner",
-    "person",
-    "text3d"
-   ],
-   "onscreen_text": "INAUGURATION : -50 GRANDEUR",
-   "comic_action": "Orbite autour de l'écran : chaque petit bâtiment qui apparaît sur la carte fait chuter une jauge « GRANDEUR ». Le joueur range ses bâtiments un à un.",
-   "expected_result": "La règle inverse : construire est une faute."
+   "onscreen_text": "NIVEAU 2 : 4 %",
+   "comic_action": "Deuxième écran, même message.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7"
+    "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
     "screen",
     "person",
-    "text3d",
-    "mascot"
+    "text3d"
    ],
-   "onscreen_text": "GAME OVER : LE FUTUR",
-   "comic_action": "Le pion avance d'une case : l'écran vire au rouge, texte de défaite. Le joueur pose la manette, accablé. Le Coq Sépia baisse la tête. Pause.",
-   "expected_result": "La chute : avancer, même d'une case, est la seule façon de perdre."
+   "onscreen_text": "NIVEAU 3 : 5,47 %",
+   "comic_action": "Travelling : un joueur lâche la manette et sort de la salle.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s6",
    "narration_ids": [
-    "n8"
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "screen",
+    "building",
+    "text3d"
+   ],
+   "onscreen_text": "GRANDEUR : 1 CHIFFRE",
+   "comic_action": "Plan large : la borne s'éteint ; reste un petit chiffre lumineux.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « LE PAYS BUGUE. MOI AUSSI. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, entièrement sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique insère une pièce, « 2027 » s'affiche.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Quel bouton tu ajouterais au simulateur ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui relance la partie en jurant que c'est la dernière."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 74,
- "claims": [],
+ "word_count": 82,
+ "claims": [
+  {
+   "text": "Ici, le jeu vidéo officiel s'appelle Grandeur. Graphismes de 1965, c'est voulu.",
+   "claim_type": "fait_public",
+   "source": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
+   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
+  },
+  {
+   "text": "Niveau un, présidentielle 2022 : 7 %. Quatrième, game over.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  },
+  {
+   "text": "Niveau deux, législatives : autour de 4 %, aucun député. Game over.",
+   "claim_type": "fait_public",
+   "source": "https://www.dhnet.be/actu/monde/2022/06/12/elections-legislatives-2022-le-parti-deric-zemmour-nobtiendrait-quentre-38-et-4-des-voix-2MNY4GFZ4FBEDOJ6SGEU3C5AFE/",
+   "note": "« Le résultat n'est pas à la hauteur de nos attentes » ; son parti autour de 4 %. / Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
+  },
+  {
+   "text": "Niveau trois, européennes 2024 : 5,47 %. La tête de liste quitte la partie.",
+   "claim_type": "fait_public",
+   "source": "https://wikiwand.com/en/articles/2024_European_Parliament_election_in_France",
+   "note": "Européennes 2024 : liste Reconquête 5,47 %, cinq sièges. / Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
+  }
+ ],
  "sources": [
   {
    "url": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
-   "published": "2021-11-30",
-   "consulted": "2026-11-21",
-   "statut": "opinion",
-   "used_for": "Inspiration seulement (blague) : Moqueries de responsables politiques sur l'annonce : extrême droite « momifiée dans un passé fantasmé », mise en scène « grandiloquente », « déclaration à l'élection présidentielle de 1965 » (Alexis Corbière). Reprises ici comme thèmes (année 1965, momification, grandiloquence), jamais citées."
+   "date": "2021-11-30",
+   "consulted": "2026-11-22",
+   "statut": "opinion rapportée",
+   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
   },
   {
-   "url": "https://www.paris.fr/pages/election-presidentielle-les-resultats-provisoires-du-premier-tour-a-paris-20846",
-   "published": "2022-04-10",
-   "consulted": "2026-11-21",
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (blague) : Score du premier tour 2022 : 7,07 % au niveau national (8,16 % à Paris). Ressort : le « score maximum » de la ville fictive plafonne à sept pour cent."
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  },
+  {
+   "url": "https://www.dhnet.be/actu/monde/2022/06/12/elections-legislatives-2022-le-parti-deric-zemmour-nobtiendrait-quentre-38-et-4-des-voix-2MNY4GFZ4FBEDOJ6SGEU3C5AFE/",
+   "date": "2022-06-12",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte",
+   "note": "« Le résultat n'est pas à la hauteur de nos attentes » ; son parti autour de 4 %."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
+   "date": "2022-06-12",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
+  },
+  {
+   "url": "https://wikiwand.com/en/articles/2024_European_Parliament_election_in_France",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Européennes 2024 : liste Reconquête 5,47 %, cinq sièges."
+  },
+  {
+   "url": "https://www.letemps.ch/monde/europe/eric-zemmour-exclut-marion-marechal-de-reconquete",
+   "date": "2024-06",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte",
+   "note": "Juin 2024 : exclusion de la tête de liste des européennes, « record du monde de la trahison »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Jeu à condition de victoire inversée. Les « graphismes de 1965 » transforment en gag une critique publique de 2021 jugeant l'annonce digne d'une élection de cette année-là, sans nommer ni citer personne. Format D : aucun appel au vote, simulateur fictif. Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z2, Z8, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : les scores électoraux : 7,07 % (2022), environ 4 % (législatives 2022), 5,47 % (européennes 2024). Cadre : le simulateur « Grandeur ». Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

@@ -3,85 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-13",
  "format": "A",
- "title_cover": "Caisse à l'ancienne",
+ "title_cover": "Remise de 7 %",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour…",
-  "Ici, les caisses automatiques sont revenues à l'ancienne : il y a un monsieur dedans.",
-  "Dans ce supermarché, la caisse rapide est la plus lente de France.",
-  "Ici, le paiement sans contact est refusé. On aime le contact.",
-  "Cette caisse automatique te serre la main. Pendant trois minutes."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : la promo maximale, c'est 7 %.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, la caisse rend la monnaie en francs.",
+  "Zemmourville : le supermarché du plafond de verre."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La caisse rapide déborde jusqu'au parking.",
-  "Il te serre la main trois minutes et te rend la monnaie en souvenirs. La caisse rapide déborde jusqu'au parking.",
-  "Il t'a rendu la monnaie en francs. Et une anecdote de 1983."
+  "Remise de 7 % : le maximum autorisé dans la ville depuis 2022.",
+  "Sept pour cent : la remise, le score, le plafond.",
+  "La caisse est automatique. Le score, aussi : sept."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour…",
+   "text": "Dans cette ville, tout le monde vote Zemmour. À la caisse.",
    "accent_words": [
-    "Zemmour"
+    "À la caisse"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La caisse automatique a un monsieur dedans.",
+   "text": "Ici, la seule promo du supermarché : moins 7,07 %.",
    "accent_words": [
-    "caisse automatique",
-    "monsieur dedans"
+    "7,07 %"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Il lit le code-barres à voix haute et compte au boulier.",
+   "text": "Son score de 2022 au premier tour. Quatrième place.",
    "accent_words": [
-    "boulier"
+    "Quatrième place"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Un article inattendu, et il sort pour en parler une heure.",
+   "text": "La caisse automatique a un monsieur dedans. Il rend la monnaie en francs.",
    "accent_words": [
-    "parler une heure"
+    "en francs"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le sans contact est refusé : ici, on aime le contact.",
+   "text": "Il commente chaque article : ce yaourt, c'était mieux avant.",
    "accent_words": [
-    "le contact"
+    "mieux avant"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Paiement en francs uniquement : trente-deux francs les pâtes.",
+   "text": "Remise de 7 % : le maximum autorisé dans la ville depuis 2022.",
    "accent_words": [
-    "francs",
-    "trente-deux francs"
+    "le maximum"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "La caisse rapide déborde jusqu'au parking.",
+   "text": "Envoie ça au pote qui convertit encore les prix en francs.",
    "accent_words": [
-    "jusqu'au parking"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Caisse automatique ou caissier bavard ?",
-   "accent_words": [
-    "Caisse automatique"
+    "en francs"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,106 +80,144 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "shop",
-    "screen",
-    "person",
-    "sign",
-    "text3d"
+    "scroll",
+    "person"
    ],
-   "onscreen_text": "CAISSE AUTOMATIQUE",
-   "comic_action": "Plongée sur une rangée de caisses automatiques : de la borne centrale dépasse la tête d'un petit monsieur à moustache qui fait coucou.",
-   "expected_result": "La machine moderne contient un humain d'autrefois."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur un supermarché ; enseigne « -7,07 % ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "person",
+    "shop",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "BIP… HUIT… NEUF…",
-   "comic_action": "Il épelle les chiffres du code-barres et fait glisser les boules d'un boulier, très lentement.",
-   "expected_result": "Le progrès est remplacé par du calcul à l'ancienne."
+   "onscreen_text": "PROMO : -7,07 %",
+   "comic_action": "Gros plan sur une étiquette jaune, le seul chiffre autorisé.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5"
+    "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
-    "text3d"
+    "text3d",
+    "person",
+    "table"
    ],
-   "onscreen_text": "REFUSÉ. ICI, ON AIME LE CONTACT.",
-   "comic_action": "Gros plan sur le terminal : la carte approche, l'écran devient sépia et affiche le refus avec un petit cœur.",
-   "expected_result": "Littéralisation du mot « contact »."
+   "onscreen_text": "4E",
+   "comic_action": "Orbite autour d'un podium où la marche « 4 » a été ajoutée au scotch.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6"
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "MONNAIE : FRANCS",
+   "comic_action": "La borne s'ouvre : un monsieur en gilet compte des pièces anciennes.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
    ],
    "camera": "street_dolly",
    "set": [
     "shop",
     "person",
-    "sign",
-    "text3d",
-    "mascot"
+    "sign"
    ],
-   "onscreen_text": "CAISSE RAPIDE →",
-   "comic_action": "Travelling arrière depuis la caisse : la poignée de main dure, la file s'allonge, traverse le magasin, passe la porte et s'enroule sur le parking. Le Coq Sépia attend dans la file.",
-   "expected_result": "La chute : la convivialité nostalgique tue le service promis."
+   "onscreen_text": "YAOURT : MIEUX AVANT",
+   "comic_action": "Travelling : chaque produit scanné déclenche un soupir dans le haut-parleur.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s5",
+   "id": "s6",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "shop",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "PLAFOND : 7 %",
+   "comic_action": "Plan large : un client tente -8 %, une alarme se déclenche.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « J'AI UN AVIS. PAS DE MANDAT. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, à moitié sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique tend un billet de cent francs.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Caisse automatique ou caissier bavard ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui convertit encore les prix en francs."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 69,
- "claims": [],
+ "word_count": 77,
+ "claims": [
+  {
+   "text": "Son score de 2022 au premier tour. Quatrième place.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  },
+  {
+   "text": "Remise de 7 % : le maximum autorisé dans la ville depuis 2022.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.ipsos.com/fr-fr/presidentielle-2022-eric-zemmour-une-percee-et-des-limites",
-   "published": "2021-10",
-   "consulted": "2026-11-21",
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (cliché électorat) : Intentions de vote plus fortes chez les plus de 60 ans (17 %) que chez les moins de 35 ans (13 %). Base du cliché « retraité qui paie en francs »."
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Objet qui se comporte comme une personne. Le CTA propose un choix ludique, aucun appel au vote politique. Aucune personne réelle. Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z10, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le score de 2022 (7,07 %, quatrième) devenu plafond de la ville. Cadre : la caisse du supermarché. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

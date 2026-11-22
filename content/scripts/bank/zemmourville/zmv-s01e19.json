@@ -3,85 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-14",
  "format": "A",
- "title_cover": "Le plat de la veille",
+ "title_cover": "Service inélégant",
  "hook_variants": [
-  "Ici, interdit de servir le plat du jour : seulement celui de la veille.",
-  "Ici, le plat du jour est interdit. On ne sert que le plat de la veille.",
-  "Dans ce restaurant, le chef ne cuisine plus depuis 1971.",
-  "Ici, pour commander, le serveur consulte les archives.",
-  "Ce restaurant sert un pot-au-feu classé monument historique."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : le serveur a un geste pour chaque client.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, l'élégance française a un doigt de trop.",
+  "Zemmourville : le restaurant où l'accueil est inélégant, mais assumé."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Il met cinq étoiles et repart le ventre vide.",
-  "Il soulève la cloche. Pot-au-feu fossilisé, sous scellé. Le client pleure, met cinq étoiles, et repart le ventre vide.",
-  "Le pot-au-feu retourne en réserve. Le client, lui, rentre manger des pâtes. D'hier."
+  "Ici, la grandeur de la France se mesure à un doigt.",
+  "Grandeur de la France, finesse de la réplique : un doigt.",
+  "Le geste a fait le tour du monde. Le programme, moins."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, interdit de servir le plat du jour : seulement celui de la veille.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Service compris.",
    "accent_words": [
-    "celui de la veille"
+    "Service compris"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Problème : la veille aussi, c'était le plat de la veille.",
+   "text": "Novembre 2021, à Marseille, il répond à une passante par un doigt d'honneur.",
    "accent_words": [
-    "le plat de la veille"
+    "doigt d'honneur"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Le serveur remonte le registre, décennie après décennie.",
+   "text": "Il a reconnu ensuite un geste inélégant. Ici, c'est la carte de visite du restaurant.",
    "accent_words": [
-    "décennie après décennie"
+    "inélégant"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Trois heures plus tard : un pot-au-feu de 1971.",
+   "text": "Le serveur salue chaque client de la même façon. Élégance d'époque.",
    "accent_words": [
-    "pot-au-feu de 1971"
+    "Élégance d'époque"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le client, mocassins à glands, paie quarante-huit euros.",
+   "text": "Le plat de la veille est réchauffé. La rancune aussi.",
    "accent_words": [
-    "mocassins à glands",
-    "quarante-huit euros"
+    "La rancune"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Sous la cloche, un pot-au-feu fossilisé.",
+   "text": "Ici, la grandeur de la France se mesure à un doigt.",
    "accent_words": [
-    "fossilisé"
+    "un doigt"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Il met cinq étoiles et repart le ventre vide.",
+   "text": "Envoie ça au pote qui répond aux critiques avec un emoji.",
    "accent_words": [
-    "cinq étoiles",
-    "le ventre vide"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton plus vieux réchauffé ?",
-   "accent_words": [
-    "réchauffé"
+    "un emoji"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -94,15 +84,14 @@
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "shop",
-    "sign",
-    "person",
-    "lamp",
-    "text3d"
+    "scroll",
+    "person"
    ],
-   "onscreen_text": "PLAT DU JOUR : INTERDIT",
-   "comic_action": "Plongée sur la terrasse du restaurant « La Veille » : l'ardoise du plat du jour est barrée, remplacée par « PLAT DE LA VEILLE ».",
-   "expected_result": "La règle absurde est posée en une ardoise."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur un restaurant à nappes à carreaux ; enseigne « L'ÉLÉGANCE ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
@@ -111,86 +100,124 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "text3d"
+    "person",
+    "text3d",
+    "sign"
    ],
-   "onscreen_text": "VEILLE → AVANT-VEILLE → …",
-   "comic_action": "Gros plan sur l'ardoise : chaque fois qu'on l'efface, une ardoise plus ancienne apparaît dessous, à l'infini.",
-   "expected_result": "Régression infinie visible."
+   "onscreen_text": "MARSEILLE, 2021",
+   "comic_action": "Une photo d'archive floutée encadrée au-dessus du bar, légende « NOTRE FONDATEUR ».",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4"
-   ],
-   "camera": "closeup",
-   "set": [
-    "table",
-    "scroll",
-    "person",
-    "lamp"
-   ],
-   "onscreen_text": "RECHERCHE : 1971",
-   "comic_action": "Le serveur feuillette un énorme registre ; les années défilent sur un petit panneau à côté de lui, la lampe baisse, la nuit tombe.",
-   "expected_result": "Escalade : commander devient une recherche d'archives."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5"
+    "n3"
    ],
    "camera": "orbit",
    "set": [
     "table",
-    "person",
     "sign",
-    "text3d",
-    "mascot"
+    "person"
    ],
-   "onscreen_text": "★★★★★ (NOSTALGIQUE)",
-   "comic_action": "Orbite autour de la table : le serveur soulève une cloche, une plaque « SOUS SCELLÉ » apparaît devant un pot-au-feu gris pierre. Le client essuie une larme et s'en va sans avoir mangé. Pause.",
-   "expected_result": "La chute : la nostalgie remplace même la nourriture."
+   "onscreen_text": "CARTE DE VISITE",
+   "comic_action": "Orbite : sur chaque table, une carte de visite en forme de main.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "person",
+    "table",
+    "text3d"
+   ],
+   "onscreen_text": "ACCUEIL MAISON",
+   "comic_action": "Travelling : le serveur lève la main vers chaque table, la caméra coupe juste avant.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "PLAT DE LA VEILLE",
+   "comic_action": "Une assiette fumante, étiquette « RANCUNE — SERVIE TIÈDE ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "shop",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "GRANDEUR : 1 DOIGT",
+   "comic_action": "Plan large : l'enseigne « L'ÉLÉGANCE » perd une lettre à chaque seconde.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « À DROITE DU CANAPÉ. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, à moitié sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique laisse un pourboire poli.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton plus vieux réchauffé ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui répond aux critiques avec un emoji."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 70,
- "claims": [],
+ "word_count": 81,
+ "claims": [
+  {
+   "text": "Novembre 2021, à Marseille, il répond à une passante par un doigt d'honneur.",
+   "claim_type": "fait_public",
+   "source": "https://www.malaymail.com/news/world/2021/11/28/frances-zemmour-shows-finger-to-critic-as-campaign-woes-mount/2024272",
+   "note": "Marseille, 27/11/2021 : doigt d'honneur à une passante ; il reconnaît ensuite un geste inélégant."
+  },
+  {
+   "text": "Il a reconnu ensuite un geste inélégant. Ici, c'est la carte de visite du restaurant.",
+   "claim_type": "fait_public",
+   "source": "https://www.malaymail.com/news/world/2021/11/28/frances-zemmour-shows-finger-to-critic-as-campaign-woes-mount/2024272",
+   "note": "Marseille, 27/11/2021 : doigt d'honneur à une passante ; il reconnaît ensuite un geste inélégant."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/geographie-du-vote-une-france-eclatee-en-trois-202165",
-   "published": "2022-04",
-   "consulted": "2026-11-21",
-   "statut": "fait (géographie) / mème (cliché)",
-   "used_for": "Inspiration seulement (cliché électorat) : Géographie : Zemmour 2e dans les 16e, 7e et 8e arrondissements de Paris ; fort à Versailles. Base du cliché satirique « bourgeois nostalgique » (mocassins à glands, Barbour, pull noué sur les épaules, chevalière) — on ne vise que goûts et posture."
+   "url": "https://www.malaymail.com/news/world/2021/11/28/frances-zemmour-shows-finger-to-critic-as-campaign-woes-mount/2024272",
+   "date": "2021-11-28",
+   "consulted": "2026-11-22",
+   "statut": "fait (AFP)",
+   "note": "Marseille, 27/11/2021 : doigt d'honneur à une passante ; il reconnaît ensuite un geste inélégant."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Régression infinie (le plat de la veille de la veille). Continuité : le pot-au-feu sous scellé (zmv-evt-011). Aucune personne réelle. Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z9, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le doigt d'honneur de Marseille (novembre 2021), reconnu ensuite comme inélégant. Cadre : le restaurant. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

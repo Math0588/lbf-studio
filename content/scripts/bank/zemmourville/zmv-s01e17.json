@@ -3,79 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-10",
  "format": "A",
- "title_cover": "Dans cinq ans ? Avant.",
+ "title_cover": "Dossier au finish",
  "hook_variants": [
-  "En entretien, on te demande où tu te vois dans cinq ans.",
-  "Ici, en entretien, où te vois-tu dans cinq ans ? Bonne réponse : cinq ans plus tôt.",
-  "Dans cette ville, le CV doit être relié cuir.",
-  "Ici, ton LinkedIn, c'est une lettre de ton arrière-grand-père.",
-  "Cette ville a embauché une colonne en pierre. Profil parfait."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : l'entretien se passe au passé simple.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, on rend ses dossiers à la dernière minute, comme le patron.",
+  "Zemmourville : dans cinq ans ? Avant."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le poste va à une colonne en pierre : pas changé d'avis depuis l'Antiquité.",
-  "Le poste revient finalement à une colonne en pierre. Le recruteur, ému : profil stable, pas changé d'avis depuis l'Antiquité.",
-  "Le poste est pourvu. Par le candidat d'il y a cinq ans. Il était mieux."
+  "Le recruteur conclut : profil intéressant, mais bien meilleur en 2021.",
+  "Embauché à la dernière minute, viré au premier tour.",
+  "Excellent profil en 2021. En 2022, moins."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "En entretien, on te demande où tu te vois dans cinq ans.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Entretien d'embauche.",
    "accent_words": [
-    "dans cinq ans"
+    "Entretien d'embauche"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Bonne réponse : cinq ans plus tôt.",
+   "text": "Question du recruteur : où vous voyez-vous dans cinq ans ? Réponse : avant.",
    "accent_words": [
-    "cinq ans plus tôt"
+    "avant"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Le CV est relié cuir, la lettre écrite à la plume.",
+   "text": "Votre dossier ? Bouclé à trois jours de la date limite.",
    "accent_words": [
-    "relié cuir",
-    "à la plume"
+    "date limite"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Compétence clé : dire c'était mieux avant, sans jamais dire quand.",
+   "text": "Comme ses parrainages en 2022 : les 500 franchis début mars, limite le 4.",
    "accent_words": [
-    "c'était mieux avant",
-    "quand"
+    "limite le 4"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Vingt ans de plateaux télé comme chroniqueur, c'est un plus énorme.",
+   "text": "Expérience : chroniqueur, écrivain, candidat. Résultat : 7 %.",
    "accent_words": [
-    "chroniqueur",
-    "plus"
+    "7 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Le poste va à une colonne en pierre : pas changé d'avis depuis l'Antiquité.",
+   "text": "Le recruteur conclut : profil intéressant, mais bien meilleur en 2021.",
    "accent_words": [
-    "colonne en pierre",
-    "depuis l'Antiquité"
+    "en 2021"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Ta question d'entretien la plus absurde ?",
+   "text": "Envoie ça au pote qui rend tous ses dossiers à la dernière minute.",
    "accent_words": [
-    "absurde"
+    "la dernière minute"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -84,107 +80,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "building",
-    "table",
-    "person",
-    "sign",
-    "text3d"
+    "scroll",
+    "person"
    ],
-   "onscreen_text": "OÙ DANS 5 ANS ? → AVANT",
-   "comic_action": "Plongée sur un bureau de recrutement en pierre : un candidat face à un recruteur. Au-dessus d'eux, un panneau affiche la question, et une flèche pointe vers l'arrière.",
-   "expected_result": "La question d'avenir attend une réponse passéiste."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur un bureau ; affiche « ON RECRUTE (AVANT) ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
    "camera": "closeup",
    "set": [
     "table",
-    "scroll",
-    "form_stack",
-    "person"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "CV : RELIÉ CUIR",
-   "comic_action": "Gros plan sur la table : un CV relié comme un grimoire, et une lettre jaunie cachetée de cire rouge à la place d'un profil en ligne.",
-   "expected_result": "Le recrutement exige du vieux papier."
+   "onscreen_text": "DANS 5 ANS ? AVANT",
+   "comic_action": "Le candidat montre du doigt le calendrier… de l'année précédente.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "form_stack",
+    "table",
+    "text3d"
+   ],
+   "onscreen_text": "J-3",
+   "comic_action": "Orbite : un dossier arrive en courant, haletant, tampon « LIMITE ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "closeup",
    "set": [
-    "screen",
+    "form_stack",
     "text3d",
     "person"
    ],
-   "onscreen_text": "COMPÉTENCE N°1 : SOUPIRER",
-   "comic_action": "Une fiche de poste à l'écran liste les compétences ; la première, en gras, clignote : « Dire c'était mieux avant (sans date) ». Puis « Chroniqueur télé : un plus ».",
-   "expected_result": "Escalade : le vague nostalgique devient une qualification."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5"
-   ],
-   "camera": "orbit",
-   "set": [
-    "column",
-    "table",
-    "person",
-    "text3d",
-    "mascot"
-   ],
-   "onscreen_text": "PROFIL STABLE DEPUIS L'ANTIQUITÉ",
-   "comic_action": "Orbite autour de la table : la chaise du candidat est maintenant occupée par une colonne en pierre. Le recruteur lui serre… la base, ému aux larmes. Pause de deux secondes.",
-   "expected_result": "La chute : le candidat idéal est un objet qui n'a jamais évolué."
+   "onscreen_text": "500 PARRAINAGES · J-3",
+   "comic_action": "Un compteur de signatures franchit 500 au dernier moment.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "scroll",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "RÉSULTAT : 7 %",
+   "comic_action": "Un CV en parchemin ; la dernière ligne surlignée.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "building",
+    "table",
+    "text3d"
+   ],
+   "onscreen_text": "PROFIL : 2021",
+   "comic_action": "Plan large : le recruteur range le dossier dans un tiroir « ARCHIVES ».",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « À GAUCHE DU CANAPÉ. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, à moitié sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique arrive en courant, trop tard.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ta question d'entretien la plus absurde ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui rend tous ses dossiers à la dernière minute."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 73,
- "claims": [],
+ "word_count": 82,
+ "claims": [
+  {
+   "text": "Comme ses parrainages en 2022 : les 500 franchis début mars, limite le 4.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-marine-le-pen-eric-zemmour-et-nicolas-dupont-aignan-obtiennent",
+   "note": "500 parrainages franchis début mars 2022, date limite le 4 mars."
+  },
+  {
+   "text": "Expérience : chroniqueur, écrivain, candidat. Résultat : 7 %.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.slate.fr/story/199107/eric-zemmour-cnews-face-a-linfo-emission-transformation-paysage-mediatique-succes-avenir-medias",
-   "published": "2021-01",
-   "consulted": "2026-11-21",
+   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-marine-le-pen-eric-zemmour-et-nicolas-dupont-aignan-obtiennent",
+   "date": "2022-03",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (surnom) : Le « chroniqueur » / « polémiste » : des décennies de plateaux (Ça se dispute, Zemmour et Naulleau, Face à l'info sur CNews 2019-2021). Surnom usuel « le polémiste ». Inspire le maire fictif « le Chroniqueur »."
+   "note": "500 parrainages franchis début mars 2022, date limite le 4 mars."
+  },
+  {
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Question piège inversée. « Expérience de chroniqueur télé : un plus » renvoie à la posture publique du chroniqueur (parcours médiatique factuel), sans citation. La colonne « qui n'a pas changé d'avis » moque la rigidité de posture, pas une personne. Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z5, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : les 500 parrainages de 2022, franchis à quelques jours de la date limite. Cadre : l'entretien d'embauche. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

@@ -3,77 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-28",
  "format": "A",
- "title_cover": "Vacances en 1975",
+ "title_cover": "Binge du déclin",
  "hook_variants": [
-  "Ici, l'agence de voyages ne vend pas des destinations, mais des années.",
-  "Ici, l'agence de voyages ne vend pas des destinations. Elle vend des années.",
-  "Dans cette agence, le séjour le plus demandé, c'est les Trente Glorieuses.",
-  "Ici, pas d'offres last minute. Seulement des offres last century.",
-  "Ici, ta carte postale arrive avant ton départ."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : les vacances, c'est quatre épisodes de déclin.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, on part à la mer pour regarder des archives.",
+  "Zemmourville : le club de vacances le plus déprimant de France."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ta carte postale arrive avant ton départ.",
-  "Au retour, ta carte postale est arrivée… avant ton départ. Le facteur : ici, même le courrier préfère hier.",
-  "Le séjour est remboursé en francs. Prix d'époque."
+  "La saison deux ? Pas commandée. Comme le second tour.",
+  "Pas de saison deux, pas de second tour.",
+  "Les vacances sont finies. Le déclin, non."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, l'agence de voyages ne vend pas des destinations, mais des années.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. En vacances.",
    "accent_words": [
-    "années"
+    "En vacances"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Formule Trente Glorieuses : sept nuits, quatre cents francs, pension complète.",
+   "text": "Ici, les vacances se passent devant une seule série : Le Suicide français.",
    "accent_words": [
-    "Trente Glorieuses",
-    "quatre cents francs"
+    "une seule série"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Formule Premier Empire : vue sur Austerlitz, retour par Waterloo.",
+   "text": "Adapté de son livre, en quatre épisodes documentaires.",
    "accent_words": [
-    "Premier Empire",
-    "par Waterloo"
+    "quatre épisodes"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Pas de last minute, que du last century.",
+   "text": "Épisode un : tout va mal. Épisode quatre : c'était mieux avant.",
    "accent_words": [
-    "last century"
+    "mieux avant"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les retraités en pull noué prennent les deux formules.",
+   "text": "Pendant ce temps, la mer est vide. Personne ne veut voir le présent.",
    "accent_words": [
-    "pull noué"
+    "le présent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ta carte postale arrive avant ton départ.",
+   "text": "La saison deux ? Pas commandée. Comme le second tour.",
    "accent_words": [
-    "avant ton départ"
+    "le second tour"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Tu partirais en vacances dans quelle année ?",
+   "text": "Envoie ça au pote qui passe ses vacances devant des docus déprimants.",
    "accent_words": [
-    "dans quelle année"
+    "docus déprimants"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -86,14 +84,14 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "sign",
-    "person",
-    "text3d"
+    "ground",
+    "building",
+    "screen",
+    "person"
    ],
-   "onscreen_text": "DESTINATIONS : 1975 · 1805",
-   "comic_action": "Plongée sur une agence de voyages en pierre : en vitrine, au lieu de plages, des affiches d'années en grands chiffres dorés.",
-   "expected_result": "Le voyage est temporel, pas géographique."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur une plage : tous les transats tournés vers un écran.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
@@ -103,90 +101,135 @@
    "camera": "closeup",
    "set": [
     "screen",
-    "text3d"
+    "person",
+    "bench"
    ],
-   "onscreen_text": "TRENTE GLORIEUSES : 7 NUITS",
-   "comic_action": "Gros plan sur un écran d'offres façon catalogue : « Trente Glorieuses – pension complète », petite étoile « prix d'époque non garanti ».",
-   "expected_result": "La nostalgie économique vendue comme un forfait."
+   "onscreen_text": "SÉRIE DE L'ÉTÉ",
+   "comic_action": "Gros plan : l'écran de plage diffuse le générique.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "screen",
+    "text3d"
+   ],
+   "onscreen_text": "4 ÉPISODES",
+   "comic_action": "Orbite : quatre jaquettes géantes alignées sur le sable.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
     "n4"
    ],
    "camera": "closeup",
    "set": [
     "screen",
-    "sign",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "LAST CENTURY",
-   "comic_action": "Un tampon « LAST MINUTE » est barré et remplacé par « LAST CENTURY ». Une offre « Premier Empire » s'affiche avec une case « retour : Waterloo » déjà cochée.",
-   "expected_result": "Escalade : la gloire napoléonienne vendue avec sa défaite incluse."
+   "onscreen_text": "ÉP. 4 : AVANT",
+   "comic_action": "La télécommande enchaîne, les vacanciers soupirent en chœur.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s4",
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "street_dolly",
    "set": [
-    "building",
     "person",
-    "sign",
-    "text3d",
-    "mascot"
+    "bench",
+    "sign"
    ],
-   "onscreen_text": "MÊME LE COURRIER PRÉFÈRE HIER",
-   "comic_action": "Travelling devant un immeuble : une habitante avec sa valise devant la porte ouvre sa boîte aux lettres et y trouve sa propre carte postale de vacances. Le facteur hausse les épaules. Pause.",
-   "expected_result": "La chute : même le temps postal fonctionne à l'envers."
+   "onscreen_text": "MER : VIDE",
+   "comic_action": "Travelling : la mer, magnifique, sans personne.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s5",
+   "id": "s6",
    "narration_ids": [
-    "n6",
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "SAISON 2 : ANNULÉE",
+   "comic_action": "Plan large : l'écran s'éteint, il pleut sur la plage.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « J'AI UN AVIS. PAS DE MANDAT. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, entièrement sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique plonge enfin dans la mer.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Tu partirais en vacances dans quelle année ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui passe ses vacances devant des docus déprimants."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 65,
- "claims": [],
- "sources": [
+ "word_count": 78,
+ "claims": [
   {
-   "url": "https://fr.timesofisrael.com/de-quelle-extreme-droite-eric-zemmour-est-il-le-nom/",
-   "published": "2021-12",
-   "consulted": "2026-11-21",
-   "statut": "fait",
-   "used_for": "Inspiration seulement (mème) : Admiration revendiquée pour Napoléon ; slogan du meeting de Villepinte (5/12/2021) « Impossible n'est pas français », formule attribuée à Napoléon. Inspire Waterloo, Austerlitz, la grandeur."
+   "text": "Ici, les vacances se passent devant une seule série : Le Suicide français.",
+   "claim_type": "fait_public",
+   "source": "https://actualitte.com/article/119898/adaptation/la-serie-inspiree-du-livre-de-zemmour-agace-passablement",
+   "note": "Adaptation du Suicide français en série documentaire de quatre épisodes (Planète+)."
   },
   {
-   "url": "https://www.ipsos.com/fr-fr/presidentielle-2022-eric-zemmour-une-percee-et-des-limites",
-   "published": "2021-10",
-   "consulted": "2026-11-21",
+   "text": "Adapté de son livre, en quatre épisodes documentaires.",
+   "claim_type": "fait_public",
+   "source": "https://actualitte.com/article/119898/adaptation/la-serie-inspiree-du-livre-de-zemmour-agace-passablement",
+   "note": "Adaptation du Suicide français en série documentaire de quatre épisodes (Planète+)."
+  },
+  {
+   "text": "La saison deux ? Pas commandée. Comme le second tour.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://actualitte.com/article/119898/adaptation/la-serie-inspiree-du-livre-de-zemmour-agace-passablement",
+   "date": "2025",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (cliché électorat) : Intentions de vote plus fortes chez les plus de 60 ans (17 %) que chez les moins de 35 ans (13 %). Base du cliché « retraité qui paie en francs »."
+   "note": "Adaptation du Suicide français en série documentaire de quatre épisodes (Planète+)."
+  },
+  {
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Substitution espace/temps. Le duel Trente Glorieuses / Premier Empire reprend le débat de presse sur l'époque réelle de la nostalgie (début XIXe), en gag de catalogue. Aucune citation. Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z6, Z10, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Le Suicide français adapté en série documentaire de quatre épisodes. Cadre : les vacances. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

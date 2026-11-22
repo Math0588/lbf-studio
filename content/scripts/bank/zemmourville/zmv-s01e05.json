@@ -3,84 +3,75 @@
  "city": "zemmourville",
  "synopsis_id": "zmv-syn-05",
  "format": "C",
- "title_cover": "Le futur désinstallé",
+ "title_cover": "Zéro député",
  "hook_variants": [
-  "Mise à jour de Zemmourville : on a désinstallé l'avenir.",
-  "Mise à jour de Zemmourville : on n'a pas peur de l'avenir, on l'a désinstallé.",
-  "Nouvelle version de la ville : le futur n'est plus pris en charge.",
-  "Ici, le bouton « Enregistrer » s'appelle désormais « Commémorer ».",
-  "Patch note du jour : la semaine prochaine a été supprimée. Pour votre confort."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : le futur n'est pas compatible.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, on est bloqué en version 2022.",
+  "Zemmourville : l'appli qui plante au premier tour."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Personne n'y était, mais tout le monde la regrette.",
-  "Résultat : la réunion de lundi a déjà eu lieu. Elle était mieux. Personne n'y était.",
-  "Plus de deadline, plus de retard. Juste des commémorations de retards."
+  "Message système : « Le résultat n'est pas à la hauteur de nos attentes ».",
+  "Zéro député, mise à jour annulée.",
+  "Le système redémarre. Le score, non."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Mise à jour de Zemmourville : on a désinstallé l'avenir.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Mise à jour refusée.",
    "accent_words": [
-    "désinstallé l'avenir"
+    "Mise à jour refusée"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Patch un : l'agenda n'affiche que la semaine dernière, en mieux.",
+   "text": "Ici, le futur a été désinstallé. On reste sur la version 2022.",
    "accent_words": [
-    "la semaine dernière"
+    "version 2022"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Patch deux : le bouton enregistrer devient commémorer.",
+   "text": "Version 2022 : présidentielle à 7 %, puis législatives autour de 4 %.",
    "accent_words": [
-    "commémorer"
+    "autour de 4 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Annonce devant une bibliothèque, micro d'époque, Beethoven à fond.",
+   "text": "Bilan : zéro député. Lui-même éliminé au premier tour dans le Var.",
    "accent_words": [
-    "bibliothèque",
-    "Beethoven"
+    "zéro député"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Tout ça pour un agenda.",
+   "text": "Troisième de sa circonscription, avec 23 %. Bug signalé.",
    "accent_words": [
-    "agenda"
+    "Bug signalé"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "La réunion de lundi a déjà eu lieu, et elle était mieux.",
+   "text": "Message système : « Le résultat n'est pas à la hauteur de nos attentes ».",
    "accent_words": [
-    "mieux"
+    "Message système"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
-   "text": "Personne n'y était, mais tout le monde la regrette.",
+   "text": "Envoie ça au pote qui refuse toutes les mises à jour.",
    "accent_words": [
-    "tout le monde"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Quelle réunion tu voudrais supprimer ?",
-   "accent_words": [
-    "supprimer"
+    "mises à jour"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -93,14 +84,14 @@
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "building",
     "screen",
-    "person",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "MISE À JOUR : FUTUR SUPPRIMÉ",
-   "comic_action": "Plongée sur un open space en pierre de taille. Sur un écran géant, une fenêtre de mise à jour : la flèche « Suivant » est grisée, seule « Précédent » clignote.",
-   "expected_result": "Format « mise à jour » reconnaissable, et le futur est littéralement désactivé."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur un quartier : chaque écran affiche « VERSION 2022 ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
@@ -110,99 +101,147 @@
    "camera": "closeup",
    "set": [
     "screen",
-    "table",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "LA SEMAINE DERNIÈRE, EN MIEUX",
-   "comic_action": "Gros plan sur l'agenda partagé à l'écran : les colonnes des semaines suivantes s'effacent une à une et sont remplacées par la semaine passée, recolorée en doré.",
-   "expected_result": "Le calendrier régresse au lieu d'avancer."
+   "onscreen_text": "FUTUR : DÉSINSTALLÉ",
+   "comic_action": "Barre de progression « DÉSINSTALLATION DU FUTUR » qui atteint 100 %.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
     "screen",
-    "form_stack",
     "text3d"
    ],
-   "onscreen_text": "ENREGISTRER → COMMÉMORER",
-   "comic_action": "Le bouton « Enregistrer » se transforme en plaque de marbre gravée « COMMÉMORER ». Une échéance du dossier est remplacée par une date de bataille sur un panneau.",
-   "expected_result": "Escalade : même la bureaucratie devient cérémonie."
+   "onscreen_text": "7 % → 4 %",
+   "comic_action": "Orbite autour de deux écrans : deux jauges qui descendent.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "tribune",
-    "banner",
-    "person",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "ICI HIER. ICI HIER.",
-   "comic_action": "Orbite autour d'une tribune solennelle drapée d'un ruban tricolore : le Chroniqueur municipal annonce la mise à jour, gestes amples, comme un appel historique. Un collègue au premier rang bâille.",
-   "expected_result": "La grandiloquence est démesurée par rapport à l'objet : un simple agenda."
+   "onscreen_text": "DÉPUTÉS : 0",
+   "comic_action": "Un hémicycle miniature, tous les sièges vides.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "table",
-    "person",
     "screen",
     "text3d"
    ],
-   "onscreen_text": "RÉUNION DE LUNDI : DÉJÀ EUE",
-   "comic_action": "Travelling vers une salle de réunion vide, chaises en ordre, café froid. Sur l'écran : « Réunion de lundi – terminée – note : excellente ». Les employés applaudissent depuis le couloir.",
-   "expected_result": "La chute : la réunion idéale est celle qui a déjà eu lieu sans personne."
+   "onscreen_text": "ERREUR : 3E",
+   "comic_action": "Message d'erreur rétro : « TROISIÈME — RÉESSAYER ? ».",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s6",
    "narration_ids": [
-    "n8"
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "building",
+    "screen",
+    "text3d"
+   ],
+   "onscreen_text": "PAS À LA HAUTEUR",
+   "comic_action": "Plan large : tous les écrans du quartier affichent la même phrase, curseur qui clignote.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "person",
     "tshirt",
-    "mascot",
-    "sign"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra revient au plan d'ouverture puis glisse vers une vitrine en pierre : un t-shirt « À GAUCHE DU CANAPÉ. » y est exposé comme une relique sous un petit panneau « Collection en bio ». Le Coq Sépia, rouge vif, une seule plume sépia, passe devant à reculons.",
-   "expected_result": "CTA commercial visuel discret, intégré au décor, sans casser l'univers."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique clique « plus tard ».",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Quelle réunion tu voudrais supprimer ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui refuse toutes les mises à jour."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 70,
- "claims": [],
+ "word_count": 84,
+ "claims": [
+  {
+   "text": "Version 2022 : présidentielle à 7 %, puis législatives autour de 4 %.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième. / « Le résultat n'est pas à la hauteur de nos attentes » ; son parti autour de 4 %."
+  },
+  {
+   "text": "Bilan : zéro député. Lui-même éliminé au premier tour dans le Var.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
+   "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
+  },
+  {
+   "text": "Troisième de sa circonscription, avec 23 %. Bug signalé.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
+   "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
+  },
+  {
+   "text": "« Le résultat n'est pas à la hauteur de nos attentes »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.dhnet.be/actu/monde/2022/06/12/elections-legislatives-2022-le-parti-deric-zemmour-nobtiendrait-quentre-38-et-4-des-voix-2MNY4GFZ4FBEDOJ6SGEU3C5AFE/",
+   "note": "« Le résultat n'est pas à la hauteur de nos attentes » ; son parti autour de 4 %."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-l-election-presidentielle-191429",
-   "published": "2021-11-30",
-   "consulted": "2026-11-21",
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (mème) : Vidéo de candidature : lecture devant une bibliothèque, micro d'époque, 7e symphonie de Beethoven en fond ; présentée par la presse comme un pastiche de l'appel du 18 juin. Images très détournées depuis."
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  },
+  {
+   "url": "https://www.dhnet.be/actu/monde/2022/06/12/elections-legislatives-2022-le-parti-deric-zemmour-nobtiendrait-quentre-38-et-4-des-voix-2MNY4GFZ4FBEDOJ6SGEU3C5AFE/",
+   "date": "2022-06-12",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte",
+   "note": "« Le résultat n'est pas à la hauteur de nos attentes » ; son parti autour de 4 %."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
+   "date": "2022-06-12",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Format patch notes : retrait de la fonction « futur ». Le n4 transforme en gag visuel la mise en scène solennelle très commentée de l'annonce de 2021 (tribune, symphonie), sans citation ni personnage réel. Le calendrier n'emploie que des jours passés (aucun mot interdit). Vérifié : pas de fausse citation de personne réelle, pas de délit inventé, pas d'appel au vote, aucun gag sur une caractéristique protégée ni sur un groupe de population ; un seul CTA parlé, sans le mot interdit. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (Z1, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : législatives 2022 : environ 4 %, zéro député, lui-même éliminé dans le Var, « pas à la hauteur de nos attentes ». Cadre : le futur désinstallé. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

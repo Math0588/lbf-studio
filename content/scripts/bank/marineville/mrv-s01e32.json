@@ -3,75 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-30",
  "format": "A",
- "title_cover": "La sortie est à gauche",
+ "title_cover": "Gagner par forfait",
  "hook_variants": [
-  "La délégation part visiter la ville voisine, mais la sortie est à gauche.",
-  "La délégation de Marineville part visiter la ville voisine. La sortie est à gauche.",
-  "Visite officielle de la ville voisine. Problème : la sortie est à gauche.",
-  "Trois heures de bus pour quitter Marineville. Et y revenir.",
-  "Vous quittez Marineville. Bienvenue à Marineville."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, le boxeur réclame le titre : son rival a pris sa retraite.",
+  "Marineville : sa meilleure alliée, c'est la Constitution.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : gagner par forfait."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La délégation coupe le ruban du jumelage devant sa propre mairie. Discours officiel : quelle belle ouverture.",
-  "La délégation coupe le ruban du jumelage devant sa propre mairie et salue cette belle ouverture.",
-  "Au retour, la délégation publie son bilan : une ville accueillante, très bien entretenue, au logo superbe."
+  "Sa meilleure chance de battre Macron, c'est la Constitution.",
+  "Le boxeur municipal réclame le titre : son rival a pris sa retraite.",
+  "Ici, le club d'échecs fait jouer l'adversaire en visio, micro coupé."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "La délégation part visiter la ville voisine, mais la sortie est à gauche.",
+   "text": "Dans cette ville, tout le monde vote Marine. Enfin sans Macron.",
    "accent_words": [
-    "gauche"
+    "sans Macron"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le bus officiel ne tourne qu'à droite : rond-point, quartier, ville entière.",
+   "text": "Deux débats face à lui, en 2017 et en 2022. Deux défaites.",
    "accent_words": [
-    "entière"
+    "Deux défaites"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Trois heures et deux pleins de gazole plus tard : vous quittez Marineville.",
+   "text": "En 2027, Macron ne peut plus se représenter.",
    "accent_words": [
-    "Marineville"
+    "ne peut plus"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Juste derrière, panneau suivant : bienvenue à Marineville.",
+   "text": "Ici, le boxeur municipal réclame le titre : son rival a pris sa retraite.",
    "accent_words": [
-    "Marineville"
+    "sa retraite"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La délégation coupe le ruban du jumelage devant sa propre mairie.",
+   "text": "Le club d'échecs fait jouer l'adversaire en visio, micro coupé.",
    "accent_words": [
-    "mairie"
+    "micro coupé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Discours officiel : quelle belle ouverture.",
+   "text": "Sa meilleure chance de battre Macron, c'est la Constitution.",
    "accent_words": [
-    "ouverture"
+    "la Constitution"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Quelle ville Marineville devrait visiter la prochaine fois ? En commentaire.",
+   "text": "Envoie ça au pote qui fête une victoire par forfait.",
    "accent_words": [
-    "commentaire"
+    "par forfait"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -82,88 +82,117 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "bus",
+    "ground",
+    "mairie",
     "banner",
-    "sign",
-    "road",
     "person"
    ],
-   "onscreen_text": "SORTIE ←",
-   "comic_action": "Le bus officiel décoré de banderoles démarre ; au carrefour, le panneau « VILLE VOISINE ← » pointe à gauche ; le bus met son clignotant droit.",
-   "expected_result": "La contrainte est posée."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; un ring de boxe vide au milieu de la place.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "roundabout",
-    "bus",
-    "road",
-    "building",
-    "mairie"
+    "tribune",
+    "router_lectern",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "",
-   "comic_action": "Vue du ciel en accéléré : le bus tourne à droite, encore et encore, et dessine le tour complet de la ville par la Boucle.",
-   "expected_result": "Contrainte qui piège : impossible de sortir."
+   "onscreen_text": "2017 · 2022 : 0 – 2",
+   "comic_action": "Plateau : un tableau de score qui affiche 0 – 2.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "text3d",
-    "bus"
+    "scroll",
+    "table",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "VOUS QUITTEZ MARINEVILLE",
-   "comic_action": "Le bus passe le panneau « VOUS QUITTEZ MARINEVILLE » ; la caméra pivote : juste derrière, dos à dos, « BIENVENUE À MARINEVILLE ».",
-   "expected_result": "La sortie et l'entrée sont le même poteau."
+   "onscreen_text": "ARTICLE 6",
+   "comic_action": "Un parchemin de la Constitution se déroule, une ligne surlignée.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "orbit",
    "set": [
-    "mairie",
+    "ground",
     "banner",
     "person",
-    "bus",
     "text3d"
    ],
-   "onscreen_text": "JUMELAGE",
-   "comic_action": "Devant leur propre mairie, la délégation coupe un ruban « JUMELAGE », serre la main d'agents identiques, applaudit. On laisse respirer.",
-   "expected_result": "Chute : l'ouverture célébrée est un tour sur soi-même."
+   "onscreen_text": "CHAMPION PAR ABSENCE",
+   "comic_action": "Un boxeur cubique lève les bras seul dans un ring vide.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7"
+    "n5"
    ],
    "camera": "closeup",
    "set": [
-    "tshirt",
-    "bus",
-    "banner"
+    "table",
+    "text3d",
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Sur un siège du bus officiel, un t-shirt « PLUTÔT GAUCHE. TRÈS FATIGUÉ. » oublié.",
-   "expected_result": "CTA parlé unique + produit visible."
+   "onscreen_text": "ADVERSAIRE : MUET",
+   "comic_action": "Un échiquier ; en face, un écran éteint.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "column",
+    "mairie",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "ALLIÉE : LA CONSTITUTION",
+   "comic_action": "Entre deux colonnes, le parchemin posé sur un piédestal. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt soulève une coupe, seul.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Quelle ville Marineville devrait visiter la prochaine fois ? En commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui fête une victoire par forfait."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -171,16 +200,48 @@
   "product_id": "tee-gauche-fatigue"
  },
  "word_count": 74,
- "claims": [],
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "Deux débats face à lui, en 2017 et en 2022. Deux défaites.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/non-classe/le-pen-reconnait-un-debat-d-entre-deux-tours-rate-60797",
+   "note": "Elle reconnaît un débat d'entre-deux-tours « raté ».",
+   "sources_complementaires": [
+    "https://www.vie-publique.fr/discours/285127-debat-televise-20042022-emmanuel-macron-marine-le-pen-candidats"
+   ]
+  },
+  {
+   "segment": "n3",
+   "text": "En 2027, Macron ne peut plus se représenter.",
+   "claim_type": "fait_public",
+   "source": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "note": "Emmanuel Macron ne peut pas se représenter en 2027."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.jean-jaures.org/publication/2002-2022-les-ressorts-profonds-de-la-dynamique-frontiste/",
-   "published": "2022-05-25",
-   "consulted": "2026-11-21",
-   "status": "cliché électorat (vérifié (analyse) — cliché d'électorat économique/géographique, aucune caractéristique protégée)",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Vote RN plus fort dans le grand périurbain : dépendance à la voiture, poids du prix du gazole, crise des gilets jaunes (ronds-points). Thème : Clio diesel, plei…"
+   "url": "https://www.publicsenat.fr/actualites/non-classe/le-pen-reconnait-un-debat-d-entre-deux-tours-rate-60797",
+   "date": "2017",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Elle reconnaît un débat d'entre-deux-tours « raté »."
+  },
+  {
+   "url": "https://www.vie-publique.fr/discours/285127-debat-televise-20042022-emmanuel-macron-marine-le-pen-candidats",
+   "date": "2022-04-20",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Deuxième débat d'entre-deux-tours face à Emmanuel Macron (2022)."
+  },
+  {
+   "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+   "date": "1958 (révision 2008)",
+   "consulted": "2026-11-22",
+   "statut": "fait public (article 6 : pas plus de deux mandats consécutifs)",
+   "note": "Emmanuel Macron ne peut pas se représenter en 2027."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Contrainte qui piège : le « tout à droite » empêche de quitter la ville, et la délégation se jumelle avec elle-même. Le gag porte uniquement sur la boucle routière et l'autocélébration, jamais sur les habitants d'ailleurs ni sur des frontières. Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 74 mots ; mèmes vérifiés intégrés comme thèmes (M14, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = deux débats d'entre-deux-tours face à Emmanuel Macron (2017, 2022), deux défaites ; en 2027, il ne peut plus se représenter (Constitution). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

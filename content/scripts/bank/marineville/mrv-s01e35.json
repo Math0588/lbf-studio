@@ -3,75 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-34",
  "format": "A",
- "title_cover": "Les gargouilles adoucies",
+ "title_cover": "Version adoucie",
  "hook_variants": [
-  "À Marineville, un service entier s'occupe de dédiaboliser les gargouilles.",
-  "À Marineville, un service municipal entier s'occupe de relooker les gargouilles.",
-  "À Marineville, un service municipal entier ponce les cornes des gargouilles.",
-  "Ici, même les gargouilles ont droit à leur relooking.",
-  "Oreilles de chat, petit sourire, cravate : la gargouille nouvelle génération."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, même les trottoirs ont des coins arrondis.",
+  "Marineville : on arrondit l'affiche, le programme coupe toujours.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : version adoucie."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Séance photo : quarante chatons de pierre, lumière douce, sourire retouché. Puis il pleut : même eau, même trou, sur la tête de Gérard.",
-  "Puis il pleut. Même eau, même endroit : sur la tête de Gérard.",
-  "Le service com publie la photo : quarante chatons de pierre. Prise par beau temps, évidemment."
+  "Ils ont arrondi les angles de l'affiche. Le programme, lui, coupe toujours.",
+  "Les PV arrivent avec un cœur dessiné. Le montant, lui, n'a pas fondu.",
+  "Ici, les panneaux disent s'il te plaît."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "À Marineville, un service entier s'occupe de dédiaboliser les gargouilles.",
+   "text": "Dans cette ville, tout le monde vote Marine. Version adoucie.",
    "accent_words": [
-    "dédiaboliser"
+    "Version adoucie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Des agents poncent les cornes, une par une, et collent des oreilles de chat.",
+   "text": "En 2022, son image est décrite comme adoucie, humanisée.",
    "accent_words": [
-    "oreilles de chat"
+    "adoucie"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "La plus méchante reçoit des moustaches, puis une cravate.",
+   "text": "Un chercheur parle, lui, de changements cosmétiques.",
    "accent_words": [
-    "cravate"
+    "cosmétiques"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Ça rassure toujours, une cravate.",
+   "text": "Ici, les trottoirs ont des coins arrondis, les panneaux disent s'il te plaît.",
    "accent_words": [
-    "cravate"
+    "s'il te plaît"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Séance photo : quarante chatons de pierre, lumière douce, sourire retouché.",
+   "text": "Les PV arrivent avec un cœur dessiné. Le montant, lui, n'a pas fondu.",
    "accent_words": [
-    "retouché"
+    "n'a pas fondu"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Puis il pleut : même eau, même trou, sur la tête de Gérard.",
+   "text": "Ils ont arrondi les angles de l'affiche. Le programme, lui, coupe toujours.",
    "accent_words": [
-    "Gérard"
+    "coupe toujours"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Quel monument mériterait des oreilles de chat ? Dis-le en commentaire.",
+   "text": "Envoie ça au pote qui choisit un programme pour sa police d'écriture.",
    "accent_words": [
-    "commentaire"
+    "police d'écriture"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -84,15 +84,14 @@
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "mairie",
-    "column",
-    "arch",
+    "banner",
     "person"
    ],
-   "onscreen_text": "SERVICE RELOOKING",
-   "comic_action": "Descente sur la façade de la mairie : une nacelle d'agents (persons) devant une rangée de gargouilles cornues alignées sous le toit.",
-   "expected_result": "La mission absurde est posée.",
-   "new_asset_request": "Gargouille (new_asset:gargouille), cornes et oreilles interchangeables."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; les angles du bâtiment ont été poncés.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
@@ -101,100 +100,138 @@
    ],
    "camera": "closeup",
    "set": [
-    "mairie",
-    "person",
-    "mascot"
+    "studio_light",
+    "tripod_camera",
+    "table",
+    "person"
    ],
-   "onscreen_text": "",
-   "comic_action": "Gros plan : un agent ponce une corne qui part en poussière ; un autre colle deux oreilles de chat et dessine un sourire au marqueur.",
-   "expected_result": "L'adoucissement est purement décoratif.",
-   "new_asset_request": "Gargouille (new_asset:gargouille)."
+   "onscreen_text": "IMAGE : ADOUCIE",
+   "comic_action": "Studio photo : un filtre flou passe sur un portrait cubique.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n3"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "mairie",
+    "shop",
     "person",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "",
-   "comic_action": "La dernière gargouille garde un regard furieux ; moustaches ajoutées, puis une petite cravate bleue nouée autour du cou de pierre ; l'agent recule, satisfait.",
-   "expected_result": "La cravate comme kit universel de respectabilité.",
-   "new_asset_request": "Cravate (forme plate)."
+   "onscreen_text": "COSMÉTIQUE",
+   "comic_action": "Vitrine : une palette de maquillage posée sur un dossier épais.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "street_dolly",
    "set": [
-    "mairie",
-    "tripod_camera",
-    "studio_light",
+    "road",
+    "building",
     "person",
-    "column"
+    "bin"
    ],
-   "onscreen_text": "",
-   "comic_action": "Un photographe shoote la façade sous une lumière douce : rangée de chatons de pierre. Nuages, pluie : toutes les gargouilles crachent le même jet, au même endroit, sur le casque de Gérard qui passait en dessous. On laisse respirer.",
-   "expected_result": "Chute : l'apparence change, la fonction et la trajectoire restent identiques."
+   "onscreen_text": "STOP, S'IL TE PLAÎT",
+   "comic_action": "Un panneau stop à bords ronds, écrit en italique.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7"
+    "n5"
    ],
    "camera": "closeup",
    "set": [
-    "tshirt",
-    "mairie",
-    "column"
+    "table",
+    "form_stack",
+    "text3d",
+    "mairie"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Gérard, trempé, essore un t-shirt « À GAUCHE DU CANAPÉ. ».",
-   "expected_result": "CTA parlé unique + produit visible."
+   "onscreen_text": "AMENDE ❤ 135 €",
+   "comic_action": "Un PV décoré d'un cœur, le montant en gras.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "facade_row",
+    "facade_set",
+    "person",
+    "banner"
+   ],
+   "onscreen_text": "ANGLES : ARRONDIS · LAME : INTACTE",
+   "comic_action": "Une affiche aux coins ronds ; derrière, une lame dépasse. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt admire une affiche en lettres rondes.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Quel monument mériterait des oreilles de chat ? Dis-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui choisit un programme pour sa police d'écriture."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 73,
- "claims": [],
+ "word_count": 76,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "En 2022, son image est décrite comme adoucie, humanisée.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/la-violence-la-raideur-ideologique-d-eric-zemmour-ont-fait-de-marine-le-pen-une",
+   "note": "Image décrite comme adoucie, humanisée, « une femme qui aime les chats »."
+  },
+  {
+   "segment": "n3",
+   "text": "Un chercheur parle, lui, de changements cosmétiques.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
+   "note": "Dédiabolisation = changements cosmétiques, stratégie « veste et cravate »."
+  }
+ ],
  "sources": [
   {
+   "url": "https://www.publicsenat.fr/actualites/politique/la-violence-la-raideur-ideologique-d-eric-zemmour-ont-fait-de-marine-le-pen-une",
+   "date": "2022-03-18",
+   "consulted": "2026-11-22",
+   "statut": "opinion (débat télévisé)",
+   "note": "Image décrite comme adoucie, humanisée, « une femme qui aime les chats »."
+  },
+  {
    "url": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
-   "published": "2023-01-25",
-   "consulted": "2026-11-21",
-   "status": "opinion / analyse (entretien avec un chercheur : dédiabolisation = changements cosmétiques, stratégie « veste et cravate »)",
-   "used_for": "Inspiration seulement : la cravate et le ponçage comme kit universel d'adoucissement d'image, appliqués à des objets fictifs."
-  },
-  {
-   "url": "https://thenationalnews.com/world/europe/2022/04/22/who-is-marine-le-pen-the-far-right-candidate-who-has-led-a-kitten-campaign",
-   "published": "2022-04-22",
-   "consulted": "2026-11-21",
-   "status": "surnom (vérifié (mème de presse))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : La presse surnomme la campagne 2022 « campagne chaton » (kitten campaign) pour son ton adouci et la mise en avant des chats."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/les-affiches-tres-ressemblantes-d-emmanuel-macron-et-marine-le-pen-59437",
-   "published": "2017-04-26",
-   "consulted": "2026-11-21",
-   "status": "blague (vérifié (analyse de presse / opinion))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Affiche de second tour jugée retouchée et rajeunie. Thème : photographe municipal qui ne shoote que de face et retouche le reste."
+   "date": "2023-01-25",
+   "consulted": "2026-11-22",
+   "statut": "opinion / analyse (chercheur)",
+   "note": "Dédiabolisation = changements cosmétiques, stratégie « veste et cravate »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Synopsis signalé à relire : conservé, recentré sur la communication. Le mot « dédiabolisation » n'est plus prononcé dans la narration (remplacé par « relooker ») ; le gag reste la littéralisation d'un relooking cosmétique (ponçage, oreilles de chat, cravate de la stratégie « veste et cravate ») qui ne change ni l'eau ni la trajectoire. Aucune référence religieuse, aucune personne ou groupe visé. Continuité : gargouilles à oreilles de chat (mrv-evt-016). Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 73 mots ; mèmes vérifiés intégrés comme thèmes (M8, M5, M11, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = 2022 : image décrite comme « adoucie », « humanisée » ; la dédiabolisation, un ravalement cosmétique. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }
