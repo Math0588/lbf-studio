@@ -3,67 +3,67 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-10",
  "format": "A",
- "title_cover": "Le copier-coller",
+ "title_cover": "La même phrase",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Et dit pareil.",
-  "Bardellaville : mille comptes, une seule phrase.",
-  "Ici, même le répondeur récite.",
+  "Dans cette ville, tout le monde vote Bardella. Et dit la même phrase.",
+  "Bardellaville : une ville, une phrase.",
+  "Ici, même le traiteur dit oui.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Le copier-coller."
+  "Bienvenue à Bardellaville. Au programme : La même phrase."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Tout le monde récite pareil : pas un mouvement, un presse-papier.",
-  "Pas un mouvement : un copier-coller.",
-  "Mille voix, une phrase, zéro virgule changée."
+  "Bardella monte à la tribune. Le public récite son discours avant lui.",
+  "Le public récite son discours avant lui.",
+  "Au mariage, tout le monde dit oui. Même le traiteur."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Et dit pareil.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Et dit la même phrase.",
    "accent_words": [
-    "pareil"
+    "même phrase"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sur TikTok, des comptes militants récitent les mêmes éléments de langage en boucle.",
+   "text": "Sur TikTok, des comptes militants récitent ses éléments de langage mot pour mot.",
    "accent_words": [
-    "mêmes éléments de langage"
+    "mot pour mot"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Normal : le chef aussi, avec ses réponses calibrées, d'après la presse.",
+   "text": "Alors toute la ville passe au copier-coller : chacun dit la même chose.",
    "accent_words": [
-    "calibrées"
+    "même chose"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Même ses rivaux copient le format, s'interroge la presse. La contagion gagne.",
+   "text": "Au resto, quarante clients commandent le même plat.",
    "accent_words": [
-    "contagion"
+    "même plat"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Mille comptes, une phrase. Même la virgule est au garde-à-vous.",
+   "text": "Au mariage, tout le monde dit oui. Même le traiteur.",
    "accent_words": [
-    "virgule"
+    "traiteur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Tout le monde récite pareil : pas un mouvement, un presse-papier.",
+   "text": "Bardella monte à la tribune. Le public récite son discours avant lui.",
    "accent_words": [
-    "presse-papier"
+    "avant lui"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "TOUT LE MONDE DIT PAREIL",
-   "comic_action": "Descente sur la ville ; banderole « TOUT LE MONDE DIT PAREIL » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "onscreen_text": "LA MÊME PHRASE",
+   "comic_action": "Descente sur la ville ; banderole « LA MÊME PHRASE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "foule",
@@ -100,6 +100,12 @@
     {
      "who": "perso",
      "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PAREIL"
     }
    ]
   },
@@ -115,9 +121,9 @@
     "person",
     "screen"
    ],
-   "onscreen_text": "MÊMES PHRASES EN BOUCLE",
-   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « MÊMES PHRASES EN BOUCLE ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "onscreen_text": "MOT POUR MOT",
+   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « MOT POUR MOT ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "foule",
@@ -129,61 +135,68 @@
      "geste": "facepalm",
      "visage": "blase"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
-    "studio_light",
-    "screen",
-    "text3d"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "RÉPONSES CALIBRÉES",
-   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « RÉPONSES CALIBRÉES ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "COPIER-COLLER",
+   "comic_action": "Dans la rue, panneau « COPIER-COLLER ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "nod",
-     "visage": "sourire_pro",
-     "objet": "micro"
+     "who": "foule",
+     "geste": "nod"
     },
     {
      "who": "perso",
      "geste": "shrug",
      "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "screen",
+    "facade_row",
+    "sign",
     "text3d",
-    "person",
-    "studio_light"
+    "person"
    ],
-   "onscreen_text": "CONTAGION",
-   "comic_action": "Écran géant : « CONTAGION ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "40 CLIENTS, 1 PLAT",
+   "comic_action": "Rangée de façades : enseigne « 40 CLIENTS, 1 PLAT ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "visage": "fier",
-     "geste": "wave"
+     "who": "foule",
+     "geste": "manif",
+     "visage": "colere"
     },
     {
-     "who": "foule",
-     "geste": "nod"
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PLAT DU JOUR : 1"
     }
    ]
   },
@@ -192,16 +205,16 @@
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
-    "person",
-    "studio_light"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "LA VIRGULE AU GARDE-À-VOUS",
-   "comic_action": "Écran géant : « LA VIRGULE AU GARDE-À-VOUS ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "TOUT LE MONDE DIT OUI",
+   "comic_action": "Descente sur la ville ; banderole « TOUT LE MONDE DIT OUI » sur la mairie.",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
      "who": "foule",
@@ -210,9 +223,10 @@
     {
      "who": "perso",
      "geste": "facepalm",
-     "visage": "colere"
+     "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -226,21 +240,22 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "UN PRESSE-PAPIER",
-   "comic_action": "Plan final, tenir une seconde : « UN PRESSE-PAPIER ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "LE PUBLIC RÉCITE AVANT LUI",
+   "comic_action": "Plan final, tenir une seconde : « LE PUBLIC RÉCITE AVANT LUI ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "bow",
-     "visage": "sourire_pro"
+     "geste": "shrug",
+     "visage": "choque",
+     "objet": "micro"
     },
     {
-     "who": "perso",
-     "geste": "facepalm",
-     "visage": "blase"
+     "who": "foule",
+     "geste": "nod"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -256,7 +271,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE PERROQUET",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE PERROQUET ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -264,7 +279,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -280,24 +296,10 @@
  "claims": [
   {
    "segment": "n2",
-   "text": "Sur TikTok, des comptes militants récitent les mêmes éléments de langage en boucle.",
+   "text": "Sur TikTok, des comptes militants récitent ses éléments de langage mot pour mot.",
    "claim_type": "fait_public",
    "source": "https://www.ladn.eu/media-mutants/sur-tiktok-les-militants-rn-peaufinent-leur-strategie-pour-2027/",
    "note": "Comptes militants qui relaient sur TikTok des éléments de langage quasi identiques, en continu."
-  },
-  {
-   "segment": "n3",
-   "text": "Normal : le chef aussi, avec ses réponses calibrées, d'après la presse.",
-   "claim_type": "fait_public",
-   "source": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
-   "note": "Candidat aux réponses calibrées et creuses."
-  },
-  {
-   "segment": "n4",
-   "text": "Même ses rivaux copient le format, s'interroge la presse. La contagion gagne.",
-   "claim_type": "fait_public",
-   "source": "https://www.ladn.eu/media-mutants/gabriel-attal-copie-t-il-la-strategie-tiktok-de-jordan-bardella/",
-   "note": "« Gabriel Attal copie-t-il la stratégie TikTok de Jordan Bardella ? »"
   }
  ],
  "sources": [
@@ -307,22 +309,8 @@
    "consulted": "2026-11-22",
    "statut": "fait (enquête) + opinion",
    "note": "Comptes militants qui relaient sur TikTok des éléments de langage quasi identiques, en continu."
-  },
-  {
-   "url": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
-   "date": "2026-05-31",
-   "consulted": "2026-11-22",
-   "statut": "opinion (chronique ; formule de l'auteur non reprise)",
-   "note": "Candidat aux réponses calibrées et creuses."
-  },
-  {
-   "url": "https://www.ladn.eu/media-mutants/gabriel-attal-copie-t-il-la-strategie-tiktok-de-jordan-bardella/",
-   "date": "date non relevée",
-   "consulted": "2026-11-22",
-   "statut": "fait + opinion",
-   "note": "« Gabriel Attal copie-t-il la stratégie TikTok de Jordan Bardella ? »"
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = les éléments de langage récités à l'identique. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = les éléments de langage récités mot pour mot. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

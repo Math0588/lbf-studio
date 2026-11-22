@@ -3,27 +3,27 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-05",
  "format": "A",
- "title_cover": "Il signe, ça tombe",
+ "title_cover": "Tout tombe, il signe",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Stylo à la main.",
-  "Le gouvernement tombe ? Bardella dédicace.",
-  "Bardellaville : trois crises, trois livres.",
+  "Dans cette ville, tout le monde vote Bardella. Même le chien a un stylo.",
+  "Bardellaville : tout s'écroule, tout est signé.",
+  "Le gouvernement tombe, Bardella dédicace.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Il signe, ça tombe."
+  "Bienvenue à Bardellaville. Au programme : Tout tombe, il signe."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Quand ça brûle, lui ne prend pas un seau : il prend un stylo.",
-  "La France brûle, il signe la préface.",
-  "Trois crises, trois livres, zéro seau."
+  "Bardella sort un troisième livre : il fallait bien signer les ruines.",
+  "Un troisième livre pour signer les ruines.",
+  "Plus rien ne tient debout, mais tout est autographié."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Stylo à la main.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Même le chien a un stylo.",
    "accent_words": [
-    "Stylo"
+    "stylo"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,35 +37,35 @@
   },
   {
    "id": "n3",
-   "text": "En 2025, Matignon vacille encore. Lui sort un deuxième livre.",
+   "text": "Alors la ville fait pareil : quand quelque chose tombe, on signe.",
    "accent_words": [
-    "deuxième livre"
+    "signe"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "2026, la campagne démarre : troisième livre, tournée de dédicaces incluse.",
+   "text": "Le pont s'écroule ? Dédicace. L'ascenseur lâche ? Dédicace.",
    "accent_words": [
-    "troisième livre"
+    "Dédicace"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "À ce rythme, il signera la préface de l'incendie.",
+   "text": "Plus rien ne tient debout, mais tout est autographié.",
    "accent_words": [
-    "préface de l'incendie"
+    "autographié"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Quand ça brûle, lui ne prend pas un seau : il prend un stylo.",
+   "text": "Bardella sort un troisième livre : il fallait bien signer les ruines.",
    "accent_words": [
-    "stylo"
+    "ruines"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
@@ -89,18 +89,27 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "STYLO À LA MAIN",
-   "comic_action": "Descente sur la ville ; banderole « STYLO À LA MAIN » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "onscreen_text": "STYLO OBLIGATOIRE",
+   "comic_action": "Descente sur la ville ; banderole « STYLO OBLIGATOIRE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro"
+     "who": "perso",
+     "visage": "choque"
     },
     {
      "who": "foule",
      "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
+    },
+    {
+     "type": "affiche",
+     "texte": "SIGNE PARTOUT"
     }
    ]
   },
@@ -118,7 +127,7 @@
    ],
    "onscreen_text": "LE GOUVERNEMENT TOMBE",
    "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « LE GOUVERNEMENT TOMBE ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -130,34 +139,36 @@
      "visage": "choque",
      "geste": "point"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "table",
-    "form_stack",
-    "person",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "CRISE : LIVRE 2",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « CRISE : LIVRE 2 ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "ÇA TOMBE ? ON SIGNE",
+   "comic_action": "Descente sur la ville ; banderole « ÇA TOMBE ? ON SIGNE » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "content"
+     "who": "foule",
+     "geste": "wave"
     },
     {
-     "who": "foule",
-     "geste": "jump"
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s4",
@@ -167,22 +178,28 @@
    "camera": "street_dolly",
    "set": [
     "road",
+    "sign",
     "person",
-    "banner",
-    "ring_light"
+    "traffic_light"
    ],
-   "onscreen_text": "CAMPAGNE : LIVRE 3",
-   "comic_action": "Travelling sur une file de téléphones levés ; banderole « CAMPAGNE : LIVRE 3 ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "PONT ÉCROULÉ : SIGNÉ",
+   "comic_action": "Dans la rue, panneau « PONT ÉCROULÉ : SIGNÉ ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro"
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
     },
     {
      "who": "foule",
-     "geste": "cheer"
+     "geste": "clap"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PONT : DÉDICACÉ"
     }
    ]
   },
@@ -191,28 +208,28 @@
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "screen",
+    "facade_row",
+    "sign",
     "text3d",
-    "person",
-    "studio_light"
+    "person"
    ],
-   "onscreen_text": "PRÉFACE DE L'INCENDIE",
-   "comic_action": "Écran géant : « PRÉFACE DE L'INCENDIE ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "TOUT EST AUTOGRAPHIÉ",
+   "comic_action": "Rangée de façades : enseigne « TOUT EST AUTOGRAPHIÉ ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "bow",
-     "visage": "fier"
+     "who": "foule",
+     "geste": "fall"
     },
     {
      "who": "perso",
      "geste": "facepalm",
-     "visage": "choque"
+     "visage": "colere"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -226,9 +243,9 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "PAS UN SEAU : UN STYLO",
-   "comic_action": "Plan final, tenir une seconde : « PAS UN SEAU : UN STYLO ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "LIVRE 3 : LES RUINES",
+   "comic_action": "Plan final, tenir une seconde : « LIVRE 3 : LES RUINES ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
@@ -237,8 +254,14 @@
     },
     {
      "who": "perso",
-     "geste": "facepalm",
+     "geste": "cross_arms",
      "visage": "colere"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUS AVEC JORDAN"
     }
    ]
   },
@@ -256,7 +279,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE QUI SIGNE TOUT",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI SIGNE TOUT ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -264,7 +287,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -286,18 +310,8 @@
    "note": "Le jour de la censure du gouvernement Barnier, contre-programmation : dédicace de son livre à Paris."
   },
   {
-   "segment": "n3",
-   "text": "En 2025, Matignon vacille encore. Lui sort un deuxième livre.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
-   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces. ; Livre « Ce que veulent les Français » : « Ce livre n'est pas le mien, c'est celui des Français ».",
-   "sources_complementaires": [
-    "https://www.europe1.fr/politique/ce-livre-nest-pas-le-mien-cest-celui-des-francais-en-sondant-le-pays-jordan-bardella-se-prepare-a-lexercice-du-pouvoir-869191"
-   ]
-  },
-  {
-   "segment": "n4",
-   "text": "2026, la campagne démarre : troisième livre, tournée de dédicaces incluse.",
+   "segment": "n6",
+   "text": "Bardella sort un troisième livre : il fallait bien signer les ruines.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
    "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
@@ -317,15 +331,8 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
-  },
-  {
-   "url": "https://www.europe1.fr/politique/ce-livre-nest-pas-le-mien-cest-celui-des-francais-en-sondant-le-pays-jordan-bardella-se-prepare-a-lexercice-du-pouvoir-869191",
-   "date": "2025-10-29",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "Livre « Ce que veulent les Français » : « Ce livre n'est pas le mien, c'est celui des Français »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = il dédicace pendant que ça brûle (livres en pleine crise). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = le jour de la censure, il dédicace son livre. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

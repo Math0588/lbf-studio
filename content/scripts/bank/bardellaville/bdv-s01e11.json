@@ -3,33 +3,33 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-11",
  "format": "A",
- "title_cover": "Recalé par le CAC",
+ "title_cover": "Deux heures chacun",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Les patrons, eux, hésitent.",
-  "Bardella drague le CAC 40. Le CAC 40 hésite.",
-  "Bardellaville : deux heures avec le Medef, zéro coup de cœur.",
+  "Dans cette ville, tout le monde vote Bardella. Même le patron, en cachette.",
+  "Bardellaville : chaque rendez-vous dure deux heures.",
+  "Deux heures avec le Medef. Et après ?",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Recalé par le CAC."
+  "Bienvenue à Bardellaville. Au programme : Deux heures chacun."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Il drague l'actionnaire. L'actionnaire le laisse en vu.",
-  "Il drague l'actionnaire, l'actionnaire le laisse en vu.",
-  "Deux heures de charme, un vent."
+  "Et le patronat, après deux heures ? Toujours sceptique, raconte la presse.",
+  "Deux heures de charme, un vent.",
+  "Le médecin aussi : un patient par jour, la ville en salle d'attente."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Les patrons, eux, hésitent.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Même le patron, en cachette.",
    "accent_words": [
-    "patrons"
+    "patron"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Avril 2026 : plus de deux heures en tête-à-tête avec le Medef. Une première.",
+   "text": "Avril 2026 : plus de deux heures en tête-à-tête avec le Medef.",
    "accent_words": [
     "deux heures"
    ],
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "La presse note chez lui une ligne de plus en plus libérale.",
+   "text": "Alors toute la ville réserve des tête-à-tête de deux heures.",
    "accent_words": [
-    "libérale"
+    "deux heures"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Pourtant, les grands patrons restent sceptiques. Même le CAC 40 swipe à gauche.",
+   "text": "Le facteur passe deux heures avec chaque boîte aux lettres. Plus de courrier.",
    "accent_words": [
-    "sceptiques"
+    "courrier"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Deux heures de charme pour un vent : son plus long rendez-vous raté.",
+   "text": "Le médecin aussi : un patient par jour, la ville en salle d'attente.",
    "accent_words": [
-    "rendez-vous raté"
+    "attente"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Il drague l'actionnaire. L'actionnaire le laisse en vu.",
+   "text": "Et le patronat, après deux heures ? Toujours sceptique, raconte la presse.",
    "accent_words": [
-    "en vu"
+    "sceptique"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui croit qu'il roule pour les petits.",
+   "text": "Envoie ça au pote qui drague deux heures pour un vent.",
    "accent_words": [
-    "petits"
+    "vent"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "LES PATRONS HÉSITENT",
-   "comic_action": "Descente sur la ville ; banderole « LES PATRONS HÉSITENT » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "onscreen_text": "MÊME LE PATRON",
+   "comic_action": "Descente sur la ville ; banderole « MÊME LE PATRON » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "maire",
@@ -100,8 +100,13 @@
     },
     {
      "who": "perso",
-     "geste": "shrug",
-     "visage": "blase"
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
     }
    ]
   },
@@ -119,7 +124,7 @@
    ],
    "onscreen_text": "2 H AVEC LE MEDEF",
    "comic_action": "Salon feutré, table dressée ; carton « 2 H AVEC LE MEDEF ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -130,41 +135,13 @@
      "who": "perso",
      "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
-   ],
-   "camera": "closeup",
-   "set": [
-    "tribune",
-    "studio_light",
-    "screen",
-    "text3d"
-   ],
-   "onscreen_text": "LIGNE LIBÉRALE",
-   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « LIGNE LIBÉRALE ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
-   "actions": [
-    {
-     "who": "maire",
-     "geste": "nod",
-     "visage": "fier",
-     "objet": "micro"
-    },
-    {
-     "who": "perso",
-     "geste": "point",
-     "visage": "choque"
-    }
-   ]
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n4"
    ],
    "camera": "window_pass",
    "set": [
@@ -173,19 +150,51 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "CAC 40 : SCEPTIQUE",
-   "comic_action": "Salon feutré, table dressée ; carton « CAC 40 : SCEPTIQUE ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "TÊTE-À-TÊTE : 2 H",
+   "comic_action": "Salon feutré, table dressée ; carton « TÊTE-À-TÊTE : 2 H ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro"
+     "who": "foule",
+     "geste": "nod"
+    },
+    {
+     "who": "perso",
+     "visage": "fatigue"
+    }
+   ],
+   "gags": []
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
+   ],
+   "onscreen_text": "COURRIER : 2 H PAR BOÎTE",
+   "comic_action": "Dans la rue, panneau « COURRIER : 2 H PAR BOÎTE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "fatigue",
+     "geste": "shrug"
     },
     {
      "who": "foule",
-     "geste": "cross_arms",
-     "visage": "blase"
+     "geste": "manif"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "COURRIER : EN RETARD"
     }
    ]
   },
@@ -194,28 +203,29 @@
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "building",
+    "road",
     "person",
-    "text3d"
+    "banner",
+    "ring_light"
    ],
-   "onscreen_text": "RENDEZ-VOUS RATÉ",
-   "comic_action": "Salon feutré, table dressée ; carton « RENDEZ-VOUS RATÉ ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "SALLE D'ATTENTE : LA VILLE",
+   "comic_action": "Travelling sur une file de téléphones levés ; banderole « SALLE D'ATTENTE : LA VILLE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "shake",
-     "visage": "choque"
+     "who": "foule",
+     "geste": "cough",
+     "visage": "fatigue"
     },
     {
      "who": "perso",
      "geste": "facepalm",
-     "visage": "content"
+     "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -229,9 +239,9 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "LAISSÉ EN VU",
-   "comic_action": "Plan final, tenir une seconde : « LAISSÉ EN VU ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "PATRONS : SCEPTIQUES",
+   "comic_action": "Plan final, tenir une seconde : « PATRONS : SCEPTIQUES ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
@@ -243,7 +253,8 @@
      "geste": "point",
      "visage": "content"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -257,9 +268,9 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE AU POTE DES PETITS",
-   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE DES PETITS ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "onscreen_text": "ENVOIE AU POTE DRAGUEUR",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE DRAGUEUR ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -267,37 +278,31 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui croit qu'il roule pour les petits."
+  "text": "Envoie ça au pote qui drague deux heures pour un vent."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 83,
+ "word_count": 84,
  "claims": [
   {
    "segment": "n2",
-   "text": "Avril 2026 : plus de deux heures en tête-à-tête avec le Medef. Une première.",
+   "text": "Avril 2026 : plus de deux heures en tête-à-tête avec le Medef.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/bardella-rencontre-en-tete-a-tete-le-medef-une-premiere-pour-le-rn-435456",
    "note": "Tête-à-tête de plus de deux heures avec le Medef, une première pour le RN (20/04/2026 selon la presse)."
   },
   {
-   "segment": "n3",
-   "text": "La presse note chez lui une ligne de plus en plus libérale.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-une-inclinaison-liberale-plus-prononcee-au-rn-incarnee-par-jordan-bardella-ne-sera-pas-forcement-de-nature-a-rebuter-son-electorat",
-   "note": "Inclinaison libérale plus prononcée au RN, incarnée par Jordan Bardella."
-  },
-  {
-   "segment": "n4",
-   "text": "Pourtant, les grands patrons restent sceptiques. Même le CAC 40 swipe à gauche.",
+   "segment": "n6",
+   "text": "Et le patronat, après deux heures ? Toujours sceptique, raconte la presse.",
    "claim_type": "fait_public",
    "source": "https://www.slate.fr/politique/rassemblement-national-seduire-patrons-cac-40-ouvriers-vote-populaire-presidentielle-2027-election-le-pen-bardella",
    "note": "Les grands patrons courtisés par Jordan Bardella restent sceptiques."
@@ -312,13 +317,6 @@
    "note": "Tête-à-tête de plus de deux heures avec le Medef, une première pour le RN (20/04/2026 selon la presse)."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-une-inclinaison-liberale-plus-prononcee-au-rn-incarnee-par-jordan-bardella-ne-sera-pas-forcement-de-nature-a-rebuter-son-electorat",
-   "date": "2026",
-   "consulted": "2026-11-22",
-   "statut": "fait + analyse",
-   "note": "Inclinaison libérale plus prononcée au RN, incarnée par Jordan Bardella."
-  },
-  {
    "url": "https://www.slate.fr/politique/rassemblement-national-seduire-patrons-cac-40-ouvriers-vote-populaire-presidentielle-2027-election-le-pen-bardella",
    "date": "2026",
    "consulted": "2026-11-22",
@@ -327,5 +325,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = sa cour aux patrons (Medef) qui restent sceptiques. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = son tête-à-tête de deux heures avec le Medef. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

@@ -5,31 +5,31 @@
  "format": "A",
  "title_cover": "Bard-est-pas-là, encore",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Enfin, s'il passe.",
-  "Bardellaville : présent sur TikTok, absent partout ailleurs.",
-  "Le maire ? En déplacement. Encore.",
+  "Dans cette ville, tout le monde vote Bardella. Même le maire est pas là.",
+  "Bardellaville : tout le monde est pas là.",
+  "Ici, même l'incendie est plus présent que le maire.",
   "Les fans de Bardella vont me détester.",
   "Bienvenue à Bardellaville. Au programme : Bard-est-pas-là, encore."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Bard-est-pas-là ? Si : derrière une pile de livres, stylo en main.",
-  "Absent au Parlement, présent en dédicace.",
-  "Le seul endroit où il ne manque jamais : la photo."
+  "Bardella arrive enfin : pour une dédicace, devant les cendres.",
+  "Il arrive enfin : pour la dédicace.",
+  "Toute la ville brûle, mais chacun poste une story de l'incendie."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Enfin, s'il passe.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Même le maire est pas là.",
    "accent_words": [
-    "s'il passe"
+    "pas là"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son surnom qui circule en ligne : Bard-est-pas-là.",
+   "text": "Son surnom en ligne : Bard-est-pas-là, pour ses absences à Bruxelles.",
    "accent_words": [
     "Bard-est-pas-là"
    ],
@@ -37,39 +37,39 @@
   },
   {
    "id": "n3",
-   "text": "Au Parlement européen, ses adversaires parlent de député fantôme.",
+   "text": "Alors la ville l'imite : la boulangère est pas là, le bus non plus.",
    "accent_words": [
-    "député fantôme"
+    "bus"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Les débats des européennes sur Public Sénat ? Pas là non plus.",
+   "text": "Le pompier est pas là. L'incendie, lui, est bien là.",
    "accent_words": [
-    "Pas là"
+    "là"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Décembre 2024, le gouvernement tombe. Lui ? Pas là : en dédicace.",
+   "text": "Toute la ville brûle, mais chacun poste une story de l'incendie.",
    "accent_words": [
-    "dédicace"
+    "story"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Bard-est-pas-là ? Si : derrière une pile de livres, stylo en main.",
+   "text": "Bardella arrive enfin : pour une dédicace, devant les cendres.",
    "accent_words": [
-    "pile de livres"
+    "dédicace"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui ne vient que pour la photo.",
+   "text": "Envoie ça au pote qui n'est jamais là, sauf pour la photo.",
    "accent_words": [
     "photo"
    ],
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "LE MAIRE ? ABSENT",
-   "comic_action": "Descente sur la ville ; banderole « LE MAIRE ? ABSENT » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "onscreen_text": "LE MAIRE ? PAS LÀ",
+   "comic_action": "Descente sur la ville ; banderole « LE MAIRE ? PAS LÀ » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "perso",
@@ -101,6 +101,12 @@
     {
      "who": "foule",
      "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PAS LÀ"
     }
    ]
   },
@@ -118,7 +124,7 @@
    ],
    "onscreen_text": "BARD-EST-PAS-LÀ",
    "comic_action": "Écran géant : « BARD-EST-PAS-LÀ ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "perso",
@@ -130,32 +136,39 @@
      "who": "foule",
      "geste": "clap"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
-    "lift_tribune",
-    "banner",
-    "person"
+    "road",
+    "bus",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "DÉPUTÉ FANTÔME",
-   "comic_action": "Meeting : la tribune s'élève, banderole « DÉPUTÉ FANTÔME ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "BOULANGERIE : PAS LÀ",
+   "comic_action": "Un bus passe ; son fronton affiche « BOULANGERIE : PAS LÀ ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
      "who": "perso",
-     "geste": "facepalm",
-     "visage": "blase"
+     "geste": "shrug",
+     "visage": "fatigue"
     },
     {
      "who": "foule",
      "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FERMÉ : PAS LÀ"
     }
    ]
   },
@@ -164,25 +177,31 @@
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
-    "router_lectern",
-    "studio_light",
-    "text3d"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "DÉBAT : PAS LÀ",
-   "comic_action": "Plateau de débat, deux pupitres ; en grand « DÉBAT : PAS LÀ ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "INCENDIE : LÀ",
+   "comic_action": "Dans la rue, panneau « INCENDIE : LÀ ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
      "who": "perso",
-     "geste": "shrug",
+     "geste": "shake",
      "visage": "choque"
     },
     {
      "who": "foule",
-     "geste": "point"
+     "geste": "manif"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "POMPIER : PAS LÀ"
     }
    ]
   },
@@ -193,25 +212,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
+    "ring_light",
+    "tripod_camera",
     "person",
-    "text3d"
+    "screen"
    ],
-   "onscreen_text": "GOUVERNEMENT TOMBE : DÉDICACE",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « GOUVERNEMENT TOMBE : DÉDICACE ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "STORY DE L'INCENDIE",
+   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « STORY DE L'INCENDIE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro"
+     "who": "foule",
+     "objet": "phone",
+     "geste": "jump"
     },
     {
-     "who": "foule",
-     "geste": "jump"
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -225,19 +246,25 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "TROUVÉ : EN DÉDICACE",
-   "comic_action": "Plan final, tenir une seconde : « TROUVÉ : EN DÉDICACE ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "ENFIN LÀ : EN DÉDICACE",
+   "comic_action": "Plan final, tenir une seconde : « ENFIN LÀ : EN DÉDICACE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "bow",
+     "geste": "wave",
      "visage": "sourire_pro"
     },
     {
      "who": "perso",
-     "geste": "facepalm",
-     "visage": "colere"
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ENFIN LÀ"
     }
    ]
   },
@@ -255,7 +282,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE ABSENT",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE ABSENT ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -263,47 +290,30 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui ne vient que pour la photo."
+  "text": "Envoie ça au pote qui n'est jamais là, sauf pour la photo."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 75,
+ "word_count": 82,
  "claims": [
   {
    "segment": "n2",
-   "text": "Son surnom qui circule en ligne : Bard-est-pas-là.",
+   "text": "Son surnom en ligne : Bard-est-pas-là, pour ses absences à Bruxelles.",
    "claim_type": "fait_public",
    "source": "https://www.connexionfrance.com/news/jordan-bardella-his-unflattering-nickname-and-15m-tik-tok-fans/663977",
-   "note": "Surnom « Bard-est-pas-là » rapporté comme circulant ; environ 1,5 million d'abonnés TikTok en 2024 ; aucun chiffre d'absentéisme repris."
-  },
-  {
-   "segment": "n3",
-   "text": "Au Parlement européen, ses adversaires parlent de député fantôme.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
-   "note": "Critiques sur l'assiduité au Parlement européen (thème du député fantôme) ; aucun chiffre repris."
-  },
-  {
-   "segment": "n4",
-   "text": "Les débats des européennes sur Public Sénat ? Pas là non plus.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
-   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
-  },
-  {
-   "segment": "n5",
-   "text": "Décembre 2024, le gouvernement tombe. Lui ? Pas là : en dédicace.",
-   "claim_type": "fait_public",
-   "source": "https://www.lagazettefrance.fr/article/en-pleine-censure-bardella-joue-la-contre-programmation-avec-une-dedicace-de-son-livre-a-paris",
-   "note": "Le jour de la censure du gouvernement Barnier, contre-programmation : dédicace de son livre à Paris."
+   "note": "Surnom « Bard-est-pas-là » rapporté comme circulant ; environ 1,5 million d'abonnés TikTok en 2024 ; aucun chiffre d'absentéisme repris. ; Critiques sur l'assiduité au Parlement européen (thème du député fantôme) ; aucun chiffre repris.",
+   "sources_complementaires": [
+    "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser"
+   ]
   }
  ],
  "sources": [
@@ -320,22 +330,8 @@
    "consulted": "2026-11-22",
    "statut": "opinion (critiques d'adversaires)",
    "note": "Critiques sur l'assiduité au Parlement européen (thème du député fantôme) ; aucun chiffre repris."
-  },
-  {
-   "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
-   "date": "2024-03-04",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
-  },
-  {
-   "url": "https://www.lagazettefrance.fr/article/en-pleine-censure-bardella-joue-la-contre-programmation-avec-une-dedicace-de-son-livre-a-paris",
-   "date": "2024-12 (probable, date non relevée)",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Le jour de la censure du gouvernement Barnier, contre-programmation : dédicace de son livre à Paris."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = le surnom « Bard-est-pas-là » (absences). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = le surnom « Bard-est-pas-là » (absences). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

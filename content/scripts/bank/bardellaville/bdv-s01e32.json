@@ -6,16 +6,16 @@
  "title_cover": "Nous verrons",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Bardella. On verra.",
-  "Le programme de Bardella en deux mots : nous verrons.",
-  "Bardellaville : on verra. Toujours.",
+  "Bardellaville : même le pilote répond nous verrons.",
+  "Ici, les mariés disent on verra.",
   "Les fans de Bardella vont me détester.",
   "Bienvenue à Bardellaville. Au programme : Nous verrons."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Nous verrons : tout le programme tient dedans.",
-  "Nous verrons : tout le programme tient dedans.",
-  "Deux mots, zéro engagement."
+  "Bardella, lui, a vu : en 2026, il examine un report de l'âge légal.",
+  "Il a vu : report de l'âge légal.",
+  "Les mariés, au moment du oui : nous verrons. La salle s'évanouit."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -37,35 +37,35 @@
   },
   {
    "id": "n3",
-   "text": "Les autres mesures ? Après un audit des comptes. Nous verrons.",
+   "text": "Alors la ville répond nous verrons à tout.",
    "accent_words": [
-    "audit"
+    "tout"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Matignon ? Pas sans majorité absolue. Il n'y en a pas eu.",
+   "text": "Le pilote, au décollage : nous verrons. Les passagers paniquent.",
    "accent_words": [
-    "eu"
+    "paniquent"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "2026 : il examine même un report de l'âge légal. Nous verrons, en marche arrière.",
+   "text": "Les mariés, au moment du oui : nous verrons. La salle s'évanouit.",
    "accent_words": [
-    "Nous verrons"
+    "s'évanouit"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Nous verrons : tout le programme tient dedans.",
+   "text": "Bardella, lui, a vu : en 2026, il examine un report de l'âge légal.",
    "accent_words": [
-    "dedans"
+    "report"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
@@ -91,7 +91,7 @@
    ],
    "onscreen_text": "ON VERRA",
    "comic_action": "Descente sur la ville ; banderole « ON VERRA » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "maire",
@@ -101,6 +101,12 @@
     {
      "who": "perso",
      "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ON VERRA"
     }
    ]
   },
@@ -118,7 +124,7 @@
    ],
    "onscreen_text": "« NOUS VERRONS »",
    "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « « NOUS VERRONS » ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -131,33 +137,38 @@
      "geste": "facepalm",
      "visage": "blase"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
-    "table",
-    "form_stack"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "APRÈS UN AUDIT",
-   "comic_action": "Compteur géant sur l'écran : « APRÈS UN AUDIT ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "RÉPONSE OFFICIELLE",
+   "comic_action": "Descente sur la ville ; banderole « RÉPONSE OFFICIELLE » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "shrug",
-     "visage": "sourire_pro"
+     "who": "foule",
+     "geste": "shrug"
     },
     {
      "who": "perso",
-     "geste": "point",
-     "visage": "colere"
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RÉPONSE : ON VERRA"
     }
    ]
   },
@@ -166,55 +177,57 @@
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "screen",
-    "banner",
     "text3d",
-    "person"
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "MAJORITÉ ? PAS EUE",
-   "comic_action": "Soirée électorale : l'écran affiche « MAJORITÉ ? PAS EUE ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "DÉCOLLAGE ? ON VERRA",
+   "comic_action": "Écran géant : « DÉCOLLAGE ? ON VERRA ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "fall",
+     "who": "foule",
+     "geste": "shake",
      "visage": "choque"
     },
     {
-     "who": "foule",
-     "geste": "shrug"
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "scroll",
-    "form_stack",
-    "table",
+    "ground",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "NOUS VERRONS EN MARCHE ARRIÈRE",
-   "comic_action": "Formulaire de retraite déplié ; en gros « NOUS VERRONS EN MARCHE ARRIÈRE ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "OUI ? ON VERRA",
+   "comic_action": "Descente sur la ville ; banderole « OUI ? ON VERRA » sur la mairie.",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "spin",
-     "visage": "sourire_pro"
+     "who": "foule",
+     "geste": "fall"
     },
     {
      "who": "perso",
      "geste": "facepalm",
-     "visage": "colere"
+     "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -228,21 +241,22 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "TOUT LE PROGRAMME",
-   "comic_action": "Plan final, tenir une seconde : « TOUT LE PROGRAMME ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "IL A VU : REPORT",
+   "comic_action": "Plan final, tenir une seconde : « IL A VU : REPORT ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "bow",
-     "visage": "sourire_pro"
+     "geste": "nod",
+     "visage": "neutre"
     },
     {
      "who": "perso",
-     "geste": "cross_arms",
-     "visage": "blase"
+     "geste": "fall",
+     "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -258,7 +272,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE INDÉCIS",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE INDÉCIS ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -266,7 +280,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -278,7 +293,7 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 82,
+ "word_count": 80,
  "claims": [
   {
    "segment": "n2",
@@ -288,25 +303,8 @@
    "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
   },
   {
-   "segment": "n3",
-   "text": "Les autres mesures ? Après un audit des comptes. Nous verrons.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/reforme-des-retraites-impots-prix-planchers-comment-le-rn-reajuste-son-programme-au-fil-de-la-campagne",
-   "note": "Retraites, impôts, prix planchers : le RN réajuste son programme au fil de la campagne ; audit des comptes avant certaines mesures."
-  },
-  {
-   "segment": "n4",
-   "text": "Matignon ? Pas sans majorité absolue. Il n'y en a pas eu.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/matignon-jordan-bardella-reclame-une-majorite-absolue-pour-gouverner-gabriel-attal",
-   "note": "Pas de Matignon sans majorité absolue. ; Soir du second tour : RN troisième ; il dénonce « l'alliance du déshonneur ».",
-   "sources_complementaires": [
-    "https://www.publicsenat.fr/actualites/politique/legislatives-jordan-bardella-denonce-lalliance-du-deshonneur-entre-lexecutif-et-la-gauche"
-   ]
-  },
-  {
-   "segment": "n5",
-   "text": "2026 : il examine même un report de l'âge légal. Nous verrons, en marche arrière.",
+   "segment": "n6",
+   "text": "Bardella, lui, a vu : en 2026, il examine un report de l'âge légal.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/au-rn-la-reforme-des-retraites-divise-jordan-bardella-et-marine-le-pen-sur-le-programme-pour-la-presidentielle-2027",
    "note": "Bardella prend ses distances avec la réforme de Marine Le Pen, dit « examiner » un report de l'âge légal, juge le dossier inflammable (d'après Le Monde, mai 2026)."
@@ -321,27 +319,6 @@
    "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/reforme-des-retraites-impots-prix-planchers-comment-le-rn-reajuste-son-programme-au-fil-de-la-campagne",
-   "date": "2024-06",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Retraites, impôts, prix planchers : le RN réajuste son programme au fil de la campagne ; audit des comptes avant certaines mesures."
-  },
-  {
-   "url": "https://lcp.fr/actualites/matignon-jordan-bardella-reclame-une-majorite-absolue-pour-gouverner-gabriel-attal",
-   "date": "2024-06-17",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Pas de Matignon sans majorité absolue."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/legislatives-jordan-bardella-denonce-lalliance-du-deshonneur-entre-lexecutif-et-la-gauche",
-   "date": "2024-07-07",
-   "consulted": "2026-11-22",
-   "statut": "fait + citation exacte",
-   "note": "Soir du second tour : RN troisième ; il dénonce « l'alliance du déshonneur »."
-  },
-  {
    "url": "https://www.publicsenat.fr/actualites/politique/au-rn-la-reforme-des-retraites-divise-jordan-bardella-et-marine-le-pen-sur-le-programme-pour-la-presidentielle-2027",
    "date": "2026",
    "consulted": "2026-11-22",
@@ -350,5 +327,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = « Nous verrons » (retraites 2024) : le programme au conditionnel (refrain). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = « Nous verrons » (abrogation de la réforme des retraites, 2024). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

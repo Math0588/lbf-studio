@@ -3,33 +3,33 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-20",
  "format": "A",
- "title_cover": "Logique Mbappé",
+ "title_cover": "La mascotte championne",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Même au foot.",
-  "Bardella tacle Mbappé. Appliquons sa logique.",
-  "Bardellaville : la logique du PSG, appliquée au maire.",
+  "Dans cette ville, tout le monde vote Bardella. Même le club de foot.",
+  "Bardellaville : le club vire tous ceux qui critiquent.",
+  "Ici, la mascotte est championne.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Logique Mbappé."
+  "Bienvenue à Bardellaville. Au programme : La mascotte championne."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Sa logique : l'équipe gagne quand il s'en va.",
-  "L'équipe gagne quand il s'en va. Ses mots.",
-  "Sa logique, son départ."
+  "Selon sa logique, la ville gagnera tout le jour où Bardella s'en va.",
+  "Sa logique : on gagne quand il s'en va.",
+  "La mascotte gagne le championnat. Seule. Par forfait."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Même au foot.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Même le club de foot.",
    "accent_words": [
-    "foot"
+    "club de foot"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Mbappé critique le RN. Réponse : sans lui, le PSG gagne la Ligue des champions.",
+   "text": "Mbappé critique le RN. Sa réponse : sans Mbappé, le PSG gagne la Ligue des champions.",
    "accent_words": [
     "Ligue des champions"
    ],
@@ -37,33 +37,33 @@
   },
   {
    "id": "n3",
-   "text": "Il zappe un débat sur Public Sénat ? Le débat va très bien.",
+   "text": "Alors le club local vire tous les joueurs qui critiquent.",
    "accent_words": [
-    "très bien"
+    "critiquent"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Absent du Parlement européen, disent ses rivaux ? Le Parlement tient le coup.",
+   "text": "Puis l'entraîneur, puis le gardien. Il reste la mascotte.",
    "accent_words": [
-    "tient le coup"
+    "mascotte"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "S'il quitte la politique, la France gagne la Coupe du monde.",
+   "text": "La mascotte gagne le championnat. Seule. Par forfait.",
    "accent_words": [
-    "Coupe du monde"
+    "forfait"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Sa logique : l'équipe gagne quand il s'en va.",
+   "text": "Selon sa logique, la ville gagnera tout le jour où Bardella s'en va.",
    "accent_words": [
-    "s'en va"
+    "Bardella"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÊME AU FOOT",
-   "comic_action": "Descente sur la ville ; banderole « MÊME AU FOOT » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "onscreen_text": "MÊME LE CLUB DE FOOT",
+   "comic_action": "Descente sur la ville ; banderole « MÊME LE CLUB DE FOOT » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "foule",
@@ -100,6 +100,12 @@
     {
      "who": "perso",
      "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
     }
    ]
   },
@@ -117,7 +123,7 @@
    ],
    "onscreen_text": "SANS MBAPPÉ, LE PSG GAGNE",
    "comic_action": "Écran géant : « SANS MBAPPÉ, LE PSG GAGNE ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -129,66 +135,13 @@
      "who": "foule",
      "geste": "cheer"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
-   ],
-   "camera": "orbit",
-   "set": [
-    "tribune",
-    "router_lectern",
-    "studio_light",
-    "text3d"
-   ],
-   "onscreen_text": "SANS LUI, LE DÉBAT VA BIEN",
-   "comic_action": "Plateau de débat, deux pupitres ; en grand « SANS LUI, LE DÉBAT VA BIEN ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
-   "actions": [
-    {
-     "who": "perso",
-     "geste": "clap",
-     "visage": "content"
-    },
-    {
-     "who": "foule",
-     "geste": "cheer"
-    }
-   ]
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n4"
-   ],
-   "camera": "orbit",
-   "set": [
-    "tribune",
-    "lift_tribune",
-    "banner",
-    "person"
-   ],
-   "onscreen_text": "SANS LUI, LE PARLEMENT TIENT",
-   "comic_action": "Meeting : la tribune s'élève, banderole « SANS LUI, LE PARLEMENT TIENT ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
-   "actions": [
-    {
-     "who": "perso",
-     "geste": "shrug",
-     "visage": "content"
-    },
-    {
-     "who": "foule",
-     "geste": "clap"
-    }
-   ]
-  },
-  {
-   "id": "s5",
-   "narration_ids": [
-    "n5"
    ],
    "camera": "street_dolly",
    "set": [
@@ -197,18 +150,86 @@
     "person",
     "traffic_light"
    ],
-   "onscreen_text": "COUPE DU MONDE ?",
-   "comic_action": "Dans la rue, panneau « COUPE DU MONDE ? ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "CRITIQUE = VIRÉ",
+   "comic_action": "Dans la rue, panneau « CRITIQUE = VIRÉ ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
-     "who": "foule",
-     "geste": "jump"
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
     },
     {
      "who": "perso",
-     "geste": "cheer",
-     "visage": "content"
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CRITIQUE : DEHORS"
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
+   ],
+   "onscreen_text": "IL RESTE LA MASCOTTE",
+   "comic_action": "Dans la rue, panneau « IL RESTE LA MASCOTTE ».",
+   "expected_result": "Ça dégénère (conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ],
+   "gags": []
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "screen",
+    "banner",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "CHAMPIONNE PAR FORFAIT",
+   "comic_action": "Soirée électorale : l'écran affiche « CHAMPIONNE PAR FORFAIT ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUS AVEC JORDAN"
     }
    ]
   },
@@ -224,9 +245,9 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "L'ÉQUIPE GAGNE QUAND IL PART",
-   "comic_action": "Plan final, tenir une seconde : « L'ÉQUIPE GAGNE QUAND IL PART ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "LE JOUR OÙ IL PART",
+   "comic_action": "Plan final, tenir une seconde : « LE JOUR OÙ IL PART ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
@@ -237,7 +258,8 @@
      "who": "foule",
      "geste": "cheer"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -253,7 +275,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE SUPPORTER",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE SUPPORTER ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -261,7 +283,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -273,28 +296,14 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 84,
+ "word_count": 81,
  "claims": [
   {
    "segment": "n2",
-   "text": "Mbappé critique le RN. Réponse : sans lui, le PSG gagne la Ligue des champions.",
+   "text": "Mbappé critique le RN. Sa réponse : sans Mbappé, le PSG gagne la Ligue des champions.",
    "claim_type": "fait_public",
    "source": "https://www.europe1.fr/politique/kylian-mbappe-quitte-le-psg-le-club-gagne-la-ligue-des-champions-jordan-bardella-repond-a-la-star-des-bleus-apres-ses-critiques-du-rn-934142",
    "note": "Réponse à Mbappé : quand Mbappé quitte le PSG, le club gagne la Ligue des champions."
-  },
-  {
-   "segment": "n3",
-   "text": "Il zappe un débat sur Public Sénat ? Le débat va très bien.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
-   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
-  },
-  {
-   "segment": "n4",
-   "text": "Absent du Parlement européen, disent ses rivaux ? Le Parlement tient le coup.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
-   "note": "Critiques sur l'assiduité au Parlement européen (thème du député fantôme) ; aucun chiffre repris."
   }
  ],
  "sources": [
@@ -304,22 +313,8 @@
    "consulted": "2026-11-22",
    "statut": "fait (paraphrase, sans guillemets)",
    "note": "Réponse à Mbappé : quand Mbappé quitte le PSG, le club gagne la Ligue des champions."
-  },
-  {
-   "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
-   "date": "2024-03-04",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
-   "date": "2024",
-   "consulted": "2026-11-22",
-   "statut": "opinion (critiques d'adversaires)",
-   "note": "Critiques sur l'assiduité au Parlement européen (thème du député fantôme) ; aucun chiffre repris."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = sa pique à Mbappé (« depuis son départ, le PSG gagne ») retournée contre lui. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = sa pique à Mbappé : sans lui, le PSG gagne. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

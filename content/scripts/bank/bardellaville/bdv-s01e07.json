@@ -3,25 +3,25 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-07",
  "format": "A",
- "title_cover": "POV : programme introuvable",
+ "title_cover": "La ville dépolitisée",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. En POV.",
-  "POV : tu cherches le programme de Bardella.",
-  "Bardellaville : la politique, hors champ.",
+  "Dans cette ville, tout le monde vote Bardella. En POV, même au réveil.",
+  "Bardellaville : même les égouts sont en POV.",
+  "POV : ta ville n'a plus de politique.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : POV : programme introuvable."
+  "Bienvenue à Bardellaville. Au programme : La ville dépolitisée."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "POV : tu cherches son programme chiffré. Chargement infini.",
-  "POV : le programme. Chargement infini.",
-  "Tout en POV, sauf le point de vue."
+  "Bardella poste : POV, j'ai sauvé la ville. Personne ne vérifie.",
+  "POV : j'ai sauvé la ville. Personne ne vérifie.",
+  "POV : les égouts débordent. On ajoute un filtre paillettes."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. En POV.",
+   "text": "Dans cette ville, tout le monde vote Bardella. En POV, même au réveil.",
    "accent_words": [
     "POV"
    ],
@@ -29,7 +29,7 @@
   },
   {
    "id": "n2",
-   "text": "Ses vidéos TikTok : POV, coulisses, formats courts et dépolitisés, raconte l'AFP.",
+   "text": "Ses vidéos TikTok : formats courts, coulisses et dépolitisés, raconte l'AFP.",
    "accent_words": [
     "dépolitisés"
    ],
@@ -37,33 +37,33 @@
   },
   {
    "id": "n3",
-   "text": "POV : un homme politique qui ne parle pas de politique.",
+   "text": "Alors la mairie se dépolitise : le conseil municipal devient un POV.",
    "accent_words": [
-    "pas de politique"
+    "POV"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "POV : le gouvernement tombe, et toi, tu dédicaces ton livre.",
+   "text": "POV : tu votes le budget. Le budget part d'un swipe.",
    "accent_words": [
-    "dédicaces"
+    "swipe"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "POV : on t'invite à débattre sur Public Sénat. Tu swipes.",
+   "text": "POV : les égouts débordent. On ajoute un filtre paillettes.",
    "accent_words": [
-    "swipes"
+    "filtre paillettes"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "POV : tu cherches son programme chiffré. Chargement infini.",
+   "text": "Bardella poste : POV, j'ai sauvé la ville. Personne ne vérifie.",
    "accent_words": [
-    "Chargement infini"
+    "vérifie"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,19 +89,28 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "EN POV",
-   "comic_action": "Descente sur la ville ; banderole « EN POV » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "onscreen_text": "POV : LE RÉVEIL",
+   "comic_action": "Descente sur la ville ; banderole « POV : LE RÉVEIL » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "perso",
      "objet": "phone",
-     "visage": "choque",
-     "geste": "point"
+     "visage": "fatigue"
     },
     {
      "who": "foule",
      "geste": "jump"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
+    },
+    {
+     "type": "affiche",
+     "texte": "SOURIS, TU ES FILMÉ"
     }
    ]
   },
@@ -119,7 +128,7 @@
    ],
    "onscreen_text": "FORMATS DÉPOLITISÉS",
    "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « FORMATS DÉPOLITISÉS ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -131,36 +140,37 @@
      "who": "perso",
      "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "ring_light",
-    "tripod_camera",
-    "person",
-    "screen"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "POV : ZÉRO POLITIQUE",
-   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « POV : ZÉRO POLITIQUE ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "CONSEIL EN POV",
+   "comic_action": "Descente sur la ville ; banderole « CONSEIL EN POV » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
      "who": "maire",
-     "geste": "shrug",
+     "geste": "wave",
      "visage": "sourire_pro",
      "objet": "ring_light"
     },
     {
-     "who": "perso",
-     "geste": "facepalm",
-     "visage": "blase"
+     "who": "foule",
+     "geste": "cheer"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s4",
@@ -169,51 +179,58 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
+    "screen",
+    "text3d",
     "person",
-    "text3d"
+    "studio_light"
    ],
-   "onscreen_text": "POV : DÉDICACE",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « POV : DÉDICACE ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "BUDGET : SWIPÉ",
+   "comic_action": "Écran géant : « BUDGET : SWIPÉ ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "content"
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "objet": "phone"
     },
     {
      "who": "foule",
-     "geste": "jump"
+     "geste": "shrug"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
-    "router_lectern",
-    "studio_light",
-    "text3d"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "POV : DÉBAT SWIPÉ",
-   "comic_action": "Plateau de débat, deux pupitres ; en grand « POV : DÉBAT SWIPÉ ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "ÉGOUTS + PAILLETTES",
+   "comic_action": "Dans la rue, panneau « ÉGOUTS + PAILLETTES ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "cross_arms",
-     "visage": "fier"
+     "who": "perso",
+     "geste": "shake",
+     "visage": "colere"
     },
     {
-     "who": "perso",
-     "geste": "point",
-     "visage": "colere"
+     "who": "foule",
+     "geste": "cough"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FILTRE : PAILLETTES"
     }
    ]
   },
@@ -229,22 +246,23 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "CHARGEMENT INFINI",
-   "comic_action": "Plan final, tenir une seconde : « CHARGEMENT INFINI ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "POV : J'AI TOUT SAUVÉ",
+   "comic_action": "Plan final, tenir une seconde : « POV : J'AI TOUT SAUVÉ ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
-     "who": "perso",
-     "geste": "facepalm",
-     "visage": "fatigue",
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
      "objet": "phone"
     },
     {
-     "who": "maire",
-     "geste": "shrug",
-     "visage": "sourire_pro"
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -260,7 +278,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE EN POV",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE EN POV ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -268,7 +286,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -280,35 +299,14 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 73,
+ "word_count": 77,
  "claims": [
   {
    "segment": "n2",
-   "text": "Ses vidéos TikTok : POV, coulisses, formats courts et dépolitisés, raconte l'AFP.",
+   "text": "Ses vidéos TikTok : formats courts, coulisses et dépolitisés, raconte l'AFP.",
    "claim_type": "fait_public",
    "source": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
    "note": "Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits."
-  },
-  {
-   "segment": "n3",
-   "text": "POV : un homme politique qui ne parle pas de politique.",
-   "claim_type": "fait_public",
-   "source": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
-   "note": "Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits."
-  },
-  {
-   "segment": "n4",
-   "text": "POV : le gouvernement tombe, et toi, tu dédicaces ton livre.",
-   "claim_type": "fait_public",
-   "source": "https://www.lagazettefrance.fr/article/en-pleine-censure-bardella-joue-la-contre-programmation-avec-une-dedicace-de-son-livre-a-paris",
-   "note": "Le jour de la censure du gouvernement Barnier, contre-programmation : dédicace de son livre à Paris."
-  },
-  {
-   "segment": "n5",
-   "text": "POV : on t'invite à débattre sur Public Sénat. Tu swipes.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
-   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   }
  ],
  "sources": [
@@ -318,22 +316,8 @@
    "consulted": "2026-11-22",
    "statut": "fait (dépêche AFP) + mème",
    "note": "Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits."
-  },
-  {
-   "url": "https://www.lagazettefrance.fr/article/en-pleine-censure-bardella-joue-la-contre-programmation-avec-une-dedicace-de-son-livre-a-paris",
-   "date": "2024-12 (probable, date non relevée)",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Le jour de la censure du gouvernement Barnier, contre-programmation : dédicace de son livre à Paris."
-  },
-  {
-   "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
-   "date": "2024-03-04",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = les POV et formats dépolitisés de son TikTok. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = ses formats TikTok courts et « dépolitisés ». Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

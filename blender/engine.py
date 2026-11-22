@@ -840,7 +840,7 @@ HAIR = {
 HELD = {}
 
 
-def held_prop(kind, pid, r):
+def held_prop(kind, pid, r, sign_text=None):
     """Objets tenus, placés dans le repère du personnage (face vers -Y), bras droit tendu vers l'avant."""
     if kind == "ring_light":
         torus(pid + "_rl", 0.34, 0.06, (1.05, -1.35, 2.95), mat("#FFFDF7", 0.3, 16.0, emit_color="#FFF1DC"), r,
@@ -872,6 +872,10 @@ def held_prop(kind, pid, r):
     elif kind == "pancarte":
         cyl(pid + "_pst", 0.05, 1.6, (0.7, -0.2, 3.2), mat(PAL["wood"], 0.8), r)
         box(pid + "_pbd", (1.4, 0.06, 0.8), (0.7, -0.2, 4.1), mat(PAL["white"], 0.7), r)
+        if sign_text:
+            t = sign_text.upper()[:14]
+            text(pid + "_pbt", t, min(0.22, 1.25 / max(1, len(t)) * 1.7), (0.7, -0.25, 4.05), mat("#C8102E", 0.5), r,
+                 fontname="Anton-Regular.ttf")
 
 
 def p_char(p, parent=None):
@@ -939,7 +943,7 @@ def p_char(p, parent=None):
     if p.get("hold"):
         sh, hand = arms[1]
         sh.rotation_euler.x = math.radians(-80 if p["hold"] != "pancarte" else 170)
-        held_prop(p["hold"], pid, r)
+        held_prop(p["hold"], pid, r, p.get("sign_text"))
     if p.get("hand_up"):
         arms[1][0].rotation_euler.x = math.radians(170)
     if p.get("arms_crossed"):
@@ -969,7 +973,8 @@ def p_crowd(p):
               "hair_color": rnd.choice(["#2B1D14", "#6B4423", "#C9A15B", "#1C1C1C", "#8A8A8A", "#B5542C"]),
               "faces": p.get("faces", ["neutre"]), "iris": rnd.choice(["brun", "bleu", "vert"]),
               "hold": p.get("hold") if rnd.random() < p.get("hold_ratio", 1.0) else None,
-              "hand_up": rnd.random() < p.get("hand_up_ratio", 0.0), "scale": rnd.uniform(0.92, 1.06)}
+              "hand_up": rnd.random() < p.get("hand_up_ratio", 0.0), "scale": rnd.uniform(0.92, 1.06),
+              "sign_text": (p.get("sign_texts") or [None])[i % len(p.get("sign_texts") or [None])]}
         p_char(cp)
     OBJ[p.get("id", "crowd")] = OBJ[f"{p.get('id', 'crowd')}_0"]
 

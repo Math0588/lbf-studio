@@ -3,67 +3,67 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-25",
  "format": "A",
- "title_cover": "Battu par Mélenchon",
+ "title_cover": "Programme clandestin",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. En librairie, moins.",
-  "Bardella sort Gouverner. Mélenchon le double en librairie.",
-  "Bardellaville : la librairie a parlé.",
+  "Dans cette ville, tout le monde vote Bardella. En librairie.",
+  "Bardellaville : le programme de Mélenchon se lit en cachette.",
+  "Ici, il y a un trafic de livres. Pas les siens.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Battu par Mélenchon."
+  "Bienvenue à Bardellaville. Au programme : Programme clandestin."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Battu par un programme, lui qui n'en a toujours pas sorti.",
-  "Battu par un programme, lui qui n'en a pas.",
-  "Neuvième. Derrière un programme."
+  "Bardella réplique : Gouverner en édition collector. Neuvième aussi.",
+  "L'édition collector finit neuvième aussi.",
+  "Un trafic de programmes de Mélenchon s'organise sous les ponts."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. En librairie, moins.",
+   "text": "Dans cette ville, tout le monde vote Bardella. En librairie.",
    "accent_words": [
-    "moins"
+    "librairie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son livre Gouverner sort en grande pompe. Entrée : neuvième des ventes.",
-   "accent_words": [
-    "neuvième"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "Devant lui, le programme de Mélenchon, qui le distance nettement.",
+   "text": "Son livre Gouverner entre neuvième, distancé par le programme de Mélenchon.",
    "accent_words": [
     "Mélenchon"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "Ses deux premiers livres : plus d'un million de droits. Le troisième patine.",
+   "id": "n3",
+   "text": "Panique : le livre de Mélenchon est interdit en ville.",
    "accent_words": [
-    "plus d'un million"
+    "ville"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Les habitants le lisent en cachette, sous la couette.",
+   "accent_words": [
+    "sous la couette"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Prochain dépassement : la notice du micro-ondes.",
+   "text": "Un trafic de programmes de Mélenchon s'organise sous les ponts.",
    "accent_words": [
-    "notice du micro-ondes"
+    "ponts"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Battu par un programme, lui qui n'en a toujours pas sorti.",
+   "text": "Bardella réplique : Gouverner en édition collector. Neuvième aussi.",
    "accent_words": [
-    "programme"
+    "édition collector"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,18 +89,23 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "EN LIBRAIRIE : MOINS",
-   "comic_action": "Descente sur la ville ; banderole « EN LIBRAIRIE : MOINS » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "onscreen_text": "EN LIBRAIRIE",
+   "comic_action": "Descente sur la ville ; banderole « EN LIBRAIRIE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "perso",
-     "geste": "shrug",
      "visage": "choque"
     },
     {
      "who": "foule",
-     "geste": "shrug"
+     "geste": "clap"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
     }
    ]
   },
@@ -116,20 +121,22 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "GOUVERNER : 9E",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « GOUVERNER : 9E ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "onscreen_text": "DOUBLÉ PAR MÉLENCHON",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « DOUBLÉ PAR MÉLENCHON ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro"
+     "geste": "fall",
+     "visage": "choque"
     },
     {
      "who": "perso",
-     "visage": "choque"
+     "geste": "point",
+     "visage": "content"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
@@ -143,19 +150,24 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "DOUBLÉ PAR MÉLENCHON",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « DOUBLÉ PAR MÉLENCHON ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "MÉLENCHON : INTERDIT",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « MÉLENCHON : INTERDIT ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
      "who": "maire",
-     "geste": "fall",
-     "visage": "choque"
+     "geste": "point",
+     "visage": "colere"
     },
     {
-     "who": "perso",
-     "geste": "point",
-     "visage": "content"
+     "who": "foule",
+     "geste": "shake"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LISEZ GOUVERNER"
     }
    ]
   },
@@ -166,51 +178,55 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
     "table",
-    "form_stack"
+    "form_stack",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "LIVRE 3 : PATINE",
-   "comic_action": "Compteur géant sur l'écran : « LIVRE 3 : PATINE ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "LECTURE SOUS LA COUETTE",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « LECTURE SOUS LA COUETTE ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "shake",
-     "visage": "choque"
+     "who": "perso",
+     "visage": "content"
     },
     {
-     "who": "perso",
-     "geste": "shrug",
-     "visage": "content"
+     "who": "foule",
+     "geste": "shrug"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "form_stack",
+    "road",
+    "sign",
     "person",
-    "text3d"
+    "traffic_light"
    ],
-   "onscreen_text": "DOUBLÉ PAR UNE NOTICE",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « DOUBLÉ PAR UNE NOTICE ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "TRAFIC SOUS LES PONTS",
+   "comic_action": "Dans la rue, panneau « TRAFIC SOUS LES PONTS ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "facepalm",
-     "visage": "choque"
+     "who": "foule",
+     "geste": "point"
     },
     {
-     "who": "foule",
-     "geste": "clap"
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PROGRAMME : 20 €"
     }
    ]
   },
@@ -226,21 +242,22 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "BATTU PAR UN PROGRAMME",
-   "comic_action": "Plan final, tenir une seconde : « BATTU PAR UN PROGRAMME ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "COLLECTOR : 9E AUSSI",
+   "comic_action": "Plan final, tenir une seconde : « COLLECTOR : 9E AUSSI ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "shrug",
+     "geste": "wave",
      "visage": "sourire_pro"
     },
     {
      "who": "perso",
-     "geste": "point",
-     "visage": "content"
+     "geste": "facepalm",
+     "visage": "blase"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -256,7 +273,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE LECTEUR",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE LECTEUR ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -264,7 +281,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -276,31 +294,14 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 76,
+ "word_count": 71,
  "claims": [
   {
    "segment": "n2",
-   "text": "Son livre Gouverner sort en grande pompe. Entrée : neuvième des ventes.",
+   "text": "Son livre Gouverner entre neuvième, distancé par le programme de Mélenchon.",
    "claim_type": "fait_public",
    "source": "https://www.24matins.fr/le-programme-de-melenchon-en-librairie-distance-bardella-nettement-1424131",
    "note": "« Le programme de Mélenchon en librairie distance Bardella nettement » ; « Gouverner » entré 9e (Edistat, semaine partielle)."
-  },
-  {
-   "segment": "n3",
-   "text": "Devant lui, le programme de Mélenchon, qui le distance nettement.",
-   "claim_type": "fait_public",
-   "source": "https://www.24matins.fr/le-programme-de-melenchon-en-librairie-distance-bardella-nettement-1424131",
-   "note": "« Le programme de Mélenchon en librairie distance Bardella nettement » ; « Gouverner » entré 9e (Edistat, semaine partielle)."
-  },
-  {
-   "segment": "n4",
-   "text": "Ses deux premiers livres : plus d'un million de droits. Le troisième patine.",
-   "claim_type": "fait_public",
-   "source": "https://www.letribunaldunet.fr/politique/bardella-million-euros-livres-declaration-revenus.html",
-   "note": "1 035 178 € de droits d'auteur avant impôts déclarés à la HATVP (livres chez Fayard). ; « Le programme de Mélenchon en librairie distance Bardella nettement » ; « Gouverner » entré 9e (Edistat, semaine partielle).",
-   "sources_complementaires": [
-    "https://www.24matins.fr/le-programme-de-melenchon-en-librairie-distance-bardella-nettement-1424131"
-   ]
   }
  ],
  "sources": [
@@ -310,15 +311,8 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "« Le programme de Mélenchon en librairie distance Bardella nettement » ; « Gouverner » entré 9e (Edistat, semaine partielle)."
-  },
-  {
-   "url": "https://www.letribunaldunet.fr/politique/bardella-million-euros-livres-declaration-revenus.html",
-   "date": "2026",
-   "consulted": "2026-11-22",
-   "statut": "fait (déclaration HATVP rapportée)",
-   "note": "1 035 178 € de droits d'auteur avant impôts déclarés à la HATVP (livres chez Fayard)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = Gouverner neuvième des ventes, distancé par le programme de Mélenchon. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = Gouverner neuvième, distancé par le programme de Mélenchon. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

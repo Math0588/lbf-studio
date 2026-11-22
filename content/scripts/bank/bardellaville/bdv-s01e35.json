@@ -3,25 +3,25 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-35",
  "format": "D",
- "title_cover": "Premier ministre, en théorie",
+ "title_cover": "Trente mille Premiers ministres",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Premier ministre. En théorie.",
-  "Bardella Premier ministre ? Il a écrit le livre à la place.",
-  "Bardellaville : le poste en préface.",
+  "Dans cette ville, tout le monde vote Bardella. Carte de visite de Premier ministre incluse.",
+  "Bardellaville : trente mille Premiers ministres.",
+  "Ici, tout le monde est Premier ministre, sauf lui.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Premier ministre, en théorie."
+  "Bienvenue à Bardellaville. Au programme : Trente mille Premiers ministres."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Premier ministre en théorie, auteur en pratique : son seul poste, c'est la préface.",
-  "Son seul poste : la préface.",
-  "Annoncé à Matignon, arrivé en librairie."
+  "Bardella, lui, a écrit Gouverner : le manuel du poste qu'il n'a pas eu.",
+  "Le manuel du poste qu'il n'a pas eu.",
+  "Ils gouvernent la file de la boulangerie, en cohabitation."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Premier ministre. En théorie.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Carte de visite de Premier ministre incluse.",
    "accent_words": [
     "Premier ministre"
    ],
@@ -29,43 +29,43 @@
   },
   {
    "id": "n2",
-   "text": "Juin 2024, Marine Le Pen l'annonce : ce sera lui, à Matignon.",
-   "accent_words": [
-    "Matignon"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "Sa condition à lui : une majorité absolue, sinon rien.",
-   "accent_words": [
-    "majorité absolue"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "Le 7 juillet, le RN finit troisième. Ce fut rien.",
+   "text": "Juin 2024 : annoncé pour Matignon, il finit avec un RN troisième.",
    "accent_words": [
     "troisième"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n5",
-   "text": "Depuis, il a écrit Gouverner. Le manuel du poste qu'il n'a pas eu.",
+   "id": "n3",
+   "text": "Alors la ville nomme tout le monde Premier ministre, par avance.",
    "accent_words": [
-    "Gouverner"
+    "par avance"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Trente mille Premiers ministres, zéro ministère.",
+   "accent_words": [
+    "ministère"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Ils gouvernent la file de la boulangerie, en cohabitation.",
+   "accent_words": [
+    "cohabitation"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Premier ministre en théorie, auteur en pratique : son seul poste, c'est la préface.",
+   "text": "Bardella, lui, a écrit Gouverner : le manuel du poste qu'il n'a pas eu.",
    "accent_words": [
-    "préface"
+    "pas eu"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
@@ -91,7 +91,7 @@
    ],
    "onscreen_text": "PREMIER MINISTRE ?",
    "comic_action": "Descente sur la ville ; banderole « PREMIER MINISTRE ? » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "maire",
@@ -101,6 +101,12 @@
     {
      "who": "foule",
      "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PREMIER MINISTRE"
     }
    ]
   },
@@ -111,69 +117,14 @@
    ],
    "camera": "orbit",
    "set": [
-    "tribune",
-    "lift_tribune",
-    "banner",
-    "person"
-   ],
-   "onscreen_text": "LUI À MATIGNON",
-   "comic_action": "Meeting : la tribune s'élève, banderole « LUI À MATIGNON ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
-   "actions": [
-    {
-     "who": "maire",
-     "geste": "arms_up",
-     "visage": "fier"
-    },
-    {
-     "who": "foule",
-     "geste": "cheer"
-    }
-   ]
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n3"
-   ],
-   "camera": "closeup",
-   "set": [
-    "tribune",
-    "studio_light",
-    "screen",
-    "text3d"
-   ],
-   "onscreen_text": "MAJORITÉ ABSOLUE OU RIEN",
-   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « MAJORITÉ ABSOLUE OU RIEN ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
-   "actions": [
-    {
-     "who": "maire",
-     "geste": "cross_arms",
-     "visage": "fier",
-     "objet": "micro"
-    },
-    {
-     "who": "perso",
-     "visage": "choque"
-    }
-   ]
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n4"
-   ],
-   "camera": "orbit",
-   "set": [
     "screen",
     "banner",
     "text3d",
     "person"
    ],
-   "onscreen_text": "RN : TROISIÈME",
-   "comic_action": "Soirée électorale : l'écran affiche « RN : TROISIÈME ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "ANNONCÉ, PUIS TROISIÈME",
+   "comic_action": "Soirée électorale : l'écran affiche « ANNONCÉ, PUIS TROISIÈME ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -184,35 +135,97 @@
      "who": "foule",
      "geste": "shrug"
     }
+   ],
+   "gags": []
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "descend",
+   "set": [
+    "ground",
+    "mairie",
+    "banner",
+    "person"
+   ],
+   "onscreen_text": "TOUS PREMIERS MINISTRES",
+   "comic_action": "Descente sur la ville ; banderole « TOUS PREMIERS MINISTRES » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PREMIER MINISTRE : GRATUIT"
+    }
    ]
   },
   {
-   "id": "s5",
+   "id": "s4",
    "narration_ids": [
-    "n5"
+    "n4"
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
+    "screen",
+    "text3d",
     "person",
-    "text3d"
+    "studio_light"
    ],
-   "onscreen_text": "LE MANUEL DU POSTE RATÉ",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « LE MANUEL DU POSTE RATÉ ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "30 000 PM, 0 MINISTÈRE",
+   "comic_action": "Écran géant : « 30 000 PM, 0 MINISTÈRE ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro"
+     "who": "foule",
+     "geste": "shrug"
     },
     {
      "who": "perso",
      "geste": "facepalm",
      "visage": "blase"
     }
-   ]
+   ],
+   "gags": []
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "road",
+    "person",
+    "banner",
+    "ring_light"
+   ],
+   "onscreen_text": "COHABITATION À LA BOULANGERIE",
+   "comic_action": "Travelling sur une file de téléphones levés ; banderole « COHABITATION À LA BOULANGERIE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "manif",
+     "visage": "colere"
+    },
+    {
+     "who": "perso",
+     "objet": "baguette",
+     "geste": "facepalm"
+    }
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -226,9 +239,9 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "SON SEUL POSTE : LA PRÉFACE",
-   "comic_action": "Plan final, tenir une seconde : « SON SEUL POSTE : LA PRÉFACE ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "LE MANUEL DU POSTE RATÉ",
+   "comic_action": "Plan final, tenir une seconde : « LE MANUEL DU POSTE RATÉ ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
@@ -240,7 +253,8 @@
      "geste": "point",
      "visage": "content"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -256,7 +270,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE PRESSÉ",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE PRESSÉ ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -264,7 +278,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -276,32 +291,21 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 82,
+ "word_count": 78,
  "claims": [
   {
    "segment": "n2",
-   "text": "Juin 2024, Marine Le Pen l'annonce : ce sera lui, à Matignon.",
+   "text": "Juin 2024 : annoncé pour Matignon, il finit avec un RN troisième.",
    "claim_type": "fait_public",
    "source": "https://fr.euronews.com/2024/06/11/marine-le-pen-soutient-jordan-bardella-au-poste-de-premier-ministre",
-   "note": "Marine Le Pen soutient Jordan Bardella pour Matignon."
+   "note": "Marine Le Pen soutient Jordan Bardella pour Matignon. ; Soir du second tour : RN troisième ; il dénonce « l'alliance du déshonneur ».",
+   "sources_complementaires": [
+    "https://www.publicsenat.fr/actualites/politique/legislatives-jordan-bardella-denonce-lalliance-du-deshonneur-entre-lexecutif-et-la-gauche"
+   ]
   },
   {
-   "segment": "n3",
-   "text": "Sa condition à lui : une majorité absolue, sinon rien.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/matignon-jordan-bardella-reclame-une-majorite-absolue-pour-gouverner-gabriel-attal",
-   "note": "Pas de Matignon sans majorité absolue."
-  },
-  {
-   "segment": "n4",
-   "text": "Le 7 juillet, le RN finit troisième. Ce fut rien.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/legislatives-jordan-bardella-denonce-lalliance-du-deshonneur-entre-lexecutif-et-la-gauche",
-   "note": "Soir du second tour : RN troisième ; il dénonce « l'alliance du déshonneur »."
-  },
-  {
-   "segment": "n5",
-   "text": "Depuis, il a écrit Gouverner. Le manuel du poste qu'il n'a pas eu.",
+   "segment": "n6",
+   "text": "Bardella, lui, a écrit Gouverner : le manuel du poste qu'il n'a pas eu.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
    "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
@@ -314,13 +318,6 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Marine Le Pen soutient Jordan Bardella pour Matignon."
-  },
-  {
-   "url": "https://lcp.fr/actualites/matignon-jordan-bardella-reclame-une-majorite-absolue-pour-gouverner-gabriel-attal",
-   "date": "2024-06-17",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Pas de Matignon sans majorité absolue."
   },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/legislatives-jordan-bardella-denonce-lalliance-du-deshonneur-entre-lexecutif-et-la-gauche",
@@ -338,5 +335,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = le Premier ministre annoncé de 2024, jamais nommé. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = annoncé Premier ministre en 2024, jamais nommé. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

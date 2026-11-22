@@ -3,25 +3,25 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-13",
  "format": "A",
- "title_cover": "Idole sans album",
+ "title_cover": "La ville au ralenti",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Au ralenti.",
-  "Bardella en edit K-pop. Et le programme, en quel format ?",
-  "Bardellaville : tout au ralenti, surtout le fond.",
+  "Dans cette ville, tout le monde vote Bardella. Et vit au ralenti.",
+  "Bardellaville : la vie entière en edit K-pop.",
+  "Ici, les pompiers arrivent au ralenti.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Idole sans album."
+  "Bienvenue à Bardellaville. Au programme : La ville au ralenti."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Une idole sans album : que des clips, aucune chanson.",
-  "Que des clips, aucune chanson.",
-  "Une image, pas un programme."
+  "Bardella, lui, reste rapide : il quitte les débats en accéléré.",
+  "Il quitte les débats en accéléré.",
+  "Les pompiers éteignent le feu au ralenti, sur fond de K-pop."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Au ralenti.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Et vit au ralenti.",
    "accent_words": [
     "ralenti"
    ],
@@ -37,33 +37,33 @@
   },
   {
    "id": "n3",
-   "text": "Une chercheuse le dit : le personnage est devenu une image.",
+   "text": "Alors toute la ville vit en edit : chaque geste au ralenti.",
    "accent_words": [
-    "image"
+    "ralenti"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Son 20 heures sur France 2 ? Plus bas niveau d'audience. Sans paillettes, ça zappe.",
-   "accent_words": [
-    "paillettes"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n5",
-   "text": "Solution : diffuser le budget au ralenti, avec des cœurs partout.",
+   "text": "Traverser la rue prend une heure. Le bus arrive avec des cœurs.",
    "accent_words": [
     "cœurs"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n6",
-   "text": "Une idole sans album : que des clips, aucune chanson.",
+   "id": "n5",
+   "text": "Les pompiers éteignent le feu au ralenti, sur fond de K-pop.",
    "accent_words": [
-    "clips"
+    "K-pop"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Bardella, lui, reste rapide : il quitte les débats en accéléré.",
+   "accent_words": [
+    "accéléré"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -91,7 +91,7 @@
    ],
    "onscreen_text": "AU RALENTI",
    "comic_action": "Descente sur la ville ; banderole « AU RALENTI » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "foule",
@@ -99,7 +99,17 @@
     },
     {
      "who": "perso",
-     "visage": "choque"
+     "visage": "dort"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
+    },
+    {
+     "type": "affiche",
+     "texte": "TOUS AVEC JORDAN"
     }
    ]
   },
@@ -117,7 +127,7 @@
    ],
    "onscreen_text": "EDITS K-POP",
    "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « EDITS K-POP ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -129,61 +139,66 @@
      "who": "foule",
      "geste": "cheer"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
+    "road",
+    "sign",
     "person",
-    "studio_light"
+    "traffic_light"
    ],
-   "onscreen_text": "DEVENU UNE IMAGE",
-   "comic_action": "Écran géant : « DEVENU UNE IMAGE ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "LA VILLE EN EDIT",
+   "comic_action": "Dans la rue, panneau « LA VILLE EN EDIT ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
-     "who": "maire",
-     "visage": "fier",
-     "geste": "wave"
+     "who": "foule",
+     "geste": "spin"
     },
     {
      "who": "perso",
-     "geste": "facepalm",
-     "visage": "blase"
+     "visage": "fatigue"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
-    "studio_light",
-    "screen",
-    "text3d"
+    "road",
+    "bus",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "20 H : PLUS BAS NIVEAU",
-   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « 20 H : PLUS BAS NIVEAU ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "BUS : 1 H DE RETARD",
+   "comic_action": "Un bus passe ; son fronton affiche « BUS : 1 H DE RETARD ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "visage": "choque",
+     "who": "perso",
+     "visage": "fatigue",
      "geste": "shrug"
     },
     {
      "who": "foule",
-     "geste": "shrug",
-     "visage": "dort"
+     "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RETARD : 1 H"
     }
    ]
   },
@@ -192,28 +207,28 @@
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
+    "road",
+    "sign",
     "person",
-    "studio_light"
+    "traffic_light"
    ],
-   "onscreen_text": "BUDGET EN EDIT",
-   "comic_action": "Écran géant : « BUDGET EN EDIT ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "INCENDIE EN EDIT",
+   "comic_action": "Dans la rue, panneau « INCENDIE EN EDIT ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "spin",
-     "visage": "content"
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque"
     },
     {
-     "who": "perso",
-     "geste": "facepalm",
-     "visage": "colere"
+     "who": "foule",
+     "geste": "spin"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -227,21 +242,22 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "ZÉRO CHANSON",
-   "comic_action": "Plan final, tenir une seconde : « ZÉRO CHANSON ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "DÉBATS : EN ACCÉLÉRÉ",
+   "comic_action": "Plan final, tenir une seconde : « DÉBATS : EN ACCÉLÉRÉ ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "bow",
+     "geste": "spin",
      "visage": "sourire_pro"
     },
     {
      "who": "perso",
-     "geste": "cross_arms",
-     "visage": "blase"
+     "geste": "facepalm",
+     "visage": "colere"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -257,7 +273,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE FAN",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE FAN ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -265,7 +281,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -277,7 +294,7 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 84,
+ "word_count": 85,
  "claims": [
   {
    "segment": "n2",
@@ -285,20 +302,6 @@
    "claim_type": "fait_public",
    "source": "https://www.ladn.eu/?p=696069",
    "note": "Fans qui montent les politiques en edits façon K-pop : cœurs, ralentis, musique techno."
-  },
-  {
-   "segment": "n3",
-   "text": "Une chercheuse le dit : le personnage est devenu une image.",
-   "claim_type": "fait_public",
-   "source": "https://www.slate.fr/story/267349/legislatives-2024-politique-memes-reseaux-sociaux-fancams-edits-videos-communication",
-   "note": "Fancams politiques : le personnage devenu une image, un mème."
-  },
-  {
-   "segment": "n4",
-   "text": "Son 20 heures sur France 2 ? Plus bas niveau d'audience. Sans paillettes, ça zappe.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/audiences-access-20h-jordan-bardella-fait-chuter-le-20-heures-de-france-2-a-son-plus-bas-niveau-quotidien-en-forte-hausse-sur-tmc/654472",
-   "note": "Son passage fait chuter le 20 heures de France 2 à son plus bas niveau ; Quotidien en forte hausse sur TMC."
   }
  ],
  "sources": [
@@ -308,22 +311,8 @@
    "consulted": "2026-11-22",
    "statut": "mème (phénomène rapporté)",
    "note": "Fans qui montent les politiques en edits façon K-pop : cœurs, ralentis, musique techno."
-  },
-  {
-   "url": "https://www.slate.fr/story/267349/legislatives-2024-politique-memes-reseaux-sociaux-fancams-edits-videos-communication",
-   "date": "2024-07",
-   "consulted": "2026-11-22",
-   "statut": "opinion",
-   "note": "Fancams politiques : le personnage devenu une image, un mème."
-  },
-  {
-   "url": "https://www.ozap.com/actu/audiences-access-20h-jordan-bardella-fait-chuter-le-20-heures-de-france-2-a-son-plus-bas-niveau-quotidien-en-forte-hausse-sur-tmc/654472",
-   "date": "2026 (date exacte non relevée)",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Son passage fait chuter le 20 heures de France 2 à son plus bas niveau ; Quotidien en forte hausse sur TMC."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = les fan edits façon K-pop (une image, pas un programme). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = les fan edits façon K-pop. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

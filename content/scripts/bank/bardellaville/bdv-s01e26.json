@@ -3,25 +3,25 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-26",
  "format": "A",
- "title_cover": "Pas l'arbre généalogique",
+ "title_cover": "La ville rebaptisée",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Le parti, lui, a un passé.",
-  "Le parti de Bardella a changé de nom. Pas d'histoire.",
-  "Bardellaville : nouvelle enseigne, vieilles archives.",
+  "Dans cette ville, tout le monde vote Bardella. Le passé, on n'en parle pas.",
+  "Le parti de Bardella a changé de nom. La ville aussi.",
+  "Bardellaville : nouvelle plaque, vieilles archives.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Pas l'arbre généalogique."
+  "Bienvenue à Bardellaville. Au programme : La ville rebaptisée."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ils ont changé le nom. Pas l'arbre généalogique du parti.",
-  "Ils ont changé le nom. Pas l'arbre généalogique.",
-  "Nouveau nom, mêmes archives."
+  "Bardella assure que c'est un autre parti. L'arbre généalogique, lui, n'a pas déménagé.",
+  "L'arbre généalogique n'a pas déménagé.",
+  "La cave déborde. Les archives remontent par l'ascenseur."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Le parti, lui, a un passé.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Le passé, on n'en parle pas.",
    "accent_words": [
     "passé"
    ],
@@ -29,41 +29,41 @@
   },
   {
    "id": "n2",
-   "text": "Il préside un parti fondé en 1972 avec d'anciens de la Collaboration.",
+   "text": "Son parti, fondé en 1972 avec un ancien Waffen-SS comme trésorier, devient RN en 2018.",
    "accent_words": [
-    "Collaboration"
+    "2018"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Premier trésorier du FN : Pierre Bousquet, ancien de la Waffen-SS.",
+   "text": "Alors la ville change aussi de nom : elle devient Villeneuve-Neuve.",
    "accent_words": [
-    "Waffen-SS"
+    "Villeneuve-Neuve"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le fondateur a qualifié les chambres à gaz de « point de détail ».",
+   "text": "Les rues sont rebaptisées, les archives descendues à la cave.",
    "accent_words": [
-    "détail"
+    "archives"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "2018 : on change le nom. FN devient RN.",
+   "text": "La cave déborde. Les archives remontent par l'ascenseur.",
    "accent_words": [
-    "nom"
+    "ascenseur"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ils ont changé le nom. Pas l'arbre généalogique du parti.",
+   "text": "Bardella assure que c'est un autre parti. L'arbre généalogique, lui, n'a pas déménagé.",
    "accent_words": [
-    "arbre généalogique"
+    "déménagé"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,9 +89,9 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "LE PARTI A UN PASSÉ",
-   "comic_action": "Descente sur la ville ; banderole « LE PARTI A UN PASSÉ » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "onscreen_text": "LE PASSÉ ? CHUT",
+   "comic_action": "Descente sur la ville ; banderole « LE PASSÉ ? CHUT » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "maire",
@@ -101,6 +101,16 @@
     {
      "who": "perso",
      "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
+    },
+    {
+     "type": "affiche",
+     "texte": "NOUVEAU NOM"
     }
    ]
   },
@@ -116,46 +126,52 @@
     "text3d",
     "person"
    ],
-   "onscreen_text": "FONDÉ EN 1972",
-   "comic_action": "Parchemin d'archives déroulé entre deux colonnes ; en lettres 3D « FONDÉ EN 1972 ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "onscreen_text": "1972 → 2018 : NOUVEAU NOM",
+   "comic_action": "Parchemin d'archives déroulé entre deux colonnes ; en lettres 3D « 1972 → 2018 : NOUVEAU NOM ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
-    {
-     "who": "maire",
-     "geste": "bow",
-     "visage": "sourire_pro"
-    },
     {
      "who": "perso",
      "geste": "facepalm",
      "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shake"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "scroll",
-    "column",
+    "facade_row",
+    "sign",
     "text3d",
     "person"
    ],
-   "onscreen_text": "1ER TRÉSORIER : EX-WAFFEN-SS",
-   "comic_action": "Parchemin d'archives déroulé entre deux colonnes ; en lettres 3D « 1ER TRÉSORIER : EX-WAFFEN-SS ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "VILLENEUVE-NEUVE",
+   "comic_action": "Rangée de façades : enseigne « VILLENEUVE-NEUVE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
-     "who": "perso",
-     "geste": "point",
-     "visage": "choque"
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
     },
     {
      "who": "foule",
-     "geste": "shake"
+     "geste": "clap"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "NOUVEAU NOM"
     }
    ]
   },
@@ -171,48 +187,49 @@
     "text3d",
     "person"
    ],
-   "onscreen_text": "« POINT DE DÉTAIL »",
-   "comic_action": "Parchemin d'archives déroulé entre deux colonnes ; en lettres 3D « « POINT DE DÉTAIL » ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "ARCHIVES À LA CAVE",
+   "comic_action": "Parchemin d'archives déroulé entre deux colonnes ; en lettres 3D « ARCHIVES À LA CAVE ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "perso",
-     "geste": "facepalm",
-     "visage": "colere"
+     "who": "foule",
+     "geste": "shrug"
     },
     {
-     "who": "foule",
-     "geste": "cross_arms"
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "banner",
-    "arch",
+    "scroll",
+    "column",
     "text3d",
-    "facade_set"
+    "person"
    ],
-   "onscreen_text": "FN → RN",
-   "comic_action": "Sous une arche, on change l'enseigne ; banderole « FN → RN ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "LES ARCHIVES REMONTENT",
+   "comic_action": "Parchemin d'archives déroulé entre deux colonnes ; en lettres 3D « LES ARCHIVES REMONTENT ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro"
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
     },
     {
-     "who": "perso",
-     "geste": "shrug",
-     "visage": "blase"
+     "who": "foule",
+     "geste": "shake"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -228,7 +245,7 @@
    ],
    "onscreen_text": "PAS L'ARBRE GÉNÉALOGIQUE",
    "comic_action": "Plan final, tenir une seconde : « PAS L'ARBRE GÉNÉALOGIQUE ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
@@ -240,7 +257,8 @@
      "geste": "cross_arms",
      "visage": "colere"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -256,7 +274,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE QUI A OUBLIÉ",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI A OUBLIÉ ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -264,7 +282,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -276,41 +295,18 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 83,
+ "word_count": 84,
  "claims": [
   {
    "segment": "n2",
-   "text": "Il préside un parti fondé en 1972 avec d'anciens de la Collaboration.",
+   "text": "Son parti, fondé en 1972 avec un ancien Waffen-SS comme trésorier, devient RN en 2018.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/de-l-activisme-radical-a-la-normalisation-retour-sur-les-50-ans-du-fn-222269",
-   "note": "FN créé le 5 octobre 1972, vitrine d'Ordre nouveau ; statuts déposés par un ancien Waffen-SS (Bousquet) et Jean-Marie Le Pen ; flamme calquée sur celle du MSI italien. ; Naissance du FN en 1972 : Jean-Marie Le Pen rassemble d'anciens collaborateurs, des vétérans de la Waffen-SS et des partisans de l'Algérie française.",
+   "note": "FN créé le 5 octobre 1972, vitrine d'Ordre nouveau ; statuts déposés par un ancien Waffen-SS (Bousquet) et Jean-Marie Le Pen ; flamme calquée sur celle du MSI italien. ; Pierre Bousquet, ancien de la division Charlemagne de la Waffen-SS, membre fondateur et premier trésorier du Front national (1972). ; Le Front national devient Rassemblement national ; la flamme du logo est conservée, rangée dans un cercle.",
    "sources_complementaires": [
-    "https://www.rtbf.be/article/comment-est-ne-le-front-national-10853858"
+    "https://en.wikipedia.org/wiki/Pierre_Bousquet",
+    "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550"
    ]
-  },
-  {
-   "segment": "n3",
-   "text": "Premier trésorier du FN : Pierre Bousquet, ancien de la Waffen-SS.",
-   "claim_type": "fait_public",
-   "source": "https://en.wikipedia.org/wiki/Pierre_Bousquet",
-   "note": "Pierre Bousquet, ancien de la division Charlemagne de la Waffen-SS, membre fondateur et premier trésorier du Front national (1972). ; FN créé le 5 octobre 1972, vitrine d'Ordre nouveau ; statuts déposés par un ancien Waffen-SS (Bousquet) et Jean-Marie Le Pen ; flamme calquée sur celle du MSI italien.",
-   "sources_complementaires": [
-    "https://www.publicsenat.fr/actualites/politique/de-l-activisme-radical-a-la-normalisation-retour-sur-les-50-ans-du-fn-222269"
-   ]
-  },
-  {
-   "segment": "n4",
-   "text": "Le fondateur a qualifié les chambres à gaz de « point de détail ».",
-   "claim_type": "citation_exacte",
-   "source": "https://www.universalis.fr/evenement/13-21-septembre-1987-indignation-apres-les-declarations-de-jean-marie-le-pen-sur-les-chambres-a-gaz/",
-   "note": "Grand Jury RTL-Le Monde : Jean-Marie Le Pen qualifie les chambres à gaz de « point de détail » de l'histoire de la Deuxième Guerre mondiale."
-  },
-  {
-   "segment": "n5",
-   "text": "2018 : on change le nom. FN devient RN.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
-   "note": "Le Front national devient Rassemblement national ; la flamme du logo est conservée, rangée dans un cercle."
   }
  ],
  "sources": [
@@ -322,25 +318,11 @@
    "note": "FN créé le 5 octobre 1972, vitrine d'Ordre nouveau ; statuts déposés par un ancien Waffen-SS (Bousquet) et Jean-Marie Le Pen ; flamme calquée sur celle du MSI italien."
   },
   {
-   "url": "https://www.rtbf.be/article/comment-est-ne-le-front-national-10853858",
-   "date": "date non relevée",
-   "consulted": "2026-11-22",
-   "statut": "fait (histoire)",
-   "note": "Naissance du FN en 1972 : Jean-Marie Le Pen rassemble d'anciens collaborateurs, des vétérans de la Waffen-SS et des partisans de l'Algérie française."
-  },
-  {
    "url": "https://en.wikipedia.org/wiki/Pierre_Bousquet",
    "date": "consulté 2026-11-22",
    "consulted": "2026-11-22",
    "statut": "fait (encyclopédie)",
    "note": "Pierre Bousquet, ancien de la division Charlemagne de la Waffen-SS, membre fondateur et premier trésorier du Front national (1972)."
-  },
-  {
-   "url": "https://www.universalis.fr/evenement/13-21-septembre-1987-indignation-apres-les-declarations-de-jean-marie-le-pen-sur-les-chambres-a-gaz/",
-   "date": "1987-09-13",
-   "consulted": "2026-11-22",
-   "statut": "fait + citation exacte",
-   "note": "Grand Jury RTL-Le Monde : Jean-Marie Le Pen qualifie les chambres à gaz de « point de détail » de l'histoire de la Deuxième Guerre mondiale."
   },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
@@ -351,5 +333,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = l'histoire du parti qu'il préside (fondation 1972, premier trésorier, « point de détail », changement de nom). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = l'histoire du parti qu'il préside : fondation 1972, trésorier ex-Waffen-SS, FN rebaptisé RN. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

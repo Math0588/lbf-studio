@@ -3,67 +3,67 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-16",
  "format": "A",
- "title_cover": "Duo express",
+ "title_cover": "La ville sans musique",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Sauf les chanteuses.",
-  "Bardella prend le son. La chanteuse refuse le reste.",
-  "Bardellaville : la playlist dit non.",
+  "Dans cette ville, tout le monde vote Bardella. Même la chorale.",
+  "Bardellaville : la fête de la musique sans musique.",
+  "Ici, même la sonnerie dit non.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Duo express."
+  "Bienvenue à Bardellaville. Au programme : La ville sans musique."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Même sa bande-son le recale.",
-  "Même sa bande-son le recale.",
-  "Le duo le plus court de l'histoire."
+  "Bardella poste quand même un edit sur le silence.",
+  "Un edit sur le silence.",
+  "Même la sonnerie démissionne. Elle ne partage pas ses idées."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Sauf les chanteuses.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Même la chorale.",
    "accent_words": [
-    "chanteuses"
+    "chorale"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son montage TikTok sur melodrama dépasse les cinq millions de vues.",
-   "accent_words": [
-    "cinq millions"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "La chanteuse, Theodora, lui répond : « Je ne partagerai jamais vos idées ».",
+   "text": "Theodora, dont il a utilisé la chanson : « Je ne partagerai jamais vos idées ».",
    "accent_words": [
     "idées"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "Ses fans le montent sur de la techno. Sans demander aux DJ.",
+   "id": "n3",
+   "text": "Alors la mairie sollicite les artistes. Tous refusent.",
    "accent_words": [
-    "techno"
+    "Tous"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "La fête de la musique se fait sur la sonnerie de la mairie.",
+   "accent_words": [
+    "sonnerie"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Prochain clip : la musique d'attente. Elle, au moins, ne dit rien.",
+   "text": "Même la sonnerie démissionne. Elle ne partage pas ses idées.",
    "accent_words": [
-    "musique d'attente"
+    "démissionne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Même sa bande-son le recale.",
+   "text": "Bardella poste quand même un edit sur le silence.",
    "accent_words": [
-    "bande-son"
+    "silence"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,17 +89,23 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "SAUF LES CHANTEUSES",
-   "comic_action": "Descente sur la ville ; banderole « SAUF LES CHANTEUSES » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "onscreen_text": "MÊME LA CHORALE",
+   "comic_action": "Descente sur la ville ; banderole « MÊME LA CHORALE » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
     {
      "who": "perso",
      "visage": "choque"
-    },
+    }
+   ],
+   "gags": [
     {
-     "who": "foule",
-     "geste": "shrug"
+     "type": "chien",
+     "tee": "BARDELLA"
     }
    ]
   },
@@ -110,34 +116,6 @@
    ],
    "camera": "closeup",
    "set": [
-    "ring_light",
-    "tripod_camera",
-    "person",
-    "screen"
-   ],
-   "onscreen_text": "5 MILLIONS DE VUES",
-   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « 5 MILLIONS DE VUES ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
-   "actions": [
-    {
-     "who": "maire",
-     "geste": "spin",
-     "visage": "sourire_pro",
-     "objet": "ring_light"
-    },
-    {
-     "who": "foule",
-     "geste": "cheer"
-    }
-   ]
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n3"
-   ],
-   "camera": "closeup",
-   "set": [
     "tribune",
     "studio_light",
     "screen",
@@ -145,7 +123,7 @@
    ],
    "onscreen_text": "« JAMAIS VOS IDÉES »",
    "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « « JAMAIS VOS IDÉES » ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -157,6 +135,40 @@
      "geste": "clap",
      "visage": "content"
     }
+   ],
+   "gags": []
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "lift_tribune",
+    "banner",
+    "person"
+   ],
+   "onscreen_text": "ARTISTES : TOUS REFUSENT",
+   "comic_action": "Meeting : la tribune s'élève, banderole « ARTISTES : TOUS REFUSENT ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "FÊTE : 0 ARTISTE"
+    }
    ]
   },
   {
@@ -164,56 +176,55 @@
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
-    "person",
-    "studio_light"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "EDITS SANS AUTORISATION",
-   "comic_action": "Écran géant : « EDITS SANS AUTORISATION ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "SONNERIE DE LA MAIRIE",
+   "comic_action": "Descente sur la ville ; banderole « SONNERIE DE LA MAIRIE » sur la mairie.",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
      "who": "foule",
-     "geste": "cheer"
+     "geste": "facepalm"
     },
     {
      "who": "perso",
-     "geste": "facepalm",
-     "visage": "blase"
+     "visage": "dort"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "ring_light",
-    "tripod_camera",
-    "person",
-    "screen"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "MUSIQUE D'ATTENTE",
-   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « MUSIQUE D'ATTENTE ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "LA SONNERIE DÉMISSIONNE",
+   "comic_action": "Descente sur la ville ; banderole « LA SONNERIE DÉMISSIONNE » sur la mairie.",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "shrug",
-     "visage": "sourire_pro",
-     "objet": "phone"
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content"
     },
     {
-     "who": "perso",
-     "geste": "point",
-     "visage": "content"
+     "who": "foule",
+     "geste": "clap"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -227,21 +238,23 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "RECALÉ PAR SA BANDE-SON",
-   "comic_action": "Plan final, tenir une seconde : « RECALÉ PAR SA BANDE-SON ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "EDIT DU SILENCE",
+   "comic_action": "Plan final, tenir une seconde : « EDIT DU SILENCE ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "facepalm",
-     "visage": "choque"
+     "geste": "spin",
+     "visage": "sourire_pro",
+     "objet": "phone"
     },
     {
      "who": "perso",
-     "geste": "cheer",
-     "visage": "content"
+     "geste": "facepalm",
+     "visage": "blase"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -257,7 +270,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE QUI POSTE",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI POSTE ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -265,7 +278,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -277,28 +291,14 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 77,
+ "word_count": 79,
  "claims": [
   {
    "segment": "n2",
-   "text": "Son montage TikTok sur melodrama dépasse les cinq millions de vues.",
-   "claim_type": "fait_public",
-   "source": "https://www.rtbf.be/article/je-ne-partagerai-jamais-vos-idees-theodora-denonce-l-utilisation-de-sa-chanson-par-jordan-bardella-11648514",
-   "note": "Montage TikTok sur « melodrama », plus de 5 millions de vues ; Theodora : « Je ne partagerai jamais vos idées »."
-  },
-  {
-   "segment": "n3",
-   "text": "La chanteuse, Theodora, lui répond : « Je ne partagerai jamais vos idées ».",
+   "text": "Theodora, dont il a utilisé la chanson : « Je ne partagerai jamais vos idées ».",
    "claim_type": "citation_exacte",
    "source": "https://www.rtbf.be/article/je-ne-partagerai-jamais-vos-idees-theodora-denonce-l-utilisation-de-sa-chanson-par-jordan-bardella-11648514",
    "note": "Montage TikTok sur « melodrama », plus de 5 millions de vues ; Theodora : « Je ne partagerai jamais vos idées »."
-  },
-  {
-   "segment": "n4",
-   "text": "Ses fans le montent sur de la techno. Sans demander aux DJ.",
-   "claim_type": "fait_public",
-   "source": "https://www.ladn.eu/?p=696069",
-   "note": "Fans qui montent les politiques en edits façon K-pop : cœurs, ralentis, musique techno."
   }
  ],
  "sources": [
@@ -308,15 +308,8 @@
    "consulted": "2026-11-22",
    "statut": "fait + citation exacte",
    "note": "Montage TikTok sur « melodrama », plus de 5 millions de vues ; Theodora : « Je ne partagerai jamais vos idées »."
-  },
-  {
-   "url": "https://www.ladn.eu/?p=696069",
-   "date": "2024-06-11",
-   "consulted": "2026-11-22",
-   "statut": "mème (phénomène rapporté)",
-   "note": "Fans qui montent les politiques en edits façon K-pop : cœurs, ralentis, musique techno."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = son montage sur « melodrama » et le refus de Theodora. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = Theodora refuse l'usage de sa chanson par Bardella. Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

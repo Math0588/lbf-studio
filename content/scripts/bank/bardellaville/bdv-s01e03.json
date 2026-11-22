@@ -3,33 +3,33 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-02",
  "format": "A",
- "title_cover": "Bonbons, pas débats",
+ "title_cover": "Bonbons obligatoires",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Bonbon en bouche.",
-  "Bardellaville : bonbons à volonté, débats en rupture de stock.",
-  "Il a toujours faim. Sauf de questions.",
+  "Dans cette ville, tout le monde vote Bardella. Même le chien suce un bonbon.",
+  "Bardellaville : un bonbon avant chaque phrase.",
+  "Ici, le dentiste est le plus riche.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Bonbons, pas débats."
+  "Bienvenue à Bardellaville. Au programme : Bonbons obligatoires."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Toujours faim, sauf de débats : le seul régime qu'il tient.",
-  "Le débat est annulé, mais le sachet est maintenu.",
-  "Il a toujours faim. Sauf de questions."
+  "Bardella, lui, n'a jamais de caries : il ne va jamais au débat.",
+  "Zéro carie, zéro débat.",
+  "Le dentiste devient milliardaire et se présente aux municipales."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Bonbon en bouche.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Même le chien suce un bonbon.",
    "accent_words": [
-    "Bonbon"
+    "bonbon"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sur TikTok, sa blague fétiche : toujours faim, bonbons avant chaque débat.",
+   "text": "Sur TikTok, sa blague fétiche : des bonbons avant chaque débat.",
    "accent_words": [
     "bonbons"
    ],
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "Ses réponses calibrées, dit la presse : ça fond, et il n'y a rien dedans.",
+   "text": "Alors la mairie applique : avant chaque discussion, un bonbon obligatoire.",
    "accent_words": [
-    "calibrées"
+    "obligatoire"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Un débat sur Public Sénat ? Refusé. Pas assez sucré.",
+   "text": "Les disputes de voisins s'allongent. La ville tombe en pénurie de sucre.",
    "accent_words": [
-    "Refusé"
+    "pénurie de sucre"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le chiffrage du programme ? Introuvable. Il a dû le manger aussi.",
+   "text": "Le dentiste devient milliardaire et se présente aux municipales.",
    "accent_words": [
-    "manger"
+    "municipales"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Toujours faim, sauf de débats : le seul régime qu'il tient.",
+   "text": "Bardella, lui, n'a jamais de caries : il ne va jamais au débat.",
    "accent_words": [
-    "régime"
+    "débat"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui répond à tout avec des bonbons.",
+   "text": "Envoie ça au pote qui a toujours un bonbon dans la poche.",
    "accent_words": [
-    "bonbons"
+    "bonbon"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,18 +89,28 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BONBONS AVANT DÉBAT",
-   "comic_action": "Descente sur la ville ; banderole « BONBONS AVANT DÉBAT » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "onscreen_text": "LE CHIEN AUSSI",
+   "comic_action": "Descente sur la ville ; banderole « LE CHIEN AUSSI » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
-     "who": "maire",
-     "geste": "wave",
-     "visage": "sourire_pro"
+     "who": "perso",
+     "visage": "choque",
+     "geste": "point"
     },
     {
      "who": "foule",
      "geste": "cheer"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
+    },
+    {
+     "type": "affiche",
+     "texte": "UN BONBON PAR DÉBAT"
     }
    ]
   },
@@ -116,9 +126,9 @@
     "person",
     "screen"
    ],
-   "onscreen_text": "TOUJOURS FAIM",
-   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « TOUJOURS FAIM ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "onscreen_text": "BONBONS AVANT DÉBAT",
+   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « BONBONS AVANT DÉBAT ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -128,37 +138,41 @@
     },
     {
      "who": "perso",
-     "geste": "point",
      "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "tribune",
-    "studio_light",
-    "screen",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "RÉPONSES : 0 APPORT",
-   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « RÉPONSES : 0 APPORT ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "BONBON OBLIGATOIRE",
+   "comic_action": "Descente sur la ville ; banderole « BONBON OBLIGATOIRE » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
      "who": "maire",
-     "geste": "shrug",
-     "visage": "sourire_pro",
-     "objet": "micro"
+     "geste": "wave",
+     "visage": "sourire_pro"
     },
     {
-     "who": "perso",
-     "geste": "facepalm",
-     "visage": "blase"
+     "who": "foule",
+     "geste": "jump"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BONBON : OBLIGATOIRE"
     }
    ]
   },
@@ -167,26 +181,32 @@
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
-    "router_lectern",
-    "studio_light",
-    "text3d"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "DÉBAT : REFUSÉ",
-   "comic_action": "Plateau de débat, deux pupitres ; en grand « DÉBAT : REFUSÉ ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "PÉNURIE DE SUCRE",
+   "comic_action": "Dans la rue, panneau « PÉNURIE DE SUCRE ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "cross_arms",
-     "visage": "fier"
+     "who": "foule",
+     "geste": "manif",
+     "visage": "colere"
     },
     {
-     "who": "foule",
-     "geste": "shrug",
+     "who": "perso",
+     "geste": "shake",
      "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SUCRE : 99 € LE KILO"
     }
    ]
   },
@@ -195,26 +215,31 @@
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
-    "text3d",
-    "table",
-    "form_stack"
+    "tribune",
+    "lift_tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "CHIFFRAGE : MANGÉ",
-   "comic_action": "Compteur géant sur l'écran : « CHIFFRAGE : MANGÉ ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "LE DENTISTE CANDIDAT",
+   "comic_action": "Meeting : la tribune s'élève, banderole « LE DENTISTE CANDIDAT ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "shrug",
-     "visage": "content"
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "fier"
     },
     {
-     "who": "perso",
-     "geste": "facepalm",
-     "visage": "colere"
+     "who": "foule",
+     "geste": "clap"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "DENTISTE MAIRE"
     }
    ]
   },
@@ -230,13 +255,13 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "RÉGIME SANS DÉBAT",
-   "comic_action": "Plan final, tenir une seconde : « RÉGIME SANS DÉBAT ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "ZÉRO CARIE, ZÉRO DÉBAT",
+   "comic_action": "Plan final, tenir une seconde : « ZÉRO CARIE, ZÉRO DÉBAT ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "bow",
+     "geste": "wave",
      "visage": "sourire_pro"
     },
     {
@@ -244,7 +269,8 @@
      "geste": "facepalm",
      "visage": "blase"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -258,9 +284,9 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE À TON POTE GOURMAND",
-   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE À TON POTE GOURMAND ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "onscreen_text": "ENVOIE AU POTE GOURMAND",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE GOURMAND ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -268,12 +294,13 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui répond à tout avec des bonbons."
+  "text": "Envoie ça au pote qui a toujours un bonbon dans la poche."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -284,27 +311,13 @@
  "claims": [
   {
    "segment": "n2",
-   "text": "Sur TikTok, sa blague fétiche : toujours faim, bonbons avant chaque débat.",
+   "text": "Sur TikTok, sa blague fétiche : des bonbons avant chaque débat.",
    "claim_type": "fait_public",
    "source": "https://certop.cnrs.fr/wp-content/uploads/2024/07/Jordan-Bardella-sur-TikTok-affiche-son-addiction-aux-bonbons-et-ca-en-dit-long-sur-sa-strategie-de-com.pdf",
    "note": "Blague récurrente de son TikTok : il a toujours faim et pioche des bonbons, surtout avant un débat. ; Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits.",
    "sources_complementaires": [
     "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/"
    ]
-  },
-  {
-   "segment": "n3",
-   "text": "Ses réponses calibrées, dit la presse : ça fond, et il n'y a rien dedans.",
-   "claim_type": "fait_public",
-   "source": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
-   "note": "Candidat aux réponses calibrées et creuses."
-  },
-  {
-   "segment": "n4",
-   "text": "Un débat sur Public Sénat ? Refusé. Pas assez sucré.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
-   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   }
  ],
  "sources": [
@@ -321,22 +334,8 @@
    "consulted": "2026-11-22",
    "statut": "fait (dépêche AFP) + mème",
    "note": "Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits."
-  },
-  {
-   "url": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
-   "date": "2026-05-31",
-   "consulted": "2026-11-22",
-   "statut": "opinion (chronique ; formule de l'auteur non reprise)",
-   "note": "Candidat aux réponses calibrées et creuses."
-  },
-  {
-   "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
-   "date": "2024-03-04",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = les bonbons avant les débats (blague récurrente de son TikTok). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = les bonbons avant les débats (blague récurrente de son TikTok). Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

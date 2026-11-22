@@ -3,27 +3,27 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-21",
  "format": "A",
- "title_cover": "Réponse calibrée",
+ "title_cover": "Réponses fournies",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Réponses fournies.",
-  "Une question à Bardella ? Voici la réponse calibrée.",
-  "Bardellaville : la réponse est prête avant la question.",
+  "Dans cette ville, tout le monde vote Bardella. Réponses fournies à la naissance.",
+  "Bardellaville : même le GPS répond nous verrons.",
+  "Ici, chaque habitant a sa réponse calibrée.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Réponse calibrée."
+  "Bienvenue à Bardellaville. Au programme : Réponses fournies."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Calibrées au millimètre, ses réponses. Jamais un millimètre de fond.",
-  "Calibrées au millimètre, zéro millimètre de fond.",
-  "Toujours la bonne réponse. Jamais à la question."
+  "Bardella, lui, a gardé la réponse originale : « Nous verrons ».",
+  "La réponse originale : nous verrons.",
+  "Les touristes se perdent. Le GPS répond : excellente question."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Réponses fournies.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Réponses fournies à la naissance.",
    "accent_words": [
-    "Réponses"
+    "fournies"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,35 +37,35 @@
   },
   {
    "id": "n3",
-   "text": "Les retraites, en juin 2024 ? Réponse calibrée : « Nous verrons ».",
+   "text": "Alors la mairie distribue une réponse calibrée à chaque habitant.",
+   "accent_words": [
+    "habitant"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Tu demandes l'heure : nous verrons. Ton chemin : nous verrons.",
+   "accent_words": [
+    "nous verrons"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Les touristes se perdent. Le GPS répond : excellente question.",
+   "accent_words": [
+    "excellente question"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Bardella, lui, a gardé la réponse originale : « Nous verrons ».",
    "accent_words": [
     "verrons"
    ],
    "claim_type": "citation_exacte"
-  },
-  {
-   "id": "n4",
-   "text": "Des journalistes refoulés de sa soirée ? Réponse calibrée : « Vu et s'en tape ».",
-   "accent_words": [
-    "tape"
-   ],
-   "claim_type": "citation_exacte"
-  },
-  {
-   "id": "n5",
-   "text": "Un débat sur Public Sénat ? Réponse calibrée : chaîne trop petite.",
-   "accent_words": [
-    "chaîne trop petite"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n6",
-   "text": "Calibrées au millimètre, ses réponses. Jamais un millimètre de fond.",
-   "accent_words": [
-    "fond"
-   ],
-   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
@@ -91,7 +91,7 @@
    ],
    "onscreen_text": "RÉPONSES FOURNIES",
    "comic_action": "Descente sur la ville ; banderole « RÉPONSES FOURNIES » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "maire",
@@ -100,7 +100,13 @@
     },
     {
      "who": "perso",
-     "visage": "blase"
+     "visage": "choque"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "NOUS VERRONS"
     }
    ]
   },
@@ -118,7 +124,7 @@
    ],
    "onscreen_text": "RÉPONSES CALIBRÉES",
    "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « RÉPONSES CALIBRÉES ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
@@ -130,34 +136,39 @@
      "who": "perso",
      "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "tribune",
-    "studio_light",
-    "screen",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "« NOUS VERRONS »",
-   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « « NOUS VERRONS » ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "UNE RÉPONSE CHACUN",
+   "comic_action": "Descente sur la ville ; banderole « UNE RÉPONSE CHACUN » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
     {
      "who": "maire",
-     "geste": "shrug",
-     "visage": "sourire_pro",
-     "objet": "micro"
+     "geste": "wave",
+     "visage": "sourire_pro"
     },
     {
-     "who": "perso",
-     "geste": "facepalm",
-     "visage": "blase"
+     "who": "foule",
+     "geste": "jump"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RÉPONSE GRATUITE"
     }
    ]
   },
@@ -166,55 +177,56 @@
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "building",
+    "road",
     "sign",
     "person",
-    "banner"
+    "traffic_light"
    ],
-   "onscreen_text": "« VU ET S'EN TAPE »",
-   "comic_action": "Porte d'entrée gardée ; panneau « « VU ET S'EN TAPE » ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "L'HEURE ? NOUS VERRONS",
+   "comic_action": "Dans la rue, panneau « L'HEURE ? NOUS VERRONS ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "cross_arms",
-     "visage": "fier"
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
     },
     {
-     "who": "perso",
-     "geste": "point",
-     "visage": "colere"
+     "who": "foule",
+     "geste": "shrug"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
-    "router_lectern",
-    "studio_light",
-    "text3d"
+    "road",
+    "car",
+    "gps",
+    "roundabout"
    ],
-   "onscreen_text": "CHAÎNE TROP PETITE",
-   "comic_action": "Plateau de débat, deux pupitres ; en grand « CHAÎNE TROP PETITE ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "GPS : EXCELLENTE QUESTION",
+   "comic_action": "Une voiture tourne au rond-point ; le GPS affiche « GPS : EXCELLENTE QUESTION ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "shrug",
-     "visage": "sourire_pro"
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
     },
     {
      "who": "foule",
-     "geste": "facepalm"
+     "geste": "shrug"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s6",
@@ -228,21 +240,23 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "0 MM DE FOND",
-   "comic_action": "Plan final, tenir une seconde : « 0 MM DE FOND ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "« NOUS VERRONS »",
+   "comic_action": "Plan final, tenir une seconde : « « NOUS VERRONS » ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "bow",
-     "visage": "sourire_pro"
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "objet": "micro"
     },
     {
      "who": "perso",
-     "geste": "cross_arms",
-     "visage": "colere"
+     "geste": "facepalm",
+     "visage": "blase"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -258,7 +272,7 @@
    ],
    "onscreen_text": "ENVOIE AU POTE BLUFFÉ",
    "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE BLUFFÉ ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -266,7 +280,8 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
@@ -278,7 +293,7 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 81,
+ "word_count": 76,
  "claims": [
   {
    "segment": "n2",
@@ -288,25 +303,11 @@
    "note": "Candidat aux réponses calibrées et creuses."
   },
   {
-   "segment": "n3",
-   "text": "Les retraites, en juin 2024 ? Réponse calibrée : « Nous verrons ».",
+   "segment": "n6",
+   "text": "Bardella, lui, a gardé la réponse originale : « Nous verrons ».",
    "claim_type": "citation_exacte",
    "source": "https://www.boursorama.com/bourse/actualites/retraites-jordan-bardella-n-est-plus-si-presse-d-abroger-la-reforme-de-macron-101b949b9967c92520b3be1c9ef2c30f",
    "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
-  },
-  {
-   "segment": "n4",
-   "text": "Des journalistes refoulés de sa soirée ? Réponse calibrée : « Vu et s'en tape ».",
-   "claim_type": "citation_exacte",
-   "source": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
-   "note": "Image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement du livre « Gouverner » ; reprend un mème préexistant."
-  },
-  {
-   "segment": "n5",
-   "text": "Un débat sur Public Sénat ? Réponse calibrée : chaîne trop petite.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
-   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   }
  ],
  "sources": [
@@ -323,22 +324,8 @@
    "consulted": "2026-11-22",
    "statut": "fait + citation exacte",
    "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
-  },
-  {
-   "url": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
-   "date": "2026-11-05",
-   "consulted": "2026-11-22",
-   "statut": "fait (publication sur X du 04/11/2026) ; texte exact de l'image",
-   "note": "Image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement du livre « Gouverner » ; reprend un mème préexistant."
-  },
-  {
-   "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
-   "date": "2024-03-04",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = les réponses calibrées (refrain). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = les réponses calibrées et « Nous verrons ». Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

@@ -3,33 +3,33 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-08",
  "format": "A",
- "title_cover": "Trois titres, zéro trouvé",
+ "title_cover": "Ce que je cherche",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella. Et lit les titres.",
-  "Trois livres de Bardella, résumés par leurs titres.",
-  "Bardellaville : il cherche, toujours.",
+  "Dans cette ville, tout le monde vote Bardella. Et chacun a ses trois livres.",
+  "Bardellaville : tout le monde cherche, personne ne trouve.",
+  "Avis de recherche : le programme de Bardella.",
   "Les fans de Bardella vont me détester.",
-  "Bienvenue à Bardellaville. Au programme : Trois titres, zéro trouvé."
+  "Bienvenue à Bardellaville. Au programme : Ce que je cherche."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Trois livres pour chercher, et rien trouvé : c'est écrit dessus.",
-  "Ce que je cherche, tome trois.",
-  "Il cherche depuis 2024. Le programme aussi."
+  "Bardella annonce un quatrième livre : Ce que je cherche encore.",
+  "Quatrième livre : Ce que je cherche encore.",
+  "La police lance un avis de recherche : programme, disparu depuis 2024."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Et lit les titres.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Et chacun a ses trois livres.",
    "accent_words": [
-    "titres"
+    "trois livres"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Livre un, en 2024 : Ce que je cherche. Un aveu, déjà.",
+   "text": "Trois livres en deux ans, dont un titre : Ce que je cherche.",
    "accent_words": [
     "cherche"
    ],
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "Livre deux : Ce que veulent les Français. Il cherche toujours, mais pour nous.",
+   "text": "Alors toute la ville cherche : ses clés, son bus, son programme.",
    "accent_words": [
-    "pour nous"
+    "programme"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Livre trois : Gouverner. Cent jours promis, méthode pas détaillée.",
+   "text": "Le bureau des objets trouvés déborde de gens qui le cherchent.",
    "accent_words": [
-    "méthode"
+    "cherchent"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Prochain titre logique : Ce que j'ai trouvé. Page blanche.",
+   "text": "La police lance un avis de recherche : programme, disparu depuis 2024.",
    "accent_words": [
-    "Page blanche"
+    "2024"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Trois livres pour chercher, et rien trouvé : c'est écrit dessus.",
+   "text": "Bardella annonce un quatrième livre : Ce que je cherche encore.",
    "accent_words": [
-    "écrit dessus"
+    "encore"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui a lu les trois sans savoir ce qu'il propose.",
+   "text": "Envoie ça au pote qui a lu les trois sans rien trouver.",
    "accent_words": [
-    "propose"
+    "trouver"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,18 +89,23 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "TROIS LIVRES",
-   "comic_action": "Descente sur la ville ; banderole « TROIS LIVRES » sur la mairie.",
-   "expected_result": "Le thème posé dès la première image.",
+   "onscreen_text": "TROIS LIVRES CHACUN",
+   "comic_action": "Descente sur la ville ; banderole « TROIS LIVRES CHACUN » sur la mairie.",
+   "expected_result": "La ville et son détail absurde posés dès la première image.",
    "actions": [
     {
      "who": "perso",
-     "visage": "choque",
-     "geste": "point"
+     "visage": "choque"
     },
     {
      "who": "foule",
      "geste": "clap"
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BARDELLA"
     }
    ]
   },
@@ -116,74 +121,81 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "LIVRE 1 : CE QUE JE CHERCHE",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « LIVRE 1 : CE QUE JE CHERCHE ».",
-   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "onscreen_text": "CE QUE JE CHERCHE",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « CE QUE JE CHERCHE ».",
+   "expected_result": "Le point de départ : un truc connu du politicien, sourcé, compris sans suivre la politique.",
    "actions": [
     {
      "who": "maire",
-     "geste": "wave",
+     "geste": "bow",
      "visage": "sourire_pro"
     },
     {
      "who": "perso",
      "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "form_stack",
+    "road",
+    "sign",
     "person",
-    "text3d"
+    "traffic_light"
    ],
-   "onscreen_text": "LIVRE 2 : CE QUE VOUS VOULEZ",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « LIVRE 2 : CE QUE VOUS VOULEZ ».",
-   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "onscreen_text": "TOUT LE MONDE CHERCHE",
+   "comic_action": "Dans la rue, panneau « TOUT LE MONDE CHERCHE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville applique (cause).",
    "actions": [
-    {
-     "who": "maire",
-     "geste": "nod",
-     "visage": "fier"
-    },
     {
      "who": "perso",
      "geste": "shrug",
-     "visage": "blase"
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "table",
-    "form_stack",
-    "person",
-    "text3d"
+    "facade_row",
+    "sign",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "LIVRE 3 : MÉTHODE ?",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « LIVRE 3 : MÉTHODE ? ».",
-   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "onscreen_text": "OBJETS TROUVÉS : PERDU",
+   "comic_action": "Rangée de façades : enseigne « OBJETS TROUVÉS : PERDU ».",
+   "expected_result": "Ça dégénère (conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "bow",
-     "visage": "fier"
+     "who": "foule",
+     "geste": "manif",
+     "visage": "fatigue"
     },
     {
      "who": "perso",
      "geste": "facepalm",
-     "visage": "choque"
+     "visage": "blase"
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "OBJETS TROUVÉS ?"
     }
    ]
   },
@@ -192,26 +204,31 @@
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "table",
-    "form_stack",
-    "person",
-    "text3d"
+    "facade_row",
+    "sign",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "LIVRE 4 : PAGE BLANCHE",
-   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « LIVRE 4 : PAGE BLANCHE ».",
-   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "onscreen_text": "AVIS DE RECHERCHE",
+   "comic_action": "Rangée de façades : enseigne « AVIS DE RECHERCHE ».",
+   "expected_result": "Ça dégénère encore plus (pire conséquence).",
    "actions": [
     {
-     "who": "maire",
-     "geste": "shrug",
-     "visage": "sourire_pro"
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
     },
     {
-     "who": "perso",
-     "geste": "facepalm",
-     "visage": "colere"
+     "who": "foule",
+     "geste": "shake"
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "RECHERCHÉ : PROGRAMME"
     }
    ]
   },
@@ -227,21 +244,22 @@
     "text3d",
     "screen"
    ],
-   "onscreen_text": "C'EST ÉCRIT DESSUS",
-   "comic_action": "Plan final, tenir une seconde : « C'EST ÉCRIT DESSUS ».",
-   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "onscreen_text": "LIVRE 4 : TOUJOURS",
+   "comic_action": "Plan final, tenir une seconde : « LIVRE 4 : TOUJOURS ».",
+   "expected_result": "Chute qui retombe sur le politicien, tenir une seconde.",
    "actions": [
     {
      "who": "maire",
-     "geste": "shrug",
+     "geste": "wave",
      "visage": "sourire_pro"
     },
     {
      "who": "perso",
-     "geste": "point",
-     "visage": "colere"
+     "geste": "fall",
+     "visage": "choque"
     }
-   ]
+   ],
+   "gags": []
   },
   {
    "id": "s7",
@@ -255,9 +273,9 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE AU POTE LECTEUR",
-   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE LECTEUR ».",
-   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "onscreen_text": "ENVOIE AU POTE QUI CHERCHE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI CHERCHE ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible.",
    "actions": [
     {
      "who": "perso",
@@ -265,43 +283,27 @@
      "visage": "content",
      "objet": "phone"
     }
-   ]
+   ],
+   "gags": []
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui a lu les trois sans savoir ce qu'il propose."
+  "text": "Envoie ça au pote qui a lu les trois sans rien trouver."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 83,
+ "word_count": 85,
  "claims": [
   {
    "segment": "n2",
-   "text": "Livre un, en 2024 : Ce que je cherche. Un aveu, déjà.",
+   "text": "Trois livres en deux ans, dont un titre : Ce que je cherche.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
    "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
-  },
-  {
-   "segment": "n3",
-   "text": "Livre deux : Ce que veulent les Français. Il cherche toujours, mais pour nous.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
-   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
-  },
-  {
-   "segment": "n4",
-   "text": "Livre trois : Gouverner. Cent jours promis, méthode pas détaillée.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
-   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces. ; Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode.",
-   "sources_complementaires": [
-    "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon"
-   ]
   }
  ],
  "sources": [
@@ -311,15 +313,8 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
-  },
-  {
-   "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
-   "date": "2026-11-04",
-   "consulted": "2026-11-22",
-   "statut": "fait + opinion (appréciation AFP)",
-   "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = les titres de ses trois livres. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mise à jour (3), histoire absurde) : point de départ = le titre de son premier livre, « Ce que je cherche ». Structure : accroche + détail absurde, truc connu sourcé, la ville l'applique au pied de la lettre et ça dégénère (cause, conséquence, pire), chute qui retombe sur le politicien, partage ciblé. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs ; l'absurde de la ville est évident. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

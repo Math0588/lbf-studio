@@ -157,7 +157,7 @@ def cine(kind: str, cx: float, cy: float) -> list | None:
 def affiche(city: str, aid: str, at, texte: str | None = None, rot: float = 0) -> dict:
     pg = PROPAGANDE.get(city, {"bg": "#C8102E", "accent": "#F2B134", "slogans": [""]})
     m = MAYORS.get(city, {})
-    return {"type": "affiche", "id": aid, "at": at, "rot": rot, "bg": pg["bg"], "accent": pg["accent"],
+    return {"type": "affiche", "id": aid, "at": at, "rot": rot, "scale": 1.7, "bg": pg["bg"], "accent": pg["accent"],
             "texte": (texte or pg["slogans"][_stable(aid) % len(pg["slogans"])]), "hair": m.get("hair", "court"),
             "hair_color": m.get("hair_color", "#3A2A1F"), "iris": m.get("iris", "brun"), "face": "fier"}
 SURNAMES = {"bardellaville": "Bardella", "melenchonville": "Mélenchon", "macronville": "Macron",
@@ -261,13 +261,14 @@ def plan(script: dict) -> dict:
             elif g.get("type") == "gilets_jaunes":   # foule en gilet jaune (sur le rond-point si c'est la scène)
                 extra.append({"type": "crowd", "id": f"{sc['id']}_gj", "at": [cx - 2, cy - 7], "count": 10, "cols": 5,
                               "dx": 1.7, "dy": 1.7, "rot": 180, "shirt": "#F2D300", "hold": "pancarte",
+                              "sign_texts": ["MACRON DÉMISSION", "RIC", "ON LÂCHE RIEN"],
                               "hold_ratio": 0.4, "faces": ["colere"], "seed": k + 21})
             elif g.get("type") == "prix" and g.get("texte"):
                 extra.append({"type": "sign", "id": f"{sc['id']}_prix{gi}", "at": [gx, gy - 1], "w": 3.4, "h": 1.3,
                               "z": 1.4, "bg": "#FFFDF7",
                               "lines": [{"text": g["texte"].upper()[:20], "size": 0.42, "color": "#C8102E", "emit": 0.4}]})
         if not any(g.get("type") == "affiche" for g in gags):
-            extra.append(affiche(city, f"{sc['id']}_affbg", [cx + 4.2, cy + 5.5]))   # propagande en fond
+            extra.append(affiche(city, f"{sc['id']}_affbg", [cx + 3.8, cy + 4.6]))   # propagande en fond
         # le politicien est à l'écran quand on parle de lui (moquerie de la personne) ou quand il doit agir
         if any(a.get("who") == "maire" for a in acts) or (k > 0 and not is_cta and
                                                          re.search(SURNAMES.get(city, "^$"), text_all)):
@@ -277,6 +278,8 @@ def plan(script: dict) -> dict:
         if manif:
             extra.append({"type": "crowd", "id": f"{sc['id']}_manif", "at": [cx + 3, cy - 6], "count": 10, "cols": 5,
                           "dx": 1.8, "dy": 1.8, "rot": 90, "hold": "pancarte", "hold_ratio": 0.7,
+                          "sign_texts": [x for x in [(sc.get("onscreen_text") or "")[:14]] if x]
+                          + PROPAGANDE.get(city, {}).get("slogans", [])[:2],
                           "faces": [rnd.choice(["colere", "choque"])], "seed": k + 11})
         faces_of = {w: [a["visage"] for a in acts if a.get("who") == w and a.get("visage") in VISAGES]
                     for w in ("maire", "perso", "foule")}
