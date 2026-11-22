@@ -37,6 +37,10 @@ def check(script: dict) -> dict:
         block.append(f"ancrage : {len(sourced)} pique(s) sourcée(s) (mèmes/faits connus), 2 minimum")
     if not script.get("claims") and sourced:
         block.append("sources : claims vides alors que des faits/citations sont utilisés")
+    said = " ".join(x["text"] for x in segs) + " " + " ".join(
+        sc.get("onscreen_text", "") for sc in script.get("scenes", [])) + " " + script.get("title_cover", "")
+    if re.search(r"\bsuicid", said, re.I):
+        block.append("mot bridé par Instagram (suicide) dans la narration ou à l'écran")
     title = script.get("title_cover", "")
     if not title or len(title.split()) > 5:
         warn.append("titre de couverture : 1 à 5 mots")
