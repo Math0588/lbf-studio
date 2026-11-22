@@ -53,9 +53,13 @@ def next_script(st: dict, offset: int = 0) -> Path | None:
     names = release_names()
     done = {n[:-4] for n in names if n.endswith(".mp4")} | set(st["skipped"]) | ALREADY_PUBLISHED
     skip = offset
+    from . import viral_lint
     for p in candidates():
-        sid = json.loads(p.read_text(encoding="utf-8"))["id"]
+        sc = json.loads(p.read_text(encoding="utf-8"))
+        sid = sc["id"]
         if sid in done or st["attempts"].get(sid, 0) >= MAX_ATTEMPTS:
+            continue
+        if not viral_lint.check(sc)["ok"]:   # ancien script « soft » ou incomplet : jamais fabriqué
             continue
         if skip:
             skip -= 1
