@@ -1158,7 +1158,7 @@ def apply_orbits(total_frames):
 
 
 GESTURES = {"point", "wave", "cheer", "facepalm", "shrug", "jump", "fall", "spin", "bow", "nod", "shake", "clap",
-            "arms_up", "cross_arms"}
+            "arms_up", "cross_arms", "cough"}
 
 
 def gesture(ev, f0, f1):
@@ -1232,6 +1232,13 @@ def gesture(ev, f0, f1):
             o.rotation_euler.z = z
         elif kind == "bow":
             hold(o, "rotation_euler", 0, R(-28), ease=6)
+        elif kind == "cough":     # main devant la bouche, buste qui sursaute
+            hold(ra, "rotation_euler", 0, R(-140))
+            for i, fr in enumerate(range(f0 + 5, f1 - 3, 6)):
+                o.rotation_euler.x = R(-9 if i % 2 == 0 else 0)
+                o.keyframe_insert("rotation_euler", index=0, frame=fr)
+            o.rotation_euler.x = 0
+            o.keyframe_insert("rotation_euler", index=0, frame=f1)
 
 
 def apply_events(events, starts):

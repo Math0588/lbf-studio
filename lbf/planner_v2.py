@@ -113,7 +113,7 @@ TEE_LINES = ["LE PAYS BUGUE.", "MOI AUSSI."]
 # Actions jouées par les personnages (champ « actions » de chaque scène du script) : le personnage fait ce que dit
 # la narration. who : maire (le politicien caricaturé) | perso (habitant au premier plan) | foule.
 GESTES = {"point", "wave", "cheer", "facepalm", "shrug", "jump", "fall", "spin", "bow", "nod", "shake", "clap",
-          "arms_up", "cross_arms"}
+          "arms_up", "cross_arms", "cough", "manif"}
 VISAGES = {"blase", "choque", "colere", "content", "dort", "fatigue", "fier", "neutre", "parle", "sourire_pro"}
 OBJETS = {"phone", "verre", "baguette", "micro", "pancarte", "ring_light"}
 SURNAMES = {"bardellaville": "Bardella", "melenchonville": "Mélenchon", "macronville": "Macron",
@@ -210,6 +210,11 @@ def plan(script: dict) -> dict:
                                                          re.search(SURNAMES.get(city, "^$"), text_all)):
             has_mayor = True
         hold_of = {a.get("who"): a["objet"] for a in acts if a.get("objet") in OBJETS}
+        manif = any(a.get("geste") == "manif" for a in acts)
+        if manif:
+            extra.append({"type": "crowd", "id": f"{sc['id']}_manif", "at": [cx + 3, cy - 6], "count": 10, "cols": 5,
+                          "dx": 1.8, "dy": 1.8, "rot": 90, "hold": "pancarte", "hold_ratio": 0.7,
+                          "faces": [rnd.choice(["colere", "choque"])], "seed": k + 11})
         faces_of = {w: [a["visage"] for a in acts if a.get("who") == w and a.get("visage") in VISAGES]
                     for w in ("maire", "perso", "foule")}
         hero = f"{sc['id']}_hero"
@@ -280,7 +285,10 @@ def plan(script: dict) -> dict:
             at = float(a.get("quand", 0.15))
             if a.get("visage") in VISAGES and a.get("who") != "foule":
                 events.append({"type": "face", "target": tgt, "expr": a["visage"], "shot": sid, "at": at})
-            if a.get("geste") in GESTES:
+            if a.get("geste") == "manif":
+                events.append({"type": "walk", "target": f"{sc['id']}_manif", "shot": sid, "at": at,
+                               "dur": 3.0, "by": [-7, 0]})
+            elif a.get("geste") in GESTES:
                 events.append({"type": "gesture", "target": tgt, "kind": a["geste"], "shot": sid, "at": at,
                                "until": float(a.get("jusqua", 0.95))})
         label = sticker_text(sc.get("onscreen_text", ""), [segs[n] for n in sc["narration_ids"] if n in segs])
