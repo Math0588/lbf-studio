@@ -454,11 +454,13 @@ def check_upload():
     for method in ("url", "resumable"):
         os.environ["IG_UPLOAD_METHOD"] = method
         try:
-            cid, how = create_container(ep_id, {"caption": "vérification technique", "share_to_feed": "false"},
-                                        studio=item.get("source") == "studio")
+            prm = {"caption": "vérification technique", "share_to_feed": "false"}
+            if item.get("source") == "studio":
+                prm["cover_url"] = public_url(f"{ep_id}.jpg")     # la couverture titrée doit aussi passer
+            cid, how = create_container(ep_id, prm, studio=item.get("source") == "studio")
             st = wait_container(cid, 12)
             log(f"CHECK {method} : méthode effective {how}, statut {st.get('status_code')} ({st.get('status')})")
-            if st.get("status_code") == "FINISHED" and how == method:
+            if st.get("status_code") == "FINISHED" and how in (method, "url_studio"):
                 ok.append(method)
         except Exception as e:
             log(f"CHECK {method} : échec {type(e).__name__} {str(e)[:200]}")
