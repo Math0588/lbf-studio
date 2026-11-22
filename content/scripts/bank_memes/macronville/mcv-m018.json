@@ -4,79 +4,79 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "La fête dissoute",
- "anchor": "la dissolution surprise du 9 juin 2024 rejouée pendant la fête municipale.",
+ "title_cover": "En pause",
+ "anchor": "des mois en affaires courantes : la mairie n'autorise plus que les affaires courantes",
  "meme_key": "DISSOLUTION",
  "situation": "la fête municipale",
- "ressort": "piques frontales sourcées (style tacle)",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, la fête municipale peut être dissoute à tout moment.",
-  "Macronville : la soirée qui finit en dissolution.",
-  "Le seul DJ qui coupe la musique pour clarifier.",
-  "Les macronistes vont dissoudre cette vidéo."
+  "2024-2025 : faute de gouvernement, le pays passe des mois en affaires courantes.",
+  "Les électeurs de Macron vont détester celle-là.",
+  "En pause : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Le calendrier est en pause."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Depuis, quand il prend le micro, les gens cherchent les sorties de secours.",
-  "La fête est dissoute. Les invités ne sont jamais revenus.",
-  "Un micro, une phrase, plus de fête."
+  "Le maire nomme enfin quelqu'un. Il démissionne aussitôt. Retour aux affaires courantes.",
+  "La ville est en affaires courantes depuis si longtemps qu'elle a oublié ce qu'est une affaire.",
+  "Les feux restent à l'orange en attendant un nouveau gouvernement."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Jusqu'à 21 heures.",
+   "text": "Dans cette ville, tout le monde vote Macron. Le calendrier est en pause.",
    "accent_words": [
-    "21 heures"
+    "pause"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Soir de fête municipale. Le maire prend le micro et dissout la fête.",
+   "text": "2024-2025 : faute de gouvernement, le pays passe des mois en affaires courantes.",
    "accent_words": [
-    "dissout la fête"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Comme le 9 juin 2024 : dissolution surprise de l'Assemblée.",
-   "accent_words": [
-    "dissolution surprise"
+    "courantes"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "Les invités repartent. Personne n'a compris. Même la piñata.",
+   "id": "n3",
+   "text": "La mairie s'aligne : seules les affaires courantes sont autorisées.",
    "accent_words": [
-    "la piñata"
+    "autorisées"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Interdit de faire du neuf. Le boulanger ressert le pain d'hier.",
+   "accent_words": [
+    "hier"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Depuis, Attal, Barnier, Bayrou, Lecornu se sont succédé. La fête continue.",
+   "text": "Les feux restent à l'orange en attendant un nouveau gouvernement.",
    "accent_words": [
-    "La fête continue"
+    "gouvernement"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Depuis, quand il prend le micro, les gens cherchent les sorties de secours.",
+   "text": "Le maire nomme enfin quelqu'un. Il démissionne aussitôt. Retour aux affaires courantes.",
    "accent_words": [
-    "sorties de secours"
+    "courantes"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui casse l'ambiance en pleine soirée.",
+   "text": "Envoie ça au pote qui laisse tes messages en vu depuis trois mois.",
    "accent_words": [
-    "casse l'ambiance"
+    "mois"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,14 +90,38 @@
    "camera": "descend",
    "set": [
     "ground",
-    "fountain",
-    "arch",
+    "mairie",
+    "banner",
     "person",
     "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la grande place : fontaine, arche, habitants.",
-   "expected_result": "La place centrale posée."
+   "comic_action": "Descente sur la ville ; banderole « EN PAUSE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "EN PAUSE"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -106,78 +130,174 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
-    "person",
+    "screen",
     "text3d",
-    "screen"
+    "mairie"
    ],
-   "onscreen_text": "FÊTE DISSOUTE",
-   "comic_action": "Le maire cubique appuie sur un gros bouton : la mairie se dissout en cubes, puis se reconstruit pareil.",
-   "expected_result": "La dissolution pour rien."
+   "onscreen_text": "AFFAIRES COURANTES",
+   "comic_action": "Un panneau « AFFAIRES COURANTES » est accroché sur la mairie ; un Premier ministre sort avec son carton.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ON ATTEND"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "tribune",
-    "person",
-    "banner",
-    "studio_light"
+    "sign",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "9 JUIN 2024",
-   "comic_action": "Le maire cubique à la tribune, projecteur, foule clairsemée.",
-   "expected_result": "Le discours porte la pique."
+   "onscreen_text": "RIEN DE NEUF AUTORISÉ",
+   "comic_action": "Un agent refuse un dossier marqué « NOUVEAU » au guichet.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "neutre",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "NOUVEAUTÉ INTERDITE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "fountain",
+    "shop",
     "person",
-    "tree",
-    "arch"
+    "text3d"
    ],
-   "onscreen_text": "INCOMPRÉHENSION GÉNÉRALE",
-   "comic_action": "Orbite autour de la fontaine de la place.",
-   "expected_result": "La place porte la pique."
+   "onscreen_text": "PAIN D'HIER",
+   "comic_action": "Le boulanger ressort les baguettes d'hier ; la télé de la vitrine rediffuse la météo de lundi.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "fatigue",
+     "objet": "baguette",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "EN PAUSE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "facade_row",
-    "person",
-    "sign",
-    "text3d"
+    "traffic_light",
+    "road",
+    "car"
    ],
-   "onscreen_text": "ATTAL, BARNIER, BAYROU, LECORNU",
-   "comic_action": "Une file d'adjoints passe devant la porte de la mairie ; un compteur « 1, 2, 3… 7 » s'allume.",
-   "expected_result": "La valse des Premiers ministres en compteur."
+   "onscreen_text": "FEUX À L'ORANGE",
+   "comic_action": "Tous les feux restent bloqués à l'orange ; les voitures attendent, moteur coupé.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "fall",
+     "visage": "dort",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PATIENCE"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "tribune",
+    "mairie",
     "person",
-    "banner",
-    "studio_light"
+    "sign"
    ],
-   "onscreen_text": "SORTIE DE SECOURS →",
-   "comic_action": "Le maire tapote le micro ; dans la foule, tout le monde se retourne vers un panneau « SORTIE » vert qui s'allume.",
-   "expected_result": "Le discours porte la pique."
+   "onscreen_text": "NOMMÉ… DÉMISSIONNÉ",
+   "comic_action": "Le maire tend un badge ; le nouveau le rend dans la seconde et repart.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "wave",
+     "visage": "fatigue",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "AFFAIRES COURANTES (SUITE)"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -192,56 +312,70 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : des mois en affaires courantes : la mairie n'autorise plus que les affaires courantes.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "EN PAUSE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui casse l'ambiance en pleine soirée."
+  "text": "Envoie ça au pote qui laisse tes messages en vu depuis trois mois."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 77,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Soir de fête municipale. Le maire prend le micro et dissout la fête.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/politique/dissolution-de-lassemblee-nationale-quelles-consequences",
-   "note": "Dissolution annoncée le soir des européennes (09/06/2024). Détourné dans la ville fictive."
-  },
-  {
-   "text": "Comme le 9 juin 2024 : dissolution surprise de l'Assemblée.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/dissolution-de-lassemblee-nationale-quelles-consequences",
-   "note": "Dissolution annoncée le soir des européennes (09/06/2024)."
-  },
-  {
-   "text": "Depuis, Attal, Barnier, Bayrou, Lecornu se sont succédé. La fête continue.",
+   "text": "2024-2025 : faute de gouvernement, le pays passe des mois en affaires courantes.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
-   "note": "Valse des ministres, affaires courantes, année record."
+   "note": "Valse des ministres, mois d'affaires courantes : une année politique record."
+  },
+  {
+   "text": "Le maire nomme enfin quelqu'un. Il démissionne aussitôt. Retour aux affaires courantes.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.parismatch.be/actualites/monde/2025/10/10/france-emmanuel-macron-reconduit-sebastien-lecornu-comme-premier-ministre-LIQZQK4X7JCTTF65GLJQZJ7EME/",
+   "note": "Lecornu démissionne le 06/10/2025 ; Macron le reconduit le 10/10/2025. Exagération satirique évidente, présentée comme telle."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/dissolution-de-lassemblee-nationale-quelles-consequences",
-   "date": "2024-06-10",
-   "consulted": "2026-11-22",
-   "statut": "fait + mème (sidération)",
-   "note": "Dissolution annoncée le soir des européennes (09/06/2024)."
-  },
-  {
    "url": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
    "date": "2025",
    "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Valse des ministres, affaires courantes, année record."
+   "statut": "fait public",
+   "note": "Valse des ministres, mois d'affaires courantes : une année politique record."
+  },
+  {
+   "url": "https://www.parismatch.be/actualites/monde/2025/10/10/france-emmanuel-macron-reconduit-sebastien-lecornu-comme-premier-ministre-LIQZQK4X7JCTTF65GLJQZJ7EME/",
+   "date": "2025-10-10",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Lecornu démissionne le 06/10/2025 ; Macron le reconduit le 10/10/2025."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : la dissolution surprise du 9 juin 2024 rejouée pendant la fête municipale. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : des mois en affaires courantes : la mairie n'autorise plus que les affaires courantes. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

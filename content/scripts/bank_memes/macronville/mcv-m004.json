@@ -4,71 +4,71 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Démission en CDI",
- "anchor": "la séquence Lecornu (démission le lundi 6 octobre 2025, reconduit le vendredi) en entretien d'embauche.",
+ "title_cover": "Démission réversible",
+ "anchor": "la démission puis le retour de Lecornu en quatre jours, généralisés à toute la ville",
  "meme_key": "LECORNU",
  "situation": "l'entretien d'embauche",
- "ressort": "piques frontales sourcées (style tacle)",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, on démissionne pour être réembauché.",
-  "Macronville : l'entretien le plus court du monde, deux fois.",
-  "Le CV le plus étrange de France.",
-  "Les macronistes vont démissionner de cette vidéo. Puis revenir."
+  "Octobre 2025 : Lecornu démissionne. Quatre jours après, Macron le renomme.",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Démission réversible : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Le chien démissionne le lundi."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ici, démissionner, c'est une promotion.",
-  "Démission le lundi, promotion le vendredi.",
-  "Le seul CDI de la ville : démissionnaire à vie."
+  "Le maire tente sa démission, juste pour voir. Acceptée en quatre secondes.",
+  "Ici, on démissionne le lundi pour mieux revenir le vendredi. Sauf lui.",
+  "Pots de départ et pots de retour en même temps. Les gâteaux s'épuisent."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Et tout le monde postule.",
+   "text": "Dans cette ville, tout le monde vote Macron. Le chien démissionne le lundi.",
    "accent_words": [
-    "postule"
+    "lundi"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Entretien d'embauche : le candidat démissionne avant la fin de l'entretien.",
+   "text": "Octobre 2025 : Lecornu démissionne. Quatre jours après, Macron le renomme.",
    "accent_words": [
-    "démissionne"
+    "renomme"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "La mairie généralise : toute démission est annulable sous quatre jours.",
+   "accent_words": [
+    "jours"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Quatre jours plus tard, il est réembauché au même poste. Comme Lecornu en 2025.",
-   "accent_words": [
-    "réembauché"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n4",
-   "text": "Sur son CV : Premier ministre, deux fois, en un mois.",
+   "text": "Le boulanger démissionne, revient, redémissionne. Le pain est cuit à moitié.",
    "accent_words": [
-    "deux fois"
+    "moitié"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les autres candidats ? Le conseil reste le même : traverse la rue.",
+   "text": "Pots de départ et pots de retour en même temps. Les gâteaux s'épuisent.",
    "accent_words": [
-    "traverse la rue"
+    "s'épuisent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ici, démissionner, c'est une promotion.",
+   "text": "Le maire tente sa démission, juste pour voir. Acceptée en quatre secondes.",
    "accent_words": [
-    "une promotion"
+    "secondes"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -76,7 +76,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui menace de démissionner tous les lundis.",
    "accent_words": [
-    "tous les lundis"
+    "lundis"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,44 +89,109 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "road",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente le long d'une tour de bureaux jusqu'au trottoir.",
-   "expected_result": "Le quartier d'affaires posé."
+   "comic_action": "Descente sur la ville ; banderole « DÉMISSION RÉVERSIBLE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "DÉMISSION RÉVERSIBLE"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "person",
     "mairie",
+    "person",
     "sign"
    ],
-   "onscreen_text": "DÉMISSION EN ENTRETIEN",
-   "comic_action": "Le même adjoint sort de la mairie avec un carton, fait demi-tour, rentre, ressort, rentre.",
-   "expected_result": "Démission et retour en boucle."
+   "onscreen_text": "DÉMISSION → RETOUR",
+   "comic_action": "Un Premier ministre sort de la mairie avec un carton ; quatre jours plus tard, le maire lui rouvre la porte.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "wave",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "REVIENS !"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
-    "person",
+    "sign",
     "mairie",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "RÉEMBAUCHÉ",
-   "comic_action": "Le même adjoint sort de la mairie avec un carton, fait demi-tour, rentre, ressort, rentre.",
-   "expected_result": "Démission et retour en boucle."
+   "onscreen_text": "DÉMISSION RÉVERSIBLE",
+   "comic_action": "Panneau officiel : « DÉMISSION ANNULABLE SOUS 4 JOURS ».",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "DÉMISSION 4 JOURS"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -135,13 +200,34 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "shop",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "CV : 2 FOIS EN 1 MOIS",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "onscreen_text": "PAIN À MOITIÉ CUIT",
+   "comic_action": "Le boulanger sort avec un carton, rentre par la fenêtre ; la baguette est blanche d'un côté.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "spin",
+     "visage": "fatigue",
+     "objet": "baguette",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "DÉMISSIONNAIRE"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,29 +236,69 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "road",
-    "sign",
+    "table",
     "person",
-    "traffic_light"
+    "text3d"
    ],
-   "onscreen_text": "AUTRES : TRAVERSEZ",
-   "comic_action": "Un habitant traverse le passage piéton ; le panneau « EMPLOI » recule d'un mètre à chaque pas.",
-   "expected_result": "Le mème « traverser la rue » devient une infrastructure."
+   "onscreen_text": "POT DE DÉPART ET DE RETOUR",
+   "comic_action": "Deux banderoles sur la même table : « BON DÉPART » et « BON RETOUR ».",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "content",
+     "objet": "verre",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ON REVIENT TOUJOURS"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "person",
     "mairie",
-    "sign"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "DÉMISSION = PROMOTION",
-   "comic_action": "Le même adjoint sort de la mairie avec un carton, fait demi-tour, rentre, ressort, rentre.",
-   "expected_result": "Démission et retour en boucle."
+   "onscreen_text": "ACCEPTÉE EN 4 SECONDES",
+   "comic_action": "Le maire pose une lettre sur la table ; tout le monde applaudit immédiatement.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ACCEPTÉ"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -187,8 +313,28 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : la démission puis le retour de Lecornu en quatre jours, généralisés à toute la ville.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "DÉMISSION RÉVERSIBLE"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -200,31 +346,13 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 78,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Entretien d'embauche : le candidat démissionne avant la fin de l'entretien.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.parismatch.be/actualites/monde/2025/10/10/france-emmanuel-macron-reconduit-sebastien-lecornu-comme-premier-ministre-LIQZQK4X7JCTTF65GLJQZJ7EME/",
-   "note": "Lecornu démissionne le 06/10/2025, reconduit le 10/10/2025. Détourné dans la ville fictive."
-  },
-  {
-   "text": "Quatre jours plus tard, il est réembauché au même poste. Comme Lecornu en 2025.",
+   "text": "Octobre 2025 : Lecornu démissionne. Quatre jours après, Macron le renomme.",
    "claim_type": "fait_public",
    "source": "https://www.parismatch.be/actualites/monde/2025/10/10/france-emmanuel-macron-reconduit-sebastien-lecornu-comme-premier-ministre-LIQZQK4X7JCTTF65GLJQZJ7EME/",
-   "note": "Lecornu démissionne le 06/10/2025, reconduit le 10/10/2025."
-  },
-  {
-   "text": "Sur son CV : Premier ministre, deux fois, en un mois.",
-   "claim_type": "fait_public",
-   "source": "https://www.parismatch.be/actualites/monde/2025/10/10/france-emmanuel-macron-reconduit-sebastien-lecornu-comme-premier-ministre-LIQZQK4X7JCTTF65GLJQZJ7EME/",
-   "note": "Lecornu démissionne le 06/10/2025, reconduit le 10/10/2025."
-  },
-  {
-   "text": "Les autres candidats ? Le conseil reste le même : traverse la rue.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
-   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements. Détourné dans la ville fictive."
+   "note": "Lecornu démissionne le 06/10/2025 ; Macron le reconduit le 10/10/2025."
   }
  ],
  "sources": [
@@ -232,24 +360,10 @@
    "url": "https://www.parismatch.be/actualites/monde/2025/10/10/france-emmanuel-macron-reconduit-sebastien-lecornu-comme-premier-ministre-LIQZQK4X7JCTTF65GLJQZJ7EME/",
    "date": "2025-10-10",
    "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Lecornu démissionne le 06/10/2025, reconduit le 10/10/2025."
-  },
-  {
-   "url": "https://www.sudradio.fr/sud-radio/27-jours-24h-chrono-sebastien-lecornu-un-premier-ministre-de-tous-les-records",
-   "date": "2025-10",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Premier ministre le plus éphémère de la Ve République (27 jours)."
-  },
-  {
-   "url": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
-   "date": "2018-09-17",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte + mème",
-   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
+   "statut": "fait public",
+   "note": "Lecornu démissionne le 06/10/2025 ; Macron le reconduit le 10/10/2025."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : la séquence Lecornu (démission le lundi 6 octobre 2025, reconduit le vendredi) en entretien d'embauche. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : la démission puis le retour de Lecornu en quatre jours, généralisés à toute la ville. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

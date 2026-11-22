@@ -4,31 +4,31 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Parc au garde-à-vous",
- "anchor": "le service national volontaire de dix mois (annonce de Varces, novembre 2025) étendu au parc.",
+ "title_cover": "Volontaire d'office",
+ "anchor": "le service national volontaire, rendu obligatoire par une mairie zélée",
  "meme_key": "SERVICE",
  "situation": "le parc",
- "ressort": "piques frontales sourcées (style tacle)",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, même le toboggan exige un salut militaire.",
-  "Macronville : le parc volontaire obligatoire.",
-  "Le seul square de France au garde-à-vous.",
-  "Les macronistes vont se mettre au garde-à-vous."
+  "Fin 2025, il annonce un service national volontaire de dix mois.",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Volontaire d'office : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Le chien fait son service."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Les jeunes font dix mois de service. Lui, dix ans, sans période d'essai.",
-  "Dix mois pour eux, dix ans pour lui. Sans évaluation.",
-  "Volontaire, obligatoire, en même temps."
+  "Le maire passe les troupes en revue. Il manque un seul volontaire : lui.",
+  "Service volontaire pour tous. Sauf pour celui qui l'a inventé.",
+  "Plus personne pour travailler : toute la ville est à la caserne."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Au garde-à-vous.",
+   "text": "Dans cette ville, tout le monde vote Macron. Le chien fait son service.",
    "accent_words": [
-    "garde-à-vous"
+    "service"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -36,41 +36,41 @@
    "id": "n2",
    "text": "Fin 2025, il annonce un service national volontaire de dix mois.",
    "accent_words": [
-    "dix mois"
+    "mois"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Au parc, le volontariat est obligatoire : salut au drapeau avant le toboggan.",
+   "text": "La mairie, zélée, rend le volontariat obligatoire. Volontaires désignés d'office.",
    "accent_words": [
-    "obligatoire"
+    "office"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Les bancs sont alignés en rang par deux. Les pigeons défilent au pas.",
+   "text": "Les retraités défilent, les chats montent la garde, le boulanger cuit en treillis.",
    "accent_words": [
-    "au pas"
+    "treillis"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Règle du parc : volontaire, mais en même temps obligatoire.",
+   "text": "Plus personne pour travailler : toute la ville est à la caserne.",
    "accent_words": [
-    "en même temps"
+    "caserne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Les jeunes font dix mois de service. Lui, dix ans, sans période d'essai.",
+   "text": "Le maire passe les troupes en revue. Il manque un seul volontaire : lui.",
    "accent_words": [
-    "sans période d'essai"
+    "lui"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
@@ -90,30 +90,73 @@
    "camera": "descend",
    "set": [
     "ground",
-    "tree",
-    "bench",
-    "lamp",
-    "person"
+    "mairie",
+    "banner",
+    "person",
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur le square : arbres, banc, réverbère.",
-   "expected_result": "Le square posé."
+   "comic_action": "Descente sur la ville ; banderole « VOLONTAIRE D'OFFICE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "VOLONTAIRE D'OFFICE"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "tree",
-    "bench",
+    "sign",
     "person",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "SERVICE NATIONAL : 10 MOIS",
-   "comic_action": "Les habitants du parc au garde-à-vous ; panneau « VOLONTAIRE (OBLIGATOIRE) ».",
-   "expected_result": "Le service national étendu au quotidien."
+   "onscreen_text": "SERVICE VOLONTAIRE : 10 MOIS",
+   "comic_action": "Une affiche de recrutement sur la mairie ; le maire, posture martiale, pointe les passants.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ENGAGE-TOI"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -122,61 +165,139 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "tree",
-    "bench",
-    "person",
-    "sign"
+    "sign",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "VOLONTAIRE (OBLIGATOIRE)",
-   "comic_action": "Les habitants du parc au garde-à-vous ; panneau « VOLONTAIRE (OBLIGATOIRE) ».",
-   "expected_result": "Le service national étendu au quotidien."
+   "onscreen_text": "VOLONTAIRE D'OFFICE",
+   "comic_action": "Un agent colle un autocollant « VOLONTAIRE » sur le dos de chaque passant.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "sourire_pro",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "REFUS 500 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "bench",
-    "tree",
+    "road",
     "person",
-    "sign"
+    "shop"
    ],
-   "onscreen_text": "EN RANG PAR DEUX",
-   "comic_action": "Gros plan sur le banc du square et son panneau.",
-   "expected_result": "Le décor du gag."
+   "onscreen_text": "CHATS DE GARDE",
+   "comic_action": "Des retraités défilent au pas ; un chat en casque garde la boulangerie.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content",
+     "objet": "baguette",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "SOLDAT"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
+    "building",
     "sign",
-    "text3d",
-    "road"
+    "text3d"
    ],
-   "onscreen_text": "VOLONTAIRE / OBLIGATOIRE",
-   "comic_action": "Gros plan sur un panneau municipal.",
-   "expected_result": "La pique s'affiche en panneau."
+   "onscreen_text": "VILLE VIDE",
+   "comic_action": "Les magasins affichent « PARTI AU SERVICE » ; les rues sont désertes.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUS VOLONTAIRES"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "tribune",
-    "column",
-    "studio_light",
-    "person"
+    "road",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "10 ANS SANS PÉRIODE D'ESSAI",
-   "comic_action": "Le maire cubique sur une tribune entre deux colonnes, éclair en carton derrière lui ; la foule lève la tête.",
-   "expected_result": "La verticalité en un plan."
+   "onscreen_text": "IL EN MANQUE UN",
+   "comic_action": "Le maire passe la revue ; une place vide dans le rang porte son nom.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "SAUF LUI"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,14 +306,34 @@
    ],
    "camera": "return",
    "set": [
-    "tree",
-    "bench",
+    "road",
     "person",
-    "tshirt"
+    "tshirt",
+    "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur le square ; un habitant en t-shirt de la collection sur le banc.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : le service national volontaire, rendu obligatoire par une mairie zélée.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "VOLONTAIRE D'OFFICE"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -204,31 +345,13 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 80,
+ "word_count": 83,
  "claims": [
   {
    "text": "Fin 2025, il annonce un service national volontaire de dix mois.",
    "claim_type": "fait_public",
    "source": "https://www.elysee.fr/emmanuel-macron/2025/11/27/deplacement-au-sein-de-la-27e-brigade-dinfanterie-de-montagne-de-varces",
-   "note": "Service national militaire volontaire de dix mois annoncé à Varces."
-  },
-  {
-   "text": "Au parc, le volontariat est obligatoire : salut au drapeau avant le toboggan.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.elysee.fr/emmanuel-macron/2025/11/27/deplacement-au-sein-de-la-27e-brigade-dinfanterie-de-montagne-de-varces",
-   "note": "Service national militaire volontaire de dix mois annoncé à Varces. Détourné dans la ville fictive."
-  },
-  {
-   "text": "Règle du parc : volontaire, mais en même temps obligatoire.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
-   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois. Détourné dans la ville fictive."
-  },
-  {
-   "text": "Les jeunes font dix mois de service. Lui, dix ans, sans période d'essai.",
-   "claim_type": "fait_public",
-   "source": "https://www.elysee.fr/emmanuel-macron/2025/11/27/deplacement-au-sein-de-la-27e-brigade-dinfanterie-de-montagne-de-varces",
-   "note": "Service national militaire volontaire de dix mois annoncé à Varces."
+   "note": "Annonce d'un service national militaire volontaire de dix mois (Varces)."
   }
  ],
  "sources": [
@@ -236,24 +359,10 @@
    "url": "https://www.elysee.fr/emmanuel-macron/2025/11/27/deplacement-au-sein-de-la-27e-brigade-dinfanterie-de-montagne-de-varces",
    "date": "2025-11-27",
    "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Service national militaire volontaire de dix mois annoncé à Varces."
-  },
-  {
-   "url": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
-   "date": "2017-05-08",
-   "consulted": "2026-11-22",
-   "statut": "fait (comptage presse) + mème",
-   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois."
-  },
-  {
-   "url": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
-   "date": "2026-11-17",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte (post X)",
-   "note": "« Il y a eu parfois des erreurs », « fait de [s]on mieux », dix ans après sa candidature."
+   "statut": "fait public",
+   "note": "Annonce d'un service national militaire volontaire de dix mois (Varces)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : le service national volontaire de dix mois (annonce de Varces, novembre 2025) étendu au parc. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : le service national volontaire, rendu obligatoire par une mairie zélée. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

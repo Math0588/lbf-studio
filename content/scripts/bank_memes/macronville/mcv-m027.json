@@ -4,71 +4,71 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Château contre ticket",
- "anchor": "Choose France à Versailles (40,8 milliards annoncés en 2025) pendant que la file d'attente du maître des horloges ne bouge pas.",
+ "title_cover": "Tapis rouge partout",
+ "anchor": "Choose France : la mairie déroule le tapis rouge aux investisseurs dans toutes les rues",
  "meme_key": "JUPITER",
  "situation": "la file d'attente",
- "ressort": "piques frontales sourcées (style tacle)",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, les investisseurs ont Versailles. Toi, un ticket.",
-  "Macronville : la file d'attente qui ne bouge que pour les milliards.",
-  "Le ticket 412 attend toujours son tour.",
-  "Les macronistes vont passer devant."
+  "Choose France 2025 à Versailles : 40,8 milliards d'investissements annoncés.",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Tapis rouge partout : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Le paillasson est un tapis rouge."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Pour les milliardaires, le château. Pour toi, le ticket 412.",
-  "Tapis rouge pour eux, ticket froissé pour toi.",
-  "Le château ouvre en une heure. Le guichet, jamais."
+  "Un investisseur arrive enfin. Il regarde la ville, achète le tapis, et repart.",
+  "Pour les investisseurs, le tapis rouge. Pour les habitants, l'égout.",
+  "Plus de trottoir. Les habitants vont au travail par les égouts."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Et tout le monde fait la queue.",
+   "text": "Dans cette ville, tout le monde vote Macron. Le paillasson est un tapis rouge.",
    "accent_words": [
-    "la queue"
+    "rouge"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "File d'attente à la préfecture : trois heures, ticket 412.",
+   "text": "Choose France 2025 à Versailles : 40,8 milliards d'investissements annoncés.",
    "accent_words": [
-    "ticket 412"
+    "annoncés"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "La mairie veut sa part : tapis rouge dans toutes les rues.",
+   "accent_words": [
+    "rues"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Pendant ce temps, à Versailles, les investisseurs passent devant : Choose France.",
-   "accent_words": [
-    "Versailles"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n4",
-   "text": "Record 2025 : 40,8 milliards d'euros d'investissements annoncés.",
+   "text": "Interdit aux habitants de marcher dessus : réservé aux investisseurs.",
    "accent_words": [
-    "40,8 milliards"
+    "investisseurs"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le maître des horloges a réglé ta file : toi, plus tard.",
+   "text": "Plus de trottoir. Les habitants vont au travail par les égouts.",
    "accent_words": [
-    "plus tard"
+    "égouts"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Pour les milliardaires, le château. Pour toi, le ticket 412.",
+   "text": "Un investisseur arrive enfin. Il regarde la ville, achète le tapis, et repart.",
    "accent_words": [
-    "le ticket 412"
+    "repart"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -93,43 +93,105 @@
     "mairie",
     "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
-   "expected_result": "La ville et son camp posés en une seconde."
+   "comic_action": "Descente sur la ville ; banderole « TAPIS ROUGE PARTOUT » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TAPIS ROUGE PARTOUT"
+    },
+    {
+     "type": "chien",
+     "tee": "MACRON"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "table",
-    "screen",
-    "form_stack",
-    "person"
+    "arch",
+    "column",
+    "banner"
    ],
-   "onscreen_text": "TICKET N°412",
-   "comic_action": "Guichet municipal : écran, pile de formulaires, file d'attente.",
-   "expected_result": "Le guichet porte la pique."
+   "onscreen_text": "CHOOSE FRANCE : 40,8 MDS",
+   "comic_action": "Tapis rouge jusqu'à un château ; le maire accueille des investisseurs avec une révérence.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "CHOOSE FRANCE"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "arch",
-    "car",
-    "person",
-    "banner"
+    "road",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "CHOOSE FRANCE",
-   "comic_action": "Sous une grande arche dorée, une file de limousines passe sans s'arrêter ; tapis rouge.",
-   "expected_result": "Le château pour les uns."
+   "onscreen_text": "TAPIS ROUGE PARTOUT",
+   "comic_action": "Des agents déroulent un tapis rouge dans chaque rue.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TAPIS 1 MILLION € LE MÈTRE"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -138,28 +200,68 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
+    "road",
+    "sign",
     "person"
    ],
-   "onscreen_text": "40,8 MILLIARDS",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "onscreen_text": "INTERDIT AUX HABITANTS",
+   "comic_action": "Un vigile empêche un habitant de poser le pied sur le tapis.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "VIP"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "column",
-    "text3d",
-    "screen"
+    "road",
+    "ground",
+    "person"
    ],
-   "onscreen_text": "TOI : PLUS TARD",
-   "comic_action": "Horloge géante sur la colonne ; le maire cubique avance les aiguilles à la main.",
-   "expected_result": "Le maître des horloges, littéral."
+   "onscreen_text": "PAR LES ÉGOUTS",
+   "comic_action": "Des habitants sortent d'une plaque d'égout en costume, mallette à la main.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BIENVENUE AUX INVESTISSEURS"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -168,14 +270,33 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "screen",
-    "form_stack",
+    "car",
+    "banner",
     "person"
    ],
-   "onscreen_text": "CHÂTEAU / TICKET 412",
-   "comic_action": "Guichet municipal : écran, pile de formulaires, file d'attente.",
-   "expected_result": "Le guichet porte la pique."
+   "onscreen_text": "IL ACHÈTE LE TAPIS",
+   "comic_action": "Un investisseur roule le tapis rouge, le charge dans sa voiture et part ; le maire salue.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "MERCI D'AVOIR CHOISI"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -184,14 +305,34 @@
    ],
    "camera": "return",
    "set": [
-    "mairie",
+    "road",
     "person",
     "tshirt",
-    "banner"
+    "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : Choose France : la mairie déroule le tapis rouge aux investisseurs dans toutes les rues.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TAPIS ROUGE PARTOUT"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -203,25 +344,13 @@
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 78,
+ "word_count": 81,
  "claims": [
   {
-   "text": "Pendant ce temps, à Versailles, les investisseurs passent devant : Choose France.",
+   "text": "Choose France 2025 à Versailles : 40,8 milliards d'investissements annoncés.",
    "claim_type": "fait_public",
    "source": "https://www.entreprises.gouv.fr/la-dge/actualites/sommet-choose-france-2025-408-milliards-deuros-dinvestissement-et-53-projets",
-   "note": "Choose France 2025 à Versailles : 40,8 milliards d'euros d'investissements annoncés."
-  },
-  {
-   "text": "Record 2025 : 40,8 milliards d'euros d'investissements annoncés.",
-   "claim_type": "fait_public",
-   "source": "https://www.entreprises.gouv.fr/la-dge/actualites/sommet-choose-france-2025-408-milliards-deuros-dinvestissement-et-53-projets",
-   "note": "Choose France 2025 à Versailles : 40,8 milliards d'euros d'investissements annoncés."
-  },
-  {
-   "text": "Le maître des horloges a réglé ta file : toi, plus tard.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.lequotidiendupharmacien.fr/nom-de-nom",
-   "note": "« Jupiter », « maître des horloges ». Détourné dans la ville fictive."
+   "note": "Sommet Choose France 2025 à Versailles : 40,8 milliards d'euros d'investissements annoncés."
   }
  ],
  "sources": [
@@ -230,16 +359,9 @@
    "date": "2025-05-19",
    "consulted": "2026-11-22",
    "statut": "fait public",
-   "note": "Choose France 2025 à Versailles : 40,8 milliards d'euros d'investissements annoncés."
-  },
-  {
-   "url": "https://www.lequotidiendupharmacien.fr/nom-de-nom",
-   "date": "2020-10-23",
-   "consulted": "2026-11-22",
-   "statut": "mème (surnoms)",
-   "note": "« Jupiter », « maître des horloges »."
+   "note": "Sommet Choose France 2025 à Versailles : 40,8 milliards d'euros d'investissements annoncés."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : Choose France à Versailles (40,8 milliards annoncés en 2025) pendant que la file d'attente du maître des horloges ne bouge pas. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : Choose France : la mairie déroule le tapis rouge aux investisseurs dans toutes les rues. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }
