@@ -89,14 +89,13 @@ def produce_one(st: dict, script: Path) -> dict:
     from . import planner_v2, produce
     s = json.loads(script.read_text(encoding="utf-8"))
     sid = s["id"]
-    st["attempts"][sid] = st["attempts"].get(sid, 0) + 1
-    save_state(st)
     t0 = time.time()
     ep_path = planner_v2.plan_file(script)
     rep = produce.produce(ep_path, "final")
     if rep.get("status") != "qa_passed":
         print(f"[studio] {sid} : {rep.get('status')} — QA : "
               + ", ".join(c["check"] for c in rep.get("qa", {}).get("checks", []) if not c["ok"]), flush=True)
+        st["attempts"][sid] = st["attempts"].get(sid, 0) + 1   # seul un échec réel compte (pas une annulation)
         if rep.get("status") == "rejected":
             st["skipped"].append(sid)
         return {"id": sid, "ok": False, "status": rep.get("status")}
@@ -158,6 +157,8 @@ def main():
             r = produce_one(st, sc)
         except Exception as e:
             print(f"[studio] échec {sc.name} : {type(e).__name__} {str(e)[:500]}", flush=True)
+            sid = json.loads(sc.read_text(encoding="utf-8"))["id"]
+            st["attempts"][sid] = st["attempts"].get(sid, 0) + 1
             r = {"ok": False}
         save_state(st)
         made += 1 if r.get("ok") else 0
