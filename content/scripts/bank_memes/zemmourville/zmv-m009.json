@@ -5,84 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Menu 1965",
- "anchor": "Annonce de 2021 jugée « momifiée » et digne d'une élection des années 1960 par ses adversaires : le candidat d'un passé figé.",
+ "anchor": "l'annonce de 2021 jugée digne de 1965 : promesse grandiose, réalité de cantine.",
  "meme_id": "ZB",
  "situation": "le restaurant",
- "ressort": "promesse contre réalité : l'annonce géante, puis ce qui se passe vraiment",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "En 2021, ses adversaires jugent son annonce digne d'une élection des années soixante.",
-  "Ici, le restaurant vit en 1965. Sauf l'addition.",
-  "Commande par télégraphe, addition en euros.",
-  "Le seul resto qui sert de la nostalgie à volonté.",
-  "Deux heures d'attente : c'est d'époque."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : le menu n'a pas changé depuis 1965.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, la carte est d'époque, l'addition non.",
+  "Zemmourville : la gastronomie du passé, réchauffée."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "L'addition, elle, est bien en euros de 2026.",
-  "Le dessert arrive par la poste. En 1966.",
-  "Le chef refuse la carte bancaire : trop moderne. Il accepte le chèque."
+  "Promesse de grand chef, résultat de cantine : 7 %.",
+  "Menu 1965, addition 2026, saveur 7 %.",
+  "Grand chef annoncé, œuf mayo servi."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "En 2021, ses adversaires jugent son annonce digne d'une élection des années soixante.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Menu d'époque.",
    "accent_words": [
-    "adversaires",
-    "élection"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n2",
-   "text": "À Zemmourville, le restaurant l'a pris comme un compliment.",
-   "accent_words": [
-    "Zemmourville",
-    "restaurant"
+    "Menu d'époque"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Promesse du menu : cuisine d'avant, saveurs d'antan, prix d'époque.",
+   "id": "n2",
+   "text": "En 2021, un rival compare son annonce à une candidature de 1965.",
    "accent_words": [
-    "Promesse",
-    "d'époque"
+    "1965"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "Ici, le restaurant a pris ça comme un compliment. Menu 1965, prix 2026.",
+   "accent_words": [
+    "prix 2026"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Réalité : un poste de radio, une nappe à carreaux, deux heures d'attente.",
+   "text": "La carte annonce une cuisine grandiose. On vous sert un œuf mayo.",
    "accent_words": [
-    "d'attente",
-    "carreaux"
+    "un œuf mayo"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le serveur prend la commande par télégraphe.",
+   "text": "Le serveur promet la tradition. Le micro-ondes date de l'époque.",
    "accent_words": [
-    "télégraphe",
-    "commande"
+    "de l'époque"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "L'addition, elle, est bien en euros de 2026.",
+   "text": "Promesse de grand chef, résultat de cantine : 7 %.",
    "accent_words": [
-    "L'addition"
+    "7 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Tu commanderais quoi dans un resto de 1965 ? Commente.",
+   "text": "Envoie ça au pote qui commande le plat du jour de 1965.",
    "accent_words": [
-    "commanderais",
-    "Commente"
+    "1965"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -91,95 +85,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "shop",
-    "table",
-    "sign"
+    "scroll",
+    "person"
    ],
-   "onscreen_text": "MENU 1965",
-   "comic_action": "Restaurant vu d'en haut, enseigne rétro.",
-   "expected_result": "Promesse posée."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur un restaurant ; ardoise « MENU 1965 ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "1965",
+   "comic_action": "Une télé à tube dans un coin du restaurant, grain d'époque.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
     "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "table",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "MENU 1965 · PRIX 2026",
+   "comic_action": "Orbite : la carte en lettres dorées, addition en euros récents.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
    ],
    "camera": "closeup",
    "set": [
     "table",
     "person",
-    "scroll"
+    "text3d"
    ],
-   "onscreen_text": "PRIX D'ÉPOQUE*",
-   "comic_action": "Menu-parchemin avec astérisque géant.",
-   "expected_result": "Promesse."
+   "onscreen_text": "GRANDIOSE : ŒUF MAYO",
+   "comic_action": "Gros plan : cloche argentée soulevée, un œuf mayo seul.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s3",
+   "id": "s5",
    "narration_ids": [
-    "n4",
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
     "table",
     "person",
-    "lamp"
+    "sign"
    ],
-   "onscreen_text": "ATTENTE : 2 H",
-   "comic_action": "Orbite : clients endormis, radio sur la table.",
-   "expected_result": "Réalité.",
-   "bubble": "Stop. Un steak. Stop."
+   "onscreen_text": "MICRO-ONDES 1965",
+   "comic_action": "Travelling en cuisine : un micro-ondes antique qui fume.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s4",
+   "id": "s6",
    "narration_ids": [
-    "n6",
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "shop",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "NOTE : 7 %",
+   "comic_action": "Plan large : un guide gastronomique décerne « 7 % » à la façade.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "table",
     "person",
     "tshirt",
-    "text3d"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "ADDITION : 2026",
-   "comic_action": "Note moderne qui tombe ; t-shirt au portemanteau.",
-   "expected_result": "Chute."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique trempe son pain dans l'œuf mayo.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Tu commanderais quoi dans un resto de 1965 ? Commente."
+  "type": "share",
+  "text": "Envoie ça au pote qui commande le plat du jour de 1965."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 70,
+ "word_count": 79,
  "claims": [
   {
-   "segment": "n1",
+   "text": "En 2021, un rival compare son annonce à une candidature de 1965.",
    "claim_type": "fait_public",
-   "source_url": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/"
+   "source": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
+   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
+  },
+  {
+   "text": "Promesse de grand chef, résultat de cantine : 7 %.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "sources": [
   {
    "url": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
    "date": "2021-11-30",
-   "consulted": "2026-11-21",
-   "statut": "opinion (critiques rapportées)",
-   "usage": "Ville bloquée dans les années 1960 ; aucune critique citée en narration."
+   "consulted": "2026-11-22",
+   "statut": "opinion rapportée",
+   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
+  },
+  {
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Phrase 1 résume des critiques rapportées (Times of Israel, 30/11/2021) sans citation."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : l'annonce de 2021 jugée digne de 1965 : promesse grandiose, réalité de cantine. Cadre : le restaurant. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

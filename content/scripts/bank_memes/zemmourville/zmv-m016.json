@@ -5,85 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Poubelles placardées",
- "anchor": "Génération Z (« Génération Zemmour ») : jeunes militants et collages d'affiches nocturnes.",
+ "anchor": "Génération Z et ses collages d'affiches.",
  "meme_id": "ZR",
  "situation": "la collecte des déchets",
- "ressort": "inversion : le service fait exactement le contraire de son rôle, avec fierté",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour… et colle des affiches la nuit.",
-  "Ici, les poubelles sont des panneaux électoraux.",
-  "Trois couches d'affiches, zéro collecte.",
-  "La rue la plus sale et la mieux placardée de France.",
-  "Un monument : la poubelle placardée."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : les poubelles sont sous les affiches.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, on colle au lieu de ramasser.",
+  "Zemmourville : la propreté par l'affichage."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le maire inaugure un nouveau monument : la poubelle placardée.",
-  "Les éboueurs collent une affiche : grève.",
-  "Les affiches débordent. On les colle sur les sacs."
+  "La ville est sale, mais très bien placardée. Le score reste collé à 4 %.",
+  "Affiches partout, ramassage nulle part.",
+  "Le score reste collé. Comme les affiches."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour… et colle des affiches la nuit.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Affiches comprises.",
    "accent_words": [
-    "affiches",
-    "Zemmour"
+    "Affiches comprises"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Comme la Génération Z de ses jeunes militants, version municipale.",
+   "text": "Ses militants de Génération Z collent des affiches la nuit.",
    "accent_words": [
-    "Génération",
-    "municipale"
+    "la nuit"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Chaque poubelle est recouverte de trois couches d'affiches.",
+   "text": "Ici, les éboueurs ont été remplacés par des colleurs. Ils ne ramassent rien.",
    "accent_words": [
-    "recouverte",
-    "d'affiches"
+    "ne ramassent rien"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Les éboueurs n'osent plus rien vider : c'est du matériel de campagne.",
+   "text": "Chaque poubelle est recouverte d'une affiche. On ne la trouve plus.",
    "accent_words": [
-    "éboueurs",
-    "matériel"
+    "On ne la trouve plus"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La rue déborde de sacs, mais les affiches sont impeccables.",
+   "text": "La rue déborde, mais le visage du candidat est partout.",
    "accent_words": [
-    "impeccables",
-    "affiches"
+    "partout"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le maire inaugure un nouveau monument : la poubelle placardée.",
+   "text": "La ville est sale, mais très bien placardée. Le score reste collé à 4 %.",
    "accent_words": [
-    "placardée",
-    "inaugure"
+    "collé à 4 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Toi, tu colles quoi la nuit ? Réponds en commentaire.",
+   "text": "Envoie ça au pote qui cache le bazar sous une affiche.",
    "accent_words": [
-    "commentaire",
-    "Réponds"
+    "le bazar"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,89 +85,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "ground",
+    "road",
+    "bin",
+    "person"
+   ],
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur une rue : chaque poubelle est recouverte d'affiches.",
+   "expected_result": "La ville et son camp posés en une image."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
     "n2"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "person",
+    "lamp",
+    "banner"
+   ],
+   "onscreen_text": "COLLAGE DE NUIT",
+   "comic_action": "Travelling nocturne : seaux de colle, brosses, sourires.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "bin",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ÉBOUEURS → COLLEURS",
+   "comic_action": "Un colleur passe devant un sac éventré et colle une affiche dessus.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "bin",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "POUBELLE INTROUVABLE",
+   "comic_action": "Orbite : un habitant tourne autour d'un cylindre d'affiches, sac à la main.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "banner",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "PARTOUT",
+   "comic_action": "Gros plan : un mur d'affiches identiques, déchets au pied.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
    ],
    "camera": "descend",
    "set": [
     "road",
     "bin",
-    "person",
-    "lamp"
-   ],
-   "onscreen_text": "COLLAGE : 3 H DU MATIN",
-   "comic_action": "Rue de nuit vue d'en haut, militants pot de colle en main.",
-   "expected_result": "Mème Génération Z."
-  },
-  {
-   "id": "s2",
-   "narration_ids": [
-    "n3",
-    "n4"
-   ],
-   "camera": "closeup",
-   "set": [
-    "bin",
-    "sign",
     "text3d"
    ],
-   "onscreen_text": "3 COUCHES",
-   "comic_action": "Poubelle couverte d'affiches superposées.",
-   "expected_result": "Inversion : la poubelle devient support.",
-   "bubble": "On ne touche pas, c'est de la campagne."
+   "onscreen_text": "COLLÉ À 4 %",
+   "comic_action": "Plan large : une affiche géante « 4 % » sur la benne.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
   },
   {
-   "id": "s3",
+   "id": "s7",
    "narration_ids": [
-    "n5"
-   ],
-   "camera": "street_dolly",
-   "set": [
-    "bin",
-    "road",
-    "person"
-   ],
-   "onscreen_text": "SACS : PARTOUT",
-   "comic_action": "Travelling sur les sacs entassés.",
-   "expected_result": "Conséquence."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n6",
     "n7"
    ],
    "camera": "return",
    "set": [
-    "bin",
-    "banner",
-    "tshirt"
+    "person",
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "MONUMENT",
-   "comic_action": "Ruban d'inauguration devant la poubelle ; t-shirt drapé.",
-   "expected_result": "Chute."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique décolle une affiche, trouve une poubelle.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Toi, tu colles quoi la nuit ? Réponds en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui cache le bazar sous une affiche."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 74,
- "claims": [],
+ "word_count": 80,
+ "claims": [
+  {
+   "text": "Ses militants de Génération Z collent des affiches la nuit.",
+   "claim_type": "fait_public",
+   "source": "https://www.lyoncapitale.fr/actualite/a-lyon-le-groupe-generation-z-espere-une-candidature-de-zemmour-en-2022-leur-seule-option",
+   "note": "Génération Z : militants, collages d'affiches."
+  },
+  {
+   "text": "La ville est sale, mais très bien placardée. Le score reste collé à 4 %.",
+   "claim_type": "fait_public",
+   "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
+   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
+  }
+ ],
  "sources": [
   {
    "url": "https://www.lyoncapitale.fr/actualite/a-lyon-le-groupe-generation-z-espere-une-candidature-de-zemmour-en-2022-leur-seule-option",
    "date": "2021",
-   "consulted": "2026-11-21",
-   "statut": "fait public",
-   "usage": "Collages nocturnes poussés à l'absurde sur du mobilier urbain fictif."
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Génération Z : militants, collages d'affiches."
+  },
+  {
+   "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
+   "date": "2026-09",
+   "consulted": "2026-11-22",
+   "statut": "fait (AFP)",
+   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Inversion sur les collages nocturnes de Génération Z (Lyon Capitale). Ouverture « Dans cette ville, tout le monde vote Zemmour… »."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Génération Z et ses collages d'affiches. Cadre : la collecte des déchets. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

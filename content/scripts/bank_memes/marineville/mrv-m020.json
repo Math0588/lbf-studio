@@ -3,81 +3,79 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m020",
  "format": "A",
- "anchor": "Le grand écart pouvoir d'achat / patrons : dîner avec une vingtaine de grands patrons (avril 2026) et hausse des salaires promise",
- "situation": "le restaurant",
- "ressort": "comparaison",
- "title_cover": "Deux salles",
+ "anchor": "avril 2026 : dîner avec de grands patrons ; aux salariés, dix pour cent de hausse promis (franceinfo).",
+ "situation": "Homard en photo",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "title_cover": "Homard en photo",
  "hook_variants": [
-  "En avril, Marine Le Pen a dîné avec une vingtaine de grands patrons.",
-  "Un restaurant, deux salles, un seul homard.",
-  "Ici, le homard des salariés est en photo.",
-  "Salle des patrons, salle des promesses.",
-  "Dans ce resto, l'addition change de table."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, le restaurant a deux salles : homard d'un côté, photo de homard de l'autre.",
+  "Marineville : le peuple au menu, les patrons à table.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : homard en photo."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le serveur promet aux salariés que leur homard est en préparation.",
-  "Le homard des salariés est toujours en préparation. Depuis avril.",
-  "Deux salles, un homard, et une addition qui voyage."
+  "Le peuple au menu, les patrons à table : voilà le dîner populaire.",
+  "L'addition des patrons arrive, comme par hasard, à la table d'à côté.",
+  "Le restaurant a deux salles : homard d'un côté, photo de homard de l'autre."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "En avril, Marine Le Pen a dîné avec une vingtaine de grands patrons.",
+   "text": "Dans cette ville, tout le monde vote Marine. À deux tables.",
    "accent_words": [
-    "vingtaine de grands patrons"
+    "deux tables"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "En avril, elle dîne avec de grands patrons.",
+   "accent_words": [
+    "grands patrons"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n2",
-   "text": "Et elle promet dix pour cent de hausse aux salariés.",
+   "id": "n3",
+   "text": "Aux salariés, elle promet dix pour cent de hausse.",
    "accent_words": [
     "dix pour cent"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n3",
-   "text": "Le restaurant de Marineville a donc deux salles.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n4",
-   "text": "Salle des patrons : homard, impôt réduit, serveur en cravate.",
+   "text": "Le restaurant a deux salles : homard d'un côté, photo de homard de l'autre.",
    "accent_words": [
-    "impôt réduit"
+    "photo de homard"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Salle des salariés : le même homard, en photo, plastifié sur la table.",
-   "accent_words": [],
+   "text": "L'addition des patrons arrive, comme par hasard, à la table d'à côté.",
+   "accent_words": [
+    "la table d'à côté"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "L'addition des patrons arrive à la table d'à côté.",
+   "text": "Le peuple au menu, les patrons à table : voilà le dîner populaire.",
    "accent_words": [
-    "à la table d'à côté"
+    "dîner populaire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le serveur promet aux salariés que leur homard est en préparation.",
+   "text": "Envoie ça au pote qui attend encore ses dix pour cent.",
    "accent_words": [
-    "en préparation"
+    "dix pour cent"
    ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Tu dînes dans quelle salle, toi, en commentaire ?",
-   "accent_words": [],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,115 +83,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "window_pass",
+   "camera": "descend",
    "set": [
-    "shop",
-    "table",
+    "ground",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "DÎNER : 20 PATRONS",
-   "comic_action": "À travers la vitrine, une longue table de patrons en costume.",
-   "expected_result": "Ancrage réel."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; un restaurant à deux entrées en face.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
    "camera": "orbit",
    "set": [
-    "table",
+    "arch",
+    "column",
     "person",
-    "sign"
+    "studio_light"
    ],
-   "onscreen_text": "DEUX SALLES",
-   "comic_action": "Orbite : le restaurant coupé en deux par un mur, panneaux « PATRONS » et « SALARIÉS ».",
-   "expected_result": "La comparaison est visuelle."
+   "onscreen_text": "DÎNER PATRONS",
+   "comic_action": "Sous une arche, une table chic, chandeliers.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "person",
-    "text3d"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "HOMARD · IMPÔT RÉDUIT",
-   "comic_action": "Côté patrons, homard fumant et étiquette « impôt réduit ».",
-   "expected_result": "Premier volet."
+   "onscreen_text": "+10 % (PROMIS)",
+   "comic_action": "L'écran affiche une flèche « +10 % » encore emballée.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
     "table",
-    "scroll",
-    "person"
+    "person",
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "HOMARD (PHOTO)",
-   "comic_action": "Côté salariés, une photo plastifiée de homard ; le serveur glisse l'addition des patrons sur leur table.",
-   "expected_result": "Second volet."
+   "onscreen_text": "HOMARD (EN PHOTO)",
+   "comic_action": "Une table avec une photo plastifiée de homard dans l'assiette.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "form_stack",
+    "text3d",
+    "mairie"
+   ],
+   "onscreen_text": "ADDITION : CÔTÉ SALARIÉS",
+   "comic_action": "Un serveur dépose une note interminable devant des salariés.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "column",
+    "mairie",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "DÎNER POPULAIRE",
+   "comic_action": "Entre deux colonnes, un menu « PEUPLE » posé sur l'assiette d'un costume. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "table",
+    "shop",
     "tshirt",
-    "person"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "EN PRÉPARATION",
-   "comic_action": "Un salarié en t-shirt « J'AI UN AVIS. PAS DE MANDAT. » attend, fourchette levée.",
-   "expected_result": "Chute + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt fixe sa fiche de paie.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Tu dînes dans quelle salle, toi, en commentaire ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui attend encore ses dix pour cent."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 83,
+ "word_count": 78,
  "claims": [
   {
-   "segment": "n1",
+   "segment": "n2",
+   "text": "En avril, elle dîne avec de grands patrons.",
    "claim_type": "fait_public",
-   "text": "En avril, Marine Le Pen a dîné avec une vingtaine de grands patrons.",
-   "source_url": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html"
+   "source": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
+   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne « parfois difficile à concilier »."
   },
   {
-   "segment": "n2",
+   "segment": "n3",
+   "text": "Aux salariés, elle promet dix pour cent de hausse.",
    "claim_type": "fait_public",
-   "text": "Et elle promet dix pour cent de hausse aux salariés.",
-   "source_url": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html"
+   "source": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
+   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne « parfois difficile à concilier »."
   }
  ],
  "sources": [
   {
    "url": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
    "date": "2026-07-08",
-   "statut": "fait public + analyse (« ligne parfois difficile à concilier »)",
-   "usage": "Faits repris (dîner, +10 % de salaires, baisse de l'impôt sur les sociétés, taxe sur les superprofits) ; aucun patron nommé.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "fait public + analyse",
+   "note": "Dîner avec des grands patrons (avril 2026), +10 % de salaires promis, baisse de l'impôt sur les sociétés et taxe sur les superprofits, retraite 60 puis 62 « voire 60 » ; ligne « parfois difficile à concilier »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Comparaison : les deux faits réels rapportés par franceinfo (dîner avec des patrons, +10 % promis) deviennent deux salles d'un même restaurant. Aucun patron nommé. Mème d'ancrage : Le grand écart pouvoir d'achat / patrons : dîner avec une vingtaine de grands patrons (avril 2026) et hausse des salaires promise. Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = avril 2026 : dîner avec de grands patrons ; aux salariés, dix pour cent de hausse promis (franceinfo). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

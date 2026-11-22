@@ -3,81 +3,79 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m029",
  "format": "A",
- "anchor": "La baisse de TVA sur les carburants (de 20 % à 5,5 %), mesure phare pouvoir d'achat",
- "situation": "le métro",
- "ressort": "comptage absurde",
+ "anchor": "mesure phare de 2022 : TVA sur les carburants de 20 % à 5,5 % ; le métro passe au diesel.",
+ "situation": "Métro au gazole",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
  "title_cover": "Métro au gazole",
  "hook_variants": [
-  "Sa mesure phare : la TVA sur le carburant ramenée à 5,5 %.",
-  "Le seul métro au gazole de France.",
-  "Quatre minutes de trajet, deux heures à la pompe.",
-  "Ici, on fait le plein du métro à chaque station.",
-  "Quarante litres par station, mais à 5,5 %."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, le métro roule au diesel.",
+  "Marineville : on tousse, mais moins cher.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : métro au gazole."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ligne 1 : quatre minutes de trajet, deux heures à la pompe.",
-  "Le métro va vite, mais la pompe est très lente.",
-  "La ville économise sur la TVA et dépense tout en gazole."
+  "Payer moins le plein pour rester plus longtemps dans le même bouchon.",
+  "Chaque rame consomme quarante litres par station, fumée comprise.",
+  "Les voyageurs toussent, mais à cinq virgule cinq, ils toussent moins cher."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Sa mesure phare : la TVA sur le carburant ramenée à 5,5 %.",
+   "text": "Dans cette ville, tout le monde vote Marine. Au gazole.",
    "accent_words": [
-    "5,5 %"
+    "Au gazole"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Mesure phare de 2022 : TVA sur le carburant à cinq virgule cinq.",
+   "accent_words": [
+    "cinq virgule cinq"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n2",
-   "text": "Alors le métro de Marineville roule désormais au gazole.",
-   "accent_words": [
-    "au gazole"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n3",
-   "text": "Chaque rame consomme quarante litres par station, fumée comprise.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "text": "Le gazole et la voiture, au cœur de son électorat, disent les analyses.",
+   "accent_words": [
+    "au cœur"
+   ],
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Ticket : un euro soixante-dix, plus le plein, à prix réduit.",
+   "text": "Alors le métro de la ville roule désormais au diesel.",
    "accent_words": [
-    "à prix réduit"
+    "au diesel"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le compteur géant affiche les litres économisés : moins trois mille.",
+   "text": "Les voyageurs toussent, mais à cinq virgule cinq, ils toussent moins cher.",
    "accent_words": [
-    "moins trois mille"
+    "moins cher"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Les voyageurs descendent à chaque station pour faire le plein.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n7",
-   "text": "Ligne 1 : quatre minutes de trajet, deux heures à la pompe.",
+   "text": "Payer moins le plein pour rester plus longtemps dans le même bouchon.",
    "accent_words": [
-    "deux heures"
+    "le même bouchon"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n8",
-   "text": "Ton plein le plus cher, donne le prix en commentaire.",
-   "accent_words": [],
+   "id": "n7",
+   "text": "Envoie ça au pote qui fait le plein en pensant à elle.",
+   "accent_words": [
+    "le plein"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,116 +83,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "ground",
+    "mairie",
+    "banner",
+    "person"
+   ],
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la station de métro ; un pot d'échappement dépasse de la bouche.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
     "n2"
    ],
    "camera": "closeup",
    "set": [
     "screen",
-    "text3d"
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "TVA : 5,5 %",
-   "comic_action": "Écran géant de station : « TVA CARBURANT 5,5 % ».",
-   "expected_result": "Ancrage réel."
-  },
-  {
-   "id": "s2",
-   "narration_ids": [
-    "n3"
-   ],
-   "camera": "street_dolly",
-   "set": [
-    "bus",
-    "road"
-   ],
-   "onscreen_text": "MÉTRO AU GAZOLE",
-   "comic_action": "Une rame (bus allongé) sort du tunnel en crachant une fumée grise.",
-   "expected_result": "Littéralisation chiffrée.",
-   "new_asset_request": "Rame de métro simple (ou bus articulé)."
+   "onscreen_text": "TVA CARBURANT : 5,5 %",
+   "comic_action": "L'écran affiche le taux qui chute.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4"
+    "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "sign",
-    "text3d",
-    "person"
+    "roundabout",
+    "car_orbit",
+    "road",
+    "sign"
    ],
-   "onscreen_text": "TICKET + PLEIN",
-   "comic_action": "Un composteur avec un pistolet de pompe intégré.",
-   "expected_result": "Comptage."
+   "onscreen_text": "GAZOLE : CŒUR DE CIBLE",
+   "comic_action": "Orbite autour d'un rond-point bondé de citadines.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "person"
+    "bus",
+    "road",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "ÉCONOMIE : −3 000 L",
-   "comic_action": "Le compteur rouge descend ; les voyageurs font la queue à une pompe sur le quai.",
-   "expected_result": "Escalade."
+   "onscreen_text": "MÉTRO DIESEL",
+   "comic_action": "Une rame de métro crache de la fumée grise sur le quai.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "person",
+    "road",
+    "building",
+    "sign"
+   ],
+   "onscreen_text": "TOUX : TAUX RÉDUIT",
+   "comic_action": "Quai bondé ; tout le monde tousse dans son coude.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "traffic_light",
+    "road",
+    "car",
+    "sign"
+   ],
+   "onscreen_text": "BOUCHON : MOINS CHER",
+   "comic_action": "Un feu rouge, une file infinie, des moteurs qui tournent. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "bus",
-    "tshirt"
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "4 MIN + 2 H DE POMPE",
-   "comic_action": "Un voyageur en t-shirt « PLUTÔT DROITE. TRÈS FATIGUÉ. » tient le pistolet, la rame attend.",
-   "expected_result": "Chute + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt tient un jerrican.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton plein le plus cher, donne le prix en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui fait le plein en pensant à elle."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 85,
+ "word_count": 82,
  "claims": [
   {
-   "segment": "n1",
+   "segment": "n2",
+   "text": "Mesure phare de 2022 : TVA sur le carburant à cinq virgule cinq.",
    "claim_type": "fait_public",
-   "text": "Sa mesure phare : la TVA sur le carburant ramenée à 5,5 %.",
-   "source_url": [
-    "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/baisser-la-tva-de-20-a-55-pour-les-carburants-lelectricite-le-gaz-et-le-fioul-domestique",
-    "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html"
-   ]
+   "source": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/baisser-la-tva-de-20-a-55-pour-les-carburants-lelectricite-le-gaz-et-le-fioul-domestique",
+   "note": "TVA de 20 % à 5,5 % sur carburants, électricité, gaz, fioul."
+  },
+  {
+   "segment": "n3",
+   "text": "Le gazole et la voiture, au cœur de son électorat, disent les analyses.",
+   "claim_type": "fait_public",
+   "source": "https://www.jean-jaures.org/publication/2002-2022-les-ressorts-profonds-de-la-dynamique-frontiste/",
+   "note": "Périurbain, voiture, gazole, ronds-points."
   }
  ],
  "sources": [
   {
    "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/baisser-la-tva-de-20-a-55-pour-les-carburants-lelectricite-le-gaz-et-le-fioul-domestique",
    "date": "2022",
+   "consulted": "2026-11-22",
    "statut": "fait public (programme 2022)",
-   "usage": "Taux repris tels quels.",
-   "consulted": "2026-11-21"
+   "note": "TVA de 20 % à 5,5 % sur carburants, électricité, gaz, fioul."
   },
   {
-   "url": "https://www.franceinfo.fr/replay-radio/le-decryptage-eco/entre-defense-du-pouvoir-d-achat-et-seduction-des-entreprises-marine-le-pen-entretient-une-ligne-parfois-difficile-a-concilier_8065598.html",
-   "date": "2026-07-08",
-   "statut": "fait public (baisse de TVA carburants toujours au programme)",
-   "usage": "Confirme l'actualité de la mesure.",
-   "consulted": "2026-11-21"
+   "url": "https://www.jean-jaures.org/publication/2002-2022-les-ressorts-profonds-de-la-dynamique-frontiste/",
+   "date": "2022-05-25",
+   "consulted": "2026-11-22",
+   "statut": "analyse (cliché économique/géographique, aucune caractéristique protégée)",
+   "note": "Périurbain, voiture, gazole, ronds-points."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Comptage absurde à partir d'une mesure réelle (TVA carburants à 5,5 %), dans le décor périurbain voiture-gazole. Mème d'ancrage : La baisse de TVA sur les carburants (de 20 % à 5,5 %), mesure phare pouvoir d'achat. Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = mesure phare de 2022 : TVA sur les carburants de 20 % à 5,5 % ; le métro passe au diesel. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

@@ -3,55 +3,51 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m017",
  "format": "A",
- "anchor": "Réforme des retraites du 17/11/2026 : 62 voire 60 ans, cinq catégories selon l'âge du premier emploi, capitalisation obligatoire, référendum",
- "situation": "le distributeur de billets",
- "ressort": "comptage absurde",
- "title_cover": "81 000 € plus tard",
+ "anchor": "réforme du 17/11/2026 : capitalisation obligatoire (environ 81 000 € par salarié, fonds d'environ 900 milliards) ; le distributeur recompte.",
+ "situation": "Fonds de pension patriote",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "title_cover": "Fonds de pension patriote",
  "hook_variants": [
-  "Sa réforme des retraites ajoute une capitalisation obligatoire.",
-  "Quatre-vingt-un mille euros à l'écran. Deux euros dans la main.",
-  "Ici, le distributeur compte jusqu'à neuf cents milliards.",
-  "Ta retraite est là, sur l'écran. En 2071.",
-  "Le distributeur le plus riche et le plus vide de France."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, le distributeur affiche ton capital retraite, et te rend deux euros.",
+  "Marineville : le parti du peuple découvre le fonds de pension.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : fonds de pension patriote."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Il en est à quatorze, et recommence à chaque client.",
-  "Neuf cents milliards annoncés, quatorze comptés, deux euros distribués.",
-  "La capitalisation marche : le distributeur, lui, a pris sa retraite."
+  "Le parti du peuple vient d'inventer le fonds de pension patriote.",
+  "Retrait possible aujourd'hui : deux euros, en pièces jaunes.",
+  "Le distributeur recompte les neuf cents milliards à voix haute. Il en est à douze."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Sa réforme des retraites ajoute une capitalisation obligatoire.",
+   "text": "Dans cette ville, tout le monde vote Marine. Et capitalise.",
+   "accent_words": [
+    "capitalise"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Sa réforme ajoute une dose de capitalisation obligatoire.",
    "accent_words": [
     "capitalisation obligatoire"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n2",
-   "text": "À Marineville, on l'a branchée directement sur le distributeur.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n3",
-   "text": "Tu tapes ton code : l'écran affiche quatre-vingt-un mille euros.",
+   "text": "Environ quatre-vingt-un mille euros par salarié, annonce le programme.",
    "accent_words": [
-    "quatre-vingt-un mille euros"
+    "quatre-vingt-un mille"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Disponibles en 2071, avec un ticket de patience.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n5",
    "text": "Retrait possible aujourd'hui : deux euros, en pièces jaunes.",
    "accent_words": [
     "deux euros"
@@ -59,23 +55,27 @@
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n6",
-   "text": "Le distributeur recompte le fonds de neuf cents milliards, à voix haute.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n7",
-   "text": "Il en est à quatorze, et recommence à chaque client.",
+   "id": "n5",
+   "text": "Il recompte le fonds de neuf cents milliards à voix haute. Il en est à douze.",
    "accent_words": [
-    "quatorze"
+    "douze"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n8",
-   "text": "Combien il te reste sur ton compte le vingt du mois ?",
-   "accent_words": [],
+   "id": "n6",
+   "text": "Le parti du peuple vient d'inventer le fonds de pension patriote.",
+   "accent_words": [
+    "fonds de pension"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui croyait que la Bourse, c'était pour les riches.",
+   "accent_words": [
+    "la Bourse"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -83,105 +83,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "ground",
+    "mairie",
+    "banner",
+    "person"
+   ],
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; un distributeur de billets doré dans la façade.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
     "n2"
    ],
    "camera": "closeup",
    "set": [
     "screen",
+    "text3d",
+    "mairie",
     "person"
    ],
-   "onscreen_text": "CAPITALISATION OBLIGATOIRE",
-   "comic_action": "Un distributeur de billets dont l'écran affiche « CAPITALISATION OBLIGATOIRE ».",
-   "expected_result": "Ancrage réel."
-  },
-  {
-   "id": "s2",
-   "narration_ids": [
-    "n3"
-   ],
-   "camera": "closeup",
-   "set": [
-    "screen",
-    "text3d"
-   ],
-   "onscreen_text": "81 000 €",
-   "comic_action": "L'écran affiche 81 000 € en grand ; l'habitant se penche, émerveillé.",
-   "expected_result": "Promesse chiffrée."
+   "onscreen_text": "CAPITALISATION : OBLIGATOIRE",
+   "comic_action": "L'écran affiche une courbe boursière en tricolore.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n3"
    ],
    "camera": "window_pass",
    "set": [
-    "screen",
+    "shop",
+    "person",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "DISPO EN 2071",
-   "comic_action": "Le distributeur crache deux pièces jaunes et un ticket « patience ».",
-   "expected_result": "La réalité, chiffrée."
+   "onscreen_text": "CAPITAL : 81 000 €",
+   "comic_action": "Le distributeur affiche le montant, puis « disponible plus tard ».",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
+    "table",
     "screen",
-    "person",
-    "text3d"
+    "sign",
+    "building"
    ],
-   "onscreen_text": "900 MILLIARDS : 14, 15…",
-   "comic_action": "Le distributeur compte à voix haute, se trompe, recommence ; la file s'étend jusqu'au rond-point.",
-   "expected_result": "Comptage absurde en boucle."
+   "onscreen_text": "RETRAIT : 2 €",
+   "comic_action": "Le distributeur crache quelques pièces jaunes.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "form_stack",
+    "text3d",
+    "mairie"
+   ],
+   "onscreen_text": "COMPTAGE : 12 / 900 MILLIARDS",
+   "comic_action": "Une calculatrice géante qui affiche « 12 ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "column",
+    "mairie",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "FONDS DE PENSION PATRIOTE",
+   "comic_action": "Entre deux colonnes, un coffre-fort peint aux couleurs nationales. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
+    "shop",
     "tshirt",
-    "screen"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le dernier client de la file porte « LE PAYS BUGUE. MOI AUSSI. ».",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt consulte un cours de Bourse, perplexe.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Combien il te reste sur ton compte le vingt du mois ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui croyait que la Bourse, c'était pour les riches."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 78,
+ "word_count": 76,
  "claims": [
   {
-   "segment": "n1",
+   "segment": "n2",
+   "text": "Sa réforme ajoute une dose de capitalisation obligatoire.",
    "claim_type": "fait_public",
-   "text": "Sa réforme des retraites ajoute une capitalisation obligatoire.",
-   "source_url": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite"
+   "source": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
+   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
+  },
+  {
+   "segment": "n3",
+   "text": "Environ quatre-vingt-un mille euros par salarié, annonce le programme.",
+   "claim_type": "fait_public",
+   "source": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
+   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
   }
  ],
  "sources": [
   {
    "url": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
    "date": "2026-11-17",
+   "consulted": "2026-11-22",
    "statut": "fait public (présentation du programme)",
-   "usage": "Chiffres repris tels quels (5 catégories, 160 à 168 trimestres, ~81 000 €, ~900 milliards) ; le reste est fiction.",
-   "consulted": "2026-11-21"
+   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Comptage absurde à partir des chiffres réels annoncés (fonds de ~900 milliards, ~81 000 € par salarié) : le gag porte sur l'écart entre annonce et guichet, pas sur la sincérité des chiffres. Mème d'ancrage : Réforme des retraites du 17/11/2026 : 62 voire 60 ans, cinq catégories selon l'âge du premier emploi, capitalisation obligatoire, référendum. Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = réforme du 17/11/2026 : capitalisation obligatoire (environ 81 000 € par salarié, fonds d'environ 900 milliards) ; le distributeur recompte. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

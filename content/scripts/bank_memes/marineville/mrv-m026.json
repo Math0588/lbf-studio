@@ -3,79 +3,79 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m026",
  "format": "A",
- "anchor": "La « campagne chaton » (kitten campaign) de 2022",
- "situation": "les vacances",
- "ressort": "électorat cliché",
+ "anchor": "la presse a surnommé sa campagne de 2022 la « campagne chaton » (ton adouci) : les vacances en mode chaton.",
+ "situation": "Vacances chaton",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
  "title_cover": "Vacances chaton",
  "hook_variants": [
-  "La presse a surnommé sa campagne de 2022 la campagne chaton.",
-  "Les vacances en mode campagne chaton.",
-  "Même camping depuis 1987, emplacement 42.",
-  "Quatre cents photos du chat, zéro de la famille.",
-  "Ici, on part en vacances pour photographier le chat."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, les vacances se font en mode chaton.",
+  "Marineville : ça ronronne, ça rassure, ça ne chiffre rien.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : vacances chaton."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Au retour, l'album s'intitule « Ma France apaisée ».",
-  "L'album est parfait : la mer, le chat, et pas un seul humain.",
-  "Le chat a bronzé. La famille, elle, n'apparaît sur aucune photo."
+  "Un chaton, ça ronronne, ça rassure, et ça ne présente jamais son chiffrage.",
+  "À l'hôtel, on dort douze heures et on fait la sieste le reste du temps.",
+  "La crise du pouvoir d'achat ? On la regarde par la fenêtre, en clignant des yeux."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "La presse a surnommé sa campagne de 2022 la campagne chaton.",
+   "text": "Dans cette ville, tout le monde vote Marine. En mode chaton.",
+   "accent_words": [
+    "mode chaton"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "La presse a baptisé sa campagne 2022 la campagne chaton.",
    "accent_words": [
     "campagne chaton"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n2",
-   "text": "À Marineville, les vacances se font donc en mode chaton.",
+   "id": "n3",
+   "text": "À la télé, une candidate décrite comme adoucie, qui aime les chats.",
    "accent_words": [
-    "en mode chaton"
+    "adoucie"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n4",
+   "text": "Ici, départ en vacances à six heures, caisse à chat sur la banquette.",
+   "accent_words": [
+    "caisse à chat"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Départ à six heures, Clio diesel, caisse à chat sur la plage arrière.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "Destination : le même camping depuis 1987, emplacement quarante-deux.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n5",
-   "text": "Au programme : barbecue, sieste, photo du chat devant la mer.",
+   "text": "À l'hôtel, sieste de douze heures, puis sieste.",
    "accent_words": [
-    "photo du chat devant la mer"
+    "puis sieste"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Quatre cents photos du chat, zéro photo de la famille.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n7",
-   "text": "Au retour, l'album s'intitule « Ma France apaisée ».",
+   "text": "Un chaton, ça ronronne, ça rassure, et ça ne présente jamais son chiffrage.",
    "accent_words": [
-    "Ma France apaisée"
+    "son chiffrage"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n8",
-   "text": "Montre ton animal en vacances, en commentaire.",
-   "accent_words": [],
+   "id": "n7",
+   "text": "Envoie ça au pote dont le chat a plus d'abonnés que lui.",
+   "accent_words": [
+    "plus d'abonnés"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -83,108 +83,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "car",
-    "road",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "CAMPAGNE CHATON",
-   "comic_action": "Une Clio chargée sur l'autoroute à l'aube ; étiquette 3D « CAMPAGNE CHATON ».",
-   "expected_result": "Ancrage."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; un panier à chat sur le toit.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
+   ],
+   "onscreen_text": "CAMPAGNE CHATON",
+   "comic_action": "L'écran affiche une affiche de campagne avec un chaton.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
-    "car",
-    "mascot"
-   ],
-   "onscreen_text": "CLIO + CAISSE À CHAT",
-   "comic_action": "Gros plan sur la plage arrière : une caisse à chat sanglée comme un bébé.",
-   "expected_result": "Cliché chiffré.",
-   "new_asset_request": "Caisse de transport pour chat."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4",
-    "n5"
-   ],
-   "camera": "descend",
-   "set": [
-    "tree",
+    "studio_light",
+    "tripod_camera",
     "table",
-    "person",
-    "sign"
+    "person"
    ],
-   "onscreen_text": "EMPLACEMENT 42",
-   "comic_action": "Plongée sur un camping, emplacement 42, barbecue qui fume, le chat posé devant une mer en carton.",
-   "expected_result": "Électorat cliché."
+   "onscreen_text": "IMAGE : ADOUCIE",
+   "comic_action": "Plateau télé : lumière rose, coussin, chat en peluche.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6"
+    "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "mascot"
+    "car",
+    "road",
+    "gps",
+    "sign"
    ],
-   "onscreen_text": "400 PHOTOS DU CHAT",
-   "comic_action": "Défilement rapide d'un écran de téléphone géant : uniquement le chat.",
-   "expected_result": "Escalade chiffrée."
+   "onscreen_text": "DÉPART : 6 H + CHAT",
+   "comic_action": "Une voiture chargée, une caisse de transport à l'arrière.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "facade_row",
+    "facade_set",
+    "person",
+    "banner"
+   ],
+   "onscreen_text": "HÔTEL : SIESTE",
+   "comic_action": "Une façade d'hôtel, tous les volets fermés à midi.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "mascot",
+    "person",
+    "banner",
+    "text3d"
+   ],
+   "onscreen_text": "CHIFFRAGE : MIAOU",
+   "comic_action": "La mascotte-chat bâille devant un tableau de chiffres. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "scroll",
-    "tshirt"
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "MA FRANCE APAISÉE",
-   "comic_action": "Un album photo « Ma France apaisée » s'ouvre sur un t-shirt « À DROITE DU CANAPÉ. ».",
-   "expected_result": "Chute + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt filme son chat.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Montre ton animal en vacances, en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote dont le chat a plus d'abonnés que lui."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 80,
+ "word_count": 79,
  "claims": [
   {
-   "segment": "n1",
+   "segment": "n2",
+   "text": "La presse a baptisé sa campagne 2022 la campagne chaton.",
    "claim_type": "fait_public",
-   "text": "La presse a surnommé sa campagne de 2022 la campagne chaton.",
-   "source_url": "https://thenationalnews.com/world/europe/2022/04/22/who-is-marine-le-pen-the-far-right-candidate-who-has-led-a-kitten-campaign"
+   "source": "https://thenationalnews.com/world/europe/2022/04/22/who-is-marine-le-pen-the-far-right-candidate-who-has-led-a-kitten-campaign",
+   "note": "« Kitten campaign » : campagne chaton de 2022, ton adouci."
+  },
+  {
+   "segment": "n3",
+   "text": "À la télé, une candidate décrite comme adoucie, qui aime les chats.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/la-violence-la-raideur-ideologique-d-eric-zemmour-ont-fait-de-marine-le-pen-une",
+   "note": "Image décrite comme adoucie, humanisée, « une femme qui aime les chats »."
   }
  ],
  "sources": [
   {
    "url": "https://thenationalnews.com/world/europe/2022/04/22/who-is-marine-le-pen-the-far-right-candidate-who-has-led-a-kitten-campaign",
    "date": "2022-04-22",
+   "consulted": "2026-11-22",
    "statut": "mème de presse (surnom)",
-   "usage": "Surnom repris comme thème de vacances.",
-   "consulted": "2026-11-21"
+   "note": "« Kitten campaign » : campagne chaton de 2022, ton adouci."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/la-violence-la-raideur-ideologique-d-eric-zemmour-ont-fait-de-marine-le-pen-une",
+   "date": "2022-03-18",
+   "consulted": "2026-11-22",
+   "statut": "opinion (débat télévisé)",
+   "note": "Image décrite comme adoucie, humanisée, « une femme qui aime les chats »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Électorat cliché (camping fidèle, Clio, barbecue) raconté avec tendresse ; le surnom réel « campagne chaton » sert de fil. Mème d'ancrage : La « campagne chaton » (kitten campaign) de 2022. Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = la presse a surnommé sa campagne de 2022 la « campagne chaton » (ton adouci) : les vacances en mode chaton. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

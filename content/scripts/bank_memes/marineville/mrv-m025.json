@@ -3,82 +3,79 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m025",
  "format": "A",
- "anchor": "« De la stratégie de la cravate à la stratégie de la cravache » (formule du politologue Erwan Lecoeur, 06/2025)",
- "situation": "la collecte des déchets",
- "ressort": "boucle",
- "title_cover": "Camion à cravate",
+ "anchor": "« de la cravate à la cravache » (politologue, 2025) : le camion-poubelle change de tenue selon le jour.",
+ "situation": "Camion à deux costumes",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "title_cover": "Camion à deux costumes",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Marine.",
-  "Un camion-poubelle en cravate.",
-  "Ici, les éboueurs alternent cravate et cravache.",
-  "Mille poubelles pleines et un camion très poli.",
-  "Le camion qui ramasse tout, ou rien."
+  "Ici, le camion-poubelle passe en cravate le lundi, en cravache le jeudi.",
+  "Marineville : même camion, deux costumes.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : camion à deux costumes."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ce matin, il est repassé poliment devant mille poubelles pleines.",
-  "Retour à la cravate : la ville est propre sur elle, et sale partout ailleurs.",
-  "Le camion change de tenue chaque semaine. Les poubelles, jamais."
+  "Même camion, même chauffeur, deux costumes : le tri sélectif est dans le discours.",
+  "Le jeudi, il passe en cravache et vide les bacs à coups de klaxon.",
+  "Le lundi, le camion-poubelle passe en cravate et dit merci."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine.",
+   "text": "Dans cette ville, tout le monde vote Marine. Le camion-poubelle aussi.",
    "accent_words": [
-    "Marine"
+    "camion-poubelle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La mairie est passée de la cravate à la cravache, dit un politologue.",
+   "text": "De la cravate à la cravache : la formule d'un politologue sur sa stratégie.",
    "accent_words": [
-    "cravate",
     "cravache"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Le camion-poubelle porte d'abord une cravate et passe poliment.",
+   "text": "Avant, la dédiabolisation veste et cravate, d'après un chercheur.",
    "accent_words": [
-    "poliment"
+    "veste et cravate"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Il ne ramasse rien, pour ne froisser aucune poubelle.",
-   "accent_words": [],
+   "text": "Le lundi, le camion-poubelle passe en cravate et dit merci.",
+   "accent_words": [
+    "merci"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Alors on lui donne une cravache : il ramasse tout, même les bancs.",
+   "text": "Le jeudi, il passe en cravache et vide les bacs à coups de klaxon.",
    "accent_words": [
-    "même les bancs"
+    "klaxon"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Les habitants crient « Trop ferme » : on lui remet une cravate.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n7",
-   "text": "Ce matin, il est repassé poliment devant mille poubelles pleines.",
+   "text": "Même camion, même chauffeur, deux costumes : le tri sélectif est dans le discours.",
    "accent_words": [
-    "mille poubelles pleines"
+    "le discours"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n8",
-   "text": "Chez toi, les poubelles passent quel jour, en vrai ?",
-   "accent_words": [],
+   "id": "n7",
+   "text": "Envoie ça au pote qui change de ton selon le public.",
+   "accent_words": [
+    "selon le public"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -86,102 +83,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "bin",
-    "car"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "CRAVATE OU CRAVACHE",
-   "comic_action": "Plongée sur une rue de pavillons, poubelles alignées ; un camion arrive, une cravate géante sur la calandre.",
-   "expected_result": "Ancrage posé.",
-   "new_asset_request": "Camion-poubelle (car agrandi + benne)."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; un camion-poubelle cravaté garé devant.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "car",
-    "bin",
-    "road"
+    "studio_light",
+    "tripod_camera",
+    "table",
+    "person"
    ],
-   "onscreen_text": "PASSAGE POLI",
-   "comic_action": "Le camion salue chaque poubelle et passe sans rien prendre.",
-   "expected_result": "Premier état."
+   "onscreen_text": "STRATÉGIE : DEUX TENUES",
+   "comic_action": "Studio : un cintre avec une cravate, un autre avec une cravache.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
-    "car",
-    "bench",
-    "bin"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "MODE CRAVACHE",
-   "comic_action": "Le camion aspire tout : poubelles, bancs, un lampadaire.",
-   "expected_result": "Second état, extrême."
+   "onscreen_text": "VESTE ET CRAVATE",
+   "comic_action": "L'écran montre une façade qu'on habille d'une cravate.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "street_dolly",
    "set": [
-    "car",
     "bin",
-    "road"
+    "road",
+    "building",
+    "person"
    ],
-   "onscreen_text": "1 000 POUBELLES PLEINES",
-   "comic_action": "Même cadre qu'au début : cravate remise, le camion repasse poliment devant des poubelles qui débordent.",
-   "expected_result": "Boucle."
+   "onscreen_text": "LUNDI : MERCI",
+   "comic_action": "Le camion cravaté vide un bac avec délicatesse.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "bin",
-    "tshirt"
+    "road",
+    "building",
+    "person",
+    "bin"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le t-shirt « RÉPONSES CONCRÈTES : CHARGEMENT… » dépasse d'une poubelle pleine.",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "JEUDI : KLAXON",
+   "comic_action": "Même camion, cravache sur le capot, klaxon hurlant.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "column",
+    "mairie",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "TRI : DANS LE DISCOURS",
+   "comic_action": "Entre deux colonnes, deux costumes accrochés au même camion. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt change de voix au téléphone.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Chez toi, les poubelles passent quel jour, en vrai ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui change de ton selon le public."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 85,
- "claims": [],
+ "word_count": 83,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "De la cravate à la cravache : la formule d'un politologue sur sa stratégie.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/ue-immigration-marine-le-pen-repasse-a-loffensive-la-strategie-de-la-cravate-a-laisse-place-a-une-strategie-de-la-cravache",
+   "note": "« De la stratégie de la cravate à la stratégie de la cravache »."
+  },
+  {
+   "segment": "n3",
+   "text": "Avant, la dédiabolisation veste et cravate, d'après un chercheur.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
+   "note": "Dédiabolisation = changements cosmétiques, stratégie « veste et cravate »."
+  }
+ ],
  "sources": [
   {
    "url": "https://www.publicsenat.fr/actualites/politique/ue-immigration-marine-le-pen-repasse-a-loffensive-la-strategie-de-la-cravate-a-laisse-place-a-une-strategie-de-la-cravache",
    "date": "2025-06-10",
-   "statut": "opinion (formule d'un politologue) ; le fond de l'article (UE, immigration) est écarté",
-   "usage": "Seule l'image cravate/cravache est reprise et attribuée à « un politologue » ; aucun thème migratoire.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "opinion (formule d'un politologue) ; le fond de l'article est écarté",
+   "note": "« De la stratégie de la cravate à la stratégie de la cravache »."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
+   "date": "2023-01-25",
+   "consulted": "2026-11-22",
+   "statut": "opinion / analyse (chercheur)",
+   "note": "Dédiabolisation = changements cosmétiques, stratégie « veste et cravate »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Boucle cravate → cravache → cravate : l'alternance de postures appliquée à la collecte des déchets. Mème d'ancrage : « De la stratégie de la cravate à la stratégie de la cravache » (formule du politologue Erwan Lecoeur, 06/2025). Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « de la cravate à la cravache » (politologue, 2025) : le camion-poubelle change de tenue selon le jour. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

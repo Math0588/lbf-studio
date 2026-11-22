@@ -4,86 +4,79 @@
  "synopsis_id": "zmv-m021-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Le colis s'officialise",
- "anchor": "Candidature 2027 en plusieurs temps : « candidat » sur BFMTV en septembre 2026 mais déclaration officielle plus tard, puis officialisation au 20 h de TF1 le 10/11/2026.",
+ "title_cover": "Le colis officialisé",
+ "anchor": "candidature 2027 annoncée en septembre, officialisée en novembre.",
  "meme_id": "ZC",
  "situation": "la livraison",
- "ressort": "bureaucratie récursive : pour régler le problème, il faut d'abord un formulaire pour le formulaire",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour… et les colis s'annoncent trois fois.",
-  "Ici, ton colis annonce qu'il va annoncer.",
-  "Trois avis de passage, zéro colis.",
-  "Le colis officialise sa venue au 20 heures.",
-  "Formulaire de pré-livraison, s'il vous plaît."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : les colis s'annoncent avant d'arriver.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, la livraison a une conférence de presse.",
+  "Zemmourville : le suivi de colis en trois épisodes."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le livreur sonne enfin. Il tend un formulaire de pré-livraison.",
-  "Le colis arrive. Il annonce son ouverture prochaine.",
-  "Tu signes le formulaire. Avis de pré-signature."
+  "Le colis est livré en trois temps. Le contenu : environ 4 %.",
+  "Trois avis de passage, un colis léger.",
+  "Livré officiellement, ouvert à 4 %."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour… et les colis s'annoncent trois fois.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Livraison officielle.",
    "accent_words": [
-    "s'annoncent",
-    "Zemmour"
+    "Livraison officielle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Comme sa candidature : d'abord candidat, puis officiel deux mois plus tard.",
+   "text": "Sa candidature 2027 : annoncée en septembre, officialisée en novembre.",
    "accent_words": [
-    "candidature",
-    "candidat"
+    "officialisée"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Premier avis : votre colis envisage de partir.",
+   "text": "Ici, le colis fait pareil. D'abord il arrive. Puis officiellement.",
    "accent_words": [
-    "envisage",
-    "Premier"
+    "officiellement"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Deuxième avis : votre colis annonce la date de son annonce.",
+   "text": "Avis de passage : votre colis est candidat à la livraison.",
    "accent_words": [
-    "Deuxième",
-    "annonce"
+    "candidat"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Troisième avis : il officialise sa venue au journal de vingt heures.",
+   "text": "Deuxième avis : la livraison sera officialisée au 20 h.",
    "accent_words": [
-    "officialise",
-    "Troisième"
+    "au 20 h"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Le livreur sonne enfin. Il tend un formulaire de pré-livraison.",
+   "text": "Le colis est livré en trois temps. Le contenu : environ 4 %.",
    "accent_words": [
-    "pré-livraison",
-    "formulaire"
+    "environ 4 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Ton colis le plus long, il a mis combien de temps ? Commente.",
+   "text": "Envoie ça au pote qui t'annonce son arrivée trois fois avant de venir.",
    "accent_words": [
-    "Commente",
-    "combien"
+    "trois fois"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,100 +85,164 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2",
-    "n3"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "building",
+    "ground",
+    "road",
     "car",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "AVIS N°1 : ENVISAGE",
-   "comic_action": "Immeuble vu d'en haut, camionnette garée.",
-   "expected_result": "Bureaucratie posée."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur une camionnette de livraison à drapeaux.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "car",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "SEPT. → NOV.",
+   "comic_action": "Gros plan sur deux étiquettes de colis, dates différentes.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "road",
+    "car",
+    "person"
+   ],
+   "onscreen_text": "LIVRÉ (OFFICIEUX)",
+   "comic_action": "Travelling : le livreur dépose le colis, le reprend, le redépose.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "person",
-    "text3d"
+    "sign",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "AVIS N°2 : DATE D'ANNONCE",
-   "comic_action": "Téléphone géant qui vibre.",
-   "expected_result": "Récursivité."
+   "onscreen_text": "AVIS : CANDIDAT",
+   "comic_action": "Un avis de passage plié en forme de profession de foi.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s3",
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "orbit",
    "set": [
     "screen",
-    "tribune",
+    "car",
     "text3d"
    ],
-   "onscreen_text": "AVIS N°3 : 20 H",
-   "comic_action": "Le colis sur un pupitre, au journal.",
-   "expected_result": "Escalade."
+   "onscreen_text": "OFFICIALISÉ AU 20 H",
+   "comic_action": "Orbite : une télé sur le toit de la camionnette diffuse le flash spécial.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
-   "id": "s4",
+   "id": "s6",
    "narration_ids": [
-    "n6",
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "car",
+    "road",
+    "text3d"
+   ],
+   "onscreen_text": "CONTENU : 4 %",
+   "comic_action": "Plan large : le colis s'ouvre, minuscule objet au fond.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "form_stack",
     "person",
-    "tshirt"
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "PRÉ-LIVRAISON",
-   "comic_action": "Le livreur tend une pile de formulaires ; t-shirt sur le colis.",
-   "expected_result": "Chute."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique signe le troisième bon.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton colis le plus long, il a mis combien de temps ? Commente."
+  "type": "share",
+  "text": "Envoie ça au pote qui t'annonce son arrivée trois fois avant de venir."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 80,
+ "word_count": 77,
  "claims": [
   {
-   "segment": "n2",
+   "text": "Sa candidature 2027 : annoncée en septembre, officialisée en novembre.",
    "claim_type": "fait_public",
-   "source_url": "https://www.parismatch.be/actualites/monde/2026/09/18/eric-zemmour-confirme-sa-candidature-a-lelection-presidentielle-francaise-5CKEL6PZ4BDONOUKVHMMCG65NU/"
+   "source": "https://www.parismatch.be/actualites/monde/2026/09/18/eric-zemmour-confirme-sa-candidature-a-lelection-presidentielle-francaise-5CKEL6PZ4BDONOUKVHMMCG65NU/",
+   "note": "Septembre 2026 sur BFMTV : candidat, mais pas encore de déclaration officielle. / Candidature officialisée au 20 h de TF1 le 10/11/2026."
+  },
+  {
+   "text": "Deuxième avis : la livraison sera officialisée au 20 h.",
+   "claim_type": "fait_public",
+   "source": "https://fr.euronews.com/2026/11/10/eric-zemmour-annonce-sa-candidature-a-la-presidentielle",
+   "note": "Candidature officialisée au 20 h de TF1 le 10/11/2026."
+  },
+  {
+   "text": "Le colis est livré en trois temps. Le contenu : environ 4 %.",
+   "claim_type": "fait_public",
+   "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
+   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "sources": [
   {
    "url": "https://www.parismatch.be/actualites/monde/2026/09/18/eric-zemmour-confirme-sa-candidature-a-lelection-presidentielle-francaise-5CKEL6PZ4BDONOUKVHMMCG65NU/",
    "date": "2026-09-18",
-   "consulted": "2026-11-21",
-   "statut": "fait public",
-   "usage": "L'annonce de l'annonce."
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Septembre 2026 sur BFMTV : candidat, mais pas encore de déclaration officielle."
   },
   {
    "url": "https://fr.euronews.com/2026/11/10/eric-zemmour-annonce-sa-candidature-a-la-presidentielle",
    "date": "2026-11-10",
-   "consulted": "2026-11-21",
-   "statut": "fait public",
-   "usage": "Officialisation au journal de 20 h ; le slogan n'est pas repris."
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Candidature officialisée au 20 h de TF1 le 10/11/2026."
+  },
+  {
+   "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
+   "date": "2026-09",
+   "consulted": "2026-11-22",
+   "statut": "fait (AFP)",
+   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Phrase 2 = fait public (BFMTV 17/09/2026 puis TF1 10/11/2026). Bureaucratie récursive. Ouverture « Dans cette ville, tout le monde vote Zemmour… »."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : candidature 2027 annoncée en septembre, officialisée en novembre. Cadre : la livraison. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

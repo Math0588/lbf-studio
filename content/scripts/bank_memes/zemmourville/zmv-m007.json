@@ -5,84 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Musculation à 4 %",
- "anchor": "Zemmour crédité d'environ 4 % dans les sondages de la rentrée 2026.",
+ "anchor": "environ 4 % dans les sondages de la rentrée 2026.",
  "meme_id": "ZF",
  "situation": "la salle de sport",
- "ressort": "comptage absurde : un chiffre délirant affiché en grand (étiquette rouge)",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour… les sondages disent quatre pour cent.",
-  "Ici, la salle de sport est réglée sur les sondages.",
-  "Quatre pour cent de pente, quatre pour cent de muscles.",
-  "Le seul club où l'effort plafonne à quatre pour cent.",
-  "Ils sont plus nombreux en vrai. Promis."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : la salle de sport plafonne à 4 %.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, les haltères pèsent comme les sondages.",
+  "Zemmourville : la musculation de la grandeur, version légère."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Les adhérents jurent qu'ils sont beaucoup plus nombreux en vrai.",
-  "Le coach recompte : trois virgule neuf. Panique dans les vestiaires.",
-  "La salle annonce une remontée spectaculaire. En 2027."
+  "Ici, on appelle ça une sèche. Les autres appellent ça une fonte.",
+  "Quatre kilos, quatre pour cent, grande ambition.",
+  "La sèche continue. La fonte aussi."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour… les sondages disent quatre pour cent.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Charge légère.",
    "accent_words": [
-    "sondages",
-    "Zemmour"
+    "Charge légère"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Alors à la salle de sport, tout est réglé à quatre pour cent.",
+   "text": "Rentrée 2026 : il est crédité d'environ 4 % dans les sondages.",
    "accent_words": [
-    "quatre"
+    "4 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Tapis de course : quatre pour cent de pente.",
+   "text": "Ici, la salle de sport s'aligne. Haltères de quatre kilos maximum.",
    "accent_words": [
-    "course",
-    "quatre"
+    "quatre kilos"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Haltères chargés à quatre pour cent de leur poids.",
+   "text": "Le coach promet la grandeur. Le tapis plafonne à quatre kilomètres-heure.",
    "accent_words": [
-    "Haltères",
-    "chargés"
+    "plafonne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le coach promet quatre pour cent de muscles en plus.",
+   "text": "En 2021, il soulevait 17 %. La forme d'avant, évidemment.",
    "accent_words": [
-    "muscles",
-    "promet"
+    "17 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Les adhérents jurent qu'ils sont beaucoup plus nombreux en vrai.",
+   "text": "Ici, on appelle ça une sèche. Les autres appellent ça une fonte.",
    "accent_words": [
-    "adhérents",
-    "beaucoup"
+    "une fonte"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Tu fais combien de pour cent d'effort, toi ? Commente.",
+   "text": "Envoie ça au pote qui soulève deux kilos en se filmant.",
    "accent_words": [
-    "d'effort",
-    "Commente"
+    "deux kilos"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -91,86 +85,150 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "building",
-    "screen",
-    "text3d"
+    "scroll",
+    "person"
    ],
-   "onscreen_text": "TOUT À 4 %",
-   "comic_action": "Salle vue d'en haut, écran géant « 4 % ».",
-   "expected_result": "Comptage posé."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur une salle de sport ; enseigne « GRANDEUR FITNESS ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d"
+   ],
+   "onscreen_text": "SONDAGE : 4 %",
+   "comic_action": "L'écran de la salle affiche la jauge du jour.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "person",
+    "text3d",
+    "sign"
+   ],
+   "onscreen_text": "MAX : 4 KG",
+   "comic_action": "Orbite : un râtelier d'haltères minuscules.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
     "n4"
    ],
    "camera": "street_dolly",
    "set": [
     "person",
-    "text3d",
-    "screen"
+    "screen",
+    "sign"
    ],
-   "onscreen_text": "PENTE 4 %",
-   "comic_action": "Travelling sur les machines, étiquettes 4 %.",
-   "expected_result": "Comptage absurde."
+   "onscreen_text": "4 KM/H",
+   "comic_action": "Travelling : des sportifs marchent lentement, très sérieux.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s3",
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "closeup",
    "set": [
-    "person",
-    "text3d"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "+4 % DE MUSCLES",
-   "comic_action": "Le coach montre un biceps à peine gonflé.",
-   "expected_result": "Promesse minuscule."
+   "onscreen_text": "2021 : 17 KG",
+   "comic_action": "Une photo encadrée d'un haltère « 17 » au mur, éclairée comme une relique.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
-   "id": "s4",
+   "id": "s6",
    "narration_ids": [
-    "n6",
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "building",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "SÈCHE OU FONTE ?",
+   "comic_action": "Plan large : la salle se vide, un haltère fond comme une bougie.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
     "person",
-    "screen",
-    "tshirt"
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "PLUS NOMBREUX EN VRAI",
-   "comic_action": "Trois adhérents posent comme une foule ; t-shirt au mur.",
-   "expected_result": "Chute."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique soulève l'haltère d'une main.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Tu fais combien de pour cent d'effort, toi ? Commente."
+  "type": "share",
+  "text": "Envoie ça au pote qui soulève deux kilos en se filmant."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 75,
- "claims": [],
+ "word_count": 77,
+ "claims": [
+  {
+   "text": "Rentrée 2026 : il est crédité d'environ 4 % dans les sondages.",
+   "claim_type": "fait_public",
+   "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
+   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
+  },
+  {
+   "text": "En 2021, il soulevait 17 %. La forme d'avant, évidemment.",
+   "claim_type": "fait_public",
+   "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+  }
+ ],
  "sources": [
   {
    "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
-   "date": "2026-09-13",
-   "consulted": "2026-11-21",
-   "statut": "fait public (dépêche AFP)",
-   "usage": "Seul le chiffre d'environ 4 % est utilisé ; le reste de la dépêche est écarté."
+   "date": "2026-09",
+   "consulted": "2026-11-22",
+   "statut": "fait (AFP)",
+   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
+  },
+  {
+   "url": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "date": "2021-10-07",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Comptage absurde sur ~4 % dans les sondages de rentrée 2026 (AFP). Aucun appel au vote. Ouverture « Dans cette ville, tout le monde vote Zemmour… »."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : environ 4 % dans les sondages de la rentrée 2026. Cadre : la salle de sport. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

@@ -3,81 +3,79 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m023",
  "format": "A",
- "anchor": "La marque « Marine » au prénom seul (campagne 2017 ; affiche 2026 « avec Marine, défendons la République »)",
- "situation": "l'école",
- "ressort": "contamination",
- "title_cover": "Copie sans nom",
+ "anchor": "campagne au seul prénom (2017, affiche 2026) : à l'école, les élèves copient la méthode.",
+ "situation": "Copies sans nom",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "title_cover": "Copies sans nom",
  "hook_variants": [
-  "Marine Le Pen fait campagne avec son prénom tout seul, sans nom.",
-  "Ici, les élèves signent avec un dessin de chat.",
-  "Trente copies, trente chats, zéro nom.",
-  "Élève très rassurant, contenu introuvable.",
-  "Dans cette école, on redouble sous un nouveau nom."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, les copies n'ont plus de nom.",
+  "Marineville : changer d'étiquette, garder le cartable.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : copies sans nom."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Toute la classe redouble, mais sous un nouveau nom.",
-  "Même classe, même niveau, nouveau nom : rentrée réussie.",
-  "Le bulletin est excellent. Personne ne sait à qui il appartient."
+  "Vieux truc de cour de récré : changer d'étiquette, garder le cartable.",
+  "Trente Lucas, une seule bonne note, et personne ne sait à qui.",
+  "Le prof rend les copies au hasard ; les parents signent sans regarder."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Marine Le Pen fait campagne avec son prénom tout seul, sans nom.",
+   "text": "Dans cette ville, tout le monde vote Marine. Prénom seul.",
    "accent_words": [
-    "son prénom tout seul"
+    "Prénom seul"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Elle fait campagne avec son prénom, sans nom de famille.",
+   "accent_words": [
+    "son prénom"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n2",
-   "text": "À l'école de Marineville, les élèves ont copié la méthode.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n3",
-   "text": "Sur les copies, plus de nom : juste un prénom en grosses lettres.",
+   "text": "En 2017, la presse ironisait : on renouvelle Marine, pas le programme.",
    "accent_words": [
-    "grosses lettres"
+    "pas le programme"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Puis plus de prénom du tout : juste un dessin de chat.",
+   "text": "À l'école, les élèves copient la méthode : plus de nom sur les copies.",
    "accent_words": [
-    "un dessin de chat"
+    "copies"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La maîtresse rend trente copies identiques, avec trente chats.",
-   "accent_words": [],
+   "text": "Trente Lucas, une seule bonne note, et personne ne sait à qui.",
+   "accent_words": [
+    "à qui"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Sur le bulletin : « Élève très rassurant, contenu introuvable ».",
+   "text": "Vieux truc de cour de récré : changer d'étiquette, garder le cartable.",
    "accent_words": [
-    "très rassurant"
+    "garder le cartable"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Toute la classe redouble, mais sous un nouveau nom.",
+   "text": "Envoie ça au pote qui oublie son nom quand il a tout faux.",
    "accent_words": [
-    "sous un nouveau nom"
+    "tout faux"
    ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton pire commentaire de bulletin, cite-le en commentaire.",
-   "accent_words": [],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,118 +83,161 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "building",
-    "screen",
+    "ground",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "PRÉNOM SEUL",
-   "comic_action": "Une affiche de campagne au prénom seul est projetée sur l'écran de la classe.",
-   "expected_result": "Ancrage réel."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur l'école municipale ; un tableau d'appel avec des prénoms seulement.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "scroll",
-    "person"
+    "facade_row",
+    "facade_set",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "COPIE : SANS NOM",
-   "comic_action": "Un élève efface son nom sur sa copie, puis son prénom, puis dessine un chat.",
-   "expected_result": "Contamination progressive."
+   "onscreen_text": "PRÉNOM : OUI · NOM : NON",
+   "comic_action": "Rangée de façades : affiches au seul prénom.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5"
+    "n3"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "table",
-    "person",
-    "form_stack"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "30 COPIES = 30 CHATS",
-   "comic_action": "La maîtresse étale trente copies identiques avec trente chats dessinés.",
-   "expected_result": "Escalade."
+   "onscreen_text": "PROGRAMME : INCHANGÉ",
+   "comic_action": "L'écran : deux colonnes, « image : neuve », « programme : idem ».",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6"
+    "n4"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "scroll",
+    "table",
+    "person",
+    "screen",
     "text3d"
    ],
-   "onscreen_text": "TRÈS RASSURANT",
-   "comic_action": "Gros plan sur un bulletin : « Très rassurant. Contenu introuvable. »",
-   "expected_result": "Chute."
+   "onscreen_text": "COPIES : ANONYMES",
+   "comic_action": "Une pile de copies sans nom sur la table du prof.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "form_stack",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "20/20 : À QUI ?",
+   "comic_action": "Une copie notée 20 brandie devant trente élèves identiques.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "shop",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "ÉTIQUETTE NEUVE · CARTABLE VIEUX",
+   "comic_action": "Vitrine : un vieux cartable avec une étiquette neuve. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "building",
+    "shop",
     "tshirt",
+    "person",
     "sign"
    ],
-   "onscreen_text": "NOUVEAU NOM",
-   "comic_action": "Gérard visse un nouveau panneau de classe par-dessus l'ancien ; un parent porte « EXCELLENTE QUESTION. ».",
-   "expected_result": "Rebranding + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt efface son nom sur une feuille.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton pire commentaire de bulletin, cite-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui oublie son nom quand il a tout faux."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 84,
+ "word_count": 83,
  "claims": [
   {
-   "segment": "n1",
+   "segment": "n2",
+   "text": "Elle fait campagne avec son prénom, sans nom de famille.",
    "claim_type": "fait_public",
-   "text": "Marine Le Pen fait campagne avec son prénom tout seul, sans nom.",
-   "source_url": [
-    "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
-    "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558"
+   "source": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
+   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme ».",
+   "sources_complementaires": [
+    "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne"
    ]
+  },
+  {
+   "segment": "n3",
+   "text": "En 2017, la presse ironisait : on renouvelle Marine, pas le programme.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
+   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme »."
   }
  ],
  "sources": [
   {
-   "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
-   "date": "2026-10-29",
-   "statut": "fait public (slogan de l'affiche)",
-   "usage": "Slogan cité à l'identique.",
-   "consulted": "2026-11-21"
-  },
-  {
    "url": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
    "date": "2017-02-06",
-   "statut": "fait public + moquerie de presse (« Marine » tout court)",
-   "usage": "Thème du prénom seul.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "fait public + analyse de presse",
+   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme »."
+  },
+  {
+   "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
+   "date": "2026-10-29",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (meeting d'Orléans, 25/10/2026) + fait (affiche)",
+   "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Contamination : la stratégie du prénom seul gagne la cour d'école jusqu'au redoublement « rebrandé ». Mème d'ancrage : La marque « Marine » au prénom seul (campagne 2017 ; affiche 2026 « avec Marine, défendons la République »). Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = campagne au seul prénom (2017, affiche 2026) : à l'école, les élèves copient la méthode. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

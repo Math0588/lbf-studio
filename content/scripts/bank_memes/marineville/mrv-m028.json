@@ -3,79 +3,79 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m028",
  "format": "A",
- "anchor": "Le rebranding FN → RN : nouveau nom, flamme gardée et rangée dans un cercle (2018)",
- "situation": "la panne de courant",
- "ressort": "épisode raté",
+ "anchor": "2018 : nouveau nom, nouveau cercle, mais la flamme du logo gardée ; panne générale, seule la flamme reste allumée.",
+ "situation": "La flamme en LED",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
  "title_cover": "La flamme en LED",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Marine.",
-  "Panne générale : la ville compte sur la flamme du logo.",
-  "Une flamme rangée dans un cercle fermé à clé.",
-  "La flamme était une LED.",
-  "Ici, même la flamme a besoin du courant."
+  "Ici, pendant la panne, une seule enseigne brille.",
+  "Marineville : on peut tout couper, sauf la flamme.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : la flamme en led."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La ville passe la nuit autour d'un logo éteint, en se tenant chaud.",
-  "Toute la nuit autour d'une flamme en plastique, éteinte, mais rassurante.",
-  "Le logo a survécu au changement de nom, pas à la coupure de courant."
+  "On peut tout couper, sauf la flamme : la seule chose qu'ils n'ont jamais voulu éteindre.",
+  "Devine laquelle : la flamme, en LED, sur batterie de secours.",
+  "Panne générale : toute la ville s'éteint, sauf une enseigne."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine.",
+   "text": "Dans cette ville, tout le monde vote Marine. Même pendant la panne.",
    "accent_words": [
-    "Marine"
+    "la panne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Et le logo a gardé la flamme, simplement rangée dans un cercle.",
+   "text": "Nouveau nom en 2018, nouveau cercle.",
+   "accent_words": [
+    "Nouveau nom"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "Mais la flamme du logo, elle, a été gardée.",
    "accent_words": [
     "la flamme"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n3",
-   "text": "Soir de panne générale : toute la ville s'éteint d'un coup.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n4",
-   "text": "La maire ordonne : « Allumez la flamme du logo ».",
-   "accent_words": [],
+   "text": "Panne générale : toute la ville s'éteint, sauf une enseigne.",
+   "accent_words": [
+    "sauf une enseigne"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Problème : elle est rangée dans un cercle, et le cercle est fermé.",
+   "text": "Devine laquelle : la flamme, en LED, sur batterie de secours.",
    "accent_words": [
-    "rangée dans un cercle"
+    "en LED"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Les pompiers l'ouvrent : la flamme est une LED.",
+   "text": "On peut tout couper, sauf la flamme : la seule chose qu'ils n'ont jamais voulu éteindre.",
    "accent_words": [
-    "une LED"
+    "jamais voulu éteindre"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "La ville passe la nuit autour d'un logo éteint, en se tenant chaud.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ta pire panne de courant, raconte-la en commentaire.",
-   "accent_words": [],
+   "text": "Envoie ça au pote qui dit que le RN a tout changé.",
+   "accent_words": [
+    "tout changé"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -83,108 +83,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "mairie",
-    "lamp",
-    "banner"
+    "banner",
+    "person"
    ],
-   "onscreen_text": "LA FLAMME, EN CERCLE",
-   "comic_action": "Plongée sur la mairie illuminée, logo « flamme dans un cercle » sur la façade.",
-   "expected_result": "Ancrage."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la ville éteinte ; une seule enseigne allumée.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
    "camera": "street_dolly",
    "set": [
-    "lamp",
-    "building",
-    "road"
+    "facade_row",
+    "facade_set",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "PANNE GÉNÉRALE",
-   "comic_action": "Les lampadaires s'éteignent un par un le long de l'avenue.",
-   "expected_result": "Situation."
+   "onscreen_text": "NOUVEAU NOM, NOUVEAU ROND",
+   "comic_action": "Une enseigne neuve en forme de rond.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
-    "tribune",
-    "person",
-    "text3d"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "ALLUMEZ LA FLAMME",
-   "comic_action": "La maire, à la lampe de poche, montre le logo ; un cercle métallique cadenassé l'entoure.",
-   "expected_result": "L'idée et son obstacle."
+   "onscreen_text": "FLAMME : GARDÉE",
+   "comic_action": "L'écran montre la flamme qui reste au centre.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "lamp",
+    "road",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "PANNE : 99 %",
+   "comic_action": "Rue : lampadaires éteints, une enseigne qui brille au loin.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "shop",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "FLAMME : BATTERIE DE SECOURS",
+   "comic_action": "Vitrine : une flamme en LED branchée sur un générateur.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
    "narration_ids": [
     "n6"
    ],
    "camera": "orbit",
    "set": [
+    "column",
+    "mairie",
     "text3d",
     "person"
    ],
-   "onscreen_text": "FLAMME : LED EN PANNE",
-   "comic_action": "Des pompiers ouvrent le cercle : à l'intérieur, une flamme en plastique avec une prise électrique.",
-   "expected_result": "Épisode raté."
+   "onscreen_text": "ÉTEINDRE : NON",
+   "comic_action": "Entre deux colonnes, la flamme brille seule dans la ville sombre. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "lamp",
+    "shop",
+    "tshirt",
     "person",
-    "tshirt"
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Les habitants serrés sous le logo éteint ; l'un porte « RÉPONSES CONCRÈTES : CHARGEMENT… ».",
-   "expected_result": "Chute + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt allume une lampe de poche.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ta pire panne de courant, raconte-la en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui dit que le RN a tout changé."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 85,
+ "word_count": 76,
  "claims": [
   {
    "segment": "n2",
+   "text": "Nouveau nom en 2018, nouveau cercle.",
    "claim_type": "fait_public",
-   "text": "Et le logo a gardé la flamme, simplement rangée dans un cercle.",
-   "source_url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550"
+   "source": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
+   "note": "Le FN devient RN ; la flamme du logo est conservée, rangée dans un cercle."
+  },
+  {
+   "segment": "n3",
+   "text": "Mais la flamme du logo, elle, a été gardée.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
+   "note": "Le FN devient RN ; la flamme du logo est conservée, rangée dans un cercle."
   }
  ],
  "sources": [
   {
    "url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
    "date": "2018-06-01",
+   "consulted": "2026-11-22",
    "statut": "fait public",
-   "usage": "On change le nom, pas le rond : enseignes empilées.",
-   "consulted": "2026-11-21"
+   "note": "Le FN devient RN ; la flamme du logo est conservée, rangée dans un cercle."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Épisode raté : le symbole conservé lors du rebranding (fait public) se révèle décoratif au moment où on en a besoin. Mème d'ancrage : Le rebranding FN → RN : nouveau nom, flamme gardée et rangée dans un cercle (2018). Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = 2018 : nouveau nom, nouveau cercle, mais la flamme du logo gardée ; panne générale, seule la flamme reste allumée. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

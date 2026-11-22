@@ -4,86 +4,79 @@
  "synopsis_id": "zmv-m012-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Le rond-point Austerlitz",
- "anchor": "Admiration revendiquée pour Napoléon ; portrait en « historien pop » nostalgique d'Austerlitz plus que des Trente Glorieuses.",
+ "title_cover": "Rond-point Austerlitz",
+ "anchor": "l'admiration pour Napoléon et le slogan « Impossible n'est pas français ».",
  "meme_id": "ZO",
  "situation": "le rond-point",
- "ressort": "boucle : on revient exactement au point de départ, en pire",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "À Zemmourville, le rond-point central s'appelle Austerlitz. Évidemment.",
-  "Ici, personne ne prend la sortie Waterloo.",
-  "Le rond-point le plus napoléonien de France.",
-  "Quatre sorties, une seule interdite.",
-  "Dans cette ville, on tourne autour d'Austerlitz depuis deux siècles."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : le rond-point mène à 1805.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, toutes les sorties sont des batailles.",
+  "Zemmourville : tourner en rond, mais avec panache."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Deux siècles plus tard, le rond-point est toujours plein.",
-  "Un touriste prend Waterloo. On le retrouve à l'île d'Elbe.",
-  "La mairie ajoute une sortie : Austerlitz bis."
+  "On tourne depuis 2021. Le compteur affiche : 7 %.",
+  "Austerlitz au centre, aucune sortie vers la victoire.",
+  "On tourne, on tourne, et c'est toujours 1805."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "À Zemmourville, le rond-point central s'appelle Austerlitz. Évidemment.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Sens giratoire.",
    "accent_words": [
-    "Zemmourville",
-    "rond-point"
+    "Sens giratoire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Quatre sorties : Iéna, Wagram, Marengo, et Waterloo.",
+   "text": "Il admire Napoléon. Ici, le rond-point s'appelle Austerlitz.",
    "accent_words": [
-    "Waterloo",
-    "sorties"
+    "Austerlitz"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Personne ne prend jamais la sortie Waterloo.",
+   "text": "Toutes les sorties mènent à 1805. Aucune à 2027.",
    "accent_words": [
-    "Personne",
-    "Waterloo"
+    "Aucune à 2027"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Alors tout le monde refait un tour d'Austerlitz.",
+   "text": "Le GPS dit : faites demi-tour, c'était mieux avant.",
    "accent_words": [
-    "d'Austerlitz",
-    "refait"
+    "demi-tour"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Puis un autre. Le GPS finit par jouer une marche militaire.",
+   "text": "Sur le panneau, son slogan de 2021 : Impossible n'est pas français. Sortir, si.",
    "accent_words": [
-    "militaire",
-    "marche"
+    "Sortir, si"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Deux siècles plus tard, le rond-point est toujours plein.",
+   "text": "On tourne depuis 2021. Le compteur affiche : 7 %.",
    "accent_words": [
-    "rond-point",
-    "toujours"
+    "7 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Toi, tu prendrais quelle sortie ? Dis-le en commentaire.",
+   "text": "Envoie ça au pote qui tourne en rond en se croyant empereur.",
    "accent_words": [
-    "commentaire",
-    "prendrais"
+    "empereur"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,94 +85,164 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "roundabout",
-    "car_orbit",
-    "sign"
+    "car",
+    "person"
    ],
-   "onscreen_text": "ROND-POINT AUSTERLITZ",
-   "comic_action": "Rond-point vu d'en haut, quatre panneaux.",
-   "expected_result": "Règle posée."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur un rond-point avec une colonne impériale au centre.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
    "camera": "closeup",
    "set": [
+    "column",
     "sign",
-    "car",
     "text3d"
    ],
-   "onscreen_text": "SORTIE WATERLOO : 0",
-   "comic_action": "Panneau Waterloo couvert de poussière.",
-   "expected_result": "Évitement."
+   "onscreen_text": "ROND-POINT AUSTERLITZ",
+   "comic_action": "Gros plan sur la plaque dorée au pied de la colonne.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n3"
    ],
    "camera": "orbit",
    "set": [
     "roundabout",
-    "car_orbit",
-    "gps"
+    "sign",
+    "car"
    ],
-   "onscreen_text": "TOUR N°1 815",
-   "comic_action": "Orbite, voitures qui tournent, GPS géant.",
-   "expected_result": "Boucle."
+   "onscreen_text": "SORTIES : 1805",
+   "comic_action": "Orbite : tous les panneaux de sortie indiquent la même date.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "gps",
+    "car",
+    "text3d"
+   ],
+   "onscreen_text": "DEMI-TOUR",
+   "comic_action": "Gros plan sur le GPS de la voiture, voix solennelle.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "car_orbit",
+    "roundabout",
+    "sign"
+   ],
+   "onscreen_text": "SORTIR : IMPOSSIBLE",
+   "comic_action": "Travelling : les voitures tournent en boucle sous le slogan.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "roundabout",
+    "column",
+    "text3d"
+   ],
+   "onscreen_text": "COMPTEUR : 7 %",
+   "comic_action": "Plan large : le rond-point vu du ciel, les voitures dessinent un 7.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "roundabout",
-    "car_orbit",
-    "tshirt"
+    "person",
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "TOUJOURS PLEIN",
-   "comic_action": "Plan large, embouteillage circulaire ; t-shirt sur l'îlot.",
-   "expected_result": "Chute en boucle."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique sort à pied, enjambant le terre-plein.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Toi, tu prendrais quelle sortie ? Dis-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui tourne en rond en se croyant empereur."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 60,
- "claims": [],
- "sources": [
+ "word_count": 72,
+ "claims": [
   {
-   "url": "https://www.irishexaminer.com/opinion/commentanalysis/arid-30904832.html",
-   "date": "2019-02-16",
-   "consulted": "2026-11-21",
-   "statut": "opinion",
-   "usage": "Références napoléoniennes caricaturées (Austerlitz, Waterloo, Bérézina)."
+   "text": "Il admire Napoléon. Ici, le rond-point s'appelle Austerlitz.",
+   "claim_type": "fait_public",
+   "source": "https://fr.timesofisrael.com/de-quelle-extreme-droite-eric-zemmour-est-il-le-nom/",
+   "note": "Admiration revendiquée pour Napoléon ; slogan « Impossible n'est pas français »."
   },
+  {
+   "text": "Sur le panneau, son slogan de 2021 : Impossible n'est pas français. Sortir, si.",
+   "claim_type": "fait_public",
+   "source": "https://www.europe1.fr/node/127383",
+   "note": "Slogan de campagne « Impossible n'est pas français » (formule attribuée à Napoléon)."
+  },
+  {
+   "text": "On tourne depuis 2021. Le compteur affiche : 7 %.",
+   "claim_type": "fait_public",
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  }
+ ],
+ "sources": [
   {
    "url": "https://fr.timesofisrael.com/de-quelle-extreme-droite-eric-zemmour-est-il-le-nom/",
    "date": "2021-12",
-   "consulted": "2026-11-21",
-   "statut": "fait public",
-   "usage": "Admiration revendiquée pour Napoléon."
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Admiration revendiquée pour Napoléon ; slogan « Impossible n'est pas français »."
+  },
+  {
+   "url": "https://www.europe1.fr/node/127383",
+   "date": "2021-12",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte",
+   "note": "Slogan de campagne « Impossible n'est pas français » (formule attribuée à Napoléon)."
+  },
+  {
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Boucle sur la passion napoléonienne (opinion et fait sourcés)."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : l'admiration pour Napoléon et le slogan « Impossible n'est pas français ». Cadre : le rond-point. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

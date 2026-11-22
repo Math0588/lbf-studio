@@ -4,32 +4,31 @@
  "synopsis_id": "zmv-m024-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Le conseil de chroniqueurs",
- "anchor": "Après 2022, Reconquête n'a aucun député : le chroniqueur devenu chef de parti sans élus à l'Assemblée.",
+ "title_cover": "La ville sans élus",
+ "anchor": "après 2022 : zéro député, le chef battu dans le Var.",
  "meme_id": "ZM",
  "situation": "la visite de la ville voisine",
- "ressort": "comparaison : la même situation dans la ville voisine, en une phrase",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour… mais personne n'est élu.",
-  "Ici, le conseil municipal est un plateau télé.",
-  "Zéro élu, douze chroniqueurs.",
-  "La ville voisine répare. Nous, on commente.",
-  "Le pont s'effondre : audience record."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : la ville voisine a des élus, nous des chroniqueurs.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, on visite l'Assemblée comme un musée.",
+  "Zemmourville : zéro député, cent avis."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le pont s'effondre en direct. Excellent sujet pour l'édito.",
-  "La ville voisine prête un élu. Il est invité en plateau.",
-  "Le pont est reconstruit par la ville voisine. Ici, on en débat."
+  "La voisine gouverne. Nous, on a un très bon avis sur la question.",
+  "La voisine décide, nous commentons.",
+  "Zéro élu, mais quelle éloquence."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour… mais personne n'est élu.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Sans député.",
    "accent_words": [
-    "personne",
-    "Zemmour"
+    "Sans député"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,53 +36,47 @@
    "id": "n2",
    "text": "Après 2022, son parti n'a aucun député à l'Assemblée.",
    "accent_words": [
-    "l'Assemblée",
-    "député"
+    "aucun député"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "À Zemmourville, le conseil municipal est donc composé de chroniqueurs.",
+   "text": "Ici, la ville visite sa voisine. Elle a des élus. Scandale.",
    "accent_words": [
-    "Zemmourville",
-    "chroniqueurs"
+    "Scandale"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Dans la ville voisine, les élus réparent le pont.",
+   "text": "La voisine vote des lois. Nous, on commente les lois des autres.",
    "accent_words": [
-    "réparent",
-    "voisine"
+    "on commente"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Ici, les chroniqueurs débattent de la grandeur passée du pont.",
+   "text": "Lui-même, battu au premier tour dans le Var en 2022.",
    "accent_words": [
-    "chroniqueurs",
-    "débattent"
+    "battu"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Le pont s'effondre en direct. Excellent sujet pour l'édito.",
+   "text": "La voisine gouverne. Nous, on a un très bon avis sur la question.",
    "accent_words": [
-    "s'effondre",
-    "Excellent"
+    "très bon avis"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Toi, tu préfères un élu ou un chroniqueur ? Commente.",
+   "text": "Envoie ça au pote qui critique l'équipe mais ne s'inscrit jamais.",
    "accent_words": [
-    "chroniqueur",
-    "préfères"
+    "ne s'inscrit jamais"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,94 +85,150 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2",
-    "n3"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "mairie",
-    "router_lectern",
+    "ground",
+    "road",
+    "sign",
     "person"
    ],
-   "onscreen_text": "ÉLUS : 0",
-   "comic_action": "Mairie vue d'en haut, pupitres de plateau.",
-   "expected_result": "Comparaison posée."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur la frontière : panneau « VILLE VOISINE — ÉLUS : OUI ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n4"
+    "n2"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "building",
-    "person",
-    "road"
+    "tribune",
+    "text3d"
    ],
-   "onscreen_text": "VILLE VOISINE : TRAVAUX",
-   "comic_action": "Les élus voisins en casque sur le pont.",
-   "expected_result": "Comparaison."
+   "onscreen_text": "DÉPUTÉS : 0",
+   "comic_action": "Gros plan sur un hémicycle miniature, tous les sièges vides.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5"
+    "n3"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "router_lectern",
+    "road",
     "person",
-    "studio_light"
+    "sign"
    ],
-   "onscreen_text": "GRANDEUR DU PONT",
-   "comic_action": "Chroniqueurs en débat devant le pont fissuré.",
-   "expected_result": "Commenter vs faire.",
-   "bubble": "Ce pont était plus beau avant."
+   "onscreen_text": "VISITE OFFICIELLE",
+   "comic_action": "Travelling : la délégation découvre une mairie avec des gens dedans.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
+    "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "person",
+    "table",
+    "text3d"
+   ],
+   "onscreen_text": "COMMENTAIRE",
+   "comic_action": "Orbite : la délégation prend des notes en marmonnant.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "sign",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "VAR : 1ER TOUR",
+   "comic_action": "Un panneau de circonscription barré dans la valise du maire.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "road",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "GOUVERNER / COMMENTER",
+   "comic_action": "Plan large : la frontière ; d'un côté des grues, de l'autre des micros.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "road",
-    "screen",
-    "tshirt"
+    "person",
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "ÉDITO DU JOUR",
-   "comic_action": "Écran « Édito » devant le pont effondré ; t-shirt sur la barrière.",
-   "expected_result": "Chute."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique reste dans la ville voisine.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Toi, tu préfères un élu ou un chroniqueur ? Commente."
+  "type": "share",
+  "text": "Envoie ça au pote qui critique l'équipe mais ne s'inscrit jamais."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 69,
+ "word_count": 76,
  "claims": [
   {
-   "segment": "n2",
+   "text": "Après 2022, son parti n'a aucun député à l'Assemblée.",
    "claim_type": "fait_public",
-   "source_url": "https://www.publicsenat.fr/actualites/politique/jean-luc-mano-zemmour-est-passe-du-statut-de-chroniqueur-a-un-homme-politique-qui"
+   "source": "https://www.publicsenat.fr/actualites/politique/jean-luc-mano-zemmour-est-passe-du-statut-de-chroniqueur-a-un-homme-politique-qui",
+   "note": "Du chroniqueur au chef de parti ; aucun député après 2022."
+  },
+  {
+   "text": "Lui-même, battu au premier tour dans le Var en 2022.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
+   "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
   }
  ],
  "sources": [
   {
    "url": "https://www.publicsenat.fr/actualites/politique/jean-luc-mano-zemmour-est-passe-du-statut-de-chroniqueur-a-un-homme-politique-qui",
-   "date": "2022-09-11",
-   "consulted": "2026-11-21",
-   "statut": "fait public (zéro député) + opinion",
-   "usage": "Seul le fait « aucun député » est dit ; l'opinion du communicant n'est pas citée."
+   "date": "2022",
+   "consulted": "2026-11-22",
+   "statut": "fait + opinion",
+   "note": "Du chroniqueur au chef de parti ; aucun député après 2022."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
+   "date": "2022-06-12",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Législatives 2022 : éliminé dès le premier tour dans la 4e circonscription du Var (troisième, 23,19 %)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Phrase 2 = fait public (aucun député Reconquête après 2022, Public Sénat). L'opinion du communicant n'est pas citée. Ouverture « Dans cette ville, tout le monde vote Zemmour… »."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : après 2022 : zéro député, le chef battu dans le Var. Cadre : la visite de la ville voisine. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

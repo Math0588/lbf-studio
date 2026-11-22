@@ -3,36 +3,36 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m022",
  "format": "A",
- "anchor": "La marque « Marine » au prénom seul (campagne 2017 ; affiche 2026 « avec Marine, défendons la République »)",
- "situation": "la mairie",
- "ressort": "littéralisation",
+ "anchor": "affiche 2026 « avec Marine, défendons la République » : le prénom seul, comme en 2017.",
+ "situation": "Prénom seulement",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
  "title_cover": "Prénom seulement",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Marine.",
-  "Ici, les noms de famille ont été supprimés.",
-  "Quatre cent douze Patrick, une seule facture.",
-  "À la mairie, on ne demande que ton prénom. Et celui de ton chat.",
-  "La ville la plus chaleureuse et la plus perdue de France."
+  "Ici, plus aucun nom de famille sur les boîtes aux lettres.",
+  "Marineville : une marque qui cache son nom.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : prénom seulement."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La maire assure : « C'est plus chaleureux comme ça ».",
-  "Les impôts de quatre cent douze Patrick arrivent chez un seul. Il est très ému.",
-  "Plus de nom de famille, plus de famille : juste des Patrick."
+  "Une marque qui cache son nom, c'est rarement pour une recette nouvelle.",
+  "Le facteur distribue au hasard : quatre cents Gérard, un seul courrier.",
+  "Les impôts, eux, retrouvent tout le monde. Nom, prénom, adresse."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine.",
+   "text": "Dans cette ville, tout le monde vote Marine. Sans nom.",
    "accent_words": [
-    "Marine"
+    "Sans nom"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sur l'affiche, juste le prénom : « avec Marine, défendons la République ».",
+   "text": "Sur l'affiche : « avec Marine, défendons la République ». Le nom ? Égaré.",
    "accent_words": [
     "avec Marine"
    ],
@@ -40,44 +40,42 @@
   },
   {
    "id": "n3",
-   "text": "À la mairie, on a donc supprimé tous les noms de famille.",
+   "text": "Déjà en 2017, nom de famille et sigle du parti disparaissaient des documents.",
    "accent_words": [
-    "tous les noms de famille"
+    "disparaissaient"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n4",
+   "text": "Ici, la mairie a supprimé les noms de famille des boîtes aux lettres.",
+   "accent_words": [
+    "boîtes aux lettres"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n4",
-   "text": "Les formulaires demandent juste ton prénom, et celui du chat.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n5",
-   "text": "L'état civil compte quatre cent douze Patrick, tous confondus.",
+   "text": "Le facteur distribue au hasard : quatre cents Gérard, un seul courrier.",
    "accent_words": [
-    "quatre cent douze Patrick"
+    "un seul courrier"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Les factures arrivent au hasard chez le premier Patrick venu.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n7",
-   "text": "La maire assure : « C'est plus chaleureux comme ça ».",
+   "text": "Une marque qui cache son nom, c'est rarement pour une recette nouvelle.",
    "accent_words": [
-    "chaleureux"
+    "une recette nouvelle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n8",
-   "text": "Combien de gens ont ton prénom dans ta rue, en commentaire ?",
-   "accent_words": [],
+   "id": "n7",
+   "text": "Envoie ça au pote qui l'appelle juste Marine, comme une collègue.",
+   "accent_words": [
+    "une collègue"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,83 +83,119 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "AVEC MARINE",
-   "comic_action": "Plongée sur la mairie ; une grande affiche avec le seul prénom.",
-   "expected_result": "Ancrage réel (slogan exact)."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; une plaque où seul le prénom est gravé.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "mairie",
-    "form_stack",
-    "person"
+    "facade_row",
+    "facade_set",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "NOM : SUPPRIMÉ",
-   "comic_action": "Un agent raye la case « NOM » sur une pile de formulaires ; nouvelle case « PRÉNOM DU CHAT ».",
-   "expected_result": "Littéralisation."
+   "onscreen_text": "AVEC MARINE",
+   "comic_action": "Rangée de façades couvertes de la même affiche au prénom.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n3"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
+    "screen",
+    "text3d",
     "mairie",
-    "person",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "412 PATRICK",
-   "comic_action": "Orbite sur une foule d'habitants portant tous un badge « PATRICK » ; un facteur hésite.",
-   "expected_result": "Escalade chiffrée."
+   "onscreen_text": "2017 : NOM MASQUÉ",
+   "comic_action": "L'écran affiche une vieille affiche, bandeau bleu sur le nom.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n7"
+    "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
-    "person"
+    "road",
+    "building",
+    "person",
+    "bin"
    ],
-   "onscreen_text": "PLUS CHALEUREUX",
-   "comic_action": "La maire au pupitre, bulle « C'est plus chaleureux comme ça ».",
-   "expected_result": "Chute."
+   "onscreen_text": "BOÎTES : PRÉNOMS",
+   "comic_action": "Travelling sur des boîtes aux lettres : « Gérard », « Gérard », « Gérard ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "bus",
+    "road",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "400 GÉRARD",
+   "comic_action": "Un facteur perdu devant un mur de boîtes identiques.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "shop",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "RECETTE : LA MÊME",
+   "comic_action": "Vitrine : un produit sans étiquette, l'ancienne collée au dos. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
+    "shop",
     "tshirt",
-    "mairie"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Un Patrick en t-shirt « À DROITE DU CANAPÉ. » reçoit dix factures.",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt salue une affiche par son prénom.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Combien de gens ont ton prénom dans ta rue, en commentaire ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui l'appelle juste Marine, comme une collègue."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -172,30 +206,35 @@
  "claims": [
   {
    "segment": "n2",
+   "text": "« avec Marine, défendons la République »",
    "claim_type": "citation_exacte",
-   "text": "Sur l'affiche, juste le prénom : « avec Marine, défendons la République ».",
-   "source_url": [
-    "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
-    "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558"
-   ]
+   "source": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
+   "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
+  },
+  {
+   "segment": "n3",
+   "text": "Déjà en 2017, nom de famille et sigle du parti disparaissaient des documents.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
+   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme »."
   }
  ],
  "sources": [
   {
    "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
    "date": "2026-10-29",
-   "statut": "fait public (slogan de l'affiche)",
-   "usage": "Slogan cité à l'identique.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (meeting d'Orléans, 25/10/2026) + fait (affiche)",
+   "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
   },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
    "date": "2017-02-06",
-   "statut": "fait public + moquerie de presse (« Marine » tout court)",
-   "usage": "Thème du prénom seul.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "fait public + analyse de presse",
+   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Littéralisation de la marque au prénom seul : la mairie supprime les noms de famille. Mème d'ancrage : La marque « Marine » au prénom seul (campagne 2017 ; affiche 2026 « avec Marine, défendons la République »). Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = affiche 2026 « avec Marine, défendons la République » : le prénom seul, comme en 2017. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

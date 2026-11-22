@@ -4,85 +4,79 @@
  "synopsis_id": "zmv-m001-gm",
  "format": "A",
  "length": "court",
- "title_cover": "La baguette remonte le temps",
- "anchor": "Le candidat de la nostalgie et du déclinisme : « c'était mieux avant », la France d'antan.",
+ "title_cover": "La baguette d'avant",
+ "anchor": "le « c'était mieux avant » : déclinisme et nostalgie, jusqu'au pain.",
  "meme_id": "ZN",
  "situation": "la boulangerie",
- "ressort": "escalade : chaque étape est pire et plus absurde que la précédente",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour… et tout était mieux avant.",
-  "Ici, la baguette recule d'une décennie chaque matin.",
-  "La seule boulangerie qui rend la monnaie en louis d'or.",
-  "Le croissant est banni : trop récent.",
-  "Dans cette ville, même le pain est nostalgique."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : la baguette du jour est interdite.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, le pain frais est un signe de déclin.",
+  "Zemmourville : la boulangerie qui vend du passé."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ce matin, elle vend des galettes de seigle à la bougie.",
-  "Un matin, la boulangerie arrive à l'âge de pierre.",
-  "Le boulanger pétrit à la main, à la lueur d'un silex."
+  "Le pain d'avant était meilleur, c'est sûr. Le score d'avant aussi : 17 %.",
+  "Pain rassis, nostalgie fraîche.",
+  "Avant, le pain était meilleur. Les sondages aussi."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour… et tout était mieux avant.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. C'était mieux avant.",
    "accent_words": [
-    "Zemmour"
+    "C'était mieux avant"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À la boulangerie, la baguette coûte un franc. Un franc de 1965.",
+   "text": "Ici, la baguette n'est jamais fraîche. Elle est d'avant.",
    "accent_words": [
-    "boulangerie",
-    "baguette"
+    "d'avant"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Le boulanger rend la monnaie en anciens francs, puis en louis d'or.",
+   "text": "Celle du jour est soldée. Celle de 1974 sur liste d'attente.",
    "accent_words": [
-    "boulanger",
-    "monnaie"
+    "liste d'attente"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le croissant ? Trop moderne. Il date seulement de deux siècles.",
+   "text": "Une fondation a résumé l'humeur : déclinisme et nostalgie, cocktail français.",
    "accent_words": [
-    "croissant",
-    "seulement"
+    "cocktail français"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Chaque matin, la boulangerie recule encore d'une décennie.",
+   "text": "Le boulanger rend la monnaie en francs et en soupirs.",
    "accent_words": [
-    "boulangerie",
-    "décennie"
+    "en soupirs"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ce matin, elle vend des galettes de seigle à la bougie.",
+   "text": "Le pain d'avant était meilleur, c'est sûr. Le score d'avant aussi : 17 %.",
    "accent_words": [
-    "galettes",
-    "seigle"
+    "17 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Toi, tu remonterais jusqu'à quelle année ? Dis-le en commentaire.",
+   "text": "Envoie ça au pote qui dit que les bonbons coûtaient un franc.",
    "accent_words": [
-    "remonterais",
-    "commentaire"
+    "un franc"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -91,25 +85,68 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "shop",
-    "person",
-    "sign",
-    "text3d"
+    "scroll",
+    "person"
    ],
-   "onscreen_text": "BAGUETTE : 1 F (1965)",
-   "comic_action": "Boulangerie vue d'en haut, étiquette de prix rétro géante.",
-   "expected_result": "La nostalgie devient tarif."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur une boulangerie à l'ancienne : enseigne « PAIN D'AVANT ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "shop",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "BAGUETTE D'AVANT",
+   "comic_action": "Gros plan : une baguette sous cloche, étiquette « 1974 ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "shop",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "1974 : LISTE D'ATTENTE",
+   "comic_action": "Travelling : une file d'habitants devant le panier des pains rassis.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
     "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "table",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "DÉCLINISME + NOSTALGIE",
+   "comic_action": "Orbite : le boulanger sert un cocktail dans une flûte à champagne poussiéreuse.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
    ],
    "camera": "closeup",
    "set": [
@@ -117,70 +154,82 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "MONNAIE : LOUIS D'OR",
-   "comic_action": "Le boulanger aligne des pièces de plus en plus anciennes.",
-   "expected_result": "Escalade temporelle.",
-   "bubble": "Le croissant ? Trop moderne."
+   "onscreen_text": "MONNAIE : FRANCS",
+   "comic_action": "Gros plan sur des pièces anciennes déposées une à une, soupir à chaque pièce.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s3",
+   "id": "s6",
    "narration_ids": [
-    "n5"
+    "n6"
    ],
-   "camera": "window_pass",
+   "camera": "descend",
    "set": [
     "shop",
-    "lamp",
-    "sign"
+    "text3d",
+    "scroll"
    ],
-   "onscreen_text": "−10 ANS / JOUR",
-   "comic_action": "Vitrine qui change d'époque à chaque passage.",
-   "expected_result": "Le recul permanent."
+   "onscreen_text": "AVANT : 17 %",
+   "comic_action": "Plan large : l'enseigne s'allume « 17 % » au néon, puis grésille.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
   },
   {
-   "id": "s4",
+   "id": "s7",
    "narration_ids": [
-    "n6",
     "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
-    "lamp",
-    "tshirt"
+    "person",
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "GALETTE À LA BOUGIE",
-   "comic_action": "Boutique éclairée à la bougie ; t-shirt en vitrine.",
-   "expected_result": "Chute."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique croque une baguette, elle craque comme du bois.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Toi, tu remonterais jusqu'à quelle année ? Dis-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui dit que les bonbons coûtaient un franc."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 77,
- "claims": [],
+ "word_count": 78,
+ "claims": [
+  {
+   "text": "Une fondation a résumé l'humeur : déclinisme et nostalgie, cocktail français.",
+   "claim_type": "fait_public",
+   "source": "https://www.jean-jaures.org/publication/declinisme-et-nostalgie-un-cocktail-francais/",
+   "note": "Fondation Jean-Jaurès : « Déclinisme et nostalgie, un cocktail français »."
+  },
+  {
+   "text": "Le pain d'avant était meilleur, c'est sûr. Le score d'avant aussi : 17 %.",
+   "claim_type": "fait_public",
+   "source": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
+  }
+ ],
  "sources": [
   {
    "url": "https://www.jean-jaures.org/publication/declinisme-et-nostalgie-un-cocktail-francais/",
-   "date": "2021-10-21",
-   "consulted": "2026-11-21",
-   "statut": "opinion (analyse)",
-   "usage": "Ressort « c'était mieux avant » poussé à l'absurde."
+   "date": "2021",
+   "consulted": "2026-11-22",
+   "statut": "analyse",
+   "note": "Fondation Jean-Jaurès : « Déclinisme et nostalgie, un cocktail français »."
   },
   {
-   "url": "https://www.slate.fr/story/215283/blog-sagalovitsch-avec-zemmour-compagnie-on-va-bouffer-declin-francais-nausee",
-   "date": "2021-09",
-   "consulted": "2026-11-21",
-   "statut": "opinion (moquerie)",
-   "usage": "Thème du déclin permanent, sans reprendre la formule."
+   "url": "https://www.euronews.com/2021/10/07/uk-france-election-poll",
+   "date": "2021-10-07",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Sondage Harris Interactive d'octobre 2021 : 17 % (17-18 %), qualifié au second tour."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Escalade sur la nostalgie/déclinisme (analyses Jean-Jaurès, Slate). Ouverture « Dans cette ville, tout le monde vote Zemmour… »."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le « c'était mieux avant » : déclinisme et nostalgie, jusqu'au pain. Cadre : la boulangerie. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

@@ -5,85 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Ben voyons, embauché",
- "anchor": "« Ben voyons ! » : tic de langage de Zemmour qui clôt la discussion, repris en slogan par ses fans.",
+ "anchor": "« Ben voyons », tic de langage devenu slogan de fans.",
  "meme_id": "ZS",
  "situation": "l'entretien d'embauche",
- "ressort": "contamination : toute la ville se met à parler ou à agir comme le mème",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "Zemmour a un tic célèbre pour clore un débat : ben voyons.",
-  "Ici, un entretien se passe en deux mots.",
-  "Qualités ? Ben voyons. Défauts ? Ben voyons.",
-  "La ville où tout le monde a attrapé le même tic.",
-  "Embauché en disant ben voyons."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : l'entretien d'embauche se fait en ben voyons.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, deux mots suffisent pour tout.",
+  "Zemmourville : le CV tient en une expression."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le recruteur, contaminé, signe le contrat en disant ben voyons.",
-  "Premier jour : la réunion d'équipe dure deux mots.",
-  "Le contrat tient en une ligne : ben voyons."
+  "Embauché. Personne ne sait pour quoi faire, mais avec assurance.",
+  "Deux mots, zéro programme, embauché.",
+  "Ben voyons : la réponse à tout, sauf au programme."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Zemmour a un tic célèbre pour clore un débat : ben voyons.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Entretien en cours.",
    "accent_words": [
-    "Zemmour",
-    "célèbre"
+    "Entretien en cours"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Ben voyons : son tic de langage le plus célèbre.",
+   "accent_words": [
+    "tic de langage"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n2",
-   "text": "À Zemmourville, toute la ville l'a attrapé.",
-   "accent_words": [
-    "Zemmourville",
-    "attrapé"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n3",
-   "text": "En entretien d'embauche, le recruteur demande tes qualités. Ben voyons.",
+   "text": "Ses fans en ont fait un slogan. Ici, c'est la grille d'entretien.",
    "accent_words": [
-    "d'embauche",
-    "entretien"
+    "la grille d'entretien"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Et tes défauts ? Réponse unique : ben voyons.",
+   "text": "Vos compétences ? Ben voyons. Votre expérience ? Ben voyons.",
    "accent_words": [
-    "défauts",
-    "Réponse"
+    "Votre expérience"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Tes prétentions salariales ? Long silence, puis ben voyons.",
+   "text": "Votre programme ? Silence. Puis : ben voyons.",
    "accent_words": [
-    "prétentions",
-    "salariales"
+    "Silence"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le recruteur, contaminé, signe le contrat en disant ben voyons.",
+   "text": "Embauché. Personne ne sait pour quoi faire, mais avec assurance.",
    "accent_words": [
-    "recruteur",
-    "contaminé"
+    "avec assurance"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Tu as un tic de langage, toi ? Avoue en commentaire.",
+   "text": "Envoie ça au pote qui a réussi un entretien sans rien dire.",
    "accent_words": [
-    "commentaire",
-    "langage"
+    "sans rien dire"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,23 +85,52 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "building",
-    "table",
+    "scroll",
     "person"
    ],
-   "onscreen_text": "ENTRETIEN : 2 MOTS",
-   "comic_action": "Bureau vu d'en haut, deux chaises.",
-   "expected_result": "Tic posé."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur un bureau ; plaque « RECRUTEMENT — BEN VOYONS SARL ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "text3d",
+    "person",
+    "table"
+   ],
+   "onscreen_text": "BEN VOYONS",
+   "comic_action": "Gros plan sur la plaque de la porte.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "form_stack",
+    "table",
+    "text3d"
+   ],
+   "onscreen_text": "GRILLE : 2 MOTS",
+   "comic_action": "Orbite autour d'une grille d'évaluation qui n'a qu'une colonne.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
     "n4"
    ],
    "camera": "closeup",
@@ -117,69 +139,90 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "QUALITÉS ? BEN VOYONS",
-   "comic_action": "Candidat bras croisés, sourcil levé.",
-   "expected_result": "Contamination.",
-   "bubble": "Ben voyons."
+   "onscreen_text": "COMPÉTENCES : BEN VOYONS",
+   "comic_action": "Le recruteur hoche la tête, coche les cases.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s3",
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "table",
     "person",
-    "form_stack"
+    "table",
+    "sign"
    ],
-   "onscreen_text": "SALAIRE ? …",
-   "comic_action": "Long silence, horloge qui tourne.",
-   "expected_result": "Escalade."
+   "onscreen_text": "PROGRAMME : …",
+   "comic_action": "Travelling : long silence, une mouche passe.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s4",
+   "id": "s6",
    "narration_ids": [
-    "n6",
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "building",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "EMBAUCHÉ",
+   "comic_action": "Plan large : poignée de main, contrat vierge.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "table",
     "person",
-    "tshirt"
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "CONTRAT : BEN VOYONS",
-   "comic_action": "Le recruteur signe ; t-shirt sur le dossier.",
-   "expected_result": "Chute."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique sort du bureau, embauché.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Tu as un tic de langage, toi ? Avoue en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui a réussi un entretien sans rien dire."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 68,
+ "word_count": 73,
  "claims": [
   {
-   "segment": "n1",
+   "text": "Ben voyons : son tic de langage le plus célèbre.",
    "claim_type": "fait_public",
-   "source_url": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf"
+   "source": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
+   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
+  },
+  {
+   "text": "Ses fans en ont fait un slogan. Ici, c'est la grille d'entretien.",
+   "claim_type": "fait_public",
+   "source": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
+   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
   }
  ],
  "sources": [
   {
    "url": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
    "date": "2022-02-02",
-   "consulted": "2026-11-21",
-   "statut": "fait public (tic) + mème",
-   "usage": "Tic repris par des personnages fictifs, contamination."
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Phrase 1 = fait public (tic documenté par Terra Nova, 02/2022). Contamination du tic sur des personnages fictifs."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « Ben voyons », tic de langage devenu slogan de fans. Cadre : l'entretien d'embauche. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

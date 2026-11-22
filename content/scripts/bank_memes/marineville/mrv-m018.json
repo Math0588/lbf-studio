@@ -3,81 +3,79 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m018",
  "format": "A",
- "anchor": "Réforme des retraites du 17/11/2026 : 62 voire 60 ans, cinq catégories selon l'âge du premier emploi, capitalisation obligatoire, référendum",
- "situation": "la réunion de copro",
- "ressort": "épisode raté",
+ "anchor": "elle envisage un référendum pour faire adopter sa réforme des retraites (17/11/2026) ; des rivaux parlent de « catalogue de contradictions ».",
+ "situation": "Référendum de copro",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
  "title_cover": "Référendum de copro",
  "hook_variants": [
-  "Elle envisage un référendum pour faire adopter sa réforme des retraites.",
-  "Un référendum pour repeindre un escalier.",
-  "Ici, ton vote dépend de l'âge de ton premier appart.",
-  "Le référendum sur le référendum de la copro.",
-  "Cinq catégories de copropriétaires, cinq couleurs d'escalier."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, on fait un référendum pour changer une ampoule.",
+  "Marineville : oui, ou oui mais en douceur.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : référendum de copro."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Trois heures plus tard, la cage d'escalier a cinq couleurs.",
-  "Personne n'a gagné, donc chaque marche a sa couleur.",
-  "La copro a voté oui, non, et peut-être, sur trois étages différents."
+  "Un référendum à trois pages de question : pas une consultation, un piège à oui.",
+  "Le non est imprimé en taille deux, au dos.",
+  "Question unique : oui, ou oui mais en douceur."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Elle envisage un référendum pour faire adopter sa réforme des retraites.",
+   "text": "Dans cette ville, tout le monde vote Marine. Et revote.",
+   "accent_words": [
+    "revote"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Pour sa réforme des retraites, elle envisage un référendum.",
    "accent_words": [
     "référendum"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n2",
-   "text": "Le syndic de Marineville applique la méthode à la réunion de copro.",
+   "id": "n3",
+   "text": "Des rivaux parlent de « catalogue de contradictions ».",
    "accent_words": [
-    "la réunion de copro"
+    "catalogue de contradictions"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n4",
+   "text": "Le syndic applique : référendum pour changer l'ampoule du hall.",
+   "accent_words": [
+    "l'ampoule"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Question unique : on repeint la cage d'escalier, oui ou non ?",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "Il ajoute cinq catégories, selon l'âge de ton premier appartement.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n5",
-   "text": "Les propriétaires de 1998 comptent double, les nouveaux à moitié.",
+   "text": "Question : oui, ou oui en douceur. Le non est au dos, en tout petit.",
    "accent_words": [
-    "les nouveaux à moitié"
+    "au dos"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Pour calmer tout le monde, il propose un référendum sur le référendum.",
+   "text": "Un référendum à trois pages de question : pas une consultation, un piège à oui.",
    "accent_words": [
-    "référendum sur le référendum"
+    "un piège à oui"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Trois heures plus tard, la cage d'escalier a cinq couleurs.",
+   "text": "Envoie ça au pote qui coche oui sans lire.",
    "accent_words": [
-    "cinq couleurs"
+    "sans lire"
    ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ta pire réunion de copro, raconte-la en commentaire.",
-   "accent_words": [],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,107 +83,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "window_pass",
+   "camera": "descend",
    "set": [
-    "building",
-    "table",
+    "ground",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "RÉFÉRENDUM : COPRO",
-   "comic_action": "À travers la fenêtre du hall, une réunion de copropriété avec une urne posée sur la table.",
-   "expected_result": "Ancrage réel."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la résidence municipale ; une urne dans le hall.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
+   ],
+   "camera": "descend",
+   "set": [
+    "lift_tribune",
+    "tribune",
+    "person",
+    "banner"
+   ],
+   "onscreen_text": "RÉFÉRENDUM : RETRAITES",
+   "comic_action": "La tribune s'élève, une urne géante posée dessus.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
    ],
    "camera": "closeup",
    "set": [
     "table",
     "form_stack",
-    "scroll"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "OUI / NON",
-   "comic_action": "Le syndic déroule un parchemin avec cinq catégories d'âge d'appartement.",
-   "expected_result": "Bureaucratie."
+   "onscreen_text": "CATALOGUE DE CONTRADICTIONS",
+   "comic_action": "Un catalogue épais s'ouvre : chaque page contredit la suivante.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
-   "id": "s3",
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "lamp",
+    "road",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "AMPOULE : RÉFÉRENDUM",
+   "comic_action": "Un lampadaire éteint ; une file d'habitants avec des bulletins.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
+    "scroll",
     "table",
     "person",
     "text3d"
    ],
-   "onscreen_text": "×2 / ×0,5",
-   "comic_action": "Les bulletins des anciens pèsent double sur une balance, ceux des nouveaux s'envolent.",
-   "expected_result": "Escalade."
+   "onscreen_text": "OUI · OUI (DOUX) · NON",
+   "comic_action": "Un bulletin géant ; le « non » minuscule au verso.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s4",
+   "id": "s6",
    "narration_ids": [
     "n6"
    ],
    "camera": "closeup",
    "set": [
-    "person",
-    "screen"
+    "table",
+    "form_stack",
+    "text3d",
+    "mairie"
    ],
-   "onscreen_text": "RÉFÉRENDUM DU RÉFÉRENDUM",
-   "comic_action": "Le syndic, sueur au front, annonce sur un écran « Référendum sur le référendum ».",
-   "expected_result": "L'épisode raté."
+   "onscreen_text": "PIÈGE À OUI",
+   "comic_action": "Un tampon « OUI » s'abat tout seul sur chaque bulletin. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "building",
-    "tshirt"
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "5 COULEURS",
-   "comic_action": "La cage d'escalier repeinte en cinq couleurs, une par catégorie ; t-shirt « J'AI UN AVIS. PAS DE MANDAT. » sur la rampe.",
-   "expected_result": "Chute + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt signe un contrat sans le lire.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ta pire réunion de copro, raconte-la en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui coche oui sans lire."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 85,
+ "word_count": 77,
  "claims": [
   {
-   "segment": "n1",
+   "segment": "n2",
+   "text": "Pour sa réforme des retraites, elle envisage un référendum.",
    "claim_type": "fait_public",
-   "text": "Elle envisage un référendum pour faire adopter sa réforme des retraites.",
-   "source_url": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite"
+   "source": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
+   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
+  },
+  {
+   "segment": "n3",
+   "text": "« catalogue de contradictions »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/catalogue-de-contradictions-vaste-arnaque-financiere-la-reforme-des-retraites-du-rn-suscite-la-critique-de-certains-candidats",
+   "note": "« catalogue de contradictions », « vaste arnaque financière »."
   }
  ],
  "sources": [
   {
    "url": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
    "date": "2026-11-17",
+   "consulted": "2026-11-22",
    "statut": "fait public (présentation du programme)",
-   "usage": "Chiffres repris tels quels (5 catégories, 160 à 168 trimestres, ~81 000 €, ~900 milliards) ; le reste est fiction.",
-   "consulted": "2026-11-21"
+   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/catalogue-de-contradictions-vaste-arnaque-financiere-la-reforme-des-retraites-du-rn-suscite-la-critique-de-certains-candidats",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "citation (critiques de candidats rivaux)",
+   "note": "« catalogue de contradictions », « vaste arnaque financière »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Épisode raté : le référendum envisagé (fait réel du 17/11/2026) et les cinq catégories transposés à une copro. Mème d'ancrage : Réforme des retraites du 17/11/2026 : 62 voire 60 ans, cinq catégories selon l'âge du premier emploi, capitalisation obligatoire, référendum. Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = elle envisage un référendum pour faire adopter sa réforme des retraites (17/11/2026) ; des rivaux parlent de « catalogue de contradictions ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

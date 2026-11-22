@@ -5,84 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Le jardinier chroniqueur",
- "anchor": "Avant la politique, Zemmour était chroniqueur télé quotidien (Face à l'info, CNews, 2019-2021) : « le polémiste » qui commente tout.",
+ "anchor": "le chroniqueur de télé quotidien devenu commentateur de tout.",
  "meme_id": "ZL",
  "situation": "le parc",
- "ressort": "inversion : le service fait exactement le contraire de son rôle, avec fierté",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "Avant la politique, Zemmour était chroniqueur télé tous les soirs.",
-  "Ici, le jardinier commente les haies au lieu de les tailler.",
-  "Le parc a un éditorialiste, pas un jardinier.",
-  "Débat contradictoire chez les pigeons, tous les soirs.",
-  "Le seul parc en friche avec une audience record."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : le jardinier ne jardine pas, il polémique.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, chaque pelouse a son éditorial.",
+  "Zemmourville : le parc le mieux commenté de France."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le parc est en friche, mais l'audience est excellente.",
-  "La haie dépasse la mairie. Il en fait une chronique.",
-  "Les ronces gagnent. Il les invite en plateau."
+  "Le parc est en friche, mais la chronique est excellente.",
+  "Friche totale, éditorial parfait.",
+  "Il commente la pousse, il ne plante rien."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Avant la politique, Zemmour était chroniqueur télé tous les soirs.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Sans arrosage.",
    "accent_words": [
-    "chroniqueur",
-    "politique"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n2",
-   "text": "À Zemmourville, le jardinier du parc a gardé le format.",
-   "accent_words": [
-    "Zemmourville",
-    "jardinier"
+    "Sans arrosage"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Il ne taille plus les haies. Il les commente.",
+   "id": "n2",
+   "text": "Avant la politique, il était chroniqueur télé tous les soirs.",
    "accent_words": [
-    "commente",
-    "taille"
+    "chroniqueur"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "Ici, le jardinier ne jardine pas. Il commente les pelouses.",
+   "accent_words": [
+    "commente"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "« Cette haie était bien plus droite en 1970. »",
+   "text": "Une fleur pousse ? Polémique. Une feuille tombe ? Le déclin.",
    "accent_words": [
-    "droite"
+    "Le déclin"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les pigeons ont désormais un débat contradictoire à dix-neuf heures.",
+   "text": "Chaque soir, débat avec les pigeons. Ben voyons.",
    "accent_words": [
-    "contradictoire",
-    "désormais"
+    "Ben voyons"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Le parc est en friche, mais l'audience est excellente.",
+   "text": "Le parc est en friche, mais la chronique est excellente.",
    "accent_words": [
-    "l'audience",
     "excellente"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça à ton pote qui commente tout et ne fait rien.",
+   "text": "Envoie ça au pote qui critique le boulot des autres sans bosser.",
    "accent_words": [
-    "commente",
-    "Envoie"
+    "sans bosser"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -91,100 +85,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "ground",
+    "tree",
+    "bench",
+    "person"
+   ],
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur un parc en friche ; un fauteuil de plateau au milieu.",
+   "expected_result": "La ville et son camp posés en une image."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
     "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "tripod_camera",
+    "studio_light",
+    "person"
+   ],
+   "onscreen_text": "CHRONIQUEUR",
+   "comic_action": "Un plateau télé installé sous un arbre.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "tree",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "CHRONIQUE PELOUSE",
+   "comic_action": "Travelling : le jardinier parle face caméra, arrosoir plein à ses pieds.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tree",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "FEUILLE : DÉCLIN",
+   "comic_action": "Orbite autour d'un arbre : chaque feuille qui tombe déclenche un bandeau « ALERTE ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "bench",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "BEN VOYONS",
+   "comic_action": "Gros plan : le jardinier pointe un pigeon du doigt, le pigeon roucoule.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
    ],
    "camera": "descend",
    "set": [
     "tree",
     "bench",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "PARC : EN DÉBAT",
-   "comic_action": "Parc vu d'en haut, haies sauvages.",
-   "expected_result": "Inversion posée."
+   "onscreen_text": "FRICHE · CHRONIQUE",
+   "comic_action": "Plan large : herbes hautes partout, un fauteuil impeccable au centre.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
   },
   {
-   "id": "s2",
+   "id": "s7",
    "narration_ids": [
-    "n3",
-    "n4"
-   ],
-   "camera": "closeup",
-   "set": [
-    "router_lectern",
-    "person",
-    "tree"
-   ],
-   "onscreen_text": "TAILLE : 0 · AVIS : 12",
-   "comic_action": "Le jardinier au pupitre devant une haie.",
-   "expected_result": "Il commente au lieu d'agir."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n5"
-   ],
-   "camera": "orbit",
-   "set": [
-    "bench",
-    "person",
-    "studio_light"
-   ],
-   "onscreen_text": "DÉBAT PIGEONS 19 H",
-   "comic_action": "Pigeons alignés sur deux bancs face à face.",
-   "expected_result": "Contamination du format."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n6",
     "n7"
    ],
    "camera": "return",
    "set": [
-    "tree",
-    "bench",
-    "tshirt"
+    "person",
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "AUDIENCE : EXCELLENTE",
-   "comic_action": "Friche totale ; t-shirt sur un banc.",
-   "expected_result": "Chute."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique prend l'arrosoir.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça à ton pote qui commente tout et ne fait rien."
+  "text": "Envoie ça au pote qui critique le boulot des autres sans bosser."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 70,
+ "word_count": 71,
  "claims": [
   {
-   "segment": "n1",
+   "text": "Avant la politique, il était chroniqueur télé tous les soirs.",
    "claim_type": "fait_public",
-   "source_url": "https://www.slate.fr/story/199107/eric-zemmour-cnews-face-a-linfo-emission-transformation-paysage-mediatique-succes-avenir-medias"
+   "source": "https://www.slate.fr/story/199107/eric-zemmour-cnews-face-a-linfo-emission-transformation-paysage-mediatique-succes-avenir-medias",
+   "note": "Chroniqueur quotidien de Face à l'info (CNews, 2019-2021), « le polémiste »."
+  },
+  {
+   "text": "Chaque soir, débat avec les pigeons. Ben voyons.",
+   "claim_type": "fait_public",
+   "source": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
+   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
   }
  ],
  "sources": [
   {
    "url": "https://www.slate.fr/story/199107/eric-zemmour-cnews-face-a-linfo-emission-transformation-paysage-mediatique-succes-avenir-medias",
    "date": "2021-01",
-   "consulted": "2026-11-21",
-   "statut": "fait public",
-   "usage": "Posture du commentateur appliquée à un jardinier fictif."
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Chroniqueur quotidien de Face à l'info (CNews, 2019-2021), « le polémiste »."
   },
   {
-   "url": "https://fr.wikipedia.org/wiki/%C3%89ric_Zemmour",
-   "date": "2026-11-21",
-   "consulted": "2026-11-21",
-   "statut": "fait public",
-   "usage": "Parcours de chroniqueur."
+   "url": "https://www.lagrandeconversation.com/app/uploads/2022/02/terra-nova_la-grande-conversation-2022_les-grots-mots-en-campagne-le-nouvel-horizon-du-bref_020222.pdf",
+   "date": "2022-02-02",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "« Ben voyons ! », tic de langage devenu slogan de fans ; repris sans guillemets."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Phrase 1 = fait public (chroniqueur CNews 2019-2021). Réplique fictive du jardinier."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le chroniqueur de télé quotidien devenu commentateur de tout. Cadre : le parc. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

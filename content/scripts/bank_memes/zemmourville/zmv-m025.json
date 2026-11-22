@@ -5,84 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "La box en alexandrins",
- "anchor": "Discours de Port-Marly (13/09/2026, 55 min) : « IA » prononcé 20 fois, entre Chateaubriand, Racine, Virgile et Homère — l'IA version classiques.",
+ "anchor": "Port-Marly (2026) : les classiques partout, jusqu'au mot de passe.",
  "meme_id": "ZE",
  "situation": "le Wi-Fi",
- "ressort": "contamination : toute la ville se met à parler ou à agir comme le mème",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "Zemmour a consacré un discours à l'IA, avec vingt fois le mot.",
-  "Ici, le Wi-Fi parle en alexandrins.",
-  "Douze syllabes par seconde.",
-  "La box du voisin cite Virgile.",
-  "Le quartier le plus classique du réseau."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : le Wi-Fi exige des alexandrins.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, la connexion se gagne en vers.",
+  "Zemmourville : le débit le plus littéraire de France."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Débit : douze syllabes par seconde. Qualité : très classique.",
-  "La box refuse le streaming : trop moderne.",
-  "Le technicien arrive. Il répare en vers."
+  "La box est cultivée, élégante, nostalgique. Et elle ne marche pas.",
+  "Douze syllabes pour se connecter, zéro mégaoctet.",
+  "La box récite. Le réseau, lui, se tait."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Zemmour a consacré un discours à l'IA, avec vingt fois le mot.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Connexion classique.",
    "accent_words": [
-    "consacré",
-    "discours"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n2",
-   "text": "À Zemmourville, la box Internet a tout écouté.",
-   "accent_words": [
-    "Zemmourville",
-    "Internet"
+    "Connexion classique"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Elle a remplacé ton mot de passe par un vers de Racine.",
+   "id": "n2",
+   "text": "À Port-Marly, il convoque Racine, Chateaubriand, Virgile et Homère en cinquante-cinq minutes.",
    "accent_words": [
-    "remplacé",
-    "Racine"
+    "Homère"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "Ici, la box exige un mot de passe en alexandrin. Douze syllabes, césure au milieu.",
+   "accent_words": [
+    "Douze syllabes"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Puis la box du voisin s'est mise à citer Virgile.",
+   "text": "Rime pauvre ? Connexion refusée.",
    "accent_words": [
-    "Virgile",
-    "voisin"
+    "Connexion refusée"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Bientôt, tout le quartier se connecte en alexandrins.",
+   "text": "Le débit plafonne à 4 %, comme ses sondages de rentrée.",
    "accent_words": [
-    "alexandrins",
-    "quartier"
+    "4 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Débit : douze syllabes par seconde. Qualité : très classique.",
+   "text": "La box est cultivée, élégante, nostalgique. Et elle ne marche pas.",
    "accent_words": [
-    "classique",
-    "syllabes"
+    "ne marche pas"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça à ton pote qui parle à son IA en latin.",
+   "text": "Envoie ça au pote qui a un mot de passe de trente caractères.",
    "accent_words": [
-    "Envoie"
+    "trente caractères"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -91,94 +85,150 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "router_lectern",
+    "ground",
     "building",
-    "screen"
+    "router_lectern",
+    "person"
    ],
-   "onscreen_text": "IA x20",
-   "comic_action": "Quartier vu d'en haut, routeur-pupitre au centre.",
-   "expected_result": "Mème IA + classiques."
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur un salon : la box trône sur un pupitre de lecture.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
    "camera": "closeup",
+   "set": [
+    "router_lectern",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "55 MIN · 4 CLASSIQUES",
+   "comic_action": "Gros plan sur des livres empilés sous la box.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
    "set": [
     "router_lectern",
     "screen",
     "text3d"
    ],
-   "onscreen_text": "MOT DE PASSE : RACINE",
-   "comic_action": "Écran de connexion en lettres anciennes.",
-   "expected_result": "Contamination.",
-   "bubble": "Mot de passe incorrect, hélas."
+   "onscreen_text": "MOT DE PASSE : 12 SYLLABES",
+   "comic_action": "Orbite : un habitant compte sur ses doigts devant l'écran.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s3",
+   "id": "s4",
    "narration_ids": [
-    "n4",
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d"
+   ],
+   "onscreen_text": "RIME PAUVRE",
+   "comic_action": "L'écran affiche une croix rouge calligraphiée.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
     "n5"
    ],
    "camera": "street_dolly",
+   "set": [
+    "router_lectern",
+    "person",
+    "screen"
+   ],
+   "onscreen_text": "DÉBIT : 4 %",
+   "comic_action": "Travelling : la barre de chargement s'arrête à 4 %.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
    "set": [
     "building",
     "router_lectern",
     "text3d"
    ],
-   "onscreen_text": "VOISIN : VIRGILE",
-   "comic_action": "Les routeurs du quartier s'allument un à un.",
-   "expected_result": "Propagation."
+   "onscreen_text": "CULTIVÉE · EN PANNE",
+   "comic_action": "Plan large : tout le quartier déclame devant ses box.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
   },
   {
-   "id": "s4",
+   "id": "s7",
    "narration_ids": [
-    "n6",
     "n7"
    ],
    "camera": "return",
    "set": [
-    "router_lectern",
-    "screen",
-    "tshirt"
+    "person",
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "12 SYLLABES / S",
-   "comic_action": "Compteur de débit en syllabes ; t-shirt drapé.",
-   "expected_result": "Chute."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique se connecte au Wi-Fi du voisin.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça à ton pote qui parle à son IA en latin."
+  "text": "Envoie ça au pote qui a un mot de passe de trente caractères."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 72,
+ "word_count": 77,
  "claims": [
   {
-   "segment": "n1",
+   "text": "À Port-Marly, il convoque Racine, Chateaubriand, Virgile et Homère en cinquante-cinq minutes.",
    "claim_type": "fait_public",
-   "source_url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-zemmour-le-pourfendeur-de-la-modernite-qui-parlait-dia"
+   "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-zemmour-le-pourfendeur-de-la-modernite-qui-parlait-dia",
+   "note": "Port-Marly (13/09/2026, 55 min) : Chateaubriand, Racine, Virgile, Homère, Napoléon."
+  },
+  {
+   "text": "Le débit plafonne à 4 %, comme ses sondages de rentrée.",
+   "claim_type": "fait_public",
+   "source": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
+   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "sources": [
   {
    "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-zemmour-le-pourfendeur-de-la-modernite-qui-parlait-dia",
    "date": "2026-09-29",
-   "consulted": "2026-11-21",
-   "statut": "fait public (analyse lexicale)",
-   "usage": "Machines modernes qui répondent en classiques."
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Port-Marly (13/09/2026, 55 min) : Chateaubriand, Racine, Virgile, Homère, Napoléon."
+  },
+  {
+   "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/eric-zemmour-prepare-sa-candidature-et-appelle-a-un-vote-du-sursaut-163638/",
+   "date": "2026-09",
+   "consulted": "2026-11-22",
+   "statut": "fait (AFP)",
+   "note": "Crédité d'environ 4 % dans les sondages de la rentrée 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Phrase 1 = fait public (Institut Montaigne : « IA » ×20). Pas de demande de mot de passe au public."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Port-Marly (2026) : les classiques partout, jusqu'au mot de passe. Cadre : le Wi-Fi. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }

@@ -3,79 +3,79 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m027",
  "format": "A",
- "anchor": "Le rebranding FN → RN : nouveau nom, flamme gardée et rangée dans un cercle (2018)",
- "situation": "le marché",
- "ressort": "boucle",
+ "anchor": "2018 : nouveau nom, flamme gardée et rangée dans un cercle : au marché, chaque stand fait pareil.",
+ "situation": "Onze enseignes",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
  "title_cover": "Onze enseignes",
  "hook_variants": [
-  "Le parti a changé de nom mais gardé la flamme, rangée dans un rond.",
-  "Ici, on change le nom, pas le poisson.",
-  "Onze enseignes sur un seul stand.",
-  "Le Rassemblement de la Marée, même poisson qu'hier.",
-  "Le marché qui se renomme jusqu'à s'effondrer."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, chaque stand du marché a changé de nom. Pas de produit.",
+  "Marineville : l'odeur, elle, n'a pas déménagé.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : onze enseignes."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le marché s'effondre sous les panneaux, puis rouvre sous un nouveau nom.",
-  "Nouveau nom, mêmes stands, même odeur de camembert.",
-  "Le marché a rouvert : douze enseignes, toujours le même poisson."
+  "Le fromager rebaptise son camembert. L'odeur, elle, n'a pas déménagé.",
+  "Le poissonnier devient Rassemblement de la Marée. Les sardines n'ont rien remarqué.",
+  "On change l'étiquette, on garde la flamme, et on appelle ça du neuf."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Le parti a changé de nom mais gardé la flamme, rangée dans un rond.",
+   "text": "Dans cette ville, tout le monde vote Marine. Sous une nouvelle enseigne.",
    "accent_words": [
-    "gardé la flamme"
+    "nouvelle enseigne"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Le parti a changé de nom en 2018.",
+   "accent_words": [
+    "changé de nom"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n2",
-   "text": "Au marché de Marineville, chaque stand fait exactement pareil.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n3",
-   "text": "Le poissonnier devient « Rassemblement de la Marée », même poisson qu'hier.",
+   "text": "Mais il a gardé la flamme, rangée dans un cercle.",
    "accent_words": [
-    "Rassemblement de la Marée"
+    "la flamme"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le fromager rebaptise son camembert Camembert Nouveau, même odeur.",
+   "text": "Au marché, le poissonnier devient Rassemblement de la Marée. Les sardines n'ont rien vu.",
    "accent_words": [
-    "Camembert Nouveau"
+    "sardines"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Gérard visse les nouvelles enseignes par-dessus les anciennes.",
-   "accent_words": [],
+   "text": "On change l'étiquette, on garde la flamme, et on appelle ça du neuf.",
+   "accent_words": [
+    "du neuf"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "À midi, chaque stand porte onze enseignes empilées.",
+   "text": "Le fromager rebaptise son camembert. L'odeur, elle, n'a pas déménagé.",
    "accent_words": [
-    "onze enseignes"
+    "L'odeur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le marché s'effondre sous les panneaux, puis rouvre sous un nouveau nom.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton commerce qui change de nom tous les ans, balance-le en commentaire.",
-   "accent_words": [],
+   "text": "Envoie ça au pote qui achète tout ce qui est marqué nouveau.",
+   "accent_words": [
+    "nouveau"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -83,110 +83,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "shop",
+    "ground",
+    "mairie",
     "banner",
-    "person",
-    "sign"
+    "person"
    ],
-   "onscreen_text": "NOUVEAU NOM, MÊME ROND",
-   "comic_action": "Plongée sur le marché ; une flamme rangée dans un cercle sert d'enseigne générale.",
-   "expected_result": "Ancrage."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; onze enseignes empilées sur la façade.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "facade_row",
+    "facade_set",
+    "person",
+    "banner"
+   ],
+   "onscreen_text": "NOUVEAU NOM",
+   "comic_action": "Un ouvrier visse une enseigne neuve par-dessus l'ancienne.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "sign",
+    "screen",
+    "text3d",
+    "mairie",
     "person"
    ],
-   "onscreen_text": "RASSEMBLEMENT DE LA MARÉE",
-   "comic_action": "Le poissonnier accroche sa nouvelle enseigne au-dessus du même poisson.",
-   "expected_result": "Rebranding littéral."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4",
-    "n5"
-   ],
-   "camera": "closeup",
-   "set": [
-    "shop",
-    "sign",
-    "person"
-   ],
-   "onscreen_text": "CAMEMBERT NOUVEAU",
-   "comic_action": "Le fromager colle une étiquette « NOUVEAU » ; Gérard Visseau visse une enseigne par-dessus l'autre.",
-   "expected_result": "La boucle se met en place."
+   "onscreen_text": "FLAMME : CONSERVÉE",
+   "comic_action": "L'écran montre une flamme glissée dans un rond.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
     "shop",
-    "sign",
-    "text3d"
+    "table",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "11 ENSEIGNES",
-   "comic_action": "Orbite autour d'un stand qui ploie sous onze enseignes empilées.",
-   "expected_result": "Escalade."
+   "onscreen_text": "RASSEMBLEMENT DE LA MARÉE",
+   "comic_action": "Un étal de poissons sous une enseigne neuve.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "shop",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "NEUF (OU PRESQUE)",
+   "comic_action": "Vitrine : un produit avec trois étiquettes superposées.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "table",
+    "person",
+    "screen",
+    "text3d"
+   ],
+   "onscreen_text": "ODEUR : INCHANGÉE",
+   "comic_action": "Un fromage avec une étiquette neuve ; les passants se bouchent le nez. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
     "shop",
     "tshirt",
+    "person",
     "sign"
    ],
-   "onscreen_text": "RÉOUVERTURE",
-   "comic_action": "Le stand s'effondre, nuage de poussière, puis réouverture avec une douzième enseigne ; un client porte « J'AI UN AVIS. PAS DE MANDAT. ».",
-   "expected_result": "Boucle + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt achète un paquet « NOUVEAU ».",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton commerce qui change de nom tous les ans, balance-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui achète tout ce qui est marqué nouveau."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 84,
+ "word_count": 79,
  "claims": [
   {
-   "segment": "n1",
+   "segment": "n2",
+   "text": "Le parti a changé de nom en 2018.",
    "claim_type": "fait_public",
-   "text": "Le parti a changé de nom mais gardé la flamme, rangée dans un rond.",
-   "source_url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550"
+   "source": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
+   "note": "Le FN devient RN ; la flamme du logo est conservée, rangée dans un cercle."
+  },
+  {
+   "segment": "n3",
+   "text": "Mais il a gardé la flamme, rangée dans un cercle.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
+   "note": "Le FN devient RN ; la flamme du logo est conservée, rangée dans un cercle."
   }
  ],
  "sources": [
   {
    "url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
    "date": "2018-06-01",
+   "consulted": "2026-11-22",
    "statut": "fait public",
-   "usage": "On change le nom, pas le rond : enseignes empilées.",
-   "consulted": "2026-11-21"
+   "note": "Le FN devient RN ; la flamme du logo est conservée, rangée dans un cercle."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Boucle du rebranding (fait public 2018) : on renomme, on empile, on s'effondre, on renomme. Running gag Gérard Visseau. Mème d'ancrage : Le rebranding FN → RN : nouveau nom, flamme gardée et rangée dans un cercle (2018). Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = 2018 : nouveau nom, flamme gardée et rangée dans un cercle : au marché, chaque stand fait pareil. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

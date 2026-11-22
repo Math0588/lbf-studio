@@ -5,84 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Permis à 7 %",
- "anchor": "Présidentielle 2022 : Zemmour fait 7,07 % au premier tour (le plafond des 7 %).",
+ "anchor": "présidentielle 2022 : 7,07 %, devenue la note maximale au code.",
  "meme_id": "ZH",
  "situation": "le permis de conduire",
- "ressort": "comptage absurde : un chiffre délirant affiché en grand (étiquette rouge)",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Zemmour… tout plafonne à sept pour cent.",
-  "Ici, tout plafonne à sept pour cent.",
-  "L'auto-école où l'on réussit sept pour cent du créneau.",
-  "Sept pour cent du rétroviseur, validé.",
-  "Un excellent socle, paraît-il."
+  "Dans cette ville, tout le monde vote Zemmour.",
+  "Bienvenue à Zemmourville : le code se passe à 7 %.",
+  "Les électeurs de Zemmour vont me détester.",
+  "Ici, on conduit dans le rétroviseur.",
+  "Zemmourville : l'auto-école de 1965."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le moniteur jure que c'est un excellent socle.",
-  "Le candidat obtient sept pour cent du permis : il conduit la roue avant gauche.",
-  "Le moniteur vise huit pour cent. On le trouve ambitieux."
+  "Recalé avec 7 %. Il réclame un recomptage du code.",
+  "Sept sur cent, et le recours en échelle.",
+  "Le permis à 7 %, le rétro à 100 %."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Zemmour… tout plafonne à sept pour cent.",
+   "text": "Dans cette ville, tout le monde vote Zemmour. Rétro réglé.",
    "accent_words": [
-    "plafonne",
-    "Zemmour"
+    "Rétro réglé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2022, son score national était de 7,07 %.",
+   "text": "Présidentielle 2022 : 7,07 %. Ici, c'est la note maximale au code.",
    "accent_words": [
-    "national"
+    "note maximale"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "À l'auto-école, le taux de réussite est donc de sept pour cent.",
+   "text": "Sept bonnes réponses sur cent. L'inspecteur dit : ben voyons.",
    "accent_words": [
-    "l'auto-école",
-    "réussite"
+    "ben voyons"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Sept pour cent des créneaux réussis. Sept pour cent des stops respectés.",
+   "text": "La conduite se fait en marche arrière, les yeux dans le rétro.",
    "accent_words": [
-    "respectés",
-    "créneaux"
+    "le rétro"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "L'inspecteur ne valide que sept pour cent du rétroviseur.",
+   "text": "Question : à quelle époque préférez-vous ce carrefour ? Réponse : 1965.",
    "accent_words": [
-    "L'inspecteur",
-    "rétroviseur"
+    "1965"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Le moniteur jure que c'est un excellent socle.",
+   "text": "Recalé avec 7 %. Il réclame un recomptage du code.",
    "accent_words": [
-    "excellent",
-    "moniteur"
+    "recomptage"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Tu l'as eu à quel pourcentage, ton permis ? Commente.",
+   "text": "Envoie ça au pote qui conduit en regardant le rétroviseur.",
    "accent_words": [
-    "pourcentage",
-    "Commente"
+    "le rétroviseur"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -91,8 +85,82 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "ground",
+    "road",
+    "car",
+    "person"
+   ],
+   "onscreen_text": "ZEMMOURVILLE",
+   "comic_action": "Descente sur une voiture d'auto-école à rétroviseurs géants.",
+   "expected_result": "La ville et son camp posés en une image."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
     "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "NOTE MAX : 7,07 %",
+   "comic_action": "L'écran de la salle de code affiche le score record.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "car",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "7 / 100",
+   "comic_action": "Orbite : l'inspecteur tamponne « REÇU » avec enthousiasme.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "road",
+    "car",
+    "person"
+   ],
+   "onscreen_text": "MARCHE ARRIÈRE",
+   "comic_action": "Travelling : la voiture recule sur l'avenue, conducteur ravi.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d"
+   ],
+   "onscreen_text": "RÉPONSE : 1965",
+   "comic_action": "Gros plan sur le QCM, une seule réponse possible.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
    ],
    "camera": "descend",
    "set": [
@@ -100,84 +168,67 @@
     "car",
     "text3d"
    ],
-   "onscreen_text": "PLAFOND : 7 %",
-   "comic_action": "Piste vue d'en haut, étiquette géante.",
-   "expected_result": "Comptage posé."
+   "onscreen_text": "RECOMPTAGE DU CODE",
+   "comic_action": "Plan large : le candidat recompte les cases du QCM devant l'inspecteur.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
   },
   {
-   "id": "s2",
+   "id": "s7",
    "narration_ids": [
-    "n3",
-    "n4"
-   ],
-   "camera": "street_dolly",
-   "set": [
-    "car",
-    "traffic_light",
-    "text3d"
-   ],
-   "onscreen_text": "STOPS RESPECTÉS : 7 %",
-   "comic_action": "La voiture grille treize stops sur quatorze.",
-   "expected_result": "Comptage absurde."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n5"
-   ],
-   "camera": "closeup",
-   "set": [
-    "car",
-    "person",
-    "text3d"
-   ],
-   "onscreen_text": "RÉTRO : 7 % VALIDÉ",
-   "comic_action": "L'inspecteur coche une infime part du rétroviseur.",
-   "expected_result": "Absurde."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n6",
     "n7"
    ],
    "camera": "return",
    "set": [
-    "car",
-    "road",
-    "tshirt"
+    "person",
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "EXCELLENT SOCLE",
-   "comic_action": "Le moniteur pouce levé ; t-shirt sur la plage arrière.",
-   "expected_result": "Chute."
+   "onscreen_text": "ENVOIE ÇA À TON POTE NOSTALGIQUE",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique règle le rétro vers l'avant.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Tu l'as eu à quel pourcentage, ton permis ? Commente."
+  "text": "Envoie ça au pote qui conduit en regardant le rétroviseur."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 74,
+ "word_count": 76,
  "claims": [
   {
-   "segment": "n2",
+   "text": "Présidentielle 2022 : 7,07 %. Ici, c'est la note maximale au code.",
    "claim_type": "fait_public",
-   "source_url": "https://www.paris.fr/pages/election-presidentielle-les-resultats-provisoires-du-premier-tour-a-paris-20846"
+   "source": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  },
+  {
+   "text": "Question : à quelle époque préférez-vous ce carrefour ? Réponse : 1965.",
+   "claim_type": "fait_public",
+   "source": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
+   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
   }
  ],
  "sources": [
   {
-   "url": "https://www.paris.fr/pages/election-presidentielle-les-resultats-provisoires-du-premier-tour-a-paris-20846",
-   "date": "2022-04-10",
-   "consulted": "2026-11-21",
-   "statut": "fait public",
-   "usage": "Score national de 7,07 % ; la ville fictive plafonne à 7 %."
+   "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielle 2022 : 7,07 % (environ 2,48 millions de voix), quatrième."
+  },
+  {
+   "url": "https://fr.timesofisrael.com/momifie-et-sinistre-les-politiques-etrillent-lannonce-de-zemmour/",
+   "date": "2021-11-30",
+   "consulted": "2026-11-22",
+   "statut": "opinion rapportée",
+   "note": "Adversaires : annonce « momifiée », digne de la présidentielle de 1965."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Phrase 2 = fait public (7,07 %, présidentielle 2022). Ouverture « Dans cette ville, tout le monde vote Zemmour… »."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : présidentielle 2022 : 7,07 %, devenue la note maximale au code. Cadre : le permis de conduire. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé. Aucun thème identitaire (consigne éditoriale Zemmour : pas d'immigration, d'origine, de religion, aucun groupe visé)."
 }
