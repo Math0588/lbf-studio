@@ -269,8 +269,12 @@ def create_container(ep_id: str, params: dict, studio: bool = False) -> tuple[st
 
 
 def next_episode(queue, pubs, assets=frozenset(), studio=None):
-    done = {p["episode_id"] for p in pubs if p["status"] in ("published", "publication_uncertain", "failed")
-            and not p.get("retry")} | {p["episode_id"] for p in pubs if p.get("_this_run")}
+    fails = {}
+    for p in pubs:
+        if p["status"] == "failed":
+            fails[p["episode_id"]] = fails.get(p["episode_id"], 0) + 1
+    done = {p["episode_id"] for p in pubs if p["status"] in ("published", "publication_uncertain")} \
+        | {e for e, n in fails.items() if n >= 2} | {p["episode_id"] for p in pubs if p.get("_this_run")}
     # 1) vidéos du studio cloud, dans l'ordre de fabrication (elles remplacent les anciennes versions locales)
     for it in studio or []:
         if it["id"] not in done:
@@ -504,7 +508,7 @@ def main():
             return 0
         if done_today and not burst:
             last = max(dt.datetime.fromisoformat(p["attempt_at"]) for p in done_today)
-            if (now() - last).total_seconds() < 2.5 * 3600:
+            if (now() - last).total_seconds() < 1.5 * 3600:
                 log("Moins de 3 h depuis la dernière publication : pas de rafale après une panne.")
                 return 0
     studio = studio_index()
@@ -512,7 +516,8 @@ def main():
         if k:
             log(f"Rafale : Reel {k + 1}/{todo}")
             time.sleep(20)
-        if not publish_next(queue, pubs, assets, studio):
+        r = publish_next(queue, pubs, assets, studio)
+        if r is None:      # plus rien de prêt
             break
     return 0
 
@@ -522,7 +527,7 @@ def publish_next(queue, pubs, assets, studio) -> bool:
     if not item:
         notify("reserve", "Réserve vide : aucune vidéo prête (la fabrication cloud tourne 5 fois par jour).")
         save("publications.json", pubs)
-        return False
+        return None
     done_ids = {p["episode_id"] for p in pubs if p["status"] == "published"}
     remaining = len([i for i in studio if i["id"] not in done_ids]) - 1 if studio else \
         len([q for q in queue if has_video(q["episode_id"], assets)]) - 1
