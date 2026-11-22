@@ -5,84 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Questions en commentaire",
- "anchor": "Mélenchon promet de passer « le moins possible » sur les chaînes d'info et mise sur ses propres médias (LFI revendique « la centaine de millions » de vues).",
+ "anchor": "« le moins possible » sur les chaînes d'info, ses propres médias : le maire filtre jusqu'aux habitants.",
  "meme_id": "ML",
  "situation": "le conseil de quartier",
- "ressort": "épisode raté : le maire tente de corriger le mème et l'aggrave",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "Au conseil de quartier, le maire évite les journalistes. Il a sa propre chaîne.",
-  "Ici, on pose ses questions au maire en commentaire.",
-  "Quarante minutes sur les médias, zéro sur les trous.",
-  "Le conseil de quartier diffusé sur sa propre chaîne.",
-  "Une seule caméra extérieure : elle filme le mur."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : le conseil de quartier passe en live.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, les questions gênantes sont masquées.",
+  "Mélenchonville : la démocratie participative, commentaires filtrés."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "C'est celle du vidéoprojecteur de la salle. Elle filme le mur.",
-  "Le mur fait plus de vues que le conseil.",
-  "Les nids-de-poule ouvrent leur propre chaîne."
+  "Il voulait éviter les journalistes. Il a fini par éviter les habitants.",
+  "Plus de journalistes, plus d'habitants, plus de questions.",
+  "Le live tourne. La salle est vide."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Au conseil de quartier, le maire évite les journalistes. Il a sa propre chaîne.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Sans journalistes.",
    "accent_words": [
-    "journalistes",
-    "quartier"
+    "Sans journalistes"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Les questions doivent arriver en commentaire, sous sa dernière vidéo.",
+   "text": "Il passe « le moins possible » sur les chaînes d'info. Au conseil de quartier aussi.",
    "accent_words": [
-    "commentaire",
-    "questions"
+    "aussi"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Un habitant demande pour les nids-de-poule de la rue.",
+   "text": "Les questions se posent en commentaire. Le maire répond en live, à lui-même.",
    "accent_words": [
-    "nids-de-poule",
-    "habitant"
+    "à lui-même"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le maire répond en live : quarante minutes sur les médias.",
+   "text": "Un habitant pose une question gênante. Commentaire masqué.",
    "accent_words": [
-    "quarante",
-    "minutes"
+    "masqué"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Pour se rattraper, il accepte enfin une caméra extérieure.",
+   "text": "Ses médias revendiquent une centaine de millions de vues. Le conseil, trois spectateurs.",
    "accent_words": [
-    "extérieure",
-    "rattraper"
+    "trois spectateurs"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "C'est celle du vidéoprojecteur de la salle. Elle filme le mur.",
+   "text": "Il voulait éviter les journalistes. Il a fini par éviter les habitants.",
    "accent_words": [
-    "vidéoprojecteur"
+    "les habitants"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Ta question au conseil de quartier, ce serait quoi ? Commente.",
+   "text": "Envoie ça au pote qui supprime les commentaires qui le contredisent.",
    "accent_words": [
-    "question",
-    "quartier"
+    "supprime"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -91,87 +85,144 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "building",
-    "tribune",
-    "tripod_camera"
+    "banner",
+    "person"
    ],
-   "onscreen_text": "PRESSE : NON MERCI",
-   "comic_action": "Salle vue d'en haut, un seul trépied, celui du maire.",
-   "expected_result": "Posture médiatique."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur une salle de quartier filmée par une seule caméra.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
    "camera": "closeup",
    "set": [
+    "tripod_camera",
     "person",
-    "road",
     "text3d"
    ],
-   "onscreen_text": "NIDS-DE-POULE ?",
-   "comic_action": "Un habitant montre une photo de trou.",
-   "expected_result": "La vraie question."
+   "onscreen_text": "LE MOINS POSSIBLE",
+   "comic_action": "Une seule caméra, appartenant à la mairie, filme la salle.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n3"
    ],
    "camera": "orbit",
    "set": [
-    "tribune",
     "screen",
+    "person",
     "ring_light"
    ],
-   "onscreen_text": "LIVE : 40 MIN",
-   "comic_action": "Le maire sous ring light, écran plein de commentaires.",
-   "expected_result": "Hors-sujet."
+   "onscreen_text": "LIVE",
+   "comic_action": "Orbite : le maire sous ring light, répondant à un écran de commentaires.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "COMMENTAIRE MASQUÉ",
+   "comic_action": "Gros plan : un commentaire disparaît sous un bandeau gris.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "person",
+    "bench",
+    "sign"
+   ],
+   "onscreen_text": "100 M · 3",
+   "comic_action": "Travelling : trois chaises occupées dans une salle de cent.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "building",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "HABITANTS : ÉVITÉS",
+   "comic_action": "Plan large : la salle se vide, le live continue avec des cœurs automatiques.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "tripod_camera",
-    "building",
-    "tshirt"
+    "person",
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "CAMÉRA EXTÉRIEURE : MUR",
-   "comic_action": "La caméra filme le mur ; t-shirt sur la chaise.",
-   "expected_result": "Chute : épisode raté."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique lève la main, l'écran le floute.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ta question au conseil de quartier, ce serait quoi ? Commente."
+  "type": "share",
+  "text": "Envoie ça au pote qui supprime les commentaires qui le contredisent."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 75,
- "claims": [],
+ "word_count": 83,
+ "claims": [
+  {
+   "text": "« le moins possible »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
+   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
+  },
+  {
+   "text": "Ses médias revendiquent une centaine de millions de vues. Le conseil, trois spectateurs.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
+   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
+  }
+ ],
  "sources": [
   {
    "url": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
-   "date": "2026-10-06",
-   "consulted": "2026-11-21",
-   "statut": "fait public",
-   "usage": "Le candidat qui choisit ses interviewers ; chiffre revendiqué par LFI, présenté comme revendiqué."
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "fait + citation",
+   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Épisode raté sur le choix de ses propres médias (fait public Public Sénat)."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « le moins possible » sur les chaînes d'info, ses propres médias : le maire filtre jusqu'aux habitants. Cadre : le conseil de quartier. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

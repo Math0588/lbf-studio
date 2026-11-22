@@ -3,75 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-04",
  "format": "A",
- "title_cover": "L'arrêt Compromis",
+ "title_cover": "Arrêt Compromis",
  "hook_variants": [
-  "Ici, le bus s'arrête à la moyenne de ce que tout le monde veut.",
-  "Dans cette ville, l'arrêt de bus se déplace à chaque nouveau passager.",
-  "Le bus le plus démocratique de France : il ne dépose personne nulle part.",
-  "Ici, monter dans le bus, c'est ouvrir une négociation.",
-  "Ce bus a trouvé le compromis parfait : un champ."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, tous les bus s'arrêtent à Compromis.",
+  "Glucksmannville : l'ambiguïté est interdite, sauf partout.",
+  "Le seul panneau de France où les deux flèches disent par là.",
+  "Les glucksmanniens vont dire que c'est plus nuancé."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le bus s'arrête au milieu d'un champ : panneau neuf, Compromis. Personne n'est arrivé, mais tout le monde applaudit.",
-  "Le bus s'arrête au milieu d'un champ. Panneau neuf : « Compromis ». Personne n'est arrivé. Tout le monde applaudit.",
-  "Terminus au milieu de nulle part. Le chauffeur : « On n'est arrivés nulle part, mais ensemble. »"
+  "Ambiguïté interdite. Sauf à l'arrêt Compromis, ouvert jour et nuit.",
+  "Ici, le seul arrêt sans ambiguïté s'appelle Compromis.",
+  "Faute éthique le matin, terminus Compromis le soir."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, le bus s'arrête à la moyenne de ce que tout le monde veut.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Avec nuance.",
    "accent_words": [
-    "veut"
+    "nuance"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Toi la gare, ta voisine l'hôpital, le retraité du fond sa résidence secondaire.",
-   "accent_words": [
-    "secondaire"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Le bus calcule la moyenne.",
-   "accent_words": [
-    "moyenne"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "Nouveau passager, nouveau calcul, et l'arrêt quitte la ville.",
-   "accent_words": [
-    "quitte"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n5",
-   "text": "Le bus s'arrête au milieu d'un champ : panneau neuf, Compromis.",
+   "text": "Tous les bus s'arrêtent au même arrêt : Compromis.",
    "accent_words": [
     "Compromis"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n6",
-   "text": "Personne n'est arrivé, mais tout le monde applaudit.",
+   "id": "n3",
+   "text": "Le panneau indique gauche et droite. Les deux flèches disent : par là.",
    "accent_words": [
-    "applaudit"
+    "par là"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Pourtant, en 2026 : « toute ambiguïté de notre part est une faute éthique ».",
+   "accent_words": [
+    "toute ambiguïté"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n5",
+   "text": "Ses critiques le placent centre gauche, voire centre.",
+   "accent_words": [
+    "voire centre"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n6",
+   "text": "Ambiguïté interdite. Sauf à l'arrêt Compromis, ouvert jour et nuit.",
+   "accent_words": [
+    "jour et nuit"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Tague l'ami avec qui tu ne trouves jamais de point de rendez-vous.",
+   "text": "Envoie ça au pote qui répond ça dépend à tout.",
    "accent_words": [
-    "rendez-vous"
+    "ça dépend"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -82,115 +82,160 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
+    "road",
     "bus",
     "sign",
-    "person"
+    "person",
+    "facade_row"
    ],
-   "onscreen_text": "ARRÊT : LA MOYENNE",
-   "comic_action": "Travelling derrière un bus beige ; sur son fronton lumineux, la destination : « LA MOYENNE ».",
-   "expected_result": "Le bus n'a pas de destination, il a une statistique."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur l'arrêt de bus ; le bus arrive.",
+   "expected_result": "Le transport du jour posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "gps",
-    "person",
-    "screen"
+    "bus",
+    "road",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "CALCUL DU COMPROMIS",
-   "comic_action": "Sur le GPS géant du chauffeur, trois points (gare, hôpital, plage) et une croix au milieu qui clignote.",
-   "expected_result": "Chaque envie est réduite à une moyenne."
+   "onscreen_text": "ARRÊT : COMPROMIS",
+   "comic_action": "Travelling le long du bus ; écran de destination qui défile.",
+   "expected_result": "Le bus porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4"
+    "n3"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
-    "gps",
-    "bus",
-    "sign"
+    "sign",
+    "road",
+    "text3d"
    ],
-   "onscreen_text": "L'ARRÊT QUITTE LA VILLE",
-   "comic_action": "Vue du dessus : la croix de l'arrêt glisse hors de la ville à chaque passager ; le bus la suit docilement.",
-   "expected_result": "Escalade : plus on écoute, plus on s'éloigne."
+   "onscreen_text": "PAR LÀ / PAR LÀ",
+   "comic_action": "Panneau directionnel à deux flèches opposées, toutes deux étiquetées « PAR LÀ ».",
+   "expected_result": "L'ambiguïté en signalétique."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
    "camera": "orbit",
    "set": [
-    "bus",
-    "sign",
+    "tribune",
     "person",
-    "bench"
+    "banner",
+    "studio_light"
    ],
-   "onscreen_text": "ARRÊT : COMPROMIS",
-   "comic_action": "Le bus s'arrête au milieu d'un champ vide. Un panneau d'arrêt flambant neuf « COMPROMIS ». Les passagers descendent et applaudissent poliment, perdus.",
-   "expected_result": "Chute : le compromis mène littéralement au milieu de nulle part."
+   "onscreen_text": "« TOUTE AMBIGUÏTÉ… »",
+   "comic_action": "Le maire cubique à la tribune, projecteur, foule clairsemée.",
+   "expected_result": "Le discours porte la pique."
   },
   {
    "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "gps",
+    "car",
+    "screen",
+    "text3d"
+   ],
+   "onscreen_text": "CENTRE GAUCHE → CENTRE",
+   "comic_action": "GPS de voiture : « CAP » s'affiche, la flèche tourne sur elle-même, « recalcul » en boucle.",
+   "expected_result": "Le cap qui ne pointe nulle part."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "bus",
+    "road",
+    "sign",
+    "person"
+   ],
+   "onscreen_text": "COMPROMIS : 24H/24",
+   "comic_action": "Travelling le long du bus ; écran de destination qui défile.",
+   "expected_result": "Le bus porte la pique."
+  },
+  {
+   "id": "s7",
    "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "road",
+    "person",
     "tshirt",
-    "sign",
-    "mascot"
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra recule jusqu'à une vitrine capitonnée beige : le t-shirt « J'AI UN AVIS. PAS DE MANDAT. » est posé sur un coussin, à côté d'un bus passe en fond avec la destination « LA MOYENNE ». Pouf, la mascotte, passe devant en hésitant entre deux directions.",
-   "expected_result": "CTA commercial visuel discret, dans l'univers coussin."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Tague l'ami avec qui tu ne trouves jamais de point de rendez-vous."
+  "text": "Envoie ça au pote qui répond ça dépend à tout."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 72,
- "claims": [],
+ "word_count": 75,
+ "claims": [
+  {
+   "text": "Le panneau indique gauche et droite. Les deux flèches disent : par là.",
+   "claim_type": "fiction_satirique",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre ». Détourné dans la ville fictive."
+  },
+  {
+   "text": "« toute ambiguïté de notre part est une faute éthique »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.sudradio.fr/politique/raphael-glucksmann-sur-lfi-toute-ambiguite-de-notre-part-est-une-faute-ethique-et-un-suicide-politique",
+   "note": "« Toute ambiguïté de notre part est une faute éthique et un suicide politique »."
+  },
+  {
+   "text": "Ses critiques le placent centre gauche, voire centre.",
+   "claim_type": "fait_public",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
+  }
+ ],
  "sources": [
   {
-   "url": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
-   "published": "2026-10-12",
-   "consulted": "2026-11-21",
-   "status": "fait",
-   "used_for": "Thème public du « rassemblement », pris au pied de la lettre ; aucun chiffre électoral montré."
-  },
-  {
    "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "published": "2026-06-25",
-   "consulted": "2026-11-21",
-   "status": "fait (analyse lexicale) + opinion",
-   "used_for": "Vision plutôt que programme ; critique « centre gauche, voire centre ». Inspiration de décor, aucune citation."
+   "date": "2026-06-25",
+   "consulted": "2026-11-22",
+   "statut": "fait (analyse lexicale) + opinion rapportée",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
   },
   {
-   "url": "https://www.jean-jaures.org/publication/de-macron-ou-melenchon-a-glucksmann-vers-un-renouveau-de-la-social-democratie/",
-   "published": "2024-03-28",
-   "consulted": "2026-11-21",
-   "status": "cliché électorat (vérifié (fait : sondage))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Électeurs venus de LFI vers Glucksmann plus âgés (38 % de plus de 60 ans) et plus aisés (33 % au-dessus de 3 500 € net par mois). Thème : retraités aisés, résid…"
+   "url": "https://www.sudradio.fr/politique/raphael-glucksmann-sur-lfi-toute-ambiguite-de-notre-part-est-une-faute-ethique-et-un-suicide-politique",
+   "date": "2026-02",
+   "consulted": "2026-11-22",
+   "statut": "citation rapportée",
+   "note": "« Toute ambiguïté de notre part est une faute éthique et un suicide politique »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Compromis géographique littéral : la moyenne des envies est un champ. Risques vérifiés : aucune citation réelle, personne n'est nommé dans la narration ; ville inventée et absurde visible (fiction évidente sans mention) ; pas de visage réaliste, ni vie privée, ni famille, ni nom ou origine, ni chiffre électoral, ni appel au vote ; la moquerie vise une posture publique perçue (flou, mollesse, image lisse), pas l'intelligence. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 72 mots ; mèmes vérifiés intégrés comme thèmes (G12, G8, voir content/veille/memes_glucksmannville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « toute ambiguïté de notre part est une faute éthique » (février 2026) face à une ville où tout s'arrête à l'arrêt Compromis. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

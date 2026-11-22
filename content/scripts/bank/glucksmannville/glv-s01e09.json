@@ -3,76 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-28",
  "format": "A",
- "title_cover": "Destination un peu partout",
+ "title_cover": "Valise pour Strasbourg",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Glucksmann… même pour les vacances.",
-  "Ici, l'agence de voyages ne vend qu'une formule : un peu partout, pas trop loin, pas trop près.",
-  "Dans cette ville, les vacances ont une destination : la moyenne.",
-  "Ici, on ne choisit pas entre la mer et la montagne. On fait la moyenne.",
-  "La seule agence de voyages de France qui vend des vacances sans destination."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, toutes les routes mènent à Strasbourg.",
+  "Glucksmannville : la ville jumelée avec le Parlement européen.",
+  "Un podium à 13,83 %, fêté comme une finale.",
+  "Les glucksmanniens vont répondre en euros."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Carte postale : la place de la mairie, bons baisers de nulle part.",
-  "Carte postale aux amis : la place de la mairie. « Bons baisers de nulle part en particulier. »",
-  "Le bus te dépose devant chez toi. Le guide : « Vous avez tout vu, de nulle part. »"
+  "Il vise l'Élysée. Sa valise, elle, est toujours étiquetée Strasbourg.",
+  "Il veut Paris. Sa tête est restée à Bruxelles.",
+  "L'Élysée, c'est par où ? Le GPS propose Strasbourg."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann… même pour les vacances.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Depuis Strasbourg.",
    "accent_words": [
-    "Glucksmann",
-    "vacances"
+    "Strasbourg"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "L'agence ne vend qu'une formule : un peu partout, pas trop loin.",
+   "text": "Le panneau de sortie indique : Bruxelles, Strasbourg, et un peu Paris.",
    "accent_words": [
-    "loin"
+    "un peu Paris"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Mer ou montagne ? Mi-chemin, maillot et anorak dans la même valise.",
+   "text": "En 2024, il menait la liste Réveiller l'Europe : 13,83 %.",
    "accent_words": [
-    "valise"
+    "13,83 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Billet à mille deux cents euros : arrivée, la moyenne de vos envies.",
+   "text": "Troisième, derrière le RN et la liste Macron. Un podium, techniquement.",
    "accent_words": [
-    "envies"
+    "techniquement"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le bus fait le tour du rond-point.",
+   "text": "Depuis, chaque discours commence par l'Europe et finit par l'Europe.",
    "accent_words": [
-    "rond-point"
+    "l'Europe"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Carte postale : la place de la mairie, bons baisers de nulle part.",
+   "text": "Il vise l'Élysée. Sa valise, elle, est toujours étiquetée Strasbourg.",
    "accent_words": [
-    "nulle part"
+    "Strasbourg"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Tague la personne avec qui tu ne seras jamais d'accord sur les vacances.",
+   "text": "Envoie ça au pote qui ramène l'Europe dans chaque conversation.",
    "accent_words": [
-    "vacances"
+    "l'Europe"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -81,123 +80,146 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "roundabout",
+    "road",
+    "car_orbit",
+    "sign",
+    "mairie"
+   ],
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur le rond-point central : les voitures tournent, la mairie au fond.",
+   "expected_result": "La ville posée, tout tourne en rond."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
     "n2"
    ],
    "camera": "closeup",
    "set": [
     "sign",
-    "person",
-    "screen"
+    "text3d",
+    "road"
    ],
-   "onscreen_text": "UN PEU PARTOUT",
-   "comic_action": "Vitrine d'agence de voyages : une seule affiche, un paysage beige flou, slogan « UN PEU PARTOUT ».",
-   "expected_result": "Les vacances sans choix."
-  },
-  {
-   "id": "s2",
-   "narration_ids": [
-    "n3"
-   ],
-   "camera": "orbit",
-   "set": [
-    "gps",
-    "person",
-    "table"
-   ],
-   "onscreen_text": "DESTINATION : MI-CHEMIN",
-   "comic_action": "Sur le GPS géant de l'agence, une ligne entre une plage et un sommet ; une épingle se plante au milieu, dans le vide.",
-   "expected_result": "Le compromis efface la destination."
+   "onscreen_text": "BRUXELLES / STRASBOURG / (PARIS)",
+   "comic_action": "Gros plan sur un panneau municipal.",
+   "expected_result": "La pique s'affiche en panneau."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "bus",
-    "sign",
-    "person"
+    "screen",
+    "text3d",
+    "sign"
    ],
-   "onscreen_text": "ARRIVÉE : LA MOYENNE",
-   "comic_action": "Le bus des vacanciers en maillot et anorak fait un tour complet du rond-point et s'arrête à son point de départ.",
-   "expected_result": "Le voyage est une boucle."
+   "onscreen_text": "13,83 %",
+   "comic_action": "Écran de sondage : une barre monte… et s'arrête à mi-hauteur.",
+   "expected_result": "Le chiffre de sondage en jauge."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6"
+    "n4"
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
-    "person",
-    "mascot"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "BONS BAISERS DE NULLE PART",
-   "comic_action": "Gros plan sur une carte postale (parchemin) : photo de la place de la mairie, texte manuscrit.",
-   "expected_result": "Chute : on est parti… sur place."
+   "onscreen_text": "3E PLACE",
+   "comic_action": "Gros plan sur un écran géant en ville.",
+   "expected_result": "La pique s'affiche en écran."
   },
   {
    "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "person",
+    "screen"
+   ],
+   "onscreen_text": "EUROPE… EUROPE",
+   "comic_action": "Le maire cubique parle, parle ; une bulle de texte grandit jusqu'à couvrir la place.",
+   "expected_result": "La tchatche en volume."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "car",
+    "road",
+    "person",
+    "lamp"
+   ],
+   "onscreen_text": "DESTINATION : ÉLYSÉE (VIA STRASBOURG)",
+   "comic_action": "Une valise à roulettes sur le trottoir, étiquette « STRASBOURG » ; quelqu'un colle « ÉLYSÉE » par-dessus, elle se décolle.",
+   "expected_result": "La pique en mouvement."
+  },
+  {
+   "id": "s7",
    "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "road",
+    "person",
     "tshirt",
-    "sign",
-    "mascot"
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra recule jusqu'à une vitrine capitonnée beige : le t-shirt « LE PAYS BUGUE. MOI AUSSI. » est posé sur un coussin, à côté d'une carte postale « Bons baisers de nulle part ». Pouf, la mascotte, passe devant en hésitant entre deux directions.",
-   "expected_result": "CTA commercial visuel discret, dans l'univers coussin."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Tague la personne avec qui tu ne seras jamais d'accord sur les vacances."
+  "text": "Envoie ça au pote qui ramène l'Europe dans chaque conversation."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 82,
- "claims": [],
+ "word_count": 74,
+ "claims": [
+  {
+   "text": "En 2024, il menait la liste Réveiller l'Europe : 13,83 %.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/resultats-europeennes-2024-jordan-bardella-en-tete-valerie-hayer-en-deuxieme-position-glucksmann-troisieme",
+   "note": "Européennes 2024 : liste « Réveiller l'Europe » troisième, 13,83 %."
+  },
+  {
+   "text": "Troisième, derrière le RN et la liste Macron. Un podium, techniquement.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/resultats-europeennes-2024-jordan-bardella-en-tete-valerie-hayer-en-deuxieme-position-glucksmann-troisieme",
+   "note": "Européennes 2024 : liste « Réveiller l'Europe » troisième, 13,83 %."
+  }
+ ],
  "sources": [
   {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "published": "2026-06-25",
-   "consulted": "2026-11-21",
-   "status": "fait (analyse lexicale) + opinion",
-   "used_for": "Vision plutôt que programme ; critique « centre gauche, voire centre ». Inspiration de décor, aucune citation."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
-   "published": "2025-03-14",
-   "consulted": "2026-11-21",
-   "status": "opinion",
-   "used_for": "Question journalistique sur la clarté du cap et un projet « à travailler » ; « il faut un cap clair » reste une formule générique fictive, jamais attribuée."
-  },
-  {
-   "url": "https://www.jean-jaures.org/publication/de-macron-ou-melenchon-a-glucksmann-vers-un-renouveau-de-la-social-democratie/",
-   "published": "2024-03-28",
-   "consulted": "2026-11-21",
-   "status": "cliché électorat (vérifié (fait : sondage))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Électeurs venus de LFI vers Glucksmann plus âgés (38 % de plus de 60 ans) et plus aisés (33 % au-dessus de 3 500 € net par mois). Thème : retraités aisés, résid…"
-  },
-  {
-   "url": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
-   "published": "2024-04-03",
-   "consulted": "2026-11-21",
-   "status": "blague (vérifié (opinion))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Comparaison ironique à Macron (image « cool », plaire à tout le monde). Thème : le « en même temps » des objets municipaux."
+   "url": "https://www.publicsenat.fr/actualites/politique/resultats-europeennes-2024-jordan-bardella-en-tete-valerie-hayer-en-deuxieme-position-glucksmann-troisieme",
+   "date": "2024-06-09",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Européennes 2024 : liste « Réveiller l'Europe » troisième, 13,83 %."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Promesse vs réalité : le voyage immobile. Risques vérifiés : aucune citation réelle, personne n'est nommé dans la narration ; ville inventée et absurde visible (fiction évidente sans mention) ; pas de visage réaliste, ni vie privée, ni famille, ni nom ou origine, ni chiffre électoral, ni appel au vote ; la moquerie vise une posture publique perçue (flou, mollesse, image lisse), pas l'intelligence. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 82 mots ; mèmes vérifiés intégrés comme thèmes (G12, G6, voir content/veille/memes_glucksmannville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : l'eurodéputé de la liste « Réveiller l'Europe » (13,83 %, troisième en 2024) qui vise l'Élysée avec une valise étiquetée Strasbourg. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

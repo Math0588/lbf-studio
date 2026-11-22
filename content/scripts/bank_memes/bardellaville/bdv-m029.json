@@ -5,36 +5,36 @@
  "format": "A",
  "length": "court",
  "title_cover": "Sortie en perches",
- "anchor": "Salon de l'agriculture 2026 (sans vaches, épidémie oblige) : Jordan Bardella multiplie les selfies dans les allées.",
+ "anchor": "Salon de l'agriculture 2026 sans vaches (épidémie) : selfies dans les allées (AFP) ; chaque sortie se fait en perches télescopiques.",
  "meme_key": "SIA",
- "situation": "la visite de la ville voisine",
- "ressort": "électorat cliché : les habitants types de la ville, détaillés et chiffrés (prix, objets, habitudes)",
+ "situation": "Sortie en perches",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella…",
-  "Quand cette ville visite ses voisins, elle ne voit que son reflet.",
-  "Bienvenue à Bardellaville, où la visite de la ville voisine a son propre mème.",
-  "Bardellaville : la visite de la ville voisine, version « les selfies du Salon ».",
-  "Ici, la visite de la ville voisine fonctionne comme le mème « les selfies du Salon »."
+  "Dans cette ville, tout le monde vote Bardella.",
+  "Ici, chaque sortie scolaire se fait en perches télescopiques.",
+  "Bardellaville : la crise agricole se règle en trois clics.",
+  "Les électeurs de Bardella vont me détester.",
+  "Bienvenue à Bardellaville : sortie en perches."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Au retour, mille deux cents photos, et personne ne sait où ils étaient.",
-  "Sur toutes les photos, le monument est caché par une perche.",
-  "Le maire, lui, appelle ça une réussite totale."
+  "Ici, la crise agricole se règle en trois clics : cadrer, filtrer, publier.",
+  "Visite de la ferme : on photographie le tracteur, pas l'agriculteur.",
+  "Le fermier parle prix d'achat : on lui demande de sourire."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella…",
+   "text": "Dans cette ville, tout le monde vote Bardella. Perche à la main.",
    "accent_words": [
-    "Bardella"
+    "Perche"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Et comme au Salon de l'agriculture, chaque sortie se fait en selfies.",
+   "text": "Au Salon de l'agriculture 2026, sans vaches, lui multiplie les selfies.",
    "accent_words": [
     "selfies"
    ],
@@ -42,41 +42,41 @@
   },
   {
    "id": "n3",
-   "text": "Visite de la ville voisine : soixante habitants, soixante perches télescopiques.",
+   "text": "Les éleveurs privés de bêtes ont des soucis. Les photos, elles, sont réussies.",
    "accent_words": [
-    "perches télescopiques"
+    "réussies"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Tenue officielle : sweat floqué à quarante-cinq euros, sourire figé fourni.",
+   "text": "Ici, chaque sortie scolaire se fait en perches télescopiques.",
    "accent_words": [
-    "figé fourni"
+    "perches"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le guide voisin : « Le musée est à droite, mais vous regardez l'objectif. »",
+   "text": "Visite de la ferme : on photographie le tracteur, pas l'agriculteur.",
    "accent_words": [
-    "regardez l'objectif"
+    "pas l'agriculteur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Au retour, mille deux cents photos, et personne ne sait où ils étaient.",
+   "text": "Ici, la crise agricole se règle en trois clics : cadrer, filtrer, publier.",
    "accent_words": [
-    "où ils étaient"
+    "publier"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Abonne-toi : la prochaine fois, c'est la ville voisine qui débarque.",
+   "text": "Envoie ça au pote qui croit qu'un selfie au Salon, c'est un plan pour l'agriculture.",
    "accent_words": [
-    "qui débarque"
+    "un plan"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,104 +85,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "bus",
+    "ground",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "SALON = SELFIES",
-   "comic_action": "Descente sur un bus qui se vide, perches qui se déplient.",
-   "expected_result": "Le mème est posé."
+   "onscreen_text": "BARDELLAVILLE",
+   "comic_action": "Descente sur la mairie ; des perches télescopiques dressées comme des drapeaux.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "person",
+    "ring_light",
+    "road",
+    "lamp"
+   ],
+   "onscreen_text": "VACHES : 0 · SELFIES : 300",
+   "comic_action": "Allée vide d'animaux, éclairée comme un plateau ; perches partout.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "street_dolly",
    "set": [
-    "facade_set",
+    "shop",
+    "table",
     "person",
-    "gps"
+    "banner"
    ],
-   "onscreen_text": "60 HABITANTS / 60 PERCHES",
-   "comic_action": "Travelling dans la ville voisine, forêt de perches.",
-   "expected_result": "Électorat cliché chiffré."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4"
-   ],
-   "camera": "closeup",
-   "set": [
-    "person"
-   ],
-   "onscreen_text": "SWEAT 45 €",
-   "comic_action": "Gros plan : sweats identiques, sourires figés.",
-   "expected_result": "Cliché chiffré."
+   "onscreen_text": "SOUCIS ✗ · PHOTOS ✓",
+   "comic_action": "Un éleveur montre une étable vide ; flash, sourire, suivant.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5"
+    "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
+    "bus",
+    "road",
     "person",
-    "column"
+    "sign"
    ],
-   "onscreen_text": "",
-   "comic_action": "Le guide voisin désespéré devant le musée, bulle de sa réplique.",
-   "expected_result": "Comparaison des usages."
+   "onscreen_text": "SORTIE : 60 PERCHES",
+   "comic_action": "Un bus scolaire déborde de perches à selfie par les fenêtres.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "tree",
+    "bench",
+    "lamp",
+    "person"
+   ],
+   "onscreen_text": "CADRE : TRACTEUR",
+   "comic_action": "Champ : un tracteur rutilant pose, l'agriculteur est coupé du cadre.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
+   ],
+   "onscreen_text": "CRISE : PUBLIÉE",
+   "comic_action": "L'écran affiche une photo filtrée ; un ticket « problème résolu » sort. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "bus",
-    "gps",
+    "shop",
+    "tshirt",
     "person",
-    "tshirt"
+    "sign"
    ],
-   "onscreen_text": "1 200 PHOTOS / 0 SOUVENIR",
-   "comic_action": "Le bus repart, GPS perdu ; un passager en t-shirt de la collection.",
-   "expected_result": "Chute + abonnement."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt pose avec une botte de foin.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "follow",
-  "text": "Abonne-toi : la prochaine fois, c'est la ville voisine qui débarque."
+  "type": "share",
+  "text": "Envoie ça au pote qui croit qu'un selfie au Salon, c'est un plan pour l'agriculture."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 81,
+ "word_count": 84,
  "claims": [
   {
-   "text": "Et comme au Salon de l'agriculture, chaque sortie se fait en selfies.",
+   "segment": "n2",
+   "text": "Au Salon de l'agriculture 2026, sans vaches, lui multiplie les selfies.",
    "claim_type": "fait_public",
    "source": "https://www.lagazettefrance.fr/article/le-pen-bardella-le-relais-de-la-flamme",
-   "note": "Référence au mème réel ; aucune phrase inventée attribuée à une personne réelle."
+   "note": "Salon de l'agriculture 2026, sans vaches (épidémie) : selfies à la chaîne dans les allées."
+  },
+  {
+   "segment": "n3",
+   "text": "Les éleveurs privés de bêtes ont des soucis. Les photos, elles, sont réussies.",
+   "claim_type": "fait_public",
+   "source": "https://www.lagazettefrance.fr/article/le-pen-bardella-le-relais-de-la-flamme",
+   "note": "Salon de l'agriculture 2026, sans vaches (épidémie) : selfies à la chaîne dans les allées."
   }
  ],
  "sources": [
   {
    "url": "https://www.lagazettefrance.fr/article/le-pen-bardella-le-relais-de-la-flamme",
    "date": "2026-02-26",
+   "consulted": "2026-11-22",
    "statut": "fait (AFP)",
-   "usage": "mème réel rendu reconnaissable dès la 1re ou 2e phrase ; idée seulement, aucune punchline d'auteur copiée"
+   "note": "Salon de l'agriculture 2026, sans vaches (épidémie) : selfies à la chaîne dans les allées."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mème : les selfies du Salon × situation : la visite de la ville voisine × ressort : électorat. Une réplique de personnage fictif entre guillemets (bulle). Personnages fictifs uniquement ; le maire est un personnage cubique générique. Aucune citation inventée attribuée à une personne réelle, aucune affaire, rien sur la vie privée ni sur une caractéristique protégée, pas d'appel au vote."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = Salon de l'agriculture 2026 sans vaches (épidémie) : selfies dans les allées (AFP) ; chaque sortie se fait en perches télescopiques. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

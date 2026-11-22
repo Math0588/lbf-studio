@@ -4,86 +4,79 @@
  "synopsis_id": "mlv-m012-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Klaxon bruit et fureur",
- "anchor": "« Le bruit et la fureur » : formule que Mélenchon s'applique pour revendiquer la conflictualité, reprise et moquée.",
+ "title_cover": "Klaxon et fureur",
+ "anchor": "« le bruit et la fureur », formule fétiche depuis 2010.",
  "meme_id": "MQ",
  "situation": "le rond-point",
- "ressort": "escalade : chaque étape est pire et plus absurde que la précédente",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "Au rond-point de Mélenchonville, le klaxon a deux réglages : bruit et fureur.",
-  "Ici, les klaxons ont deux vitesses : bruit et fureur.",
-  "Le rond-point le plus bruyant de France.",
-  "Dans cette ville, on dit bonjour en klaxonnant.",
-  "Personne ne sort de ce rond-point. Tout le monde parle."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : le rond-point du bruit et de la fureur.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, le klaxon est une opinion politique.",
+  "Mélenchonville : on tourne, on crie, on ne sort jamais."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le rond-point devient une assemblée : personne ne sort, tout le monde parle.",
-  "Le soir, le rond-point vote une motion contre le silence.",
-  "Un cycliste passe en silence. On le trouve suspect."
+  "Quinze ans de bruit et de fureur. Et toujours le même rond-point.",
+  "Beaucoup de bruit, zéro sortie.",
+  "Le rond-point de la fureur n'a pas de sortie Élysée."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Au rond-point de Mélenchonville, le klaxon a deux réglages : bruit et fureur.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Au klaxon.",
    "accent_words": [
-    "Mélenchonville",
-    "rond-point"
+    "Au klaxon"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Bruit, c'est pour dire bonjour au voisin.",
+   "text": "Sa formule préférée depuis 2010 : le bruit et la fureur.",
    "accent_words": [
-    "bonjour",
-    "voisin"
+    "la fureur"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Fureur, c'est pour demander poliment la sortie.",
+   "text": "Ici, le rond-point klaxonne tout seul. Toutes les dix secondes.",
    "accent_words": [
-    "demander",
-    "poliment"
+    "klaxonne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Aux heures de pointe, quelqu'un invente un troisième niveau.",
+   "text": "Les voitures tournent, crient, tournent encore. Personne ne sort.",
    "accent_words": [
-    "quelqu'un",
-    "troisième"
+    "Personne ne sort"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le sonomètre explose. Les feux passent au rouge par solidarité.",
+   "text": "La seule sortie indique Sixième République. Elle tourne avec les voitures.",
    "accent_words": [
-    "solidarité",
-    "sonomètre"
+    "Sixième République"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Le rond-point devient une assemblée : personne ne sort, tout le monde parle.",
+   "text": "Quinze ans de bruit et de fureur. Et toujours le même rond-point.",
    "accent_words": [
-    "rond-point",
-    "assemblée"
+    "le même rond-point"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Ton klaxon, il est réglé sur quoi ? Commente.",
+   "text": "Envoie ça au pote qui tourne en rond depuis 2012.",
    "accent_words": [
-    "Commente",
-    "klaxon"
+    "tourne en rond"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,96 +85,164 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "ground",
+    "roundabout",
+    "car",
+    "person"
+   ],
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur un rond-point saturé de voitures qui klaxonnent.",
+   "expected_result": "La ville et son camp posés en une image."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "sign",
+    "text3d",
+    "roundabout"
+   ],
+   "onscreen_text": "LE BRUIT ET LA FUREUR",
+   "comic_action": "Gros plan sur le panneau du rond-point, rebaptisé.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
     "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "roundabout",
+    "car",
+    "text3d"
+   ],
+   "onscreen_text": "BIP BIP BIP",
+   "comic_action": "Orbite : le terre-plein central vibre à chaque coup de klaxon.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "car_orbit",
+    "roundabout",
+    "person"
+   ],
+   "onscreen_text": "SORTIE : AUCUNE",
+   "comic_action": "Travelling : les voitures tournent en boucle, conducteurs penchés à la fenêtre.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "sign",
+    "roundabout",
+    "text3d"
+   ],
+   "onscreen_text": "SORTIE VIE RÉP.",
+   "comic_action": "Le panneau de sortie est monté sur une voiture et tourne avec elle.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
    ],
    "camera": "descend",
    "set": [
     "roundabout",
     "car_orbit",
-    "sign",
     "text3d"
    ],
-   "onscreen_text": "BRUIT / FUREUR",
-   "comic_action": "Rond-point vu d'en haut, panneau à deux crans.",
-   "expected_result": "Formule devenue réglage."
+   "onscreen_text": "DEPUIS 2012",
+   "comic_action": "Plan large : le rond-point vu du ciel, une seule boucle rouge.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
   },
   {
-   "id": "s2",
+   "id": "s7",
    "narration_ids": [
-    "n4"
-   ],
-   "camera": "closeup",
-   "set": [
-    "car",
-    "person",
-    "text3d"
-   ],
-   "onscreen_text": "NIVEAU 3 : ???",
-   "comic_action": "Un conducteur tourne une molette au-delà de la fureur.",
-   "expected_result": "Escalade."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n5"
-   ],
-   "camera": "orbit",
-   "set": [
-    "roundabout",
-    "traffic_light",
-    "text3d"
-   ],
-   "onscreen_text": "SONOMÈTRE : HS",
-   "comic_action": "Les feux passent tous au rouge, sonomètre en fumée.",
-   "expected_result": "Tout bascule."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n6",
     "n7"
    ],
    "camera": "return",
    "set": [
-    "roundabout",
-    "car_orbit",
-    "tribune",
-    "tshirt"
+    "person",
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "SORTIE : EN DÉBAT",
-   "comic_action": "Les voitures tournent, une tribune au centre, t-shirt sur l'îlot.",
-   "expected_result": "Chute : l'assemblée permanente."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique sort enfin du rond-point, à pied.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton klaxon, il est réglé sur quoi ? Commente."
+  "type": "share",
+  "text": "Envoie ça au pote qui tourne en rond depuis 2012."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 68,
- "claims": [],
- "sources": [
+ "word_count": 73,
+ "claims": [
   {
-   "url": "https://www.politis.fr/articles/2017/04/melenchon-philosophe-36624/",
-   "date": "2017-04-05",
-   "consulted": "2026-11-21",
-   "statut": "mème / expression associée",
-   "usage": "Graduation d'un klaxon fictif. Aucune phrase attribuée."
+   "text": "Sa formule préférée depuis 2010 : le bruit et la fureur.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2025/07/emotions-quand-la-colere-ne-suffit-pas/",
+   "note": "« Le bruit et la fureur », formule qu'il s'applique depuis 2010 ; reprise sans guillemets."
   },
+  {
+   "text": "La seule sortie indique Sixième République. Elle tourne avec les voitures.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
+  },
+  {
+   "text": "Quinze ans de bruit et de fureur. Et toujours le même rond-point.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+  }
+ ],
+ "sources": [
   {
    "url": "https://www.politis.fr/articles/2025/07/emotions-quand-la-colere-ne-suffit-pas/",
    "date": "2025-07",
-   "consulted": "2026-11-21",
-   "statut": "opinion",
-   "usage": "Reprise récente de la formule."
+   "consulted": "2026-11-22",
+   "statut": "fait (origine) / mème",
+   "note": "« Le bruit et la fureur », formule qu'il s'applique depuis 2010 ; reprise sans guillemets."
+  },
+  {
+   "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "date": "2026-06",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Escalade sur « le bruit et la fureur » (expression associée, sourcée Politis), sans phrase attribuée."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « le bruit et la fureur », formule fétiche depuis 2010. Cadre : le rond-point. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

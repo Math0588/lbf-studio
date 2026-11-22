@@ -5,85 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Il manque 421 420",
- "anchor": "Présidentielle 2022 : Mélenchon rate le second tour d'environ 421 420 voix (le « à un cheveu »).",
+ "anchor": "présidentielle 2022 : second tour raté d'environ 421 420 voix.",
  "meme_id": "MH",
  "situation": "le supermarché",
- "ressort": "comptage absurde : un chiffre délirant affiché en grand (étiquette rouge)",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "En 2022, il a manqué à Mélenchon 421 420 voix pour le second tour.",
-  "Le supermarché où il manque toujours un petit quelque chose.",
-  "Ici, la caisse ne te laisse jamais passer au deuxième tour.",
-  "421 420 : le chiffre maudit de la ville.",
-  "Dans ce magasin, on recompte même les yaourts."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : il manque toujours 421 420 trucs.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, chaque caddie est à un cheveu d'être complet.",
+  "Mélenchonville : le supermarché du presque."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Au fond, une file entière attend le deuxième tour de caisse.",
-  "Le deuxième tour de caisse n'ouvre jamais. On recompte.",
-  "Tu repars sans rien. Mais de très peu."
+  "Quatre ans après, la ville recompte encore. Le résultat, lui, n'a pas bougé.",
+  "À un cheveu du second tour, à des kilomètres de l'Élysée.",
+  "On recompte, on recompte, c'est toujours troisième."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "En 2022, il a manqué à Mélenchon 421 420 voix pour le second tour.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. À quelques voix près.",
    "accent_words": [
-    "Mélenchon",
-    "manqué"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n2",
-   "text": "Depuis, au supermarché de Mélenchonville, il manque toujours quelque chose.",
-   "accent_words": [
-    "Mélenchonville",
-    "supermarché"
+    "À quelques voix près"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "La caisse affiche : il vous manque 421 420 centimes.",
+   "id": "n2",
+   "text": "En 2022, il rate le second tour d'environ 421 420 voix.",
    "accent_words": [
-    "centimes",
-    "affiche"
+    "421 420"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "Ici, chaque ticket de caisse affiche : moins 421 420.",
+   "accent_words": [
+    "moins 421 420"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Tu reviens avec la monnaie. Le prix a augmenté d'autant.",
+   "text": "Le caddie est plein, mais il manque toujours quelque chose.",
    "accent_words": [
-    "augmenté",
-    "d'autant"
+    "toujours"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le vigile recompte le rayon yaourts, au cas où.",
+   "text": "La caissière recompte. Le client recompte. Le rayon recompte.",
    "accent_words": [
-    "recompte",
-    "yaourts"
+    "recompte"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Au fond, une file entière attend le deuxième tour de caisse.",
+   "text": "Quatre ans après, la ville recompte encore. Le résultat, lui, n'a pas bougé.",
    "accent_words": [
-    "deuxième",
-    "entière"
+    "n'a pas bougé"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Il te manquait combien, toi, la dernière fois ? Commente.",
+   "text": "Envoie ça au pote qui rate toujours le bus de dix secondes.",
    "accent_words": [
-    "manquait",
-    "dernière"
+    "dix secondes"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,100 +85,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "shop",
-    "person",
-    "text3d"
+    "banner",
+    "person"
    ],
-   "onscreen_text": "MANQUE : 421 420",
-   "comic_action": "Supermarché vu d'en haut, étiquette rouge géante.",
-   "expected_result": "Le chiffre réel devient une malédiction."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur le supermarché ; enseigne « PRESQUE ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
    "camera": "closeup",
    "set": [
     "screen",
-    "person",
-    "table"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "IL MANQUE 421 420 CTS",
-   "comic_action": "Écran de caisse qui clignote au visage du client.",
-   "expected_result": "Comptage absurde."
+   "onscreen_text": "-421 420",
+   "comic_action": "Écran de caisse : un total rouge « -421 420 ».",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5"
+    "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "person",
     "shop",
+    "form_stack",
     "text3d"
    ],
-   "onscreen_text": "RECOMPTAGE",
-   "comic_action": "Le vigile compte les yaourts un par un.",
-   "expected_result": "Obsession du recomptage."
+   "onscreen_text": "TICKET : -421 420",
+   "comic_action": "Un ticket sort, interminable, avec la même ligne en bas.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "shop",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "IL MANQUE UN TRUC",
+   "comic_action": "Travelling : un client pousse un caddie débordant, fouille, revient en arrière.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "table",
+    "form_stack",
+    "person"
+   ],
+   "onscreen_text": "RECOMPTAGE",
+   "comic_action": "Orbite autour de la caisse : tout le monde compte sur ses doigts.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "shop",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "TROISIÈME. TOUJOURS.",
+   "comic_action": "Plan large : l'enseigne « PRESQUE » clignote, le parking est vide.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
     "person",
+    "tshirt",
     "sign",
-    "tshirt"
+    "shop"
    ],
-   "onscreen_text": "2E TOUR : FERMÉ",
-   "comic_action": "File immense devant une caisse marquée « 2e tour », fermée.",
-   "expected_result": "Chute."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique court après un caddie qui s'éloigne.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Il te manquait combien, toi, la dernière fois ? Commente."
+  "type": "share",
+  "text": "Envoie ça au pote qui rate toujours le bus de dix secondes."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 74,
+ "word_count": 77,
  "claims": [
   {
-   "segment": "n1",
+   "text": "En 2022, il rate le second tour d'environ 421 420 voix.",
    "claim_type": "fait_public",
-   "source_url": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850"
+   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850",
+   "note": "Second tour 2022 raté d'environ 421 420 voix."
+  },
+  {
+   "text": "Quatre ans après, la ville recompte encore. Le résultat, lui, n'a pas bougé.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/premier-tour-decouvrez-les-resultats-definitifs-109262",
+   "note": "Résultats définitifs 2022 : Mélenchon troisième (21,95 %)."
   }
  ],
  "sources": [
   {
    "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850",
    "date": "2022-04-10",
-   "consulted": "2026-11-21",
-   "statut": "fait public",
-   "usage": "Écart de quelques centaines de milliers de voix."
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Second tour 2022 raté d'environ 421 420 voix."
   },
   {
    "url": "https://lcp.fr/actualites/premier-tour-decouvrez-les-resultats-definitifs-109262",
    "date": "2022-04",
-   "consulted": "2026-11-21",
-   "statut": "fait public",
-   "usage": "Écart exact : 421 420 voix."
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Résultats définitifs 2022 : Mélenchon troisième (21,95 %)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Phrase 1 = fait public (421 420 voix, LCP/Public Sénat). Le reste est fiction."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : présidentielle 2022 : second tour raté d'environ 421 420 voix. Cadre : le supermarché. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

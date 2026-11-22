@@ -4,85 +4,79 @@
  "synopsis_id": "mlv-m025-gm",
  "format": "A",
  "length": "court",
- "title_cover": "La box fait des edits",
- "anchor": "Les edits vidéo pro-Mélenchon (créateurs, streamers, « zinzinsoumis ») : montages remixés, musique épique, ralentis.",
+ "title_cover": "Wi-Fi en slow motion",
+ "anchor": "les edits pro-Mélenchon : le maire tente de corriger le bug et l'aggrave.",
  "meme_id": "MM",
  "situation": "le Wi-Fi",
- "ressort": "épisode raté : le maire tente de corriger le mème et l'aggrave",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon… et la box fait des edits.",
-  "Ici, chaque coupure de Wi-Fi a sa bande-annonce.",
-  "La box la plus dramatique de France.",
-  "Le maire a répondu par un edit. Il a coupé la ville.",
-  "Dans cette ville, le chargement est monté au ralenti."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : la box internet fait des edits.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, même le chargement a sa musique épique.",
+  "Mélenchonville : la panne la plus stylée de France."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Seul le routeur reste en ligne. Il prépare déjà la suite.",
-  "La box publie un edit du maire en panne. Record de vues.",
-  "Le réseau revient. Le routeur le rejoue au ralenti."
+  "Ici, rien ne marche, mais tout est en slow motion.",
+  "Zéro débit, cent pour cent d'émotion.",
+  "Le Wi-Fi rame, mais en ralenti cinématographique."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon… et la box fait des edits.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Connexion épique.",
    "accent_words": [
-    "Mélenchon"
+    "Connexion épique"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À chaque coupure de Wi-Fi, le routeur publie un montage dramatique.",
+   "text": "Ses partisans inondent les réseaux d'edits : ralentis, violons, effets dorés.",
    "accent_words": [
-    "dramatique",
-    "coupure"
+    "violons"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ralenti sur la barre de chargement, musique épique, zoom sur le voyant.",
+   "text": "Ici, la box fait des edits aussi. Ton film charge en ralenti, avec violons.",
    "accent_words": [
-    "chargement",
-    "Ralenti"
+    "en ralenti"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le maire veut calmer la colère : il publie un edit de réponse.",
+   "text": "Le maire veut corriger le bug. Il publie un edit pour expliquer le bug.",
    "accent_words": [
-    "réponse",
-    "calmer"
+    "un edit"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La réponse est si lourde qu'elle sature tout le réseau.",
+   "text": "Le Wi-Fi tombe. Les fans montent un edit de la panne.",
    "accent_words": [
-    "réponse",
-    "qu'elle"
+    "la panne"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Seul le routeur reste en ligne. Il prépare déjà la suite.",
+   "text": "Ici, rien ne marche, mais tout est en slow motion.",
    "accent_words": [
-    "routeur",
-    "prépare"
+    "slow motion"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça à ton pote qui monte des edits à trois heures du matin.",
+   "text": "Envoie ça au pote qui met des violons sur ses stories.",
    "accent_words": [
-    "Envoie",
-    "heures"
+    "violons"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -91,21 +85,36 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "router_lectern",
+    "ground",
     "building",
-    "screen"
+    "router_lectern",
+    "person"
    ],
-   "onscreen_text": "COUPURE : LE FILM",
-   "comic_action": "Quartier vu d'en haut, routeur-pupitre géant au centre.",
-   "expected_result": "Le Wi-Fi devient un clip."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur un salon : la box clignote au ralenti.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "EDITS PARTOUT",
+   "comic_action": "Un mur d'écrans, tous en ralenti doré.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
@@ -115,63 +124,112 @@
     "screen",
     "text3d"
    ],
-   "onscreen_text": "CHARGEMENT… (RALENTI)",
-   "comic_action": "Barre de chargement au ralenti, voyant clignotant.",
-   "expected_result": "Grammaire de l'edit."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4",
-    "n5"
-   ],
-   "camera": "orbit",
-   "set": [
-    "tribune",
-    "person",
-    "screen"
-   ],
-   "onscreen_text": "EDIT DE RÉPONSE",
-   "comic_action": "Le maire lance sa vidéo ; toutes les lampes s'éteignent.",
-   "expected_result": "Épisode raté."
+   "onscreen_text": "CHARGEMENT ÉPIQUE",
+   "comic_action": "La barre de chargement avance au ralenti, musique de film épique.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
+    "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "router_lectern",
+    "person",
+    "tripod_camera"
+   ],
+   "onscreen_text": "CORRECTIF : UN EDIT",
+   "comic_action": "Orbite : le maire se filme devant la box, filtre doré.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "person",
+    "screen",
+    "ring_light"
+   ],
+   "onscreen_text": "PANNE : LE CLIP",
+   "comic_action": "Travelling : des habitants filment la box éteinte, ring light allumée.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "building",
+    "router_lectern",
+    "text3d"
+   ],
+   "onscreen_text": "0 DÉBIT · 100 % ÉMOTION",
+   "comic_action": "Plan large : tout le quartier bouge au ralenti, cheveux au vent.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "router_lectern",
+    "person",
     "tshirt",
-    "text3d"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "SEUL EN LIGNE",
-   "comic_action": "Le routeur seul allumé ; t-shirt drapé dessus.",
-   "expected_result": "Chute."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique redémarre la box, au ralenti.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça à ton pote qui monte des edits à trois heures du matin."
+  "text": "Envoie ça au pote qui met des violons sur ses stories."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 85,
- "claims": [],
+ "word_count": 81,
+ "claims": [
+  {
+   "text": "Ses partisans inondent les réseaux d'edits : ralentis, violons, effets dorés.",
+   "claim_type": "fait_public",
+   "source": "https://www.ladn.eu/media-mutants/comment-la-france-insoumise-a-fait-de-ledit-video-son-arme-pour-2027/",
+   "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique), fans surnommés « zinzinsoumis »."
+  },
+  {
+   "text": "Le Wi-Fi tombe. Les fans montent un edit de la panne.",
+   "claim_type": "fait_public",
+   "source": "https://www.slate.fr/story/267349/legislatives-2024-politique-memes-reseaux-sociaux-fancams-edits-videos-communication",
+   "note": "Fancams et edits de candidats, dont LFI."
+  }
+ ],
  "sources": [
   {
    "url": "https://www.ladn.eu/media-mutants/comment-la-france-insoumise-a-fait-de-ledit-video-son-arme-pour-2027/",
-   "date": "2026-06-11",
-   "consulted": "2026-11-21",
-   "statut": "mème (pratique rapportée)",
-   "usage": "Grammaire de l'edit (ralenti, zoom, beat) appliquée à des objets."
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "mème",
+   "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique), fans surnommés « zinzinsoumis »."
+  },
+  {
+   "url": "https://www.slate.fr/story/267349/legislatives-2024-politique-memes-reseaux-sociaux-fancams-edits-videos-communication",
+   "date": "2024-06",
+   "consulted": "2026-11-22",
+   "statut": "mème",
+   "note": "Fancams et edits de candidats, dont LFI."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Épisode raté sur la culture des edits pro-Mélenchon (L'ADN, 06/2026). Ouverture « Dans cette ville, tout le monde vote Mélenchon… »."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : les edits pro-Mélenchon : le maire tente de corriger le bug et l'aggrave. Cadre : le Wi-Fi. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

@@ -4,79 +4,79 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Le distributeur creux",
- "anchor": "Critique récurrente d'un candidat aux réponses calibrées, lisses et creuses.",
+ "title_cover": "Distributeur calibré",
+ "anchor": "critique d'un candidat aux réponses calibrées, lisses et creuses (chronique Libération) : le distributeur de billets répond pareil.",
  "meme_key": "CREUX",
- "situation": "le distributeur de billets",
- "ressort": "inversion : le service fait exactement le contraire de son rôle, avec fierté",
+ "situation": "Distributeur calibré",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella…",
-  "Ce distributeur ne donne pas d'argent. Il donne une vision.",
-  "Bienvenue à Bardellaville, où le distributeur de billets a son propre mème.",
-  "Bardellaville : le distributeur de billets, version « les réponses calibrées ».",
-  "Ici, le distributeur de billets fonctionne comme le mème « les réponses calibrées »."
+  "Dans cette ville, tout le monde vote Bardella.",
+  "Ici, le distributeur de billets répond comme lui.",
+  "Bardellaville : élocution parfaite, compte à découvert.",
+  "Les électeurs de Bardella vont me détester.",
+  "Bienvenue à Bardellaville : distributeur calibré."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le distributeur : « Excellente question, votre solde sera révélé dans cent jours. »",
-  "Il garde la carte, mais te laisse un autocollant « Tout va bien ».",
-  "Le maire, lui, appelle ça une réussite totale."
+  "Ton compte reste à découvert, mais l'élocution est parfaite.",
+  "Tu insistes : excellente question, merci de l'avoir posée. Ticket vide.",
+  "Tu demandes cinquante euros : il te parle de pouvoir d'achat."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella…",
+   "text": "Dans cette ville, tout le monde vote Bardella. Réponses calibrées.",
    "accent_words": [
-    "Bardella"
+    "calibrées"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Et même le distributeur a des réponses calibrées.",
+   "text": "Une chronique le décrit en candidat aux réponses calibrées et creuses.",
    "accent_words": [
-    "réponses calibrées"
+    "creuses"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Tu tapes ton code : il te répond sur le pouvoir d'achat.",
+   "text": "Son livre promet cent jours, sans méthode détaillée. Le distributeur aussi.",
+   "accent_words": [
+    "sans méthode"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n4",
+   "text": "Tu demandes cinquante euros : il te parle de pouvoir d'achat.",
    "accent_words": [
     "pouvoir d'achat"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n4",
-   "text": "Tu demandes cinquante euros : il t'offre une vision pour la France.",
-   "accent_words": [
-    "la France"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n5",
-   "text": "Le ticket sort, impeccable, et totalement vide.",
+   "text": "Tu insistes : excellente question, merci de l'avoir posée. Ticket vide.",
    "accent_words": [
-    "totalement vide"
+    "Ticket vide"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le distributeur : « Excellente question, votre solde sera révélé dans cent jours. »",
+   "text": "Ton compte reste à découvert, mais l'élocution est parfaite.",
    "accent_words": [
-    "cent jours"
+    "parfaite"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Abonne-toi : la prochaine fois, le distributeur passe au journal télévisé.",
+   "text": "Envoie ça au pote qui le trouve clair sans pouvoir dire sur quoi.",
    "accent_words": [
-    "journal télévisé"
+    "sur quoi"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,96 +85,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "screen",
+    "ground",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "RÉPONSES CALIBRÉES",
-   "comic_action": "Descente sur un distributeur encastré dans une façade, écran souriant.",
-   "expected_result": "Le cliché est posé."
+   "onscreen_text": "BARDELLAVILLE",
+   "comic_action": "Descente sur la mairie ; un distributeur de billets doré encastré dans la façade.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
+   ],
+   "onscreen_text": "CALIBRÉ · CREUX",
+   "comic_action": "Écran : une réponse sort d'un moule, puis sonne creux.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
-    "screen"
+    "table",
+    "form_stack",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "CODE OK → POUVOIR D'ACHAT",
-   "comic_action": "Gros plan écran : discours au lieu du menu.",
-   "expected_result": "Inversion."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4"
-   ],
-   "camera": "closeup",
-   "set": [
-    "screen",
-    "person"
-   ],
-   "onscreen_text": "50 € → 1 VISION",
-   "comic_action": "Le client attend, l'écran affiche une carte de France scintillante.",
-   "expected_result": "Promesse creuse."
+   "onscreen_text": "MÉTHODE : ——",
+   "comic_action": "Un livre ouvert sur une page blanche, posé contre le distributeur.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "scroll",
-    "screen"
+    "shop",
+    "person",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "TICKET : VIDE",
-   "comic_action": "Orbite : un ticket blanc immaculé sort lentement.",
-   "expected_result": "Le vide est soigné."
+   "onscreen_text": "RETRAIT : DISCOURS",
+   "comic_action": "Un habitant tape son code ; l'écran affiche « POUVOIR D'ACHAT ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
+    "n5"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "table",
+    "screen",
+    "sign",
+    "building"
+   ],
+   "onscreen_text": "TICKET : VIDE",
+   "comic_action": "Le distributeur crache un ticket blanc, poliment.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "form_stack",
+    "text3d",
+    "mairie"
+   ],
+   "onscreen_text": "SOLDE : -300 € · DICTION : 20/20",
+   "comic_action": "Un relevé bancaire tamponné « BIEN DIT ». Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "screen",
+    "shop",
+    "tshirt",
     "person",
-    "tshirt"
+    "sign"
    ],
-   "onscreen_text": "",
-   "comic_action": "L'écran parle en bulle ; un client en t-shirt « Excellente question » repart les mains vides.",
-   "expected_result": "Chute + abonnement."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt hoche la tête devant un discours muet.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "follow",
-  "text": "Abonne-toi : la prochaine fois, le distributeur passe au journal télévisé."
+  "type": "share",
+  "text": "Envoie ça au pote qui le trouve clair sans pouvoir dire sur quoi."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 72,
- "claims": [],
+ "word_count": 76,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "Une chronique le décrit en candidat aux réponses calibrées et creuses.",
+   "claim_type": "fait_public",
+   "source": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
+   "note": "Candidat aux réponses calibrées et creuses."
+  },
+  {
+   "segment": "n3",
+   "text": "Son livre promet cent jours, sans méthode détaillée. Le distributeur aussi.",
+   "claim_type": "fait_public",
+   "source": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
+   "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
+  }
+ ],
  "sources": [
   {
    "url": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
    "date": "2026-05-31",
+   "consulted": "2026-11-22",
    "statut": "opinion (chronique ; formule de l'auteur non reprise)",
-   "usage": "mème réel rendu reconnaissable dès la 1re ou 2e phrase ; idée seulement, aucune punchline d'auteur copiée"
+   "note": "Candidat aux réponses calibrées et creuses."
+  },
+  {
+   "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
+   "date": "2026-11-04",
+   "consulted": "2026-11-22",
+   "statut": "fait + appréciation AFP",
+   "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mème : les réponses calibrées × situation : le distributeur de billets × ressort : inversion. Une réplique de personnage fictif entre guillemets (bulle). Personnages fictifs uniquement ; le maire est un personnage cubique générique. Aucune citation inventée attribuée à une personne réelle, aucune affaire, rien sur la vie privée ni sur une caractéristique protégée, pas d'appel au vote."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = critique d'un candidat aux réponses calibrées, lisses et creuses (chronique Libération) : le distributeur de billets répond pareil. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

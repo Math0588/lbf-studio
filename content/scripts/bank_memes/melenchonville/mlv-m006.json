@@ -5,85 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Délégué Premier ministre",
- "anchor": "« Élisez-moi Premier ministre » : l'appel de Mélenchon pour les législatives 2022 (le « troisième tour »).",
+ "anchor": "« Élisez-moi Premier ministre » (législatives 2022).",
  "meme_id": "MI",
  "situation": "l'école",
- "ressort": "promesse contre réalité : l'annonce géante, puis ce qui se passe vraiment",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "À l'école de Mélenchonville, on n'élit pas le délégué. On élit le Premier ministre.",
-  "Ici, le délégué de classe vise Matignon.",
-  "La 5e B a un candidat au poste de Premier ministre.",
-  "Dans cette école, l'élection de délégué a un troisième tour.",
-  "Il a perdu. Il exige quand même un bureau."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : le délégué de classe réclame Matignon.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, on vise Matignon dès la sixième.",
+  "Mélenchonville : le troisième tour se joue à la récré."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Il y installe un pupitre, deux drapeaux et quarante minutes de discours.",
-  "Le placard est devenu Matignon. Le balai est ministre.",
-  "La sieste gouverne. Lui prépare la cohabitation."
+  "Fin d'année : ni délégué, ni directeur. Mais il se représente.",
+  "Toujours candidat, jamais nommé.",
+  "Le seul délégué qui exige un gouvernement."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "À l'école de Mélenchonville, on n'élit pas le délégué. On élit le Premier ministre.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même en classe.",
    "accent_words": [
-    "Mélenchonville",
-    "ministre"
+    "Même en classe"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Affiche dans la cour : « Élisez-moi Premier ministre de la 5e B. »",
+   "text": "Élection du délégué. Un élève colle son affiche : « Élisez-moi Premier ministre ».",
    "accent_words": [
-    "Élisez-moi",
-    "ministre"
+    "Premier ministre"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Promesse : cantine gratuite, récré illimitée, contrôle de maths aboli.",
+   "text": "C'était son slogan aux législatives 2022. Matignon n'a jamais appelé.",
    "accent_words": [
-    "illimitée",
-    "Promesse"
+    "jamais appelé"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Résultat : il arrive troisième, derrière la sieste et la récré.",
+   "text": "Le délégué refuse d'être délégué. Il veut le bureau du directeur.",
    "accent_words": [
-    "troisième",
-    "Résultat"
+    "directeur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Il exige quand même Matignon. On lui donne le placard à balais.",
+   "text": "Chaque récré devient un troisième tour. Le bac à sable vote une motion.",
    "accent_words": [
-    "Matignon",
-    "placard"
+    "troisième tour"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Il y installe un pupitre, deux drapeaux et quarante minutes de discours.",
+   "text": "Fin d'année : ni délégué, ni directeur. Mais il se représente.",
    "accent_words": [
-    "installe",
-    "drapeaux"
+    "il se représente"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Ton délégué de classe, il promettait quoi ? Dis-le en commentaire.",
+   "text": "Envoie ça au pote qui veut être chef avant d'avoir été élu.",
    "accent_words": [
-    "commentaire",
-    "promettait"
+    "chef"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,89 +85,157 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "building",
     "banner",
-    "person",
-    "sign"
+    "person"
    ],
-   "onscreen_text": "ÉLISEZ-MOI PM DE LA 5E B",
-   "comic_action": "Cour d'école vue d'en haut, banderole géante tenue par un élève.",
-   "expected_result": "Le slogan de 2022 réduit à une cour de récré."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur une école ; affiches électorales sur le préau.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "sign",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "ÉLISEZ-MOI PREMIER MINISTRE",
+   "comic_action": "Un élève scotche une affiche plus grande que lui sur le tableau de la classe.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
-    "tribune",
-    "person",
-    "scroll"
-   ],
-   "onscreen_text": "RÉCRÉ ILLIMITÉE",
-   "comic_action": "L'élève au pupitre lit un parchemin de promesses.",
-   "expected_result": "Promesses démesurées."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4"
-   ],
-   "camera": "orbit",
-   "set": [
     "screen",
     "text3d",
     "person"
    ],
-   "onscreen_text": "3E : DERRIÈRE LA SIESTE",
-   "comic_action": "Écran des résultats : la sieste en tête, la récré deuxième.",
-   "expected_result": "Réalité."
+   "onscreen_text": "MATIGNON : 0 APPEL",
+   "comic_action": "Le téléphone de la classe reste muet ; l'élève le fixe.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6",
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "building",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "BUREAU DU DIRECTEUR",
+   "comic_action": "Travelling : l'élève traîne sa chaise jusqu'au bureau du directeur.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "person",
+    "table",
+    "form_stack"
+   ],
+   "onscreen_text": "3E TOUR",
+   "comic_action": "Orbite autour du bac à sable : seaux levés, vote à main levée.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "building",
+    "banner",
+    "text3d"
+   ],
+   "onscreen_text": "CANDIDAT 2027",
+   "comic_action": "Plan large : l'école vide, une nouvelle affiche « 2027 » collée sur le préau.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "building",
-    "tribune",
-    "banner",
-    "tshirt"
+    "person",
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "MATIGNON (PLACARD)",
-   "comic_action": "Porte de placard étiquetée Matignon : pupitre minuscule, deux drapeaux.",
-   "expected_result": "Chute : il gouverne un placard."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique décolle l'affiche, une autre apparaît dessous.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton délégué de classe, il promettait quoi ? Dis-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui veut être chef avant d'avoir été élu."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 84,
- "claims": [],
+ "word_count": 82,
+ "claims": [
+  {
+   "text": "« Élisez-moi Premier ministre »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.lnc.nc/article-direct/politique/france/melenchon-veut-etre-elu-premier-ministre-aux-legislatives",
+   "note": "« Élisez-moi Premier ministre » (législatives 2022) ; il n'a pas été nommé."
+  },
+  {
+   "text": "C'était son slogan aux législatives 2022. Matignon n'a jamais appelé.",
+   "claim_type": "fait_public",
+   "source": "https://www.lnc.nc/article-direct/politique/france/melenchon-veut-etre-elu-premier-ministre-aux-legislatives",
+   "note": "« Élisez-moi Premier ministre » (législatives 2022) ; il n'a pas été nommé."
+  },
+  {
+   "text": "Fin d'année : ni délégué, ni directeur. Mais il se représente.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+  }
+ ],
  "sources": [
   {
    "url": "https://www.lnc.nc/article-direct/politique/france/melenchon-veut-etre-elu-premier-ministre-aux-legislatives",
-   "date": "2022-04-19",
-   "consulted": "2026-11-21",
-   "statut": "fait public",
-   "usage": "Slogan transposé à une élection de délégué de classe fictive."
+   "date": "2022-04",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte",
+   "note": "« Élisez-moi Premier ministre » (législatives 2022) ; il n'a pas été nommé."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "date": "2026-06",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Promesse contre réalité sur « Élisez-moi Premier ministre » (2022, sourcé). L'affiche est celle d'un élève fictif."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « Élisez-moi Premier ministre » (législatives 2022). Cadre : l'école. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

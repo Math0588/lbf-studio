@@ -4,86 +4,79 @@
  "synopsis_id": "mlv-m019-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Le discours de la fête",
- "anchor": "Discours-fleuves : Le Bourget (7/11/2026) ≈ 1 h 07 et 6 821 mots, « peuple » 13 fois ; Lyon (02/2026) 1 h 42.",
+ "title_cover": "6 821 mots",
+ "anchor": "Le Bourget : 6 821 mots, « peuple » 13 fois.",
  "meme_id": "MC",
  "situation": "la fête municipale",
- "ressort": "comptage absurde : un chiffre délirant affiché en grand (étiquette rouge)",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon… et la fête dure longtemps.",
-  "La fête municipale où le discours dure plus que la fête.",
-  "Soixante-sept minutes avant la première chipolata.",
-  "Ici, on compte les mots du discours comme des tours de manège.",
-  "Treize fois peuple, zéro fois buffet."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : la fête municipale dure 6 821 mots.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, le feu d'artifice attend la fin du discours.",
+  "Mélenchonville : la fête où le micro est le dernier invité."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Quand le maire termine enfin, la fête est officiellement finie.",
-  "La fanfare se réveille et joue l'hymne du rangement.",
-  "Le maire annonce la deuxième partie. Les tables sont déjà pliées."
+  "Bal annulé, lampions éteints. Le seul qui danse encore, c'est le micro.",
+  "Six mille huit cents mots, zéro danse.",
+  "La fête est finie. Le discours, non."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon… et la fête dure longtemps.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. La fête commence.",
    "accent_words": [
-    "Mélenchon",
-    "longtemps"
+    "La fête commence"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Discours d'ouverture : soixante-sept minutes, six mille huit cents mots.",
+   "text": "Au Bourget, 6 821 mots. Ici, c'est la durée du discours de la fête.",
    "accent_words": [
-    "soixante-sept",
-    "d'ouverture"
+    "6 821"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Le mot peuple, treize fois. Le mot buffet, zéro fois.",
+   "text": "Le mot peuple, treize fois. À chaque fois, la fanfare s'arrête.",
    "accent_words": [
-    "peuple",
-    "treize"
+    "la fanfare"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "À la minute quarante, les chipolatas sont froides.",
+   "text": "Le feu d'artifice attend la fin de la phrase. Il est mouillé.",
    "accent_words": [
-    "chipolatas",
-    "quarante"
+    "mouillé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "À la minute soixante, la fanfare s'endort sur le tuba.",
+   "text": "La buvette ferme. Le maire en est à la Constituante.",
    "accent_words": [
-    "soixante",
-    "s'endort"
+    "la Constituante"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Quand le maire termine enfin, la fête est officiellement finie.",
+   "text": "Bal annulé, lampions éteints. Le seul qui danse encore, c'est le micro.",
    "accent_words": [
-    "officiellement",
-    "termine"
+    "le micro"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Ton record de discours subi, c'était combien ? Commente.",
+   "text": "Envoie ça au pote qui fait un discours à chaque anniversaire.",
    "accent_words": [
-    "discours",
-    "Commente"
+    "anniversaire"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,95 +85,144 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "arch",
+    "ground",
+    "mairie",
+    "banner",
+    "person"
+   ],
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur la place : lampions, fanfare, et un pupitre au milieu.",
+   "expected_result": "La ville et son camp posés en une image."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "orbit",
+   "set": [
     "tribune",
     "person",
     "text3d"
    ],
-   "onscreen_text": "DISCOURS : 67 MIN",
-   "comic_action": "Fête vue d'en haut, arche gonflable, foule figée.",
-   "expected_result": "Durée absurde."
+   "onscreen_text": "6 821 MOTS",
+   "comic_action": "Orbite autour du pupitre : un rouleau de texte se déroule jusqu'à la fontaine.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
-   "id": "s2",
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "person"
-   ],
-   "onscreen_text": "PEUPLE 13 / BUFFET 0",
-   "comic_action": "Écran-compteur de mots à côté du pupitre.",
-   "expected_result": "Comptage absurde sourcé."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4",
-    "n5"
-   ],
-   "camera": "street_dolly",
-   "set": [
-    "table",
     "person",
-    "lamp"
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "MINUTE 40",
-   "comic_action": "Les grillades fument puis refroidissent ; la fanfare s'affaisse.",
-   "expected_result": "Escalade du temps."
+   "onscreen_text": "PEUPLE ×13",
+   "comic_action": "Gros plan : le tubiste repose son instrument, soupire, recommence.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "fountain",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "FEU D'ARTIFICE : MOUILLÉ",
+   "comic_action": "Une fusée posée au bord de la fontaine prend l'eau.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "shop",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "BUVETTE : FERMÉE",
+   "comic_action": "Travelling : le rideau de la buvette tombe ; au loin, le pupitre continue.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "tribune",
+    "lamp",
+    "text3d"
+   ],
+   "onscreen_text": "BAL : ANNULÉ",
+   "comic_action": "Plan large : la place vide, seul le micro se balance sous un lampion.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "arch",
-    "tribune",
-    "tshirt"
+    "person",
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "FIN DE LA FÊTE",
-   "comic_action": "L'arche se dégonfle ; t-shirt sur le pupitre.",
-   "expected_result": "Chute."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique allume un dernier pétard, il fait pschitt.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton record de discours subi, c'était combien ? Commente."
+  "type": "share",
+  "text": "Envoie ça au pote qui fait un discours à chaque anniversaire."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 70,
- "claims": [],
+ "word_count": 81,
+ "claims": [
+  {
+   "text": "Au Bourget, 6 821 mots. Ici, c'est la durée du discours de la fête.",
+   "claim_type": "fait_public",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
+   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
+  },
+  {
+   "text": "Le mot peuple, treize fois. À chaque fois, la fanfare s'arrête.",
+   "claim_type": "fait_public",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
+   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
+  }
+ ],
  "sources": [
   {
    "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
-   "date": "2026-11-19",
-   "consulted": "2026-11-21",
-   "statut": "fait public (analyse lexicale)",
-   "usage": "Durée, nombre de mots et occurrences de « peuple » recyclés en compteurs."
-  },
-  {
-   "url": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
-   "date": "2026-02-26",
-   "consulted": "2026-11-21",
-   "statut": "fait public",
-   "usage": "Cliché du discours-fleuve (1 h 42). Idée seulement."
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait (analyse lexicale)",
+   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Comptage absurde sur le discours du Bourget (≈ 1 h 07, 6 821 mots, « peuple » ×13 — Institut Montaigne). Ouverture « Dans cette ville, tout le monde vote Mélenchon… »."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Le Bourget : 6 821 mots, « peuple » 13 fois. Cadre : la fête municipale. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

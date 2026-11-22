@@ -3,75 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-36",
  "format": "A",
- "title_cover": "Le chat porte-parole",
+ "title_cover": "Pile ou face",
  "hook_variants": [
-  "La mairie de Marineville a un nouveau porte-parole : il ronronne.",
-  "La mairie de Marineville a un nouveau porte-parole. Il ronronne.",
-  "La mairie de Marineville a un nouveau porte-parole. Il ne parle pas.",
-  "Ici, chaque question difficile reçoit un chat. Les très difficiles, plusieurs.",
-  "Conférence de presse : quarante questions, trente-neuf chats."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, le guichet retraites a deux portes et cinq cases.",
+  "Marineville : la retraite à pile ou face.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : pile ou face."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La tribune disparaît sous les chatons, comme un compte Instagram masqué. Communiqué officiel, en police arrondie : miaou.",
-  "La tribune disparaît sous les chatons. Communiqué officiel, en police arrondie : miaou.",
-  "Les journalistes repartent ravis, griffés et sans aucune information."
+  "Soixante, soixante-deux, voire on verra : la retraite à pile ou face.",
+  "Le formulaire a cinq cases : une par catégorie, aucune pour comprendre.",
+  "À la mairie, le guichet retraites a deux portes : entrée à soixante, sortie à soixante-deux."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "La mairie de Marineville a un nouveau porte-parole : il ronronne.",
+   "text": "Dans cette ville, tout le monde vote Marine. La retraite, ça se complique.",
    "accent_words": [
-    "ronronne"
+    "ça se complique"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Question qui fâche ? On pose Minou sur le pupitre, et la presse fond.",
+   "text": "Sa réforme : départ à soixante-deux, voire soixante, plus une capitalisation obligatoire.",
    "accent_words": [
-    "fond"
+    "capitalisation obligatoire"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Les travaux valent un chat, les horaires de la piscine en valent deux.",
+   "text": "Des rivaux parlent de « catalogue de contradictions ». Ici, on dit catalogue de printemps.",
    "accent_words": [
-    "deux"
+    "catalogue de contradictions"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Une question sur les chats eux-mêmes ? Silence gêné, et trois chats.",
+   "text": "Le formulaire a cinq cases : une par catégorie, aucune pour comprendre.",
    "accent_words": [
-    "trois"
+    "cinq cases"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "La tribune disparaît sous les chatons, comme un compte Instagram masqué.",
+   "text": "Au guichet retraites : entrée à soixante, sortie à soixante-deux.",
    "accent_words": [
-    "masqué"
+    "soixante-deux"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Communiqué officiel, en police arrondie : miaou.",
+   "text": "Soixante, soixante-deux, voire on verra : la retraite à pile ou face.",
    "accent_words": [
-    "miaou"
+    "pile ou face"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Pose en commentaire la question qu'on devrait régler avec un chat.",
+   "text": "Envoie ça au pote qui croit qu'il partira à soixante ans.",
    "accent_words": [
-    "chat"
+    "soixante ans"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -84,16 +84,14 @@
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "mairie",
-    "tribune",
-    "router_lectern",
-    "mascot",
-    "tripod_camera",
-    "banner"
+    "banner",
+    "person"
    ],
-   "onscreen_text": "PORTE-PAROLE",
-   "comic_action": "Descente sur le perron de la mairie : caméras sur trépied, banderole tricolore, et au pupitre, à la place du micro, Minou assis, qui bâille.",
-   "expected_result": "Le porte-parole est un chat."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; un panneau « RETRAITES » avec trois flèches opposées.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
@@ -102,100 +100,145 @@
    ],
    "camera": "closeup",
    "set": [
-    "router_lectern",
-    "mascot",
-    "tripod_camera",
+    "screen",
+    "text3d",
+    "mairie",
     "person"
    ],
-   "onscreen_text": "RÉPONSE APAISÉE",
-   "comic_action": "Une main pose Minou sur le pupitre pile au moment où une question est lancée ; les micros captent un ronron amplifié comme une sono ; les journalistes (persons) notent, satisfaits.",
-   "expected_result": "La diversion par la mignonnerie remplace la réponse."
+   "onscreen_text": "62 · VOIRE 60 · + BOURSE",
+   "comic_action": "Écran : trois chiffres qui clignotent tour à tour.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "tribune",
-    "router_lectern",
-    "mascot",
-    "person"
+    "shop",
+    "person",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "",
-   "comic_action": "Orbite : à chaque question, des chats supplémentaires sont posés sur la tribune ; à la question sur les chats, gêne, puis trois chats d'un coup.",
-   "expected_result": "Escalade : plus la question gêne, plus il y a de chats."
+   "onscreen_text": "CATALOGUE PRINTEMPS-ÉTÉ",
+   "comic_action": "Vitrine : un catalogue qu'on feuillette, chaque page contredit la précédente.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "closeup",
    "set": [
-    "tribune",
-    "mascot",
-    "text3d",
-    "banner",
-    "tripod_camera"
+    "table",
+    "form_stack",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "MIAOU",
-   "comic_action": "Plan large : la tribune n'est plus qu'une colline de chats ; on ne voit plus la chargée de l'image. Un text3d géant se pose devant : « MIAOU », lettres arrondies. On laisse respirer.",
-   "expected_result": "Chute : la communication est devenue un pur signal affectif."
+   "onscreen_text": "CATÉGORIE : 1 À 5",
+   "comic_action": "Un formulaire à cinq cases ; un habitant les coche toutes, perdu.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7"
+    "n5"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "table",
+    "screen",
+    "sign",
+    "building"
+   ],
+   "onscreen_text": "ENTRÉE 60 · SORTIE 62",
+   "comic_action": "Par la fenêtre : un habitant entre par une porte « 60 » et ressort par « 62 ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
    ],
    "camera": "closeup",
    "set": [
-    "tshirt",
-    "tribune",
-    "mascot"
+    "table",
+    "form_stack",
+    "text3d",
+    "mairie"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Un chaton émerge de la pile, la tête passée dans un t-shirt « LE PAYS BUGUE. MOI AUSSI. ».",
-   "expected_result": "CTA parlé unique + produit visible."
+   "onscreen_text": "PILE OU FACE",
+   "comic_action": "Une pièce géante tourne sur la table, sans jamais retomber. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt prépare son pot de départ, perplexe.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Pose en commentaire la question qu'on devrait régler avec un chat."
+  "type": "share",
+  "text": "Envoie ça au pote qui croit qu'il partira à soixante ans."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 79,
- "claims": [],
+ "word_count": 85,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "Sa réforme : départ à soixante-deux, voire soixante, plus une capitalisation obligatoire.",
+   "claim_type": "fait_public",
+   "source": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
+   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
+  },
+  {
+   "segment": "n3",
+   "text": "« catalogue de contradictions »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/catalogue-de-contradictions-vaste-arnaque-financiere-la-reforme-des-retraites-du-rn-suscite-la-critique-de-certains-candidats",
+   "note": "« catalogue de contradictions », « vaste arnaque financière »."
+  },
+  {
+   "segment": "n4",
+   "text": "Le formulaire a cinq cases : une par catégorie, aucune pour comprendre.",
+   "claim_type": "fait_public",
+   "source": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
+   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
+  }
+ ],
  "sources": [
   {
-   "url": "https://thenationalnews.com/world/europe/2022/04/22/who-is-marine-le-pen-the-far-right-candidate-who-has-led-a-kitten-campaign",
-   "published": "2022-04-22",
-   "consulted": "2026-11-21",
-   "status": "mème de presse (la presse a surnommé la campagne de 2022 « la campagne chaton » pour son ton adouci)",
-   "used_for": "Inspiration seulement : la « campagne chaton » littéralisée en chats qui remplacent les réponses."
+   "url": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
+   "date": "2026-11-17",
+   "consulted": "2026-11-22",
+   "statut": "fait public (présentation du programme)",
+   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/la-violence-la-raideur-ideologique-d-eric-zemmour-ont-fait-de-marine-le-pen-une",
-   "published": "2022-03-18",
-   "consulted": "2026-11-21",
-   "status": "opinion (débat télévisé : image « adoucie », « humanisée », « une femme qui aime les chats »)",
-   "used_for": "Inspiration seulement : le chat comme outil officiel d'adoucissement d'image, poussé jusqu'à l'absurde dans une ville fictive."
-  },
-  {
-   "url": "https://www.letribunaldunet.fr/actualites/marine-le-pen-compte-instagram-secret-chat.html",
-   "published": "2020-01-31",
-   "consulted": "2026-11-21",
-   "status": "mème (vérifié (fait public rapporté par la presse ; pas de vie privée au-delà de ce qu'elle a elle-même défendu publiquement comme passion))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Révélation d'un compte Instagram privé consacré à ses chats, « les chats masqués », renommé ensuite « les chats démasqués ». Abonnements refusés, critiques sur…"
+   "url": "https://www.publicsenat.fr/actualites/politique/catalogue-de-contradictions-vaste-arnaque-financiere-la-reforme-des-retraites-du-rn-suscite-la-critique-de-certains-candidats",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "citation (critiques de candidats rivaux)",
+   "note": "« catalogue de contradictions », « vaste arnaque financière »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Escalade de la diversion par le chat : le mème de presse de la « campagne chaton » est pris au pied de la lettre en conférence de presse fictive. Questions choisies anodines (travaux, piscine) pour éviter toute allusion à des affaires. Clôt l'arc « Opération chats » (mrv-gag-03 : tribune couverte de chats). Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 79 mots ; mèmes vérifiés intégrés comme thèmes (M7, M5, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = réforme du 17/11/2026 : 62 voire 60 ans, capitalisation obligatoire, cinq catégories ; des rivaux parlent de « catalogue de contradictions ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

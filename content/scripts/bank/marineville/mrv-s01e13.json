@@ -3,84 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-07",
  "format": "A",
- "title_cover": "Quatre stations, quarante noms",
+ "title_cover": "Le plein à 5,5",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine… et le métro a quarante noms.",
-  "Le métro de Marineville a quatre stations et quarante noms.",
-  "Quatre stations, quarante noms. Le plan du métro a l'épaisseur d'un annuaire.",
-  "Prochaine station : Avenir. Anciennement : Avenir.",
-  "Ici, le terminus s'appelle Nouveau Départ. C'est aussi le départ."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, chaque rond-point a sa pompe à essence.",
+  "Marineville : le plein moins cher, le trou plus profond.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : le plein à 5,5."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Un voyageur remonte l'escalier et ressort devant la même mairie. Gérard visse déjà le nom du mois prochain.",
-  "Sur la bouche de métro, Gérard colle déjà le nom du mois prochain : Avenir Nouveau.",
-  "Le voyageur valide son ticket. Le ticket aussi a changé de nom."
+  "Baisser une taxe, facile. Dire qui paie le trou : l'option jamais cochée.",
+  "Le plein coûte moins cher, mais il faut trois tours de rond-point pour le payer.",
+  "Ici, chaque rond-point a sa pompe à essence."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine… et le métro a quarante noms.",
+   "text": "Dans cette ville, tout le monde vote Marine. Au diesel.",
    "accent_words": [
-    "Marine",
-    "noms"
+    "Au diesel"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le plan du quai est un millefeuille de quarante autocollants.",
+   "text": "Promesse 2022 : TVA sur le carburant de vingt à cinq virgule cinq pour cent.",
    "accent_words": [
-    "autocollants"
+    "cinq virgule cinq"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Personne ne le prend : ici, tout le monde vient en diesel.",
+   "text": "Voiture, gazole, ronds-points : son terrain, d'après les analystes.",
    "accent_words": [
-    "diesel"
+    "ronds-points"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "La ligne est un cercle, terminus Nouveau Départ, qui est aussi le départ.",
+   "text": "Ici, chaque rond-point a sa pompe à essence.",
    "accent_words": [
-    "Nouveau Départ"
+    "pompe à essence"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Annonce : prochaine station Avenir, anciennement Avenir.",
+   "text": "Le budget de la ville, lui, roule sur la réserve depuis des années.",
    "accent_words": [
-    "Avenir"
+    "sur la réserve"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Un voyageur remonte l'escalier et ressort devant la même mairie.",
+   "text": "Baisser une taxe, facile. Dire qui paie le trou : l'option jamais cochée.",
    "accent_words": [
-    "mairie"
+    "qui paie le trou"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Gérard visse déjà le nom du mois prochain.",
+   "text": "Envoie ça au pote qui fait ses comptes au prix du gazole.",
    "accent_words": [
-    "prochain"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Renomme ta station en commentaire : le pire gagne.",
-   "accent_words": [
-    "pire"
+    "du gazole"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -94,109 +85,153 @@
    "camera": "descend",
    "set": [
     "ground",
-    "arch",
-    "sign",
     "mairie",
-    "text3d"
+    "banner",
+    "person"
    ],
-   "onscreen_text": "4 STATIONS · 40 NOMS",
-   "comic_action": "Descente vers une bouche de métro (arch) devant la mairie ; la plaque de station est si épaisse qu'elle déborde sur le trottoir.",
-   "expected_result": "Le renommage frénétique se voit à l'épaisseur."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; un pistolet à essence géant planté devant.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
    "camera": "closeup",
    "set": [
     "screen",
-    "sign",
-    "text3d"
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "",
-   "comic_action": "Gros plan sur le plan du quai : couches d'autocollants qui se décollent par coins, chaque couche avec un nom différent pour la même pastille.",
-   "expected_result": "Le plan est illisible à force de nouveautés."
+   "onscreen_text": "TVA : 20 → 5,5",
+   "comic_action": "L'écran affiche le taux qui dégringole, ding de caisse.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n3"
    ],
    "camera": "orbit",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "roundabout",
+    "car_orbit",
+    "road",
+    "sign"
    ],
-   "onscreen_text": "NOUVEAU DÉPART",
-   "comic_action": "Schéma animé de la ligne sur l'écran : un cercle parfait, le point « Nouveau Départ » est à la fois début et fin. L'écran annonce « AVENIR (ex-AVENIR) ».",
-   "expected_result": "La boucle est assumée comme destination."
+   "onscreen_text": "GAZOLE · ROND-POINT",
+   "comic_action": "Orbite autour d'un rond-point plein de voitures.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "arch",
-    "person",
-    "mairie",
-    "sign",
-    "text3d"
+    "roundabout",
+    "car_orbit",
+    "road",
+    "sign"
    ],
-   "onscreen_text": "AVENIR NOUVEAU",
-   "comic_action": "La caméra suit un voyageur qui remonte l'escalier, sort à la lumière… devant la même mairie. À côté, Gérard sur son escabeau visse « AVENIR NOUVEAU » sur la bouche de métro. On laisse respirer.",
-   "expected_result": "Chute : on ressort toujours au même endroit, sous un nom neuf.",
-   "new_asset_request": "Escabeau et perceuse de Gérard (new_asset:escabeau_et_perceuse)."
+   "onscreen_text": "POMPE AU CENTRE",
+   "comic_action": "Au centre du rond-point, une pompe à essence ; les voitures font le plein en tournant.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
    ],
    "camera": "closeup",
    "set": [
+    "gps",
+    "car",
+    "screen",
+    "text3d"
+   ],
+   "onscreen_text": "BUDGET : RÉSERVE",
+   "comic_action": "Tableau de bord : voyant de réserve allumé, étiqueté « BUDGET ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "form_stack",
+    "text3d",
+    "mairie"
+   ],
+   "onscreen_text": "QUI PAIE ? ☐",
+   "comic_action": "Un formulaire : la case « financement » reste vide sous la loupe. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
     "tshirt",
-    "arch",
+    "person",
     "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Sur la rambarde de l'escalier du métro, un t-shirt « À DROITE DU CANAPÉ. » est accroché comme une affiche.",
-   "expected_result": "CTA parlé unique + produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt compte ses pièces devant une pompe.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Renomme ta station en commentaire : le pire gagne."
+  "type": "share",
+  "text": "Envoie ça au pote qui fait ses comptes au prix du gazole."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 83,
- "claims": [],
+ "word_count": 80,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "Promesse 2022 : TVA sur le carburant de vingt à cinq virgule cinq pour cent.",
+   "claim_type": "fait_public",
+   "source": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/baisser-la-tva-de-20-a-55-pour-les-carburants-lelectricite-le-gaz-et-le-fioul-domestique",
+   "note": "TVA de 20 % à 5,5 % sur carburants, électricité, gaz, fioul."
+  },
+  {
+   "segment": "n3",
+   "text": "Voiture, gazole, ronds-points : son terrain, d'après les analystes.",
+   "claim_type": "fait_public",
+   "source": "https://www.jean-jaures.org/publication/2002-2022-les-ressorts-profonds-de-la-dynamique-frontiste/",
+   "note": "Périurbain, voiture, gazole, ronds-points."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
-   "published": "2018-06-01",
-   "consulted": "2026-11-21",
-   "status": "fait public (changement de nom du parti ; la flamme du logo est conservée, désormais placée dans un cercle)",
-   "used_for": "Inspiration seulement : on change le nom, on garde le logo et on le met dans un rond. Traduit en gag visuel de ville fictive (enseigne, icône, rond-point), jamais cité ni présenté comme un fait dans la narration."
+   "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/baisser-la-tva-de-20-a-55-pour-les-carburants-lelectricite-le-gaz-et-le-fioul-domestique",
+   "date": "2022",
+   "consulted": "2026-11-22",
+   "statut": "fait public (programme 2022)",
+   "note": "TVA de 20 % à 5,5 % sur carburants, électricité, gaz, fioul."
   },
   {
    "url": "https://www.jean-jaures.org/publication/2002-2022-les-ressorts-profonds-de-la-dynamique-frontiste/",
-   "published": "2022-05-25",
-   "consulted": "2026-11-21",
-   "status": "cliché électorat (vérifié (analyse) — cliché d'électorat économique/géographique, aucune caractéristique protégée)",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Vote RN plus fort dans le grand périurbain : dépendance à la voiture, poids du prix du gazole, crise des gilets jaunes (ronds-points). Thème : Clio diesel, plei…"
+   "date": "2022-05-25",
+   "consulted": "2026-11-22",
+   "statut": "analyse (cliché économique/géographique, aucune caractéristique protégée)",
+   "note": "Périurbain, voiture, gazole, ronds-points."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Répétition révélée : la ligne circulaire et l'annonce « Avenir, anciennement Avenir » condensent le renommage sans déplacement. Inspiré du changement de nom à logo conservé, transposé à une station fictive. Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 83 mots ; mèmes vérifiés intégrés comme thèmes (M14, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = programme 2022 : TVA de 20 % à 5,5 % sur les carburants ; le cliché du périurbain, voiture, gazole et ronds-points. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

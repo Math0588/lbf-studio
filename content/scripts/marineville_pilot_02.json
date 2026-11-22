@@ -3,93 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-02",
  "format": "A",
- "title_cover": "La mairie a changé",
+ "title_cover": "Juste Marine",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine… sans nom de famille.",
-  "Grande annonce à Marineville : la mairie change. Enfin, son enseigne.",
-  "À Marineville, la mairie a changé. Regardez bien. Non, plus près.",
-  "Ce drap cache la plus grande révolution de Marineville : une police d'écriture.",
-  "Dans cette ville, la rupture se fait à la perceuse."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, plus personne n'a de nom de famille.",
+  "Marineville : on change l'emballage tous les cinq ans.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : juste marine."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Vue de côté, l'enseigne fait déjà quarante centimètres d'épaisseur. Ici, on ne change rien du tout : on recouvre.",
-  "Vue de côté, l'enseigne fait quarante centimètres d'épaisseur. Ici, on ne retire rien. On recouvre.",
-  "Et pour fêter la rupture, on a gardé le même ruban. On l'a juste repassé."
+  "Changer l'emballage tous les cinq ans : le seul renouvellement qu'on lui connaît.",
+  "Plaques de rue : que des prénoms. Le GPS t'envoie rue Marine.",
+  "Ici, la mairie a fait pareil : nouvelle enseigne, mêmes dossiers."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine… sans nom de famille.",
+   "text": "Dans cette ville, tout le monde vote Marine. Le reste, on ne dit pas.",
    "accent_words": [
-    "Marine",
-    "famille"
+    "on ne dit pas"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Grande annonce : la mairie aussi change de nom.",
+   "text": "Campagne 2017 : nom de famille et sigle du parti effacés des affiches.",
    "accent_words": [
-    "nom"
+    "effacés"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Drap bleu, roulement de tambour, chat officiel en nœud papillon.",
+   "text": "La presse ironise : on renouvelle Marine plutôt que le programme.",
    "accent_words": [
-    "nœud papillon"
+    "plutôt que le programme"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le drap tombe : Mairie, même mot, mais angles arrondis.",
+   "text": "Ici, la mairie a fait pareil : nouvelle enseigne, mêmes dossiers.",
    "accent_words": [
-    "Mairie",
-    "arrondis"
+    "mêmes dossiers"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Au micro, on parle de rupture historique.",
+   "text": "Plaques de rue : que des prénoms. Le GPS t'envoie rue Marine.",
    "accent_words": [
-    "rupture"
+    "rue Marine"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Derrière, Gérard visse la nouvelle par-dessus l'ancienne.",
+   "text": "Changer l'emballage tous les cinq ans : le seul renouvellement qu'on lui connaît.",
    "accent_words": [
-    "par-dessus"
+    "l'emballage"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Vue de côté, l'enseigne fait déjà quarante centimètres d'épaisseur.",
+   "text": "Envoie ça au pote qui confond nouvelle étiquette et nouvelle recette.",
    "accent_words": [
-    "centimètres"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ici, on ne change rien du tout : on recouvre.",
-   "accent_words": [
-    "recouvre"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n9",
-   "text": "La différence, tu la vois ? Dis-le en commentaire.",
-   "accent_words": [
-    "commentaire"
+    "nouvelle recette"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -98,133 +80,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "mairie",
     "banner",
-    "sign",
-    "person",
-    "ground"
+    "person"
    ],
-   "onscreen_text": "GRANDE ANNONCE",
-   "comic_action": "Première image : un perceur perché sur un escabeau devant une mairie entièrement emballée dans un drap bleu, perceuse vrombissante à la main, comme s'il allait percer le drap. La caméra descend vers la façade.",
-   "expected_result": "On sent tout de suite qu'un « grand changement » se prépare… à la perceuse.",
-   "new_asset_request": "Escabeau et perceuse-visseuse simples pour le personnage Gérard (cylindre bleu, casque jaune)."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; une plaque où seul le prénom est lisible, le reste recouvert.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
    "camera": "street_dolly",
    "set": [
-    "tribune",
-    "mascot",
-    "banner",
+    "facade_row",
+    "facade_set",
     "person",
-    "studio_light"
+    "banner"
    ],
-   "onscreen_text": "",
-   "comic_action": "Travelling latéral sur la tribune : public en formes simples, projecteurs, et au centre, sur un coussin, le chat officiel Minou en nœud papillon bleu, qui bâille au moment du roulement de tambour.",
-   "expected_result": "Solennité ridicule : grand cérémonial pour un événement minuscule.",
-   "new_asset_request": "Si la mascotte du catalogue n'est pas un chat : chat low-poly bleu-gris avec nœud papillon."
+   "onscreen_text": "NOM : MASQUÉ",
+   "comic_action": "Des affiches où un bandeau bleu cache tout sauf le prénom.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
-    "mairie",
+    "screen",
     "text3d",
-    "banner"
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "AVANT : MAIRIE · APRÈS : MAIRIE",
-   "comic_action": "Le drap glisse. Gros plan sur les lettres « MAIRIE » ; un comparatif avant/après s'affiche côte à côte : seuls les coins des lettres sont arrondis. Une loupe text3d grossit un coin arrondi.",
-   "expected_result": "Le « changement » est invisible à l'œil nu."
+   "onscreen_text": "PROGRAMME : INCHANGÉ",
+   "comic_action": "L'écran affiche deux colonnes : « image : neuve », « programme : idem ».",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
    "camera": "window_pass",
    "set": [
-    "router_lectern",
-    "person",
-    "mairie",
+    "table",
+    "screen",
     "sign",
-    "text3d"
+    "building"
    ],
-   "onscreen_text": "RUPTURE",
-   "comic_action": "Au premier plan, la chargée de l'image (sphère lisse bleu pastel) au pupitre, sous un mot géant « RUPTURE ». En arrière-plan, net, Gérard sur son escabeau visse tranquillement la nouvelle enseigne sur l'ancienne, sans la retirer.",
-   "expected_result": "Le discours dit rupture, l'image montre une simple couche de plus."
+   "onscreen_text": "ENSEIGNE NEUVE · DOSSIERS VIEUX",
+   "comic_action": "Par la fenêtre : une plaque dorée neuve, des classeurs jaunis derrière.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "mairie",
-    "sign",
-    "text3d",
-    "mascot"
+    "gps",
+    "car",
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "40 CM",
-   "comic_action": "La caméra tourne jusqu'au profil de la façade : l'enseigne est un millefeuille de couches « MAIRIE » empilées, avec une cote « 40 cm » dessinée en text3d. Derrière la mairie, on aperçoit Minou endormi sur une pile d'anciennes enseignes. On laisse respirer.",
-   "expected_result": "Chute visuelle : le changement n'est qu'une couche supplémentaire sur toutes les précédentes."
+   "onscreen_text": "DESTINATION : RUE MARINE",
+   "comic_action": "Gros plan GPS : toutes les adresses mènent à la même rue.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s6",
    "narration_ids": [
-    "n9"
+    "n6"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "tribune",
-    "tshirt",
-    "banner"
+    "shop",
+    "person",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Sur la rambarde de la tribune vide, un t-shirt « J'AI UN AVIS. PAS DE MANDAT. » reste accroché, une perceuse posée à côté.",
-   "expected_result": "CTA parlé unique + produit visible dans le décor."
+   "onscreen_text": "NOUVEL EMBALLAGE · MÊME RECETTE",
+   "comic_action": "Vitrine : un paquet rewrappé, l'ancienne étiquette qui dépasse. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt recolle une étiquette par-dessus une autre.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "La différence, tu la vois ? Dis-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui confond nouvelle étiquette et nouvelle recette."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 83,
- "claims": [],
+ "word_count": 85,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "Campagne 2017 : nom de famille et sigle du parti effacés des affiches.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
+   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme »."
+  },
+  {
+   "segment": "n3",
+   "text": "La presse ironise : on renouvelle Marine plutôt que le programme.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
+   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme »."
+  }
+ ],
  "sources": [
   {
    "url": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
-   "published": "2017-02-06",
-   "consulted": "2026-11-21",
-   "status": "surnom (vérifié (fait public rapporté + analyse/opinion de presse))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Campagne 2017 centrée sur le seul prénom « Marine » : nom de famille et nom du parti effacés des documents de campagne. Le prénom seul est devenu une marque, ab…"
-  },
-  {
-   "url": "https://www.slate.fr/story/114565/marine-le-pen-blog-logo-fn",
-   "published": "2016-01 (date exacte non relevée)",
-   "consulted": "2026-11-21",
-   "status": "mème (vérifié (analyse de presse, date approximative))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Son blog évince le logo du parti au profit d'une mise en scène douce : chats, canapé, typographie arrondie. Thème : enseignes aux angles arrondis, communiqués e…"
+   "date": "2017-02-06",
+   "consulted": "2026-11-22",
+   "statut": "fait public + analyse de presse",
+   "note": "Campagne 2017 centrée sur le prénom « Marine » ; nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Drôle par le contraste entre le cérémonial (drap, tambour, chat en nœud papillon, « rupture ») et la minuscule modification (des coins de lettres arrondis), puis par la révélation de profil : chaque « nouveauté » est une couche de plus sur l'ancienne. Satire du rebranding et de la normalisation d'image, sans aucun fait réel. Récompense les habitués : l'enseigne s'épaissit depuis l'épisode 1 (mrv-evt-001) et Minou dort sur la pile (mrv-evt-002). Vérifications : aucune personne réelle nommée ou représentée, la porte-parole est un personnage fictif en forme de sphère, aucune citation attribuée, aucun délit, procès ou événement réel, aucune allusion à un groupe de population, aucune statistique (la cote de 40 cm est un objet du décor fictif). Un seul CTA parlé. Ouvre l'arc « Le nouveau nom ». || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 83 mots ; mèmes vérifiés intégrés comme thèmes (M1, M10, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = campagne 2017 centrée sur le seul prénom « Marine », nom de famille et nom du parti effacés ; « renouveler Marine plutôt que son programme ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

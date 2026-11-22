@@ -5,85 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Le distributeur redistribue",
- "anchor": "Le dîner de Mélenchon avec treize grands patrons (17/11/2026) : trois heures, ambiance cordiale, désaccords intacts.",
+ "anchor": "la redistribution prise au pied de la lettre, face au dîner avec treize patrons.",
  "meme_id": "MP",
  "situation": "le distributeur de billets",
- "ressort": "inversion : le service fait exactement le contraire de son rôle, avec fierté",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "À Mélenchonville, le distributeur de billets ne distribue pas. Il redistribue.",
-  "Le distributeur qui redistribue.",
-  "Ici, retirer cinquante euros enrichit le voisin.",
-  "La machine invite les patrons à dîner.",
-  "Trois heures de dîner avec un écran."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : le distributeur te redistribue.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, retirer du liquide, c'est cotiser.",
+  "Mélenchonville : le seul DAB qui vote la taxe."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le distributeur conclut : désaccord de fond, mais excellent dessert.",
-  "Le patron revient la semaine suivante : il a réservé pour treize.",
-  "La machine affiche : merci pour le dessert."
+  "Résultat : le distributeur est vide, et le restaurant affiche complet.",
+  "DAB vide, restaurant plein.",
+  "On redistribue le jour, on dîne le soir."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "À Mélenchonville, le distributeur de billets ne distribue pas. Il redistribue.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Retrait impossible.",
    "accent_words": [
-    "Mélenchonville",
-    "distributeur"
+    "Retrait impossible"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Tu retires cinquante euros, il en verse vingt au voisin.",
+   "text": "Ici, le distributeur ne distribue pas. Il redistribue.",
    "accent_words": [
-    "cinquante",
-    "retires"
+    "redistribue"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Un grand patron arrive : la machine l'invite à dîner.",
+   "text": "Tu retires cinquante euros ? Il en garde quarante pour la cagnotte commune.",
    "accent_words": [
-    "l'invite",
-    "machine"
+    "la cagnotte"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Trois heures de discussion cordiale avec un écran.",
+   "text": "Carte platine ? Écran rouge, sirène, chant Taxer les riches.",
    "accent_words": [
-    "discussion",
-    "cordiale"
+    "Taxer les riches"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le patron repart ravi, le compte vide et le ventre plein.",
+   "text": "Mais un soir de novembre, il dîne trois heures avec treize grands patrons.",
    "accent_words": [
-    "patron",
-    "repart"
+    "treize grands patrons"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Le distributeur conclut : désaccord de fond, mais excellent dessert.",
+   "text": "Résultat : le distributeur est vide, et le restaurant affiche complet.",
    "accent_words": [
-    "distributeur",
-    "désaccord"
+    "affiche complet"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Tu inviterais qui à dîner, toi ? Dis-le en commentaire.",
+   "text": "Envoie ça au pote qui veut tout partager, sauf son code Netflix.",
    "accent_words": [
-    "commentaire",
-    "inviterais"
+    "Netflix"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,87 +85,164 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "shop",
     "screen",
     "person"
    ],
-   "onscreen_text": "DISTRIBUTEUR → REDISTRIBUE",
-   "comic_action": "Rue vue d'en haut, file devant le distributeur.",
-   "expected_result": "Inversion posée."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur un distributeur de billets peint en rouge.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "REDISTRIBUTEUR",
+   "comic_action": "Gros plan sur l'écran : « VEUILLEZ PARTAGER VOTRE CARTE ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
     "screen",
-    "person",
-    "text3d"
-   ],
-   "onscreen_text": "INVITATION À DÎNER",
-   "comic_action": "Un costume s'approche ; l'écran affiche une invitation.",
-   "expected_result": "La machine imite le dîner."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4",
-    "n5"
-   ],
-   "camera": "orbit",
-   "set": [
-    "table",
-    "screen",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "DÎNER : 3 H",
-   "comic_action": "Table dressée devant l'écran.",
-   "expected_result": "Absurde cordial."
+   "onscreen_text": "CAGNOTTE : 40 €",
+   "comic_action": "Le distributeur crache un billet de dix et un reçu « MERCI CAMARADE ».",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
+    "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "screen",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "TAXER LES RICHES",
+   "comic_action": "Orbite : gyrophare sur le distributeur, le client en costume recule.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "shop",
+    "table",
+    "person"
+   ],
+   "onscreen_text": "DÎNER À 13",
+   "comic_action": "Travelling : de l'autre côté de la rue, une table de restaurant illuminée.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "shop",
+    "screen",
+    "text3d"
+   ],
+   "onscreen_text": "DAB VIDE · RESTO COMPLET",
+   "comic_action": "Plan large : file vide devant le DAB, file de voitures de luxe devant le resto.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "screen",
+    "person",
     "tshirt",
-    "text3d"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "DÉSACCORD + DESSERT",
-   "comic_action": "Écran final ; t-shirt sur le rebord.",
-   "expected_result": "Chute."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique récupère un ticket, sans billet.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Tu inviterais qui à dîner, toi ? Dis-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui veut tout partager, sauf son code Netflix."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 70,
- "claims": [],
+ "word_count": 77,
+ "claims": [
+  {
+   "text": "Tu retires cinquante euros ? Il en garde quarante pour la cagnotte commune.",
+   "claim_type": "fait_public",
+   "source": "https://kulturegeek.fr/news-108364/fiscal-kombat-jeu-melenchon-combat-vraiment-gros-fraudeurs-fisc",
+   "note": "Fiscal Kombat (2017), jeu de soutiens : secouer des riches pour remplir la cagnotte."
+  },
+  {
+   "text": "Carte platine ? Écran rouge, sirène, chant Taxer les riches.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+  },
+  {
+   "text": "Mais un soir de novembre, il dîne trois heures avec treize grands patrons.",
+   "claim_type": "fait_public",
+   "source": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
+   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
+  }
+ ],
  "sources": [
   {
+   "url": "https://kulturegeek.fr/news-108364/fiscal-kombat-jeu-melenchon-combat-vraiment-gros-fraudeurs-fisc",
+   "date": "2017-04",
+   "consulted": "2026-11-22",
+   "statut": "fait + mème",
+   "note": "Fiscal Kombat (2017), jeu de soutiens : secouer des riches pour remplir la cagnotte."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "date": "2026-11-07",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+  },
+  {
    "url": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
-   "date": "2026-11-19",
-   "consulted": "2026-11-21",
-   "statut": "fait public (coulisses rapportées)",
-   "usage": "Dîner transposé entre personnages fictifs ; aucun patron réel nommé."
+   "date": "2026-11-17",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Inversion inspirée du dîner avec treize patrons (fait public). Aucun nom réel."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : la redistribution prise au pied de la lettre, face au dîner avec treize patrons. Cadre : le distributeur de billets. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

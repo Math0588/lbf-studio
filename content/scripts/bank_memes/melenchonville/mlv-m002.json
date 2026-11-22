@@ -4,86 +4,79 @@
  "synopsis_id": "mlv-m002-gm",
  "format": "A",
  "length": "court",
- "title_cover": "L'annonce d'une heure",
- "anchor": "Discours-fleuves : Le Bourget (7/11/2026) ≈ 1 h 07 et 6 821 mots, « peuple » 13 fois ; Lyon (02/2026) 1 h 42.",
+ "title_cover": "Le métro d'une heure",
+ "anchor": "les discours-fleuves : Le Bourget (1 h 07) et Lyon (1 h 42).",
  "meme_id": "MC",
  "situation": "le métro",
- "ressort": "escalade : chaque étape est pire et plus absurde que la précédente",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "Ici, l'annonce du métro dure une heure et sept minutes.",
-  "Dans ce métro, l'annonce dure plus longtemps que le trajet.",
-  "Le seul métro où il faut une pause pipi pendant l'annonce.",
-  "Ici, « prochain arrêt » prend une heure.",
-  "Dans cette ville, même le métro fait des discours-fleuves."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : chaque annonce de métro est un discours.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, prochaine station dans une heure quarante-deux.",
+  "Mélenchonville : le métro ne part qu'à la fin de la phrase."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Au terminus, le conducteur applaudit sa propre annonce, debout, seul.",
-  "La rame repart vide. L'annonce attaque la deuxième partie.",
-  "Les voyageurs reviennent le soir : il en est aux remerciements."
+  "Les usagers sortent à pied. Le métro, lui, n'a pas fini sa phrase.",
+  "Le métro arrive à l'heure. Le discours, jamais.",
+  "La ligne la plus longue, c'est la tirade."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, l'annonce du métro dure une heure et sept minutes.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Terminus : la tribune.",
    "accent_words": [
-    "l'annonce",
-    "minutes"
+    "Terminus : la tribune"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Comme un certain discours au Bourget, mais avec des correspondances.",
+   "text": "Ici, l'annonce du métro dure le temps d'un meeting.",
    "accent_words": [
-    "correspondances",
-    "discours"
+    "meeting"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Prochain arrêt : République. Puis vingt minutes sur la Sixième.",
+   "text": "Au Bourget, une heure sept. Le métro attend la fin de l'envolée.",
    "accent_words": [
-    "République",
-    "Prochain"
+    "l'envolée"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le mot peuple revient treize fois avant l'ouverture des portes.",
+   "text": "Station suivante : annoncée après un détour par Victor Hugo.",
    "accent_words": [
-    "l'ouverture",
-    "revient"
+    "Victor Hugo"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "À Bastille, tous les voyageurs descendent. L'annonce, elle, continue.",
+   "text": "À Lyon, il a parlé une heure quarante-deux. Ici, c'est la ligne la plus courte.",
    "accent_words": [
-    "descendent",
-    "voyageurs"
+    "la plus courte"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Au terminus, le conducteur applaudit sa propre annonce, debout, seul.",
+   "text": "Les usagers sortent à pied. Le métro, lui, n'a pas fini sa phrase.",
    "accent_words": [
-    "conducteur",
-    "applaudit"
+    "sa phrase"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Ton trajet le plus long, c'était où ? Raconte en commentaire.",
+   "text": "Envoie ça au pote qui transforme chaque vocal en podcast.",
    "accent_words": [
-    "commentaire",
-    "c'était"
+    "podcast"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,38 +85,66 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "bus",
-    "screen",
+    "ground",
+    "road",
     "person",
-    "text3d"
+    "banner"
    ],
-   "onscreen_text": "ANNONCE : 1 H 07",
-   "comic_action": "Rame stylisée (bus) à quai ; écran géant avec chronomètre qui défile.",
-   "expected_result": "La durée absurde est lisible d'emblée."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur une station : le haut-parleur est un pupitre.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "bus",
+    "tribune",
     "person",
-    "screen"
+    "text3d"
    ],
-   "onscreen_text": "PEUPLE x13",
-   "comic_action": "Travelling le long des fenêtres : voyageurs qui comptent sur leurs doigts.",
-   "expected_result": "Compteur de mots qui monte."
+   "onscreen_text": "ANNONCE EN COURS",
+   "comic_action": "Sur le quai, un pupitre remplace le haut-parleur ; la rame attend, portes ouvertes.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "bus",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "1 H 07",
+   "comic_action": "Orbite autour de la rame à l'arrêt ; le chrono défile sur la vitre.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "sign",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "PROCHAINE : VICTOR HUGO",
+   "comic_action": "Le plan de ligne affiche une station « DIGRESSION » entre chaque arrêt.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
@@ -131,57 +152,90 @@
    "set": [
     "person",
     "sign",
-    "bus"
+    "bench"
    ],
-   "onscreen_text": "BASTILLE : TOUT LE MONDE",
-   "comic_action": "Le quai se remplit de voyageurs qui fuient ; la voix continue.",
-   "expected_result": "L'annonce survit au public."
+   "onscreen_text": "LIGNE COURTE : 1 H 42",
+   "comic_action": "Travelling : les voyageurs dorment sur les bancs du quai.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
-   "id": "s4",
+   "id": "s6",
    "narration_ids": [
-    "n6",
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "road",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "PHRASE EN COURS",
+   "comic_action": "Plan large : la foule remonte à la surface, le haut-parleur parle toujours.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
-   "camera": "closeup",
+   "camera": "return",
    "set": [
     "person",
-    "tribune",
-    "text3d",
-    "tshirt"
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "TERMINUS",
-   "comic_action": "Le conducteur debout, seul, applaudit ; un t-shirt est accroché dans la cabine.",
-   "expected_result": "Chute : l'orateur est son propre public."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique met ses écouteurs, enfin le silence.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton trajet le plus long, c'était où ? Raconte en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui transforme chaque vocal en podcast."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 70,
- "claims": [],
+ "word_count": 81,
+ "claims": [
+  {
+   "text": "Au Bourget, une heure sept. Le métro attend la fin de l'envolée.",
+   "claim_type": "fait_public",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
+   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
+  },
+  {
+   "text": "Station suivante : annoncée après un détour par Victor Hugo.",
+   "claim_type": "fait_public",
+   "source": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
+   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
+  },
+  {
+   "text": "À Lyon, il a parlé une heure quarante-deux. Ici, c'est la ligne la plus courte.",
+   "claim_type": "fait_public",
+   "source": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
+   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
+  }
+ ],
  "sources": [
   {
    "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
-   "date": "2026-11-19",
-   "consulted": "2026-11-21",
-   "statut": "fait public (analyse lexicale)",
-   "usage": "Durée, nombre de mots et occurrences de « peuple » recyclés en compteurs."
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait (analyse lexicale)",
+   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
   },
   {
    "url": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
    "date": "2026-02-26",
-   "consulted": "2026-11-21",
-   "statut": "fait public",
-   "usage": "Cliché du discours-fleuve (1 h 42). Idée seulement."
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Escalade sur le discours-fleuve (chiffres sourcés Institut Montaigne). « Peuple » cité comme mot, pas comme citation."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : les discours-fleuves : Le Bourget (1 h 07) et Lyon (1 h 42). Cadre : le métro. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

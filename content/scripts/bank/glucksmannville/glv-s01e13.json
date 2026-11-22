@@ -3,68 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-13",
  "format": "A",
- "title_cover": "La baguette du juste milieu",
+ "title_cover": "La demi-baguette",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Glucksmann… et la baguette n'ose pas cuire.",
-  "Ici, tu demandes une baguette bien cuite. La boulangère répond : « Je vous entends. Mais entendons aussi la mie. »",
-  "Dans cette boulangerie, la baguette est cuite à moitié. Par équité.",
-  "Ici, la tradition et le croissant ont fusionné. Personne ne s'en remet.",
-  "La seule boulangerie de France où le pain ne fâche personne. Ni ne nourrit."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, on vend des demi-baguettes. Par conviction.",
+  "Glucksmannville : la boulangerie du plutôt sûr.",
+  "Même la baguette n'est sûre qu'à moitié.",
+  "Les glucksmanniens vont prendre une moitié. Peut-être."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La vitrine n'a plus qu'une miche lisse, étiquetée : ne fâche personne.",
-  "La vitrine ne contient plus qu'une miche lisse, répétée à l'infini. Étiquette : « Ne fâche personne. »",
-  "Tu repars avec une demi-baguette dans le sens de la longueur. Elle s'appelle « la synthèse »."
+  "Sondages 2026 : autour de 15 %. La demi-baguette devient une tranche.",
+  "Le juste milieu, version tranche fine.",
+  "Demi-baguette, demi-conviction, plein tarif."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann… et la baguette n'ose pas cuire.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Plutôt.",
    "accent_words": [
-    "Glucksmann",
-    "cuire"
+    "Plutôt"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Tu la veux bien cuite ? La boulangère entend aussi la mie.",
+   "text": "À la boulangerie, on ne vend que des demi-baguettes. Le juste milieu.",
    "accent_words": [
-    "mie"
+    "demi-baguettes"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Elle coupe dans la longueur : moitié brûlée, moitié blanche.",
+   "text": "En 2024, seuls 55 % de ses électeurs étaient sûrs de leur choix.",
    "accent_words": [
-    "blanche"
+    "55 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Tradition ou croissant ? On fusionne : pain beige sans croûte, neuf euros.",
+   "text": "Les 45 % restants achètent l'autre moitié ailleurs.",
    "accent_words": [
-    "croûte"
+    "ailleurs"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La vitrine n'a plus qu'une miche lisse, étiquetée : ne fâche personne.",
+   "text": "La boulangère hésite entre levain et blanc. Elle sert du beige.",
    "accent_words": [
-    "personne"
+    "beige"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Bien cuite ou pas cuite ? Tranche en commentaire, ici c'est interdit.",
+   "text": "Sondages 2026 : autour de 15 %. La demi-baguette devient une tranche.",
    "accent_words": [
-    "interdit"
+    "une tranche"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui coupe toujours la poire en deux.",
+   "accent_words": [
+    "en deux"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -73,121 +80,160 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "shop",
+    "facade_row",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
+   "expected_result": "Le commerce du jour posé."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
     "n2"
    ],
    "camera": "closeup",
    "set": [
-    "person",
+    "shop",
     "sign",
-    "table"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "BIEN CUITE ?",
-   "comic_action": "Comptoir de boulangerie ; une cliente pointe une baguette ; la boulangère hoche la tête, mains ouvertes.",
-   "expected_result": "Une question simple, une réponse qui écoute."
+   "onscreen_text": "DEMI-BAGUETTE UNIQUEMENT",
+   "comic_action": "Gros plan sur la vitrine de la boulangerie : prix géants.",
+   "expected_result": "Le commerce sert de support à la pique."
   },
   {
-   "id": "s2",
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "orbit",
    "set": [
-    "table",
     "person",
-    "screen"
+    "sign",
+    "text3d",
+    "mairie"
    ],
-   "onscreen_text": "MOITIÉ CUITE, MOITIÉ PAS",
-   "comic_action": "Sur le comptoir, une baguette coupée dans la longueur : une moitié carbonisée, l'autre crue.",
-   "expected_result": "Le compromis abîme le produit."
+   "onscreen_text": "SÛRS : 55 %",
+   "comic_action": "Devant la mairie, les habitants avancent, reculent, hésitent ; panneau « PLUTÔT SÛR ».",
+   "expected_result": "Le doute électoral en un plan."
   },
   {
-   "id": "s3",
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "sign"
-   ],
-   "onscreen_text": "TRADI-CROISSANT",
-   "comic_action": "Une forme beige, molle, sans croûte, ni baguette ni croissant, posée sous cloche avec une étiquette.",
-   "expected_result": "La fusion efface tout."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5"
-   ],
-   "camera": "street_dolly",
-   "set": [
+    "shop",
     "sign",
-    "table",
-    "person"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "NE FÂCHE PERSONNE",
-   "comic_action": "Travelling sur la vitrine : la même miche lisse répétée sur toutes les étagères, à l'infini.",
-   "expected_result": "Chute : un seul produit sans goût pour tous."
+   "onscreen_text": "45 % : AILLEURS",
+   "comic_action": "Gros plan sur la vitrine de la boulangerie : prix géants.",
+   "expected_result": "Le commerce sert de support à la pique."
   },
   {
    "id": "s5",
    "narration_ids": [
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "shop",
+    "sign",
+    "person"
+   ],
+   "onscreen_text": "PAIN BEIGE",
+   "comic_action": "Boulangerie au levain : pain à prix d'or, file de vélos-cargos devant.",
+   "expected_result": "Le cliché centre-ville de la ville fictive."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
     "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "sign"
+   ],
+   "onscreen_text": "15 % = UNE TRANCHE",
+   "comic_action": "La demi-baguette posée sur le comptoir est recoupée, puis recoupée, jusqu'à une fine tranche.",
+   "expected_result": "Le chiffre de sondage en jauge."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
     "shop",
     "tshirt",
-    "sign",
-    "mascot"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra recule jusqu'à une vitrine capitonnée beige : le t-shirt « PLUTÔT DROITE. TRÈS FATIGUÉ. » est posé sur un coussin, à côté d'une miche beige sous cloche. Pouf, la mascotte, passe devant en hésitant entre deux directions.",
-   "expected_result": "CTA commercial visuel discret, dans l'univers coussin."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Bien cuite ou pas cuite ? Tranche en commentaire, ici c'est interdit."
+  "type": "share",
+  "text": "Envoie ça au pote qui coupe toujours la poire en deux."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 73,
- "claims": [],
+ "word_count": 76,
+ "claims": [
+  {
+   "text": "En 2024, seuls 55 % de ses électeurs étaient sûrs de leur choix.",
+   "claim_type": "fait_public",
+   "source": "https://www.ipsos.com/fr-fr/europeennes-2024/europeennes-2024-le-vote-glucksmann-une-dynamique-encore-incertaine",
+   "note": "55 % de ses électeurs sûrs de leur choix (avril 2024)."
+  },
+  {
+   "text": "Les 45 % restants achètent l'autre moitié ailleurs.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.ipsos.com/fr-fr/europeennes-2024/europeennes-2024-le-vote-glucksmann-une-dynamique-encore-incertaine",
+   "note": "55 % de ses électeurs sûrs de leur choix (avril 2024). Détourné dans la ville fictive."
+  },
+  {
+   "text": "Sondages 2026 : autour de 15 %. La demi-baguette devient une tranche.",
+   "claim_type": "fait_public",
+   "source": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
+   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant."
+  }
+ ],
  "sources": [
   {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "published": "2026-06-25",
-   "consulted": "2026-11-21",
-   "status": "fait (analyse lexicale) + opinion",
-   "used_for": "Vision plutôt que programme ; critique « centre gauche, voire centre ». Inspiration de décor, aucune citation."
+   "url": "https://www.ipsos.com/fr-fr/europeennes-2024/europeennes-2024-le-vote-glucksmann-une-dynamique-encore-incertaine",
+   "date": "2024-04-29",
+   "consulted": "2026-11-22",
+   "statut": "fait (sondage)",
+   "note": "55 % de ses électeurs sûrs de leur choix (avril 2024)."
   },
   {
-   "url": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
-   "published": "2024-04-03",
-   "consulted": "2026-11-21",
-   "status": "opinion",
-   "used_for": "Image d'un profil qui plaît à des publics très différents ; aucune formule reprise."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/dans-le-loir-et-cher-glucksmann-ne-veut-pas-opposer-le-rural-a-l-urbain-140374",
-   "published": "2019-04-19",
-   "consulted": "2026-11-21",
-   "status": "cliché électorat (vérifié (fait rapporté + cliché))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Reproche d'un profil trop urbain ; le Canal Saint-Martin cité comme symbole « bobo ». Thème : clichés centre-ville (levain, jardin partagé, vin nature, vélo car…"
-  },
-  {
-   "url": "https://lejournal.cnrs.fr/print/3123",
-   "published": "2022-06-07",
-   "consulted": "2026-11-21",
-   "status": "cliché électorat (vérifié (cliché décrit et discuté))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Le cliché du « bobo » : cultivé, à l'aise financièrement, centre des grandes villes, vote homogène à gauche — que le chercheur conteste. Garde-fou : la cible re…"
+   "url": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
+   "date": "2026-10-16",
+   "consulted": "2026-11-22",
+   "statut": "fait (sondage)",
+   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Fusion-compromis qui détruit le produit. Risques vérifiés : aucune citation réelle, personne n'est nommé dans la narration ; ville inventée et absurde visible (fiction évidente sans mention) ; pas de visage réaliste, ni vie privée, ni famille, ni nom ou origine, ni chiffre électoral, ni appel au vote ; la moquerie vise une posture publique perçue (flou, mollesse, image lisse), pas l'intelligence. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 73 mots ; mèmes vérifiés intégrés comme thèmes (G11, G14, voir content/veille/memes_glucksmannville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : le sondage Ipsos d'avril 2024 (seulement 55 % de ses électeurs sûrs de leur choix) puis environ 15 % en 2026 : la boulangerie du juste milieu. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

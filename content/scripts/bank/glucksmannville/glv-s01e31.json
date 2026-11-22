@@ -3,75 +3,67 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-22",
  "format": "A",
- "title_cover": "Le belvédère sans parti pris",
+ "title_cover": "Belvédère sans parti pris",
  "hook_variants": [
-  "Ici, la longue-vue du belvédère montre tous les points de vue, sans s'arrêter.",
-  "Ici, la longue-vue du belvédère montre tous les points de vue. Elle ne s'arrête sur aucun.",
-  "Dans cette ville, même la longue-vue refuse de prendre parti.",
-  "Ici, le panorama tourne sans fin. Pour ne vexer aucun paysage.",
-  "La seule longue-vue de France qui finit par te regarder."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, on regarde tout. On ne descend jamais.",
+  "Glucksmannville : le belvédère du centre.",
+  "Vue sur la gauche, la droite, le centre. Aucun choix.",
+  "Les glucksmanniens vont trouver la vue apaisante."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La pièce s'épuise, et la longue-vue s'arrête pile sur toi. Plaque : panorama sans parti pris, bien sûr.",
-  "La pièce s'épuise. La longue-vue s'arrête enfin… pile sur toi. Plaque : « Panorama sans parti pris. »",
-  "Elle s'arrête sur le parking. Une voix : « Un point de vue respectable. »"
+  "Sans parti pris, sans vertige, sans direction. Juste une très belle vue.",
+  "Une très belle vue. Aucune route pour y aller.",
+  "On voit tout d'ici. On ne touche à rien."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, la longue-vue du belvédère montre tous les points de vue, sans s'arrêter.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Vue imprenable sur le centre.",
    "accent_words": [
-    "arrêter"
+    "le centre"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Deux euros la pièce, et elle tourne à trois cent soixante degrés.",
+   "text": "Le belvédère offre une vue à 360 degrés. Partout, du beige.",
    "accent_words": [
-    "degrés"
+    "du beige"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Une voix douce : chaque point de vue est respectable.",
+   "text": "Son mouvement s'appelle Place publique. Ici, la place est en hauteur.",
    "accent_words": [
-    "respectable"
+    "en hauteur"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Tu la bloques sur la mer : elle glisse poliment vers le parking.",
+   "text": "Un sociologue y voit de la « timidité sociale ». La rambarde aussi.",
    "accent_words": [
-    "parking"
+    "timidité sociale"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n5",
-   "text": "La pièce s'épuise, et la longue-vue s'arrête pile sur toi.",
+   "text": "Sans parti pris, sans vertige, sans direction. Juste une très belle vue.",
    "accent_words": [
-    "toi"
+    "belle vue"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Plaque : panorama sans parti pris, bien sûr.",
+   "text": "Envoie ça au pote qui regarde les débats de loin et donne des notes.",
    "accent_words": [
-    "pris"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n7",
-   "text": "Le panorama le plus surcoté de France ? En commentaire.",
-   "accent_words": [
-    "commentaire"
+    "de loin"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -82,106 +74,137 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "tripod_camera",
-    "sign",
-    "column"
+    "ground",
+    "fountain",
+    "arch",
+    "person",
+    "tree"
    ],
-   "onscreen_text": "TOUS LES POINTS DE VUE",
-   "comic_action": "Belvédère au-dessus de la ville ; une longue-vue sur pied, plaque gravée sur une colonne.",
-   "expected_result": "Promesse d'un panorama."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur la grande place : fontaine, arche, habitants.",
+   "expected_result": "La place centrale posée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
+    "n2"
+   ],
+   "camera": "descend",
+   "set": [
+    "facade_row",
+    "banner",
+    "person",
+    "tree"
+   ],
+   "onscreen_text": "VUE : 360° BEIGE",
+   "comic_action": "Rue entièrement beige : façades, banderole, pulls ; un seul habitant en rouge qui détonne.",
+   "expected_result": "Le centre du centre en couleur."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
     "n3"
    ],
    "camera": "orbit",
    "set": [
-    "tripod_camera",
+    "lift_tribune",
     "person",
-    "screen"
+    "studio_light",
+    "column"
    ],
-   "onscreen_text": "CHAQUE VUE EST RESPECTABLE",
-   "comic_action": "La longue-vue pivote lentement sur 360°, sans s'arrêter, pendant que le touriste la suit en tournant.",
-   "expected_result": "Le regard sans cap."
+   "onscreen_text": "PLACE PUBLIQUE (EN HAUTEUR)",
+   "comic_action": "La tribune élévatrice monte le maire cubique au-dessus de la foule.",
+   "expected_result": "La hauteur du pouvoir en un plan."
   },
   {
-   "id": "s3",
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "closeup",
    "set": [
-    "tripod_camera",
-    "screen"
-   ],
-   "onscreen_text": "VUE : PARKING",
-   "comic_action": "Le touriste force la longue-vue vers la mer ; elle glisse et se cale doucement sur un parking.",
-   "expected_result": "La nuance favorise le plus banal."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5",
-    "n6"
-   ],
-   "camera": "closeup",
-   "set": [
-    "tripod_camera",
+    "table",
     "person",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "SANS PARTI PRIS",
-   "comic_action": "La longue-vue s'arrête net, l'objectif pointé sur le visage du touriste ; plaque en gros plan.",
-   "expected_result": "Chute : le panorama, c'est toi."
+   "onscreen_text": "« TIMIDITÉ SOCIALE »",
+   "comic_action": "Un mégaphone minuscule posé sur une table en mousse ; il chuchote.",
+   "expected_result": "La timidité sociale en objet."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "sign",
+    "text3d",
+    "fountain"
+   ],
+   "onscreen_text": "SANS DIRECTION",
+   "comic_action": "Longue-vue pointée successivement à gauche, à droite, au centre ; elle finit par regarder ses propres pieds.",
+   "expected_result": "Le tiède en décor."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
    ],
    "camera": "return",
    "set": [
-    "shop",
-    "tshirt",
-    "sign",
-    "mascot"
+    "tree",
+    "bench",
+    "person",
+    "tshirt"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra recule jusqu'à une vitrine capitonnée beige : le t-shirt « PLUTÔT DROITE. TRÈS FATIGUÉ. » est posé sur un coussin, à côté d'une longue-vue qui tourne sur elle-même. Pouf, la mascotte, passe devant en hésitant entre deux directions.",
-   "expected_result": "CTA commercial visuel discret, dans l'univers coussin."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur le square ; un habitant en t-shirt de la collection sur le banc.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Le panorama le plus surcoté de France ? En commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui regarde les débats de loin et donne des notes."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 76,
- "claims": [],
- "sources": [
+ "word_count": 74,
+ "claims": [
   {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "published": "2026-06-25",
-   "consulted": "2026-11-21",
-   "status": "fait (analyse lexicale) + opinion",
-   "used_for": "Vision plutôt que programme ; critique « centre gauche, voire centre ». Inspiration de décor, aucune citation."
+   "text": "Son mouvement s'appelle Place publique. Ici, la place est en hauteur.",
+   "claim_type": "fait_public",
+   "source": "https://en.wikipedia.org/wiki/Rapha%C3%ABl_Glucksmann",
+   "note": "Place publique (2018) ; liste « Réveiller l'Europe » (2024)."
   },
   {
-   "url": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
-   "published": "2024-04-03",
-   "consulted": "2026-11-21",
-   "status": "opinion",
-   "used_for": "Image d'un profil qui plaît à des publics très différents ; aucune formule reprise."
+   "text": "« timidité sociale »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/",
+   "note": "« Timidité sociale » du programme."
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://en.wikipedia.org/wiki/Rapha%C3%ABl_Glucksmann",
+   "date": "consultée 2026-11-21",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Place publique (2018) ; liste « Réveiller l'Europe » (2024)."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/",
+   "date": "2026-06-11",
+   "consulted": "2026-11-22",
+   "statut": "opinion (entretien)",
+   "note": "« Timidité sociale » du programme."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Rotation sans fin qui finit en miroir. Risques vérifiés : aucune citation réelle, personne n'est nommé dans la narration ; ville inventée et absurde visible (fiction évidente sans mention) ; pas de visage réaliste, ni vie privée, ni famille, ni nom ou origine, ni chiffre électoral, ni appel au vote ; la moquerie vise une posture publique perçue (flou, mollesse, image lisse), pas l'intelligence. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 76 mots ; mèmes vérifiés intégrés comme thèmes (G6, G3, voir content/veille/memes_glucksmannville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : Place publique (2018) transformée en belvédère : on regarde tout de loin, avec la « timidité sociale » pointée par un sociologue. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

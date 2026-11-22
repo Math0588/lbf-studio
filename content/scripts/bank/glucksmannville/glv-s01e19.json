@@ -3,75 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-27",
  "format": "A",
- "title_cover": "La balance qui ne penche pas",
+ "title_cover": "La balance cherche",
  "hook_variants": [
-  "Au marché de cette ville, la balance ne penche jamais, pour personne.",
-  "Au marché de cette ville, la balance ne penche jamais. Jamais. Pour personne.",
-  "Dans cette ville, même la balance du marché refuse de pencher.",
-  "Ici, une pastèque et une plume pèsent exactement pareil. Question de principe.",
-  "La seule balance de France qui ne prend jamais parti."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, la balance ne penche jamais. Même pas à gauche.",
+  "Glucksmannville : huit ans à chercher sa gauche.",
+  "Objet perdu en 2018 : une gauche. Récompense.",
+  "Les glucksmanniens vont dire qu'elle est juste rangée."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Un enfant pose une brique, et la brique devient un coussin.",
-  "Un enfant pose une brique. La balance ne bouge pas… et la brique devient un coussin.",
-  "Le marchand monte lui-même sur la balance. Écran : « Poids : équilibré. Avis : aucun. »"
+  "Il a trouvé le centre. Il continue de l'appeler la gauche.",
+  "La gauche ? Toujours au bureau des objets trouvés.",
+  "Huit ans de recherche, un centre trouvé."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Au marché de cette ville, la balance ne penche jamais, pour personne.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Sans pencher.",
    "accent_words": [
-    "personne"
+    "Sans pencher"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Une pastèque contre une plume : parfaitement à l'horizontale.",
+   "text": "La balance du marché ne penche jamais. Ni à gauche, ni à droite.",
    "accent_words": [
-    "horizontale"
+    "ne penche jamais"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Le marchand : ici, rien ne pèse plus que rien.",
+   "text": "En 2018, Politis titrait déjà : « Raphaël Glucksmann cherche sa gauche ».",
    "accent_words": [
-    "rien"
+    "cherche sa gauche"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Patates contre cerise, marchand contre salade : toujours à plat.",
+   "text": "En 2026, nouveau titre : « Glucksmann, la gauche en moins ».",
    "accent_words": [
-    "plat"
+    "la gauche en moins"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n5",
-   "text": "Le panier bio à trente-deux euros ne pèse rien non plus.",
+   "text": "Huit ans de recherche. La gauche est classée objet perdu.",
    "accent_words": [
-    "plus"
+    "objet perdu"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Un enfant pose une brique, et la brique devient un coussin.",
+   "text": "Il a trouvé le centre. Il continue de l'appeler la gauche.",
    "accent_words": [
-    "coussin"
+    "la gauche"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Écris en commentaire ce que tu poserais dessus pour la faire pencher.",
+   "text": "Envoie ça au pote qui cherche ses clés depuis 2018.",
    "accent_words": [
-    "pencher"
+    "depuis 2018"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -82,65 +82,96 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "table",
-    "screen",
-    "person"
+    "shop",
+    "facade_row",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "AUCUNE INCLINAISON",
-   "comic_action": "Étal de marché ; une balance électronique dont l'écran affiche « ÉCART : 0 » en permanence.",
-   "expected_result": "Un instrument conçu pour ne jamais trancher."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
+   "expected_result": "Le commerce du jour posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
+    "shop",
     "table",
-    "screen",
-    "person"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "PASTÈQUE = PLUME",
-   "comic_action": "On pose une énorme pastèque d'un côté, une plume de l'autre : l'écran reste à zéro, le marchand sourit.",
-   "expected_result": "L'absurde est assumé avec fierté."
+   "onscreen_text": "BALANCE : 0",
+   "comic_action": "Travelling entre les étals du marché.",
+   "expected_result": "Le marché porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "« CHERCHE SA GAUCHE »",
+   "comic_action": "Gros plan sur un écran géant en ville.",
+   "expected_result": "La pique s'affiche en écran."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "« LA GAUCHE EN MOINS »",
+   "comic_action": "Gros plan sur un écran géant en ville.",
+   "expected_result": "La pique s'affiche en écran."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
     "n5"
    ],
    "camera": "closeup",
    "set": [
     "table",
     "screen",
+    "form_stack",
     "person"
    ],
-   "onscreen_text": "MARCHAND = SALADE",
-   "comic_action": "Le marchand monte lui-même sur le plateau, une feuille de salade de l'autre côté : écart nul.",
-   "expected_result": "Escalade jusqu'au ridicule."
+   "onscreen_text": "OBJETS TROUVÉS : GAUCHE ?",
+   "comic_action": "Guichet municipal : écran, pile de formulaires, file d'attente.",
+   "expected_result": "Le guichet porte la pique."
   },
   {
-   "id": "s4",
+   "id": "s6",
    "narration_ids": [
     "n6"
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "screen",
-    "sign"
+    "sign",
+    "road",
+    "text3d"
    ],
-   "onscreen_text": "BRIQUE → COUSSIN",
-   "comic_action": "Un enfant pose une brique rouge ; elle ramollit lentement, devient beige et capitonnée.",
-   "expected_result": "Chute : ici, le dur devient mou."
+   "onscreen_text": "CENTRE (DIT GAUCHE)",
+   "comic_action": "Panneau « GAUCHE » vissé sur une flèche qui pointe tout droit vers le milieu.",
+   "expected_result": "L'ambiguïté en signalétique."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
     "n7"
    ],
@@ -148,48 +179,67 @@
    "set": [
     "shop",
     "tshirt",
-    "sign",
-    "mascot"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra recule jusqu'à une vitrine capitonnée beige : le t-shirt « PLUTÔT DROITE. TRÈS FATIGUÉ. » est posé sur un coussin, à côté d'une balance de marché à zéro. Pouf, la mascotte, passe devant en hésitant entre deux directions.",
-   "expected_result": "CTA commercial visuel discret, dans l'univers coussin."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Écris en commentaire ce que tu poserais dessus pour la faire pencher."
+  "type": "share",
+  "text": "Envoie ça au pote qui cherche ses clés depuis 2018."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 75,
- "claims": [],
+ "word_count": 79,
+ "claims": [
+  {
+   "text": "« Raphaël Glucksmann cherche sa gauche »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.politis.fr/articles/2018/11/raphael-glucksmann-cherche-sa-gauche-39573/",
+   "note": "« Raphaël Glucksmann cherche sa gauche »."
+  },
+  {
+   "text": "« Glucksmann, la gauche en moins »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
+  },
+  {
+   "text": "Il a trouvé le centre. Il continue de l'appeler la gauche.",
+   "claim_type": "fiction_satirique",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre ». Détourné dans la ville fictive."
+  }
+ ],
  "sources": [
   {
+   "url": "https://www.politis.fr/articles/2018/11/raphael-glucksmann-cherche-sa-gauche-39573/",
+   "date": "2018-11",
+   "consulted": "2026-11-22",
+   "statut": "opinion (titre de presse)",
+   "note": "« Raphaël Glucksmann cherche sa gauche »."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "date": "2026-10",
+   "consulted": "2026-11-22",
+   "statut": "opinion (éditorial, titre cité)",
+   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
+  },
+  {
    "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "published": "2026-06-25",
-   "consulted": "2026-11-21",
-   "status": "fait (analyse lexicale) + opinion",
-   "used_for": "Vision plutôt que programme ; critique « centre gauche, voire centre ». Inspiration de décor, aucune citation."
-  },
-  {
-   "url": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
-   "published": "2024-04-03",
-   "consulted": "2026-11-21",
-   "status": "opinion",
-   "used_for": "Image d'un profil qui plaît à des publics très différents ; aucune formule reprise."
-  },
-  {
-   "url": "https://lejournal.cnrs.fr/print/3123",
-   "published": "2022-06-07",
-   "consulted": "2026-11-21",
-   "status": "cliché électorat (vérifié (cliché décrit et discuté))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Le cliché du « bobo » : cultivé, à l'aise financièrement, centre des grandes villes, vote homogène à gauche — que le chercheur conteste. Garde-fou : la cible re…"
+   "date": "2026-06-25",
+   "consulted": "2026-11-22",
+   "statut": "fait (analyse lexicale) + opinion rapportée",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Littéralisation de « ne pas pencher » : l'instrument de mesure refuse de choisir. Risques vérifiés : aucune citation réelle, personne n'est nommé dans la narration ; ville inventée et absurde visible (fiction évidente sans mention) ; pas de visage réaliste, ni vie privée, ni famille, ni nom ou origine, ni chiffre électoral, ni appel au vote ; la moquerie vise une posture publique perçue (flou, mollesse, image lisse), pas l'intelligence. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 75 mots ; mèmes vérifiés intégrés comme thèmes (G3, G14, voir content/veille/memes_glucksmannville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « Raphaël Glucksmann cherche sa gauche » (Politis, 2018) puis « Glucksmann, la gauche en moins » (2026) : huit ans de recherche sur une balance qui ne penche pas. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

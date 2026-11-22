@@ -3,83 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-21",
  "format": "A",
- "title_cover": "La ville à moitié",
+ "title_cover": "Ville à 15 %",
  "hook_variants": [
-  "Ici, la lumière n'est ni allumée ni éteinte : elle est à moitié.",
-  "Ici, la lumière n'est ni allumée ni éteinte : elle est à moitié. Pour ne pas opposer le jour et la nuit.",
-  "Dans cette ville, les lampadaires sont réglés sur « plutôt ».",
-  "Ici, une panne de courant ne change rien. C'est bien le problème.",
-  "La seule ville de France où l'interrupteur a deux positions : plutôt oui et plutôt oui."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, la ville est construite à 15 %.",
+  "Glucksmannville : le chantier qui attend son programme.",
+  "La maquette tient debout. Le reste, en concertation.",
+  "Les glucksmanniens vont parler de dynamique."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le courant revient, et personne ne le remarque. Conclusion du rapport : la panne n'a rien changé.",
-  "Le courant revient. Personne ne le remarque. Conclusion du rapport : « La panne n'a rien changé. »",
-  "Les électriciens repartent en laissant tout à moitié réparé. Par cohérence."
+  "À ce rythme, la ville sera finie pour la présidentielle de 2037.",
+  "Quinze pour cent de ville, cent pour cent de vision.",
+  "Le reste de la ville est en réunion."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, la lumière n'est ni allumée ni éteinte : elle est à moitié.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Sur 15 % du territoire.",
    "accent_words": [
-    "moitié"
+    "15 %"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "L'interrupteur a deux positions, plutôt allumé et plutôt éteint.",
+   "text": "La ville n'est construite qu'à moitié. Le reste : maquette en carton.",
    "accent_words": [
-    "éteint"
+    "maquette"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Les deux font exactement la même chose.",
+   "text": "Après la primaire, les sondages le placent autour de 15 %.",
    "accent_words": [
-    "chose"
+    "15 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Grosse panne : les électriciens ne voient aucune différence.",
+   "text": "Marine Le Pen, elle, est à plus de 30 %. La maquette tremble.",
    "accent_words": [
-    "différence"
+    "30 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Ils rédigent quand même un rapport en trois tomes.",
+   "text": "Le chantier avance selon la méthode maison : concertation, puis concertation.",
    "accent_words": [
-    "tomes"
+    "concertation"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le courant revient, et personne ne le remarque.",
+   "text": "À ce rythme, la ville sera finie pour la présidentielle de 2037.",
    "accent_words": [
-    "remarque"
+    "2037"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Conclusion du rapport : la panne n'a rien changé.",
+   "text": "Envoie ça au pote qui commence tout et ne finit rien.",
    "accent_words": [
-    "changé"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ta pire panne de courant, c'était pendant quoi ? En commentaire.",
-   "accent_words": [
-    "commentaire"
+    "ne finit rien"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,107 +82,150 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "sign",
+    "road",
+    "facade_row",
+    "lamp",
     "person",
-    "screen"
+    "car"
    ],
-   "onscreen_text": "LUMIÈRE : 50 %",
-   "comic_action": "Rue au crépuscule, lampadaires tamisés. Un panneau municipal affiche le réglage officiel.",
-   "expected_result": "Une ville réglée sur la demi-mesure."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
+   "expected_result": "Le décor de rue posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
    "camera": "closeup",
    "set": [
-    "sign",
+    "building",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "PLUTÔT ALLUMÉ",
-   "comic_action": "Un doigt bascule l'interrupteur municipal d'une position à l'autre : la lumière ne change pas d'un lux.",
-   "expected_result": "Le choix est purement décoratif."
+   "onscreen_text": "CHANTIER : 15 %",
+   "comic_action": "Maquette de tour minuscule ; un habitant penché dessus avec une loupe.",
+   "expected_result": "Le logement porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n3"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "person",
-    "form_stack",
-    "screen"
+    "screen",
+    "text3d",
+    "sign"
    ],
-   "onscreen_text": "RAPPORT : TOME 3",
-   "comic_action": "Deux électriciens regardent la rue, puis l'écran, puis la rue ; une pile de rapports grandit à côté d'eux.",
-   "expected_result": "L'expertise ne constate rien."
+   "onscreen_text": "SONDAGES : ~15 %",
+   "comic_action": "Écran de sondage : une barre monte… et s'arrête à mi-hauteur.",
+   "expected_result": "Le chiffre de sondage en jauge."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
     "screen",
-    "form_stack",
+    "text3d",
     "sign"
    ],
-   "onscreen_text": "LA PANNE N'A RIEN CHANGÉ",
-   "comic_action": "Plongée sur la ville : on rebranche, rien ne bouge visuellement. Le texte s'affiche sur l'écran géant.",
-   "expected_result": "Chute : la panne était indiscernable de l'état normal."
+   "onscreen_text": "LE PEN : 30 % ET PLUS",
+   "comic_action": "Écran de sondage : une barre monte… et s'arrête à mi-hauteur.",
+   "expected_result": "Le chiffre de sondage en jauge."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "table",
+    "person",
+    "form_stack",
+    "building"
+   ],
+   "onscreen_text": "MÉTHODE : CONCERTATION²",
+   "comic_action": "Réunion de copro autour d'une table ; pile de procès-verbaux.",
+   "expected_result": "La copro porte la pique."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "LIVRAISON : 2037",
+   "comic_action": "Panneau de chantier : « FIN DES TRAVAUX : 2037 » ; un ouvrier rature et écrit « 2042 ».",
+   "expected_result": "La pique s'affiche en écran."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "road",
+    "person",
     "tshirt",
-    "sign",
-    "mascot"
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra recule jusqu'à une vitrine capitonnée beige : le t-shirt « J'AI UN AVIS. PAS DE MANDAT. » est posé sur un coussin, à côté d'un lampadaire à moitié allumé. Pouf, la mascotte, passe devant en hésitant entre deux directions.",
-   "expected_result": "CTA commercial visuel discret, dans l'univers coussin."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ta pire panne de courant, c'était pendant quoi ? En commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui commence tout et ne finit rien."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 75,
- "claims": [],
- "sources": [
+ "word_count": 83,
+ "claims": [
   {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "published": "2026-06-25",
-   "consulted": "2026-11-21",
-   "status": "fait (analyse lexicale) + opinion",
-   "used_for": "Vision plutôt que programme ; critique « centre gauche, voire centre ». Inspiration de décor, aucune citation."
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Sur 15 % du territoire.",
+   "claim_type": "fiction_satirique",
+   "source": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
+   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant. Détourné dans la ville fictive."
   },
   {
-   "url": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
-   "published": "2025-03-14",
-   "consulted": "2026-11-21",
-   "status": "opinion",
-   "used_for": "Question journalistique sur la clarté du cap et un projet « à travailler » ; « il faut un cap clair » reste une formule générique fictive, jamais attribuée."
+   "text": "Après la primaire, les sondages le placent autour de 15 %.",
+   "claim_type": "fait_public",
+   "source": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
+   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant."
+  },
+  {
+   "text": "Marine Le Pen, elle, est à plus de 30 %. La maquette tremble.",
+   "claim_type": "fait_public",
+   "source": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
+   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant."
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
+   "date": "2026-10-16",
+   "consulted": "2026-11-22",
+   "statut": "fait (sondage)",
+   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Demi-mesure littérale : la panne ne se distingue pas du fonctionnement. Risques vérifiés : aucune citation réelle, personne n'est nommé dans la narration ; ville inventée et absurde visible (fiction évidente sans mention) ; pas de visage réaliste, ni vie privée, ni famille, ni nom ou origine, ni chiffre électoral, ni appel au vote ; la moquerie vise une posture publique perçue (flou, mollesse, image lisse), pas l'intelligence. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 75 mots ; mèmes vérifiés intégrés comme thèmes (G3, voir content/veille/memes_glucksmannville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : les sondages d'après-primaire (autour de 15 %, Le Pen loin devant) : une ville construite à 15 %. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

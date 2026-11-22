@@ -5,73 +5,73 @@
  "format": "A",
  "title_cover": "Le groupe de travail",
  "hook_variants": [
-  "Ici, pour réparer un lampadaire, il faut un groupe de travail.",
-  "Ici, pour réparer un lampadaire, il faut un groupe de travail. Et pour le créer, il faut un groupe de travail.",
-  "Dans cette ville, chaque réunion commence par une réunion sur la réunion.",
-  "Ici, un lampadaire en panne peut générer douze commissions.",
-  "Le seul conseil de quartier de France qui travaille sur lui-même."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, chaque décision a son groupe de travail.",
+  "Glucksmannville : trois cents réunions, une vision.",
+  "Même la machine à café a été auditionnée.",
+  "Les glucksmanniens vont proposer une réunion sur cette vidéo."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Au centre, la dernière case pointe vers elle-même. Dehors, le lampadaire est toujours éteint, évidemment.",
-  "Au centre, la dernière case pointe vers elle-même. Dehors, le lampadaire est toujours éteint.",
-  "Le groupe de travail rend ses conclusions : il faut un groupe de travail."
+  "Trois cents réunions, une vision. Le programme est en réunion.",
+  "Le programme est en réunion. Ne pas déranger.",
+  "Trois cents réunions plus tard : une date de réunion."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, pour réparer un lampadaire, il faut un groupe de travail.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Après réunion.",
    "accent_words": [
-    "travail"
+    "Après réunion"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Et pour créer ce groupe, il faut un autre groupe.",
+   "text": "Le groupe de travail se réunit pour dater le prochain groupe de travail.",
    "accent_words": [
-    "groupe"
+    "groupe de travail"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Premier groupe : faut-il réparer ? Deuxième : comment envisager d'envisager ?",
+   "text": "Son mouvement a tenu 300 réunions et 150 auditions en neuf mois.",
    "accent_words": [
-    "envisager"
+    "300 réunions"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "L'organigramme s'enroule en spirale, chaque case en ouvre une plus petite.",
+   "text": "Puis il demande un an de plus « pour transformer une vision en programme ».",
    "accent_words": [
-    "petite"
+    "un an de plus"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n5",
-   "text": "Au centre, la dernière case pointe vers elle-même.",
+   "text": "La machine à café a été auditionnée. Deux fois.",
    "accent_words": [
-    "même"
+    "Deux fois"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Dehors, le lampadaire est toujours éteint, évidemment.",
+   "text": "Trois cents réunions, une vision. Le programme est en réunion.",
    "accent_words": [
-    "éteint"
+    "en réunion"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "La réunion la plus inutile de ta vie, en une phrase, en commentaire.",
+   "text": "Envoie ça au pote qui fait une réunion pour choisir le resto.",
    "accent_words": [
-    "commentaire"
+    "le resto"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -80,115 +80,155 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "sign",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "screen"
+    "car"
    ],
-   "onscreen_text": "LAMPADAIRE : EN PANNE",
-   "comic_action": "Rue sombre ; un lampadaire éteint avec un panneau ; un habitant lève les yeux.",
-   "expected_result": "Un problème simple."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
+   "expected_result": "La ville et son camp posés en une seconde."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "orbit",
+   "set": [
+    "table",
+    "person",
+    "form_stack",
+    "building"
+   ],
+   "onscreen_text": "GT N°301",
+   "comic_action": "Réunion de copro autour d'une table ; pile de procès-verbaux.",
+   "expected_result": "La copro porte la pique."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "orbit",
    "set": [
     "table",
+    "form_stack",
     "person",
-    "screen"
+    "scroll"
    ],
-   "onscreen_text": "ENVISAGER D'ENVISAGER",
-   "comic_action": "Autour d'une table, des participants assis sur des coussins ; l'écran affiche l'intitulé du groupe.",
-   "expected_result": "La méthode avale le problème."
+   "onscreen_text": "300 RÉUNIONS · 150 AUDITIONS",
+   "comic_action": "Réunion n°300 : piles de comptes rendus ; le rouleau « PROGRAMME » reste vierge.",
+   "expected_result": "La vision sans programme."
   },
   {
-   "id": "s3",
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "table"
+    "scroll",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "GROUPE DE TRAVAIL N°7",
-   "comic_action": "Sur l'écran, l'organigramme s'enroule en spirale ; chaque case en fait naître une plus petite.",
-   "expected_result": "Bureaucratie récursive."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5",
-    "n6"
-   ],
-   "camera": "street_dolly",
-   "set": [
-    "screen",
-    "sign",
-    "mascot"
-   ],
-   "onscreen_text": "TOUJOURS ÉTEINT",
-   "comic_action": "Retour dehors : la case centrale pointe vers elle-même sur un grand écran ; sous le lampadaire éteint, la mascotte Pouf s'est assise.",
-   "expected_result": "Chute : la machine tourne, rien ne s'allume."
+   "onscreen_text": "« TRANSFORMER UNE VISION »",
+   "comic_action": "Un parchemin se déroule à n'en plus finir devant l'habitant.",
+   "expected_result": "Le texte interminable."
   },
   {
    "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "table",
+    "person",
+    "form_stack",
+    "building"
+   ],
+   "onscreen_text": "MACHINE À CAFÉ : AUDITIONNÉE",
+   "comic_action": "Réunion de copro autour d'une table ; pile de procès-verbaux.",
+   "expected_result": "La copro porte la pique."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "table",
+    "form_stack",
+    "person",
+    "scroll"
+   ],
+   "onscreen_text": "PROGRAMME : EN RÉUNION",
+   "comic_action": "Porte de salle fermée, panneau « PROGRAMME — NE PAS DÉRANGER » ; on entend des chaises qui grincent.",
+   "expected_result": "La vision sans programme."
+  },
+  {
+   "id": "s7",
    "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "mairie",
+    "person",
     "tshirt",
-    "sign",
-    "mascot"
+    "banner"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra recule jusqu'à une vitrine capitonnée beige : le t-shirt « À GAUCHE DU CANAPÉ. » est posé sur un coussin, à côté d'un organigramme en spirale sur un écran. Pouf, la mascotte, passe devant en hésitant entre deux directions.",
-   "expected_result": "CTA commercial visuel discret, dans l'univers coussin."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "La réunion la plus inutile de ta vie, en une phrase, en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui fait une réunion pour choisir le resto."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 72,
- "claims": [],
+ "word_count": 81,
+ "claims": [
+  {
+   "text": "Son mouvement a tenu 300 réunions et 150 auditions en neuf mois.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
+   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
+  },
+  {
+   "text": "« pour transformer une vision en programme »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
+   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
+  },
+  {
+   "text": "Trois cents réunions, une vision. Le programme est en réunion.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
+   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme ». Détourné dans la ville fictive."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
-   "published": "2025-03-14",
-   "consulted": "2026-11-21",
-   "status": "opinion",
-   "used_for": "Question journalistique sur la clarté du cap et un projet « à travailler » ; « il faut un cap clair » reste une formule générique fictive, jamais attribuée."
-  },
-  {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "published": "2026-06-25",
-   "consulted": "2026-11-21",
-   "status": "fait (analyse lexicale) + opinion",
-   "used_for": "Vision plutôt que programme ; critique « centre gauche, voire centre ». Inspiration de décor, aucune citation."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/",
-   "published": "2026-06-11",
-   "consulted": "2026-11-21",
-   "status": "blague (vérifié (opinion))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Critique de la « timidité sociale » du programme. Thème : le petit mégaphone, la table en mousse, zéro décibel de fermeté."
+   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
+   "date": "2025-06-23",
+   "consulted": "2026-11-22",
+   "statut": "citations rapportées",
+   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Bureaucratie récursive. Risques vérifiés : aucune citation réelle, personne n'est nommé dans la narration ; ville inventée et absurde visible (fiction évidente sans mention) ; pas de visage réaliste, ni vie privée, ni famille, ni nom ou origine, ni chiffre électoral, ni appel au vote ; la moquerie vise une posture publique perçue (flou, mollesse, image lisse), pas l'intelligence. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 72 mots ; mèmes vérifiés intégrés comme thèmes (G5, G10, voir content/veille/memes_glucksmannville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : 300 réunions et 150 auditions en neuf mois, puis un an de plus « pour transformer une vision en programme » (2025). Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

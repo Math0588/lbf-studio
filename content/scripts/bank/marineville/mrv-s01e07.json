@@ -5,74 +5,73 @@
  "format": "A",
  "title_cover": "Ravalement de façade",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine… et repeint juste la façade.",
-  "À Marineville, le ravalement est obligatoire. Seulement la façade.",
-  "Cet immeuble est neuf. Faites le tour, pour voir.",
-  "À Marineville, on rajeunit les immeubles comme des affiches : de face, avec retouche.",
-  "Ici, le ravalement s'arrête pile au milieu de la fenêtre."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, on repeint la façade, jamais les murs porteurs.",
+  "Marineville : de loin, on dirait presque une autre maison.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : ravalement de façade."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La peinture s'arrête au milieu d'une fenêtre, sur le voisin penché. Il est bleu à moitié : officiellement, il est recentré.",
-  "La peinture s'arrête au milieu d'une fenêtre. Le voisin penché dehors est à moitié bleu. Officiellement : recentré.",
-  "Vu de dos, c'est l'immeuble de 1974. Vu de face, c'est une affiche."
+  "Ravalement réussi : de loin, on dirait presque une autre maison.",
+  "Les gargouilles portent des cravates. Elles grimacent pareil.",
+  "Ici, on a repeint la façade de la mairie. Les fissures sont retouchées."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine… et repeint juste la façade.",
+   "text": "Dans cette ville, tout le monde vote Marine. Façade neuve.",
    "accent_words": [
-    "Marine",
-    "façade"
+    "Façade neuve"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Devant : bleu tendre, jardinière, et même les fissures sont retouchées.",
+   "text": "Un chercheur résume la dédiabolisation : des changements cosmétiques.",
+   "accent_words": [
+    "cosmétiques"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "Sa formule : la stratégie veste et cravate.",
+   "accent_words": [
+    "veste et cravate"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n4",
+   "text": "Ici, on a repeint la façade de la mairie. Les fissures sont retouchées.",
    "accent_words": [
     "retouchées"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Les habitants rentrent par la cour : même gris, même gouttière qui fuit.",
-   "accent_words": [
-    "gouttière"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "Le photographe de la mairie ne shoote que de face, et retouche le reste.",
-   "accent_words": [
-    "retouche"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n5",
-   "text": "La peinture s'arrête au milieu d'une fenêtre, sur le voisin penché.",
+   "text": "Les gargouilles portent des cravates. Elles grimacent pareil.",
    "accent_words": [
-    "penché"
+    "grimacent pareil"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Il est bleu à moitié : officiellement, il est recentré.",
+   "text": "Ravalement réussi : de loin, on dirait presque une autre maison.",
    "accent_words": [
-    "recentré"
+    "presque"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Tague ton proprio qui ne refait que ce qui se voit.",
+   "text": "Envoie ça au pote qui choisit une maison pour son crépi.",
    "accent_words": [
-    "voit"
+    "crépi"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,14 +84,14 @@
    ],
    "camera": "descend",
    "set": [
-    "facade_set",
-    "building",
-    "sign",
+    "ground",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "RAVALEMENT : FAÇADE SEULE",
-   "comic_action": "Ouverture sur des ouvriers suspendus qui repeignent un immeuble en bleu tendre ; leur zone de travail s'arrête net à l'angle, comme découpée au cutter.",
-   "expected_result": "Seul le devant compte."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; échafaudage et bâches bleu tendre.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
@@ -101,93 +100,131 @@
    ],
    "camera": "closeup",
    "set": [
-    "facade_set",
-    "sign",
-    "text3d"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "",
-   "comic_action": "Gros plan sur la façade : une fissure est recouverte d'un autocollant « fissure rajeunie » ; un filtre lisse passe sur le mur comme un retouche-photo, les briques deviennent un aplat uniforme.",
-   "expected_result": "La façade est retouchée comme une photo d'affiche."
+   "onscreen_text": "CHANGEMENTS : COSMÉTIQUES",
+   "comic_action": "L'écran affiche un pinceau qui repasse sur la même brique.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "building",
-    "person",
-    "bin",
-    "lamp"
+    "studio_light",
+    "tripod_camera",
+    "table",
+    "person"
    ],
-   "onscreen_text": "",
-   "comic_action": "La caméra suit un habitant qui contourne l'immeuble et entre par la cour : gris d'origine, gouttière qui goutte dans un seau, boîte aux lettres cabossée.",
-   "expected_result": "Derrière, rien n'a bougé."
+   "onscreen_text": "VESTE + CRAVATE",
+   "comic_action": "Une cravate est nouée autour d'une colonne.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "tripod_camera",
-    "studio_light",
+    "facade_row",
     "facade_set",
-    "person"
+    "person",
+    "banner"
    ],
-   "onscreen_text": "",
-   "comic_action": "Le photographe municipal, trépied planté face à la façade, recule pour cadrer… et se cogne au mur d'en face. Il ne pivote jamais.",
-   "expected_result": "La communication refuse de voir l'arrière."
+   "onscreen_text": "FISSURES : RETOUCHÉES",
+   "comic_action": "Un peintre passe du correcteur sur une fissure qui réapparaît aussitôt.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n5",
-    "n6",
-    "n7"
+    "n5"
    ],
    "camera": "orbit",
    "set": [
+    "column",
+    "mairie",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "GARGOUILLES EN CRAVATE",
+   "comic_action": "Gros plan sur une gargouille cravatée, toujours aussi menaçante.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "facade_row",
     "facade_set",
-    "building",
     "person",
+    "banner"
+   ],
+   "onscreen_text": "DE LOIN : PRESQUE",
+   "comic_action": "Travelling arrière : de loin la façade est neuve ; de près, rien n'a changé. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
     "tshirt",
+    "person",
     "sign"
    ],
-   "onscreen_text": "",
-   "comic_action": "Travelling circulaire : de face, immeuble neuf ; de dos, le vieux. La limite de peinture coupe une fenêtre en deux, le voisin penché dehors est bleu d'un côté, gris de l'autre. Sur son balcon sèche un t-shirt « À DROITE DU CANAPÉ. », lui aussi à moitié repeint.",
-   "expected_result": "Chute + CTA de partage ; produit visible dans le décor."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt caresse un mur fraîchement repeint.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Tague ton proprio qui ne refait que ce qui se voit."
+  "text": "Envoie ça au pote qui choisit une maison pour son crépi."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 83,
- "claims": [],
- "sources": [
+ "word_count": 70,
+ "claims": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/les-affiches-tres-ressemblantes-d-emmanuel-macron-et-marine-le-pen-59437",
-   "published": "2017-04-26",
-   "consulted": "2026-11-21",
-   "status": "analyse de presse (affiche de second tour : photo jugée retouchée et rajeunie)",
-   "used_for": "Inspiration seulement : la retouche et le lissage appliqués à une façade ou à un candidat-cube fictif, jamais à une personne réelle."
+   "segment": "n2",
+   "text": "Un chercheur résume la dédiabolisation : des changements cosmétiques.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
+   "note": "Dédiabolisation = changements cosmétiques, stratégie « veste et cravate »."
   },
   {
+   "segment": "n3",
+   "text": "Sa formule : la stratégie veste et cravate.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
+   "note": "Dédiabolisation = changements cosmétiques, stratégie « veste et cravate »."
+  }
+ ],
+ "sources": [
+  {
    "url": "https://www.politis.fr/articles/2023/01/la-dediabolisation-sappuie-sur-des-changements-cosmetiques-lepen-rn/",
-   "published": "2023-01-25",
-   "consulted": "2026-11-21",
-   "status": "opinion / analyse (entretien avec un chercheur : dédiabolisation = changements cosmétiques, stratégie « veste et cravate »)",
-   "used_for": "Inspiration seulement : la cravate et le ponçage comme kit universel d'adoucissement d'image, appliqués à des objets fictifs."
+   "date": "2023-01-25",
+   "consulted": "2026-11-22",
+   "statut": "opinion / analyse (chercheur)",
+   "note": "Dédiabolisation = changements cosmétiques, stratégie « veste et cravate »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Façade contre revers : la retouche d'image appliquée à un immeuble, jusqu'au voisin coupé en deux par la peinture et déclaré « recentré ». Satire de la normalisation cosmétique, sans viser aucune personne réelle. Ouvre l'arc « Le recentrage ». Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 83 mots ; mèmes vérifiés intégrés comme thèmes (M8, M11, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = dédiabolisation lue par un chercheur comme des changements cosmétiques (stratégie « veste et cravate »). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

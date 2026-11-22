@@ -3,75 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-20",
  "format": "A",
- "title_cover": "La route de tout le monde",
+ "title_cover": "Toutes les routes",
  "hook_variants": [
-  "Ici, avant de refaire une route, la mairie consulte chaque habitant.",
-  "Ici, avant de refaire une route, la mairie consulte chaque habitant. Chacun veut qu'elle passe devant chez lui.",
-  "Dans cette ville, les routes sont dessinées en réunion publique. Ça se voit.",
-  "Ici, une route qui dessert tout le monde ne mène nulle part.",
-  "La seule route de France validée à l'unanimité. Et impraticable."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, toutes les routes mènent à Macronville.",
+  "Glucksmannville : la coalition qui klaxonne devant chez toi.",
+  "Macron drague, Glucksmann refuse. Le GPS hésite.",
+  "Les glucksmanniens vont refuser de voir la ressemblance."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Vue du ciel, la route fait un nœud autour de la mairie. Elle dessert toutes les portes et ne mène nulle part.",
-  "Vue du ciel : la route fait un nœud autour de la mairie. Elle dessert toutes les portes et ne mène nulle part.",
-  "Panneau d'inauguration : « Route de tout le monde. Sortie : à l'étude. »"
+  "Il refuse d'aller chez Macron. Ses critiques disent qu'il y habite déjà.",
+  "Il refuse le rendez-vous. Il connaît déjà l'adresse.",
+  "Une seule route, et elle s'appelle avenue du Centre."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, avant de refaire une route, la mairie consulte chaque habitant.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. La ville voisine aimerait bien.",
    "accent_words": [
-    "consulte"
+    "aimerait bien"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Et la mairie répond oui à tout le monde.",
+   "text": "La route principale mène… droit à Macronville.",
    "accent_words": [
-    "monde"
+    "Macronville"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Un virage pour le levain à neuf euros, une boucle pour le yoga.",
+   "text": "Macron le veut dans une coalition, de Lisnard à Glucksmann.",
    "accent_words": [
-    "yoga"
+    "coalition"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Un détour par chaque jardin partagé, avec son composteur.",
+   "text": "Sa réponse : ça « décrédibilise la politique ». Ferme, pour une fois.",
    "accent_words": [
-    "composteur"
+    "pour une fois"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n5",
-   "text": "Vue du ciel, la route fait un nœud autour de la mairie.",
+   "text": "Son porte-parole parle de « tentatives désespérées ». La voiture fait demi-tour.",
    "accent_words": [
-    "nœud"
+    "demi-tour"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n6",
-   "text": "Elle dessert toutes les portes et ne mène nulle part.",
+   "text": "Il refuse d'aller chez Macron. Ses critiques disent qu'il y habite déjà.",
    "accent_words": [
-    "nulle part"
+    "y habite déjà"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Les travaux devant chez toi durent depuis combien de temps ? En commentaire.",
+   "text": "Envoie ça au pote qui critique son chef en s'habillant pareil.",
    "accent_words": [
-    "commentaire"
+    "pareil"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -84,119 +84,170 @@
    ],
    "camera": "descend",
    "set": [
+    "roundabout",
+    "road",
+    "car_orbit",
     "sign",
-    "person",
-    "screen"
+    "mairie"
    ],
-   "onscreen_text": "CONSULTATION : LA ROUTE",
-   "comic_action": "Plongée sur la place : une file d'habitants devant un écran où chacun dessine son tracé de route au doigt.",
-   "expected_result": "La concertation va devenir la carte."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur le rond-point central : les voitures tournent, la mairie au fond.",
+   "expected_result": "La ville posée, tout tourne en rond."
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "person",
-    "form_stack",
-    "screen"
+    "roundabout",
+    "car_orbit",
+    "sign"
    ],
-   "onscreen_text": "OUI À TOUT LE MONDE",
-   "comic_action": "Le Médiateur tamponne « OUI » sur chaque demande, à la chaîne, avec un sourire constant.",
-   "expected_result": "Aucun arbitrage : tout est accepté."
+   "onscreen_text": "→ MACRONVILLE",
+   "comic_action": "Orbite autour du rond-point ; les voitures tournent sans sortir.",
+   "expected_result": "Le rond-point porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n3"
    ],
    "camera": "street_dolly",
    "set": [
     "car",
-    "sign",
-    "person"
+    "person",
+    "road",
+    "sign"
    ],
-   "onscreen_text": "DÉTOUR PAR CHAQUE JARDIN",
-   "comic_action": "Travelling derrière une voiture qui zigzague : virage devant la boulangerie, boucle autour d'un cabinet dentaire, détour dans un jardin.",
-   "expected_result": "Le trajet devient absurde par accumulation."
+   "onscreen_text": "DE LISNARD À GLUCKSMANN",
+   "comic_action": "La voiture du maire voisin klaxonne et ouvre la portière ; le maire cubique hésite sur le trottoir.",
+   "expected_result": "La drague de la coalition."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "sign",
-    "car",
-    "banner"
+    "tribune",
+    "person",
+    "banner",
+    "studio_light"
    ],
-   "onscreen_text": "SORTIE : À L'ÉTUDE",
-   "comic_action": "Vue du ciel : la route forme un nœud géant autour de la mairie ; la voiture tourne dedans. Banderole d'inauguration.",
-   "expected_result": "Chute : servir tout le monde = aller nulle part."
+   "onscreen_text": "« DÉCRÉDIBILISE LA POLITIQUE »",
+   "comic_action": "Le maire cubique à la tribune, projecteur, foule clairsemée.",
+   "expected_result": "Le discours porte la pique."
   },
   {
    "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "car",
+    "road",
+    "person",
+    "lamp"
+   ],
+   "onscreen_text": "« TENTATIVES DÉSESPÉRÉES »",
+   "comic_action": "Travelling le long de la voiture municipale.",
+   "expected_result": "La pique en mouvement."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "DÉJÀ SUR PLACE",
+   "comic_action": "Écran : silhouette du maire, puis le même costume bleu de la ville voisine se superpose.",
+   "expected_result": "La ressemblance, montrée."
+  },
+  {
+   "id": "s7",
    "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
-    "tshirt",
-    "sign",
-    "mascot"
+    "roundabout",
+    "car_orbit",
+    "person",
+    "tshirt"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra recule jusqu'à une vitrine capitonnée beige : le t-shirt « À GAUCHE DU CANAPÉ. » est posé sur un coussin, à côté d'un panneau « Route de tout le monde ». Pouf, la mascotte, passe devant en hésitant entre deux directions.",
-   "expected_result": "CTA commercial visuel discret, dans l'univers coussin."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur le rond-point ; un habitant en t-shirt de la collection fait du stop au milieu.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Les travaux devant chez toi durent depuis combien de temps ? En commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui critique son chef en s'habillant pareil."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 77,
- "claims": [],
+ "word_count": 78,
+ "claims": [
+  {
+   "text": "Macron le veut dans une coalition, de Lisnard à Glucksmann.",
+   "claim_type": "fait_public",
+   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
+  },
+  {
+   "text": "« décrédibilise la politique »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann-afp-753ca015d95ec4b0d3e2f01c3cb76e945a72ac72",
+   "note": "Glucksmann : l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
+  },
+  {
+   "text": "« tentatives désespérées »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann-afp-753ca015d95ec4b0d3e2f01c3cb76e945a72ac72",
+   "note": "Glucksmann : l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
+  },
+  {
+   "text": "Il refuse d'aller chez Macron. Ses critiques disent qu'il y habite déjà.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate. Détourné dans la ville fictive."
+  }
+ ],
  "sources": [
   {
-   "url": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
-   "published": "2026-10-12",
-   "consulted": "2026-11-21",
-   "status": "fait",
-   "used_for": "Thème public du « rassemblement », pris au pied de la lettre ; aucun chiffre électoral montré."
+   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait public (AFP)",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
   },
   {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "published": "2026-06-25",
-   "consulted": "2026-11-21",
-   "status": "fait (analyse lexicale) + opinion",
-   "used_for": "Vision plutôt que programme ; critique « centre gauche, voire centre ». Inspiration de décor, aucune citation."
+   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann-afp-753ca015d95ec4b0d3e2f01c3cb76e945a72ac72",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (AFP)",
+   "note": "Glucksmann : l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/dans-le-loir-et-cher-glucksmann-ne-veut-pas-opposer-le-rural-a-l-urbain-140374",
-   "published": "2019-04-19",
-   "consulted": "2026-11-21",
-   "status": "cliché électorat (vérifié (fait rapporté + cliché))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Reproche d'un profil trop urbain ; le Canal Saint-Martin cité comme symbole « bobo ». Thème : clichés centre-ville (levain, jardin partagé, vin nature, vélo car…"
-  },
-  {
-   "url": "https://lejournal.cnrs.fr/print/3123",
-   "published": "2022-06-07",
-   "consulted": "2026-11-21",
-   "status": "cliché électorat (vérifié (cliché décrit et discuté))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Le cliché du « bobo » : cultivé, à l'aise financièrement, centre des grandes villes, vote homogène à gauche — que le chercheur conteste. Garde-fou : la cible re…"
+   "url": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "date": "2026-10",
+   "consulted": "2026-11-22",
+   "statut": "opinion (éditorial, titre cité)",
+   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
   }
  ],
  "disclosure": "",
- "editorial_notes": "La concertation tord le réel : la carte devient un nœud. Risques vérifiés : aucune citation réelle, personne n'est nommé dans la narration ; ville inventée et absurde visible (fiction évidente sans mention) ; pas de visage réaliste, ni vie privée, ni famille, ni nom ou origine, ni chiffre électoral, ni appel au vote ; la moquerie vise une posture publique perçue (flou, mollesse, image lisse), pas l'intelligence. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 77 mots ; mèmes vérifiés intégrés comme thèmes (G11, G14, voir content/veille/memes_glucksmannville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : la coalition « de Lisnard à Glucksmann » voulue par Macron (novembre 2026), refusée comme une ressemblance trop gênante. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

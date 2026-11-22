@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 import subprocess
 import wave
 from pathlib import Path
@@ -72,6 +73,8 @@ def build_narration(ep: dict, out: Path) -> dict:
                                     + s["text"]).encode()).hexdigest()
         durs[sid] = tts.synthesize(s["text"], wav, length_scale=ls)
         stamp.write_text(key)
+    quotes = quote_clips(ep)        # vraie réplique du politicien juste après la phrase qui la cite
+    quote_cues = []
     timeline = []   # (segment_id, start, end)
     shots = []
     t = 0.0
@@ -83,6 +86,10 @@ def build_narration(ep: dict, out: Path) -> dict:
                 t += GAP
             timeline.append({"id": nid, "start": round(t, 3), "end": round(t + durs[nid], 3)})
             t += durs[nid]
+            if nid in quotes:
+                f, qd = quotes[nid]
+                quote_cues.append((round(t + 0.08, 3), "clip:" + f))
+                t += qd + 0.18
         t += sc.get("tail", 0.25)
         if not sc["narration_ids"]:
             t = start + sc.get("dur", 1.5)   # plan muet (insert visuel, carte de fin)
@@ -94,7 +101,7 @@ def build_narration(ep: dict, out: Path) -> dict:
         i = int(seg["start"] * SR)
         track[i:i + len(d)] += d[: len(track) - i]
     write_wav(out / "narration.wav", track)
-    info = {"total": round(total, 3), "segments": timeline, "shots": shots,
+    info = {"total": round(total, 3), "segments": timeline, "shots": shots, "quote_cues": quote_cues,
             "voice": voice_info if eng == "azure" and voice_info else tts.voice_report(tts.config.get("VOICE_MODEL"))}
     (out / "timeline.json").write_text(json.dumps(info, ensure_ascii=False, indent=2), encoding="utf-8")
     return info
@@ -286,6 +293,28 @@ def meme_cues(ep: dict, timeline: dict) -> list:
     if mids and (h >> 5) % 3 == 0 and len(cues) < 2:
         cues.append((mids[0]["end"] + 0.02, pick("scandale", 6) or "airhorn"))
     return cues
+
+
+def _n(x: str) -> str:
+    import unicodedata
+    x = unicodedata.normalize("NFKD", x.lower())
+    return " ".join(re.sub(r"[^a-z0-9 ]+", " ", "".join(c for c in x if not unicodedata.combining(c))).split())
+
+
+def quote_clips(ep: dict, limit: int = 2) -> dict:
+    """{segment_id: (fichier, durée)} pour les phrases qui citent une réplique dont on a le vrai son validé."""
+    city = ep.get("city_id") or ep.get("city")
+    bank = [m for m in meme_bank() if m.get("quote_match") and (not m.get("cities") or city in m["cities"])]
+    out = {}
+    for seg in ep["narration_segments"]:
+        if len(out) >= limit:
+            break
+        words = f" {_n(seg['text'])} "
+        for m in bank:
+            if f" {_n(m['quote_match'])} " in words and m["file"] not in [v[0] for v in out.values()]:
+                out[seg["id"]] = (m["file"], float(m.get("duration") or 2.0))
+                break
+    return out
 
 
 def meme_bank() -> list:

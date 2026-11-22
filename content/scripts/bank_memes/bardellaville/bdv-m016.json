@@ -5,78 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Le prof en carton",
- "anchor": "Surnom moqueur « Barde-pas-là », jeu de mots qui circule sur ses absences supposées au Parlement européen.",
+ "anchor": "surnom moqueur « Bard-est-pas-là » (absences au Parlement européen, critiques d'adversaires ; aucun chiffre repris) : à la fac, le prof est une silhouette en carton.",
  "meme_key": "ABSENT",
- "situation": "l'université",
- "ressort": "boucle : on revient exactement au point de départ, en pire",
+ "situation": "Le prof en carton",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
  "hook_variants": [
-  "Barde-pas-là : le surnom moqueur a beaucoup circulé en ligne.",
-  "Dans cette fac, le prof est toujours là. En carton.",
-  "Dans cette ville, tout le monde vote Bardella… et ça se voit jusqu'à l'université.",
-  "Bardellaville : l'université, version « Barde-pas-là ».",
-  "Ici, l'université fonctionne comme le mème « Barde-pas-là »."
+  "Dans cette ville, tout le monde vote Bardella.",
+  "Ici, le prof est une silhouette en carton.",
+  "Bardellaville : le carton répond aussi bien que l'original.",
+  "Les électeurs de Bardella vont me détester.",
+  "Bienvenue à Bardellaville : le prof en carton."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Fin du semestre : les étudiants aussi deviennent des cartons.",
-  "Le carton a été réélu délégué de promo.",
-  "Le maire, lui, appelle ça une réussite totale."
+  "Les étudiants questionnent le carton. Il répond aussi bien que l'original.",
+  "Le cours est diffusé en story : vingt-quatre heures, puis plus rien.",
+  "À la fac, l'amphi est plein, le prof est une silhouette en carton."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Barde-pas-là : le surnom moqueur a beaucoup circulé en ligne.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Le prof, moins.",
    "accent_words": [
-    "Barde-pas-là"
+    "Le prof"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Bard-est-pas-là : le surnom moqueur circule en ligne depuis 2024.",
+   "accent_words": [
+    "Bard-est-pas-là"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n2",
-   "text": "À l'université de Bardellaville, le cours magistral applique le concept.",
-   "accent_words": [
-    "le concept"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n3",
-   "text": "L'amphithéâtre est plein, mais le professeur est un carton découpé.",
+   "text": "Ses adversaires parlent de député fantôme à Bruxelles.",
    "accent_words": [
-    "carton découpé"
+    "député fantôme"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Les questions reçoivent une réponse automatique : absent jusqu'au prochain selfie.",
+   "text": "À la fac, l'amphi est plein, le prof est une silhouette en carton.",
    "accent_words": [
-    "prochain selfie"
+    "en carton"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Une étudiante : Il nous a quand même liké en story.",
+   "text": "Le cours est diffusé en story : vingt-quatre heures, puis plus rien.",
    "accent_words": [
-    "en story"
+    "plus rien"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Fin du semestre : les étudiants aussi deviennent des cartons.",
+   "text": "Les étudiants questionnent le carton. Il répond aussi bien que l'original.",
    "accent_words": [
-    "cartons"
+    "l'original"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Abonne-toi : la prochaine fois, le carton passe l'oral.",
+   "text": "Envoie ça au pote qui jure qu'il bosse dur.",
    "accent_words": [
-    "passe l'oral"
+    "bosse dur"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,98 +89,154 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "tribune"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "BARDE-PAS-LÀ",
-   "comic_action": "Descente sur l'amphithéâtre, pupitre du professeur.",
-   "expected_result": "Le surnom est reconnu."
+   "onscreen_text": "BARDELLAVILLE",
+   "comic_action": "Descente sur la fac municipale ; un amphi plein, l'estrade vide.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "tribune",
-    "person",
-    "text3d"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "PROF : EN CARTON",
-   "comic_action": "Orbite : un carton découpé souriant au pupitre, amphi plein.",
-   "expected_result": "Littéral et visuel."
+   "onscreen_text": "BARD-EST-PAS-LÀ",
+   "comic_action": "L'écran de l'amphi affiche le surnom en néon clignotant.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4"
+    "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen"
+    "column",
+    "mairie",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "ABSENT JUSQU'AU SELFIE",
-   "comic_action": "Écran : message d'absence automatique.",
-   "expected_result": "La présence est virtuelle."
+   "onscreen_text": "FANTÔME OFFICIEL",
+   "comic_action": "Entre deux colonnes, un drap blanc assis sur un siège d'hémicycle.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "studio_light",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "PROF : CARTON",
+   "comic_action": "Sur l'estrade, une silhouette en carton ; les étudiants prennent des notes quand même.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "closeup",
    "set": [
-    "person"
+    "ring_light",
+    "tripod_camera",
+    "person",
+    "screen"
    ],
-   "onscreen_text": "",
-   "comic_action": "Gros plan sur l'étudiante, sa réplique en voix off.",
-   "expected_result": "Consolation absurde."
+   "onscreen_text": "COURS : EXPIRÉ",
+   "comic_action": "Ring light et trépied : la story du cours s'efface à l'écran.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s5",
+   "id": "s6",
    "narration_ids": [
-    "n6",
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "studio_light",
+    "tripod_camera",
+    "table",
+    "person"
+   ],
+   "onscreen_text": "RÉPONSE : IDENTIQUE",
+   "comic_action": "Un étudiant tend un micro au carton ; silence parfait. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "tribune",
+    "shop",
+    "tshirt",
     "person",
-    "tshirt"
+    "sign"
    ],
-   "onscreen_text": "PROMO : 100 % CARTON",
-   "comic_action": "Tous les étudiants deviennent des cartons ; un seul vrai, en t-shirt de la collection.",
-   "expected_result": "Boucle + abonnement."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt pose une silhouette en carton à son bureau.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "follow",
-  "text": "Abonne-toi : la prochaine fois, le carton passe l'oral."
+  "type": "share",
+  "text": "Envoie ça au pote qui jure qu'il bosse dur."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 71,
+ "word_count": 74,
  "claims": [
   {
-   "text": "Barde-pas-là : le surnom moqueur a beaucoup circulé en ligne.",
+   "segment": "n2",
+   "text": "Bard-est-pas-là : le surnom moqueur circule en ligne depuis 2024.",
    "claim_type": "fait_public",
    "source": "https://www.connexionfrance.com/news/jordan-bardella-his-unflattering-nickname-and-15m-tik-tok-fans/663977",
-   "note": "Référence au mème réel ; aucune phrase inventée attribuée à une personne réelle."
+   "note": "Surnom « Bard-est-pas-là » ; environ 1,5 million d'abonnés TikTok en 2024."
+  },
+  {
+   "segment": "n3",
+   "text": "Ses adversaires parlent de député fantôme à Bruxelles.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
+   "note": "Thème du « député fantôme » ; aucun chiffre repris."
   }
  ],
  "sources": [
   {
    "url": "https://www.connexionfrance.com/news/jordan-bardella-his-unflattering-nickname-and-15m-tik-tok-fans/663977",
    "date": "2024-06-11",
+   "consulted": "2026-11-22",
    "statut": "mème (surnom rapporté comme circulant ; aucun chiffre d'absentéisme repris)",
-   "usage": "mème réel rendu reconnaissable dès la 1re ou 2e phrase ; idée seulement, aucune punchline d'auteur copiée"
+   "note": "Surnom « Bard-est-pas-là » ; environ 1,5 million d'abonnés TikTok en 2024."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
+   "date": "2024",
+   "consulted": "2026-11-22",
+   "statut": "opinion (critiques d'adversaires)",
+   "note": "Thème du « député fantôme » ; aucun chiffre repris."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mème : Barde-pas-là × situation : l'université × ressort : boucle. Personnages fictifs uniquement ; le maire est un personnage cubique générique. Aucune citation inventée attribuée à une personne réelle, aucune affaire, rien sur la vie privée ni sur une caractéristique protégée, pas d'appel au vote."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = surnom moqueur « Bard-est-pas-là » (absences au Parlement européen, critiques d'adversaires ; aucun chiffre repris) : à la fac, le prof est une silhouette en carton. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

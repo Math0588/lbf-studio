@@ -138,7 +138,8 @@ def produce(ep_path: Path, profile: str = "final", log=print) -> dict:
     audio.make_music(tl["total"], out / "music.wav")
     audio.make_whooshes(cuts, tl["total"], out / "whoosh.wav")
     if config.get("MEME_SFX") != "false":
-        report["sfx"] = audio.meme_cues(ep, tl)
+        qc = [tuple(c) for c in tl.get("quote_cues", [])]
+        report["sfx"] = [c for c in audio.meme_cues(ep, tl) if c[1] not in {q[1] for q in qc}] + qc
         audio.add_sfx(out / "whoosh.wav", report["sfx"])
     report["loudnorm_pass1"] = audio.mix(out, tl["total"])
     if ep.get("caption_style", "words") == "words":

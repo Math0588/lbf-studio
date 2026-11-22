@@ -3,75 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-08",
  "format": "A",
- "title_cover": "La règle en mousse",
+ "title_cover": "Stage renouvelé",
  "hook_variants": [
-  "Dans cette école, les règles graduées sont en mousse.",
-  "Dans cette école, les règles sont en mousse. Pas les règles de vie : les règles graduées.",
-  "Ici, à l'école, deux plus deux égale « plutôt quatre ».",
-  "Dans cette classe, la règle graduée écoute toutes les sensibilités.",
-  "La seule école de France où toute la classe a quinze. Exactement."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, le maire est en stage. Renouvelable.",
+  "Glucksmannville : la mairie en période d'essai.",
+  "Le stagiaire a gagné. La fiche de poste attend.",
+  "Les glucksmanniens vont dire que c'est une alternance."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Bulletin de toute la classe : d'accord avec tout le monde. Frais de scolarité : six mille euros l'année, félicitations.",
-  "Bulletin trimestriel de toute la classe, même phrase : « D'accord avec tout le monde. Félicitations. »",
-  "Le compas ne trace plus de cercle : il trace la forme de celui qui le tient."
+  "Le stage est renouvelé. La fiche de poste, elle, est toujours vide.",
+  "Stagiaire validé, mission non définie.",
+  "Badge, café, Europe. Et c'est tout."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette école, les règles graduées sont en mousse.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. En période d'essai.",
    "accent_words": [
-    "mousse"
+    "période d'essai"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ton trait fait dix centimètres, la règle s'étire : douze, par respect.",
+   "text": "Le règlement municipal est écrit sur une règle en mousse.",
    "accent_words": [
-    "respect"
+    "règle en mousse"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Contrôle : deux plus deux égale quatre, plutôt juste.",
+   "text": "Ségolène Royal : on ne met pas « un stagiaire » à la tête d'une entreprise.",
    "accent_words": [
-    "plutôt"
+    "stagiaire"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Cinq ? Intéressant, à approfondir en groupe de travail.",
+   "text": "Il gagne la primaire quand même. Le stagiaire a eu sa convention.",
    "accent_words": [
-    "approfondir"
+    "convention"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Bulletin de toute la classe : d'accord avec tout le monde.",
+   "text": "Premier jour : badge, café, discours sur l'Europe.",
    "accent_words": [
-    "monde"
+    "discours"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Frais de scolarité : six mille euros l'année, félicitations.",
+   "text": "Le stage est renouvelé. La fiche de poste, elle, est toujours vide.",
    "accent_words": [
-    "félicitations"
+    "toujours vide"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Ton prof de maths, règle dure ou règle molle ? En commentaire.",
+   "text": "Envoie ça au pote qui, en stage, se prend pour le patron.",
    "accent_words": [
-    "commentaire"
+    "le patron"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -82,15 +82,17 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "table",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "sign"
+    "car"
    ],
-   "onscreen_text": "RÈGLES EN MOUSSE",
-   "comic_action": "Pupitre d'écolier ; une règle graduée beige qui se tord mollement quand on la soulève.",
-   "expected_result": "L'outil de mesure est mou."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
+   "expected_result": "La ville et son camp posés en une seconde."
   },
   {
    "id": "s2",
@@ -100,102 +102,146 @@
    "camera": "closeup",
    "set": [
     "table",
-    "screen"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "10 CM… OU 12",
-   "comic_action": "Gros plan : la règle s'étire sous le trait pour afficher 12 ; l'élève fronce les sourcils.",
-   "expected_result": "La mesure négocie."
+   "onscreen_text": "RÈGLE EN MOUSSE",
+   "comic_action": "Un mégaphone minuscule posé sur une table en mousse ; il chuchote.",
+   "expected_result": "La timidité sociale en objet."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n3"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "screen",
     "table",
-    "person"
+    "sign",
+    "text3d",
+    "form_stack"
    ],
-   "onscreen_text": "2 + 2 = PLUTÔT 4",
-   "comic_action": "Au tableau (écran), le prof barre « FAUX » et écrit « À APPROFONDIR » ; toute la classe lève la main.",
-   "expected_result": "Le relativisme scolaire en escalade."
+   "onscreen_text": "« UN STAGIAIRE »",
+   "comic_action": "Bureau du maire : badge géant « STAGIAIRE » ; tampon « RENOUVELÉ » qui retombe.",
+   "expected_result": "Le reproche d'inexpérience en badge."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
+    "n4"
+   ],
+   "camera": "descend",
+   "set": [
+    "ground",
+    "person",
+    "text3d",
+    "banner"
+   ],
+   "onscreen_text": "CONVENTION SIGNÉE",
+   "comic_action": "Plongée sur la place : une petite foule forme un « 66 % » ; autour, la ville est vide.",
+   "expected_result": "Le score relatif à la participation."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "person",
+    "screen"
+   ],
+   "onscreen_text": "JOUR 1 : EUROPE",
+   "comic_action": "Le maire cubique parle, parle ; une bulle de texte grandit jusqu'à couvrir la place.",
+   "expected_result": "La tchatche en volume."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
     "n6"
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
-    "person",
-    "table"
+    "table",
+    "sign",
+    "text3d",
+    "form_stack"
    ],
-   "onscreen_text": "D'ACCORD AVEC TOUT LE MONDE",
-   "comic_action": "Les bulletins (parchemins) se déroulent tous en même temps, avec la même appréciation.",
-   "expected_result": "Chute : la seule compétence évaluée est le consensus."
+   "onscreen_text": "FICHE DE POSTE : VIDE",
+   "comic_action": "Bureau du maire : badge géant « STAGIAIRE » ; tampon « RENOUVELÉ » qui retombe.",
+   "expected_result": "Le reproche d'inexpérience en badge."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "mairie",
+    "person",
     "tshirt",
-    "sign",
-    "mascot"
+    "banner"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra recule jusqu'à une vitrine capitonnée beige : le t-shirt « J'AI UN AVIS. PAS DE MANDAT. » est posé sur un coussin, à côté d'une règle graduée pliée en deux. Pouf, la mascotte, passe devant en hésitant entre deux directions.",
-   "expected_result": "CTA commercial visuel discret, dans l'univers coussin."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton prof de maths, règle dure ou règle molle ? En commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui, en stage, se prend pour le patron."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 71,
- "claims": [],
+ "word_count": 81,
+ "claims": [
+  {
+   "text": "« un stagiaire »",
+   "claim_type": "citation_exacte",
+   "source": "https://lcp.fr/actualites/vous-ne-mettez-pas-un-stagiaire-a-la-tete-d-une-entreprise-segolene-royal-etrille",
+   "note": "Ségolène Royal : « Vous ne mettez pas un stagiaire à la tête d'une entreprise »."
+  },
+  {
+   "text": "Il gagne la primaire quand même. Le stagiaire a eu sa convention.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66",
+   "note": "Primaire gagnée dès le premier tour avec environ 66 % ; environ 120 000 votants."
+  },
+  {
+   "text": "Le stage est renouvelé. La fiche de poste, elle, est toujours vide.",
+   "claim_type": "fiction_satirique",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre ». Détourné dans la ville fictive."
+  }
+ ],
  "sources": [
   {
+   "url": "https://lcp.fr/actualites/vous-ne-mettez-pas-un-stagiaire-a-la-tete-d-une-entreprise-segolene-royal-etrille",
+   "date": "2026-09-21",
+   "consulted": "2026-11-22",
+   "statut": "fait public (échange entre candidats)",
+   "note": "Ségolène Royal : « Vous ne mettez pas un stagiaire à la tête d'une entreprise »."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66",
+   "date": "2026-10-11",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Primaire gagnée dès le premier tour avec environ 66 % ; environ 120 000 votants."
+  },
+  {
    "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "published": "2026-06-25",
-   "consulted": "2026-11-21",
-   "status": "fait (analyse lexicale) + opinion",
-   "used_for": "Vision plutôt que programme ; critique « centre gauche, voire centre ». Inspiration de décor, aucune citation."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
-   "published": "2025-03-14",
-   "consulted": "2026-11-21",
-   "status": "opinion",
-   "used_for": "Question journalistique sur la clarté du cap et un projet « à travailler » ; « il faut un cap clair » reste une formule générique fictive, jamais attribuée."
-  },
-  {
-   "url": "https://lejournal.cnrs.fr/print/3123",
-   "published": "2022-06-07",
-   "consulted": "2026-11-21",
-   "status": "cliché électorat (vérifié (cliché décrit et discuté))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Le cliché du « bobo » : cultivé, à l'aise financièrement, centre des grandes villes, vote homogène à gauche — que le chercheur conteste. Garde-fou : la cible re…"
-  },
-  {
-   "url": "https://www.jean-jaures.org/publication/de-macron-ou-melenchon-a-glucksmann-vers-un-renouveau-de-la-social-democratie/",
-   "published": "2024-03-28",
-   "consulted": "2026-11-21",
-   "status": "cliché électorat (vérifié (fait : sondage))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Électeurs venus de LFI vers Glucksmann plus âgés (38 % de plus de 60 ans) et plus aisés (33 % au-dessus de 3 500 € net par mois). Thème : retraités aisés, résid…"
+   "date": "2026-06-25",
+   "consulted": "2026-11-22",
+   "statut": "fait (analyse lexicale) + opinion rapportée",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Instrument de mesure qui négocie. Risques vérifiés : aucune citation réelle, personne n'est nommé dans la narration ; ville inventée et absurde visible (fiction évidente sans mention) ; pas de visage réaliste, ni vie privée, ni famille, ni nom ou origine, ni chiffre électoral, ni appel au vote ; la moquerie vise une posture publique perçue (flou, mollesse, image lisse), pas l'intelligence. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 71 mots ; mèmes vérifiés intégrés comme thèmes (G14, G12, voir content/veille/memes_glucksmannville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : le reproche de « stagiaire » (Ségolène Royal, primaire 2026), puis la victoire à 66 % : un stage validé, fiche de poste vide. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

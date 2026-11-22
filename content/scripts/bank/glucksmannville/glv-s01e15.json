@@ -3,83 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-19",
  "format": "A",
- "title_cover": "Le tri non sélectif",
+ "title_cover": "Tri sélectif à gauche",
  "hook_variants": [
-  "Ici, le tri sélectif est interdit : sélectionner, c'est exclure.",
-  "Ici, le tri sélectif est interdit. Sélectionner, c'est exclure.",
-  "Dans cette ville, on ne trie pas les déchets. On les rassemble.",
-  "Ici, le plastique et le verre ne seront plus jamais opposés.",
-  "La seule commune de France où chaque déchet a sa place. Partout."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, on trie tout. Enfin, seulement à gauche.",
+  "Glucksmannville : le tri sélectif politique.",
+  "Un bac pour LFI, un bac pour tout le reste.",
+  "Les glucksmanniens vont trouver le tri très cohérent."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Les sacs montent jusqu'au premier étage, chacun avec un badge bienvenue. Même le composteur du jardin partagé a démissionné.",
-  "Les sacs montent jusqu'au premier étage, chacun avec un badge « Bienvenue ». Panneau : « Nous refusons de sélectionner. »",
-  "Le camion repart vide. Le chauffeur : « Aucun déchet n'a été laissé de côté. »"
+  "Le tri sélectif existe : il ne s'applique qu'à gauche.",
+  "Un seul déchet refusé : la gauche d'à côté.",
+  "Le centre, la droite, Macron : recyclables. LFI : non."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, le tri sélectif est interdit : sélectionner, c'est exclure.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Tri compris.",
    "accent_words": [
-    "sélectionner"
+    "Tri compris"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Plastique, verre, carton : pas question d'opposer les matériaux.",
+   "text": "Ici, une seule poubelle pour tout. Tri non sélectif.",
    "accent_words": [
-    "opposer"
+    "non sélectif"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Les trois bacs fusionnent en un seul, beige.",
+   "text": "Une seule exception : Mélenchon. En 2019, il l'a traité de « Thatcher de gauche ».",
    "accent_words": [
-    "beige"
+    "Thatcher de gauche"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Le camion écoute chaque sac et n'en emporte aucun.",
+   "text": "Le reste ? Droite, centre, Macron : tout dans le même bac.",
    "accent_words": [
-    "aucun"
+    "même bac"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Chaque déchet a sa place dans notre ville.",
+   "text": "Macron lui propose même le bac commun : coalition de Lisnard à Glucksmann.",
    "accent_words": [
-    "notre"
+    "bac commun"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Les sacs montent jusqu'au premier étage, chacun avec un badge bienvenue.",
+   "text": "Le tri sélectif existe : il ne s'applique qu'à gauche.",
    "accent_words": [
-    "bienvenue"
+    "qu'à gauche"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Même le composteur du jardin partagé a démissionné.",
+   "text": "Envoie ça au pote qui trie ses potes mais pas ses déchets.",
    "accent_words": [
-    "démissionné"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ta commune trie comment ? Dis-le en commentaire, on compare.",
-   "accent_words": [
-    "compare"
+    "ses potes"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,115 +82,152 @@
    "narration_ids": [
     "n1"
    ],
+   "camera": "descend",
+   "set": [
+    "road",
+    "facade_row",
+    "lamp",
+    "person",
+    "car"
+   ],
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
+   "expected_result": "Le décor de rue posé."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
    "camera": "closeup",
    "set": [
     "bin",
     "sign",
     "person"
    ],
-   "onscreen_text": "TRI SÉLECTIF INTERDIT",
-   "comic_action": "Trois poubelles de couleur devant un immeuble ; un panneau municipal neuf les surplombe.",
-   "expected_result": "La règle choque d'emblée."
-  },
-  {
-   "id": "s2",
-   "narration_ids": [
-    "n2",
-    "n3"
-   ],
-   "camera": "orbit",
-   "set": [
-    "bin",
-    "person",
-    "screen"
-   ],
-   "onscreen_text": "PAS D'OPPOSITION",
-   "comic_action": "Les trois bacs glissent l'un vers l'autre et se fondent en un seul grand bac beige à trois couvercles.",
-   "expected_result": "Fusion au nom du rassemblement."
+   "onscreen_text": "TRI NON SÉLECTIF",
+   "comic_action": "Gros plan sur la poubelle municipale et son étiquette.",
+   "expected_result": "La poubelle porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "person",
+    "banner",
+    "studio_light"
+   ],
+   "onscreen_text": "« THATCHER DE GAUCHE »",
+   "comic_action": "Le maire cubique à la tribune, projecteur, foule clairsemée.",
+   "expected_result": "Le discours porte la pique."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "closeup",
    "set": [
     "bin",
     "sign",
     "person"
    ],
-   "onscreen_text": "CHAQUE DÉCHET A SA PLACE",
-   "comic_action": "Le camion-benne s'arrête ; l'éboueur se penche vers chaque sac, hoche la tête, et repart sans rien prendre.",
-   "expected_result": "L'écoute remplace le service."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n6",
-    "n7"
-   ],
-   "camera": "descend",
-   "set": [
-    "bin",
-    "banner",
-    "sign"
-   ],
-   "onscreen_text": "NOUS REFUSONS DE SÉLECTIONNER",
-   "comic_action": "Plongée : une montagne de sacs atteint le premier étage, chacun orné d'un petit badge.",
-   "expected_result": "Chute : l'inclusion totale enterre la ville."
+   "onscreen_text": "TOUT DANS LE MÊME BAC",
+   "comic_action": "Gros plan sur la poubelle municipale et son étiquette.",
+   "expected_result": "La poubelle porte la pique."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "car",
+    "person",
+    "road",
+    "sign"
+   ],
+   "onscreen_text": "BAC COMMUN",
+   "comic_action": "La voiture du maire voisin klaxonne et ouvre la portière ; le maire cubique hésite sur le trottoir.",
+   "expected_result": "La drague de la coalition."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "bin",
+    "sign",
+    "person"
+   ],
+   "onscreen_text": "TRI : À GAUCHE SEULEMENT",
+   "comic_action": "Un seul bac porte un cadenas, étiqueté « LFI » ; tous les autres sont versés ensemble dans une benne beige.",
+   "expected_result": "La poubelle porte la pique."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "road",
+    "person",
     "tshirt",
-    "sign",
-    "mascot"
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra recule jusqu'à une vitrine capitonnée beige : le t-shirt « LE PAYS BUGUE. MOI AUSSI. » est posé sur un coussin, à côté d'trois couvercles de poubelle sur un seul bac beige. Pouf, la mascotte, passe devant en hésitant entre deux directions.",
-   "expected_result": "CTA commercial visuel discret, dans l'univers coussin."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ta commune trie comment ? Dis-le en commentaire, on compare."
+  "type": "share",
+  "text": "Envoie ça au pote qui trie ses potes mais pas ses déchets."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 73,
- "claims": [],
+ "word_count": 82,
+ "claims": [
+  {
+   "text": "« Thatcher de gauche »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/melenchon-un-thatcher-de-gauche-pour-glucksmann-140538",
+   "note": "Glucksmann qualifie Mélenchon de « Thatcher de gauche »."
+  },
+  {
+   "text": "Macron lui propose même le bac commun : coalition de Lisnard à Glucksmann.",
+   "claim_type": "fait_public",
+   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
+  }
+ ],
  "sources": [
   {
-   "url": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
-   "published": "2026-10-12",
-   "consulted": "2026-11-21",
-   "status": "fait",
-   "used_for": "Thème public du « rassemblement », pris au pied de la lettre ; aucun chiffre électoral montré."
+   "url": "https://www.publicsenat.fr/actualites/politique/melenchon-un-thatcher-de-gauche-pour-glucksmann-140538",
+   "date": "2019-03",
+   "consulted": "2026-11-22",
+   "statut": "citation rapportée",
+   "note": "Glucksmann qualifie Mélenchon de « Thatcher de gauche »."
   },
   {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "published": "2026-06-25",
-   "consulted": "2026-11-21",
-   "status": "fait (analyse lexicale) + opinion",
-   "used_for": "Vision plutôt que programme ; critique « centre gauche, voire centre ». Inspiration de décor, aucune citation."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/dans-le-loir-et-cher-glucksmann-ne-veut-pas-opposer-le-rural-a-l-urbain-140374",
-   "published": "2019-04-19",
-   "consulted": "2026-11-21",
-   "status": "cliché électorat (vérifié (fait rapporté + cliché))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Reproche d'un profil trop urbain ; le Canal Saint-Martin cité comme symbole « bobo ». Thème : clichés centre-ville (levain, jardin partagé, vin nature, vélo car…"
+   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait public (AFP)",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Refus de trier = refus de choisir. Risques vérifiés : aucune citation réelle, personne n'est nommé dans la narration ; ville inventée et absurde visible (fiction évidente sans mention) ; pas de visage réaliste, ni vie privée, ni famille, ni nom ou origine, ni chiffre électoral, ni appel au vote ; la moquerie vise une posture publique perçue (flou, mollesse, image lisse), pas l'intelligence. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 73 mots ; mèmes vérifiés intégrés comme thèmes (G3, G11, voir content/veille/memes_glucksmannville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « Thatcher de gauche » (sa pique contre Mélenchon en 2019) : le tri n'est sélectif que pour LFI, tout le reste dans le même bac, coalition comprise. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

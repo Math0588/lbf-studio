@@ -3,83 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-05",
  "format": "A",
- "title_cover": "Déménager sans bouger",
+ "title_cover": "Pas dogmatique",
  "hook_variants": [
-  "À Marineville, M. Dupont doit déclarer un déménagement sans avoir bougé.",
-  "À Marineville, M. Dupont doit déclarer un déménagement. Il n'a pas bougé.",
-  "M. Dupont a déménagé. Sans bouger d'un centimètre.",
-  "Ici, ta rue perd son nom de famille. Toi, tu perds ton après-midi.",
-  "À Marineville, il faut un justificatif de domicile pour prouver qu'on n'a pas déménagé."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, les francs servent de sous-bocks.",
+  "Marineville : le pilier du programme est parti à la benne.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : pas dogmatique."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Dehors, Gérard visse déjà rue P., tout court. Tampon rouge sur le dossier de M. Dupont : obsolète.",
-  "Dehors, Gérard visse déjà « Rue P. ». Tampon rouge : dossier obsolète.",
-  "M. Dupont rentre chez lui. Sa porte a un nouveau numéro. Le même."
+  "Pas dogmatique : ce qu'on dit quand le pilier du programme part à la benne.",
+  "Ici, la mairie a imprimé des francs. Ils servent de sous-bocks.",
+  "Deux ans plus tard, abandon. Explication du parti : on n'est pas dogmatique."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "À Marineville, M. Dupont doit déclarer un déménagement sans avoir bougé.",
+   "text": "Dans cette ville, tout le monde vote Marine. En euros, finalement.",
    "accent_words": [
-    "déménagement"
+    "En euros"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sa rue Paul-Dumoulin devient rue Paul : le nom de famille faisait vieux.",
+   "text": "En 2017, la sortie de l'euro est au programme.",
    "accent_words": [
-    "Paul"
+    "sortie de l'euro"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, on garde le prénom et on planque le reste.",
+   "text": "Deux ans plus tard, abandon. Explication du parti : on n'est pas dogmatique.",
    "accent_words": [
-    "prénom"
+    "pas dogmatique"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Au guichet : justificatif de l'ancien domicile, qui est aussi le nouveau.",
+   "text": "Ici, la mairie a imprimé des francs. Ils servent de sous-bocks.",
    "accent_words": [
-    "nouveau"
+    "sous-bocks"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Trois exemplaires : ancien nom, nouveau nom, prochain nom.",
+   "text": "Le distributeur crache encore des francs, version collector.",
    "accent_words": [
-    "nom"
+    "collector"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Dehors, Gérard visse déjà rue P., tout court.",
+   "text": "Pas dogmatique : ce qu'on dit quand le pilier du programme part à la benne.",
    "accent_words": [
-    "P."
+    "à la benne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Tampon rouge sur le dossier de M. Dupont : obsolète.",
+   "text": "Envoie ça au pote qui avait déjà ressorti son porte-monnaie en francs.",
    "accent_words": [
-    "obsolète"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Le pire : le formulaire ou le guichet ? En commentaire.",
-   "accent_words": [
-    "commentaire"
+    "en francs"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,107 +82,156 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "window_pass",
+   "camera": "descend",
    "set": [
-    "building",
-    "person",
-    "form_stack",
-    "sign"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "",
-   "comic_action": "Dès l'ouverture : M. Dupont (cube gris) sort de chez lui avec un carton de déménagement… et le pose sur son propre paillasson. Il n'a pas fait un pas.",
-   "expected_result": "Le déménagement immobile est compris en une image.",
-   "new_asset_request": "Optionnel : carton de déménagement (peut être un form_stack fermé)."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; une vitrine « BUREAU DE CHANGE : FERMÉ ».",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "sign",
-    "building",
-    "text3d"
+    "lift_tribune",
+    "tribune",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "RUE PAUL-DUMOULIN",
-   "comic_action": "Gros plan sur la plaque : un autocollant bleu recouvre « DUMOULIN ». Il ne reste que « RUE PAUL », en police arrondie, avec un petit cœur sur le A.",
-   "expected_result": "Le rebranding efface le nom de famille pour faire plus doux."
+   "onscreen_text": "SORTIE DE L'EURO",
+   "comic_action": "La tribune s'élève sous une banderole « FRANC ».",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
-    "person",
-    "sign",
-    "text3d"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "ANCIEN / NOUVEAU / PROCHAIN",
-   "comic_action": "Au guichet, la guichetière pose trois formulaires ; la pile grandit à chaque phrase jusqu'au menton de M. Dupont, qui doit lever la tête pour respirer.",
-   "expected_result": "La bureaucratie anticipe des renommages qui n'ont pas encore eu lieu."
+   "onscreen_text": "PAS DOGMATIQUE",
+   "comic_action": "L'écran affiche la banderole « FRANC » qu'on décroche discrètement.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
    ],
    "camera": "window_pass",
    "set": [
-    "building",
-    "sign",
-    "person",
     "table",
-    "form_stack",
+    "person",
+    "screen",
     "text3d"
    ],
-   "onscreen_text": "DOSSIER OBSOLÈTE",
-   "comic_action": "La caméra glisse derrière la fenêtre du guichet : au loin, Gérard visse « RUE P. » sur l'immeuble de M. Dupont. Au premier plan, le tampon rouge s'abat sur la pile. On laisse respirer.",
-   "expected_result": "Chute : le dossier est périmé avant d'être fini."
+   "onscreen_text": "FRANCS : SOUS-BOCKS",
+   "comic_action": "Au café municipal, des billets en francs sous chaque verre.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "tshirt",
-    "table",
-    "form_stack"
+    "shop",
+    "person",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Sur le dossier de la chaise du guichet, un t-shirt « À GAUCHE DU CANAPÉ. » ; M. Dupont, épuisé, s'en sert d'oreiller.",
-   "expected_result": "CTA parlé unique + produit réel visible."
+   "onscreen_text": "FRANCS : ÉDITION COLLECTOR",
+   "comic_action": "Un distributeur sort des billets en francs ; le commerçant les refuse.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "bin",
+    "road",
+    "building",
+    "person"
+   ],
+   "onscreen_text": "PILIER : À LA BENNE",
+   "comic_action": "Un camion-poubelle emporte une colonne marquée « EURO ». Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt tend une pièce de dix francs.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Le pire : le formulaire ou le guichet ? En commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui avait déjà ressorti son porte-monnaie en francs."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 84,
- "claims": [],
+ "word_count": 79,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "En 2017, la sortie de l'euro est au programme.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/sortie-de-l-euro-les-atermoiements-de-marine-le-pen-60007",
+   "note": "Sortie de l'euro au programme ; en 2012 elle la conditionnait à un référendum."
+  },
+  {
+   "segment": "n3",
+   "text": "Deux ans plus tard, abandon. Explication du parti : on n'est pas dogmatique.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/abandon-de-la-sortie-de-l-euro-au-rn-on-n-est-pas-dogmatique-explique-nicolas-bay",
+   "note": "Abandon de la sortie de l'euro : « on n'est pas dogmatique » (Nicolas Bay)."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
-   "published": "2017-02-06",
-   "consulted": "2026-11-21",
-   "status": "opinion / analyse de presse (mise en avant du seul prénom, nom de famille et parti effacés des documents de campagne)",
-   "used_for": "Inspiration seulement : le rebranding qui efface le nom de famille, appliqué à une plaque de rue fictive."
+   "url": "https://www.publicsenat.fr/actualites/politique/sortie-de-l-euro-les-atermoiements-de-marine-le-pen-60007",
+   "date": "2017",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Sortie de l'euro au programme ; en 2012 elle la conditionnait à un référendum."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/abandon-de-la-sortie-de-l-euro-au-rn-on-n-est-pas-dogmatique-explique-nicolas-bay",
+   "date": "2019 (date exacte non relevée)",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Abandon de la sortie de l'euro : « on n'est pas dogmatique » (Nicolas Bay)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Drôle par la bureaucratie récursive (justificatif de l'ancien domicile qui est le nouveau) et par le rebranding qui ampute la rue de son nom de famille jusqu'à l'initiale. Inspiré de la communication au prénom seul, transposée à une plaque de rue fictive. Continuité : M. Dupont et son formulaire (mrv-evt-014). Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 84 mots ; mèmes vérifiés intégrés comme thèmes (M1, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = sortie de l'euro au programme en 2017, puis abandonnée (« on n'est pas dogmatique », explique le parti). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

@@ -3,83 +3,75 @@
  "city": "marineville",
  "synopsis_id": "mrv-syn-04",
  "format": "A",
- "title_cover": "Mise à jour du GPS",
+ "title_cover": "SFR ou Alstom ?",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Marine… et le GPS aussi.",
-  "Le GPS de Marineville a reçu sa mise à jour. Quatre gigas. Que des noms.",
-  "Quatre gigas de mise à jour. Zéro nouvelle route.",
-  "Le GPS de Marineville a un nouveau logo : l'ancien, mais dans un rond.",
-  "Ce GPS fête chaque tour de rond-point comme une victoire."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, le guichet confond toujours les dossiers.",
+  "Marineville : tu viens pour l'eau, on te répond électricité.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : sfr ou alstom ?."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Chaque tour de rond-point : confettis, fanfare, nouvel itinéraire. Message final : vous êtes arrivé au départ, version 2.0.",
-  "Message final : vous êtes arrivé. Au départ. Version 2.0.",
-  "Le GPS sonne la fanfare. Le conducteur, lui, connaît la boucle par cœur."
+  "Le seul dossier qu'elle n'a jamais confondu : celui de sa com'.",
+  "Ici, tu viens pour l'eau, on te répond électricité.",
+  "Le guichetier lit ses notes à voix haute, sans lever la tête. Même pour dire bonjour."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine… et le GPS aussi.",
+   "text": "Dans cette ville, tout le monde vote Marine. Les fiches sont fournies.",
    "accent_words": [
-    "Marine"
+    "fiches"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Mise à jour : quatre gigas, que des nouveaux noms.",
+   "text": "Débat 2017 : le nez dans ses fiches, elle mélange SFR et Alstom.",
    "accent_words": [
-    "gigas"
+    "SFR et Alstom"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Nouveau logo : la même flèche, mais rangée dans un rond.",
+   "text": "Elle-même finira par parler d'un débat raté.",
    "accent_words": [
-    "dans un rond"
+    "raté"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Nouvelles routes : zéro, nouvelle peinture : bleu marine.",
+   "text": "Ici, tu viens pour l'eau, on te répond électricité.",
    "accent_words": [
-    "zéro"
+    "électricité"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Il récite tous les noms, puis conclut : à droite.",
+   "text": "Le guichetier lit ses notes à voix haute, sans lever la tête. Même pour bonjour.",
    "accent_words": [
-    "à droite"
+    "bonjour"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Chaque tour de rond-point : confettis, fanfare, nouvel itinéraire.",
+   "text": "Le seul dossier qu'elle n'a jamais confondu : celui de sa com'.",
    "accent_words": [
-    "nouvel itinéraire"
+    "sa com'"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Message final : vous êtes arrivé au départ, version 2.0.",
+   "text": "Envoie ça au pote qui révise ses fiches pendant l'oral.",
    "accent_words": [
-    "départ"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Envoie ça à celui qui reporte ses mises à jour depuis 2019.",
-   "accent_words": [
-    "mises à jour"
+    "pendant l'oral"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,111 +80,168 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "gps",
-    "screen",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "MISE À JOUR : 4 GO",
-   "comic_action": "Dès la première image, gros plan sur l'écran du GPS : barre de progression qui avance à peine, et la liste « noms… noms… noms… » qui défile.",
-   "expected_result": "La mise à jour ne contient que des noms."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; des piles de fiches cartonnées sur chaque marche.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "gps",
-    "screen",
+    "tribune",
+    "router_lectern",
+    "studio_light",
     "text3d"
    ],
-   "onscreen_text": "NOUVELLES ROUTES : 0",
-   "comic_action": "L'icône du GPS se met à jour : la même flèche à droite, qu'un cercle vient entourer avec un « ding » triomphal. Juste en dessous, la ligne « Nouvelles routes » reste bloquée à zéro, grisée.",
-   "expected_result": "On a encadré l'ancien logo ; rien d'utile n'a été ajouté."
+   "onscreen_text": "SFR ? ALSTOM ?",
+   "comic_action": "Plateau : deux dossiers échangés sur un pupitre, les fiches s'envolent.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5"
+    "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
-    "car",
-    "gps",
-    "sign",
-    "roundabout"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "",
-   "comic_action": "La voiture démarre, le GPS sur le tableau de bord récite « RUE DE LA GARE NOUVELLE » avec emphase, puis la flèche unique pointe à droite vers le rond-point, comme toujours.",
-   "expected_result": "Le discours est neuf, l'itinéraire est l'ancien."
+   "onscreen_text": "DÉBAT : RATÉ (OFFICIEL)",
+   "comic_action": "L'écran de la mairie affiche un tampon « RATÉ » sur une vieille photo de plateau.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "roundabout",
-    "car_orbit",
-    "mairie",
-    "gps",
-    "text3d"
+    "table",
+    "screen",
+    "sign",
+    "building"
    ],
-   "onscreen_text": "NOUVEL ITINÉRAIRE !",
-   "comic_action": "Orbite autour du rond-point : la voiture boucle ; à chaque passage devant la mairie, explosion de confettis à l'écran du GPS et petite fanfare.",
-   "expected_result": "La communication célèbre la répétition."
+   "onscreen_text": "EAU → ÉLECTRICITÉ",
+   "comic_action": "Guichet : un habitant tend une facture d'eau, l'agent lui rend un compteur électrique.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "form_stack",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "BONJOUR (FICHE N°1)",
+   "comic_action": "Gros plan : une fiche « BONJOUR » qu'on lit en baissant les yeux.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "studio_light",
+    "tripod_camera",
+    "table",
+    "person"
+   ],
+   "onscreen_text": "DOSSIER COM' : MAÎTRISÉ",
+   "comic_action": "Studio : un dossier « COM' » parfaitement rangé, tous les autres en vrac. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "ground",
-    "road",
-    "roundabout",
-    "car_orbit",
-    "mairie",
-    "gps",
+    "shop",
     "tshirt",
+    "person",
     "sign"
    ],
-   "onscreen_text": "VOUS ÊTES ARRIVÉ : AU DÉPART",
-   "comic_action": "La caméra remonte : la voiture s'arrête exactement à son point de départ. Sur le panneau de départ pend un t-shirt « PLUTÔT DROITE. TRÈS FATIGUÉ. ». Le GPS affiche « v2.0 » en tout petit.",
-   "expected_result": "Chute + CTA de partage ; produit visible dans le décor."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt fait tomber ses fiches.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça à celui qui reporte ses mises à jour depuis 2019."
+  "text": "Envoie ça au pote qui révise ses fiches pendant l'oral."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 83,
- "claims": [],
+ "word_count": 78,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "Débat 2017 : le nez dans ses fiches, elle mélange SFR et Alstom.",
+   "claim_type": "fait_public",
+   "source": "https://www.slate.fr/story/144975/marin-approximations-monnaie",
+   "note": "Débat 2017 : approximations, confusion entre les dossiers SFR et Alstom.",
+   "sources_complementaires": [
+    "https://www.publicsenat.fr/actualites/non-classe/debat-d-entre-deux-tours-le-jour-ou-marine-le-pen-s-est-noyee-76003"
+   ]
+  },
+  {
+   "segment": "n3",
+   "text": "Elle-même finira par parler d'un débat raté.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/non-classe/le-pen-reconnait-un-debat-d-entre-deux-tours-rate-60797",
+   "note": "Elle reconnaît un débat d'entre-deux-tours « raté »."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
-   "published": "2018-06-01",
-   "consulted": "2026-11-21",
-   "status": "fait public (changement de nom du parti ; la flamme du logo est conservée, désormais placée dans un cercle)",
-   "used_for": "Inspiration seulement : on change le nom, on garde le logo et on le met dans un rond. Traduit en gag visuel de ville fictive (enseigne, icône, rond-point), jamais cité ni présenté comme un fait dans la narration."
+   "url": "https://www.slate.fr/story/144975/marin-approximations-monnaie",
+   "date": "2017-05",
+   "consulted": "2026-11-22",
+   "statut": "fait + analyse",
+   "note": "Débat 2017 : approximations, confusion entre les dossiers SFR et Alstom."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/non-classe/debat-d-entre-deux-tours-le-jour-ou-marine-le-pen-s-est-noyee-76003",
+   "date": "date non relevée",
+   "consulted": "2026-11-22",
+   "statut": "analyse",
+   "note": "Débat d'entre-deux-tours 2017 : le nez dans ses notes, emmêlée entre SFR et Alstom."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/non-classe/le-pen-reconnait-un-debat-d-entre-deux-tours-rate-60797",
+   "date": "2017",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Elle reconnaît un débat d'entre-deux-tours « raté »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Drôle par la précision bureaucratique de la barre de progression (tout s'installe sauf l'utile) et par l'icône « la même, mais dans un rond », transposition visuelle du logo conservé et encerclé. Continuité : GPS fanfare (mrv-evt-013), « Recalcul de l'image » (mrv-evt-004), plaque « Rue de la Gare Nouvelle » de l'épisode précédent. Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 83 mots ; mèmes vérifiés intégrés comme thèmes (M2, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = débat d'entre-deux-tours 2017 : le nez dans ses notes, confusion entre SFR et Alstom ; elle reconnaîtra un débat « raté ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

@@ -3,76 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-03",
  "format": "A",
- "title_cover": "Le métro immobile",
+ "title_cover": "Métro sans destination",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Glucksmann… et le métro ne part jamais.",
-  "Ici, la ligne 1 dessert toutes les stations en même temps. Donc elle ne part jamais.",
-  "Le seul métro de France qui reste à quai pour ne vexer aucun terminus.",
-  "Dans cette ville, le métro ne roule pas. Il consulte.",
-  "Ici, prendre le métro, c'est assister à une réunion sur rails."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, le métro est neuf. Il ne va juste nulle part.",
+  "Glucksmannville : la ligne de métro sans terminus.",
+  "Le seul métro de France qui consulte avant de démarrer.",
+  "Les glucksmanniens vont trouver ça très visionnaire."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La rame avance de trente centimètres, dans les deux sens. Écran du quai, très serein : prochaine station, toutes.",
-  "La rame avance enfin de trente centimètres… dans les deux sens. Écran : « Prochaine station : toutes. »",
-  "Le métro reste à quai. Annonce fière : « Nous avons desservi le dialogue. »"
+  "Le métro ne va nulle part, mais il y va avec beaucoup de conviction.",
+  "Destination : vision. Arrivée : non communiquée.",
+  "Le métro roule. Le cap, toujours en concertation."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann… et le métro ne part jamais.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. En principe.",
    "accent_words": [
-    "Glucksmann",
-    "jamais"
+    "En principe"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le plan est une étoile : chaque station veut être reliée à toutes.",
+   "text": "Le métro est flambant neuf. Seul problème : il n'a pas de destination.",
    "accent_words": [
-    "toutes"
+    "pas de destination"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Les portes se ferment, se rouvrent : une station a émis une réserve.",
+   "text": "En 2025, Politis titrait : « candidat hypothétique cherche projet politique ».",
    "accent_words": [
-    "réserve"
+    "projet politique"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Tour de table avec les terminus, pendant que les trottinettes patientent.",
+   "text": "Le conducteur consulte trois cents usagers avant de démarrer.",
    "accent_words": [
-    "patientent"
+    "trois cents"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La rame avance de trente centimètres, dans les deux sens.",
+   "text": "Un politologue résume : une vision plutôt qu'un programme.",
    "accent_words": [
-    "sens"
+    "une vision"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Écran du quai, très serein : prochaine station, toutes.",
+   "text": "Le métro ne va nulle part, mais il y va avec beaucoup de conviction.",
    "accent_words": [
-    "toutes"
+    "conviction"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Ta ligne de métro, elle a quelle excuse aujourd'hui ? En commentaire.",
+   "text": "Envoie ça au pote qui monte sans savoir où il va.",
    "accent_words": [
-    "commentaire"
+    "où il va"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -83,116 +82,173 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
+    "road",
     "bus",
+    "sign",
     "person",
-    "bench"
+    "facade_row"
    ],
-   "onscreen_text": "DÉPART : ENSEMBLE",
-   "comic_action": "Quai de métro. L'écran des départs affiche « ENSEMBLE » au lieu d'une heure. La rame (bus repeint gris métro) attend, portes ouvertes.",
-   "expected_result": "Un métro qui ne donne pas d'heure : la règle est posée."
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur l'arrêt de bus ; le bus arrive.",
+   "expected_result": "Le transport du jour posé."
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "street_dolly",
    "set": [
-    "screen",
+    "bus",
+    "road",
     "sign",
     "person"
    ],
-   "onscreen_text": "TOUTES LES STATIONS",
-   "comic_action": "Plongée sur l'écran géant du plan : une étoile où chaque station est reliée à toutes les autres, des dizaines de traits qui se croisent.",
-   "expected_result": "Desservir tout le monde = n'aller nulle part."
+   "onscreen_text": "DESTINATION : À DÉFINIR",
+   "comic_action": "Travelling le long du bus ; écran de destination qui défile.",
+   "expected_result": "Le bus porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n3"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "bus",
-    "table",
-    "person",
-    "sign"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "TOUR DE TABLE",
-   "comic_action": "À travers les fenêtres de la rame, le conducteur a sorti une table pliante ; autour, des panneaux-terminus assis comme des invités.",
-   "expected_result": "La conduite est remplacée par une réunion."
+   "onscreen_text": "« CHERCHE PROJET POLITIQUE »",
+   "comic_action": "Gros plan sur un écran géant en ville.",
+   "expected_result": "La pique s'affiche en écran."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "bus",
-    "screen",
-    "person"
+    "table",
+    "form_stack",
+    "person",
+    "scroll"
    ],
-   "onscreen_text": "PROCHAINE STATION : TOUTES",
-   "comic_action": "La rame avance de 30 cm, recule de 30 cm, s'immobilise au milieu du quai. Silence. L'écran affiche le texte.",
-   "expected_result": "Chute : le mouvement s'annule lui-même."
+   "onscreen_text": "CONSULTATION N°300",
+   "comic_action": "Réunion n°300 : piles de comptes rendus ; le rouleau « PROGRAMME » reste vierge.",
+   "expected_result": "La vision sans programme."
   },
   {
    "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "person",
+    "banner",
+    "studio_light"
+   ],
+   "onscreen_text": "VISION > PROGRAMME",
+   "comic_action": "Le maire cubique à la tribune, projecteur, foule clairsemée.",
+   "expected_result": "Le discours porte la pique."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "bus",
+    "road",
+    "sign",
+    "person"
+   ],
+   "onscreen_text": "NULLE PART, AVEC CONVICTION",
+   "comic_action": "La rame démarre avec solennité, fait le tour de la station et revient se garer au même quai.",
+   "expected_result": "Le bus porte la pique."
+  },
+  {
+   "id": "s7",
    "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
+    "road",
+    "person",
     "tshirt",
-    "sign",
-    "mascot"
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra recule jusqu'à une vitrine capitonnée beige : le t-shirt « LE PAYS BUGUE. MOI AUSSI. » est posé sur un coussin, à côté d'un plan de métro en étoile est affiché à côté. Pouf, la mascotte, passe devant en hésitant entre deux directions.",
-   "expected_result": "CTA commercial visuel discret, dans l'univers coussin."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ta ligne de métro, elle a quelle excuse aujourd'hui ? En commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui monte sans savoir où il va."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 82,
- "claims": [],
+ "word_count": 78,
+ "claims": [
+  {
+   "text": "Le métro est flambant neuf. Seul problème : il n'a pas de destination.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
+   "note": "« Candidat hypothétique cherche projet politique ». Détourné dans la ville fictive."
+  },
+  {
+   "text": "« candidat hypothétique cherche projet politique »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
+   "note": "« Candidat hypothétique cherche projet politique »."
+  },
+  {
+   "text": "Le conducteur consulte trois cents usagers avant de démarrer.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
+   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme ». Détourné dans la ville fictive."
+  },
+  {
+   "text": "Un politologue résume : une vision plutôt qu'un programme.",
+   "claim_type": "fait_public",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
+  }
+ ],
  "sources": [
   {
+   "url": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
+   "date": "2025-03-14",
+   "consulted": "2026-11-22",
+   "statut": "opinion (titre de presse)",
+   "note": "« Candidat hypothétique cherche projet politique »."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
+   "date": "2025-06-23",
+   "consulted": "2026-11-22",
+   "statut": "citations rapportées",
+   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
+  },
+  {
    "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "published": "2026-06-25",
-   "consulted": "2026-11-21",
-   "status": "fait (analyse lexicale) + opinion",
-   "used_for": "Vision plutôt que programme ; critique « centre gauche, voire centre ». Inspiration de décor, aucune citation."
-  },
-  {
-   "url": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
-   "published": "2026-10-12",
-   "consulted": "2026-11-21",
-   "status": "fait",
-   "used_for": "Thème public du « rassemblement », pris au pied de la lettre ; aucun chiffre électoral montré."
-  },
-  {
-   "url": "https://lejournal.cnrs.fr/print/3123",
-   "published": "2022-06-07",
-   "consulted": "2026-11-21",
-   "status": "cliché électorat (vérifié (cliché décrit et discuté))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Le cliché du « bobo » : cultivé, à l'aise financièrement, centre des grandes villes, vote homogène à gauche — que le chercheur conteste. Garde-fou : la cible re…"
+   "date": "2026-06-25",
+   "consulted": "2026-11-22",
+   "statut": "fait (analyse lexicale) + opinion rapportée",
+   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Littéralisation de « desservir tout le monde » : le réseau en étoile paralyse la rame. Risques vérifiés : aucune citation réelle, personne n'est nommé dans la narration ; ville inventée et absurde visible (fiction évidente sans mention) ; pas de visage réaliste, ni vie privée, ni famille, ni nom ou origine, ni chiffre électoral, ni appel au vote ; la moquerie vise une posture publique perçue (flou, mollesse, image lisse), pas l'intelligence. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 82 mots ; mèmes vérifiés intégrés comme thèmes (G3, G14, voir content/veille/memes_glucksmannville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : le cap introuvable (« candidat hypothétique cherche projet politique », Politis 2025) : un métro neuf sans destination. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

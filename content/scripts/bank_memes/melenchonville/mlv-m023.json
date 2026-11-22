@@ -4,86 +4,79 @@
  "synopsis_id": "mlv-m023-gm",
  "format": "A",
  "length": "court",
- "title_cover": "Le GPS à 421 420 mètres",
- "anchor": "Présidentielle 2022 : Mélenchon rate le second tour d'environ 421 420 voix (le « à un cheveu »).",
+ "title_cover": "À 421 420 mètres",
+ "anchor": "2022 : le second tour raté de 421 420 voix, en boucle.",
  "meme_id": "MH",
  "situation": "les vacances",
- "ressort": "boucle : on revient exactement au point de départ, en pire",
+ "ressort": "piques frontales : setup court → retournement sec (style tacle)",
  "hook_variants": [
-  "En 2022, il a manqué à Mélenchon 421 420 voix pour le second tour.",
-  "Le GPS qui t'arrête toujours à 421 kilomètres du but.",
-  "Ici, les vacances s'arrêtent juste avant la plage.",
-  "Même trajet, même écart, au mètre près.",
-  "Dans cette ville, même le GPS rate de peu."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : la plage est toujours à 421 420 mètres.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, le GPS dit : vous êtes presque arrivé, depuis 2012.",
+  "Mélenchonville : les vacances qui s'arrêtent avant la mer."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "On retombe sur le même parking, devant le même panneau.",
-  "Les vacances se passent sur le parking. Il y a une vue sur le panneau.",
-  "Le GPS annonce un nouvel essai dans cinq ans."
+  "Chaque été, la plage est en vue. Chaque été, troisième place sur le parking.",
+  "La mer en vue, jamais les pieds dans l'eau.",
+  "Presque arrivé : le slogan de chaque été."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "En 2022, il a manqué à Mélenchon 421 420 voix pour le second tour.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Presque arrivé.",
    "accent_words": [
-    "Mélenchon",
-    "manqué"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n2",
-   "text": "À Mélenchonville, le GPS des vacances a gardé le traumatisme.",
-   "accent_words": [
-    "Mélenchonville",
-    "traumatisme"
+    "Presque arrivé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Destination : la plage. Arrivée : à 421 420 mètres de la plage.",
+   "id": "n2",
+   "text": "En 2022, il rate le second tour à 421 420 voix près.",
    "accent_words": [
-    "Destination",
-    "Arrivée"
+    "421 420"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "Ici, le GPS des vacances s'arrête toujours à 421 420 mètres de la plage.",
+   "accent_words": [
+    "de la plage"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "On refait le trajet. Même écart, au mètre près.",
+   "text": "Demi-tour, recalcul, rond-point. On recommence en 2027.",
    "accent_words": [
-    "refait",
-    "trajet"
+    "en 2027"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le GPS propose un itinéraire bis, plus à gauche.",
+   "text": "Le passager demande : on arrive ? Réponse : presque, depuis 2012.",
    "accent_words": [
-    "itinéraire",
-    "propose"
+    "depuis 2012"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "On retombe sur le même parking, devant le même panneau.",
+   "text": "Chaque été, la plage est en vue. Chaque été, troisième place sur le parking.",
    "accent_words": [
-    "retombe",
-    "parking"
+    "troisième place"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Ton pire GPS, il t'a emmené où ? Raconte en commentaire.",
+   "text": "Envoie ça au pote qui rate toujours la sortie d'autoroute.",
    "accent_words": [
-    "commentaire",
-    "Raconte"
+    "la sortie"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,25 +85,38 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2",
-    "n3"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "road",
     "car",
-    "gps",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "RESTE : 421 420 M",
-   "comic_action": "Voiture vue d'en haut, GPS géant sur pied.",
-   "expected_result": "Le chiffre réel devient une distance."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur une voiture chargée de valises, GPS au tableau de bord.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n4"
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "gps",
+    "text3d",
+    "car"
+   ],
+   "onscreen_text": "-421 420",
+   "comic_action": "Gros plan sur le GPS : « ARRIVÉE : -421 420 ».",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
    ],
    "camera": "street_dolly",
    "set": [
@@ -118,76 +124,138 @@
     "car",
     "sign"
    ],
-   "onscreen_text": "MÊME ÉCART",
-   "comic_action": "La même voiture repasse devant le même panneau.",
-   "expected_result": "Boucle."
+   "onscreen_text": "PLAGE : 421 KM",
+   "comic_action": "Travelling : la voiture s'arrête net devant un panneau, la mer visible au loin.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s3",
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "roundabout",
+    "car",
+    "gps"
+   ],
+   "onscreen_text": "RECALCUL : 2027",
+   "comic_action": "Orbite : la voiture refait le tour du rond-point, le GPS affiche « 2027 ».",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "closeup",
    "set": [
-    "gps",
     "car",
-    "person"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "ITINÉRAIRE BIS : À GAUCHE",
-   "comic_action": "Le GPS clignote, flèche à gauche.",
-   "expected_result": "Faux espoir.",
-   "bubble": "Recalcul… raté de peu."
+   "onscreen_text": "PRESQUE",
+   "comic_action": "Dans l'habitacle, le passager soupire, le conducteur sourit.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
-   "id": "s4",
+   "id": "s6",
    "narration_ids": [
-    "n6",
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "road",
+    "car",
+    "text3d"
+   ],
+   "onscreen_text": "PARKING : 3E PLACE",
+   "comic_action": "Plan large : un parking de plage, la voiture garée sur l'emplacement « 3 ».",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "road",
+    "person",
+    "tshirt",
     "sign",
-    "tshirt"
+    "shop"
    ],
-   "onscreen_text": "PARKING. ENCORE.",
-   "comic_action": "Retour au même parking ; t-shirt sur la galerie de toit.",
-   "expected_result": "Chute en boucle."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique finit à pied, serviette sur l'épaule.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton pire GPS, il t'a emmené où ? Raconte en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui rate toujours la sortie d'autoroute."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 76,
+ "word_count": 79,
  "claims": [
   {
-   "segment": "n1",
+   "text": "En 2022, il rate le second tour à 421 420 voix près.",
    "claim_type": "fait_public",
-   "source_url": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850"
+   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850",
+   "note": "Second tour 2022 raté d'environ 421 420 voix."
+  },
+  {
+   "text": "Demi-tour, recalcul, rond-point. On recommence en 2027.",
+   "claim_type": "fait_public",
+   "source": "https://www.lalibre.be/international/europe/2026/05/03/jean-luc-melenchon-officialise-sa-candidature-a-la-presidentielle-2027-62WVGQMVUREGHCOMM2PKZ2DE7M/",
+   "note": "Candidature 2027 officialisée au 20 h de TF1 : quatrième campagne."
+  },
+  {
+   "text": "Le passager demande : on arrive ? Réponse : presque, depuis 2012.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+  },
+  {
+   "text": "Chaque été, la plage est en vue. Chaque été, troisième place sur le parking.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/premier-tour-decouvrez-les-resultats-definitifs-109262",
+   "note": "Résultats définitifs 2022 : Mélenchon troisième (21,95 %)."
   }
  ],
  "sources": [
   {
    "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850",
    "date": "2022-04-10",
-   "consulted": "2026-11-21",
-   "statut": "fait public",
-   "usage": "Écart de quelques centaines de milliers de voix."
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Second tour 2022 raté d'environ 421 420 voix."
+  },
+  {
+   "url": "https://www.lalibre.be/international/europe/2026/05/03/jean-luc-melenchon-officialise-sa-candidature-a-la-presidentielle-2027-62WVGQMVUREGHCOMM2PKZ2DE7M/",
+   "date": "2026-05-03",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Candidature 2027 officialisée au 20 h de TF1 : quatrième campagne."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "date": "2026-06",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   },
   {
    "url": "https://lcp.fr/actualites/premier-tour-decouvrez-les-resultats-definitifs-109262",
    "date": "2022-04",
-   "consulted": "2026-11-21",
-   "statut": "fait public",
-   "usage": "Écart exact : 421 420 voix."
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Résultats définitifs 2022 : Mélenchon troisième (21,95 %)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Phrase 1 = fait public (421 420 voix, LCP). Boucle sur le « raté de peu »."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : 2022 : le second tour raté de 421 420 voix, en boucle. Cadre : les vacances. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

@@ -3,76 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-09",
  "format": "A",
- "title_cover": "Le plat consensus",
+ "title_cover": "Plat du jour Macron",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Glucksmann… et la cantine sert du consensus.",
-  "Ici, la cantine sert un plat conçu pour ne déplaire à personne. Mission accomplie : il ne plaît à personne.",
-  "Dans cette cantine, le plat du jour s'appelle « Consensus ». Il a le goût de son nom.",
-  "Ici, la purée est beige, tiède, et n'a aucune opinion.",
-  "La seule cantine de France notée dix sur vingt à l'unanimité."
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Ici, le plat du jour a un arrière-goût de Macron.",
+  "Glucksmannville : le restaurant du consensus tiède.",
+  "La carte est rose. L'assiette, bleue.",
+  "Les glucksmanniens vont renvoyer le plat en cuisine."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Une assiette tombe, et la purée reste debout, en dôme. Elle refuse de prendre parti pour le sol.",
-  "Une assiette tombe. La purée reste debout, en dôme, sans s'étaler. Elle refuse de prendre parti pour le sol.",
-  "Le chef goûte, réfléchit, puis annonce : « Pas mauvais. Pas bon. Validé. »"
+  "Il refuse l'invitation. Normal : il sert déjà le même plat.",
+  "Même recette, nouvelle nappe.",
+  "Le chef jure que ce n'est pas du Macron. Le goût insiste."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann… et la cantine sert du consensus.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le plat aussi.",
    "accent_words": [
-    "Glucksmann",
-    "consensus"
+    "Le plat"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Un plat conçu pour ne déplaire à personne : il ne plaît à personne.",
-   "accent_words": [
-    "personne"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Ni salé ni sucré, couleur beige, thermomètre bloqué sur tiède.",
+   "text": "Au resto, le plat consensus : ni salé, ni sucré, tiède.",
    "accent_words": [
     "tiède"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n4",
-   "text": "Les enfants notent le plat : dix sur vingt, à l'unanimité.",
+   "id": "n3",
+   "text": "Une chronique de 2024 l'a goûté : « il me rappelle Macron ».",
    "accent_words": [
-    "unanimité"
+    "Macron"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n4",
+   "text": "La carte promet du social-démocrate. Le goût : macronisme réchauffé.",
+   "accent_words": [
+    "réchauffé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Une assiette tombe, et la purée reste debout, en dôme.",
+   "text": "Macron, lui, l'invite à sa table : coalition de Lisnard à Glucksmann.",
    "accent_words": [
-    "dôme"
+    "coalition"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Elle refuse de prendre parti pour le sol.",
+   "text": "Il refuse l'invitation. Normal : il sert déjà le même plat.",
    "accent_words": [
-    "sol"
+    "le même plat"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le plat de cantine qui t'a traumatisé ? En commentaire.",
+   "text": "Envoie ça au pote qui commande toujours le plat le plus neutre.",
    "accent_words": [
-    "commentaire"
+    "neutre"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -81,67 +80,100 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "shop",
+    "facade_row",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "GLUCKSMANNVILLE",
+   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
+   "expected_result": "Le commerce du jour posé."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
     "n2"
    ],
    "camera": "closeup",
    "set": [
     "table",
     "sign",
-    "person"
+    "person",
+    "fountain"
    ],
-   "onscreen_text": "PLAT DU JOUR : CONSENSUS",
-   "comic_action": "Self de cantine ; un bac de purée beige parfaitement lisse ; l'ardoise du menu annonce le plat.",
-   "expected_result": "Un plat qui porte le nom d'une méthode politique."
-  },
-  {
-   "id": "s2",
-   "narration_ids": [
-    "n3"
-   ],
-   "camera": "orbit",
-   "set": [
-    "table",
-    "screen",
-    "person"
-   ],
-   "onscreen_text": "TEMPÉRATURE : TIÈDE",
-   "comic_action": "Un thermomètre géant sur l'écran n'a qu'une seule graduation au milieu : « TIÈDE ».",
-   "expected_result": "Le tiède comme norme officielle."
+   "onscreen_text": "PLAT CONSENSUS",
+   "comic_action": "Table de restaurant ; la carte-ardoise affiche les prix.",
+   "expected_result": "Le restaurant porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4"
+    "n3"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
+    "screen",
     "person",
-    "table",
-    "banner"
+    "text3d"
    ],
-   "onscreen_text": "10/20 À L'UNANIMITÉ",
-   "comic_action": "Toutes les mains se lèvent en même temps avec la même pancarte « 10 ».",
-   "expected_result": "L'unanimité dans la médiocrité."
+   "onscreen_text": "« IL ME RAPPELLE MACRON »",
+   "comic_action": "Écran : silhouette du maire, puis le même costume bleu de la ville voisine se superpose.",
+   "expected_result": "La ressemblance, montrée."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "sign",
+    "person",
+    "fountain"
+   ],
+   "onscreen_text": "MACRONISME RÉCHAUFFÉ",
+   "comic_action": "Table de restaurant ; la carte-ardoise affiche les prix.",
+   "expected_result": "Le restaurant porte la pique."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "car",
+    "person",
+    "road",
+    "sign"
+   ],
+   "onscreen_text": "INVITATION : COALITION",
+   "comic_action": "La voiture du maire voisin klaxonne et ouvre la portière ; le maire cubique hésite sur le trottoir.",
+   "expected_result": "La drague de la coalition."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
     "n6"
    ],
    "camera": "closeup",
    "set": [
     "table",
+    "sign",
     "person",
-    "sign"
+    "fountain"
    ],
-   "onscreen_text": "NEUTRE JUSQU'AU SOL",
-   "comic_action": "Une assiette tombe au ralenti. Au sol, la purée reste debout en dôme parfait, intacte.",
-   "expected_result": "Chute : même la gravité ne la fait pas pencher."
+   "onscreen_text": "MÊME PLAT, AUTRE CARTE",
+   "comic_action": "Deux assiettes identiques côte à côte, une étiquetée « MACRONVILLE », l'autre « GLUCKSMANNVILLE » ; on échange les étiquettes, personne ne voit la différence.",
+   "expected_result": "Le restaurant porte la pique."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
     "n7"
    ],
@@ -149,48 +181,67 @@
    "set": [
     "shop",
     "tshirt",
-    "sign",
-    "mascot"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "La caméra recule jusqu'à une vitrine capitonnée beige : le t-shirt « À DROITE DU CANAPÉ. » est posé sur un coussin, à côté d'un thermomètre réglé sur « tiède ». Pouf, la mascotte, passe devant en hésitant entre deux directions.",
-   "expected_result": "CTA commercial visuel discret, dans l'univers coussin."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Le plat de cantine qui t'a traumatisé ? En commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui commande toujours le plat le plus neutre."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 77,
- "claims": [],
+ "word_count": 80,
+ "claims": [
+  {
+   "text": "« il me rappelle Macron »",
+   "claim_type": "citation_exacte",
+   "source": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
+   "note": "« Il est cool ce Glucksmann, il me rappelle Macron »."
+  },
+  {
+   "text": "La carte promet du social-démocrate. Le goût : macronisme réchauffé.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate. Détourné dans la ville fictive."
+  },
+  {
+   "text": "Macron, lui, l'invite à sa table : coalition de Lisnard à Glucksmann.",
+   "claim_type": "fait_public",
+   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
+  }
+ ],
  "sources": [
   {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "published": "2026-06-25",
-   "consulted": "2026-11-21",
-   "status": "fait (analyse lexicale) + opinion",
-   "used_for": "Vision plutôt que programme ; critique « centre gauche, voire centre ». Inspiration de décor, aucune citation."
+   "url": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
+   "date": "2024-04-03",
+   "consulted": "2026-11-22",
+   "statut": "opinion (titre de chronique cité à l'identique)",
+   "note": "« Il est cool ce Glucksmann, il me rappelle Macron »."
   },
   {
-   "url": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
-   "published": "2025-03-14",
-   "consulted": "2026-11-21",
-   "status": "opinion",
-   "used_for": "Question journalistique sur la clarté du cap et un projet « à travailler » ; « il faut un cap clair » reste une formule générique fictive, jamais attribuée."
+   "url": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "date": "2026-10",
+   "consulted": "2026-11-22",
+   "statut": "opinion (éditorial, titre cité)",
+   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
   },
   {
-   "url": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/",
-   "published": "2026-06-11",
-   "consulted": "2026-11-21",
-   "status": "blague (vérifié (opinion))",
-   "used_for": "Idée/thème seulement, transformé en gag visuel original : Critique de la « timidité sociale » du programme. Thème : le petit mégaphone, la table en mousse, zéro décibel de fermeté."
+   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait public (AFP)",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Moyenne de tout = rien : un plat neutre jusqu'à défier la gravité. Risques vérifiés : aucune citation réelle, personne n'est nommé dans la narration ; ville inventée et absurde visible (fiction évidente sans mention) ; pas de visage réaliste, ni vie privée, ni famille, ni nom ou origine, ni chiffre électoral, ni appel au vote ; la moquerie vise une posture publique perçue (flou, mollesse, image lisse), pas l'intelligence. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 77 mots ; mèmes vérifiés intégrés comme thèmes (G3, G10, voir content/veille/memes_glucksmannville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « il me rappelle Macron » (Atlantico 2024) et le macronisme sous bannière sociale-démocrate, servis au restaurant ; Macron qui l'invite à sa table. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }
