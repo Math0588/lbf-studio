@@ -36,3 +36,20 @@ Demande du propriétaire : « ultra provocateur, drôle, blagues sourcées de X 
   ridiculise]. Une seule phrase de situation absurde au maximum.
 - Contrôle : `python3 -m lbf.viral_lint --strict` (≥ 3 piques sur des faits/mèmes connus et sourcés, ≤ 1 gag de situation).
 - Toujours interdit : physique, vie privée, couple, famille, santé, traits protégés, affaires judiciaires, fait inventé.
+
+## Mise à jour 22/11/2026 (2) : UN thème par vidéo, qui monte en puissance
+Le propriétaire trouve que les piques sans lien « font le bordel, on comprend pas ». Désormais :
+1. « Dans cette ville, tout le monde vote X. » (+ 1 à 3 mots qui annoncent le thème)
+2. LE truc connu, posé clairement pour quelqu'un qui ne suit pas la politique (fait/citation sourcé).
+3. Escalade 1, 4. Escalade 2, 5. Escalade 3 : le MÊME thème appliqué à des choses de plus en plus énormes
+   (bilan, chiffres, autres gaffes connues qui vont dans le même sens). Chaque phrase découle de la précédente.
+6. Chute : on retourne le thème contre lui (rappel de la phrase 2, mot de la fin).
+7. « Envoie ça au pote qui… » (lié au thème).
+Exemple (thème « for sure ») :
+- Dans cette ville, tout le monde vote Macron. For sure.
+- Depuis Davos, le président répond « for sure » à tout.
+- La dette qui explose ? For sure.
+- Sept Premiers ministres en un mandat et demi ? For sure.
+- Le pays qui coule ? « For sure », en anglais, pour que personne ne comprenne.
+- Son bilan sur X : « parfois des erreurs ». Lesquelles ? For sure.
+- Envoie ça au pote qui dit « for sure » sans parler anglais.
