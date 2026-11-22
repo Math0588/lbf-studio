@@ -26,7 +26,8 @@ def prompt_for(segs: list) -> str:
     out = []
     for s in segs:
         t = s["text"].replace("«", "").replace("»", "")
-        out.append(re.sub(r"\s+", " ", t).strip())
+        t = re.sub(r"\s+", " ", t).strip()
+        out.append(re.sub(r"\s+([,.])", r"\1", t))
     return "\n\n".join(out)
 
 
