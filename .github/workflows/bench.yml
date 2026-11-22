@@ -3,13 +3,16 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [".github/workflows/bench.yml", "lbf/bench_cloud.py"]
+    paths: [".github/workflows/bench.yml", "lbf/bench_cloud.py", "blender/engine.py"]
+permissions:
+  contents: write
 jobs:
   bench:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 50
     env:
       BLENDER_PATH: /usr/local/bin/blender
+      GH_TOKEN: ${{ github.token }}
       MIN_FREE_DISK_GB: "3"
     steps:
       - uses: actions/checkout@v4
@@ -31,4 +34,4 @@ jobs:
       - run: |
           d=assets/voices/fr_FR-siwis-medium; mkdir -p $d; b=https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium
           for f in fr_FR-siwis-medium.onnx fr_FR-siwis-medium.onnx.json MODEL_CARD; do curl -fsSL "$b/$f" -o "$d/$f"; done
-      - run: timeout 1500 python -m lbf.bench_cloud fast
+      - run: timeout 2000 python -m lbf.bench_cloud fast

@@ -110,6 +110,15 @@ def _char(cid, at, rot, rnd, faces, **kw):
 
 TEE_LINES = ["LE PAYS BUGUE.", "MOI AUSSI."]
 
+# Actions jouées par les personnages (champ « actions » de chaque scène du script) : le personnage fait ce que dit
+# la narration. who : maire (le politicien caricaturé) | perso (habitant au premier plan) | foule.
+GESTES = {"point", "wave", "cheer", "facepalm", "shrug", "jump", "fall", "spin", "bow", "nod", "shake", "clap",
+          "arms_up", "cross_arms"}
+VISAGES = {"blase", "choque", "colere", "content", "dort", "fatigue", "fier", "neutre", "parle", "sourire_pro"}
+OBJETS = {"phone", "verre", "baguette", "micro", "pancarte", "ring_light"}
+SURNAMES = {"bardellaville": "Bardella", "melenchonville": "Mélenchon", "macronville": "Macron",
+            "zemmourville": "Zemmour", "marineville": "Marine|Le Pen", "glucksmannville": "Glucksmann"}
+
 
 def product_for(script: dict) -> str:
     """T-shirt de l'épisode : celui du script s'il fait partie de la série « cauchemar », sinon celui qui vise
@@ -195,20 +204,35 @@ def plan(script: dict) -> dict:
             if pn == "car":
                 d["rot"] = 90
             extra.append(d)
+        acts = [a for a in sc.get("actions", []) if isinstance(a, dict)]
+        # le politicien est à l'écran quand on parle de lui (moquerie de la personne) ou quand il doit agir
+        if any(a.get("who") == "maire" for a in acts) or (k > 0 and not is_cta and
+                                                         re.search(SURNAMES.get(city, "^$"), text_all)):
+            has_mayor = True
+        hold_of = {a.get("who"): a["objet"] for a in acts if a.get("objet") in OBJETS}
+        faces_of = {w: [a["visage"] for a in acts if a.get("who") == w and a.get("visage") in VISAGES]
+                    for w in ("maire", "perso", "foule")}
         hero = f"{sc['id']}_hero"
         mood = mood_of(text_all)
         if has_mayor:
             mayor_spot = spot
             extra.append({"type": "tribune", "id": f"{sc['id']}_pupitre", "at": [cx, cy + 0.9], "scale": 1.25,
                           "color": "#1649FF"})
-            extra.append({"type": "char", "id": f"{sc['id']}_maire", "at": [cx, cy + 2.0], **MAYORS[city]})
+            md = dict(MAYORS[city])
+            md["faces"] = list(dict.fromkeys(md["faces"] + faces_of["maire"]))
+            if hold_of.get("maire"):
+                md["hold"] = hold_of["maire"]
+            extra.append({"type": "char", "id": f"{sc['id']}_maire", "at": [cx, cy + 2.0], **md})
             extra.append({"type": "crowd", "id": f"{sc['id']}_foule", "at": [cx, cy - 9], "count": 8, "cols": 4,
-                          "dx": 1.9, "dy": 1.9, "rot": 180, "faces": [rnd.choice(["colere", "choque", "blase"])],
+                          "dx": 1.9, "dy": 1.9, "rot": 180,
+                          "faces": (faces_of["foule"][:1] or [rnd.choice(["colere", "choque", "blase"])]),
                           "hand_up_ratio": 0.5, "seed": k + 3})
-            extra.append(_char(hero, [cx - 1.6, cy - 4.0], 182, rnd, [mood, "choque"], hand_up=True))
+            extra.append(_char(hero, [cx - 1.6, cy - 4.0], 182, rnd, list(dict.fromkeys([mood, "choque"] + faces_of["perso"])),
+                               hand_up=not hold_of.get("perso"), **({"hold": hold_of["perso"]} if hold_of.get("perso") else {})))
         else:
-            extra.append(_char(hero, [cx, cy], 0, rnd, [mood, "choque" if mood != "choque" else "blase"],
-                               hold=rnd.choice([None, None, "phone", "verre", "baguette"])))
+            extra.append(_char(hero, [cx, cy], 0, rnd,
+                               list(dict.fromkeys([mood, "choque" if mood != "choque" else "blase"] + faces_of["perso"])),
+                               hold=hold_of.get("perso") or rnd.choice([None, None, "phone", "verre", "baguette"])))
             wear = {} if k % 2 else {"shirt": "#111827", "tee": {"lines": TEE_LINES, "ink": "#FFFDF7", "size": 0.13}}
             extra.append(_char(f"{sc['id']}_b", [cx - 2.4, cy + 1.6], 15, rnd, [rnd.choice(["blase", "content", "neutre"])],
                                **wear))
@@ -245,6 +269,20 @@ def plan(script: dict) -> dict:
             if j == len(sc["narration_ids"]) - 1 and not has_mayor:
                 events.append({"type": "face", "target": hero, "expr": "choque" if mood != "choque" else "blase",
                                "shot": sid, "at": 0.7})
+        scene_shots = [x["id"] for x in shots if x["id"].startswith(sc["id"]) and x["id"][len(sc["id"]):] in "abcdefgh"]
+        targets = {"maire": f"{sc['id']}_maire" if has_mayor else None, "perso": hero,
+                   "foule": f"{sc['id']}_foule" if has_mayor else None}
+        for i, a in enumerate(acts):
+            tgt = targets.get(a.get("who"))
+            if not tgt or not scene_shots:
+                continue
+            sid = scene_shots[min(int(a.get("plan", 0)), len(scene_shots) - 1)]
+            at = float(a.get("quand", 0.15))
+            if a.get("visage") in VISAGES and a.get("who") != "foule":
+                events.append({"type": "face", "target": tgt, "expr": a["visage"], "shot": sid, "at": at})
+            if a.get("geste") in GESTES:
+                events.append({"type": "gesture", "target": tgt, "kind": a["geste"], "shot": sid, "at": at,
+                               "until": float(a.get("jusqua", 0.95))})
         label = sticker_text(sc.get("onscreen_text", ""), [segs[n] for n in sc["narration_ids"] if n in segs])
         if label:
             stickers.append({"text": label[:28], "shot": shots[-1]["id"] if len(sc["narration_ids"]) == 1

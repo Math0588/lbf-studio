@@ -1157,6 +1157,83 @@ def apply_orbits(total_frames):
             o.keyframe_insert("rotation_euler", index=2, frame=total_frames)
 
 
+GESTURES = {"point", "wave", "cheer", "facepalm", "shrug", "jump", "fall", "spin", "bow", "nod", "shake", "clap",
+            "arms_up", "cross_arms"}
+
+
+def gesture(ev, f0, f1):
+    """Gestes des personnages pilotés par le script (le personnage fait ce que dit la narration)."""
+    import re as _re
+    tgt, kind = ev["target"], ev["kind"]
+    ids = [k for k in OBJ if k == tgt or _re.fullmatch(_re.escape(tgt) + r"_\d+", k)]
+    f1 = max(f1, f0 + 8)
+    R = math.radians
+    for oid in ids:
+        if f"{oid}.arms" not in SUB:
+            continue
+        o, (la, ra), head = OBJ[oid], SUB[f"{oid}.arms"], SUB[f"{oid}.head"]
+
+        def hold(obj, path, idx, val, a=f0, b=f1, ease=4):
+            v = getattr(obj, path)
+            rest = v[idx]
+            obj.keyframe_insert(path, index=idx, frame=max(1, a))
+            v[idx] = val
+            obj.keyframe_insert(path, index=idx, frame=a + ease)
+            obj.keyframe_insert(path, index=idx, frame=b - ease)
+            v[idx] = rest
+            obj.keyframe_insert(path, index=idx, frame=b)
+
+        if kind == "point":
+            hold(ra, "rotation_euler", 0, R(-92))
+        elif kind == "arms_up":
+            hold(ra, "rotation_euler", 0, R(165)); hold(la, "rotation_euler", 0, R(165))
+        elif kind == "cross_arms":
+            hold(ra, "rotation_euler", 0, R(-70)); hold(la, "rotation_euler", 0, R(-70))
+        elif kind == "facepalm":
+            hold(ra, "rotation_euler", 0, R(-150)); hold(head, "rotation_euler", 0, R(12))
+        elif kind == "shrug":
+            hold(ra, "rotation_euler", 1, R(-45)); hold(la, "rotation_euler", 1, R(45))
+            hold(ra, "rotation_euler", 0, R(-35)); hold(la, "rotation_euler", 0, R(-35)); hold(head, "rotation_euler", 1, R(12))
+        elif kind in ("wave", "clap", "nod", "shake", "jump", "cheer"):
+            if kind == "wave":
+                hold(ra, "rotation_euler", 0, R(150))
+            if kind in ("clap",):
+                hold(ra, "rotation_euler", 0, R(-80)); hold(la, "rotation_euler", 0, R(-80))
+            if kind == "cheer":
+                hold(ra, "rotation_euler", 0, R(160)); hold(la, "rotation_euler", 0, R(160))
+            z0, x0 = o.location.z, o.location.x
+            for i, fr in enumerate(range(f0 + 4, f1 - 3, 5)):
+                up = i % 2 == 0
+                if kind == "wave":
+                    ra.rotation_euler.y = R(-25 if up else 25); ra.keyframe_insert("rotation_euler", index=1, frame=fr)
+                elif kind == "clap":
+                    ra.rotation_euler.y = R(-22 if up else 0); la.rotation_euler.y = R(22 if up else 0)
+                    ra.keyframe_insert("rotation_euler", index=1, frame=fr); la.keyframe_insert("rotation_euler", index=1, frame=fr)
+                elif kind == "nod":
+                    head.rotation_euler.x = R(-14 if up else 6); head.keyframe_insert("rotation_euler", index=0, frame=fr)
+                elif kind == "shake":
+                    o.location.x = x0 + (0.07 if up else -0.07); o.keyframe_insert("location", index=0, frame=fr)
+                elif kind in ("jump", "cheer"):
+                    o.location.z = z0 + (0.7 if up else 0.0); o.keyframe_insert("location", index=2, frame=fr)
+            ra.rotation_euler.y = 0; la.rotation_euler.y = 0; head.rotation_euler.x = 0
+            o.location.z, o.location.x = z0, x0
+            for obj, path, idx in ((ra, "rotation_euler", 1), (la, "rotation_euler", 1), (head, "rotation_euler", 0),
+                                   (o, "location", 2), (o, "location", 0)):
+                obj.keyframe_insert(path, index=idx, frame=f1)
+        elif kind == "fall":
+            o.keyframe_insert("rotation_euler", index=0, frame=f0)
+            o.rotation_euler.x = R(82)
+            o.keyframe_insert("rotation_euler", index=0, frame=f0 + 8)
+        elif kind == "spin":
+            z = o.rotation_euler.z
+            o.keyframe_insert("rotation_euler", index=2, frame=f0)
+            o.rotation_euler.z = z + R(360)
+            o.keyframe_insert("rotation_euler", index=2, frame=f1)
+            o.rotation_euler.z = z
+        elif kind == "bow":
+            hold(o, "rotation_euler", 0, R(-28), ease=6)
+
+
 def apply_events(events, starts):
     shown = {}
     for ev in sorted(events, key=lambda e: shot_frame(starts, e)):
@@ -1210,6 +1287,8 @@ def apply_events(events, starts):
                 o.hide_render = j != a
                 o.keyframe_insert("hide_render", frame=fr)
             shown[base] = a
+        elif t == "gesture":
+            gesture(ev, f, shot_frame(starts, {"shot": ev["shot"], "at": ev.get("until", 0.95)}))
         elif t == "walk":
             import re as _re
             tgt = ev["target"]
