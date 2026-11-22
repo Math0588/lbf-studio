@@ -55,9 +55,13 @@ def next_script(st: dict, offset: int = 0) -> Path | None:
     skip = offset
     from . import viral_lint
     cands = candidates()
-    # scripts « moquerie de la personne » (mode strict) d'abord, puis le reste de la banque validée
-    strict_ok = [p for p in cands if viral_lint.check(json.loads(p.read_text(encoding="utf-8")), strict=True)["ok"]]
-    cands = strict_ok + [p for p in cands if p not in strict_ok]
+
+    def rank(p):
+        sc = json.loads(p.read_text(encoding="utf-8"))
+        histoire = any(x.get("gags") or x.get("actions") for x in sc.get("scenes", []))
+        return 0 if histoire else (1 if viral_lint.check(sc, strict=True)["ok"] else 2)
+    # histoires absurdes avec gags et gestes d'abord, puis « moquerie de la personne », puis le reste validé
+    cands = sorted(cands, key=rank)
     for p in cands:
         sc = json.loads(p.read_text(encoding="utf-8"))
         sid = sc["id"]
