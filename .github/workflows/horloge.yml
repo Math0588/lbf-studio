@@ -13,7 +13,9 @@ permissions:
   contents: read
 concurrency:
   group: horloge
-  cancel-in-progress: false
+  # lancement à la main ou mise à jour : remplace tout de suite l'horloge en cours (nouveau secret pris en compte) ;
+  # relève automatique et cron : attendent leur tour
+  cancel-in-progress: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.actor != 'github-actions[bot]') }}
 jobs:
   horloge:
     runs-on: ubuntu-latest

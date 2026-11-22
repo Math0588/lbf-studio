@@ -12,7 +12,7 @@ Créneaux : `state/control.json` du diffuseur (aujourd'hui 8h, 12h, 17h, 20h, 22
 toutes les heures : il suffit de le modifier sur GitHub pour changer le rythme. `"paused": true` arrête tout.
 
 Si l'horloge s'arrête : chaque fabrication la relance, et le cron GitHub aussi (quand il veut bien partir).
-À la main : onglet **Actions** de lbf-studio → **Horloge** → **Run workflow**.
+À la main (et après avoir ajouté un secret) : onglet **Actions** de lbf-studio → **Horloge** → **Run workflow** : la nouvelle horloge remplace aussitôt l'ancienne.
 
 ## À faire une seule fois (5 minutes)
 
