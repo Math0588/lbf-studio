@@ -16,6 +16,13 @@ NAMES = {"bardellaville": "Bardella", "melenchonville": "Mélenchon", "macronvil
 CITIES = {"bardellaville": "Bardellaville", "melenchonville": "Mélenchonville", "macronville": "Macronville",
           "zemmourville": "Zemmourville", "marineville": "Marineville", "glucksmannville": "Glucksmannville"}
 
+# Rivalités : chaque vidéo provoque le camp d'en face (débat en commentaires), jamais d'insulte envers des électeurs.
+RIVAL = {"melenchonville": "bardellaville", "bardellaville": "melenchonville", "glucksmannville": "melenchonville",
+         "zemmourville": "marineville", "marineville": "zemmourville", "macronville": "bardellaville"}
+FANS = {"melenchonville": "insoumis", "bardellaville": "pro-Bardella", "macronville": "macronistes",
+        "glucksmannville": "fans de Glucksmann", "zemmourville": "zemmouriens", "marineville": "pro-Marine"}
+HOOKS_CAMP = ["LES {fans} VONT HURLER", "LES {fans} VONT PLEURER", "LES {fans} : RESPIREZ",
+              "{fans}, NE REGARDEZ PAS", "LES {rivaux} VONT ADORER"]
 HOOKS_SHORT = [
     "SI TU VOTES {nom}, NE REGARDE PAS",
     "INTERDIT AUX FANS DE {nom}",
@@ -61,10 +68,14 @@ def apply(ep: dict) -> dict:
     autre = CITIES[NEXT.get(city, city)]
     # 1re image = sujet de la vidéo (titre + ville), lisible son coupé et dans l'aperçu du profil
     title = ep.get("title_cover") or _pick(HOOKS, key, "h").format(nom=nom)
-    ep["hook_overlay"] = {"text": title, "tag": _pick(HOOKS_SHORT, key, "t").format(nom=nom.upper()),
-                          "sub": ville.upper(), "until": 2.8}
+    rival = RIVAL.get(city, NEXT.get(city, city))
+    tag = _pick(HOOKS_CAMP, key, "t").format(fans=FANS.get(city, nom).upper(), rivaux=FANS.get(rival, "").upper())
+    ep["hook_overlay"] = {"text": title, "tag": tag, "sub": ville.upper(), "until": 2.8}
     ep["endcard"] = {"title": f"Envoie ça à ton pote qui vote {nom}",
-                     "sub": "LE T-SHIRT : LIEN EN BIO", "at": 0.3}
+                     "sub": f"PROCHAINE VILLE : {CITIES.get(rival, rival).upper()}\\NLES {FANS.get(rival, '').upper()}, PRÉPAREZ-VOUS",
+                     "at": 0.3}
+    ep["premier_commentaire"] = (f"Bataille de commentaires 👇 Les {FANS.get(city, nom)} défendent {ville}, "
+                                 f"les {FANS.get(rival, '')} préparent {CITIES.get(rival, rival)}. Qui a la ville la plus absurde ?")
     from . import seo                     # légende, hashtags et métadonnées YouTube optimisés pour la recherche
     meta = seo.build(ep)
     ep["caption"] = meta["caption"]

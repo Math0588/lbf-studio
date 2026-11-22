@@ -121,6 +121,7 @@ def produce_one(st: dict, script: Path) -> dict:
             "credits": (pub / "CREDITS.txt").read_text(encoding="utf-8"),
             "manifest": manifest, "seo": ep.get("seo", {}),
             "narration": [x["text"] for x in ep["narration_segments"]],
+            "premier_commentaire": ep.get("premier_commentaire"),
             "produced_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
             "render": {k: rep.get("render", {}).get(k) for k in ("engine", "res", "samples", "frames", "wall_s")},
             "steps": rep.get("steps")}

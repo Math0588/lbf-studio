@@ -95,7 +95,8 @@ def build(ep: dict) -> dict:
     city, key = ep["city_id"], ep["id"]
     who = PEOPLE.get(city, {"nom": city, "full": city, "parti": "", "parti_long": "", "avec": "son équipe", "tags": [_tag(city)]})
     ville = CITY.get(city, city)
-    autre_id = NEXT.get(city, city)
+    from .provocation import RIVAL as _RIVAL
+    autre_id = _RIVAL.get(city, NEXT.get(city, city))   # la question met face à face le camp rival
     topic = _topic(ep)
     f = dict(who, ville=ville, autre=CITY.get(autre_id, autre_id), nom_autre=PEOPLE.get(autre_id, who)["nom"],
              num=ep.get("episode_number") or "", topic=f", et cette fois : {topic}" if topic else "")
@@ -103,7 +104,11 @@ def build(ep: dict) -> dict:
     if topic:
         first = f"{who['full']} face à « {topic} » : on a fait la ville 😭"
     first = first[:125]
-    lines = [first, "", _pick(DESCRIPTIONS, key, "d").format(**f), "",
+    from .provocation import RIVAL, FANS
+    rival = RIVAL.get(city, autre_id)
+    duel = (f"Les {FANS.get(city, who['nom'])}, défendez votre ville. Les {FANS.get(rival, '')}, rigolez pas trop : "
+            f"{CITY.get(rival, rival)}, c'est la prochaine 👀")
+    lines = [first, "", _pick(DESCRIPTIONS, key, "d").format(**f), "", duel,
              _pick(QUESTIONS, key, "q").format(**f), _pick(SHARES, key, "s").format(**f)]
     shop = shop_line(city)
     if shop:
