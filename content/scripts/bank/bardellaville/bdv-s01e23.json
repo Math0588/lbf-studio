@@ -3,91 +3,75 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-23",
  "format": "A",
- "title_cover": "Le souvenir authentique",
+ "title_cover": "Une heure et demie",
  "hook_variants": [
-  "Ici, les monuments n'ont qu'une face.",
-  "Ici, les monuments n'ont qu'une face. L'office de tourisme ne vend pas des visites : il vend des angles.",
-  "À Bardellaville, faire le tour d'un monument est interdit.",
-  "L'arc de triomphe de cette ville fait cinq centimètres d'épaisseur.",
-  "Une heure et demie de queue pour la même photo que les autres."
+  "Dans cette ville, tout le monde vote Bardella.",
+  "Ici, la file d'attente est classée monument historique.",
+  "Bardellaville : une heure et demie pour une signature, zéro minute pour une question.",
+  "Les électeurs de Bardella vont me détester.",
+  "Bienvenue à Bardellaville : une heure et demie."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Seule chose qui tienne debout.",
-  "Souvenir le plus vendu : un étai. Seule chose qui tient vraiment, ici.",
-  "Un touriste rapporte l'étai chez lui. Une heure après, la façade de la mairie penche."
+  "Une heure et demie pour une signature. Un débat, lui, il l'esquive.",
+  "Le selfie dure trois secondes. Le programme, un peu moins.",
+  "Une nuée de téléphones levés. Pas un pour poser une question."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, les monuments n'ont qu'une face.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Et fait la queue.",
    "accent_words": [
-    "face"
+    "fait la queue"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "L'office de tourisme ne vend pas de visites, mais des angles.",
+   "text": "À la foire de Châlons : une heure et demie d'attente pour une dédicace.",
    "accent_words": [
-    "angles"
+    "heure et demie"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "L'arc de triomphe fait cinq centimètres d'épaisseur.",
+   "text": "Une nuée de téléphones levés. Pas un pour poser une question.",
    "accent_words": [
-    "épaisseur"
+    "question"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Faire le tour est interdit : derrière, il y a les étais.",
+   "text": "Ici, l'office de tourisme vend la file comme monument historique.",
    "accent_words": [
-    "étais"
+    "monument historique"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Une heure et demie de queue pour la même photo, à la même seconde.",
+   "text": "Le selfie dure trois secondes. Le programme, un peu moins.",
    "accent_words": [
-    "seconde"
+    "un peu moins"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Même bras tendu, même perche, même sourire de dédicace.",
+   "text": "Une heure et demie pour une signature. Un débat, lui, il l'esquive.",
    "accent_words": [
-    "dédicace"
+    "esquive"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Souvenir le plus vendu : un étai, à douze euros.",
+   "text": "Envoie ça au pote qui a attendu une heure et demie pour un autographe.",
    "accent_words": [
-    "euros"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Seule chose qui tienne debout.",
-   "accent_words": [
-    "debout"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n9",
-   "text": "Envoie ça à ton pote qui visite pour la photo.",
-   "accent_words": [
-    "photo"
+    "autographe"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -96,109 +80,165 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "arch",
-    "sign",
-    "tripod_camera",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "ICI : BON ANGLE",
-   "comic_action": "Gros plan sur une carte touristique (sign) : pas de rues, seulement des croix « ICI, BON ANGLE ». Derrière, un arc de triomphe majestueux, de face, sous lumière dorée.",
-   "expected_result": "Image surprenante : la ville se visite comme un catalogue d'angles."
+   "onscreen_text": "BARDELLAVILLE",
+   "comic_action": "Descente sur la mairie ; une file qui en fait trois fois le tour.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
-   ],
-   "camera": "orbit",
-   "set": [
-    "arch",
-    "column",
-    "facade_set",
-    "sign",
-    "person"
-   ],
-   "onscreen_text": "INTERDIT : DERRIÈRE",
-   "comic_action": "Orbite autour de l'arc : de profil, il devient une feuille de cinq centimètres, tenue par deux étais. Un touriste essaie de contourner ; un panneau surgit : « DERRIÈRE, C'EST L'USAGE. ACCÈS INTERDIT. »",
-   "expected_result": "Le monument est aussi creux que la mairie ; l'usage est caché."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n5",
-    "n6"
+    "n2"
    ],
    "camera": "street_dolly",
    "set": [
     "person",
-    "arch",
-    "text3d",
-    "tripod_camera"
+    "road",
+    "building",
+    "sign"
    ],
    "onscreen_text": "ATTENTE : 1 H 30",
-   "comic_action": "Travelling le long d'une file immense de touristes, bras levés, téléphones en l'air, qui jouent des coudes. Au bout, une croix au sol ; chacun y prend exactement la même photo, à la même seconde, clic synchronisé.",
-   "expected_result": "Escalade : la foule entière produit une seule image identique."
+   "comic_action": "Travelling le long d'une file de cylindres colorés, chrono qui défile.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "person",
+    "ring_light",
+    "road",
+    "lamp"
+   ],
+   "onscreen_text": "TÉLÉPHONES : 400 · QUESTIONS : 0",
+   "comic_action": "Sous un lampadaire, une forêt de bras tendus ; un seul micro, posé par terre.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "orbit",
    "set": [
-    "shop",
+    "column",
+    "mairie",
     "text3d",
-    "studio_light",
-    "sign"
+    "person"
    ],
-   "onscreen_text": "N°1 DES VENTES : L'ÉTAI",
-   "comic_action": "Boutique de souvenirs : travelling arrière depuis une vitrine éclairée comme un bijou, où trône… un étai en bois brut, étiquette « N°1 DES VENTES ». Laisser respirer.",
-   "expected_result": "Chute : l'objet qui révèle le trucage est le seul souvenir authentique."
+   "onscreen_text": "MONUMENT : LA FILE",
+   "comic_action": "Une plaque dorée « FILE D'ATTENTE — CLASSÉE » vissée sur une colonne.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n9"
+    "n5"
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "mascot",
-    "tshirt",
-    "arch"
+    "ring_light",
+    "tripod_camera",
+    "person",
+    "screen"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le Coq de vitrine, t-shirt sur le dos, tient un mini-étai souvenir sous l'aile.",
-   "expected_result": "Partage ciblé, produit réel visible."
+   "onscreen_text": "SELFIE 3 S · PROGRAMME 2 S",
+   "comic_action": "Ring light : flash, sourire, suivant ; un papier « PROGRAMME » s'envole.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "form_stack",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "1 H 30 > 1 DÉBAT",
+   "comic_action": "Table de dédicace ; derrière, un plateau de débat vide prend la poussière. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt brandit un livre signé, épuisé.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça à ton pote qui visite pour la photo."
+  "text": "Envoie ça au pote qui a attendu une heure et demie pour un autographe."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 84,
- "claims": [],
+ "word_count": 83,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "À la foire de Châlons : une heure et demie d'attente pour une dédicace.",
+   "claim_type": "fait_public",
+   "source": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
+   "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
+  },
+  {
+   "segment": "n3",
+   "text": "Une nuée de téléphones levés. Pas un pour poser une question.",
+   "claim_type": "fait_public",
+   "source": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
+   "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
+  },
+  {
+   "segment": "n6",
+   "text": "Une heure et demie pour une signature. Un débat, lui, il l'esquive.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
+   "note": "Mème / fait servant de base à une exagération de la ville (segment typé fiction_satirique). Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
+  }
+ ],
  "sources": [
   {
    "url": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
-   "published": "2026-08-29",
-   "consulted": "2026-11-21",
-   "status": "fait public (reportage AFP : « Bardellamania », selfies arrachés, nuée de téléphones, près d'une heure et demie d'attente pour une dédicace)",
-   "used_for": "Inspiration seulement : les foules qui jouent des coudes pour un selfie et l'attente d'environ une heure et demie pour une dédicace, rapportées par l'AFP. Traduites par une file de touristes d'une heure et demie pour une photo identique. Aucun fait réel n'est présenté comme se déroulant à Bardellaville."
+   "date": "2026-08-29",
+   "consulted": "2026-11-22",
+   "statut": "fait (reportage AFP)",
+   "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
+  },
+  {
+   "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
+   "date": "2024-03-04",
+   "consulted": "2026-11-22",
+   "statut": "fait (refus) + mème (réactions)",
+   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mécanisme : objet révélateur (l'accessoire est le seul vrai). Continuité : étais de la mairie ; ajoute bdv-evt-019. « Une heure et demie » est une durée fictive d'univers, clin d'œil à la veille, pas une statistique. Risques vérifiés : ne vise pas les touristes, aucune citation. | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_bardellaville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = Bardellamania à la foire de Châlons : nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace (AFP). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

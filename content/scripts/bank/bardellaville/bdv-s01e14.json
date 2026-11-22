@@ -3,83 +3,75 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-14",
  "format": "A",
- "title_cover": "Livré en story",
+ "title_cover": "Le livre des Français",
  "hook_variants": [
-  "Ici, ton colis est livré en photo, puis il repart.",
-  "À Bardellaville, ton colis est livré en photo. Le colis, lui, repart avec le livreur.",
-  "Votre colis a été livré. En story.",
-  "Ici, le livreur ne sonne pas. Il cadre.",
-  "Lambert a suivi le camion de livraison. Il a trouvé où dorment tous les colis de la ville."
+  "Dans cette ville, tout le monde vote Bardella.",
+  "Ici, tout appartient aux Français. Sauf l'argent.",
+  "Bardellaville : le facteur te livre le carton, garde le contenu.",
+  "Les électeurs de Bardella vont me détester.",
+  "Bienvenue à Bardellaville : le livre des français."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Date d'expédition : la dernière campagne.",
-  "Tout en haut, un carton poussiéreux : « Réponses concrètes. Ne pas ouvrir avant la photo. »",
-  "Lambert ouvre enfin un colis. Dedans : la photo du colis."
+  "Le peuple écrit, lui encaisse : voilà son pouvoir d'achat.",
+  "Le peuple écrit, lui encaisse : voilà son pouvoir d'achat.",
+  "Le livre des Français est vendu aux Français, prix fort."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, ton colis est livré en photo, puis il repart.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Et tout le monde paie.",
    "accent_words": [
-    "repart"
+    "paie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Comme les programmes : montré, jamais livré.",
+   "text": "Sur son livre : « Ce livre n'est pas le mien, c'est celui des Français ».",
    "accent_words": [
-    "livré"
+    "celui des Français"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Le livreur pose le carton, le shoote sous ring light, le remballe.",
+   "text": "Les droits d'auteur, eux, sont bien les siens : plus d'un million d'euros.",
    "accent_words": [
-    "remballe"
+    "plus d'un million"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Notification : livré, en story, avec cœurs et étoiles.",
+   "text": "Ici, le facteur garde ton colis et te laisse le carton.",
    "accent_words": [
-    "étoiles"
+    "le carton"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Lambert suit la camionnette jusqu'à un hangar de colis jamais remis.",
+   "text": "Le livre des Français est vendu aux Français, prix fort.",
    "accent_words": [
-    "remis"
+    "prix fort"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Tout en haut, un carton : « Réponses concrètes, périmées ».",
+   "text": "Le peuple écrit, lui encaisse : voilà son pouvoir d'achat.",
    "accent_words": [
-    "périmées"
+    "son pouvoir d'achat"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Date d'expédition : la dernière campagne.",
+   "text": "Envoie ça au pote qui a payé le livre écrit pour lui.",
    "accent_words": [
-    "campagne"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton colis le plus en retard, c'était combien de jours ?",
-   "accent_words": [
-    "jours"
+    "pour lui"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,114 +80,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "person",
-    "ring_light",
-    "text3d",
-    "building"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "LIVRÉ (PRESQUE)",
-   "comic_action": "Gros plan sur un paillasson : le livreur pose un carton, l'éclaire d'un ring light portatif, clic d'obturateur, le reprend sous le bras. La porte s'ouvre une seconde trop tard.",
-   "expected_result": "Image surprenante : une livraison qui n'en est pas une."
+   "onscreen_text": "BARDELLAVILLE",
+   "comic_action": "Descente sur la mairie ; une caisse enregistreuse géante sur le perron.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "car",
-    "road",
-    "screen",
+    "table",
+    "form_stack",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "LIVRÉ (EN STORY)",
-   "comic_action": "Travelling suivant la camionnette (car) qui s'éloigne ; en incrustation, l'écran du téléphone de Lambert : « Votre colis a été livré (en story) » avec cœurs et étoiles animés.",
-   "expected_result": "La preuve de livraison a remplacé la livraison."
+   "onscreen_text": "LE LIVRE DES FRANÇAIS",
+   "comic_action": "Gros plan sur une couverture ; un tampon « À VOUS » s'abat dessus.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5"
+    "n3"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "facade_set",
-    "form_stack",
-    "person",
-    "lamp"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "HANGAR · COULISSES",
-   "comic_action": "Orbite dans un hangar des coulisses, à la lampe de poche : des montagnes de cartons (form_stack) étiquetés « LIVRÉ », certains couverts de poussière, avec la date « avant le ring light ». Lambert, flou, minuscule au pied des piles.",
-   "expected_result": "Envers du décor : tout ce qui a été « livré » est stocké derrière la façade."
+   "onscreen_text": "DROITS : +1 M€",
+   "comic_action": "Écran : compteur qui grimpe en euros, sous la mention « À VOUS ».",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "street_dolly",
    "set": [
-    "form_stack",
-    "text3d",
-    "mairie",
-    "sign"
+    "road",
+    "building",
+    "person",
+    "bin"
    ],
-   "onscreen_text": "NE PAS OUVRIR AVANT LA PHOTO",
-   "comic_action": "Lent travelling vertical vers le sommet de la pile : un carton poussiéreux, « RÉPONSES CONCRÈTES — FRAGILE — NE PAS OUVRIR AVANT LA PHOTO ». Raccord sur la place : le panneau de la mairie affiche toujours « Chargement… ». Laisser respirer.",
-   "expected_result": "Chute : le running gag se matérialise ; les réponses existent, elles attendent leur photo."
+   "onscreen_text": "LIVRÉ : LE CARTON",
+   "comic_action": "Un livreur tend un carton vide à un habitant et repart avec l'objet sous le bras.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "shop",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "À VOUS : 22 €",
+   "comic_action": "Vitrine de librairie : étiquette « LE VÔTRE » sur un prix bien visible.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "mascot",
-    "tshirt",
-    "text3d"
+    "table",
+    "form_stack",
+    "text3d",
+    "mairie"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le Coq de vitrine porte le t-shirt ; devant la vitrine, un carton vide est photographié par un livreur qui repart avec.",
-   "expected_result": "Question à commenter, produit réel visible."
+   "onscreen_text": "POUVOIR D'ACHAT : LE SIEN",
+   "comic_action": "Le maire cubique tamponne « ENCAISSÉ » sur une pile de lettres de Français. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt serre son livre et son ticket de caisse.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton colis le plus en retard, c'était combien de jours ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui a payé le livre écrit pour lui."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 77,
- "claims": [],
- "sources": [
+ "word_count": 85,
+ "claims": [
   {
-   "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
-   "published": "2026-11-04",
-   "consulted": "2026-11-21",
-   "status": "fait public + opinion (AFP : cent jours sans priorités ni méthode détaillées)",
-   "used_for": "Thème du programme montré mais jamais livré, dit par le narrateur sur la ville fictive."
+   "segment": "n2",
+   "text": "« Ce livre n'est pas le mien, c'est celui des Français »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.europe1.fr/politique/ce-livre-nest-pas-le-mien-cest-celui-des-francais-en-sondant-le-pays-jordan-bardella-se-prepare-a-lexercice-du-pouvoir-869191",
+   "note": "Livre « Ce que veulent les Français » : « Ce livre n'est pas le mien, c'est celui des Français »."
   },
   {
-   "url": "https://www.ladn.eu/?p=696069",
-   "published": "2024-06-11",
-   "consulted": "2026-11-21",
-   "status": "mème (fan edits façon K-pop, cœurs, étoiles)",
-   "used_for": "Cœurs et étoiles d'edit plaqués sur des objets de la ville ; aucun montage repris."
+   "segment": "n3",
+   "text": "Les droits d'auteur, eux, sont bien les siens : plus d'un million d'euros.",
+   "claim_type": "fait_public",
+   "source": "https://www.24matins.fr/jordan-bardella-a-deja-gagne-plus-dun-million-deuros-avec-ses-livres-1419059",
+   "note": "Plus d'un million d'euros de droits d'auteur (environ 1,03 M€ entre 2024 et 2026, déclaration HATVP)."
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://www.europe1.fr/politique/ce-livre-nest-pas-le-mien-cest-celui-des-francais-en-sondant-le-pays-jordan-bardella-se-prepare-a-lexercice-du-pouvoir-869191",
+   "date": "2025-10-29",
+   "consulted": "2026-11-22",
+   "statut": "citation (titre Europe 1) + fait",
+   "note": "Livre « Ce que veulent les Français » : « Ce livre n'est pas le mien, c'est celui des Français »."
+  },
+  {
+   "url": "https://www.24matins.fr/jordan-bardella-a-deja-gagne-plus-dun-million-deuros-avec-ses-livres-1419059",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "fait (déclaration HATVP rapportée) ; page non ouvrable depuis l'outil, titre + résumé du moteur de recherche",
+   "note": "Plus d'un million d'euros de droits d'auteur (environ 1,03 M€ entre 2024 et 2026, déclaration HATVP)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mécanisme : matérialisation du running gag (la réponse est un colis). Continuité : « Chargement… » (bdv-gag-01 étape 3), ring light du rond-point ; ajoute bdv-evt-016. Ne vise pas les livreurs. Pas de source de veille. Risques vérifiés : aucune citation. | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_bardellaville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « Ce livre n'est pas le mien, c'est celui des Français » contre plus d'un million d'euros de droits d'auteur (déclaration HATVP rapportée). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

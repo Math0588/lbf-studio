@@ -3,83 +3,75 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-19",
  "format": "A",
- "title_cover": "Les abdos d'éclairage",
+ "title_cover": "Interview en douceur",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella… et personne ne transpire.",
-  "La salle de sport n'a pas de machines. Elle a des miroirs et des ring lights.",
-  "Ici, la seule chose qu'on soulève, c'est le téléphone.",
-  "Une heure de sport : une minute d'effort, cinquante-neuf minutes d'angle.",
-  "Le coach a des abdos spectaculaires. Tant qu'il y a du courant."
+  "Dans cette ville, tout le monde vote Bardella.",
+  "Ici, les interviews se font en tenue de sport.",
+  "Bardellaville : beaucoup de répétitions, aucune question.",
+  "Les électeurs de Bardella vont me détester.",
+  "Bienvenue à Bardellaville : interview en douceur."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le coach redevient ce qu'il a toujours été : un cylindre.",
-  "Coupure de courant : les abdos disparaissent. C'était l'éclairage. Le coach redevient ce qu'il a toujours été : un cylindre.",
-  "Le courant revient. Le coach rallume son éclairage d'abord, ses abdos ensuite, son coaching jamais."
+  "Le cardio est au top. Le fond, toujours à l'échauffement.",
+  "Reuters décrit un portrait tout en douceur. Ici, on dit publireportage.",
+  "À la salle municipale, les haltères sont en mousse : rien ne pèse."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella… et personne ne transpire.",
+   "text": "Dans cette ville, tout le monde vote Bardella. En tenue de sport.",
    "accent_words": [
-    "transpire"
+    "tenue de sport"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La salle n'a que des miroirs et des ring lights.",
+   "text": "Interview télé entre deux séances de sport : beaucoup de pompes, peu de questions.",
    "accent_words": [
-    "lights"
+    "peu de questions"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Haltères en carton : on ne soulève que le téléphone, pour l'angle.",
+   "text": "Reuters décrit un portrait tout en douceur. Ici, on dit publireportage.",
    "accent_words": [
-    "téléphone"
+    "publireportage"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Une minute d'effort, cinquante-neuf de recherche d'angle.",
+   "text": "À la salle municipale, les haltères sont en mousse : rien ne pèse.",
    "accent_words": [
-    "angle"
+    "rien ne pèse"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le coach, gendre idéal en quatre par trois, a des abdos.",
+   "text": "Le coach ne compte pas les répétitions. Il compte les plans.",
    "accent_words": [
-    "abdos"
+    "les plans"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Coupure de courant : les abdos disparaissent, c'était l'éclairage.",
+   "text": "Le cardio est au top. Le fond, toujours à l'échauffement.",
    "accent_words": [
-    "éclairage"
+    "échauffement"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le coach redevient ce qu'il a toujours été : un cylindre.",
+   "text": "Envoie ça au pote qui adore les interviews sans questions.",
    "accent_words": [
-    "cylindre"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Tague ton pote qui fait plus de photos que de séries.",
-   "accent_words": [
-    "séries"
+    "sans questions"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,128 +80,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "ring_light",
-    "studio_light",
-    "person",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "SALLE « BON ANGLE »",
-   "comic_action": "Descente dans la salle de sport : murs couverts de miroirs, une forêt de ring lights à la place des machines. Les adhérents prennent la pose, aucun ne bouge.",
-   "expected_result": "Image surprenante : une salle de sport sans sport."
+   "onscreen_text": "BARDELLAVILLE",
+   "comic_action": "Descente sur la mairie ; un tapis de course sur le perron.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "studio_light",
+    "tripod_camera",
+    "table",
+    "person"
+   ],
+   "onscreen_text": "POMPES : 50 · QUESTIONS : 2",
+   "comic_action": "Caméra qui suit un personnage à l'effort ; le micro du journaliste reste baissé.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
-    "person",
+    "screen",
     "text3d",
-    "ring_light"
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "SÉRIE : 10 SELFIES",
-   "comic_action": "Gros plan : un adhérent soulève un haltère, qui se plie (carton). Il le lâche et lève à la place son téléphone à bout de bras, en plongée. Compteur text3d : « SÉRIE 1/3 : 10 SELFIES ». Cœurs et étoiles façon fan edit autour de lui.",
-   "expected_result": "Le seul muscle travaillé est celui du cadrage."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4",
-    "n5"
-   ],
-   "camera": "orbit",
-   "set": [
-    "person",
-    "ring_light",
-    "studio_light",
-    "screen"
-   ],
-   "onscreen_text": "EFFORT 1 MIN · ANGLE 59 MIN",
-   "comic_action": "Orbite autour du coach, éclairé par trois projecteurs rasants : des abdos sculptés par l'ombre. L'écran affiche le planning : « Effort : 1 min. Angle : 59 min. » Le coach ajuste un projecteur de deux millimètres. Les abdos se creusent davantage.",
-   "expected_result": "Le corps parfait est un réglage de lumière ; on comprend avant la chute."
+   "onscreen_text": "DOUCEUR GARANTIE",
+   "comic_action": "L'écran de la mairie diffuse le portrait avec un flou artistique et des violons.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "window_pass",
    "set": [
+    "table",
     "person",
-    "ring_light",
-    "lamp",
+    "screen",
     "text3d"
    ],
-   "onscreen_text": "",
-   "comic_action": "Clac : coupure de courant. Noir, puis une lampe de poche. Les abdos ont disparu : le coach est un simple cylindre lisse, et il le sait. Travelling arrière : tous les adhérents sont aussi des cylindres. Silence, puis un clic d'obturateur. Laisser respirer.",
-   "expected_result": "Chute méta 3D : sous la mise en lumière, il n'y a qu'une forme simple et creuse."
+   "onscreen_text": "HALTÈRES : 0 KG",
+   "comic_action": "Un habitant soulève un haltère géant d'une main ; il rebondit en tombant.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "mascot",
-    "tshirt",
-    "ring_light"
+    "ring_light",
+    "tripod_camera",
+    "person",
+    "screen"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le Coq de vitrine, t-shirt sur le dos, fait une pompe. Une seule. Puis il se rallonge.",
-   "expected_result": "Tag ciblé, produit réel visible."
+   "onscreen_text": "PLAN 1 · PLAN 2 · PLAN 3",
+   "comic_action": "Ring light et trépied : chaque mouvement est rejoué pour un nouvel angle.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "tree",
+    "bench",
+    "lamp",
+    "person"
+   ],
+   "onscreen_text": "FOND : ÉCHAUFFEMENT",
+   "comic_action": "Au parc, un panneau « FOND » fait des étirements sans jamais démarrer. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt, serviette sur l'épaule, zappe.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Tague ton pote qui fait plus de photos que de séries."
+  "text": "Envoie ça au pote qui adore les interviews sans questions."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 83,
- "claims": [],
+ "word_count": 81,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "Interview télé entre deux séances de sport : beaucoup de pompes, peu de questions.",
+   "claim_type": "fait_public",
+   "source": "https://www.yahoo.com/news/soft-focus-interview-positions-bardella-084104725.html",
+   "note": "Portrait télévisé « soft-focus » : séances de sport, ambiance intime, peu de questions politiques."
+  },
+  {
+   "segment": "n3",
+   "text": "Reuters décrit un portrait tout en douceur. Ici, on dit publireportage.",
+   "claim_type": "fait_public",
+   "source": "https://www.yahoo.com/news/soft-focus-interview-positions-bardella-084104725.html",
+   "note": "Portrait télévisé « soft-focus » : séances de sport, ambiance intime, peu de questions politiques."
+  }
+ ],
  "sources": [
   {
    "url": "https://www.yahoo.com/news/soft-focus-interview-positions-bardella-084104725.html",
-   "published": "2025-06-03",
-   "consulted": "2026-11-21",
-   "status": "fait public + opinion (dépêche Reuters qualifiant de « soft-focus » un portrait télévisé intimiste, séances de sport comprises, avec peu de questions politiques)",
-   "used_for": "Inspiration seulement : un portrait télévisé « soft-focus » qui montrait notamment des séances de sport, avec peu de questions politiques (Reuters). Traduit par une salle de sport où tout est réglage de lumière. Les éléments familiaux de ce portrait sont écartés."
-  },
-  {
-   "url": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
-   "published": "2024-06-21",
-   "consulted": "2026-11-21",
-   "status": "fait public (stratégie TikTok décrite par l'AFP : formats POV, coulisses « en off », bonbons avant un débat) + mème (fan edits amateurs à cœurs et étoiles inspirés de la K-pop)",
-   "used_for": "Inspiration seulement : fan edits à cœurs et étoiles. Traduits par les cœurs qui entourent les selfies en série."
-  },
-  {
-   "url": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
-   "published": "2026-05-31",
-   "consulted": "2026-11-21",
-   "status": "opinion (chronique de Thomas Legrand, titre « bulldozer robotique et creux » vérifié via agrégateur ; texte intégral non lu, paywall)",
-   "used_for": "Inspiration seulement : l'image « creuse » d'une chronique d'opinion. Traduite par le coach qui, sans lumière, redevient un cylindre lisse."
-  },
-  {
-   "url": "https://www.purebreak.com/diapo/-c-est-le-gendre-ideal-delphine-wespiser-assume-adorer-jordan-bardella-et-lui-predit-un-avenir-presidentiel/248250",
-   "published": "2024-02",
-   "consulted": "2026-11-21",
-   "status": "opinion / cliché (« gendre idéal »)",
-   "used_for": "Un coach fictif « gendre idéal en quatre par trois » ; rien sur la vie privée."
+   "date": "2025-06-03",
+   "consulted": "2026-11-22",
+   "statut": "fait + opinion (Reuters)",
+   "note": "Portrait télévisé « soft-focus » : séances de sport, ambiance intime, peu de questions politiques."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mécanisme : méta 3D (le personnage redevient une forme simple). Trois mèmes/critiques réels fusionnés en un gag visuel original. Risques vérifiés : on ne se moque d'aucun physique réel (le coach est un cylindre fictif, la cible est la mise en lumière) ; vie privée du portrait source écartée ; aucune citation. | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_bardellaville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = portrait télé « soft-focus » (Reuters) : séances de sport, ambiance intime, peu de questions politiques. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

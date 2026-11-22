@@ -208,3 +208,109 @@ def mix(out: Path, total: float) -> dict:
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw.name, "-af", af, "-ar", str(SR), "mix.wav"],
                    cwd=out, check=True)
     return m
+
+
+# ----------------------------------------------------------------- bruitages « mèmes » (synthétisés, libres de droits)
+
+def _sfx(kind: str, rng) -> np.ndarray:
+    def t_(d):
+        return np.arange(int(d * SR)) / SR
+    if kind == "boom":          # basse qui tombe, façon « vine boom »
+        t = t_(1.1)
+        f = 62 * np.exp(-t * 1.4) + 34
+        x = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 3.2)
+        x[: int(0.004 * SR)] += rng.standard_normal(int(0.004 * SR)) * 0.6
+        return np.tanh(x * 2.2) * 0.95
+    if kind == "explosion":     # souffle grave + grondement
+        t = t_(1.6)
+        n = rng.standard_normal(len(t))
+        y, acc = np.zeros_like(n), 0.0
+        for j in range(len(n)):
+            acc += (0.02 + 0.25 * np.exp(-t[j] * 6)) * (n[j] - acc)
+            y[j] = acc
+        boom = _sfx("boom", rng)
+        boom = np.pad(boom, (0, max(0, len(t) - len(boom))))[: len(t)]
+        return np.tanh(y * 6 * np.exp(-t * 2.4) + boom * 0.7) * 0.95
+    if kind == "scratch":       # scratch de vinyle
+        t = t_(0.32)
+        f = 900 + 700 * np.sin(2 * np.pi * 9 * t)
+        x = np.sign(np.sin(2 * np.pi * np.cumsum(f) / SR)) * 0.25 + rng.standard_normal(len(t)) * 0.35
+        return x * np.sin(np.linspace(0, np.pi, len(t))) * 0.8
+    if kind == "airhorn":       # trois coups de corne
+        out = []
+        for d in (0.16, 0.16, 0.42):
+            t = t_(d)
+            x = sum(((2 * ((f * t) % 1) - 1)) for f in (466, 470, 587, 698)) / 4
+            out += [np.tanh(x * 2.5) * np.minimum(1, t / 0.01) * 0.8, np.zeros(int(0.05 * SR))]
+        return np.concatenate(out)
+    if kind == "trombone":      # « wah wah wah waaah »
+        out = []
+        for f0, d in ((233, 0.38), (220, 0.38), (208, 0.38), (196, 1.0)):
+            t = t_(d)
+            f = f0 * (1 + (0.02 * np.sin(2 * np.pi * 6 * t) if d > 0.5 else 0))
+            ph = 2 * np.pi * np.cumsum(f) / SR
+            x = (np.sin(ph) + 0.5 * np.sin(2 * ph) + 0.3 * np.sin(3 * ph)) / 1.8
+            out.append(x * np.minimum(1, t / 0.03) * np.minimum(1, (d - t) / 0.08) * 0.7)
+        return np.concatenate(out)
+    if kind == "ding":
+        t = t_(0.9)
+        return (np.sin(2 * np.pi * 1760 * t) + 0.4 * np.sin(2 * np.pi * 2640 * t)) * np.exp(-t * 5) * 0.5
+    raise ValueError(kind)
+
+
+def meme_cues(ep: dict, timeline: dict) -> list:
+    """Bruitages avec parcimonie (1 à 3 par vidéo), choix déterministe par épisode.
+    Chute (avant-dernière phrase) : boom / explosion / trombone ; retournement de la phrase 2 : scratch ;
+    parfois une corne sur une citation exacte."""
+    import hashlib
+    h = int(hashlib.sha1(ep["id"].encode()).hexdigest(), 16)
+    segs = timeline["segments"]
+    kinds = {s["id"]: s.get("claim_type") for s in ep["narration_segments"]}
+    cues = []
+    if len(segs) < 3:
+        return cues
+    bank = meme_bank()
+    city = ep.get("city_id") or ep.get("city")
+
+    def pick(role, salt):
+        c = [m for m in bank if role in m.get("role", []) and (not m.get("cities") or city in m["cities"])]
+        own = [m for m in c if m.get("cities")]          # son propre à la ville en priorité (ex. Macron explosion)
+        c = own or c
+        return ("clip:" + c[(h >> salt) % len(c)]["file"]) if c else None
+
+    punch = segs[-2]
+    cues.append((punch["end"] + 0.05, pick("chute", 1) or ["boom", "explosion", "trombone", "boom"][h % 4]))
+    if (h >> 3) % 2 == 0:
+        cues.append((segs[1]["end"] + 0.02, pick("retournement", 4) or "scratch"))
+    mids = [s for s in segs[2:-2] if kinds.get(s["id"]) in ("citation_exacte", "fait_public")]
+    if mids and (h >> 5) % 3 == 0 and len(cues) < 2:
+        cues.append((mids[0]["end"] + 0.02, pick("scandale", 6) or "airhorn"))
+    return cues
+
+
+def meme_bank() -> list:
+    """Sons mèmes réels téléchargés (assets/memes/manifest.json), vide sinon."""
+    from . import config
+    p = config.ASSETS / "memes" / "manifest.json"
+    if not p.exists():
+        return []
+    return [m for m in json.loads(p.read_text(encoding="utf-8"))
+            if m.get("ok") and (config.ASSETS / "memes" / m["file"]).exists()]
+
+
+def add_sfx(path: Path, cues: list) -> None:
+    """Ajoute les bruitages à la piste d'effets existante (whoosh.wav)."""
+    base = read_wav(path)
+    rng = np.random.default_rng(11)
+    from . import config
+    for t, kind in cues:
+        if kind.startswith("clip:"):
+            x = read_wav(config.ASSETS / "memes" / kind[5:]) * 0.9
+        else:
+            x = _sfx(kind, rng).astype(np.float32)
+        k = int(t * SR)
+        if k >= len(base):
+            continue
+        seg = x[: len(base) - k]
+        base[k:k + len(seg)] += seg
+    write_wav(path, base)

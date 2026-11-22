@@ -5,78 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Permis malgré tout",
- "anchor": "Bilan publié sur X le 16/11/2026 : « Il y a eu parfois des erreurs », il a « fait de [s]on mieux », engagement « jusqu'au bout ».",
+ "anchor": "« il y a eu parfois des erreurs » (bilan sur X, novembre 2026) sans en citer aucune, appliqué à un examen du permis.",
  "meme_key": "ERREURS",
  "situation": "le permis de conduire",
- "ressort": "comptage absurde : un chiffre délirant affiché en grand (étiquette rouge)",
+ "ressort": "piques frontales sourcées (style tacle)",
  "hook_variants": [
-  "Dix ans de pouvoir, un bilan sur X : parfois des erreurs.",
-  "Dans cette auto-école, les erreurs, c'est seulement parfois.",
-  "Dans cette ville, tout le monde vote Macron… et ça se voit jusqu'à le permis de conduire.",
-  "Macronville : le permis de conduire, version « parfois des erreurs ».",
-  "Ici, le permis de conduire fonctionne comme le mème « parfois des erreurs »."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, on a le permis même en grillant tous les feux.",
+  "Macronville : l'examen où l'excuse suffit.",
+  "Trois feux grillés, permis validé.",
+  "Les macronistes vont trouver qu'il conduit bien."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La voiture, elle, a démissionné avant la fin de l'examen.",
-  "Permis accordé, mention : jusqu'au bout.",
-  "Le maire, lui, appelle ça une réussite totale."
+  "Il rend les clés en mai 2027. Le prochain hérite de la carcasse.",
+  "Le permis est validé. La voiture est à la casse.",
+  "Parfois des erreurs : trois feux, un trottoir, une carcasse."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dix ans de pouvoir, un bilan sur X : parfois des erreurs.",
+   "text": "Dans cette ville, tout le monde vote Macron. Permis en poche.",
    "accent_words": [
-    "parfois des erreurs"
+    "Permis"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "L'auto-école de Macronville a adopté ce barème.",
+   "text": "À l'examen, le candidat grille trois feux et monte sur un trottoir.",
    "accent_words": [
-    "ce barème"
+    "trois feux"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Feu grillé, trottoir mordu, poubelle renversée : tout est noté parfois.",
+   "text": "Son excuse : « il y a eu parfois des erreurs ». Permis validé.",
    "accent_words": [
-    "parfois"
+    "Permis validé"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Compteur d'erreurs de l'élève : quatre cent douze, en vingt minutes.",
+   "text": "L'inspecteur demande lesquelles. Silence : son vrai message n'en cite aucune.",
    "accent_words": [
-    "quatre cent douze"
+    "aucune"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "L'inspecteur : « Vous avez fait de votre mieux, c'est l'essentiel. »",
+   "text": "Dix ans au volant, sept moniteurs éjectés en route.",
    "accent_words": [
-    "c'est l'essentiel"
+    "sept moniteurs"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La voiture, elle, a démissionné avant la fin de l'examen.",
+   "text": "Il rend les clés en mai 2027. Le prochain hérite de la carcasse.",
    "accent_words": [
-    "de l'examen"
+    "la carcasse"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Combien d'erreurs tu as faites à ton permis, honnêtement ?",
+   "text": "Envoie ça au pote qui conduit mal mais dit parfois des erreurs.",
    "accent_words": [
-    "permis, honnêtement"
+    "parfois des erreurs"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,103 +89,171 @@
    ],
    "camera": "descend",
    "set": [
-    "car",
     "road",
-    "traffic_light"
+    "facade_row",
+    "lamp",
+    "person",
+    "car"
    ],
-   "onscreen_text": "PARFOIS DES ERREURS",
-   "comic_action": "Descente sur un parcours d'examen jonché de plots renversés.",
-   "expected_result": "Le mème est posé."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
+   "expected_result": "Le décor de rue posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
     "car",
-    "road",
-    "bin",
-    "traffic_light"
+    "traffic_light",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "ERREUR : PARFOIS",
-   "comic_action": "Travelling : la voiture grille un feu, mord un trottoir, renverse une poubelle.",
-   "expected_result": "Barème absurde."
+   "onscreen_text": "3 FEUX GRILLÉS",
+   "comic_action": "Voiture d'auto-école à l'arrêt au feu ; l'inspecteur note.",
+   "expected_result": "Le permis porte la pique."
   },
   {
    "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "mairie"
+   ],
+   "onscreen_text": "« PARFOIS DES ERREURS »",
+   "comic_action": "Écran géant sur la mairie : la liste « ERREURS » défile… vide. Le curseur clignote.",
+   "expected_result": "Le bilan reconnaît des erreurs sans en nommer aucune."
+  },
+  {
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "closeup",
    "set": [
-    "text3d",
-    "car"
-   ],
-   "onscreen_text": "412 ERREURS / 20 MIN",
-   "comic_action": "Compteur géant qui s'emballe.",
-   "expected_result": "Comptage absurde."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5"
-   ],
-   "camera": "closeup",
-   "set": [
+    "car",
+    "traffic_light",
     "person",
-    "car"
+    "sign"
    ],
-   "onscreen_text": "",
-   "comic_action": "L'inspecteur bienveillant, bulle de sa réplique.",
-   "expected_result": "Indulgence totale."
+   "onscreen_text": "ERREURS CITÉES : 0",
+   "comic_action": "Voiture d'auto-école à l'arrêt au feu ; l'inspecteur note.",
+   "expected_result": "Le permis porte la pique."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "facade_row",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "7 MONITEURS",
+   "comic_action": "Une file d'adjoints passe devant la porte de la mairie ; un compteur « 1, 2, 3… 7 » s'allume.",
+   "expected_result": "La valse des Premiers ministres en compteur."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "car",
+    "road",
+    "person",
+    "lamp"
+   ],
+   "onscreen_text": "CLÉS RENDUES : MAI 2027",
+   "comic_action": "La voiture d'auto-école, cabossée, fumante, est garée devant la mairie ; un trousseau de clés posé sur le capot.",
+   "expected_result": "La pique en mouvement."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "car",
-    "sign",
+    "road",
     "person",
-    "tshirt"
+    "tshirt",
+    "sign"
    ],
-   "onscreen_text": "VOITURE : DÉMISSIONNAIRE",
-   "comic_action": "La voiture s'arrête seule, portière ouverte ; un passant en t-shirt de la collection.",
-   "expected_result": "Chute + question."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Combien d'erreurs tu as faites à ton permis, honnêtement ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui conduit mal mais dit parfois des erreurs."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 73,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Dix ans de pouvoir, un bilan sur X : parfois des erreurs.",
-   "claim_type": "fait_public",
+   "text": "« il y a eu parfois des erreurs »",
+   "claim_type": "citation_exacte",
    "source": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
-   "note": "Référence au mème réel ; aucune phrase inventée attribuée à une personne réelle."
+   "note": "« Il y a eu parfois des erreurs », « fait de [s]on mieux », dix ans après sa candidature."
+  },
+  {
+   "text": "L'inspecteur demande lesquelles. Silence : son vrai message n'en cite aucune.",
+   "claim_type": "fait_public",
+   "source": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
+   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027."
+  },
+  {
+   "text": "Dix ans au volant, sept moniteurs éjectés en route.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse. Détourné dans la ville fictive."
+  },
+  {
+   "text": "Il rend les clés en mai 2027. Le prochain hérite de la carcasse.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
+   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027. Détourné dans la ville fictive."
   }
  ],
  "sources": [
   {
    "url": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
    "date": "2026-11-17",
-   "statut": "fait (citation exacte publiée sur X le 16/11/2026) + mème",
-   "usage": "mème réel rendu reconnaissable dès la 1re ou 2e phrase ; idée seulement, aucune punchline d'auteur copiée"
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (post X)",
+   "note": "« Il y a eu parfois des erreurs », « fait de [s]on mieux », dix ans après sa candidature."
+  },
+  {
+   "url": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait rapporté",
+   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027."
+  },
+  {
+   "url": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "date": "2025-10",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mème : parfois des erreurs × situation : le permis de conduire × ressort : comptage. Une réplique de personnage fictif entre guillemets (bulle). Personnages fictifs uniquement ; le maire est un personnage cubique générique. Aucune citation inventée attribuée à une personne réelle, aucune affaire, rien sur la vie privée ni sur une caractéristique protégée, pas d'appel au vote."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « il y a eu parfois des erreurs » (bilan sur X, novembre 2026) sans en citer aucune, appliqué à un examen du permis. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

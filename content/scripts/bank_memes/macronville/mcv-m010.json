@@ -5,78 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "La rue impossible",
- "anchor": "« Je traverse la rue, je vous en trouve » (15/09/2018) : polémique et détournements en ligne, mème durable.",
+ "anchor": "« je traverse la rue, je vous en trouve » (2018) face à une ville où la rue est barrée par les travaux, sauf pour le cortège.",
  "meme_key": "RUE",
  "situation": "les travaux",
- "ressort": "promesse contre réalité : l'annonce géante, puis ce qui se passe vraiment",
+ "ressort": "piques frontales sourcées (style tacle)",
  "hook_variants": [
-  "Je traverse la rue, je vous en trouve : la phrase de 2018 tourne encore.",
-  "Dans cette ville, traverser la rue est un métier.",
-  "Dans cette ville, tout le monde vote Macron… et ça se voit jusqu'à les travaux.",
-  "Macronville : les travaux, version « traverser la rue ».",
-  "Ici, les travaux fonctionne comme le mème « traverser la rue »."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, pour traverser la rue, il faut un cortège.",
+  "Macronville : la rue qu'on ne traverse plus.",
+  "Le conseil de 2018 est en travaux.",
+  "Les macronistes vont traverser cette vidéo sans s'arrêter."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "De l'autre côté, une seule offre d'emploi : creuser la rue.",
-  "Le candidat a traversé. La rue a été rebouchée derrière lui.",
-  "Le maire, lui, appelle ça une réussite totale."
+  "Le seul qui l'a vraiment traversée ? Lui, en cortège, feux bloqués.",
+  "La rue est barrée pour tout le monde. Sauf pour le cortège.",
+  "Traverser la rue : réservé aux voitures officielles."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Je traverse la rue, je vous en trouve : la phrase de 2018 tourne encore.",
+   "text": "Dans cette ville, tout le monde vote Macron. Et personne ne traverse.",
    "accent_words": [
-    "Je traverse la rue, je vous en trouve"
+    "personne"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À Macronville, la rue des Emplois est enfin ouverte aux travaux.",
+   "text": "La mairie a mis des travaux sur tous les passages piétons.",
    "accent_words": [
-    "aux travaux"
+    "travaux"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Pour la traverser, il faut contourner six barrières et une tranchée.",
+   "text": "Pourtant, en 2018 : « je traverse la rue, je vous en trouve ».",
    "accent_words": [
-    "une tranchée"
+    "traverse la rue"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Le panneau promet un emploi de l'autre côté, livraison en 2031.",
+   "text": "Huit ans plus tard, la rue est barrée. Le boulot, toujours en face.",
    "accent_words": [
-    "livraison en 2031"
+    "toujours en face"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le chef de chantier : Traversez, traversez, c'est juste en face.",
+   "text": "Sept Premiers ministres, eux, ont traversé Matignon. Au pas de course.",
    "accent_words": [
-    "en face"
+    "Au pas de course"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "De l'autre côté, une seule offre d'emploi : creuser la rue.",
+   "text": "Le seul qui l'a vraiment traversée ? Lui, en cortège, feux bloqués.",
    "accent_words": [
-    "creuser la rue"
+    "en cortège"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Combien de rues il faut traverser chez toi pour un job ?",
+   "text": "Envoie ça au pote qui cherche un job en face.",
    "accent_words": [
-    "un job"
+    "l'autre côté"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,101 +90,158 @@
    "camera": "descend",
    "set": [
     "road",
-    "banner",
-    "sign"
+    "facade_row",
+    "lamp",
+    "person",
+    "car"
    ],
-   "onscreen_text": "TRAVERSER LA RUE",
-   "comic_action": "Descente sur une rue éventrée, banderole « Rue des Emplois ».",
-   "expected_result": "Le mème est posé."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
+   "expected_result": "Le décor de rue posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
+    "n2"
+   ],
+   "camera": "descend",
+   "set": [
+    "road",
+    "sign",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "PASSAGES : EN TRAVAUX",
+   "comic_action": "Plongée sur le nid-de-poule au milieu de la route, entouré de rubalise.",
+   "expected_result": "Le trou devient le personnage."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
     "n3"
    ],
    "camera": "street_dolly",
    "set": [
     "road",
-    "traffic_light",
     "sign",
-    "banner"
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "6 BARRIÈRES + 1 TRANCHÉE",
-   "comic_action": "Travelling : barrières en zigzag, tranchée géante.",
-   "expected_result": "Promesse contre réalité."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4"
-   ],
-   "camera": "closeup",
-   "set": [
-    "sign"
-   ],
-   "onscreen_text": "EMPLOI : EN 2031",
-   "comic_action": "Panneau de chantier avec date lointaine.",
-   "expected_result": "Délai absurde."
+   "onscreen_text": "« JE TRAVERSE LA RUE »",
+   "comic_action": "Un habitant traverse le passage piéton ; le panneau « EMPLOI » recule d'un mètre à chaque pas.",
+   "expected_result": "Le mème « traverser la rue » devient une infrastructure."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5"
+    "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
+    "road",
+    "sign",
     "person",
-    "road"
+    "traffic_light"
    ],
-   "onscreen_text": "",
-   "comic_action": "Le chef de chantier, sa réplique en voix off.",
-   "expected_result": "Encouragement creux."
+   "onscreen_text": "RUE BARRÉE",
+   "comic_action": "Un habitant traverse le passage piéton ; le panneau « EMPLOI » recule d'un mètre à chaque pas.",
+   "expected_result": "Le mème « traverser la rue » devient une infrastructure."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "facade_row",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "7 TRAVERSÉES DE MATIGNON",
+   "comic_action": "Une file d'adjoints passe devant la porte de la mairie ; un compteur « 1, 2, 3… 7 » s'allume.",
+   "expected_result": "La valse des Premiers ministres en compteur."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "car",
+    "road",
+    "person",
+    "lamp"
+   ],
+   "onscreen_text": "CORTÈGE : PRIORITAIRE",
+   "comic_action": "Le cortège officiel traverse la rue barrée, barrières levées, feux bloqués au vert ; les piétons attendent derrière la rubalise.",
+   "expected_result": "La pique en mouvement."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
     "road",
-    "sign",
     "person",
-    "tshirt"
+    "tshirt",
+    "sign"
    ],
-   "onscreen_text": "OFFRE : CREUSER LA RUE",
-   "comic_action": "Une seule affiche d'offre de l'autre côté ; un passant en t-shirt de la collection.",
-   "expected_result": "Chute + question."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Combien de rues il faut traverser chez toi pour un job ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui cherche un job en face."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 82,
+ "word_count": 83,
  "claims": [
   {
-   "text": "Je traverse la rue, je vous en trouve : la phrase de 2018 tourne encore.",
+   "text": "« je traverse la rue, je vous en trouve »",
    "claim_type": "citation_exacte",
    "source": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
-   "note": "Référence au mème réel ; aucune phrase inventée attribuée à une personne réelle."
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
+  },
+  {
+   "text": "Huit ans plus tard, la rue est barrée. Le boulot, toujours en face.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements. Détourné dans la ville fictive."
+  },
+  {
+   "text": "Sept Premiers ministres, eux, ont traversé Matignon. Au pas de course.",
+   "claim_type": "fait_public",
+   "source": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
   }
  ],
  "sources": [
   {
    "url": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
    "date": "2018-09-17",
-   "statut": "fait (citation exacte) + mème (détournements)",
-   "usage": "mème réel rendu reconnaissable dès la 1re ou 2e phrase ; idée seulement, aucune punchline d'auteur copiée"
+   "consulted": "2026-11-22",
+   "statut": "citation exacte + mème",
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
+  },
+  {
+   "url": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "date": "2025-10",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mème : traverser la rue × situation : les travaux × ressort : promesse. Personnages fictifs uniquement ; le maire est un personnage cubique générique. Aucune citation inventée attribuée à une personne réelle, aucune affaire, rien sur la vie privée ni sur une caractéristique protégée, pas d'appel au vote."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « je traverse la rue, je vous en trouve » (2018) face à une ville où la rue est barrée par les travaux, sauf pour le cortège. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

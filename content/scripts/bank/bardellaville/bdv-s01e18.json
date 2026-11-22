@@ -3,83 +3,75 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-18",
  "format": "A",
- "title_cover": "Pas de coupe",
+ "title_cover": "Le rider du candidat",
  "hook_variants": [
-  "Dans ce resto, interdit de couper sa viande : on tourne en plan séquence.",
-  "Dans ce restaurant de Bardellaville, interdit de couper sa viande. On tourne en plan séquence.",
-  "Ici, le couteau est interdit. Raison : continuité de la prise.",
-  "Ce restaurant sert le plat face caméra. Et l'étiquette face au client.",
-  "Le seul mot interdit dans ce restaurant : « coupez »."
+  "Dans cette ville, tout le monde vote Bardella.",
+  "Ici, le maire ne vient que si la victoire est garantie.",
+  "Bardellaville : le candidat qui pose ses conditions avant qu'on l'invite.",
+  "Les électeurs de Bardella vont me détester.",
+  "Bienvenue à Bardellaville : le rider du candidat."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Quarante-huit euros, le steak entier, filtre inclus.",
-  "Un client hurle : « Coupez ! » Toute la salle se lève et part : des figurants. Seule l'addition était vraie.",
-  "Le client crie « Coupez ! ». Le serveur le coupe… au montage. Il disparaît de la vidéo du restaurant."
+  "Majorité absolue ou rien : ce n'est pas une exigence, c'est une excuse en costume.",
+  "Au foot, il ne joue que si l'adversaire déclare forfait.",
+  "Le seul candidat qui pose ses conditions avant qu'on lui propose le poste."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans ce resto, interdit de couper sa viande : on tourne en plan séquence.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Il faut au moins ça.",
    "accent_words": [
-    "séquence"
+    "au moins ça"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Plus de couteaux : steak entier, avec élégance et désespoir.",
+   "text": "En 2024 : Matignon, oui, mais seulement avec une majorité absolue.",
    "accent_words": [
-    "désespoir"
+    "majorité absolue"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Les assiettes sont servies face caméra, dos au client.",
+   "text": "Ses adversaires parlent de refus d'obstacle. Comme au jumping.",
    "accent_words": [
-    "client"
+    "refus d'obstacle"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Lui voit l'étiquette, la caméra voit le plat.",
+   "text": "Au resto, il ne commande que si toute la salle approuve.",
    "accent_words": [
-    "plat"
+    "toute la salle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Un client hurle « Coupez ! » et toute la salle se lève.",
+   "text": "Au foot, il ne joue que si l'adversaire déclare forfait.",
    "accent_words": [
-    "lève"
+    "forfait"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "C'étaient des figurants : seule l'addition était vraie.",
+   "text": "Majorité absolue ou rien : ce n'est pas une exigence, c'est une excuse en costume.",
    "accent_words": [
-    "vraie"
+    "excuse en costume"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Quarante-huit euros, le steak entier, filtre inclus.",
+   "text": "Envoie ça au pote qui ne vient que si c'est gagné d'avance.",
    "accent_words": [
-    "inclus"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Balance en commentaire le resto où t'as surtout payé la déco.",
-   "accent_words": [
-    "déco"
+    "gagné d'avance"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,94 +80,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "table",
-    "person",
-    "ring_light",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "PAS DE COUPE",
-   "comic_action": "Gros plan sur une table nappée sous ring light : un client tient un steak entier à deux mains, avec une élégance tragique. Panneau de table : « Couteaux retirés — plan séquence en cours ».",
-   "expected_result": "Image surprenante : un dîner chic rendu absurde par une règle de tournage."
+   "onscreen_text": "BARDELLAVILLE",
+   "comic_action": "Descente sur la mairie ; panneau « ENTRÉE : 51 % MINIMUM ».",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "scroll",
+    "table",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "CONDITION : 289 SIÈGES",
+   "comic_action": "Un parchemin de conditions se déroule jusqu'au sol, signé « sinon non ».",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "ground",
+    "banner",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "REFUS D'OBSTACLE",
+   "comic_action": "Sur la place, un cheval en carton freine net devant une barre posée à dix centimètres.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
     "n4"
    ],
    "camera": "window_pass",
    "set": [
     "table",
     "person",
-    "tripod_camera",
-    "studio_light",
-    "scroll"
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "FACE CAMÉRA",
-   "comic_action": "Travelling latéral le long des tables : chaque assiette est tournée vers le trépied ; côté client, on ne voit que le dos de l'assiette et une étiquette (scroll) « Filet, jus corsé ». Un client se penche pour voir son plat ; un serveur le redresse.",
-   "expected_result": "Inversion : le repas est servi au public, pas au mangeur."
+   "onscreen_text": "COMMANDE : UNANIME OU RIEN",
+   "comic_action": "Un serveur attend ; tous les clients doivent lever la main avant qu'il note.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s3",
+   "id": "s5",
    "narration_ids": [
-    "n5",
-    "n6",
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "ground",
+    "banner",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "MATCH : FORFAIT EXIGÉ",
+   "comic_action": "Terrain vide en face ; le maire cubique enfile ses crampons seulement maintenant.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "arch",
+    "column",
+    "person",
+    "studio_light"
+   ],
+   "onscreen_text": "EXCUSE (COSTUME 3 PIÈCES)",
+   "comic_action": "Sous l'arche, un mannequin en costume porte une pancarte « PAS CE SOIR ». Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "table",
-    "person",
-    "scroll",
-    "studio_light",
-    "text3d"
-   ],
-   "onscreen_text": "ADDITION : VRAIE",
-   "comic_action": "Le client se lève et crie (text3d « COUPEZ ! »). Toute la salle se lève d'un bloc, range les chaises et sort en file : figurants. Travelling arrière : il reste seul dans la salle vide, sous un projecteur. Un serveur dépose l'addition (scroll), longue. Laisser respirer.",
-   "expected_result": "Chute par littéralisation : « coupez » arrête le tournage ; seul le paiement était réel."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n8"
-   ],
-   "camera": "closeup",
-   "set": [
     "shop",
-    "mascot",
     "tshirt",
-    "table"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le Coq de vitrine porte le t-shirt, une serviette nouée autour du cou, devant une assiette tournée vers l'extérieur.",
-   "expected_result": "Question à commenter, produit réel visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt attend devant la porte que d'autres entrent.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Balance en commentaire le resto où t'as surtout payé la déco."
+  "type": "share",
+  "text": "Envoie ça au pote qui ne vient que si c'est gagné d'avance."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 80,
- "claims": [],
+ "word_count": 81,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "En 2024 : Matignon, oui, mais seulement avec une majorité absolue.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/matignon-jordan-bardella-reclame-une-majorite-absolue-pour-gouverner-gabriel-attal",
+   "note": "Pas de Matignon sans majorité absolue."
+  },
+  {
+   "segment": "n3",
+   "text": "Ses adversaires parlent de refus d'obstacle. Comme au jumping.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/matignon-jordan-bardella-reclame-une-majorite-absolue-pour-gouverner-gabriel-attal",
+   "note": "Pas de Matignon sans majorité absolue."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
-   "published": "2024-06-21",
-   "consulted": "2026-11-21",
-   "status": "fait public (AFP : TikTok, POV, selfies, bonbons) + mème (fan edits)",
-   "used_for": "Grammaire TikTok (POV, vertical, story, likes) appliquée aux services de la ville fictive."
+   "url": "https://lcp.fr/actualites/matignon-jordan-bardella-reclame-une-majorite-absolue-pour-gouverner-gabriel-attal",
+   "date": "2024-06-17",
+   "consulted": "2026-11-22",
+   "statut": "fait (position publique) + opinion (« refus d'obstacle » selon ses adversaires)",
+   "note": "Pas de Matignon sans majorité absolue."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mécanisme : littéralisation (« coupe » / « Coupez ! »). Pas de source de veille : gag d'univers. Les figurants sont fictifs et ne renvoient à aucune foule réelle. Risques vérifiés : aucune citation, ne vise pas les restaurateurs. | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_bardellaville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = juin 2024 : pas de Matignon sans majorité absolue (« refus d'obstacle » pour ses adversaires). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

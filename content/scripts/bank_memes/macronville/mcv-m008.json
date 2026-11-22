@@ -4,37 +4,37 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Le rond-point en même temps",
- "anchor": "Le tic « en même temps » : 29 fois au meeting de Toulon, au moins 216 fois en trois mois ; devenu un mème durable.",
+ "title_cover": "Rond-point en même temps",
+ "anchor": "le tic « en même temps » (au moins 216 fois en trois mois en 2017) : un rond-point aux sorties ni à droite ni à gauche, des gilets jaunes renvoyés au grand débat.",
  "meme_key": "MEMETEMPS",
  "situation": "le rond-point",
- "ressort": "littéralisation : la formule du mème est prise au pied de la lettre et devient un objet",
+ "ressort": "piques frontales sourcées (style tacle)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Macron…",
-  "Ce rond-point tourne à droite et à gauche. En même temps.",
-  "Bienvenue à Macronville, où le rond-point a son propre mème.",
-  "Macronville : le rond-point, version « en même temps ».",
-  "Ici, le rond-point fonctionne comme le mème « en même temps »."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, le rond-point n'a que des sorties en même temps.",
+  "Macronville : neuf ans à tourner sans sortie.",
+  "Le rond-point le plus indécis de France.",
+  "Les macronistes vont faire un tour de plus."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Un automobiliste : Je suis sorti et rentré en même temps, c'est normal ?",
-  "Le rond-point a reçu un prix de la synthèse.",
-  "Le maire, lui, appelle ça une réussite totale."
+  "Ni à droite, ni à gauche. Résultat : tout le monde dans le décor.",
+  "Neuf ans au rond-point. Le GPS a démissionné.",
+  "Toutes les sorties mènent au même fossé."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron…",
+   "text": "Dans cette ville, tout le monde vote Macron. Et tout le monde tourne.",
    "accent_words": [
-    "Macron"
+    "tourne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Et le rond-point central tourne en même temps dans les deux sens.",
+   "text": "Au rond-point, chaque sortie est à droite et à gauche.",
    "accent_words": [
     "en même temps"
    ],
@@ -42,41 +42,41 @@
   },
   {
    "id": "n3",
-   "text": "Les voitures de droite tournent à droite, celles de gauche, à gauche.",
+   "text": "En 2017, « en même temps » tombait au moins 216 fois en trois mois.",
    "accent_words": [
-    "à gauche"
+    "216 fois"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Au centre, une voiture centriste ne tourne pas : elle synthétise.",
+   "text": "Neuf ans qu'on tourne. Personne n'a trouvé la sortie.",
    "accent_words": [
-    "synthétise"
+    "neuf ans"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le panneau de sortie indique, en même temps, Paris et Marseille.",
+   "text": "En 2018, les gilets jaunes y campaient. Réponse : un grand débat.",
    "accent_words": [
-    "et Marseille"
+    "grand débat"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Un automobiliste : Je suis sorti et rentré en même temps, c'est normal ?",
+   "text": "Ni à droite, ni à gauche. Résultat : tout le monde dans le décor.",
    "accent_words": [
-    "c'est normal"
+    "dans le décor"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Chez toi, quel rond-point mériterait de tourner dans les deux sens ?",
+   "text": "Envoie ça au pote qui rate toujours la sortie.",
    "accent_words": [
-    "deux sens"
+    "rate toujours"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,96 +85,159 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
     "roundabout",
-    "car_orbit"
+    "road",
+    "car_orbit",
+    "sign",
+    "mairie"
    ],
-   "onscreen_text": "EN MÊME TEMPS",
-   "comic_action": "Descente sur un rond-point où deux files tournent en sens inverse.",
-   "expected_result": "Le mème est littéralisé."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur le rond-point central : les voitures tournent, la mairie au fond.",
+   "expected_result": "La ville posée, tout tourne en rond."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
    "camera": "orbit",
    "set": [
     "roundabout",
-    "car_orbit"
+    "car_orbit",
+    "sign"
    ],
-   "onscreen_text": "DROITE ↻ GAUCHE ↺",
-   "comic_action": "Orbite : frôlements permanents.",
-   "expected_result": "Absurde visuel."
+   "onscreen_text": "SORTIE : DROITE ET GAUCHE",
+   "comic_action": "Orbite autour du rond-point ; les voitures tournent sans sortir.",
+   "expected_result": "Le rond-point porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
-    "car",
-    "roundabout"
+    "traffic_light",
+    "road",
+    "car"
    ],
-   "onscreen_text": "",
-   "comic_action": "Gros plan sur une voiture immobile au centre, conducteur zen.",
-   "expected_result": "Le centre paralysé."
+   "onscreen_text": "« EN MÊME TEMPS » ×216",
+   "comic_action": "Feu allumé rouge et vert en même temps ; les voitures avancent et reculent.",
+   "expected_result": "Le tic devient un feu tricolore."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5"
+    "n4"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
+    "roundabout",
+    "car_orbit",
     "sign"
    ],
-   "onscreen_text": "PARIS ⇄ MARSEILLE",
-   "comic_action": "Panneau de sortie qui pointe deux directions opposées.",
-   "expected_result": "Littéralisation."
+   "onscreen_text": "TOUR N°9 999",
+   "comic_action": "Orbite autour du rond-point ; les voitures tournent sans sortir.",
+   "expected_result": "Le rond-point porte la pique."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "table",
+    "person",
+    "studio_light"
+   ],
+   "onscreen_text": "GILETS JAUNES → GRAND DÉBAT",
+   "comic_action": "Le maire cubique tombe la veste et parle ; l'horloge fait trois tours ; le public dort.",
+   "expected_result": "Le grand débat sans fin."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "roundabout",
+    "car_orbit",
+    "sign"
+   ],
+   "onscreen_text": "TOUT LE MONDE DANS LE DÉCOR",
+   "comic_action": "Les voitures en orbite quittent le rond-point par la tangente et finissent dans les massifs.",
+   "expected_result": "Le rond-point porte la pique."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
     "roundabout",
-    "car",
+    "car_orbit",
     "person",
     "tshirt"
    ],
-   "onscreen_text": "",
-   "comic_action": "Un automobiliste perdu, sa réplique en voix off ; un piéton en t-shirt de la collection.",
-   "expected_result": "Chute + question."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur le rond-point ; un habitant en t-shirt de la collection fait du stop au milieu.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Chez toi, quel rond-point mériterait de tourner dans les deux sens ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui rate toujours la sortie."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 80,
- "claims": [],
+ "word_count": 82,
+ "claims": [
+  {
+   "text": "Au rond-point, chaque sortie est à droite et à gauche.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
+   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois. Détourné dans la ville fictive."
+  },
+  {
+   "text": "« en même temps »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
+   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois."
+  },
+  {
+   "text": "En 2018, les gilets jaunes y campaient. Réponse : un grand débat.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
+   "note": "Grand débat : près de sept heures face aux maires, veste tombée."
+  }
+ ],
  "sources": [
   {
    "url": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
    "date": "2017-05-08",
+   "consulted": "2026-11-22",
    "statut": "fait (comptage presse) + mème",
-   "usage": "mème réel rendu reconnaissable dès la 1re ou 2e phrase ; idée seulement, aucune punchline d'auteur copiée"
+   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
+   "date": "2019-01-15",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Grand débat : près de sept heures face aux maires, veste tombée."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mème : en même temps × situation : le rond-point × ressort : littéralisation. Personnages fictifs uniquement ; le maire est un personnage cubique générique. Aucune citation inventée attribuée à une personne réelle, aucune affaire, rien sur la vie privée ni sur une caractéristique protégée, pas d'appel au vote."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : le tic « en même temps » (au moins 216 fois en trois mois en 2017) : un rond-point aux sorties ni à droite ni à gauche, des gilets jaunes renvoyés au grand débat. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

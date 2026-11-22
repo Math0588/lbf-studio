@@ -4,79 +4,79 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "La caisse à l'envers",
- "anchor": "Surnom « président des riches » collé par ses opposants.",
+ "title_cover": "La caisse des riches",
+ "anchor": "le surnom « président des riches », né de la suppression de l'ISF, transformé en caisse de supermarché.",
  "meme_key": "RICHES",
  "situation": "le supermarché",
- "ressort": "inversion : le service fait exactement le contraire de son rôle, avec fierté",
+ "ressort": "piques frontales sourcées (style tacle)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Macron…",
-  "Dans ce supermarché, plus tu dépenses, plus tu gagnes.",
-  "Bienvenue à Macronville, où le supermarché a son propre mème.",
-  "Macronville : le supermarché, version « président des riches ».",
-  "Ici, le supermarché fonctionne comme le mème « président des riches »."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, la caisse rapide est réservée aux riches.",
+  "Macronville : le supermarché du président des riches.",
+  "Deux caisses, deux France.",
+  "Les macronistes vont passer par la caisse VIP."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La caissière : « Vous payez en euros ou en premiers de cordée ? »",
-  "Le caddie de luxe repart plein, le caddie à baguette repart endetté.",
-  "Le maire, lui, appelle ça une réussite totale."
+  "Le surnom vexe la mairie. Le ticket de caisse, lui, ne ment pas.",
+  "La caisse VIP est vide. Normal, ils sont peu nombreux.",
+  "Président des riches : la file prouve le surnom."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron…",
+   "text": "Dans cette ville, tout le monde vote Macron. Surtout à la caisse VIP.",
    "accent_words": [
-    "Macron"
+    "caisse VIP"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Et le surnom président des riches a inspiré le supermarché, à l'envers.",
+   "text": "Au supermarché, deux caisses : président des riches, et tout le reste.",
    "accent_words": [
-    "président des riches"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "Plus ton panier est cher, plus la caisse te rend de l'argent.",
-   "accent_words": [
-    "de l'argent"
+    "tout le reste"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n4",
-   "text": "Un pot de caviar acheté, un yacht miniature offert.",
+   "id": "n3",
+   "text": "Le surnom colle depuis la suppression de l'ISF, en 2018.",
    "accent_words": [
-    "miniature offert"
+    "ISF"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n4",
+   "text": "Côté riches, on te rend de l'argent. Côté reste, on vérifie ta carte.",
+   "accent_words": [
+    "rend de l'argent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Une baguette achetée : trois euros de supplément pour frais de structure.",
+   "text": "Caisse rapide pour les « premiers de cordée ». Les autres, roue voilée.",
    "accent_words": [
-    "trois euros"
+    "roue voilée"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n6",
-   "text": "La caissière : « Vous payez en euros ou en premiers de cordée ? »",
+   "text": "Le surnom vexe la mairie. Le ticket de caisse, lui, ne ment pas.",
    "accent_words": [
-    "de cordée"
+    "ne ment pas"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Abonne-toi : la prochaine fois, on lit le ticket de caisse en entier.",
+   "text": "Envoie ça au pote qui fait toujours la mauvaise file.",
    "accent_words": [
-    "en entier"
+    "mauvaise file"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,103 +85,175 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
     "shop",
+    "facade_row",
+    "person",
     "sign"
    ],
-   "onscreen_text": "PRÉSIDENT DES RICHES",
-   "comic_action": "Descente sur le supermarché, deux caisses : une dorée, une grise.",
-   "expected_result": "Le surnom est posé."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
+   "expected_result": "Le commerce du jour posé."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "shop",
+    "sign",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "2 CAISSES",
+   "comic_action": "Deux files à la caisse : « PREMIERS DE CORDÉE » (vide, rapide) et « LES AUTRES » (immense).",
+   "expected_result": "Le surnom devient une signalétique."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "screen"
-   ],
-   "onscreen_text": "PANIER CHER = CASHBACK",
-   "comic_action": "Écran de caisse qui rend des billets.",
-   "expected_result": "Inversion."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4"
-   ],
-   "camera": "orbit",
-   "set": [
-    "shop",
+    "building",
+    "sign",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "CAVIAR → YACHT OFFERT",
-   "comic_action": "Orbite : un client reçoit un yacht miniature.",
-   "expected_result": "Escalade absurde."
+   "onscreen_text": "ISF → SURNOM",
+   "comic_action": "Panneau « ISF » dévissé de la tour et remplacé par un panneau minuscule « IFI ».",
+   "expected_result": "La suppression devient un changement d'enseigne."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5"
+    "n4"
    ],
    "camera": "closeup",
    "set": [
     "shop",
-    "sign"
+    "sign",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "BAGUETTE +3 €",
-   "comic_action": "Étiquette rouge sur une baguette.",
-   "expected_result": "Inversion chiffrée."
+   "onscreen_text": "CAISSE VIP : REMBOURSÉ",
+   "comic_action": "Deux files à la caisse : « PREMIERS DE CORDÉE » (vide, rapide) et « LES AUTRES » (immense).",
+   "expected_result": "Le surnom devient une signalétique."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "shop",
+    "table",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "CAISSE PREMIERS DE CORDÉE",
+   "comic_action": "Travelling entre les étals du marché.",
+   "expected_result": "Le marché porte la pique."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "shop",
+    "sign",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "TICKET DE CAISSE",
+   "comic_action": "Gros plan sur un ticket de caisse interminable qui sort de la caisse « TOUT LE RESTE ».",
+   "expected_result": "Le surnom devient une signalétique."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
     "shop",
+    "tshirt",
     "person",
-    "tshirt"
+    "sign"
    ],
-   "onscreen_text": "",
-   "comic_action": "La caissière, bulle de sa réplique ; un client en t-shirt de la collection.",
-   "expected_result": "Chute + abonnement."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "follow",
-  "text": "Abonne-toi : la prochaine fois, on lit le ticket de caisse en entier."
+  "type": "share",
+  "text": "Envoie ça au pote qui fait toujours la mauvaise file."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 81,
+ "word_count": 84,
  "claims": [
   {
-   "text": "Et le surnom président des riches a inspiré le supermarché, à l'envers.",
-   "claim_type": "fait_public",
+   "text": "Au supermarché, deux caisses : président des riches, et tout le reste.",
+   "claim_type": "fiction_satirique",
    "source": "https://gulfnews.com/opinion/op-eds/why-macron-is-no-mr-cool-1.2240627",
-   "note": "Référence au mème réel ; aucune phrase inventée attribuée à une personne réelle."
+   "note": "« Président des riches ». Détourné dans la ville fictive."
+  },
+  {
+   "text": "Le surnom colle depuis la suppression de l'ISF, en 2018.",
+   "claim_type": "fait_public",
+   "source": "https://www.vie-publique.fr/en-bref/291443-impot-de-solidarite-sur-la-fortune-isf-le-cout-de-son-remplacement",
+   "note": "ISF supprimé et remplacé par l'IFI (immobilier seul) en 2018 ; origine du surnom « président des riches »."
+  },
+  {
+   "text": "« premiers de cordée »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
+   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »)."
+  },
+  {
+   "text": "Le surnom vexe la mairie. Le ticket de caisse, lui, ne ment pas.",
+   "claim_type": "fiction_satirique",
+   "source": "https://gulfnews.com/opinion/op-eds/why-macron-is-no-mr-cool-1.2240627",
+   "note": "« Président des riches ». Détourné dans la ville fictive."
   }
  ],
  "sources": [
   {
    "url": "https://gulfnews.com/opinion/op-eds/why-macron-is-no-mr-cool-1.2240627",
    "date": "2018-11-05",
-   "statut": "opinion (surnom donné par ses opposants)",
-   "usage": "mème réel rendu reconnaissable dès la 1re ou 2e phrase ; idée seulement, aucune punchline d'auteur copiée"
+   "consulted": "2026-11-22",
+   "statut": "opinion (surnom d'opposants)",
+   "note": "« Président des riches »."
+  },
+  {
+   "url": "https://www.vie-publique.fr/en-bref/291443-impot-de-solidarite-sur-la-fortune-isf-le-cout-de-son-remplacement",
+   "date": "non relevée",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "ISF supprimé et remplacé par l'IFI (immobilier seul) en 2018 ; origine du surnom « président des riches »."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
+   "date": "2017",
+   "consulted": "2026-11-22",
+   "statut": "fait + opinion",
+   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mème : président des riches × situation : le supermarché × ressort : inversion. Une réplique de personnage fictif entre guillemets (bulle). Personnages fictifs uniquement ; le maire est un personnage cubique générique. Aucune citation inventée attribuée à une personne réelle, aucune affaire, rien sur la vie privée ni sur une caractéristique protégée, pas d'appel au vote."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : le surnom « président des riches », né de la suppression de l'ISF, transformé en caisse de supermarché. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

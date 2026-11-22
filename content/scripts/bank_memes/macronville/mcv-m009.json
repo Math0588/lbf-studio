@@ -4,79 +4,79 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "L'éclair jupitérien",
- "anchor": "Surnoms « Jupiter » (président jupitérien, maître de la foudre) et « maître des horloges ».",
+ "title_cover": "Jupiter sans fusible",
+ "anchor": "le surnom « Jupiter », maître de la foudre, pendant une panne de courant générale.",
  "meme_key": "JUPITER",
  "situation": "la panne de courant",
- "ressort": "décalage d'échelle : un détail minuscule devient un projet national, ou l'inverse",
+ "ressort": "piques frontales sourcées (style tacle)",
  "hook_variants": [
-  "Macron surnommé Jupiter : le roi des dieux, maître de la foudre.",
-  "Dans cette ville, le courant tombe du ciel. Sur la mairie.",
-  "Dans cette ville, tout le monde vote Macron… et ça se voit jusqu'à la panne de courant.",
-  "Macronville : la panne de courant, version « Jupiter, maître des horloges ».",
-  "Ici, la panne de courant fonctionne comme le mème « Jupiter, maître des horloges »."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, Jupiter a la foudre mais pas la lumière.",
+  "Macronville : panne générale, discours de sept heures.",
+  "Le maître de la foudre face à un disjoncteur.",
+  "Les macronistes vont rallumer en même temps."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Un voisin, à la bougie : « Il ruisselle quand, le courant ? »",
-  "La ville est en panne, la mairie fait une rave.",
-  "Le maire, lui, appelle ça une réussite totale."
+  "Dieu de la foudre, incapable de changer un fusible.",
+  "La foudre, oui. Le courant, non.",
+  "Jupiter a tout essayé, sauf un électricien."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Macron surnommé Jupiter : le roi des dieux, maître de la foudre.",
+   "text": "Dans cette ville, tout le monde vote Macron. À la lueur des bougies.",
+   "accent_words": [
+    "bougies"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Panne générale. Le maire lève le bras : Jupiter, maître de la foudre.",
    "accent_words": [
     "Jupiter"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n2",
-   "text": "Panne de courant générale à Macronville : la mairie a une solution.",
-   "accent_words": [
-    "une solution"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n3",
-   "text": "Le maire réclame un éclair, un seul, pour recharger la ville.",
+   "text": "La foudre tombe. Sur le transformateur.",
    "accent_words": [
-    "la ville"
+    "transformateur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "L'éclair tombe sur la mairie, et uniquement sur la mairie.",
+   "text": "Il réexplique la panne pendant sept heures, à la lampe torche.",
    "accent_words": [
-    "uniquement"
+    "sept heures"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le palais brille comme l'Olympe, le reste de la ville reste éteint.",
+   "text": "Pour réparer, il nomme sept Premiers ministres. Comme depuis 2017.",
    "accent_words": [
-    "reste éteint"
+    "sept Premiers ministres"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Un voisin, à la bougie : « Il ruisselle quand, le courant ? »",
+   "text": "Dieu de la foudre, incapable de changer un fusible.",
    "accent_words": [
-    "le courant"
+    "un fusible"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Abonne-toi : la prochaine fois, Jupiter règle les horloges du quartier.",
+   "text": "Envoie ça au pote qui se prend pour un dieu avec une multiprise.",
    "accent_words": [
-    "du quartier"
+    "multiprise"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,100 +89,171 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "mairie",
-    "lamp"
+    "road",
+    "facade_row",
+    "lamp",
+    "person",
+    "car"
    ],
-   "onscreen_text": "JUPITER",
-   "comic_action": "Descente sur une ville dans l'ombre, mairie au centre.",
-   "expected_result": "Le surnom est posé."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
+   "expected_result": "Le décor de rue posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
     "tribune",
+    "column",
+    "studio_light",
     "person"
    ],
-   "onscreen_text": "PANNE : 100 %",
-   "comic_action": "Le maire au pupitre, doigt levé vers le ciel.",
-   "expected_result": "Décalage d'échelle : un éclair pour une panne."
+   "onscreen_text": "JUPITER",
+   "comic_action": "Le maire cubique sur une tribune entre deux colonnes, éclair en carton derrière lui ; la foule lève la tête.",
+   "expected_result": "La verticalité en un plan."
   },
   {
    "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "column",
+    "studio_light",
+    "person"
+   ],
+   "onscreen_text": "FOUDRE → TRANSFO",
+   "comic_action": "Éclair en carton qui part de la main du maire et frappe le transformateur ; étincelles, noir total.",
+   "expected_result": "La verticalité en un plan."
+  },
+  {
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "orbit",
    "set": [
-    "mairie",
+    "tribune",
+    "table",
+    "person",
     "studio_light"
    ],
-   "onscreen_text": "ÉCLAIR : MAIRIE ONLY",
-   "comic_action": "Orbite : flash d'éclair, la mairie s'illumine.",
-   "expected_result": "Littéral."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5"
-   ],
-   "camera": "street_dolly",
-   "set": [
-    "building",
-    "lamp"
-   ],
-   "onscreen_text": "RESTE DE LA VILLE : 0 W",
-   "comic_action": "Travelling sur les rues toujours éteintes.",
-   "expected_result": "Contraste."
+   "onscreen_text": "EXPLICATION : 7 H",
+   "comic_action": "Le maire cubique tombe la veste et parle ; l'horloge fait trois tours ; le public dort.",
+   "expected_result": "Le grand débat sans fin."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "facade_row",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "7 PREMIERS MINISTRES",
+   "comic_action": "Une file d'adjoints passe devant la porte de la mairie ; un compteur « 1, 2, 3… 7 » s'allume.",
+   "expected_result": "La valse des Premiers ministres en compteur."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "router_lectern",
+    "person",
+    "studio_light"
+   ],
+   "onscreen_text": "FUSIBLE : NON CHANGÉ",
+   "comic_action": "Gros plan sur le pupitre-routeur qui clignote.",
+   "expected_result": "Le pupitre porte la pique."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "lamp",
+    "road",
     "person",
-    "tshirt"
+    "tshirt",
+    "sign"
    ],
-   "onscreen_text": "",
-   "comic_action": "Un voisin à la bougie, bulle de sa réplique ; t-shirt de la collection.",
-   "expected_result": "Chute + abonnement."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "follow",
-  "text": "Abonne-toi : la prochaine fois, Jupiter règle les horloges du quartier."
+  "type": "share",
+  "text": "Envoie ça au pote qui se prend pour un dieu avec une multiprise."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 82,
+ "word_count": 75,
  "claims": [
   {
-   "text": "Macron surnommé Jupiter : le roi des dieux, maître de la foudre.",
+   "text": "Panne générale. Le maire lève le bras : Jupiter, maître de la foudre.",
    "claim_type": "fait_public",
    "source": "https://www.lequotidiendupharmacien.fr/nom-de-nom",
-   "note": "Référence au mème réel ; aucune phrase inventée attribuée à une personne réelle."
+   "note": "« Jupiter », « maître des horloges »."
+  },
+  {
+   "text": "La foudre tombe. Sur le transformateur.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.lequotidiendupharmacien.fr/nom-de-nom",
+   "note": "« Jupiter », « maître des horloges ». Détourné dans la ville fictive."
+  },
+  {
+   "text": "Il réexplique la panne pendant sept heures, à la lampe torche.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
+   "note": "Grand débat : près de sept heures face aux maires, veste tombée. Détourné dans la ville fictive."
+  },
+  {
+   "text": "Pour réparer, il nomme sept Premiers ministres. Comme depuis 2017.",
+   "claim_type": "fait_public",
+   "source": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
   }
  ],
  "sources": [
   {
    "url": "https://www.lequotidiendupharmacien.fr/nom-de-nom",
    "date": "2020-10-23",
+   "consulted": "2026-11-22",
    "statut": "mème (surnoms)",
-   "usage": "mème réel rendu reconnaissable dès la 1re ou 2e phrase ; idée seulement, aucune punchline d'auteur copiée"
+   "note": "« Jupiter », « maître des horloges »."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
+   "date": "2019-01-15",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Grand débat : près de sept heures face aux maires, veste tombée."
+  },
+  {
+   "url": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "date": "2025-10",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mème : Jupiter, maître des horloges × situation : la panne de courant × ressort : échelle. Une réplique de personnage fictif entre guillemets (bulle). Personnages fictifs uniquement ; le maire est un personnage cubique générique. Aucune citation inventée attribuée à une personne réelle, aucune affaire, rien sur la vie privée ni sur une caractéristique protégée, pas d'appel au vote."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : le surnom « Jupiter », maître de la foudre, pendant une panne de courant générale. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

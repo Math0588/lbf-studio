@@ -4,79 +4,79 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Le maître des horloges",
- "anchor": "Surnoms « Jupiter » (président jupitérien, maître de la foudre) et « maître des horloges ».",
+ "title_cover": "Château contre ticket",
+ "anchor": "Choose France à Versailles (40,8 milliards annoncés en 2025) pendant que la file d'attente du maître des horloges ne bouge pas.",
  "meme_key": "JUPITER",
  "situation": "la file d'attente",
- "ressort": "boucle : on revient exactement au point de départ, en pire",
+ "ressort": "piques frontales sourcées (style tacle)",
  "hook_variants": [
-  "Maître des horloges : le surnom jupitérien lui colle toujours à la peau.",
-  "Dans cette mairie, c'est l'horloge qui décide quand tu passes.",
-  "Dans cette ville, tout le monde vote Macron… et ça se voit jusqu'à la file d'attente.",
-  "Macronville : la file d'attente, version « Jupiter, maître des horloges ».",
-  "Ici, la file d'attente fonctionne comme le mème « Jupiter, maître des horloges »."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, les investisseurs ont Versailles. Toi, un ticket.",
+  "Macronville : la file d'attente qui ne bouge que pour les milliards.",
+  "Le ticket 412 attend toujours son tour.",
+  "Les macronistes vont passer devant."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Tu reviens, l'horloge recule, et tu reprends la file au début.",
-  "L'horloge a été élue. Elle prend son temps.",
-  "Le maire, lui, appelle ça une réussite totale."
+  "Pour les milliardaires, le château. Pour toi, le ticket 412.",
+  "Tapis rouge pour eux, ticket froissé pour toi.",
+  "Le château ouvre en une heure. Le guichet, jamais."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Maître des horloges : le surnom jupitérien lui colle toujours à la peau.",
+   "text": "Dans cette ville, tout le monde vote Macron. Et tout le monde fait la queue.",
    "accent_words": [
-    "Maître des horloges"
+    "la queue"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À la mairie de Macronville, la file obéit à une horloge géante.",
+   "text": "File d'attente à la préfecture : trois heures, ticket 412.",
    "accent_words": [
-    "horloge géante"
+    "ticket 412"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Quand tu avances d'une place, le maire avance l'horloge d'une heure.",
+   "text": "Pendant ce temps, à Versailles, les investisseurs passent devant : Choose France.",
    "accent_words": [
-    "d'une heure"
+    "Versailles"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Quand tu arrives au guichet, c'est l'heure de la fermeture.",
+   "text": "Record 2025 : 40,8 milliards d'euros d'investissements annoncés.",
    "accent_words": [
-    "fermeture"
+    "40,8 milliards"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le guichetier : « Revenez quand le temps sera mûr, il sera choisi. »",
+   "text": "Le maître des horloges a réglé ta file : toi, plus tard.",
    "accent_words": [
-    "sera choisi"
+    "plus tard"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Tu reviens, l'horloge recule, et tu reprends la file au début.",
+   "text": "Pour les milliardaires, le château. Pour toi, le ticket 412.",
    "accent_words": [
-    "au début"
+    "le ticket 412"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Toi, ton record dans une file de mairie, c'est combien ?",
+   "text": "Envoie ça au pote qui attend encore son rendez-vous en préfecture.",
    "accent_words": [
-    "c'est combien"
+    "préfecture"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,99 +89,157 @@
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "mairie",
+    "banner",
     "person",
-    "sign"
+    "car"
    ],
-   "onscreen_text": "MAÎTRE DES HORLOGES",
-   "comic_action": "Descente sur la mairie, horloge géante sur la façade.",
-   "expected_result": "Le surnom est posé."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
+   "expected_result": "La ville et son camp posés en une seconde."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "person",
-    "sign"
+    "table",
+    "screen",
+    "form_stack",
+    "person"
    ],
-   "onscreen_text": "+1 PLACE = +1 HEURE",
-   "comic_action": "Travelling le long de la file, l'horloge saute.",
-   "expected_result": "Règle absurde."
+   "onscreen_text": "TICKET N°412",
+   "comic_action": "Guichet municipal : écran, pile de formulaires, file d'attente.",
+   "expected_result": "Le guichet porte la pique."
   },
   {
    "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "arch",
+    "car",
+    "person",
+    "banner"
+   ],
+   "onscreen_text": "CHOOSE FRANCE",
+   "comic_action": "Sous une grande arche dorée, une file de limousines passe sans s'arrêter ; tapis rouge.",
+   "expected_result": "Le château pour les uns."
+  },
+  {
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "closeup",
    "set": [
-    "mairie",
-    "sign"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "GUICHET : FERMÉ",
-   "comic_action": "Le rideau tombe pile devant l'habitant.",
-   "expected_result": "Frustration."
+   "onscreen_text": "40,8 MILLIARDS",
+   "comic_action": "Gros plan sur un écran géant en ville.",
+   "expected_result": "La pique s'affiche en écran."
   },
   {
-   "id": "s4",
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "closeup",
    "set": [
-    "person"
+    "column",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "",
-   "comic_action": "Le guichetier, bulle de sa réplique.",
-   "expected_result": "Langue de bois temporelle."
+   "onscreen_text": "TOI : PLUS TARD",
+   "comic_action": "Horloge géante sur la colonne ; le maire cubique avance les aiguilles à la main.",
+   "expected_result": "Le maître des horloges, littéral."
   },
   {
-   "id": "s5",
+   "id": "s6",
    "narration_ids": [
-    "n6",
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "screen",
+    "form_stack",
+    "person"
+   ],
+   "onscreen_text": "CHÂTEAU / TICKET 412",
+   "comic_action": "Guichet municipal : écran, pile de formulaires, file d'attente.",
+   "expected_result": "Le guichet porte la pique."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
     "mairie",
     "person",
-    "tshirt"
+    "tshirt",
+    "banner"
    ],
-   "onscreen_text": "RETOUR À LA CASE DÉPART",
-   "comic_action": "L'horloge recule ; un habitant en t-shirt de la collection reprend la file.",
-   "expected_result": "Boucle + question."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Toi, ton record dans une file de mairie, c'est combien ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui attend encore son rendez-vous en préfecture."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 82,
+ "word_count": 78,
  "claims": [
   {
-   "text": "Maître des horloges : le surnom jupitérien lui colle toujours à la peau.",
+   "text": "Pendant ce temps, à Versailles, les investisseurs passent devant : Choose France.",
    "claim_type": "fait_public",
+   "source": "https://www.entreprises.gouv.fr/la-dge/actualites/sommet-choose-france-2025-408-milliards-deuros-dinvestissement-et-53-projets",
+   "note": "Choose France 2025 à Versailles : 40,8 milliards d'euros d'investissements annoncés."
+  },
+  {
+   "text": "Record 2025 : 40,8 milliards d'euros d'investissements annoncés.",
+   "claim_type": "fait_public",
+   "source": "https://www.entreprises.gouv.fr/la-dge/actualites/sommet-choose-france-2025-408-milliards-deuros-dinvestissement-et-53-projets",
+   "note": "Choose France 2025 à Versailles : 40,8 milliards d'euros d'investissements annoncés."
+  },
+  {
+   "text": "Le maître des horloges a réglé ta file : toi, plus tard.",
+   "claim_type": "fiction_satirique",
    "source": "https://www.lequotidiendupharmacien.fr/nom-de-nom",
-   "note": "Référence au mème réel ; aucune phrase inventée attribuée à une personne réelle."
+   "note": "« Jupiter », « maître des horloges ». Détourné dans la ville fictive."
   }
  ],
  "sources": [
   {
+   "url": "https://www.entreprises.gouv.fr/la-dge/actualites/sommet-choose-france-2025-408-milliards-deuros-dinvestissement-et-53-projets",
+   "date": "2025-05-19",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Choose France 2025 à Versailles : 40,8 milliards d'euros d'investissements annoncés."
+  },
+  {
    "url": "https://www.lequotidiendupharmacien.fr/nom-de-nom",
    "date": "2020-10-23",
+   "consulted": "2026-11-22",
    "statut": "mème (surnoms)",
-   "usage": "mème réel rendu reconnaissable dès la 1re ou 2e phrase ; idée seulement, aucune punchline d'auteur copiée"
+   "note": "« Jupiter », « maître des horloges »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mème : Jupiter, maître des horloges × situation : la file d'attente × ressort : boucle. Une réplique de personnage fictif entre guillemets (bulle). Personnages fictifs uniquement ; le maire est un personnage cubique générique. Aucune citation inventée attribuée à une personne réelle, aucune affaire, rien sur la vie privée ni sur une caractéristique protégée, pas d'appel au vote."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : Choose France à Versailles (40,8 milliards annoncés en 2025) pendant que la file d'attente du maître des horloges ne bouge pas. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

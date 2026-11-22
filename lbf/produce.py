@@ -121,6 +121,9 @@ def produce(ep_path: Path, profile: str = "final", log=print) -> dict:
     cuts = [s["start"] for s in tl["shots"][1:]]
     audio.make_music(tl["total"], out / "music.wav")
     audio.make_whooshes(cuts, tl["total"], out / "whoosh.wav")
+    if config.get("MEME_SFX") != "false":
+        report["sfx"] = audio.meme_cues(ep, tl)
+        audio.add_sfx(out / "whoosh.wav", report["sfx"])
     report["loudnorm_pass1"] = audio.mix(out, tl["total"])
     if ep.get("caption_style", "words") == "words":
         subs = captions_v2.build(ep, tl, out / "subs.ass")

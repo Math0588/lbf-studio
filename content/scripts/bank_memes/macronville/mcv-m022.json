@@ -5,78 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Menu sans faute",
- "anchor": "Bilan publié sur X le 16/11/2026 : « Il y a eu parfois des erreurs », il a « fait de [s]on mieux », engagement « jusqu'au bout ».",
+ "anchor": "« il y a eu parfois des erreurs » servi au restaurant, sans dire lesquelles, avec l'addition de la dette.",
  "meme_key": "ERREURS",
  "situation": "le restaurant",
- "ressort": "promesse contre réalité : l'annonce géante, puis ce qui se passe vraiment",
+ "ressort": "piques frontales sourcées (style tacle)",
  "hook_variants": [
-  "Il y a eu parfois des erreurs : le bilan posté sur X fait jaser.",
-  "Ce restaurant reconnaît parfois des erreurs. Jamais sur l'addition.",
-  "Dans cette ville, tout le monde vote Macron… et ça se voit jusqu'à le restaurant.",
-  "Macronville : le restaurant, version « parfois des erreurs ».",
-  "Ici, le restaurant fonctionne comme le mème « parfois des erreurs »."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, le menu s'excuse d'avance.",
+  "Macronville : le restaurant des erreurs parfois.",
+  "Un plat brûlé, une addition record.",
+  "Les macronistes vont laisser un avis cinq étoiles."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "L'addition, elle, ne contient aucune erreur : soixante-huit euros.",
-  "Le chef reconnaît des erreurs, et les facture.",
-  "Le maire, lui, appelle ça une réussite totale."
+  "Le chef part en mai. La vaisselle, elle, reste pour le suivant.",
+  "Erreurs : non précisées. Addition : très précise.",
+  "Le chef s'excuse. La facture, non."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Il y a eu parfois des erreurs : le bilan posté sur X fait jaser.",
+   "text": "Dans cette ville, tout le monde vote Macron. Service compris.",
    "accent_words": [
-    "Il y a eu parfois des erreurs"
+    "Service compris"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Au restaurant de Macronville, la carte promet un menu sans faute.",
+   "text": "Au restaurant, le chef sert un plat brûlé, froid, et en retard.",
    "accent_words": [
-    "menu sans faute"
+    "brûlé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Ton steak arrive en salade, ta salade arrive en dessert.",
+   "text": "Excuses en bas du menu : « il y a eu parfois des erreurs ».",
    "accent_words": [
-    "en dessert"
+    "parfois"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Ton dessert arrive à la table voisine, avec ta carte bleue.",
+   "text": "Lesquelles ? Le menu ne précise pas. Son vrai message non plus.",
    "accent_words": [
-    "carte bleue"
+    "ne précise pas"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le serveur : Parfois des erreurs, mais j'ai fait de mon mieux.",
+   "text": "L'addition : 3 595 milliards. Pourboire non compris.",
    "accent_words": [
-    "mon mieux"
+    "3 595 milliards"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "L'addition, elle, ne contient aucune erreur : soixante-huit euros.",
+   "text": "Le chef part en mai. La vaisselle, elle, reste pour le suivant.",
    "accent_words": [
-    "aucune erreur"
+    "la vaisselle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Ta pire erreur de serveur, c'était quoi ?",
+   "text": "Envoie ça au pote qui s'excuse sans jamais dire pourquoi.",
    "accent_words": [
-    "c'était quoi"
+    "pourquoi"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,12 +90,13 @@
    "camera": "descend",
    "set": [
     "shop",
-    "table",
-    "person"
+    "facade_row",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "PARFOIS DES ERREURS",
-   "comic_action": "Descente sur la terrasse d'un restaurant.",
-   "expected_result": "Le mème est posé."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
+   "expected_result": "Le commerce du jour posé."
   },
   {
    "id": "s2",
@@ -104,86 +105,154 @@
    ],
    "camera": "closeup",
    "set": [
+    "table",
     "sign",
-    "table"
+    "person",
+    "fountain"
    ],
-   "onscreen_text": "MENU SANS FAUTE",
-   "comic_action": "Ardoise qui promet un service parfait.",
-   "expected_result": "Promesse géante."
+   "onscreen_text": "PLAT : BRÛLÉ, FROID",
+   "comic_action": "Table de restaurant ; la carte-ardoise affiche les prix.",
+   "expected_result": "Le restaurant porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n3"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "table",
-    "person"
+    "screen",
+    "text3d",
+    "mairie"
    ],
-   "onscreen_text": "ERREURS : 3/3",
-   "comic_action": "Orbite : assiettes qui changent de table en chaîne.",
-   "expected_result": "Réalité."
+   "onscreen_text": "« PARFOIS DES ERREURS »",
+   "comic_action": "Écran géant sur la mairie : la liste « ERREURS » défile… vide. Le curseur clignote.",
+   "expected_result": "Le bilan reconnaît des erreurs sans en nommer aucune."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5"
+    "n4"
    ],
    "camera": "closeup",
    "set": [
+    "table",
+    "sign",
     "person",
-    "table"
+    "fountain"
    ],
-   "onscreen_text": "",
-   "comic_action": "Le serveur, sa réplique en voix off.",
-   "expected_result": "Excuse calibrée."
+   "onscreen_text": "LESQUELLES ?",
+   "comic_action": "Table de restaurant ; la carte-ardoise affiche les prix.",
+   "expected_result": "Le restaurant porte la pique."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
+    "n5"
+   ],
+   "camera": "descend",
+   "set": [
+    "building",
+    "text3d",
+    "screen",
+    "person"
+   ],
+   "onscreen_text": "ADDITION : 3 595 MILLIARDS",
+   "comic_action": "Compteur géant sur la façade de la tour : les chiffres montent et débordent du bâtiment.",
+   "expected_result": "La dette en compteur municipal."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "sign",
+    "person",
+    "fountain"
+   ],
+   "onscreen_text": "VAISSELLE : POUR LE SUIVANT",
+   "comic_action": "Pile de vaisselle sale jusqu'au plafond ; le chef enlève son tablier et sort par la porte de service.",
+   "expected_result": "Le restaurant porte la pique."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "table",
-    "scroll",
+    "shop",
+    "tshirt",
     "person",
-    "tshirt"
+    "sign"
    ],
-   "onscreen_text": "ADDITION : 68 € (0 ERREUR)",
-   "comic_action": "L'addition se déroule ; un client en t-shirt de la collection.",
-   "expected_result": "Chute + question."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ta pire erreur de serveur, c'était quoi ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui s'excuse sans jamais dire pourquoi."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 76,
+ "word_count": 79,
  "claims": [
   {
-   "text": "Il y a eu parfois des erreurs : le bilan posté sur X fait jaser.",
+   "text": "« il y a eu parfois des erreurs »",
    "claim_type": "citation_exacte",
    "source": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
-   "note": "Référence au mème réel ; aucune phrase inventée attribuée à une personne réelle."
+   "note": "« Il y a eu parfois des erreurs », « fait de [s]on mieux », dix ans après sa candidature."
+  },
+  {
+   "text": "Lesquelles ? Le menu ne précise pas. Son vrai message non plus.",
+   "claim_type": "fait_public",
+   "source": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
+   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027."
+  },
+  {
+   "text": "L'addition : 3 595 milliards. Pourboire non compris.",
+   "claim_type": "fait_public",
+   "source": "https://www.insee.fr/fr/statistiques/9053525",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
+  },
+  {
+   "text": "Le chef part en mai. La vaisselle, elle, reste pour le suivant.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
+   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027. Détourné dans la ville fictive."
   }
  ],
  "sources": [
   {
    "url": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
    "date": "2026-11-17",
-   "statut": "fait (citation exacte publiée sur X le 16/11/2026) + mème",
-   "usage": "mème réel rendu reconnaissable dès la 1re ou 2e phrase ; idée seulement, aucune punchline d'auteur copiée"
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (post X)",
+   "note": "« Il y a eu parfois des erreurs », « fait de [s]on mieux », dix ans après sa candidature."
+  },
+  {
+   "url": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait rapporté",
+   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027."
+  },
+  {
+   "url": "https://www.insee.fr/fr/statistiques/9053525",
+   "date": "2026-09-29",
+   "consulted": "2026-11-22",
+   "statut": "fait public (Insee)",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mème : parfois des erreurs × situation : le restaurant × ressort : promesse. Personnages fictifs uniquement ; le maire est un personnage cubique générique. Aucune citation inventée attribuée à une personne réelle, aucune affaire, rien sur la vie privée ni sur une caractéristique protégée, pas d'appel au vote."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « il y a eu parfois des erreurs » servi au restaurant, sans dire lesquelles, avec l'addition de la dette. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

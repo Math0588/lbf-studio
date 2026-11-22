@@ -5,78 +5,78 @@
  "format": "A",
  "length": "court",
  "title_cover": "Colis au garde-à-vous",
- "anchor": "Annonce à Varces (27/11/2025) d'un service national militaire volontaire de dix mois.",
+ "anchor": "le service national volontaire de dix mois et « Nous sommes en guerre » appliqués à la livraison.",
  "meme_key": "SERVICE",
  "situation": "la livraison",
- "ressort": "bureaucratie récursive : pour régler le problème, il faut d'abord un formulaire pour le formulaire",
+ "ressort": "piques frontales sourcées (style tacle)",
  "hook_variants": [
-  "Le nouveau service national volontaire a été annoncé fin 2025.",
-  "Dans cette ville, un colis fait ses classes avant d'arriver.",
-  "Dans cette ville, tout le monde vote Macron… et ça se voit jusqu'à la livraison.",
-  "Macronville : la livraison, version « le service militaire volontaire ».",
-  "Ici, la livraison fonctionne comme le mème « le service militaire volontaire »."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, ton colis arrive au garde-à-vous.",
+  "Macronville : la livraison en treillis.",
+  "Le seul livreur qui salue ta porte.",
+  "Les macronistes vont signer le bon au garde-à-vous."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le livreur, au garde-à-vous : « Colis prêt, mon colonel, toujours pas livré. »",
-  "Le colis a été décoré. Il n'est toujours pas livré.",
-  "Le maire, lui, appelle ça une réussite totale."
+  "Ton colis a fait son service. Le pays, lui, attend toujours sa livraison.",
+  "Livré au clairon. Le reste, toujours en transit.",
+  "Le colis est à l'heure. La promesse, en retard."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Le nouveau service national volontaire a été annoncé fin 2025.",
+   "text": "Dans cette ville, tout le monde vote Macron. Et les colis saluent.",
    "accent_words": [
-    "service national volontaire"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n2",
-   "text": "À Macronville, les livreurs doivent désormais faire leur service.",
-   "accent_words": [
-    "leur service"
+    "saluent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Pour livrer un colis, il faut d'abord un ordre de mission.",
+   "id": "n2",
+   "text": "Le livreur arrive en treillis : service national volontaire, dix mois.",
    "accent_words": [
-    "de mission"
+    "dix mois"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "Volontaire, mais il n'avait pas le choix : sinon, traverse la rue.",
+   "accent_words": [
+    "traverse la rue"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Pour l'ordre de mission, il faut un formulaire visé par le colonel.",
+   "text": "Il livre au pas cadencé. Ton colis arrive au clairon.",
    "accent_words": [
-    "le colonel"
+    "au clairon"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le colonel exige d'abord le colis, comme pièce justificative.",
+   "text": "Le bon de livraison porte la devise : « Nous sommes en guerre ».",
    "accent_words": [
-    "pièce justificative"
+    "en guerre"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n6",
-   "text": "Le livreur, au garde-à-vous : « Colis prêt, mon colonel, toujours pas livré. »",
+   "text": "Ton colis a fait son service. Le pays, lui, attend toujours sa livraison.",
    "accent_words": [
-    "pas livré"
+    "attend toujours"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Combien de temps ton dernier colis est resté en route ?",
+   "text": "Envoie ça au pote qui suit son colis toutes les cinq minutes.",
    "accent_words": [
-    "en route"
+    "cinq minutes"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,101 +89,166 @@
    ],
    "camera": "descend",
    "set": [
-    "car",
     "road",
-    "building"
+    "facade_row",
+    "lamp",
+    "person",
+    "car"
    ],
-   "onscreen_text": "SERVICE NATIONAL",
-   "comic_action": "Descente sur une camionnette de livraison camouflée.",
-   "expected_result": "Le mème est posé."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
+   "expected_result": "Le décor de rue posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "form_stack",
-    "person"
+    "tree",
+    "bench",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "ORDRE DE MISSION",
-   "comic_action": "Gros plan : formulaire tamponné au pied d'un colis.",
-   "expected_result": "Bureaucratie."
+   "onscreen_text": "LIVREUR EN TREILLIS",
+   "comic_action": "Les habitants du parc au garde-à-vous ; panneau « VOLONTAIRE (OBLIGATOIRE) ».",
+   "expected_result": "Le service national étendu au quotidien."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4"
+    "n3"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "form_stack",
-    "person"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "VISA DU COLONEL",
-   "comic_action": "Par la fenêtre : bureau militaire, pile qui grandit.",
-   "expected_result": "Récursion."
+   "onscreen_text": "SINON : TRAVERSE",
+   "comic_action": "Un habitant traverse le passage piéton ; le panneau « EMPLOI » recule d'un mètre à chaque pas.",
+   "expected_result": "Le mème « traverser la rue » devient une infrastructure."
   },
   {
    "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "person",
+    "road",
+    "sign",
+    "car"
+   ],
+   "onscreen_text": "LIVRAISON AU CLAIRON",
+   "comic_action": "Livreur qui court avec un colis ; panneau de la mairie sur le trottoir.",
+   "expected_result": "La livraison porte la pique."
+  },
+  {
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "orbit",
    "set": [
-    "form_stack",
-    "car"
+    "tribune",
+    "banner",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "JUSTIFICATIF : LE COLIS",
-   "comic_action": "Orbite : le colis tourne entre le bureau et la camionnette.",
-   "expected_result": "Boucle bureaucratique."
+   "onscreen_text": "« NOUS SOMMES EN GUERRE »",
+   "comic_action": "Le maire cubique déclare la guerre derrière un pupitre ; l'ennemi est un formulaire posé sur la table.",
+   "expected_result": "La martialité appliquée à rien."
   },
   {
-   "id": "s5",
+   "id": "s6",
    "narration_ids": [
-    "n6",
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "person",
+    "road",
+    "sign",
+    "car"
+   ],
+   "onscreen_text": "PAYS : EN TRANSIT",
+   "comic_action": "Écran de suivi : « COLIS LIVRÉ » en vert ; en dessous, « PAYS : EN TRANSIT DEPUIS 2017 » en rouge.",
+   "expected_result": "La livraison porte la pique."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "car",
+    "road",
     "person",
-    "tshirt"
+    "tshirt",
+    "sign"
    ],
-   "onscreen_text": "",
-   "comic_action": "Le livreur au garde-à-vous, bulle ; un client en t-shirt de la collection.",
-   "expected_result": "Chute + question."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Combien de temps ton dernier colis est resté en route ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui suit son colis toutes les cinq minutes."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 76,
+ "word_count": 84,
  "claims": [
   {
-   "text": "Le nouveau service national volontaire a été annoncé fin 2025.",
+   "text": "Le livreur arrive en treillis : service national volontaire, dix mois.",
    "claim_type": "fait_public",
    "source": "https://www.elysee.fr/emmanuel-macron/2025/11/27/deplacement-au-sein-de-la-27e-brigade-dinfanterie-de-montagne-de-varces",
-   "note": "Référence au mème réel ; aucune phrase inventée attribuée à une personne réelle."
+   "note": "Service national militaire volontaire de dix mois annoncé à Varces."
+  },
+  {
+   "text": "Volontaire, mais il n'avait pas le choix : sinon, traverse la rue.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements. Détourné dans la ville fictive."
+  },
+  {
+   "text": "« Nous sommes en guerre »",
+   "claim_type": "citation_exacte",
+   "source": "https://uk.ambafrance.org/We-are-at-war-with-COVID-19-says-President-in-national-broadcast",
+   "note": "« Nous sommes en guerre » (adresse du 16/03/2020)."
   }
  ],
  "sources": [
   {
    "url": "https://www.elysee.fr/emmanuel-macron/2025/11/27/deplacement-au-sein-de-la-27e-brigade-dinfanterie-de-montagne-de-varces",
    "date": "2025-11-27",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "usage": "mème réel rendu reconnaissable dès la 1re ou 2e phrase ; idée seulement, aucune punchline d'auteur copiée"
+   "note": "Service national militaire volontaire de dix mois annoncé à Varces."
+  },
+  {
+   "url": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
+   "date": "2018-09-17",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte + mème",
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
+  },
+  {
+   "url": "https://uk.ambafrance.org/We-are-at-war-with-COVID-19-says-President-in-national-broadcast",
+   "date": "2020-03-16",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte",
+   "note": "« Nous sommes en guerre » (adresse du 16/03/2020)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mème : le service militaire volontaire × situation : la livraison × ressort : bureaucratie. Une réplique de personnage fictif entre guillemets (bulle). Personnages fictifs uniquement ; le maire est un personnage cubique générique. Aucune citation inventée attribuée à une personne réelle, aucune affaire, rien sur la vie privée ni sur une caractéristique protégée, pas d'appel au vote."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : le service national volontaire de dix mois et « Nous sommes en guerre » appliqués à la livraison. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

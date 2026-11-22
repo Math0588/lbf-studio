@@ -4,79 +4,79 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Le parc au garde-à-vous",
- "anchor": "Annonce à Varces (27/11/2025) d'un service national militaire volontaire de dix mois.",
+ "title_cover": "Parc au garde-à-vous",
+ "anchor": "le service national volontaire de dix mois (annonce de Varces, novembre 2025) étendu au parc.",
  "meme_key": "SERVICE",
  "situation": "le parc",
- "ressort": "escalade : chaque étape est pire et plus absurde que la précédente",
+ "ressort": "piques frontales sourcées (style tacle)",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Macron…",
-  "Dans ce parc, même les pigeons font leurs classes.",
-  "Bienvenue à Macronville, où le parc a son propre mème.",
-  "Macronville : le parc, version « le service militaire volontaire ».",
-  "Ici, le parc fonctionne comme le mème « le service militaire volontaire »."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, même le toboggan exige un salut militaire.",
+  "Macronville : le parc volontaire obligatoire.",
+  "Le seul square de France au garde-à-vous.",
+  "Les macronistes vont se mettre au garde-à-vous."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le gardien : Le volontariat est obligatoire, mais en même temps facultatif.",
-  "À la fin, même le toboggan fait ses dix mois.",
-  "Le maire, lui, appelle ça une réussite totale."
+  "Les jeunes font dix mois de service. Lui, dix ans, sans période d'essai.",
+  "Dix mois pour eux, dix ans pour lui. Sans évaluation.",
+  "Volontaire, obligatoire, en même temps."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron…",
+   "text": "Dans cette ville, tout le monde vote Macron. Au garde-à-vous.",
    "accent_words": [
-    "Macron"
+    "garde-à-vous"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Et depuis le service militaire volontaire, le parc montre l'exemple.",
+   "text": "Fin 2025, il annonce un service national volontaire de dix mois.",
    "accent_words": [
-    "service militaire volontaire"
+    "dix mois"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "D'abord, les joggeurs courent en rang, au sifflet.",
+   "text": "Au parc, le volontariat est obligatoire : salut au drapeau avant le toboggan.",
    "accent_words": [
-    "au sifflet"
+    "obligatoire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ensuite, les pigeons doivent saluer avant de picorer.",
+   "text": "Les bancs sont alignés en rang par deux. Les pigeons défilent au pas.",
    "accent_words": [
-    "de picorer"
+    "au pas"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Puis les bancs exigent un mot de passe et un salut tricolore.",
+   "text": "Règle du parc : volontaire, mais en même temps obligatoire.",
    "accent_words": [
-    "salut tricolore"
+    "en même temps"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le gardien : Le volontariat est obligatoire, mais en même temps facultatif.",
+   "text": "Les jeunes font dix mois de service. Lui, dix ans, sans période d'essai.",
    "accent_words": [
-    "temps facultatif"
+    "sans période d'essai"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Tu tiendrais combien de jours dans le parc de Macronville ?",
+   "text": "Envoie ça au pote qui joue au militaire au paintball.",
    "accent_words": [
-    "de Macronville"
+    "paintball"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,105 +85,175 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "tree",
     "bench",
-    "fountain",
-    "banner"
+    "lamp",
+    "person"
    ],
-   "onscreen_text": "SERVICE VOLONTAIRE",
-   "comic_action": "Descente sur le parc pavoisé de banderoles tricolores.",
-   "expected_result": "Le mème est posé."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur le square : arbres, banc, réverbère.",
+   "expected_result": "Le square posé."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "tree",
+    "bench",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "SERVICE NATIONAL : 10 MOIS",
+   "comic_action": "Les habitants du parc au garde-à-vous ; panneau « VOLONTAIRE (OBLIGATOIRE) ».",
+   "expected_result": "Le service national étendu au quotidien."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "street_dolly",
    "set": [
     "tree",
-    "person"
+    "bench",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "JOGGING : EN RANG",
-   "comic_action": "Travelling : des joggeurs en colonne par deux.",
-   "expected_result": "Première étape."
+   "onscreen_text": "VOLONTAIRE (OBLIGATOIRE)",
+   "comic_action": "Les habitants du parc au garde-à-vous ; panneau « VOLONTAIRE (OBLIGATOIRE) ».",
+   "expected_result": "Le service national étendu au quotidien."
   },
   {
-   "id": "s3",
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "closeup",
    "set": [
-    "bench"
-   ],
-   "onscreen_text": "PIGEONS : SALUT OBLIGATOIRE",
-   "comic_action": "Gros plan : un pigeon qui salue.",
-   "expected_result": "Escalade."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5"
-   ],
-   "camera": "orbit",
-   "set": [
     "bench",
-    "sign",
-    "person"
+    "tree",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "BANC : MOT DE PASSE",
-   "comic_action": "Orbite : un banc avec digicode et drapeau.",
-   "expected_result": "Sommet de l'escalade."
+   "onscreen_text": "EN RANG PAR DEUX",
+   "comic_action": "Gros plan sur le banc du square et son panneau.",
+   "expected_result": "Le décor du gag."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "sign",
+    "text3d",
+    "road"
+   ],
+   "onscreen_text": "VOLONTAIRE / OBLIGATOIRE",
+   "comic_action": "Gros plan sur un panneau municipal.",
+   "expected_result": "La pique s'affiche en panneau."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "column",
+    "studio_light",
+    "person"
+   ],
+   "onscreen_text": "10 ANS SANS PÉRIODE D'ESSAI",
+   "comic_action": "Le maire cubique sur une tribune entre deux colonnes, éclair en carton derrière lui ; la foule lève la tête.",
+   "expected_result": "La verticalité en un plan."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
     "tree",
+    "bench",
     "person",
     "tshirt"
    ],
-   "onscreen_text": "",
-   "comic_action": "Le gardien au garde-à-vous, sa réplique en voix off ; un promeneur en t-shirt de la collection.",
-   "expected_result": "Chute + question."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur le square ; un habitant en t-shirt de la collection sur le banc.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Tu tiendrais combien de jours dans le parc de Macronville ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui joue au militaire au paintball."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 69,
+ "word_count": 80,
  "claims": [
   {
-   "text": "Et depuis le service militaire volontaire, le parc montre l'exemple.",
+   "text": "Fin 2025, il annonce un service national volontaire de dix mois.",
    "claim_type": "fait_public",
    "source": "https://www.elysee.fr/emmanuel-macron/2025/11/27/deplacement-au-sein-de-la-27e-brigade-dinfanterie-de-montagne-de-varces",
-   "note": "Référence au mème réel ; aucune phrase inventée attribuée à une personne réelle."
+   "note": "Service national militaire volontaire de dix mois annoncé à Varces."
+  },
+  {
+   "text": "Au parc, le volontariat est obligatoire : salut au drapeau avant le toboggan.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.elysee.fr/emmanuel-macron/2025/11/27/deplacement-au-sein-de-la-27e-brigade-dinfanterie-de-montagne-de-varces",
+   "note": "Service national militaire volontaire de dix mois annoncé à Varces. Détourné dans la ville fictive."
+  },
+  {
+   "text": "Règle du parc : volontaire, mais en même temps obligatoire.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
+   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois. Détourné dans la ville fictive."
+  },
+  {
+   "text": "Les jeunes font dix mois de service. Lui, dix ans, sans période d'essai.",
+   "claim_type": "fait_public",
+   "source": "https://www.elysee.fr/emmanuel-macron/2025/11/27/deplacement-au-sein-de-la-27e-brigade-dinfanterie-de-montagne-de-varces",
+   "note": "Service national militaire volontaire de dix mois annoncé à Varces."
   }
  ],
  "sources": [
   {
    "url": "https://www.elysee.fr/emmanuel-macron/2025/11/27/deplacement-au-sein-de-la-27e-brigade-dinfanterie-de-montagne-de-varces",
    "date": "2025-11-27",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "usage": "mème réel rendu reconnaissable dès la 1re ou 2e phrase ; idée seulement, aucune punchline d'auteur copiée"
+   "note": "Service national militaire volontaire de dix mois annoncé à Varces."
+  },
+  {
+   "url": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
+   "date": "2017-05-08",
+   "consulted": "2026-11-22",
+   "statut": "fait (comptage presse) + mème",
+   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois."
+  },
+  {
+   "url": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
+   "date": "2026-11-17",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (post X)",
+   "note": "« Il y a eu parfois des erreurs », « fait de [s]on mieux », dix ans après sa candidature."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mème : le service militaire volontaire × situation : le parc × ressort : escalade. Personnages fictifs uniquement ; le maire est un personnage cubique générique. Aucune citation inventée attribuée à une personne réelle, aucune affaire, rien sur la vie privée ni sur une caractéristique protégée, pas d'appel au vote."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : le service national volontaire de dix mois (annonce de Varces, novembre 2025) étendu au parc. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }
