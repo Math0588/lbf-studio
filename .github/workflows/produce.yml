@@ -9,13 +9,16 @@ on:
       max_videos:
         description: "Nombre de vidéos à fabriquer dans ce passage"
         default: "1"
+      slot:
+        description: "Décalage dans la file (passages parallèles : 0, 1, 2…)"
+        default: "0"
   push:
     branches: [main]
     paths: [".github/workflows/produce.yml"]
 permissions:
   contents: write
 concurrency:
-  group: produce
+  group: produce-${{ inputs.slot || '0' }}
   cancel-in-progress: false
 jobs:
   produce:
@@ -23,6 +26,7 @@ jobs:
     timeout-minutes: 340
     env:
       MAX_VIDEOS: ${{ inputs.max_videos || '1' }}
+      SLOT: ${{ inputs.slot || '0' }}
       TIME_BUDGET_MIN: "280"
       GH_TOKEN: ${{ github.token }}
       RENDER_QUALITY: ${{ vars.RENDER_QUALITY || 'cloud' }}
@@ -88,4 +92,4 @@ jobs:
           git config user.email "lbf-studio@users.noreply.github.com"
           git add state content/episodes content/sets 2>/dev/null || true
           git diff --cached --quiet || git commit -qm "fabrication : état $(date -u +%F' '%H:%M)"
-          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
+          for i in 1 2 3 4; do git pull -q --rebase -X theirs && git push -q && break; sleep $((RANDOM % 20 + 5)); done || true

@@ -110,6 +110,11 @@ def build(ep: dict, timeline: dict, out_path: Path) -> dict:
             txt = " ".join(ws[:cut]) + "\\N" + " ".join(ws[cut:])
         ev.append((7, "Hook", 0, ho.get("until", 2.4),
                    "{\\an5\\pos(540,360)\\fscx70\\fscy70\\t(0,120,\\fscx104\\fscy104)\\t(120,200,\\fscx100\\fscy100)}" + txt))
+        if ho.get("tag"):
+            tag = ho["tag"].upper()
+            kt = min(70, int(70 * 940 / max(1, text_width(tag) * 64 / 60)))
+            ev.append((8, "Hook", 0, ho.get("until", 2.4),
+                       "{\\an5\\pos(540,%d)\\frz3\\fscx%d\\fscy%d}" % (360 + (190 if "\\N" in txt else 130), kt, kt) + tag))
         if ho.get("sub"):
             y = 360 - (150 if "\\N" in txt else 100)
             ev.append((7, "PartSub", 0, ho.get("until", 2.4), "{\\an5\\pos(540,%d)}" % y + ho["sub"].upper()))

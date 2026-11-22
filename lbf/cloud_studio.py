@@ -43,11 +43,22 @@ def candidates() -> list[Path]:
     return first + rest
 
 
-def next_script(st: dict) -> Path | None:
-    done = {p["id"] for p in st["produced"]} | set(st["skipped"]) | ALREADY_PUBLISHED
+def release_names() -> set:
+    r = gh("release", "view", RELEASE, "--json", "assets", check=False)
+    return {a["name"] for a in json.loads(r.stdout or "{}").get("assets", [])} if r.returncode == 0 else set()
+
+
+def next_script(st: dict, offset: int = 0) -> Path | None:
+    """offset-ième script non fabriqué : plusieurs passages en parallèle prennent chacun le leur."""
+    names = release_names()
+    done = {n[:-4] for n in names if n.endswith(".mp4")} | set(st["skipped"]) | ALREADY_PUBLISHED
+    skip = offset
     for p in candidates():
         sid = json.loads(p.read_text(encoding="utf-8"))["id"]
         if sid in done or st["attempts"].get(sid, 0) >= MAX_ATTEMPTS:
+            continue
+        if skip:
+            skip -= 1
             continue
         return p
     return None
@@ -111,6 +122,14 @@ def produce_one(st: dict, script: Path) -> dict:
 
 
 def publish_index(st: dict):
+    """index.json reconstruit depuis la release (sûr même avec des passages parallèles), ordre de fabrication."""
+    names = release_names()
+    items = []
+    for p in candidates():
+        s = json.loads(p.read_text(encoding="utf-8"))
+        if f"{s['id']}.mp4" in names and f"{s['id']}.json" in names:
+            items.append({"id": s["id"], "city": s.get("city"), "title": s.get("title_cover")})
+    st = {"produced": items}
     idx = config.OUTPUT / "upload" / "index.json"
     idx.parent.mkdir(parents=True, exist_ok=True)
     idx.write_text(json.dumps({"updated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
@@ -125,8 +144,9 @@ def main():
     st = load_state()
     ensure_release()
     made = 0
+    offset = int(os.environ.get("SLOT", "0") or 0)
     while made < max_n and time.time() - t0 < budget:
-        sc = next_script(st)
+        sc = next_script(st, offset)
         if not sc:
             print("[studio] banque épuisée", flush=True)
             break

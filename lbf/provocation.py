@@ -16,6 +16,13 @@ NAMES = {"bardellaville": "Bardella", "melenchonville": "Mélenchon", "macronvil
 CITIES = {"bardellaville": "Bardellaville", "melenchonville": "Mélenchonville", "macronville": "Macronville",
           "zemmourville": "Zemmourville", "marineville": "Marineville", "glucksmannville": "Glucksmannville"}
 
+HOOKS_SHORT = [
+    "SI TU VOTES {nom}, NE REGARDE PAS",
+    "INTERDIT AUX FANS DE {nom}",
+    "LES PRO-{nom} VONT ME DÉTESTER",
+    "ÇA VA PIQUER CHEZ {nom}",
+    "{nom}, C'EST TOI QUI GÈRES ÇA ?",
+]
 HOOKS = [
     "Les électeurs de {nom} vont me détester",
     "Si tu votes {nom}, ne regarde pas",
@@ -54,9 +61,10 @@ def apply(ep: dict) -> dict:
     autre = CITIES[NEXT.get(city, city)]
     # 1re image = sujet de la vidéo (titre + ville), lisible son coupé et dans l'aperçu du profil
     title = ep.get("title_cover") or _pick(HOOKS, key, "h").format(nom=nom)
-    ep["hook_overlay"] = {"text": title, "sub": ville.upper(), "until": 2.6}
-    title, sub = _pick(SHARE_TITLES, key, "e")
-    ep["endcard"] = {"title": title.format(nom=nom), "sub": sub.format(next=autre) + " · t-shirt en bio", "at": 0.3}
+    ep["hook_overlay"] = {"text": title, "tag": _pick(HOOKS_SHORT, key, "t").format(nom=nom.upper()),
+                          "sub": ville.upper(), "until": 2.8}
+    ep["endcard"] = {"title": f"Envoie ça à ton pote qui vote {nom}",
+                     "sub": "LE T-SHIRT : LIEN EN BIO", "at": 0.3}
     from . import seo                     # légende, hashtags et métadonnées YouTube optimisés pour la recherche
     meta = seo.build(ep)
     ep["caption"] = meta["caption"]

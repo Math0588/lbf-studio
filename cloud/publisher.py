@@ -270,7 +270,7 @@ def create_container(ep_id: str, params: dict, studio: bool = False) -> tuple[st
 
 def next_episode(queue, pubs, assets=frozenset(), studio=None):
     done = {p["episode_id"] for p in pubs if p["status"] in ("published", "publication_uncertain", "failed")
-            and not p.get("retry")}
+            and not p.get("retry")} | {p["episode_id"] for p in pubs if p.get("_this_run")}
     # 1) vidéos du studio cloud, dans l'ordre de fabrication (elles remplacent les anciennes versions locales)
     for it in studio or []:
         if it["id"] not in done:
@@ -488,32 +488,50 @@ def main():
     counted = ("published", "publishing", "publication_uncertain") + \
         (() if env("LIVE_PUBLISH") == "true" else ("simulated",))   # un essai à blanc n'occupe pas un vrai créneau
     done_today = [p for p in pubs if p.get("attempt_at", "")[:10] == today and p["status"] in counted]
+    # Rafale demandée par le propriétaire : N Reels d'un coup à une heure donnée (ex. 4 à 8h00 le 22/11)
+    burst = next((b for b in control.get("bursts", []) if b.get("date") == today), None)
+    if burst:
+        slots = [burst["at"]] * int(burst.get("count", 1))
+        start = f"{today}T{burst['at']}"   # ce qui a été publié avant la rafale (ex. 2h26) ne compte pas
+        done_today = [p for p in done_today if p.get("attempt_at", "")[:16] >= start]
     passed = [s for s in slots if (now().hour, now().minute) >= tuple(map(int, s.split(":")))]
+    todo = max(0, len(passed) - len(done_today)) if burst else 1
     if "--force" not in sys.argv:
         if len(done_today) >= len(passed):
             log(f"Rien à publier maintenant (créneaux {', '.join(slots)} Europe/Paris ; {len(done_today)} fait(s)).")
             return 0
-        if done_today:
+        if done_today and not burst:
             last = max(dt.datetime.fromisoformat(p["attempt_at"]) for p in done_today)
             if (now() - last).total_seconds() < 2.5 * 3600:
                 log("Moins de 3 h depuis la dernière publication : pas de rafale après une panne.")
                 return 0
     studio = studio_index()
+    for k in range(max(1, todo)):
+        if k:
+            log(f"Rafale : Reel {k + 1}/{todo}")
+            time.sleep(20)
+        if not publish_next(queue, pubs, assets, studio):
+            break
+    return 0
+
+
+def publish_next(queue, pubs, assets, studio) -> bool:
     item = next_episode(queue, pubs, assets, studio)
     if not item:
         notify("reserve", "Réserve vide : aucune vidéo prête (la fabrication cloud tourne 5 fois par jour).")
         save("publications.json", pubs)
-        return 0
+        return False
     done_ids = {p["episode_id"] for p in pubs if p["status"] == "published"}
     remaining = len([i for i in studio if i["id"] not in done_ids]) - 1 if studio else \
         len([q for q in queue if has_video(q["episode_id"], assets)]) - 1
     if remaining < 3:
         notify("reserve", f"Réserve basse : {remaining} vidéo(s) après celle-ci.")
     pub = publish_one(item, pubs)
-    save("publications.json", pubs)
+    pub["_this_run"] = True
+    save("publications.json", [{k: v for k, v in p.items() if k != "_this_run"} for p in pubs])
     publish_youtube(item)
     log(f"Résultat {pub['episode_id']} : {pub['status']} {pub.get('permalink', '')}")
-    return 0
+    return pub["status"] in ("published", "simulated")
 
 
 if __name__ == "__main__":

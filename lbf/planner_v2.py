@@ -258,10 +258,11 @@ def plan(script: dict) -> dict:
               {"type": "tshirt", "id": "tee", "at": [sx + 3, sy, 2.6], "rot": -8, "scale": 0.9, "color": "#FFFFFF",
                "lines": slogan, "text_color": "#EF233C"}]
     last_nid = shots[-1]["narration_ids"]
-    shots.insert(len(shots) - 1, {"id": "sprod", "narration_ids": [], "dur": 1.5, "lens": 34, "dof": False,
+    shots.insert(len(shots) - 1, {"id": "sprod", "narration_ids": [], "dur": 2.8, "lens": 34, "dof": False,
                                   "keys": [{"t": 0, "loc": [sx + 0.5, sy - 13.5, 3.5], "look": [sx, sy + 0.5, 2.4]},
                                            {"t": 1, "loc": [sx + 0.4, sy - 10.5, 3.0], "look": [sx, sy + 0.5, 2.3]}]})
-    stickers.append({"text": "LE T-SHIRT EST EN BIO", "shot": "sprod", "at": 0.1, "x": 540, "y": 520, "rot": -6})
+    stickers.append({"text": "CE T-SHIRT EXISTE VRAIMENT", "shot": "sprod", "at": 0.05, "x": 540, "y": 430, "rot": -6})
+    stickers.append({"text": "LIEN EN BIO", "shot": "sprod", "at": 0.35, "x": 560, "y": 560, "rot": 5})
     shots[-1]["keys"] = [{"t": 0, "loc": [10, -40, 14], "look": [0, -10, 3]}, {"t": 1, "loc": [12, -62, 46], "look": [0, -5, 2]}]
     shots[-1]["lens"] = 24
     shots[-1]["tail"] = 1.6
