@@ -48,15 +48,72 @@ def candidates() -> list[Path]:
     return first + rest
 
 
-def release_names() -> set:
+def release_assets() -> dict:
+    """nom → date (ISO) de chaque fichier de la release."""
     r = gh("release", "view", RELEASE, "--json", "assets", check=False)
-    return {a["name"] for a in json.loads(r.stdout or "{}").get("assets", [])} if r.returncode == 0 else set()
+    if r.returncode != 0:
+        return {}
+    return {a["name"]: a.get("updatedAt") or a.get("createdAt") or ""
+            for a in json.loads(r.stdout or "{}").get("assets", [])}
 
 
-def next_script(st: dict, offset: int = 0) -> Path | None:
+def release_names() -> set:
+    return set(release_assets())
+
+
+# Réservation : chaque passage pose « <id>.<run>.encours » dans la release avant de fabriquer, pour que
+# les passages parallèles ne fabriquent jamais deux fois le même script. Périmée après CLAIM_H heures
+# (passage annulé ou planté).
+CLAIM_H = 5
+RUN_TAG = os.environ.get("GITHUB_RUN_ID") or "local"
+
+
+def claims(assets: dict | None = None) -> dict:
+    """id → [(date, run)] des réservations encore valides."""
+    assets = release_assets() if assets is None else assets
+    lim = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=CLAIM_H)).isoformat()
+    out = {}
+    for n, at in assets.items():
+        if n.endswith(".encours") and n.count(".") >= 2:
+            sid, tag = n[:-len(".encours")].rsplit(".", 1)
+            if (at or "9") >= lim[:19]:
+                out.setdefault(sid, []).append((at, tag))
+    return out
+
+
+def manual_holds() -> set:
+    """state/en_cours.json : scripts lancés par d'anciens passages (avant les réservations), jusqu'à « until »."""
+    f = config.ROOT / "state" / "en_cours.json"
+    if not f.exists():
+        return set()
+    d = json.loads(f.read_text(encoding="utf-8"))
+    return set(d.get("ids", [])) if dt.datetime.now(dt.timezone.utc).isoformat() < d.get("until", "") else set()
+
+
+def claim(sid: str) -> bool:
+    """Réserve sid ; en cas de course, le plus ancien (puis le plus petit run) garde la main."""
+    f = config.OUTPUT / "upload" / f"{sid}.{RUN_TAG}.encours"
+    f.parent.mkdir(parents=True, exist_ok=True)
+    f.write_text(RUN_TAG)
+    upload([f])
+    time.sleep(8)
+    mine = sorted(claims().get(sid, []))
+    if mine and mine[0][1] != RUN_TAG:
+        unclaim(sid)
+        return False
+    return True
+
+
+def unclaim(sid: str):
+    gh("release", "delete-asset", RELEASE, f"{sid}.{RUN_TAG}.encours", "-y", check=False)
+
+
+def next_script(st: dict, offset: int = 0, exclude: tuple = ()) -> Path | None:
     """offset-ième script non fabriqué : plusieurs passages en parallèle prennent chacun le leur."""
-    names = release_names()
-    done = {n[:-4] for n in names if n.endswith(".mp4")} | set(st["skipped"]) | ALREADY_PUBLISHED
+    assets = release_assets()
+    names = set(assets)
+    done = {n[:-4] for n in names if n.endswith(".mp4")} | set(st["skipped"]) | ALREADY_PUBLISHED \
+        | {sid for sid, cl in claims(assets).items() if all(tag != RUN_TAG for _, tag in cl)} | set(exclude) | manual_holds()
     skip = offset
     from . import viral_lint
     cands = candidates()
@@ -168,12 +225,21 @@ def main():
     st = load_state()
     ensure_release()
     made = 0
-    offset = int(os.environ.get("SLOT", "0") or 0)
+    # passages lancés ensemble : départs décalés, puis chacun prend le premier script non réservé
+    slot = int(os.environ.get("SLOT", "0") or 0)
+    time.sleep(min(slot, 20) * 25)
+    lost = []
     while made < max_n and time.time() - t0 < budget:
-        sc = next_script(st, offset)
+        sc = next_script(st, 0, tuple(lost))
         if not sc:
             print("[studio] banque épuisée", flush=True)
             break
+        sid = json.loads(sc.read_text(encoding="utf-8"))["id"]
+        if not claim(sid):
+            print(f"[studio] {sid} déjà pris par un autre passage", flush=True)
+            lost.append(sid)
+            continue
+        print(f"[studio] script : {sid}", flush=True)
         try:
             r = produce_one(st, sc)
         except Exception as e:
@@ -181,6 +247,7 @@ def main():
             sid = json.loads(sc.read_text(encoding="utf-8"))["id"]
             st["attempts"][sid] = st["attempts"].get(sid, 0) + 1
             r = {"ok": False}
+        unclaim(sid)
         save_state(st)
         made += 1 if r.get("ok") else 0
         if not r.get("ok") and os.environ.get("STOP_ON_FAIL") == "true":
