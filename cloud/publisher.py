@@ -42,14 +42,21 @@ def now():
     return dt.datetime.now(TZ)
 
 
+def _clean(name, data):
+    # "_this_run" ne vit qu'en mémoire (un échec n'est pas retenté dans le même passage) : jamais sur disque
+    if name == "publications.json" and isinstance(data, list):
+        return [{k: v for k, v in p.items() if k != "_this_run"} for p in data]
+    return data
+
+
 def load(name, default):
     p = STATE / name
-    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else default
+    return _clean(name, json.loads(p.read_text(encoding="utf-8"))) if p.exists() else default
 
 
 def save(name, data):
     STATE.mkdir(exist_ok=True)
-    (STATE / name).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    (STATE / name).write_text(json.dumps(_clean(name, data), ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def log(msg):
