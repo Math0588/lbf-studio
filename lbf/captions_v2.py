@@ -1,4 +1,4 @@
-"""Sous-titres v2 (codes des Reels qui marchent) : un mot à la fois, jaune à contour noir, au centre ;
+"""Sous-titres v2 (codes des Reels qui marchent) : un mot à la fois, jaune à contour noir, sous le centre (y=1340) ;
 étiquettes rouges inclinées, bulles de dialogue, carte de fin « ABONNE-TOI », teaser « Partie 2 »."""
 from __future__ import annotations
 
@@ -11,6 +11,7 @@ SHORT = {"le", "la", "les", "l'", "un", "une", "de", "du", "des", "d'", "à", "a
          "son", "ses", "ton", "ta", "tes", "mon", "ma", "mes", "lui", "qui", "que", "ou", "où"}
 YEL = "&H0000E6FF&"
 RED = "&H003C23EF&"
+WORD_Y = 1340  # centre vertical des mots (1920 px de haut ; boutons et légende Instagram sous ~1500)
 
 
 def word_cards(text: str) -> list[str]:
@@ -58,7 +59,9 @@ def build(ep: dict, timeline: dict, out_path: Path) -> dict:
             txt = c.upper().rstrip(",;")
             col = "{\\c" + RED + "}" if any(a in c.lower() for a in acc) else ""
             k = min(100, int(100 * 940 / max(1, text_width(txt) * 92 / 60)))  # rétrécit un mot trop large
-            pop = "{\\fscx%d\\fscy%d\\t(0,90,\\fscx%d\\fscy%d)}" % (k * 118 // 100, k * 118 // 100, k, k)
+            # plus bas que le centre (le gag reste visible), au-dessus de la zone des boutons Instagram
+            pop = "{\\an5\\pos(540,%d)\\fscx%d\\fscy%d\\t(0,90,\\fscx%d\\fscy%d)}" % (
+                WORD_Y, k * 118 // 100, k * 118 // 100, k, k)
             ev.append((0, "Word", t, t + d, pop + col + txt))
             stats.append({"text": txt, "lines": 1, "max_px": int(text_width(txt) * 92 / 60 * k / 100),
                           "cps": round(len(txt) / max(d, .01), 1), "dur": round(d, 2)})
