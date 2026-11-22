@@ -5,31 +5,31 @@
  "format": "A",
  "title_cover": "Le bourreau recrute",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, l'horloge de la retraite avance toute seule.",
-  "Bardellaville : le maire a retrouvé le bourreau. Il lui sert le café.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : le bourreau recrute."
+  "Dans cette ville, tout le monde vote Bardella. Retraite comprise.",
+  "Cinq minutes de plus, monsieur le bourreau. Et lui ?",
+  "Bardellaville : la retraite recule à chaque interview.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Le bourreau recrute."
  ],
  "selected_hook": 0,
  "ending_variants": [
   "Le bourreau a trouvé son remplaçant.",
-  "Même Marine Le Pen n'est pas d'accord avec lui sur la retraite.",
-  "Contre la réforme Macron : « cinq minutes de plus monsieur le bourreau »."
+  "Le bourreau a trouvé son remplaçant.",
+  "De bourreau à nous verrons, en trois ans."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Et part à la retraite. Un jour.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Retraite comprise.",
    "accent_words": [
-    "Un jour"
+    "Retraite"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Contre la réforme Macron : « cinq minutes de plus monsieur le bourreau ».",
+   "text": "Contre la réforme Macron, il lançait : « cinq minutes de plus monsieur le bourreau ».",
    "accent_words": [
     "bourreau"
    ],
@@ -37,27 +37,27 @@
   },
   {
    "id": "n3",
-   "text": "En 2026, il dit examiner un report de l'âge légal.",
+   "text": "En juin 2024, sur l'abrogation, sa réponse devient : « Nous verrons ».",
    "accent_words": [
-    "report"
+    "verrons"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Même Marine Le Pen n'est pas d'accord avec lui sur la retraite.",
+   "text": "En 2026, il dit même examiner un report de l'âge légal.",
    "accent_words": [
-    "pas d'accord"
+    "examiner"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Ici, l'horloge de la mairie avance de cinq minutes à chaque élection.",
+   "text": "Marine Le Pen promet soixante-deux, voire soixante. Lui recule l'horloge.",
    "accent_words": [
-    "cinq minutes"
+    "recule"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
@@ -89,9 +89,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; l'horloge de la façade tourne à l'envers.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "LA RETRAITE ? UN JOUR",
+   "comic_action": "Descente sur la ville ; banderole « LA RETRAITE ? UN JOUR » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "fatigue"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,13 +112,25 @@
    "camera": "orbit",
    "set": [
     "tribune",
-    "studio_light",
-    "text3d",
+    "lift_tribune",
+    "banner",
     "person"
    ],
-   "onscreen_text": "« 5 MINUTES DE PLUS »",
-   "comic_action": "À la tribune, le maire cubique pointe une horloge géante, indigné.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« MONSIEUR LE BOURREAU »",
+   "comic_action": "Meeting : la tribune s'élève, banderole « « MONSIEUR LE BOURREAU » ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,62 +139,110 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
+    "studio_light",
     "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "ÂGE LÉGAL : À L'EXAMEN",
-   "comic_action": "L'écran de la mairie : la flèche de l'âge de départ glisse vers la droite.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« NOUS VERRONS »",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « « NOUS VERRONS » ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "tribune",
-    "router_lectern",
-    "studio_light",
-    "text3d"
+    "scroll",
+    "form_stack",
+    "table",
+    "person"
    ],
-   "onscreen_text": "RN VS RN",
-   "comic_action": "Deux pupitres du même parti se tournent le dos.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "REPORT DE L'ÂGE : EXAMINÉ",
+   "comic_action": "Formulaire de retraite déplié ; en gros « REPORT DE L'ÂGE : EXAMINÉ ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "neutre"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "column",
-    "mairie",
-    "text3d",
+    "scroll",
+    "form_stack",
+    "table",
     "person"
    ],
-   "onscreen_text": "+5 MIN / ÉLECTION",
-   "comic_action": "Entre deux colonnes, un agent avance l'horloge d'un cran, sourire aux lèvres.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "62 ? 60 ? 64 ?",
+   "comic_action": "Formulaire de retraite déplié ; en gros « 62 ? 60 ? 64 ? ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "scroll",
-    "table",
-    "person",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "POSTE POURVU",
-   "comic_action": "Un parchemin « CONTRAT » est signé d'un grand trait ; la plume reste suspendue. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LE BOURREAU RECRUTE",
+   "comic_action": "Plan final, tenir une seconde : « LE BOURREAU RECRUTE ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +256,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt regarde sa montre, perplexe.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE PRESSÉ",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE PRESSÉ ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,28 +278,38 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 81,
+ "word_count": 78,
  "claims": [
   {
    "segment": "n2",
-   "text": "« cinq minutes de plus monsieur le bourreau »",
+   "text": "Contre la réforme Macron, il lançait : « cinq minutes de plus monsieur le bourreau ».",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/retraites-c-est-5-minutes-de-plus-monsieur-le-bourreau-pour-bardella-rn-148306",
-   "note": "Sur les ajustements de la réforme des retraites de 2023."
+   "note": "Sur les ajustements de la réforme des retraites de 2023 : « cinq minutes de plus monsieur le bourreau » (titre : « 5 minutes de plus »)."
   },
   {
    "segment": "n3",
-   "text": "En 2026, il dit examiner un report de l'âge légal.",
+   "text": "En juin 2024, sur l'abrogation, sa réponse devient : « Nous verrons ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.boursorama.com/bourse/actualites/retraites-jordan-bardella-n-est-plus-si-presse-d-abroger-la-reforme-de-macron-101b949b9967c92520b3be1c9ef2c30f",
+   "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
+  },
+  {
+   "segment": "n4",
+   "text": "En 2026, il dit même examiner un report de l'âge légal.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/au-rn-la-reforme-des-retraites-divise-jordan-bardella-et-marine-le-pen-sur-le-programme-pour-la-presidentielle-2027",
    "note": "Bardella prend ses distances avec la réforme de Marine Le Pen, dit « examiner » un report de l'âge légal, juge le dossier inflammable (d'après Le Monde, mai 2026)."
   },
   {
-   "segment": "n4",
-   "text": "Même Marine Le Pen n'est pas d'accord avec lui sur la retraite.",
+   "segment": "n5",
+   "text": "Marine Le Pen promet soixante-deux, voire soixante. Lui recule l'horloge.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/au-rn-la-reforme-des-retraites-divise-jordan-bardella-et-marine-le-pen-sur-le-programme-pour-la-presidentielle-2027",
-   "note": "Bardella prend ses distances avec la réforme de Marine Le Pen, dit « examiner » un report de l'âge légal, juge le dossier inflammable (d'après Le Monde, mai 2026)."
+   "note": "Bardella prend ses distances avec la réforme de Marine Le Pen, dit « examiner » un report de l'âge légal, juge le dossier inflammable (d'après Le Monde, mai 2026). ; 62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé.",
+   "sources_complementaires": [
+    "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite"
+   ]
   }
  ],
  "sources": [
@@ -228,8 +317,15 @@
    "url": "https://www.publicsenat.fr/actualites/politique/retraites-c-est-5-minutes-de-plus-monsieur-le-bourreau-pour-bardella-rn-148306",
    "date": "2023-01 (probable, réforme Borne)",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (dépêche AFP : « c'est un petit peu +cinq minutes de plus monsieur le bourreau+ »)",
-   "note": "Sur les ajustements de la réforme des retraites de 2023."
+   "statut": "citation exacte",
+   "note": "Sur les ajustements de la réforme des retraites de 2023 : « cinq minutes de plus monsieur le bourreau » (titre : « 5 minutes de plus »)."
+  },
+  {
+   "url": "https://www.boursorama.com/bourse/actualites/retraites-jordan-bardella-n-est-plus-si-presse-d-abroger-la-reforme-de-macron-101b949b9967c92520b3be1c9ef2c30f",
+   "date": "2024-06-12",
+   "consulted": "2026-11-22",
+   "statut": "fait + citation exacte",
+   "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
   },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/au-rn-la-reforme-des-retraites-divise-jordan-bardella-et-marine-le-pen-sur-le-programme-pour-la-presidentielle-2027",
@@ -237,8 +333,15 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Bardella prend ses distances avec la réforme de Marine Le Pen, dit « examiner » un report de l'âge légal, juge le dossier inflammable (d'après Le Monde, mai 2026)."
+  },
+  {
+   "url": "https://fr.euronews.com/2026/11/17/dose-de-capitalisation-depart-de-60-a-62-ans-marine-le-pen-devoile-sa-reforme-des-retraite",
+   "date": "2026-11-17",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "62 voire 60 ans ; cinq catégories selon l'âge du premier emploi ; 160 à 168 trimestres ; capitalisation obligatoire (~81 000 €, fonds ~900 milliards) ; référendum envisagé."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = 2023 : « cinq minutes de plus monsieur le bourreau » contre la réforme Macron ; 2026 : il dit examiner un report de l'âge légal. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = « cinq minutes de plus monsieur le bourreau » puis le recul sur les retraites. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

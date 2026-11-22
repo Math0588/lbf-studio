@@ -5,11 +5,11 @@
  "format": "A",
  "title_cover": "Bonbons, pas débats",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, la mairie carbure au sucre.",
+  "Dans cette ville, tout le monde vote Bardella. Bonbon en bouche.",
   "Bardellaville : bonbons à volonté, débats en rupture de stock.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : bonbons, pas débats."
+  "Il a toujours faim. Sauf de questions.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Bonbons, pas débats."
  ],
  "selected_hook": 0,
  "ending_variants": [
@@ -21,41 +21,41 @@
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Avec un bonbon.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Bonbon en bouche.",
    "accent_words": [
-    "bonbon"
+    "Bonbon"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sur TikTok, il pioche des bonbons avant les débats. C'est son briefing.",
+   "text": "Sur TikTok, sa blague fétiche : toujours faim, bonbons avant chaque débat.",
    "accent_words": [
-    "briefing"
+    "bonbons"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ses réponses ? Pareilles que ses bonbons : sucrées, colorées, zéro apport.",
+   "text": "Ses réponses calibrées, dit la presse : ça fond, et il n'y a rien dedans.",
    "accent_words": [
-    "zéro apport"
+    "calibrées"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "À la mairie, un distributeur de bonbons remplace le guichet. Aussi utile, plus rapide.",
+   "text": "Un débat sur Public Sénat ? Refusé. Pas assez sucré.",
    "accent_words": [
-    "plus rapide"
+    "Refusé"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le seul dossier qu'il connaît par cœur : fraise ou réglisse.",
+   "text": "Le chiffrage du programme ? Introuvable. Il a dû le manger aussi.",
    "accent_words": [
-    "fraise ou réglisse"
+    "manger"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -69,9 +69,9 @@
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui croit que le bonbon, c'est le programme.",
+   "text": "Envoie ça au pote qui répond à tout avec des bonbons.",
    "accent_words": [
-    "programme"
+    "bonbons"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie dont le toit est couvert de bonbons géants ; banderole « ZONE SUCRÉE ».",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "BONBONS AVANT DÉBAT",
+   "comic_action": "Descente sur la ville ; banderole « BONBONS AVANT DÉBAT » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,9 +116,22 @@
     "person",
     "screen"
    ],
-   "onscreen_text": "AVANT LE DÉBAT : SUCRE",
-   "comic_action": "Sous un ring light, une main plonge dans un bocal géant ; à côté, un dossier « DÉBAT » reste fermé.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "TOUJOURS FAIM",
+   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « TOUJOURS FAIM ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "content",
+     "objet": "phone"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,30 +140,55 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
+    "studio_light",
     "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "VALEUR NUTRITIVE : 0",
-   "comic_action": "Écran géant : étiquette nutritionnelle d'un sachet, ligne « Programme : traces ».",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "RÉPONSES : 0 APPORT",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « RÉPONSES : 0 APPORT ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "person",
-    "sign",
+    "tribune",
+    "router_lectern",
+    "studio_light",
     "text3d"
    ],
-   "onscreen_text": "GUICHET → DISTRIBUTEUR",
-   "comic_action": "Un habitant tend son dossier ; le distributeur lui rend un bonbon fraise.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DÉBAT : REFUSÉ",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « DÉBAT : REFUSÉ ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -148,14 +197,26 @@
    ],
    "camera": "closeup",
    "set": [
+    "screen",
+    "text3d",
     "table",
-    "form_stack",
-    "person",
-    "text3d"
+    "form_stack"
    ],
-   "onscreen_text": "DOSSIER N°1 : FRAISE",
-   "comic_action": "Pile de dossiers : celui du dessus, étiqueté « FRAISE / RÉGLISSE », est le seul ouvert.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CHIFFRAGE : MANGÉ",
+   "comic_action": "Compteur géant sur l'écran : « CHIFFRAGE : MANGÉ ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "content"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +226,25 @@
    "camera": "orbit",
    "set": [
     "tribune",
-    "router_lectern",
     "studio_light",
-    "text3d"
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "DÉBAT : 0 CALORIE",
-   "comic_action": "Plateau de débat : un pupitre vide, un sachet de bonbons vide posé dessus. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "RÉGIME SANS DÉBAT",
+   "comic_action": "Plan final, tenir une seconde : « RÉGIME SANS DÉBAT ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,38 +258,53 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE GOURMAND",
-   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection mâchonne, perplexe.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE À TON POTE GOURMAND",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE À TON POTE GOURMAND ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui croit que le bonbon, c'est le programme."
+  "text": "Envoie ça au pote qui répond à tout avec des bonbons."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 83,
+ "word_count": 82,
  "claims": [
   {
    "segment": "n2",
-   "text": "Sur TikTok, il pioche des bonbons avant les débats. C'est son briefing.",
+   "text": "Sur TikTok, sa blague fétiche : toujours faim, bonbons avant chaque débat.",
    "claim_type": "fait_public",
    "source": "https://certop.cnrs.fr/wp-content/uploads/2024/07/Jordan-Bardella-sur-TikTok-affiche-son-addiction-aux-bonbons-et-ca-en-dit-long-sur-sa-strategie-de-com.pdf",
-   "note": "Blague récurrente de son TikTok : il a toujours faim et pioche des bonbons, surtout avant un débat.",
+   "note": "Blague récurrente de son TikTok : il a toujours faim et pioche des bonbons, surtout avant un débat. ; Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits.",
    "sources_complementaires": [
     "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/"
    ]
   },
   {
    "segment": "n3",
-   "text": "Ses réponses ? Pareilles que ses bonbons : sucrées, colorées, zéro apport.",
+   "text": "Ses réponses calibrées, dit la presse : ça fond, et il n'y a rien dedans.",
    "claim_type": "fait_public",
    "source": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
    "note": "Candidat aux réponses calibrées et creuses."
+  },
+  {
+   "segment": "n4",
+   "text": "Un débat sur Public Sénat ? Refusé. Pas assez sucré.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
+   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   }
  ],
  "sources": [
@@ -240,8 +328,15 @@
    "consulted": "2026-11-22",
    "statut": "opinion (chronique ; formule de l'auteur non reprise)",
    "note": "Candidat aux réponses calibrées et creuses."
+  },
+  {
+   "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
+   "date": "2024-03-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = bonbons TikTok avant les débats (blague récurrente de son propre compte) ; ses réponses aussi sucrées que vides. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = les bonbons avant les débats (blague récurrente de son TikTok). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

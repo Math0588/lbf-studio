@@ -5,17 +5,17 @@
  "format": "A",
  "title_cover": "Duo express",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, la mairie a une playlist. Les artistes, non.",
-  "Bardellaville : même la bande-son dit non.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : duo express."
+  "Dans cette ville, tout le monde vote Bardella. Sauf les chanteuses.",
+  "Bardella prend le son. La chanteuse refuse le reste.",
+  "Bardellaville : la playlist dit non.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Duo express."
  ],
  "selected_hook": 0,
  "ending_variants": [
   "Même sa bande-son le recale.",
-  "Il partage le son, elle refuse les idées : le duo le plus court de l'histoire.",
-  "À la fête municipale, la playlist est vide : tous les artistes ont dit non."
+  "Même sa bande-son le recale.",
+  "Le duo le plus court de l'histoire."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -37,25 +37,25 @@
   },
   {
    "id": "n3",
-   "text": "La chanteuse, Theodora : « Je ne partagerai jamais vos idées ».",
+   "text": "La chanteuse, Theodora, lui répond : « Je ne partagerai jamais vos idées ».",
    "accent_words": [
-    "jamais"
+    "idées"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Il partage le son, elle refuse les idées : le duo le plus court de l'histoire.",
+   "text": "Ses fans le montent sur de la techno. Sans demander aux DJ.",
    "accent_words": [
-    "le plus court"
+    "techno"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "À la fête municipale, la playlist est vide : tous les artistes ont dit non.",
+   "text": "Prochain clip : la musique d'attente. Elle, au moins, ne dit rien.",
    "accent_words": [
-    "ont dit non"
+    "musique d'attente"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -63,7 +63,7 @@
    "id": "n6",
    "text": "Même sa bande-son le recale.",
    "accent_words": [
-    "le recale"
+    "bande-son"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui met des sons sans demander aux artistes.",
    "accent_words": [
-    "sans demander"
+    "artistes"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,19 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; une scène de fête vide, enceintes muettes.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "SAUF LES CHANTEUSES",
+   "comic_action": "Descente sur la ville ; banderole « SAUF LES CHANTEUSES » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,9 +115,21 @@
     "person",
     "screen"
    ],
-   "onscreen_text": "5 M DE VUES",
-   "comic_action": "Un téléphone sur trépied affiche le compteur qui s'emballe, notes de musique.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "5 MILLIONS DE VUES",
+   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « 5 MILLIONS DE VUES ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "sourire_pro",
+     "objet": "ring_light"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,14 +138,26 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
+    "studio_light",
     "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "« JAMAIS »",
-   "comic_action": "L'écran géant affiche la phrase en lettres capitales ; le son coupe net.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« JAMAIS VOS IDÉES »",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « « JAMAIS VOS IDÉES » ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "perso",
+     "geste": "clap",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -132,46 +166,82 @@
    ],
    "camera": "closeup",
    "set": [
-    "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "screen",
+    "text3d",
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "DUO : 0,5 SEC",
-   "comic_action": "Studio : deux micros, un seul allumé ; l'autre s'éteint en une demi-seconde.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "EDITS SANS AUTORISATION",
+   "comic_action": "Écran géant : « EDITS SANS AUTORISATION ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "ground",
-    "banner",
+    "ring_light",
+    "tripod_camera",
     "person",
-    "text3d"
+    "screen"
    ],
-   "onscreen_text": "PLAYLIST : 0 TITRE",
-   "comic_action": "Habitants qui dansent sur le silence, DJ qui hausse les épaules.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "MUSIQUE D'ATTENTE",
+   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « MUSIQUE D'ATTENTE ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "lift_tribune",
     "tribune",
-    "person",
-    "banner"
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "RECALÉ PAR SA PLAYLIST",
-   "comic_action": "La tribune s'élève ; la musique d'entrée démarre puis s'arrête. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "RECALÉ PAR SA BANDE-SON",
+   "comic_action": "Plan final, tenir une seconde : « RECALÉ PAR SA BANDE-SON ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    },
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +255,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt retire ses écouteurs, gêné.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI POSTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI POSTE ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,7 +277,7 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 82,
+ "word_count": 77,
  "claims": [
   {
    "segment": "n2",
@@ -210,10 +288,17 @@
   },
   {
    "segment": "n3",
-   "text": "« Je ne partagerai jamais vos idées »",
+   "text": "La chanteuse, Theodora, lui répond : « Je ne partagerai jamais vos idées ».",
    "claim_type": "citation_exacte",
    "source": "https://www.rtbf.be/article/je-ne-partagerai-jamais-vos-idees-theodora-denonce-l-utilisation-de-sa-chanson-par-jordan-bardella-11648514",
    "note": "Montage TikTok sur « melodrama », plus de 5 millions de vues ; Theodora : « Je ne partagerai jamais vos idées »."
+  },
+  {
+   "segment": "n4",
+   "text": "Ses fans le montent sur de la techno. Sans demander aux DJ.",
+   "claim_type": "fait_public",
+   "source": "https://www.ladn.eu/?p=696069",
+   "note": "Fans qui montent les politiques en edits façon K-pop : cœurs, ralentis, musique techno."
   }
  ],
  "sources": [
@@ -221,10 +306,17 @@
    "url": "https://www.rtbf.be/article/je-ne-partagerai-jamais-vos-idees-theodora-denonce-l-utilisation-de-sa-chanson-par-jordan-bardella-11648514",
    "date": "2025-12-15",
    "consulted": "2026-11-22",
-   "statut": "fait",
+   "statut": "fait + citation exacte",
    "note": "Montage TikTok sur « melodrama », plus de 5 millions de vues ; Theodora : « Je ne partagerai jamais vos idées »."
+  },
+  {
+   "url": "https://www.ladn.eu/?p=696069",
+   "date": "2024-06-11",
+   "consulted": "2026-11-22",
+   "statut": "mème (phénomène rapporté)",
+   "note": "Fans qui montent les politiques en edits façon K-pop : cœurs, ralentis, musique techno."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = montage TikTok sur « melodrama » (plus de 5 millions de vues) ; Theodora : « Je ne partagerai jamais vos idées ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = son montage sur « melodrama » et le refus de Theodora. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

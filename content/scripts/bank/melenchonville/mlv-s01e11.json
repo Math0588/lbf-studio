@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-11",
  "format": "A",
- "title_cover": "Taxer la baguette",
+ "title_cover": "Taxer, mais payant",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : la baguette est taxée selon ton humeur.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, acheter un croissant demande un tour de parole.",
-  "Mélenchonville : la boulangerie qui taxe d'abord, cuit ensuite."
+  "Dans cette ville, tout le monde vote Mélenchon. Sortez la carte bleue.",
+  "Mélenchon veut taxer les riches. Son programme, lui, est payant.",
+  "Les insoumis vont me détester.",
+  "Bienvenue à Mélenchonville : taxer, mais payant.",
+  "Mélenchon en une vidéo : taxer, mais payant."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Taxer les riches, d'accord. Mais le programme, lui, reste payant.",
-  "Le riche, c'est toujours l'autre. Le programme, lui, est en vente.",
-  "Plus de riches, plus de boulanger, toujours un programme à acheter."
+  "Taxer les riches au micro, dîner avec eux à table : le programme est complet.",
+  "Taxer les riches au micro, dîner avec eux à table : programme complet.",
+  "Ambiance cordiale, désaccords intacts. L'addition reste un mystère."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Surtout à la caisse.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Sortez la carte bleue.",
    "accent_words": [
-    "Surtout à la caisse"
+    "Sortez la carte bleue"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Au Bourget, la salle scandait « Taxer les riches ». Ici, c'est l'hymne de la boulangerie.",
+   "text": "Au Bourget, sa salle scande « Taxer les riches ».",
    "accent_words": [
-    "l'hymne"
+    "les riches"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Le seul riche du quartier, c'était le boulanger. Il a fermé.",
+   "text": "Au même meeting, son programme est vendu sur place. Payant.",
    "accent_words": [
-    "Il a fermé"
+    "Payant"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Une baguette, un ticket, un tour de parole. Trois heures pour un croissant.",
+   "text": "Le même mois, il dîne trois heures avec treize grands patrons.",
    "accent_words": [
-    "Trois heures"
+    "grands patrons"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Au même meeting, le programme se vendait sur place.",
+   "text": "Ambiance cordiale, désaccords intacts. L'addition reste un mystère.",
    "accent_words": [
-    "se vendait"
+    "L'addition reste un mystère"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Taxer les riches, d'accord. Mais le programme, lui, reste payant.",
+   "text": "Taxer les riches au micro, dîner avec eux à table : le programme est complet.",
    "accent_words": [
-    "reste payant"
+    "le programme est complet"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui veut taxer les riches, mais pas son forfait.",
+   "text": "Envoie ça au pote qui veut taxer les riches mais pas son abonnement.",
    "accent_words": [
-    "son forfait"
+    "son abonnement"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,60 +85,102 @@
    "camera": "descend",
    "set": [
     "ground",
-    "shop",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur la boulangerie : file en cortège, banderole rouge.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · TAXER, MAIS PAYANT",
+   "comic_action": "Descente sur la ville : banderole « TAXER, MAIS PAYANT », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "shop",
+    "tribune",
     "person",
-    "banner",
-    "sign"
+    "banner"
    ],
-   "onscreen_text": "TAXER LES RICHES",
-   "comic_action": "La file chante poing levé devant la vitrine ; le boulanger se cache derrière ses croissants.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« TAXER LES RICHES »",
+   "comic_action": "Foule qui scande, poings levés, sous les projecteurs.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "arms_up",
+     "visage": "colere",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "micro",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "sign",
-    "person"
+    "table",
+    "form_stack",
+    "sign"
    ],
-   "onscreen_text": "FERMÉ",
-   "comic_action": "Le rideau de fer tombe ; pancarte « PARTI À LA CAMPAGNE ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PROGRAMME : EN VENTE",
+   "comic_action": "Stand de programmes avec étiquette de prix et terminal de carte.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "objet": "pancarte"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
     "table",
-    "form_stack",
     "person",
-    "text3d"
+    "studio_light"
    ],
-   "onscreen_text": "TICKET N° 1 069",
-   "comic_action": "Orbite autour d'un distributeur de tickets de parole qui crache un rouleau sans fin.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DÎNER : 13 PATRONS",
+   "comic_action": "Grande table dressée, treize chaises en cuir.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "verre"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -148,13 +190,25 @@
    "camera": "closeup",
    "set": [
     "table",
-    "scroll",
     "text3d",
     "person"
    ],
-   "onscreen_text": "PROGRAMME : EN VENTE",
-   "comic_action": "Un stand à côté de la caisse : le programme relié, étiquette de prix bien visible.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "ADDITION : ?",
+   "comic_action": "Un serveur pose l'addition au centre ; personne ne la prend.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "neutre"
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s6",
@@ -163,14 +217,21 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "text3d",
-    "person",
-    "sign"
+    "table",
+    "tribune",
+    "text3d"
    ],
-   "onscreen_text": "PROGRAMME : PAYANT",
-   "comic_action": "Plan large : boulangerie fermée, mais le stand du programme a une file d'attente.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "TAXER… PUIS DÎNER",
+   "comic_action": "Écran partagé : le meeting à gauche, le dîner à droite.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro",
+     "objet": "verre"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -184,39 +245,53 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique paie le programme en sans contact.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui veut taxer les riches, mais pas son forfait."
+  "text": "Envoie ça au pote qui veut taxer les riches mais pas son abonnement."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 84,
+ "word_count": 79,
  "claims": [
   {
-   "text": "« Taxer les riches »",
+   "text": "Au Bourget, sa salle scande « Taxer les riches ».",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
    "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
   },
   {
-   "text": "Au même meeting, le programme se vendait sur place.",
+   "text": "Au même meeting, son programme est vendu sur place. Payant.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
    "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
   },
   {
-   "text": "Taxer les riches, d'accord. Mais le programme, lui, reste payant.",
+   "text": "Le même mois, il dîne trois heures avec treize grands patrons.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
-   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+   "source": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
+   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
+  },
+  {
+   "text": "Ambiance cordiale, désaccords intacts. L'addition reste un mystère.",
+   "claim_type": "fait_public",
+   "source": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
+   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
   }
  ],
  "sources": [
@@ -224,10 +299,17 @@
    "url": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
    "date": "2026-11-07",
    "consulted": "2026-11-22",
-   "statut": "fait",
+   "statut": "citation_exacte",
    "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+  },
+  {
+   "url": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
+   "date": "2026-11-17",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : au Bourget, la salle scande « Taxer les riches » pendant que le programme est vendu sur place. Cadre : la boulangerie à ticket. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Taxer, mais payant. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

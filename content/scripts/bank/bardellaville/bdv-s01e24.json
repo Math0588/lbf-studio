@@ -3,19 +3,19 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-24",
  "format": "A",
- "title_cover": "Ciré, atomisé",
+ "title_cover": "Cireur en chef",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, les chaussures brillent plus que les idées.",
-  "Bardellaville : patriote à la tribune, cireur à Washington.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : ciré, atomisé."
+  "Dans cette ville, tout le monde vote Bardella. Et cire des pompes.",
+  "Bardella parle de Trump. Internet sort le cirage.",
+  "Bardellaville : les pompes brillent, le reste moins.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Cireur en chef."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Souverainiste au micro, cireur de bottes devant Washington.",
-  "Ici, les cordonniers ont fermé : tout le monde cire gratuitement, et vers le haut.",
-  "Le tapis rouge de la mairie ? Du cirage, trois couches."
+  "Patriote à la tribune, cireur en chef devant les puissants.",
+  "Patriote au micro, cireur devant les puissants.",
+  "Atomisé en direct, ciré en différé."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,13 +23,13 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Bardella. Et cire des pompes.",
    "accent_words": [
-    "cire des pompes"
+    "pompes"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sur France 2, une séquence admirative sur Trump vire au mème : le cirage de pompes.",
+   "text": "Sur France 2, sa séquence admirative sur Trump devient un mème : le cirage de pompes.",
    "accent_words": [
     "cirage de pompes"
    ],
@@ -37,7 +37,7 @@
   },
   {
    "id": "n3",
-   "text": "Roselyne Bachelot, après coup : « Je l'ai atomisé ».",
+   "text": "Roselyne Bachelot, en face, résume : « Je l'ai atomisé ».",
    "accent_words": [
     "atomisé"
    ],
@@ -45,33 +45,33 @@
   },
   {
    "id": "n4",
-   "text": "Ici, les cordonniers ont fermé : tout le monde cire gratuitement, et vers le haut.",
+   "text": "Devant le Medef aussi : deux heures de tête-à-tête, brosse à reluire fournie.",
    "accent_words": [
-    "vers le haut"
+    "reluire"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le tapis rouge de la mairie ? Du cirage, trois couches.",
+   "text": "Prochaine étape : un cirage tricolore, vendu en boutique officielle.",
    "accent_words": [
-    "trois couches"
+    "tricolore"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Souverainiste au micro, cireur de bottes devant Washington.",
+   "text": "Patriote à la tribune, cireur en chef devant les puissants.",
    "accent_words": [
-    "cireur de bottes"
+    "cireur en chef"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui trouve que Trump a une énergie folle.",
+   "text": "Envoie ça au pote qui admire Trump et se dit patriote.",
    "accent_words": [
-    "énergie folle"
+    "patriote"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; les marches brillent comme des souliers vernis.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "CIRAGE DE POMPES",
+   "comic_action": "Descente sur la ville ; banderole « CIRAGE DE POMPES » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,14 +111,26 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
     "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "CIRAGE DE POMPES",
-   "comic_action": "Plateau télé : un portrait doré, une brosse à reluire posée devant.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "MÈME : CIRAGE DE POMPES",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « MÈME : CIRAGE DE POMPES ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,14 +139,26 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
+    "studio_light",
     "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "« ATOMISÉ »",
-   "comic_action": "L'écran géant affiche le mot, petite explosion de paillettes.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« JE L'AI ATOMISÉ »",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « « JE L'AI ATOMISÉ » ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "perso",
+     "geste": "clap",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -132,30 +167,54 @@
    ],
    "camera": "window_pass",
    "set": [
-    "shop",
+    "table",
+    "building",
     "person",
-    "sign",
     "text3d"
    ],
-   "onscreen_text": "CORDONNERIE : FERMÉE",
-   "comic_action": "Vitrine fermée ; dans la rue, des habitants cirent les chaussures des plus grands.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "MEDEF : 2 H DE CIRAGE",
+   "comic_action": "Salon feutré, table dressée ; carton « MEDEF : 2 H DE CIRAGE ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "column",
-    "mairie",
+    "facade_row",
+    "sign",
     "text3d",
     "person"
    ],
-   "onscreen_text": "TAPIS : 3 COUCHES",
-   "comic_action": "Un agent étale du cirage sur les marches ; un passant glisse.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CIRAGE TRICOLORE",
+   "comic_action": "Rangée de façades : enseigne « CIRAGE TRICOLORE ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "content"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,14 +223,26 @@
    ],
    "camera": "orbit",
    "set": [
-    "arch",
-    "column",
-    "person",
-    "studio_light"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "PATRIOTE (MADE IN USA)",
-   "comic_action": "Sous une arche, un cireur à genoux devant une paire de bottes étoilées. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "CIREUR EN CHEF",
+   "comic_action": "Plan final, tenir une seconde : « CIREUR EN CHEF ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,35 +256,50 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt fait reluire ses baskets, gêné.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE PATRIOTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE PATRIOTE ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui trouve que Trump a une énergie folle."
+  "text": "Envoie ça au pote qui admire Trump et se dit patriote."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 84,
+ "word_count": 83,
  "claims": [
   {
    "segment": "n2",
-   "text": "Sur France 2, une séquence admirative sur Trump vire au mème : le cirage de pompes.",
+   "text": "Sur France 2, sa séquence admirative sur Trump devient un mème : le cirage de pompes.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/je-lai-atomise-roselyne-bachelot-reagit-a-sa-sequence-virale-avec-jordan-bardella-dans-quelle-epoque-sur-france-2/653011",
    "note": "« Quelle Époque ! » : séquence admirative sur Trump, mème du cirage de pompes ; Roselyne Bachelot : « Je l'ai atomisé »."
   },
   {
    "segment": "n3",
-   "text": "« Je l'ai atomisé »",
+   "text": "Roselyne Bachelot, en face, résume : « Je l'ai atomisé ».",
    "claim_type": "citation_exacte",
    "source": "https://www.ozap.com/actu/je-lai-atomise-roselyne-bachelot-reagit-a-sa-sequence-virale-avec-jordan-bardella-dans-quelle-epoque-sur-france-2/653011",
    "note": "« Quelle Époque ! » : séquence admirative sur Trump, mème du cirage de pompes ; Roselyne Bachelot : « Je l'ai atomisé »."
+  },
+  {
+   "segment": "n4",
+   "text": "Devant le Medef aussi : deux heures de tête-à-tête, brosse à reluire fournie.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/bardella-rencontre-en-tete-a-tete-le-medef-une-premiere-pour-le-rn-435456",
+   "note": "Tête-à-tête de plus de deux heures avec le Medef, une première pour le RN (20/04/2026 selon la presse)."
   }
  ],
  "sources": [
@@ -221,10 +307,17 @@
    "url": "https://www.ozap.com/actu/je-lai-atomise-roselyne-bachelot-reagit-a-sa-sequence-virale-avec-jordan-bardella-dans-quelle-epoque-sur-france-2/653011",
    "date": "2025-12-22",
    "consulted": "2026-11-22",
-   "statut": "fait (séquence télé) + mème (cirage de pompes)",
+   "statut": "fait + citation exacte",
    "note": "« Quelle Époque ! » : séquence admirative sur Trump, mème du cirage de pompes ; Roselyne Bachelot : « Je l'ai atomisé »."
+  },
+  {
+   "url": "https://lcp.fr/actualites/bardella-rencontre-en-tete-a-tete-le-medef-une-premiere-pour-le-rn-435456",
+   "date": "2026-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Tête-à-tête de plus de deux heures avec le Medef, une première pour le RN (20/04/2026 selon la presse)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « Quelle Époque ! » (France 2) : séquence admirative sur Trump devenue le mème du cirage de pompes ; Roselyne Bachelot : « Je l'ai atomisé ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = le mème du cirage de pompes après sa séquence sur Trump. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

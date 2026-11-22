@@ -3,33 +3,33 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-18",
  "format": "A",
- "title_cover": "Le rider du candidat",
+ "title_cover": "Gagné d'avance",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, le maire ne vient que si la victoire est garantie.",
-  "Bardellaville : le candidat qui pose ses conditions avant qu'on l'invite.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : le rider du candidat."
+  "Dans cette ville, tout le monde vote Bardella. Mais il en faut plus.",
+  "Bardella à Matignon ? Seulement si c'est gagné d'avance.",
+  "Bardellaville : on ne joue que contre personne.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Gagné d'avance."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Majorité absolue ou rien : ce n'est pas une exigence, c'est une excuse en costume.",
-  "Au foot, il ne joue que si l'adversaire déclare forfait.",
-  "Le seul candidat qui pose ses conditions avant qu'on lui propose le poste."
+  "Gouverner seulement gagné d'avance : pas du courage, du télétravail.",
+  "Pas du courage : du télétravail.",
+  "Majorité absolue ou rien. Ce fut rien."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Il faut au moins ça.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Mais il en faut plus.",
    "accent_words": [
-    "au moins ça"
+    "plus"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2024 : Matignon, oui, mais seulement avec une majorité absolue.",
+   "text": "Juin 2024 : Matignon, oui, mais seulement avec une majorité absolue.",
    "accent_words": [
     "majorité absolue"
    ],
@@ -37,23 +37,23 @@
   },
   {
    "id": "n3",
-   "text": "Ses adversaires parlent de refus d'obstacle. Comme au jumping.",
+   "text": "Second tour : RN troisième. Majorité absolue, pas vraiment.",
    "accent_words": [
-    "refus d'obstacle"
+    "troisième"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Au resto, il ne commande que si toute la salle approuve.",
+   "text": "Sa réaction : dénoncer « l'alliance du déshonneur ». Le déshonneur, c'est toujours les autres.",
    "accent_words": [
-    "toute la salle"
+    "autres"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n5",
-   "text": "Au foot, il ne joue que si l'adversaire déclare forfait.",
+   "text": "Au foot, il ne jouerait que si l'adversaire déclare forfait.",
    "accent_words": [
     "forfait"
    ],
@@ -61,9 +61,9 @@
   },
   {
    "id": "n6",
-   "text": "Majorité absolue ou rien : ce n'est pas une exigence, c'est une excuse en costume.",
+   "text": "Gouverner seulement gagné d'avance : pas du courage, du télétravail.",
    "accent_words": [
-    "excuse en costume"
+    "télétravail"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,9 +89,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; panneau « ENTRÉE : 51 % MINIMUM ».",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "IL EN FAUT PLUS",
+   "comic_action": "Descente sur la ville ; banderole « IL EN FAUT PLUS » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,14 +111,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
-    "table",
-    "person",
+    "tribune",
+    "studio_light",
+    "screen",
     "text3d"
    ],
-   "onscreen_text": "CONDITION : 289 SIÈGES",
-   "comic_action": "Un parchemin de conditions se déroule jusqu'au sol, signé « sinon non ».",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "MAJORITÉ ABSOLUE OU RIEN",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « MAJORITÉ ABSOLUE OU RIEN ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,46 +139,82 @@
    ],
    "camera": "orbit",
    "set": [
-    "ground",
+    "screen",
     "banner",
-    "person",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "REFUS D'OBSTACLE",
-   "comic_action": "Sur la place, un cheval en carton freine net devant une barre posée à dix centimètres.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "RN : TROISIÈME",
+   "comic_action": "Soirée électorale : l'écran affiche « RN : TROISIÈME ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "table",
-    "person",
+    "tribune",
+    "studio_light",
     "screen",
     "text3d"
    ],
-   "onscreen_text": "COMMANDE : UNANIME OU RIEN",
-   "comic_action": "Un serveur attend ; tous les clients doivent lever la main avant qu'il note.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "« ALLIANCE DU DÉSHONNEUR »",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « « ALLIANCE DU DÉSHONNEUR » ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "ground",
-    "banner",
+    "road",
+    "sign",
     "person",
-    "text3d"
+    "traffic_light"
    ],
-   "onscreen_text": "MATCH : FORFAIT EXIGÉ",
-   "comic_action": "Terrain vide en face ; le maire cubique enfile ses crampons seulement maintenant.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SEULEMENT PAR FORFAIT",
+   "comic_action": "Dans la rue, panneau « SEULEMENT PAR FORFAIT ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,14 +223,26 @@
    ],
    "camera": "orbit",
    "set": [
-    "arch",
-    "column",
-    "person",
-    "studio_light"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "EXCUSE (COSTUME 3 PIÈCES)",
-   "comic_action": "Sous l'arche, un mannequin en costume porte une pancarte « PAS CE SOIR ». Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "DU TÉLÉTRAVAIL",
+   "comic_action": "Plan final, tenir une seconde : « DU TÉLÉTRAVAIL ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +256,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt attend devant la porte que d'autres entrent.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE PRUDENT",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE PRUDENT ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,21 +278,31 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 81,
+ "word_count": 80,
  "claims": [
   {
    "segment": "n2",
-   "text": "En 2024 : Matignon, oui, mais seulement avec une majorité absolue.",
+   "text": "Juin 2024 : Matignon, oui, mais seulement avec une majorité absolue.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/matignon-jordan-bardella-reclame-une-majorite-absolue-pour-gouverner-gabriel-attal",
-   "note": "Pas de Matignon sans majorité absolue."
+   "note": "Pas de Matignon sans majorité absolue. ; Se dit prêt pour Matignon, mais seulement en cas de majorité absolue du RN.",
+   "sources_complementaires": [
+    "https://fr.euronews.com/2024/06/18/france-jordan-bardella-envisage-daller-a-matignon-seulement-en-cas-de-majorite-rn"
+   ]
   },
   {
    "segment": "n3",
-   "text": "Ses adversaires parlent de refus d'obstacle. Comme au jumping.",
+   "text": "Second tour : RN troisième. Majorité absolue, pas vraiment.",
    "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/matignon-jordan-bardella-reclame-une-majorite-absolue-pour-gouverner-gabriel-attal",
-   "note": "Pas de Matignon sans majorité absolue."
+   "source": "https://www.publicsenat.fr/actualites/politique/legislatives-jordan-bardella-denonce-lalliance-du-deshonneur-entre-lexecutif-et-la-gauche",
+   "note": "Soir du second tour : RN troisième ; il dénonce « l'alliance du déshonneur »."
+  },
+  {
+   "segment": "n4",
+   "text": "Sa réaction : dénoncer « l'alliance du déshonneur ». Le déshonneur, c'est toujours les autres.",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/legislatives-jordan-bardella-denonce-lalliance-du-deshonneur-entre-lexecutif-et-la-gauche",
+   "note": "Soir du second tour : RN troisième ; il dénonce « l'alliance du déshonneur »."
   }
  ],
  "sources": [
@@ -221,10 +310,24 @@
    "url": "https://lcp.fr/actualites/matignon-jordan-bardella-reclame-une-majorite-absolue-pour-gouverner-gabriel-attal",
    "date": "2024-06-17",
    "consulted": "2026-11-22",
-   "statut": "fait (position publique) + opinion (« refus d'obstacle » selon ses adversaires)",
+   "statut": "fait",
    "note": "Pas de Matignon sans majorité absolue."
+  },
+  {
+   "url": "https://fr.euronews.com/2024/06/18/france-jordan-bardella-envisage-daller-a-matignon-seulement-en-cas-de-majorite-rn",
+   "date": "2024-06-18",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Se dit prêt pour Matignon, mais seulement en cas de majorité absolue du RN."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/legislatives-jordan-bardella-denonce-lalliance-du-deshonneur-entre-lexecutif-et-la-gauche",
+   "date": "2024-07-07",
+   "consulted": "2026-11-22",
+   "statut": "fait + citation exacte",
+   "note": "Soir du second tour : RN troisième ; il dénonce « l'alliance du déshonneur »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = juin 2024 : pas de Matignon sans majorité absolue (« refus d'obstacle » pour ses adversaires). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = Matignon seulement avec une majorité absolue. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

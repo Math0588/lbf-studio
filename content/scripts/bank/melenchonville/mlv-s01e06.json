@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-06",
  "format": "A",
- "title_cover": "Le ruban survivra",
+ "title_cover": "La République, c'est lui",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : les inaugurations durent plus longtemps que les travaux.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, couper un ruban prend une heure quarante-deux.",
-  "Mélenchonville : les ciseaux attendent leur tour de parole."
+  "Dans cette ville, tout le monde vote Mélenchon. Pardon : la République.",
+  "Mélenchon a trouvé qui était la République. Lui.",
+  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
+  "Bienvenue à Mélenchonville : la République, c'est lui.",
+  "Mélenchon en une vidéo : la République, c'est lui."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Les ciseaux rouillent. Le discours, lui, ne coupe jamais.",
-  "Le ruban tient toujours. Le public, beaucoup moins.",
-  "Inauguration réussie : tout le monde est parti avant la coupe."
+  "La République, c'est lui. Les électeurs : quatrième, quatrième, troisième.",
+  "La République, c'est lui. Le pays, toujours pas.",
+  "Dictateur ? Il manque un détail : avoir été élu président."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. On inaugure.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Pardon : la République.",
    "accent_words": [
-    "On inaugure"
+    "la République"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le maire doit couper un ruban. Il prend d'abord le micro.",
+   "text": "En 2018, face caméra, il hurle : « La République, c'est moi ! ».",
    "accent_words": [
-    "le micro"
+    "La République, c'est moi"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n3",
+   "text": "Louis XIV se contentait de l'État. Lui prend la République entière.",
+   "accent_words": [
+    "République entière"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "À Lyon, il a tenu une heure quarante-deux, agrippé au pupitre.",
-   "accent_words": [
-    "agrippé"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n4",
-   "text": "La candidate locale ? Citée une seule fois. Ici, le gymnase n'est jamais nommé.",
+   "text": "Huit ans plus tard, il parle d'« audace déraisonnable ». Et ne regrette rien.",
    "accent_words": [
-    "jamais nommé"
+    "Et ne regrette rien"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n5",
-   "text": "Victor Hugo, les médias, la Constituante. Le ruban attend sagement.",
+   "text": "Dictateur ? Il manque un détail : avoir été élu président.",
    "accent_words": [
-    "attend"
+    "avoir été élu président"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Les ciseaux rouillent. Le discours, lui, ne coupe jamais.",
+   "text": "La République, c'est lui. Les électeurs : quatrième, quatrième, troisième.",
    "accent_words": [
-    "ne coupe jamais"
+    "quatrième, quatrième, troisième"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui transforme chaque toast en meeting.",
+   "text": "Envoie ça au pote qui se proclame chef au foot à cinq.",
    "accent_words": [
-    "meeting"
+    "à cinq"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un gymnase neuf ; un ruban rouge tendu devant la porte.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · LA RÉPUBLIQUE, C'EST LUI",
+   "comic_action": "Descente sur la ville : banderole « LA RÉPUBLIQUE, C'EST LUI », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,12 +114,26 @@
    "camera": "closeup",
    "set": [
     "tribune",
-    "person",
-    "banner"
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "COUPE DU RUBAN : REPORTÉE",
-   "comic_action": "Gros plan : les ciseaux posés sur le pupitre, le maire attrape le micro à la place.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "« LA RÉPUBLIQUE, C'EST MOI ! »",
+   "comic_action": "Le maire, micro en main, crie face à l'objectif ; la foule recule.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "colere",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,14 +142,20 @@
    ],
    "camera": "orbit",
    "set": [
-    "tribune",
-    "text3d",
-    "studio_light",
-    "person"
+    "column",
+    "arch",
+    "text3d"
    ],
-   "onscreen_text": "1 H 42",
-   "comic_action": "Orbite : le maire cramponné au pupitre comme à une rambarde, chrono qui défile.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "LOUIS XIV, BATTU",
+   "comic_action": "Une colonne à l'effigie d'un roi s'incline devant une banderole « MOI ».",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "fier"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -131,14 +164,20 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "building",
-    "sign",
-    "person",
+    "screen",
+    "tribune",
     "text3d"
    ],
-   "onscreen_text": "GYMNASE : ?",
-   "comic_action": "La plaque du gymnase reste vierge ; un ouvrier attend avec son pinceau.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« AUDACE DÉRAISONNABLE »",
+   "comic_action": "Un écran rejoue la scène ; le maire hoche la tête, satisfait.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -147,13 +186,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "banner",
-    "text3d",
-    "person"
+    "mairie",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "DIGRESSION N° 12",
-   "comic_action": "Le ruban se détend, puis s'assoit par terre ; un compteur « DIGRESSIONS » tourne.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PRÉSIDENT : JAMAIS ÉLU",
+   "comic_action": "Panneau « PALAIS » barré d'une croix rouge.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s6",
@@ -162,14 +214,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "tribune",
-    "person",
-    "text3d"
+    "lift_tribune",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "COUPE : JAMAIS",
-   "comic_action": "Plan large : le public est parti, les ciseaux rouillent sur le pupitre, le maire parle encore.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "4E · 4E · 3E",
+   "comic_action": "Une tribune monte, s'arrête, redescend : 4, 4, 3.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s7",
@@ -183,50 +247,78 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique coupe enfin le ruban, seul.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui transforme chaque toast en meeting."
+  "text": "Envoie ça au pote qui se proclame chef au foot à cinq."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 75,
+ "word_count": 84,
  "claims": [
   {
-   "text": "À Lyon, il a tenu une heure quarante-deux, agrippé au pupitre.",
-   "claim_type": "fait_public",
-   "source": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
-   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
+   "text": "En 2018, face caméra, il hurle : « La République, c'est moi ! ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
+   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
   },
   {
-   "text": "La candidate locale ? Citée une seule fois. Ici, le gymnase n'est jamais nommé.",
-   "claim_type": "fait_public",
-   "source": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
-   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
+   "text": "Huit ans plus tard, il parle d'« audace déraisonnable ». Et ne regrette rien.",
+   "claim_type": "citation_exacte",
+   "source": "https://lcp.fr/actualites/la-republique-c-est-moi-jean-luc-melenchon-assume-un-moment-d-audace-deraisonnable",
+   "note": "Mardis de l'Essec (27/10/2026) : il assume une « audace déraisonnable », « je n'ai pas de regrets », pas au sens du Roi-Soleil mais « le peuple, sa représentation, c'est moi »."
   },
   {
-   "text": "Victor Hugo, les médias, la Constituante. Le ruban attend sagement.",
+   "text": "Dictateur ? Il manque un détail : avoir été élu président.",
    "claim_type": "fait_public",
-   "source": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
-   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+  },
+  {
+   "text": "La République, c'est lui. Les électeurs : quatrième, quatrième, troisième.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
   {
-   "url": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
-   "date": "2026-02-26",
+   "url": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
+   "date": "2018-10-17",
+   "consulted": "2026-11-22",
+   "statut": "citation_exacte",
+   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
+  },
+  {
+   "url": "https://lcp.fr/actualites/la-republique-c-est-moi-jean-luc-melenchon-assume-un-moment-d-audace-deraisonnable",
+   "date": "2026-10-28",
+   "consulted": "2026-11-22",
+   "statut": "citation_exacte",
+   "note": "Mardis de l'Essec (27/10/2026) : il assume une « audace déraisonnable », « je n'ai pas de regrets », pas au sens du Roi-Soleil mais « le peuple, sa représentation, c'est moi »."
+  },
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Lyon : 1 h 42 accroché au pupitre, la candidate locale citée une fois. Cadre : l'inauguration du gymnase. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : La République, c'est lui. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

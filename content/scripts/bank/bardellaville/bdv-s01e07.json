@@ -5,17 +5,17 @@
  "format": "A",
  "title_cover": "POV : programme introuvable",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, tout se vit en POV. Surtout les problèmes.",
-  "Bardellaville : la politique, c'est hors champ.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : pov : programme introuvable."
+  "Dans cette ville, tout le monde vote Bardella. En POV.",
+  "POV : tu cherches le programme de Bardella.",
+  "Bardellaville : la politique, hors champ.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : POV : programme introuvable."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "POV : le pays brûle, il cherche le son tendance.",
-  "POV : tu poses une question. Coupé au montage.",
-  "POV : tu cherches son programme. Chargement infini."
+  "POV : tu cherches son programme chiffré. Chargement infini.",
+  "POV : le programme. Chargement infini.",
+  "Tout en POV, sauf le point de vue."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -29,43 +29,43 @@
   },
   {
    "id": "n2",
-   "text": "Sa recette TikTok : formats courts, coulisses, POV. La politique ? Hors champ.",
+   "text": "Ses vidéos TikTok : POV, coulisses, formats courts et dépolitisés, raconte l'AFP.",
    "accent_words": [
-    "Hors champ"
+    "dépolitisés"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "POV : tu cherches son programme. Chargement infini.",
+   "text": "POV : un homme politique qui ne parle pas de politique.",
+   "accent_words": [
+    "pas de politique"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n4",
+   "text": "POV : le gouvernement tombe, et toi, tu dédicaces ton livre.",
+   "accent_words": [
+    "dédicaces"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n5",
+   "text": "POV : on t'invite à débattre sur Public Sénat. Tu swipes.",
+   "accent_words": [
+    "swipes"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n6",
+   "text": "POV : tu cherches son programme chiffré. Chargement infini.",
    "accent_words": [
     "Chargement infini"
    ],
    "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "POV : tu poses une question. Coupé au montage.",
-   "accent_words": [
-    "Coupé au montage"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n5",
-   "text": "À la mairie, on ne te reçoit pas : on te filme en coulisses.",
-   "accent_words": [
-    "on te filme"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n6",
-   "text": "POV : le pays brûle, il cherche le son tendance.",
-   "accent_words": [
-    "son tendance"
-   ],
-   "claim_type": "fait_public"
   },
   {
    "id": "n7",
@@ -89,9 +89,21 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente en vue subjective sur la mairie, cadre de téléphone à l'écran.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "EN POV",
+   "comic_action": "Descente sur la ville ; banderole « EN POV » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "objet": "phone",
+     "visage": "choque",
+     "geste": "point"
+    },
+    {
+     "who": "foule",
+     "geste": "jump"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,9 +117,21 @@
     "person",
     "screen"
    ],
-   "onscreen_text": "POLITIQUE : HORS CHAMP",
-   "comic_action": "Coulisses sous ring light ; la caméra recule et laisse un dossier « BUDGET » hors du cadre.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "FORMATS DÉPOLITISÉS",
+   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « FORMATS DÉPOLITISÉS ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,14 +140,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "ring_light",
+    "tripod_camera",
+    "person",
+    "screen"
    ],
-   "onscreen_text": "CHARGEMENT…",
-   "comic_action": "L'écran de la mairie : une barre de chargement qui repart de zéro à 99 %.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "POV : ZÉRO POLITIQUE",
+   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « POV : ZÉRO POLITIQUE ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "objet": "ring_light"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -132,46 +169,82 @@
    ],
    "camera": "closeup",
    "set": [
-    "studio_light",
-    "tripod_camera",
     "table",
-    "person"
+    "form_stack",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "QUESTION : COUPÉE",
-   "comic_action": "Un habitant ouvre la bouche devant la caméra ; ciseaux géants, plan suivant.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "POV : DÉDICACE",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « POV : DÉDICACE ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "jump"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "table",
-    "screen",
-    "sign",
-    "building"
+    "tribune",
+    "router_lectern",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "ACCUEIL = TOURNAGE",
-   "comic_action": "Par la fenêtre du guichet : un habitant attend, trois caméras le filment, personne ne prend son dossier.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "POV : DÉBAT SWIPÉ",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « POV : DÉBAT SWIPÉ ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "person",
-    "ring_light",
-    "road",
-    "lamp"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "POV : ÇA BRÛLE",
-   "comic_action": "Rue enfumée ; un personnage fait défiler des sons sur son téléphone, calme. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "CHARGEMENT INFINI",
+   "comic_action": "Plan final, tenir une seconde : « CHARGEMENT INFINI ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "objet": "phone"
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +258,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt se filme en POV devant la vitrine.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE EN POV",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE EN POV ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -203,17 +284,31 @@
  "claims": [
   {
    "segment": "n2",
-   "text": "Sa recette TikTok : formats courts, coulisses, POV. La politique ? Hors champ.",
+   "text": "Ses vidéos TikTok : POV, coulisses, formats courts et dépolitisés, raconte l'AFP.",
    "claim_type": "fait_public",
    "source": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
    "note": "Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits."
   },
   {
-   "segment": "n6",
-   "text": "POV : le pays brûle, il cherche le son tendance.",
+   "segment": "n3",
+   "text": "POV : un homme politique qui ne parle pas de politique.",
    "claim_type": "fait_public",
    "source": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
    "note": "Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits."
+  },
+  {
+   "segment": "n4",
+   "text": "POV : le gouvernement tombe, et toi, tu dédicaces ton livre.",
+   "claim_type": "fait_public",
+   "source": "https://www.lagazettefrance.fr/article/en-pleine-censure-bardella-joue-la-contre-programmation-avec-une-dedicace-de-son-livre-a-paris",
+   "note": "Le jour de la censure du gouvernement Barnier, contre-programmation : dédicace de son livre à Paris."
+  },
+  {
+   "segment": "n5",
+   "text": "POV : on t'invite à débattre sur Public Sénat. Tu swipes.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
+   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   }
  ],
  "sources": [
@@ -223,8 +318,22 @@
    "consulted": "2026-11-22",
    "statut": "fait (dépêche AFP) + mème",
    "note": "Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits."
+  },
+  {
+   "url": "https://www.lagazettefrance.fr/article/en-pleine-censure-bardella-joue-la-contre-programmation-avec-une-dedicace-de-son-livre-a-paris",
+   "date": "2024-12 (probable, date non relevée)",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Le jour de la censure du gouvernement Barnier, contre-programmation : dédicace de son livre à Paris."
+  },
+  {
+   "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
+   "date": "2024-03-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = stratégie TikTok de formats courts dépolitisés, POV et coulisses (AFP) : la politique reste hors champ. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = les POV et formats dépolitisés de son TikTok. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

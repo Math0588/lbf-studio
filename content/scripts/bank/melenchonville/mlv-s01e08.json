@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-08",
  "format": "A",
- "title_cover": "Le meeting qui sent",
+ "title_cover": "Gadgets de meeting",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le musée où les promesses ont une odeur.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, les meetings se sentent avant de s'entendre.",
-  "Mélenchonville : la ville qui parfume ses discours."
+  "Dans cette ville, tout le monde vote Mélenchon. Ça sent le spectacle.",
+  "Mélenchon a tout essayé en meeting. Sauf gagner.",
+  "Celle-là, Méluche ne la partagera pas.",
+  "Bienvenue à Mélenchonville : gadgets de meeting.",
+  "Mélenchon en une vidéo : gadgets de meeting."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le clou de l'expo : le parfum du pouvoir. Flacon vide depuis 2012.",
-  "Le pouvoir ? Odeur jamais sentie, flacon toujours vide.",
-  "Dernière salle : odeur de Cinquième République, tenace."
+  "Le parfum de la victoire, il l'a diffusé. Personne ne l'a jamais senti.",
+  "Hologramme, parfum, 360 degrés : tout le spectacle, sauf le second tour.",
+  "Puis six hologrammes en même temps. Six fois rien."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Bienvenue au musée.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Ça sent le spectacle.",
    "accent_words": [
-    "Bienvenue au musée"
+    "Ça sent le spectacle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2022 à Nantes, il a fait un meeting olfactif. Vraiment.",
+   "text": "En 2022 à Nantes, il organise un meeting olfactif : parfums diffusés dans la salle.",
    "accent_words": [
-    "olfactif"
+    "la salle"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Vidéo à 360 degrés, parfums dans la salle. Le public portait des masques.",
+   "text": "Petit souci : le public portait des masques. Personne n'a rien senti.",
    "accent_words": [
-    "masques"
+    "Personne n'a rien senti"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Ici, chaque salle sent une promesse. Celle de 2012 sent le renfermé.",
+   "text": "En 2017, déjà, il tenait meeting en hologramme. Ni odeur, ni présence.",
    "accent_words": [
-    "le renfermé"
+    "Ni odeur, ni présence"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Salle 2022 : odeur de troisième place, notes de 421 420 voix.",
+   "text": "Puis six hologrammes en même temps. Six fois rien.",
    "accent_words": [
-    "troisième place"
+    "Six fois rien"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Le clou de l'expo : le parfum du pouvoir. Flacon vide depuis 2012.",
+   "text": "Le parfum de la victoire, il l'a diffusé. Personne ne l'a jamais senti.",
    "accent_words": [
-    "Flacon vide"
+    "jamais senti"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui trouve que la politique sent le renfermé.",
+   "text": "Envoie ça au pote qui allume trois bougies parfumées pour un apéro.",
    "accent_words": [
-    "renfermé"
+    "un apéro"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un musée ; banderole « MUSÉE DU DISCOURS ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · GADGETS DE MEETING",
+   "comic_action": "Descente sur la ville : banderole « GADGETS DE MEETING », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -102,12 +115,25 @@
    "set": [
     "tribune",
     "studio_light",
-    "person",
-    "text3d"
+    "person"
    ],
    "onscreen_text": "MEETING OLFACTIF",
-   "comic_action": "Vitrine : un pupitre sous cloche, des volutes de parfum colorées s'en échappent.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "comic_action": "Des nuages colorés s'échappent de diffuseurs au-dessus de la foule.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "content",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,28 +142,42 @@
    ],
    "camera": "orbit",
    "set": [
-    "screen",
     "person",
+    "studio_light",
     "text3d"
    ],
-   "onscreen_text": "360° · PARFUM · MASQUES",
-   "comic_action": "Orbite dans une salle d'écrans ; les visiteurs reniflent derrière leurs masques, rien ne passe.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "ODEUR : 0",
+   "comic_action": "Gros plan sur des spectateurs masqués qui haussent les épaules.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "building",
-    "sign",
-    "person"
+    "screen",
+    "tribune",
+    "studio_light"
    ],
-   "onscreen_text": "SALLE 2012 : RENFERMÉ",
-   "comic_action": "Travelling de salle en salle : la porte 2012 s'ouvre, un nuage de poussière.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "HOLOGRAMME 2017",
+   "comic_action": "Le maire grésille en projection sur la scène vide.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -146,13 +186,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "text3d",
-    "person"
+    "screen",
+    "screen",
+    "tribune"
    ],
-   "onscreen_text": "PARFUM N° 3",
-   "comic_action": "Un flacon étiqueté « 3e PLACE » ; un visiteur le sent et grimace.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "× 6",
+   "comic_action": "Six projections identiques saluent en même temps.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s6",
@@ -161,14 +214,20 @@
    ],
    "camera": "descend",
    "set": [
-    "column",
-    "text3d",
-    "person",
-    "studio_light"
+    "tribune",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "PARFUM DU POUVOIR : VIDE",
-   "comic_action": "Sous un projecteur, entre deux colonnes, un flacon doré vide ; un gardien le dépoussière.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "PARFUM DE VICTOIRE : ÉVENTÉ",
+   "comic_action": "Un flacon géant « VICTOIRE » se vide en fumée.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -182,39 +241,53 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique ouvre une fenêtre du musée.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui trouve que la politique sent le renfermé."
+  "text": "Envoie ça au pote qui allume trois bougies parfumées pour un apéro."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 84,
+ "word_count": 85,
  "claims": [
   {
-   "text": "En 2022 à Nantes, il a fait un meeting olfactif. Vraiment.",
+   "text": "En 2022 à Nantes, il organise un meeting olfactif : parfums diffusés dans la salle.",
    "claim_type": "fait_public",
    "source": "https://www.euronews.com/2022/01/16/videos-sounds-and-smells-french-far-left-candidate-s-unusual-rally-to-reinvigorate-campaig",
    "note": "Nantes : meeting immersif et olfactif, vidéo à 360°, public masqué."
   },
   {
-   "text": "Vidéo à 360 degrés, parfums dans la salle. Le public portait des masques.",
+   "text": "Petit souci : le public portait des masques. Personne n'a rien senti.",
    "claim_type": "fait_public",
    "source": "https://www.euronews.com/2022/01/16/videos-sounds-and-smells-french-far-left-candidate-s-unusual-rally-to-reinvigorate-campaig",
    "note": "Nantes : meeting immersif et olfactif, vidéo à 360°, public masqué."
   },
   {
-   "text": "Salle 2022 : odeur de troisième place, notes de 421 420 voix.",
+   "text": "En 2017, déjà, il tenait meeting en hologramme. Ni odeur, ni présence.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850",
-   "note": "Second tour 2022 raté d'environ 421 420 voix."
+   "source": "https://www.parismatch.be/actualites/politique/2017/02/05/jean-luc-melenchon-en-chair-en-os-et-en-hologramme-A5YAIOB4FRFYHLFZPCANXUXQVE/",
+   "note": "Meeting double Lyon / Aubervilliers en hologramme ; selon Europe 1, il devait rester dans un carré de 4 m sur 4."
+  },
+  {
+   "text": "Puis six hologrammes en même temps. Six fois rien.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/non-classe/melenchon-six-hologrammes-pour-conclure-une-campagne-de-ferveur-populaire-58921",
+   "note": "Fin de campagne 2017 : six hologrammes simultanés."
   }
  ],
  "sources": [
@@ -222,17 +295,24 @@
    "url": "https://www.euronews.com/2022/01/16/videos-sounds-and-smells-french-far-left-candidate-s-unusual-rally-to-reinvigorate-campaig",
    "date": "2022-01-16",
    "consulted": "2026-11-22",
-   "statut": "fait + mème",
+   "statut": "fait",
    "note": "Nantes : meeting immersif et olfactif, vidéo à 360°, public masqué."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850",
-   "date": "2022-04-10",
+   "url": "https://www.parismatch.be/actualites/politique/2017/02/05/jean-luc-melenchon-en-chair-en-os-et-en-hologramme-A5YAIOB4FRFYHLFZPCANXUXQVE/",
+   "date": "2017-02-05",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Second tour 2022 raté d'environ 421 420 voix."
+   "note": "Meeting double Lyon / Aubervilliers en hologramme ; selon Europe 1, il devait rester dans un carré de 4 m sur 4."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/non-classe/melenchon-six-hologrammes-pour-conclure-une-campagne-de-ferveur-populaire-58921",
+   "date": "2017-04-18",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Fin de campagne 2017 : six hologrammes simultanés."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le meeting olfactif et immersif de Nantes (2022). Cadre : le musée du Discours. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Gadgets de meeting. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

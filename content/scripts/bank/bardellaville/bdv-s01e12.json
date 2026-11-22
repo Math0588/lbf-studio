@@ -5,65 +5,65 @@
  "format": "A",
  "title_cover": "Cent jours, zéro plan",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, tout se fait en cent jours. Le comment, jamais.",
-  "Bardellaville : l'agence immobilière vend des maisons sans plans.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : cent jours, zéro plan."
+  "Dans cette ville, tout le monde vote Bardella. Compte à rebours lancé.",
+  "Cent jours à Matignon, selon le livre. Et la méthode ?",
+  "Bardellaville : le compte à rebours sans fusée.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Cent jours, zéro plan."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Cent jours, zéro méthode : pas un plan, un compte à rebours.",
-  "Jour un : conférence de presse. Jour deux : selfie. Jour trois à cent : story.",
-  "Son livre promet cent jours à Matignon. Les priorités ? Pas détaillées."
+  "Cent jours sans méthode : pas un plan, un minuteur de cuisine.",
+  "Pas un plan : un minuteur.",
+  "Jour cent : toujours pas de méthode."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Pour cent jours, au moins.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Compte à rebours lancé.",
    "accent_words": [
-    "cent jours"
+    "Compte à rebours"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son livre promet cent jours à Matignon. Les priorités ? Pas détaillées.",
+   "text": "Son livre Gouverner promet cent jours à Matignon.",
    "accent_words": [
-    "Pas détaillées"
+    "cent jours"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, on vend des maisons sans plans. Livraison dans cent jours.",
+   "text": "Les priorités ? Pas détaillées. La méthode ? Pas détaillée non plus, note l'AFP.",
    "accent_words": [
-    "sans plans"
+    "méthode"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Jour un : conférence de presse. Jour deux : selfie. Jour trois à cent : story.",
+   "text": "Trois livres en deux ans, et le plan tient toujours sur un marque-page.",
+   "accent_words": [
+    "marque-page"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n5",
+   "text": "Jour un : conférence de presse. Jour deux : selfie. Jour cent : story.",
    "accent_words": [
     "story"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n5",
-   "text": "Trois livres, et la méthode dans aucun.",
-   "accent_words": [
-    "aucun"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n6",
-   "text": "Cent jours, zéro méthode : pas un plan, un compte à rebours.",
+   "text": "Cent jours sans méthode : pas un plan, un minuteur de cuisine.",
    "accent_words": [
-    "compte à rebours"
+    "minuteur de cuisine"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,9 +89,19 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; un compte à rebours géant « J-100 » sur la façade.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "J-100",
+   "comic_action": "Descente sur la ville ; banderole « J-100 » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,25 +115,48 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "100 JOURS · PRIORITÉS : ?",
-   "comic_action": "Le livre « GOUVERNER » s'ouvre sur une page « PRIORITÉS » vide.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "CENT JOURS PROMIS",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « CENT JOURS PROMIS ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "facade_row",
-    "facade_set",
+    "screen",
+    "text3d",
     "person",
-    "banner"
+    "studio_light"
    ],
-   "onscreen_text": "VENDU SUR PLAN (SANS PLAN)",
-   "comic_action": "Rangée de façades en carton, panneau « VENDU » ; derrière, rien.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "MÉTHODE : PAS DÉTAILLÉE",
+   "comic_action": "Écran géant : « MÉTHODE : PAS DÉTAILLÉE ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -132,30 +165,54 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "table",
+    "form_stack",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "J1 PRESSE · J2 SELFIE · J3-100 STORY",
-   "comic_action": "Calendrier géant dont les pages s'arrachent toutes avec le même logo story.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PLAN : UN MARQUE-PAGE",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « PLAN : UN MARQUE-PAGE ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "shop",
+    "ring_light",
+    "tripod_camera",
     "person",
-    "sign",
-    "text3d"
+    "screen"
    ],
-   "onscreen_text": "MÉTHODE : EN PRÉCOMMANDE",
-   "comic_action": "Vitrine de librairie : affiche « TOME 4 : LA MÉTHODE — bientôt ».",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "JOUR 100 : STORY",
+   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « JOUR 100 : STORY ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "ring_light"
+    },
+    {
+     "who": "foule",
+     "geste": "jump"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,14 +221,26 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "100 → 0",
-   "comic_action": "Le compte à rebours atteint zéro ; il ne se passe rien, une colonne s'affaisse doucement. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "UN MINUTEUR DE CUISINE",
+   "comic_action": "Plan final, tenir une seconde : « UN MINUTEUR DE CUISINE ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "content"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +254,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt barre des jours sur un calendrier vierge.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI COMPTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI COMPTE ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,24 +276,28 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 81,
+ "word_count": 83,
  "claims": [
   {
    "segment": "n2",
-   "text": "Son livre promet cent jours à Matignon. Les priorités ? Pas détaillées.",
+   "text": "Son livre Gouverner promet cent jours à Matignon.",
    "claim_type": "fait_public",
    "source": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
    "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
   },
   {
-   "segment": "n5",
-   "text": "Trois livres, et la méthode dans aucun.",
+   "segment": "n3",
+   "text": "Les priorités ? Pas détaillées. La méthode ? Pas détaillée non plus, note l'AFP.",
+   "claim_type": "fait_public",
+   "source": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
+   "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
+  },
+  {
+   "segment": "n4",
+   "text": "Trois livres en deux ans, et le plan tient toujours sur un marque-page.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
-   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces.",
-   "sources_complementaires": [
-    "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon"
-   ]
+   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
   }
  ],
  "sources": [
@@ -224,7 +305,7 @@
    "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
    "date": "2026-11-04",
    "consulted": "2026-11-22",
-   "statut": "fait + appréciation AFP",
+   "statut": "fait + opinion (appréciation AFP)",
    "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
   },
   {
@@ -236,5 +317,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = le livre « Gouverner » esquisse cent jours à Matignon sans détailler priorités ni méthode (AFP). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = les « cent jours » de Gouverner sans méthode. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

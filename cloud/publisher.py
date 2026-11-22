@@ -322,7 +322,8 @@ def publish_one(item, pubs):
         manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
     thumb = int(manifest.get("thumb_offset_ms", 300))
     pub = {"episode_id": ep_id, "status": "publishing", "attempt_at": now().isoformat(),
-           "video_sha256": manifest.get("video_sha256"), "caption_head": caption[:60]}
+           "video_sha256": manifest.get("video_sha256"), "caption_head": caption[:60],
+           "duration_s": manifest.get("duration_s")}
 
     if env("LIVE_PUBLISH") != "true":
         pub.update(status="simulated", note="LIVE_PUBLISH=false : aucune requête envoyée à Instagram",
@@ -422,12 +423,42 @@ def collect_metrics(pubs):
                 try:
                     r = call("GET", f"{p['media_id']}/insights", {"metric": metrics})
                     vals = {d["name"]: (d.get("values") or [{}])[0].get("value") for d in r.get("data", [])}
+                    try:
+                        sk = call("GET", f"{p['media_id']}/insights", {"metric": "reels_skip_rate"})
+                        vals.update({d["name"]: (d.get("values") or [{}])[0].get("value") for d in sk.get("data", [])})
+                    except ApiError:
+                        pass
                     snaps.append({"media_id": p["media_id"], "episode_id": p["episode_id"], "window": win,
                                   "at": now().isoformat(), "values": vals})
                 except ApiError as e:
                     snaps.append({"media_id": p["media_id"], "episode_id": p["episode_id"], "window": win,
                                   "at": now().isoformat(), "error": e.body[:200]})
     save("metrics.json", snaps)
+    save("ratios.json", ratios(snaps, pubs))
+
+
+def ratios(snaps, pubs):
+    """Les 4 indicateurs qui comptent (Mosseri) : taux de skip, temps moyen regardé / durée, envois / reach,
+    j'aime / reach. Dernière mesure disponible par Reel, triée du meilleur au pire envoi/reach."""
+    dur = {p["episode_id"]: p.get("duration_s") for p in pubs}
+    last = {}
+    for s in snaps:
+        if s.get("values"):
+            last[s["episode_id"]] = s
+    out = []
+    for ep, s in last.items():
+        v = s["values"]
+        reach = v.get("reach") or 0
+        r = {"episode_id": ep, "window": s["window"], "reach": reach, "views": v.get("views"),
+             "skip_rate": v.get("reels_skip_rate"),
+             "avg_watch_s": round((v.get("ig_reels_avg_watch_time") or 0) / 1000, 1)}
+        if reach:
+            r["sends_per_reach"] = round((v.get("shares") or 0) / reach, 4)
+            r["likes_per_reach"] = round((v.get("likes") or 0) / reach, 4)
+        if dur.get(ep) and r["avg_watch_s"]:
+            r["watch_ratio"] = round(r["avg_watch_s"] / dur[ep], 3)
+        out.append(r)
+    return sorted(out, key=lambda r: r.get("sends_per_reach", 0), reverse=True)
 
 
 def cleanup(pubs, assets=frozenset()):

@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-04",
  "format": "B",
- "title_cover": "La Sixième en annexe",
+ "title_cover": "La VIe en annexe",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le règlement de copro fait 1 069 articles.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, même le local à vélos attend sa Constituante.",
-  "Mélenchonville : la République numéro six, en dernière page."
+  "Dans cette ville, tout le monde vote Mélenchon. Lisez jusqu'au bout.",
+  "Mélenchon promet une nouvelle République. Page 1 069.",
+  "Celle-là, Méluche ne la partagera pas.",
+  "Bienvenue à Mélenchonville : la VIe en annexe.",
+  "Mélenchon en une vidéo : la VIe en annexe."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Une République toute neuve, mais le même candidat depuis 2012.",
-  "La Sixième République est prête. Elle est juste rangée en annexe.",
-  "Nouvelle Constitution, ancien candidat."
+  "Mille soixante-neuf mesures, et la seule tenue d'avance : se représenter.",
+  "La Sixième République est prête. Elle attend juste qu'il finisse de lire.",
+  "Le chiffrage, lui, est promis pour début 2027. Après la lecture."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Le règlement aussi.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Lisez jusqu'au bout.",
    "accent_words": [
-    "Le règlement aussi"
+    "Lisez jusqu'au bout"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La copro réclame sa Sixième République. Article un : le local à vélos.",
+   "text": "Son programme 2027 aligne 1 069 mesures. Mille soixante-neuf.",
    "accent_words": [
-    "local à vélos"
+    "Mille soixante-neuf"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Son programme 2027 compte 1 069 mesures. Prévoyez le week-end.",
+   "text": "Sa grande promesse depuis 2012, la Sixième République ? Reléguée en fin d'ouvrage.",
    "accent_words": [
-    "1 069"
+    "Reléguée en fin d'ouvrage"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "La Sixième République ? Reléguée en fin d'ouvrage. Juste avant l'index.",
+   "text": "Juste après la mesure sur le tri des emballages, sûrement.",
    "accent_words": [
-    "fin d'ouvrage"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n5",
-   "text": "Ici, la Constituante se réunit chaque soir. L'ordre du jour n'est toujours pas voté.",
-   "accent_words": [
-    "pas voté"
+    "emballages, sûrement"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n6",
-   "text": "Une République toute neuve, mais le même candidat depuis 2012.",
+   "id": "n5",
+   "text": "Le chiffrage, lui, est promis pour début 2027. Après la lecture.",
    "accent_words": [
-    "depuis 2012"
+    "Après la lecture"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n6",
+   "text": "Mille soixante-neuf mesures, et la seule tenue d'avance : se représenter.",
+   "accent_words": [
+    "se représenter"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui veut changer la Constitution avant de changer d'avis.",
+   "text": "Envoie ça au pote qui lit la notice en commençant par la fin.",
    "accent_words": [
-    "changer d'avis"
+    "la fin"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un immeuble ; banderole « COPRO CONSTITUANTE ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · LA VIE EN ANNEXE",
+   "comic_action": "Descente sur la ville : banderole « LA VIE EN ANNEXE », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,12 +114,20 @@
    "camera": "closeup",
    "set": [
     "scroll",
-    "table",
-    "person"
+    "text3d",
+    "table"
    ],
-   "onscreen_text": "ARTICLE 1 : LOCAL VÉLOS",
-   "comic_action": "Un règlement en parchemin se déroule jusqu'au palier ; titre doré « VIe RÉPUBLIQUE ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "1 069 MESURES",
+   "comic_action": "Un parchemin se déroule de la table jusqu'au trottoir.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "pancarte"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,45 +136,70 @@
    ],
    "camera": "orbit",
    "set": [
+    "scroll",
     "form_stack",
-    "text3d",
-    "table",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "1 069 MESURES",
-   "comic_action": "Orbite autour d'une pile de feuilles qui monte jusqu'au deuxième étage.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "6E RÉPUBLIQUE : DERNIÈRE PAGE",
+   "comic_action": "Gros plan sur la toute dernière page, « VIe RÉPUBLIQUE » en minuscule.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "scroll",
-    "text3d",
-    "person"
+    "form_stack",
+    "bin",
+    "text3d"
    ],
-   "onscreen_text": "VIE RÉPUBLIQUE : PAGE 1 069",
-   "comic_action": "Un habitant feuillette à toute vitesse ; la Sixième République apparaît sur la toute dernière page.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PAGE 1 068 : LE TRI",
+   "comic_action": "Une pile de feuillets tombe dans une poubelle de tri.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "building",
-    "person",
-    "table",
-    "lamp"
+    "screen",
+    "text3d",
+    "tribune"
    ],
-   "onscreen_text": "ORDRE DU JOUR : EN DÉBAT",
-   "comic_action": "La caméra glisse le long des fenêtres : dans chaque appartement, une AG, mains levées.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CHIFFRAGE : PLUS TARD",
+   "comic_action": "Un écran affiche un sablier qui tourne au-dessus de la tribune.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "dort",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s6",
@@ -162,14 +208,21 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
+    "tribune",
     "banner",
-    "text3d",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "VIE RÉPUBLIQUE · MÊME CANDIDAT",
-   "comic_action": "Banderole « RÉPUBLIQUE NEUVE » sur l'immeuble ; dessous, la même affiche de campagne, quatre couches collées.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "MESURE TENUE : CANDIDAT",
+   "comic_action": "Tampon géant « TENU » sur une affiche « 2027 ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -183,36 +236,56 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique gare son vélo devant la porte.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui veut changer la Constitution avant de changer d'avis."
+  "text": "Envoie ça au pote qui lit la notice en commençant par la fin."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 82,
+ "word_count": 78,
  "claims": [
   {
-   "text": "Son programme 2027 compte 1 069 mesures. Prévoyez le week-end.",
+   "text": "Son programme 2027 aligne 1 069 mesures. Mille soixante-neuf.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
-   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
+   "note": "Programme 2027 : 1 069 mesures, dont 238 nouvelles ; la VIe République reléguée en fin d'ouvrage."
   },
   {
-   "text": "La Sixième République ? Reléguée en fin d'ouvrage. Juste avant l'index.",
+   "text": "Sa grande promesse depuis 2012, la Sixième République ? Reléguée en fin d'ouvrage.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
-   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
+   "note": "Programme 2027 : 1 069 mesures, dont 238 nouvelles ; la VIe République reléguée en fin d'ouvrage."
   },
   {
-   "text": "Une République toute neuve, mais le même candidat depuis 2012.",
+   "text": "Sa grande promesse depuis 2012, la Sixième République ? Reléguée en fin d'ouvrage.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+  },
+  {
+   "text": "Le chiffrage, lui, est promis pour début 2027. Après la lecture.",
+   "claim_type": "fait_public",
+   "source": "https://www.economiematin.fr/?p=238883",
+   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
+  },
+  {
+   "text": "Mille soixante-neuf mesures, et la seule tenue d'avance : se représenter.",
    "claim_type": "fait_public",
    "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
    "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
@@ -224,7 +297,21 @@
    "date": "2026-11",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
+   "note": "Programme 2027 : 1 069 mesures, dont 238 nouvelles ; la VIe République reléguée en fin d'ouvrage."
+  },
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+  },
+  {
+   "url": "https://www.economiematin.fr/?p=238883",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
   },
   {
    "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
@@ -235,5 +322,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : programme 2027 : 1 069 mesures et la VIe République reléguée en fin d'ouvrage. Cadre : le règlement de copropriété. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : La VIe en annexe. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

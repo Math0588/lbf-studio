@@ -5,17 +5,17 @@
  "format": "A",
  "title_cover": "Le livre des Français",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, tout appartient aux Français. Sauf l'argent.",
-  "Bardellaville : le facteur te livre le carton, garde le contenu.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : le livre des français."
+  "Dans cette ville, tout le monde vote Bardella. Et tout le monde paie.",
+  "Le livre des Français. Le million, c'est pour qui ?",
+  "Bardellaville : le peuple écrit, le maire encaisse.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Le livre des Français."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le peuple écrit, lui encaisse : voilà son pouvoir d'achat.",
-  "Le peuple écrit, lui encaisse : voilà son pouvoir d'achat.",
-  "Le livre des Français est vendu aux Français, prix fort."
+  "Le peuple a le livre, lui le chèque : son pouvoir d'achat.",
+  "Le peuple a le livre, lui a le chèque.",
+  "Pas le sien, le livre. Le million, si."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -31,39 +31,39 @@
    "id": "n2",
    "text": "Sur son livre : « Ce livre n'est pas le mien, c'est celui des Français ».",
    "accent_words": [
-    "celui des Français"
+    "Français"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Les droits d'auteur, eux, sont bien les siens : plus d'un million d'euros.",
+   "text": "Les droits d'auteur, eux, sont à lui : plus d'un million d'euros.",
    "accent_words": [
-    "plus d'un million"
+    "à lui"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Ici, le facteur garde ton colis et te laisse le carton.",
+   "text": "Trois livres en deux ans, prix fort.",
    "accent_words": [
-    "le carton"
+    "prix fort"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le livre des Français est vendu aux Français, prix fort.",
+   "text": "Le prochain : écrit par les Français, encaissé par lui.",
    "accent_words": [
-    "prix fort"
+    "encaissé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le peuple écrit, lui encaisse : voilà son pouvoir d'achat.",
+   "text": "Le peuple a le livre, lui le chèque : son pouvoir d'achat.",
    "accent_words": [
-    "son pouvoir d'achat"
+    "pouvoir d'achat"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,9 +89,19 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; une caisse enregistreuse géante sur le perron.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "TOUT LE MONDE PAIE",
+   "comic_action": "Descente sur la ville ; banderole « TOUT LE MONDE PAIE » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -106,8 +116,19 @@
     "text3d"
    ],
    "onscreen_text": "LE LIVRE DES FRANÇAIS",
-   "comic_action": "Gros plan sur une couverture ; un tampon « À VOUS » s'abat dessus.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « LE LIVRE DES FRANÇAIS ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "clap"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -118,60 +139,108 @@
    "set": [
     "screen",
     "text3d",
-    "mairie",
-    "person"
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "DROITS : +1 M€",
-   "comic_action": "Écran : compteur qui grimpe en euros, sous la mention « À VOUS ».",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "DROITS : 1 MILLION €",
+   "comic_action": "Compteur géant sur l'écran : « DROITS : 1 MILLION € ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cheer",
+     "visage": "content"
+    },
+    {
+     "who": "perso",
+     "visage": "choque",
+     "geste": "point"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
-    "building",
+    "table",
+    "form_stack",
     "person",
-    "bin"
+    "text3d"
    ],
-   "onscreen_text": "LIVRÉ : LE CARTON",
-   "comic_action": "Un livreur tend un carton vide à un habitant et repart avec l'objet sous le bras.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TROIS LIVRES, PRIX FORT",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « TROIS LIVRES, PRIX FORT ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "objet": "phone",
+     "geste": "jump"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "screen",
+    "text3d",
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "À VOUS : 22 €",
-   "comic_action": "Vitrine de librairie : étiquette « LE VÔTRE » sur un prix bien visible.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "ÉCRIT PAR VOUS, ENCAISSÉ PAR LUI",
+   "comic_action": "Compteur géant sur l'écran : « ÉCRIT PAR VOUS, ENCAISSÉ PAR LUI ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie"
+    "screen"
    ],
-   "onscreen_text": "POUVOIR D'ACHAT : LE SIEN",
-   "comic_action": "Le maire cubique tamponne « ENCAISSÉ » sur une pile de lettres de Français. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "SON POUVOIR D'ACHAT",
+   "comic_action": "Plan final, tenir une seconde : « SON POUVOIR D'ACHAT ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "content"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +254,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt serre son livre et son ticket de caisse.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE LECTEUR",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE LECTEUR ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,21 +276,31 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 85,
+ "word_count": 82,
  "claims": [
   {
    "segment": "n2",
-   "text": "« Ce livre n'est pas le mien, c'est celui des Français »",
+   "text": "Sur son livre : « Ce livre n'est pas le mien, c'est celui des Français ».",
    "claim_type": "citation_exacte",
    "source": "https://www.europe1.fr/politique/ce-livre-nest-pas-le-mien-cest-celui-des-francais-en-sondant-le-pays-jordan-bardella-se-prepare-a-lexercice-du-pouvoir-869191",
    "note": "Livre « Ce que veulent les Français » : « Ce livre n'est pas le mien, c'est celui des Français »."
   },
   {
    "segment": "n3",
-   "text": "Les droits d'auteur, eux, sont bien les siens : plus d'un million d'euros.",
+   "text": "Les droits d'auteur, eux, sont à lui : plus d'un million d'euros.",
    "claim_type": "fait_public",
    "source": "https://www.letribunaldunet.fr/politique/bardella-million-euros-livres-declaration-revenus.html",
-   "note": "Plus d'un million d'euros de droits d'auteur (environ 1,03 M€ entre 2024 et 2026, déclaration HATVP)."
+   "note": "1 035 178 € de droits d'auteur avant impôts déclarés à la HATVP (livres chez Fayard). ; Plus d'un million d'euros de droits d'auteur (déclaration HATVP).",
+   "sources_complementaires": [
+    "https://www.24matins.fr/jordan-bardella-a-deja-gagne-plus-dun-million-deuros-avec-ses-livres-1419059"
+   ]
+  },
+  {
+   "segment": "n4",
+   "text": "Trois livres en deux ans, prix fort.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
+   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
   }
  ],
  "sources": [
@@ -221,23 +308,31 @@
    "url": "https://www.europe1.fr/politique/ce-livre-nest-pas-le-mien-cest-celui-des-francais-en-sondant-le-pays-jordan-bardella-se-prepare-a-lexercice-du-pouvoir-869191",
    "date": "2025-10-29",
    "consulted": "2026-11-22",
-   "statut": "citation (titre Europe 1) + fait",
+   "statut": "citation exacte",
    "note": "Livre « Ce que veulent les Français » : « Ce livre n'est pas le mien, c'est celui des Français »."
+  },
+  {
+   "url": "https://www.letribunaldunet.fr/politique/bardella-million-euros-livres-declaration-revenus.html",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "fait (déclaration HATVP rapportée)",
+   "note": "1 035 178 € de droits d'auteur avant impôts déclarés à la HATVP (livres chez Fayard)."
   },
   {
    "url": "https://www.24matins.fr/jordan-bardella-a-deja-gagne-plus-dun-million-deuros-avec-ses-livres-1419059",
    "date": "2026",
    "consulted": "2026-11-22",
-   "statut": "fait (déclaration HATVP rapportée) ; page non ouvrable depuis l'outil, titre + résumé du moteur de recherche",
-   "note": "Plus d'un million d'euros de droits d'auteur (environ 1,03 M€ entre 2024 et 2026, déclaration HATVP)."
+   "statut": "fait",
+   "note": "Plus d'un million d'euros de droits d'auteur (déclaration HATVP)."
   },
   {
-   "url": "https://www.letribunaldunet.fr/politique/bardella-million-euros-livres-declaration-revenus.html",
+   "url": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
+   "date": "2026-11-04",
    "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "1 035 178 € de droits d'auteur avant impôts déclarés à la HATVP (deux livres, Fayard)."
+   "statut": "fait",
+   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « Ce livre n'est pas le mien, c'est celui des Français » contre plus d'un million d'euros de droits d'auteur (déclaration HATVP rapportée). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = « Ce livre n'est pas le mien, c'est celui des Français » et son million de droits d'auteur. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

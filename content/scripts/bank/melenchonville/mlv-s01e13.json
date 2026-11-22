@@ -3,19 +3,19 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-13",
  "format": "A",
- "title_cover": "Méluche en edit",
+ "title_cover": "Méluche en ralenti",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : chaque trajet en métro devient un clip.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, le maire a plus de fancams que d'adjoints.",
-  "Mélenchonville : la ville en ralenti, musique épique incluse."
+  "Dans cette ville, tout le monde vote Mélenchon. En slow motion.",
+  "Mélenchon a des fans. Et des edits. Beaucoup d'edits.",
+  "Les fans de Méluche vont me bloquer.",
+  "Bienvenue à Mélenchonville : méluche en ralenti.",
+  "Mélenchon en une vidéo : méluche en ralenti."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Des milliers d'edits, zéro Élysée. Le seul ralenti, c'est l'arrivée.",
-  "Les fans en ralenti, l'Élysée en accéléré : il arrive toujours après.",
-  "Musique épique, slow motion, troisième place."
+  "Des millions de vues au ralenti, et le seul truc qui n'arrive jamais : l'Élysée.",
+  "Des millions de vues au ralenti. Le second tour, lui, n'arrive jamais.",
+  "Chaque meeting, chaque colère, chaque hologramme : son edit, sa musique."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -29,49 +29,49 @@
   },
   {
    "id": "n2",
-   "text": "Ici, on ne dit pas le maire. On dit Méluche, comme une star.",
+   "text": "Ses fans l'appellent Méluche et le montent en edits : ralentis, musique épique.",
    "accent_words": [
-    "Méluche"
+    "ralentis, musique épique"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Chaque rame a son fan qui le filme. Musique épique, ralenti, filtre doré.",
+   "text": "Ils se surnomment les zinzinsoumis. Ça résume tout.",
    "accent_words": [
-    "filtre doré"
+    "Ça résume tout"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Ses fans s'appellent les zinzinsoumis. Ils l'assument.",
+   "text": "Septembre 2026 : plus de deux millions de likes sur TikTok.",
    "accent_words": [
-    "zinzinsoumis"
+    "sur TikTok"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le métro tombe en panne ? On en fait un edit. Quatre millions de vues.",
+   "text": "Chaque meeting, chaque colère, chaque hologramme : son edit, sa musique.",
    "accent_words": [
-    "un edit"
+    "son edit, sa musique"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Des milliers d'edits, zéro Élysée. Le seul ralenti, c'est l'arrivée.",
+   "text": "Des millions de vues au ralenti, et le seul truc qui n'arrive jamais : l'Élysée.",
    "accent_words": [
-    "l'arrivée"
+    "l'Élysée"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui monte des edits de politiciens.",
+   "text": "Envoie ça au pote qui monte des edits de politiciens à 2 h du matin.",
    "accent_words": [
-    "edits"
+    "du matin"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "person",
-    "banner"
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur une bouche de métro ; la foule monte au ralenti.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · MÉLUCHE EN RALENTI",
+   "comic_action": "Descente sur la ville : banderole « MÉLUCHE EN RALENTI », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,45 +113,72 @@
    ],
    "camera": "closeup",
    "set": [
-    "person",
-    "sign",
-    "text3d",
-    "ring_light"
+    "screen",
+    "ring_light",
+    "person"
    ],
-   "onscreen_text": "MÉLUCHE",
-   "comic_action": "Affiche de concert dans le couloir : « MÉLUCHE — TOURNÉE 2027 ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "MÉLUCHE · EDIT",
+   "comic_action": "Écran géant : le maire au ralenti, effets dorés.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "person",
-    "tripod_camera",
     "ring_light",
-    "sign"
+    "tripod_camera",
+    "person"
    ],
-   "onscreen_text": "FANCAM",
-   "comic_action": "Travelling dans la rame : un fan filme une affiche du maire au ralenti, lumière dorée.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "ZINZINSOUMIS",
+   "comic_action": "Trois fans filment l'écran avec leurs téléphones.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "person",
-    "banner",
-    "text3d"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "ZINZINSOUMIS",
-   "comic_action": "Orbite autour d'un groupe qui brandit une banderole « ZINZINSOUMIS » en souriant.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "2 MILLIONS DE LIKES",
+   "comic_action": "Compteur de cœurs qui explose sur l'écran.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "jump",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -148,12 +188,20 @@
    "camera": "closeup",
    "set": [
     "screen",
-    "text3d",
-    "person"
+    "studio_light",
+    "tribune"
    ],
-   "onscreen_text": "PANNE : 4 M DE VUES",
-   "comic_action": "Écran de quai : la panne montée en clip, violons, ralenti, compteur de vues qui s'emballe.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "UN EDIT PAR COLÈRE",
+   "comic_action": "Mur d'écrans : le même cri, en ralenti, sous dix angles.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "colere",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,12 +212,24 @@
    "set": [
     "road",
     "sign",
-    "person",
     "text3d"
    ],
-   "onscreen_text": "ÉLYSÉE : EN RALENTI",
-   "comic_action": "Plan large : un panneau « ÉLYSÉE » s'éloigne au ralenti pendant que la foule avance.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "ÉLYSÉE : CHARGEMENT…",
+   "comic_action": "Panneau « ÉLYSÉE » qui recule à chaque pas du cortège.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s7",
@@ -183,39 +243,59 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique se filme sur le quai.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui monte des edits de politiciens."
+  "text": "Envoie ça au pote qui monte des edits de politiciens à 2 h du matin."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 79,
+ "word_count": 84,
  "claims": [
   {
-   "text": "Ici, on ne dit pas le maire. On dit Méluche, comme une star.",
+   "text": "Ses fans l'appellent Méluche et le montent en edits : ralentis, musique épique.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/melenchon-leader-de-la-gauche-radicale-devenu-le-meilleur-ennemi-de-macron-77692",
    "note": "Surnom « Méluche »."
   },
   {
-   "text": "Chaque rame a son fan qui le filme. Musique épique, ralenti, filtre doré.",
-   "claim_type": "fait_public",
-   "source": "https://www.slate.fr/story/267349/legislatives-2024-politique-memes-reseaux-sociaux-fancams-edits-videos-communication",
-   "note": "Fancams et edits de candidats, dont LFI. / Edits vidéo pro-Mélenchon (ralentis, musique épique), fans surnommés « zinzinsoumis »."
-  },
-  {
-   "text": "Ses fans s'appellent les zinzinsoumis. Ils l'assument.",
+   "text": "Ses fans l'appellent Méluche et le montent en edits : ralentis, musique épique.",
    "claim_type": "fait_public",
    "source": "https://www.ladn.eu/media-mutants/comment-la-france-insoumise-a-fait-de-ledit-video-son-arme-pour-2027/",
-   "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique), fans surnommés « zinzinsoumis »."
+   "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique) ; fans surnommés « zinzinsoumis »."
+  },
+  {
+   "text": "Ils se surnomment les zinzinsoumis. Ça résume tout.",
+   "claim_type": "fait_public",
+   "source": "https://www.ladn.eu/media-mutants/comment-la-france-insoumise-a-fait-de-ledit-video-son-arme-pour-2027/",
+   "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique) ; fans surnommés « zinzinsoumis »."
+  },
+  {
+   "text": "Septembre 2026 : plus de deux millions de likes sur TikTok.",
+   "claim_type": "fait_public",
+   "source": "https://www.sudradio.fr/sud-radio/presidentielle-2027-melenchon-prend-la-tete-de-la-bataille-sur-les-reseaux-sociaux",
+   "note": "Plus de 2,1 millions de likes TikTok en septembre 2026 ; 1,2 million de mentions."
+  },
+  {
+   "text": "Des millions de vues au ralenti, et le seul truc qui n'arrive jamais : l'Élysée.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
@@ -223,24 +303,31 @@
    "url": "https://www.publicsenat.fr/actualites/politique/melenchon-leader-de-la-gauche-radicale-devenu-le-meilleur-ennemi-de-macron-77692",
    "date": "2017",
    "consulted": "2026-11-22",
-   "statut": "surnom",
+   "statut": "fait",
    "note": "Surnom « Méluche »."
-  },
-  {
-   "url": "https://www.slate.fr/story/267349/legislatives-2024-politique-memes-reseaux-sociaux-fancams-edits-videos-communication",
-   "date": "2024-06",
-   "consulted": "2026-11-22",
-   "statut": "mème",
-   "note": "Fancams et edits de candidats, dont LFI."
   },
   {
    "url": "https://www.ladn.eu/media-mutants/comment-la-france-insoumise-a-fait-de-ledit-video-son-arme-pour-2027/",
    "date": "2026",
    "consulted": "2026-11-22",
-   "statut": "mème",
-   "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique), fans surnommés « zinzinsoumis »."
+   "statut": "fait",
+   "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique) ; fans surnommés « zinzinsoumis »."
+  },
+  {
+   "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-melenchon-prend-la-tete-de-la-bataille-sur-les-reseaux-sociaux",
+   "date": "2026-10",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Plus de 2,1 millions de likes TikTok en septembre 2026 ; 1,2 million de mentions."
+  },
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « Méluche » en star : fancams, edits, « zinzinsoumis ». Cadre : le métro bondé. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Méluche en ralenti. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

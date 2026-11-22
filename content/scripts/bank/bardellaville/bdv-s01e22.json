@@ -5,17 +5,17 @@
  "format": "A",
  "title_cover": "CNews oui, Quotidien non",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, la liberté de la presse a une liste d'invités.",
-  "Bardellaville : une chaîne fermée, c'est grave ; une porte fermée, c'est normal.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : cnews oui, quotidien non."
+  "Dans cette ville, tout le monde vote Bardella. Et regarde une seule chaîne.",
+  "Bardella et la presse : liberté sur invitation.",
+  "Bardellaville : une chaîne ouverte, une porte fermée.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : CNews oui, Quotidien non."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La liberté de la presse, version Bardellaville : libre d'être d'accord.",
-  "Fermer une chaîne : dictature. Fermer la porte : démocratie.",
-  "Au kiosque, un seul journal, et le kiosquier fait les mots croisés à ta place."
+  "Sa liberté de la presse : libre d'être d'accord.",
+  "Libre d'être d'accord.",
+  "Fermer une chaîne : dictature. Fermer la porte : démocratie."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -37,33 +37,33 @@
   },
   {
    "id": "n3",
-   "text": "Quotidien, lui, reste refusé aux événements du RN, sauf s'il invite ses élus.",
+   "text": "Quotidien ? Refusé chez le RN, sauf s'il invite ses élus.",
    "accent_words": [
-    "refusé"
+    "ses élus"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Fermer une chaîne : dictature. Fermer la porte : démocratie.",
+   "text": "Des journalistes refoulés de sa soirée ? Sa réponse : « Vu et s'en tape ».",
    "accent_words": [
-    "démocratie"
+    "tape"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n5",
-   "text": "Au kiosque, un seul journal, et le kiosquier fait les mots croisés à ta place.",
+   "text": "Fermer une chaîne : dictature. Fermer la porte : démocratie.",
    "accent_words": [
-    "à ta place"
+    "la porte"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La liberté de la presse, version Bardellaville : libre d'être d'accord.",
+   "text": "Sa liberté de la presse : libre d'être d'accord.",
    "accent_words": [
-    "libre d'être d'accord"
+    "d'accord"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,57 +89,103 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; toutes les fenêtres affichent le même programme télé.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "UNE SEULE CHAÎNE",
+   "comic_action": "Descente sur la ville ; banderole « UNE SEULE CHAÎNE » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "nod"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "tribune",
     "studio_light",
-    "text3d",
-    "person"
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "« TOTALITAIRE ! »",
-   "comic_action": "Tribune : le maire cubique brandit une télécommande comme une pièce à conviction.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "TENTATION TOTALITAIRE !",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « TENTATION TOTALITAIRE ! ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
-    "person",
-    "road",
     "building",
-    "sign"
+    "sign",
+    "person",
+    "banner"
    ],
    "onscreen_text": "QUOTIDIEN : REFUSÉ",
-   "comic_action": "Devant une salle, un vigile laisse passer des caméras et bloque un micro « QUOTIDIEN ».",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Porte d'entrée gardée ; panneau « QUOTIDIEN : REFUSÉ ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
-    "facade_row",
-    "facade_set",
+    "building",
+    "sign",
     "person",
     "banner"
    ],
-   "onscreen_text": "PORTE FERMÉE = DÉMOCRATIE",
-   "comic_action": "Rangée de façades : une porte claque, panneau « LIBERTÉ » vissé dessus.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "« VU ET S'EN TAPE »",
+   "comic_action": "Porte d'entrée gardée ; panneau « « VU ET S'EN TAPE » ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -148,14 +194,26 @@
    ],
    "camera": "window_pass",
    "set": [
-    "shop",
-    "person",
+    "building",
     "sign",
-    "text3d"
+    "person",
+    "banner"
    ],
-   "onscreen_text": "KIOSQUE : 1 TITRE",
-   "comic_action": "Kiosque municipal : une seule pile de journaux, le kiosquier remplit la grille.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "FERMER LA PORTE = DÉMOCRATIE",
+   "comic_action": "Porte d'entrée gardée ; panneau « FERMER LA PORTE = DÉMOCRATIE ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,14 +222,26 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
    "onscreen_text": "LIBRE D'ÊTRE D'ACCORD",
-   "comic_action": "Gravure dorée sur la mairie ; un journaliste hoche la tête, mécaniquement. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "comic_action": "Plan final, tenir une seconde : « LIBRE D'ÊTRE D'ACCORD ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +255,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt change de chaîne, puis revient sur la même.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE INDIGNÉ",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE INDIGNÉ ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,7 +277,7 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 85,
+ "word_count": 82,
  "claims": [
   {
    "segment": "n2",
@@ -210,10 +288,17 @@
   },
   {
    "segment": "n3",
-   "text": "Quotidien, lui, reste refusé aux événements du RN, sauf s'il invite ses élus.",
+   "text": "Quotidien ? Refusé chez le RN, sauf s'il invite ses élus.",
    "claim_type": "fait_public",
    "source": "https://www.europe1.fr/medias-tele/jordan-bardella-annonce-que-le-rn-acceptera-les-journalistes-de-quotidien-quand-quotidien-acceptera-les-elus-du-rn-sur-son-plateau-878495",
    "note": "Le RN acceptera les journalistes de Quotidien quand Quotidien acceptera les élus du RN."
+  },
+  {
+   "segment": "n4",
+   "text": "Des journalistes refoulés de sa soirée ? Sa réponse : « Vu et s'en tape ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
+   "note": "Image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement du livre « Gouverner » ; reprend un mème préexistant."
   }
  ],
  "sources": [
@@ -221,7 +306,7 @@
    "url": "https://www.lagazettefrance.fr/article/bardella-accuse-lfi-de-tentation-totalitaire-en-voulant-fermer-cnews",
    "date": "date non relevée",
    "consulted": "2026-11-22",
-   "statut": "fait (dépêche AFP)",
+   "statut": "fait",
    "note": "Il accuse LFI de tentation totalitaire en voulant fermer CNews."
   },
   {
@@ -230,8 +315,15 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Le RN acceptera les journalistes de Quotidien quand Quotidien acceptera les élus du RN."
+  },
+  {
+   "url": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
+   "date": "2026-11-05",
+   "consulted": "2026-11-22",
+   "statut": "fait (publication sur X du 04/11/2026) ; texte exact de l'image",
+   "note": "Image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement du livre « Gouverner » ; reprend un mème préexistant."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = il accuse LFI de tentation totalitaire en voulant fermer CNews, mais les journalistes de Quotidien restent refusés aux événements RN. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = sa liberté de la presse à géométrie variable. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

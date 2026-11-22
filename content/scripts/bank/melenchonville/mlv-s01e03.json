@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-03",
  "format": "B",
- "title_cover": "Tout le monde dégage",
+ "title_cover": "Tous dehors, sauf lui",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : ici, même la lumière est dégagée.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, le dégagisme a commencé par les ampoules.",
-  "Mélenchonville : la seule ville où le chef ne s'éteint jamais."
+  "Dans cette ville, tout le monde vote Mélenchon. Puis dégage.",
+  "Mélenchon veut que tout le monde parte. Presque tout le monde.",
+  "Les insoumis vont me détester.",
+  "Bienvenue à Mélenchonville : tous dehors, sauf lui.",
+  "Mélenchon en une vidéo : tous dehors, sauf lui."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Qu'ils s'en aillent tous, oui. Mais lui en est à sa quatrième candidature.",
-  "Tout le monde dégage. Le seul qui reste allumé, c'est lui.",
-  "Le dégagisme, version longue : quinze ans sans dégager."
+  "Qu'ils s'en aillent tous… sauf lui, candidat pour la quatrième fois.",
+  "Tout le monde dégage. Le seul qui reste, c'est l'auteur.",
+  "Juillet 2026 : rupture avec le PS. Un parti entier dehors."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Même les ampoules.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Puis dégage.",
    "accent_words": [
-    "Même les ampoules"
+    "Puis dégage"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son livre de 2010 : « Qu'ils s'en aillent tous ! ». L'ampoule a obéi.",
+   "text": "Son livre de 2010 s'intitule « Qu'ils s'en aillent tous ! ».",
    "accent_words": [
-    "a obéi"
+    "aillent tous"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Panne générale : assemblée générale à la lampe frontale.",
+   "text": "2024 : trois députés critiques ne sont pas réinvestis. Partis.",
    "accent_words": [
-    "lampe frontale"
+    "Partis"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le dégagisme, ici, c'est simple : tout le monde dégage, sauf le chef.",
+   "text": "Ruffin s'en va aussi. Divorce consommé, écrit la presse.",
    "accent_words": [
-    "sauf le chef"
+    "la presse"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Ses anciens lieutenants ? Dégagés. Lui reste branché depuis 2012.",
+   "text": "Juillet 2026 : rupture avec le PS. Un parti entier dehors.",
    "accent_words": [
-    "branché"
+    "Un parti entier dehors"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Qu'ils s'en aillent tous, oui. Mais lui en est à sa quatrième candidature.",
+   "text": "Qu'ils s'en aillent tous… sauf lui, candidat pour la quatrième fois.",
    "accent_words": [
-    "quatrième candidature"
+    "quatrième fois"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui veut tout dégager, sauf son idole.",
+   "text": "Envoie ça au pote qui vire tout le monde du groupe, sauf lui.",
    "accent_words": [
-    "son idole"
+    "sauf lui"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -86,12 +86,25 @@
    "set": [
     "ground",
     "mairie",
-    "lamp",
+    "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente nocturne : tous les réverbères clignotent, une ampoule fait ses valises.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · TOUS DEHORS, SAUF LUI",
+   "comic_action": "Descente sur la ville : banderole « TOUS DEHORS, SAUF LUI », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,13 +113,21 @@
    ],
    "camera": "closeup",
    "set": [
-    "lamp",
+    "scroll",
     "text3d",
-    "person"
+    "tribune"
    ],
-   "onscreen_text": "QU'ILS S'EN AILLENT TOUS",
-   "comic_action": "Gros plan sur un réverbère : l'ampoule s'éteint d'elle-même, le mot « DÉGAGE » s'allume à sa place.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« QU'ILS S'EN AILLENT TOUS ! »",
+   "comic_action": "Un livre géant s'ouvre sur la tribune, titre en lettres rouges.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,14 +136,26 @@
    ],
    "camera": "orbit",
    "set": [
-    "table",
+    "road",
     "person",
-    "lamp",
-    "form_stack"
+    "sign"
    ],
-   "onscreen_text": "AG À LA FRONTALE",
-   "comic_action": "Salle dans l'ombre : une table d'AG, frontales allumées, mains levées.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "3 DÉPUTÉS : DEHORS",
+   "comic_action": "Trois silhouettes quittent le cortège, cartons sous le bras.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "colere",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s4",
@@ -131,14 +164,20 @@
    ],
    "camera": "street_dolly",
    "set": [
+    "car",
     "road",
-    "person",
-    "sign",
-    "building"
+    "person"
    ],
-   "onscreen_text": "DÉGAGEZ (SAUF LUI)",
-   "comic_action": "Travelling : des habitants sortent avec leurs cartons ; le panneau « DÉGAGEZ » porte un astérisque « sauf le chef ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RUFFIN : DIVORCE",
+   "comic_action": "Une voiture s'éloigne, panneau « DIVORCE CONSOMMÉ » qui se balance.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "wave",
+     "visage": "fatigue"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -147,13 +186,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "lamp",
-    "person",
-    "text3d"
+    "facade_set",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "BRANCHÉ DEPUIS 2012",
-   "comic_action": "Un seul réverbère reste allumé au milieu de la rue éteinte : il porte une écharpe rouge.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PS : RUPTURE ACTÉE",
+   "comic_action": "Une façade rose se replie comme un décor et quitte la scène.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s6",
@@ -162,14 +214,21 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
+    "tribune",
     "banner",
-    "text3d",
     "person"
    ],
    "onscreen_text": "4E CANDIDATURE",
-   "comic_action": "La banderole « QU'ILS S'EN AILLENT TOUS » tombe ; derrière, une affiche « 2027 » toute neuve.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "comic_action": "Rue vide : un seul orateur reste à la tribune, banderole « 2027 ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -183,36 +242,56 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique revisse une ampoule, qui s'éteint.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui veut tout dégager, sauf son idole."
+  "text": "Envoie ça au pote qui vire tout le monde du groupe, sauf lui."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 82,
+ "word_count": 76,
  "claims": [
   {
-   "text": "« Qu'ils s'en aillent tous ! »",
+   "text": "Son livre de 2010 s'intitule « Qu'ils s'en aillent tous ! ».",
    "claim_type": "citation_exacte",
    "source": "https://www.sudradio.fr/politique/personnalites-politiques-de-2017-jean-luc-melenchon-lui-meme-menace-par-le-degagisme",
    "note": "Dégagisme ; livre « Qu'ils s'en aillent tous ! » (2010)."
   },
   {
-   "text": "Ses anciens lieutenants ? Dégagés. Lui reste branché depuis 2012.",
+   "text": "2024 : trois députés critiques ne sont pas réinvestis. Partis.",
    "claim_type": "fait_public",
    "source": "https://www.letemps.ch/monde/europe/a-deux-semaines-des-legislatives-une-purge-au-sein-de-la-france-insoumise-chahute-deja-le-nouveau-front-populaire",
-   "note": "2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge ». / Ruffin–Mélenchon : « le divorce est désormais consommé »."
+   "note": "Législatives 2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge »."
   },
   {
-   "text": "Qu'ils s'en aillent tous, oui. Mais lui en est à sa quatrième candidature.",
+   "text": "Ruffin s'en va aussi. Divorce consommé, écrit la presse.",
+   "claim_type": "fait_public",
+   "source": "https://www.slate.fr/politique/francois-ruffin-jean-luc-melenchon-rupture-divorce-lfi-france-insoumise-election-presidentielle-2027-strategie-gauche",
+   "note": "Ruffin–Mélenchon : « le divorce est désormais consommé »."
+  },
+  {
+   "text": "Juillet 2026 : rupture avec le PS. Un parti entier dehors.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
+   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
+  },
+  {
+   "text": "Qu'ils s'en aillent tous… sauf lui, candidat pour la quatrième fois.",
    "claim_type": "fait_public",
    "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
    "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
@@ -223,7 +302,7 @@
    "url": "https://www.sudradio.fr/politique/personnalites-politiques-de-2017-jean-luc-melenchon-lui-meme-menace-par-le-degagisme",
    "date": "2017-12",
    "consulted": "2026-11-22",
-   "statut": "fait",
+   "statut": "citation_exacte",
    "note": "Dégagisme ; livre « Qu'ils s'en aillent tous ! » (2010)."
   },
   {
@@ -231,7 +310,7 @@
    "date": "2024-06",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge »."
+   "note": "Législatives 2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge »."
   },
   {
    "url": "https://www.slate.fr/politique/francois-ruffin-jean-luc-melenchon-rupture-divorce-lfi-france-insoumise-election-presidentielle-2027-strategie-gauche",
@@ -239,6 +318,13 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Ruffin–Mélenchon : « le divorce est désormais consommé »."
+  },
+  {
+   "url": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
+   "date": "2026-07",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
   },
   {
    "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
@@ -249,5 +335,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le dégagisme et « Qu'ils s'en aillent tous ! » (2010). Cadre : la panne d'éclairage public. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Tous dehors, sauf lui. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

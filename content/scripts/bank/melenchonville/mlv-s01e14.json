@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-14",
  "format": "A",
- "title_cover": "Le feu rose débranché",
+ "title_cover": "Le PS, deux fois quitté",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le carrefour où l'union se règle au feu rouge.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, les feux de gauche ne se parlent plus.",
-  "Mélenchonville : un seul feu, toujours rouge."
+  "Dans cette ville, tout le monde vote Mélenchon. Le PS ? Ça dépend du jour.",
+  "Mélenchon et le PS : je t'aime, moi non plus.",
+  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
+  "Bienvenue à Mélenchonville : le PS, deux fois quitté.",
+  "Mélenchon en une vidéo : le PS, deux fois quitté."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Résultat : un carrefour avec un seul feu, rouge, et il appelle ça l'union.",
-  "Un carrefour, un feu, une couleur. L'union, version solo.",
-  "Le rose débranché, le vert en sursis, le rouge seul."
+  "Il a quitté le PS plus souvent qu'il n'a passé un premier tour.",
+  "Il a quitté le PS plus souvent qu'il n'a passé un premier tour.",
+  "Juillet 2026 : rupture actée avec le PS. Re-divorce."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Même les feux.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Le PS ? Ça dépend du jour.",
    "accent_words": [
-    "Même les feux"
+    "Ça dépend du jour"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le carrefour avait un feu rouge, un vert, et un rose. Le rose est débranché.",
+   "text": "Il passe plus de trente ans au Parti socialiste, puis le quitte en 2008.",
    "accent_words": [
-    "débranché"
+    "en 2008"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "En juillet, il a acté la rupture avec le PS.",
+   "text": "2022 : il le reprend dans la NUPES. Retour de flamme.",
    "accent_words": [
-    "la rupture"
+    "Retour de flamme"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Pour les municipales, LFI a enterré le Nouveau Front populaire.",
+   "text": "2024 : rebelote, ensemble dans le Nouveau Front populaire.",
    "accent_words": [
-    "enterré"
+    "Front populaire"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le feu vert écolo a trois mois pour choisir sa couleur.",
+   "text": "Juillet 2026 : rupture actée avec le PS. Re-divorce.",
    "accent_words": [
-    "trois mois"
+    "Re-divorce"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Résultat : un carrefour avec un seul feu, rouge, et il appelle ça l'union.",
+   "text": "Il a quitté le PS plus souvent qu'il n'a passé un premier tour.",
    "accent_words": [
-    "l'union"
+    "premier tour"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui se fâche avec tous ses alliés.",
+   "text": "Envoie ça au pote qui se remet avec son ex tous les deux ans.",
    "accent_words": [
-    "alliés"
+    "deux ans"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "traffic_light",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un carrefour : trois feux, rouge, vert, rose.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · LE PS, DEUX FOIS QUITTÉ",
+   "comic_action": "Descente sur la ville : banderole « LE PS, DEUX FOIS QUITTÉ », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,13 +113,20 @@
    ],
    "camera": "closeup",
    "set": [
-    "traffic_light",
-    "text3d",
-    "person"
+    "facade_set",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "FEU ROSE : HS",
-   "comic_action": "Gros plan : un agent débranche le feu rose, qui s'éteint en soupirant.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PS : QUITTÉ EN 2008",
+   "comic_action": "Une porte rose claque ; le maire part avec un carton.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,29 +135,48 @@
    ],
    "camera": "orbit",
    "set": [
-    "traffic_light",
-    "road",
-    "sign"
+    "facade_set",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "RUPTURE ACTÉE",
-   "comic_action": "Orbite : le câble du feu rose est coupé net, étincelles.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "NUPES : RETOUR",
+   "comic_action": "La même porte se rouvre ; poignée de main gênée.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "sign",
-    "bin",
-    "text3d",
-    "person"
+    "table",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "NFP : RIP",
-   "comic_action": "Un panneau « NFP » est planté dans un petit tas de terre au pied du feu.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "NFP : REBELOTE",
+   "comic_action": "Photo de famille politique, sourires crispés.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "sourire_pro"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -146,13 +185,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "traffic_light",
-    "screen",
+    "facade_set",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "J-90",
-   "comic_action": "Le feu vert clignote nerveusement ; un minuteur s'affiche au-dessus.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PS : RE-RUPTURE",
+   "comic_action": "La porte claque une deuxième fois, la façade tremble.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "colere"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s6",
@@ -161,14 +213,26 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "car",
-    "traffic_light",
-    "person"
+    "lift_tribune",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "UNION = 1 FEU",
-   "comic_action": "Plan large : un seul feu rouge, toutes les voitures bloquées, klaxons.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "PS QUITTÉ : 2 · 2E TOUR : 0",
+   "comic_action": "Tableau de score : « QUITTÉ 2 – SECOND TOUR 0 ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s7",
@@ -182,57 +246,91 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique attend au rouge, éternellement.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui se fâche avec tous ses alliés."
+  "text": "Envoie ça au pote qui se remet avec son ex tous les deux ans."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 82,
+ "word_count": 85,
  "claims": [
   {
-   "text": "En juillet, il a acté la rupture avec le PS.",
+   "text": "Il passe plus de trente ans au Parti socialiste, puis le quitte en 2008.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2008/11/nous-voulons-etre-une-force-gouvernementale-et-unitaire-4946/",
+   "note": "Sénateur et ancien ministre du gouvernement Jospin, il quitte le PS en 2008 après plus de trente ans de militantisme."
+  },
+  {
+   "text": "2022 : il le reprend dans la NUPES. Retour de flamme.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/article/politique/la-nupes-presente-son-programme-et-fait-du-parlement-le-moyen-de-regler-d",
+   "note": "2022 : Union populaire à la présidentielle, puis NUPES aux législatives ; 2024 : Nouveau Front populaire."
+  },
+  {
+   "text": "2024 : rebelote, ensemble dans le Nouveau Front populaire.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/article/politique/la-nupes-presente-son-programme-et-fait-du-parlement-le-moyen-de-regler-d",
+   "note": "2022 : Union populaire à la présidentielle, puis NUPES aux législatives ; 2024 : Nouveau Front populaire."
+  },
+  {
+   "text": "Juillet 2026 : rupture actée avec le PS. Re-divorce.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
    "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
   },
   {
-   "text": "Pour les municipales, LFI a enterré le Nouveau Front populaire.",
+   "text": "Il a quitté le PS plus souvent qu'il n'a passé un premier tour.",
    "claim_type": "fait_public",
-   "source": "https://www.economiematin.fr/municipales-2026-lfi-enterre-le-nfp",
-   "note": "Municipales 2026 : LFI enterre le Nouveau Front populaire."
-  },
-  {
-   "text": "Le feu vert écolo a trois mois pour choisir sa couleur.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
-   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
   {
+   "url": "https://www.politis.fr/articles/2008/11/nous-voulons-etre-une-force-gouvernementale-et-unitaire-4946/",
+   "date": "2008-11",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Sénateur et ancien ministre du gouvernement Jospin, il quitte le PS en 2008 après plus de trente ans de militantisme."
+  },
+  {
+   "url": "https://www.publicsenat.fr/article/politique/la-nupes-presente-son-programme-et-fait-du-parlement-le-moyen-de-regler-d",
+   "date": "2022-06",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "2022 : Union populaire à la présidentielle, puis NUPES aux législatives ; 2024 : Nouveau Front populaire."
+  },
+  {
    "url": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
    "date": "2026-07",
    "consulted": "2026-11-22",
-   "statut": "citation exacte",
+   "statut": "fait",
    "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
   },
   {
-   "url": "https://www.economiematin.fr/municipales-2026-lfi-enterre-le-nfp",
-   "date": "2025",
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Municipales 2026 : LFI enterre le Nouveau Front populaire."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : la rupture avec le PS et le NFP enterré, l'ultimatum aux Écologistes. Cadre : les feux du carrefour. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Le PS, deux fois quitté. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

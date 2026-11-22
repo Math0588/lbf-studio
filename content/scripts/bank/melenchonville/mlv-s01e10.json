@@ -5,73 +5,73 @@
  "format": "A",
  "title_cover": "Après l'heure",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : ici, même les feux rouges donnent des ultimatums.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, tu as deux ou trois mois pour être d'accord.",
-  "Mélenchonville : la ville où l'horloge obéit au chef."
+  "Dans cette ville, tout le monde vote Mélenchon. Montre en main.",
+  "Mélenchon pose des ultimatums à tout le monde. Sauf à lui.",
+  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
+  "Bienvenue à Mélenchonville : après l'heure.",
+  "Mélenchon en une vidéo : après l'heure."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le seul sans date limite ? Le candidat de 2012, 2017, 2022 et 2027.",
-  "Après l'heure, ce n'est plus l'heure. Sauf pour lui, depuis 2012.",
-  "Tout le monde a une date limite. Sauf la candidature."
+  "Après l'heure, plus l'heure. Sauf pour lui, candidat depuis 2012.",
+  "Après l'heure, ce n'est plus l'heure. Sauf pour le candidat de 2012.",
+  "En juin, il décrétait déjà « La primaire est finie ». Sans primaire."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Dépêche-toi.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Montre en main.",
    "accent_words": [
-    "Dépêche-toi"
+    "Montre en main"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Aux Écologistes, il a laissé « deux ou trois mois » pour choisir leur camp.",
+   "text": "Aux Écologistes, il laisse « deux ou trois mois » pour choisir.",
    "accent_words": [
-    "trois mois"
+    "pour choisir"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Sa formule : « après l'heure, ce ne sera plus l'heure ». L'horloge flippe.",
+   "text": "Sa formule : « après l'heure, ce ne sera plus l'heure ».",
    "accent_words": [
-    "l'horloge"
+    "plus l'heure"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Ici, la mairie distribue des ultimatums comme des PV.",
+   "text": "Le PS, lui, n'a même pas eu de délai : rupture actée.",
    "accent_words": [
-    "ultimatums"
+    "rupture actée"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le boulanger a trois mois pour choisir : baguette insoumise ou fermeture.",
+   "text": "En juin, il décrétait déjà « La primaire est finie ». Sans primaire.",
    "accent_words": [
-    "fermeture"
+    "Sans primaire"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n6",
-   "text": "Le seul sans date limite ? Le candidat de 2012, 2017, 2022 et 2027.",
+   "text": "Après l'heure, plus l'heure. Sauf pour lui, candidat depuis 2012.",
    "accent_words": [
-    "sans date limite"
+    "depuis 2012"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui pose des ultimatums et revient toujours.",
+   "text": "Envoie ça au pote qui fixe des ultimatums et arrive toujours en retard.",
    "accent_words": [
-    "revient toujours"
+    "en retard"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,22 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur la mairie : son horloge tourne à toute vitesse.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · APRÈS L'HEURE",
+   "comic_action": "Descente sur la ville : banderole « APRÈS L'HEURE », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -102,11 +115,19 @@
    "set": [
     "screen",
     "text3d",
-    "person"
+    "tribune"
    ],
-   "onscreen_text": "J-90",
-   "comic_action": "Un compte à rebours géant s'affiche au-dessus d'un petit stand vert.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« DEUX OU TROIS MOIS »",
+   "comic_action": "Un compte à rebours géant s'allume au-dessus de la tribune.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,13 +136,26 @@
    ],
    "camera": "orbit",
    "set": [
-    "mairie",
+    "column",
     "text3d",
     "person"
    ],
-   "onscreen_text": "APRÈS L'HEURE",
-   "comic_action": "L'horloge de la mairie transpire, ses aiguilles tremblent.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« APRÈS L'HEURE… »",
+   "comic_action": "Une horloge de gare sonne ; les passants sursautent.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s4",
@@ -130,14 +164,20 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "road",
-    "car",
+    "facade_set",
     "sign",
     "person"
    ],
-   "onscreen_text": "ULTIMATUM N° 4 512",
-   "comic_action": "Un agent glisse des papiers « ULTIMATUM » sous les essuie-glaces de chaque voiture.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PS : DÉLAI 0",
+   "comic_action": "Une porte rose se ferme avant même que l'horloge démarre.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -146,13 +186,21 @@
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "sign",
-    "person"
+    "tribune",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "CHOISIS TON CAMP",
-   "comic_action": "Devant la boulangerie, deux pancartes : « INSOUMISE » / « FERMÉ ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "« LA PRIMAIRE EST FINIE »",
+   "comic_action": "Coup de sifflet final sur un terrain sans adversaire.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -161,14 +209,26 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
-    "banner",
+    "column",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "2012 · 2017 · 2022 · 2027",
-   "comic_action": "Plan large : quatre affiches de campagne superposées sur la façade, aucune date d'expiration.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "CANDIDAT DEPUIS 2012",
+   "comic_action": "L'horloge recule jusqu'à 2012 et repart.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s7",
@@ -182,36 +242,56 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique remonte l'horloge.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui pose des ultimatums et revient toujours."
+  "text": "Envoie ça au pote qui fixe des ultimatums et arrive toujours en retard."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 84,
+ "word_count": 83,
  "claims": [
   {
-   "text": "« deux ou trois mois »",
+   "text": "Aux Écologistes, il laisse « deux ou trois mois » pour choisir.",
    "claim_type": "citation_exacte",
    "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
    "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
   },
   {
-   "text": "« après l'heure, ce ne sera plus l'heure »",
+   "text": "Sa formule : « après l'heure, ce ne sera plus l'heure ».",
    "claim_type": "citation_exacte",
    "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
    "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
   },
   {
-   "text": "Le seul sans date limite ? Le candidat de 2012, 2017, 2022 et 2027.",
+   "text": "Le PS, lui, n'a même pas eu de délai : rupture actée.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
+   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
+  },
+  {
+   "text": "En juin, il décrétait déjà « La primaire est finie ». Sans primaire.",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
+   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
+  },
+  {
+   "text": "Après l'heure, plus l'heure. Sauf pour lui, candidat depuis 2012.",
    "claim_type": "fait_public",
    "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
    "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
@@ -222,8 +302,15 @@
    "url": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
    "date": "2026-07",
    "consulted": "2026-11-22",
-   "statut": "citation exacte",
+   "statut": "citation_exacte",
    "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
+   "date": "2026-06-07",
+   "consulted": "2026-11-22",
+   "statut": "citation_exacte",
+   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
   },
   {
    "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
@@ -234,5 +321,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : l'ultimatum aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure ». Cadre : la cérémonie du mot de la fin. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Après l'heure. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

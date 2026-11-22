@@ -5,31 +5,31 @@
  "format": "A",
  "title_cover": "Il signe, ça tombe",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, quand tout s'écroule, le maire sort son stylo.",
-  "Bardellaville : la crise, c'est le bon moment pour une dédicace.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : il signe, ça tombe."
+  "Dans cette ville, tout le monde vote Bardella. Stylo à la main.",
+  "Le gouvernement tombe ? Bardella dédicace.",
+  "Bardellaville : trois crises, trois livres.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Il signe, ça tombe."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Matignon attendra : il a une heure et demie de file à signer.",
-  "La mairie s'effondre ? Le maire signe le plâtre.",
-  "Le gouvernement tombe sous la censure. Lui ? Il dédicace son livre."
+  "Quand ça brûle, lui ne prend pas un seau : il prend un stylo.",
+  "La France brûle, il signe la préface.",
+  "Trois crises, trois livres, zéro seau."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Même son stylo.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Stylo à la main.",
    "accent_words": [
-    "stylo"
+    "Stylo"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le gouvernement tombe sous la censure. Lui ? Il dédicace son livre.",
+   "text": "Décembre 2024, le gouvernement tombe. Lui ? Il dédicace son livre à Paris.",
    "accent_words": [
     "dédicace"
    ],
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "Trois livres en deux ans : quand ça brûle, il écrit la préface.",
+   "text": "En 2025, Matignon vacille encore. Lui sort un deuxième livre.",
    "accent_words": [
-    "préface"
+    "deuxième livre"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "La mairie s'effondre ? Le maire signe le plâtre.",
+   "text": "2026, la campagne démarre : troisième livre, tournée de dédicaces incluse.",
    "accent_words": [
-    "signe le plâtre"
+    "troisième livre"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le pays cherche un Premier ministre. Lui, son meilleur angle.",
+   "text": "À ce rythme, il signera la préface de l'incendie.",
    "accent_words": [
-    "bon angle"
+    "préface de l'incendie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Matignon attendra : il a une heure et demie de file à signer.",
+   "text": "Quand ça brûle, lui ne prend pas un seau : il prend un stylo.",
    "accent_words": [
-    "heure et demie"
+    "stylo"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui ferait la queue pour une dédicace pendant l'incendie.",
+   "text": "Envoie ça au pote qui ferait dédicacer l'extincteur.",
    "accent_words": [
-    "incendie"
+    "extincteur"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; un stylo géant planté sur le toit comme une antenne.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "STYLO À LA MAIN",
+   "comic_action": "Descente sur la ville ; banderole « STYLO À LA MAIN » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,73 +116,131 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "CENSURE : DÉDICACE",
-   "comic_action": "Table de dédicace devant un écran qui annonce la chute du gouvernement ; le stylo ne s'arrête pas.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "LE GOUVERNEMENT TOMBE",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « LE GOUVERNEMENT TOMBE ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque",
+     "geste": "point"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "facade_row",
-    "facade_set",
+    "table",
+    "form_stack",
     "person",
-    "banner"
+    "text3d"
    ],
-   "onscreen_text": "3 LIVRES · 0 POMPIER",
-   "comic_action": "Une façade fume ; devant, une pile de livres et un stylo, aucun seau.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "CRISE : LIVRE 2",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « CRISE : LIVRE 2 ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "jump"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "column",
-    "mairie",
-    "text3d",
-    "person"
+    "road",
+    "person",
+    "banner",
+    "ring_light"
    ],
-   "onscreen_text": "AUTOGRAPHE SUR GRAVATS",
-   "comic_action": "Une colonne s'écroule ; le maire cubique signe le morceau de plâtre tombé.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CAMPAGNE : LIVRE 3",
+   "comic_action": "Travelling sur une file de téléphones levés ; banderole « CAMPAGNE : LIVRE 3 ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
+    "screen",
+    "text3d",
     "person",
-    "ring_light",
-    "road",
-    "lamp"
+    "studio_light"
    ],
-   "onscreen_text": "PREMIER MINISTRE ? PLUS TARD",
-   "comic_action": "Rue sous lampadaire : perche à selfie, trois essais d'angle pendant que passe un camion de déménagement.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PRÉFACE DE L'INCENDIE",
+   "comic_action": "Écran géant : « PRÉFACE DE L'INCENDIE ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "person",
-    "road",
-    "building",
-    "sign"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "MATIGNON : EN ATTENTE",
-   "comic_action": "File interminable devant une librairie ; un panneau « MATIGNON » tourné face contre terre.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "PAS UN SEAU : UN STYLO",
+   "comic_action": "Plan final, tenir une seconde : « PAS UN SEAU : UN STYLO ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,42 +254,53 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt, livre sous le bras, sirène au loin.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI SIGNE TOUT",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI SIGNE TOUT ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui ferait la queue pour une dédicace pendant l'incendie."
+  "text": "Envoie ça au pote qui ferait dédicacer l'extincteur."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 81,
+ "word_count": 77,
  "claims": [
   {
    "segment": "n2",
-   "text": "Le gouvernement tombe sous la censure. Lui ? Il dédicace son livre.",
+   "text": "Décembre 2024, le gouvernement tombe. Lui ? Il dédicace son livre à Paris.",
    "claim_type": "fait_public",
    "source": "https://www.lagazettefrance.fr/article/en-pleine-censure-bardella-joue-la-contre-programmation-avec-une-dedicace-de-son-livre-a-paris",
-   "note": "Le jour de la censure du gouvernement, contre-programmation : dédicace de son livre à Paris."
+   "note": "Le jour de la censure du gouvernement Barnier, contre-programmation : dédicace de son livre à Paris."
   },
   {
    "segment": "n3",
-   "text": "Trois livres en deux ans : quand ça brûle, il écrit la préface.",
+   "text": "En 2025, Matignon vacille encore. Lui sort un deuxième livre.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
+   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces. ; Livre « Ce que veulent les Français » : « Ce livre n'est pas le mien, c'est celui des Français ».",
+   "sources_complementaires": [
+    "https://www.europe1.fr/politique/ce-livre-nest-pas-le-mien-cest-celui-des-francais-en-sondant-le-pays-jordan-bardella-se-prepare-a-lexercice-du-pouvoir-869191"
+   ]
+  },
+  {
+   "segment": "n4",
+   "text": "2026, la campagne démarre : troisième livre, tournée de dédicaces incluse.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
    "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
-  },
-  {
-   "segment": "n6",
-   "text": "Matignon attendra : il a une heure et demie de file à signer.",
-   "claim_type": "fait_public",
-   "source": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
-   "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
   }
  ],
  "sources": [
@@ -228,8 +308,8 @@
    "url": "https://www.lagazettefrance.fr/article/en-pleine-censure-bardella-joue-la-contre-programmation-avec-une-dedicace-de-son-livre-a-paris",
    "date": "2024-12 (probable, date non relevée)",
    "consulted": "2026-11-22",
-   "statut": "fait (dépêche AFP)",
-   "note": "Le jour de la censure du gouvernement, contre-programmation : dédicace de son livre à Paris."
+   "statut": "fait",
+   "note": "Le jour de la censure du gouvernement Barnier, contre-programmation : dédicace de son livre à Paris."
   },
   {
    "url": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
@@ -239,13 +319,13 @@
    "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
   },
   {
-   "url": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
-   "date": "2026-08-29",
+   "url": "https://www.europe1.fr/politique/ce-livre-nest-pas-le-mien-cest-celui-des-francais-en-sondant-le-pays-jordan-bardella-se-prepare-a-lexercice-du-pouvoir-869191",
+   "date": "2025-10-29",
    "consulted": "2026-11-22",
-   "statut": "fait (reportage AFP)",
-   "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
+   "statut": "citation exacte",
+   "note": "Livre « Ce que veulent les Français » : « Ce livre n'est pas le mien, c'est celui des Français »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = le jour d'une censure du gouvernement, contre-programmation avec une dédicace de son livre à Paris (AFP). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = il dédicace pendant que ça brûle (livres en pleine crise). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

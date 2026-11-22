@@ -5,31 +5,31 @@
  "format": "A",
  "title_cover": "Logique Mbappé",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, la logique foot s'applique à tout. Même au maire.",
-  "Bardellaville : le club qui gagne quand le maire sort.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : logique mbappé."
+  "Dans cette ville, tout le monde vote Bardella. Même au foot.",
+  "Bardella tacle Mbappé. Appliquons sa logique.",
+  "Bardellaville : la logique du PSG, appliquée au maire.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Logique Mbappé."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Appliquons sa logique : quand il quitte un débat, le débat gagne.",
-  "Son plus beau dribble : l'esquive de question. Ballon d'or.",
-  "Ici, le club transfère chaque joueur qui critique le maire. Il reste la mascotte."
+  "Sa logique : l'équipe gagne quand il s'en va.",
+  "L'équipe gagne quand il s'en va. Ses mots.",
+  "Sa logique, son départ."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Même le club de foot.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Même au foot.",
    "accent_words": [
-    "club de foot"
+    "foot"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Mbappé tacle le RN. Sur X : sans lui, le PSG gagne la Ligue des champions.",
+   "text": "Mbappé critique le RN. Réponse : sans lui, le PSG gagne la Ligue des champions.",
    "accent_words": [
     "Ligue des champions"
    ],
@@ -37,30 +37,38 @@
   },
   {
    "id": "n3",
-   "text": "Ici, le club transfère chaque joueur qui critique le maire. Il reste la mascotte.",
+   "text": "Il zappe un débat sur Public Sénat ? Le débat va très bien.",
    "accent_words": [
-    "la mascotte"
+    "très bien"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Son plus beau dribble : le débat de Public Sénat, esquivé en 2024. Ballon d'or.",
+   "text": "Absent du Parlement européen, disent ses rivaux ? Le Parlement tient le coup.",
    "accent_words": [
-    "Ballon d'or"
+    "tient le coup"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Appliquons sa logique : quand il quitte un débat, le débat gagne.",
+   "text": "S'il quitte la politique, la France gagne la Coupe du monde.",
    "accent_words": [
-    "le débat gagne"
+    "Coupe du monde"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
+   "text": "Sa logique : l'équipe gagne quand il s'en va.",
+   "accent_words": [
+    "s'en va"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
    "text": "Envoie ça au pote qui a trouvé ce tacle sur Mbappé génial.",
    "accent_words": [
     "génial"
@@ -81,9 +89,19 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; un terrain de foot peint sur la place.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "MÊME AU FOOT",
+   "comic_action": "Descente sur la ville ; banderole « MÊME AU FOOT » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -94,12 +112,24 @@
    "set": [
     "screen",
     "text3d",
-    "mairie",
-    "person"
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "SANS LUI, ON GAGNE",
-   "comic_action": "Écran géant : un tweet en lettres capitales, trophée qui brille.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "SANS MBAPPÉ, LE PSG GAGNE",
+   "comic_action": "Écran géant : « SANS MBAPPÉ, LE PSG GAGNE ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -108,14 +138,25 @@
    ],
    "camera": "orbit",
    "set": [
-    "mascot",
-    "person",
-    "banner",
+    "tribune",
+    "router_lectern",
+    "studio_light",
     "text3d"
    ],
-   "onscreen_text": "EFFECTIF : 1 MASCOTTE",
-   "comic_action": "La mascotte seule sur le terrain fait des passes contre un mur.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SANS LUI, LE DÉBAT VA BIEN",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « SANS LUI, LE DÉBAT VA BIEN ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "clap",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -124,35 +165,84 @@
    ],
    "camera": "orbit",
    "set": [
-    "ground",
+    "tribune",
+    "lift_tribune",
     "banner",
-    "person",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "BALLON D'OR : ESQUIVE",
-   "comic_action": "Un journaliste tend un micro ; le maire cubique fait un crochet et file.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "SANS LUI, LE PARLEMENT TIENT",
+   "comic_action": "Meeting : la tribune s'élève, banderole « SANS LUI, LE PARLEMENT TIENT ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "clap"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
-    "router_lectern",
-    "studio_light",
-    "text3d"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "DÉBAT : VICTOIRE",
-   "comic_action": "Plateau : son pupitre s'en va sur roulettes ; les autres se serrent la main, soulagés. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "COUPE DU MONDE ?",
+   "comic_action": "Dans la rue, panneau « COUPE DU MONDE ? ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "jump"
+    },
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
+   ],
+   "onscreen_text": "L'ÉQUIPE GAGNE QUAND IL PART",
+   "comic_action": "Plan final, tenir une seconde : « L'ÉQUIPE GAGNE QUAND IL PART ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
@@ -161,9 +251,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt jongle avec un ballon, rate.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE SUPPORTER",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE SUPPORTER ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -175,21 +273,28 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 82,
+ "word_count": 84,
  "claims": [
   {
    "segment": "n2",
-   "text": "Mbappé tacle le RN. Sur X : sans lui, le PSG gagne la Ligue des champions.",
+   "text": "Mbappé critique le RN. Réponse : sans lui, le PSG gagne la Ligue des champions.",
    "claim_type": "fait_public",
    "source": "https://www.europe1.fr/politique/kylian-mbappe-quitte-le-psg-le-club-gagne-la-ligue-des-champions-jordan-bardella-repond-a-la-star-des-bleus-apres-ses-critiques-du-rn-934142",
-   "note": "Réponse à Mbappé : quand Mbappé quitte le PSG, le club gagne la Ligue des champions (paraphrase, sans guillemets)."
+   "note": "Réponse à Mbappé : quand Mbappé quitte le PSG, le club gagne la Ligue des champions."
   },
   {
-   "segment": "n4",
-   "text": "Son plus beau dribble : le débat de Public Sénat, esquivé en 2024. Ballon d'or.",
+   "segment": "n3",
+   "text": "Il zappe un débat sur Public Sénat ? Le débat va très bien.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
    "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
+  },
+  {
+   "segment": "n4",
+   "text": "Absent du Parlement européen, disent ses rivaux ? Le Parlement tient le coup.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
+   "note": "Critiques sur l'assiduité au Parlement européen (thème du député fantôme) ; aucun chiffre repris."
   }
  ],
  "sources": [
@@ -197,17 +302,24 @@
    "url": "https://www.europe1.fr/politique/kylian-mbappe-quitte-le-psg-le-club-gagne-la-ligue-des-champions-jordan-bardella-repond-a-la-star-des-bleus-apres-ses-critiques-du-rn-934142",
    "date": "2026-05-13",
    "consulted": "2026-11-22",
-   "statut": "fait (message public sur X du 12/05/2026)",
-   "note": "Réponse à Mbappé : quand Mbappé quitte le PSG, le club gagne la Ligue des champions (paraphrase, sans guillemets)."
+   "statut": "fait (paraphrase, sans guillemets)",
+   "note": "Réponse à Mbappé : quand Mbappé quitte le PSG, le club gagne la Ligue des champions."
   },
   {
    "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
    "date": "2024-03-04",
    "consulted": "2026-11-22",
-   "statut": "fait (refus) + mème (réactions)",
+   "statut": "fait",
    "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
+   "date": "2024",
+   "consulted": "2026-11-22",
+   "statut": "opinion (critiques d'adversaires)",
+   "note": "Critiques sur l'assiduité au Parlement européen (thème du député fantôme) ; aucun chiffre repris."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = réponse à Mbappé sur X : quand Mbappé quitte le PSG, le club gagne la Ligue des champions (paraphrase) ; logique retournée contre lui. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = sa pique à Mbappé (« depuis son départ, le PSG gagne ») retournée contre lui. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

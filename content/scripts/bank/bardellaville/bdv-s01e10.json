@@ -5,23 +5,23 @@
  "format": "A",
  "title_cover": "Le copier-coller",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, tout le monde dit la même phrase. Au mot près.",
-  "Bardellaville : la ville où même le perroquet a un script.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : le copier-coller."
+  "Dans cette ville, tout le monde vote Bardella. Et dit pareil.",
+  "Bardellaville : mille comptes, une seule phrase.",
+  "Ici, même le répondeur récite.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Le copier-coller."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Mille comptes, une phrase : pas un mouvement, un presse-papier.",
-  "Tu demandes l'heure : bon sens. Tu demandes ton chemin : pouvoir d'achat.",
-  "À la mairie, le maire, le répondeur et le perroquet : même script."
+  "Tout le monde récite pareil : pas un mouvement, un presse-papier.",
+  "Pas un mouvement : un copier-coller.",
+  "Mille voix, une phrase, zéro virgule changée."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Et tout le monde dit pareil.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Et dit pareil.",
    "accent_words": [
     "pareil"
    ],
@@ -29,43 +29,43 @@
   },
   {
    "id": "n2",
-   "text": "Sur TikTok, des comptes militants récitent les mêmes éléments de langage.",
+   "text": "Sur TikTok, des comptes militants récitent les mêmes éléments de langage en boucle.",
    "accent_words": [
-    "éléments de langage"
+    "mêmes éléments de langage"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "À la mairie, le maire, le répondeur et le perroquet : même script.",
+   "text": "Normal : le chef aussi, avec ses réponses calibrées, d'après la presse.",
    "accent_words": [
-    "même script"
+    "calibrées"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Tu demandes l'heure : bon sens. Tu demandes ton chemin : pouvoir d'achat.",
+   "text": "Même ses rivaux copient le format, s'interroge la presse. La contagion gagne.",
    "accent_words": [
-    "pouvoir d'achat"
+    "contagion"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le dictionnaire municipal tient en douze mots, dont trois fois Français.",
+   "text": "Mille comptes, une phrase. Même la virgule est au garde-à-vous.",
    "accent_words": [
-    "trois fois"
+    "virgule"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Mille comptes, une phrase : pas un mouvement, un presse-papier.",
+   "text": "Tout le monde récite pareil : pas un mouvement, un presse-papier.",
    "accent_words": [
     "presse-papier"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
@@ -89,9 +89,19 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; cent habitants ouvrent la bouche en même temps.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "TOUT LE MONDE DIT PAREIL",
+   "comic_action": "Descente sur la ville ; banderole « TOUT LE MONDE DIT PAREIL » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,41 +115,77 @@
     "person",
     "screen"
    ],
-   "onscreen_text": "ÉLÉMENTS DE LANGAGE ×100",
-   "comic_action": "Dix téléphones sur trépieds affichent la même vidéo, décalée d'une seconde.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "MÊMES PHRASES EN BOUCLE",
+   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « MÊMES PHRASES EN BOUCLE ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod",
+     "objet": "phone"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "table",
+    "tribune",
+    "studio_light",
     "screen",
-    "sign",
-    "building"
+    "text3d"
    ],
-   "onscreen_text": "SCRIPT UNIQUE",
-   "comic_action": "Guichet : un répondeur, un maire cubique et un perroquet en carton récitent en chœur.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RÉPONSES CALIBRÉES",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « RÉPONSES CALIBRÉES ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "sourire_pro",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
-    "building",
+    "screen",
+    "text3d",
     "person",
-    "bin"
+    "studio_light"
    ],
-   "onscreen_text": "HEURE ? BON SENS",
-   "comic_action": "Un passant demande sa route ; un habitant pointe une pancarte « POUVOIR D'ACHAT ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CONTAGION",
+   "comic_action": "Écran géant : « CONTAGION ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "visage": "fier",
+     "geste": "wave"
+    },
+    {
+     "who": "foule",
+     "geste": "nod"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -148,30 +194,53 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
+    "screen",
+    "text3d",
     "person",
-    "text3d"
+    "studio_light"
    ],
-   "onscreen_text": "DICO : 12 MOTS",
-   "comic_action": "Un dictionnaire épais s'ouvre : douze mots imprimés en énorme, le reste blanc.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LA VIRGULE AU GARDE-À-VOUS",
+   "comic_action": "Écran géant : « LA VIRGULE AU GARDE-À-VOUS ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "nod"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "CTRL+C · CTRL+V",
-   "comic_action": "L'écran géant affiche le même message copié mille fois. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "UN PRESSE-PAPIER",
+   "comic_action": "Plan final, tenir une seconde : « UN PRESSE-PAPIER ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +254,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt récite en silence devant la vitrine.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE PERROQUET",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE PERROQUET ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,21 +276,28 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 84,
+ "word_count": 81,
  "claims": [
   {
    "segment": "n2",
-   "text": "Sur TikTok, des comptes militants récitent les mêmes éléments de langage.",
+   "text": "Sur TikTok, des comptes militants récitent les mêmes éléments de langage en boucle.",
    "claim_type": "fait_public",
    "source": "https://www.ladn.eu/media-mutants/sur-tiktok-les-militants-rn-peaufinent-leur-strategie-pour-2027/",
    "note": "Comptes militants qui relaient sur TikTok des éléments de langage quasi identiques, en continu."
   },
   {
-   "segment": "n6",
-   "text": "Mille comptes, une phrase : pas un mouvement, un presse-papier.",
+   "segment": "n3",
+   "text": "Normal : le chef aussi, avec ses réponses calibrées, d'après la presse.",
    "claim_type": "fait_public",
-   "source": "https://www.ladn.eu/media-mutants/sur-tiktok-les-militants-rn-peaufinent-leur-strategie-pour-2027/",
-   "note": "Comptes militants qui relaient sur TikTok des éléments de langage quasi identiques, en continu."
+   "source": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
+   "note": "Candidat aux réponses calibrées et creuses."
+  },
+  {
+   "segment": "n4",
+   "text": "Même ses rivaux copient le format, s'interroge la presse. La contagion gagne.",
+   "claim_type": "fait_public",
+   "source": "https://www.ladn.eu/media-mutants/gabriel-attal-copie-t-il-la-strategie-tiktok-de-jordan-bardella/",
+   "note": "« Gabriel Attal copie-t-il la stratégie TikTok de Jordan Bardella ? »"
   }
  ],
  "sources": [
@@ -223,8 +307,22 @@
    "consulted": "2026-11-22",
    "statut": "fait (enquête) + opinion",
    "note": "Comptes militants qui relaient sur TikTok des éléments de langage quasi identiques, en continu."
+  },
+  {
+   "url": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
+   "date": "2026-05-31",
+   "consulted": "2026-11-22",
+   "statut": "opinion (chronique ; formule de l'auteur non reprise)",
+   "note": "Candidat aux réponses calibrées et creuses."
+  },
+  {
+   "url": "https://www.ladn.eu/media-mutants/gabriel-attal-copie-t-il-la-strategie-tiktok-de-jordan-bardella/",
+   "date": "date non relevée",
+   "consulted": "2026-11-22",
+   "statut": "fait + opinion",
+   "note": "« Gabriel Attal copie-t-il la stratégie TikTok de Jordan Bardella ? »"
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = comptes militants qui répètent sur TikTok les mêmes éléments de langage, en continu (enquête L'ADN). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = les éléments de langage récités à l'identique. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

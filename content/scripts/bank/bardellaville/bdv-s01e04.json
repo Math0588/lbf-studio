@@ -5,31 +5,31 @@
  "format": "A",
  "title_cover": "Bard-est-pas-là, encore",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, le bureau du maire est toujours libre.",
-  "Bardellaville : le maire est en déplacement. Depuis toujours.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : bard-est-pas-là, encore."
+  "Dans cette ville, tout le monde vote Bardella. Enfin, s'il passe.",
+  "Bardellaville : présent sur TikTok, absent partout ailleurs.",
+  "Le maire ? En déplacement. Encore.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Bard-est-pas-là, encore."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Absent au boulot, présent en dédicace : il signe tout, sauf la feuille de présence.",
-  "Absent au boulot, présent en dédicace : il signe tout, sauf la feuille de présence.",
-  "Même le jeu de mots est plus présent que lui."
+  "Bard-est-pas-là ? Si : derrière une pile de livres, stylo en main.",
+  "Absent au Parlement, présent en dédicace.",
+  "Le seul endroit où il ne manque jamais : la photo."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Lui, il est où ?",
+   "text": "Dans cette ville, tout le monde vote Bardella. Enfin, s'il passe.",
    "accent_words": [
-    "où"
+    "s'il passe"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Surnom en ligne : Bard-est-pas-là. Le jeu de mots est plus présent que lui.",
+   "text": "Son surnom qui circule en ligne : Bard-est-pas-là.",
    "accent_words": [
     "Bard-est-pas-là"
    ],
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "Au Parlement européen, un fauteuil. Sur TikTok, un trône.",
+   "text": "Au Parlement européen, ses adversaires parlent de député fantôme.",
    "accent_words": [
-    "trône"
+    "député fantôme"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Rendez-vous à la mairie : en story, disparus en vingt-quatre heures.",
+   "text": "Les débats des européennes sur Public Sénat ? Pas là non plus.",
    "accent_words": [
-    "disparus"
+    "Pas là"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Conseil municipal : quorum atteint grâce à sa silhouette en carton.",
+   "text": "Décembre 2024, le gouvernement tombe. Lui ? Pas là : en dédicace.",
    "accent_words": [
-    "carton"
+    "dédicace"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Absent au boulot, présent en dédicace : il signe tout, sauf la feuille de présence.",
+   "text": "Bard-est-pas-là ? Si : derrière une pile de livres, stylo en main.",
    "accent_words": [
-    "feuille de présence"
+    "pile de livres"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui le croit présent parce qu'il poste.",
+   "text": "Envoie ça au pote qui ne vient que pour la photo.",
    "accent_words": [
-    "poste"
+    "photo"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,78 +89,107 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie : bureau du maire éclairé, fauteuil vide qui tourne seul.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "LE MAIRE ? ABSENT",
+   "comic_action": "Descente sur la ville ; banderole « LE MAIRE ? ABSENT » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "table",
     "screen",
-    "sign",
-    "building"
+    "text3d",
+    "person",
+    "studio_light"
    ],
    "onscreen_text": "BARD-EST-PAS-LÀ",
-   "comic_action": "Plaque « MAIRE » sur un bureau désert ; un post-it « de retour bientôt » jauni.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Écran géant : « BARD-EST-PAS-LÀ ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    },
+    {
+     "who": "foule",
+     "geste": "clap"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "ring_light",
-    "tripod_camera",
-    "person",
-    "screen"
+    "tribune",
+    "lift_tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "FAUTEUIL / TRÔNE",
-   "comic_action": "Écran partagé : un siège vide sous néon blanc, puis un fauteuil doré sous ring light.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "DÉPUTÉ FANTÔME",
+   "comic_action": "Meeting : la tribune s'élève, banderole « DÉPUTÉ FANTÔME ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "tribune",
+    "router_lectern",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "RDV : EXPIRÉ",
-   "comic_action": "L'écran du guichet affiche une story qui s'efface pendant qu'un habitant lit.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DÉBAT : PAS LÀ",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « DÉBAT : PAS LÀ ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "point"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
-   ],
-   "camera": "orbit",
-   "set": [
-    "column",
-    "mairie",
-    "text3d",
-    "person"
-   ],
-   "onscreen_text": "QUORUM : 1 CARTON",
-   "comic_action": "Entre deux colonnes, une silhouette en carton au premier rang ; les élus votent autour.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
-  },
-  {
-   "id": "s6",
-   "narration_ids": [
-    "n6"
    ],
    "camera": "closeup",
    "set": [
@@ -169,9 +198,48 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "SIGNE TOUT",
-   "comic_action": "File de dédicace ; au bout de la table, une feuille de présence vierge.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "GOUVERNEMENT TOMBE : DÉDICACE",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « GOUVERNEMENT TOMBE : DÉDICACE ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "jump"
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
+   ],
+   "onscreen_text": "TROUVÉ : EN DÉDICACE",
+   "comic_action": "Plan final, tenir une seconde : « TROUVÉ : EN DÉDICACE ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,45 +253,57 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt regarde le fauteuil vide à travers la vitrine.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE ABSENT",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE ABSENT ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui le croit présent parce qu'il poste."
+  "text": "Envoie ça au pote qui ne vient que pour la photo."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 84,
+ "word_count": 75,
  "claims": [
   {
    "segment": "n2",
-   "text": "Surnom en ligne : Bard-est-pas-là. Le jeu de mots est plus présent que lui.",
+   "text": "Son surnom qui circule en ligne : Bard-est-pas-là.",
    "claim_type": "fait_public",
    "source": "https://www.connexionfrance.com/news/jordan-bardella-his-unflattering-nickname-and-15m-tik-tok-fans/663977",
-   "note": "Surnom « Bard-est-pas-là » ; environ 1,5 million d'abonnés TikTok en 2024."
+   "note": "Surnom « Bard-est-pas-là » rapporté comme circulant ; environ 1,5 million d'abonnés TikTok en 2024 ; aucun chiffre d'absentéisme repris."
   },
   {
    "segment": "n3",
-   "text": "Au Parlement européen, un fauteuil. Sur TikTok, un trône.",
+   "text": "Au Parlement européen, ses adversaires parlent de député fantôme.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
-   "note": "Thème du « député fantôme » ; aucun chiffre repris.",
-   "sources_complementaires": [
-    "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/"
-   ]
+   "note": "Critiques sur l'assiduité au Parlement européen (thème du député fantôme) ; aucun chiffre repris."
   },
   {
-   "segment": "n6",
-   "text": "Absent au boulot, présent en dédicace : il signe tout, sauf la feuille de présence.",
+   "segment": "n4",
+   "text": "Les débats des européennes sur Public Sénat ? Pas là non plus.",
    "claim_type": "fait_public",
-   "source": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
-   "note": "Mème / fait servant de base à une exagération de la ville (segment typé fiction_satirique). Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
+   "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
+   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
+  },
+  {
+   "segment": "n5",
+   "text": "Décembre 2024, le gouvernement tombe. Lui ? Pas là : en dédicace.",
+   "claim_type": "fait_public",
+   "source": "https://www.lagazettefrance.fr/article/en-pleine-censure-bardella-joue-la-contre-programmation-avec-une-dedicace-de-son-livre-a-paris",
+   "note": "Le jour de la censure du gouvernement Barnier, contre-programmation : dédicace de son livre à Paris."
   }
  ],
  "sources": [
@@ -231,31 +311,31 @@
    "url": "https://www.connexionfrance.com/news/jordan-bardella-his-unflattering-nickname-and-15m-tik-tok-fans/663977",
    "date": "2024-06-11",
    "consulted": "2026-11-22",
-   "statut": "mème (surnom rapporté comme circulant ; aucun chiffre d'absentéisme repris)",
-   "note": "Surnom « Bard-est-pas-là » ; environ 1,5 million d'abonnés TikTok en 2024."
+   "statut": "mème (surnom rapporté) + fait (abonnés)",
+   "note": "Surnom « Bard-est-pas-là » rapporté comme circulant ; environ 1,5 million d'abonnés TikTok en 2024 ; aucun chiffre d'absentéisme repris."
   },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
    "date": "2024",
    "consulted": "2026-11-22",
    "statut": "opinion (critiques d'adversaires)",
-   "note": "Thème du « député fantôme » ; aucun chiffre repris."
+   "note": "Critiques sur l'assiduité au Parlement européen (thème du député fantôme) ; aucun chiffre repris."
   },
   {
-   "url": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
-   "date": "2024-06-21",
+   "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
+   "date": "2024-03-04",
    "consulted": "2026-11-22",
-   "statut": "fait (dépêche AFP) + mème",
-   "note": "Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits."
+   "statut": "fait",
+   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   },
   {
-   "url": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
-   "date": "2026-08-29",
+   "url": "https://www.lagazettefrance.fr/article/en-pleine-censure-bardella-joue-la-contre-programmation-avec-une-dedicace-de-son-livre-a-paris",
+   "date": "2024-12 (probable, date non relevée)",
    "consulted": "2026-11-22",
-   "statut": "fait (reportage AFP)",
-   "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
+   "statut": "fait",
+   "note": "Le jour de la censure du gouvernement Barnier, contre-programmation : dédicace de son livre à Paris."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = surnom « Bard-est-pas-là » (absences au Parlement européen, chiffres non repris) ; fauteuil vide contre trône TikTok. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = le surnom « Bard-est-pas-là » (absences). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

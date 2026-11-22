@@ -44,7 +44,9 @@ def run(mp4: Path, timeline: dict, subs: dict, expected_res=(1080, 1920)) -> dic
     add("30 images/s", abs(fps - 30) < 0.01, str(fps))
     add("pixel format yuv420p", v.get("pix_fmt") == "yuv420p", v.get("pix_fmt"))
     add("piste audio AAC", a is not None and a["codec_name"] == "aac", a["codec_name"] if a else "absente")
-    add("durée 15–90 s", 15 <= dur <= 90, f"{dur:.2f} s")
+    add("durée 12–90 s", 12 <= dur <= 90, f"{dur:.2f} s")
+    checks.append({"check": "durée idéale Reels ≤ 35 s (avertissement)", "ok": True, "warning": dur > 35,
+                   "detail": f"{dur:.2f} s"})
     add("durée = timeline", abs(dur - timeline["total"]) < 0.25, f"{dur:.2f} vs {timeline['total']:.2f}")
     last_end = max(s["end"] for s in timeline["segments"])
     add("la voix finit avant la fin", dur - last_end >= 0.5, f"marge {dur - last_end:.2f} s")

@@ -3,19 +3,19 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-11",
  "format": "A",
- "title_cover": "Deux heures au Medef",
+ "title_cover": "Recalé par le CAC",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, le maire a deux guichets : un pour toi, un pour le patron.",
-  "Bardellaville : selfie le matin, petits fours le soir.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : deux heures au medef."
+  "Dans cette ville, tout le monde vote Bardella. Les patrons, eux, hésitent.",
+  "Bardella drague le CAC 40. Le CAC 40 hésite.",
+  "Bardellaville : deux heures avec le Medef, zéro coup de cœur.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Recalé par le CAC."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le candidat du pouvoir d'achat cherche surtout celui des actionnaires.",
-  "Deux guichets à la mairie : seul celui du Medef a des chaises.",
-  "Les grands patrons ? Toujours sceptiques. Même le CAC 40 swipe à gauche."
+  "Il drague l'actionnaire. L'actionnaire le laisse en vu.",
+  "Il drague l'actionnaire, l'actionnaire le laisse en vu.",
+  "Deux heures de charme, un vent."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,47 +23,47 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Bardella. Les patrons, eux, hésitent.",
    "accent_words": [
-    "hésitent"
+    "patrons"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Deux heures en tête-à-tête avec le Medef : une première pour son parti.",
+   "text": "Avril 2026 : plus de deux heures en tête-à-tête avec le Medef. Une première.",
    "accent_words": [
-    "Medef"
+    "deux heures"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Les grands patrons ? Toujours sceptiques. Même le CAC 40 swipe à gauche.",
+   "text": "La presse note chez lui une ligne de plus en plus libérale.",
    "accent_words": [
-    "swipe à gauche"
+    "libérale"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le matin, selfie avec les agriculteurs. Le soir, petits fours avec les patrons.",
+   "text": "Pourtant, les grands patrons restent sceptiques. Même le CAC 40 swipe à gauche.",
    "accent_words": [
-    "petits fours"
+    "sceptiques"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Deux guichets : le peuple debout, le Medef assis.",
+   "text": "Deux heures de charme pour un vent : son plus long rendez-vous raté.",
    "accent_words": [
-    "assis"
+    "rendez-vous raté"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le candidat du pouvoir d'achat cherche surtout celui des actionnaires.",
+   "text": "Il drague l'actionnaire. L'actionnaire le laisse en vu.",
    "accent_words": [
-    "actionnaires"
+    "en vu"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui croit qu'il roule pour les petits.",
    "accent_words": [
-    "les petits"
+    "petits"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,25 +89,48 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; tapis rouge devant une entrée VIP, pavé devant l'autre.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "LES PATRONS HÉSITENT",
+   "comic_action": "Descente sur la ville ; banderole « LES PATRONS HÉSITENT » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "arch",
-    "column",
+    "table",
+    "building",
     "person",
-    "studio_light"
+    "text3d"
    ],
-   "onscreen_text": "MEDEF : 2 H",
-   "comic_action": "Sous une arche, une table pour deux, chrono qui défile jusqu'à 2:00.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "2 H AVEC LE MEDEF",
+   "comic_action": "Salon feutré, table dressée ; carton « 2 H AVEC LE MEDEF ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,30 +139,55 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
+    "studio_light",
     "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "CAC 40 : ✗",
-   "comic_action": "Écran : son portrait glisse vers la gauche, croix rouge.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "LIGNE LIBÉRALE",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « LIGNE LIBÉRALE ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
-    "shop",
     "table",
+    "building",
     "person",
-    "banner"
+    "text3d"
    ],
-   "onscreen_text": "MATIN : SELFIE · SOIR : PETITS FOURS",
-   "comic_action": "Marché le matin, perche à selfie ; même décor le soir, plateau de petits fours.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CAC 40 : SCEPTIQUE",
+   "comic_action": "Salon feutré, table dressée ; carton « CAC 40 : SCEPTIQUE ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -149,13 +197,25 @@
    "camera": "window_pass",
    "set": [
     "table",
-    "screen",
-    "sign",
-    "building"
+    "building",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "PEUPLE DEBOUT · MEDEF ASSIS",
-   "comic_action": "Guichet de gauche : file debout ; guichet de droite : fauteuils, café, sourire.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RENDEZ-VOUS RATÉ",
+   "comic_action": "Salon feutré, table dressée ; carton « RENDEZ-VOUS RATÉ ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shake",
+     "visage": "choque"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,14 +224,26 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "POUVOIR D'ACHAT (DES ACTIONNAIRES)",
-   "comic_action": "Le maire cubique sort de la mairie avec une mallette, salue le peuple de loin. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LAISSÉ EN VU",
+   "comic_action": "Plan final, tenir une seconde : « LAISSÉ EN VU ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +257,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt regarde passer une voiture de luxe.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE DES PETITS",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE DES PETITS ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,28 +279,28 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 81,
+ "word_count": 83,
  "claims": [
   {
    "segment": "n2",
-   "text": "Deux heures en tête-à-tête avec le Medef : une première pour son parti.",
+   "text": "Avril 2026 : plus de deux heures en tête-à-tête avec le Medef. Une première.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/bardella-rencontre-en-tete-a-tete-le-medef-une-premiere-pour-le-rn-435456",
-   "note": "Tête-à-tête avec le Medef, une première pour le RN (plus de deux heures le 20/04/2026 selon la presse)."
+   "note": "Tête-à-tête de plus de deux heures avec le Medef, une première pour le RN (20/04/2026 selon la presse)."
   },
   {
    "segment": "n3",
-   "text": "Les grands patrons ? Toujours sceptiques. Même le CAC 40 swipe à gauche.",
+   "text": "La presse note chez lui une ligne de plus en plus libérale.",
    "claim_type": "fait_public",
-   "source": "https://www.slate.fr/politique/rassemblement-national-seduire-patrons-cac-40-ouvriers-vote-populaire-presidentielle-2027-election-le-pen-bardella",
-   "note": "Les grands patrons courtisés par Jordan Bardella restent sceptiques."
+   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-une-inclinaison-liberale-plus-prononcee-au-rn-incarnee-par-jordan-bardella-ne-sera-pas-forcement-de-nature-a-rebuter-son-electorat",
+   "note": "Inclinaison libérale plus prononcée au RN, incarnée par Jordan Bardella."
   },
   {
    "segment": "n4",
-   "text": "Le matin, selfie avec les agriculteurs. Le soir, petits fours avec les patrons.",
+   "text": "Pourtant, les grands patrons restent sceptiques. Même le CAC 40 swipe à gauche.",
    "claim_type": "fait_public",
-   "source": "https://www.lagazettefrance.fr/article/le-pen-bardella-le-relais-de-la-flamme",
-   "note": "Mème / fait servant de base à une exagération de la ville (segment typé fiction_satirique). Salon de l'agriculture 2026, sans vaches (épidémie) : selfies à la chaîne dans les allées."
+   "source": "https://www.slate.fr/politique/rassemblement-national-seduire-patrons-cac-40-ouvriers-vote-populaire-presidentielle-2027-election-le-pen-bardella",
+   "note": "Les grands patrons courtisés par Jordan Bardella restent sceptiques."
   }
  ],
  "sources": [
@@ -229,23 +309,23 @@
    "date": "2026-04",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Tête-à-tête avec le Medef, une première pour le RN (plus de deux heures le 20/04/2026 selon la presse)."
+   "note": "Tête-à-tête de plus de deux heures avec le Medef, une première pour le RN (20/04/2026 selon la presse)."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-une-inclinaison-liberale-plus-prononcee-au-rn-incarnee-par-jordan-bardella-ne-sera-pas-forcement-de-nature-a-rebuter-son-electorat",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "fait + analyse",
+   "note": "Inclinaison libérale plus prononcée au RN, incarnée par Jordan Bardella."
   },
   {
    "url": "https://www.slate.fr/politique/rassemblement-national-seduire-patrons-cac-40-ouvriers-vote-populaire-presidentielle-2027-election-le-pen-bardella",
    "date": "2026",
    "consulted": "2026-11-22",
-   "statut": "analyse",
+   "statut": "fait + opinion",
    "note": "Les grands patrons courtisés par Jordan Bardella restent sceptiques."
-  },
-  {
-   "url": "https://www.lagazettefrance.fr/article/le-pen-bardella-le-relais-de-la-flamme",
-   "date": "2026-02-26",
-   "consulted": "2026-11-22",
-   "statut": "fait (AFP)",
-   "note": "Salon de l'agriculture 2026, sans vaches (épidémie) : selfies à la chaîne dans les allées."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = tête-à-tête de plus de deux heures avec le Medef (une première pour le RN) ; les grands patrons restent sceptiques. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = sa cour aux patrons (Medef) qui restent sceptiques. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

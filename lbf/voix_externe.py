@@ -63,7 +63,7 @@ def split(mp3: Path, n: int, out_dir: Path) -> list[Path] | None:
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{bounds[i]:.3f}", "-to", f"{bounds[i + 1]:.3f}",
                         "-i", str(mp3), "-af",
                         "silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
-                        "silenceremove=start_periods=1:start_threshold=-45dB,areverse",
+                        "silenceremove=start_periods=1:start_threshold=-45dB,areverse,atempo=1.07",
                         "-ar", "48000", "-ac", "1", str(f)], check=True)
         files.append(f)
     return files

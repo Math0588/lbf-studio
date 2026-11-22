@@ -5,17 +5,17 @@
  "format": "B",
  "title_cover": "Peuple, treize fois",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le conseil municipal commence, il ne finit jamais.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, une séance dure plus longtemps qu'un mandat.",
-  "Mélenchonville : 6 821 mots, zéro décision."
+  "Dans cette ville, tout le monde vote Mélenchon. Asseyez-vous.",
+  "Mélenchon parle au peuple. Longtemps. Très longtemps.",
+  "Les fans de Méluche vont me bloquer.",
+  "Bienvenue à Mélenchonville : peuple, treize fois.",
+  "Mélenchon en une vidéo : peuple, treize fois."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Et à Lyon, une heure quarante-deux. Ici, on appelle ça un résumé.",
-  "Six mille huit cents mots, zéro délibération : record battu.",
-  "La séance est levée. Le discours, non."
+  "Des milliers de mots, et jamais le seul qui compte : élu.",
+  "Le peuple a tout entendu. Treize fois.",
+  "La candidate locale ? Citée une fois. Victor Hugo, mieux servi."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -29,49 +29,49 @@
   },
   {
    "id": "n2",
-   "text": "Au Bourget, il a parlé une heure et sept minutes. Ici, c'est l'échauffement.",
+   "text": "Au Bourget, il parle une heure et sept minutes : 6 821 mots.",
    "accent_words": [
-    "l'échauffement"
+    "6 821 mots"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Six mille huit cent vingt et un mots. Le compte rendu fait trois tomes.",
+   "text": "Le mot peuple revient treize fois. Le peuple, lui, cherche la sortie.",
    "accent_words": [
-    "trois tomes"
+    "la sortie"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Il a dit peuple treize fois. Le peuple, lui, est parti au huitième.",
+   "text": "À Lyon, il avait tenu une heure quarante-deux, agrippé au pupitre.",
    "accent_words": [
-    "parti"
+    "au pupitre"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Point divers numéro un : raccourcir les séances. Débat : quatre heures.",
+   "text": "La candidate locale ? Citée une fois. Victor Hugo, mieux servi.",
    "accent_words": [
-    "quatre heures"
+    "Victor Hugo, mieux servi"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Et à Lyon, une heure quarante-deux. Ici, on appelle ça un résumé.",
+   "text": "Des milliers de mots, et jamais le seul qui compte : élu.",
    "accent_words": [
-    "un résumé"
+    "élu"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui promet de faire court.",
+   "text": "Envoie ça au pote qui promet un vocal de trente secondes.",
    "accent_words": [
-    "faire court"
+    "trente secondes"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,40 +89,74 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur la mairie ; panneau « SÉANCE EN COURS DEPUIS MARDI ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · PEUPLE, TREIZE FOIS",
+   "comic_action": "Descente sur la ville : banderole « PEUPLE, TREIZE FOIS », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "tribune",
     "studio_light",
-    "person",
     "text3d"
    ],
-   "onscreen_text": "1 H 07 : ÉCHAUFFEMENT",
-   "comic_action": "Orbite autour du pupitre du conseil : un chrono affiche 1 h 07, le maire fait encore des étirements.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "6 821 MOTS",
+   "comic_action": "Compteur de mots qui s'emballe au-dessus du pupitre.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
-    "text3d"
+    "tribune",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "6 821 MOTS",
-   "comic_action": "La greffière pose trois pavés reliés sur la table, la table plie.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PEUPLE × 13",
+   "comic_action": "À chaque « peuple », un spectateur se lève vers la sortie.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "fatigue"
+    },
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "parle",
+     "objet": "micro",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s4",
@@ -131,14 +165,27 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "person",
-    "sign",
+    "router_lectern",
     "text3d",
-    "bench"
+    "person"
    ],
-   "onscreen_text": "PEUPLE ×13",
-   "comic_action": "À chaque « peuple », un habitant quitte sa chaise ; au huitième, la salle est vide.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "LYON : 1 H 42",
+   "comic_action": "Le pupitre tremble sous les mains ; l'horloge tourne en accéléré.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shake",
+     "visage": "parle",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "dort",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s5",
@@ -147,14 +194,20 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "table",
-    "person"
+    "tribune",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "RACCOURCIR : 4 H",
-   "comic_action": "Écran de séance : « POINT 1 : RACCOURCIR LES SÉANCES », minuteur qui passe à 4 h.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CANDIDATE CITÉE : 1 FOIS",
+   "comic_action": "La candidate attend au bord de la scène, micro éteint.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -163,13 +216,27 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
-    "text3d",
-    "person"
+    "tribune",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "1 H 42 = RÉSUMÉ",
-   "comic_action": "Plan large : la mairie s'illumine « RÉSUMÉ », un seul habitant dort sur les marches.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "ÉLU : MOT MANQUANT",
+   "comic_action": "Le compteur de mots s'arrête sur une case vide « ÉLU ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "parle",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "nod",
+     "visage": "dort",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s7",
@@ -183,45 +250,59 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique s'endort sur un banc.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui promet de faire court."
+  "text": "Envoie ça au pote qui promet un vocal de trente secondes."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 82,
+ "word_count": 79,
  "claims": [
   {
-   "text": "Au Bourget, il a parlé une heure et sept minutes. Ici, c'est l'échauffement.",
+   "text": "Au Bourget, il parle une heure et sept minutes : 6 821 mots.",
    "claim_type": "fait_public",
    "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
    "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
   },
   {
-   "text": "Six mille huit cent vingt et un mots. Le compte rendu fait trois tomes.",
+   "text": "Le mot peuple revient treize fois. Le peuple, lui, cherche la sortie.",
    "claim_type": "fait_public",
    "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
    "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
   },
   {
-   "text": "Il a dit peuple treize fois. Le peuple, lui, est parti au huitième.",
-   "claim_type": "fait_public",
-   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
-   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
-  },
-  {
-   "text": "Et à Lyon, une heure quarante-deux. Ici, on appelle ça un résumé.",
+   "text": "À Lyon, il avait tenu une heure quarante-deux, agrippé au pupitre.",
    "claim_type": "fait_public",
    "source": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
    "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
+  },
+  {
+   "text": "La candidate locale ? Citée une fois. Victor Hugo, mieux servi.",
+   "claim_type": "fait_public",
+   "source": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
+   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
+  },
+  {
+   "text": "Des milliers de mots, et jamais le seul qui compte : élu.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
@@ -229,7 +310,7 @@
    "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
    "date": "2026-11",
    "consulted": "2026-11-22",
-   "statut": "fait (analyse lexicale)",
+   "statut": "fait",
    "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
   },
   {
@@ -238,8 +319,15 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
+  },
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le discours-fleuve du Bourget (1 h 07, 6 821 mots, « peuple » ×13) et Lyon (1 h 42). Cadre : la séance du conseil municipal. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Peuple, treize fois. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

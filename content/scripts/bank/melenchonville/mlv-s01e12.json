@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-12",
  "format": "A",
- "title_cover": "Terminus : seul",
+ "title_cover": "Anti-système, ex-sénateur",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le bus de l'union se vide à chaque arrêt.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, on monte à vingt et on arrive tout seul.",
-  "Mélenchonville : la ligne qui n'a qu'un passager, le chauffeur."
+  "Dans cette ville, tout le monde vote Mélenchon. À bas le système !",
+  "Mélenchon combat le système. De l'intérieur. Depuis longtemps.",
+  "Celle-là, Méluche ne la partagera pas.",
+  "Bienvenue à Mélenchonville : anti-système, ex-sénateur.",
+  "Mélenchon en une vidéo : anti-système, ex-sénateur."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Terminus : un bus vide, un chauffeur. Et il appelle ça l'union.",
-  "Ligne Union de la gauche : un chauffeur, zéro passager.",
-  "Tout le monde descend. Le chauffeur, jamais."
+  "Le système, il le combat de l'intérieur. Depuis 1986.",
+  "Le système, il le combat de l'intérieur. Avec son badge.",
+  "Et plus de trente ans au Parti socialiste, avant de claquer la porte en 2008."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Prochain arrêt : la sortie.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. À bas le système !",
    "accent_words": [
-    "Prochain arrêt : la sortie"
+    "À bas le système"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le bus insoumis part bondé. À chaque arrêt, quelqu'un descend.",
+   "text": "Le tribun anti-système cumule trente ans de mandats parlementaires.",
    "accent_words": [
-    "quelqu'un descend"
+    "mandats parlementaires"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Arrêt Ruffin : divorce consommé, il descend sans valider.",
+   "text": "Dont une vingtaine d'années au Sénat, la maison la plus feutrée de France.",
    "accent_words": [
-    "sans valider"
+    "de France"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Arrêt Corbière, Garrido, Simonnet : pas réinvestis en 2024, éjectés côté trottoir.",
+   "text": "Il a même été ministre, sous Jospin, de 2000 à 2002.",
    "accent_words": [
-    "éjectés"
+    "à 2002"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Arrêt Parti socialiste : rupture actée, porte fermée.",
+   "text": "Et plus de trente ans au Parti socialiste, avant de claquer la porte en 2008.",
    "accent_words": [
-    "porte fermée"
+    "en 2008"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Terminus : un bus vide, un chauffeur. Et il appelle ça l'union.",
+   "text": "Le système, il le combat de l'intérieur. Depuis 1986.",
    "accent_words": [
-    "l'union"
+    "Depuis 1986"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui jure que sa bande est soudée.",
+   "text": "Envoie ça au pote anti-système abonné premium partout.",
    "accent_words": [
-    "soudée"
+    "premium partout"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,60 +85,93 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "bus",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un bus rouge bondé qui démarre.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · ANTI-SYSTÈME, EX-SÉNATEUR",
+   "comic_action": "Descente sur la ville : banderole « ANTI-SYSTÈME, EX-SÉNATEUR », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
-    "bus",
-    "person",
-    "sign"
+    "column",
+    "arch",
+    "text3d"
    ],
-   "onscreen_text": "LIGNE UNION",
-   "comic_action": "Travelling le long du bus : les visages collés aux vitres, la porte s'ouvre déjà.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "30 ANS DE MANDATS",
+   "comic_action": "Une rangée de colonnes officielles, chacune avec une plaque « LUI ».",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "bus",
-    "sign",
-    "person"
+    "building",
+    "column",
+    "bench"
    ],
-   "onscreen_text": "ARRÊT RUFFIN",
-   "comic_action": "Un passager descend avec sa pancarte ; le composteur clignote « DIVORCE ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "SÉNAT : 20 ANS",
+   "comic_action": "Fauteuil moelleux, horloge qui ralentit.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "bus",
-    "person",
-    "bench",
-    "sign"
+    "mairie",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "ARRÊT 2024",
-   "comic_action": "Trois passagers atterrissent sur le banc de l'abribus, le bus repart sans eux.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "MINISTRE 2000-2002",
+   "comic_action": "Plaque dorée « MINISTRE » vissée sur une porte.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "fier"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -147,14 +180,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "bus",
-    "sign",
+    "facade_set",
     "person",
     "text3d"
    ],
-   "onscreen_text": "ARRÊT PS : FERMÉ",
-   "comic_action": "La porte du bus se referme au nez d'un passager rose.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PS : 30 ANS",
+   "comic_action": "Une porte rose claque ; la plaque « 30 ANS » tombe.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s6",
@@ -163,13 +208,21 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "bus",
-    "text3d"
+    "tribune",
+    "banner",
+    "column"
    ],
-   "onscreen_text": "TERMINUS : UNION",
-   "comic_action": "Plan large : le bus vide arrive au terminus, le chauffeur lève le poing tout seul.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "ANTI-SYSTÈME DEPUIS 1986",
+   "comic_action": "Banderole « À BAS LE SYSTÈME » tendue entre deux colonnes officielles.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -183,64 +236,71 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique attend le bus suivant, seul.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui jure que sa bande est soudée."
+  "text": "Envoie ça au pote anti-système abonné premium partout."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 75,
+ "word_count": 78,
  "claims": [
   {
-   "text": "Arrêt Ruffin : divorce consommé, il descend sans valider.",
+   "text": "Le tribun anti-système cumule trente ans de mandats parlementaires.",
    "claim_type": "fait_public",
-   "source": "https://www.slate.fr/politique/francois-ruffin-jean-luc-melenchon-rupture-divorce-lfi-france-insoumise-election-presidentielle-2027-strategie-gauche",
-   "note": "Ruffin–Mélenchon : « le divorce est désormais consommé »."
+   "source": "https://www.publicsenat.fr/actualites/politique/jean-luc-melenchon-quitte-l-assemblee-retour-sur-trente-ans-de-mandats",
+   "note": "Trente ans de mandats parlementaires : sénateur de l'Essonne (1986-2000, 2004-2010), député européen, député ; ministre délégué sous Jospin (2000-2002)."
   },
   {
-   "text": "Arrêt Corbière, Garrido, Simonnet : pas réinvestis en 2024, éjectés côté trottoir.",
+   "text": "Dont une vingtaine d'années au Sénat, la maison la plus feutrée de France.",
    "claim_type": "fait_public",
-   "source": "https://www.letemps.ch/monde/europe/a-deux-semaines-des-legislatives-une-purge-au-sein-de-la-france-insoumise-chahute-deja-le-nouveau-front-populaire",
-   "note": "2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge »."
+   "source": "https://www.publicsenat.fr/actualites/politique/jean-luc-melenchon-quitte-l-assemblee-retour-sur-trente-ans-de-mandats",
+   "note": "Trente ans de mandats parlementaires : sénateur de l'Essonne (1986-2000, 2004-2010), député européen, député ; ministre délégué sous Jospin (2000-2002)."
   },
   {
-   "text": "Arrêt Parti socialiste : rupture actée, porte fermée.",
+   "text": "Il a même été ministre, sous Jospin, de 2000 à 2002.",
    "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
-   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
+   "source": "https://www.publicsenat.fr/actualites/politique/jean-luc-melenchon-quitte-l-assemblee-retour-sur-trente-ans-de-mandats",
+   "note": "Trente ans de mandats parlementaires : sénateur de l'Essonne (1986-2000, 2004-2010), député européen, député ; ministre délégué sous Jospin (2000-2002)."
+  },
+  {
+   "text": "Et plus de trente ans au Parti socialiste, avant de claquer la porte en 2008.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2008/11/nous-voulons-etre-une-force-gouvernementale-et-unitaire-4946/",
+   "note": "Sénateur et ancien ministre du gouvernement Jospin, il quitte le PS en 2008 après plus de trente ans de militantisme."
   }
  ],
  "sources": [
   {
-   "url": "https://www.slate.fr/politique/francois-ruffin-jean-luc-melenchon-rupture-divorce-lfi-france-insoumise-election-presidentielle-2027-strategie-gauche",
-   "date": "2025",
+   "url": "https://www.publicsenat.fr/actualites/politique/jean-luc-melenchon-quitte-l-assemblee-retour-sur-trente-ans-de-mandats",
+   "date": "2022",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Ruffin–Mélenchon : « le divorce est désormais consommé »."
+   "note": "Trente ans de mandats parlementaires : sénateur de l'Essonne (1986-2000, 2004-2010), député européen, député ; ministre délégué sous Jospin (2000-2002)."
   },
   {
-   "url": "https://www.letemps.ch/monde/europe/a-deux-semaines-des-legislatives-une-purge-au-sein-de-la-france-insoumise-chahute-deja-le-nouveau-front-populaire",
-   "date": "2024-06",
+   "url": "https://www.politis.fr/articles/2008/11/nous-voulons-etre-une-force-gouvernementale-et-unitaire-4946/",
+   "date": "2008-11",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge »."
-  },
-  {
-   "url": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
-   "date": "2026-07",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte",
-   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
+   "note": "Sénateur et ancien ministre du gouvernement Jospin, il quitte le PS en 2008 après plus de trente ans de militantisme."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : les départs et ruptures : Ruffin, Corbière, Garrido, Simonnet, le PS. Cadre : la ligne de bus. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Anti-système, ex-sénateur. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

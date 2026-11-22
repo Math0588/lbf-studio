@@ -313,7 +313,7 @@ def plan(script: dict) -> dict:
               {"type": "tshirt", "id": "tee", "at": [sx + 3, sy, 2.6], "rot": -8, "scale": 1.15, "color": "#FFFFFF",
                "lines": slogan, "text_color": "#EF233C"}]
     last_nid = shots[-1]["narration_ids"]
-    shots.insert(len(shots) - 1, {"id": "sprod", "narration_ids": [], "dur": 2.8, "lens": 34, "dof": False,
+    shots.insert(len(shots) - 1, {"id": "sprod", "narration_ids": [], "dur": 2.2, "lens": 34, "dof": False,
                                   # travelling avant sur le t-shirt (le produit remplit le cadre à la fin du plan)
                                   "keys": [{"t": 0, "loc": [sx + 1.6, sy - 10.0, 3.2], "look": [sx + 2.2, sy + 0.5, 2.5]},
                                            {"t": 1, "loc": [sx + 2.6, sy - 6.6, 2.8], "look": [sx + 2.9, sy + 0.5, 2.55]}]})
@@ -321,12 +321,12 @@ def plan(script: dict) -> dict:
     stickers.append({"text": "LIEN EN BIO", "shot": "sprod", "at": 0.35, "x": 560, "y": 560, "rot": 5})
     shots[-1]["keys"] = [{"t": 0, "loc": [10, -40, 14], "look": [0, -10, 3]}, {"t": 1, "loc": [12, -62, 46], "look": [0, -5, 2]}]
     shots[-1]["lens"] = 24
-    shots[-1]["tail"] = 1.6
+    shots[-1]["tail"] = 1.0
     num = re.search(r"e(\d+)$", script["id"])
     ep = {
         "id": script["id"], "version": 2, "city_id": city, "season": 1,
         "episode_number": int(num.group(1)) if num else 0, "format": script.get("format", "A"),
-        "length": "court", "caption_style": "words", "voice_length_scale": 0.92,
+        "length": "court", "caption_style": "words", "voice_length_scale": 0.88,
         "title_cover": script["title_cover"], "hook_variants": script.get("hook_variants", []),
         "selected_hook": script.get("selected_hook", 0), "ending_variants": script.get("ending_variants", []),
         "selected_ending": script.get("selected_ending", 0), "narration_segments": script["narration_segments"],

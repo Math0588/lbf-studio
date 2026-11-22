@@ -5,17 +5,17 @@
  "format": "A",
  "title_cover": "L'esquive en direct",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, le débat a toujours une chaise libre.",
-  "Bardellaville : le maire ne fuit pas, il change de plateau.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : l'esquive en direct."
+  "Dans cette ville, tout le monde vote Bardella. Sauf aux débats.",
+  "Bardella et les débats : l'histoire d'une fuite.",
+  "Bardellaville : le pupitre est toujours vide.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : L'esquive en direct."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Une esquive, ça s'improvise. Lui, c'est un virtuose.",
-  "Il ne fuit pas le débat : il change juste de plateau.",
-  "Un débat, ça se prépare. Une esquive, ça s'improvise. Lui, c'est un virtuose."
+  "Une esquive, c'est un hasard. Trois, c'est une signature.",
+  "Trois esquives, c'est une signature.",
+  "Il ne fuit pas le débat : il change de plateau."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,21 +23,21 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Bardella. Sauf aux débats.",
    "accent_words": [
-    "Sauf aux débats"
+    "débats"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2019, débat sur France 24 annulé à la dernière minute. Direction BFMTV.",
+   "text": "En 2019, il annule un débat sur France 24 à la dernière minute. Direction BFMTV.",
    "accent_words": [
-    "BFMTV"
+    "à la dernière minute"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "En 2024, rebelote : débat des européennes refusé, chaîne jugée trop petite.",
+   "text": "En 2024, il refuse ceux de Public Sénat : chaîne jugée trop petite.",
    "accent_words": [
     "trop petite"
    ],
@@ -45,25 +45,25 @@
   },
   {
    "id": "n4",
-   "text": "Il ne fuit pas le débat : il change juste de plateau.",
+   "text": "Même Valérie Hayer menace de boycotter s'il esquive encore.",
    "accent_words": [
-    "change de plateau"
+    "esquive"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Ici, le conseil municipal se tient sans le maire : il est en direct ailleurs.",
+   "text": "Bientôt, il refusera un débat contre son propre reflet.",
    "accent_words": [
-    "ailleurs"
+    "reflet"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Une esquive, ça s'improvise. Lui, c'est un virtuose.",
+   "text": "Une esquive, c'est un hasard. Trois, c'est une signature.",
    "accent_words": [
-    "virtuose"
+    "signature"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,9 +89,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; salle du conseil avec une chaise vide étiquetée « MAIRE ».",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "DÉBAT ? ABSENT",
+   "comic_action": "Descente sur la ville ; banderole « DÉBAT ? ABSENT » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,57 +116,104 @@
     "studio_light",
     "text3d"
    ],
-   "onscreen_text": "DÉBAT ANNULÉ",
-   "comic_action": "Plateau de débat : son pupitre s'éteint, un panneau « EN DIRECT AILLEURS » s'allume.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "ANNULÉ : DERNIÈRE MINUTE",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « ANNULÉ : DERNIÈRE MINUTE ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
+    "tribune",
+    "router_lectern",
     "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "TROP PETIT POUR MOI",
-   "comic_action": "Un mini-plateau de télé ; le maire cubique ne passe pas la porte, repart.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "CHAÎNE TROP PETITE",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « CHAÎNE TROP PETITE ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "car",
-    "road",
-    "gps",
-    "sign"
+    "tribune",
+    "studio_light",
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "GPS : PLATEAU SUIVANT",
-   "comic_action": "Une voiture quitte un studio, le GPS indique « caméra la plus proche ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "MENACE DE BOYCOTT",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « MENACE DE BOYCOTT ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "column",
-    "mairie",
+    "screen",
     "text3d",
-    "person"
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "MAIRE : EN DUPLEX",
-   "comic_action": "Les élus débattent ; sur un petit écran, le maire sourit d'un autre plateau.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DÉBAT CONTRE SON REFLET : REFUSÉ",
+   "comic_action": "Écran géant : « DÉBAT CONTRE SON REFLET : REFUSÉ ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shake",
+     "visage": "choque"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,14 +222,26 @@
    ],
    "camera": "orbit",
    "set": [
-    "ground",
-    "banner",
-    "person",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "MÉDAILLE D'OR : ESQUIVE",
-   "comic_action": "Podium sur la place : le maire reçoit une médaille, la deuxième marche est vide. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "UNE SIGNATURE",
+   "comic_action": "Plan final, tenir une seconde : « UNE SIGNATURE ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +255,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt regarde son téléphone, message « je peux pas finalement ».",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI ANNULE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI ANNULE ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,21 +277,28 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 82,
+ "word_count": 77,
  "claims": [
   {
    "segment": "n2",
-   "text": "En 2019, débat sur France 24 annulé à la dernière minute. Direction BFMTV.",
+   "text": "En 2019, il annule un débat sur France 24 à la dernière minute. Direction BFMTV.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/jordan-bardella-rn-annule-a-la-derniere-minute-sa-participation-au-debat-de-france-24-et-se-rend-sur-bfmtv/577151",
    "note": "Annule à la dernière minute sa participation au débat de France 24 et se rend sur BFMTV."
   },
   {
    "segment": "n3",
-   "text": "En 2024, rebelote : débat des européennes refusé, chaîne jugée trop petite.",
+   "text": "En 2024, il refuse ceux de Public Sénat : chaîne jugée trop petite.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
    "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
+  },
+  {
+   "segment": "n4",
+   "text": "Même Valérie Hayer menace de boycotter s'il esquive encore.",
+   "claim_type": "fait_public",
+   "source": "https://www.24matins.fr/europeennes-boycott-envisage-par-valerie-hayer-si-jordan-bardella-esquive-le-prochain-debat-1373657",
+   "note": "Valérie Hayer envisage un boycott si Jordan Bardella esquive le prochain débat."
   }
  ],
  "sources": [
@@ -228,10 +313,17 @@
    "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
    "date": "2024-03-04",
    "consulted": "2026-11-22",
-   "statut": "fait (refus) + mème (réactions)",
+   "statut": "fait",
    "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
+  },
+  {
+   "url": "https://www.24matins.fr/europeennes-boycott-envisage-par-valerie-hayer-si-jordan-bardella-esquive-le-prochain-debat-1373657",
+   "date": "2024",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Valérie Hayer envisage un boycott si Jordan Bardella esquive le prochain débat."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = débat de France 24 annulé à la dernière minute pour aller sur BFMTV (2019) ; refus de débats récurrents. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = les débats esquivés (France 24, Public Sénat, Hayer). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

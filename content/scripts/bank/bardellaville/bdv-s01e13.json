@@ -5,17 +5,17 @@
  "format": "A",
  "title_cover": "Idole sans album",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, tout passe au ralenti. Surtout les réformes.",
-  "Bardellaville : le maire a des fans, pas de bilan.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : idole sans album."
+  "Dans cette ville, tout le monde vote Bardella. Au ralenti.",
+  "Bardella en edit K-pop. Et le programme, en quel format ?",
+  "Bardellaville : tout au ralenti, surtout le fond.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Idole sans album."
  ],
  "selected_hook": 0,
  "ending_variants": [
   "Une idole sans album : que des clips, aucune chanson.",
-  "Son meilleur bilan ? Un montage de trente secondes, transition cœur.",
-  "Au parc, les arbres sont en ralenti permanent. Les problèmes aussi."
+  "Que des clips, aucune chanson.",
+  "Une image, pas un programme."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -29,7 +29,7 @@
   },
   {
    "id": "n2",
-   "text": "Ses fans le montent en edits façon K-pop : cœurs, ralentis, paillettes.",
+   "text": "Ses fans le montent en edits façon K-pop : cœurs, ralentis, musique qui monte.",
    "accent_words": [
     "K-pop"
    ],
@@ -37,25 +37,25 @@
   },
   {
    "id": "n3",
-   "text": "Une chercheuse l'a dit : le personnage est devenu une image. Une image, pas un plan.",
+   "text": "Une chercheuse le dit : le personnage est devenu une image.",
    "accent_words": [
-    "une image"
+    "image"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Au parc, les arbres poussent au ralenti. Les problèmes aussi.",
+   "text": "Son 20 heures sur France 2 ? Plus bas niveau d'audience. Sans paillettes, ça zappe.",
    "accent_words": [
-    "Les problèmes aussi"
+    "paillettes"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Son meilleur bilan ? Un montage de trente secondes, transition cœur.",
+   "text": "Solution : diffuser le budget au ralenti, avec des cœurs partout.",
    "accent_words": [
-    "transition cœur"
+    "cœurs"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -63,7 +63,7 @@
    "id": "n6",
    "text": "Une idole sans album : que des clips, aucune chanson.",
    "accent_words": [
-    "aucune chanson"
+    "clips"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui a un edit de lui en fond d'écran.",
    "accent_words": [
-    "fond d'écran"
+    "edit"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,19 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente très lente sur la mairie, cœurs roses qui flottent.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "AU RALENTI",
+   "comic_action": "Descente sur la ville ; banderole « AU RALENTI » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,9 +115,21 @@
     "person",
     "screen"
    ],
-   "onscreen_text": "EDIT K-POP ✦",
-   "comic_action": "Sous ring light, un écran rejoue un plan au ralenti avec paillettes et zoom.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "EDITS K-POP",
+   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « EDITS K-POP ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "sourire_pro",
+     "objet": "ring_light"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -118,28 +140,52 @@
    "set": [
     "screen",
     "text3d",
-    "mairie",
-    "person"
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "PERSONNAGE = IMAGE",
-   "comic_action": "L'écran de la mairie affiche un portrait figé ; la case « PLAN » est vide.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "DEVENU UNE IMAGE",
+   "comic_action": "Écran géant : « DEVENU UNE IMAGE ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "visage": "fier",
+     "geste": "wave"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "tree",
-    "bench",
-    "lamp",
-    "person"
+    "tribune",
+    "studio_light",
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "PARC : 0,5×",
-   "comic_action": "Feuilles qui tombent au ralenti ; un banc cassé s'effondre au ralenti aussi.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "20 H : PLUS BAS NIVEAU",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « 20 H : PLUS BAS NIVEAU ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "visage": "choque",
+     "geste": "shrug"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "dort"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -148,30 +194,54 @@
    ],
    "camera": "closeup",
    "set": [
-    "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "screen",
+    "text3d",
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "BILAN : 30 SEC",
-   "comic_action": "Table de montage : un seul clip sur la timeline, transition en forme de cœur.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "BUDGET EN EDIT",
+   "comic_action": "Écran géant : « BUDGET EN EDIT ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "content"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "lift_tribune",
     "tribune",
-    "person",
-    "banner"
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "ALBUM : 0 TITRE",
-   "comic_action": "La tribune s'élève sous les fumigènes ; le micro reste muet. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "ZÉRO CHANSON",
+   "comic_action": "Plan final, tenir une seconde : « ZÉRO CHANSON ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +255,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE FAN",
-   "comic_action": "Retour à la boutique : un passant en t-shirt montre son téléphone, cœurs à l'écran.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE FAN",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE FAN ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,21 +277,28 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 82,
+ "word_count": 84,
  "claims": [
   {
    "segment": "n2",
-   "text": "Ses fans le montent en edits façon K-pop : cœurs, ralentis, paillettes.",
+   "text": "Ses fans le montent en edits façon K-pop : cœurs, ralentis, musique qui monte.",
    "claim_type": "fait_public",
    "source": "https://www.ladn.eu/?p=696069",
    "note": "Fans qui montent les politiques en edits façon K-pop : cœurs, ralentis, musique techno."
   },
   {
    "segment": "n3",
-   "text": "Une chercheuse l'a dit : le personnage est devenu une image. Une image, pas un plan.",
+   "text": "Une chercheuse le dit : le personnage est devenu une image.",
    "claim_type": "fait_public",
    "source": "https://www.slate.fr/story/267349/legislatives-2024-politique-memes-reseaux-sociaux-fancams-edits-videos-communication",
    "note": "Fancams politiques : le personnage devenu une image, un mème."
+  },
+  {
+   "segment": "n4",
+   "text": "Son 20 heures sur France 2 ? Plus bas niveau d'audience. Sans paillettes, ça zappe.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/audiences-access-20h-jordan-bardella-fait-chuter-le-20-heures-de-france-2-a-son-plus-bas-niveau-quotidien-en-forte-hausse-sur-tmc/654472",
+   "note": "Son passage fait chuter le 20 heures de France 2 à son plus bas niveau ; Quotidien en forte hausse sur TMC."
   }
  ],
  "sources": [
@@ -228,10 +313,17 @@
    "url": "https://www.slate.fr/story/267349/legislatives-2024-politique-memes-reseaux-sociaux-fancams-edits-videos-communication",
    "date": "2024-07",
    "consulted": "2026-11-22",
-   "statut": "opinion (chercheuse citée)",
+   "statut": "opinion",
    "note": "Fancams politiques : le personnage devenu une image, un mème."
+  },
+  {
+   "url": "https://www.ozap.com/actu/audiences-access-20h-jordan-bardella-fait-chuter-le-20-heures-de-france-2-a-son-plus-bas-niveau-quotidien-en-forte-hausse-sur-tmc/654472",
+   "date": "2026 (date exacte non relevée)",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Son passage fait chuter le 20 heures de France 2 à son plus bas niveau ; Quotidien en forte hausse sur TMC."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = fans qui le montent en edits façon K-pop (cœurs, ralentis) ; le personnage devenu une image, un mème. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = les fan edits façon K-pop (une image, pas un programme). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

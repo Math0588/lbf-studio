@@ -5,73 +5,73 @@
  "format": "A",
  "title_cover": "Bruit et fureur",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le permis se passe en hurlant.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, on obtient le code en criant plus fort que l'examinateur.",
-  "Mélenchonville : l'auto-école du bruit et de la fureur."
+  "Dans cette ville, tout le monde vote Mélenchon. Bouchez-vous les oreilles.",
+  "Mélenchon : le bruit, la fureur, et c'est tout.",
+  "Les insoumis vont me détester.",
+  "Bienvenue à Mélenchonville : bruit et fureur.",
+  "Mélenchon en une vidéo : bruit et fureur."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Beaucoup de bruit, beaucoup de fureur, et toujours pas de permis pour l'Élysée.",
-  "Recalé trois fois, réinscrit d'office.",
-  "Le bruit, la fureur, et le même rond-point depuis 2012."
+  "Le bruit et la fureur, oui. Le pouvoir, en sourdine.",
+  "Seize ans de bruit et de fureur. Le pouvoir, toujours en sourdine.",
+  "Seize ans de vacarme. Résultat : quatrième, quatrième, troisième."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Même l'auto-école.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Bouchez-vous les oreilles.",
    "accent_words": [
-    "Même l'auto-école"
+    "Bouchez-vous les oreilles"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, l'examinateur ne note pas la conduite. Il note le bruit et la fureur.",
+   "text": "Sa formule fétiche depuis 2010 : « le bruit et la fureur ».",
    "accent_words": [
     "la fureur"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Sa formule fétiche depuis 2010. L'examinateur porte un casque antibruit.",
+   "text": "Le bruit : en 2018, face caméra, il hurle « La République, c'est moi ! ».",
    "accent_words": [
-    "casque antibruit"
+    "c'est moi"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Klaxon à chaque carrefour, coup de gueule à chaque rond-point.",
+   "text": "La fureur : il boycotte TF1. TF1 répond qu'il n'était pas invité.",
    "accent_words": [
-    "coup de gueule"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n5",
-   "text": "Le créneau ? Raté. L'envolée sur la Sixième République : dix-huit sur vingt.",
-   "accent_words": [
-    "dix-huit sur vingt"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n6",
-   "text": "Beaucoup de bruit, beaucoup de fureur, et toujours pas de permis pour l'Élysée.",
-   "accent_words": [
-    "pas de permis"
+    "pas invité"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui klaxonne pour exprimer une opinion.",
+   "id": "n5",
+   "text": "Seize ans de vacarme. Résultat : quatrième, quatrième, troisième.",
    "accent_words": [
-    "klaxonne"
+    "quatrième, quatrième, troisième"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n6",
+   "text": "Le bruit et la fureur, oui. Le pouvoir, en sourdine.",
+   "accent_words": [
+    "Le pouvoir, en sourdine"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui gagne les débats en criant plus fort.",
+   "accent_words": [
+    "plus fort"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "car",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur une voiture d'auto-école avec un mégaphone sur le toit.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · BRUIT ET FUREUR",
+   "comic_action": "Descente sur la ville : banderole « BRUIT ET FUREUR », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,28 +113,56 @@
    ],
    "camera": "closeup",
    "set": [
-    "car",
-    "person",
+    "tribune",
+    "studio_light",
     "text3d"
    ],
-   "onscreen_text": "NOTE : DÉCIBELS",
-   "comic_action": "Dans la voiture, l'examinateur tient un sonomètre au lieu d'une feuille.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« LE BRUIT ET LA FUREUR »",
+   "comic_action": "Le maire au micro, les vitres vibrent.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "colere",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "car",
-    "person",
-    "sign"
+    "tribune",
+    "ring_light",
+    "person"
    ],
-   "onscreen_text": "DEPUIS 2010",
-   "comic_action": "Gros plan : l'examinateur enfile un casque antibruit, le candidat hurle déjà.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« LA RÉPUBLIQUE, C'EST MOI ! »",
+   "comic_action": "Le cri fait tomber les lampes du plafond.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s4",
@@ -130,14 +171,26 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "roundabout",
-    "car",
-    "person",
-    "traffic_light"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "KLAXON OBLIGATOIRE",
-   "comic_action": "Travelling : la voiture fait le tour du rond-point en klaxonnant, les passants se bouchent les oreilles.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "BOYCOTT D'UN NON-INVITÉ",
+   "comic_action": "Le maire claque la porte d'un studio… vide.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s5",
@@ -146,13 +199,20 @@
    ],
    "camera": "closeup",
    "set": [
-    "car",
+    "lift_tribune",
     "text3d",
-    "sign"
+    "banner"
    ],
-   "onscreen_text": "CRÉNEAU 0 · ENVOLÉE 18",
-   "comic_action": "La voiture finit sur le trottoir ; un tableau de notes affiche 18/20 en rouge.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "4E · 4E · 3E",
+   "comic_action": "Tribune qui monte et redescend en trois secousses.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shake",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -161,14 +221,27 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "car",
-    "sign",
+    "tribune",
+    "banner",
     "text3d"
    ],
-   "onscreen_text": "PERMIS ÉLYSÉE : REFUSÉ",
-   "comic_action": "Plan large : la voiture arrive devant une barrière « ÉLYSÉE » qui reste baissée.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "POUVOIR : MUET",
+   "comic_action": "Le maire crie, aucun son ne sort ; sous-titre « MUET ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "colere",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s7",
@@ -182,39 +255,59 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique klaxonne dans un bouchon vide.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui klaxonne pour exprimer une opinion."
+  "text": "Envoie ça au pote qui gagne les débats en criant plus fort."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 80,
+ "word_count": 83,
  "claims": [
   {
-   "text": "Ici, l'examinateur ne note pas la conduite. Il note le bruit et la fureur.",
-   "claim_type": "fait_public",
+   "text": "Sa formule fétiche depuis 2010 : « le bruit et la fureur ».",
+   "claim_type": "citation_exacte",
    "source": "https://www.politis.fr/articles/2025/07/emotions-quand-la-colere-ne-suffit-pas/",
-   "note": "« Le bruit et la fureur », formule qu'il s'applique depuis 2010 ; reprise sans guillemets."
+   "note": "« Le bruit et la fureur » : formule qu'il revendique depuis 2010."
   },
   {
-   "text": "Sa formule fétiche depuis 2010. L'examinateur porte un casque antibruit.",
-   "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2025/07/emotions-quand-la-colere-ne-suffit-pas/",
-   "note": "« Le bruit et la fureur », formule qu'il s'applique depuis 2010 ; reprise sans guillemets."
+   "text": "Le bruit : en 2018, face caméra, il hurle « La République, c'est moi ! ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
+   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
   },
   {
-   "text": "Beaucoup de bruit, beaucoup de fureur, et toujours pas de permis pour l'Élysée.",
+   "text": "La fureur : il boycotte TF1. TF1 répond qu'il n'était pas invité.",
    "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+   "source": "https://www.ozap.com/actu/furieux-contre-tf1-jean-luc-melenchon-annule-sa-venue-au-20-heures-ce-soir/657784",
+   "note": "Novembre 2026 : il annonce sur X annuler sa venue au 20 h de TF1."
+  },
+  {
+   "text": "La fureur : il boycotte TF1. TF1 répond qu'il n'était pas invité.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/affaire-de-jean-luc-melenchon-au-20-heures-tf1-dement-le-leader-de-lfi-et-affirme-quil-netait-pas-invite-ce-lundi-soir/657792",
+   "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
+  },
+  {
+   "text": "Seize ans de vacarme. Résultat : quatrième, quatrième, troisième.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
@@ -222,17 +315,38 @@
    "url": "https://www.politis.fr/articles/2025/07/emotions-quand-la-colere-ne-suffit-pas/",
    "date": "2025-07",
    "consulted": "2026-11-22",
-   "statut": "fait (origine) / mème",
-   "note": "« Le bruit et la fureur », formule qu'il s'applique depuis 2010 ; reprise sans guillemets."
+   "statut": "citation_exacte",
+   "note": "« Le bruit et la fureur » : formule qu'il revendique depuis 2010."
   },
   {
-   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "date": "2026-06",
+   "url": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
+   "date": "2018-10-17",
+   "consulted": "2026-11-22",
+   "statut": "citation_exacte",
+   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
+  },
+  {
+   "url": "https://www.ozap.com/actu/furieux-contre-tf1-jean-luc-melenchon-annule-sa-venue-au-20-heures-ce-soir/657784",
+   "date": "2026-11",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+   "note": "Novembre 2026 : il annonce sur X annuler sa venue au 20 h de TF1."
+  },
+  {
+   "url": "https://www.ozap.com/actu/affaire-de-jean-luc-melenchon-au-20-heures-tf1-dement-le-leader-de-lfi-et-affirme-quil-netait-pas-invite-ce-lundi-soir/657792",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
+  },
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « le bruit et la fureur », sa formule fétiche, appliquée au permis. Cadre : l'auto-école. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Bruit et fureur. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }
