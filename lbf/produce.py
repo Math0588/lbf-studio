@@ -76,10 +76,26 @@ def cached_render(job_path: Path) -> dict | None:
     return None
 
 
+def fill_frames(frames_dir: Path) -> None:
+    """Rendu « une image sur deux » : recopie l'image précédente dans les trous (numérotation continue)."""
+    nums = sorted(int(p.stem[2:]) for p in frames_dir.glob("f_*.png"))
+    if not nums:
+        return
+    have = set(nums)
+    for n in range(nums[0], nums[-1] + 2):
+        if n not in have and (n - 1) in have or (n not in have and n - 1 >= nums[0]):
+            src = frames_dir / f"f_{n - 1:04d}.png"
+            dst = frames_dir / f"f_{n:04d}.png"
+            if src.exists() and not dst.exists():
+                shutil.copyfile(src, dst)
+                have.add(n)
+
+
 def assemble(out: Path, frames_dir: Path, mp4_name: str, fps: int = 30) -> Path:
+    fill_frames(frames_dir)
     fonts_rel = os.path.relpath(config.FONTS, out).replace("\\", "/")
     frames_rel = os.path.relpath(frames_dir, out).replace("\\", "/")
-    vf = f"ass=subs.ass:fontsdir={fonts_rel},format=yuv420p"
+    vf = f"scale=1080:1920:flags=lanczos,ass=subs.ass:fontsdir={fonts_rel},format=yuv420p"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(fps), "-i", f"{frames_rel}/f_%04d.png",
                     "-i", "mix.wav", "-vf", vf, "-c:v", "libx264", "-preset", "slow", "-crf", "18",
                     "-profile:v", "high", "-level", "4.1", "-r", str(fps), "-c:a", "aac", "-b:a", "192k",

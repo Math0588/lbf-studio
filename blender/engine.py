@@ -1289,6 +1289,8 @@ PROFILES = {
     "bench": {"res": (1080, 1920), "samples": 32, "dof": True, "raytracing": True},
     # GitHub Actions (CPU, Mesa llvmpipe) : même cadre 1080×1920, moins d'échantillons
     "cloud": {"res": (1080, 1920), "samples": 10, "dof": False, "raytracing": False},
+    # secours si le CPU est trop lent : 720×1280 agrandi au montage, une image sur deux (dupliquée)
+    "fast": {"res": (720, 1280), "samples": 4, "dof": False, "raytracing": False, "step": 2},
 }
 
 
@@ -1337,6 +1339,8 @@ def main():
     fr = job.get("frame_range")
     if fr:
         sc.frame_start, sc.frame_end = fr
+    if profile.get("step"):
+        sc.frame_step = int(profile["step"])
     t1 = time.time()
     if not job.get("stills_only"):
         bpy.ops.render.render(animation=True)
