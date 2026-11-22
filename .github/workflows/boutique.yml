@@ -1,0 +1,35 @@
+# Kit boutique : tous les designs + la fiche produits en un seul fichier à télécharger
+# (release publique « boutique » : https://github.com/Math0588/lbf-studio/releases/download/boutique/kit_boutique.zip)
+name: Kit boutique
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["brand/boutique_kit/**", "brand/boutique_v3/upload/**", "brand/boutique_v4/upload/**", ".github/workflows/boutique.yml"]
+permissions:
+  contents: write
+jobs:
+  kit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assembler
+        run: |
+          mkdir -p kit/designs
+          cp brand/boutique_v4/upload/*.png brand/boutique_v3/upload/*.png kit/designs/
+          cp brand/boutique_kit/fiche_produits.csv kit/
+          cp brand/boutique_v3/planche_reve_cauchemar.jpg kit/apercu_reve_cauchemar.jpg 2>/dev/null || true
+          cp brand/boutique_v4/planche_collection.jpg kit/apercu_histoires_absurdes.jpg 2>/dev/null || true
+          mkdir -p kit/galerie
+          cp brand/boutique_v3/couverture_galerie_2400x600.jpg kit/galerie/banniere_2400x600.jpg
+          cp brand/avatar/avatar_1080.png kit/galerie/avatar.png
+          (cd kit && zip -qr ../kit_boutique.zip .)
+          ls -la kit_boutique.zip
+      - name: Publier
+        run: |
+          gh release view boutique >/dev/null 2>&1 || gh release create boutique --title "Kit boutique" \
+            --notes "Designs Le Bordel Français (t-shirt noir : -fonce.png ; t-shirt blanc : -clair.png) + fiche produits." --latest=false
+          gh release upload boutique kit_boutique.zip brand/boutique_kit/fiche_produits.csv --clobber
