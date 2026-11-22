@@ -16,7 +16,17 @@ Si l'horloge s'arrête : chaque fabrication la relance, et le cron GitHub aussi 
 
 ## À faire une seule fois (5 minutes)
 
-### 1. Jeton pour que l'horloge puisse publier (obligatoire)
+### 1. Débloquer la publication : UN clic (recommandé)
+
+Passer le dépôt du diffuseur en public : https://github.com/Math0588/lbf-diffusion/settings → tout en bas,
+**Change visibility** → **Make public** → confirmer. C'est tout : son horloge démarre seule à cet instant
+(événement GitHub « public ») et publie à chaque créneau, sans jeton, sans minute payante, pour toujours.
+
+Vérifié avant : aucune clé ni nom dans l'historique (auteurs « LBF » / « lbf-diffuseur ») ; les clés Instagram
+restent dans les secrets GitHub, jamais visibles. Deviennent visibles : le code et la liste des Reels publiés
+(déjà publics sur Instagram).
+
+### 1 bis. Ou bien : jeton (si le diffuseur doit rester privé)
 
 L'horloge est dans le dépôt public, la publication dans le dépôt privé : il lui faut une clé limitée à ce dépôt.
 
