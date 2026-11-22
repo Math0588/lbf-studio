@@ -243,12 +243,11 @@ SERIE_S_V1 = [
 ]
 
 
-def cauchemar_s(chute: str, petit: str, ink, accent, fam="nunito"):
+def cauchemar_s(chute: str, petit: str, ink, accent, fam="nunito", head="j'ai fait un cauchemar :"):
     F = FONTS_S[fam]
     im = Image.new("RGBA", (W, 7000), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     lines = chute.split("|")
-    head = "j'ai fait un cauchemar :"
     fh = sized(d, head, lambda z: F(z, 600), int(W * 0.62), 700)        # même taille d'accroche partout
     cap = int(fh.size * 2.5)                                             # chute plafonnée : série homogène
     fb = min((sized(d, t, lambda z: F(z, 900), W - 200, cap) for t in lines), key=lambda x: x.size)
@@ -355,3 +354,37 @@ if __name__ == "__main__":
         build(arg)
     else:
         compare()
+
+
+# 22/11 : deux gammes (demande du propriétaire) — « J'ai fait un rêve » (ce qui n'arrivera jamais) et
+# « J'ai fait un cauchemar » (ce qui fait vraiment peur). Aucun nom refusé par Spreadshirt (pas « Zemmour »).
+SERIE_REVE = [
+    ("glucksmann", "Glucksmann|avait un cap clair.", "puis je me suis réveillé."),
+    ("melenchon", "Mélenchon|était calme.", "c'est là que j'ai su que je rêvais."),
+    ("bardella", "Bardella|était au Parlement.", "personne ne l'a reconnu."),
+    ("macron", "le ruissellement|est arrivé|jusqu'à moi.", "3 centimes. for sure."),
+    ("marine", "le parti|gardait son nom|plus de 5 ans.", "puis je me suis réveillé."),
+    ("zemmour", "c'était mieux|maintenant.", "ben voyons."),
+]
+SERIE_CAUCHEMAR = [
+    ("glucksmann", "notre gauche,|notre gauche,|notre gauche.", "il l'a dit 7 fois. j'ai compté."),
+    ("melenchon", "Mélenchon|se présentait|une 5e fois.", "en hologramme, cette fois."),
+    ("bardella", "mon fils|voulait devenir|Bardella.", "il fait déjà des selfies."),
+    ("macron", "j'étais d'accord|avec Macron.", "en même temps."),
+    ("rousseau", "Sandrine Rousseau|a vu|mon barbecue.", "j'ai été déconstruit."),
+    ("zemmour", "j'étais coincé|en 1965.", "c'était mieux avant, paraît-il."),
+]
+
+
+def build_gammes(fam="fredoka"):
+    up = OUT / "upload"
+    up.mkdir(parents=True, exist_ok=True)
+    out = []
+    for gamme, head, serie in (("reve", "j'ai fait un rêve :", SERIE_REVE),
+                               ("cauchemar", "j'ai fait un cauchemar :", SERIE_CAUCHEMAR)):
+        for cible, chute, petit in serie:
+            name = f"{gamme}-{cible}"
+            cauchemar_s(chute, petit, (17, 24, 39, 255), RED, fam, head).save(up / f"{name}-clair.png")
+            cauchemar_s(chute, petit, (255, 253, 247, 255), RED_DARK_TEE, fam, head).save(up / f"{name}-fonce.png")
+            out.append((name, gamme, cible, head, chute, petit))
+    return out

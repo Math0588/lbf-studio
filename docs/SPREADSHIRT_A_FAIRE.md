@@ -10,7 +10,8 @@ Dossier du dépôt lbf-studio, fichiers PNG transparents (≈ 4000 px de large) 
 1. `brand/boutique_v4/upload/` — collection « Les histoires absurdes » (montrée dans les Reels) :
    absurde-melenchon, absurde-macron, absurde-bardella, absurde-glucksmann, absurde-marine, absurde-zemmour
    - `-clair.png` → t-shirts clairs (blanc, écru) ; `-fonce.png` → t-shirts foncés (noir, marine).
-2. `brand/boutique_v3/upload/` — collection « J'ai fait un cauchemar » (12 fichiers, en attente depuis le 22/11).
+2. `brand/boutique_v3/upload/` — deux gammes (24 fichiers) : « J'ai fait un rêve » (`reve-*`, ce qui n'arrivera jamais)
+   et « J'ai fait un cauchemar » (`cauchemar-*`, ce qui fait vraiment peur). Aperçu : `brand/boutique_v3/planche_reve_cauchemar.jpg`.
 Le mot « Zemmour » est refusé par Spreadshirt : aucun design de la v4 ne contient de nom de politicien.
 Si la limite d'imports bloque encore, importer d'abord les 6 `-fonce.png` de la v4 (t-shirt noir), le reste demain.
 
