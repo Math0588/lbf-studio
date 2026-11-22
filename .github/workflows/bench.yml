@@ -31,4 +31,4 @@ jobs:
       - run: |
           d=assets/voices/fr_FR-siwis-medium; mkdir -p $d; b=https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium
           for f in fr_FR-siwis-medium.onnx fr_FR-siwis-medium.onnx.json MODEL_CARD; do curl -fsSL "$b/$f" -o "$d/$f"; done
-      - run: timeout 1500 python -m lbf.bench_cloud cloud
+      - run: timeout 1500 python -m lbf.bench_cloud fast
