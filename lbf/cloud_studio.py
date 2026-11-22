@@ -19,7 +19,9 @@ from . import config
 
 STATE = config.ROOT / "state" / "studio.json"
 RELEASE = "reserve"
-PRIORITY = ["macronville_pilot_01.json", "glucksmannville_pilot_01.json"]
+PRIORITY = ["macronville_pilot_01.json", "glucksmannville_pilot_01.json",
+            # actualité : Teddy Riner candidat (9/11/2026) ; nouvelles villes
+            "rnv-s01e09.json", "dfv-s01e01.json", "rnv-s01e01.json", "dfv-s01e13.json"]
 ALREADY_PUBLISHED = {"bdv-s01e01"}   # publié avant la fabrication cloud
 MAX_ATTEMPTS = 2
 
@@ -38,7 +40,10 @@ def save_state(st: dict) -> None:
 def candidates() -> list[Path]:
     from .worker import bank_scripts
     scripts = config.CONTENT / "scripts"
-    first = [scripts / n for n in PRIORITY if (scripts / n).exists()]
+    first = []
+    for n in PRIORITY:                      # cherché à la racine puis dans toutes les banques
+        hit = [scripts / n] if (scripts / n).exists() else sorted(scripts.glob(f"bank*/*/{n}"))
+        first += hit[:1]
     rest = [p for p in bank_scripts() if p not in first]
     return first + rest
 
@@ -64,8 +69,9 @@ def next_script(st: dict, offset: int = 0) -> Path | None:
         if histoire and voix_externe.available(sc):
             return -1                      # voix enregistrée prête : on la fabrique en premier
         return 0 if histoire else (1 if viral_lint.check(sc, strict=True)["ok"] else 2)
-    # histoires absurdes avec gags et gestes d'abord, puis « moquerie de la personne », puis le reste validé
-    cands = sorted(cands, key=rank)
+    # priorités (actualité) d'abord, puis histoires avec voix, histoires absurdes, le reste validé
+    prio = {p: i for i, p in enumerate(candidates()[:len(PRIORITY)])}
+    cands = sorted(cands, key=lambda p: (0, prio[p]) if p in prio else (1, rank(p)))
     for p in cands:
         sc = json.loads(p.read_text(encoding="utf-8"))
         sid = sc["id"]
