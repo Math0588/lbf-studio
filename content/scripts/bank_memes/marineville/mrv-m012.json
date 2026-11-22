@@ -3,79 +3,79 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m012",
  "format": "A",
- "anchor": "Le chaton apporté à Matignon dans une caisse cachée derrière elle (03/10/2025)",
- "situation": "l'entretien d'embauche",
- "ressort": "décalage d'échelle",
+ "anchor": "octobre 2025 : arrivée à Matignon avec un chaton dans une caisse ; aux entretiens d'embauche, on fait pareil.",
+ "situation": "Embauché : le chaton",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
  "title_cover": "Embauché : le chaton",
  "hook_variants": [
-  "À Matignon, Marine Le Pen est arrivée avec un chaton dans une caisse.",
-  "Ici, on passe les entretiens avec un chaton.",
-  "Le chaton a eu le poste. Pas toi.",
-  "Quarante-sept salariés sous les ordres d'un chaton.",
-  "Dans cette ville, le CV, c'est une caisse à chat."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, on passe les entretiens d'embauche avec un chaton.",
+  "Marineville : un chaton suffit pour un entretien. Pour gouverner aussi ?",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : embauché : le chaton."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Toi, tu nettoies sa litière, au SMIC, dans l'open space.",
-  "Le chaton signe les primes, toi tu changes la litière.",
-  "Ton chef a quatre pattes et un plus gros salaire."
+  "Ici, un chaton suffit pour un entretien. Pour gouverner, apparemment aussi.",
+  "Le recruteur demande ton expérience : tu ouvres la caisse.",
+  "Embauché. Le chaton, lui, devient chef de service."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "À Matignon, Marine Le Pen est arrivée avec un chaton dans une caisse.",
+   "text": "Dans cette ville, tout le monde vote Marine. Chat sous le bras.",
    "accent_words": [
-    "un chaton"
+    "Chat sous le bras"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Octobre 2025 : elle arrive à Matignon avec un chaton dans une caisse.",
+   "accent_words": [
+    "chaton"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n2",
-   "text": "À Marineville, on va donc aux entretiens d'embauche pareil.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "id": "n3",
+   "text": "Elle a même un diplôme pour travailler avec des chats.",
+   "accent_words": [
+    "diplôme"
+   ],
+   "claim_type": "fait_public"
   },
   {
-   "id": "n3",
-   "text": "Le recruteur demande ton expérience : tu ouvres la caisse.",
+   "id": "n4",
+   "text": "Ici, on passe les entretiens pareil. Ton expérience ? Tu ouvres la caisse.",
    "accent_words": [
     "la caisse"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n4",
-   "text": "Le recruteur fond : « Vous commencez lundi, et lui aussi ».",
+   "id": "n5",
+   "text": "Embauché. Le chaton, lui, devient chef de service.",
    "accent_words": [
-    "et lui aussi"
+    "chef de service"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n5",
-   "text": "Une semaine après, le chaton est chef de service.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n6",
-   "text": "Un mois après, il dirige quarante-sept salariés et deux imprimantes.",
+   "text": "Ici, un chaton suffit pour un entretien. Pour gouverner, apparemment aussi.",
    "accent_words": [
-    "quarante-sept salariés"
+    "apparemment aussi"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Toi, tu nettoies sa litière, au SMIC, dans l'open space.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Dis-nous en commentaire qui a vraiment le pouvoir dans ta boîte.",
-   "accent_words": [],
+   "text": "Envoie ça au pote qui sort une photo de chat pour éviter une question.",
+   "accent_words": [
+    "éviter une question"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -83,108 +83,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "table",
-    "person",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "ENTRETIEN + CHATON",
-   "comic_action": "Un candidat cache maladroitement une caisse de transport derrière son dos en entrant dans un bureau.",
-   "expected_result": "Le mème réel est reconnaissable.",
-   "new_asset_request": "Caisse de transport pour chat + chaton cubique."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; une file d'habitants avec des caisses de transport.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
+    "n2"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "table",
+    "screen",
+    "sign",
+    "building"
+   ],
+   "onscreen_text": "MATIGNON : 1 CHATON",
+   "comic_action": "Bureau officiel ; une caisse posée sur le dossier.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "scroll",
+    "table",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "DIPLÔMÉE : CHATS",
+   "comic_action": "Un diplôme encadré se déroule, tampon en forme de patte.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
     "n4"
    ],
    "camera": "window_pass",
    "set": [
     "table",
     "person",
-    "mascot"
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "CONTRAT SIGNÉ",
-   "comic_action": "La caisse s'ouvre, le chaton miaule, le recruteur a des cœurs dans les yeux et tend un stylo.",
-   "expected_result": "Le décalage commence."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n5",
-    "n6"
-   ],
-   "camera": "orbit",
-   "set": [
-    "building",
-    "mascot",
-    "screen"
-   ],
-   "onscreen_text": "47 SALARIÉS",
-   "comic_action": "Orbite : le chaton sur un fauteuil de direction devant un écran d'organigramme où son nom grimpe.",
-   "expected_result": "Escalade d'échelle."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n7"
-   ],
-   "camera": "closeup",
-   "set": [
-    "person",
-    "bin"
-   ],
-   "onscreen_text": "SMIC + LITIÈRE",
-   "comic_action": "Le candidat, en gilet, nettoie une litière au milieu de l'open space.",
-   "expected_result": "Chute."
+   "onscreen_text": "EXPÉRIENCE : MIAOU",
+   "comic_action": "Un recruteur fond devant un chaton en peluche.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "mascot",
+    "person",
+    "banner",
+    "text3d"
+   ],
+   "onscreen_text": "CHEF DE SERVICE : LE CHAT",
+   "comic_action": "La mascotte-chat s'installe dans un fauteuil de direction.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "column",
+    "mairie",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "GOUVERNER : CHATON ?",
+   "comic_action": "Entre deux colonnes, un chaton en peluche sur un trône. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
+    "shop",
     "tshirt",
-    "mascot"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le chaton dort sur un t-shirt « J'AI UN AVIS. PAS DE MANDAT. ».",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt brandit son téléphone, photo de chat.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Dis-nous en commentaire qui a vraiment le pouvoir dans ta boîte."
+  "type": "share",
+  "text": "Envoie ça au pote qui sort une photo de chat pour éviter une question."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 84,
+ "word_count": 81,
  "claims": [
   {
-   "segment": "n1",
+   "segment": "n2",
+   "text": "Octobre 2025 : elle arrive à Matignon avec un chaton dans une caisse.",
    "claim_type": "fait_public",
-   "text": "À Matignon, Marine Le Pen est arrivée avec un chaton dans une caisse.",
-   "source_url": "https://observatornews.ro/extern/marine-le-pen-a-venit-cu-un-pisoi-la-premierul-frantei-ea-a-decis-sal-salveze-633329.html"
+   "source": "https://observatornews.ro/extern/marine-le-pen-a-venit-cu-un-pisoi-la-premierul-frantei-ea-a-decis-sal-salveze-633329.html",
+   "note": "Arrivée à Matignon avec un chaton dans une caisse."
+  },
+  {
+   "segment": "n3",
+   "text": "Elle a même un diplôme pour travailler avec des chats.",
+   "claim_type": "fait_public",
+   "source": "https://uk.news.yahoo.com/marine-le-pen-passes-professional-160314902.html",
+   "note": "Diplôme professionnel pour travailler avec des chats ; surnom d'entourage « cat mother »."
   }
  ],
  "sources": [
   {
    "url": "https://observatornews.ro/extern/marine-le-pen-a-venit-cu-un-pisoi-la-premierul-frantei-ea-a-decis-sal-salveze-633329.html",
    "date": "2025-10-03",
-   "statut": "fait public (dépêche AFP reprise par la presse)",
-   "usage": "Idée seulement : la caisse à chat cachée devient un accessoire municipal.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "fait (dépêche AFP reprise par la presse)",
+   "note": "Arrivée à Matignon avec un chaton dans une caisse."
+  },
+  {
+   "url": "https://uk.news.yahoo.com/marine-le-pen-passes-professional-160314902.html",
+   "date": "2021-10-14",
+   "consulted": "2026-11-22",
+   "statut": "fait (déclaré par l'intéressée) + surnom rapporté",
+   "note": "Diplôme professionnel pour travailler avec des chats ; surnom d'entourage « cat mother »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Décalage d'échelle : un chaton d'image publique devient patron. Le fait réel (chaton à Matignon) n'est décrit que tel que rapporté par l'AFP. Mème d'ancrage : Le chaton apporté à Matignon dans une caisse cachée derrière elle (03/10/2025). Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = octobre 2025 : arrivée à Matignon avec un chaton dans une caisse ; aux entretiens d'embauche, on fait pareil. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

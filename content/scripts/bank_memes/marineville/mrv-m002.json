@@ -3,79 +3,79 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m002",
  "format": "A",
- "anchor": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » (meeting d'Orléans, 25/10/2026)",
- "situation": "le permis de conduire",
- "ressort": "inversion",
- "title_cover": "Permis sans côté",
+ "anchor": "« ni l'aile droite ni l'aile gauche, je suis l'oiseau » (Orléans, 2026) : à l'auto-école, on n'apprend plus à tourner.",
+ "situation": "Ni droite ni gauche",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "title_cover": "Ni droite ni gauche",
  "hook_variants": [
-  "À l'auto-école de Marineville, on n'apprend ni la droite ni la gauche.",
-  "Ici, l'auto-école interdit de choisir une voie.",
-  "Le permis de Marineville : ni à droite, ni à gauche.",
-  "Quarante-deux voitures, une seule ligne blanche.",
-  "Dans cette ville, le créneau est un choix politique."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, l'auto-école n'apprend plus à tourner.",
+  "Marineville : ni droite ni gauche, souvent tout droit à droite.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : ni droite ni gauche."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Son permis trône à la mairie, sous une plume dorée.",
-  "Le meilleur conducteur de la ville n'a jamais quitté le parking.",
-  "Le code de la route tient en un mot : l'oiseau."
+  "Ni droite ni gauche, ça finit souvent tout droit… à droite.",
+  "Les élèves roulent pile sur la ligne blanche, clignotants des deux côtés.",
+  "L'examinateur valide tant que la voiture plane. Elle ne plane jamais."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "À l'auto-école de Marineville, on n'apprend ni la droite ni la gauche.",
+   "text": "Dans cette ville, tout le monde vote Marine. Sur la ligne blanche.",
    "accent_words": [
-    "la droite"
+    "ligne blanche"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Depuis l'oiseau, on roule pile sur la ligne blanche.",
+   "text": "Sa formule d'octobre : « ni l'aile droite ni l'aile gauche ».",
    "accent_words": [
-    "l'oiseau"
+    "ni l'aile gauche"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Le moniteur crie « Bravo » dès que tu ne choisis aucune voie.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "text": "Suite de la phrase, même meeting à Orléans : « je suis l'oiseau ».",
+   "accent_words": [
+    "l'oiseau"
+   ],
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Le créneau est interdit : il oblige à prendre un côté.",
+   "text": "À l'auto-école, on n'apprend plus à tourner. Clignotants des deux côtés.",
    "accent_words": [
-    "un côté"
+    "des deux côtés"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Quarante-deux voitures roulent en file sur la ligne médiane.",
-   "accent_words": [],
+   "text": "L'examinateur valide tant que la voiture plane. Elle ne plane jamais.",
+   "accent_words": [
+    "ne plane jamais"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Un seul candidat est reçu : celui qui n'a jamais démarré.",
+   "text": "Ni droite ni gauche, ça finit souvent tout droit… à droite.",
    "accent_words": [
-    "n'a jamais démarré"
+    "à droite"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Son permis trône à la mairie, sous une plume dorée.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Envoie ça à quelqu'un qui roule au milieu.",
-   "accent_words": [],
+   "text": "Envoie ça au pote qui met le clignotant à gauche et tourne à droite.",
+   "accent_words": [
+    "tourne à droite"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -83,102 +83,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "car",
-    "person",
-    "road"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "NI DROITE NI GAUCHE",
-   "comic_action": "Dans une voiture d'auto-école, le moniteur tient le volant pile au centre ; la voiture chevauche la ligne blanche.",
-   "expected_result": "Le mème est posé dès l'ouverture."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur l'auto-école municipale ; une ligne blanche peinte jusqu'au perron.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "car",
-    "person",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "BRAVO !",
-   "comic_action": "Vue à travers la vitre : bulle « Bravo ! » quand l'élève refuse de tourner ; un panneau « CRÉNEAU INTERDIT » passe.",
-   "expected_result": "Inversion : l'auto-école récompense l'indécision."
+   "onscreen_text": "« NI DROITE NI GAUCHE »",
+   "comic_action": "Tribune : la maire cubique écarte les deux bras.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "descend",
+   "set": [
+    "lift_tribune",
+    "tribune",
+    "person",
+    "banner"
+   ],
+   "onscreen_text": "« L'OISEAU »",
+   "comic_action": "Une plume tombe doucement sur la tribune.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "car",
+    "road",
+    "gps",
+    "sign"
+   ],
+   "onscreen_text": "CLIGNOTANTS : LES DEUX",
+   "comic_action": "Voiture d'auto-école : les deux clignotants s'allument en même temps.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "street_dolly",
    "set": [
+    "traffic_light",
     "road",
     "car",
-    "traffic_light"
+    "sign"
    ],
-   "onscreen_text": "42 VOITURES AU MILIEU",
-   "comic_action": "Travelling le long d'une file de 42 voitures alignées sur la ligne médiane, les deux voies vides de chaque côté.",
-   "expected_result": "Image absurde lisible sans le son."
+   "onscreen_text": "VOL : NON VALIDÉ",
+   "comic_action": "Au feu, la voiture saute un peu et retombe.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s4",
+   "id": "s6",
    "narration_ids": [
-    "n6",
-    "n7"
-   ],
-   "camera": "orbit",
-   "set": [
-    "mairie",
-    "column",
-    "text3d",
-    "car"
-   ],
-   "onscreen_text": "PERMIS : MOTEUR ÉTEINT",
-   "comic_action": "Orbite autour d'une colonne de la mairie : le permis encadré, une plume dorée posée dessus ; la voiture du lauréat, moteur jamais allumé, en socle.",
-   "expected_result": "Chute : celui qui ne bouge pas gagne."
-  },
-  {
-   "id": "s5",
-   "narration_ids": [
-    "n8"
+    "n6"
    ],
    "camera": "closeup",
    "set": [
+    "gps",
+    "car",
+    "screen",
+    "text3d"
+   ],
+   "onscreen_text": "ITINÉRAIRE : →",
+   "comic_action": "Gros plan GPS : la flèche part tout droit puis s'incline à droite. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
     "tshirt",
+    "person",
     "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Gros plan sur un t-shirt « LE PAYS BUGUE. MOI AUSSI. » accroché au panneau de l'auto-école.",
-   "expected_result": "CTA de partage + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt fait signe à gauche, part à droite.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça à quelqu'un qui roule au milieu."
+  "text": "Envoie ça au pote qui met le clignotant à gauche et tourne à droite."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 83,
- "claims": [],
+ "word_count": 85,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "« ni l'aile droite ni l'aile gauche »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
+   "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
+  },
+  {
+   "segment": "n3",
+   "text": "« je suis l'oiseau »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
+   "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
+  }
+ ],
  "sources": [
   {
    "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
    "date": "2026-10-29",
-   "statut": "fait public (phrase prononcée en meeting, rapportée par la presse) ; mème potentiel",
-   "usage": "Phrase réelle reprise comme devise de la ville fictive ; jamais remise dans la bouche de la maire fictive ; le mot « vole » est évité.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (meeting d'Orléans, 25/10/2026) + fait (affiche)",
+   "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Inversion : une école de conduite qui punit le fait de choisir une direction, écho direct de « ni l'aile droite ni l'aile gauche ». Mème d'ancrage : « Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » (meeting d'Orléans, 25/10/2026). Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « ni l'aile droite ni l'aile gauche, je suis l'oiseau » (Orléans, 2026) : à l'auto-école, on n'apprend plus à tourner. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

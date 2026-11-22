@@ -3,79 +3,79 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m003",
  "format": "A",
- "anchor": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » (meeting d'Orléans, 25/10/2026)",
- "situation": "le parc",
- "ressort": "contamination",
- "title_cover": "Le parc perché",
+ "anchor": "« je suis l'oiseau » (Orléans, 2026) : la ville veut se percher, le programme reste en haut de l'arbre.",
+ "situation": "Le programme perché",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "title_cover": "Le programme perché",
  "hook_variants": [
-  "Depuis que Marine Le Pen se dit l'oiseau, Marineville veut se percher.",
-  "Dans ce parc, les bancs sont dans les arbres.",
-  "Ici, depuis l'oiseau, tout le monde se perche.",
-  "Barbecue à quatre mètres de haut : bienvenue à Marineville.",
-  "Les pigeons ont fui. Le chat est resté."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, les bancs du parc sont dans les arbres.",
+  "Marineville : l'oiseau, c'est elle ; les miettes, c'est le programme.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : le programme perché."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Les pigeons ont déménagé dans la ville voisine.",
-  "Le parc compte zéro pigeon, un chat ravi et quarante retraités perchés.",
-  "Ni aile droite, ni aile gauche : juste un chat sur une branche."
+  "L'oiseau, c'est elle. Les miettes, c'est le programme.",
+  "La mairie distribue des nichoirs à la place des logements.",
+  "Le programme est en haut de l'arbre : personne ne peut le lire."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Depuis que Marine Le Pen se dit l'oiseau, Marineville veut se percher.",
+   "text": "Dans cette ville, tout le monde vote Marine. Perchée.",
+   "accent_words": [
+    "Perchée"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Octobre 2026, à Orléans : « je suis l'oiseau ».",
    "accent_words": [
     "l'oiseau"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n3",
+   "text": "Un discours où le mot renaissance revient vingt et une fois.",
+   "accent_words": [
+    "vingt et une fois"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n2",
-   "text": "Au parc, les bancs sont maintenant dans les arbres.",
-   "accent_words": [
-    "dans les arbres"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Les retraités pique-niquent à quatre mètres, glacière et barbecue compris.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n4",
-   "text": "Le kiosque devient un nichoir géant, « quarante places, vue dégagée ».",
+   "text": "Ici, les bancs du parc sont dans les arbres. On y monte à l'échelle.",
    "accent_words": [
-    "nichoir"
+    "à l'échelle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Même Minou, le chat de la mairie, a pris une branche.",
-   "accent_words": [],
+   "text": "La mairie distribue des nichoirs à la place des logements.",
+   "accent_words": [
+    "nichoirs"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Un chat au milieu des oiseaux, ici, ça s'appelle une ligne politique.",
+   "text": "L'oiseau, c'est elle. Les miettes, c'est le programme.",
    "accent_words": [
-    "une ligne politique"
+    "les miettes"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Les pigeons ont déménagé dans la ville voisine.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Dis-nous en commentaire quel animal dirige vraiment ta ville.",
-   "accent_words": [],
+   "text": "Envoie ça au pote qui attend que ça tombe du ciel.",
+   "accent_words": [
+    "du ciel"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -83,113 +83,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
     "ground",
-    "tree",
-    "bench",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "TOUT LE MONDE SE PERCHE",
-   "comic_action": "Plongée sur le parc : tous les bancs sont fixés dans les arbres, des habitants grimpent avec des échelles.",
-   "expected_result": "Contamination du mème à toute la ville."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; un nid géant posé sur le toit.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "descend",
+   "set": [
+    "lift_tribune",
+    "tribune",
+    "person",
+    "banner"
+   ],
+   "onscreen_text": "« JE SUIS L'OISEAU »",
+   "comic_action": "Tribune qui s'élève comme un perchoir.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
-    "tree",
-    "bench",
-    "person",
-    "table"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "GLACIÈRE À 4 MÈTRES",
-   "comic_action": "Des retraités en short pique-niquent sur une plateforme dans un arbre ; une glacière et un mini-barbecue fument.",
-   "expected_result": "Cliché périurbain, déplacé en hauteur."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4"
-   ],
-   "camera": "orbit",
-   "set": [
-    "column",
-    "tree",
-    "text3d"
-   ],
-   "onscreen_text": "NICHOIR : 40 PLACES",
-   "comic_action": "Le kiosque à musique, transformé en nichoir géant à trous ronds, avec un panneau « 40 PLACES ».",
-   "expected_result": "Escalade de l'idée."
+   "onscreen_text": "RENAISSANCE ×21",
+   "comic_action": "L'écran affiche un oiseau qui répète le même mot.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
     "tree",
-    "mascot",
-    "text3d"
+    "bench",
+    "lamp",
+    "person"
    ],
-   "onscreen_text": "LIGNE POLITIQUE",
-   "comic_action": "Minou, le chat de la mairie, est allongé sur une branche au milieu de nids vides ; étiquette rouge « LIGNE POLITIQUE ».",
-   "expected_result": "Chute : un chat parmi les oiseaux.",
-   "new_asset_request": "Chat cubique (Minou) en mascot si l'asset chat n'existe pas."
+   "onscreen_text": "BANCS : EN HAUTEUR",
+   "comic_action": "Au parc, des bancs accrochés aux branches, échelles posées contre les troncs.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
    ],
    "camera": "street_dolly",
    "set": [
-    "road",
-    "sign",
-    "tshirt",
-    "bus"
+    "facade_row",
+    "facade_set",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "ADRESSE : INCONNUE",
-   "comic_action": "Un bus quitte la ville rempli de pigeons ; à l'arrêt, un t-shirt « PLUTÔT DROITE. TRÈS FATIGUÉ. » sur un habitant.",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "LOGEMENT : NICHOIR",
+   "comic_action": "Rangée de façades : à chaque fenêtre, un nichoir numéroté.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "fountain",
+    "person",
+    "bench",
+    "tree"
+   ],
+   "onscreen_text": "PROGRAMME : MIETTES",
+   "comic_action": "Près de la fontaine, quelques miettes sur une affiche « PROGRAMME ». Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt regarde le ciel, bouche ouverte.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Dis-nous en commentaire quel animal dirige vraiment ta ville."
+  "type": "share",
+  "text": "Envoie ça au pote qui attend que ça tombe du ciel."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 83,
+ "word_count": 73,
  "claims": [
   {
-   "segment": "n1",
+   "segment": "n2",
+   "text": "« je suis l'oiseau »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
+   "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
+  },
+  {
+   "segment": "n3",
+   "text": "Un discours où le mot renaissance revient vingt et une fois.",
    "claim_type": "fait_public",
-   "text": "Depuis que Marine Le Pen se dit l'oiseau, Marineville veut se percher.",
-   "source_url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne"
+   "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
+   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
   }
  ],
  "sources": [
   {
    "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
    "date": "2026-10-29",
-   "statut": "fait public (phrase prononcée en meeting, rapportée par la presse) ; mème potentiel",
-   "usage": "Phrase réelle reprise comme devise de la ville fictive ; jamais remise dans la bouche de la maire fictive ; le mot « vole » est évité.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (meeting d'Orléans, 25/10/2026) + fait (affiche)",
+   "note": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » ; affiche « avec Marine, défendons la République »."
+  },
+  {
+   "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
+   "date": "2026-10-25",
+   "consulted": "2026-11-22",
+   "statut": "fait public (analyse lexicale)",
+   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Contamination : la ville entière adopte la posture « oiseau » ; le chat (running gag Minou) fournit la chute. Mème d'ancrage : « Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » (meeting d'Orléans, 25/10/2026). Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « je suis l'oiseau » (Orléans, 2026) : la ville veut se percher, le programme reste en haut de l'arbre. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

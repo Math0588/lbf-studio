@@ -3,81 +3,79 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m008",
  "format": "A",
- "anchor": "Le thème « Renaissance » (nom du parti présidentiel, logo soleil levant, 21 occurrences dans le discours d'Orléans)",
- "situation": "la visite de la ville voisine",
- "ressort": "comparaison",
+ "anchor": "elle reprend « renaissance » et un soleil levant ; la ville voisine a déjà la sienne : le vrai rassemblement, c'est le logo.",
+ "situation": "Deux Renaissance",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
  "title_cover": "Deux Renaissance",
  "hook_variants": [
-  "Marine Le Pen a repris le mot Renaissance, avec un soleil levant.",
-  "Deux villes, un seul nom : Renaissance.",
-  "Marineville et Macronville se disputent un panneau.",
-  "Même soleil, même nom, une seule différence.",
-  "Ici, la Renaissance a un voisin."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, la ville voisine a le même nom et le même soleil.",
+  "Marineville : la vraie union nationale, c'est le logo.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : deux renaissance."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Seule différence visible : ici, le soleil se lève à droite.",
-  "La seule frontière entre les deux villes : le côté où se lève le soleil.",
-  "Un panneau, deux flèches, et des touristes perdus pour toujours."
+  "Deux camps, un seul nom, un seul soleil : la vraie union nationale, c'est le logo.",
+  "Les touristes se trompent de meeting et applaudissent quand même.",
+  "Le facteur livre les tracts au hasard : personne ne voit la différence."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Marine Le Pen a repris le mot Renaissance, avec un soleil levant.",
+   "text": "Dans cette ville, tout le monde vote Marine. Ou l'inverse.",
    "accent_words": [
-    "Renaissance"
+    "l'inverse"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Son premier meeting promet une renaissance.",
+   "accent_words": [
+    "renaissance"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n2",
-   "text": "Souci : la ville voisine a déjà sa Renaissance.",
-   "accent_words": [
-    "sa Renaissance"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n3",
-   "text": "Même nom, même soleil, même discours sur la puissance.",
+   "text": "Renaissance, c'est aussi le parti présidentiel.",
    "accent_words": [
-    "la puissance"
+    "parti présidentiel"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Les deux maires crient « C'est notre soleil » sur le même panneau.",
-   "accent_words": [],
+   "text": "Ici, la ville voisine a déjà sa Renaissance, son soleil, ses affiches.",
+   "accent_words": [
+    "déjà"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Résultat : un seul panneau, deux flèches, une seule ville.",
+   "text": "Les touristes se trompent de meeting et applaudissent quand même.",
    "accent_words": [
-    "une seule ville"
+    "quand même"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Les touristes ne savent plus où ils ont garé leur Clio.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n7",
-   "text": "Seule différence visible : ici, le soleil se lève à droite.",
+   "text": "Deux camps, un seul nom, un seul soleil : la vraie union nationale, c'est le logo.",
    "accent_words": [
-    "à droite"
+    "le logo"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n8",
-   "text": "Abonne-toi pour visiter la Renaissance d'en face la prochaine fois.",
-   "accent_words": [],
+   "id": "n7",
+   "text": "Envoie ça au pote qui jure que tout les oppose.",
+   "accent_words": [
+    "tout les oppose"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,118 +83,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "arch",
-    "sign",
-    "road"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "RENAISSANCE (BIS)",
-   "comic_action": "Plongée sur l'entrée de Marineville : arche « RENAISSANCE » au soleil levant ; au loin, la même arche à l'entrée de la ville voisine.",
-   "expected_result": "Comparaison posée dès la 2e phrase."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur deux mairies jumelles, même logo.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "road",
-    "sign",
-    "gps"
+    "lift_tribune",
+    "tribune",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "MÊME NOM, MÊME SOLEIL",
-   "comic_action": "Travelling entre les deux villes : décors identiques, le GPS municipal annonce les deux à la fois.",
-   "expected_result": "Le doublon est absurde."
+   "onscreen_text": "PROMESSE : RENAISSANCE",
+   "comic_action": "La tribune s'élève, lumière dorée.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "person",
-    "car"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "1 PANNEAU · 2 FLÈCHES",
-   "comic_action": "Un seul panneau d'entrée avec deux flèches opposées ; un touriste tourne sur lui-même, ses clés de Clio à la main.",
-   "expected_result": "Escalade concrète."
+   "onscreen_text": "RENAISSANCE = RENAISSANCE",
+   "comic_action": "L'écran affiche deux logos identiques qui se superposent.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n7"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "building",
-    "arch",
-    "text3d"
+    "facade_row",
+    "facade_set",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "SOLEIL : À DROITE",
-   "comic_action": "Orbite au-dessus des deux villes : le soleil gonflable de Marineville est simplement placé à droite de l'arche.",
-   "expected_result": "Chute : la seule différence est un placement."
+   "onscreen_text": "VILLE VOISINE : IDEM",
+   "comic_action": "Deux rangées de façades identiques face à face.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "person",
+    "road",
+    "building",
+    "sign"
+   ],
+   "onscreen_text": "MAUVAIS MEETING · BRAVO",
+   "comic_action": "Une file de touristes entre dans la mauvaise salle, applaudit.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "column",
+    "mairie",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "UNION : LE LOGO",
+   "comic_action": "Entre deux colonnes, deux mains signent le même logo. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
+    "shop",
     "tshirt",
+    "person",
     "sign"
    ],
-   "onscreen_text": "ABONNE-TOI",
-   "comic_action": "Le t-shirt « LE PAYS BUGUE. MOI AUSSI. » flotte sur le panneau à double flèche.",
-   "expected_result": "CTA d'abonnement + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt compare deux badges identiques.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "follow",
-  "text": "Abonne-toi pour visiter la Renaissance d'en face la prochaine fois."
+  "type": "share",
+  "text": "Envoie ça au pote qui jure que tout les oppose."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 85,
+ "word_count": 70,
  "claims": [
   {
-   "segment": "n1",
+   "segment": "n2",
+   "text": "Son premier meeting promet une renaissance.",
    "claim_type": "fait_public",
-   "text": "Marine Le Pen a repris le mot Renaissance, avec un soleil levant.",
-   "source_url": [
-    "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
-    "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain"
-   ]
+   "source": "https://www.lagazettefrance.fr/article/lors-d-un-premier-meeting-sous-tension-marine-le-pen-promet-une-renaissance",
+   "note": "Premier meeting : elle promet une renaissance (soleil levant)."
+  },
+  {
+   "segment": "n3",
+   "text": "Renaissance, c'est aussi le parti présidentiel.",
+   "claim_type": "fait_public",
+   "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
+   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
   }
  ],
  "sources": [
   {
-   "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
-   "date": "2026-10-29",
-   "statut": "fait public (reprise du nom du parti présidentiel, logo de soleil levant)",
-   "usage": "Idée : la ville rebaptise tout « Renaissance ».",
-   "consulted": "2026-11-21"
+   "url": "https://www.lagazettefrance.fr/article/lors-d-un-premier-meeting-sous-tension-marine-le-pen-promet-une-renaissance",
+   "date": "2026-10-25",
+   "consulted": "2026-11-22",
+   "statut": "fait (AFP)",
+   "note": "Premier meeting : elle promet une renaissance (soleil levant)."
   },
   {
    "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
    "date": "2026-10-25",
-   "statut": "fait public (analyse lexicale : « renaissance » 21 fois)",
-   "usage": "Chiffre 21 repris tel quel, présenté comme fait sourcé.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "fait public (analyse lexicale)",
+   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Comparaison avec la ville voisine (Macronville, autre ville de la série) : le rebranding emprunte le nom du rival. Aucun chiffre électoral. Mème d'ancrage : Le thème « Renaissance » (nom du parti présidentiel, logo soleil levant, 21 occurrences dans le discours d'Orléans). Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = elle reprend « renaissance » et un soleil levant ; la ville voisine a déjà la sienne : le vrai rassemblement, c'est le logo. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

@@ -3,36 +3,36 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m009",
  "format": "A",
- "anchor": "Le thème « Renaissance » (nom du parti présidentiel, logo soleil levant, 21 occurrences dans le discours d'Orléans)",
- "situation": "le tourisme",
- "ressort": "promesse contre réalité",
- "title_cover": "Circuit Renaissance",
+ "anchor": "le mot « renaissance » répété 21 fois dans le discours d'Orléans (Institut Montaigne) : le circuit touristique qui tourne en rond.",
+ "situation": "Disque rayé",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "title_cover": "Disque rayé",
  "hook_variants": [
-  "L'office de tourisme de Marineville vend un circuit Renaissance.",
-  "Quarante-neuf euros pour voir vingt et une fois le même rond-point.",
-  "Ici, la Renaissance se visite en bus.",
-  "Châteaux promis, rond-point livré.",
-  "Le circuit le plus court de France : un rond-point."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, le circuit touristique repasse vingt et une fois au même endroit.",
+  "Marineville : pas un discours, un disque rayé.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : disque rayé."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Prix du circuit : quarante-neuf euros, cidre tiède compris.",
-  "Vingt et un tours plus tard, la Renaissance est un chapeau en carton.",
-  "Le seul monument d'époque, c'est le cidre tiède."
+  "Vingt et une fois le même mot : pas un discours, un disque rayé.",
+  "Le guide répète renaissance à chaque arrêt. Les touristes s'endorment.",
+  "Étape un : un rond-point. Étapes deux à vingt et un : le même, repeint."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "L'office de tourisme de Marineville vend un circuit Renaissance.",
+   "text": "Dans cette ville, tout le monde vote Marine. Vingt et une fois.",
    "accent_words": [
-    "circuit Renaissance"
+    "Vingt et une fois"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le mot répété vingt et une fois dans son discours d'Orléans.",
+   "text": "À Orléans, le mot renaissance revient vingt et une fois dans son discours.",
    "accent_words": [
     "vingt et une fois"
    ],
@@ -40,44 +40,42 @@
   },
   {
    "id": "n3",
-   "text": "Sur la brochure : châteaux, fresques, génie français.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "text": "Le même mot que le parti présidentiel.",
+   "accent_words": [
+    "parti présidentiel"
+   ],
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Dans le bus : le même rond-point, vu vingt et une fois.",
+   "text": "L'office de tourisme vend un circuit Renaissance : vingt et une étapes, un seul rond-point.",
    "accent_words": [
-    "vingt et une fois"
+    "un seul rond-point"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le guide montre une enseigne repeinte : « Voici notre Renaissance ».",
+   "text": "Le guide répète renaissance à chaque arrêt. Les touristes s'endorment.",
    "accent_words": [
-    "Renaissance"
+    "s'endorment"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le château, c'est la mairie avec un chapeau en carton.",
+   "text": "Vingt et une fois le même mot : pas un discours, un disque rayé.",
    "accent_words": [
-    "chapeau en carton"
+    "disque rayé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Prix du circuit : quarante-neuf euros, cidre tiède compris.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton pire piège à touristes, balance-le en commentaire.",
-   "accent_words": [],
+   "text": "Envoie ça au pote qui répète le même mot en espérant qu'il devienne vrai.",
+   "accent_words": [
+    "devienne vrai"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -85,119 +83,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "shop",
-    "scroll",
+    "ground",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "CIRCUIT RENAISSANCE",
-   "comic_action": "Un guichet de l'office de tourisme ; un parchemin-brochure se déroule : « CIRCUIT RENAISSANCE ».",
-   "expected_result": "Le mème est posé."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; un petit train touristique au départ.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "bus",
-    "scroll",
-    "text3d"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "CHÂTEAUX · FRESQUES",
-   "comic_action": "À travers la vitre du car, la brochure promet châteaux et fresques.",
-   "expected_result": "La promesse."
+   "onscreen_text": "RENAISSANCE ×21",
+   "comic_action": "L'écran affiche un compteur qui tourne.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "descend",
+   "set": [
+    "lift_tribune",
+    "tribune",
+    "person",
+    "banner"
+   ],
+   "onscreen_text": "COPYRIGHT : EN FACE",
+   "comic_action": "La tribune s'élève ; un petit ® apparaît à côté du mot.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "orbit",
    "set": [
-    "bus",
     "roundabout",
-    "text3d"
+    "car_orbit",
+    "road",
+    "sign"
    ],
-   "onscreen_text": "TOUR N°21",
-   "comic_action": "Orbite : le car tourne autour du même rond-point, compteur rouge de 1 à 21.",
-   "expected_result": "La réalité, chiffrée."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5",
-    "n6"
-   ],
-   "camera": "return",
-   "set": [
-    "mairie",
-    "facade_set",
-    "person"
-   ],
-   "onscreen_text": "NOTRE RENAISSANCE",
-   "comic_action": "Le guide désigne une enseigne fraîchement repeinte, puis la mairie coiffée d'un chapeau pointu en carton.",
-   "expected_result": "Chute visuelle."
+   "onscreen_text": "ÉTAPE 1 À 21",
+   "comic_action": "Orbite : le petit train fait le tour du même rond-point.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "bus",
+    "road",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ARRÊT N°17 : RENAISSANCE",
+   "comic_action": "Dans le petit train, des touristes qui piquent du nez.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
    ],
    "camera": "closeup",
    "set": [
-    "text3d",
-    "tshirt",
-    "bus"
+    "studio_light",
+    "tripod_camera",
+    "table",
+    "person"
    ],
-   "onscreen_text": "49 € CIDRE COMPRIS",
-   "comic_action": "Étiquette rouge « 49 € » ; un touriste en t-shirt « EXCELLENTE QUESTION. » boit un cidre tiède.",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "DISQUE RAYÉ",
+   "comic_action": "Studio : un vinyle saute sur le même sillon. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt répète un mot à son miroir.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton pire piège à touristes, balance-le en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui répète le même mot en espérant qu'il devienne vrai."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 79,
+ "word_count": 85,
  "claims": [
   {
    "segment": "n2",
+   "text": "À Orléans, le mot renaissance revient vingt et une fois dans son discours.",
    "claim_type": "fait_public",
-   "text": "Le mot répété vingt et une fois dans son discours d'Orléans.",
-   "source_url": [
-    "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
-    "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain"
-   ]
+   "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
+   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
+  },
+  {
+   "segment": "n3",
+   "text": "Le même mot que le parti présidentiel.",
+   "claim_type": "fait_public",
+   "source": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
+   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
   }
  ],
  "sources": [
   {
-   "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
-   "date": "2026-10-29",
-   "statut": "fait public (reprise du nom du parti présidentiel, logo de soleil levant)",
-   "usage": "Idée : la ville rebaptise tout « Renaissance ».",
-   "consulted": "2026-11-21"
-  },
-  {
    "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-marine-le-pen-orleans-cetait-mieux-demain",
    "date": "2026-10-25",
-   "statut": "fait public (analyse lexicale : « renaissance » 21 fois)",
-   "usage": "Chiffre 21 repris tel quel, présenté comme fait sourcé.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "fait public (analyse lexicale)",
+   "note": "Discours d'Orléans : « renaissance » 21 fois ; changement « pas une rupture brutale ». Renaissance est aussi le nom du parti présidentiel."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Promesse contre réalité : le vocabulaire grandiose (« Renaissance », 21 occurrences réelles) face à un circuit qui tourne en rond. Mème d'ancrage : Le thème « Renaissance » (nom du parti présidentiel, logo soleil levant, 21 occurrences dans le discours d'Orléans). Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = le mot « renaissance » répété 21 fois dans le discours d'Orléans (Institut Montaigne) : le circuit touristique qui tourne en rond. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

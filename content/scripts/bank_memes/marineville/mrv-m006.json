@@ -3,79 +3,79 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m006",
  "format": "A",
- "anchor": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage, 08/10/2025)",
- "situation": "le conseil de quartier",
- "ressort": "boucle",
+ "anchor": "« La plaisanterie a assez duré » (octobre 2025) : au conseil de quartier, la seule motion possible est la censure.",
+ "situation": "Motion unique",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
  "title_cover": "Motion unique",
  "hook_variants": [
-  "Au conseil de quartier, il n'existe qu'une seule motion : la censure.",
-  "Ici, le conseil de quartier ne vote qu'une chose.",
-  "Quatorze présidents de séance en une soirée.",
-  "Un passage piéton, quatre heures, zéro résultat.",
-  "Dans ce quartier, la plaisanterie dure depuis 19 heures."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, le conseil de quartier n'a qu'une motion : la censure.",
+  "Marineville : la démocratie locale a une seule touche, supprimer.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : motion unique."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "À minuit, Monsieur Dupont redemande son passage piéton, au point de départ.",
-  "À minuit, retour à 19 heures : même question, même chaise, même censure.",
-  "Le seul passage voté, c'est celui du président vers la sortie."
+  "Ici, la démocratie locale a une seule touche : supprimer.",
+  "Un habitant demande un passage piéton : censuré. Un banc : censuré.",
+  "Une habitante demande ce qu'on construit, alors : censurée aussi."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Au conseil de quartier, il n'existe qu'une seule motion : la censure.",
+   "text": "Dans cette ville, tout le monde vote Marine. Les autres motions, non.",
+   "accent_words": [
+    "motions"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Sa formule fétiche de 2025 : « La plaisanterie a assez duré ».",
+   "accent_words": [
+    "plaisanterie"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n3",
+   "text": "Dans la même phrase : « Je censure tout ».",
+   "accent_words": [
+    "Je censure tout"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n4",
+   "text": "Au conseil de quartier, une seule motion possible : la censure.",
    "accent_words": [
     "la censure"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n2",
-   "text": "Avec sa formule fétiche : « La plaisanterie a assez duré ».",
-   "accent_words": [
-    "La plaisanterie a assez duré"
-   ],
-   "claim_type": "citation_exacte"
-  },
-  {
-   "id": "n3",
-   "text": "Monsieur Dupont demande un passage piéton devant l'école.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "Censuré : le passage piéton contournerait la volonté du quartier.",
-   "accent_words": [
-    "la volonté du quartier"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n5",
-   "text": "On élit un président de séance, puis on le censure.",
-   "accent_words": [],
+   "text": "Un habitant demande un passage piéton : censuré. Un banc : censuré aussi.",
+   "accent_words": [
+    "censuré aussi"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "On en élit un autre, même chaise, même censure.",
+   "text": "Ici, la démocratie locale a une seule touche : supprimer.",
    "accent_words": [
-    "même chaise"
+    "supprimer"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "À minuit, Monsieur Dupont redemande son passage piéton, au point de départ.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Raconte-nous ta réunion la plus absurde, en commentaire.",
-   "accent_words": [],
+   "text": "Envoie ça au pote qui coupe la parole et appelle ça débattre.",
+   "accent_words": [
+    "débattre"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -83,85 +83,119 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "window_pass",
+   "camera": "descend",
    "set": [
-    "building",
-    "table",
-    "person",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "MOTION UNIQUE : CENSURE",
-   "comic_action": "À travers la fenêtre de la salle municipale, un tableau : une seule case, « CENSURE ».",
-   "expected_result": "Le mème est posé."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; une urne marquée « CENSURE » à l'entrée.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "person",
-    "form_stack"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "PASSAGE PIÉTON ?",
-   "comic_action": "M. Dupont lève la main avec un dessin de passage piéton ; un tampon rouge « CENSURÉ » s'abat dessus.",
-   "expected_result": "Le problème concret est rejeté."
+   "onscreen_text": "« ASSEZ DURÉ »",
+   "comic_action": "Tribune : la maire cubique tape du poing.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n3"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "table",
-    "person",
-    "tribune"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "PRÉSIDENT N°14",
-   "comic_action": "Orbite : les présidents de séance se succèdent sur la même chaise, chacun éjecté par un tampon ; compteur « N°14 ».",
-   "expected_result": "Boucle visible."
+   "onscreen_text": "« JE CENSURE TOUT »",
+   "comic_action": "L'écran affiche la phrase, un tampon rouge par-dessus.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "column",
+    "mairie",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "MOTION UNIQUE",
+   "comic_action": "Entre deux colonnes, un pupitre avec un seul bouton rouge.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "road",
+    "building",
+    "person",
+    "bin"
+   ],
+   "onscreen_text": "BANC : CENSURÉ",
+   "comic_action": "Un banc est emporté par un agent pendant qu'on le réclame.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "shop",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "TOUCHE UNIQUE : SUPPR",
+   "comic_action": "Vitrine : un clavier géant réduit à la touche « SUPPR ». Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
    "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "table",
-    "person",
-    "lamp"
-   ],
-   "onscreen_text": "00:00 – RETOUR CASE 1",
-   "comic_action": "Même cadre qu'au début, horloge à minuit : M. Dupont relève la main avec son dessin, identique.",
-   "expected_result": "Chute : la boucle se referme."
-  },
-  {
-   "id": "s5",
-   "narration_ids": [
-    "n8"
-   ],
-   "camera": "closeup",
-   "set": [
+    "shop",
     "tshirt",
-    "table"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le t-shirt « J'AI UN AVIS. PAS DE MANDAT. » posé sur la chaise vide du président.",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt coupe un micro.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Raconte-nous ta réunion la plus absurde, en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui coupe la parole et appelle ça débattre."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -172,20 +206,28 @@
  "claims": [
   {
    "segment": "n2",
+   "text": "« La plaisanterie a assez duré »",
    "claim_type": "citation_exacte",
-   "text": "Avec sa formule fétiche : « La plaisanterie a assez duré ».",
-   "source_url": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193"
+   "source": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
+   "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
+  },
+  {
+   "segment": "n3",
+   "text": "« Je censure tout »",
+   "claim_type": "citation_exacte",
+   "source": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
+   "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
   }
  ],
  "sources": [
   {
    "url": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
    "date": "2025-10-08",
-   "statut": "fait public (citation rapportée par LCP) ; formule devenue mème",
-   "usage": "Seuls des fragments exacts sont cités (citation_exacte).",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (LCP)",
+   "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Boucle : la censure systématique empêche toute décision, jusqu'au retour exact à la case départ. Écho discret (non cité) de « contourner la volonté ». Mème d'ancrage : « Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage, 08/10/2025). Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « La plaisanterie a assez duré » (octobre 2025) : au conseil de quartier, la seule motion possible est la censure. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

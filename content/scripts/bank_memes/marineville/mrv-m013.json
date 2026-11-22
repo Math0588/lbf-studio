@@ -3,36 +3,36 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m013",
  "format": "A",
- "anchor": "Le chaton apporté à Matignon dans une caisse cachée derrière elle (03/10/2025)",
- "situation": "le bus",
- "ressort": "épisode raté",
+ "anchor": "octobre 2025 : chaton apporté à Matignon dans une caisse ; 2022, la « campagne chaton » : dans le bus, chacun transporte le sien.",
+ "situation": "Bus à chatons",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
  "title_cover": "Bus à chatons",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Marine.",
-  "Quarante caisses à chat dans un seul bus.",
-  "Ici, les chatons sont voyageurs prioritaires.",
-  "Les chats assis, les humains dans les caisses.",
-  "Le bus le plus mignon et le plus absurde de France."
+  "Ici, le bus transporte quarante caisses et zéro passager assis.",
+  "Marineville : mignon, fermé, et on ne voit rien dedans.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : bus à chatons."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ligne 3, terminus : un bus rempli de chats et un chauffeur qui miaule.",
-  "Au terminus, même le chauffeur miaule pour garder son poste.",
-  "Les humains voyagent en caisse, les chats ont la carte senior."
+  "Une politique des transports en caisse : mignonne, fermée, et on ne voit rien dedans.",
+  "Le contrôleur ne vérifie plus les tickets : il caresse.",
+  "Dans le bus, quarante caisses de transport, zéro place assise."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Marine.",
+   "text": "Dans cette ville, tout le monde vote Marine. Le bus miaule.",
    "accent_words": [
-    "Marine"
+    "Le bus miaule"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Et depuis le chaton apporté à Matignon, chacun transporte le sien.",
+   "text": "Depuis le chaton apporté à Matignon, chacun transporte le sien.",
    "accent_words": [
     "chaton"
    ],
@@ -40,42 +40,42 @@
   },
   {
    "id": "n3",
-   "text": "Dans le bus, quarante caisses de transport cachées derrière quarante dos.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
+   "text": "La presse parlait déjà de campagne chaton en 2022.",
+   "accent_words": [
+    "campagne chaton"
+   ],
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le chauffeur rappelle que les animaux sont interdits à bord.",
-   "accent_words": [],
+   "text": "Dans le bus, quarante caisses de transport, zéro place assise.",
+   "accent_words": [
+    "zéro place assise"
+   ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La maire corrige : les chatons deviennent voyageurs prioritaires.",
+   "text": "Le contrôleur ne vérifie plus les tickets : il caresse.",
    "accent_words": [
-    "voyageurs prioritaires"
+    "il caresse"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Les chats ont maintenant les sièges, les humains les caisses.",
+   "text": "Une politique des transports en caisse : mignonne, fermée, et on ne voit rien dedans.",
    "accent_words": [
-    "les caisses"
+    "rien dedans"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Ligne 3, terminus : un bus rempli de chats et un chauffeur qui miaule.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton animal le plus improbable dans un bus, raconte en commentaire.",
-   "accent_words": [],
+   "text": "Envoie ça au pote qui emmène son chat partout pour qu'on l'aime.",
+   "accent_words": [
+    "qu'on l'aime"
+   ],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -83,109 +83,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "bus",
-    "road",
+    "ground",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "CHATON À BORD",
-   "comic_action": "Plongée sur l'arrêt : chaque habitant cache une caisse de transport derrière son dos.",
-   "expected_result": "Le mème réel est lisible.",
-   "new_asset_request": "Caisses de transport pour chat."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur la mairie ; un bus garé, des oreilles de chat aux fenêtres.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
     "bus",
-    "person"
+    "road",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "40 CAISSES CACHÉES",
-   "comic_action": "À travers les vitres du bus, une rangée de dos avec une caisse chacun.",
-   "expected_result": "Comptage visuel."
+   "onscreen_text": "1 PASSAGER = 1 CHATON",
+   "comic_action": "Un bus bondé de caisses de transport.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
-    "bus",
-    "person",
-    "sign"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "ANIMAUX INTERDITS",
-   "comic_action": "Le chauffeur montre l'autocollant ; la maire arrive et colle par-dessus « CHATONS PRIORITAIRES ».",
-   "expected_result": "Épisode raté en cours."
+   "onscreen_text": "CAMPAGNE CHATON (SAISON 2)",
+   "comic_action": "L'écran affiche une affiche de campagne avec un chat.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "street_dolly",
    "set": [
-    "bus",
-    "mascot",
-    "text3d"
+    "road",
+    "building",
+    "person",
+    "bin"
    ],
-   "onscreen_text": "CHATS PRIORITAIRES",
-   "comic_action": "Même cadre : des chats assis sur tous les sièges, les humains recroquevillés dans les caisses.",
-   "expected_result": "Chute visuelle.",
-   "new_asset_request": "Plusieurs chats cubiques."
+   "onscreen_text": "PLACES : 0",
+   "comic_action": "Travelling le long du bus : des habitants debout, caisses sur les sièges.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "tshirt",
-    "bus"
+    "table",
+    "person",
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Un chat assis sur un t-shirt « À DROITE DU CANAPÉ. » au fond du bus.",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "CONTRÔLE : CÂLIN",
+   "comic_action": "Un contrôleur gratte une caisse au lieu de poinçonner un ticket.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "column",
+    "mairie",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "CONTENU : ?",
+   "comic_action": "Entre deux colonnes, une caisse de transport cadenassée. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt promène une caisse vide.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton animal le plus improbable dans un bus, raconte en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui emmène son chat partout pour qu'on l'aime."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 84,
+ "word_count": 77,
  "claims": [
   {
    "segment": "n2",
+   "text": "Depuis le chaton apporté à Matignon, chacun transporte le sien.",
    "claim_type": "fait_public",
-   "text": "Et depuis le chaton apporté à Matignon, chacun transporte le sien.",
-   "source_url": "https://observatornews.ro/extern/marine-le-pen-a-venit-cu-un-pisoi-la-premierul-frantei-ea-a-decis-sal-salveze-633329.html"
+   "source": "https://observatornews.ro/extern/marine-le-pen-a-venit-cu-un-pisoi-la-premierul-frantei-ea-a-decis-sal-salveze-633329.html",
+   "note": "Arrivée à Matignon avec un chaton dans une caisse."
+  },
+  {
+   "segment": "n3",
+   "text": "La presse parlait déjà de campagne chaton en 2022.",
+   "claim_type": "fait_public",
+   "source": "https://thenationalnews.com/world/europe/2022/04/22/who-is-marine-le-pen-the-far-right-candidate-who-has-led-a-kitten-campaign",
+   "note": "« Kitten campaign » : campagne chaton de 2022, ton adouci."
   }
  ],
  "sources": [
   {
    "url": "https://observatornews.ro/extern/marine-le-pen-a-venit-cu-un-pisoi-la-premierul-frantei-ea-a-decis-sal-salveze-633329.html",
    "date": "2025-10-03",
-   "statut": "fait public (dépêche AFP reprise par la presse)",
-   "usage": "Idée seulement : la caisse à chat cachée devient un accessoire municipal.",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "fait (dépêche AFP reprise par la presse)",
+   "note": "Arrivée à Matignon avec un chaton dans une caisse."
+  },
+  {
+   "url": "https://thenationalnews.com/world/europe/2022/04/22/who-is-marine-le-pen-the-far-right-candidate-who-has-led-a-kitten-campaign",
+   "date": "2022-04-22",
+   "consulted": "2026-11-22",
+   "statut": "mème de presse (surnom)",
+   "note": "« Kitten campaign » : campagne chaton de 2022, ton adouci."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Épisode raté : la mairie « corrige » une règle et inverse les rôles humains/chats. Mème d'ancrage : Le chaton apporté à Matignon dans une caisse cachée derrière elle (03/10/2025). Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = octobre 2025 : chaton apporté à Matignon dans une caisse ; 2022, la « campagne chaton » : dans le bus, chacun transporte le sien. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

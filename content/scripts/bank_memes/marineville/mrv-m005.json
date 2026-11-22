@@ -3,81 +3,79 @@
  "city": "marineville",
  "synopsis_id": "gm-mrv-m005",
  "format": "A",
- "anchor": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage, 08/10/2025)",
- "situation": "le stade",
- "ressort": "comptage absurde",
- "title_cover": "47 cartons rouges",
+ "anchor": "« Je censure tout » (octobre 2025) : au stade, l'arbitre censure tout le monde et se proclame champion.",
+ "situation": "Arbitre champion",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "title_cover": "Arbitre champion",
  "hook_variants": [
-  "Au stade, l'arbitre n'a qu'une règle : « Je censure tout ».",
-  "Quarante-sept cartons rouges en une mi-temps.",
-  "Ici, l'arbitre censure même le ballon.",
-  "Zéro à zéro, zéro joueur : le match parfait.",
-  "Dans ce stade, la règle tient en trois mots."
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, l'arbitre siffle tout le monde, puis gagne.",
+  "Marineville : on ne gagne pas le match, on l'annule.",
+  "Les électeurs de Marine vont me détester.",
+  "Bienvenue à Marineville : arbitre champion."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le club annonce fièrement le match le plus discipliné de l'histoire.",
-  "Le terrain est vide, le tableau affiche 47, et le club fête son record.",
-  "Plus personne ne joue, mais tout le monde est très discipliné."
+  "Zéro joueur sur le terrain, et l'arbitre se proclame champion.",
+  "Premier carton rouge : le ballon, trop rond.",
+  "Deuxième : les deux équipes. Troisième : le public."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Au stade, l'arbitre n'a qu'une règle : « Je censure tout ».",
+   "text": "Dans cette ville, tout le monde vote Marine. L'arbitre siffle tout.",
    "accent_words": [
-    "Je censure tout"
+    "siffle tout"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Sa règle d'or depuis 2025 : « Je censure tout ».",
+   "accent_words": [
+    "censure"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n2",
-   "text": "Premier carton rouge : le ballon, jugé trop rond.",
+   "id": "n3",
+   "text": "Une phrase lancée contre le gouvernement, devenue mème.",
+   "accent_words": [
+    "devenue mème"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n4",
+   "text": "Premier carton rouge : le ballon, trop rond.",
    "accent_words": [
     "trop rond"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Deuxième carton : les deux équipes, pour excès d'opposition.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "À la mi-temps, le tableau affiche quarante-sept cartons rouges.",
+   "id": "n5",
+   "text": "Deuxième : les deux équipes. Troisième : le public.",
    "accent_words": [
-    "quarante-sept cartons rouges"
+    "le public"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n5",
-   "text": "Le gardien en prend un pour avoir arrêté un carton.",
-   "accent_words": [],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n6",
-   "text": "Score final : zéro à zéro, zéro joueur, zéro supporter.",
+   "text": "Zéro joueur sur le terrain, et l'arbitre se proclame champion.",
    "accent_words": [
-    "zéro joueur"
+    "champion"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le club annonce fièrement le match le plus discipliné de l'histoire.",
+   "text": "Envoie ça au pote qui siffle tout le monde sauf son équipe.",
    "accent_words": [
-    "le plus discipliné de l'histoire"
+    "son équipe"
    ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton pronostic de cartons rouges pour ton club, en commentaire.",
-   "accent_words": [],
    "claim_type": "fiction_satirique"
   }
  ],
@@ -90,101 +88,146 @@
    "camera": "descend",
    "set": [
     "ground",
-    "screen",
-    "person",
-    "text3d"
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "JE CENSURE TOUT",
-   "comic_action": "Plongée sur le stade, l'écran géant affiche « JE CENSURE TOUT » ; l'arbitre siffle avant le coup d'envoi.",
-   "expected_result": "Mème posé en 1re phrase."
+   "onscreen_text": "MARINEVILLE",
+   "comic_action": "Descente sur le stade municipal ; un sifflet géant sur le toit des tribunes.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
    "camera": "closeup",
    "set": [
-    "person",
-    "text3d"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "CARTON : BALLON",
-   "comic_action": "L'arbitre brandit un carton rouge au ballon, puis aux deux équipes qui quittent le terrain en file.",
-   "expected_result": "Comptage qui démarre."
+   "onscreen_text": "« JE CENSURE TOUT »",
+   "comic_action": "L'écran du stade affiche la phrase en lettres rouges.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n3"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "screen",
-    "person"
+    "ring_light",
+    "tripod_camera",
+    "person",
+    "screen"
    ],
-   "onscreen_text": "47 CARTONS ROUGES",
-   "comic_action": "Orbite autour du tableau d'affichage dont le compteur rouge défile jusqu'à 47 ; le gardien reçoit le sien.",
-   "expected_result": "Le chiffre absurde en étiquette rouge."
+   "onscreen_text": "MÈME : JE CENSURE TOUT",
+   "comic_action": "Ring light : la phrase tourne en boucle en autocollant animé.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "orbit",
    "set": [
-    "screen",
-    "ground"
+    "ground",
+    "banner",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "0 – 0 – 0 JOUEUR",
-   "comic_action": "Retour au plan large : terrain vide, tribunes vides, l'écran affiche « RECORD DE DISCIPLINE ».",
-   "expected_result": "Chute visuelle du vide."
+   "onscreen_text": "CARTON : LE BALLON",
+   "comic_action": "L'arbitre brandit un carton devant le ballon.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "tshirt",
-    "screen"
+    "person",
+    "road",
+    "building",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Un dernier supporter, t-shirt « À DROITE DU CANAPÉ. », brandit un carton rouge à la caméra.",
-   "expected_result": "CTA + produit."
+   "onscreen_text": "PUBLIC : EXPULSÉ",
+   "comic_action": "Les supporters sortent du stade en file indienne.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "column",
+    "mairie",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "CHAMPIONNE PAR CENSURE",
+   "comic_action": "L'arbitre soulève la coupe, seul dans le stade. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt siffle sa propre ombre.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton pronostic de cartons rouges pour ton club, en commentaire."
+  "type": "share",
+  "text": "Envoie ça au pote qui siffle tout le monde sauf son équipe."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 80,
+ "word_count": 69,
  "claims": [
   {
-   "segment": "n1",
+   "segment": "n2",
+   "text": "« Je censure tout »",
    "claim_type": "citation_exacte",
-   "text": "Au stade, l'arbitre n'a qu'une règle : « Je censure tout ».",
-   "source_url": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193"
+   "source": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
+   "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
+  },
+  {
+   "segment": "n3",
+   "text": "Une phrase lancée contre le gouvernement, devenue mème.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
+   "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
   }
  ],
  "sources": [
   {
    "url": "https://lcp.fr/actualites/je-censure-tout-la-plaisanterie-a-assez-dure-lance-marine-le-pen-407193",
    "date": "2025-10-08",
-   "statut": "fait public (citation rapportée par LCP) ; formule devenue mème",
-   "usage": "Seuls des fragments exacts sont cités (citation_exacte).",
-   "consulted": "2026-11-21"
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (LCP)",
+   "note": "« Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Comptage absurde : le compteur de cartons rouges matérialise « Je censure tout » jusqu'au match sans joueurs. Mème d'ancrage : « Je censure tout. Là, maintenant, stop. La plaisanterie a assez duré » (Sommet de l'élevage, 08/10/2025). Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « Je censure tout » (octobre 2025) : au stade, l'arbitre censure tout le monde et se proclame champion. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }
