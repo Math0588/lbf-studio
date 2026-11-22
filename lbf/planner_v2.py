@@ -250,6 +250,10 @@ def plan(script: dict) -> dict:
             stickers.append({"text": label[:28], "shot": shots[-1]["id"] if len(sc["narration_ids"]) == 1
                              else f"{sc['id']}a", "at": 0.25, "x": rnd.choice([520, 560, 600]),
                              "y": rnd.choice([560, 600, 640]), "rot": rnd.choice([-9, -7, 6, 8])})
+    # pas d'étiquette sur le 1er plan (accroche écrite) ni sur le dernier (carte de fin) : lisibilité
+    if shots:
+        first_id, last_id = shots[0]["id"], shots[-1]["id"]
+        stickers = [st for st in stickers if st["shot"] not in (first_id, last_id)]
     # insert produit (muet) puis plan final aérien avec carte de fin
     slogan = TEE_LINES
     sx, sy = SHOP_SPOT

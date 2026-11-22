@@ -108,15 +108,18 @@ def build(ep: dict, timeline: dict, out_path: Path) -> dict:
             ws = txt.split()
             cut = max(range(1, len(ws)), key=lambda i: -abs(len(" ".join(ws[:i])) - len(" ".join(ws[i:]))))
             txt = " ".join(ws[:cut]) + "\\N" + " ".join(ws[cut:])
+        widest = max(text_width(l) for l in txt.split("\\N")) * 64 / 60
+        kh = max(100, min(150, int(100 * 900 / max(1, widest))))   # titre en GROS, borné à la largeur utile
         ev.append((7, "Hook", 0, ho.get("until", 2.4),
-                   "{\\an5\\pos(540,360)\\fscx70\\fscy70\\t(0,120,\\fscx104\\fscy104)\\t(120,200,\\fscx100\\fscy100)}" + txt))
+                   "{\\an5\\pos(540,380)\\fscx%d\\fscy%d\\t(0,120,\\fscx%d\\fscy%d)\\t(120,200,\\fscx%d\\fscy%d)}"
+                   % (kh * 70 // 100, kh * 70 // 100, kh * 104 // 100, kh * 104 // 100, kh, kh) + txt))
         if ho.get("tag"):
             tag = ho["tag"].upper()
             kt = min(70, int(70 * 940 / max(1, text_width(tag) * 64 / 60)))
             ev.append((8, "Hook", 0, ho.get("until", 2.4),
-                       "{\\an5\\pos(540,%d)\\frz3\\fscx%d\\fscy%d}" % (360 + (190 if "\\N" in txt else 130), kt, kt) + tag))
+                       "{\\an5\\pos(540,%d)\\frz3\\fscx%d\\fscy%d}" % (380 + (230 if "\\N" in txt else 160), kt, kt) + tag))
         if ho.get("sub"):
-            y = 360 - (150 if "\\N" in txt else 100)
+            y = 380 - (190 if "\\N" in txt else 130)
             ev.append((7, "PartSub", 0, ho.get("until", 2.4), "{\\an5\\pos(540,%d)}" % y + ho["sub"].upper()))
     pt = ep.get("part_teaser")
     if pt:

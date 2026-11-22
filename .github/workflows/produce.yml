@@ -12,13 +12,16 @@ on:
       slot:
         description: "Décalage dans la file (passages parallèles : 0, 1, 2…)"
         default: "0"
+      batch:
+        description: "Série (permet de relancer une série pendant qu'une autre tourne)"
+        default: "a"
   push:
     branches: [main]
     paths: [".github/workflows/produce.yml"]
 permissions:
   contents: write
 concurrency:
-  group: produce-${{ inputs.slot || '0' }}
+  group: produce-${{ inputs.slot || '0' }}-${{ inputs.batch || 'a' }}
   cancel-in-progress: false
 jobs:
   produce:
