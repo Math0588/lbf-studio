@@ -3,83 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-15",
  "format": "A",
- "title_cover": "La baguette en abonnement",
+ "title_cover": "Baguette sur abonnement",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Macron… même la baguette.",
-  "Dans cette ville, on n'achète plus une baguette. On souscrit à une solution céréalière.",
-  "Ta baguette est en version bêta.",
-  "Starter, Pro ou Unicorn : choisis ta baguette.",
-  "Le boulanger est devenu Chief Crust Officer. Le pain n'a pas suivi."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, la baguette demande ton RIB.",
+  "Macronville : le pain en abonnement, résiliable par recommandé.",
+  "La start-up nation a disrupté la baguette.",
+  "Les macronistes vont s'abonner direct."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le reste arrivera dans une mise à jour.",
-  "Monsieur Paul reçoit une demi-baguette. Étiquette : version bêta, le reste arrivera dans une mise à jour.",
-  "La baguette Unicorn coûte neuf euros. Elle n'existe pas encore, mais elle est valorisée."
+  "Moralité : bosse pour ta baguette. Le costard, ce sera au prochain quinquennat.",
+  "Une baguette, un abonnement, et un conseil : travaille.",
+  "Le costard, c'était l'objectif. La baguette, c'est le budget."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron… même la baguette.",
+   "text": "Dans cette ville, tout le monde vote Macron. Même la boulangère.",
    "accent_words": [
-    "baguette"
+    "boulangère"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "On n'achète plus du pain, on souscrit à une solution céréalière.",
+   "text": "La baguette passe en abonnement : 39 euros par mois, résiliation par courrier.",
    "accent_words": [
-    "céréalière"
+    "abonnement"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Le Croissant Disruptif propose trois offres : Starter, Pro ou Unicorn.",
+   "text": "Trop cher ? Il a la recette : travailler pour « se payer un costard ».",
    "accent_words": [
-    "Unicorn"
+    "costard"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Le Chief Crust Officer, en gilet sans manches, livre vite et améliore ensuite.",
+   "text": "Les croissants ? Réservés aux « premiers de cordée ».",
    "accent_words": [
-    "ensuite"
+    "premiers de cordée"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n5",
-   "text": "C'est la start-up nation, version mie.",
+   "text": "La boulangère proteste ? Qu'elle traverse la rue.",
    "accent_words": [
-    "mie"
+    "traverse la rue"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Monsieur Paul reçoit une demi-baguette, étiquetée version bêta.",
+   "text": "Moralité : bosse pour ta baguette. Le costard, ce sera au prochain quinquennat.",
    "accent_words": [
-    "bêta"
+    "prochain quinquennat"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le reste arrivera dans une mise à jour.",
+   "text": "Envoie ça au pote qui paie déjà trois abonnements inutiles.",
    "accent_words": [
-    "jour"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Écris en commentaire l'anglicisme le plus inutile de ta ville.",
-   "accent_words": [
-    "ville"
+    "abonnements"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,124 +80,169 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "shop",
+    "facade_row",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
+   "expected_result": "Le commerce du jour posé."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
     "shop",
     "sign",
     "person",
-    "facade_set"
+    "text3d"
    ],
-   "onscreen_text": "BAKERY LAB",
-   "comic_action": "Travelling dans l'Old Town Heritage Lab jusqu'à la boulangerie « Le Croissant Disruptif — Bakery Lab », enseigne en capitales fines.",
-   "expected_result": "Le commerce le plus simple du monde est devenu une plateforme."
+   "onscreen_text": "BAGUETTE : 39 €/MOIS",
+   "comic_action": "Gros plan sur la vitrine de la boulangerie : prix géants.",
+   "expected_result": "Le commerce sert de support à la pique."
   },
   {
-   "id": "s2",
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "shop"
+    "shop",
+    "tshirt",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "STARTER · PRO · UNICORN",
-   "comic_action": "Borne d'inscription : trois offres en cartes 3D, l'offre Unicorn scintille. Formulaire « Créer un compte » pour une baguette.",
-   "expected_result": "Jargon d'abonnement appliqué à du pain."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4",
-    "n5"
-   ],
-   "camera": "orbit",
-   "set": [
-    "person",
-    "screen",
-    "shop"
-   ],
-   "onscreen_text": "START-UP NATION, VERSION MIE",
-   "comic_action": "Le boulanger en doudoune sans manches, badge « Chief Crust Officer », présente une roadmap de la baguette sur écran.",
-   "expected_result": "Le discours start-up remplace le savoir-faire."
+   "onscreen_text": "« SE PAYER UN COSTARD »",
+   "comic_action": "Vitrine : un costard étiqueté « TRAVAILLE » ; un habitant compte ses pièces.",
+   "expected_result": "La petite phrase en vitrine."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
    ],
    "camera": "closeup",
-   "set": [
-    "person",
-    "text3d",
-    "sign"
-   ],
-   "onscreen_text": "VERSION BÊTA",
-   "comic_action": "Monsieur Paul reçoit une demi-baguette coupée net, étiquette « Version bêta ». Il la regarde, puis regarde la caméra. Tenir deux secondes.",
-   "expected_result": "Le client paie le prototype."
-  },
-  {
-   "id": "s5",
-   "narration_ids": [
-    "n8"
-   ],
-   "camera": "return",
    "set": [
     "shop",
     "sign",
     "person",
-    "tshirt"
+    "text3d"
    ],
-   "onscreen_text": "TON PIRE ANGLICISME ?",
-   "comic_action": "Plan large de la rue ; une cliente en t-shirt de la collection ressort avec un quart de baguette.",
-   "expected_result": "Appel à commenter, produit visible."
+   "onscreen_text": "CROISSANT PREMIUM",
+   "comic_action": "Deux files à la caisse : « PREMIERS DE CORDÉE » (vide, rapide) et « LES AUTRES » (immense).",
+   "expected_result": "Le surnom devient une signalétique."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
+   ],
+   "onscreen_text": "TRAVERSE LA RUE",
+   "comic_action": "Un habitant traverse le passage piéton ; le panneau « EMPLOI » recule d'un mètre à chaque pas.",
+   "expected_result": "Le mème « traverser la rue » devient une infrastructure."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "shop",
+    "tshirt",
+    "sign",
+    "person"
+   ],
+   "onscreen_text": "COSTARD : QUINQUENNAT SUIVANT",
+   "comic_action": "Vitrine : le costard est mis sous cloche, étiquette « DISPONIBLE EN 2032 ».",
+   "expected_result": "La petite phrase en vitrine."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Écris en commentaire l'anglicisme le plus inutile de ta ville."
+  "type": "share",
+  "text": "Envoie ça au pote qui paie déjà trois abonnements inutiles."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 78,
+ "word_count": 81,
  "claims": [
   {
-   "text": "« start-up nation » : formule du discours de VivaTech (15/06/2017), moquée depuis.",
-   "claim_type": "fait_public",
-   "source": "https://www.elysee.fr/emmanuel-macron/2017/06/15/discours-du-president-de-la-republique-au-salon-vivatech-201"
+   "text": "« se payer un costard »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.letemps.ch/opinions/emmanuel-macron-my-tailor-is-rich",
+   "note": "« La meilleure façon de se payer un costard, c'est de travailler » (Lunel, 2016)."
+  },
+  {
+   "text": "« premiers de cordée »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
+   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »)."
+  },
+  {
+   "text": "La boulangère proteste ? Qu'elle traverse la rue.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements. Détourné dans la ville fictive."
   }
  ],
  "sources": [
   {
-   "url": "https://www.elysee.fr/emmanuel-macron/2017/06/15/discours-du-president-de-la-republique-au-salon-vivatech-201",
-   "date": "2017-06-15",
-   "consulted": "2026-11-21",
-   "statut": "fait public (discours VivaTech, « start-up nation »)",
-   "note": ""
+   "url": "https://www.letemps.ch/opinions/emmanuel-macron-my-tailor-is-rich",
+   "date": "2016",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (fragment)",
+   "note": "« La meilleure façon de se payer un costard, c'est de travailler » (Lunel, 2016)."
   },
   {
-   "url": "https://www.ladn.eu/tech-a-suivre/pourquoi-france-sera-jamais-start-up-nation-digne-nom/",
-   "date": "2020-02-05",
-   "consulted": "2026-11-21",
-   "statut": "opinion (la formule « fait aujourd'hui ricaner »)",
-   "note": ""
+   "url": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
+   "date": "2017",
+   "consulted": "2026-11-22",
+   "statut": "fait + opinion",
+   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »)."
   },
   {
-   "url": "https://www.jean-jaures.org/publication/2027-qui-heritera-des-electeurs-demmanuel-macron/",
-   "date": "2026-05-29",
-   "consulted": "2026-11-21",
-   "statut": "fait (électorat 2022 : environ 62 % de diplômés du supérieur) ; clichés visuels = opinion du compte",
-   "note": "Base du cliché « cadre diplômé » (gilet sans manches, trottinette, LinkedIn, anglicismes). Âge non moqué."
+   "url": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
+   "date": "2018-09-17",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte + mème",
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mécanisme : jargon start-up appliqué au quotidien. Mème vérifié : « start-up nation » (2017) détourné en « start-up nation, version mie ». Aucune enseigne réelle visée. T-shirt du plan final : tee-avis-mandat (« J'AI UN AVIS. PAS DE MANDAT. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « se payer un costard » (2016) retourné contre le prix du quotidien : la baguette en abonnement. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

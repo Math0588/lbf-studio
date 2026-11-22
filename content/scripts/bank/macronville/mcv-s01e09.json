@@ -3,83 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-09",
  "format": "A",
- "title_cover": "La licorne PotHole.io",
+ "title_cover": "Licorne nid-de-poule",
  "hook_variants": [
-  "Ici, on ne rebouche pas un trou : on l'accélère.",
-  "À Macronville, on ne rebouche pas un trou. On l'accélère.",
-  "Ce nid-de-poule vient de lever des fonds.",
-  "Le trou grandit chaque mois. Les investisseurs adorent.",
-  "Bienvenue chez PotHole.io, la première licorne en creux."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, même les nids-de-poule lèvent des fonds.",
+  "Macronville : la seule ville où le trou vaut un milliard.",
+  "Bienvenue dans la start-up nation, rayon bitume.",
+  "Les macronistes vont investir dans ce trou."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Enfin, l'argent des routes va aux nids-de-poule.",
-  "Levée de fonds : tout le budget voirie tombe dans le trou. Enfin, l'argent des routes va aux nids-de-poule.",
-  "Valorisation : un milliard. Profondeur : deux mètres. Les deux montent."
+  "Bilan : un milliardaire de plus, une rue de moins. Start-up nation.",
+  "Une licorne de plus, une rue de moins. Merci la start-up nation.",
+  "Le trou est coté en Bourse. Toujours pas rebouché."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, on ne rebouche pas un trou : on l'accélère.",
+   "text": "Dans cette ville, tout le monde vote Macron. Et pitche.",
    "accent_words": [
-    "accélère"
+    "pitche"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le nid-de-poule entre en incubateur sous le nom PotHole.io.",
+   "text": "Un habitant transforme le nid-de-poule en start-up : PotHole point io.",
    "accent_words": [
-    "PotHole.io"
+    "start-up"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Gonzague pitche en gilet sans manches : il grandit chaque mois, for sure.",
+   "text": "En 2015, il voulait des jeunes qui « aient envie de devenir milliardaires ».",
    "accent_words": [
-    "sure"
+    "milliardaires"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Business model : revendre les données des amortisseurs cassés.",
+   "text": "Levée de fonds : douze millions. Le trou n'est toujours pas rebouché.",
    "accent_words": [
-    "cassés"
+    "pas rebouché"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le maire pose devant, pouce levé, start-up nation.",
+   "text": "Les « premiers de cordée » encaissent. Seule chose qui ruisselle : la flaque.",
    "accent_words": [
-    "nation"
+    "la flaque"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n6",
-   "text": "Levée de fonds : tout le budget voirie tombe dans le trou.",
+   "text": "Bilan : un milliardaire de plus, une rue de moins. Start-up nation.",
    "accent_words": [
-    "trou"
+    "une rue de moins"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Enfin, l'argent des routes va aux nids-de-poule.",
+   "text": "Envoie ça au pote qui lève des fonds pour tout.",
    "accent_words": [
-    "nids-de-poule"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Dis en commentaire si tu investirais dans PotHole.io.",
-   "accent_words": [
-    "PotHole.io"
+    "lève des fonds"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,20 +84,34 @@
    ],
    "camera": "descend",
    "set": [
+    "building",
     "road",
-    "sign",
-    "banner",
-    "building"
+    "person",
+    "car"
    ],
-   "onscreen_text": "POTHOLE.IO",
-   "comic_action": "Descente sur le trou de l'avenue, désormais entouré d'un ruban et d'un panneau-logo « PotHole.io — incubé à Station Nation ».",
-   "expected_result": "Le défaut de voirie est rebaptisé start-up.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente le long d'une tour de bureaux jusqu'au trottoir.",
+   "expected_result": "Le quartier d'affaires posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "building",
+    "banner"
+   ],
+   "onscreen_text": "POTHOLE.IO",
+   "comic_action": "Écran « LEVÉE DE FONDS » ; banderole « START-UP NATION » au-dessus d'un truc qui ne marche pas.",
+   "expected_result": "La formule fait ricaner."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
@@ -114,118 +120,133 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "IT'S GROWING. FOR SURE.",
-   "comic_action": "Gonzague devant un écran géant : courbe de croissance qui suit le diamètre du trou. Le texte 3D « FOR SURE » rebondit à chaque phrase.",
-   "expected_result": "Le jargon de levée de fonds rend désirable une dégradation.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4",
-    "n5"
-   ],
-   "camera": "orbit",
-   "set": [
-    "person",
-    "studio_light",
-    "tripod_camera",
-    "sign",
-    "road"
-   ],
-   "onscreen_text": "PÉPITE DE LA START-UP VILLE",
-   "comic_action": "Le maire sur sa tribune, pouce levé, pose devant le trou sous les projecteurs ; un photographe mitraille.",
-   "expected_result": "La mairie célèbre ce qu'elle devrait réparer.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "« DEVENIR MILLIARDAIRES »",
+   "comic_action": "Tableau de l'école : « OBJECTIF : MILLIARDAIRE » ; les enfants comptent sur leurs doigts.",
+   "expected_result": "La phrase de 2015 en programme scolaire."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
    ],
    "camera": "closeup",
    "set": [
+    "screen",
     "text3d",
-    "road",
-    "sign"
+    "person"
    ],
-   "onscreen_text": "LEVÉE DE FONDS : RÉUSSIE",
-   "comic_action": "Un gros bloc 3D « BUDGET VOIRIE » bascule au bord et tombe entièrement dans le trou. Bruit sourd. Tenir deux secondes.",
-   "expected_result": "Chute littérale : l'argent de la voirie va bien dans les trous.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "LEVÉE : 12 M€",
+   "comic_action": "Gros plan sur un écran géant en ville.",
+   "expected_result": "La pique s'affiche en écran."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
    ],
-   "camera": "return",
+   "camera": "descend",
+   "set": [
+    "building",
+    "fountain",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "RUISSELLEMENT = FLAQUE",
+   "comic_action": "Fontaine dorée au sommet d'une tour : l'eau reste en haut ; en bas, un gobelet vide.",
+   "expected_result": "Le ruissellement, littéral et à sec."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
    "set": [
     "road",
     "sign",
     "person",
-    "tshirt",
-    "banner"
+    "text3d"
    ],
-   "onscreen_text": "TU INVESTIRAIS ?",
-   "comic_action": "Plan large : trou + logo + ruban ; une passante en t-shirt de la collection contourne le trou à pied.",
-   "expected_result": "Appel à voter oui/non en commentaire, produit visible.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "+1 MILLIARDAIRE −1 RUE",
+   "comic_action": "Plongée sur le nid-de-poule au milieu de la route, entouré de rubalise.",
+   "expected_result": "Le trou devient le personnage."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "road",
+    "person",
+    "tshirt",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Dis en commentaire si tu investirais dans PotHole.io."
+  "type": "share",
+  "text": "Envoie ça au pote qui lève des fonds pour tout."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 76,
+ "word_count": 83,
  "claims": [
   {
-   "text": "« for sure » : expression répétée par Emmanuel Macron à Davos (janvier 2026), devenue mème. Reprise ici par un personnage fictif, sans attribution.",
-   "claim_type": "citation_exacte",
-   "source": "https://www.sudradio.fr/sud-radio/for-sure-quand-macron-devient-un-phenomene-viral-sur-les-reseaux-sociaux"
+   "text": "Un habitant transforme le nid-de-poule en start-up : PotHole point io.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.elysee.fr/emmanuel-macron/2017/06/15/discours-du-president-de-la-republique-au-salon-vivatech-201",
+   "note": "« Start-up nation » (VivaTech 2017). Détourné dans la ville fictive."
   },
   {
-   "text": "« start-up nation » : formule du discours de VivaTech (15/06/2017), moquée depuis.",
-   "claim_type": "fait_public",
-   "source": "https://www.elysee.fr/emmanuel-macron/2017/06/15/discours-du-president-de-la-republique-au-salon-vivatech-201"
+   "text": "« aient envie de devenir milliardaires »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.journaldugeek.com/2015/01/07/emmanuel-macron-ces-ll-faut-des-jeunes-francais-qui-aient-envie-de-devenir-milliardaires/",
+   "note": "« Il faut des jeunes Français qui aient envie de devenir milliardaires » (Les Échos, janvier 2015)."
+  },
+  {
+   "text": "« premiers de cordée »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
+   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »)."
+  },
+  {
+   "text": "Bilan : un milliardaire de plus, une rue de moins. Start-up nation.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.elysee.fr/emmanuel-macron/2017/06/15/discours-du-president-de-la-republique-au-salon-vivatech-201",
+   "note": "« Start-up nation » (VivaTech 2017). Détourné dans la ville fictive."
   }
  ],
  "sources": [
   {
-   "url": "https://www.sudradio.fr/sud-radio/for-sure-quand-macron-devient-un-phenomene-viral-sur-les-reseaux-sociaux",
-   "date": "2026-01-29",
-   "consulted": "2026-11-21",
-   "statut": "mème (viralité = fait public rapporté)",
-   "note": "« for sure » répété au Forum de Davos (janvier 2026), remixé sur TikTok, Instagram et X (DJ, parodies)."
-  },
-  {
    "url": "https://www.elysee.fr/emmanuel-macron/2017/06/15/discours-du-president-de-la-republique-au-salon-vivatech-201",
    "date": "2017-06-15",
-   "consulted": "2026-11-21",
-   "statut": "fait public (discours VivaTech, « start-up nation »)",
-   "note": ""
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "« Start-up nation » (VivaTech 2017)."
   },
   {
-   "url": "https://www.ladn.eu/tech-a-suivre/pourquoi-france-sera-jamais-start-up-nation-digne-nom/",
-   "date": "2020-02-05",
-   "consulted": "2026-11-21",
-   "statut": "opinion (la formule « fait aujourd'hui ricaner »)",
-   "note": ""
+   "url": "https://www.journaldugeek.com/2015/01/07/emmanuel-macron-ces-ll-faut-des-jeunes-francais-qui-aient-envie-de-devenir-milliardaires/",
+   "date": "2015-01-07",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte",
+   "note": "« Il faut des jeunes Français qui aient envie de devenir milliardaires » (Les Échos, janvier 2015)."
   },
   {
-   "url": "https://www.jean-jaures.org/publication/2027-qui-heritera-des-electeurs-demmanuel-macron/",
-   "date": "2026-05-29",
-   "consulted": "2026-11-21",
-   "statut": "fait (électorat 2022 : environ 62 % de diplômés du supérieur) ; clichés visuels = opinion du compte",
-   "note": "Base du cliché « cadre diplômé » (gilet sans manches, trottinette, LinkedIn, anglicismes). Âge non moqué."
+   "url": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
+   "date": "2017",
+   "consulted": "2026-11-22",
+   "statut": "fait + opinion",
+   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Arc 2, épisode 2. Mécanisme : vocabulaire start-up appliqué à une dégradation, chute littérale. Mèmes vérifiés : « for sure » (Davos 2026) dit par Gonzague, personnage fictif, et « start-up nation » (2017). Pose mcv-evt-015. Fausse levée de fonds clairement fictive (start-up inventée). T-shirt du plan final : tee-avis-mandat (« J'AI UN AVIS. PAS DE MANDAT. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « des jeunes Français qui aient envie de devenir milliardaires » (2015) : le nid-de-poule devient une licorne, la rue reste trouée. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

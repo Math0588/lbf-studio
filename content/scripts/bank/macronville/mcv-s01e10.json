@@ -3,75 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-10",
  "format": "A",
- "title_cover": "Le bus de la licorne",
+ "title_cover": "Le bus à crédit",
  "hook_variants": [
-  "Le bus 2 ne va plus à la gare, il va voir le trou.",
-  "Le bus 2 ne va plus à la gare. Il va voir le trou.",
-  "Ta ligne de bus a été rachetée par une licorne.",
-  "Ici, le terminus, c'est un nid-de-poule.",
-  "Le bus 2 fait trois tours de rond-point pour honorer une start-up."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, le bus est gratuit. La facture, non.",
+  "Macronville : le bus quoi qu'il en coûte. Il en coûte.",
+  "Le bus le plus cher du monde roule à Macronville.",
+  "Les macronistes vont rater ce bus."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ceux qui attendaient la gare sont classés « rien ».",
-  "Le bus repart vide, en boucle. Première ligne qui ne dessert qu'un concept.",
-  "Les passagers ont raté leur train. Mais ils ont un selfie avec une licorne."
+  "Terminus en mai 2027. La facture, elle, continue sans chauffeur.",
+  "Quoi qu'il en coûte : maintenant, on sait combien.",
+  "Le bus est arrivé. La facture aussi."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Le bus 2 ne va plus à la gare, il va voir le trou.",
+   "text": "Dans cette ville, tout le monde vote Macron. Le bus, lui, ne passe plus.",
    "accent_words": [
-    "trou"
+    "ne passe plus"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "PotHole.io vaut une licorne : arche gonflable, ruban, vigile.",
+   "text": "Le nouveau bus est gratuit. Devise sur la carrosserie : « quoi qu'il en coûte ».",
    "accent_words": [
-    "vigile"
+    "quoi qu'il en coûte"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Le bus fait trois tours de rond-point, puis ralentit devant l'incubateur.",
+   "text": "Il en a coûté : dette publique à 119 % du PIB.",
    "accent_words": [
-    "incubateur"
+    "119 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Nouvel arrêt : Nid-de-poule Campus, tout le monde descend en selfie.",
+   "text": "Du coup, ticket à dix euros. Gratuit et payant, en même temps.",
    "accent_words": [
-    "selfie"
+    "en même temps"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le bus repart vide, en boucle : première ligne qui dessert un concept.",
+   "text": "Le chauffeur démissionne, puis il est renommé quatre jours après.",
    "accent_words": [
-    "concept"
+    "renommé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ceux qui attendaient la gare sont classés « rien ».",
+   "text": "Terminus en mai 2027. La facture, elle, continue sans chauffeur.",
    "accent_words": [
-    "rien"
+    "sans chauffeur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Donne en commentaire le numéro de ta pire ligne de bus.",
+   "text": "Envoie ça au pote qui croit que gratuit, c'est gratuit.",
    "accent_words": [
-    "ligne"
+    "gratuit"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -87,45 +87,44 @@
     "road",
     "bus",
     "sign",
-    "building"
+    "person",
+    "facade_row"
    ],
-   "onscreen_text": "BUS 2 → LE TROU",
-   "comic_action": "Descente sur un arrêt : la girouette du bus passe de « GARE » à « LE TROU ».",
-   "expected_result": "Le service public est détourné vers un objet de prestige.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur l'arrêt de bus ; le bus arrive.",
+   "expected_result": "Le transport du jour posé."
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "arch",
-    "banner",
-    "person",
-    "road"
+    "bus",
+    "road",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "LICORNE : NE PAS ROULER",
-   "comic_action": "Orbite autour du trou désormais coiffé d'une arche gonflable, d'un ruban et d'un vigile.",
-   "expected_result": "Le trou est protégé comme un actif.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "« QUOI QU'IL EN COÛTE »",
+   "comic_action": "Travelling le long du bus ; écran de destination qui défile.",
+   "expected_result": "Le bus porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "roundabout",
-    "bus",
     "building",
-    "sign"
+    "text3d",
+    "screen",
+    "person"
    ],
-   "onscreen_text": "TOUR 3/3",
-   "comic_action": "Le bus enchaîne trois tours de rond-point, puis passe au pas devant la vitrine de l'incubateur couverte de slides.",
-   "expected_result": "Le trajet est rallongé pour la gloire de la start-up."
+   "onscreen_text": "119 % DU PIB",
+   "comic_action": "Compteur géant sur la façade de la tour : les chiffres montent et débordent du bâtiment.",
+   "expected_result": "La dette en compteur municipal."
   },
   {
    "id": "s4",
@@ -134,89 +133,141 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "person",
-    "bus"
+    "traffic_light",
+    "road",
+    "car"
    ],
-   "onscreen_text": "NID-DE-POULE — CAMPUS",
-   "comic_action": "Gros plan sur le nouveau poteau d'arrêt ; les passagers descendent en file et font des selfies au bord du trou.",
-   "expected_result": "Les usagers deviennent des touristes de leur propre problème.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "GRATUIT / 10 €",
+   "comic_action": "Feu allumé rouge et vert en même temps ; les voitures avancent et reculent.",
+   "expected_result": "Le tic devient un feu tricolore."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n5"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "bus",
-    "road",
-    "roundabout"
+    "person",
+    "mairie",
+    "sign"
    ],
-   "onscreen_text": "TERMINUS : UN CONCEPT",
-   "comic_action": "Vue par la vitre : le bus vide repart et reprend le rond-point, en boucle.",
-   "expected_result": "La ligne ne transporte plus personne nulle part."
+   "onscreen_text": "CHAUFFEUR N°2 (LE MÊME)",
+   "comic_action": "Le même adjoint sort de la mairie avec un carton, fait demi-tour, rentre, ressort, rentre.",
+   "expected_result": "Démission et retour en boucle."
   },
   {
    "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "bus",
+    "road",
+    "sign",
+    "person"
+   ],
+   "onscreen_text": "TERMINUS 2027",
+   "comic_action": "Le bus s'arrête au terminus ; une remorque « FACTURE » détachée continue de rouler seule.",
+   "expected_result": "Le bus porte la pique."
+  },
+  {
+   "id": "s7",
    "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
     "road",
-    "bus",
-    "sign",
     "person",
-    "tshirt"
+    "tshirt",
+    "sign"
    ],
-   "onscreen_text": "TA PIRE LIGNE ?",
-   "comic_action": "Plan large de l'arrêt ; une usagère en t-shirt de la collection attend un bus qui passe sans s'arrêter.",
-   "expected_result": "Appel à commenter, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Donne en commentaire le numéro de ta pire ligne de bus."
+  "type": "share",
+  "text": "Envoie ça au pote qui croit que gratuit, c'est gratuit."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 79,
+ "word_count": 84,
  "claims": [
   {
-   "text": "« start-up nation » : formule du discours de VivaTech (15/06/2017), moquée depuis.",
+   "text": "« quoi qu'il en coûte »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.elysee.fr/emmanuel-macron/2020/03/12/adresse-aux-francais",
+   "note": "« Quoi qu'il en coûte » (adresse du 12/03/2020)."
+  },
+  {
+   "text": "Il en a coûté : dette publique à 119 % du PIB.",
    "claim_type": "fait_public",
-   "source": "https://www.elysee.fr/emmanuel-macron/2017/06/15/discours-du-president-de-la-republique-au-salon-vivatech-201"
+   "source": "https://fr.euronews.com/2026/09/29/la-dette-publique-francaise-senvole-a-119-du-pib",
+   "note": "Dette à 119 % du PIB, au-dessus du pic Covid."
+  },
+  {
+   "text": "Du coup, ticket à dix euros. Gratuit et payant, en même temps.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
+   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois. Détourné dans la ville fictive."
+  },
+  {
+   "text": "Le chauffeur démissionne, puis il est renommé quatre jours après.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.parismatch.be/actualites/monde/2025/10/10/france-emmanuel-macron-reconduit-sebastien-lecornu-comme-premier-ministre-LIQZQK4X7JCTTF65GLJQZJ7EME/",
+   "note": "Lecornu démissionne le 06/10/2025, reconduit le 10/10/2025. Détourné dans la ville fictive."
+  },
+  {
+   "text": "Terminus en mai 2027. La facture, elle, continue sans chauffeur.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
+   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027. Détourné dans la ville fictive."
   }
  ],
  "sources": [
   {
-   "url": "https://www.ladn.eu/tech-a-suivre/pourquoi-france-sera-jamais-start-up-nation-digne-nom/",
-   "date": "2020-02-05",
-   "consulted": "2026-11-21",
-   "statut": "opinion (la formule « fait aujourd'hui ricaner »)",
-   "note": ""
+   "url": "https://www.elysee.fr/emmanuel-macron/2020/03/12/adresse-aux-francais",
+   "date": "2020-03-12",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte",
+   "note": "« Quoi qu'il en coûte » (adresse du 12/03/2020)."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
-   "date": "2021-08-11",
-   "consulted": "2026-11-21",
-   "statut": "fait public (florilège vérifié : « pognon de dingue », « Gaulois réfractaires », « gens qui ne sont rien », « poudre de perlimpinpin », « transformation profonde »)",
-   "note": "Fragments courts réutilisés comme vocabulaire de la ville fictive, jamais remis dans une phrase attribuée."
+   "url": "https://fr.euronews.com/2026/09/29/la-dette-publique-francaise-senvole-a-119-du-pib",
+   "date": "2026-09-29",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Dette à 119 % du PIB, au-dessus du pic Covid."
   },
   {
-   "url": "https://www.elysee.fr/emmanuel-macron/2017/06/15/discours-du-president-de-la-republique-au-salon-vivatech-201",
-   "date": "2017-06-15",
-   "consulted": "2026-11-21",
-   "statut": "fait public (« start-up nation », VivaTech)",
-   "note": "Thème seulement, transformé en gag visuel original."
+   "url": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
+   "date": "2017-05-08",
+   "consulted": "2026-11-22",
+   "statut": "fait (comptage presse) + mème",
+   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois."
+  },
+  {
+   "url": "https://www.parismatch.be/actualites/monde/2025/10/10/france-emmanuel-macron-reconduit-sebastien-lecornu-comme-premier-ministre-LIQZQK4X7JCTTF65GLJQZJ7EME/",
+   "date": "2025-10-10",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Lecornu démissionne le 06/10/2025, reconduit le 10/10/2025."
+  },
+  {
+   "url": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait rapporté",
+   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Arc 2, épisode 3. Mécanisme : détour absurde en boucle. Mème vérifié : la « start-up nation » et l'obsession des licornes (objectif de licornes moqué, LADN 2020). Pose mcv-evt-016. Pas de chiffre réel. T-shirt du plan final : tee-gauche-fatigue (« PLUTÔT GAUCHE. TRÈS FATIGUÉ. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « quoi qu'il en coûte » (2020) : le bus gratuit dont la facture continue après le terminus. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

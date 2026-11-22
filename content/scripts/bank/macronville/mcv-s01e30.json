@@ -3,83 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-30",
  "format": "B",
- "title_cover": "La copro qui monte",
+ "title_cover": "Copro dissoute",
  "hook_variants": [
-  "L'ascenseur est en panne : le syndic lance un plan 2030.",
-  "Dans cette copro, l'ascenseur est en panne. Le syndic a lancé un Plan Ascenseur 2030.",
-  "L'ascenseur sera réparé. Dans un seul sens.",
-  "Six heures d'assemblée générale pour un bouton.",
-  "Monsieur Paul est monté. Il ne redescendra pas."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, quand le syndic perd, il dissout la copro.",
+  "Macronville : la réunion de copro qui finit en dissolution.",
+  "Le syndic le plus imprévisible de France.",
+  "Les macronistes vont dissoudre les commentaires."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "On lui tend sa baguette au bout d'une perche, avec un ruban.",
-  "Monsieur Paul est coincé au sixième. On lui tend sa baguette au bout d'une perche. Avec un ruban.",
-  "Le bouton du rez-de-chaussée a été remplacé par une affiche : Croire en soi."
+  "Il voulait clarifier. La copro a clarifié : plus personne ne veut de lui.",
+  "La copro est clarifiée. Le syndic, lui, cherche un appart.",
+  "Une dissolution pour des poubelles. Ambitieux."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "L'ascenseur est en panne : le syndic lance un plan 2030.",
+   "text": "Dans cette ville, tout le monde vote Macron. La copro, plus trop.",
    "accent_words": [
-    "2030"
+    "plus trop"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "L'AG devient un grand débat de six heures, avec post-it.",
+   "text": "Assemblée de copro : le syndic perd un vote sur les poubelles.",
    "accent_words": [
-    "post-it"
+    "perd"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Vote final : réparation dans un seul sens, vers le haut.",
+   "text": "Sa réponse ? Il dissout tout le conseil. Comme en juin 2024.",
    "accent_words": [
-    "haut"
+    "dissout"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Descendre, ce n'est pas une ambition.",
+   "text": "Nouvelle élection : encore moins de voisins derrière lui.",
    "accent_words": [
-    "ambition"
+    "encore moins"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les premiers de cordée habitent au dernier, forcément.",
+   "text": "Depuis, un syndic par trimestre. Matignon : sept Premiers ministres depuis 2017.",
    "accent_words": [
-    "forcément"
+    "sept"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Monsieur Paul est coincé au sixième depuis la rentrée.",
+   "text": "Il voulait clarifier. La copro a clarifié : plus personne ne veut de lui.",
    "accent_words": [
-    "rentrée"
+    "plus personne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "On lui tend sa baguette au bout d'une perche, avec un ruban.",
+   "text": "Envoie ça au pote qui renverse le plateau quand il perd.",
    "accent_words": [
-    "ruban"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton ascenseur est en panne depuis combien de jours ?",
-   "accent_words": [
-    "jours"
+    "renverse le plateau"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -93,12 +85,13 @@
    "camera": "descend",
    "set": [
     "building",
-    "sign",
-    "person"
+    "road",
+    "person",
+    "car"
    ],
-   "onscreen_text": "PLAN ASCENSEUR 2030",
-   "comic_action": "Descente le long d'un immeuble ; à l'entrée, une affiche « Plan Ascenseur 2030 » scotchée sur la porte d'ascenseur.",
-   "expected_result": "La panne devient un plan pluriannuel."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente le long d'une tour de bureaux jusqu'au trottoir.",
+   "expected_result": "Le quartier d'affaires posé."
   },
   {
    "id": "s2",
@@ -108,104 +101,141 @@
    "camera": "orbit",
    "set": [
     "table",
-    "form_stack",
     "person",
-    "sign"
+    "form_stack",
+    "building"
    ],
-   "onscreen_text": "AG : 6 H 00",
-   "comic_action": "Orbite autour d'une table de copropriétaires couverte de post-it ; le syndic en badge « Chief Happiness Officer ».",
-   "expected_result": "Le grand débat transposé à la copro."
+   "onscreen_text": "VOTE PERDU",
+   "comic_action": "Réunion de copro autour d'une table ; pile de procès-verbaux.",
+   "expected_result": "La copro porte la pique."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4",
-    "n5"
+    "n3"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "lift_tribune",
-    "sign",
-    "banner"
+    "mairie",
+    "person",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "↑ SEULEMENT",
-   "comic_action": "Gros plan sur la cabine (plateforme élévatrice) : le bouton « bas » est remplacé par un ruban et l'inscription « Ambition ».",
-   "expected_result": "La verticalité devient un équipement."
+   "onscreen_text": "DISSOLUTION",
+   "comic_action": "Le maire cubique appuie sur un gros bouton : la mairie se dissout en cubes, puis se reconstruit pareil.",
+   "expected_result": "La dissolution pour rien."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "building",
+    "table",
     "person",
-    "banner"
+    "form_stack",
+    "building"
    ],
-   "onscreen_text": "LIVRAISON AU 6E",
-   "comic_action": "Travelling vertical : à la fenêtre du sixième, Monsieur Paul ; d'en bas, un voisin lui tend sa baguette au bout d'une perche, nouée d'un petit ruban. Tenir deux secondes.",
-   "expected_result": "Ceux qui sont montés ne redescendent plus."
+   "onscreen_text": "ENCORE MOINS",
+   "comic_action": "Réunion de copro autour d'une table ; pile de procès-verbaux.",
+   "expected_result": "La copro porte la pique."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "facade_row",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "UN SYNDIC PAR TRIMESTRE",
+   "comic_action": "Une file d'adjoints passe devant la porte de la mairie ; un compteur « 1, 2, 3… 7 » s'allume.",
+   "expected_result": "La valse des Premiers ministres en compteur."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "table",
+    "person",
+    "form_stack",
+    "building"
+   ],
+   "onscreen_text": "CLARIFIÉ",
+   "comic_action": "Tous les copropriétaires se lèvent et sortent ; le syndic reste seul avec la pile de procès-verbaux.",
+   "expected_result": "La copro porte la pique."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "building",
+    "road",
     "person",
     "tshirt",
     "sign"
    ],
-   "onscreen_text": "EN PANNE DEPUIS ?",
-   "comic_action": "Plan large de l'immeuble ; une voisine en t-shirt de la collection monte l'escalier, essoufflée.",
-   "expected_result": "Appel à commenter, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton ascenseur est en panne depuis combien de jours ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui renverse le plateau quand il perd."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 77,
+ "word_count": 82,
  "claims": [
   {
-   "text": "« Jupiter », « jupitérien » : surnom et analyse de la verticalité du pouvoir (presse, 2017-2018).",
+   "text": "Sa réponse ? Il dissout tout le conseil. Comme en juin 2024.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/emmanuel-macron-horizontalite-de-la-conquete-verticalite-du-pouvoir-84425"
+   "source": "https://www.publicsenat.fr/actualites/politique/dissolution-de-lassemblee-nationale-quelles-consequences",
+   "note": "Dissolution annoncée le soir des européennes (09/06/2024)."
+  },
+  {
+   "text": "Depuis, un syndic par trimestre. Matignon : sept Premiers ministres depuis 2017.",
+   "claim_type": "fait_public",
+   "source": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
+  },
+  {
+   "text": "Il voulait clarifier. La copro a clarifié : plus personne ne veut de lui.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/politique/dissolution-de-lassemblee-nationale-quelles-consequences",
+   "note": "Dissolution annoncée le soir des européennes (09/06/2024). Détourné dans la ville fictive."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/emmanuel-macron-horizontalite-de-la-conquete-verticalite-du-pouvoir-84425",
-   "date": "2018-04-05",
-   "consulted": "2026-11-21",
-   "statut": "opinion/analyse (style « jupitérien », verticalité du pouvoir)",
-   "note": ""
+   "url": "https://www.publicsenat.fr/actualites/politique/dissolution-de-lassemblee-nationale-quelles-consequences",
+   "date": "2024-06-10",
+   "consulted": "2026-11-22",
+   "statut": "fait + mème (sidération)",
+   "note": "Dissolution annoncée le soir des européennes (09/06/2024)."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
-   "date": "2019-01-15",
-   "consulted": "2026-11-21",
-   "statut": "fait public (grand débat : près de sept heures, veste tombée) + critique « réexpliquer sa politique »",
-   "note": ""
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
-   "date": "2017",
-   "consulted": "2026-11-21",
-   "statut": "fait public + opinion (« premiers de cordée », ruissellement)",
-   "note": "Thème seulement, transformé en gag visuel original."
+   "url": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "date": "2025-10",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Format B (copro). Mécanisme : verticalité littéralisée. Mème/opinion vérifiée : la verticalité « jupitérienne » et le format grand débat. « Descendre n'est pas une ambition » est une réplique fictive du syndic, non attribuée. T-shirt du plan final : tee-pays-bugue (« LE PAYS BUGUE. MOI AUSSI. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : la dissolution de juin 2024 rejouée en assemblée de copro, avec l'excuse de la « clarification ». Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

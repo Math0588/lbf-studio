@@ -3,83 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-06",
  "format": "A",
- "title_cover": "Le banc inauguré absent",
+ "title_cover": "Révolution au ruban",
  "hook_variants": [
-  "Aujourd'hui, Macronville inaugure son banc : il n'est pas là.",
-  "Aujourd'hui, Macronville inaugure son banc. Il n'est pas là. Ce n'est pas grave.",
-  "Le quartier est bouclé pour inaugurer un rectangle vide.",
-  "Le banc a fait une apparition. Comme une star.",
-  "Ici, le banc est livré et en même temps reparti."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, on inaugure même ce qui n'existe pas.",
+  "Macronville : le ruban le plus cher du monde.",
+  "Le banc invisible de Macronville a coûté une fortune.",
+  "Ici, la révolution tient dans un ruban."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Livré, et en même temps plus là : c'est la transformation profonde.",
-  "Le banc remonte dans le camion et repart. Il est livré, et en même temps il n'est plus là.",
-  "Panneau : banc inauguré. Livraison lors d'une prochaine inauguration."
+  "Facture : 3 595 milliards de dette. Pour un banc invisible, c'est cher.",
+  "Le premier qui s'assoit tombe. Ça, c'est le bilan.",
+  "Dix ans de révolution, un ruban tricolore. Applaudissez."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Aujourd'hui, Macronville inaugure son banc : il n'est pas là.",
+   "text": "Dans cette ville, tout le monde vote Macron. Ruban compris.",
    "accent_words": [
-    "là"
+    "Ruban"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Quartier bouclé, bus déviés, tapis rouge jusqu'à un rectangle vide.",
+   "text": "Le maire inaugure un banc. Problème : il n'y a pas de banc.",
    "accent_words": [
-    "vide"
+    "pas de banc"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Budget de la journée : quarante mille euros pour zéro fesse posée.",
+   "text": "Sur la plaque, gravé : nouveau monde. Le square, lui, date de 1970.",
    "accent_words": [
-    "fesse"
+    "1970"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Fanfare : Ribbon coupe le ruban, un camion livre un banc pour la photo.",
+   "text": "Son livre de 2016 s'appelait Révolution. Dix ans après : un ruban.",
    "accent_words": [
-    "photo"
+    "Révolution"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le maire fait mine de s'asseoir : clic.",
+   "text": "Photo, applaudissements, post LinkedIn : le vide est officiellement lancé.",
    "accent_words": [
-    "clic"
+    "le vide"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le banc remonte dans le camion et repart.",
+   "text": "Facture : 3 595 milliards de dette. Pour un banc invisible, c'est cher.",
    "accent_words": [
-    "repart"
+    "invisible"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Livré, et en même temps plus là : c'est la transformation profonde.",
+   "text": "Envoie ça au pote qui applaudit encore les inaugurations.",
    "accent_words": [
-    "transformation"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Envoie ça à quelqu'un déjà bloqué par une inauguration.",
-   "accent_words": [
-    "inauguration"
+    "applaudit"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -93,133 +85,149 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
+    "mairie",
     "banner",
-    "sign",
-    "person"
+    "person",
+    "car"
    ],
-   "onscreen_text": "INAUGURATION DU BANC",
-   "comic_action": "Descente sur le square pavoisé : rubans partout, tapis (sign au sol) menant à un rectangle vide.",
-   "expected_result": "On inaugure une absence en grande pompe."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
+   "expected_result": "La ville et son camp posés en une seconde."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
    "camera": "street_dolly",
    "set": [
-    "road",
-    "bus",
-    "sign",
     "banner",
-    "car"
+    "person",
+    "sign",
+    "ground"
    ],
-   "onscreen_text": "DÉVIATION : INAUGURATION",
-   "comic_action": "Travelling le long des barrières de rubans ; un bus fait demi-tour devant un panneau « Déviation — inauguration ».",
-   "expected_result": "La cérémonie bloque toute la ville pour rien."
+   "onscreen_text": "INAUGURATION : RIEN",
+   "comic_action": "Le maire cubique coupe un ruban tricolore devant… rien. Applaudissements polis.",
+   "expected_result": "L'inauguration à vide."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4"
+    "n3"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "mascot",
-    "banner",
-    "car",
-    "bench"
+    "sign",
+    "text3d",
+    "road"
    ],
-   "onscreen_text": "LIVRAISON PHOTO",
-   "comic_action": "Ribbon (ciseaux géants) coupe le ruban ; un camion recule et dépose un banc pile dans le rectangle.",
-   "expected_result": "Le banc n'est là que le temps du cliché."
+   "onscreen_text": "NOUVEAU MONDE (1970)",
+   "comic_action": "Gros plan sur un panneau municipal.",
+   "expected_result": "La pique s'affiche en panneau."
   },
   {
    "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "scroll",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "RÉVOLUTION → RUBAN",
+   "comic_action": "Un livre géant « RÉVOLUTION » s'ouvre : il n'en sort qu'un ruban tricolore.",
+   "expected_result": "Le texte interminable."
+  },
+  {
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "closeup",
    "set": [
-    "bench",
-    "tripod_camera",
-    "lift_tribune",
-    "studio_light"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "CLIC.",
-   "comic_action": "La tribune du maire descend juste au-dessus du banc ; la silhouette mime l'assise sans toucher le bois. Flash du photographe.",
-   "expected_result": "Même la pose est un faux-semblant."
-  },
-  {
-   "id": "s5",
-   "narration_ids": [
-    "n6",
-    "n7"
-   ],
-   "camera": "window_pass",
-   "set": [
-    "car",
-    "bench",
-    "road",
-    "sign"
-   ],
-   "onscreen_text": "LIVRÉ. ET REPARTI.",
-   "comic_action": "Le banc remonte dans le camion qui repart ; panneau « Livraison lors d'une prochaine inauguration ».",
-   "expected_result": "Le « en même temps » appliqué à la livraison : livré et absent."
+   "onscreen_text": "LE VIDE EST LANCÉ",
+   "comic_action": "Post LinkedIn géant sur l'écran : « Fier d'annoncer… » ; trois likes.",
+   "expected_result": "La com' remplace le résultat."
   },
   {
    "id": "s6",
    "narration_ids": [
-    "n8"
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "building",
+    "text3d",
+    "screen",
+    "person"
+   ],
+   "onscreen_text": "3 595 MILLIARDS",
+   "comic_action": "Compteur géant sur la façade de la tour : les chiffres montent et débordent du bâtiment.",
+   "expected_result": "La dette en compteur municipal."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "road",
-    "bus",
-    "banner",
+    "mairie",
     "person",
-    "tshirt"
+    "tshirt",
+    "banner"
    ],
-   "onscreen_text": "À ENVOYER À UN BLOQUÉ",
-   "comic_action": "Plan large : le rectangle vide à nouveau, les bus qui tournent autour ; un piéton en t-shirt de la collection attend derrière la barrière.",
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
    "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça à quelqu'un déjà bloqué par une inauguration."
+  "text": "Envoie ça au pote qui applaudit encore les inaugurations."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 83,
+ "word_count": 80,
  "claims": [
   {
-   "text": "« en même temps » : tic de langage public documenté (29 occurrences à Toulon le 18/02/2017).",
+   "text": "Son livre de 2016 s'appelait Révolution. Dix ans après : un ruban.",
    "claim_type": "fait_public",
-   "source": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/"
+   "source": "https://actualitte.com/article/30445/presse/revolution-le-livre-programme-d-emmanuel-macron",
+   "note": "Livre-programme « Révolution » (XO, 24/11/2016)."
+  },
+  {
+   "text": "Facture : 3 595 milliards de dette. Pour un banc invisible, c'est cher.",
+   "claim_type": "fait_public",
+   "source": "https://www.insee.fr/fr/statistiques/9053525",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
   }
  ],
  "sources": [
   {
-   "url": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
-   "date": "2017-05-08",
-   "consulted": "2026-11-21",
-   "statut": "fait public (tic de langage reconnu par l'intéressé)",
-   "note": "« en même temps » : 29 fois au meeting de Toulon (18/02/2017), au moins 216 fois en trois mois."
+   "url": "https://actualitte.com/article/30445/presse/revolution-le-livre-programme-d-emmanuel-macron",
+   "date": "2016-11",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Livre-programme « Révolution » (XO, 24/11/2016)."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
-   "date": "2021-08-11",
-   "consulted": "2026-11-21",
-   "statut": "fait public (florilège vérifié : « pognon de dingue », « Gaulois réfractaires », « gens qui ne sont rien », « poudre de perlimpinpin », « transformation profonde »)",
-   "note": "Fragments courts réutilisés comme vocabulaire de la ville fictive, jamais remis dans une phrase attribuée."
+   "url": "https://www.insee.fr/fr/statistiques/9053525",
+   "date": "2026-09-29",
+   "consulted": "2026-11-22",
+   "statut": "fait public (Insee)",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Arc 1, épisode 4. Mécanisme : promesse vs réalité + objet qui ne vient que pour la photo. Mème : « en même temps » appliqué à une livraison. Pose mcv-evt-012 (banc qui voyage en camion). Fiction évidente (ville inventée, mascotte ciseaux). T-shirt du plan final : tee-pays-bugue (« LE PAYS BUGUE. MOI AUSSI. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : le livre « Révolution » (2016) face à une inauguration de rien ; facture finale = la dette record. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

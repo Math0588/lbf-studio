@@ -3,83 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-24",
  "format": "A",
- "title_cover": "Le discours de mi-temps",
+ "title_cover": "Son mieux",
  "hook_variants": [
-  "Ici, la mi-temps dure quinze minutes, sauf quand le maire explique.",
-  "Ici, la mi-temps dure quinze minutes. Sauf quand le maire doit expliquer.",
-  "Score final : discours un, match zéro.",
-  "La mi-temps la plus longue de l'histoire du foot municipal.",
-  "Il avait promis d'être bref. Le gazon a repoussé."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, le bilan tient en une phrase.",
+  "Macronville : le discours d'adieu le plus court du monde.",
+  "Il a fait de son mieux. On a les reçus.",
+  "Les macronistes vont applaudir ce bilan. Par politesse."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le maire salue le stade vide et annonce une deuxième mi-temps.",
-  "Score final : discours un, match zéro. Le maire salue le stade vide et annonce une deuxième mi-temps.",
-  "Les joueurs ont pris leur retraite pendant la pause. Ils ont fait un très bon discours d'adieu."
+  "Son mieux : 82 % de défiance. Heureusement qu'il n'a pas fait de son pire.",
+  "Son mieux nous a coûté cher. Son pire, on ne le saura jamais.",
+  "Le bilan tient sur un post-it. La dette, sur une façade."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, la mi-temps dure quinze minutes, sauf quand le maire explique.",
+   "text": "Dans cette ville, tout le monde vote Macron. Pour la dernière saison.",
    "accent_words": [
-    "explique"
+    "dernière saison"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La tribune monte au rond central : le maire sera bref.",
+   "text": "Discours de fin de mandat : le maire lit son bilan.",
    "accent_words": [
-    "bref"
+    "bilan"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Chrono : quarante-septième minute, puis deux cent quarantième.",
+   "text": "Ligne un : « j'ai fait de mon mieux ». Ligne deux : vide.",
    "accent_words": [
-    "quarantième"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "Le stade siffle, le maire répond « Hey ! Hey ! ».",
-   "accent_words": [
-    "Hey"
+    "vide"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n5",
-   "text": "Le remix du maire fait plus de vues que le match.",
+   "id": "n4",
+   "text": "Son mieux : 3 595 milliards de dette.",
    "accent_words": [
-    "match"
+    "3 595 milliards"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n5",
+   "text": "Son mieux : sept Premiers ministres.",
+   "accent_words": [
+    "sept"
+   ],
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Score final : discours un, match zéro.",
+   "text": "Son mieux : 82 % de défiance. Heureusement qu'il n'a pas fait de son pire.",
    "accent_words": [
-    "zéro"
+    "son pire"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Le maire salue le stade vide et annonce une deuxième mi-temps.",
+   "text": "Envoie ça au pote qui dit toujours qu'il a fait de son mieux.",
    "accent_words": [
-    "mi-temps"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Le discours le plus long que tu as subi, il durait combien ?",
-   "accent_words": [
-    "combien"
+    "de son mieux"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -93,117 +85,176 @@
    "camera": "descend",
    "set": [
     "ground",
-    "screen",
+    "mairie",
+    "banner",
     "person",
-    "lift_tribune"
+    "car"
    ],
-   "onscreen_text": "MI-TEMPS : 15 MIN",
-   "comic_action": "Descente sur un stade simplifié (pelouse, écran-tableau d'affichage) ; une tribune élévatrice sort du rond central.",
-   "expected_result": "La pause sportive est confisquée par la parole."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
+   "expected_result": "La ville et son camp posés en une seconde."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
+    "n2"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "person",
+    "banner",
+    "studio_light"
+   ],
+   "onscreen_text": "DISCOURS D'ADIEU",
+   "comic_action": "Le maire cubique à la tribune, projecteur, foule clairsemée.",
+   "expected_result": "Le discours porte la pique."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
     "screen",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "47' … 112' … 240'",
-   "comic_action": "Gros plan sur le chrono du tableau qui s'emballe ; les joueurs assis, le gazon pousse autour d'eux.",
-   "expected_result": "Escalade de durée."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4",
-    "n5"
-   ],
-   "camera": "orbit",
-   "set": [
-    "lift_tribune",
-    "person",
-    "studio_light",
-    "screen"
-   ],
-   "onscreen_text": "HEY ! HEY ! (REMIX)",
-   "comic_action": "Orbite autour de la tribune : la foule siffle, le maire (sans visage) lève la main ; l'écran montre un compteur de vues de remix qui dépasse celui du match.",
-   "expected_result": "Le mème viral transposé : le remix du discours vaut plus que le sport."
+   "onscreen_text": "« J'AI FAIT DE MON MIEUX »",
+   "comic_action": "Bulletin scolaire géant sur l'écran : « A FAIT DE SON MIEUX ». Tampon rouge.",
+   "expected_result": "La formule du bilan devient une appréciation de bulletin."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
+   ],
+   "camera": "descend",
+   "set": [
+    "building",
+    "text3d",
+    "screen",
+    "person"
+   ],
+   "onscreen_text": "MIEUX = 3 595 MILLIARDS",
+   "comic_action": "Compteur géant sur la façade de la tour : les chiffres montent et débordent du bâtiment.",
+   "expected_result": "La dette en compteur municipal."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "facade_row",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "MIEUX = 7 PREMIERS MINISTRES",
+   "comic_action": "Une file d'adjoints passe devant la porte de la mairie ; un compteur « 1, 2, 3… 7 » s'allume.",
+   "expected_result": "La valse des Premiers ministres en compteur."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
    ],
    "camera": "closeup",
    "set": [
     "screen",
     "text3d",
-    "lift_tribune"
+    "sign"
    ],
-   "onscreen_text": "DISCOURS 1 – MATCH 0",
-   "comic_action": "Tableau d'affichage final ; plan sur les gradins vides ; la tribune annonce « 2e mi-temps d'explications ». Tenir deux secondes.",
-   "expected_result": "Le discours a gagné contre l'événement qu'il interrompait."
+   "onscreen_text": "MIEUX = 82 % DE DÉFIANCE",
+   "comic_action": "Jauge de confiance municipale : l'aiguille tombe tout en bas, sous l'ancien record.",
+   "expected_result": "Le sondage en jauge."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
-    "n8"
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "ground",
-    "screen",
+    "mairie",
     "person",
-    "tshirt"
+    "tshirt",
+    "banner"
    ],
-   "onscreen_text": "TON PLUS LONG DISCOURS ?",
-   "comic_action": "Plan large du stade vide ; un supporter en t-shirt de la collection dort dans les gradins.",
-   "expected_result": "Appel à commenter, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Le discours le plus long que tu as subi, il durait combien ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui dit toujours qu'il a fait de son mieux."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 84,
+ "word_count": 79,
  "claims": [
   {
-   "text": "« Hey ! Hey ! » : interjection d'Emmanuel Macron à Nairobi (11/05/2026), remixée en tube. Transposée au maire fictif (sans visage).",
+   "text": "« j'ai fait de mon mieux »",
    "claim_type": "citation_exacte",
-   "source": "https://fr.euronews.com/2026/05/13/hey-hey-macron-vient-de-sortir-un-nouveau-tube"
+   "source": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
+   "note": "« Il y a eu parfois des erreurs », « fait de [s]on mieux », dix ans après sa candidature."
   },
   {
-   "text": "Grand débat du 15/01/2019 : près de sept heures d'échange, veste tombée. Transposé au maire fictif.",
+   "text": "Son mieux : 3 595 milliards de dette.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925"
+   "source": "https://www.insee.fr/fr/statistiques/9053525",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
+  },
+  {
+   "text": "Son mieux : sept Premiers ministres.",
+   "claim_type": "fait_public",
+   "source": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
+  },
+  {
+   "text": "Son mieux : 82 % de défiance. Heureusement qu'il n'a pas fait de son pire.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/sondage-82-des-francais-ne-font-pas-confiance-a-emmanuel-macron-qui-bat-le-record-dimpopularite-de-francois-hollande-a-lelysee",
+   "note": "82 % des Français ne lui font pas confiance ; record d'impopularité de Hollande battu."
   }
  ],
  "sources": [
   {
-   "url": "https://fr.euronews.com/2026/05/13/hey-hey-macron-vient-de-sortir-un-nouveau-tube",
-   "date": "2026-05-13",
-   "consulted": "2026-11-21",
-   "statut": "mème (remix musical viral, fait public rapporté)",
-   "note": "« Hey ! Hey ! » lancé pour réclamer le silence à Nairobi (11/05/2026), remixé par un musicien."
+   "url": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
+   "date": "2026-11-17",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (post X)",
+   "note": "« Il y a eu parfois des erreurs », « fait de [s]on mieux », dix ans après sa candidature."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
-   "date": "2019-01-15",
-   "consulted": "2026-11-21",
-   "statut": "fait public (grand débat : près de sept heures, veste tombée) + critique « réexpliquer sa politique »",
-   "note": ""
+   "url": "https://www.insee.fr/fr/statistiques/9053525",
+   "date": "2026-09-29",
+   "consulted": "2026-11-22",
+   "statut": "fait public (Insee)",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
+  },
+  {
+   "url": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "date": "2025-10",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/sondage-82-des-francais-ne-font-pas-confiance-a-emmanuel-macron-qui-bat-le-record-dimpopularite-de-francois-hollande-a-lelysee",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "fait public (sondage Elabe)",
+   "note": "82 % des Français ne lui font pas confiance ; record d'impopularité de Hollande battu."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mécanisme : escalade de durée. Mèmes vérifiés : « Hey ! Hey ! » (Nairobi, 11/05/2026, remixé en tube) et les discours-marathons du grand débat (2019), transposés au maire fictif sans visage. Claim citation_exacte + source pour l'interjection. T-shirt du plan final : tee-pays-bugue (« LE PAYS BUGUE. MOI AUSSI. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « j'ai fait de mon mieux » (bilan sur X, novembre 2026) mis face aux chiffres : dette, sept Premiers ministres, 82 % de défiance. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

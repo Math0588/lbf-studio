@@ -3,83 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-22",
  "format": "A",
- "title_cover": "Le restaurant du ruissellement",
+ "title_cover": "Resto du ruissellement",
  "hook_variants": [
-  "Au restaurant, les plats sont servis par ruissellement.",
-  "Au restaurant de Macronville, les plats sont servis par ruissellement.",
-  "Ici, la cuisine est en haut. Les miettes descendent.",
-  "Le ruissellement marche très bien. Pour l'étage du dessus.",
-  "Une pyramide de tables, une assiette, et beaucoup de patience."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, les miettes ruissellent depuis 2017. Enfin, normalement.",
+  "Macronville : le resto où l'addition descend, pas le dessert.",
+  "Le ruissellement, version restaurant.",
+  "Les macronistes vont commander un ruissellement à point."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Dehors, même la fontaine coule vers le haut.",
-  "Au rez-de-chaussée, Monsieur Paul tend son assiette. Il en tombe une miette, avec un petit panneau : ça ruisselle.",
-  "Le serveur l'assure : il reste beaucoup à manger. En haut."
+  "Les « premiers de cordée » ont mangé. Les autres ont eu l'addition.",
+  "Le ruissellement est arrivé : c'est la note.",
+  "En haut le dessert, en bas la facture."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Au restaurant, les plats sont servis par ruissellement.",
+   "text": "Dans cette ville, tout le monde vote Macron. Au resto, surtout.",
    "accent_words": [
-    "ruissellement"
+    "Au resto"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La cuisine trône au sommet d'une pyramide de tables, côté riches.",
+   "text": "Au resto du ruissellement, les riches dînent au dernier étage.",
    "accent_words": [
-    "riches"
+    "dernier étage"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Menu du sommet : homard, champagne, et deux cents euros offerts.",
+   "text": "Les miettes doivent couler jusqu'en bas. Promis depuis 2017.",
    "accent_words": [
-    "offerts"
+    "Promis"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "À chaque étage, il en reste moins ; le serveur dit : c'est mathématique.",
+   "text": "En bas, on attend toujours. La nappe est sèche.",
    "accent_words": [
-    "mathématique"
+    "sèche"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Au rez-de-chaussée, Monsieur Paul tend son assiette vide.",
+   "text": "L'ISF a sauté en 2018. L'addition des riches, avec.",
    "accent_words": [
-    "vide"
+    "ISF"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Il en tombe une miette, avec un panneau : ça ruisselle.",
+   "text": "Les « premiers de cordée » ont mangé. Les autres ont eu l'addition.",
    "accent_words": [
-    "ruisselle"
+    "l'addition"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
-   "text": "Dehors, même la fontaine coule vers le haut.",
+   "text": "Envoie ça au pote qui attend encore les miettes.",
    "accent_words": [
-    "haut"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Tu manges à quel étage de la pyramide ?",
-   "accent_words": [
-    "pyramide"
+    "miettes"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,129 +84,164 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "table",
-    "column",
+    "shop",
+    "facade_row",
+    "person",
     "sign"
    ],
-   "onscreen_text": "RESTAURANT LE RUISSELLEMENT",
-   "comic_action": "Descente sur une pyramide de tables empilées sur des colonnes, la cuisine tout en haut.",
-   "expected_result": "Métaphore économique littéralisée dès la première image."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
+   "expected_result": "Le commerce du jour posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "table",
-    "column",
-    "person"
+    "building",
+    "fountain",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "SERVICE PAR LE HAUT",
-   "comic_action": "Orbite : les tables du sommet croulent sous les assiettes, quelques restes glissent vers l'étage inférieur.",
-   "expected_result": "On voit le principe… et son rendement."
+   "onscreen_text": "RESTO DU RUISSELLEMENT",
+   "comic_action": "Fontaine dorée au sommet d'une tour : l'eau reste en haut ; en bas, un gobelet vide.",
+   "expected_result": "Le ruissellement, littéral et à sec."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4"
+    "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
     "table",
-    "column",
+    "sign",
     "person",
-    "sign"
+    "fountain"
    ],
-   "onscreen_text": "C'EST MATHÉMATIQUE",
-   "comic_action": "Travelling vertical descendant : les plats rétrécissent étage par étage ; un serveur rassure d'un geste.",
-   "expected_result": "Plus on descend, moins il en reste."
+   "onscreen_text": "MIETTES : EN ATTENTE",
+   "comic_action": "Table de restaurant ; la carte-ardoise affiche les prix.",
+   "expected_result": "Le restaurant porte la pique."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
    "camera": "closeup",
    "set": [
-    "person",
     "table",
-    "sign"
+    "sign",
+    "person",
+    "fountain"
    ],
-   "onscreen_text": "ÇA RUISSELLE",
-   "comic_action": "Au rez-de-chaussée, Monsieur Paul tend son assiette ; une miette tombe, suivie d'un minuscule panneau. Tenir deux secondes.",
-   "expected_result": "La promesse se mesure à la miette."
+   "onscreen_text": "NAPPE SÈCHE",
+   "comic_action": "Table de restaurant ; la carte-ardoise affiche les prix.",
+   "expected_result": "Le restaurant porte la pique."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7"
+    "n5"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "fountain",
-    "building"
+    "building",
+    "sign",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "",
-   "comic_action": "Par la vitrine, la Fontaine du Ruissellement coule vers le haut (continuité de la ville).",
-   "expected_result": "Rappel visuel pour les habitués : ici, même l'eau monte."
+   "onscreen_text": "ISF : RAYÉ",
+   "comic_action": "Panneau « ISF » dévissé de la tour et remplacé par un panneau minuscule « IFI ».",
+   "expected_result": "La suppression devient un changement d'enseigne."
   },
   {
    "id": "s6",
    "narration_ids": [
-    "n8"
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "sign",
+    "person",
+    "fountain"
+   ],
+   "onscreen_text": "L'ADDITION, C'EST POUR TOI",
+   "comic_action": "Le serveur descend l'escalier avec une note interminable et la tend à la table du bas.",
+   "expected_result": "Le restaurant porte la pique."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "building",
-    "table",
-    "person",
+    "shop",
     "tshirt",
-    "fountain"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "TU ES À QUEL ÉTAGE ?",
-   "comic_action": "Plan large ; une cliente du rez-de-chaussée en t-shirt de la collection regarde vers le haut.",
-   "expected_result": "Appel à commenter, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Tu manges à quel étage de la pyramide ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui attend encore les miettes."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 80,
- "claims": [],
+ "word_count": 70,
+ "claims": [
+  {
+   "text": "Au resto du ruissellement, les riches dînent au dernier étage.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
+   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »). Détourné dans la ville fictive."
+  },
+  {
+   "text": "Les miettes doivent couler jusqu'en bas. Promis depuis 2017.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
+   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »). Détourné dans la ville fictive."
+  },
+  {
+   "text": "L'ISF a sauté en 2018. L'addition des riches, avec.",
+   "claim_type": "fait_public",
+   "source": "https://www.vie-publique.fr/en-bref/291443-impot-de-solidarite-sur-la-fortune-isf-le-cout-de-son-remplacement",
+   "note": "ISF supprimé et remplacé par l'IFI (immobilier seul) en 2018 ; origine du surnom « président des riches »."
+  },
+  {
+   "text": "« premiers de cordée »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
+   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »)."
+  }
+ ],
  "sources": [
-  {
-   "url": "https://elabe.fr/wp-content/uploads/2017/10/elabe_les-premiers-de-cordee-1.pdf",
-   "date": "2017-10",
-   "consulted": "2026-11-21",
-   "statut": "opinion/sondage (perception de la métaphore, lien avec le « ruissellement »)",
-   "note": ""
-  },
-  {
-   "url": "https://gulfnews.com/opinion/op-eds/why-macron-is-no-mr-cool-1.2240627",
-   "date": "2018-11-05",
-   "consulted": "2026-11-21",
-   "statut": "opinion (« président des riches » pour ses opposants)",
-   "note": "Thème : la ville sert d'abord le sommet de la pyramide."
-  },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
    "date": "2017",
-   "consulted": "2026-11-21",
-   "statut": "fait public + opinion (« premiers de cordée », ruissellement)",
-   "note": "Thème seulement, transformé en gag visuel original."
+   "consulted": "2026-11-22",
+   "statut": "fait + opinion",
+   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »)."
+  },
+  {
+   "url": "https://www.vie-publique.fr/en-bref/291443-impot-de-solidarite-sur-la-fortune-isf-le-cout-de-son-remplacement",
+   "date": "non relevée",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "ISF supprimé et remplacé par l'IFI (immobilier seul) en 2018 ; origine du surnom « président des riches »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mécanisme : métaphore économique littéralisée. Le « ruissellement » est une notion du débat public (cf. étude Elabe 2017 sur les « premiers de cordée »), pas une citation attribuée. Aucun groupe social visé : la pyramide est abstraite. Continuité : mcv-evt-003. T-shirt du plan final : tee-gauche-fatigue (« PLUTÔT GAUCHE. TRÈS FATIGUÉ. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : le ruissellement promis depuis 2017 et l'ISF supprimé, servis au restaurant : les premiers de cordée mangent, les autres paient. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

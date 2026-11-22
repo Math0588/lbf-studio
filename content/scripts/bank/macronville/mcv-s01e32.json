@@ -5,81 +5,73 @@
  "format": "C",
  "title_cover": "Mise à jour 5.0",
  "hook_variants": [
-  "Mise à jour Macronville 5.0 : la ville redémarre.",
-  "Mise à jour Macronville 5.0 disponible. Redémarrage de la ville en cours.",
-  "Patch notes de ta ville : le bouton Descendre a été supprimé.",
-  "Ta ville a été mise à jour sans ton accord. Comme d'habitude.",
-  "Nouveauté : les habitants mécontents sont réexpliqués automatiquement."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, l'appli se met à jour. Le pays, non.",
+  "Macronville : version 5.0, mêmes bugs depuis 2017.",
+  "La transformation profonde a un bouton mise à jour.",
+  "Les macronistes vont redémarrer pour voir si ça marche."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Progression : quatre-vingt-dix-neuf pour cent, depuis trois ans.",
-  "Progression : 99 %, depuis trois ans. Ne pas éteindre la ville.",
-  "Redémarrage prévu après la prochaine inauguration."
+  "Notes de version : stabilité améliorée. Sept Premiers ministres plus tard.",
+  "Mise à jour terminée. Redémarrage prévu en mai 2027.",
+  "Transformation profonde : le logo a changé."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Mise à jour Macronville 5.0 : la ville redémarre.",
+   "text": "Dans cette ville, tout le monde vote Macron. Version 5.0.",
    "accent_words": [
-    "redémarre"
+    "5.0"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Patch note : bouton Descendre supprimé, car peu utilisé.",
+   "text": "L'appli municipale fait une mise à jour par semaine. Rien ne change.",
    "accent_words": [
-    "utilisé"
+    "Rien ne change"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Tous les feux passent en mode en même temps.",
+   "text": "Nom de code : « transformation profonde ». Son expression la plus fréquente.",
    "accent_words": [
-    "temps"
+    "transformation profonde"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Les mécontents seront réexpliqués automatiquement, for sure.",
+   "text": "Nouveautés : nouveau logo, nouveau Premier ministre, mêmes bugs.",
    "accent_words": [
-    "sure"
+    "mêmes bugs"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Problèmes connus : il y a eu parfois des erreurs.",
+   "text": "Le bouton annuler ? Retiré. Tout passe en 49.3.",
    "accent_words": [
-    "erreurs"
+    "49.3"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Correctif prévu : aucun, mais un discours de quatre heures.",
+   "text": "Notes de version : stabilité améliorée. Sept Premiers ministres plus tard.",
    "accent_words": [
-    "heures"
+    "Sept Premiers ministres"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Progression : quatre-vingt-dix-neuf pour cent, depuis trois ans.",
+   "text": "Envoie ça au pote qui installe les mises à jour sans les lire.",
    "accent_words": [
-    "ans"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Écris en commentaire une ligne de patch note pour ta ville.",
-   "accent_words": [
-    "ville"
+    "sans les lire"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,141 +84,176 @@
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "mairie",
-    "screen",
-    "building"
+    "banner",
+    "person",
+    "car"
    ],
-   "onscreen_text": "MACRONVILLE 5.0",
-   "comic_action": "Descente sur la Tour : l'écran de façade affiche un écran de mise à jour ; les lampadaires clignotent.",
-   "expected_result": "Format parodique (patch notes) appliqué à une ville."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
+   "expected_result": "La ville et son camp posés en une seconde."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
    "camera": "closeup",
    "set": [
-    "lift_tribune",
-    "traffic_light",
-    "screen"
+    "screen",
+    "text3d",
+    "gps"
    ],
-   "onscreen_text": "− BOUTON DESCENDRE",
-   "comic_action": "Le bouton « bas » de l'ascenseur disparaît ; en arrière-plan, le feu passe vert et rouge à la fois.",
-   "expected_result": "Continuité : mcv-evt-002 et mcv-evt-000 deviennent des lignes de code."
+   "onscreen_text": "MISE À JOUR…",
+   "comic_action": "Écran de l'application municipale : chargement, mise à jour, chargement.",
+   "expected_result": "L'appli porte la pique."
   },
   {
    "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "building",
+    "scroll",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "« TRANSFORMATION PROFONDE »",
+   "comic_action": "Un grand rouleau « TRANSFORMATION » se déroule sur la façade ; derrière, rien n'a bougé.",
+   "expected_result": "Le slogan cache l'immobilité."
+  },
+  {
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "closeup",
    "set": [
     "screen",
-    "text3d"
+    "text3d",
+    "gps"
    ],
-   "onscreen_text": "AUTO-RÉEXPLICATION : ON",
-   "comic_action": "Une case à cocher 3D « Réexplication automatique » s'active ; texte « for sure » en sous-titre.",
-   "expected_result": "Le désaccord est traité par un réglage logiciel."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5",
-    "n6"
-   ],
-   "camera": "window_pass",
-   "set": [
-    "screen",
-    "mairie"
-   ],
-   "onscreen_text": "CORRECTIF : AUCUN",
-   "comic_action": "Par la vitre de la Tour, un écran déroule la rubrique « Problèmes connus » ; le curseur s'arrête sur « Correctif prévu : aucun ».",
-   "expected_result": "L'aveu sans conséquence, en langage d'éditeur logiciel."
+   "onscreen_text": "NOUVEAU LOGO, MÊMES BUGS",
+   "comic_action": "Écran de l'application municipale : chargement, mise à jour, chargement.",
+   "expected_result": "L'appli porte la pique."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7"
+    "n5"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
-    "mairie",
-    "screen",
-    "banner"
+    "tribune",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "99 % — NE PAS ÉTEINDRE",
-   "comic_action": "Vue aérienne : barre de progression géante bloquée à 99 % sur la façade ; un calendrier défile trois années. Tenir deux secondes.",
-   "expected_result": "La transformation promise ne finit jamais."
+   "onscreen_text": "ANNULER : INDISPONIBLE",
+   "comic_action": "Le maire cubique tamponne « ADOPTÉ » sur le texte ; les mains levées de la salle restent en l'air, ignorées.",
+   "expected_result": "Le 49.3 en tampon."
   },
   {
    "id": "s6",
    "narration_ids": [
-    "n8"
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "facade_row",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "STABILITÉ AMÉLIORÉE (7 PM)",
+   "comic_action": "Une file d'adjoints passe devant la porte de la mairie ; un compteur « 1, 2, 3… 7 » s'allume.",
+   "expected_result": "La valse des Premiers ministres en compteur."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
     "mairie",
     "person",
     "tshirt",
-    "screen"
+    "banner"
    ],
-   "onscreen_text": "TA LIGNE DE PATCH ?",
-   "comic_action": "Plan large du Parvis ; un habitant en t-shirt de la collection fixe la barre de progression.",
-   "expected_result": "Appel à commenter, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Écris en commentaire une ligne de patch note pour ta ville."
+  "type": "share",
+  "text": "Envoie ça au pote qui installe les mises à jour sans les lire."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 73,
+ "word_count": 77,
  "claims": [
   {
-   "text": "« il y a eu parfois des erreurs » : formule exacte du même message (16/11/2026). Reprise comme ligne de patch note fictive.",
+   "text": "« transformation profonde »",
    "claim_type": "citation_exacte",
-   "source": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant"
+   "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
+   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
   },
   {
-   "text": "« for sure » : expression répétée par Emmanuel Macron à Davos (janvier 2026), devenue mème. Reprise ici par un personnage fictif, sans attribution.",
-   "claim_type": "citation_exacte",
-   "source": "https://www.sudradio.fr/sud-radio/for-sure-quand-macron-devient-un-phenomene-viral-sur-les-reseaux-sociaux"
+   "text": "Nouveautés : nouveau logo, nouveau Premier ministre, mêmes bugs.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
+   "note": "Valse des ministres, affaires courantes, année record. Détourné dans la ville fictive."
   },
   {
-   "text": "« en même temps » : tic de langage public documenté (29 occurrences à Toulon le 18/02/2017).",
+   "text": "Le bouton annuler ? Retiré. Tout passe en 49.3.",
+   "claim_type": "fiction_satirique",
+   "source": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
+   "note": "Réforme des retraites (64 ans) adoptée par 49.3, sans vote des députés. Détourné dans la ville fictive."
+  },
+  {
+   "text": "Notes de version : stabilité améliorée. Sept Premiers ministres plus tard.",
    "claim_type": "fait_public",
-   "source": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/"
+   "source": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
   }
  ],
  "sources": [
   {
-   "url": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
-   "date": "2026-11-17",
-   "consulted": "2026-11-21",
-   "statut": "fait public (message publié sur X le 16/11/2026) + réactions/moqueries",
-   "note": "Formules exactes : « j'ai fait de mon mieux » et « il y a eu parfois des erreurs »."
+   "url": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
+   "date": "2021-08-11",
+   "consulted": "2026-11-22",
+   "statut": "citations exactes vérifiées",
+   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
   },
   {
-   "url": "https://www.sudradio.fr/sud-radio/for-sure-quand-macron-devient-un-phenomene-viral-sur-les-reseaux-sociaux",
-   "date": "2026-01-29",
-   "consulted": "2026-11-21",
-   "statut": "mème (viralité = fait public rapporté)",
-   "note": "« for sure » répété au Forum de Davos (janvier 2026), remixé sur TikTok, Instagram et X (DJ, parodies)."
+   "url": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
+   "date": "2025",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Valse des ministres, affaires courantes, année record."
   },
   {
-   "url": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
-   "date": "2017-05-08",
-   "consulted": "2026-11-21",
-   "statut": "fait public (tic de langage reconnu par l'intéressé)",
-   "note": "« en même temps » : 29 fois au meeting de Toulon (18/02/2017), au moins 216 fois en trois mois."
+   "url": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
+   "date": "2023-03-16",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Réforme des retraites (64 ans) adoptée par 49.3, sans vote des députés."
+  },
+  {
+   "url": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "date": "2025-10",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Format C. Mécanisme : parodie de format (patch notes). Mèmes vérifiés : « il y a eu parfois des erreurs » (16/11/2026, formule exacte, devenue « problème connu »), « for sure » (2026), « en même temps ». Aucune attribution dans la narration ; claims citation_exacte + sources. T-shirt du plan final : tee-gauche-canape (« À GAUCHE DU CANAPÉ. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « transformation profonde », son expression la plus fréquente, en mises à jour qui ne changent rien (49.3, sept Premiers ministres). Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

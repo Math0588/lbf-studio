@@ -3,83 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-12",
  "format": "A",
- "title_cover": "Le voisin qui rebouche",
+ "title_cover": "Ceux qui rebouchent",
  "hook_variants": [
-  "Un maire voisin vient visiter le trou, avec une pelle.",
-  "Un maire voisin est venu visiter le trou. Il a apporté une pelle.",
-  "Dix minutes, un seau, une pelle : le voisin a fait ce que Macronville débat depuis un an.",
-  "Scandale : quelqu'un a réparé quelque chose.",
-  "Le trou a été rebouché. Panique à la mairie."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, ceux qui réparent ne sont rien.",
+  "Macronville : le voisin bosse, le maire coupe le ruban.",
+  "Les gens qui ne sont rien ont rebouché la rue.",
+  "Les macronistes vont s'attribuer cette vidéo."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Il faut, en même temps, réparer et préserver.",
-  "Et juste à côté, Ribbon creuse un nouveau trou. Il faut, en même temps, préserver l'innovation.",
-  "La plaque dit : réforme courageuse. Le voisin, lui, est déjà rentré."
+  "Ceux qui ne sont rien bouchent les trous. Ceux qui réussissent coupent le ruban.",
+  "Le voisin a rebouché. Le maire a posté.",
+  "Le trou est réparé. Le mérite, lui, a traversé la rue."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Un maire voisin vient visiter le trou, avec une pelle.",
+   "text": "Dans cette ville, tout le monde vote Macron. Ou presque.",
    "accent_words": [
-    "pelle"
+    "presque"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Un seau de goudron, deux coups de pelle, dix minutes, il repart.",
+   "text": "Un voisin rebouche le trou lui-même, pelle et seau.",
    "accent_words": [
-    "repart"
+    "lui-même"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Panique à la Tour : PotHole.io fait faillite.",
+   "text": "Pour la mairie, il fait partie des « gens qui ne sont rien ».",
    "accent_words": [
-    "faillite"
+    "ne sont rien"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Une heure après, Macronville inaugure le rebouchage : réforme courageuse.",
+   "text": "Le lendemain, le maire inaugure la rue réparée. Ruban, photo, LinkedIn.",
    "accent_words": [
-    "courageuse"
+    "Ruban"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Plaque, ruban, discours de deux heures sur la transformation profonde.",
+   "text": "Il demande un vrai boulot ? « Je traverse la rue, je vous en trouve ».",
    "accent_words": [
-    "profonde"
+    "traverse la rue"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n6",
-   "text": "Juste à côté, Ribbon creuse un nouveau trou, pour l'innovation.",
+   "text": "Ceux qui ne sont rien bouchent les trous. Ceux qui réussissent coupent le ruban.",
    "accent_words": [
-    "innovation"
+    "coupent le ruban"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Il faut, en même temps, réparer et préserver.",
+   "text": "Envoie ça au pote qui bosse pendant que son chef poste.",
    "accent_words": [
-    "préserver"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Envoie ça à quelqu'un qui attend un rebouchage depuis des années.",
-   "accent_words": [
-    "années"
+    "son chef poste"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -93,131 +85,158 @@
    "camera": "descend",
    "set": [
     "road",
+    "facade_row",
+    "lamp",
     "person",
-    "car",
-    "sign"
+    "car"
    ],
-   "onscreen_text": "VISITE OFFICIELLE",
-   "comic_action": "Descente : une petite voiture se gare près du trou ; une silhouette simple en sort avec une pelle sur l'épaule.",
-   "expected_result": "Le bon sens arrive de l'extérieur.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
+   "expected_result": "Le décor de rue posé."
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
     "road",
-    "person"
+    "sign",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "10 MINUTES. FINI.",
-   "comic_action": "Plan accéléré : le seau, deux coups de pelle, la route est plate. Le voisin repart sans un mot.",
-   "expected_result": "La solution était simple ; seul le spectacle la rendait impossible."
+   "onscreen_text": "RÉPARÉ PAR UN VOISIN",
+   "comic_action": "Un habitant rebouche seul le nid-de-poule, pelle et seau ; personne ne l'aide.",
+   "expected_result": "Le trou devient le personnage."
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "mairie",
-    "screen",
-    "person"
+    "person",
+    "sign",
+    "road",
+    "facade_row"
    ],
-   "onscreen_text": "POTHOLE.IO : 0 €",
-   "comic_action": "Passage devant les vitres de la Tour : Gonzague effondré devant un écran où la courbe chute à zéro.",
-   "expected_result": "La réparation est vécue comme une catastrophe."
+   "onscreen_text": "« GENS QUI NE SONT RIEN »",
+   "comic_action": "Des passants portent une étiquette « RIEN » ; un cortège passe sans les voir.",
+   "expected_result": "La petite phrase devient une étiquette."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
     "banner",
+    "person",
     "sign",
-    "studio_light",
-    "road",
-    "lift_tribune"
+    "ground"
    ],
-   "onscreen_text": "RÉFORME COURAGEUSE",
-   "comic_action": "Le maire descend sur sa tribune et coupe un ruban sur le rebouchage, plaque dorée « Réforme du nid-de-poule » sous les projecteurs.",
-   "expected_result": "La mairie récupère le travail d'un autre."
+   "onscreen_text": "INAUGURATION",
+   "comic_action": "Le maire cubique coupe un ruban tricolore devant… rien. Applaudissements polis.",
+   "expected_result": "L'inauguration à vide."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "mascot",
     "road",
-    "sign"
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "EN MÊME TEMPS : UN TROU",
-   "comic_action": "Juste à côté de la plaque, Ribbon creuse joyeusement un nouveau trou. Tenir deux secondes.",
-   "expected_result": "Le « en même temps » : réparer et recasser pour garder le récit.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "« JE TRAVERSE LA RUE »",
+   "comic_action": "Un habitant traverse le passage piéton ; le panneau « EMPLOI » recule d'un mètre à chaque pas.",
+   "expected_result": "Le mème « traverser la rue » devient une infrastructure."
   },
   {
    "id": "s6",
    "narration_ids": [
-    "n8"
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "banner",
+    "person",
+    "sign",
+    "ground"
+   ],
+   "onscreen_text": "RIEN / RÉUSSITE",
+   "comic_action": "Split : à gauche le voisin couvert de ciment, à droite le maire et ses ciseaux dorés.",
+   "expected_result": "L'inauguration à vide."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
     "road",
-    "banner",
     "person",
     "tshirt",
-    "car"
+    "sign"
    ],
-   "onscreen_text": "À ENVOYER À UN PATIENT",
-   "comic_action": "Plan large : plaque, nouveau trou, voiture du voisin qui s'éloigne ; un passant en t-shirt de la collection.",
-   "expected_result": "Partage ciblé, produit visible.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça à quelqu'un qui attend un rebouchage depuis des années."
+  "text": "Envoie ça au pote qui bosse pendant que son chef poste."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 79,
+ "word_count": 85,
  "claims": [
   {
-   "text": "« en même temps » : tic de langage public documenté (29 occurrences à Toulon le 18/02/2017).",
-   "claim_type": "fait_public",
-   "source": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/"
+   "text": "« gens qui ne sont rien »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
+   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
+  },
+  {
+   "text": "« Je traverse la rue, je vous en trouve »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
+  },
+  {
+   "text": "Ceux qui ne sont rien bouchent les trous. Ceux qui réussissent coupent le ruban.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
+   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde ». Détourné dans la ville fictive."
   }
  ],
  "sources": [
   {
-   "url": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
-   "date": "2017-05-08",
-   "consulted": "2026-11-21",
-   "statut": "fait public (tic de langage reconnu par l'intéressé)",
-   "note": "« en même temps » : 29 fois au meeting de Toulon (18/02/2017), au moins 216 fois en trois mois."
-  },
-  {
    "url": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
    "date": "2021-08-11",
-   "consulted": "2026-11-21",
-   "statut": "fait public (florilège vérifié : « pognon de dingue », « Gaulois réfractaires », « gens qui ne sont rien », « poudre de perlimpinpin », « transformation profonde »)",
-   "note": "Fragments courts réutilisés comme vocabulaire de la ville fictive, jamais remis dans une phrase attribuée."
+   "consulted": "2026-11-22",
+   "statut": "citations exactes vérifiées",
+   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
+  },
+  {
+   "url": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
+   "date": "2018-09-17",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte + mème",
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Clôt l'arc 2. Mécanisme : comparaison avec le bon sens + récupération. Mème vérifié : « en même temps ». Le maire voisin est un personnage générique sans référence réelle. Pose mcv-evt-018. T-shirt du plan final : tee-pays-bugue (« LE PAYS BUGUE. MOI AUSSI. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « les gens qui ne sont rien » (2017) : le voisin rebouche, le maire coupe le ruban. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

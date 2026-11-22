@@ -3,91 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-33",
  "format": "D",
- "title_cover": "Simulateur de maire",
+ "title_cover": "Game over en mai",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Macron… et toi, t'es le maire.",
-  "Tu es maire de Macronville. Mission : régler un problème.",
-  "Le seul jeu où réparer un lampadaire fait perdre.",
-  "Jauge Problèmes réglés : zéro. Jauge Rubans coupés : infinie.",
-  "Choisis ta difficulté : Normal, ou Jupiter."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, la mairie est un jeu vidéo. Et tu as perdu.",
+  "Macronville : le simulateur où le boss final est la dette.",
+  "Dix ans de partie, zéro niveau débloqué.",
+  "Les macronistes vont relancer la partie."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Problème réglé, plus rien à inaugurer.",
-  "Par erreur, tu répares un lampadaire. Game over : problème réglé, plus rien à inaugurer.",
-  "Tu gagnes la partie sans rien réparer. Trophée débloqué : ruban d'or."
+  "Fin de partie en mai 2027. Dix ans en mode solo.",
+  "Game over. La dette, elle, continue en mode infini.",
+  "Crédits de fin : sept Premiers ministres."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron… et toi, t'es le maire.",
+   "text": "Dans cette ville, tout le monde vote Macron. Game over en mai.",
    "accent_words": [
-    "maire"
+    "Game over"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Difficulté : Normal ou Jupiter, et Jupiter est déjà coché.",
+   "text": "Le simulateur de maire est sorti : dix ans de partie, une sauvegarde.",
    "accent_words": [
-    "coché"
+    "une sauvegarde"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Premier choix : réparer le pont, ou consultation sur le pont.",
+   "text": "Niveau un : traverser la rue. Niveau deux : la retraverser.",
    "accent_words": [
-    "pont"
+    "traverser la rue"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le bouton réparer est grisé.",
+   "text": "Bonus caché : dissoudre l'Assemblée, juste pour voir.",
    "accent_words": [
-    "grisé"
+    "juste pour voir"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Chaque choix finit en inauguration, chaque crise en grand débat.",
+   "text": "Boss final : la dette, 3 595 milliards de points de vie.",
    "accent_words": [
-    "débat"
+    "points de vie"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Bonus maître des horloges : tu reportes tout de six mois.",
+   "text": "Fin de partie en mai 2027. Dix ans en mode solo.",
    "accent_words": [
-    "mois"
+    "mode solo"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Par erreur, tu répares un lampadaire : game over.",
+   "text": "Envoie ça au pote qui quitte la partie dès qu'il perd.",
    "accent_words": [
-    "over"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Problème réglé, plus rien à inaugurer.",
-   "accent_words": [
-    "inaugurer"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n9",
-   "text": "Tu tiendrais combien de tours comme maire ?",
-   "accent_words": [
-    "maire"
+    "quitte la partie"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -100,13 +84,15 @@
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "mairie",
-    "screen",
-    "banner"
+    "banner",
+    "person",
+    "car"
    ],
-   "onscreen_text": "SIMULATEUR DE MAIRE",
-   "comic_action": "Descente sur la Tour dont l'écran géant affiche un écran-titre de jeu vidéo, rubans en guise de menu.",
-   "expected_result": "Format jeu : le spectateur devient le maire."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
+   "expected_result": "La ville et son camp posés en une seconde."
   },
   {
    "id": "s2",
@@ -116,123 +102,160 @@
    "camera": "closeup",
    "set": [
     "screen",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "NORMAL · JUPITER ✓",
-   "comic_action": "Menu de difficulté : le curseur tente « Normal », la case « Jupiter » se recoche toute seule.",
-   "expected_result": "La verticalité est le seul mode disponible."
+   "onscreen_text": "SIMULATEUR DE MAIRE",
+   "comic_action": "Gros plan sur un écran géant en ville.",
+   "expected_result": "La pique s'affiche en écran."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d"
+    "road",
+    "sign",
+    "person",
+    "traffic_light"
    ],
-   "onscreen_text": "PROBLÈMES RÉGLÉS : 0",
-   "comic_action": "Interface : trois jauges ; deux boutons, « Réparer » grisé, « Consultation » qui clignote.",
-   "expected_result": "Le jeu est truqué pour ne rien résoudre."
+   "onscreen_text": "NIVEAU 1 : TRAVERSER",
+   "comic_action": "Un habitant traverse le passage piéton ; le panneau « EMPLOI » recule d'un mètre à chaque pas.",
+   "expected_result": "Le mème « traverser la rue » devient une infrastructure."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "arch",
-    "banner",
-    "mascot",
+    "mairie",
+    "person",
+    "text3d",
     "screen"
    ],
-   "onscreen_text": "+1 RUBAN",
-   "comic_action": "Montage rapide : chaque clic fait surgir une arche gonflable et Ribbon qui coupe un ruban ; pop-up « Grand débat — 6 mois ».",
-   "expected_result": "Tout chemin mène à une inauguration."
+   "onscreen_text": "BONUS : DISSOLUTION",
+   "comic_action": "Le maire cubique appuie sur un gros bouton : la mairie se dissout en cubes, puis se reconstruit pareil.",
+   "expected_result": "La dissolution pour rien."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "lamp",
-    "screen"
+    "building",
+    "text3d",
+    "screen",
+    "person"
    ],
-   "onscreen_text": "GAME OVER",
-   "comic_action": "Un lampadaire se rallume par accident ; l'écran devient rouge : « GAME OVER — Problème réglé ». Tenir deux secondes.",
-   "expected_result": "Logique inversée : réussir, c'est perdre."
+   "onscreen_text": "BOSS : 3 595 MILLIARDS PV",
+   "comic_action": "Compteur géant sur la façade de la tour : les chiffres montent et débordent du bâtiment.",
+   "expected_result": "La dette en compteur municipal."
   },
   {
    "id": "s6",
    "narration_ids": [
-    "n9"
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "column",
+    "studio_light",
+    "person"
+   ],
+   "onscreen_text": "MODE SOLO",
+   "comic_action": "Le maire cubique sur une tribune entre deux colonnes, éclair en carton derrière lui ; la foule lève la tête.",
+   "expected_result": "La verticalité en un plan."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
     "mairie",
     "person",
     "tshirt",
-    "screen"
+    "banner"
    ],
-   "onscreen_text": "COMBIEN DE TOURS ?",
-   "comic_action": "Plan large du Parvis ; un joueur en t-shirt de la collection tient une manette devant l'écran.",
-   "expected_result": "Appel à commenter, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Tu tiendrais combien de tours comme maire ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui quitte la partie dès qu'il perd."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 83,
+ "word_count": 78,
  "claims": [
   {
-   "text": "« Jupiter », « jupitérien » : surnom et analyse de la verticalité du pouvoir (presse, 2017-2018).",
+   "text": "Niveau un : traverser la rue. Niveau deux : la retraverser.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements. Détourné dans la ville fictive."
+  },
+  {
+   "text": "Bonus caché : dissoudre l'Assemblée, juste pour voir.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/politique/dissolution-de-lassemblee-nationale-quelles-consequences",
+   "note": "Dissolution annoncée le soir des européennes (09/06/2024). Détourné dans la ville fictive."
+  },
+  {
+   "text": "Boss final : la dette, 3 595 milliards de points de vie.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/emmanuel-macron-horizontalite-de-la-conquete-verticalite-du-pouvoir-84425"
+   "source": "https://www.insee.fr/fr/statistiques/9053525",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
+  },
+  {
+   "text": "Fin de partie en mai 2027. Dix ans en mode solo.",
+   "claim_type": "fait_public",
+   "source": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
+   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/emmanuel-macron-horizontalite-de-la-conquete-verticalite-du-pouvoir-84425",
-   "date": "2018-04-05",
-   "consulted": "2026-11-21",
-   "statut": "opinion/analyse (style « jupitérien », verticalité du pouvoir)",
-   "note": ""
+   "url": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
+   "date": "2018-09-17",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte + mème",
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
-   "date": "2019-01-15",
-   "consulted": "2026-11-21",
-   "statut": "fait public (grand débat : près de sept heures, veste tombée) + critique « réexpliquer sa politique »",
-   "note": ""
+   "url": "https://www.publicsenat.fr/actualites/politique/dissolution-de-lassemblee-nationale-quelles-consequences",
+   "date": "2024-06-10",
+   "consulted": "2026-11-22",
+   "statut": "fait + mème (sidération)",
+   "note": "Dissolution annoncée le soir des européennes (09/06/2024)."
   },
   {
-   "url": "https://www.lequotidiendupharmacien.fr/nom-de-nom",
-   "date": "2020-10-23",
-   "consulted": "2026-11-21",
-   "statut": "mème (surnoms « Jupiter », « maître des horloges »)",
-   "note": "Surnoms portés par le maire fictif."
+   "url": "https://www.insee.fr/fr/statistiques/9053525",
+   "date": "2026-09-29",
+   "consulted": "2026-11-22",
+   "statut": "fait public (Insee)",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
   },
   {
-   "url": "https://www.slate.fr/story/147960/macron-jupiter-mais-quels-dieux-les-autres",
-   "date": "2017-06",
-   "consulted": "2026-11-21",
-   "statut": "opinion / mème (Jupiter)",
-   "note": "Thème seulement, transformé en gag visuel original."
+   "url": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait rapporté",
+   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Format D. Mécanisme : jeu à logique inversée. Mème/opinion vérifiée : le surnom « Jupiter » (presse 2017-2018) devenu niveau de difficulté. Aucune citation, aucune attribution. T-shirt du plan final : tee-avis-mandat (« J'AI UN AVIS. PAS DE MANDAT. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : le simulateur de mandat : traverser la rue, dissoudre pour voir, boss final la dette, dix ans en solo. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

@@ -3,83 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-08",
  "format": "A",
- "title_cover": "Le grand débat du trou",
+ "title_cover": "Grand débat du trou",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Macron… et un trou devient un débat.",
-  "Un nid-de-poule s'ouvre avenue de la Transformation. La mairie organise un grand débat.",
-  "Sept heures de débat au bord d'un trou. Sujet abordé : tout, sauf le trou.",
-  "À Macronville, on ne rebouche pas. On débat autour.",
-  "Ce trou a été creusé par la démocratie participative."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, un nid-de-poule a droit à sept heures de débat.",
+  "Macronville : on ne rebouche pas, on consulte.",
+  "Le trou le plus écouté de France est à Macronville.",
+  "Les macronistes vont vouloir en débattre."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le débat a vraiment creusé le sujet.",
-  "Fin du débat : le trou est trois fois plus large. Le débat a vraiment creusé le sujet.",
-  "Seule mesure concrète : une deuxième séance. Le trou s'y est inscrit."
+  "Le débat continue. Le trou, lui, vient d'être nommé Premier ministre.",
+  "Sept heures de débat plus tard, le trou a pris du galon.",
+  "Le trou n'est pas réparé, mais il a été entendu."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron… et un trou devient un débat.",
+   "text": "Dans cette ville, tout le monde vote Macron. Et tout le monde parle.",
    "accent_words": [
-    "débat"
+    "parle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Avenue de la Transformation, un nid-de-poule s'ouvre.",
+   "text": "Un nid-de-poule apparaît. Le maire lance un grand débat.",
    "accent_words": [
-    "ouvre"
+    "grand débat"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Le maire tombe la veste et répond pendant sept heures.",
+   "text": "Sept heures de micro, veste tombée. Le trou écoute poliment.",
    "accent_words": [
-    "heures"
+    "Sept heures"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Climat, Europe, intelligence artificielle, avenir du croissant.",
+   "text": "Verdict : le trou est réfractaire au changement. Il refuse de bouger.",
    "accent_words": [
-    "croissant"
+    "réfractaire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Personne ne parle du trou ; tout le monde prend des notes autour.",
+   "text": "Budget voté : un « pognon de dingue ». Le trou s'agrandit.",
    "accent_words": [
-    "autour"
+    "s'agrandit"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n6",
-   "text": "Fin du débat : le trou est trois fois plus large.",
+   "text": "Le débat continue. Le trou, lui, vient d'être nommé Premier ministre.",
    "accent_words": [
-    "large"
+    "Premier ministre"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le débat a vraiment creusé le sujet.",
+   "text": "Envoie ça au pote qui organise une réunion pour chaque problème.",
    "accent_words": [
-    "sujet"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton nid-de-poule le plus ancien a quel âge, en années ?",
-   "accent_words": [
-    "années"
+    "réunion"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,125 +80,182 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "road",
+    "facade_row",
+    "lamp",
+    "person",
+    "car"
+   ],
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
+   "expected_result": "Le décor de rue posé."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
     "n2"
    ],
    "camera": "descend",
    "set": [
     "road",
-    "tribune",
-    "lamp",
-    "sign"
+    "sign",
+    "person",
+    "text3d"
    ],
    "onscreen_text": "GRAND DÉBAT DU TROU",
-   "comic_action": "Descente sur l'avenue : un petit nid-de-poule au milieu de la chaussée, une tribune et un panneau « Grand débat » déjà installés à côté.",
-   "expected_result": "La réponse à un trou de dix centimètres est un dispositif national.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
-  },
-  {
-   "id": "s2",
-   "narration_ids": [
-    "n3",
-    "n4"
-   ],
-   "camera": "orbit",
-   "set": [
-    "tribune",
-    "person",
-    "lamp",
-    "screen"
-   ],
-   "onscreen_text": "DÉBAT : 7 H 00",
-   "comic_action": "Le maire (silhouette sans visage) tombe la veste sur la tribune ; un écran affiche les thèmes qui défilent : climat, Europe, IA, croissant. Le chrono avance.",
-   "expected_result": "Il répond à tout, sauf à la question posée.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "comic_action": "Plongée sur le nid-de-poule au milieu de la route, entouré de rubalise.",
+   "expected_result": "Le trou devient le personnage."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5"
+    "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
+    "tribune",
+    "table",
     "person",
-    "form_stack",
-    "road",
-    "lamp"
+    "studio_light"
    ],
-   "onscreen_text": "SUJET : TOUT SAUF ÇA",
-   "comic_action": "Travelling au ras du sol : des dizaines de pieds qui tournent autour du trou, carnets en main, piles de notes qui montent.",
-   "expected_result": "La participation elle-même use la route.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "7 HEURES",
+   "comic_action": "Le maire cubique tombe la veste et parle ; l'horloge fait trois tours ; le public dort.",
+   "expected_result": "Le grand débat sans fin."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
    ],
    "camera": "descend",
    "set": [
     "road",
     "sign",
-    "tribune"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "LE DÉBAT A CREUSÉ",
-   "comic_action": "Vue aérienne : le trou s'élargit par paliers à chaque tour de foule, jusqu'à trois fois sa taille. Tenir deux secondes.",
-   "expected_result": "Littéralisation : « creuser le sujet » au sens propre.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "TROU RÉFRACTAIRE",
+   "comic_action": "Plongée sur le nid-de-poule au milieu de la route, entouré de rubalise.",
+   "expected_result": "Le trou devient le personnage."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "screen",
+    "text3d",
+    "form_stack"
+   ],
+   "onscreen_text": "« POGNON DE DINGUE »",
+   "comic_action": "Guichet des aides : compteur géant qui défile ; la pile de formulaires s'effondre.",
+   "expected_result": "La formule réelle étiquette un guichet absurde."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "facade_row",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "TROU → MATIGNON",
+   "comic_action": "Une écharpe tricolore se pose autour du nid-de-poule ; applaudissements.",
+   "expected_result": "La valse des Premiers ministres en compteur."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
     "road",
-    "lamp",
     "person",
     "tshirt",
     "sign"
    ],
-   "onscreen_text": "TON TROU A QUEL ÂGE ?",
-   "comic_action": "Plan large de l'avenue désertée, le trou élargi ; un habitant en t-shirt de la collection l'enjambe.",
-   "expected_result": "Appel à commenter avec un âge, produit visible.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton nid-de-poule le plus ancien a quel âge, en années ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui organise une réunion pour chaque problème."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 80,
+ "word_count": 78,
  "claims": [
   {
-   "text": "Grand débat du 15/01/2019 : près de sept heures d'échange, veste tombée. Transposé au maire fictif.",
+   "text": "Un nid-de-poule apparaît. Le maire lance un grand débat.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
+   "note": "Grand débat : près de sept heures face aux maires, veste tombée. Détourné dans la ville fictive."
+  },
+  {
+   "text": "Sept heures de micro, veste tombée. Le trou écoute poliment.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925"
+   "source": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
+   "note": "Grand débat : près de sept heures face aux maires, veste tombée."
+  },
+  {
+   "text": "Verdict : le trou est réfractaire au changement. Il refuse de bouger.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
+   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde ». Détourné dans la ville fictive."
+  },
+  {
+   "text": "« pognon de dingue »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
+   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
+  },
+  {
+   "text": "Le débat continue. Le trou, lui, vient d'être nommé Premier ministre.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
+   "note": "Valse des ministres, affaires courantes, année record. Détourné dans la ville fictive."
   }
  ],
  "sources": [
   {
    "url": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
    "date": "2019-01-15",
-   "consulted": "2026-11-21",
-   "statut": "fait public (grand débat : près de sept heures, veste tombée) + critique « réexpliquer sa politique »",
-   "note": ""
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Grand débat : près de sept heures face aux maires, veste tombée."
   },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
    "date": "2021-08-11",
-   "consulted": "2026-11-21",
-   "statut": "fait public (florilège vérifié : « pognon de dingue », « Gaulois réfractaires », « gens qui ne sont rien », « poudre de perlimpinpin », « transformation profonde »)",
-   "note": "Fragments courts réutilisés comme vocabulaire de la ville fictive, jamais remis dans une phrase attribuée."
+   "consulted": "2026-11-22",
+   "statut": "citations exactes vérifiées",
+   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
+   "date": "2025",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Valse des ministres, affaires courantes, année record."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Ouvre l'arc 2. Mécanisme : expression prise au pied de la lettre. Mème vérifié : le marathon du grand débat (près de sept heures, veste tombée, 15/01/2019) transposé au maire fictif, aucune phrase réelle citée. Pose mcv-evt-014. Asset demandé : trou animable. T-shirt du plan final : tee-gauche-canape (« À GAUCHE DU CANAPÉ. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : le grand débat (sept heures, veste tombée) appliqué à un nid-de-poule, qui finit nommé Premier ministre. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

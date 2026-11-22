@@ -3,75 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-07",
  "format": "A",
- "title_cover": "L'étude sur l'assise",
+ "title_cover": "Pas réformable",
  "hook_variants": [
-  "Ici, les habitants s'assoient par terre ; la mairie commande une étude.",
-  "Ici, les habitants s'assoient par terre. La mairie a commandé une étude pour comprendre pourquoi.",
-  "Six mois d'étude pour découvrir que les gens veulent s'asseoir.",
-  "Ici, il n'y a pas de banc. Il y a 1 200 pages sur le banc.",
-  "L'étude la plus chère de la ville conclut qu'il manque un banc."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, même le banc est pas réformable.",
+  "Macronville a commandé une étude de 300 pages sur un banc.",
+  "Bienvenue chez les Gaulois réfractaires.",
+  "Les macronistes vont trouver ça pas réformable."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Monsieur Paul s'assoit dessus : premier banc fonctionnel de la ville.",
-  "Le rapport fait 1 200 pages et a coûté un pognon de dingue. Monsieur Paul s'assoit dessus : premier banc de la ville.",
-  "L'étude a coûté le prix de trois cents bancs. Elle en fait un très bon."
+  "Puis elle est suspendue en 2025. Pas réformable, qui, déjà ?",
+  "La ville n'est pas réformable. La réforme non plus, visiblement.",
+  "Le rapport conclut : refaire un rapport."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, les habitants s'assoient par terre ; la mairie commande une étude.",
+   "text": "Dans cette ville, tout le monde vote Macron. Sans broncher.",
    "accent_words": [
-    "étude"
+    "broncher"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Solène Bilan pose des capteurs et filme les gens au sol, six mois.",
+   "text": "La mairie commande une étude sur l'assise. Trois cents pages, zéro banc.",
    "accent_words": [
-    "mois"
+    "zéro banc"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Conclusion : les habitants expriment un besoin d'assise.",
+   "text": "Conclusion du rapport : la ville n'est « pas réformable ».",
    "accent_words": [
-    "assise"
+    "pas réformable"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Recommandation : créer un comité pour étudier un banc.",
+   "text": "Les habitants ? Classés Gaulois réfractaires, catégorie premium.",
    "accent_words": [
-    "banc"
+    "réfractaires"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le rapport fait mille deux cents pages et a coûté un pognon de dingue.",
+   "text": "Pendant ce temps, sa réforme des retraites passe au 49.3. Sans vote.",
    "accent_words": [
-    "dingue"
+    "Sans vote"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Monsieur Paul s'assoit dessus : premier banc fonctionnel de la ville.",
+   "text": "Puis elle est suspendue en 2025. Pas réformable, qui, déjà ?",
    "accent_words": [
-    "fonctionnel"
+    "qui, déjà"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Dis en commentaire le pire : comité, panneau ou étude.",
+   "text": "Envoie ça au pote qui se fait traiter de Gaulois réfractaire.",
    "accent_words": [
-    "étude"
+    "réfractaire"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,114 +85,175 @@
    "camera": "descend",
    "set": [
     "ground",
-    "tree",
+    "mairie",
+    "banner",
     "person",
-    "sign",
-    "banner"
+    "car"
    ],
-   "onscreen_text": "ASSIS PAR TERRE",
-   "comic_action": "Descente sur le square : des habitants assis sur le trottoir, à côté du panneau SitSmart géant et du rectangle vide.",
-   "expected_result": "Le problème est évident pour tout le monde sauf pour la mairie."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
+   "expected_result": "La ville et son camp posés en une seconde."
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "tripod_camera",
-    "person",
-    "form_stack",
-    "sign"
+    "scroll",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "OBSERVATION : J+180",
-   "comic_action": "Solène Bilan, pile de rapports sous le bras, installe des caméras sur trépied devant les gens assis ; un compteur de jours défile.",
-   "expected_result": "On mesure scientifiquement ce que n'importe qui voit en une seconde."
+   "onscreen_text": "300 PAGES, 0 BANC",
+   "comic_action": "Un parchemin se déroule à n'en plus finir devant l'habitant.",
+   "expected_result": "Le texte interminable."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "sign",
-    "person"
+    "form_stack",
+    "text3d",
+    "table"
    ],
-   "onscreen_text": "BESOIN D'ASSISE CONSTATÉ",
-   "comic_action": "Le panneau SitSmart sert d'écran de projection : slide finale « Les habitants expriment un besoin d'assise ». Applaudissements polis.",
-   "expected_result": "La conclusion est une évidence, la recommandation repousse encore."
+   "onscreen_text": "« PAS RÉFORMABLE »",
+   "comic_action": "Pile de dossiers tamponnés « PAS RÉFORMABLE » ; le tampon s'abat en rythme.",
+   "expected_result": "La petite phrase en tampon."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "form_stack",
+    "bus",
     "person",
-    "tree"
+    "sign",
+    "facade_row"
    ],
-   "onscreen_text": "1 200 PAGES",
-   "comic_action": "Le rapport géant est posé sur le trottoir ; Monsieur Paul s'assoit dessus, soupire d'aise. Orbite lente autour de lui. Tenir deux secondes.",
-   "expected_result": "Le seul banc produit par l'étude, c'est l'étude elle-même."
+   "onscreen_text": "GAULOIS RÉFRACTAIRES",
+   "comic_action": "Bus touristique ; le guide montre du doigt les habitants « réfractaires » qui refusent de bouger.",
+   "expected_result": "La formule devient attraction."
   },
   {
    "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "tribune",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "49.3",
+   "comic_action": "Le maire cubique tamponne « ADOPTÉ » sur le texte ; les mains levées de la salle restent en l'air, ignorées.",
+   "expected_result": "Le 49.3 en tampon."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "sign",
+    "person",
+    "bench",
+    "road"
+   ],
+   "onscreen_text": "SUSPENDUE",
+   "comic_action": "Panneau « RETRAITE : 64 » qu'on repousse d'un mètre, puis qu'on recouvre d'un ruban « SUSPENDU ».",
+   "expected_result": "La réforme en panneau mobile."
+  },
+  {
+   "id": "s7",
    "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "tree",
-    "form_stack",
+    "mairie",
     "person",
-    "sign",
-    "tshirt"
+    "tshirt",
+    "banner"
    ],
-   "onscreen_text": "COMITÉ, PANNEAU OU ÉTUDE ?",
-   "comic_action": "Plan large de fin d'arc : rectangle vide, panneau géant, rapport-banc. Une passante en t-shirt de la collection photographie l'ensemble.",
-   "expected_result": "Vote en commentaire sur le pire épisode de l'arc ; produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Dis en commentaire le pire : comité, panneau ou étude."
+  "type": "share",
+  "text": "Envoie ça au pote qui se fait traiter de Gaulois réfractaire."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 77,
+ "word_count": 75,
  "claims": [
   {
-   "text": "« pognon de dingue » : expression exacte d'Emmanuel Macron (vidéo du 12/06/2018). Réemployée pour le coût d'une étude fictive.",
+   "text": "« pas réformable »",
    "claim_type": "citation_exacte",
-   "source": "https://www.lalibre.be/international/2018/06/13/les-gens-qui-naissent-pauvres-restent-pauvres-lopposition-choquee-par-les-propos-de-macron-sur-les-aides-sociales-NSDXBH3HWBC75GOGLOYPGIROYY/"
+   "source": "https://www.publicsenat.fr/actualites/politique/faineants-pas-reformable-macron-regrette-les-polemiques-77622",
+   "note": "« Pas réformable » (Bucarest, 2017) ; le président regrette les polémiques."
+  },
+  {
+   "text": "Les habitants ? Classés Gaulois réfractaires, catégorie premium.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
+   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde ». Détourné dans la ville fictive."
+  },
+  {
+   "text": "Pendant ce temps, sa réforme des retraites passe au 49.3. Sans vote.",
+   "claim_type": "fait_public",
+   "source": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
+   "note": "Réforme des retraites (64 ans) adoptée par 49.3, sans vote des députés."
+  },
+  {
+   "text": "Puis elle est suspendue en 2025. Pas réformable, qui, déjà ?",
+   "claim_type": "fait_public",
+   "source": "https://www.letemps.ch/monde/la-suspension-de-la-reforme-des-retraites-est-approuvee-par-l-assemblee-nationale-fracturant-la-gauche-au-passage",
+   "note": "Suspension de la réforme des retraites votée à l'Assemblée (255 voix contre 146)."
   }
  ],
  "sources": [
   {
-   "url": "https://www.lalibre.be/international/2018/06/13/les-gens-qui-naissent-pauvres-restent-pauvres-lopposition-choquee-par-les-propos-de-macron-sur-les-aides-sociales-NSDXBH3HWBC75GOGLOYPGIROYY/",
-   "date": "2018-06-13",
-   "consulted": "2026-11-21",
-   "statut": "fait public (vidéo publiée le 12/06/2018) + mème durable",
-   "note": "« On met un pognon de dingue dans les minima sociaux »."
+   "url": "https://www.publicsenat.fr/actualites/politique/faineants-pas-reformable-macron-regrette-les-polemiques-77622",
+   "date": "2017",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (fragment)",
+   "note": "« Pas réformable » (Bucarest, 2017) ; le président regrette les polémiques."
   },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
    "date": "2021-08-11",
-   "consulted": "2026-11-21",
-   "statut": "fait public (florilège vérifié : « pognon de dingue », « Gaulois réfractaires », « gens qui ne sont rien », « poudre de perlimpinpin », « transformation profonde »)",
-   "note": "Fragments courts réutilisés comme vocabulaire de la ville fictive, jamais remis dans une phrase attribuée."
+   "consulted": "2026-11-22",
+   "statut": "citations exactes vérifiées",
+   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
+  },
+  {
+   "url": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
+   "date": "2023-03-16",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Réforme des retraites (64 ans) adoptée par 49.3, sans vote des députés."
+  },
+  {
+   "url": "https://www.letemps.ch/monde/la-suspension-de-la-reforme-des-retraites-est-approuvee-par-l-assemblee-nationale-fracturant-la-gauche-au-passage",
+   "date": "2025-11-12",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Suspension de la réforme des retraites votée à l'Assemblée (255 voix contre 146)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Clôt l'arc 1. Mécanisme : boucle bureaucratique (étude → comité). Mème vérifié : l'expression « pognon de dingue » (vidéo du 12/06/2018) appliquée au coût d'une étude fictive, sans attribution dans la narration (claim citation_exacte + source). Pose mcv-evt-013 (rapport-banc). Aucun chiffre réel inventé : les 1 200 pages relèvent de la fiction. T-shirt du plan final : tee-droite-fatigue (« PLUTÔT DROITE. TRÈS FATIGUÉ. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « pas réformable » (2017) retourné : la réforme des retraites passée au 49.3 puis suspendue. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

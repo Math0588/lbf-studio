@@ -3,75 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-11",
  "format": "A",
- "title_cover": "Le trou classé",
+ "title_cover": "Le plus gros trou",
  "hook_variants": [
-  "Le site le plus visité de Macronville est un trou dans la route.",
-  "Le site le plus visité de Macronville, c'est un trou dans la route.",
-  "Ce nid-de-poule a plus de visiteurs que le musée.",
-  "Visite guidée, boutique, audioguide : bienvenue au trou.",
-  "Ici, on ne rebouche pas le patrimoine."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, le trou est classé. Et il grandit.",
+  "Macronville : 3 595 milliards de trou, et ça continue.",
+  "Le plus gros trou de France n'est pas sur la route.",
+  "Les macronistes vont boucher leurs oreilles. Pas le trou."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Un guide plante un panneau : Assise Premium, douze euros.",
-  "Monsieur Paul s'assoit au bord, jambes dans le trou. Enfin installé. Un guide plante un panneau : Assise Premium, douze euros.",
-  "Le trou reçoit une plaque de monument historique. La route, elle, n'en a jamais eu."
+  "Bilan posté sur X : « j'ai fait de mon mieux ». Le trou confirme.",
+  "Le trou de la route est classé. Celui des comptes, record national.",
+  "Dix ans de mieux possible : 3 595 milliards."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Le site le plus visité de Macronville est un trou dans la route.",
+   "text": "Dans cette ville, tout le monde vote Macron. Le trou aussi.",
    "accent_words": [
-    "route"
+    "Le trou"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Visites guidées, audioguide en anglais : this is a hole, for sure.",
+   "text": "Le nid-de-poule de la grand-rue est classé monument historique.",
    "accent_words": [
-    "sure"
+    "monument historique"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Boutique de mini-trous en résine à vingt-neuf euros.",
+   "text": "Normal : c'est seulement le deuxième plus gros trou de la ville.",
    "accent_words": [
-    "euros"
+    "deuxième"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le maire refuse de reboucher : ça casserait la dynamique.",
+   "text": "Le premier ? 3 595 milliards d'euros. Lui, personne ne le rebouche.",
    "accent_words": [
-    "dynamique"
+    "3 595 milliards"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Monsieur Paul s'assoit au bord, jambes dans le trou, enfin installé.",
+   "text": "Il bat même le record du Covid : 119 % du PIB.",
    "accent_words": [
-    "installé"
+    "record"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Un guide plante un panneau : Assise Premium, douze euros.",
+   "text": "Bilan posté sur X : « j'ai fait de mon mieux ». Le trou confirme.",
    "accent_words": [
-    "euros"
+    "Le trou confirme"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
-   "text": "Balance en commentaire le monument le plus absurde de ta ville.",
+   "text": "Envoie ça au pote qui dit que la dette, c'est pas grave.",
    "accent_words": [
-    "ville"
+    "pas grave"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,117 +85,162 @@
    "camera": "descend",
    "set": [
     "road",
-    "banner",
+    "facade_row",
+    "lamp",
     "person",
-    "sign"
+    "car"
    ],
-   "onscreen_text": "SITE CLASSÉ",
-   "comic_action": "Descente sur l'avenue : une file de visiteurs serpente entre des rubans jusqu'au trou, panneau « Site classé ».",
-   "expected_result": "Le défaut est devenu le monument.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
+   "expected_result": "Le décor de rue posé."
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
+    "road",
     "sign",
     "person",
-    "road"
+    "text3d"
    ],
-   "onscreen_text": "THIS IS A HOLE. FOR SURE.",
-   "comic_action": "Un guide avec parapluie levé montre le trou ; le texte de l'audioguide s'affiche en sous-titre géant.",
-   "expected_result": "Le mème transformé en commentaire touristique solennel.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "TROU CLASSÉ",
+   "comic_action": "Plongée sur le nid-de-poule au milieu de la route, entouré de rubalise.",
+   "expected_result": "Le trou devient le personnage."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "shop",
     "sign",
     "text3d",
-    "person"
+    "road"
    ],
-   "onscreen_text": "SOUVENIRS DU TROU",
-   "comic_action": "Travelling sur la boutique : étagères de mini-trous en résine, texte 3D « I DUG MACRONVILLE ». Le maire, en haut sur sa tribune, fait non de la main à un ouvrier qui tient un seau.",
-   "expected_result": "On protège le problème parce qu'il rapporte de l'image."
+   "onscreen_text": "TROU N°2",
+   "comic_action": "Gros plan sur un panneau municipal.",
+   "expected_result": "La pique s'affiche en panneau."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
+    "n4"
+   ],
+   "camera": "descend",
+   "set": [
+    "building",
+    "text3d",
+    "screen",
+    "person"
+   ],
+   "onscreen_text": "TROU N°1 : 3 595 MILLIARDS",
+   "comic_action": "Compteur géant sur la façade de la tour : les chiffres montent et débordent du bâtiment.",
+   "expected_result": "La dette en compteur municipal."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "sign"
+   ],
+   "onscreen_text": "119 % DU PIB",
+   "comic_action": "Jauge de confiance municipale : l'aiguille tombe tout en bas, sous l'ancien record.",
+   "expected_result": "Le sondage en jauge."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
     "n6"
    ],
    "camera": "closeup",
    "set": [
-    "person",
-    "sign",
-    "road"
+    "screen",
+    "text3d",
+    "mairie"
    ],
-   "onscreen_text": "ASSISE PREMIUM — 12 €",
-   "comic_action": "Monsieur Paul s'assoit enfin, jambes dans le trou. Un guide plante à côté de lui un panneau tarifaire. Tenir deux secondes.",
-   "expected_result": "Continuité de l'arc 1 : le seul siège de la ville est devenu payant.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "« J'AI FAIT DE MON MIEUX »",
+   "comic_action": "Écran géant sur la mairie : la liste « ERREURS » défile… vide. Le curseur clignote.",
+   "expected_result": "Le bilan reconnaît des erreurs sans en nommer aucune."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
     "road",
-    "shop",
     "person",
     "tshirt",
-    "banner"
+    "sign"
    ],
-   "onscreen_text": "TON MONUMENT ABSURDE ?",
-   "comic_action": "Plan large : file de touristes, boutique, trou ; un touriste en t-shirt de la collection.",
-   "expected_result": "Appel à commenter, produit visible.",
-   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Balance en commentaire le monument le plus absurde de ta ville."
+  "type": "share",
+  "text": "Envoie ça au pote qui dit que la dette, c'est pas grave."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 75,
+ "word_count": 83,
  "claims": [
   {
-   "text": "« for sure » : expression répétée par Emmanuel Macron à Davos (janvier 2026), devenue mème. Reprise ici par un personnage fictif, sans attribution.",
+   "text": "Le premier ? 3 595 milliards d'euros. Lui, personne ne le rebouche.",
+   "claim_type": "fait_public",
+   "source": "https://www.insee.fr/fr/statistiques/9053525",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
+  },
+  {
+   "text": "Il bat même le record du Covid : 119 % du PIB.",
+   "claim_type": "fait_public",
+   "source": "https://fr.euronews.com/2026/09/29/la-dette-publique-francaise-senvole-a-119-du-pib",
+   "note": "Dette à 119 % du PIB, au-dessus du pic Covid."
+  },
+  {
+   "text": "« j'ai fait de mon mieux »",
    "claim_type": "citation_exacte",
-   "source": "https://www.sudradio.fr/sud-radio/for-sure-quand-macron-devient-un-phenomene-viral-sur-les-reseaux-sociaux"
+   "source": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
+   "note": "« Il y a eu parfois des erreurs », « fait de [s]on mieux », dix ans après sa candidature."
   }
  ],
  "sources": [
   {
-   "url": "https://www.sudradio.fr/sud-radio/for-sure-quand-macron-devient-un-phenomene-viral-sur-les-reseaux-sociaux",
-   "date": "2026-01-29",
-   "consulted": "2026-11-21",
-   "statut": "mème (viralité = fait public rapporté)",
-   "note": "« for sure » répété au Forum de Davos (janvier 2026), remixé sur TikTok, Instagram et X (DJ, parodies)."
+   "url": "https://www.insee.fr/fr/statistiques/9053525",
+   "date": "2026-09-29",
+   "consulted": "2026-11-22",
+   "statut": "fait public (Insee)",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
   },
   {
-   "url": "https://dailydot.com/foshur-memes-macrons-davos-speech-for-sure",
-   "date": "2026-01-23",
-   "consulted": "2026-11-21",
-   "statut": "mème (« foshur » plaqué sur des situations du quotidien)",
-   "note": "Même mécanique : la formule colle à un objet du quotidien. Lunettes de Davos écartées (santé)."
+   "url": "https://fr.euronews.com/2026/09/29/la-dette-publique-francaise-senvole-a-119-du-pib",
+   "date": "2026-09-29",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Dette à 119 % du PIB, au-dessus du pic Covid."
+  },
+  {
+   "url": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
+   "date": "2026-11-17",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (post X)",
+   "note": "« Il y a eu parfois des erreurs », « fait de [s]on mieux », dix ans après sa candidature."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Arc 2, épisode 4. Mécanisme : inversion de valeur (le défaut devient patrimoine). Mème vérifié : « for sure » transposé en audioguide fictif. Crossover arc 1 : Monsieur Paul trouve enfin un siège, payant. Pose mcv-evt-017. T-shirt du plan final : tee-droite-canape (« À DROITE DU CANAPÉ. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : la dette publique record (3 595,5 milliards, 119 % du PIB) comme vrai trou de la ville, face à « j'ai fait de mon mieux ». Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

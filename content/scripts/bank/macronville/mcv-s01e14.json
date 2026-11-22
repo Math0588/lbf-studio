@@ -3,83 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-14",
  "format": "A",
- "title_cover": "Le guichet dématérialisé",
+ "title_cover": "Guichet zéro humain",
  "hook_variants": [
-  "Ici, tout est cent pour cent en ligne, sauf pour s'inscrire.",
-  "Ici, tout est 100 % en ligne. Pour s'inscrire en ligne, il faut venir au guichet.",
-  "Le guichet t'envoie en ligne. Le site t'envoie au guichet.",
-  "Ici, la simplification administrative a un guichet. Fermé.",
-  "Deux panneaux se renvoient les habitants depuis trois ans."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, le guichet est devenu une appli. Et l'appli t'insulte.",
+  "Macronville : la démarche en ligne qui te traite d'illettré.",
+  "Bienvenue au guichet zéro humain.",
+  "Les macronistes vont trouver ça très intuitif."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "L'écran répond : en cas de difficulté, passez au guichet.",
-  "Le dernier ferme : passez en ligne. L'écran d'en face répond : en cas de difficulté, passez au guichet.",
-  "Le guichet et le site se regardent depuis trois ans. Ils ne se sont jamais parlé."
+  "Seul guichet ouvert : celui des « premiers de cordée ». Coupe-file.",
+  "Le guichet humain existe encore. Réservé aux premiers de cordée.",
+  "Mot de passe oublié ? Traverse la rue."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, tout est cent pour cent en ligne, sauf pour s'inscrire.",
+   "text": "Dans cette ville, tout le monde vote Macron. En ligne, obligatoirement.",
    "accent_words": [
-    "inscrire"
+    "En ligne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Pour ça, il faut venir au guichet.",
+   "text": "Le guichet de la mairie a fermé. Tout passe par une appli.",
    "accent_words": [
-    "guichet"
+    "appli"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Le guichet donne un code ; la plateforme réclame un justificatif.",
+   "text": "L'appli plante, le mot de passe expire, et tout est en anglais.",
    "accent_words": [
-    "justificatif"
+    "en anglais"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "À retirer, évidemment, au guichet.",
+   "text": "Tu galères ? Il a déjà un mot pour toi : « illettrées ».",
    "accent_words": [
-    "guichet"
+    "illettrées"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n5",
-   "text": "La file fait le tour de la Tour : simplification, on ferme un guichet.",
+   "text": "Tu protestes ? Réfractaire au numérique. Ticket suivant.",
    "accent_words": [
-    "guichet"
+    "Réfractaire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le dernier ferme : passez en ligne.",
+   "text": "Seul guichet ouvert : celui des « premiers de cordée ». Coupe-file.",
    "accent_words": [
-    "ligne"
+    "Coupe-file"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
-   "text": "L'écran répond : en cas de difficulté, passez au guichet.",
+   "text": "Envoie ça au pote qui a perdu trois heures sur un site public.",
    "accent_words": [
-    "guichet"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ta pire démarche en ligne, raconte-la en une phrase.",
-   "accent_words": [
-    "phrase"
+    "trois heures"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,118 +80,168 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "mairie",
-    "screen",
-    "sign",
-    "person"
+    "banner",
+    "person",
+    "car"
    ],
-   "onscreen_text": "100 % EN LIGNE",
-   "comic_action": "Descente sur la Tour de la Pédagogie : écran géant « 100 % en ligne » en façade et, au pied, une file devant un guichet.",
-   "expected_result": "La contradiction est visible dès la première image."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
+   "expected_result": "La ville et son camp posés en une seconde."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "gps"
+   ],
+   "onscreen_text": "GUICHET → APPLI",
+   "comic_action": "Écran de l'application municipale : chargement, mise à jour, chargement.",
+   "expected_result": "L'appli porte la pique."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "form_stack",
+    "person"
+   ],
+   "onscreen_text": "ERROR 404",
+   "comic_action": "Écran de démarche en ligne illisible ; message d'erreur ; l'habitant se gratte la tête.",
+   "expected_result": "Le mépris en interface."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
     "table",
     "screen",
     "form_stack",
     "person"
    ],
-   "onscreen_text": "CODE → JUSTIF → GUICHET",
-   "comic_action": "Un habitant passe du guichet (table) à une borne-écran et revient au guichet, en boucle accélérée, avec une pile de papiers qui grossit.",
-   "expected_result": "Boucle récursive : chaque canal renvoie à l'autre."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n5"
-   ],
-   "camera": "descend",
-   "set": [
-    "mairie",
-    "person",
-    "sign"
-   ],
-   "onscreen_text": "SIMPLIFICATION EN COURS",
-   "comic_action": "Vue aérienne : la file fait le tour complet de la Tour ; un panneau « Simplification : un guichet en moins » apparaît.",
-   "expected_result": "La « simplification » aggrave tout."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n6",
-    "n7"
-   ],
-   "camera": "closeup",
-   "set": [
-    "sign",
-    "screen"
-   ],
-   "onscreen_text": "EN LIGNE ⇄ AU GUICHET",
-   "comic_action": "Champ-contrechamp : le guichet ferme son rideau « Passez en ligne » ; en face, l'écran affiche « En cas de difficulté, passez au guichet ». Les deux se font face. Tenir deux secondes.",
-   "expected_result": "Le citoyen est coincé entre deux renvois officiels."
+   "onscreen_text": "« ILLETTRÉES »",
+   "comic_action": "Guichet municipal : écran, pile de formulaires, file d'attente.",
+   "expected_result": "Le guichet porte la pique."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "screen",
+    "form_stack",
+    "person"
+   ],
+   "onscreen_text": "TICKET SUIVANT",
+   "comic_action": "Guichet municipal : écran, pile de formulaires, file d'attente.",
+   "expected_result": "Le guichet porte la pique."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "shop",
+    "sign",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "« PREMIERS DE CORDÉE »",
+   "comic_action": "Deux files à la caisse : « PREMIERS DE CORDÉE » (vide, rapide) et « LES AUTRES » (immense).",
+   "expected_result": "Le surnom devient une signalétique."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
     "mairie",
     "person",
-    "sign",
     "tshirt",
-    "form_stack"
+    "banner"
    ],
-   "onscreen_text": "TA PIRE DÉMARCHE ?",
-   "comic_action": "Plan large : file immobile ; une usagère en t-shirt de la collection serre sa pochette de justificatifs.",
-   "expected_result": "Appel à commenter, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ta pire démarche en ligne, raconte-la en une phrase."
+  "type": "share",
+  "text": "Envoie ça au pote qui a perdu trois heures sur un site public."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 74,
+ "word_count": 82,
  "claims": [
   {
-   "text": "« en même temps » : tic de langage public documenté (29 occurrences à Toulon le 18/02/2017).",
-   "claim_type": "fait_public",
-   "source": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/"
+   "text": "« illettrées »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
+   "note": "Les salariées « illettrées » de l'abattoir Gad (2014), excuses ensuite."
+  },
+  {
+   "text": "Tu protestes ? Réfractaire au numérique. Ticket suivant.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
+   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde ». Détourné dans la ville fictive."
+  },
+  {
+   "text": "« premiers de cordée »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
+   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »)."
   }
  ],
  "sources": [
   {
-   "url": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
-   "date": "2017-05-08",
-   "consulted": "2026-11-21",
-   "statut": "fait public (tic de langage reconnu par l'intéressé)",
-   "note": "« en même temps » : 29 fois au meeting de Toulon (18/02/2017), au moins 216 fois en trois mois."
+   "url": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
+   "date": "2017",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (fragment)",
+   "note": "Les salariées « illettrées » de l'abattoir Gad (2014), excuses ensuite."
   },
   {
-   "url": "https://www.ladn.eu/tech-a-suivre/pourquoi-france-sera-jamais-start-up-nation-digne-nom/",
-   "date": "2020-02-05",
-   "consulted": "2026-11-21",
-   "statut": "opinion (la formule fait ricaner)",
-   "note": "Thème seulement, transformé en gag visuel original."
+   "url": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
+   "date": "2021-08-11",
+   "consulted": "2026-11-22",
+   "statut": "citations exactes vérifiées",
+   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
+   "date": "2017",
+   "consulted": "2026-11-22",
+   "statut": "fait + opinion",
+   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mécanisme : boucle récursive. Mème : « en même temps » (dans les variantes et l'esprit : en ligne et au guichet). Pose mcv-evt-019. Aucune administration réelle nommée. T-shirt du plan final : tee-gauche-canape (« À GAUCHE DU CANAPÉ. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « illettrées » (2014) retourné contre la dématérialisation : le guichet humain réservé aux « premiers de cordée ». Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

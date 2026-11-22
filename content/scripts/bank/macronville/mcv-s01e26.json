@@ -5,81 +5,73 @@
  "format": "A",
  "title_cover": "Ton colis inauguré",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Macron… et les colis sont inaugurés.",
-  "À Macronville, ton colis n'arrive pas. Il est inauguré.",
-  "Suivi du colis : livraison 2030, phase de co-construction.",
-  "Ton colis a eu droit à une fanfare. Toi, non.",
-  "Le maire a ouvert ton colis. Et il l'a gardé."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, ton colis a plus de likes que toi.",
+  "Macronville : le maire déballe tes colis en direct.",
+  "La start-up nation a inauguré ton colis. Il est vide.",
+  "Les macronistes vont liker ton colis."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Il la brandit, puis repart avec, pour l'exposition.",
-  "Il la brandit sous les applaudissements. Puis il repart avec. Pour l'exposition.",
-  "Ton colis est désormais exposé à la Tour. Visite possible, sur rendez-vous, au guichet."
+  "Mille likes pour le maire. Pour toi, un avis de passage.",
+  "Le colis est vide, mais le post a cartonné.",
+  "Ta livraison est un succès de com'. Pas de livraison."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron… et les colis sont inaugurés.",
+   "text": "Dans cette ville, tout le monde vote Macron. Et tout le monde poste.",
    "accent_words": [
-    "inaugurés"
+    "poste"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le suivi n'indique plus une date mais un horizon : 2030.",
+   "text": "Ton colis arrive : le maire le déballe en direct sur LinkedIn.",
    "accent_words": [
-    "2030"
+    "LinkedIn"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Arrivée garantie, comme le dit le livreur : for sure.",
+   "text": "Légende : vive la « start-up nation », lancée à VivaTech en 2017.",
    "accent_words": [
-    "sure"
+    "start-up nation"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Un jour, invitation : rue fermée, fanfare, Ribbon en tête.",
+   "text": "Le livreur veut un CDI ? « Je traverse la rue, je vous en trouve ».",
    "accent_words": [
-    "tête"
+    "traverse la rue"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n5",
-   "text": "Le maire ouvre ton carton aux ciseaux d'inauguration.",
+   "text": "Colis vide : transformation profonde.",
    "accent_words": [
-    "inauguration"
+    "vide"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Dedans, une coque de téléphone à douze euros.",
+   "text": "Mille likes pour le maire. Pour toi, un avis de passage.",
    "accent_words": [
-    "euros"
+    "avis de passage"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Il la brandit, puis repart avec, pour l'exposition.",
+   "text": "Envoie ça au pote qui attend son colis depuis trois semaines.",
    "accent_words": [
-    "exposition"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ton colis le plus en retard, c'était combien de jours ?",
-   "accent_words": [
-    "jours"
+    "trois semaines"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,129 +84,164 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "sign",
-    "banner",
-    "road"
+    "road",
+    "facade_row",
+    "lamp",
+    "person",
+    "car"
    ],
-   "onscreen_text": "COLIS : INAUGURÉ",
-   "comic_action": "Descente sur une porte d'immeuble devant laquelle se dresse un panneau de projet « Votre colis — livraison 2030 ».",
-   "expected_result": "Un colis devient un grand projet."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
+   "expected_result": "Le décor de rue posé."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "UNBOXING MUNICIPAL",
+   "comic_action": "Post LinkedIn géant sur l'écran : « Fier d'annoncer… » ; trois likes.",
+   "expected_result": "La com' remplace le résultat."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
     "screen",
-    "text3d"
+    "text3d",
+    "building",
+    "banner"
    ],
-   "onscreen_text": "ARRIVÉE : FOR SURE",
-   "comic_action": "Écran de suivi : la date est remplacée par « Horizon 2030 », puis par le texte « for sure » qui clignote.",
-   "expected_result": "Mème détourné : l'assurance verbale remplace l'information."
+   "onscreen_text": "« START-UP NATION »",
+   "comic_action": "Écran « LEVÉE DE FONDS » ; banderole « START-UP NATION » au-dessus d'un truc qui ne marche pas.",
+   "expected_result": "La formule fait ricaner."
   },
   {
-   "id": "s3",
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "street_dolly",
    "set": [
     "road",
-    "mascot",
-    "banner",
-    "car",
-    "person"
-   ],
-   "onscreen_text": "RUE FERMÉE",
-   "comic_action": "Travelling : barrières de rubans, fanfare, Ribbon ouvre un cortège qui avance au pas vers ta porte.",
-   "expected_result": "Un acte banal est transformé en cérémonie bloquante."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5",
-    "n6"
-   ],
-   "camera": "closeup",
-   "set": [
-    "tripod_camera",
+    "sign",
     "person",
-    "studio_light"
+    "traffic_light"
    ],
-   "onscreen_text": "UNE COQUE DE TÉLÉPHONE",
-   "comic_action": "Le maire tranche le scotch aux ciseaux géants, flash ; il brandit une coque de téléphone minuscule.",
-   "expected_result": "Disproportion : cérémonie géante pour objet dérisoire."
+   "onscreen_text": "CDI ? TRAVERSE",
+   "comic_action": "Un habitant traverse le passage piéton ; le panneau « EMPLOI » recule d'un mètre à chaque pas.",
+   "expected_result": "Le mème « traverser la rue » devient une infrastructure."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7"
+    "n5"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "car",
-    "banner",
     "person",
-    "lift_tribune"
+    "road",
+    "sign",
+    "car"
    ],
-   "onscreen_text": "POUR L'EXPOSITION",
-   "comic_action": "La tribune remonte avec la coque ; le cortège repart. Le destinataire reste les bras vides. Tenir deux secondes.",
-   "expected_result": "Confiscation : la mairie s'approprie même ton colis."
+   "onscreen_text": "COLIS VIDE = TRANSFORMATION",
+   "comic_action": "Livreur qui court avec un colis ; panneau de la mairie sur le trottoir.",
+   "expected_result": "La livraison porte la pique."
   },
   {
    "id": "s6",
    "narration_ids": [
-    "n8"
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "1 000 LIKES / 1 AVIS DE PASSAGE",
+   "comic_action": "Post LinkedIn géant sur l'écran : « Fier d'annoncer… » ; trois likes.",
+   "expected_result": "La com' remplace le résultat."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "building",
-    "sign",
+    "road",
     "person",
-    "tshirt"
+    "tshirt",
+    "sign"
    ],
-   "onscreen_text": "COMBIEN DE JOURS ?",
-   "comic_action": "Plan large de la porte ; le destinataire en t-shirt de la collection regarde le panneau de projet.",
-   "expected_result": "Appel à commenter, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ton colis le plus en retard, c'était combien de jours ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui attend son colis depuis trois semaines."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 79,
+ "word_count": 81,
  "claims": [
   {
-   "text": "« for sure » : expression répétée par Emmanuel Macron à Davos (janvier 2026), devenue mème. Reprise ici par un personnage fictif, sans attribution.",
+   "text": "« start-up nation »",
    "claim_type": "citation_exacte",
-   "source": "https://www.sudradio.fr/sud-radio/for-sure-quand-macron-devient-un-phenomene-viral-sur-les-reseaux-sociaux"
+   "source": "https://www.elysee.fr/emmanuel-macron/2017/06/15/discours-du-president-de-la-republique-au-salon-vivatech-201",
+   "note": "« Start-up nation » (VivaTech 2017)."
+  },
+  {
+   "text": "« Je traverse la rue, je vous en trouve »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
+  },
+  {
+   "text": "Colis vide : transformation profonde.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
+   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde ». Détourné dans la ville fictive."
   }
  ],
  "sources": [
   {
-   "url": "https://www.sudradio.fr/sud-radio/for-sure-quand-macron-devient-un-phenomene-viral-sur-les-reseaux-sociaux",
-   "date": "2026-01-29",
-   "consulted": "2026-11-21",
-   "statut": "mème (viralité = fait public rapporté)",
-   "note": "« for sure » répété au Forum de Davos (janvier 2026), remixé sur TikTok, Instagram et X (DJ, parodies)."
+   "url": "https://www.elysee.fr/emmanuel-macron/2017/06/15/discours-du-president-de-la-republique-au-salon-vivatech-201",
+   "date": "2017-06-15",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "« Start-up nation » (VivaTech 2017)."
   },
   {
-   "url": "https://dailydot.com/foshur-memes-macrons-davos-speech-for-sure",
-   "date": "2026-01-23",
-   "consulted": "2026-11-21",
-   "statut": "mème (« foshur » plaqué sur des situations du quotidien)",
-   "note": "Même mécanique : la formule colle à un objet du quotidien. Lunettes de Davos écartées (santé)."
+   "url": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
+   "date": "2018-09-17",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte + mème",
+   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
+   "date": "2021-08-11",
+   "consulted": "2026-11-22",
+   "statut": "citations exactes vérifiées",
+   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mécanisme : effet retard puis confiscation. Mème vérifié : « for sure » (Davos 2026) devenu statut de suivi fictif, sans attribution. Aucun transporteur réel nommé. T-shirt du plan final : tee-gauche-canape (« À GAUCHE DU CANAPÉ. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : la com' de la start-up nation : ton colis déballé en direct sur LinkedIn, le livreur renvoyé à « traverser la rue ». Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

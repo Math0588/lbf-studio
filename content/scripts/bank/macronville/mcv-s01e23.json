@@ -3,75 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-23",
  "format": "A",
- "title_cover": "Le premier de cordée",
+ "title_cover": "Jupiter en ascenseur",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Macron… et tout le monde est encordé.",
-  "À l'escalade de Macronville, tout le monde est encordé derrière un seul grimpeur.",
-  "Le premier de cordée monte. Les autres font du gainage involontaire.",
-  "Plus il monte, plus il vous tire. En théorie.",
-  "Ici, l'escalade est collective. Le podium, non."
+  "Dans cette ville, tout le monde vote Macron.",
+  "Ici, le maire parle depuis un ascenseur.",
+  "Macronville : la tribune qui monte quand la rue gronde.",
+  "Jupiter a fait installer un monte-charge.",
+  "Les macronistes vont regarder ça d'en haut."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Tout le monde tombe ; lui pose sous les projecteurs.",
-  "Au sommet, pour fêter son record, il coupe le ruban tendu par Ribbon. C'était la corde.",
-  "Il touche le sommet et lâche : la cordée, c'était pour la photo."
+  "En mai 2027, l'ascenseur redescend. Sans lui dedans.",
+  "L'Olympe a un ascenseur. Il ne descend qu'une fois.",
+  "Jupiter monte, la rue reste en bas."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron… et tout le monde est encordé.",
+   "text": "Dans cette ville, tout le monde vote Macron. D'en bas.",
    "accent_words": [
-    "encordé"
+    "D'en bas"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Derrière un seul grimpeur : le premier de cordée.",
+   "text": "Le maire installe une tribune élévatrice. Pour parler d'en haut.",
    "accent_words": [
-    "cordée"
+    "d'en haut"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Il grimpe avec coach et perche à selfie ; les autres pendent.",
+   "text": "Surnom : Jupiter. Roi des dieux, maître de la foudre.",
    "accent_words": [
-    "pendent"
+    "Jupiter"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le moniteur promet : plus il monte, plus il vous tire.",
+   "text": "Il monte si haut qu'il n'entend plus la rue. Pratique.",
    "accent_words": [
-    "tire"
+    "Pratique"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Au sommet, il coupe le ruban de Ribbon : c'était la corde.",
+   "text": "Il est redescendu une fois : sept heures de grand débat. Puis remonté.",
    "accent_words": [
-    "corde"
+    "Puis remonté"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Tout le monde tombe ; lui pose sous les projecteurs.",
+   "text": "En mai 2027, l'ascenseur redescend. Sans lui dedans.",
    "accent_words": [
-    "projecteurs"
+    "Sans lui"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Tague le premier de cordée de ta bande.",
+   "text": "Envoie ça au pote qui parle à tout le monde d'en haut.",
    "accent_words": [
-    "bande"
+    "d'en haut"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -80,138 +80,176 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "column",
+    "ground",
+    "fountain",
+    "arch",
     "person",
-    "banner",
-    "ground"
+    "tree"
    ],
-   "onscreen_text": "SALLE PREMIER DE CORDÉE",
-   "comic_action": "Descente le long d'un mur (colonne géante) : un grimpeur en tête, une file de silhouettes reliées par un ruban tricolore en guise de corde.",
-   "expected_result": "La métaphore politique devient un dispositif physique."
+   "onscreen_text": "MACRONVILLE",
+   "comic_action": "Descente sur la grande place : fontaine, arche, habitants.",
+   "expected_result": "La place centrale posée."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "orbit",
+   "set": [
+    "lift_tribune",
+    "person",
+    "studio_light",
+    "column"
+   ],
+   "onscreen_text": "TRIBUNE ÉLÉVATRICE",
+   "comic_action": "La tribune élévatrice monte le maire cubique au-dessus de la foule.",
+   "expected_result": "La hauteur du pouvoir en un plan."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "orbit",
    "set": [
+    "tribune",
     "column",
-    "person",
-    "studio_light"
+    "studio_light",
+    "person"
    ],
-   "onscreen_text": "COACH + SELFIE",
-   "comic_action": "Le premier grimpe sous projecteur avec un coach accroché à côté ; les autres sautillent au pied.",
-   "expected_result": "La réussite est accompagnée, les autres improvisent."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4"
-   ],
-   "camera": "closeup",
-   "set": [
-    "banner",
-    "person",
-    "column"
-   ],
-   "onscreen_text": "GAINAGE INVOLONTAIRE",
-   "comic_action": "La corde se tend : toute la file pend dans le vide, jambes ballantes.",
-   "expected_result": "La promesse de traction devient suspension."
+   "onscreen_text": "JUPITER",
+   "comic_action": "Le maire cubique sur une tribune entre deux colonnes, éclair en carton derrière lui ; la foule lève la tête.",
+   "expected_result": "La verticalité en un plan."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5"
+    "n4"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "mascot",
-    "banner",
+    "lift_tribune",
+    "person",
+    "studio_light",
     "column"
    ],
-   "onscreen_text": "RECORD !",
-   "comic_action": "Au sommet, Ribbon tend un ruban ; le premier le coupe triomphalement. C'était la corde. Silence d'une seconde.",
-   "expected_result": "Chute littérale : le geste de célébration coupe le lien avec les autres."
+   "onscreen_text": "NIVEAU : OLYMPE",
+   "comic_action": "La tribune élévatrice monte le maire cubique au-dessus de la foule.",
+   "expected_result": "La hauteur du pouvoir en un plan."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6"
+    "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
+    "tribune",
+    "table",
     "person",
-    "ground",
-    "studio_light",
-    "tripod_camera"
+    "studio_light"
    ],
-   "onscreen_text": "PHOTO DU RECORD",
-   "comic_action": "Les silhouettes retombent sur les tapis ; en haut, flash du photographe.",
-   "expected_result": "Le vainqueur pose, les autres comptent leurs bleus."
+   "onscreen_text": "DESCENTE : 1 FOIS",
+   "comic_action": "Le maire cubique tombe la veste et parle ; l'horloge fait trois tours ; le public dort.",
+   "expected_result": "Le grand débat sans fin."
   },
   {
    "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "lift_tribune",
+    "person",
+    "studio_light",
+    "column"
+   ],
+   "onscreen_text": "MAI 2027 : DESCENTE",
+   "comic_action": "La tribune élévatrice redescend lentement, vide ; un gobelet roule dessus.",
+   "expected_result": "La hauteur du pouvoir en un plan."
+  },
+  {
+   "id": "s7",
    "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "column",
+    "road",
     "person",
     "tshirt",
-    "banner"
+    "sign"
    ],
-   "onscreen_text": "TAGUE TON PREMIER",
-   "comic_action": "Plan large de la salle ; une grimpeuse en t-shirt de la collection enroule le ruban coupé.",
-   "expected_result": "Partage ciblé (tag), produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
+   "expected_result": "Appel au partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Tague le premier de cordée de ta bande."
+  "text": "Envoie ça au pote qui parle à tout le monde d'en haut."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 76,
+ "word_count": 73,
  "claims": [
   {
-   "text": "« premiers de cordée » : métaphore publique de 2017, littéralisée ici.",
+   "text": "Le maire installe une tribune élévatrice. Pour parler d'en haut.",
+   "claim_type": "fiction_satirique",
+   "source": "https://www.lequotidiendupharmacien.fr/nom-de-nom",
+   "note": "« Jupiter », « maître des horloges ». Détourné dans la ville fictive."
+  },
+  {
+   "text": "Surnom : Jupiter. Roi des dieux, maître de la foudre.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645"
+   "source": "https://www.lequotidiendupharmacien.fr/nom-de-nom",
+   "note": "« Jupiter », « maître des horloges »."
+  },
+  {
+   "text": "Il est redescendu une fois : sept heures de grand débat. Puis remonté.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
+   "note": "Grand débat : près de sept heures face aux maires, veste tombée."
+  },
+  {
+   "text": "En mai 2027, l'ascenseur redescend. Sans lui dedans.",
+   "claim_type": "fait_public",
+   "source": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
+   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
-   "date": "2017-11-12",
-   "consulted": "2026-11-21",
-   "statut": "fait public (formule « premiers de cordée » recensée)",
-   "note": ""
+   "url": "https://www.lequotidiendupharmacien.fr/nom-de-nom",
+   "date": "2020-10-23",
+   "consulted": "2026-11-22",
+   "statut": "mème (surnoms)",
+   "note": "« Jupiter », « maître des horloges »."
   },
   {
-   "url": "https://elabe.fr/wp-content/uploads/2017/10/elabe_les-premiers-de-cordee-1.pdf",
-   "date": "2017-10",
-   "consulted": "2026-11-21",
-   "statut": "opinion/sondage (perception de la métaphore, lien avec le « ruissellement »)",
-   "note": ""
+   "url": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
+   "date": "2019-01-15",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Grand débat : près de sept heures face aux maires, veste tombée."
   },
   {
-   "url": "https://gulfnews.com/opinion/op-eds/why-macron-is-no-mr-cool-1.2240627",
-   "date": "2018-11-05",
-   "consulted": "2026-11-21",
-   "statut": "opinion (« président des riches » pour ses opposants)",
-   "note": "Thème : la ville sert d'abord le sommet de la pyramide."
+   "url": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait rapporté",
+   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mécanisme : métaphore littéralisée + crossover du ruban (mcv-gag-01, étape 2 : le ruban remplace la corde et Ribbon la coupe). Mème vérifié : « premiers de cordée » (2017). Aucune citation attribuée. T-shirt du plan final : tee-droite-canape (« À DROITE DU CANAPÉ. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : la verticalité jupitérienne : une tribune élévatrice pour parler d'en haut, une seule descente pour le grand débat. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }
