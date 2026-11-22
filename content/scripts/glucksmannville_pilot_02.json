@@ -3,76 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-30",
  "format": "A",
- "title_cover": "Le mégaphone chuchote",
+ "title_cover": "Tout par cœur",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Bienvenue à Glucksmannville : le fauteuil prend la forme du dernier assis.",
-  "Les électeurs de Glucksmann vont me détester.",
-  "Ici, le mégaphone est réglé sur chuchotement.",
-  "Glucksmannville : la gauche cool, version récitation."
+  "Sa candidature ? Des internautes l'ont trouvée apprise, récitée, « scolaire ».",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Tout par cœur : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Même le perroquet récite."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Sa liste de 2024 s'appelait Réveiller l'Europe. La gauche, elle, fait la sieste.",
-  "Réveiller l'Europe, oui. Le programme social, en veille.",
-  "Rassembler, gouverner, gagner : un sur trois, c'est déjà ça."
+  "Le maire veut calmer la ville. Il improvise. Personne ne le reconnaît.",
+  "Tout le monde récite. Le seul qui improvise, plus personne ne le reconnaît.",
+  "Un client veut une tradition. Pas dans le texte. Le boulanger panique."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. En théorie.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Même le perroquet récite.",
    "accent_words": [
-    "En théorie"
+    "récite"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son annonce de candidature ? Des internautes l'ont trouvée récitée, scolaire.",
+   "text": "Sa candidature ? Des internautes l'ont trouvée apprise, récitée, « scolaire ».",
    "accent_words": [
-    "récitée",
     "scolaire"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Son credo : rassembler, gouverner, gagner. Pour l'instant : une primaire.",
+   "text": "La mairie généralise : chacun doit réciter ses phrases par cœur.",
    "accent_words": [
-    "une primaire"
+    "cœur"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Un chroniqueur l'a comparé à Macron, en version cool. À gauche, c'est une insulte.",
+   "text": "Le boulanger récite son bonjour comme un exposé de troisième.",
    "accent_words": [
-    "une insulte"
+    "troisième"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Un universitaire parle de timidité sociale. Ici, même le mégaphone chuchote.",
+   "text": "Un client veut une tradition. Pas dans le texte. Le boulanger panique.",
    "accent_words": [
-    "chuchote"
+    "panique"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Sa liste de 2024 s'appelait Réveiller l'Europe. La gauche, elle, fait la sieste.",
+   "text": "Le maire veut calmer la ville. Il improvise. Personne ne le reconnaît.",
    "accent_words": [
-    "la sieste"
+    "reconnaît"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui trouve que Glucksmann, c'est Macron de gauche.",
+   "text": "Envoie ça au pote qui lit ses notes pour dire bonjour.",
    "accent_words": [
-    "Macron de gauche"
+    "bonjour"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -92,8 +91,32 @@
     "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente sur une place beige ; un fauteuil mou au centre prend la forme de chaque passant.",
-   "expected_result": "La ville et son camp posés en une image."
+   "comic_action": "Descente sur la ville ; banderole « TOUT PAR CŒUR » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUT PAR CŒUR"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -104,76 +127,173 @@
    "set": [
     "router_lectern",
     "screen",
-    "text3d",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "PROMPTEUR : ON",
-   "comic_action": "Le maire lit un prompteur géant ; le texte défile plus vite que lui, il court derrière.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« SCOLAIRE »",
+   "comic_action": "Le maire lit un prompteur géant ; le texte défile plus vite que lui.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "parle",
+     "objet": "micro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "fall",
+     "visage": "dort",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PAR CŒUR"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
-    "text3d",
-    "banner",
+    "sign",
+    "mairie",
     "person"
    ],
-   "onscreen_text": "1 SUR 3",
-   "comic_action": "Trois cases géantes « RASSEMBLER / GOUVERNER / GAGNER » : une seule s'allume, en petit.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "TOUT PAR CŒUR",
+   "comic_action": "Un panneau sur la mairie : « PHRASES APPRISES OBLIGATOIRES ».",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MATCHA 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "road",
-    "sign",
+    "shop",
     "person",
-    "shop"
+    "text3d"
    ],
-   "onscreen_text": "MACRON MAIS COOL",
-   "comic_action": "Panneau de rue « RUE DU CENTRE GAUCHE » ; on le retourne : « RUE DU CENTRE ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "BONJOUR (RÉCITÉ)",
+   "comic_action": "Le boulanger, mains dans le dos, récite face au plafond.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "nod",
+     "visage": "neutre",
+     "objet": "baguette",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "fall",
+     "visage": "dort",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PAR CŒUR"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
+    "shop",
     "person",
-    "lamp",
-    "text3d",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "VOLUME : 2 %",
-   "comic_action": "Gros plan : le maire lève un mégaphone ; un minuscule « chut » en sort, une feuille tombe.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PAS DANS LE TEXTE",
+   "comic_action": "Le boulanger fouille ses fiches, affolé ; le client attend.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "IMPROVISER EST INTERDIT"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
-    "mairie",
-    "bench",
+    "tribune",
     "person",
     "text3d"
    ],
-   "onscreen_text": "RÉVEIL : SNOOZE",
-   "comic_action": "Au pied de la mairie, un réveil géant sonne ; tous les habitants beiges dorment sur les bancs.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "QUI EST-CE ?",
+   "comic_action": "Le maire parle sans fiche ; la foule le regarde comme un inconnu.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "parle",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "QUI ÊTES-VOUS ?"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -182,56 +302,52 @@
    ],
    "camera": "return",
    "set": [
+    "road",
     "person",
     "tshirt",
-    "sign",
-    "shop"
+    "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE QUI HÉSITE",
-   "comic_action": "Retour large : un habitant en t-shirt de la boutique s'assoit dans le fauteuil mou, qui devient bleu.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : son annonce de candidature jugée apprise, récitée, « scolaire » : la ville récite tout.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUT PAR CŒUR"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui trouve que Glucksmann, c'est Macron de gauche."
+  "text": "Envoie ça au pote qui lit ses notes pour dire bonjour."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 82,
+ "word_count": 80,
  "claims": [
   {
-   "text": "Son annonce de candidature ? Des internautes l'ont trouvée récitée, scolaire.",
-   "claim_type": "fait_public",
+   "text": "« scolaire »",
+   "claim_type": "citation_exacte",
    "source": "https://www.letribunaldunet.fr/politique/glucksmann-mauvais-orateur-experts-communication-2027-2.html",
-   "note": "Annonce de candidature jugée apprise, récitée, « scolaire »."
-  },
-  {
-   "text": "Son credo : rassembler, gouverner, gagner. Pour l'instant : une primaire.",
-   "claim_type": "fait_public",
-   "source": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
-   "note": "Large victoire à la primaire sociale-démocrate ; une gauche qui peut « rassembler, gouverner et gagner »."
-  },
-  {
-   "text": "Un chroniqueur l'a comparé à Macron, en version cool. À gauche, c'est une insulte.",
-   "claim_type": "fait_public",
-   "source": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
-   "note": "Chronique ironique : « Il est cool, ce Glucksmann, il me rappelle Macron »."
-  },
-  {
-   "text": "Un universitaire parle de timidité sociale. Ici, même le mégaphone chuchote.",
-   "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/",
-   "note": "Philippe Corcuff : « timidité sociale » du programme."
-  },
-  {
-   "text": "Sa liste de 2024 s'appelait Réveiller l'Europe. La gauche, elle, fait la sieste.",
-   "claim_type": "fait_public",
-   "source": "https://en.wikipedia.org/wiki/Rapha%C3%ABl_Glucksmann",
-   "note": "Place publique (2018), liste « Réveiller l'Europe » (2024)."
+   "note": "Annonce de candidature jugée apprise et récitée, ton « figé », « scolaire »."
   }
  ],
  "sources": [
@@ -239,38 +355,10 @@
    "url": "https://www.letribunaldunet.fr/politique/glucksmann-mauvais-orateur-experts-communication-2027-2.html",
    "date": "2026-08-27",
    "consulted": "2026-11-22",
-   "statut": "opinion d'internautes rapportée",
-   "note": "Annonce de candidature jugée apprise, récitée, « scolaire »."
-  },
-  {
-   "url": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
-   "date": "2026-10-12",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Large victoire à la primaire sociale-démocrate ; une gauche qui peut « rassembler, gouverner et gagner »."
-  },
-  {
-   "url": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
-   "date": "2024-04-03",
-   "consulted": "2026-11-22",
-   "statut": "opinion",
-   "note": "Chronique ironique : « Il est cool, ce Glucksmann, il me rappelle Macron »."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/",
-   "date": "2026-06-11",
-   "consulted": "2026-11-22",
-   "statut": "opinion",
-   "note": "Philippe Corcuff : « timidité sociale » du programme."
-  },
-  {
-   "url": "https://en.wikipedia.org/wiki/Rapha%C3%ABl_Glucksmann",
-   "date": "consulté 2026-11-22",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Place publique (2018), liste « Réveiller l'Europe » (2024)."
+   "statut": "opinion (internautes et communicants)",
+   "note": "Annonce de candidature jugée apprise et récitée, ton « figé », « scolaire »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : annonce jugée récitée, « rassembler, gouverner, gagner », comparaison à Macron, timidité sociale, Réveiller l'Europe. Cadre : la place publique beige. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : son annonce de candidature jugée apprise, récitée, « scolaire » : la ville récite tout. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

@@ -3,78 +3,78 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m012",
  "format": "A",
- "anchor": "le risque de « macronisme sous bannière sociale-démocrate » (Politis), le « mirage social-démocrate » et la coalition de Macron, au restaurant.",
+ "anchor": "« il est cool ce Glucksmann, il me rappelle Macron » : le restaurant municipal",
  "situation": "le restaurant",
- "ressort": "piques frontales sourcées (style tacle)",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
  "title_cover": "Menu rose, assiette bleue",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, la carte est rose et l'assiette bleue.",
-  "Glucksmannville : le restaurant du macronisme rosé.",
-  "Nouveau menu, vieille recette.",
-  "Les glucksmanniens vont renvoyer l'assiette."
+  "2024 : « Il est cool ce Glucksmann, il me rappelle Macron ».",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Menu rose, assiette bleue : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Le menu change de couleur."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Rose sur la carte, bleu dans l'assiette. Le client paie le même prix.",
-  "Nouveau nom, même goût, même addition.",
-  "Le chef change la nappe. Pas la recette."
+  "Macron passe dîner. Il trouve le plat parfait.",
+  "Rose sur la carte, bleu dans l'assiette. Macron a demandé la recette.",
+  "Le chef renomme le plat trois fois. Le prix monte à chaque nom."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Menu unique.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le menu change de couleur.",
    "accent_words": [
-    "Menu unique"
+    "couleur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Au restaurant social-démocrate, la carte est rose. Le plat est bleu Macron.",
+   "text": "2024 : « Il est cool ce Glucksmann, il me rappelle Macron ».",
    "accent_words": [
-    "bleu Macron"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Pour Politis, le risque : refaire du macronisme sous bannière sociale-démocrate.",
-   "accent_words": [
-    "macronisme"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "Au menu du jour, le « mirage social-démocrate ». Servi froid.",
-   "accent_words": [
-    "mirage"
+    "Macron"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n5",
-   "text": "En dessert, Macron propose une coalition. Le chef joue l'offusqué.",
+   "id": "n3",
+   "text": "Au restaurant municipal, la carte est rose. Les plats arrivent bleu Macron.",
    "accent_words": [
-    "l'offusqué"
+    "Macron"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Les clients renvoient l'assiette. Elle revient repeinte en rose. Même goût.",
+   "accent_words": [
+    "goût"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Le chef renomme le plat trois fois. Le prix monte à chaque nom.",
+   "accent_words": [
+    "nom"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Rose sur la carte, bleu dans l'assiette. Le client paie le même prix.",
+   "text": "Macron passe dîner. Il trouve le plat parfait.",
    "accent_words": [
-    "le même prix"
+    "parfait"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui renomme le même plat pour le vendre plus cher.",
+   "text": "Envoie ça au pote qui renomme un plat pour le vendre plus cher.",
    "accent_words": [
-    "plus cher"
+    "cher"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -87,14 +87,39 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "facade_row",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "sign"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
-   "expected_result": "Le commerce du jour posé."
+   "comic_action": "Descente sur la ville ; banderole « MENU ROSE, ASSIETTE BLEUE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "MENU ROSE, ASSIETTE BLEUE"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -103,61 +128,138 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "sign",
-    "person",
-    "fountain"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "CARTE ROSE / PLAT BLEU",
-   "comic_action": "Table de restaurant ; la carte-ardoise affiche les prix.",
-   "expected_result": "Le restaurant porte la pique."
+   "onscreen_text": "« IL ME RAPPELLE MACRON »",
+   "comic_action": "Deux portraits côte à côte, impossibles à départager.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "AUCUN RAPPORT"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "person",
+    "shop",
+    "table",
     "text3d"
    ],
-   "onscreen_text": "MACRONISME SOUS BANNIÈRE",
-   "comic_action": "Écran : silhouette du maire, puis le même costume bleu de la ville voisine se superpose.",
-   "expected_result": "La ressemblance, montrée."
+   "onscreen_text": "CARTE ROSE, PLAT BLEU",
+   "comic_action": "Un serveur pose une assiette bleue devant un client qui lit une carte rose.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "PLAT DU JOUR 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
+    "shop",
     "table",
-    "sign",
-    "person",
-    "fountain"
+    "person"
    ],
-   "onscreen_text": "« MIRAGE SOCIAL-DÉMOCRATE »",
-   "comic_action": "Table de restaurant ; la carte-ardoise affiche les prix.",
-   "expected_result": "Le restaurant porte la pique."
+   "onscreen_text": "REPEINT EN ROSE",
+   "comic_action": "La même assiette revient, peinte en rose à la va-vite.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ROSE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "car",
-    "person",
-    "road",
-    "sign"
+    "shop",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "DESSERT : COALITION",
-   "comic_action": "La voiture du maire voisin klaxonne et ouvre la portière ; le maire cubique hésite sur le trottoir.",
-   "expected_result": "La drague de la coalition."
+   "onscreen_text": "LE PRIX MONTE",
+   "comic_action": "L'ardoise du jour est effacée et réécrite, le prix grimpe à chaque fois.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MÊME PLAT 18,50 €"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -166,14 +268,33 @@
    ],
    "camera": "closeup",
    "set": [
+    "shop",
     "table",
-    "sign",
-    "person",
-    "fountain"
+    "person"
    ],
-   "onscreen_text": "MÊME PRIX",
-   "comic_action": "Le serveur retourne l'assiette : dessous, une étiquette « MACRONVILLE ».",
-   "expected_result": "Le restaurant porte la pique."
+   "onscreen_text": "MACRON SE RÉGALE",
+   "comic_action": "Le voisin de Macronville savoure le plat, ravi.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "CHEF RECOMMANDÉ PAR MACRON"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -182,75 +303,69 @@
    ],
    "camera": "return",
    "set": [
-    "shop",
-    "tshirt",
+    "road",
     "person",
+    "tshirt",
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « il est cool ce Glucksmann, il me rappelle Macron » : le restaurant municipal.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "MENU ROSE, ASSIETTE BLEUE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui renomme le même plat pour le vendre plus cher."
+  "text": "Envoie ça au pote qui renomme un plat pour le vendre plus cher."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 81,
+ "word_count": 83,
  "claims": [
   {
-   "text": "Au restaurant social-démocrate, la carte est rose. Le plat est bleu Macron.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
-   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate. Détourné dans la ville fictive."
-  },
-  {
-   "text": "Pour Politis, le risque : refaire du macronisme sous bannière sociale-démocrate.",
-   "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
-   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
-  },
-  {
-   "text": "« mirage social-démocrate »",
+   "text": "« Il est cool ce Glucksmann, il me rappelle Macron »",
    "claim_type": "citation_exacte",
-   "source": "https://www.politis.fr/dossiers/2027-glucksmann-croit-au-mirage-social-democrate/",
-   "note": "« 2027 : Glucksmann croit au mirage social-démocrate »."
+   "source": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
+   "note": "Chronique ironique : « Il est cool ce Glucksmann, il me rappelle Macron »."
   },
   {
-   "text": "En dessert, Macron propose une coalition. Le chef joue l'offusqué.",
-   "claim_type": "fait_public",
-   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
-   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
+   "text": "Macron passe dîner. Il trouve le plat parfait.",
+   "claim_type": "fiction_satirique",
+   "source": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
+   "note": "Chronique ironique : « Il est cool ce Glucksmann, il me rappelle Macron ». Exagération satirique évidente, présentée comme telle."
   }
  ],
  "sources": [
   {
-   "url": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
-   "date": "2026-10",
+   "url": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
+   "date": "2024-04-03",
    "consulted": "2026-11-22",
-   "statut": "opinion (éditorial, titre cité)",
-   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
-  },
-  {
-   "url": "https://www.politis.fr/dossiers/2027-glucksmann-croit-au-mirage-social-democrate/",
-   "date": "2026",
-   "consulted": "2026-11-22",
-   "statut": "opinion (titre de dossier)",
-   "note": "« 2027 : Glucksmann croit au mirage social-démocrate »."
-  },
-  {
-   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
-   "date": "2026-11",
-   "consulted": "2026-11-22",
-   "statut": "fait public (AFP)",
-   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
+   "statut": "titre de chronique (opinion)",
+   "note": "Chronique ironique : « Il est cool ce Glucksmann, il me rappelle Macron »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : le risque de « macronisme sous bannière sociale-démocrate » (Politis), le « mirage social-démocrate » et la coalition de Macron, au restaurant. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « il est cool ce Glucksmann, il me rappelle Macron » : le restaurant municipal. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

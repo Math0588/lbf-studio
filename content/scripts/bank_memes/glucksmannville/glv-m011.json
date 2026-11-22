@@ -3,70 +3,70 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m011",
  "format": "A",
- "anchor": "un an de plus « pour transformer une vision en programme » (2025) et trois cents réunions, sur un chantier qui ne finit jamais.",
+ "anchor": "un an de plus « pour transformer une vision en programme » : le chantier de la grand-rue",
  "situation": "les travaux",
- "ressort": "piques frontales sourcées (style tacle)",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
  "title_cover": "Chantier vision",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, le chantier est en phase vision.",
-  "Glucksmannville : trois cents réunions, zéro pelleteuse.",
-  "Les travaux attendent le programme.",
-  "Les glucksmanniens vont dire que ça avance."
+  "En 2025, il réclame un an « pour transformer une vision en programme ».",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Chantier vision : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. La pelleteuse attend le plan."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Fin des travaux prévue : quand la vision aura un plan. Donc jamais.",
-  "Le chantier a une vision. Pas de béton.",
-  "Le trou est conceptualisé. Pas rebouché."
+  "Le maire inaugure le trou. Il appelle ça une étape de la vision.",
+  "Deux ans de chantier pour une vision. Le trou, lui, est très réussi.",
+  "Deuxième année : le trou devient une œuvre d'art."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Le chantier aussi.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. La pelleteuse attend le plan.",
    "accent_words": [
-    "Le chantier"
+    "plan"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Travaux de la grand-rue depuis deux ans. Panneau : vision en cours.",
+   "text": "En 2025, il réclame un an « pour transformer une vision en programme ».",
    "accent_words": [
-    "vision en cours"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "En 2025, il demandait un an « pour transformer une vision en programme ».",
-   "accent_words": [
-    "une vision"
+    "programme"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "Le chantier, lui, en est à la vision. Les pelleteuses attendent le programme.",
+   "id": "n3",
+   "text": "Chantier sur la grand-rue. Panneau : vision en cours.",
    "accent_words": [
-    "attendent"
+    "cours"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Un an passe. Les ouvriers attendent le plan en buvant du matcha.",
+   "accent_words": [
+    "matcha"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Trois cents réunions de chantier. Comme son mouvement en neuf mois.",
+   "text": "Deuxième année : le trou devient une œuvre d'art.",
    "accent_words": [
-    "Trois cents"
+    "art"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Fin des travaux prévue : quand la vision aura un plan. Donc jamais.",
+   "text": "Le maire inaugure le trou. Il appelle ça une étape de la vision.",
    "accent_words": [
-    "Donc jamais"
+    "vision"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -74,7 +74,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui rénove son appart depuis trois ans.",
    "accent_words": [
-    "trois ans"
+    "ans"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -87,31 +87,74 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "facade_row",
-    "lamp",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
-   "expected_result": "Le décor de rue posé."
+   "comic_action": "Descente sur la ville ; banderole « CHANTIER VISION » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "CHANTIER VISION"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "window_pass",
    "set": [
-    "road",
-    "sign",
-    "person",
-    "text3d"
+    "tribune",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "VISION EN COURS",
-   "comic_action": "Plongée sur le nid-de-poule au milieu de la route, entouré de rubalise.",
-   "expected_result": "Le trou devient le personnage."
+   "onscreen_text": "« UNE VISION EN PROGRAMME »",
+   "comic_action": "Le maire tend un sablier géant au public.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BIENTÔT"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -120,29 +163,69 @@
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
-    "text3d",
-    "person"
+    "road",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "« TRANSFORMER UNE VISION »",
-   "comic_action": "Un parchemin se déroule à n'en plus finir devant l'habitant.",
-   "expected_result": "Le texte interminable."
+   "onscreen_text": "VISION EN COURS",
+   "comic_action": "Un panneau de chantier « VISION EN COURS » barre la grand-rue.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CAFÉ DE CHANTIER 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "descend",
+   "camera": "street_dolly",
    "set": [
     "road",
-    "sign",
     "person",
     "text3d"
    ],
-   "onscreen_text": "PELLETEUSES : EN ATTENTE",
-   "comic_action": "Plongée sur le nid-de-poule au milieu de la route, entouré de rubalise.",
-   "expected_result": "Le trou devient le personnage."
+   "onscreen_text": "ON ATTEND LE PLAN",
+   "comic_action": "Des ouvriers casqués, assis sur une pelleteuse, sirotent des gobelets verts.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "fatigue",
+     "objet": "matcha",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CASQUE"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -151,14 +234,34 @@
    ],
    "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
+    "ground",
     "person",
-    "scroll"
+    "text3d"
    ],
-   "onscreen_text": "300 RÉUNIONS",
-   "comic_action": "Réunion n°300 : piles de comptes rendus ; le rouleau « PROGRAMME » reste vierge.",
-   "expected_result": "La vision sans programme."
+   "onscreen_text": "TROU ARTISTIQUE",
+   "comic_action": "Des touristes prennent des selfies devant le trou de la grand-rue.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "objet": "phone",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ŒUVRE EN COURS"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -167,13 +270,33 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "text3d",
-    "road"
+    "ground",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "FIN DES TRAVAUX : JAMAIS",
-   "comic_action": "Panneau de chantier : la date de fin est un post-it qu'on recolle chaque matin.",
-   "expected_result": "La pique s'affiche en panneau."
+   "onscreen_text": "ÉTAPE IMPORTANTE",
+   "comic_action": "Le maire coupe le ruban au bord du trou, sourire fier.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ÉTAPE 1 SUR ?"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -188,8 +311,28 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : un an de plus « pour transformer une vision en programme » : le chantier de la grand-rue.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "CHANTIER VISION"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -201,19 +344,13 @@
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 85,
+ "word_count": 81,
  "claims": [
   {
    "text": "« pour transformer une vision en programme »",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
-  },
-  {
-   "text": "Trois cents réunions de chantier. Comme son mouvement en neuf mois.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
+   "note": "« Là, je ne suis pas candidat devant vous » ; son mouvement revendique 300 réunions et 150 auditions en neuf mois ; il demande un an de plus « pour transformer une vision en programme »."
   }
  ],
  "sources": [
@@ -221,10 +358,10 @@
    "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
    "date": "2025-06-23",
    "consulted": "2026-11-22",
-   "statut": "citations rapportées",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
+   "statut": "citation exacte + fait public",
+   "note": "« Là, je ne suis pas candidat devant vous » ; son mouvement revendique 300 réunions et 150 auditions en neuf mois ; il demande un an de plus « pour transformer une vision en programme »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : un an de plus « pour transformer une vision en programme » (2025) et trois cents réunions, sur un chantier qui ne finit jamais. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : un an de plus « pour transformer une vision en programme » : le chantier de la grand-rue. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

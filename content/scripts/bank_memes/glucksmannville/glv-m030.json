@@ -3,78 +3,78 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m030",
  "format": "A",
- "anchor": "« on a toujours un moment de flottement » (2019) et « candidat hypothétique cherche projet politique » (Politis 2025) : la mairie qui flotte depuis sept ans.",
+ "anchor": "son mouvement Place publique (2018) pris au mot : la ville entière devient une place",
  "situation": "la mairie",
- "ressort": "piques frontales sourcées (style tacle)",
- "title_cover": "La mairie flotte",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
+ "title_cover": "Place publique",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, la mairie flotte depuis 2019.",
-  "Glucksmannville : le moment de flottement le plus long de France.",
-  "Ni coulée, ni partie : à la dérive.",
-  "Les glucksmanniens vont parler de souplesse."
+  "En 2018, il fonde son mouvement : Place publique.",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Place publique : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Les murs sont en option."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La mairie ne coule pas. Elle ne va nulle part non plus.",
-  "Sept ans de flottement, zéro naufrage, zéro port.",
-  "La mairie flotte. Le cap, au fond."
+  "Le maire veut un bureau. On lui pose un placard au milieu de la place.",
+  "Une ville en place publique. Le maire, lui, a fini dans un placard.",
+  "Il pleut. Tout le monde débat sous le même parapluie géant."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. À flot, à peu près.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Les murs sont en option.",
    "accent_words": [
-    "À flot"
+    "option"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La mairie s'est détachée de ses fondations. Elle flotte sur la fontaine.",
+   "text": "En 2018, il fonde son mouvement : Place publique.",
    "accent_words": [
-    "elle flotte"
+    "publique"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "La mairie le prend au mot : la ville entière devient une place.",
+   "accent_words": [
+    "place"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "En 2019 : « on a toujours un moment de flottement ».",
-   "accent_words": [
-    "flottement"
-   ],
-   "claim_type": "citation_exacte"
-  },
-  {
    "id": "n4",
-   "text": "Sept ans plus tard, le moment dure encore.",
+   "text": "Plus de murs, plus de maisons. Juste des bancs et des débats.",
    "accent_words": [
-    "dure encore"
+    "débats"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "En 2025, Politis cherchait toujours son « projet politique ».",
+   "text": "Il pleut. Tout le monde débat sous le même parapluie géant.",
    "accent_words": [
-    "projet politique"
+    "géant"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La mairie ne coule pas. Elle ne va nulle part non plus.",
+   "text": "Le maire veut un bureau. On lui pose un placard au milieu de la place.",
    "accent_words": [
-    "nulle part"
+    "place"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui est en réflexion depuis 2019.",
+   "text": "Envoie ça au pote qui transforme son salon en squat.",
    "accent_words": [
-    "depuis 2019"
+    "squat"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -91,86 +91,210 @@
     "mairie",
     "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
-   "expected_result": "La ville et son camp posés en une seconde."
+   "comic_action": "Descente sur la ville ; banderole « PLACE PUBLIQUE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PLACE PUBLIQUE"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
-    "mairie",
-    "fountain",
-    "text3d"
+    "banner",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "MAIRIE À LA DÉRIVE",
-   "comic_action": "La mairie flotte dans la fontaine comme une bouée et dérive doucement.",
-   "expected_result": "Le flottement littéral."
+   "onscreen_text": "PLACE PUBLIQUE (2018)",
+   "comic_action": "Une banderole « PLACE PUBLIQUE » est hissée au-dessus de la mairie.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PLACE PUBLIQUE"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "descend",
+   "camera": "street_dolly",
    "set": [
-    "mairie",
-    "fountain",
+    "ground",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "« UN MOMENT DE FLOTTEMENT »",
-   "comic_action": "La mairie flotte dans la fontaine comme une bouée et dérive doucement.",
-   "expected_result": "Le flottement littéral."
+   "onscreen_text": "TOUT EST PLACE",
+   "comic_action": "Les maisons sont démontées ; il ne reste qu'une immense place pavée.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BANC PUBLIC 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "mairie",
-    "fountain",
+    "bench",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "MOMENT : 7 ANS",
-   "comic_action": "La mairie flotte dans la fontaine comme une bouée et dérive doucement.",
-   "expected_result": "Le flottement littéral."
+   "onscreen_text": "DES BANCS ET DES DÉBATS",
+   "comic_action": "Des habitants débattent sur des bancs à perte de vue.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "arms_up",
+     "visage": "parle",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "SANS MAISON"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "ground",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "« PROJET POLITIQUE » ?",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "onscreen_text": "PARAPLUIE GÉANT",
+   "comic_action": "Toute la ville serrée sous un parapluie immense.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "DÉBAT SOUS LA PLUIE"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
-    "mairie",
-    "fountain",
-    "text3d"
+    "ground",
+    "facade_set",
+    "person"
    ],
-   "onscreen_text": "NI COULÉE, NI PARTIE",
-   "comic_action": "La mairie flottante tourne lentement sur elle-même au milieu de la fontaine, drapeau beige au vent.",
-   "expected_result": "Le flottement littéral."
+   "onscreen_text": "UN PLACARD SUR LA PLACE",
+   "comic_action": "Un placard est posé seul au centre de la place ; le maire y entre.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BUREAU DU MAIRE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -179,62 +303,76 @@
    ],
    "camera": "return",
    "set": [
-    "mairie",
+    "road",
     "person",
     "tshirt",
-    "banner"
+    "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : son mouvement Place publique (2018) pris au mot : la ville entière devient une place.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PLACE PUBLIQUE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui est en réflexion depuis 2019."
+  "text": "Envoie ça au pote qui transforme son salon en squat."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-chargement"
  },
- "word_count": 77,
+ "word_count": 83,
  "claims": [
   {
-   "text": "La mairie s'est détachée de ses fondations. Elle flotte sur la fontaine.",
+   "text": "En 2018, il fonde son mouvement : Place publique.",
+   "claim_type": "fait_public",
+   "source": "https://en.wikipedia.org/wiki/Rapha%C3%ABl_Glucksmann",
+   "note": "Place publique (fondé en 2018) ; liste « Réveiller l'Europe » (2024)."
+  },
+  {
+   "text": "Le maire veut un bureau. On lui pose un placard au milieu de la place.",
    "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/non-classe/europeennes-quand-on-change-ses-habitudes-on-a-toujours-un-moment-de-flottement-se",
-   "note": "« Quand on change ses habitudes, on a toujours un moment de flottement ». Détourné dans la ville fictive."
-  },
-  {
-   "text": "« on a toujours un moment de flottement »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.publicsenat.fr/actualites/non-classe/europeennes-quand-on-change-ses-habitudes-on-a-toujours-un-moment-de-flottement-se",
-   "note": "« Quand on change ses habitudes, on a toujours un moment de flottement »."
-  },
-  {
-   "text": "« projet politique »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
-   "note": "« Candidat hypothétique cherche projet politique »."
+   "source": "https://www.20min.ch/fr/story/presidentielle-francaise-glucksmann-moque-sur-les-reseaux-vous-ne-faites-pas-le-taf-103670609",
+   "note": "Moqué sur les réseaux : le décor de son live « Au QG » comparé à un placard ; titre de l'article : « Vous ne faites pas le taf ». Exagération satirique évidente, présentée comme telle."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/non-classe/europeennes-quand-on-change-ses-habitudes-on-a-toujours-un-moment-de-flottement-se",
-   "date": "2019-04-11",
+   "url": "https://en.wikipedia.org/wiki/Rapha%C3%ABl_Glucksmann",
+   "date": "consultée 2026-11-22",
    "consulted": "2026-11-22",
-   "statut": "citation rapportée",
-   "note": "« Quand on change ses habitudes, on a toujours un moment de flottement »."
+   "statut": "fait public",
+   "note": "Place publique (fondé en 2018) ; liste « Réveiller l'Europe » (2024)."
   },
   {
-   "url": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
-   "date": "2025-03-14",
+   "url": "https://www.20min.ch/fr/story/presidentielle-francaise-glucksmann-moque-sur-les-reseaux-vous-ne-faites-pas-le-taf-103670609",
+   "date": "2026-11",
    "consulted": "2026-11-22",
-   "statut": "opinion (titre de presse)",
-   "note": "« Candidat hypothétique cherche projet politique »."
+   "statut": "fait public (moqueries rapportées) + titre de presse",
+   "note": "Moqué sur les réseaux : le décor de son live « Au QG » comparé à un placard ; titre de l'article : « Vous ne faites pas le taf »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « on a toujours un moment de flottement » (2019) et « candidat hypothétique cherche projet politique » (Politis 2025) : la mairie qui flotte depuis sept ans. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : son mouvement Place publique (2018) pris au mot : la ville entière devient une place. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

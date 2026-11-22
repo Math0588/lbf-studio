@@ -3,70 +3,70 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m006",
  "format": "A",
- "anchor": "le format du live « Au QG » (parole d'abord, questions ensuite) et son décor comparé à un placard : une box à sens unique.",
+ "anchor": "son live Au QG (il parle d'abord, les questions ensuite) appliqué à toute la ville",
  "situation": "le Wi-Fi",
- "ressort": "piques frontales sourcées (style tacle)",
- "title_cover": "Wifi Au QG",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
+ "title_cover": "D'abord moi, ensuite vous",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, le wifi parle, mais n'écoute pas.",
-  "Glucksmannville : la box Au QG.",
-  "Débit montant parfait, débit descendant en réflexion.",
-  "Les glucksmanniens vont redémarrer la box."
+  "Son live Au QG : il parle d'abord, les questions viennent ensuite.",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "D'abord moi, ensuite vous : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Le serveur récite la carte."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Connexion parfaite dans un sens. Dans l'autre, le réseau est en réflexion.",
-  "La box émet. Elle ne reçoit pas.",
-  "Connexion établie. Écoute en option."
+  "Le maire ouvre enfin les questions. Il est minuit. Il reste un chat.",
+  "D'abord il parle, ensuite les questions. À minuit, il reste un chat.",
+  "Au resto, le serveur récite la carte jusqu'à la fermeture. Personne n'a mangé."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. En wifi public.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le serveur récite la carte.",
    "accent_words": [
-    "wifi public"
+    "carte"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La box municipale s'appelle Au QG. Elle diffuse sur toutes les plateformes.",
+   "text": "Son live Au QG : il parle d'abord, les questions viennent ensuite.",
    "accent_words": [
-    "Au QG"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Son vrai live Au QG : il parle d'abord, les questions après.",
-   "accent_words": [
-    "les questions après"
+    "ensuite"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "La box aussi : une heure de chargement, puis tu peux poser ta question.",
+   "id": "n3",
+   "text": "La mairie généralise : d'abord le monologue, ensuite les questions.",
    "accent_words": [
-    "une heure"
+    "questions"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Au guichet, l'agent parle quarante minutes avant de demander ton nom.",
+   "accent_words": [
+    "nom"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les internautes, eux, ont surtout remarqué le décor : un placard.",
+   "text": "Au resto, le serveur récite la carte jusqu'à la fermeture. Personne n'a mangé.",
    "accent_words": [
-    "un placard"
+    "mangé"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Connexion parfaite dans un sens. Dans l'autre, le réseau est en réflexion.",
+   "text": "Le maire ouvre enfin les questions. Il est minuit. Il reste un chat.",
    "accent_words": [
-    "en réflexion"
+    "chat"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -74,7 +74,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui coupe la parole en visio.",
    "accent_words": [
-    "coupe la parole"
+    "visio"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -87,46 +87,109 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "facade_row",
-    "lamp",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
-   "expected_result": "Le décor de rue posé."
+   "comic_action": "Descente sur la ville ; banderole « D'ABORD MOI, ENSUITE VOUS » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "D'ABORD MOI, ENSUITE VOUS"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
     "screen",
-    "text3d",
-    "gps"
+    "ring_light",
+    "text3d"
    ],
-   "onscreen_text": "BOX : AU QG",
-   "comic_action": "Écran de l'application municipale : chargement, mise à jour, chargement.",
-   "expected_result": "L'appli porte la pique."
+   "onscreen_text": "AU QG",
+   "comic_action": "Le maire parle face caméra ; un compteur de questions en attente grimpe.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "parle",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "QUESTIONS PLUS TARD"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "tripod_camera",
-    "studio_light",
-    "table",
-    "screen"
+    "sign",
+    "mairie",
+    "text3d"
    ],
-   "onscreen_text": "PAROLE → QUESTIONS",
-   "comic_action": "Studio minuscule : caméra, petite lampe ; la porte du placard se referme sur le décor.",
-   "expected_result": "Le décor moqué par les internautes."
+   "onscreen_text": "MONOLOGUE D'ABORD",
+   "comic_action": "Panneau sur la mairie : « QUESTIONS APRÈS LE DISCOURS ».",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "QUESTION 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -135,29 +198,68 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "gps"
+    "table",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "CHARGEMENT : 1 H",
-   "comic_action": "Écran de l'application municipale : chargement, mise à jour, chargement.",
-   "expected_result": "L'appli porte la pique."
+   "onscreen_text": "40 MINUTES AVANT TON NOM",
+   "comic_action": "Un agent parle sans s'arrêter ; l'usager s'endort sur le comptoir.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "dort",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "J'ATTENDS"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "tripod_camera",
-    "studio_light",
+    "shop",
     "table",
-    "screen"
+    "person"
    ],
-   "onscreen_text": "DÉCOR : PLACARD",
-   "comic_action": "Studio minuscule : caméra, petite lampe ; la porte du placard se referme sur le décor.",
-   "expected_result": "Le décor moqué par les internautes."
+   "onscreen_text": "RIEN MANGÉ",
+   "comic_action": "Un serveur récite un menu interminable devant des clients affamés.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "CARTE (TOME 2)"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -167,12 +269,32 @@
    "camera": "closeup",
    "set": [
     "screen",
-    "text3d",
-    "gps"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "↑ OK · ↓ EN RÉFLEXION",
-   "comic_action": "Écran de l'application municipale : chargement, mise à jour, chargement.",
-   "expected_result": "L'appli porte la pique."
+   "onscreen_text": "IL RESTE UN CHAT",
+   "comic_action": "Le maire se tourne vers la salle vide ; un chat lève la patte.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "À VOS QUESTIONS"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -187,8 +309,28 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : son live Au QG (il parle d'abord, les questions ensuite) appliqué à toute la ville.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "D'ABORD MOI, ENSUITE VOUS"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -203,22 +345,10 @@
  "word_count": 82,
  "claims": [
   {
-   "text": "La box municipale s'appelle Au QG. Elle diffuse sur toutes les plateformes.",
-   "claim_type": "fiction_satirique",
-   "source": "https://lcp.fr/actualites/au-qg-raphael-glucksmann-lance-son-rendez-vous-de-campagne-numerique-ce-vendredi-444843",
-   "note": "Live « Au QG » sur les plateformes, puis questions des internautes. Détourné dans la ville fictive."
-  },
-  {
-   "text": "Son vrai live Au QG : il parle d'abord, les questions après.",
+   "text": "Son live Au QG : il parle d'abord, les questions viennent ensuite.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/au-qg-raphael-glucksmann-lance-son-rendez-vous-de-campagne-numerique-ce-vendredi-444843",
-   "note": "Live « Au QG » sur les plateformes, puis questions des internautes."
-  },
-  {
-   "text": "Les internautes, eux, ont surtout remarqué le décor : un placard.",
-   "claim_type": "fait_public",
-   "source": "https://www.20min.ch/fr/story/presidentielle-francaise-glucksmann-moque-sur-les-reseaux-vous-ne-faites-pas-le-taf-103670609",
-   "note": "Décor de l'émission « Au QG » comparé à un placard ; « vous ne faites pas le taf »."
+   "note": "Live « Au QG » diffusé sur les plateformes : prise de parole, puis questions des internautes."
   }
  ],
  "sources": [
@@ -227,16 +357,9 @@
    "date": "2026-11-06",
    "consulted": "2026-11-22",
    "statut": "fait public",
-   "note": "Live « Au QG » sur les plateformes, puis questions des internautes."
-  },
-  {
-   "url": "https://www.20min.ch/fr/story/presidentielle-francaise-glucksmann-moque-sur-les-reseaux-vous-ne-faites-pas-le-taf-103670609",
-   "date": "2026-11",
-   "consulted": "2026-11-22",
-   "statut": "fait public (moqueries d'internautes)",
-   "note": "Décor de l'émission « Au QG » comparé à un placard ; « vous ne faites pas le taf »."
+   "note": "Live « Au QG » diffusé sur les plateformes : prise de parole, puis questions des internautes."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : le format du live « Au QG » (parole d'abord, questions ensuite) et son décor comparé à un placard : une box à sens unique. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : son live Au QG (il parle d'abord, les questions ensuite) appliqué à toute la ville. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

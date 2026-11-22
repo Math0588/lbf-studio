@@ -3,70 +3,70 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m005",
  "format": "A",
- "anchor": "le reproche d'un profil trop urbain, « façon Canal Saint-Martin » (2019), et le cliché centre-ville de la ville fictive : la boulangerie au levain.",
+ "anchor": "le profil jugé trop urbain, « Canal Saint-Martin » : la mairie envoie du lait d'avoine aux fermes",
  "situation": "la boulangerie",
- "ressort": "piques frontales sourcées (style tacle)",
- "title_cover": "Gauche au levain",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
+ "title_cover": "Lait d'avoine fermier",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, la gauche se vend au levain.",
-  "Glucksmannville : la baguette tradition est en voie de disparition.",
-  "Neuf euros le pain engagé.",
-  "Les glucksmanniens vont dire que c'est du pain artisanal."
+  "On lui reproche un profil trop urbain, façon Canal Saint-Martin.",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Lait d'avoine fermier : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Le matcha est à 10,50 €."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Pain engagé, local, à neuf euros : la gauche, version brunch.",
-  "Le pain est de gauche. Le prix, de droite.",
-  "Brunch engagé, addition décomplexée."
+  "Le maire visite la campagne en trottinette. Il demande où est le canal.",
+  "Il voulait parler aux campagnes. Il leur a livré du lait d'avoine.",
+  "Les champs deviennent des jardins partagés. Au menu : chia."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Au levain.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le matcha est à 10,50 €.",
    "accent_words": [
-    "Au levain"
+    "10,50 €"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La boulangerie ne vend que du pain au levain, à neuf euros.",
+   "text": "On lui reproche un profil trop urbain, façon Canal Saint-Martin.",
    "accent_words": [
-    "neuf euros"
+    "Saint-Martin"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "Pour plaire aux campagnes, la mairie livre du lait d'avoine aux fermes.",
+   "accent_words": [
+    "fermes"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "On lui reproche un profil trop urbain, façon Canal Saint-Martin.",
-   "accent_words": [
-    "Canal Saint-Martin"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n4",
-   "text": "Il dit ne pas opposer rural et urbain. La baguette tradition, si.",
+   "text": "Les vaches sont mises au chômage. Les fermiers reçoivent des tote bags.",
    "accent_words": [
-    "rural et urbain"
+    "bags"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Côté prix, le levain n'a aucune timidité sociale.",
+   "text": "Les champs deviennent des jardins partagés. Au menu : chia.",
    "accent_words": [
-    "aucune timidité"
+    "chia"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Pain engagé, local, à neuf euros : la gauche, version brunch.",
+   "text": "Le maire visite la campagne en trottinette. Il demande où est le canal.",
    "accent_words": [
-    "version brunch"
+    "canal"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -74,7 +74,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui paie son pain plus cher que son forfait.",
    "accent_words": [
-    "son forfait"
+    "forfait"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -87,29 +87,75 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "facade_row",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "sign"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
-   "expected_result": "Le commerce du jour posé."
+   "comic_action": "Descente sur la ville ; banderole « LAIT D'AVOINE FERMIER » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MATCHA 10,50 €"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
+    "road",
     "shop",
-    "sign",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "LEVAIN : 9 €",
-   "comic_action": "Boulangerie au levain : pain à prix d'or, file de vélos-cargos devant.",
-   "expected_result": "Le cliché centre-ville de la ville fictive."
+   "onscreen_text": "PROFIL CANAL SAINT-MARTIN",
+   "comic_action": "Le maire pose au bord d'un canal, gobelet vert à la main.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "matcha",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LA CAMPAGNE, C'EST CHIC"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -118,30 +164,68 @@
    ],
    "camera": "descend",
    "set": [
-    "facade_row",
-    "banner",
-    "person",
-    "tree"
+    "car",
+    "ground",
+    "text3d"
    ],
-   "onscreen_text": "PROFIL : CANAL SAINT-MARTIN",
-   "comic_action": "Rue entièrement beige : façades, banderole, pulls ; un seul habitant en rouge qui détonne.",
-   "expected_result": "Le centre du centre en couleur."
+   "onscreen_text": "LAIT D'AVOINE À LA FERME",
+   "comic_action": "Un camion décharge des briques de lait d'avoine devant une étable.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "LAIT D'AVOINE 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "shop",
-    "sign",
+    "ground",
     "person",
     "text3d"
    ],
-   "onscreen_text": "RURAL / URBAIN",
-   "comic_action": "Gros plan sur la vitrine de la boulangerie : prix géants.",
-   "expected_result": "Le commerce sert de support à la pique."
+   "onscreen_text": "VACHES AU CHÔMAGE",
+   "comic_action": "Une vache lit les petites annonces ; un fermier tient un tote bag.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "BIO"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -150,13 +234,33 @@
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "sign",
+    "ground",
+    "tree",
     "person"
    ],
-   "onscreen_text": "PRIX : SANS COMPLEXE",
-   "comic_action": "Boulangerie au levain : pain à prix d'or, file de vélos-cargos devant.",
-   "expected_result": "Le cliché centre-ville de la ville fictive."
+   "onscreen_text": "CHAMP DE CHIA",
+   "comic_action": "Un tracteur plante des graines de chia dans un jardin partagé.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TERROIR URBAIN"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +269,33 @@
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "sign",
-    "person"
+    "road",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "LA GAUCHE, VERSION BRUNCH",
-   "comic_action": "Comptoir de la boulangerie : un pain sculpté en forme de poing levé, étiquette « 9 € », file d'attente en trottinette.",
-   "expected_result": "Le cliché centre-ville de la ville fictive."
+   "onscreen_text": "OÙ EST LE CANAL ?",
+   "comic_action": "Le maire en trottinette au milieu d'un champ, perdu.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BONJOUR LA RURALITÉ"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,14 +304,34 @@
    ],
    "camera": "return",
    "set": [
-    "shop",
-    "tshirt",
+    "road",
     "person",
+    "tshirt",
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : le profil jugé trop urbain, « Canal Saint-Martin » : la mairie envoie du lait d'avoine aux fermes.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LAIT D'AVOINE FERMIER"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,31 +343,13 @@
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 76,
+ "word_count": 84,
  "claims": [
-  {
-   "text": "La boulangerie ne vend que du pain au levain, à neuf euros.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/politique/dans-le-loir-et-cher-glucksmann-ne-veut-pas-opposer-le-rural-a-l-urbain-140374",
-   "note": "Profil jugé trop urbain ; Canal Saint-Martin cité comme symbole « bobo ». Détourné dans la ville fictive."
-  },
   {
    "text": "On lui reproche un profil trop urbain, façon Canal Saint-Martin.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/dans-le-loir-et-cher-glucksmann-ne-veut-pas-opposer-le-rural-a-l-urbain-140374",
-   "note": "Profil jugé trop urbain ; Canal Saint-Martin cité comme symbole « bobo »."
-  },
-  {
-   "text": "Il dit ne pas opposer rural et urbain. La baguette tradition, si.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/dans-le-loir-et-cher-glucksmann-ne-veut-pas-opposer-le-rural-a-l-urbain-140374",
-   "note": "Profil jugé trop urbain ; Canal Saint-Martin cité comme symbole « bobo »."
-  },
-  {
-   "text": "Côté prix, le levain n'a aucune timidité sociale.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/",
-   "note": "« Timidité sociale » du programme. Détourné dans la ville fictive."
+   "note": "Reproche d'un profil trop urbain ; le Canal Saint-Martin cité comme symbole « bobo » ; il dit ne pas vouloir opposer le rural à l'urbain."
   }
  ],
  "sources": [
@@ -232,16 +358,9 @@
    "date": "2019-04-19",
    "consulted": "2026-11-22",
    "statut": "fait rapporté + cliché",
-   "note": "Profil jugé trop urbain ; Canal Saint-Martin cité comme symbole « bobo »."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/",
-   "date": "2026-06-11",
-   "consulted": "2026-11-22",
-   "statut": "opinion (entretien)",
-   "note": "« Timidité sociale » du programme."
+   "note": "Reproche d'un profil trop urbain ; le Canal Saint-Martin cité comme symbole « bobo » ; il dit ne pas vouloir opposer le rural à l'urbain."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : le reproche d'un profil trop urbain, « façon Canal Saint-Martin » (2019), et le cliché centre-ville de la ville fictive : la boulangerie au levain. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : le profil jugé trop urbain, « Canal Saint-Martin » : la mairie envoie du lait d'avoine aux fermes. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

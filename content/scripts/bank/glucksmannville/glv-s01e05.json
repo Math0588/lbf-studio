@@ -3,67 +3,67 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-05",
  "format": "A",
- "title_cover": "Jamais à gauche",
+ "title_cover": "GPS au centre",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, tourner à gauche fait perdre des points.",
-  "Glucksmannville : l'auto-école du centre du centre.",
-  "Le seul permis de France sans virage à gauche.",
-  "Les glucksmanniens vont tourner… au centre."
+  "Des critiques le situent « centre gauche, voire centre ».",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "GPS au centre : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Le GPS a pris sa carte."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Résultat : la voiture finit au milieu du rond-point. Garée. Pour toujours.",
-  "Le clignotant gauche est décoratif.",
-  "Il voulait la gauche. Le GPS a choisi le centre."
+  "Le GPS du maire indique enfin la gauche. Il recalcule. Puis le centre.",
+  "Un GPS qui ne tourne jamais à gauche. Même pas pour le maire.",
+  "Les virages sont supprimés. Les ronds-points deviennent des lignes droites."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Tout droit.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le GPS a pris sa carte.",
    "accent_words": [
-    "Tout droit"
+    "carte"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Au permis, une seule règle : ne jamais tourner à gauche. Trop clivant.",
+   "text": "Des critiques le situent « centre gauche, voire centre ».",
    "accent_words": [
-    "Trop clivant"
+    "centre"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n3",
+   "text": "Le GPS municipal est réglé pareil : jamais à gauche, jamais à droite.",
+   "accent_words": [
+    "droite"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Ses critiques le placent centre gauche, voire centre.",
-   "accent_words": [
-    "voire centre"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n4",
-   "text": "Le GPS conseille : restez au milieu, on verra plus tard.",
+   "text": "Toutes les voitures roulent pile au milieu de la route.",
    "accent_words": [
-    "au milieu"
+    "route"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Une chronique de 2024 l'avait vu venir : « il me rappelle Macron ».",
+   "text": "Les virages sont supprimés. Les ronds-points deviennent des lignes droites.",
    "accent_words": [
-    "Macron"
+    "droites"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Résultat : la voiture finit au milieu du rond-point. Garée. Pour toujours.",
+   "text": "Le GPS du maire indique enfin la gauche. Il recalcule. Puis le centre.",
    "accent_words": [
-    "Pour toujours"
+    "centre"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui met le clignotant à gauche, puis va tout droit.",
    "accent_words": [
-    "tout droit"
+    "droit"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -84,47 +84,109 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "facade_row",
-    "lamp",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
-   "expected_result": "Le décor de rue posé."
+   "comic_action": "Descente sur la ville ; banderole « GPS AU CENTRE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "GPS AU CENTRE"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "car",
-    "traffic_light",
-    "person",
-    "sign"
+    "gps",
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "GAUCHE : INTERDIT",
-   "comic_action": "Voiture d'auto-école à l'arrêt au feu ; l'inspecteur note.",
-   "expected_result": "Le permis porte la pique."
+   "onscreen_text": "« VOIRE CENTRE »",
+   "comic_action": "Le GPS municipal affiche une flèche qui hésite entre gauche et centre.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUT DROIT AU CENTRE"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
     "gps",
     "car",
-    "screen",
-    "text3d"
+    "road"
    ],
-   "onscreen_text": "CENTRE GAUCHE → CENTRE",
-   "comic_action": "GPS de voiture : « CAP » s'affiche, la flèche tourne sur elle-même, « recalcul » en boucle.",
-   "expected_result": "Le cap qui ne pointe nulle part."
+   "onscreen_text": "NI GAUCHE NI DROITE",
+   "comic_action": "Un GPS géant sur le tableau de bord d'une voiture répète « continuez au centre ».",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "GPS CENTRISTE 999 €"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -133,44 +195,103 @@
    ],
    "camera": "closeup",
    "set": [
-    "gps",
+    "road",
     "car",
-    "screen",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "RESTEZ AU MILIEU",
-   "comic_action": "GPS de voiture : « CAP » s'affiche, la flèche tourne sur elle-même, « recalcul » en boucle.",
-   "expected_result": "Le cap qui ne pointe nulle part."
+   "onscreen_text": "TOUT LE MONDE AU MILIEU",
+   "comic_action": "Les voitures roulent sur la ligne blanche, nez à nez, sans jamais tourner.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "arms_up",
+     "visage": "colere",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "CENTRE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "person",
-    "text3d"
+    "roundabout",
+    "road",
+    "sign"
    ],
-   "onscreen_text": "« IL ME RAPPELLE MACRON »",
-   "comic_action": "Écran : silhouette du maire, puis le même costume bleu de la ville voisine se superpose.",
-   "expected_result": "La ressemblance, montrée."
+   "onscreen_text": "VIRAGES SUPPRIMÉS",
+   "comic_action": "Le rond-point est aplati en ligne droite ; les voitures filent tout droit dans un champ.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PAS DE VIRAGE"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "roundabout",
-    "car_orbit",
-    "sign"
+    "gps",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "GARÉ AU CENTRE",
-   "comic_action": "La voiture d'auto-école se gare sur l'îlot central du rond-point, coupe le moteur, met le frein à main.",
-   "expected_result": "Le rond-point porte la pique."
+   "onscreen_text": "RECALCUL…",
+   "comic_action": "Dans la voiture du maire, le GPS affiche « GAUCHE », hésite, puis « CENTRE ».",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "RECALCUL EN COURS"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -179,14 +300,34 @@
    ],
    "camera": "return",
    "set": [
-    "roundabout",
-    "car_orbit",
+    "road",
     "person",
-    "tshirt"
+    "tshirt",
+    "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur le rond-point ; un habitant en t-shirt de la collection fait du stop au milieu.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « centre gauche, voire centre » : le GPS municipal ne tourne jamais.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "GPS AU CENTRE"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -198,19 +339,13 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 82,
+ "word_count": 84,
  "claims": [
   {
-   "text": "Ses critiques le placent centre gauche, voire centre.",
-   "claim_type": "fait_public",
-   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
-  },
-  {
-   "text": "« il me rappelle Macron »",
+   "text": "« centre gauche, voire centre »",
    "claim_type": "citation_exacte",
-   "source": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
-   "note": "« Il est cool ce Glucksmann, il me rappelle Macron »."
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "note": "Discours d'Aubervilliers (13/06/2026) : « notre gauche » sept fois dans le dernier tiers ; une vision plutôt qu'un programme détaillé ; des critiques le situent « centre gauche, voire centre »."
   }
  ],
  "sources": [
@@ -219,16 +354,9 @@
    "date": "2026-06-25",
    "consulted": "2026-11-22",
    "statut": "fait (analyse lexicale) + opinion rapportée",
-   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
-  },
-  {
-   "url": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
-   "date": "2024-04-03",
-   "consulted": "2026-11-22",
-   "statut": "opinion (titre de chronique cité à l'identique)",
-   "note": "« Il est cool ce Glucksmann, il me rappelle Macron »."
+   "note": "Discours d'Aubervilliers (13/06/2026) : « notre gauche » sept fois dans le dernier tiers ; une vision plutôt qu'un programme détaillé ; des critiques le situent « centre gauche, voire centre »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « centre gauche, voire centre » (critiques rapportées par l'Institut Montaigne) et « il me rappelle Macron » (Atlantico 2024) : une auto-école où l'on ne tourne jamais à gauche. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « centre gauche, voire centre » : le GPS municipal ne tourne jamais. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

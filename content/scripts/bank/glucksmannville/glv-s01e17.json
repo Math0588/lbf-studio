@@ -3,75 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-23",
  "format": "A",
- "title_cover": "Pétard mouillé",
+ "title_cover": "Bataille en tote bag",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, la bataille de France a commencé avec un pétard mouillé.",
-  "Glucksmannville : le feu d'artifice beige.",
-  "Une fusée, un pschitt, une bataille.",
-  "Les glucksmanniens vont applaudir le pschitt."
+  "Soir de primaire : « Ce soir, la bataille de France commence ».",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Bataille en tote bag : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Le tote bag est une arme."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Bataille lancée. Les troupes cherchent encore le programme.",
-  "Grande bataille, petite fusée.",
-  "La bataille commence. Le feu d'artifice, lui, est déjà fini."
+  "Le maire proclame la victoire : personne n'a perdu, personne n'a combattu.",
+  "La bataille de France a commencé. Elle attend toujours un adversaire.",
+  "Le lendemain, réunion pour décider contre qui combattre."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Avec des pétards mouillés.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le tote bag est une arme.",
    "accent_words": [
-    "pétards mouillés"
+    "arme"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Soir de victoire : « Ce soir, la bataille de France commence ».",
+   "text": "Soir de primaire : « Ce soir, la bataille de France commence ».",
    "accent_words": [
-    "bataille de France"
+    "commence"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Le feu d'artifice part. Une fusée beige, un petit pschitt.",
+   "text": "La mairie mobilise. Armes réglementaires : coussins et tote bags.",
    "accent_words": [
-    "pschitt"
+    "bags"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Puis : « rien ne me fera lâcher ». La fusée a lâché.",
+   "text": "On attend l'ennemi toute la nuit. Il ne vient pas. On boit un matcha.",
    "accent_words": [
-    "a lâché"
+    "matcha"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Sondage suivant : autour de 15 %. La bataille continue, à pied.",
+   "text": "Le lendemain, réunion pour décider contre qui combattre.",
    "accent_words": [
-    "à pied"
+    "combattre"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Bataille lancée. Les troupes cherchent encore le programme.",
+   "text": "Le maire proclame la victoire : personne n'a perdu, personne n'a combattu.",
    "accent_words": [
-    "le programme"
+    "combattu"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui promet la fête du siècle et rentre tôt.",
+   "text": "Envoie ça au pote qui déclare la guerre dans un groupe WhatsApp.",
    "accent_words": [
-    "rentre tôt"
+    "WhatsApp"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,93 +85,215 @@
    "camera": "descend",
    "set": [
     "ground",
-    "fountain",
-    "arch",
+    "mairie",
+    "banner",
     "person",
     "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente sur la grande place : fontaine, arche, habitants.",
-   "expected_result": "La place centrale posée."
+   "comic_action": "Descente sur la ville ; banderole « BATAILLE EN TOTE BAG » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BATAILLE EN TOTE BAG"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
     "tribune",
-    "banner",
     "studio_light",
     "person"
    ],
-   "onscreen_text": "« LA BATAILLE DE FRANCE COMMENCE »",
-   "comic_action": "Le maire cubique lève le poing sur la tribune ; banderole « LA BATAILLE COMMENCE » ; la foule regarde sa montre.",
-   "expected_result": "Le grand mot face au petit effet."
+   "onscreen_text": "« LA BATAILLE COMMENCE »",
+   "comic_action": "Le maire, poing levé sous un projecteur, devant une foule polie.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "EN AVANT, DOUCEMENT"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "facade_row",
-    "banner",
+    "table",
     "person",
-    "tree"
+    "text3d"
    ],
-   "onscreen_text": "FEU D'ARTIFICE : PSCHITT",
-   "comic_action": "Une fusée beige monte de trois mètres, fait « pschitt », retombe dans la fontaine.",
-   "expected_result": "Le centre du centre en couleur."
+   "onscreen_text": "ARMES : COUSSINS",
+   "comic_action": "Un agent distribue des coussins et des tote bags à la foule.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TOTE BAG DE COMBAT 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "tribune",
-    "banner",
-    "studio_light",
+    "lamp",
+    "road",
     "person"
    ],
-   "onscreen_text": "« RIEN NE ME FERA LÂCHER »",
-   "comic_action": "Le maire cubique lève le poing sur la tribune ; banderole « LA BATAILLE COMMENCE » ; la foule regarde sa montre.",
-   "expected_result": "Le grand mot face au petit effet."
+   "onscreen_text": "L'ENNEMI NE VIENT PAS",
+   "comic_action": "La nuit, des habitants en tote bag attendent, matcha à la main.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "fatigue",
+     "objet": "matcha",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "dort",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "SOLDAT"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "screen",
-    "text3d",
-    "sign"
+    "table",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "~15 %",
-   "comic_action": "Écran de sondage : une barre monte… et s'arrête à mi-hauteur.",
-   "expected_result": "Le chiffre de sondage en jauge."
+   "onscreen_text": "CONTRE QUI ?",
+   "comic_action": "Autour d'une table, des habitants votent à main levée, sans majorité.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ENNEMI À DÉFINIR"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
+    "tribune",
     "person",
-    "scroll"
+    "banner"
    ],
-   "onscreen_text": "TROUPES : SANS CARTE",
-   "comic_action": "Réunion n°300 : piles de comptes rendus ; le rouleau « PROGRAMME » reste vierge.",
-   "expected_result": "La vision sans programme."
+   "onscreen_text": "VICTOIRE SANS BATAILLE",
+   "comic_action": "Le maire salue sous une banderole « VICTOIRE » ; derrière, les coussins sont intacts.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "VICTOIRE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -186,44 +308,46 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « Ce soir, la bataille de France commence » : la ville se mobilise, sans ennemi.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BATAILLE EN TOTE BAG"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui promet la fête du siècle et rentre tôt."
+  "text": "Envoie ça au pote qui déclare la guerre dans un groupe WhatsApp."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 81,
+ "word_count": 83,
  "claims": [
   {
    "text": "« Ce soir, la bataille de France commence »",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/ce-soir-la-bataille-de-france-commence-apres-sa-victoire-a-la-primaire-de-la-gauche-raphael-glucksmann-assure-que-rien-ne-le-fera-l",
-   "note": "« Ce soir, la bataille de France commence » ; « rien ne me fera lâcher »."
-  },
-  {
-   "text": "« rien ne me fera lâcher »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.publicsenat.fr/actualites/politique/ce-soir-la-bataille-de-france-commence-apres-sa-victoire-a-la-primaire-de-la-gauche-raphael-glucksmann-assure-que-rien-ne-le-fera-l",
-   "note": "« Ce soir, la bataille de France commence » ; « rien ne me fera lâcher »."
-  },
-  {
-   "text": "Sondage suivant : autour de 15 %. La bataille continue, à pied.",
-   "claim_type": "fait_public",
-   "source": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
-   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant."
-  },
-  {
-   "text": "Bataille lancée. Les troupes cherchent encore le programme.",
-   "claim_type": "fiction_satirique",
-   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre ». Détourné dans la ville fictive."
+   "note": "Soir de primaire : « Ce soir, la bataille de France commence » ; « rien ne me fera lâcher »."
   }
  ],
  "sources": [
@@ -231,24 +355,10 @@
    "url": "https://www.publicsenat.fr/actualites/politique/ce-soir-la-bataille-de-france-commence-apres-sa-victoire-a-la-primaire-de-la-gauche-raphael-glucksmann-assure-que-rien-ne-le-fera-l",
    "date": "2026-10-11",
    "consulted": "2026-11-22",
-   "statut": "citations rapportées",
-   "note": "« Ce soir, la bataille de France commence » ; « rien ne me fera lâcher »."
-  },
-  {
-   "url": "https://fr.euronews.com/2026/10/16/presidentielle-2027-raphael-glucksmann-progresse-dans-les-sondages-apres-sa-victoire-a-la-",
-   "date": "2026-10-16",
-   "consulted": "2026-11-22",
-   "statut": "fait (sondage)",
-   "note": "Autour de 14-15 % au premier tour après la primaire ; Le Pen loin devant."
-  },
-  {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "date": "2026-06-25",
-   "consulted": "2026-11-22",
-   "statut": "fait (analyse lexicale) + opinion rapportée",
-   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
+   "statut": "citation exacte",
+   "note": "Soir de primaire : « Ce soir, la bataille de France commence » ; « rien ne me fera lâcher »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « Ce soir, la bataille de France commence » et « rien ne me fera lâcher » (soir de primaire, octobre 2026) en feu d'artifice beige. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « Ce soir, la bataille de France commence » : la ville se mobilise, sans ennemi. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

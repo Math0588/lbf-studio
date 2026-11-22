@@ -3,67 +3,67 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-14",
  "format": "A",
- "title_cover": "Rayon gauche retiré",
+ "title_cover": "Tout à droite",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, le rayon gauche a été remplacé par du beige.",
-  "Glucksmannville : le supermarché de la gauche en option.",
-  "Rupture de stock au rayon gauche.",
-  "Les glucksmanniens vont chercher le rayon gauche."
+  "Octobre 2026, Politis titre : « Glucksmann, la gauche en moins ».",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Tout à droite : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Le chien ne remue qu'à droite."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "À la caisse, on cherche la gauche. Le ticket dit : rupture de stock.",
-  "Tout est en promo, sauf la gauche : épuisée.",
-  "Le caddie est plein. De centre."
+  "Le maire défile pour la gauche, en tournant à droite.",
+  "La gauche en moins : à la fin, il ne restait que des virages à droite.",
+  "Tout le monde tourne à droite. La ville entière fait des cercles."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Sans le rayon gauche.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le chien ne remue qu'à droite.",
    "accent_words": [
-    "rayon gauche"
+    "droite"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Au supermarché, le rayon gauche a été retiré. Manque de place.",
+   "text": "Octobre 2026, Politis titre : « Glucksmann, la gauche en moins ».",
    "accent_words": [
-    "retiré"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Politis a trouvé le titre : « Glucksmann, la gauche en moins ».",
-   "accent_words": [
-    "la gauche en moins"
+    "moins"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "L'édito redoute du macronisme sous bannière sociale-démocrate.",
+   "id": "n3",
+   "text": "La mairie supprime donc tout ce qui est à gauche.",
    "accent_words": [
-    "macronisme"
+    "gauche"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Plus de clignotant gauche, plus de chaussures gauches, plus de rayon gauche.",
+   "accent_words": [
+    "gauche"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Dans le caddie : du beige, du tiède, un peu de rose pour la photo.",
+   "text": "Tout le monde tourne à droite. La ville entière fait des cercles.",
    "accent_words": [
-    "pour la photo"
+    "cercles"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "À la caisse, on cherche la gauche. Le ticket dit : rupture de stock.",
+   "text": "Le maire défile pour la gauche, en tournant à droite.",
    "accent_words": [
-    "rupture de stock"
+    "droite"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui se dit de gauche, mais pas trop.",
    "accent_words": [
-    "pas trop"
+    "trop"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -84,30 +84,74 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "facade_row",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "sign"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
-   "expected_result": "Le commerce du jour posé."
+   "comic_action": "Descente sur la ville ; banderole « TOUT À DROITE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUT À DROITE"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
-    "shop",
-    "table",
-    "person",
-    "sign"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "RAYON GAUCHE : RETIRÉ",
-   "comic_action": "Travelling entre les étals du marché.",
-   "expected_result": "Le marché porte la pique."
+   "onscreen_text": "« LA GAUCHE EN MOINS »",
+   "comic_action": "Un journal géant tombe sur la place, titre en une.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LA GAUCHE ? BOF"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,60 +160,138 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "sign",
+    "road",
+    "text3d"
    ],
-   "onscreen_text": "« LA GAUCHE EN MOINS »",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "onscreen_text": "GAUCHE SUPPRIMÉE",
+   "comic_action": "Un agent scie la moitié gauche des panneaux de rue.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CHAUSSURE DROITE 89 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "person",
-    "text3d"
+    "shop",
+    "car",
+    "person"
    ],
-   "onscreen_text": "MACRONISME (ÉTIQUETTE ROSE)",
-   "comic_action": "Écran : silhouette du maire, puis le même costume bleu de la ville voisine se superpose.",
-   "expected_result": "La ressemblance, montrée."
+   "onscreen_text": "RAYON GAUCHE : FERMÉ",
+   "comic_action": "Au supermarché, la moitié gauche des rayons est bâchée.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "DROITE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "facade_row",
-    "banner",
-    "person",
-    "tree"
+    "roundabout",
+    "car_orbit",
+    "person"
    ],
-   "onscreen_text": "CADDIE : BEIGE",
-   "comic_action": "Rue entièrement beige : façades, banderole, pulls ; un seul habitant en rouge qui détonne.",
-   "expected_result": "Le centre du centre en couleur."
+   "onscreen_text": "ON TOURNE EN ROND",
+   "comic_action": "Voitures et piétons tournent à droite, à droite, à droite, et repassent devant la mairie.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "spin",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUT DROIT (À DROITE)"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "shop",
-    "table",
-    "person",
-    "sign"
+    "road",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "GAUCHE : RUPTURE DE STOCK",
-   "comic_action": "Gros plan sur l'étiquette vide du rayon ; un employé colle « RUPTURE DE STOCK » en souriant.",
-   "expected_result": "Le marché porte la pique."
+   "onscreen_text": "MANIF DE GAUCHE (À DROITE)",
+   "comic_action": "Le maire mène un défilé « POUR LA GAUCHE » qui tourne sans cesse à droite.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "EN AVANT, À DROITE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -178,14 +300,34 @@
    ],
    "camera": "return",
    "set": [
-    "shop",
-    "tshirt",
+    "road",
     "person",
+    "tshirt",
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « Glucksmann, la gauche en moins » : la mairie supprime tout ce qui est à gauche.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUT À DROITE"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -197,25 +339,13 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 84,
+ "word_count": 82,
  "claims": [
-  {
-   "text": "Au supermarché, le rayon gauche a été retiré. Manque de place.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
-   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate. Détourné dans la ville fictive."
-  },
   {
    "text": "« Glucksmann, la gauche en moins »",
    "claim_type": "citation_exacte",
    "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
-   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
-  },
-  {
-   "text": "L'édito redoute du macronisme sous bannière sociale-démocrate.",
-   "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
-   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
+   "note": "« Glucksmann, la gauche en moins » ; l'édito redoute du macronisme sous bannière sociale-démocrate."
   }
  ],
  "sources": [
@@ -223,10 +353,10 @@
    "url": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
    "date": "2026-10",
    "consulted": "2026-11-22",
-   "statut": "opinion (éditorial, titre cité)",
-   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
+   "statut": "titre d'éditorial (opinion)",
+   "note": "« Glucksmann, la gauche en moins » ; l'édito redoute du macronisme sous bannière sociale-démocrate."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « Glucksmann, la gauche en moins » (Politis, octobre 2026) et la crainte d'un macronisme sous bannière sociale-démocrate, au supermarché. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « Glucksmann, la gauche en moins » : la mairie supprime tout ce qui est à gauche. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

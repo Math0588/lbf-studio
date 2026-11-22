@@ -3,67 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-22",
  "format": "A",
- "title_cover": "Belvédère sans parti pris",
+ "title_cover": "Les Enfants du vide",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, on regarde tout. On ne descend jamais.",
-  "Glucksmannville : le belvédère du centre.",
-  "Vue sur la gauche, la droite, le centre. Aucun choix.",
-  "Les glucksmanniens vont trouver la vue apaisante."
+  "En 2018, il publie un livre : Les Enfants du vide.",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Les Enfants du vide : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Le frigo de la mairie est vide."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Sans parti pris, sans vertige, sans direction. Juste une très belle vue.",
-  "Une très belle vue. Aucune route pour y aller.",
-  "On voit tout d'ici. On ne touche à rien."
+  "Le maire y présente son programme. Le décor est parfaitement assorti.",
+  "Il a écrit Les Enfants du vide. La ville a construit le décor.",
+  "Les touristes adorent. Ils photographient le vide, avec un filtre."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Vue imprenable sur le centre.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le frigo de la mairie est vide.",
    "accent_words": [
-    "le centre"
+    "vide"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le belvédère offre une vue à 360 degrés. Partout, du beige.",
+   "text": "En 2018, il publie un livre : Les Enfants du vide.",
    "accent_words": [
-    "du beige"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Son mouvement s'appelle Place publique. Ici, la place est en hauteur.",
-   "accent_words": [
-    "en hauteur"
+    "vide"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "Un sociologue y voit de la « timidité sociale ». La rambarde aussi.",
+   "id": "n3",
+   "text": "La mairie le prend au mot : une place totalement vide.",
    "accent_words": [
-    "timidité sociale"
+    "vide"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Puis une rue vide, un musée vide, un menu vide à 10,50 €.",
+   "accent_words": [
+    "10,50"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Sans parti pris, sans vertige, sans direction. Juste une très belle vue.",
+   "text": "Les touristes adorent. Ils photographient le vide, avec un filtre.",
    "accent_words": [
-    "belle vue"
+    "filtre"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Envoie ça au pote qui regarde les débats de loin et donne des notes.",
+   "text": "Le maire y présente son programme. Le décor est parfaitement assorti.",
    "accent_words": [
-    "de loin"
+    "assorti"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui a un frigo plus vide que son agenda.",
+   "accent_words": [
+    "agenda"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -77,61 +85,143 @@
    "camera": "descend",
    "set": [
     "ground",
-    "fountain",
-    "arch",
+    "mairie",
+    "banner",
     "person",
     "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente sur la grande place : fontaine, arche, habitants.",
-   "expected_result": "La place centrale posée."
+   "comic_action": "Descente sur la ville ; banderole « LES ENFANTS DU VIDE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LES ENFANTS DU VIDE"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "facade_row",
-    "banner",
-    "person",
-    "tree"
+    "table",
+    "scroll",
+    "text3d"
    ],
-   "onscreen_text": "VUE : 360° BEIGE",
-   "comic_action": "Rue entièrement beige : façades, banderole, pulls ; un seul habitant en rouge qui détonne.",
-   "expected_result": "Le centre du centre en couleur."
+   "onscreen_text": "LES ENFANTS DU VIDE",
+   "comic_action": "Un livre géant est posé sur une table ; le maire le présente fièrement.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "nod",
+     "visage": "neutre",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LE VIDE"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "lift_tribune",
-    "person",
-    "studio_light",
-    "column"
+    "ground",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "PLACE PUBLIQUE (EN HAUTEUR)",
-   "comic_action": "La tribune élévatrice monte le maire cubique au-dessus de la foule.",
-   "expected_result": "La hauteur du pouvoir en un plan."
+   "onscreen_text": "PLACE DU VIDE",
+   "comic_action": "Une immense place sans rien, juste un panneau « PLACE DU VIDE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "ENTRÉE DU VIDE 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "table",
+    "shop",
     "person",
     "text3d"
    ],
-   "onscreen_text": "« TIMIDITÉ SOCIALE »",
-   "comic_action": "Un mégaphone minuscule posé sur une table en mousse ; il chuchote.",
-   "expected_result": "La timidité sociale en objet."
+   "onscreen_text": "MENU VIDE : 10,50 €",
+   "comic_action": "Un serveur pose une assiette vide sur la table, avec l'addition.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "VIDE"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -140,71 +230,147 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "text3d",
-    "fountain"
+    "ring_light",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "SANS DIRECTION",
-   "comic_action": "Longue-vue pointée successivement à gauche, à droite, au centre ; elle finit par regarder ses propres pieds.",
-   "expected_result": "Le tiède en décor."
+   "onscreen_text": "SELFIE AVEC LE VIDE",
+   "comic_action": "Des touristes prennent des selfies devant rien du tout.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "objet": "phone",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LE VIDE, C'EST CHIC"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
+   "camera": "closeup",
+   "set": [
+    "tribune",
+    "ground",
+    "person"
+   ],
+   "onscreen_text": "DÉCOR ASSORTI",
+   "comic_action": "Le maire au pupitre au milieu de la place vide ; derrière lui, rien.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "parle",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PROGRAMME"
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
    "camera": "return",
    "set": [
-    "tree",
-    "bench",
+    "road",
     "person",
-    "tshirt"
+    "tshirt",
+    "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur le square ; un habitant en t-shirt de la collection sur le banc.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : son livre « Les Enfants du vide » (2018) pris au mot : la ville du vide.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LES ENFANTS DU VIDE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui regarde les débats de loin et donne des notes."
+  "text": "Envoie ça au pote qui a un frigo plus vide que son agenda."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 74,
+ "word_count": 84,
  "claims": [
   {
-   "text": "Son mouvement s'appelle Place publique. Ici, la place est en hauteur.",
+   "text": "En 2018, il publie un livre : Les Enfants du vide.",
    "claim_type": "fait_public",
-   "source": "https://en.wikipedia.org/wiki/Rapha%C3%ABl_Glucksmann",
-   "note": "Place publique (2018) ; liste « Réveiller l'Europe » (2024)."
+   "source": "https://www.slate.fr/story/168476/raphael-glucksmann-enfants-du-vide-claude-perdriel",
+   "note": "Son livre « Les Enfants du vide. De l'impasse individualiste au réveil citoyen » (2018)."
   },
   {
-   "text": "« timidité sociale »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/",
-   "note": "« Timidité sociale » du programme."
+   "text": "Le maire y présente son programme. Le décor est parfaitement assorti.",
+   "claim_type": "fiction_satirique",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "note": "Discours d'Aubervilliers (13/06/2026) : « notre gauche » sept fois dans le dernier tiers ; une vision plutôt qu'un programme détaillé ; des critiques le situent « centre gauche, voire centre ». Exagération satirique évidente, présentée comme telle."
   }
  ],
  "sources": [
   {
-   "url": "https://en.wikipedia.org/wiki/Rapha%C3%ABl_Glucksmann",
-   "date": "consultée 2026-11-21",
+   "url": "https://www.slate.fr/story/168476/raphael-glucksmann-enfants-du-vide-claude-perdriel",
+   "date": "2018-10",
    "consulted": "2026-11-22",
    "statut": "fait public",
-   "note": "Place publique (2018) ; liste « Réveiller l'Europe » (2024)."
+   "note": "Son livre « Les Enfants du vide. De l'impasse individualiste au réveil citoyen » (2018)."
   },
   {
-   "url": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/",
-   "date": "2026-06-11",
+   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "date": "2026-06-25",
    "consulted": "2026-11-22",
-   "statut": "opinion (entretien)",
-   "note": "« Timidité sociale » du programme."
+   "statut": "fait (analyse lexicale) + opinion rapportée",
+   "note": "Discours d'Aubervilliers (13/06/2026) : « notre gauche » sept fois dans le dernier tiers ; une vision plutôt qu'un programme détaillé ; des critiques le situent « centre gauche, voire centre »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : Place publique (2018) transformée en belvédère : on regarde tout de loin, avec la « timidité sociale » pointée par un sociologue. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : son livre « Les Enfants du vide » (2018) pris au mot : la ville du vide. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

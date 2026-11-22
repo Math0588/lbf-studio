@@ -3,75 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-29",
  "format": "A",
- "title_cover": "Rassemblement réussi",
+ "title_cover": "Trop rassemblés",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, le rassemblement a beaucoup de chaises vides.",
-  "Glucksmannville : rassembler, puis on verra.",
-  "Trois verbes, un seul commencé.",
-  "Les glucksmanniens vont dire que la salle était pleine."
+  "Son credo : une gauche qui peut « rassembler, gouverner et gagner ».",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Trop rassemblés : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Les pigeons sont rassemblés."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Rassembler, gouverner, gagner. Pour l'instant, il bloque au premier verbe.",
-  "Le rassemblement est complet. Avec lui-même.",
-  "Rassembler : en cours. Gouverner : pas encore. Gagner : on verra."
+  "Le maire, coincé au fond, gouverne par SMS. Réseau saturé.",
+  "Rassembler, il sait. Gouverner et gagner, c'est coincé au fond de la place.",
+  "On reste là des semaines. On s'organise. On ouvre un food-truck matcha."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Rassemblés, en théorie.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Les pigeons sont rassemblés.",
    "accent_words": [
-    "en théorie"
+    "rassemblés"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La mairie organise le grand rassemblement. Des chaises pour tout le monde.",
+   "text": "Son credo : une gauche qui peut « rassembler, gouverner et gagner ».",
    "accent_words": [
-    "grand rassemblement"
+    "gagner"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n3",
+   "text": "La mairie commence par rassembler : toute la ville sur la même place.",
+   "accent_words": [
+    "place"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Sa devise : une gauche qui peut « rassembler, gouverner et gagner ».",
-   "accent_words": [
-    "rassembler"
-   ],
-   "claim_type": "citation_exacte"
-  },
-  {
    "id": "n4",
-   "text": "Premier verbe : rassembler. Les insoumis ? Il veut les « plier ».",
+   "text": "Trop de monde : impossible de gouverner, ni de gagner.",
    "accent_words": [
-    "plier"
+    "gagner"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le PS est venu. Place publique aussi. Les chaises restantes : vides.",
+   "text": "On reste là des semaines. On s'organise. On ouvre un food-truck matcha.",
    "accent_words": [
-    "vides"
+    "matcha"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Rassembler, gouverner, gagner. Pour l'instant, il bloque au premier verbe.",
+   "text": "Le maire, coincé au fond, gouverne par SMS. Réseau saturé.",
    "accent_words": [
-    "premier verbe"
+    "saturé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui organise une soirée et invite trois personnes.",
+   "text": "Envoie ça au pote qui organise une soirée et invite trois cents personnes.",
    "accent_words": [
-    "trois personnes"
+    "personnes"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,45 +85,108 @@
    "camera": "descend",
    "set": [
     "ground",
-    "fountain",
-    "arch",
+    "mairie",
+    "banner",
     "person",
     "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente sur la grande place : fontaine, arche, habitants.",
-   "expected_result": "La place centrale posée."
+   "comic_action": "Descente sur la ville ; banderole « TROP RASSEMBLÉS » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TROP RASSEMBLÉS"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
-    "table",
-    "person",
-    "banner"
+    "tribune",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "GRAND RASSEMBLEMENT",
-   "comic_action": "Grande table de rassemblement : une chaise occupée, toutes les autres vides.",
-   "expected_result": "Le rassemblement qui rassemble peu."
+   "onscreen_text": "« RASSEMBLER, GOUVERNER, GAGNER »",
+   "comic_action": "Trois cases géantes s'affichent derrière le maire.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "RASSEMBLONS"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "tribune",
-    "banner",
-    "studio_light",
-    "person"
+    "ground",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "« RASSEMBLER, GOUVERNER, GAGNER »",
-   "comic_action": "Le maire cubique lève le poing sur la tribune ; banderole « LA BATAILLE COMMENCE » ; la foule regarde sa montre.",
-   "expected_result": "Le grand mot face au petit effet."
+   "onscreen_text": "TOUS SUR LA PLACE",
+   "comic_action": "Toute la ville s'entasse sur une seule place, épaule contre épaule.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MÈTRE CARRÉ 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -132,28 +195,69 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
-    "person"
+    "ground",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "INSOUMIS : À PLIER",
-   "comic_action": "Le maire cubique plie méticuleusement une feuille en quatre, puis en huit ; l'adversaire attend.",
-   "expected_result": "Le verbe littéralisé."
+   "onscreen_text": "PLUS PERSONNE NE BOUGE",
+   "comic_action": "Vue de haut : la place est une mosaïque immobile de têtes.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "COINCÉ"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "person",
-    "banner"
+    "shop",
+    "ground",
+    "person"
    ],
-   "onscreen_text": "CHAISES : VIDES",
-   "comic_action": "Grande table de rassemblement : une chaise occupée, toutes les autres vides.",
-   "expected_result": "Le rassemblement qui rassemble peu."
+   "onscreen_text": "FOOD-TRUCK MATCHA",
+   "comic_action": "Au milieu de la foule, un food-truck vend des matchas qui passent de main en main.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content",
+     "objet": "matcha",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "MATCHA 10,50 €"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -162,13 +266,34 @@
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
-    "text3d",
-    "person"
+    "ground",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "1/3",
-   "comic_action": "Trois cases à cocher géantes : « RASSEMBLER » à moitié cochée, les deux autres vides.",
-   "expected_result": "Le texte interminable."
+   "onscreen_text": "RÉSEAU SATURÉ",
+   "comic_action": "Le maire, écrasé au fond de la foule, tape sur son téléphone sans réseau.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shake",
+     "visage": "fatigue",
+     "objet": "phone",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "1 SUR 3"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -183,13 +308,33 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « rassembler, gouverner et gagner » : la mairie rassemble toute la ville sur une place.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TROP RASSEMBLÉS"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui organise une soirée et invite trois personnes."
+  "text": "Envoie ça au pote qui organise une soirée et invite trois cents personnes."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -202,19 +347,7 @@
    "text": "« rassembler, gouverner et gagner »",
    "claim_type": "citation_exacte",
    "source": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
-   "note": "Une gauche qui peut « rassembler, gouverner et gagner »."
-  },
-  {
-   "text": "« plier »",
-   "claim_type": "citation_exacte",
-   "source": "https://lcp.fr/actualites/la-violence-c-est-eux-jean-luc-melenchon-repond-a-raphael-glucksmann-qui-dit-vouloir",
-   "note": "Il dit vouloir « plier » LFI en 2027 ; réponse de Mélenchon."
-  },
-  {
-   "text": "Rassembler, gouverner, gagner. Pour l'instant, il bloque au premier verbe.",
-   "claim_type": "fiction_satirique",
-   "source": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
-   "note": "Une gauche qui peut « rassembler, gouverner et gagner ». Détourné dans la ville fictive."
+   "note": "Large victoire à la primaire sociale-démocrate dès le premier tour ; il défend une gauche qui peut « rassembler, gouverner et gagner »."
   }
  ],
  "sources": [
@@ -222,17 +355,10 @@
    "url": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
    "date": "2026-10-12",
    "consulted": "2026-11-22",
-   "statut": "fait public (formule rapportée)",
-   "note": "Une gauche qui peut « rassembler, gouverner et gagner »."
-  },
-  {
-   "url": "https://lcp.fr/actualites/la-violence-c-est-eux-jean-luc-melenchon-repond-a-raphael-glucksmann-qui-dit-vouloir",
-   "date": "2026-06",
-   "consulted": "2026-11-22",
-   "statut": "fait public (citation rapportée)",
-   "note": "Il dit vouloir « plier » LFI en 2027 ; réponse de Mélenchon."
+   "statut": "fait public",
+   "note": "Large victoire à la primaire sociale-démocrate dès le premier tour ; il défend une gauche qui peut « rassembler, gouverner et gagner »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « rassembler, gouverner et gagner » (primaire 2026) bloqué au premier verbe, entre promesse de « plier » LFI et chaises vides. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « rassembler, gouverner et gagner » : la mairie rassemble toute la ville sur une place. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

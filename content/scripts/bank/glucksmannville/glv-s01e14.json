@@ -3,67 +3,67 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-17",
  "format": "A",
- "title_cover": "Le carton de discours",
+ "title_cover": "L'éolienne à discours",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, le maire déménage avec un carton de discours.",
-  "Glucksmannville : sept ans de tchatche en un carton.",
-  "Le carton est plein. Le programme tient dans une enveloppe.",
-  "Les glucksmanniens vont dire que c'est de l'éloquence."
+  "En 2019, un insoumis le résume : « un tchatcheur ».",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "L'éolienne à discours : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Les éoliennes tournent quand il parle."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Sept ans après, le carton déborde de discours. Le programme tient dans une enveloppe.",
-  "Beaucoup de mots, peu de meubles.",
-  "La tchatche déborde. Le programme flotte dedans."
+  "Programme en rupture de stock. Le maire propose un nouveau discours.",
+  "Il produit assez de discours pour éclairer la ville. Le programme, lui, est en panne.",
+  "On exporte ses discours aux voisins. Ils réclament un programme avec."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Et tout le monde écoute.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Les éoliennes tournent quand il parle.",
    "accent_words": [
-    "écoute"
+    "parle"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Il emménage à la mairie avec un seul carton. Étiquette : discours.",
-   "accent_words": [
-    "discours"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "En 2019, un insoumis l'avait résumé : « un tchatcheur ».",
+   "text": "En 2019, un insoumis le résume : « un tchatcheur ».",
    "accent_words": [
     "tchatcheur"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "Corbière ajoutait : un catcheur de foire face à Macron.",
+   "id": "n3",
+   "text": "La mairie en fait une énergie : chaque phrase fait tourner une éolienne.",
    "accent_words": [
-    "catcheur de foire"
+    "éolienne"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Il parle tant que la ville produit trop. Les lampadaires clignotent.",
+   "accent_words": [
+    "clignotent"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Dans le carton : des formules, des tribunes, une vision. Pas de programme.",
+   "text": "On exporte ses discours aux voisins. Ils réclament un programme avec.",
    "accent_words": [
-    "Pas de programme"
+    "avec"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Sept ans après, le carton déborde de discours. Le programme tient dans une enveloppe.",
+   "text": "Programme en rupture de stock. Le maire propose un nouveau discours.",
    "accent_words": [
-    "une enveloppe"
+    "discours"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui parle mieux qu'il ne bosse.",
    "accent_words": [
-    "parle mieux"
+    "bosse"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,74 +88,176 @@
     "mairie",
     "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
-   "expected_result": "La ville et son camp posés en une seconde."
+   "comic_action": "Descente sur la ville ; banderole « L'ÉOLIENNE À DISCOURS » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "L'ÉOLIENNE À DISCOURS"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "table",
-    "sign",
-    "text3d",
-    "form_stack"
+    "tribune",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "CARTON : DISCOURS",
-   "comic_action": "Bureau du maire : badge géant « STAGIAIRE » ; tampon « RENOUVELÉ » qui retombe.",
-   "expected_result": "Le reproche d'inexpérience en badge."
+   "onscreen_text": "« UN TCHATCHEUR »",
+   "comic_action": "Le maire parle sans s'arrêter ; des bulles de mots s'empilent au-dessus de lui.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "parle",
+     "objet": "micro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "J'AI DES CHOSES À DIRE"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
     "tribune",
-    "person",
-    "screen"
+    "lamp",
+    "text3d"
    ],
-   "onscreen_text": "« UN TCHATCHEUR »",
-   "comic_action": "Le maire cubique parle, parle ; une bulle de texte grandit jusqu'à couvrir la place.",
-   "expected_result": "La tchatche en volume."
+   "onscreen_text": "ÉNERGIE DISCOURS",
+   "comic_action": "Une petite éolienne fixée au pupitre tourne à chaque mot.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "KWH DE BLABLA 0,10 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "tribune",
-    "person",
-    "banner",
-    "studio_light"
+    "lamp",
+    "road",
+    "person"
    ],
-   "onscreen_text": "CATCHEUR DE FOIRE",
-   "comic_action": "Le maire cubique à la tribune, projecteur, foule clairsemée.",
-   "expected_result": "Le discours porte la pique."
+   "onscreen_text": "SURPRODUCTION",
+   "comic_action": "Les réverbères clignotent comme une boîte de nuit.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "220 V"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "form_stack",
-    "person",
-    "scroll"
+    "car",
+    "text3d",
+    "sign"
    ],
-   "onscreen_text": "PROGRAMME : ABSENT",
-   "comic_action": "Réunion n°300 : piles de comptes rendus ; le rouleau « PROGRAMME » reste vierge.",
-   "expected_result": "La vision sans programme."
+   "onscreen_text": "DISCOURS À L'EXPORT",
+   "comic_action": "Un camion chargé de cartons « DISCOURS » repart, refusé, avec un bon « PROGRAMME ? ».",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "cross_arms",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "EXPORT"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,13 +266,33 @@
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
-    "text3d",
-    "person"
+    "tribune",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "PROGRAMME : 1 ENVELOPPE",
-   "comic_action": "Le carton éclate sous les feuilles de discours ; à côté, une petite enveloppe « PROGRAMME » reste fermée.",
-   "expected_result": "Le texte interminable."
+   "onscreen_text": "RUPTURE DE STOCK",
+   "comic_action": "Le maire tend un nouveau discours à la place du programme ; le client soupire.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "parle",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BIENTÔT"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -179,14 +301,34 @@
    ],
    "camera": "return",
    "set": [
-    "mairie",
+    "road",
     "person",
     "tshirt",
-    "banner"
+    "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « un tchatcheur » selon un insoumis (2019) : ses discours alimentent la ville en électricité.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "L'ÉOLIENNE À DISCOURS"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -198,25 +340,13 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 83,
+ "word_count": 81,
  "claims": [
   {
    "text": "« un tchatcheur »",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/melenchon-thatcher-de-gauche-glucksmann-n-est-qu-un-tchatcheur-corbiere-lfi-140567",
-   "note": "Alexis Corbière : Glucksmann n'est qu'« un tchatcheur »."
-  },
-  {
-   "text": "Corbière ajoutait : un catcheur de foire face à Macron.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/melenchon-thatcher-de-gauche-glucksmann-n-est-qu-un-tchatcheur-corbiere-lfi-140567",
-   "note": "Alexis Corbière : Glucksmann n'est qu'« un tchatcheur »."
-  },
-  {
-   "text": "Dans le carton : des formules, des tribunes, une vision. Pas de programme.",
-   "claim_type": "fiction_satirique",
-   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre ». Détourné dans la ville fictive."
+   "note": "Alexis Corbière (LFI) : Glucksmann n'est qu'« un tchatcheur »."
   }
  ],
  "sources": [
@@ -224,17 +354,10 @@
    "url": "https://www.publicsenat.fr/actualites/politique/melenchon-thatcher-de-gauche-glucksmann-n-est-qu-un-tchatcheur-corbiere-lfi-140567",
    "date": "2019-03",
    "consulted": "2026-11-22",
-   "statut": "citation rapportée (opinion d'un adversaire)",
-   "note": "Alexis Corbière : Glucksmann n'est qu'« un tchatcheur »."
-  },
-  {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "date": "2026-06-25",
-   "consulted": "2026-11-22",
-   "statut": "fait (analyse lexicale) + opinion rapportée",
-   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
+   "statut": "citation exacte (adversaire)",
+   "note": "Alexis Corbière (LFI) : Glucksmann n'est qu'« un tchatcheur »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « un tchatcheur », « catcheur de foire face à Macron » (Alexis Corbière, 2019) : un déménagement avec un seul carton, plein de discours. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « un tchatcheur » selon un insoumis (2019) : ses discours alimentent la ville en électricité. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

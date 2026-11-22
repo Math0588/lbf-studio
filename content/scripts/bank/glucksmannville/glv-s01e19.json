@@ -3,67 +3,67 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-27",
  "format": "A",
- "title_cover": "La balance cherche",
+ "title_cover": "Avis de recherche",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, la balance ne penche jamais. Même pas à gauche.",
-  "Glucksmannville : huit ans à chercher sa gauche.",
-  "Objet perdu en 2018 : une gauche. Récompense.",
-  "Les glucksmanniens vont dire qu'elle est juste rangée."
+  "Novembre 2018, Politis titre : « Raphaël Glucksmann cherche sa gauche ».",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Avis de recherche : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Les chiens pisteurs cherchent à gauche."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Il a trouvé le centre. Il continue de l'appeler la gauche.",
-  "La gauche ? Toujours au bureau des objets trouvés.",
-  "Huit ans de recherche, un centre trouvé."
+  "Le maire, soulagé, range le centre dans le tiroir étiqueté gauche.",
+  "La gauche est toujours introuvable. Le tiroir, lui, est plein de centre.",
+  "On retrouve quelque chose au centre-ville. C'est le centre. On le ramène."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Sans pencher.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Les chiens pisteurs cherchent à gauche.",
    "accent_words": [
-    "Sans pencher"
+    "gauche"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La balance du marché ne penche jamais. Ni à gauche, ni à droite.",
+   "text": "Novembre 2018, Politis titre : « Raphaël Glucksmann cherche sa gauche ».",
    "accent_words": [
-    "ne penche jamais"
+    "gauche"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n3",
+   "text": "Avis de recherche municipal : la gauche du maire, perdue depuis 2018.",
+   "accent_words": [
+    "2018"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "En 2018, Politis titrait déjà : « Raphaël Glucksmann cherche sa gauche ».",
-   "accent_words": [
-    "cherche sa gauche"
-   ],
-   "claim_type": "citation_exacte"
-  },
-  {
    "id": "n4",
-   "text": "En 2026, nouveau titre : « Glucksmann, la gauche en moins ».",
+   "text": "Battues dans les bois, chiens pisteurs, appel à témoins à la télé.",
    "accent_words": [
-    "la gauche en moins"
+    "télé"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Huit ans de recherche. La gauche est classée objet perdu.",
+   "text": "On retrouve quelque chose au centre-ville. C'est le centre. On le ramène.",
    "accent_words": [
-    "objet perdu"
+    "ramène"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Il a trouvé le centre. Il continue de l'appeler la gauche.",
+   "text": "Le maire, soulagé, range le centre dans le tiroir étiqueté gauche.",
    "accent_words": [
-    "la gauche"
+    "gauche"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui cherche ses clés depuis 2018.",
    "accent_words": [
-    "depuis 2018"
+    "2018"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -84,45 +84,109 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "facade_row",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "sign"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
-   "expected_result": "Le commerce du jour posé."
+   "comic_action": "Descente sur la ville ; banderole « AVIS DE RECHERCHE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "AVIS DE RECHERCHE"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
-   "set": [
-    "shop",
-    "table",
-    "person",
-    "sign"
-   ],
-   "onscreen_text": "BALANCE : 0",
-   "comic_action": "Travelling entre les étals du marché.",
-   "expected_result": "Le marché porte la pique."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n3"
-   ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
     "screen",
     "text3d",
     "person"
    ],
    "onscreen_text": "« CHERCHE SA GAUCHE »",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "comic_action": "Un journal géant s'affiche avec le titre ; le maire regarde sous la table.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "AVIS DE RECHERCHE"
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "sign",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "DISPARUE : LA GAUCHE",
+   "comic_action": "Des affiches « AVIS DE RECHERCHE : LA GAUCHE » sur chaque réverbère.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "nod",
+     "visage": "neutre",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "RÉCOMPENSE 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -131,29 +195,68 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "tree",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "« LA GAUCHE EN MOINS »",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "onscreen_text": "BATTUE GÉNÉRALE",
+   "comic_action": "Des habitants avec lampes torches fouillent les buissons ; un chien renifle.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "fatigue",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PISTEUR"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "screen",
-    "form_stack",
-    "person"
+    "road",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "OBJETS TROUVÉS : GAUCHE ?",
-   "comic_action": "Guichet municipal : écran, pile de formulaires, file d'attente.",
-   "expected_result": "Le guichet porte la pique."
+   "onscreen_text": "TROUVÉ : LE CENTRE",
+   "comic_action": "Deux habitants portent un gros panneau « CENTRE » jusqu'à la mairie.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TROUVÉ !"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -162,13 +265,33 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "road",
-    "text3d"
+    "table",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "CENTRE (DIT GAUCHE)",
-   "comic_action": "Panneau « GAUCHE » vissé sur une flèche qui pointe tout droit vers le milieu.",
-   "expected_result": "L'ambiguïté en signalétique."
+   "onscreen_text": "TIROIR : GAUCHE",
+   "comic_action": "Le maire glisse le panneau « CENTRE » dans un tiroir marqué « GAUCHE ».",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "AFFAIRE CLASSÉE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -177,14 +300,34 @@
    ],
    "camera": "return",
    "set": [
-    "shop",
-    "tshirt",
+    "road",
     "person",
+    "tshirt",
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « Raphaël Glucksmann cherche sa gauche » (2018) : la mairie lance un avis de recherche.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "AVIS DE RECHERCHE"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -196,25 +339,13 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 79,
+ "word_count": 83,
  "claims": [
   {
    "text": "« Raphaël Glucksmann cherche sa gauche »",
    "claim_type": "citation_exacte",
    "source": "https://www.politis.fr/articles/2018/11/raphael-glucksmann-cherche-sa-gauche-39573/",
    "note": "« Raphaël Glucksmann cherche sa gauche »."
-  },
-  {
-   "text": "« Glucksmann, la gauche en moins »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
-   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
-  },
-  {
-   "text": "Il a trouvé le centre. Il continue de l'appeler la gauche.",
-   "claim_type": "fiction_satirique",
-   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre ». Détourné dans la ville fictive."
   }
  ],
  "sources": [
@@ -222,24 +353,10 @@
    "url": "https://www.politis.fr/articles/2018/11/raphael-glucksmann-cherche-sa-gauche-39573/",
    "date": "2018-11",
    "consulted": "2026-11-22",
-   "statut": "opinion (titre de presse)",
+   "statut": "titre de presse",
    "note": "« Raphaël Glucksmann cherche sa gauche »."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
-   "date": "2026-10",
-   "consulted": "2026-11-22",
-   "statut": "opinion (éditorial, titre cité)",
-   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
-  },
-  {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "date": "2026-06-25",
-   "consulted": "2026-11-22",
-   "statut": "fait (analyse lexicale) + opinion rapportée",
-   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « Raphaël Glucksmann cherche sa gauche » (Politis, 2018) puis « Glucksmann, la gauche en moins » (2026) : huit ans de recherche sur une balance qui ne penche pas. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « Raphaël Glucksmann cherche sa gauche » (2018) : la mairie lance un avis de recherche. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

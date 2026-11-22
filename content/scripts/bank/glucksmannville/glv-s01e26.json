@@ -3,67 +3,67 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-24",
  "format": "A",
- "title_cover": "Le groupe de travail",
+ "title_cover": "Réunion sous l'eau",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, chaque décision a son groupe de travail.",
-  "Glucksmannville : trois cents réunions, une vision.",
-  "Même la machine à café a été auditionnée.",
-  "Les glucksmanniens vont proposer une réunion sur cette vidéo."
+  "Son mouvement revendique 300 réunions et 150 auditions en neuf mois.",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Réunion sous l'eau : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. La machine à café est auditionnée."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Trois cents réunions, une vision. Le programme est en réunion.",
-  "Le programme est en réunion. Ne pas déranger.",
-  "Trois cents réunions plus tard : une date de réunion."
+  "Décision finale : on se revoit dans un an. Bravo.",
+  "Trois cents réunions pour décider de se revoir. C'est déjà une décision.",
+  "Les salles manquent. On se réunit dans la piscine, sous l'eau."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Après réunion.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. La machine à café est auditionnée.",
    "accent_words": [
-    "Après réunion"
+    "auditionnée"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le groupe de travail se réunit pour dater le prochain groupe de travail.",
+   "text": "Son mouvement revendique 300 réunions et 150 auditions en neuf mois.",
    "accent_words": [
-    "groupe de travail"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Son mouvement a tenu 300 réunions et 150 auditions en neuf mois.",
-   "accent_words": [
-    "300 réunions"
+    "mois"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "Puis il demande un an de plus « pour transformer une vision en programme ».",
+   "id": "n3",
+   "text": "La mairie adopte la méthode : une réunion avant chaque décision.",
    "accent_words": [
-    "un an de plus"
+    "décision"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Puis une réunion pour préparer la réunion. La machine à café est auditionnée.",
+   "accent_words": [
+    "auditionnée"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "La machine à café a été auditionnée. Deux fois.",
+   "text": "Les salles manquent. On se réunit dans la piscine, sous l'eau.",
    "accent_words": [
-    "Deux fois"
+    "eau"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Trois cents réunions, une vision. Le programme est en réunion.",
+   "text": "Décision finale : on se revoit dans un an. Bravo.",
    "accent_words": [
-    "en réunion"
+    "Bravo"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui fait une réunion pour choisir le resto.",
    "accent_words": [
-    "le resto"
+    "resto"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,27 +88,70 @@
     "mairie",
     "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
-   "expected_result": "La ville et son camp posés en une seconde."
+   "comic_action": "Descente sur la ville ; banderole « RÉUNION SOUS L'EAU » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "RÉUNION SOUS L'EAU"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
     "table",
     "person",
-    "form_stack",
-    "building"
+    "text3d"
    ],
-   "onscreen_text": "GT N°301",
-   "comic_action": "Réunion de copro autour d'une table ; pile de procès-verbaux.",
-   "expected_result": "La copro porte la pique."
+   "onscreen_text": "300 RÉUNIONS",
+   "comic_action": "Le maire au bout d'une table interminable ; un compteur grimpe jusqu'à 300.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "fall",
+     "visage": "dort",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ON EN PARLE"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -117,61 +160,138 @@
    ],
    "camera": "orbit",
    "set": [
+    "mairie",
     "table",
-    "form_stack",
-    "person",
-    "scroll"
+    "text3d"
    ],
-   "onscreen_text": "300 RÉUNIONS · 150 AUDITIONS",
-   "comic_action": "Réunion n°300 : piles de comptes rendus ; le rouleau « PROGRAMME » reste vierge.",
-   "expected_result": "La vision sans programme."
+   "onscreen_text": "RÉUNION OBLIGATOIRE",
+   "comic_action": "Panneau sur la mairie : « AUCUNE DÉCISION SANS RÉUNION PRÉALABLE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CAFÉ DE RÉUNION 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "scroll",
-    "text3d",
+    "table",
+    "screen",
     "person"
    ],
-   "onscreen_text": "« TRANSFORMER UNE VISION »",
-   "comic_action": "Un parchemin se déroule à n'en plus finir devant l'habitant.",
-   "expected_result": "Le texte interminable."
+   "onscreen_text": "AUDITION : MACHINE À CAFÉ",
+   "comic_action": "La machine à café est installée au centre de la table, face aux micros.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "blase",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "EXPERT"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
+    "fountain",
     "table",
-    "person",
-    "form_stack",
-    "building"
+    "person"
    ],
-   "onscreen_text": "MACHINE À CAFÉ : AUDITIONNÉE",
-   "comic_action": "Réunion de copro autour d'une table ; pile de procès-verbaux.",
-   "expected_result": "La copro porte la pique."
+   "onscreen_text": "RÉUNION SOUS L'EAU",
+   "comic_action": "Des habitants en tuba autour d'une table immergée dans la fontaine.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ORDRE DU JOUR N°301"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "table",
-    "form_stack",
     "person",
-    "scroll"
+    "text3d"
    ],
-   "onscreen_text": "PROGRAMME : EN RÉUNION",
-   "comic_action": "Porte de salle fermée, panneau « PROGRAMME — NE PAS DÉRANGER » ; on entend des chaises qui grincent.",
-   "expected_result": "La vision sans programme."
+   "onscreen_text": "RENDEZ-VOUS DANS UN AN",
+   "comic_action": "Le maire tamponne « DANS UN AN » sur une pile de dossiers, ravi.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "DANS UN AN"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,14 +300,34 @@
    ],
    "camera": "return",
    "set": [
-    "mairie",
+    "road",
     "person",
     "tshirt",
-    "banner"
+    "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : 300 réunions et 150 auditions en neuf mois : une réunion avant chaque décision.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "RÉUNION SOUS L'EAU"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,25 +339,19 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 81,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Son mouvement a tenu 300 réunions et 150 auditions en neuf mois.",
+   "text": "Son mouvement revendique 300 réunions et 150 auditions en neuf mois.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
+   "note": "« Là, je ne suis pas candidat devant vous » ; son mouvement revendique 300 réunions et 150 auditions en neuf mois ; il demande un an de plus « pour transformer une vision en programme »."
   },
   {
-   "text": "« pour transformer une vision en programme »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
-  },
-  {
-   "text": "Trois cents réunions, une vision. Le programme est en réunion.",
+   "text": "Décision finale : on se revoit dans un an. Bravo.",
    "claim_type": "fiction_satirique",
    "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme ». Détourné dans la ville fictive."
+   "note": "« Là, je ne suis pas candidat devant vous » ; son mouvement revendique 300 réunions et 150 auditions en neuf mois ; il demande un an de plus « pour transformer une vision en programme ». Exagération satirique évidente, présentée comme telle."
   }
  ],
  "sources": [
@@ -225,10 +359,10 @@
    "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
    "date": "2025-06-23",
    "consulted": "2026-11-22",
-   "statut": "citations rapportées",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
+   "statut": "citation exacte + fait public",
+   "note": "« Là, je ne suis pas candidat devant vous » ; son mouvement revendique 300 réunions et 150 auditions en neuf mois ; il demande un an de plus « pour transformer une vision en programme »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : 300 réunions et 150 auditions en neuf mois, puis un an de plus « pour transformer une vision en programme » (2025). Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : 300 réunions et 150 auditions en neuf mois : une réunion avant chaque décision. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

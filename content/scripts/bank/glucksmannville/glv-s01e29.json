@@ -3,75 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-34",
  "format": "D",
- "title_cover": "Mode Concertation",
+ "title_cover": "L'usine à visions",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, le jeu vidéo s'appelle Concertation.",
-  "Glucksmannville : le simulateur où l'on ne décide jamais.",
-  "Boss final : prendre une décision. Invaincu.",
-  "Les glucksmanniens vont demander une extension."
+  "2025 : il veut un an de plus « pour transformer une vision en programme ».",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "L'usine à visions : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. L'usine fume du matcha."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Écran final : merci pour votre participation. Programme : bientôt.",
-  "Cent cinquante niveaux d'audition, zéro décision.",
-  "Partie terminée. Programme en DLC."
+  "Le maire coupe le ruban. Premier produit fini : un nouveau slogan.",
+  "Une usine à programmes. Elle ne produit que des visions.",
+  "On ajoute un an. Elle sort une vision de la vision."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Après audition.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. L'usine fume du matcha.",
    "accent_words": [
-    "audition"
+    "matcha"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Nouveau jeu : simulateur de maire, mode Concertation.",
+   "text": "2025 : il veut un an de plus « pour transformer une vision en programme ».",
    "accent_words": [
-    "Concertation"
+    "programme"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n3",
+   "text": "Usine municipale : visions à l'entrée, programmes à la sortie.",
+   "accent_words": [
+    "sortie"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Niveau un : 150 auditions de spécialistes. Comme son mouvement en neuf mois.",
-   "accent_words": [
-    "150 auditions"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n4",
-   "text": "Niveau deux : un an de plus pour transformer la vision en programme.",
+   "text": "La machine tourne un an. Elle produit des visions plus grandes.",
    "accent_words": [
-    "un an de plus"
+    "grandes"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Boss final : décider. Personne ne l'a jamais atteint.",
+   "text": "On ajoute un an. Elle sort une vision de la vision.",
    "accent_words": [
-    "décider"
+    "vision"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Écran final : merci pour votre participation. Programme : bientôt.",
+   "text": "Le maire coupe le ruban. Premier produit fini : un nouveau slogan.",
    "accent_words": [
-    "bientôt"
+    "slogan"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui crée son perso pendant trois heures.",
+   "text": "Envoie ça au pote qui écrit son mémoire depuis cinq ans.",
    "accent_words": [
-    "trois heures"
+    "ans"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,72 +88,175 @@
     "mairie",
     "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
-   "expected_result": "La ville et son camp posés en une seconde."
+   "comic_action": "Descente sur la ville ; banderole « L'USINE À VISIONS » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "L'USINE À VISIONS"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "screen",
+    "tribune",
     "text3d",
-    "gps"
+    "person"
    ],
-   "onscreen_text": "MODE : CONCERTATION",
-   "comic_action": "Écran de l'application municipale : chargement, mise à jour, chargement.",
-   "expected_result": "L'appli porte la pique."
+   "onscreen_text": "« UNE VISION EN PROGRAMME »",
+   "comic_action": "Le maire tend un sablier géant devant le public.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ENCORE UN AN"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
-    "person",
-    "scroll"
+    "building",
+    "text3d",
+    "sign"
    ],
-   "onscreen_text": "NIVEAU 1 : 150 AUDITIONS",
-   "comic_action": "Réunion n°300 : piles de comptes rendus ; le rouleau « PROGRAMME » reste vierge.",
-   "expected_result": "La vision sans programme."
+   "onscreen_text": "USINE À PROGRAMMES",
+   "comic_action": "Un tapis roulant entre dans une usine avec des nuages roses étiquetés « VISION ».",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "VISION AU KILO 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "scroll",
+    "building",
     "text3d",
     "person"
    ],
-   "onscreen_text": "NIVEAU 2 : +1 AN",
-   "comic_action": "Un parchemin se déroule à n'en plus finir devant l'habitant.",
-   "expected_result": "Le texte interminable."
+   "onscreen_text": "VISION XXL",
+   "comic_action": "À la sortie, des nuages roses encore plus gros tombent du tapis.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "VISION"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
+    "building",
     "text3d",
     "person"
    ],
-   "onscreen_text": "BOSS FINAL : DÉCIDER",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "onscreen_text": "VISION DE LA VISION",
+   "comic_action": "Un nuage rose contenant un autre nuage rose sort de l'usine.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ENCORE UN AN"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -162,13 +265,33 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "gps"
+    "building",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "PROGRAMME : BIENTÔT",
-   "comic_action": "Écran de fin du jeu, confettis beiges ; une barre « PROGRAMME » bloquée à 99 %.",
-   "expected_result": "L'appli porte la pique."
+   "onscreen_text": "PRODUIT FINI : UN SLOGAN",
+   "comic_action": "Le maire brandit fièrement une petite pancarte sortie de l'usine.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "NOUVEAU SLOGAN"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -177,38 +300,52 @@
    ],
    "camera": "return",
    "set": [
-    "mairie",
+    "road",
     "person",
     "tshirt",
-    "banner"
+    "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : un an de plus « pour transformer une vision en programme » : l'usine municipale.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "L'USINE À VISIONS"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui crée son perso pendant trois heures."
+  "text": "Envoie ça au pote qui écrit son mémoire depuis cinq ans."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 74,
+ "word_count": 83,
  "claims": [
   {
-   "text": "Niveau un : 150 auditions de spécialistes. Comme son mouvement en neuf mois.",
-   "claim_type": "fait_public",
+   "text": "« pour transformer une vision en programme »",
+   "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
-  },
-  {
-   "text": "Niveau deux : un an de plus pour transformer la vision en programme.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
+   "note": "« Là, je ne suis pas candidat devant vous » ; son mouvement revendique 300 réunions et 150 auditions en neuf mois ; il demande un an de plus « pour transformer une vision en programme »."
   }
  ],
  "sources": [
@@ -216,10 +353,10 @@
    "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
    "date": "2025-06-23",
    "consulted": "2026-11-22",
-   "statut": "citations rapportées",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
+   "statut": "citation exacte + fait public",
+   "note": "« Là, je ne suis pas candidat devant vous » ; son mouvement revendique 300 réunions et 150 auditions en neuf mois ; il demande un an de plus « pour transformer une vision en programme »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : 150 auditions de spécialistes puis un an de plus pour un programme : un simulateur de maire dont le boss final est de décider. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : un an de plus « pour transformer une vision en programme » : l'usine municipale. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

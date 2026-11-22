@@ -3,67 +3,67 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-08",
  "format": "A",
- "title_cover": "Stage renouvelé",
+ "title_cover": "Tous stagiaires",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, le maire est en stage. Renouvelable.",
-  "Glucksmannville : la mairie en période d'essai.",
-  "Le stagiaire a gagné. La fiche de poste attend.",
-  "Les glucksmanniens vont dire que c'est une alternance."
+  "Pour Royal, on ne met pas « un stagiaire » à la tête d'une entreprise.",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Tous stagiaires : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Le chien est en alternance."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le stage est renouvelé. La fiche de poste, elle, est toujours vide.",
-  "Stagiaire validé, mission non définie.",
-  "Badge, café, Europe. Et c'est tout."
+  "Le maire réclame son pot de fin de stage. Stage prolongé, non payé.",
+  "Une ville entière en stage. Le maire, lui, cherche toujours sa convention.",
+  "Les bus prennent des raccourcis créatifs."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. En période d'essai.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le chien est en alternance.",
    "accent_words": [
-    "période d'essai"
+    "alternance"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le règlement municipal est écrit sur une règle en mousse.",
+   "text": "Pour Royal, on ne met pas « un stagiaire » à la tête d'une entreprise.",
    "accent_words": [
-    "règle en mousse"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Ségolène Royal : on ne met pas « un stagiaire » à la tête d'une entreprise.",
-   "accent_words": [
-    "stagiaire"
+    "entreprise"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "Il gagne la primaire quand même. Le stagiaire a eu sa convention.",
+   "id": "n3",
+   "text": "Il gagne quand même. La mairie embauche donc des stagiaires partout.",
    "accent_words": [
-    "convention"
+    "partout"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Le pompier est stagiaire, le pilote aussi, le boulanger est en alternance.",
+   "accent_words": [
+    "alternance"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Premier jour : badge, café, discours sur l'Europe.",
+   "text": "Les bus prennent des raccourcis créatifs.",
    "accent_words": [
-    "discours"
+    "créatifs"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le stage est renouvelé. La fiche de poste, elle, est toujours vide.",
+   "text": "Le maire réclame son pot de fin de stage. Stage prolongé, non payé.",
    "accent_words": [
-    "toujours vide"
+    "payé"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui, en stage, se prend pour le patron.",
    "accent_words": [
-    "le patron"
+    "patron"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,73 +88,176 @@
     "mairie",
     "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
-   "expected_result": "La ville et son camp posés en une seconde."
+   "comic_action": "Descente sur la ville ; banderole « TOUS STAGIAIRES » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUS STAGIAIRES"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "person",
-    "text3d"
+    "tribune",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "RÈGLE EN MOUSSE",
-   "comic_action": "Un mégaphone minuscule posé sur une table en mousse ; il chuchote.",
-   "expected_result": "La timidité sociale en objet."
+   "onscreen_text": "« UN STAGIAIRE »",
+   "comic_action": "Le maire, badge « STAGIAIRE » au cou, sourit poliment.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "STAGIAIRE EN CHEF"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "table",
-    "sign",
-    "text3d",
-    "form_stack"
+    "mairie",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "« UN STAGIAIRE »",
-   "comic_action": "Bureau du maire : badge géant « STAGIAIRE » ; tampon « RENOUVELÉ » qui retombe.",
-   "expected_result": "Le reproche d'inexpérience en badge."
+   "onscreen_text": "RECRUTE : STAGIAIRES",
+   "comic_action": "Une affiche géante « ON RECRUTE DES STAGIAIRES » sur la mairie.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "STAGE 0 €/MOIS"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "descend",
+   "camera": "window_pass",
    "set": [
-    "ground",
+    "shop",
     "person",
-    "text3d",
-    "banner"
+    "text3d"
    ],
-   "onscreen_text": "CONVENTION SIGNÉE",
-   "comic_action": "Plongée sur la place : une petite foule forme un « 66 % » ; autour, la ville est vide.",
-   "expected_result": "Le score relatif à la participation."
+   "onscreen_text": "BOULANGER EN ALTERNANCE",
+   "comic_action": "Le boulanger lit un manuel « LE PAIN POUR LES NULS » devant le four.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque",
+     "objet": "baguette",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "STAGIAIRE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "tribune",
-    "person",
-    "screen"
+    "bus",
+    "road",
+    "person"
    ],
-   "onscreen_text": "JOUR 1 : EUROPE",
-   "comic_action": "Le maire cubique parle, parle ; une bulle de texte grandit jusqu'à couvrir la place.",
-   "expected_result": "La tchatche en volume."
+   "onscreen_text": "RACCOURCI CRÉATIF",
+   "comic_action": "Un bus traverse un jardin public, chauffeur souriant.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ON APPREND"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,13 +267,32 @@
    "camera": "closeup",
    "set": [
     "table",
-    "sign",
-    "text3d",
-    "form_stack"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "FICHE DE POSTE : VIDE",
-   "comic_action": "Bureau du maire : badge géant « STAGIAIRE » ; tampon « RENOUVELÉ » qui retombe.",
-   "expected_result": "Le reproche d'inexpérience en badge."
+   "onscreen_text": "STAGE PROLONGÉ",
+   "comic_action": "Le maire devant un gâteau « FIN DE STAGE » ; on lui tend un contrat « PROLONGATION ».",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "STAGE RENOUVELÉ"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -179,14 +301,34 @@
    ],
    "camera": "return",
    "set": [
-    "mairie",
+    "road",
     "person",
     "tshirt",
-    "banner"
+    "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « un stagiaire » à la tête d'une entreprise, selon Royal : la mairie embauche des stagiaires partout.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "TOUS STAGIAIRES"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -198,7 +340,7 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 81,
+ "word_count": 82,
  "claims": [
   {
    "text": "« un stagiaire »",
@@ -207,16 +349,10 @@
    "note": "Ségolène Royal : « Vous ne mettez pas un stagiaire à la tête d'une entreprise »."
   },
   {
-   "text": "Il gagne la primaire quand même. Le stagiaire a eu sa convention.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66",
-   "note": "Primaire gagnée dès le premier tour avec environ 66 % ; environ 120 000 votants."
-  },
-  {
-   "text": "Le stage est renouvelé. La fiche de poste, elle, est toujours vide.",
+   "text": "Il gagne quand même. La mairie embauche donc des stagiaires partout.",
    "claim_type": "fiction_satirique",
-   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre ». Détourné dans la ville fictive."
+   "source": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
+   "note": "Large victoire à la primaire sociale-démocrate dès le premier tour ; il défend une gauche qui peut « rassembler, gouverner et gagner ». Exagération satirique évidente, présentée comme telle."
   }
  ],
  "sources": [
@@ -224,24 +360,17 @@
    "url": "https://lcp.fr/actualites/vous-ne-mettez-pas-un-stagiaire-a-la-tete-d-une-entreprise-segolene-royal-etrille",
    "date": "2026-09-21",
    "consulted": "2026-11-22",
-   "statut": "fait public (échange entre candidats)",
+   "statut": "citation exacte (rivale de primaire)",
    "note": "Ségolène Royal : « Vous ne mettez pas un stagiaire à la tête d'une entreprise »."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66",
-   "date": "2026-10-11",
+   "url": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
+   "date": "2026-10-12",
    "consulted": "2026-11-22",
    "statut": "fait public",
-   "note": "Primaire gagnée dès le premier tour avec environ 66 % ; environ 120 000 votants."
-  },
-  {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "date": "2026-06-25",
-   "consulted": "2026-11-22",
-   "statut": "fait (analyse lexicale) + opinion rapportée",
-   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
+   "note": "Large victoire à la primaire sociale-démocrate dès le premier tour ; il défend une gauche qui peut « rassembler, gouverner et gagner »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : le reproche de « stagiaire » (Ségolène Royal, primaire 2026), puis la victoire à 66 % : un stage validé, fiche de poste vide. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « un stagiaire » à la tête d'une entreprise, selon Royal : la mairie embauche des stagiaires partout. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

@@ -3,70 +3,70 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m028",
  "format": "A",
- "anchor": "« Lâchez-moi les baskets » (débat des européennes 2024 face à Manon Aubry) adressé à un client qui pose une question sur son colis.",
+ "anchor": "« Lâchez-moi les baskets » : chaque paire de baskets a son garde du corps",
  "situation": "la livraison",
- "ressort": "piques frontales sourcées (style tacle)",
- "title_cover": "Lâche les baskets",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
+ "title_cover": "Baskets sous escorte",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, une question sur ton colis, et c'est l'incident.",
-  "Glucksmannville : la livraison en baskets blanches.",
-  "Rassembler, oui. Toucher les baskets, non.",
-  "Les glucksmanniens vont dire qu'il était provoqué."
+  "Débat 2024, à Manon Aubry : « Lâchez-moi les baskets ».",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Baskets sous escorte : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Le livreur a des baskets blindées."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Il veut rassembler toute la gauche. Mais ne lui touche pas les baskets.",
-  "Colis : vision. Baskets : intouchables.",
-  "Le livreur rassemble. Sauf les questions."
+  "En campagne, personne n'ose lui serrer la main : trop près des baskets.",
+  "Les baskets sont protégées. Le maire, lui, est seul.",
+  "Chaque pas déclenche une alarme. Plus personne ne marche."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. En baskets.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le livreur a des baskets blindées.",
    "accent_words": [
-    "En baskets"
+    "blindées"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le livreur arrive en baskets blanches. Tu poses une question sur le colis.",
-   "accent_words": [
-    "une question"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Réponse : « Lâchez-moi les baskets ».",
+   "text": "Débat 2024, à Manon Aubry : « Lâchez-moi les baskets ».",
    "accent_words": [
     "baskets"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "La réplique date d'un débat de 2024, adressée à Manon Aubry.",
+   "id": "n3",
+   "text": "La mairie protège les baskets : chaque paire a son garde du corps.",
    "accent_words": [
-    "Manon Aubry"
+    "corps"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Les rues se remplissent de gardes du corps qui suivent des chaussures.",
+   "accent_words": [
+    "chaussures"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Ton colis ? Une vision. Le contenu sera livré plus tard.",
+   "text": "Chaque pas déclenche une alarme. Plus personne ne marche.",
    "accent_words": [
-    "plus tard"
+    "marche"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Il veut rassembler toute la gauche. Mais ne lui touche pas les baskets.",
+   "text": "En campagne, personne n'ose lui serrer la main : trop près des baskets.",
    "accent_words": [
-    "les baskets"
+    "baskets"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -74,7 +74,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui s'énerve quand on marche sur ses baskets.",
    "accent_words": [
-    "ses baskets"
+    "baskets"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -87,78 +87,179 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "facade_row",
-    "lamp",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
-   "expected_result": "Le décor de rue posé."
+   "comic_action": "Descente sur la ville ; banderole « BASKETS SOUS ESCORTE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BASKETS SOUS ESCORTE"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
+    "tribune",
     "person",
-    "road",
-    "sign",
-    "car"
+    "text3d"
    ],
-   "onscreen_text": "UNE QUESTION ?",
-   "comic_action": "Livreur qui court avec un colis ; panneau de la mairie sur le trottoir.",
-   "expected_result": "La livraison porte la pique."
+   "onscreen_text": "« LÂCHEZ-MOI LES BASKETS »",
+   "comic_action": "Le maire recule d'un pas en désignant ses chaussures.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PAS TOUCHE"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "shop",
-    "sign",
-    "person"
+    "road",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "« LÂCHEZ-MOI LES BASKETS »",
-   "comic_action": "Vitrine du magasin de baskets : une paire tenue par deux mains qui ne lâchent pas.",
-   "expected_result": "La réplique littéralisée."
+   "onscreen_text": "GARDE DU CORPS DE BASKETS",
+   "comic_action": "Un garde du corps en costume suit une paire de baskets dans la rue.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "GARDE DU CORPS 10,50 €/H"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "tribune",
+    "road",
     "person",
-    "banner",
-    "studio_light"
+    "sign"
    ],
-   "onscreen_text": "DÉBAT 2024",
-   "comic_action": "Le maire cubique à la tribune, projecteur, foule clairsemée.",
-   "expected_result": "Le discours porte la pique."
+   "onscreen_text": "RUE BONDÉE",
+   "comic_action": "Des dizaines de gardes du corps encombrent le trottoir.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PAS TOUCHE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "person",
     "road",
-    "sign",
-    "car"
+    "lamp",
+    "person"
    ],
-   "onscreen_text": "CONTENU : PLUS TARD",
-   "comic_action": "Livreur qui court avec un colis ; panneau de la mairie sur le trottoir.",
-   "expected_result": "La livraison porte la pique."
+   "onscreen_text": "ALARME À CHAQUE PAS",
+   "comic_action": "Un passant pose le pied ; une sirène retentit.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "cross_arms",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "NE MARCHEZ PAS"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -167,13 +268,33 @@
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "sign",
-    "person"
+    "road",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "NE PAS TOUCHER",
-   "comic_action": "Gros plan sur les baskets immaculées ; un client tend la main, le livreur recule d'un pas.",
-   "expected_result": "La réplique littéralisée."
+   "onscreen_text": "TROP PRÈS DES BASKETS",
+   "comic_action": "Le maire tend la main ; la foule recule d'un mètre.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "cross_arms",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "À 1 MÈTRE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -188,8 +309,28 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « Lâchez-moi les baskets » : chaque paire de baskets a son garde du corps.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "BASKETS SOUS ESCORTE"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -201,31 +342,13 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 77,
+ "word_count": 84,
  "claims": [
   {
    "text": "« Lâchez-moi les baskets »",
    "claim_type": "citation_exacte",
    "source": "https://www.ozap.com/actu/-lachez-moi-les-baskets-furieux-raphael-glucksmann-riposte-apres-des-attaques-de-manon-aubry-sur-bfmtv/644147",
-   "note": "« Lâchez-moi les baskets » (débat BFMTV des européennes)."
-  },
-  {
-   "text": "La réplique date d'un débat de 2024, adressée à Manon Aubry.",
-   "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/-lachez-moi-les-baskets-furieux-raphael-glucksmann-riposte-apres-des-attaques-de-manon-aubry-sur-bfmtv/644147",
-   "note": "« Lâchez-moi les baskets » (débat BFMTV des européennes)."
-  },
-  {
-   "text": "Ton colis ? Une vision. Le contenu sera livré plus tard.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme ». Détourné dans la ville fictive."
-  },
-  {
-   "text": "Il veut rassembler toute la gauche. Mais ne lui touche pas les baskets.",
-   "claim_type": "fiction_satirique",
-   "source": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
-   "note": "Une gauche qui peut « rassembler, gouverner et gagner ». Détourné dans la ville fictive."
+   "note": "« Lâchez-moi les baskets », lancé à Manon Aubry (LFI) en débat télévisé des européennes."
   }
  ],
  "sources": [
@@ -234,23 +357,9 @@
    "date": "2024-05-27",
    "consulted": "2026-11-22",
    "statut": "citation exacte",
-   "note": "« Lâchez-moi les baskets » (débat BFMTV des européennes)."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-   "date": "2025-06-23",
-   "consulted": "2026-11-22",
-   "statut": "citations rapportées",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
-  },
-  {
-   "url": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
-   "date": "2026-10-12",
-   "consulted": "2026-11-22",
-   "statut": "fait public (formule rapportée)",
-   "note": "Une gauche qui peut « rassembler, gouverner et gagner »."
+   "note": "« Lâchez-moi les baskets », lancé à Manon Aubry (LFI) en débat télévisé des européennes."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « Lâchez-moi les baskets » (débat des européennes 2024 face à Manon Aubry) adressé à un client qui pose une question sur son colis. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « Lâchez-moi les baskets » : chaque paire de baskets a son garde du corps. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

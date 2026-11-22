@@ -6,64 +6,64 @@
  "title_cover": "Le feu qui récite",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, même le feu rouge récite son texte.",
-  "Glucksmannville : le carrefour au prompteur.",
-  "Rouge, orange, vert, ton grave.",
-  "Les glucksmanniens vont applaudir la diction."
+  "Des communicants trouvent son ton « figé », « scolaire ».",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Le feu qui récite : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Le feu rouge lit un prompteur."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le feu connaît son texte par cœur. Pas la direction.",
-  "Le texte est parfait. La route, non.",
-  "Appris par cœur, récité sans cap."
+  "Le maire arrive à pied. Il attend la fin de son propre discours.",
+  "Ses discours ont bloqué la ville. Même lui attend qu'ils finissent.",
+  "Les voitures attendent le vert. Le discours dure quarante minutes."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Par cœur.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le feu rouge lit un prompteur.",
    "accent_words": [
-    "Par cœur"
+    "prompteur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le feu tricolore récite son texte. Rouge, orange, vert, sans une émotion.",
+   "text": "Des communicants trouvent son ton « figé », « scolaire ».",
    "accent_words": [
-    "sans une émotion"
+    "scolaire"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n3",
+   "text": "La mairie installe des haut-parleurs qui récitent ses discours aux carrefours.",
+   "accent_words": [
+    "carrefours"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Son annonce de candidature ? Des internautes l'ont trouvée apprise et récitée.",
-   "accent_words": [
-    "récitée"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n4",
-   "text": "Ton figé, scolaire, disent des communicants. Le feu prend des notes.",
+   "text": "Même ton, même pause. Les feux rouges s'endorment.",
    "accent_words": [
-    "scolaire"
+    "s'endorment"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Au 20 heures de TF1, il annonce sa candidature. Le prompteur, ému, applaudit.",
+   "text": "Les voitures attendent le vert. Le discours dure quarante minutes.",
    "accent_words": [
-    "le prompteur"
+    "minutes"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le feu connaît son texte par cœur. Pas la direction.",
+   "text": "Le maire arrive à pied. Il attend la fin de son propre discours.",
    "accent_words": [
-    "Pas la direction"
+    "discours"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui apprend ses blagues par cœur.",
    "accent_words": [
-    "par cœur"
+    "cœur"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -84,15 +84,39 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "facade_row",
-    "lamp",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
-   "expected_result": "Le décor de rue posé."
+   "comic_action": "Descente sur la ville ; banderole « LE FEU QUI RÉCITE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LE FEU QUI RÉCITE"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,58 +125,138 @@
    ],
    "camera": "closeup",
    "set": [
-    "traffic_light",
     "router_lectern",
+    "screen",
     "text3d"
    ],
-   "onscreen_text": "FEU : TEXTE APPRIS",
-   "comic_action": "Le feu tricolore récite son texte sur un prompteur, ton figé ; le texte défile.",
-   "expected_result": "Le discours appris par cœur."
+   "onscreen_text": "« FIGÉ »",
+   "comic_action": "Le maire, immobile derrière un pupitre, lit un prompteur sans cligner.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "neutre",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "fall",
+     "visage": "dort",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "EXPRESSION : NEUTRE"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
     "traffic_light",
-    "router_lectern",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "APPRISE, RÉCITÉE",
-   "comic_action": "Le feu tricolore récite son texte sur un prompteur, ton figé ; le texte défile.",
-   "expected_result": "Le discours appris par cœur."
+   "onscreen_text": "DISCOURS AU CARREFOUR",
+   "comic_action": "Un haut-parleur vissé sur chaque feu tricolore.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "DISCOURS 10,50 € LA MINUTE"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "router_lectern",
-    "person",
-    "studio_light"
+    "traffic_light",
+    "road",
+    "car"
    ],
-   "onscreen_text": "TON : SCOLAIRE",
-   "comic_action": "Gros plan sur le pupitre-routeur qui clignote.",
-   "expected_result": "Le pupitre porte la pique."
+   "onscreen_text": "FEUX ENDORMIS",
+   "comic_action": "Les feux tricolores clignent lentement, comme assoupis.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "fall",
+     "visage": "dort",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ZZZ"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "road",
+    "car",
+    "traffic_light"
    ],
-   "onscreen_text": "20 HEURES : PROMPTEUR",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "onscreen_text": "ROUGE : 40 MINUTES",
+   "comic_action": "Une file de voitures immobiles ; un conducteur fait des mots croisés.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "dort",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "MERCI DE VOTRE ÉCOUTE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -162,12 +266,32 @@
    "camera": "closeup",
    "set": [
     "traffic_light",
-    "router_lectern",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "TEXTE : OK · DIRECTION : ?",
-   "comic_action": "Le feu tricolore récite son texte sur un prompteur, ton figé ; le texte défile.",
-   "expected_result": "Le discours appris par cœur."
+   "onscreen_text": "IL ATTEND SON DISCOURS",
+   "comic_action": "Le maire attend au passage piéton, montre en main, pendant que sa voix récite.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PAR CŒUR"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -182,8 +306,28 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : son ton jugé « figé », « scolaire » : les feux rouges récitent ses discours.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LE FEU QUI RÉCITE"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -195,37 +339,13 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 78,
+ "word_count": 77,
  "claims": [
   {
-   "text": "Le feu tricolore récite son texte. Rouge, orange, vert, sans une émotion.",
-   "claim_type": "fiction_satirique",
+   "text": "« figé » ; « scolaire »",
+   "claim_type": "citation_exacte",
    "source": "https://www.letribunaldunet.fr/politique/glucksmann-mauvais-orateur-experts-communication-2027-2.html",
-   "note": "Annonce jugée apprise, récitée, ton figé, « scolaire ». Détourné dans la ville fictive."
-  },
-  {
-   "text": "Son annonce de candidature ? Des internautes l'ont trouvée apprise et récitée.",
-   "claim_type": "fait_public",
-   "source": "https://www.letribunaldunet.fr/politique/glucksmann-mauvais-orateur-experts-communication-2027-2.html",
-   "note": "Annonce jugée apprise, récitée, ton figé, « scolaire »."
-  },
-  {
-   "text": "Ton figé, scolaire, disent des communicants. Le feu prend des notes.",
-   "claim_type": "fait_public",
-   "source": "https://www.letribunaldunet.fr/politique/glucksmann-mauvais-orateur-experts-communication-2027-2.html",
-   "note": "Annonce jugée apprise, récitée, ton figé, « scolaire »."
-  },
-  {
-   "text": "Au 20 heures de TF1, il annonce sa candidature. Le prompteur, ému, applaudit.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/presidentielle-2027-raphael-glucksmann-officialise-sa-candidature-et-participera-a-la",
-   "note": "Candidature annoncée au 20 heures de TF1 le 23/08/2026."
-  },
-  {
-   "text": "Le feu connaît son texte par cœur. Pas la direction.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
-   "note": "« Candidat hypothétique cherche projet politique ». Détourné dans la ville fictive."
+   "note": "Annonce de candidature jugée apprise et récitée, ton « figé », « scolaire »."
   }
  ],
  "sources": [
@@ -233,24 +353,10 @@
    "url": "https://www.letribunaldunet.fr/politique/glucksmann-mauvais-orateur-experts-communication-2027-2.html",
    "date": "2026-08-27",
    "consulted": "2026-11-22",
-   "statut": "opinion d'internautes et de communicants",
-   "note": "Annonce jugée apprise, récitée, ton figé, « scolaire »."
-  },
-  {
-   "url": "https://lcp.fr/actualites/presidentielle-2027-raphael-glucksmann-officialise-sa-candidature-et-participera-a-la",
-   "date": "2026-08-23",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Candidature annoncée au 20 heures de TF1 le 23/08/2026."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
-   "date": "2025-03-14",
-   "consulted": "2026-11-22",
-   "statut": "opinion (titre de presse)",
-   "note": "« Candidat hypothétique cherche projet politique »."
+   "statut": "opinion (internautes et communicants)",
+   "note": "Annonce de candidature jugée apprise et récitée, ton « figé », « scolaire »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : l'annonce de candidature jugée apprise, récitée, au ton figé et scolaire par des internautes et des communicants (août 2026). Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : son ton jugé « figé », « scolaire » : les feux rouges récitent ses discours. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

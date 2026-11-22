@@ -3,78 +3,78 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m010",
  "format": "A",
- "anchor": "la coalition voulue par Macron « de Lisnard à Glucksmann » et les « tentatives désespérées » dénoncées par son camp, en réunion de copro.",
+ "anchor": "la coalition voulue par Macron, et les « tentatives désespérées » dénoncées par son camp",
  "situation": "la réunion de copro",
- "ressort": "piques frontales sourcées (style tacle)",
- "title_cover": "Voisin du dessus",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
+ "title_cover": "Le voisin insistant",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, le voisin du dessus fait des avances.",
-  "Glucksmannville : la copro de la coalition.",
-  "Il refuse l'alliance. Il lève la main pareil.",
-  "Les glucksmanniens vont changer de serrure."
+  "Macron veut le rallier. Son camp parle de « tentatives désespérées ».",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Le voisin insistant : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Le portail a trois verrous."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Il refuse l'alliance. Mais en AG, ils lèvent la main pareil sur tout.",
-  "Pas d'alliance. Juste les mêmes votes.",
-  "Le voisin insiste. Le couloir sourit."
+  "Le maire refuse tout. Puis il s'habille pareil que lui pour la photo.",
+  "Il a refusé la coalition. Pas la garde-robe.",
+  "La mairie installe une porte, puis un fossé, puis un faux numéro."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Le voisin du dessus, non.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le portail a trois verrous.",
    "accent_words": [
-    "le voisin du dessus"
+    "trois verrous"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le voisin du dessus propose une alliance contre les deux bouts du couloir.",
-   "accent_words": [
-    "une alliance"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "En vrai, Macron veut une coalition de Lisnard à Glucksmann.",
-   "accent_words": [
-    "coalition"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n4",
-   "text": "Son porte-parole répond : des « tentatives désespérées ».",
+   "text": "Macron veut le rallier. Son camp parle de « tentatives désespérées ».",
    "accent_words": [
     "désespérées"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n5",
-   "text": "Le voisin insiste. Il glisse des mots doux sous la porte.",
+   "id": "n3",
+   "text": "Le voisin de Macronville passe chaque soir, avec des fleurs.",
    "accent_words": [
-    "mots doux"
+    "fleurs"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Puis des chocolats. Puis une sérénade sous le balcon de la mairie.",
+   "accent_words": [
+    "mairie"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "La mairie installe une porte, puis un fossé, puis un faux numéro.",
+   "accent_words": [
+    "numéro"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Il refuse l'alliance. Mais en AG, ils lèvent la main pareil sur tout.",
+   "text": "Le maire refuse tout. Puis il s'habille pareil que lui pour la photo.",
    "accent_words": [
-    "pareil sur tout"
+    "photo"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui jure détester son voisin mais lui emprunte tout.",
+   "text": "Envoie ça au pote qui déteste son voisin mais lui emprunte tout.",
    "accent_words": [
-    "emprunte tout"
+    "tout"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -87,46 +87,109 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "road",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente le long d'une tour de bureaux jusqu'au trottoir.",
-   "expected_result": "Le quartier d'affaires posé."
+   "comic_action": "Descente sur la ville ; banderole « LE VOISIN INSISTANT » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LE VOISIN INSISTANT"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
     "table",
     "person",
-    "form_stack",
-    "building"
+    "text3d"
    ],
-   "onscreen_text": "ALLIANCE DU COULOIR",
-   "comic_action": "Réunion de copro autour d'une table ; pile de procès-verbaux.",
-   "expected_result": "La copro porte la pique."
+   "onscreen_text": "« TENTATIVES DÉSESPÉRÉES »",
+   "comic_action": "Le maire repousse un bouquet tendu par le voisin de Macronville.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "NON MERCI"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
-    "car",
-    "person",
     "road",
-    "sign"
+    "person",
+    "tree"
    ],
-   "onscreen_text": "DE LISNARD À GLUCKSMANN",
-   "comic_action": "La voiture du maire voisin klaxonne et ouvre la portière ; le maire cubique hésite sur le trottoir.",
-   "expected_result": "La drague de la coalition."
+   "onscreen_text": "LE VOISIN ET SES FLEURS",
+   "comic_action": "Un voisin sonne à la mairie, bouquet à la main.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "BOUQUET 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -135,45 +198,103 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "mairie",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "« TENTATIVES DÉSESPÉRÉES »",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "onscreen_text": "SÉRÉNADE",
+   "comic_action": "Le voisin chante sous le balcon de la mairie, guitare en main.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "arms_up",
+     "visage": "parle",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "ROMANTIQUE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "person",
-    "form_stack",
-    "building"
+    "mairie",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "MOTS DOUX",
-   "comic_action": "Réunion de copro autour d'une table ; pile de procès-verbaux.",
-   "expected_result": "La copro porte la pique."
+   "onscreen_text": "FOSSÉ ANTI-COALITION",
+   "comic_action": "Un fossé est creusé autour de la mairie ; une pancarte « MAUVAIS NUMÉRO ».",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PAS DE COALITION"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "table",
+    "ring_light",
     "person",
-    "form_stack",
-    "building"
+    "text3d"
    ],
-   "onscreen_text": "MÊMES MAINS LEVÉES",
-   "comic_action": "En assemblée de copro, les deux voisins lèvent la main exactement au même moment, à chaque point.",
-   "expected_result": "La copro porte la pique."
+   "onscreen_text": "MÊME TENUE",
+   "comic_action": "Sur la photo officielle, le maire et le voisin portent exactement la même tenue.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "AUCUN RAPPORT"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -188,44 +309,52 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : la coalition voulue par Macron, et les « tentatives désespérées » dénoncées par son camp.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "LE VOISIN INSISTANT"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui jure détester son voisin mais lui emprunte tout."
+  "text": "Envoie ça au pote qui déteste son voisin mais lui emprunte tout."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 82,
+ "word_count": 84,
  "claims": [
-  {
-   "text": "Le voisin du dessus propose une alliance contre les deux bouts du couloir.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
-   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle. Détourné dans la ville fictive."
-  },
-  {
-   "text": "En vrai, Macron veut une coalition de Lisnard à Glucksmann.",
-   "claim_type": "fait_public",
-   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
-   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
-  },
   {
    "text": "« tentatives désespérées »",
    "claim_type": "citation_exacte",
-   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann-afp-753ca015d95ec4b0d3e2f01c3cb76e945a72ac72",
-   "note": "Glucksmann : l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
+   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
+   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle. Glucksmann juge que l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
   },
   {
-   "text": "Il refuse l'alliance. Mais en AG, ils lèvent la main pareil sur tout.",
+   "text": "Le maire refuse tout. Puis il s'habille pareil que lui pour la photo.",
    "claim_type": "fiction_satirique",
-   "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
-   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate. Détourné dans la ville fictive."
+   "source": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
+   "note": "Chronique ironique : « Il est cool ce Glucksmann, il me rappelle Macron ». Exagération satirique évidente, présentée comme telle."
   }
  ],
  "sources": [
@@ -233,24 +362,24 @@
    "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
    "date": "2026-11",
    "consulted": "2026-11-22",
-   "statut": "fait public (AFP)",
+   "statut": "fait public (dépêche AFP)",
    "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
   },
   {
    "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann-afp-753ca015d95ec4b0d3e2f01c3cb76e945a72ac72",
    "date": "2026-11",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (AFP)",
-   "note": "Glucksmann : l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
+   "statut": "citation exacte (dépêche AFP)",
+   "note": "Glucksmann juge que l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
   },
   {
-   "url": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
-   "date": "2026-10",
+   "url": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
+   "date": "2024-04-03",
    "consulted": "2026-11-22",
-   "statut": "opinion (éditorial, titre cité)",
-   "note": "« Glucksmann, la gauche en moins » ; risque de refaire du macronisme sous bannière sociale-démocrate."
+   "statut": "titre de chronique (opinion)",
+   "note": "Chronique ironique : « Il est cool ce Glucksmann, il me rappelle Macron »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : la coalition voulue par Macron « de Lisnard à Glucksmann » et les « tentatives désespérées » dénoncées par son camp, en réunion de copro. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : la coalition voulue par Macron, et les « tentatives désespérées » dénoncées par son camp. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

@@ -3,75 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-10",
  "format": "A",
- "title_cover": "Thèse sur le mirage",
+ "title_cover": "L'oasis qui recule",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, la thèse sur le cap fait mille pages. Sans cap.",
-  "Glucksmannville : l'université du mirage.",
-  "Mille pages, une oasis, zéro eau.",
-  "Les glucksmanniens vont réclamer une soutenance."
+  "Politis titre son dossier : « Glucksmann croit au mirage social-démocrate ».",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "L'oasis qui recule : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Le désert a un jardin partagé."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Mille pages pour un cap. Le désert, lui, avance plus vite.",
-  "Le cap existe. Il est en annexe.",
-  "Une oasis, vue de loin. Du sable, vu de près."
+  "Le maire déclare l'oasis atteinte et réserve un transat dans le vide.",
+  "L'oasis recule, le matcha est tiède, et le maire a déjà réservé son transat.",
+  "On creuse un puits pour la rattraper. On trouve du matcha tiède."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Pour le mirage.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le désert a un jardin partagé.",
    "accent_words": [
-    "le mirage"
+    "partagé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À l'université, une thèse de mille pages sur le cap. Conclusion : à venir.",
+   "text": "Politis titre son dossier : « Glucksmann croit au mirage social-démocrate ».",
    "accent_words": [
-    "à venir"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Le dossier de Politis s'intitule : « Glucksmann croit au mirage social-démocrate ».",
-   "accent_words": [
-    "mirage"
+    "social-démocrate"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "Le jury voit une oasis. De près, c'est du beige.",
+   "id": "n3",
+   "text": "La mairie installe une oasis au milieu de la place. En hologramme.",
    "accent_words": [
-    "du beige"
+    "hologramme"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Les habitants courent vers l'eau. L'oasis recule à chaque pas.",
+   "accent_words": [
+    "pas"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Pour un politologue, c'est une vision plutôt qu'un programme.",
+   "text": "On creuse un puits pour la rattraper. On trouve du matcha tiède.",
    "accent_words": [
-    "une vision"
+    "tiède"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Mille pages pour un cap. Le désert, lui, avance plus vite.",
+   "text": "Le maire déclare l'oasis atteinte et réserve un transat dans le vide.",
    "accent_words": [
-    "le désert"
+    "vide"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui écrit son mémoire depuis cinq ans.",
+   "text": "Envoie ça au pote qui croit encore aux photos de l'hôtel sur internet.",
    "accent_words": [
-    "cinq ans"
+    "internet"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -84,92 +84,215 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
+    "ground",
+    "mairie",
     "banner",
     "person",
     "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente sur l'école ; banderole au fronton.",
-   "expected_result": "L'école posée."
+   "comic_action": "Descente sur la ville ; banderole « L'OASIS QUI RECULE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "L'OASIS QUI RECULE"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
-   "set": [
-    "scroll",
-    "text3d",
-    "person"
-   ],
-   "onscreen_text": "THÈSE : 1 000 PAGES",
-   "comic_action": "Un parchemin se déroule à n'en plus finir devant l'habitant.",
-   "expected_result": "Le texte interminable."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n3"
-   ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
     "screen",
     "text3d",
     "person"
    ],
    "onscreen_text": "« MIRAGE SOCIAL-DÉMOCRATE »",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "comic_action": "Le maire contemple l'horizon, les yeux brillants.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "L'OASIS EST LÀ"
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "fountain",
+    "tree",
+    "text3d"
+   ],
+   "onscreen_text": "OASIS EN HOLOGRAMME",
+   "comic_action": "Une oasis scintille au centre de la place, palmiers compris.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "TRANSAT 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
-    "facade_row",
-    "banner",
+    "fountain",
     "person",
-    "tree"
+    "text3d"
    ],
-   "onscreen_text": "OASIS = BEIGE",
-   "comic_action": "Rue entièrement beige : façades, banderole, pulls ; un seul habitant en rouge qui détonne.",
-   "expected_result": "Le centre du centre en couleur."
+   "onscreen_text": "ELLE RECULE",
+   "comic_action": "Des habitants courent ; l'oasis glisse un peu plus loin à chaque foulée.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "jump",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "SOIF"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "form_stack",
+    "ground",
     "person",
-    "scroll"
+    "text3d"
    ],
-   "onscreen_text": "VISION ≠ PROGRAMME",
-   "comic_action": "Réunion n°300 : piles de comptes rendus ; le rouleau « PROGRAMME » reste vierge.",
-   "expected_result": "La vision sans programme."
+   "onscreen_text": "PUITS DE MATCHA",
+   "comic_action": "Un habitant remonte un seau vert d'un puits.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "objet": "matcha",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "SEAU DE MATCHA 10,50 €"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "fountain",
+    "bench",
     "person",
-    "tree",
-    "arch"
+    "text3d"
    ],
-   "onscreen_text": "LE DÉSERT AVANCE",
-   "comic_action": "La fontaine de l'université s'assèche ; le sable monte jusqu'aux marches pendant que le doctorant tourne les pages.",
-   "expected_result": "La place porte la pique."
+   "onscreen_text": "TRANSAT DANS LE VIDE",
+   "comic_action": "Le maire s'allonge sur un transat au milieu de rien, lunettes de soleil sur le nez.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "ARRIVÉS"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -184,63 +307,57 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « Glucksmann croit au mirage social-démocrate » : l'oasis de la place recule.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "L'OASIS QUI RECULE"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui écrit son mémoire depuis cinq ans."
+  "text": "Envoie ça au pote qui croit encore aux photos de l'hôtel sur internet."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 79,
+ "word_count": 85,
  "claims": [
-  {
-   "text": "À l'université, une thèse de mille pages sur le cap. Conclusion : à venir.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
-   "note": "« Candidat hypothétique cherche projet politique ». Détourné dans la ville fictive."
-  },
   {
    "text": "« Glucksmann croit au mirage social-démocrate »",
    "claim_type": "citation_exacte",
    "source": "https://www.politis.fr/dossiers/2027-glucksmann-croit-au-mirage-social-democrate/",
    "note": "« 2027 : Glucksmann croit au mirage social-démocrate »."
-  },
-  {
-   "text": "Pour un politologue, c'est une vision plutôt qu'un programme.",
-   "claim_type": "fait_public",
-   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
   }
  ],
  "sources": [
   {
-   "url": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
-   "date": "2025-03-14",
-   "consulted": "2026-11-22",
-   "statut": "opinion (titre de presse)",
-   "note": "« Candidat hypothétique cherche projet politique »."
-  },
-  {
    "url": "https://www.politis.fr/dossiers/2027-glucksmann-croit-au-mirage-social-democrate/",
    "date": "2026",
    "consulted": "2026-11-22",
-   "statut": "opinion (titre de dossier)",
+   "statut": "titre de dossier (opinion)",
    "note": "« 2027 : Glucksmann croit au mirage social-démocrate »."
-  },
-  {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "date": "2026-06-25",
-   "consulted": "2026-11-22",
-   "statut": "fait (analyse lexicale) + opinion rapportée",
-   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « Glucksmann croit au mirage social-démocrate » (dossier Politis) : une thèse de mille pages sur le cap, conclusion à venir. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « Glucksmann croit au mirage social-démocrate » : l'oasis de la place recule. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

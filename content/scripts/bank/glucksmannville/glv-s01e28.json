@@ -3,75 +3,75 @@
  "city": "glucksmannville",
  "synopsis_id": "glv-syn-33",
  "format": "C",
- "title_cover": "Mise à jour Candidat",
+ "title_cover": "Candidat de dos",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, pas candidat se met à jour en candidat.",
-  "Glucksmannville : la mise à jour Nuance.",
-  "Pas candidat devant vous. Derrière, on verra.",
-  "Les glucksmanniens vont dire que c'est de la maturation."
+  "2025 : « là, je ne suis pas candidat devant vous ». 2026 : candidat.",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Candidat de dos : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Les selfies se prennent de dos."
  ],
  "selected_hook": 0,
  "ending_variants": [
+  "Le maire est enfin candidat. Il s'est juste retourné.",
   "Il n'était pas candidat devant vous. Il l'était juste derrière.",
-  "Pas candidat, version bêta. Candidat, version finale.",
-  "Mise à jour réussie. Le programme, toujours en bêta."
+  "Les débats se tiennent dos à dos. Personne ne voit personne."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Version 2.0.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Les selfies se prennent de dos.",
    "accent_words": [
-    "2.0"
+    "dos"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Mise à jour Nuance installée : pas candidat devient candidat.",
+   "text": "2025 : « là, je ne suis pas candidat devant vous ». 2026 : candidat.",
    "accent_words": [
-    "devient candidat"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Juin 2025 : « là, je ne suis pas candidat devant vous ».",
-   "accent_words": [
-    "pas candidat"
+    "candidat"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "Août 2026 : candidat, au 20 heures de TF1. Notes de version : aucune.",
+   "id": "n3",
+   "text": "La mairie applique : interdit d'être candidat devant quelqu'un. Seulement derrière.",
    "accent_words": [
-    "TF1"
+    "derrière"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Les candidats font campagne de dos. Les affiches montrent leur nuque.",
+   "accent_words": [
+    "nuque"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Correctifs : cap toujours introuvable, programme en téléchargement.",
+   "text": "Les débats se tiennent dos à dos. Personne ne voit personne.",
    "accent_words": [
-    "en téléchargement"
+    "personne"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Il n'était pas candidat devant vous. Il l'était juste derrière.",
+   "text": "Le maire est enfin candidat. Il s'est juste retourné.",
    "accent_words": [
-    "juste derrière"
+    "retourné"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui jure qu'il ne viendra pas, puis arrive le premier.",
+   "text": "Envoie ça au pote qui ne vient pas, puis arrive le premier.",
    "accent_words": [
-    "arrive le premier"
+    "premier"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,41 +88,105 @@
     "mairie",
     "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
-   "expected_result": "La ville et son camp posés en une seconde."
+   "comic_action": "Descente sur la ville ; banderole « CANDIDAT DE DOS » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "CANDIDAT DE DOS"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
+    "tribune",
     "text3d",
-    "gps"
+    "person"
    ],
-   "onscreen_text": "MISE À JOUR : NUANCE",
-   "comic_action": "Écran de l'application municipale : chargement, mise à jour, chargement.",
-   "expected_result": "L'appli porte la pique."
+   "onscreen_text": "« PAS CANDIDAT DEVANT VOUS »",
+   "comic_action": "Le maire, face au public, dit non de la tête ; derrière son dos, il tient une affiche de campagne.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PAS CANDIDAT (DEVANT)"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "tribune",
     "sign",
-    "person"
+    "mairie",
+    "text3d"
    ],
-   "onscreen_text": "« PAS CANDIDAT DEVANT VOUS »",
-   "comic_action": "Le maire cubique à la tribune derrière un panneau « PAS CANDIDAT » ; le panneau se retourne : « CANDIDAT ».",
-   "expected_result": "Le revirement en panneau réversible."
+   "onscreen_text": "CANDIDAT : DE DOS",
+   "comic_action": "Panneau officiel : « TOUTE CANDIDATURE SE FAIT DE DOS ».",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "AFFICHE DE DOS 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -131,28 +195,68 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "banner",
+    "facade_row",
+    "text3d"
    ],
-   "onscreen_text": "AOÛT 2026 : CANDIDAT",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "onscreen_text": "AFFICHES DE DOS",
+   "comic_action": "Des affiches électorales montrent des candidats vus de dos.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "DE DOS"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
-    "gps"
+    "tribune",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "PROGRAMME : 12 %…",
-   "comic_action": "Écran de l'application municipale : chargement, mise à jour, chargement.",
-   "expected_result": "L'appli porte la pique."
+   "onscreen_text": "DÉBAT DOS À DOS",
+   "comic_action": "Deux pupitres tournés dans des directions opposées ; les candidats parlent au mur.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "arms_up",
+     "visage": "parle",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "DÉBAT"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -162,12 +266,32 @@
    "camera": "closeup",
    "set": [
     "tribune",
-    "sign",
-    "person"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "DERRIÈRE VOUS",
-   "comic_action": "Le maire parle face caméra devant un panneau « PAS CANDIDAT » ; plan large : derrière lui, une affiche de campagne géante.",
-   "expected_result": "Le revirement en panneau réversible."
+   "onscreen_text": "IL S'EST RETOURNÉ",
+   "comic_action": "Le maire pivote sur lui-même ; l'affiche de campagne apparaît, tout sourire.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "CANDIDAT (FINALEMENT)"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -176,56 +300,52 @@
    ],
    "camera": "return",
    "set": [
-    "mairie",
+    "road",
     "person",
     "tshirt",
-    "banner"
+    "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « je ne suis pas candidat devant vous » (2025), puis candidat (2026) : on fait campagne de dos.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "CANDIDAT DE DOS"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui jure qu'il ne viendra pas, puis arrive le premier."
+  "text": "Envoie ça au pote qui ne vient pas, puis arrive le premier."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 79,
+ "word_count": 83,
  "claims": [
-  {
-   "text": "Mise à jour Nuance installée : pas candidat devient candidat.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme ». Détourné dans la ville fictive."
-  },
   {
    "text": "« là, je ne suis pas candidat devant vous »",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
-  },
-  {
-   "text": "Août 2026 : candidat, au 20 heures de TF1. Notes de version : aucune.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/presidentielle-2027-raphael-glucksmann-officialise-sa-candidature-et-participera-a-la",
-   "note": "Candidature annoncée au 20 heures de TF1 le 23/08/2026."
-  },
-  {
-   "text": "Correctifs : cap toujours introuvable, programme en téléchargement.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
-   "note": "« Candidat hypothétique cherche projet politique ». Détourné dans la ville fictive."
-  },
-  {
-   "text": "Il n'était pas candidat devant vous. Il l'était juste derrière.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme ». Détourné dans la ville fictive."
+   "note": "« Là, je ne suis pas candidat devant vous » ; son mouvement revendique 300 réunions et 150 auditions en neuf mois ; il demande un an de plus « pour transformer une vision en programme ». Candidature officialisée au 20 heures de TF1 le 23/08/2026."
   }
  ],
  "sources": [
@@ -233,24 +353,17 @@
    "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
    "date": "2025-06-23",
    "consulted": "2026-11-22",
-   "statut": "citations rapportées",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
+   "statut": "citation exacte + fait public",
+   "note": "« Là, je ne suis pas candidat devant vous » ; son mouvement revendique 300 réunions et 150 auditions en neuf mois ; il demande un an de plus « pour transformer une vision en programme »."
   },
   {
    "url": "https://lcp.fr/actualites/presidentielle-2027-raphael-glucksmann-officialise-sa-candidature-et-participera-a-la",
    "date": "2026-08-23",
    "consulted": "2026-11-22",
    "statut": "fait public",
-   "note": "Candidature annoncée au 20 heures de TF1 le 23/08/2026."
-  },
-  {
-   "url": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
-   "date": "2025-03-14",
-   "consulted": "2026-11-22",
-   "statut": "opinion (titre de presse)",
-   "note": "« Candidat hypothétique cherche projet politique »."
+   "note": "Candidature officialisée au 20 heures de TF1 le 23/08/2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « là, je ne suis pas candidat devant vous » (juin 2025) puis candidat au 20 heures de TF1 (août 2026) : la mise à jour Nuance. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « je ne suis pas candidat devant vous » (2025), puis candidat (2026) : on fait campagne de dos. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

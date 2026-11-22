@@ -3,78 +3,78 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m014",
  "format": "A",
- "anchor": "« là, je ne suis pas candidat devant vous » (juin 2025) puis candidat sur TF1 (août 2026), en entretien d'embauche.",
+ "anchor": "« je ne suis pas candidat devant vous », puis candidat : plus personne ne postule officiellement",
  "situation": "l'entretien d'embauche",
- "ressort": "piques frontales sourcées (style tacle)",
- "title_cover": "Pas candidat, embauché",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
+ "title_cover": "Je ne postule pas",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, on n'est jamais candidat. Jusqu'au 20 heures.",
-  "Glucksmannville : l'entretien du pas candidat.",
-  "Pas candidat, mais CV prêt.",
-  "Les glucksmanniens vont dire qu'il réfléchissait."
+  "2025 : « je ne suis pas candidat devant vous ». 2026 : candidat.",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Je ne postule pas : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Les CV sont dans les manches."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ce n'était pas un refus. C'était un préavis de quatorze mois.",
-  "Pas candidat, en préavis de candidat.",
-  "Le dossier était rempli. Le non, non."
+  "Le maire signe son propre contrat en jurant qu'il ne l'a pas demandé.",
+  "Personne ne postule, mais tout le monde est embauché. Lui le premier.",
+  "Les recruteurs embauchent au hasard. Le boulanger devient pilote."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Il n'avait rien demandé.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Les CV sont dans les manches.",
    "accent_words": [
-    "rien demandé"
+    "manches"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Entretien d'embauche : le candidat jure qu'il ne postule pas.",
+   "text": "2025 : « je ne suis pas candidat devant vous ». 2026 : candidat.",
    "accent_words": [
-    "ne postule pas"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Le recruteur ressort juin 2025 : « là, je ne suis pas candidat devant vous ».",
-   "accent_words": [
-    "ressort"
+    "candidat"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "Quatorze mois plus tard, candidature officielle. Formulaire prérempli depuis le début.",
+   "id": "n3",
+   "text": "La mairie adopte la méthode : plus personne ne postule. Officiellement.",
    "accent_words": [
-    "prérempli"
+    "Officiellement"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Chacun jure ne rien chercher, le CV caché dans la manche.",
+   "accent_words": [
+    "manche"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le recruteur relit le CV : Europe, Europe, Place publique, Europe.",
+   "text": "Les recruteurs embauchent au hasard. Le boulanger devient pilote.",
    "accent_words": [
-    "Europe"
+    "pilote"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ce n'était pas un refus. C'était un préavis de quatorze mois.",
+   "text": "Le maire signe son propre contrat en jurant qu'il ne l'a pas demandé.",
    "accent_words": [
-    "préavis"
+    "demandé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui dit qu'il ne postule pas en remplissant le dossier.",
+   "text": "Envoie ça au pote qui ne postule pas, dossier rempli en main.",
    "accent_words": [
-    "le dossier"
+    "main"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -87,60 +87,144 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "road",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente le long d'une tour de bureaux jusqu'au trottoir.",
-   "expected_result": "Le quartier d'affaires posé."
+   "comic_action": "Descente sur la ville ; banderole « JE NE POSTULE PAS » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "JE NE POSTULE PAS"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
     "tribune",
-    "sign",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "JE NE POSTULE PAS",
-   "comic_action": "Le maire cubique à la tribune derrière un panneau « PAS CANDIDAT » ; le panneau se retourne : « CANDIDAT ».",
-   "expected_result": "Le revirement en panneau réversible."
+   "onscreen_text": "« PAS CANDIDAT »",
+   "comic_action": "Le maire dit non de la tête ; un formulaire de candidature dépasse de sa poche.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "PAS CANDIDAT (POUR L'INSTANT)"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
+    "table",
+    "sign",
     "person"
    ],
-   "onscreen_text": "ARCHIVE : JUIN 2025",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "onscreen_text": "PERSONNE NE POSTULE",
+   "comic_action": "Au guichet emploi, une pancarte « AUCUNE CANDIDATURE ».",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CV CACHÉ 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
+    "person",
     "table",
-    "screen",
-    "form_stack",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "FORMULAIRE PRÉREMPLI",
-   "comic_action": "Guichet municipal : écran, pile de formulaires, file d'attente.",
-   "expected_result": "Le guichet porte la pique."
+   "onscreen_text": "CV DANS LA MANCHE",
+   "comic_action": "Un habitant sourit innocemment ; un CV dépasse de sa manche.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "PAS CANDIDAT"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -149,13 +233,34 @@
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
-    "text3d",
-    "person"
+    "shop",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "CV : EUROPE ×3",
-   "comic_action": "Un parchemin se déroule à n'en plus finir devant l'habitant.",
-   "expected_result": "Le texte interminable."
+   "onscreen_text": "BOULANGER PILOTE",
+   "comic_action": "Le boulanger, en tablier et casquette de pilote, tient un manche à balai.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "objet": "baguette",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "EMBAUCHÉ PAR SURPRISE"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +270,32 @@
    "camera": "closeup",
    "set": [
     "table",
-    "sign",
-    "text3d",
-    "form_stack"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "PRÉAVIS : 14 MOIS",
-   "comic_action": "Bureau du maire : badge géant « STAGIAIRE » ; tampon « RENOUVELÉ » qui retombe.",
-   "expected_result": "Le reproche d'inexpérience en badge."
+   "onscreen_text": "PAS DEMANDÉ",
+   "comic_action": "Le maire signe un contrat géant, l'air étonné d'être là.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "QUELLE SURPRISE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -186,44 +310,46 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « je ne suis pas candidat devant vous », puis candidat : plus personne ne postule officiellement.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "JE NE POSTULE PAS"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui dit qu'il ne postule pas en remplissant le dossier."
+  "text": "Envoie ça au pote qui ne postule pas, dossier rempli en main."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 85,
+ "word_count": 84,
  "claims": [
   {
-   "text": "Entretien d'embauche : le candidat jure qu'il ne postule pas.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme ». Détourné dans la ville fictive."
-  },
-  {
-   "text": "« là, je ne suis pas candidat devant vous »",
+   "text": "« je ne suis pas candidat devant vous »",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
-  },
-  {
-   "text": "Quatorze mois plus tard, candidature officielle. Formulaire prérempli depuis le début.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/presidentielle-2027-raphael-glucksmann-officialise-sa-candidature-et-participera-a-la",
-   "note": "Candidature annoncée au 20 heures de TF1 le 23/08/2026."
-  },
-  {
-   "text": "Le recruteur relit le CV : Europe, Europe, Place publique, Europe.",
-   "claim_type": "fiction_satirique",
-   "source": "https://en.wikipedia.org/wiki/Rapha%C3%ABl_Glucksmann",
-   "note": "Place publique (2018) ; liste « Réveiller l'Europe » (2024). Détourné dans la ville fictive."
+   "note": "« Là, je ne suis pas candidat devant vous » ; son mouvement revendique 300 réunions et 150 auditions en neuf mois ; il demande un an de plus « pour transformer une vision en programme ». Candidature officialisée au 20 heures de TF1 le 23/08/2026."
   }
  ],
  "sources": [
@@ -231,24 +357,17 @@
    "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-pas-candidat-pour-le-moment-raphael-glucksmann-trace-son-chemin-et-defend-sa-vision-pour-le-pays",
    "date": "2025-06-23",
    "consulted": "2026-11-22",
-   "statut": "citations rapportées",
-   "note": "« Là, je ne suis pas candidat devant vous » ; 300 réunions, 150 auditions, un an de plus « pour transformer une vision en programme »."
+   "statut": "citation exacte + fait public",
+   "note": "« Là, je ne suis pas candidat devant vous » ; son mouvement revendique 300 réunions et 150 auditions en neuf mois ; il demande un an de plus « pour transformer une vision en programme »."
   },
   {
    "url": "https://lcp.fr/actualites/presidentielle-2027-raphael-glucksmann-officialise-sa-candidature-et-participera-a-la",
    "date": "2026-08-23",
    "consulted": "2026-11-22",
    "statut": "fait public",
-   "note": "Candidature annoncée au 20 heures de TF1 le 23/08/2026."
-  },
-  {
-   "url": "https://en.wikipedia.org/wiki/Rapha%C3%ABl_Glucksmann",
-   "date": "consultée 2026-11-21",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Place publique (2018) ; liste « Réveiller l'Europe » (2024)."
+   "note": "Candidature officialisée au 20 heures de TF1 le 23/08/2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « là, je ne suis pas candidat devant vous » (juin 2025) puis candidat sur TF1 (août 2026), en entretien d'embauche. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : « je ne suis pas candidat devant vous », puis candidat : plus personne ne postule officiellement. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

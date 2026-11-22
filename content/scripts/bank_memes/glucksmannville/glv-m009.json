@@ -3,70 +3,70 @@
  "city": "glucksmannville",
  "synopsis_id": "gm-glv-m009",
  "format": "A",
- "anchor": "« centre gauche, voire centre » et la coalition proposée par Macron : un marché où tout est servi tiède.",
+ "anchor": "le risque de « macronisme sous bannière sociale-démocrate » selon Politis : tout est réglé sur tiède",
  "situation": "le marché",
- "ressort": "piques frontales sourcées (style tacle)",
- "title_cover": "Marché tiède",
+ "ressort": "histoire absurde : un truc connu pris au pied de la lettre, qui dégénère dans la ville",
+ "title_cover": "Ville à 20 degrés",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Glucksmann.",
-  "Ici, même les débats sont servis tiède.",
-  "Glucksmannville : le marché à température ambiante.",
-  "Le seul piment de France prié de se modérer.",
-  "Les glucksmanniens vont trouver ça équilibré."
+  "Pour Politis, il risque de refaire du macronisme sous bannière sociale-démocrate.",
+  "Les électeurs de Glucksmann vont détester celle-là.",
+  "Ville à 20 degrés : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Glucksmann. Le soleil est tiède."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Pas chaud, pas froid. Le seul engagement ferme de la ville : la température.",
-  "Tiède garanti, de l'entrée au dessert.",
-  "La seule chose ferme ici : le thermomètre."
+  "Le maire annonce une mesure forte. Elle sort du four à vingt degrés.",
+  "Ni chaud ni froid : la seule constante de la ville, c'est le thermostat.",
+  "La ville ne brûle plus, ne gèle plus. Elle somnole."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Glucksmann. Tiède, de préférence.",
-   "accent_words": [
-    "Tiède"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n2",
-   "text": "Au marché, tout est servi tiède. Le café, la soupe, les débats.",
+   "text": "Dans cette ville, tout le monde vote Glucksmann. Le soleil est tiède.",
    "accent_words": [
     "tiède"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Ses critiques le placent centre gauche, voire centre. Le thermomètre aussi.",
+   "id": "n2",
+   "text": "Pour Politis, il risque de refaire du macronisme sous bannière sociale-démocrate.",
    "accent_words": [
-    "voire centre"
+    "sociale-démocrate"
    ],
    "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "La mairie trouve le juste milieu : tout est réglé sur tiède.",
+   "accent_words": [
+    "tiède"
+   ],
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Macron lui propose une coalition. Normal : au marché, ils vendent le même tiède.",
+   "text": "Café tiède, douches tièdes, débats tièdes. Le piment est interdit.",
    "accent_words": [
-    "le même tiède"
+    "interdit"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le marchand de piment a été prié de se modérer.",
+   "text": "La ville ne brûle plus, ne gèle plus. Elle somnole.",
    "accent_words": [
-    "se modérer"
+    "somnole"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Pas chaud, pas froid. Le seul engagement ferme de la ville : la température.",
+   "text": "Le maire annonce une mesure forte. Elle sort du four à vingt degrés.",
    "accent_words": [
-    "la température"
+    "degrés"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -87,76 +87,179 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "facade_row",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "sign"
+    "tree"
    ],
    "onscreen_text": "GLUCKSMANNVILLE",
-   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
-   "expected_result": "Le commerce du jour posé."
+   "comic_action": "Descente sur la ville ; banderole « VILLE À 20 DEGRÉS » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "VILLE À 20 DEGRÉS"
+    },
+    {
+     "type": "chien",
+     "tee": "GLUCKSMANN"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "sign",
+    "screen",
     "text3d",
-    "fountain"
+    "person"
    ],
-   "onscreen_text": "TOUT EST TIÈDE",
-   "comic_action": "Thermomètre municipal sur la fontaine, bloqué sur « TIÈDE ».",
-   "expected_result": "Le tiède en décor."
+   "onscreen_text": "MACRONISME (EN ROSE)",
+   "comic_action": "Une affiche de Macron repeinte en rose, avec un petit cœur.",
+   "expected_result": "Point de départ : le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "NI CHAUD NI FROID"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
     "sign",
-    "text3d",
-    "fountain"
+    "mairie",
+    "text3d"
    ],
-   "onscreen_text": "CENTRE GAUCHE, VOIRE CENTRE",
-   "comic_action": "Thermomètre municipal sur la fontaine, bloqué sur « TIÈDE ».",
-   "expected_result": "Le tiède en décor."
+   "onscreen_text": "TOUT À 20 °C",
+   "comic_action": "Un thermostat géant sur la mairie, bloqué à 20 degrés.",
+   "expected_result": "On le prend au pied de la lettre : la ville l'applique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "prix",
+     "texte": "CAFÉ TIÈDE 10,50 €"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "descend",
    "set": [
-    "car",
+    "shop",
     "person",
-    "road",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "MÊME ÉTAL",
-   "comic_action": "La voiture du maire voisin klaxonne et ouvre la portière ; le maire cubique hésite sur le trottoir.",
-   "expected_result": "La drague de la coalition."
+   "onscreen_text": "PIMENT INTERDIT",
+   "comic_action": "Un agent confisque les piments au marché.",
+   "expected_result": "Conséquence : ça dégénère.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "chien",
+     "tee": "TIÈDE"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
-    "shop",
-    "table",
+    "bench",
     "person",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "PIMENT : MODÉRÉ",
-   "comic_action": "Travelling entre les étals du marché.",
-   "expected_result": "Le marché porte la pique."
+   "onscreen_text": "LA VILLE SOMNOLE",
+   "comic_action": "Tous les habitants somnolent sur les bancs, à vingt degrés pile.",
+   "expected_result": "Pire conséquence : l'absurde total.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "fall",
+     "visage": "dort",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "CONFORT"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -165,13 +268,33 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "text3d",
-    "fountain"
+    "tribune",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "ENGAGEMENT : 20 °C",
-   "comic_action": "Le thermomètre géant de la place reste bloqué sur « TIÈDE » malgré un habitant qui souffle dessus.",
-   "expected_result": "Le tiède en décor."
+   "onscreen_text": "MESURE FORTE (TIÈDE)",
+   "comic_action": "Le maire présente un plat fumant ; il ne fume pas vraiment.",
+   "expected_result": "Chute : ça retombe sur lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "MESURE FORTE"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,14 +303,34 @@
    ],
    "camera": "return",
    "set": [
-    "shop",
-    "tshirt",
+    "road",
     "person",
+    "tshirt",
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : le risque de « macronisme sous bannière sociale-démocrate » selon Politis : tout est réglé sur tiède.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ],
+   "gags": [
+    {
+     "type": "affiche",
+     "texte": "VILLE À 20 DEGRÉS"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,37 +342,24 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 82,
+ "word_count": 78,
  "claims": [
   {
-   "text": "Ses critiques le placent centre gauche, voire centre. Le thermomètre aussi.",
+   "text": "Pour Politis, il risque de refaire du macronisme sous bannière sociale-démocrate.",
    "claim_type": "fait_public",
-   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
-  },
-  {
-   "text": "Macron lui propose une coalition. Normal : au marché, ils vendent le même tiède.",
-   "claim_type": "fait_public",
-   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
-   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
+   "source": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "note": "« Glucksmann, la gauche en moins » ; l'édito redoute du macronisme sous bannière sociale-démocrate."
   }
  ],
  "sources": [
   {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
-   "date": "2026-06-25",
+   "url": "https://www.politis.fr/articles/2026/10/parti-pris-glucksmann-la-gauche-en-moins/",
+   "date": "2026-10",
    "consulted": "2026-11-22",
-   "statut": "fait (analyse lexicale) + opinion rapportée",
-   "note": "« Notre gauche » sept fois dans le dernier tiers du discours ; une vision plutôt qu'un programme ; « centre gauche, voire centre »."
-  },
-  {
-   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
-   "date": "2026-11",
-   "consulted": "2026-11-22",
-   "statut": "fait public (AFP)",
-   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
+   "statut": "titre d'éditorial (opinion)",
+   "note": "« Glucksmann, la gauche en moins » ; l'édito redoute du macronisme sous bannière sociale-démocrate."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Glucksmann » + piques frontales, une par plan). Angle principal : « centre gauche, voire centre » et la coalition proposée par Macron : un marché où tout est servi tiède. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (3), format histoire absurde — point de départ : le risque de « macronisme sous bannière sociale-démocrate » selon Politis : tout est réglé sur tiède. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = on le prend au pied de la lettre et ça dégénère dans la ville (fiction évidente), phrase 6 = chute qui retombe sur lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » (gestes littéraux) et des « gags » visuels. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }
