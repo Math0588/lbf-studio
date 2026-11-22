@@ -297,8 +297,33 @@ def meme_cues(ep: dict, timeline: dict) -> list:
         c = own or c
         return ("clip:" + c[(h >> salt) % len(c)]["file"]) if c else None
 
+    # bruitage « au bon moment » : le son illustre le sens de la phrase (mots-clés), au plus 2 + la chute
+    texts = {s["id"]: s["text"].lower() for s in ep["narration_segments"]}
+    by_key = {m["key"]: "clip:" + m["file"] for m in bank}
+    KW = [(r"\b(personne|rien|vide|silence|aucun)\b", ["crickets"]),
+          (r"\b(bravo|record|félicit|champion|génial)", ["applause", "ah_bah_bravo"]),
+          (r"\b(perd|perdu|raté|échec|défaite|éliminé|recalé|jamais élu)", ["mission_failed", "sad_violin"]),
+          (r"(milliard|\d+ ?%|\bmillion)", ["oh_my_god_wow", "emotional_damage", "dun_dun_dun"]),
+          (r"\b(vite|course|courant|rapide|en courant|fuient|partis)", ["tequila_heineken", "wesh_alors"]),
+          (r"\b(explos|boum|bim|baston|bagarre|se battent)", ["et_bim", "vine_boom", "ca_va_peter"]),
+          (r"\b(honte|scandale|n'importe quoi)", ["cest_honteux", "je_pete_ma_biere"]),
+          (r"\?\s*$|\?\s", ["bruh", "quoi_feur"])]
+    used_times = []
+    for seg in segs[1:-2]:
+        if len(used_times) >= 2:
+            break
+        t = texts.get(seg["id"], "")
+        for pat, keys in KW:
+            if re.search(pat, t):
+                cand = [by_key[k] for k in keys if k in by_key and by_key[k] not in [c[1] for c in cues]]
+                if cand:
+                    used_times.append(seg["end"])
+                    cues.append((seg["end"] + 0.04, cand[h % len(cand)]))
+                break
     punch = segs[-2]
     cues.append((punch["end"] + 0.05, pick("chute", 1) or ["boom", "explosion", "trombone", "boom"][h % 4]))
+    if used_times:
+        return cues
     if (h >> 3) % 2 == 0:
         cues.append((segs[1]["end"] + 0.02, pick("retournement", 4) or "scratch"))
     mids = [s for s in segs[2:-2] if kinds.get(s["id"]) in ("citation_exacte", "fait_public")]
@@ -313,7 +338,10 @@ def _n(x: str) -> str:
     return " ".join(re.sub(r"[^a-z0-9 ]+", " ", "".join(c for c in x if not unicodedata.combining(c))).split())
 
 
-def quote_clips(ep: dict, limit: int = 2) -> dict:
+QUOTE_MAX_S = 2.8
+
+
+def quote_clips(ep: dict, limit: int = 1) -> dict:
     """{segment_id: (fichier, durée)} pour les phrases qui citent une réplique dont on a le vrai son validé."""
     city = ep.get("city_id") or ep.get("city")
     bank = [m for m in meme_bank() if m.get("quote_match") and (not m.get("cities") or city in m["cities"])]
@@ -324,7 +352,7 @@ def quote_clips(ep: dict, limit: int = 2) -> dict:
         words = f" {_n(seg['text'])} "
         for m in bank:
             if f" {_n(m['quote_match'])} " in words and m["file"] not in [v[0] for v in out.values()]:
-                out[seg["id"]] = (m["file"], float(m.get("duration") or 2.0))
+                out[seg["id"]] = (m["file"], min(QUOTE_MAX_S, float(m.get("duration") or 2.0)))
                 break
     return out
 
@@ -346,7 +374,10 @@ def add_sfx(path: Path, cues: list) -> None:
     from . import config
     for t, kind in cues:
         if kind.startswith("clip:"):
-            x = read_wav(config.ASSETS / "memes" / kind[5:]) * 0.9
+            x = read_wav(config.ASSETS / "memes" / kind[5:])[: int(QUOTE_MAX_S * SR)] * 0.9
+            fade = min(len(x), int(0.12 * SR))
+            if fade:
+                x[-fade:] *= np.linspace(1, 0, fade, dtype=np.float32)
         else:
             x = _sfx(kind, rng).astype(np.float32)
         k = int(t * SR)

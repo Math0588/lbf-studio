@@ -104,7 +104,7 @@ def main():
                 r[f] = v[f]
         o = old.get(k, {})
         # une validation reste valable tant que le fichier source n'a pas changé
-        r["approved"] = bool(o.get("approved")) and o.get("source_mp3") == r.get("source_mp3")
+        r["approved"] = bool(o.get("approved")) and bool(r.get("ok"))   # décision gardée par clé
         print(json.dumps({x: r.get(x) for x in ("key", "ok", "title", "duration", "approved", "error")},
                          ensure_ascii=False), flush=True)
         man.append(r)
