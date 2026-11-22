@@ -3,78 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-21",
  "format": "A",
- "title_cover": "La caisse qui écoute",
+ "title_cover": "Fiscal Kombat",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon…",
-  "Ici, la caisse automatique ne scanne pas. Elle écoute.",
-  "Article non reconnu : je n'ai pas entendu le peuple.",
-  "Dans ce supermarché, chaque yaourt doit être défendu.",
-  "La caisse la plus exigeante de France veut de l'éloquence."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : la caisse automatique secoue les clients.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, faire ses courses, c'est un niveau de Fiscal Kombat.",
+  "Mélenchonville : la caisse qui joue avec ton compte."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le client hurle peuple, bip, ticket de quatre mètres.",
-  "Le client hurle peuple. Une banderole recouvre le rayon frais. Bip. Ticket de caisse : quatre mètres.",
-  "La caisse accepte enfin. Elle demande s'il a la carte de fidélité au mouvement."
+  "Game over : plus aucun riche au rayon. Il reste les caddies vides.",
+  "Plus de riches, plus de caisse, plus de courses : victoire.",
+  "Niveau terminé, supermarché vide."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon…",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Surtout à la caisse.",
    "accent_words": [
-    "Mélenchon"
+    "Surtout à la caisse"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La caisse automatique exige un discours par article.",
+   "text": "En 2017, ses soutiens lancent Fiscal Kombat : on secoue les riches.",
    "accent_words": [
-    "caisse automatique"
+    "secoue les riches"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Les pâtes passent, le yaourt nature est refusé : trop tiède.",
+   "text": "Ici, la caisse automatique fait pareil. Elle secoue le client.",
    "accent_words": [
-    "yaourt nature",
-    "tiède"
+    "secoue le client"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "L'étudiant défend son lait d'avoine à deux euros quarante, poing levé.",
+   "text": "Tu as une carte gold ? Combo spécial, trois secousses.",
    "accent_words": [
-    "lait d'avoine",
-    "deux euros quarante"
+    "trois secousses"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Dernier article non reconnu : la borne n'a pas entendu le peuple.",
+   "text": "Bonus : la caisse chante Taxer les riches, comme la salle du Bourget.",
    "accent_words": [
-    "le peuple"
+    "Taxer les riches"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Le client hurle peuple, bip, ticket de quatre mètres.",
+   "text": "Game over : plus aucun riche au rayon. Il reste les caddies vides.",
    "accent_words": [
-    "peuple",
-    "quatre mètres"
+    "Game over"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "L'article que tu aurais du mal à défendre en caisse ?",
+   "text": "Envoie ça au pote qui veut faire payer les riches, mais pas l'addition.",
    "accent_words": [
-    "défendre"
+    "l'addition"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -83,107 +80,151 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "router_lectern",
+    "ground",
     "shop",
-    "person",
-    "text3d"
+    "banner",
+    "person"
    ],
-   "onscreen_text": "SCANNER : EN ÉCOUTE",
-   "comic_action": "Une borne de caisse est un pupitre lumineux avec micro ; un client y pose un paquet de pâtes et se racle la gorge.",
-   "expected_result": "Image immédiate : la caisse est une tribune."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur le supermarché ; la caisse automatique clignote comme une borne d'arcade.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "shop",
-    "router_lectern",
-    "person",
     "screen",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "YAOURT NATURE : TROP TIÈDE",
-   "comic_action": "Travelling sur la file : à l'écran de la borne, « ACCEPTÉ » vert pour les pâtes, « REFUSÉ : TROP TIÈDE » pour les yaourts.",
-   "expected_result": "L'objet juge l'éloquence, pas le prix."
+   "onscreen_text": "FISCAL KOMBAT",
+   "comic_action": "Écran d'arcade pixelisé : « ROUND 1 », un personnage secoue un autre, des pièces tombent.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "shop",
+    "person",
+    "screen"
+   ],
+   "onscreen_text": "SECOUSSE EN COURS",
+   "comic_action": "La borne attrape un client par le col et le secoue ; des tickets de caisse volent.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
    "narration_ids": [
     "n4"
    ],
    "camera": "orbit",
    "set": [
-    "person",
-    "shop",
-    "text3d",
-    "banner"
-   ],
-   "onscreen_text": "SYNTHÈSE FRUITS & LÉGUMES",
-   "comic_action": "Odile (sphère bordeaux) déplie son pupitre portatif au milieu de l'allée ; la file lève le poing en rythme.",
-   "expected_result": "Continuité du personnage."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5"
-   ],
-   "camera": "closeup",
-   "set": [
     "screen",
-    "router_lectern",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "SEUIL : 13 « PEUPLE »",
-   "comic_action": "L'écran affiche « ARTICLE NON RECONNU » puis une jauge « PEUPLE : 0/13 ».",
-   "expected_result": "Clin d'œil sourcé (le mot revient 13 fois dans le discours du Bourget) transformé en seuil de validation."
+   "onscreen_text": "COMBO ×3",
+   "comic_action": "Orbite : effets de combo, « K.O. » en lettres rouges.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "shop",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "BONUS : TAXER LES RICHES",
+   "comic_action": "Travelling : la caisse automatique entonne le chant, les clients se figent, carte à la main.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "shop",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "GAME OVER",
+   "comic_action": "Plan large : rayons vides, caddies abandonnés, écran « GAME OVER » sur la façade.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
-    "banner",
     "person",
     "tshirt",
-    "text3d"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "TICKET : 4 MÈTRES",
-   "comic_action": "Au cri, une banderole rouge géante se déroule sur tout le rayon frais et les clients ; bip ; un ticket text3d de quatre mètres sort. Le client en t-shirt « J'AI UN AVIS. PAS DE MANDAT. » l'enroule.",
-   "expected_result": "Chute visuelle spectaculaire, plan large rouge."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique insère une pièce dans la caisse.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "L'article que tu aurais du mal à défendre en caisse ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui veut faire payer les riches, mais pas l'addition."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 70,
- "claims": [],
+ "word_count": 83,
+ "claims": [
+  {
+   "text": "En 2017, ses soutiens lancent Fiscal Kombat : on secoue les riches.",
+   "claim_type": "fait_public",
+   "source": "https://kulturegeek.fr/news-108364/fiscal-kombat-jeu-melenchon-combat-vraiment-gros-fraudeurs-fisc",
+   "note": "Fiscal Kombat (2017), jeu de soutiens : secouer des riches pour remplir la cagnotte."
+  },
+  {
+   "text": "Bonus : la caisse chante Taxer les riches, comme la salle du Bourget.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-age-profession-lieu-de-residence-quel-est-le-profil-des-electeurs",
-   "published": "2022-04-10",
-   "consulted": "2026-11-21",
-   "statut": "fait (chiffre) / mème (cliché)",
-   "used_for": "Inspiration seulement (cliché électorat) : Électorat jeune : en tête chez les moins de 35 ans en 2022 (31 % des 18-24 ans selon Ipsos). Base factuelle du cliché « étudiant en socio, tote bag, lait d'avoine » — le cliché lui-même est notre invention satirique, sans aucune caractéristique protégée."
+   "url": "https://kulturegeek.fr/news-108364/fiscal-kombat-jeu-melenchon-combat-vraiment-gros-fraudeurs-fisc",
+   "date": "2017-04",
+   "consulted": "2026-11-22",
+   "statut": "fait + mème",
+   "note": "Fiscal Kombat (2017), jeu de soutiens : secouer des riches pour remplir la cagnotte."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "date": "2026-11-07",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Objet qui se comporte comme un discours. La phrase de la caisse est dite par une machine fictive. Le compte réel (« peuple » ×13, fait public sourcé) n'est qu'une jauge à l'écran. Aucun produit lié à une culture. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (M11, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Fiscal Kombat (2017), le jeu où l'on secoue les riches, appliqué à la caisse. Cadre : la caisse automatique. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

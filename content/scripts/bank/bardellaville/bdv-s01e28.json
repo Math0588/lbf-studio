@@ -3,83 +3,75 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-28",
  "format": "A",
- "title_cover": "Concertation enthousiaste",
+ "title_cover": "Le fantôme filmé",
  "hook_variants": [
-  "Au conseil de quartier, le pupitre répond tout seul.",
-  "Le conseil de quartier de Bardellaville a un pupitre qui répond tout seul.",
-  "Ici, chaque question reçoit un sondage à deux choix : oui, ou carrément.",
-  "Ce pupitre ne répond pas aux petits micros.",
-  "La colère des habitants a été validée par la mairie. Comme une ovation."
+  "Dans cette ville, tout le monde vote Bardella.",
+  "Ici, le maire est un hologramme en vacances.",
+  "Bardellaville : le fantôme le mieux éclairé de France.",
+  "Les électeurs de Bardella vont me détester.",
+  "Bienvenue à Bardellaville : le fantôme filmé."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Tampon de la mairie : « Vu ».",
-  "Flash. Le compte rendu officiel est une photo de groupe, bouches ouvertes. Recadrée, ça ressemble à une ovation. Tampon : vu.",
-  "Le compte rendu est publié avec une musique de victoire. Les habitants le likent, par réflexe. Ils sont devenus des soutiens."
+  "Le seul endroit où il ne manque jamais : le cadre.",
+  "Ses adversaires parlent de député fantôme. Ici, le fantôme a un ring light.",
+  "Conseil de quartier : le pupitre du maire répond tout seul, en audio enregistré."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Au conseil de quartier, le pupitre répond tout seul.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Le maire ? En déplacement.",
    "accent_words": [
-    "seul"
+    "En déplacement"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le maire est absent : ici, on l'appelle Bard-est-pas-là.",
+   "text": "Conseil de quartier : son pupitre répond seul, en audio.",
    "accent_words": [
-    "Bard-est-pas-là"
+    "en audio"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Le pupitre propose un sondage à deux choix : oui, ou carrément.",
+   "text": "Son surnom en ligne, Bard-est-pas-là, est gravé sur sa plaque.",
    "accent_words": [
-    "carrément"
+    "Bard-est-pas-là"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le ton monte : Solange brandit sa baguette, Lambert sa poubelle.",
+   "text": "Ses adversaires parlent de député fantôme. Ici, le fantôme a un ring light.",
    "accent_words": [
-    "poubelle"
+    "ring light"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Flash : le compte rendu officiel est une photo de groupe.",
+   "text": "Les habitants questionnent son portrait : même silence, mais lui est là.",
    "accent_words": [
-    "groupe"
+    "lui est là"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Bouches ouvertes, recadrées, ça ressemble à une ovation.",
+   "text": "Le seul endroit où il ne manque jamais : le cadre.",
    "accent_words": [
-    "ovation"
+    "le cadre"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Tampon de la mairie : « Vu ».",
+   "text": "Envoie ça au pote qui le défend sans l'avoir jamais vu en séance.",
    "accent_words": [
-    "Vu"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Ta dernière réunion qui aurait fait une super photo ?",
-   "accent_words": [
-    "photo"
+    "en séance"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,121 +80,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "router_lectern",
-    "studio_light",
-    "text3d",
+    "ground",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "MICRO TROP PETIT",
-   "comic_action": "Gros plan sur un pupitre lumineux (router_lectern), sans personne derrière. Un habitant tend un petit micro : le pupitre clignote rouge, « MICRO TROP PETIT — AUDIENCE INSUFFISANTE ». Un autre habitant tend un micro géant de télé : le pupitre s'illumine en vert.",
-   "expected_result": "Image surprenante : un pupitre qui choisit à qui il parle selon la taille du micro."
+   "onscreen_text": "BARDELLAVILLE",
+   "comic_action": "Descente sur la mairie ; panneau « DE RETOUR BIENTÔT » vissé sur la porte.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
+    "tribune",
     "router_lectern",
-    "screen",
+    "studio_light",
     "text3d"
    ],
-   "onscreen_text": "OUI · CARRÉMENT",
-   "comic_action": "Jingle de notification. L'écran derrière le pupitre affiche à chaque question un sondage à deux boutons : « OUI » et « CARRÉMENT ». La question « Et les poubelles ? » donne : « OUI / CARRÉMENT ».",
-   "expected_result": "La consultation est verrouillée : l'approbation est la seule option."
+   "onscreen_text": "RÉPONSE PRÉENREGISTRÉE",
+   "comic_action": "Un pupitre vide grésille une réponse en boucle ; les habitants se regardent.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4"
+    "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
     "table",
-    "person",
-    "bin",
-    "router_lectern"
+    "screen",
+    "sign",
+    "building"
    ],
-   "onscreen_text": "",
-   "comic_action": "Orbite autour de la salle : la tension monte, Solange brandit sa baguette, Lambert soulève sa poubelle jamais ramassée (callback e11), tout le monde se lève et crie, bras levés.",
-   "expected_result": "Escalade : la colère est réelle et visible."
+   "onscreen_text": "BARD-EST-PAS-LÀ",
+   "comic_action": "Gros plan sur une plaque dorée de bureau, gravée du surnom.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6",
-    "n7"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "closeup",
    "set": [
-    "screen",
-    "studio_light",
-    "text3d",
+    "ring_light",
+    "tripod_camera",
     "person",
-    "scroll"
+    "screen"
    ],
-   "onscreen_text": "UNE CONCERTATION ENTHOUSIASTE",
-   "comic_action": "Flash blanc. Écran : la photo de groupe, recadrée serré sur les bras levés et les bouches ouvertes, transformée en image de liesse. Légende : « Une concertation enthousiaste ». Un tampon géant façon document officiel s'abat dessus : « VU. » Laisser respirer.",
-   "expected_result": "Chute : le cadre fait mentir l'image ; la colère devient ovation."
+   "onscreen_text": "FANTÔME : BIEN ÉCLAIRÉ",
+   "comic_action": "Un drap blanc sur trépied, éclairé par un ring light, compteur d'abonnés qui monte.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "column",
+    "mairie",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "PORTRAIT : PRÉSENT",
+   "comic_action": "Entre deux colonnes, un portrait encadré face à une file de questions.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "mascot",
-    "tshirt",
-    "bin"
+    "studio_light",
+    "tripod_camera",
+    "table",
+    "person"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le Coq de vitrine, t-shirt sur le dos, bras (ailes) levés, figé : on ne sait pas s'il applaudit ou s'il proteste.",
-   "expected_result": "Question à commenter, produit réel visible."
+   "onscreen_text": "PRÉSENT : DANS LE CADRE",
+   "comic_action": "Caméra sur trépied : il apparaît pile au centre ; hors champ, le bureau vide. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt agite un drapeau devant une salle vide.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ta dernière réunion qui aurait fait une super photo ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui le défend sans l'avoir jamais vu en séance."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 78,
- "claims": [],
+ "word_count": 82,
+ "claims": [
+  {
+   "segment": "n3",
+   "text": "Son surnom en ligne, Bard-est-pas-là, est gravé sur sa plaque.",
+   "claim_type": "fait_public",
+   "source": "https://www.connexionfrance.com/news/jordan-bardella-his-unflattering-nickname-and-15m-tik-tok-fans/663977",
+   "note": "Surnom « Bard-est-pas-là » ; environ 1,5 million d'abonnés TikTok en 2024."
+  },
+  {
+   "segment": "n4",
+   "text": "Ses adversaires parlent de député fantôme. Ici, le fantôme a un ring light.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
+   "note": "Thème du « député fantôme » ; aucun chiffre repris."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
-   "published": "2024-03-04",
-   "consulted": "2026-11-21",
-   "status": "fait public (refus d'un débat sur une chaîne jugée trop petite ; la formule publique n'est pas reprise)",
-   "used_for": "Inspiration seulement : le refus d'un débat organisé par une chaîne jugée trop petite. Traduit par un pupitre qui ne répond qu'aux gros micros. La formule ironique d'origine n'est pas reprise."
-  },
-  {
-   "url": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
-   "published": "2026-11-05",
-   "consulted": "2026-11-21",
-   "status": "mème (image « Vu et s'en tape » présentée comme un document officiel tamponné, repartagée sur X ; fait rapporté par Ozap d'après l'AFP)",
-   "used_for": "Inspiration seulement : le mème du document tamponné « Vu… ». Transformé en tampon « VU. » sur le compte rendu officiel. Le contexte de l'article source n'est pas évoqué."
-  },
-  {
    "url": "https://www.connexionfrance.com/news/jordan-bardella-his-unflattering-nickname-and-15m-tik-tok-fans/663977",
-   "published": "2024-06-11",
-   "consulted": "2026-11-21",
-   "status": "mème (surnom « Bard-est-pas-là » rapporté ; origine non établie)",
-   "used_for": "Surnom donné par les habitants au maire fictif, toujours absent de son bureau. Aucun chiffre d'absentéisme repris."
+   "date": "2024-06-11",
+   "consulted": "2026-11-22",
+   "statut": "mème (surnom rapporté comme circulant ; aucun chiffre d'absentéisme repris)",
+   "note": "Surnom « Bard-est-pas-là » ; environ 1,5 million d'abonnés TikTok en 2024."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
+   "date": "2024",
+   "consulted": "2026-11-22",
+   "statut": "opinion (critiques d'adversaires)",
+   "note": "Thème du « député fantôme » ; aucun chiffre repris."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mécanisme : le cadre qui ment (colère → ovation). Très mordant sur la communication par l'image ; aucune élection ni consigne de vote, le « sondage » est une consultation de quartier fictive. « T-shirt J'AI UN AVIS. PAS DE MANDAT. » colle au thème. Risques vérifiés : pas de citation, pas d'institution réelle nommée. | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_bardellaville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = surnom « Bard-est-pas-là » et thème du « député fantôme » porté par ses adversaires (aucun chiffre repris). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

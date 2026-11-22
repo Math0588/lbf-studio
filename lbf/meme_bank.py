@@ -44,6 +44,8 @@ def fetch(key: str, q: str) -> dict:
 
 def main():
     qs = json.loads((DIR / "queries.json").read_text(encoding="utf-8"))
+    old = {m["key"]: m for m in json.loads((DIR / "manifest.json").read_text(encoding="utf-8"))} \
+        if (DIR / "manifest.json").exists() else {}
     man = []
     for k, v in qs.items():
         if k.startswith("_"):
@@ -53,6 +55,8 @@ def main():
         except Exception as e:
             r = {"key": k, "q": v["q"], "ok": False, "error": f"{type(e).__name__}: {str(e)[:150]}"}
         r.update(role=v.get("role", []), cities=v.get("cities"))
+        # validation à l'écoute par le propriétaire (approved=true) : un son non écouté n'entre jamais au montage
+        r["approved"] = bool(old.get(k, {}).get("approved")) and old.get(k, {}).get("source_mp3") == r.get("source_mp3")
         print(r, flush=True)
         man.append(r)
     (DIR / "manifest.json").write_text(json.dumps(man, ensure_ascii=False, indent=1), encoding="utf-8")

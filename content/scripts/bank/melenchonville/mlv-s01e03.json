@@ -3,86 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-03",
  "format": "B",
- "title_cover": "L'ampoule sans mandat",
+ "title_cover": "Tout le monde dégage",
  "hook_variants": [
-  "Le gardien refuse de changer l'ampoule : il n'a pas de mandat.",
-  "Dans cet immeuble, le gardien refuse de changer une ampoule. Il n'a pas de mandat.",
-  "Une ampoule grillée. Trois assemblées générales. Zéro escabeau.",
-  "Ici, changer une ampoule, c'est un acte constituant.",
-  "Le hall est dans l'obscurité depuis trois jours. Le débat, lui, est très éclairé."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : ici, même la lumière est dégagée.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, le dégagisme a commencé par les ampoules.",
+  "Mélenchonville : la seule ville où le chef ne s'éteint jamais."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Trois semaines plus tard, ovation… et la minuterie coupe.",
-  "Trois semaines après : lumière, ovation… et la minuterie coupe en plein triomphe.",
-  "L'ampoule est enfin changée. Personne ne la voit : tout le monde est en assemblée au sous-sol."
+  "Qu'ils s'en aillent tous, oui. Mais lui en est à sa quatrième candidature.",
+  "Tout le monde dégage. Le seul qui reste allumé, c'est lui.",
+  "Le dégagisme, version longue : quinze ans sans dégager."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Le gardien refuse de changer l'ampoule : il n'a pas de mandat.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même les ampoules.",
    "accent_words": [
-    "ampoule",
-    "mandat"
+    "Même les ampoules"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Assemblée générale dans l'obscurité, à la lampe frontale.",
+   "text": "Son livre de 2010 : « Qu'ils s'en aillent tous ! ». L'ampoule a obéi.",
    "accent_words": [
-    "obscurité"
+    "a obéi"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Les absents sont comptés comme résistants.",
+   "text": "Panne générale : assemblée générale à la lampe frontale.",
    "accent_words": [
-    "résistants"
+    "lampe frontale"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le mandat fait mille soixante-neuf articles, zéro sur l'escabeau.",
+   "text": "Le dégagisme, ici, c'est simple : tout le monde dégage, sauf le chef.",
    "accent_words": [
-    "mille soixante-neuf",
-    "escabeau"
+    "sauf le chef"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le maire en profite : quarante minutes sur la lumière du peuple.",
+   "text": "Ses anciens lieutenants ? Dégagés. Lui reste branché depuis 2012.",
    "accent_words": [
-    "quarante minutes"
+    "branché"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Débat sur la teinte : blanc chaud, blanc froid ou rouge meeting.",
+   "text": "Qu'ils s'en aillent tous, oui. Mais lui en est à sa quatrième candidature.",
    "accent_words": [
-    "rouge meeting"
+    "quatrième candidature"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Trois semaines plus tard, ovation… et la minuterie coupe.",
+   "text": "Envoie ça au pote qui veut tout dégager, sauf son idole.",
    "accent_words": [
-    "ovation",
-    "minuterie"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Combien d'assemblées pour changer ton ampoule à toi ?",
-   "accent_words": [
-    "assemblées"
+    "son idole"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -93,107 +82,172 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
+    "ground",
+    "mairie",
     "lamp",
-    "person",
-    "studio_light",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "AMPOULE : PAS DE MANDAT",
-   "comic_action": "Hall de La Constituante plongé dans le noir ; seule une poursuite rouge éclaire Firmin (cylindre bleu marine), bras croisés sous l'ampoule grillée du lamp. Il y a donc de la lumière pour lui, pas pour le hall.",
-   "expected_result": "Image absurde immédiate : le gardien est éclairé comme une star pendant que le hall reste dans le noir."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente nocturne : tous les réverbères clignotent, une ampoule fait ses valises.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "building",
-    "person",
-    "table",
+    "lamp",
     "text3d",
-    "studio_light"
+    "person"
    ],
-   "onscreen_text": "ABSENTS = EN RÉSISTANCE",
-   "comic_action": "Orbite autour d'une table pliante dans le hall : les voisins votent main levée, chacun éclairé par une petite lueur bleue au niveau du visage (studio_light réduite). Trois chaises vides reçoivent une étiquette text3d « RÉSISTANT ».",
-   "expected_result": "Escalade : on fait une AG dans le noir au lieu de changer l'ampoule, et même l'absence devient politique."
+   "onscreen_text": "QU'ILS S'EN AILLENT TOUS",
+   "comic_action": "Gros plan sur un réverbère : l'ampoule s'éteint d'elle-même, le mot « DÉGAGE » s'allume à sa place.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "scroll",
+    "table",
     "person",
-    "text3d",
-    "column"
+    "lamp",
+    "form_stack"
    ],
-   "onscreen_text": "MANDAT : 1 069 ARTICLES",
-   "comic_action": "Le mandat est un parchemin (scroll) qui se déroule en travelling jusqu'au bout de la cage d'escalier, entre deux colonnes. Firmin le parcourt du doigt jusqu'en bas. Un tampon text3d tombe : « ESCABEAU : NON COUVERT ».",
-   "expected_result": "Clin d'œil au programme de 1 069 mesures : énorme texte, aucun outil concret."
+   "onscreen_text": "AG À LA FRONTALE",
+   "comic_action": "Salle dans l'ombre : une table d'AG, frontales allumées, mains levées.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6"
+    "n4"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "building",
-    "lamp",
-    "studio_light",
-    "banner"
+    "road",
+    "person",
+    "sign",
+    "building"
    ],
-   "onscreen_text": "SYNTHÈSE : LES TROIS",
-   "comic_action": "La caméra longe la façade : derrière chaque fenêtre de palier, une lampe d'une couleur différente, puis toutes clignotent blanc chaud, blanc froid, rouge. Une banderole rouge se déroule au 3e.",
-   "expected_result": "La synthèse ne tranche rien : elle additionne tout."
+   "onscreen_text": "DÉGAGEZ (SAUF LUI)",
+   "comic_action": "Travelling : des habitants sortent avec leurs cartons ; le panneau « DÉGAGEZ » porte un astérisque « sauf le chef ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
    ],
-   "camera": "return",
+   "camera": "closeup",
    "set": [
     "lamp",
     "person",
-    "tshirt",
-    "text3d",
-    "studio_light"
+    "text3d"
    ],
-   "onscreen_text": "MINUTERIE : 30 S",
-   "comic_action": "L'ampoule s'allume enfin, applaudissements, la fontaine lointaine jaillit ; au bout de trente secondes, noir total. Dans le noir, seule l'écharpe « MANDATÉ » de Firmin brille en text3d. Un voisin en t-shirt « J'AI UN AVIS. PAS DE MANDAT. » reste éclairé par la lueur de son téléphone.",
-   "expected_result": "Chute en effet retard : l'outil le plus bête de l'immeuble (la minuterie) gagne contre trois semaines de démocratie."
+   "onscreen_text": "BRANCHÉ DEPUIS 2012",
+   "comic_action": "Un seul réverbère reste allumé au milieu de la rue éteinte : il porte une écharpe rouge.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "mairie",
+    "banner",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "4E CANDIDATURE",
+   "comic_action": "La banderole « QU'ILS S'EN AILLENT TOUS » tombe ; derrière, une affiche « 2027 » toute neuve.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "person",
+    "tshirt",
+    "sign",
+    "shop"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique revisse une ampoule, qui s'éteint.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Combien d'assemblées pour changer ton ampoule à toi ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui veut tout dégager, sauf son idole."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 77,
- "claims": [],
+ "word_count": 82,
+ "claims": [
+  {
+   "text": "« Qu'ils s'en aillent tous ! »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.sudradio.fr/politique/personnalites-politiques-de-2017-jean-luc-melenchon-lui-meme-menace-par-le-degagisme",
+   "note": "Dégagisme ; livre « Qu'ils s'en aillent tous ! » (2010)."
+  },
+  {
+   "text": "Ses anciens lieutenants ? Dégagés. Lui reste branché depuis 2012.",
+   "claim_type": "fait_public",
+   "source": "https://www.letemps.ch/monde/europe/a-deux-semaines-des-legislatives-une-purge-au-sein-de-la-france-insoumise-chahute-deja-le-nouveau-front-populaire",
+   "note": "2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge ». / Ruffin–Mélenchon : « le divorce est désormais consommé »."
+  },
+  {
+   "text": "Qu'ils s'en aillent tous, oui. Mais lui en est à sa quatrième candidature.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+  }
+ ],
  "sources": [
   {
    "url": "https://www.sudradio.fr/politique/personnalites-politiques-de-2017-jean-luc-melenchon-lui-meme-menace-par-le-degagisme",
-   "published": "2017-12",
-   "consulted": "2026-11-21",
+   "date": "2017-12",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (tic de langage) : « Dégagisme » et le livre « Qu'ils s'en aillent tous ! » (2010) : vocabulaire du coup de balai permanent ; inspire les personnages qui « claquent la porte » et les scissions."
+   "note": "Dégagisme ; livre « Qu'ils s'en aillent tous ! » (2010)."
+  },
+  {
+   "url": "https://www.letemps.ch/monde/europe/a-deux-semaines-des-legislatives-une-purge-au-sein-de-la-france-insoumise-chahute-deja-le-nouveau-front-populaire",
+   "date": "2024-06",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge »."
+  },
+  {
+   "url": "https://www.slate.fr/politique/francois-ruffin-jean-luc-melenchon-rupture-divorce-lfi-france-insoumise-election-presidentielle-2027-strategie-gauche",
+   "date": "2025",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Ruffin–Mélenchon : « le divorce est désormais consommé »."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "date": "2026-06",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Effet retard + bureaucratie récursive : le mandat impératif qui ne couvre jamais l'étape suivante. Le chiffre 1 069 est un clin d'œil visuel au programme (fait public sourcé), dit en narration comme une donnée de la fiction, jamais attribué. Aucun mot du filtre éditorial (« noir » évité dans la narration). Personnages fictifs uniquement. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (M10, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le dégagisme et « Qu'ils s'en aillent tous ! » (2010). Cadre : la panne d'éclairage public. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

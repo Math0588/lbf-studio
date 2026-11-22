@@ -3,77 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-33",
  "format": "A",
- "title_cover": "Le jumelage libéré",
+ "title_cover": "Jumelé avec les patrons",
  "hook_variants": [
-  "Mélenchonville est invitée chez la voisine pour un discours de cinq minutes.",
-  "Mélenchonville est invitée chez la ville voisine pour un discours de cinq minutes.",
-  "Bourg-Peinard voulait un jumelage. Elle a eu une libération.",
-  "Un pupitre normal ? Inacceptable.",
-  "La visite de courtoisie la plus longue de l'histoire."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : jumelée avec la ville des grands patrons.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, on taxe les riches, puis on dîne avec eux.",
+  "Mélenchonville : le jumelage le plus cordial de la gauche."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Elle repart à pas de tortue, persuadée d'avoir libéré la ville.",
-  "Par politesse, Bourg-Peinard applaudit une fois. La délégation y voit un soulèvement, plante une banderole ville libérée et repart en cortège.",
-  "Les habitants replient les tables et rallument la sieste."
+  "Taxer les riches le jour, dîner avec eux le soir : ça s'appelle le dialogue.",
+  "Trois heures de dîner, zéro désaccord réglé.",
+  "La lutte des classes, en menu dégustation."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Mélenchonville est invitée chez la voisine pour un discours de cinq minutes.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Jumelage signé.",
    "accent_words": [
-    "cinq minutes"
+    "Jumelage signé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Pupitre d'un mètre dix : inacceptable, on empile les tables jusqu'à quatre mètres.",
+   "text": "La ville se jumelle avec Patronville. Cérémonie : trois heures de dîner.",
    "accent_words": [
-    "inacceptable",
-    "quatre mètres"
+    "trois heures"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Trois heures après, le maire voisin s'est allongé dans le buffet.",
+   "text": "Comme en novembre, quand il dîne avec treize grands patrons.",
    "accent_words": [
-    "allongé"
+    "treize grands patrons"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Bourg-Peinard applaudit une fois, par politesse.",
+   "text": "Ambiance cordiale, désaccords intacts. Le fromage, lui, a fait l'unanimité.",
    "accent_words": [
-    "une fois"
+    "l'unanimité"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "La délégation y voit un soulèvement et plante sa banderole.",
+   "text": "Au dessert, on scande « Taxer les riches ». Les riches reprennent du café.",
    "accent_words": [
-    "soulèvement"
+    "reprennent du café"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n6",
-   "text": "Elle repart à pas de tortue, persuadée d'avoir libéré la ville.",
+   "text": "Taxer les riches le jour, dîner avec eux le soir : ça s'appelle le dialogue.",
    "accent_words": [
-    "tortue",
-    "libéré"
+    "le dialogue"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Tague la ville voisine qui ne survivrait pas à une visite.",
+   "text": "Envoie ça au pote anticapitaliste qui commande le homard.",
    "accent_words": [
-    "survivrait pas"
+    "le homard"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -86,19 +84,34 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "sign",
-    "person",
-    "banner"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "BOURG-PEINARD · JUMELAGE",
-   "comic_action": "Plongée sur une petite ville paisible aux toits bas ; panneau « BOURG-PEINARD » ; une délégation en drapés rouges arrive en cortège.",
-   "expected_result": "Contraste immédiat de deux mondes."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur la mairie ; banderole « JUMELAGE AVEC PATRONVILLE ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "person",
+    "banner"
+   ],
+   "onscreen_text": "JUMELAGE : DÎNER",
+   "comic_action": "Une longue table dressée sur le parvis, nappe blanche, verres en cristal.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
    ],
    "camera": "orbit",
    "set": [
@@ -106,81 +119,119 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "PUPITRE STANDARD : REFUSÉ",
-   "comic_action": "Orbite : la délégation empile les tables de la salle des fêtes en tribune vertigineuse ; le petit pupitre d'origine reste seul dans un coin.",
-   "expected_result": "Escalade d'ego en image."
+   "onscreen_text": "13 PATRONS",
+   "comic_action": "Orbite : treize convives en costume, une chaise au bout pour le maire.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
-   "id": "s3",
+   "id": "s4",
    "narration_ids": [
-    "n3"
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "FROMAGE : UNANIMITÉ",
+   "comic_action": "Gros plan sur le plateau de fromages, toutes les mains levées dessus.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
    ],
    "camera": "street_dolly",
    "set": [
     "table",
     "person",
-    "text3d"
+    "banner"
    ],
-   "onscreen_text": "3 H · CORDIAL · 0 ACCORD",
-   "comic_action": "Travelling sur le buffet : sandwichs figés, maire voisin allongé sur trois chaises, sourire poli de tous.",
-   "expected_result": "Clin d'œil sourcé au dîner de trois heures, cordial et sans accord, transposé entre deux villes fictives."
+   "onscreen_text": "TAXER LES RICHES",
+   "comic_action": "Travelling : la foule chante derrière les barrières, les convives tendent leur tasse.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
-   "id": "s4",
+   "id": "s6",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n6"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "banner",
-    "building",
-    "person",
-    "text3d"
+    "mairie",
+    "table",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "VILLE LIBÉRÉE",
-   "comic_action": "Un seul clap timide ; aussitôt une banderole rouge « VILLE LIBÉRÉE » se déroule sur la façade de la salle des fêtes, qui n'en avait jamais vu.",
-   "expected_result": "Chute : interprétation à contresens."
+   "onscreen_text": "LE DIALOGUE",
+   "comic_action": "Plan large : à gauche, la manif ; à droite, le dîner ; les deux sous la même banderole.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
-    "n6",
     "n7"
    ],
    "camera": "return",
    "set": [
-    "building",
-    "table",
     "person",
     "tshirt",
-    "text3d"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "TAGUE TA VILLE VOISINE",
-   "comic_action": "Le maire de Bourg-Peinard, en t-shirt « J'AI UN AVIS. PAS DE MANDAT. », replie les tables et baisse les volets pour la sieste.",
-   "expected_result": "CTA de tag, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique ramasse les miettes.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Tague la ville voisine qui ne survivrait pas à une visite."
+  "text": "Envoie ça au pote anticapitaliste qui commande le homard."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 74,
- "claims": [],
+ "word_count": 80,
+ "claims": [
+  {
+   "text": "Comme en novembre, quand il dîne avec treize grands patrons.",
+   "claim_type": "fait_public",
+   "source": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
+   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
+  },
+  {
+   "text": "Ambiance cordiale, désaccords intacts. Le fromage, lui, a fait l'unanimité.",
+   "claim_type": "fait_public",
+   "source": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
+   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
+  },
+  {
+   "text": "« Taxer les riches »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
-   "published": "2026-06-07",
-   "consulted": "2026-11-21",
+   "url": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
+   "date": "2026-11-17",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (mème) : La tortue, animal totem de Mélenchon et de LFI (fable « Le Lièvre et la Tortue », reprise depuis 2022 ; « La tortue est en marche »). Lancement de la campagne 2027 à Saint-Denis le 7 juin 2026."
+   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "date": "2026-11-07",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Interprétation à contresens. Bourg-Peinard est fictive. Le fait sourcé (rencontre de trois heures, cordiale, sans accord) est transposé entre villes fictives ; aucun dirigeant réel représenté. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (M5, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le dîner de trois heures avec treize grands patrons (novembre 2026) face à « Taxer les riches ». Cadre : le jumelage de la ville. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

@@ -3,91 +3,75 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-29",
  "format": "B",
- "title_cover": "La fontaine intérieure",
+ "title_cover": "Blogueur média",
  "hook_variants": [
-  "Résidence Golden Hour : fuite au troisième.",
-  "Copro Résidence Golden Hour : fuite au troisième. Le syndic a trouvé la solution. Un ring light.",
-  "Ton plafond fuit ? Félicitations : tu as une cascade.",
-  "Dans cette copro, on ne répare pas les fuites. On les met en valeur.",
-  "La fuite a reçu un nom : Source Sérénité."
+  "Dans cette ville, tout le monde vote Bardella.",
+  "Ici, le maire commente les audiences. Surtout celles des autres.",
+  "Bardellaville : la télé municipale affiche une mire quand il parle.",
+  "Les électeurs de Bardella vont me détester.",
+  "Bienvenue à Bardellaville : blogueur média."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Charges en hausse de quarante euros : c'est un équipement.",
-  "L'eau descend chez Lambert. Courrier du syndic : félicitations, vous avez une fontaine. Charges en hausse : c'est un équipement.",
-  "Le plombier arrive enfin. Le syndic l'arrête à la porte : « Vous allez casser l'ambiance. »"
+  "Vider le 20 heures et commenter l'audience des autres : niveau blogueur, confirmé.",
+  "Le même soir, Quotidien grimpait. Merci pour la pub.",
+  "Ici, la télé municipale coupe dès qu'il parle. Les habitants appellent ça la pause."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Résidence Golden Hour : fuite au troisième.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Sauf la télécommande.",
    "accent_words": [
-    "troisième"
+    "télécommande"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le syndic a trouvé la solution : un ring light.",
+   "text": "Il se moque des audiences de Quotidien. Barthès le traite de blogueur média.",
    "accent_words": [
-    "light"
+    "blogueur média"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Éclairée par en dessous, la fuite devient une cascade d'intérieur.",
+   "text": "Son passage au 20 heures de France 2 ? Plus bas niveau.",
    "accent_words": [
-    "cascade"
+    "Plus bas niveau"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Filmée au ralenti pour l'annonce, avec cœurs et étoiles.",
+   "text": "Le même soir, Quotidien grimpait sur TMC. Merci pour la pub.",
    "accent_words": [
-    "étoiles"
+    "Merci pour la pub"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "En AG, on ne vote pas la réparation, on vote le nom.",
+   "text": "Ici, quand il passe à la télé, c'est la pause municipale.",
    "accent_words": [
-    "nom"
+    "la pause"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Source Sérénité l'emporte à l'unanimité.",
+   "text": "Vider le 20 heures et commenter l'audience des autres : niveau blogueur, confirmé.",
    "accent_words": [
-    "unanimité"
+    "blogueur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "L'eau descend chez Lambert, avec un courrier de félicitations.",
+   "text": "Envoie ça au pote qui se moque des audiences des autres.",
    "accent_words": [
-    "félicitations"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Charges en hausse de quarante euros : c'est un équipement.",
-   "accent_words": [
-    "équipement"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n9",
-   "text": "Envoie ça à ton syndic, ou pas : il te le facturerait.",
-   "accent_words": [
-    "facturerait"
+    "audiences"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -96,109 +80,165 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "building",
-    "ring_light",
-    "fountain",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "FUITE · 3e ÉTAGE",
-   "comic_action": "Gros plan dans un couloir d'immeuble : de l'eau coule du plafond. Un ring light est installé dessous ; la fuite scintille comme une fontaine de palace.",
-   "expected_result": "Image surprenante : un dégât des eaux traité comme un équipement de luxe."
+   "onscreen_text": "BARDELLAVILLE",
+   "comic_action": "Descente sur la mairie ; une télécommande géante pointée vers la façade.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
-    "fountain",
-    "ring_light",
-    "person",
-    "screen"
+    "studio_light",
+    "tripod_camera",
+    "table",
+    "person"
    ],
-   "onscreen_text": "CASCADE D'INTÉRIEUR",
-   "comic_action": "Descente lente le long de la cascade éclairée par en dessous, au ralenti, musique zen. Le syndic (cylindre gris costume) filme pour l'annonce ; l'écran affiche « Résidence avec cascade d'intérieur ».",
-   "expected_result": "La communication requalifie le problème en argument de vente."
+   "onscreen_text": "BLOGUEUR MÉDIA",
+   "comic_action": "Plateau : un badge « BLOGUEUR » se colle tout seul sur le pupitre du maire.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "table",
-    "person",
-    "scroll",
-    "text3d"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "NOM : SOURCE SÉRÉNITÉ",
-   "comic_action": "Travelling le long de la table d'assemblée générale : ordre du jour (scroll) « 1. Nom de la cascade. 2. (supprimé) Réparation. » Mains levées. Un tableau affiche le gagnant : « SOURCE SÉRÉNITÉ ».",
-   "expected_result": "Escalade : la délibération porte sur l'emballage, pas sur la fuite."
+   "onscreen_text": "20 H : PLUS BAS NIVEAU",
+   "comic_action": "Écran : courbe d'audience qui plonge au moment où il apparaît.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "closeup",
    "set": [
-    "fountain",
-    "building",
-    "scroll",
-    "person",
-    "ring_light"
+    "screen",
+    "text3d",
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "CHARGES : +ÉQUIPEMENT",
-   "comic_action": "Coupe de l'immeuble en travelling arrière : l'eau traverse les étages et pleut chez Lambert, flou, assis en imperméable. Un courrier (scroll) glisse sous sa porte : « Félicitations, votre appartement dispose désormais d'une fontaine. Vos charges augmentent : c'est un équipement. » Laisser respirer.",
-   "expected_result": "Chute : le problème devient une ligne de facture."
+   "onscreen_text": "QUOTIDIEN ↑",
+   "comic_action": "Deuxième courbe qui monte en flèche, petite fanfare.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n9"
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "road",
+    "building",
+    "person",
+    "bin"
+   ],
+   "onscreen_text": "PAUSE MUNICIPALE",
+   "comic_action": "Rue : à chaque apparition du maire à l'écran, les fenêtres s'éteignent une à une.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "mascot",
-    "tshirt",
-    "fountain"
+    "table",
+    "form_stack",
+    "text3d",
+    "mairie"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le Coq de vitrine, t-shirt sur le dos, tient un parapluie au-dessus d'une petite fontaine.",
-   "expected_result": "Partage ciblé, produit réel visible."
+   "onscreen_text": "BLOGUEUR : CERTIFIÉ",
+   "comic_action": "Un tampon « CERTIFIÉ BLOGUEUR » s'abat sur une feuille d'audience. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt zappe nerveusement.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça à ton syndic, ou pas : il te le facturerait."
+  "text": "Envoie ça au pote qui se moque des audiences des autres."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 84,
- "claims": [],
+ "word_count": 82,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "Il se moque des audiences de Quotidien. Barthès le traite de blogueur média.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/un-blogueur-media-jordan-bardella-se-moque-des-audiences-de-quotidien-yann-barthes-riposte/656734",
+   "note": "Il ironise sur les audiences de Quotidien ; Yann Barthès le qualifie de « blogueur média »."
+  },
+  {
+   "segment": "n3",
+   "text": "Son passage au 20 heures de France 2 ? Plus bas niveau.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/audiences-access-20h-jordan-bardella-fait-chuter-le-20-heures-de-france-2-a-son-plus-bas-niveau-quotidien-en-forte-hausse-sur-tmc/654472",
+   "note": "Son passage fait chuter le 20 heures de France 2 à son plus bas niveau ; Quotidien en forte hausse sur TMC."
+  },
+  {
+   "segment": "n4",
+   "text": "Le même soir, Quotidien grimpait sur TMC. Merci pour la pub.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/audiences-access-20h-jordan-bardella-fait-chuter-le-20-heures-de-france-2-a-son-plus-bas-niveau-quotidien-en-forte-hausse-sur-tmc/654472",
+   "note": "Son passage fait chuter le 20 heures de France 2 à son plus bas niveau ; Quotidien en forte hausse sur TMC."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.ladn.eu/?p=696069",
-   "published": "2024-06-11",
-   "consulted": "2026-11-21",
-   "status": "mème (fan edits façon K-pop, cœurs, étoiles)",
-   "used_for": "Cœurs et étoiles d'edit plaqués sur des objets de la ville ; aucun montage repris."
+   "url": "https://www.ozap.com/actu/un-blogueur-media-jordan-bardella-se-moque-des-audiences-de-quotidien-yann-barthes-riposte/656734",
+   "date": "2026-09-01",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Il ironise sur les audiences de Quotidien ; Yann Barthès le qualifie de « blogueur média »."
+  },
+  {
+   "url": "https://www.ozap.com/actu/audiences-access-20h-jordan-bardella-fait-chuter-le-20-heures-de-france-2-a-son-plus-bas-niveau-quotidien-en-forte-hausse-sur-tmc/654472",
+   "date": "2026 (date exacte non relevée)",
+   "consulted": "2026-11-22",
+   "statut": "fait (audiences)",
+   "note": "Son passage fait chuter le 20 heures de France 2 à son plus bas niveau ; Quotidien en forte hausse sur TMC."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Format B (copro). Mécanisme : requalification (le problème devient un équipement). Continuité : Résidence Golden Hour, Lambert ; ajoute bdv-evt-022. Le vote est celui d'une AG de copropriété fictive, sans lien électoral. Risques vérifiés : aucune citation, ne vise pas les syndics réels. | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_bardellaville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = il raille les audiences de Quotidien, Barthès le traite de « blogueur média » ; son passage au 20 heures de France 2 l'avait fait chuter à son plus bas niveau. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

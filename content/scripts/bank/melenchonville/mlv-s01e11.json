@@ -3,93 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-11",
  "format": "A",
- "title_cover": "La baguette à ticket",
+ "title_cover": "Taxer la baguette",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon…",
-  "Pour commander une baguette, prends un ticket. Pour repartir, attends la fin du discours.",
-  "Ici, la baguette rassit avant d'être vendue.",
-  "Dans cette boulangerie, on ne fait pas la queue. On fait la liste des orateurs.",
-  "Le pain le plus militant de France. Et le plus dur."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : la baguette est taxée selon ton humeur.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, acheter un croissant demande un tour de parole.",
+  "Mélenchonville : la boulangerie qui taxe d'abord, cuit ensuite."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le client suivant la prend pour exiger du pain frais.",
-  "Le pain rassit si fort qu'il tient debout. Il fait micro. Le client suivant s'en sert pour réclamer du pain frais.",
-  "La baguette est enfin vendue. Elle sert de colonne au marché couvert."
+  "Taxer les riches, d'accord. Mais le programme, lui, reste payant.",
+  "Le riche, c'est toujours l'autre. Le programme, lui, est en vente.",
+  "Plus de riches, plus de boulanger, toujours un programme à acheter."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon…",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Surtout à la caisse.",
    "accent_words": [
-    "Mélenchon"
+    "Surtout à la caisse"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Même la boulangerie distribue des tours de parole.",
+   "text": "Au Bourget, la salle scandait « Taxer les riches ». Ici, c'est l'hymne de la boulangerie.",
    "accent_words": [
-    "boulangerie",
-    "tours de parole"
+    "l'hymne"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Chaque baguette a droit à sa harangue.",
+   "text": "Le seul riche du quartier, c'était le boulanger. Il a fermé.",
    "accent_words": [
-    "harangue"
+    "Il a fermé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le four n'a qu'un réglage : le bruit et la fureur.",
+   "text": "Une baguette, un ticket, un tour de parole. Trois heures pour un croissant.",
    "accent_words": [
-    "le bruit et la fureur"
+    "Trois heures"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Plus ça crie, plus ça dore.",
+   "text": "Au même meeting, le programme se vendait sur place.",
    "accent_words": [
-    "crie"
+    "se vendait"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "La baguette à un euro trente sort au bout de quarante minutes.",
+   "text": "Taxer les riches, d'accord. Mais le programme, lui, reste payant.",
    "accent_words": [
-    "un euro trente"
+    "reste payant"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Si rassise qu'elle tient debout, comme un micro.",
+   "text": "Envoie ça au pote qui veut taxer les riches, mais pas son forfait.",
    "accent_words": [
-    "rassise",
-    "micro"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Le client suivant la prend pour exiger du pain frais.",
-   "accent_words": [
-    "frais"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n9",
-   "text": "Ta baguette : bien cuite ou après le discours ?",
-   "accent_words": [
-    "bien cuite"
+    "son forfait"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -98,109 +80,154 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
+    "ground",
     "shop",
-    "tribune",
-    "person",
-    "studio_light",
-    "text3d"
+    "banner",
+    "person"
    ],
-   "onscreen_text": "TICKET 47 : PRISE DE PAROLE",
-   "comic_action": "Gros plan sur un ticket text3d qui sort d'un distributeur : « TOUR DE PAROLE N°47 ». Derrière, Saturnin (cône blanc fariné) brandit une baguette comme un micro sous une poursuite.",
-   "expected_result": "On comprend d'emblée : la boulangerie est un meeting."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur la boulangerie : file en cortège, banderole rouge.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3"
+    "n2"
    ],
    "camera": "street_dolly",
    "set": [
     "shop",
-    "sign",
     "person",
-    "tribune",
-    "text3d"
+    "banner",
+    "sign"
    ],
-   "onscreen_text": "ORDRE DES ORATEURS",
-   "comic_action": "Travelling le long de la file qui serpente hors de la boutique ; panneau sur pupitre « ORDRE DES ORATEURS ». Saturnin grimpe sur une tribune en sacs de farine.",
-   "expected_result": "La file d'attente devient une liste d'orateurs."
+   "onscreen_text": "TAXER LES RICHES",
+   "comic_action": "La file chante poing levé devant la vitrine ; le boulanger se cache derrière ses croissants.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4",
-    "n5"
-   ],
-   "camera": "orbit",
-   "set": [
-    "shop",
-    "screen",
-    "text3d",
-    "studio_light"
-   ],
-   "onscreen_text": "CUISSON : BRUIT ET FUREUR",
-   "comic_action": "Un écran-cadran au-dessus du four : l'aiguille passe de « MURMURE » à « BRUIT ET FUREUR » ; la lumière du four vire du doré au rouge à chaque envolée.",
-   "expected_result": "Mème « bruit et fureur » transformé en réglage de four."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n6",
-    "n7"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
     "shop",
+    "sign",
+    "person"
+   ],
+   "onscreen_text": "FERMÉ",
+   "comic_action": "Le rideau de fer tombe ; pancarte « PARTI À LA CAMPAGNE ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "table",
+    "form_stack",
     "person",
     "text3d"
    ],
-   "onscreen_text": "BAGUETTE = MICRO",
-   "comic_action": "Une baguette posée verticalement tient debout toute seule sur le comptoir ; Saturnin la tapote, larsen ; le client suivant la saisit et commence à parler.",
-   "expected_result": "Chute en boucle : l'objet relance le discours."
+   "onscreen_text": "TICKET N° 1 069",
+   "comic_action": "Orbite autour d'un distributeur de tickets de parole qui crache un rouleau sans fin.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8",
-    "n9"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "scroll",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "PROGRAMME : EN VENTE",
+   "comic_action": "Un stand à côté de la caisse : le programme relié, étiquette de prix bien visible.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "shop",
+    "text3d",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "PROGRAMME : PAYANT",
+   "comic_action": "Plan large : boulangerie fermée, mais le stand du programme a une file d'attente.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "shop",
-    "tshirt",
     "person",
-    "text3d"
+    "tshirt",
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "BIEN CUITE OU APRÈS ?",
-   "comic_action": "Une cliente en t-shirt « PLUTÔT GAUCHE. TRÈS FATIGUÉ. » ressort, baguette-micro sous le bras.",
-   "expected_result": "CTA question, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique paie le programme en sans contact.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Ta baguette : bien cuite ou après le discours ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui veut taxer les riches, mais pas son forfait."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 80,
- "claims": [],
+ "word_count": 84,
+ "claims": [
+  {
+   "text": "« Taxer les riches »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+  },
+  {
+   "text": "Au même meeting, le programme se vendait sur place.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+  },
+  {
+   "text": "Taxer les riches, d'accord. Mais le programme, lui, reste payant.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.politis.fr/articles/2025/07/emotions-quand-la-colere-ne-suffit-pas/",
-   "published": "2025-07",
-   "consulted": "2026-11-21",
-   "statut": "fait (origine) / mème (usage moqueur)",
-   "used_for": "Inspiration seulement (tic de langage) : « Le bruit et la fureur » : formule que Mélenchon s'applique depuis 2010 (congrès du Parti de gauche, selon LCP) pour revendiquer la conflictualité ; reprise et moquée régulièrement par la presse et les adversaires. Utilisée chez nous uniquement comme étiquette d'objet (cadran de four, cardio), jamais comme réplique attribuée."
+   "url": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "date": "2026-11-07",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Boucle : la baguette rassie devient micro et relance le discours. L'expression « bruit et fureur » (associée publiquement au style du personnage, empruntée à Shakespeare et Faulkner) est une graduation de four, pas une citation. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (M3, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : au Bourget, la salle scande « Taxer les riches » pendant que le programme est vendu sur place. Cadre : la boulangerie à ticket. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

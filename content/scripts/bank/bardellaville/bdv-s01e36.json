@@ -3,83 +3,75 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-36",
  "format": "A",
- "title_cover": "La moitié neuve",
+ "title_cover": "La notice sans meuble",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella… et la route est coupée.",
-  "À Bardellaville, on a refait la route. La moitié qui passe à l'image.",
-  "Ici, les travaux s'arrêtent pile au bord du cadre.",
-  "Une voie neuve, une voie cratère. Devine laquelle est filmée.",
-  "Cette ville a inauguré une demi-route. Elle est très fréquentée."
+  "Dans cette ville, tout le monde vote Bardella.",
+  "Ici, le mode d'emploi sort avant l'appareil.",
+  "Bardellaville : le moniteur d'auto-école n'a pas le permis, mais il a écrit le livre.",
+  "Les électeurs de Bardella vont me détester.",
+  "Bienvenue à Bardellaville : la notice sans meuble."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Légende officielle : route très fréquentée.",
-  "Toutes les voitures roulent sur la moitié neuve, dans les deux sens, pare-chocs contre pare-chocs. Légende : route très fréquentée.",
-  "La mairie annonce la rénovation de l'autre moitié… en tournant la caméra. La moitié neuve devient hors champ. Elle se remplit de trous."
+  "Il a sorti la notice avant de trouver le meuble.",
+  "C'est comme un guide de voyage écrit depuis le canapé.",
+  "Ici, le moniteur d'auto-école n'a pas le permis. Mais il a écrit le livre."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella… et la route est coupée.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Gouverner, c'est un livre.",
    "accent_words": [
-    "coupée"
+    "un livre"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "On a refait la moitié qui passe à l'image.",
+   "text": "Son nouveau livre s'appelle Gouverner.",
    "accent_words": [
-    "image"
+    "Gouverner"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Côté caméra : bitume brillant, marquage au cordeau.",
+   "text": "Écrit par un candidat qui n'a jamais gouverné. Cent jours prévus, méthode absente.",
    "accent_words": [
-    "cordeau"
+    "jamais gouverné"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Hors champ : un cratère « en cours de cadrage ».",
+   "text": "C'est comme un guide de voyage écrit depuis le canapé.",
    "accent_words": [
-    "cadrage"
+    "depuis le canapé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Inauguration : plan serré sur la belle moitié, personne ne filme l'autre.",
+   "text": "Ici, le moniteur d'auto-école n'a pas le permis. Mais il a écrit le livre.",
    "accent_words": [
-    "autre"
+    "écrit le livre"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Toutes les voitures roulent sur la moitié neuve, dans les deux sens.",
+   "text": "Il a sorti la notice avant de trouver le meuble.",
    "accent_words": [
-    "sens"
+    "la notice"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Légende officielle : route très fréquentée.",
+   "text": "Envoie ça au pote qui a lu Gouverner et se croit prêt pour Matignon.",
    "accent_words": [
-    "fréquentée"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Envoie ça à celui qui roule au milieu : voici sa ville.",
-   "accent_words": [
-    "ville"
+    "Matignon"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,109 +80,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "sign",
-    "tripod_camera",
-    "traffic_light"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "",
-   "comic_action": "Survol de l'avenue principale, coupée net dans la longueur : à droite, bitume noir brillant, lignes blanches parfaites ; à gauche, un cratère continu. Une caméra sur trépied filme uniquement le côté droit.",
-   "expected_result": "Image surprenante : une route coupée en deux par le cadrage."
+   "onscreen_text": "BARDELLAVILLE",
+   "comic_action": "Descente sur la mairie ; un livre géant posé à la place du drapeau.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
-    "sign",
-    "traffic_light",
+    "table",
+    "form_stack",
+    "person",
     "text3d"
    ],
-   "onscreen_text": "EN COURS DE CADRAGE",
-   "comic_action": "Travelling au ras du sol : la voie neuve reflète le ciel ; de l'autre côté, un panneau de chantier « EN COURS DE CADRAGE ». Le feu tricolore n'est allumé que côté caméra.",
-   "expected_result": "La règle de la ville s'applique au bitume : seul le visible est entretenu."
+   "onscreen_text": "GOUVERNER",
+   "comic_action": "Gros plan sur la couverture, qui s'ouvre sur un sommaire très aéré.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5"
+    "n3"
    ],
    "camera": "closeup",
    "set": [
-    "tribune",
-    "banner",
-    "ring_light",
-    "tripod_camera",
-    "road"
+    "scroll",
+    "table",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "INAUGURATION",
-   "comic_action": "Gros plan serré façon communiqué : ruban tricolore, ciseaux, ring light, tribune, le tout cadré sur la belle moitié. Un léger dézoom accidentel montre le cratère, puis la caméra recadre aussitôt.",
-   "expected_result": "Inauguration avant usage, mise en scène sélective."
+   "onscreen_text": "EXPÉRIENCE : 0 JOUR",
+   "comic_action": "Un parchemin CV se déroule : ligne « GOUVERNEMENT » vide.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n6",
-    "n7"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "street_dolly",
    "set": [
-    "road",
-    "car",
-    "sign",
-    "text3d",
-    "tripod_camera"
+    "tree",
+    "bench",
+    "lamp",
+    "person"
    ],
-   "onscreen_text": "ROUTE TRÈS FRÉQUENTÉE",
-   "comic_action": "Travelling arrière en plongée : toutes les voitures roulent sur la moitié neuve, dans les deux sens, pare-chocs contre pare-chocs, klaxons. L'autre moitié, vide. Photo officielle (flash) avec légende text3d « Une route très fréquentée ». Laisser respirer.",
-   "expected_result": "Chute : le chantier à moitié fait crée un embouteillage présenté comme un succès."
+   "onscreen_text": "GUIDE DU MONDE (DEPUIS LE CANAPÉ)",
+   "comic_action": "Au parc, un auteur sur un banc écrit « La montagne » en regardant une affiche de montagne.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
+   "set": [
+    "car",
+    "road",
+    "gps",
+    "sign"
+   ],
+   "onscreen_text": "MONITEUR : SANS PERMIS",
+   "comic_action": "Voiture d'auto-école : le moniteur lit son propre livre, la voiture n'a jamais démarré.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "window_pass",
    "set": [
     "shop",
-    "mascot",
-    "tshirt",
-    "road"
+    "person",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le Coq de vitrine porte le t-shirt, mais seulement la moitié qui est face caméra est repassée.",
-   "expected_result": "Partage ciblé, produit réel visible."
+   "onscreen_text": "NOTICE ✓ · MEUBLE ✗",
+   "comic_action": "Vitrine : une notice de montage déployée, aucun meuble, des vis partout. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt, livre en main, cherche le mode d'emploi du mode d'emploi.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça à celui qui roule au milieu : voici sa ville."
+  "text": "Envoie ça au pote qui a lu Gouverner et se croit prêt pour Matignon."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 83,
- "claims": [],
+ "word_count": 78,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "Son nouveau livre s'appelle Gouverner.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
+   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
+  },
+  {
+   "segment": "n3",
+   "text": "Écrit par un candidat qui n'a jamais gouverné. Cent jours prévus, méthode absente.",
+   "claim_type": "fait_public",
+   "source": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
+   "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.yahoo.com/news/soft-focus-interview-positions-bardella-084104725.html",
-   "published": "2025-06-03",
-   "consulted": "2026-11-21",
-   "status": "fait public + opinion (portrait « soft-focus », peu de questions politiques)",
-   "used_for": "Thème du flou flatteur et de la belle image."
+   "url": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
+   "date": "2026-11-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
+  },
+  {
+   "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
+   "date": "2026-11-04",
+   "consulted": "2026-11-22",
+   "statut": "fait + appréciation AFP",
+   "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mécanisme : cadrage appliqué au bitume. Continuité : ajoute bdv-evt-023 ; rappel des inaugurations (e05). Pas de source de veille. Risques vérifiés : aucune citation, aucun chantier réel nommé. | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_bardellaville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = il publie « Gouverner » (cent jours sans méthode détaillée) sans avoir jamais gouverné. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

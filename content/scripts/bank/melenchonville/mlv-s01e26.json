@@ -3,84 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-26",
  "format": "A",
- "title_cover": "La surenchère des tomates",
+ "title_cover": "Vercingétorix, spoiler",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon…",
-  "Au marché, les maraîchers ne crient pas les prix. Ils les déclament. De plus en plus haut.",
-  "Le marché le plus haut de France n'a plus de stands.",
-  "Ici, la tomate se vend au décibel.",
-  "Concours de hauteur entre le fromager et les courgettes."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : au marché, les tomates font la tortue romaine.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, on vend des légumes avec une leçon d'histoire.",
+  "Mélenchonville : le marché qui rejoue Gergovie, jamais Alésia."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Les tribunes percent le toit, les clients filent au supermarché.",
-  "Les tribunes percent le toit. Là-haut, les marchands se haranguent entre eux. En bas, les clients filent au supermarché.",
-  "Les tomates arrivent enfin. En coulis : elles sont tombées de trop haut."
+  "Gagner une bataille, perdre la guerre : il connaît le scénario depuis 2012.",
+  "Gergovie, oui. Alésia, on n'en parle pas.",
+  "Toujours la bataille, jamais la victoire."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon…",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Au marché gaulois.",
    "accent_words": [
-    "Mélenchon"
+    "Au marché gaulois"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Au marché, les prix se hurlent du balcon.",
+   "text": "En visite à Gergovie, il a donné une leçon d'histoire. Le maraîcher aussi.",
    "accent_words": [
-    "hurlent"
+    "leçon d'histoire"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Tomates sur une tribune, courgettes plus haut, fromager encore plus haut.",
+   "text": "Les tomates sont rangées en « formation romaine de la tortue ».",
    "accent_words": [
-    "plus haut",
-    "plus haut"
+    "tortue"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Étiquette : bruit et fureur, quatre euros le kilo.",
+   "text": "Le stand fait l'éloge de Vercingétorix. Héros de Gergovie.",
    "accent_words": [
-    "bruit et fureur"
+    "Vercingétorix"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Le fromager crie si fort qu'il fait cailler le lait d'avoine.",
+   "text": "Spoiler : quelques mois plus tard, Vercingétorix perd à Alésia.",
    "accent_words": [
-    "cailler"
+    "Alésia"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Les clients crient leur commande au troisième étage.",
+   "text": "Gagner une bataille, perdre la guerre : il connaît le scénario depuis 2012.",
    "accent_words": [
-    "troisième étage"
+    "depuis 2012"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Les tribunes percent le toit, les clients filent au supermarché.",
+   "text": "Envoie ça au pote qui cite l'histoire mais oublie la fin.",
    "accent_words": [
-    "supermarché"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Envoie ça au pote qui parle toujours plus fort.",
-   "accent_words": [
-    "plus fort"
+    "la fin"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,113 +80,157 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "ground",
+    "shop",
+    "banner",
+    "person"
+   ],
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur un marché en palissade gauloise ; banderole « GERGOVIE ».",
+   "expected_result": "La ville et son camp posés en une image."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
     "n2"
    ],
    "camera": "closeup",
    "set": [
-    "tribune",
     "shop",
     "person",
-    "studio_light"
+    "sign"
    ],
-   "onscreen_text": "",
-   "comic_action": "Un maraîcher brandit une tomate (sphère rouge) du haut d'une tribune au milieu des étals.",
-   "expected_result": "Image immédiate."
+   "onscreen_text": "LEÇON D'HISTOIRE",
+   "comic_action": "Le maraîcher déroule une carte de bataille sur ses cagettes.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
-   "id": "s2",
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "orbit",
    "set": [
-    "tribune",
-    "column",
-    "person",
-    "text3d"
+    "table",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "SURENCHÈRE EN COURS",
-   "comic_action": "Orbite : les tribunes s'empilent comme des colonnes cannelées, chaque marchand monte au-dessus du voisin.",
-   "expected_result": "Escalade verticale."
+   "onscreen_text": "FORMATION TORTUE",
+   "comic_action": "Orbite autour d'une pyramide de tomates en carapace parfaite.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
-   "id": "s3",
+   "id": "s4",
    "narration_ids": [
-    "n4",
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "banner",
+    "sign",
+    "person"
+   ],
+   "onscreen_text": "VERCINGÉTORIX ❤",
+   "comic_action": "Un buste de Vercingétorix en courge trône sur l'étal.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
     "n5"
    ],
    "camera": "closeup",
    "set": [
     "sign",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "BRUIT ET FUREUR : 2 € LE KILO",
-   "comic_action": "Gros plan sur une étiquette-pupitre : le prix est remplacé par un niveau sonore.",
-   "expected_result": "Mème « bruit et fureur » transformé en étiquette de prix."
+   "onscreen_text": "SPOILER : ALÉSIA",
+   "comic_action": "Un client retourne la pancarte : au dos, « ALÉSIA » ; le maraîcher la retourne aussitôt.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s4",
+   "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "window_pass",
+   "camera": "descend",
    "set": [
-    "column",
+    "shop",
     "person",
-    "shop"
+    "text3d"
    ],
-   "onscreen_text": "",
-   "comic_action": "La caméra monte le long des colonnes ; des clients en bas, mains en porte-voix ; un sac de tomates descend au bout d'une corde.",
-   "expected_result": "Le commerce devient absurde."
+   "onscreen_text": "BATAILLE OK · GUERRE KO",
+   "comic_action": "Plan large : la pyramide de tomates s'effondre lentement.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
   },
   {
-   "id": "s5",
+   "id": "s7",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "tribune",
-    "column",
-    "shop",
     "person",
     "tshirt",
-    "text3d"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "LES TRIBUNES ONT PERCÉ LE TOIT",
-   "comic_action": "Plan large : les tribunes dépassent le toit de la halle, minuscules marchands au-dessus des nuages ; en bas, un client en t-shirt « À DROITE DU CANAPÉ. » part avec un sac du supermarché.",
-   "expected_result": "Chute : à force de parler plus fort, plus personne n'achète."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique repart avec une tomate.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui parle toujours plus fort."
+  "text": "Envoie ça au pote qui cite l'histoire mais oublie la fin."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 74,
- "claims": [],
- "sources": [
+ "word_count": 79,
+ "claims": [
   {
-   "url": "https://www.politis.fr/articles/2025/07/emotions-quand-la-colere-ne-suffit-pas/",
-   "published": "2025-07",
-   "consulted": "2026-11-21",
-   "statut": "fait (origine) / mème (usage moqueur)",
-   "used_for": "Inspiration seulement (tic de langage) : « Le bruit et la fureur » : formule que Mélenchon s'applique depuis 2010 (congrès du Parti de gauche, selon LCP) pour revendiquer la conflictualité ; reprise et moquée régulièrement par la presse et les adversaires. Utilisée chez nous uniquement comme étiquette d'objet (cadran de four, cardio), jamais comme réplique attribuée."
+   "text": "En visite à Gergovie, il a donné une leçon d'histoire. Le maraîcher aussi.",
+   "claim_type": "fait_public",
+   "source": "https://www.sudradio.fr/societe/en-visite-a-gergovie-les-lecons-dhistoire-du-tacticien-melenchon",
+   "note": "Leçon d'histoire à Gergovie, éloge de la « formation romaine de la tortue »."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-age-profession-lieu-de-residence-quel-est-le-profil-des-electeurs",
-   "published": "2022-04-10",
-   "consulted": "2026-11-21",
-   "statut": "fait (chiffre) / mème (cliché)",
-   "used_for": "Inspiration seulement (cliché électorat) : Électorat jeune : en tête chez les moins de 35 ans en 2022 (31 % des 18-24 ans selon Ipsos). Base factuelle du cliché « étudiant en socio, tote bag, lait d'avoine » — le cliché lui-même est notre invention satirique, sans aucune caractéristique protégée."
+   "text": "« formation romaine de la tortue »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.sudradio.fr/societe/en-visite-a-gergovie-les-lecons-dhistoire-du-tacticien-melenchon",
+   "note": "Leçon d'histoire à Gergovie, éloge de la « formation romaine de la tortue »."
+  },
+  {
+   "text": "Gagner une bataille, perdre la guerre : il connaît le scénario depuis 2012.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; Union populaire (2022)."
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://www.sudradio.fr/societe/en-visite-a-gergovie-les-lecons-dhistoire-du-tacticien-melenchon",
+   "date": "2026-10",
+   "consulted": "2026-11-22",
+   "statut": "fait + citation",
+   "note": "Leçon d'histoire à Gergovie, éloge de la « formation romaine de la tortue »."
+  },
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; Union populaire (2022)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Escalade verticale. « Bruit et fureur » devient une unité de prix. Satire de la surenchère de volume, sans cibler de commerçants réels. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (M3, M11, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : la leçon d'histoire à Gergovie et la « formation romaine de la tortue ». Cadre : le marché gaulois. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

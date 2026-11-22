@@ -4,79 +4,79 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "La file devenue quartier",
- "anchor": "« Bardellamania » à la foire de Châlons : foule qui joue des coudes pour un selfie, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace.",
+ "title_cover": "La file-quartier",
+ "anchor": "Bardellamania à Châlons : nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace (AFP).",
  "meme_key": "MANIA",
- "situation": "la file d'attente",
- "ressort": "comptage absurde : un chiffre délirant affiché en grand (étiquette rouge)",
+ "situation": "La file-quartier",
+ "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
  "hook_variants": [
-  "À la foire de Châlons, une heure et demie pour une dédicace.",
-  "Cette file d'attente a son propre code postal.",
-  "Dans cette ville, tout le monde vote Bardella… et ça se voit jusqu'à la file d'attente.",
-  "Bardellaville : la file d'attente, version « Bardellamania ».",
-  "Ici, la file d'attente fonctionne comme le mème « Bardellamania »."
+  "Dans cette ville, tout le monde vote Bardella.",
+  "Ici, la file d'attente a son code postal.",
+  "Bardellaville : la seule file plus longue que celle de la préfecture.",
+  "Les électeurs de Bardella vont me détester.",
+  "Bienvenue à Bardellaville : la file-quartier."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Au bout de la file, il n'y a personne : juste un ring light.",
-  "La file a voté son maire. Il attend aussi.",
-  "Le maire, lui, appelle ça une réussite totale."
+  "La seule file plus longue que celle de la préfecture, et elle ne délivre rien.",
+  "Au bout de la file : un stylo, un sourire, et rien sur ta retraite.",
+  "Ici, la file d'attente a eu son code postal."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "À la foire de Châlons, une heure et demie pour une dédicace.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Et attend son tour.",
    "accent_words": [
-    "une heure et demie"
+    "son tour"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "À Châlons, près d'une heure et demie d'attente pour une dédicace.",
+   "accent_words": [
+    "heure et demie"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n2",
-   "text": "Ici, on a fait mieux : la file d'attente est devenue un quartier.",
-   "accent_words": [
-    "quartier"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n3",
-   "text": "Elle a sa boulangerie, son code postal, sa fête.",
+   "text": "Une nuée de téléphones levés, des coudes, des selfies.",
    "accent_words": [
-    "sa fête"
+    "téléphones levés"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Mille deux cents téléphones levés, et pas un seul pour appeler.",
+   "text": "Ici, la file d'attente a son code postal et sa boulangerie.",
    "accent_words": [
-    "pour appeler"
+    "code postal"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Un habitant : « J'attends depuis la Chandeleur, mais j'ai gardé ma place. »",
+   "text": "Au bout : un stylo, un sourire, rien sur ta retraite.",
    "accent_words": [
-    "ma place"
+    "ta retraite"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Au bout de la file, il n'y a personne : juste un ring light.",
+   "text": "La seule file plus longue que celle de la préfecture, et elle ne délivre rien.",
    "accent_words": [
-    "ring light"
+    "ne délivre rien"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Toi, ton record d'attente pour un selfie, c'est combien ?",
+   "text": "Envoie ça au pote qui a posé une RTT pour une dédicace.",
    "accent_words": [
-    "c'est combien"
+    "une RTT"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,102 +89,147 @@
    ],
    "camera": "descend",
    "set": [
-    "person",
-    "sign",
-    "road"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "1 H 30 POUR 1 DÉDICACE",
-   "comic_action": "Descente sur une file qui serpente à perte de vue.",
-   "expected_result": "Le fait réel est reconnu tout de suite."
+   "onscreen_text": "BARDELLAVILLE",
+   "comic_action": "Descente sur la mairie ; une file qui serpente jusqu'à l'horizon.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
+    "n2"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "person",
+    "road",
+    "building",
+    "sign"
+   ],
+   "onscreen_text": "1 H 30 POUR UNE SIGNATURE",
+   "comic_action": "Travelling le long de la file, chrono qui défile.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
     "n3"
    ],
    "camera": "street_dolly",
    "set": [
     "person",
-    "shop",
-    "sign",
-    "bench"
+    "ring_light",
+    "road",
+    "lamp"
    ],
-   "onscreen_text": "CODE POSTAL : FILE",
-   "comic_action": "Travelling le long de la file : boulangerie, bancs, guirlandes de fête des voisins.",
-   "expected_result": "La file devient une ville."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4"
-   ],
-   "camera": "orbit",
-   "set": [
-    "person",
-    "text3d"
-   ],
-   "onscreen_text": "1 200 TÉLÉPHONES LEVÉS",
-   "comic_action": "Orbite : forêt de téléphones levés, écrans allumés.",
-   "expected_result": "Comptage absurde."
+   "onscreen_text": "COUDES ACTIVÉS",
+   "comic_action": "Sous les lampadaires, une forêt de bras tendus se bouscule.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "facade_row",
+    "facade_set",
+    "person",
+    "banner"
+   ],
+   "onscreen_text": "CODE POSTAL : 51 FILE",
+   "comic_action": "Rangée de façades construites le long de la file ; un habitant y emménage.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "closeup",
    "set": [
+    "table",
+    "form_stack",
     "person",
-    "bench"
+    "text3d"
    ],
-   "onscreen_text": "",
-   "comic_action": "Gros plan sur un habitant assis sur son pliant, bulle de sa réplique.",
-   "expected_result": "L'attente devient un mode de vie."
+   "onscreen_text": "RETRAITE : HORS SUJET",
+   "comic_action": "Table de dédicace : un habitant tend un dossier retraite, on lui signe la couverture.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s5",
+   "id": "s6",
    "narration_ids": [
-    "n6",
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "column",
+    "mairie",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "DÉLIVRÉ : RIEN",
+   "comic_action": "Plaque « GUICHET UNIQUE » ; au bout, rien qu'une photo. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "ring_light",
+    "shop",
+    "tshirt",
     "person",
-    "tshirt"
+    "sign"
    ],
-   "onscreen_text": "BOUT DE LA FILE : RIEN",
-   "comic_action": "On arrive au bout : un ring light seul, allumé sur le vide ; un fan en t-shirt de la collection.",
-   "expected_result": "Chute visuelle + question."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt, épuisé, livre signé en main.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Toi, ton record d'attente pour un selfie, c'est combien ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui a posé une RTT pour une dédicace."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 83,
+ "word_count": 81,
  "claims": [
   {
-   "text": "À la foire de Châlons, une heure et demie pour une dédicace.",
+   "segment": "n2",
+   "text": "À Châlons, près d'une heure et demie d'attente pour une dédicace.",
    "claim_type": "fait_public",
    "source": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
-   "note": "Référence au mème réel ; aucune phrase inventée attribuée à une personne réelle."
+   "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
+  },
+  {
+   "segment": "n3",
+   "text": "Une nuée de téléphones levés, des coudes, des selfies.",
+   "claim_type": "fait_public",
+   "source": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
+   "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
   }
  ],
  "sources": [
   {
    "url": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
    "date": "2026-08-29",
-   "statut": "fait (AFP)",
-   "usage": "mème réel rendu reconnaissable dès la 1re ou 2e phrase ; idée seulement, aucune punchline d'auteur copiée"
+   "consulted": "2026-11-22",
+   "statut": "fait (reportage AFP)",
+   "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mème : Bardellamania × situation : la file d'attente × ressort : comptage. Une réplique de personnage fictif entre guillemets (bulle). Personnages fictifs uniquement ; le maire est un personnage cubique générique. Aucune citation inventée attribuée à une personne réelle, aucune affaire, rien sur la vie privée ni sur une caractéristique protégée, pas d'appel au vote."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = Bardellamania à Châlons : nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace (AFP). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

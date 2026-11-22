@@ -3,75 +3,75 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-31",
  "format": "B",
- "title_cover": "Le local à selfies",
+ "title_cover": "Critiquer, pas inviter",
  "hook_variants": [
-  "Le local poubelles est rénové : fond rose, néon, ring light.",
-  "Le local poubelles de la copro est rénové : fond rose, néon, ring light.",
-  "Dans cet immeuble, on fait la queue en tenue de soirée pour voir les poubelles.",
-  "Le spot photo le plus couru de Bardellaville sent le compost.",
-  "Ici, plus personne ne jette ses déchets. Ils posent à côté."
+  "Dans cette ville, tout le monde vote Bardella.",
+  "Ici, la salle de presse est un parking.",
+  "Bardellaville : la presse a le droit de rester dehors.",
+  "Les électeurs de Bardella vont me détester.",
+  "Bienvenue à Bardellaville : critiquer, pas inviter."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Puis ils repartent, avec la photo, sans les sacs.",
-  "Les éboueurs arrivent, voient le néon, font un selfie. Et repartent. Avec la photo.",
-  "Le syndic facture l'accès au local poubelles : « shooting, cinq euros ». Les sacs, eux, restent gratuits dans le hall."
+  "Il a le droit de critiquer les journalistes. Eux ont droit au trottoir.",
+  "Ici, la salle de presse de la mairie est un parking.",
+  "Les conférences de presse se font en story : questions désactivées."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Le local poubelles est rénové : fond rose, néon, ring light.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Les journalistes, dehors.",
    "accent_words": [
-    "light"
+    "dehors"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Plus personne n'y jette rien : on y fait la queue en paillettes.",
+   "text": "Sa ligne : « on a le droit de critiquer les journalistes ».",
    "accent_words": [
-    "paillettes"
+    "critiquer"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Une heure et demie d'attente pour poser contre le conteneur.",
+   "text": "Critiquer, oui. Les laisser entrer à sa soirée de lancement, non.",
    "accent_words": [
-    "conteneur"
+    "entrer"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Les sacs s'entassent dans le hall, sous un panneau : installation éphémère.",
+   "text": "Sa réponse sur X : un tampon Vu et s'en tape.",
    "accent_words": [
-    "éphémère"
+    "Vu et s'en tape"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Les éboueurs arrivent, voient le néon et font un selfie.",
+   "text": "Ici, la salle de presse de la mairie est un parking.",
    "accent_words": [
-    "selfie"
+    "un parking"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Puis ils repartent, avec la photo, sans les sacs.",
+   "text": "Il a le droit de critiquer les journalistes. Eux ont droit au trottoir.",
    "accent_words": [
-    "sacs"
+    "au trottoir"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le coin le plus moche de ton immeuble mérite quel néon ?",
+   "text": "Envoie ça au pote qui trouve que la presse en fait trop.",
    "accent_words": [
-    "néon"
+    "en fait trop"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -82,105 +82,163 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "bin",
-    "ring_light",
-    "sign",
-    "text3d"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "LOCAL POUBELLES",
-   "comic_action": "Gros plan : un conteneur à ordures devant un fond rose poudré, néon en lettres attachées (text3d) « Local poubelles ♥ », ring light. Le conteneur brille comme un sac de luxe.",
-   "expected_result": "Image surprenante : l'endroit le plus utilitaire devient un décor."
+   "onscreen_text": "BARDELLAVILLE",
+   "comic_action": "Descente sur la mairie ; une barrière et des micros alignés sur le trottoir.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
+    "n2"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "studio_light",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "« LE DROIT DE CRITIQUER »",
+   "comic_action": "Tribune : le maire cubique pointe la presse du doigt, projecteur sur lui.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
     "n3"
    ],
    "camera": "street_dolly",
    "set": [
     "person",
-    "bin",
+    "road",
     "building",
-    "text3d"
+    "sign"
    ],
-   "onscreen_text": "FILE D'ATTENTE : SHOOTING",
-   "comic_action": "Travelling le long d'une file d'habitants en robe et smoking, téléphones levés, qui jouent des coudes pour poser à côté du conteneur. Personne n'a de sac à la main.",
-   "expected_result": "Inversion : le local sert à être vu, pas à être utilisé."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4"
-   ],
-   "camera": "window_pass",
-   "set": [
-    "building",
-    "bin",
-    "sign",
-    "person"
-   ],
-   "onscreen_text": "INSTALLATION ÉPHÉMÈRE",
-   "comic_action": "Travelling par la porte vitrée du hall : une montagne de sacs. Le syndic y plante un petit panneau de musée : « Installation éphémère ». Un habitant la contemple, pensif.",
-   "expected_result": "Requalification : le problème devient œuvre d'art."
+   "onscreen_text": "PRESSE : REFOULÉE",
+   "comic_action": "Devant une porte à ring light, un vigile écarte les micros et fait entrer les perches à selfie.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "closeup",
    "set": [
-    "car",
-    "person",
-    "bin",
-    "ring_light",
-    "text3d"
+    "table",
+    "form_stack",
+    "text3d",
+    "mairie"
    ],
-   "onscreen_text": "COLLECTE : 0 · SELFIE : 1",
-   "comic_action": "Le camion-benne (car) arrive. Les éboueurs descendent, voient le néon, s'arrêtent, sortent un téléphone, selfie à trois sous le ring light. Ils remontent et repartent. Travelling arrière : les sacs n'ont pas bougé. Laisser respirer.",
-   "expected_result": "Chute : même le service public tombe dans le piège de l'image."
+   "onscreen_text": "VU ET S'EN TAPE",
+   "comic_action": "Un tampon rouge s'abat sur une pile de questions de journalistes.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "car",
+    "road",
+    "gps",
+    "sign"
+   ],
+   "onscreen_text": "SALLE DE PRESSE (PARKING)",
+   "comic_action": "Une plaque « SALLE DE PRESSE » sur un poteau de parking ; une voiture s'y gare.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "road",
+    "building",
+    "person",
+    "bin"
+   ],
+   "onscreen_text": "DROIT AU TROTTOIR",
+   "comic_action": "Journalistes assis sur le bord du trottoir, micros posés à côté, sous la pluie. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
-   "camera": "closeup",
+   "camera": "return",
    "set": [
     "shop",
-    "mascot",
     "tshirt",
-    "ring_light"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le Coq de vitrine, t-shirt sur le dos, pose à côté d'une petite poubelle néon. Il soupire.",
-   "expected_result": "Question à commenter, produit réel visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt ferme la porte au nez d'un micro.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Le coin le plus moche de ton immeuble mérite quel néon ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui trouve que la presse en fait trop."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 77,
- "claims": [],
+ "word_count": 82,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "« on a le droit de critiquer les journalistes »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/bardella-rn-on-a-le-droit-de-critiquer-les-journalistes-136926",
+   "note": "« on a le droit de critiquer les journalistes »."
+  },
+  {
+   "segment": "n3",
+   "text": "Critiquer, oui. Les laisser entrer à sa soirée de lancement, non.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
+   "note": "Image « Vu et s'en tape » publiée après l'éviction de journalistes de la soirée de lancement du livre « Gouverner »."
+  },
+  {
+   "segment": "n4",
+   "text": "Sa réponse sur X : un tampon Vu et s'en tape.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
+   "note": "Image « Vu et s'en tape » publiée après l'éviction de journalistes de la soirée de lancement du livre « Gouverner »."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
-   "published": "2026-08-29",
-   "consulted": "2026-11-21",
-   "status": "fait public (reportage AFP : « Bardellamania », selfies arrachés, nuée de téléphones, près d'une heure et demie d'attente pour une dédicace)",
-   "used_for": "Inspiration seulement : les files d'attente pour un selfie, la « nuée de téléphones » et les coudes qui jouent, décrits par l'AFP. Traduits par une file en tenue de soirée devant un local poubelles."
+   "url": "https://www.publicsenat.fr/actualites/politique/bardella-rn-on-a-le-droit-de-critiquer-les-journalistes-136926",
+   "date": "date non relevée",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (titre Public Sénat)",
+   "note": "« on a le droit de critiquer les journalistes »."
+  },
+  {
+   "url": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
+   "date": "2026-11-05",
+   "consulted": "2026-11-22",
+   "statut": "fait public (publication X du 04/11/2026) + mème préexistant",
+   "note": "Image « Vu et s'en tape » publiée après l'éviction de journalistes de la soirée de lancement du livre « Gouverner »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Format B (copro). Mécanisme : détournement d'usage. Continuité : sacs non ramassés (arc 3), Résidence Golden Hour. Ne vise pas les éboueurs mais la contagion de l'image. Risques vérifiés : aucune citation, la file d'attente reste générique. | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_bardellaville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = « on a le droit de critiquer les journalistes » ; journalistes refoulés à l'entrée de la soirée de lancement de « Gouverner », réponse « Vu et s'en tape ». Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

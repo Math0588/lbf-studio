@@ -3,91 +3,75 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-32",
  "format": "C",
- "title_cover": "Bardellaville 2.0",
+ "title_cover": "Mise à jour 2.0",
  "hook_variants": [
-  "Bardellaville 2.0 est disponible : toute la ville redémarre.",
-  "Bardellaville 2.0 est disponible. Toute la ville redémarre.",
-  "Mise à jour de la ville : trois arrière-plans en plus. Toujours aucun fond.",
-  "La ville a lu ses notes de version. Personne d'autre.",
-  "Correction de bugs : les bugs ont été mieux éclairés."
+  "Dans cette ville, tout le monde vote Bardella.",
+  "Ici, la ville se met à jour. Le programme, jamais.",
+  "Bardellaville 2.0 : encore plus lisse.",
+  "Les électeurs de Bardella vont me détester.",
+  "Bienvenue à Bardellaville : mise à jour 2.0."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Correctif : les bugs sont désormais mieux éclairés.",
-  "Redémarrage. Tout est identique, en plus brillant. Correction de bugs : les bugs sont mieux éclairés.",
-  "Notification : « Bardellaville 3.0 disponible. » Les voitures recommencent à tourner autour de la barre de progression."
+  "Prochaine version : un programme. Date de sortie : non communiquée.",
+  "Bug connu : toute question précise fait planter le maire.",
+  "Correctif : la touche Chiffrage a été retirée, jugée peu utilisée."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Bardellaville 2.0 est disponible : toute la ville redémarre.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Mise à jour disponible.",
    "accent_words": [
-    "redémarre"
+    "Mise à jour"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Nouveauté : filtre bonne mine sur les lampadaires.",
+   "text": "Version 2.0 : réponses calibrées, encore plus lisses, encore plus creuses.",
    "accent_words": [
-    "lampadaires"
+    "creuses"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Supprimé : le bouton Réponse, jugé peu utilisé.",
+   "text": "Correctif : la touche Chiffrage a été retirée, jugée peu utilisée.",
    "accent_words": [
-    "utilisé"
+    "Chiffrage"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Ajouté : un répondeur qui récite les mêmes éléments de langage.",
+   "text": "Plan cent jours inclus. Méthode : non fournie avec l'appareil.",
    "accent_words": [
-    "langage"
+    "non fournie"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Barre de progression au-dessus du rond-point, bloquée à quatre-vingt-dix-neuf pour cent.",
+   "text": "Bug connu : toute question précise fait planter le maire.",
    "accent_words": [
-    "pour cent"
+    "planter"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Les voitures s'arrêtent pour regarder la barre.",
+   "text": "Prochaine version : un programme. Date de sortie : non communiquée.",
    "accent_words": [
-    "barre"
+    "non communiquée"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Redémarrage : tout est identique, en plus brillant.",
+   "text": "Envoie ça au pote qui attend la mise à jour depuis trois livres.",
    "accent_words": [
-    "brillant"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Correctif : les bugs sont désormais mieux éclairés.",
-   "accent_words": [
-    "éclairés"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n9",
-   "text": "Écris en commentaire la ligne que tu veux dans la prochaine version.",
-   "accent_words": [
-    "version"
+    "trois livres"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -100,129 +84,154 @@
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "mairie",
-    "screen",
-    "roundabout",
-    "ring_light",
-    "text3d"
+    "banner",
+    "person"
    ],
-   "onscreen_text": "MISE À JOUR DISPONIBLE",
-   "comic_action": "Survol de la ville : sur la façade de la mairie (screen), une notification géante « Bardellaville 2.0 est disponible — Redémarrer maintenant ». Toutes les lumières clignotent.",
-   "expected_result": "Image surprenante : une ville qui se met à jour comme un téléphone."
+   "onscreen_text": "BARDELLAVILLE 2.0",
+   "comic_action": "Descente sur la mairie ; barre de téléchargement géante sur la façade.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "mairie",
     "screen",
-    "scroll",
     "text3d",
-    "facade_set"
+    "mairie",
+    "person"
    ],
-   "onscreen_text": "SUPPRIMÉ : BOUTON RÉPONSE",
-   "comic_action": "Travelling le long de la façade où défilent les notes de version (scroll) : « + Filtre bonne mine sur les lampadaires », « + 3 arrière-plans (château, plage, coucher de soleil n°2) », « − Bouton Réponse (peu utilisé) », « Plan des 100 jours : prévu pour la v3.0 ». Trois nouvelles façades surgissent derrière la mairie.",
-   "expected_result": "Parodie de notes de version : on ajoute de l'image, on supprime l'usage."
+   "onscreen_text": "NOUVEAUTÉ : + LISSE",
+   "comic_action": "Écran : notes de version qui défilent, chaque ligne commence par « Amélioration ».",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "roundabout",
-    "car_orbit",
-    "screen",
-    "ring_light",
+    "shop",
+    "person",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "99 %",
-   "comic_action": "Orbite au-dessus du rond-point : une barre de progression géante (screen) avance. Les voitures s'arrêtent pour la regarder (fait rare). 97… 98… 99 %. Elle s'immobilise. Un curseur d'attente tourne sur le ring light.",
-   "expected_result": "Effet retard : l'amélioration promise reste suspendue."
+   "onscreen_text": "TOUCHE CHIFFRAGE : RETIRÉE",
+   "comic_action": "Un clavier géant en vitrine ; un agent arrache une touche et la jette.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "closeup",
    "set": [
-    "mairie",
-    "sign",
-    "lamp",
-    "text3d",
-    "screen"
+    "table",
+    "form_stack",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "BUGS : MIEUX ÉCLAIRÉS",
-   "comic_action": "Redémarrage. Travelling arrière : la ville est exactement la même, un peu plus brillante. Les nids-de-poule ont un spot dirigé dessus. Dernière ligne des notes : « Correction de bugs : les bugs ont été mieux éclairés. » Le panneau des réponses affiche « Mise à jour disponible ». Laisser respirer.",
-   "expected_result": "Chute : la mise à jour améliore l'éclairage des problèmes, pas les problèmes."
+   "onscreen_text": "MÉTHODE : NON FOURNIE",
+   "comic_action": "Une boîte « CENT JOURS » ouverte : à l'intérieur, que du papier bulle.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n9"
+    "n5"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "router_lectern",
+    "studio_light",
+    "text3d"
+   ],
+   "onscreen_text": "ERREUR 404 : RÉPONSE",
+   "comic_action": "Un journaliste pose une question ; le pupitre affiche un sablier, puis redémarre.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "column",
+    "mairie",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "PROGRAMME : BIENTÔT",
+   "comic_action": "Une affiche « BIENTÔT » collée sur une autre affiche « BIENTÔT ». Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
    "set": [
     "shop",
-    "mascot",
     "tshirt",
-    "screen"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le Coq de vitrine porte le t-shirt ; une petite barre de progression au-dessus de sa tête reste bloquée à 99 %.",
-   "expected_result": "Question à commenter, produit réel visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt fixe une barre de chargement bloquée.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Écris en commentaire la ligne que tu veux dans la prochaine version."
+  "type": "share",
+  "text": "Envoie ça au pote qui attend la mise à jour depuis trois livres."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 82,
- "claims": [],
+ "word_count": 78,
+ "claims": [
+  {
+   "segment": "n2",
+   "text": "Version 2.0 : réponses calibrées, encore plus lisses, encore plus creuses.",
+   "claim_type": "fait_public",
+   "source": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
+   "note": "Candidat aux réponses calibrées et creuses."
+  },
+  {
+   "segment": "n4",
+   "text": "Plan cent jours inclus. Méthode : non fournie avec l'appareil.",
+   "claim_type": "fait_public",
+   "source": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
+   "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
-   "published": "2026-11-04",
-   "consulted": "2026-11-21",
-   "status": "fait public (dépêche AFP : le livre esquisse des « cent jours » sans détailler priorités ni méthode) + opinion (appréciation de l'AFP)",
-   "used_for": "Inspiration seulement : des « cent jours » esquissés sans priorités ni méthode détaillées (AFP). Traduits par une ligne des notes de version : « Plan des 100 jours : prévu pour la v3.0 »."
-  },
-  {
-   "url": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
-   "published": "2026-11-04",
-   "consulted": "2026-11-21",
-   "status": "fait public (trois livres en deux ans, rapporté par LCP)",
-   "used_for": "Inspiration seulement : la cadence des publications (trois livres en deux ans). Traduite par une ville qui sort des versions plus vite qu'elle ne règle les bugs."
-  },
-  {
-   "url": "https://www.ladn.eu/media-mutants/sur-tiktok-les-militants-rn-peaufinent-leur-strategie-pour-2027/",
-   "published": "2026",
-   "consulted": "2026-11-21",
-   "status": "fait (enquête) + opinion (éléments de langage relayés en continu)",
-   "used_for": "Un répondeur municipal qui récite les mêmes éléments de langage."
-  },
-  {
    "url": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
-   "published": "2026-05-31",
-   "consulted": "2026-11-21",
-   "status": "opinion (chronique, titre seul lu)",
-   "used_for": "Idée de réponses calibrées et creuses ; la formule de l'auteur n'est pas reprise."
+   "date": "2026-05-31",
+   "consulted": "2026-11-22",
+   "statut": "opinion (chronique ; formule de l'auteur non reprise)",
+   "note": "Candidat aux réponses calibrées et creuses."
+  },
+  {
+   "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
+   "date": "2026-11-04",
+   "consulted": "2026-11-22",
+   "statut": "fait + appréciation AFP",
+   "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Format C (Mise à jour). Mécanisme : parodie de notes de version. Continuité : « Chargement… » devient « Mise à jour disponible » (bdv-gag-01 étape 4), trois arrière-plans de plus (bdv-gag-03 étape 5) ; ajoute bdv-evt-025. « 99 % » est fictif (barre de progression). Risques vérifiés : aucune citation, aucun programme réel décrit. | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_bardellaville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = réponses calibrées et creuses (chronique Libération) et cent jours sans méthode : les notes de version de la ville. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

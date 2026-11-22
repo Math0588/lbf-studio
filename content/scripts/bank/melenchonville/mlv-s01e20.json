@@ -3,76 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-20",
  "format": "A",
- "title_cover": "Le point rapide",
+ "title_cover": "La France en canapé",
  "hook_variants": [
-  "Ici, le point rapide de neuf heures se fait depuis une tribune.",
-  "Réunion d'équipe. Une slide. Deux heures.",
-  "Le stagiaire a posé une question. Il ne la posera plus.",
-  "Ordre du jour : nous.",
-  "Point rapide : durée estimée, une nuit."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : la Nouvelle France tient dans un décor.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, les réunions ont un canapé et pas d'ordre du jour.",
+  "Mélenchonville : la ville en carton-pâte, mais immersive."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Personne n'est sorti, nouvelle slide : nous, la suite.",
-  "La nuit tombe, le jour se lève, personne n'est sorti. Nouvelle slide : nous, la suite.",
-  "La réunion finit à dix-huit heures. Compte rendu : il faut une réunion."
+  "La Nouvelle France tient dans un décor. Démonté après le meeting.",
+  "Un canapé, un comptoir, une France en kit.",
+  "La Nouvelle France : livrée en décor, montage non compris."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, le point rapide de neuf heures se fait depuis une tribune.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Réunion à 9 h.",
    "accent_words": [
-    "point rapide"
+    "Réunion à 9 h"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le PowerPoint n'a qu'une slide : nous.",
+   "text": "Au Bourget, la scène avait un canapé et un comptoir de café. Pour faire peuple.",
    "accent_words": [
-    "nous"
+    "faire peuple"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Le manager tient deux heures dessus, version immersive et olfactive.",
+   "text": "Ici, chaque réunion se tient sur un canapé. Zéro boulot, mais immersif.",
    "accent_words": [
-    "deux heures",
-    "immersive et olfactive"
+    "immersif"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le stagiaire demande l'ordre du jour : c'est une provocation.",
+   "text": "Le slide unique s'intitule : Nouvelle France. Slide deux : en chargement.",
    "accent_words": [
-    "provocation"
+    "en chargement"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Dix-huit heures, conclusion : on refait un point à neuf heures.",
+   "text": "Pause café au comptoir en carton. Le café est en option.",
    "accent_words": [
-    "à neuf heures"
+    "en option"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Personne n'est sorti, nouvelle slide : nous, la suite.",
+   "text": "La Nouvelle France tient dans un décor. Démonté après le meeting.",
    "accent_words": [
-    "nous, la suite"
+    "Démonté"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça à ton manager, sans commentaire.",
+   "text": "Envoie ça au pote qui fait des réunions pour préparer les réunions.",
    "accent_words": [
-    "manager"
+    "réunions"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -83,70 +82,96 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "router_lectern",
-    "person",
-    "studio_light",
-    "text3d"
+    "ground",
+    "building",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "POINT RAPIDE : 9 H",
-   "comic_action": "Salle de réunion : le manager sur un pupitre lumineux, poursuite rouge, l'équipe assise en demi-cercle avec ses cafés.",
-   "expected_result": "Image immédiate : la réunion est un meeting."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur un open space ; banderole « NOUVELLE FRANCE ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
    "camera": "orbit",
    "set": [
-    "screen",
+    "tribune",
     "table",
     "person",
-    "text3d"
+    "studio_light"
    ],
-   "onscreen_text": "SLIDE 1/1 : NOUS.",
-   "comic_action": "Orbite : l'écran n'affiche qu'un mot, « NOUS. » ; l'horloge text3d défile de 9 h à 11 h.",
-   "expected_result": "Vide de contenu, plein de posture."
+   "onscreen_text": "CANAPÉ · COMPTOIR",
+   "comic_action": "Orbite autour d'une scène : un canapé, un faux comptoir, un projecteur.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4"
+    "n3"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
     "table",
     "person",
-    "text3d",
-    "banner"
+    "screen"
    ],
-   "onscreen_text": "QUESTION = PROVOCATION",
-   "comic_action": "La caméra passe derrière la vitre : toutes les têtes pivotent vers le stagiaire ; une banderole « CONFLICTUALITÉ » se déroule au-dessus de lui.",
-   "expected_result": "Clin d'œil sourcé à la conflictualité assumée : une question banale traitée comme une attaque."
+   "onscreen_text": "RÉUNION IMMERSIVE",
+   "comic_action": "Six collègues enfoncés dans un canapé, l'ordinateur posé sur l'accoudoir, personne ne tape.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "SLIDE 2 : CHARGEMENT…",
+   "comic_action": "L'écran affiche « NOUVELLE FRANCE », puis un sablier qui tourne.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
    ],
    "camera": "street_dolly",
    "set": [
     "table",
-    "lamp",
-    "screen",
-    "person",
-    "text3d"
+    "sign",
+    "person"
    ],
-   "onscreen_text": "NOUS (SUITE)",
-   "comic_action": "Accéléré : la lumière de la fenêtre passe du jour à la nuit puis au jour, la lampe s'allume et s'éteint, personne ne bouge ; nouvelle slide « NOUS (SUITE) ».",
-   "expected_result": "Chute en boucle."
+   "onscreen_text": "CAFÉ : OPTION",
+   "comic_action": "Travelling : le comptoir est une façade en carton, la machine est peinte.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s5",
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "tribune",
+    "table",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "DÉCOR DÉMONTÉ",
+   "comic_action": "Plan large : des techniciens emportent le canapé et le comptoir ; il ne reste qu'un pupitre.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
    "narration_ids": [
     "n7"
    ],
@@ -154,34 +179,47 @@
    "set": [
     "person",
     "tshirt",
-    "table",
-    "text3d"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "À TON MANAGER",
-   "comic_action": "Le stagiaire, en t-shirt « À DROITE DU CANAPÉ. », est assis tout à droite du canapé de la salle de pause, épuisé.",
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique s'assoit dans le canapé, seul.",
    "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça à ton manager, sans commentaire."
+  "text": "Envoie ça au pote qui fait des réunions pour préparer les réunions."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 66,
- "claims": [],
+ "word_count": 85,
+ "claims": [
+  {
+   "text": "Au Bourget, la scène avait un canapé et un comptoir de café. Pour faire peuple.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+  },
+  {
+   "text": "Le slide unique s'intitule : Nouvelle France. Slide deux : en chargement.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.euronews.com/2022/01/16/videos-sounds-and-smells-french-far-left-candidate-s-unusual-rally-to-reinvigorate-campaig",
-   "published": "2022-01-16",
-   "consulted": "2026-11-21",
+   "url": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "date": "2026-11-07",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (mème) : Meeting « immersif et olfactif » de Nantes : vidéo à 360° et diffusion de parfums d'ambiance dans la salle. Gimmick moqué (masques FFP2 qui annulaient l'effet, selon la presse)."
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Question banale traitée comme une agression. On a évité une réplique qui pourrait ressembler à une citation réelle : la réaction est montrée (têtes qui pivotent, banderole), pas dite. Aucune promesse de date. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (M7, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : la « Nouvelle France » du Bourget, mise en scène avec canapé et comptoir de café. Cadre : la réunion de bureau. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

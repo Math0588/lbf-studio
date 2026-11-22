@@ -3,83 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-17",
  "format": "A",
- "title_cover": "Les lentilles assumées",
+ "title_cover": "L'Avenir en commun",
  "hook_variants": [
-  "À la cantine, le menu n'est pas affiché : il est déclamé.",
-  "À la cantine, le menu n'est pas affiché. Il est déclamé.",
-  "Des lentilles. Oui, des lentilles. Et le chef les assume.",
-  "Ici, chaque plat est une prise de position.",
-  "Le seul self de France où la purée a un droit de réponse."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : un seul menu, un seul chef, un seul micro.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, la cantine sert L'Avenir en commun, et c'est des lentilles.",
+  "Mélenchonville : le self où le plateau passe en AG."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le yaourt est renvoyé en commission mixte paritaire.",
-  "Le dessert est renvoyé en commission mixte paritaire. Yaourt : arrivée prévue à la rentrée.",
-  "Les élèves mangent froid, en silence, sous une poursuite rouge."
+  "L'avenir en commun, d'accord. Mais le micro, lui, n'est jamais partagé.",
+  "Tout est en commun. Sauf le micro.",
+  "L'avenir est partagé ; la parole, confisquée."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "À la cantine, le menu n'est pas affiché : il est déclamé.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. À table.",
    "accent_words": [
-    "déclamé"
+    "À table"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le chef monte à la tribune, louche levée : des lentilles.",
+   "text": "Son programme s'appelle L'Avenir en commun. À la cantine, c'est le menu unique.",
+   "accent_words": [
+    "menu unique"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "Le chef monte à la tribune, louche levée : lentilles pour tout le monde.",
    "accent_words": [
     "lentilles"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n3",
-   "text": "Il les assume, debout, pendant quarante minutes.",
-   "accent_words": [
-    "assume"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n4",
-   "text": "La purée exige un droit de réponse.",
+   "text": "Un élève demande des frites. On l'accuse de rouler pour le grand capital.",
    "accent_words": [
-    "droit de réponse"
+    "grand capital"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "On applaudit pour accélérer : erreur, ça relance.",
+   "text": "Le dessert ? Reporté à la Sixième République, en fin de programme.",
    "accent_words": [
-    "erreur"
+    "Reporté"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Le chef est candidat au service depuis 2012 : quatrième tentative.",
+   "text": "L'avenir en commun, d'accord. Mais le micro, lui, n'est jamais partagé.",
    "accent_words": [
-    "depuis 2012"
+    "jamais partagé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Le yaourt est renvoyé en commission mixte paritaire.",
+   "text": "Envoie ça au pote qui partage tout, sauf la parole.",
    "accent_words": [
-    "commission mixte paritaire"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Le plat de cantine que tu défendrais jusqu'au bout ?",
-   "accent_words": [
-    "jusqu'au bout"
+    "la parole"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,99 +82,151 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "tribune",
-    "person",
-    "studio_light",
-    "text3d"
+    "ground",
+    "building",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "MENU : DÉCLAMÉ",
-   "comic_action": "Un chef (cône blanc) en haut d'une tribune au bout du self, louche levée comme un poing, sous une poursuite rouge.",
-   "expected_result": "Image immédiate : le service devient meeting."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur la cantine ; banderole « MENU : L'AVENIR EN COMMUN ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3",
-    "n4"
+    "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "tribune",
     "table",
-    "person",
     "sign",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "PLAT DU JOUR : CONFLICTUALITÉ",
-   "comic_action": "Orbite : sur le panneau-pupitre du menu, « PLAT DU JOUR : CONFLICTUALITÉ » ; une assiette de purée a son propre petit pupitre.",
-   "expected_result": "Clin d'œil sourcé à la stratégie de la conflictualité, appliquée à un plateau-repas."
+   "onscreen_text": "MENU UNIQUE",
+   "comic_action": "L'ardoise du jour n'a qu'une ligne : « L'AVENIR EN COMMUN ».",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "table",
+    "tribune",
     "person",
-    "text3d"
+    "table"
    ],
-   "onscreen_text": "APPLAUDIR = RELANCER",
-   "comic_action": "Travelling le long des tables : les élèves applaudissent, le chef reprend de plus belle ; la vapeur des plats s'éteint.",
-   "expected_result": "Piège de la boucle."
+   "onscreen_text": "LENTILLES POUR TOUS",
+   "comic_action": "Orbite : le cuisinier harangue la file depuis un pupitre, louche brandie.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "person",
+    "table",
+    "text3d"
+   ],
+   "onscreen_text": "FRITES = CAPITAL",
+   "comic_action": "Un plateau avec une frite est mis sous scellés ; murmures dans la file.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "DESSERT : VIE RÉP.",
+   "comic_action": "Le chariot des desserts part sur un rail vers une porte « 2027 ».",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "tribune",
+    "table",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "MICRO : PRIVÉ",
+   "comic_action": "Plan large : tout le monde mange la même chose ; un seul micro, une seule main dessus.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "table",
     "person",
-    "sign",
     "tshirt",
-    "studio_light",
-    "text3d"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "YAOURT : À LA RENTRÉE",
-   "comic_action": "Panneau sur pupitre « YAOURT : ARRIVÉE PRÉVUE À LA RENTRÉE » ; le surveillant en t-shirt « PLUTÔT GAUCHE. TRÈS FATIGUÉ. » mange des lentilles froides.",
-   "expected_result": "Chute bureaucratique sur un objet minuscule."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique ramène son plateau, intact.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Le plat de cantine que tu défendrais jusqu'au bout ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui partage tout, sauf la parole."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 74,
- "claims": [],
- "sources": [
+ "word_count": 83,
+ "claims": [
   {
-   "url": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
-   "published": "2026-02-26",
-   "consulted": "2026-11-21",
-   "statut": "fait",
-   "used_for": "Inspiration seulement (cliché électorat) : Discours fleuve à Lyon : 1 h 42, en s'accrochant au pupitre, avec de longues digressions (Victor Hugo, médias…), la candidate locale citée une seule fois. Illustre le cliché du discours interminable qui éclipse tout le monde. Seuls la durée et le pupitre sont réutilisés ; les sujets polémiques de l'article sont écartés."
+   "text": "Son programme s'appelle L'Avenir en commun. À la cantine, c'est le menu unique.",
+   "claim_type": "fait_public",
+   "source": "https://programme.lafranceinsoumise.fr/wp-content/uploads/2025/02/A5-PROGRAMME-SITE.pdf",
+   "note": "Programme « L'Avenir en commun » (document du mouvement)."
   },
   {
-   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "published": "2026-06",
-   "consulted": "2026-11-21",
+   "text": "Le dessert ? Reporté à la Sixième République, en fin de programme.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://programme.lafranceinsoumise.fr/wp-content/uploads/2025/02/A5-PROGRAMME-SITE.pdf",
+   "date": "2025-02",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (blague) : Quatrième candidature présidentielle (2012, 2017, 2022, 2027) : ressort comique du « quatrième mandat », « quatrième tournée », « candidat pour la quatrième fois ». Complété par Blue News/AFP (11/11/2025) sur son image de tribun lyrique sujet à des colères."
+   "note": "Programme « L'Avenir en commun » (document du mouvement)."
+  },
+  {
+   "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Conflictualité sur un objet minuscule. « Je les assume » est dit par un chef fictif. La stratégie de la conflictualité (fait public sourcé) devient un plat du jour. Aucun aliment lié à une culture ou une religion. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (M6, M9, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le programme « L'Avenir en commun » pris au pied de la lettre. Cadre : la cantine. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

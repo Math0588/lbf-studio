@@ -3,76 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-31",
  "format": "C",
- "title_cover": "Conseil de quartier 6.0",
+ "title_cover": "Constituante permanente",
  "hook_variants": [
-  "Mise à jour : le conseil de quartier passe en version six point zéro.",
-  "Mise à jour de la France : le conseil de quartier passe en version six point zéro.",
-  "Notes de version : temps de parole illimité.",
-  "Bug connu : lever la séance a été déplacé dans la version sept.",
-  "Installation de la Sixième République : six pour cent."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : le conseil de quartier écrit une Constitution par semaine.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, même le banc public a son préambule.",
+  "Mélenchonville : la République numéro six, version bêta."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ne pas éteindre le peuple pendant la mise à jour.",
-  "Sur la façade : installation de la Sixième République, six pour cent. Ne pas éteindre le peuple. Le six est déjà raturé.",
-  "Mise à jour terminée. Redémarrage du conseil : dans quatre heures."
+  "La Constitution est prête. Il manque un article : comment on s'arrête.",
+  "Une Constitution parfaite, sans article pour lever la séance.",
+  "Version 6.4 installée. Bugs : tous."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Mise à jour : le conseil de quartier passe en version six point zéro.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Version 6.0.",
    "accent_words": [
-    "six point zéro"
+    "Version 6.0"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Nouveauté : temps de parole illimité, le point divers dure quatre heures.",
+   "text": "Le conseil de quartier s'est proclamé Constituante. Il réécrit l'ordre du jour.",
    "accent_words": [
-    "temps de parole illimité",
-    "quatre heures"
+    "Constituante"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Bug connu : lever la séance, reporté à la version sept.",
+   "text": "Son programme promet une Sixième République. Ici, on est déjà à la version 6.4.",
    "accent_words": [
-    "lever la séance"
+    "version 6.4"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Nouvelle devise : liberté, égalité, solidarité, prolongation.",
+   "text": "Chaque lampadaire a son article. Le banc a son préambule.",
    "accent_words": [
-    "prolongation"
+    "préambule"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Installation de la Sixième République : six pour cent.",
+   "text": "Au Bourget, il a dit peuple treize fois. Ici, chaque article le dit quatorze.",
    "accent_words": [
-    "six pour cent"
+    "quatorze"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Ne pas éteindre le peuple pendant la mise à jour.",
+   "text": "La Constitution est prête. Il manque un article : comment on s'arrête.",
    "accent_words": [
-    "éteindre le peuple"
+    "comment on s'arrête"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Quelle fonction tu supprimerais de ton conseil de quartier ?",
+   "text": "Envoie ça au pote qui propose de tout refaire, mais jamais de finir.",
    "accent_words": [
-    "supprimerais"
+    "finir"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,14 +84,14 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
-    "screen",
-    "text3d",
+    "ground",
+    "building",
+    "banner",
     "person"
    ],
-   "onscreen_text": "MISE À JOUR : CONSEIL 6.0",
-   "comic_action": "Descente vers le Palais de la Parole : un écran géant affiche une fenêtre de mise à jour, des habitants assis en gradins devant, en attente.",
-   "expected_result": "Format C reconnaissable d'entrée."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur une salle de quartier ; banderole « CONSTITUANTE DU QUARTIER ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
@@ -101,71 +100,132 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d"
+    "table",
+    "form_stack",
+    "person"
    ],
-   "onscreen_text": "PAROLE : ILLIMITÉE",
-   "comic_action": "Gros plan sur les notes de version qui défilent en liste à puces.",
-   "expected_result": "Parodie de changelog."
+   "onscreen_text": "ORDRE DU JOUR V12",
+   "comic_action": "Un habitant raye l'ordre du jour et le réécrit, puis recommence.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n3",
-    "n4"
+    "n3"
    ],
    "camera": "orbit",
    "set": [
     "screen",
-    "table",
-    "person",
-    "form_stack",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "VIe RÉP. : DERNIÈRE PAGE",
-   "comic_action": "Orbite : la liste des nouveautés défile jusqu'à « 1 069 » ; la ligne « VIe RÉPUBLIQUE » glisse tout en bas de la pile de formulaires.",
-   "expected_result": "Clin d'œil sourcé : 1 069 mesures, VIe République reléguée en fin d'ouvrage."
+   "onscreen_text": "RÉPUBLIQUE V6.4",
+   "comic_action": "Orbite autour d'un écran : barre de mise à jour « 6.4 », bloquée à 99 %.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6",
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "lamp",
+    "bench",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "ARTICLE 12 : LAMPADAIRE",
+   "comic_action": "Travelling : chaque lampadaire porte une plaque d'article de loi.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "tribune",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "PEUPLE ×14",
+   "comic_action": "Un habitant au pupitre ; un compteur « PEUPLE » dépasse 13 et passe à 14.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "scroll",
+    "building",
+    "text3d"
+   ],
+   "onscreen_text": "ARTICLE MANQUANT : FIN",
+   "comic_action": "Plan large : un parchemin immense sort de la salle et fait le tour du pâté de maisons.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "mairie",
-    "banner",
     "person",
     "tshirt",
-    "text3d"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "VIe RÉPUBLIQUE : 6 %",
-   "comic_action": "Barre de progression géante sur la façade, bloquée à 6 % ; sur le fronton, un ouvrier rature le « VI » au burin. Une habitante en t-shirt « À GAUCHE DU CANAPÉ. » attend, assise sur un gradin.",
-   "expected_result": "Chute : la promesse est toujours en cours d'installation."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique éteint la lumière, la séance continue.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Quelle fonction tu supprimerais de ton conseil de quartier ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui propose de tout refaire, mais jamais de finir."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 73,
- "claims": [],
+ "word_count": 85,
+ "claims": [
+  {
+   "text": "Son programme promet une Sixième République. Ici, on est déjà à la version 6.4.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
+  },
+  {
+   "text": "Au Bourget, il a dit peuple treize fois. Ici, chaque article le dit quatorze.",
+   "claim_type": "fait_public",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
+   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
-   "published": "2026-11-07",
-   "consulted": "2026-11-21",
+   "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (tic de langage) : Meeting du Bourget : mise en scène « immersive » (décors de canapé et de comptoir de café), thème de la « Nouvelle France », devise proposée « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
+  },
+  {
+   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait (analyse lexicale)",
+   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Parodie de notes de mise à jour. Le fait public sourcé (VIe République reléguée en fin de programme) nourrit la barre bloquée à 6 % et le changelog. Running gag mlv-gag-03 (fronton raturé). Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (M8, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : la Constituante et la VIe République promises, en version infinie. Cadre : le conseil de quartier. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

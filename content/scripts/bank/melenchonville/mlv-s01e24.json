@@ -3,84 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-24",
  "format": "A",
- "title_cover": "Zéro à zéro",
+ "title_cover": "Vainqueur avant match",
  "hook_variants": [
-  "Ici, chaque but passe en référendum.",
-  "Dans ce stade, chaque but est soumis à référendum.",
-  "Le gardien demande un mandat pour plonger.",
-  "Vingt-deux joueurs. Une seule équipe. Zéro but valable.",
-  "Ici, un hors-jeu déclenche une assemblée générale."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : le stade où le match est gagné avant le coup d'envoi.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, on déclare la primaire finie avant de l'avoir jouée.",
+  "Mélenchonville : zéro à zéro, victoire revendiquée."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Scission : zéro à zéro, résultat en délibération.",
-  "Ils marquent. Puis se disputent : qui a marqué ? Scission. Zéro à zéro, résultat en délibération.",
-  "Le front commun gagne le match. Il demande un recomptage."
+  "Score final : zéro à zéro. Il le fête comme une victoire au premier tour.",
+  "Champion autoproclamé, troisième au classement.",
+  "Il gagne tous les matchs qu'on ne joue pas."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Ici, chaque but passe en référendum.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Coup d'envoi.",
    "accent_words": [
-    "but",
-    "référendum"
+    "Coup d'envoi"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Un hors-jeu déclenche une assemblée générale en plein match.",
+   "text": "Avant le match, il annonce « La primaire est finie ». L'arbitre n'a pas sifflé.",
    "accent_words": [
-    "assemblée générale"
+    "pas sifflé"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Le gardien demande un mandat pour plonger.",
+   "text": "Les autres équipes de gauche réclament un tournoi. Il gagne par forfait.",
    "accent_words": [
-    "mandat"
+    "par forfait"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Mi-temps : les deux équipes font front commun, un seul maillot.",
+   "text": "Le PS veut jouer ? Rupture actée en juillet, carton rouge.",
    "accent_words": [
-    "front commun"
+    "carton rouge"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Ils attaquent tous du même côté, cages vides en face.",
+   "text": "Un hors-jeu ? Assemblée générale sur la pelouse, quatre-vingt-dix minutes.",
    "accent_words": [
-    "cages vides"
+    "Assemblée générale"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Ils marquent, puis s'écharpent pour savoir qui a marqué.",
+   "text": "Score final : zéro à zéro. Il le fête comme une victoire au premier tour.",
    "accent_words": [
-    "qui"
+    "victoire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Scission : zéro à zéro, résultat en délibération.",
+   "text": "Envoie ça au pote qui se déclare champion avant le match.",
    "accent_words": [
-    "Scission"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Le front commun le plus improbable que t'aies vu ?",
-   "accent_words": [
-    "front commun"
+    "champion"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -95,99 +86,145 @@
    "set": [
     "ground",
     "person",
-    "screen",
-    "text3d",
-    "studio_light"
+    "banner",
+    "sign"
    ],
-   "onscreen_text": "BUT ? RÉFÉRENDUM EN COURS",
-   "comic_action": "Plongée sur un stade en hémicycle ; le ballon dans les filets, tous les joueurs figés, le tableau affiche un sondage.",
-   "expected_result": "Image absurde immédiate."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur un petit stade ; banderole « VAINQUEUR ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
    "camera": "closeup",
    "set": [
     "person",
-    "text3d"
+    "text3d",
+    "sign"
    ],
-   "onscreen_text": "PLONGEON : MANDAT REQUIS",
-   "comic_action": "Le gardien, bras tendus, attend un papier text3d « MANDAT » qui descend lentement des tribunes pendant que le ballon passe.",
-   "expected_result": "Running gag du mandat appliqué au sport."
+   "onscreen_text": "LA PRIMAIRE EST FINIE",
+   "comic_action": "Le capitaine lève la coupe au centre du terrain, l'arbitre tient encore le ballon sous le bras.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
    "narration_ids": [
-    "n4"
+    "n3"
    ],
    "camera": "orbit",
    "set": [
-    "ground",
     "person",
     "banner",
-    "text3d"
+    "sign"
    ],
-   "onscreen_text": "COALITION ≠ RALLIEMENT",
-   "comic_action": "Orbite : 22 joueurs serrés dans un maillot géant unique ; dans le dos, en text3d, « COALITION ≠ RALLIEMENT ».",
-   "expected_result": "Clin d'œil sourcé au débat coalition/ralliement, porté par un maillot."
+   "onscreen_text": "FORFAIT",
+   "comic_action": "Orbite : les autres équipes arrivent avec leurs sacs, les cages ont été démontées.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "person",
+    "text3d",
+    "sign"
+   ],
+   "onscreen_text": "PS : CARTON ROUGE",
+   "comic_action": "Gros plan : un carton rouge brandi vers un joueur en maillot rose.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s5",
    "narration_ids": [
     "n5"
    ],
    "camera": "street_dolly",
    "set": [
-    "ground",
-    "person"
+    "person",
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "",
-   "comic_action": "Travelling : la masse des 22 joueurs avance d'un bloc vers des cages vides, aucun adversaire.",
-   "expected_result": "Union sans opposition : absurde."
+   "onscreen_text": "HORS-JEU : AG",
+   "comic_action": "Travelling : les joueurs assis en rond au milieu du terrain, mains levées.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s5",
+   "id": "s6",
    "narration_ids": [
-    "n6",
-    "n7",
-    "n8"
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "screen",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "0 - 0 = VICTOIRE",
+   "comic_action": "Plan large : tableau d'affichage 0-0, feu d'artifice, un seul joueur fait le tour d'honneur.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "ground",
     "person",
-    "screen",
     "tshirt",
-    "text3d"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "0-0 · EN DÉLIBÉRATION",
-   "comic_action": "Le maillot unique se déchire en deux au rond central ; deux équipes de onze se tournent le dos. Tableau : « 0-0 — RÉSULTAT EN DÉLIBÉRATION ». Un supporter en t-shirt « PLUTÔT DROITE. TRÈS FATIGUÉ. » range son écharpe.",
-   "expected_result": "Chute très mordante : union puis scission."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique ramasse le ballon, jamais joué.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Le front commun le plus improbable que t'aies vu ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui se déclare champion avant le match."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 70,
- "claims": [],
+ "word_count": 84,
+ "claims": [
+  {
+   "text": "« La primaire est finie »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
+   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
+  },
+  {
+   "text": "Le PS veut jouer ? Rupture actée en juillet, carton rouge.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
+   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.sudradio.fr/politique/personnalites-politiques-de-2017-jean-luc-melenchon-lui-meme-menace-par-le-degagisme",
-   "published": "2017-12",
-   "consulted": "2026-11-21",
+   "url": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
+   "date": "2026-06-07",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (tic de langage) : « Dégagisme » et le livre « Qu'ils s'en aillent tous ! » (2010) : vocabulaire du coup de balai permanent ; inspire les personnages qui « claquent la porte » et les scissions."
+   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
+  },
+  {
+   "url": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
+   "date": "2026-07",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte",
+   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Union puis scission. Le débat réel coalition/ralliement (fait public sourcé) devient un slogan de maillot. Aucune personne, aucun parti nommé ; satire des unions éphémères en général. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (M10, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « La primaire est finie » (Saint-Denis) et la rupture avec le PS. Cadre : le match de foot. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-32",
  "format": "D",
- "title_cover": "Simulateur : congés",
+ "title_cover": "Six plages, zéro bronzage",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon… même les vacances passent au vote.",
-  "Simulateur : tu es maire de Mélenchonville. Premier août. Choisis.",
-  "A, B ou C : de toute façon, tu ne pars pas.",
-  "Simulateur : réussir à prendre des vacances quand on est tribun.",
-  "Trois boutons. Un seul écran de fin."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : le maire bronze en six exemplaires.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, même les vacances se passent en hologramme.",
+  "Mélenchonville : la plage où les serviettes forment un hémicycle."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Seul ton hologramme part à la plage.",
-  "Les trois boutons mènent au même écran : vacances reportées, le peuple vous attend. Seul ton hologramme part.",
-  "Écran final : un transat sur le balcon de la mairie. Avec un micro."
+  "Six maires à la plage, et pourtant aucun au second tour.",
+  "Six hologrammes à la plage, zéro au second tour.",
+  "Partout en même temps, jamais au bon endroit."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon… même les vacances passent au vote.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. En six exemplaires.",
    "accent_words": [
-    "vacances"
+    "En six exemplaires"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Bouton A : partir, et la plage devient un hémicycle de serviettes.",
+   "text": "En 2017, il finit sa campagne avec six hologrammes en même temps.",
    "accent_words": [
-    "hémicycle de serviettes"
+    "six hologrammes"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Bouton B : un discours sur les vacances, jusqu'au trente et un août.",
+   "text": "Ici, le maire part en vacances pareil : six plages, zéro bronzage.",
    "accent_words": [
-    "trente et un août"
+    "zéro bronzage"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Bouton C : une assemblée, puis un discours, donc retour au B.",
+   "text": "Chaque serviette a son discours projeté. Les mouettes fuient.",
    "accent_words": [
-    "retour au B"
+    "Les mouettes fuient"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les trois boutons mènent au même écran : vacances reportées.",
+   "text": "Le sable s'organise en hémicycle. Le château de sable vote sa Constituante.",
    "accent_words": [
-    "vacances reportées"
+    "Constituante"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Seul ton hologramme part à la plage.",
+   "text": "Six maires à la plage, et pourtant aucun au second tour.",
    "accent_words": [
-    "hologramme"
+    "aucun au second tour"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Commente A, B ou C, de toute façon ça finit pareil.",
+   "text": "Envoie ça au pote qui envoie des vocaux de trois minutes en vacances.",
    "accent_words": [
-    "ça finit pareil"
+    "vocaux"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -82,112 +82,149 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
+    "ground",
+    "road",
+    "person",
     "studio_light"
    ],
-   "onscreen_text": "1er AOÛT · CHOISIS : A / B / C",
-   "comic_action": "Écran de jeu vidéo rétro avec trois gros boutons A, B, C ; poursuite rouge sur l'écran.",
-   "expected_result": "Format D reconnaissable d'entrée."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur une plage : six projecteurs plantés dans le sable.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
-   "set": [
-    "ground",
-    "person",
-    "banner",
-    "tribune"
-   ],
-   "onscreen_text": "A : PLAGE = HÉMICYCLE",
-   "comic_action": "Plongée sur une plage : les serviettes s'alignent d'elles-mêmes en gradins face à une tribune de sable.",
-   "expected_result": "Le décor des vacances se transforme en meeting."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n3",
-    "n4"
-   ],
    "camera": "orbit",
    "set": [
-    "screen",
-    "mairie",
-    "text3d",
-    "person"
-   ],
-   "onscreen_text": "B : JUSQU'AU 31 AOÛT · C → B",
-   "comic_action": "Orbite : l'écran défile le calendrier d'août jour par jour ; une flèche text3d du bouton C revient vers B.",
-   "expected_result": "Choix truqué visible."
-  },
-  {
-   "id": "s4",
-   "narration_ids": [
-    "n5"
-   ],
-   "camera": "street_dolly",
-   "set": [
-    "mairie",
-    "tribune",
-    "banner",
     "studio_light",
     "person",
     "text3d"
    ],
-   "onscreen_text": "VACANCES REPORTÉES",
-   "comic_action": "Travelling : sur le balcon du Palais de la Parole, un transat posé sur une tribune, parasol en drapé rouge ; au loin sur la plage, une silhouette translucide bleutée bronze seule.",
-   "expected_result": "Clin d'œil sourcé au meeting en hologramme de 2017 : la projection part, la personne reste à la tribune."
+   "onscreen_text": "×6",
+   "comic_action": "Orbite : six maires projetés identiques font le même geste.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "person",
+    "studio_light",
+    "sign"
+   ],
+   "onscreen_text": "6 PLAGES · 0 BRONZAGE",
+   "comic_action": "Travelling le long de six plages : un maire translucide sur chaque serviette, toujours pâle.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "person",
+    "studio_light",
+    "text3d"
+   ],
+   "onscreen_text": "DISCOURS DE PLAGE",
+   "comic_action": "Gros plan : un hologramme gesticule, des mouettes s'envolent en panique.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "CHÂTEAU : CONSTITUANTE",
+   "comic_action": "Des serviettes en demi-cercle autour d'un château de sable surmonté d'un drapeau rouge.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "studio_light",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "6 MAIRES · 0 SECOND TOUR",
+   "comic_action": "Plan large : six projections sur la plage ; un panneau « SECOND TOUR » planté dans l'eau, inaccessible.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "screen",
     "person",
     "tshirt",
-    "text3d"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "A, B OU C ? ÇA FINIT PAREIL",
-   "comic_action": "Un joueur en t-shirt « À DROITE DU CANAPÉ. » pose sa manette, résigné, devant l'écran de fin.",
-   "expected_result": "CTA ludique."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique éteint un projecteur.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Commente A, B ou C, de toute façon ça finit pareil."
+  "type": "share",
+  "text": "Envoie ça au pote qui envoie des vocaux de trois minutes en vacances."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 79,
- "claims": [],
- "sources": [
+ "word_count": 80,
+ "claims": [
   {
-   "url": "https://www.parismatch.be/actualites/politique/2017/02/05/jean-luc-melenchon-en-chair-en-os-et-en-hologramme-A5YAIOB4FRFYHLFZPCANXUXQVE/",
-   "published": "2017-02-05",
-   "consulted": "2026-11-21",
-   "statut": "fait",
-   "used_for": "Inspiration seulement (mème) : Meeting double du 5 février 2017 : Mélenchon parle à Lyon (Eurexpo) et apparaît en « hologramme » (projection 2D) aux Docks d'Aubervilliers. Selon Europe 1, il devait rester dans un carré de 4 m sur 4 sous peine de disparaître de la scène. L'hologramme est devenu une image-mème durable du personnage."
+   "text": "En 2017, il finit sa campagne avec six hologrammes en même temps.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/non-classe/melenchon-six-hologrammes-pour-conclure-une-campagne-de-ferveur-populaire-58921",
+   "note": "Fin de campagne 2017 : six hologrammes simultanés."
   },
   {
+   "text": "Six maires à la plage, et pourtant aucun au second tour.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; Union populaire (2022)."
+  }
+ ],
+ "sources": [
+  {
    "url": "https://www.publicsenat.fr/actualites/non-classe/melenchon-six-hologrammes-pour-conclure-une-campagne-de-ferveur-populaire-58921",
-   "published": "2017-04-18",
-   "consulted": "2026-11-21",
+   "date": "2017-04-18",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (mème) : Fin de campagne 2017 : un meeting avec six hologrammes simultanés. Renforce le gimmick « Mélenchon partout en même temps »."
+   "note": "Fin de campagne 2017 : six hologrammes simultanés."
+  },
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; Union populaire (2022)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Choix truqué de simulateur. Vise l'impossibilité caricaturale de s'arrêter de parler ; aucune vie privée (pas de vraies vacances évoquées). Hologramme sourcé transformé en gag de vacances. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (M1, M2, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : les six hologrammes simultanés de 2017, en vacances. Cadre : les congés à la plage. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

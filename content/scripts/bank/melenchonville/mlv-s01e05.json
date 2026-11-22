@@ -3,85 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-05",
  "format": "B",
- "title_cover": "La séance sans fin",
+ "title_cover": "Peuple, treize fois",
  "hook_variants": [
-  "Cette copro a voté sa réunion de clôture.",
-  "Cette copropriété a voté sa réunion de clôture. Elle a duré plus longtemps que l'année.",
-  "Ici, la réunion de clôture a besoin d'une réunion d'ouverture.",
-  "Pour finir la séance, il faut voter. Pour voter, il faut une séance.",
-  "La copropriété la plus démocratique de France ne sait pas s'arrêter."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : le conseil municipal commence, il ne finit jamais.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, une séance dure plus longtemps qu'un mandat.",
+  "Mélenchonville : 6 821 mots, zéro décision."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Sur la façade : séance de clôture, jour un.",
-  "Plan large : l'immeuble entier est devenu un hémicycle. Sur la façade : séance de clôture, jour un.",
-  "La séance est enfin close. Il faut maintenant adopter le compte rendu. Jour un."
+  "Et à Lyon, une heure quarante-deux. Ici, on appelle ça un résumé.",
+  "Six mille huit cents mots, zéro délibération : record battu.",
+  "La séance est levée. Le discours, non."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Cette copro a voté sa réunion de clôture.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Asseyez-vous.",
    "accent_words": [
-    "réunion de clôture"
+    "Asseyez-vous"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Elle dure plus longtemps qu'une thèse de socio.",
+   "text": "Au Bourget, il a parlé une heure et sept minutes. Ici, c'est l'échauffement.",
    "accent_words": [
-    "thèse"
+    "l'échauffement"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Pour clore, il faut un vote, donc une assemblée, donc une commission.",
+   "text": "Six mille huit cent vingt et un mots. Le compte rendu fait trois tomes.",
    "accent_words": [
-    "assemblée",
-    "commission"
+    "trois tomes"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Odile est réélue présidente de séance : quatrième mandat, seule candidate.",
+   "text": "Il a dit peuple treize fois. Le peuple, lui, est parti au huitième.",
    "accent_words": [
-    "quatrième mandat"
+    "parti"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Firmin demande un mandat pour rallumer la lumière.",
+   "text": "Point divers numéro un : raccourcir les séances. Débat : quatre heures.",
    "accent_words": [
-    "mandat"
+    "quatre heures"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Au buffet, kombucha à six euros, et on scande taxer les riches.",
+   "text": "Et à Lyon, une heure quarante-deux. Ici, on appelle ça un résumé.",
    "accent_words": [
-    "six euros",
-    "taxer les riches"
+    "un résumé"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Sur la façade : séance de clôture, jour un.",
+   "text": "Envoie ça au pote qui promet de faire court.",
    "accent_words": [
-    "jour un"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Envoie ça à ton syndic, il se sentira moins seul.",
-   "accent_words": [
-    "syndic"
+    "faire court"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,123 +80,166 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
-    "n2"
+    "n1"
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "lift_tribune",
+    "ground",
+    "mairie",
     "banner",
-    "text3d"
+    "person"
    ],
-   "onscreen_text": "CLÔTURE EN COURS : 13 MOIS",
-   "comic_action": "Descente sur La Constituante : la tribune de l'ascenseur dépasse du toit, Odile y est bras levés ; un calendrier text3d effeuille ses mois à toute vitesse.",
-   "expected_result": "Continuité de l'arc + image surprenante : l'immeuble est en réunion permanente."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur la mairie ; panneau « SÉANCE EN COURS DEPUIS MARDI ».",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "orbit",
+   "set": [
+    "tribune",
+    "studio_light",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "1 H 07 : ÉCHAUFFEMENT",
+   "comic_action": "Orbite autour du pupitre du conseil : un chrono affiche 1 h 07, le maire fait encore des étirements.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+  },
+  {
+   "id": "s3",
    "narration_ids": [
     "n3"
    ],
    "camera": "closeup",
    "set": [
     "table",
-    "person",
     "form_stack",
     "text3d"
    ],
-   "onscreen_text": "COMMISSION SUR LA FIN",
-   "comic_action": "Sur la table du hall, une pile de formulaires grandit à chaque étape ; trois pancartes text3d s'empilent : « VOTE », « ASSEMBLÉE », « COMMISSION ».",
-   "expected_result": "Bureaucratie récursive lisible en une image."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4"
-   ],
-   "camera": "orbit",
-   "set": [
-    "lift_tribune",
-    "person",
-    "text3d",
-    "banner"
-   ],
-   "onscreen_text": "4e MANDAT · 1 CANDIDATE",
-   "comic_action": "Orbite autour d'Odile sur sa tribune : un tableau de vote text3d n'affiche qu'un nom, le sien ; elle s'applaudit elle-même avec sa sonnette.",
-   "expected_result": "Satire de la candidature perpétuelle sans concurrence, portée par un personnage fictif."
+   "onscreen_text": "6 821 MOTS",
+   "comic_action": "La greffière pose trois pavés reliés sur la table, la table plie.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6"
+    "n4"
    ],
-   "camera": "window_pass",
+   "camera": "street_dolly",
    "set": [
-    "building",
-    "lamp",
-    "person"
+    "person",
+    "sign",
+    "text3d",
+    "bench"
    ],
-   "onscreen_text": "",
-   "comic_action": "Fenêtres éteintes une à une ; derrière la dernière, Firmin lève la main, l'écharpe « MANDATÉ » dépassant de sa poche.",
-   "expected_result": "Rappel du running gag du mandat."
+   "onscreen_text": "PEUPLE ×13",
+   "comic_action": "À chaque « peuple », un habitant quitte sa chaise ; au huitième, la salle est vide.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n7",
-    "n8"
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "table",
+    "person"
+   ],
+   "onscreen_text": "RACCOURCIR : 4 H",
+   "comic_action": "Écran de séance : « POINT 1 : RACCOURCIR LES SÉANCES », minuteur qui passe à 4 h.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "mairie",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "1 H 42 = RÉSUMÉ",
+   "comic_action": "Plan large : la mairie s'illumine « RÉSUMÉ », un seul habitant dort sur les marches.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
    ],
    "camera": "return",
    "set": [
-    "building",
-    "banner",
-    "bin",
-    "table",
     "person",
     "tshirt",
-    "text3d"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "SÉANCE DE CLÔTURE — JOUR 1",
-   "comic_action": "Plan large qui recule : tribune sur le toit, paillasson-Constitution sur le trottoir, sacs en gradins ; une bannière se déroule sur la façade. Un voisin en t-shirt « PLUTÔT GAUCHE. TRÈS FATIGUÉ. » dort sur le paillasson. Lucien lève la main dans un coin.",
-   "expected_result": "Chute qui rassemble tout l'arc ; CTA de partage ciblé."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique s'endort sur un banc.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça à ton syndic, il se sentira moins seul."
+  "text": "Envoie ça au pote qui promet de faire court."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 78,
- "claims": [],
+ "word_count": 82,
+ "claims": [
+  {
+   "text": "Au Bourget, il a parlé une heure et sept minutes. Ici, c'est l'échauffement.",
+   "claim_type": "fait_public",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
+   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
+  },
+  {
+   "text": "Six mille huit cent vingt et un mots. Le compte rendu fait trois tomes.",
+   "claim_type": "fait_public",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
+   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
+  },
+  {
+   "text": "Il a dit peuple treize fois. Le peuple, lui, est parti au huitième.",
+   "claim_type": "fait_public",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
+   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
+  },
+  {
+   "text": "Et à Lyon, une heure quarante-deux. Ici, on appelle ça un résumé.",
+   "claim_type": "fait_public",
+   "source": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
+   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
-   "published": "2026-11-07",
-   "consulted": "2026-11-21",
-   "statut": "fait",
-   "used_for": "Inspiration seulement (tic de langage) : Meeting du Bourget : mise en scène « immersive » (décors de canapé et de comptoir de café), thème de la « Nouvelle France », devise proposée « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait (analyse lexicale)",
+   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
   },
   {
-   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "published": "2026-06",
-   "consulted": "2026-11-21",
+   "url": "https://www.lyonmag.com/article/150438/a-lyon-le-show-melenchon-eclipse-anais-belouassa-cherifi-pour-son-dernier-meeting",
+   "date": "2026-02-26",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "used_for": "Inspiration seulement (blague) : Quatrième candidature présidentielle (2012, 2017, 2022, 2027) : ressort comique du « quatrième mandat », « quatrième tournée », « candidat pour la quatrième fois ». Complété par Blue News/AFP (11/11/2025) sur son image de tribun lyrique sujet à des colères."
-  },
-  {
-   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-age-profession-lieu-de-residence-quel-est-le-profil-des-electeurs",
-   "published": "2022-04-10",
-   "consulted": "2026-11-21",
-   "statut": "fait (chiffre) / mème (cliché)",
-   "used_for": "Inspiration seulement (cliché électorat) : Électorat jeune : en tête chez les moins de 35 ans en 2022 (31 % des 18-24 ans selon Ipsos). Base factuelle du cliché « étudiant en socio, tote bag, lait d'avoine » — le cliché lui-même est notre invention satirique, sans aucune caractéristique protégée."
+   "note": "Lyon : 1 h 42 accroché au pupitre, digressions (Victor Hugo, médias), candidate locale citée une seule fois."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Bureaucratie récursive + clin d'œil à la quatrième candidature (fait public sourcé) transposé sur Odile, personnage fictif : « quatrième mandat, seule candidate ». Aucune phrase attribuée, aucun appel au vote. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (M8, M9, M11, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le discours-fleuve du Bourget (1 h 07, 6 821 mots, « peuple » ×13) et Lyon (1 h 42). Cadre : la séance du conseil municipal. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

@@ -3,83 +3,75 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-34",
  "format": "D",
- "title_cover": "Simulateur : la canicule",
+ "title_cover": "Sweat ou cravate",
  "hook_variants": [
-  "Simulateur de président, niveau Bardellaville : canicule sur la ville.",
-  "Simulateur de président, niveau Bardellaville : canicule sur la ville. Que fais-tu ?",
-  "Trois choix pour sauver la ville de la chaleur. Le jeu en a déjà choisi un.",
-  "Comment perdre contre une canicule en tournant des vidéos.",
-  "Chaque vidéo sur la chaleur réchauffe la ville d'un degré."
+  "Dans cette ville, tout le monde vote Bardella.",
+  "Ici, le maire a deux discours : un en sweat, un en cravate.",
+  "Bardellaville : la caissière le matin, l'actionnaire le soir.",
+  "Les électeurs de Bardella vont me détester.",
+  "Bienvenue à Bardellaville : sweat ou cravate."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Succès débloqué : un été parfaitement maîtrisé.",
-  "Écran de fin : température ressentie, insupportable. Sur la vidéo : fraîche et dynamique. Succès débloqué : été maîtrisé.",
-  "Le jeu propose un niveau bonus : « Inondation ». Choix A : digues. Choix B : pompes. Choix C : une vidéo en bottes. Le curseur glisse sur C."
+  "Un discours pour l'ouvrier, un pour le CAC 40 : pas une ligne, un menu.",
+  "Les deux discours se croisent dans l'ascenseur. Ils ne se reconnaissent pas.",
+  "Le matin, il défend la caissière. Le soir, il rassure l'actionnaire."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Simulateur de président, niveau Bardellaville : canicule sur la ville.",
+   "text": "Dans cette ville, tout le monde vote Bardella. En sweat ou en costume.",
    "accent_words": [
-    "ville"
+    "en costume"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "A, planter des arbres ; B, ouvrir les fontaines ; C, une vidéo.",
+   "text": "Sur TikTok, pouvoir d'achat. Devant les patrons, une ligne plus libérale.",
    "accent_words": [
-    "vidéo"
+    "plus libérale"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Le curseur glisse tout seul sur la réponse C.",
+   "text": "Deux heures en tête-à-tête au Medef, une première pour son parti.",
    "accent_words": [
-    "C"
+    "Medef"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Chaque vidéo exige un ring light, et chaque ring light chauffe d'un degré.",
+   "text": "Le matin, il défend la caissière. Le soir, il rassure l'actionnaire.",
    "accent_words": [
-    "degré"
+    "l'actionnaire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Écran de fin : température ressentie, insupportable.",
+   "text": "Les deux discours se croisent dans l'ascenseur. Ils ne se reconnaissent pas.",
    "accent_words": [
-    "insupportable"
+    "ne se reconnaissent pas"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Sur la vidéo : frais, dynamique, et même un peu bronzé.",
+   "text": "Un discours pour l'ouvrier, un pour le CAC 40 : pas une ligne, un menu.",
    "accent_words": [
-    "bronzé"
+    "un menu"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Succès débloqué : un été parfaitement maîtrisé.",
+   "text": "Envoie ça au pote qui croit qu'il parle comme lui.",
    "accent_words": [
-    "maîtrisé"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Toi, tu choisis quoi : A, B ou C ?",
-   "accent_words": [
-    "C"
+    "comme lui"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -90,112 +82,156 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
-    "studio_light"
+    "ground",
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "NIVEAU : CANICULE",
-   "comic_action": "Écran de jeu vidéo rétro plein cadre (screen) : « SIMULATEUR DE PRÉSIDENT — Niveau Bardellaville — CANICULE ». Thermomètre text3d qui affiche 38 °C, la ville miniature ondule de chaleur.",
-   "expected_result": "Image surprenante : la gestion de crise transformée en jeu truqué."
+   "onscreen_text": "BARDELLAVILLE",
+   "comic_action": "Descente sur la mairie ; deux portes : « SWEAT » et « COSTUME ».",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
   },
   {
    "id": "s2",
    "narration_ids": [
-    "n2",
-    "n3"
+    "n2"
    ],
    "camera": "closeup",
-   "set": [
-    "screen",
-    "text3d",
-    "tree",
-    "fountain"
-   ],
-   "onscreen_text": "A · B · C (C)",
-   "comic_action": "Menu à trois choix, illustrés : A un arbre, B une fontaine, C un trépied et un ventilateur. Le curseur part vers A… et glisse tout seul sur C, avec un bruit de validation.",
-   "expected_result": "Le jeu est truqué : l'image gagne toujours."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4"
-   ],
-   "camera": "orbit",
    "set": [
     "ring_light",
     "tripod_camera",
     "person",
-    "studio_light",
-    "text3d"
+    "screen"
    ],
-   "onscreen_text": "39° · 41° · 46°",
-   "comic_action": "Orbite autour de la place : à chaque prise, un ring light de plus s'allume autour du présentateur fictif (cylindre bleu marine), qui sue devant un petit ventilateur. Le thermomètre géant monte d'un degré à chaque clic d'obturateur.",
-   "expected_result": "Escalade : la solution choisie aggrave le problème qu'elle filme."
+   "onscreen_text": "TIKTOK : PEUPLE · SALON : PATRONS",
+   "comic_action": "Écran partagé : selfie en sweat sous ring light, puis poignée de main en costume.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "arch",
+    "column",
+    "person",
+    "studio_light"
+   ],
+   "onscreen_text": "MEDEF : TAPIS ROUGE",
+   "comic_action": "Sous une arche, tapis rouge et fauteuils ; chrono qui affiche 2:00.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n5",
-    "n6",
-    "n7"
+    "n4"
    ],
-   "camera": "return",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
-    "tree",
-    "fountain"
+    "shop",
+    "table",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "SUCCÈS : ÉTÉ MAÎTRISÉ",
-   "comic_action": "Écran de fin : « Température ressentie : insupportable. Température ressentie sur la vidéo : fraîche et dynamique. » Médaille text3d : « SUCCÈS DÉBLOQUÉ : ÉTÉ MAÎTRISÉ ». Travelling arrière : la fontaine est à sec, l'arbre imprimé a fondu. Laisser respirer.",
-   "expected_result": "Chute : l'écart entre le ressenti réel et le ressenti filmé devient un « succès »."
+   "onscreen_text": "8 H CAISSIÈRE · 20 H ACTIONNAIRE",
+   "comic_action": "Marché le matin, poignées de main ; même décor le soir, flûtes de champagne.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n8"
+    "n5"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
+   "set": [
+    "table",
+    "screen",
+    "sign",
+    "building"
+   ],
+   "onscreen_text": "DISCOURS A ≠ DISCOURS B",
+   "comic_action": "Par la fenêtre : deux pancartes-discours se croisent dans un couloir, hochent la tête, poliment.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "table",
+    "person",
+    "screen",
+    "text3d"
+   ],
+   "onscreen_text": "MENU À LA CARTE",
+   "comic_action": "Un serveur tend deux cartes différentes au même client. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
    "set": [
     "shop",
-    "mascot",
     "tshirt",
-    "screen"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le Coq de vitrine porte le t-shirt, un mini ventilateur braqué sur la crête, posé devant un petit ring light qui le fait transpirer.",
-   "expected_result": "Question à commenter, produit réel visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt essaie une cravate par-dessus son sweat.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Toi, tu choisis quoi : A, B ou C ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui croit qu'il parle comme lui."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 80,
- "claims": [],
- "sources": [
+ "word_count": 83,
+ "claims": [
   {
-   "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
-   "published": "2026-11-04",
-   "consulted": "2026-11-21",
-   "status": "fait public + opinion (AFP : cent jours sans priorités ni méthode détaillées)",
-   "used_for": "Thème du programme montré mais jamais livré, dit par le narrateur sur la ville fictive."
+   "segment": "n2",
+   "text": "Sur TikTok, pouvoir d'achat. Devant les patrons, une ligne plus libérale.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-une-inclinaison-liberale-plus-prononcee-au-rn-incarnee-par-jordan-bardella-ne-sera-pas-forcement-de-nature-a-rebuter-son-electorat",
+   "note": "Inclinaison libérale plus prononcée au RN, incarnée par Jordan Bardella."
   },
   {
-   "url": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
-   "published": "2024-06-21",
-   "consulted": "2026-11-21",
-   "status": "fait public (AFP : TikTok, POV, selfies, bonbons) + mème (fan edits)",
-   "used_for": "Grammaire TikTok (POV, vertical, story, likes) appliquée aux services de la ville fictive."
+   "segment": "n3",
+   "text": "Deux heures en tête-à-tête au Medef, une première pour son parti.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/bardella-rencontre-en-tete-a-tete-le-medef-une-premiere-pour-le-rn-435456",
+   "note": "Tête-à-tête avec le Medef, une première pour le RN (plus de deux heures le 20/04/2026 selon la presse)."
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-une-inclinaison-liberale-plus-prononcee-au-rn-incarnee-par-jordan-bardella-ne-sera-pas-forcement-de-nature-a-rebuter-son-electorat",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "analyse",
+   "note": "Inclinaison libérale plus prononcée au RN, incarnée par Jordan Bardella."
+  },
+  {
+   "url": "https://lcp.fr/actualites/bardella-rencontre-en-tete-a-tete-le-medef-une-premiere-pour-le-rn-435456",
+   "date": "2026-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Tête-à-tête avec le Medef, une première pour le RN (plus de deux heures le 20/04/2026 selon la presse)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Format D (Simulateur). Mécanisme : jeu truqué (tous les choix mènent au même). Le présentateur est un cylindre fictif sans traits d'une personne réelle. Pas de source de veille ; climat traité sans chiffre réel (les températures sont des valeurs de jeu). Risques vérifiés : aucune citation, aucune politique réelle décrite. | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_bardellaville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = inclinaison libérale plus prononcée incarnée par Jordan Bardella, face au discours pouvoir d'achat ; deux discours selon le public. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }

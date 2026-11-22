@@ -3,76 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-34",
  "format": "C",
- "title_cover": "Ascenseur 6.1",
+ "title_cover": "Ascenseur bloqué",
  "hook_variants": [
-  "Mise à jour : l'ascenseur-tribune passe en version six point un.",
-  "Mise à jour de la France : l'ascenseur-tribune de La Constituante passe en version six point un.",
-  "Nouveauté : un bouton descendre. Après débat contradictoire.",
-  "Bug connu : l'arrêt d'urgence déclenche une motion d'urgence.",
-  "Correctif : la cabine ne traverse plus le toit. En principe."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : l'ascenseur ne monte jamais au dernier étage.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, l'ascenseur s'arrête toujours un palier trop tôt.",
+  "Mélenchonville : quatrième, quatrième, troisième."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La séance de clôture l'attendait toujours, quatrième session.",
-  "Odile appuie sur descendre. La cabine descend au sous-sol, puis plus bas, dans un hémicycle souterrain plein de voisins. La séance de clôture l'attendait.",
-  "Le bouton descendre fonctionne. Il faut juste un quorum."
+  "2027 : il réappuie sur le bouton. L'écran affiche : quatrième tentative.",
+  "Quinze ans d'ascenseur, toujours pas de palier présidentiel.",
+  "L'ascenseur social est en panne. Le candidat, jamais."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Mise à jour : l'ascenseur-tribune passe en version six point un.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Même l'ascenseur.",
    "accent_words": [
-    "six point un"
+    "Même l'ascenseur"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Nouveauté : un bouton descendre, après débat contradictoire.",
+   "text": "Ici, l'ascenseur compte à l'envers : le premier étage, c'est l'Élysée.",
    "accent_words": [
-    "descendre"
+    "l'Élysée"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n3",
-   "text": "Bug connu : l'arrêt d'urgence déclenche une motion d'urgence.",
+   "text": "2012 : il s'arrête au quatrième. 2017 : encore au quatrième.",
    "accent_words": [
-    "motion d'urgence"
+    "quatrième"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Odile, Doc Martens aux pieds, appuie sur descendre : direction sous-sol.",
+   "text": "2022 : troisième étage, à 421 420 voix du palier.",
    "accent_words": [
-    "Doc Martens",
-    "sous-sol"
+    "troisième étage"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Puis plus bas, dans un hémicycle souterrain plein de voisins.",
+   "text": "Nouveauté : un bouton descendre, après débat contradictoire de deux heures.",
    "accent_words": [
-    "hémicycle souterrain"
+    "deux heures"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "La séance de clôture l'attendait toujours, quatrième session.",
+   "text": "2027 : il réappuie sur le bouton. L'écran affiche : quatrième tentative.",
    "accent_words": [
-    "attendait"
+    "quatrième tentative"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Quel bouton tu ajouterais à cet ascenseur ?",
+   "text": "Envoie ça au pote qui appuie dix fois sur le bouton de l'ascenseur.",
    "accent_words": [
-    "bouton"
+    "dix fois"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -83,31 +82,31 @@
    "narration_ids": [
     "n1"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
+    "ground",
+    "building",
     "lift_tribune",
-    "screen",
-    "text3d",
-    "studio_light"
+    "person"
    ],
-   "onscreen_text": "MISE À JOUR : ASCENSEUR 6.1",
-   "comic_action": "La cabine-tribune drapée de velours, avec un petit écran de mise à jour qui charge au-dessus du pupitre.",
-   "expected_result": "Continuité directe avec le pilote, format C reconnaissable."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur un immeuble : l'ascenseur est une petite tribune rouge.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "lift_tribune",
-    "person",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "BOUTON ↓ : APRÈS DÉBAT",
-   "comic_action": "Orbite : un unique bouton « DESCENDRE » apparaît, protégé par une petite cloche ; deux voisins débattent devant en pointant du doigt.",
-   "expected_result": "Le patch ajoute une procédure, pas une fonction."
+   "onscreen_text": "1ER = ÉLYSÉE",
+   "comic_action": "Gros plan sur le panneau d'étages : « 1 = ÉLYSÉE » en doré, tout en haut.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s3",
@@ -121,73 +120,125 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "STOP = MOTION D'URGENCE",
-   "comic_action": "La caméra longe la façade : la tribune dépasse légèrement du toit puis redescend ; quelqu'un appuie sur l'arrêt d'urgence, une sonnette de président de séance retentit, tout le palier se rassoit.",
-   "expected_result": "Patch qui aggrave le bug."
+   "onscreen_text": "2012 : 4E · 2017 : 4E",
+   "comic_action": "La caméra glisse le long de la façade : la cabine s'arrête deux fois au même palier.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n4"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
     "lift_tribune",
-    "table",
-    "person",
-    "banner",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "SÉANCE DE CLÔTURE — JOUR 1",
-   "comic_action": "La caméra suit la cabine qui descend sous le sous-sol vers un hémicycle souterrain éclairé en rouge, plein de voisins assis ; la bannière « SÉANCE DE CLÔTURE — JOUR 1 » au fond.",
-   "expected_result": "Chute : la descente mène au pire endroit, la réunion permanente."
+   "onscreen_text": "2022 : 3E · -421 420",
+   "comic_action": "La cabine s'arrête entre deux étages ; un compteur rouge affiche -421 420.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "lift_tribune",
+    "person",
+    "table"
+   ],
+   "onscreen_text": "DESCENDRE : DÉBAT",
+   "comic_action": "Orbite : les voisins en AG sur le palier, autour d'un unique bouton.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "building",
+    "lift_tribune",
+    "text3d"
+   ],
+   "onscreen_text": "TENTATIVE N° 4",
+   "comic_action": "Plan large : la cabine repart du rez-de-chaussée, toute l'immeuble soupire.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "lift_tribune",
     "person",
     "tshirt",
-    "text3d"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "QUEL BOUTON TU AJOUTES ?",
-   "comic_action": "Dans le hall, Lucien main levée devant les portes ; un voisin en t-shirt « LE PAYS BUGUE. MOI AUSSI. » prend l'escalier.",
-   "expected_result": "CTA question, produit cohérent avec le bug."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique prend l'escalier.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Quel bouton tu ajouterais à cet ascenseur ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui appuie dix fois sur le bouton de l'ascenseur."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 65,
- "claims": [],
- "sources": [
+ "word_count": 78,
+ "claims": [
   {
-   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "published": "2026-06",
-   "consulted": "2026-11-21",
-   "statut": "fait",
-   "used_for": "Inspiration seulement (blague) : Quatrième candidature présidentielle (2012, 2017, 2022, 2027) : ressort comique du « quatrième mandat », « quatrième tournée », « candidat pour la quatrième fois ». Complété par Blue News/AFP (11/11/2025) sur son image de tribun lyrique sujet à des colères."
+   "text": "2012 : il s'arrête au quatrième. 2017 : encore au quatrième.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; Union populaire (2022)."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-age-profession-lieu-de-residence-quel-est-le-profil-des-electeurs",
-   "published": "2022-04-10",
-   "consulted": "2026-11-21",
-   "statut": "fait (chiffre) / mème (cliché)",
-   "used_for": "Inspiration seulement (cliché électorat) : Électorat jeune : en tête chez les moins de 35 ans en 2022 (31 % des 18-24 ans selon Ipsos). Base factuelle du cliché « étudiant en socio, tote bag, lait d'avoine » — le cliché lui-même est notre invention satirique, sans aucune caractéristique protégée."
+   "text": "2022 : troisième étage, à 421 420 voix du palier.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850",
+   "note": "Second tour 2022 raté d'environ 421 420 voix."
+  },
+  {
+   "text": "2027 : il réappuie sur le bouton. L'écran affiche : quatrième tentative.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; Union populaire (2022)."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850",
+   "date": "2022-04-10",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Second tour 2022 raté d'environ 421 420 voix."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "date": "2026-06",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Patch qui aggrave le bug ; continuité forte avec le pilote 01 et l'épisode 05 (séance de clôture). CTA « abonne-toi » de la synopsis remplacé par une question précise. Aucun mème réel utilisé, aucune personne réelle. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (M9, M11, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le palmarès présidentiel : quatrième, quatrième, troisième. Cadre : l'ascenseur de l'immeuble. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }

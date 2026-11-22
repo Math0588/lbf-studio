@@ -295,7 +295,7 @@ def meme_bank() -> list:
     if not p.exists():
         return []
     return [m for m in json.loads(p.read_text(encoding="utf-8"))
-            if m.get("ok") and (config.ASSETS / "memes" / m["file"]).exists()]
+            if m.get("ok") and m.get("approved") and (config.ASSETS / "memes" / m["file"]).exists()]
 
 
 def add_sfx(path: Path, cues: list) -> None:

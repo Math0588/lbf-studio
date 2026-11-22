@@ -3,77 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-10",
  "format": "A",
- "title_cover": "Le mot de la fin",
+ "title_cover": "Après l'heure",
  "hook_variants": [
-  "Après soixante jours, le discours est fini, et là, les ennuis commencent.",
-  "Après soixante jours, le discours est enfin terminé. C'est là que les ennuis commencent.",
-  "Le discours est fini. Les applaudissements, non.",
-  "Dans cette ville, la fin dure plus longtemps que le début.",
-  "Un seul mot a suffi pour inonder la place."
+  "Dans cette ville, tout le monde vote Mélenchon.",
+  "Bienvenue à Mélenchonville : ici, même les feux rouges donnent des ultimatums.",
+  "Les électeurs de Mélenchon vont me détester.",
+  "Ici, tu as deux ou trois mois pour être d'accord.",
+  "Mélenchonville : la ville où l'horloge obéit au chef."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "On coupe enfin le ruban : il flotte.",
-  "L'horloge affiche : applaudissements en cours, jour trois. On coupe enfin le ruban. Il flotte.",
-  "Personne n'ose arrêter d'applaudir en premier. La place est classée zone humide."
+  "Le seul sans date limite ? Le candidat de 2012, 2017, 2022 et 2027.",
+  "Après l'heure, ce n'est plus l'heure. Sauf pour lui, depuis 2012.",
+  "Tout le monde a une date limite. Sauf la candidature."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Après soixante jours, le discours est fini, et là, les ennuis commencent.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Dépêche-toi.",
    "accent_words": [
-    "fini",
-    "ennuis"
+    "Dépêche-toi"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Dernier mot, la ville retient son souffle : merci.",
+   "text": "Aux Écologistes, il a laissé « deux ou trois mois » pour choisir leur camp.",
    "accent_words": [
-    "merci"
+    "trois mois"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Les applaudissements démarrent, la fontaine jaillit.",
+   "text": "Sa formule : « après l'heure, ce ne sera plus l'heure ». L'horloge flippe.",
    "accent_words": [
-    "fontaine"
+    "l'horloge"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Trois jours d'ovation : la place devient une piscine en hémicycle.",
+   "text": "Ici, la mairie distribue des ultimatums comme des PV.",
    "accent_words": [
-    "piscine en hémicycle"
+    "ultimatums"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Les étudiants en Doc Martens flottent sur une banderole en drap.",
+   "text": "Le boulanger a trois mois pour choisir : baguette insoumise ou fermeture.",
    "accent_words": [
-    "Doc Martens",
-    "drap"
+    "fermeture"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "On coupe enfin le ruban : il flotte.",
+   "text": "Le seul sans date limite ? Le candidat de 2012, 2017, 2022 et 2027.",
    "accent_words": [
-    "ruban"
+    "sans date limite"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Tu arrêtes d'applaudir au bout de combien de jours ?",
+   "text": "Envoie ça au pote qui pose des ultimatums et revient toujours.",
    "accent_words": [
-    "applaudir"
+    "revient toujours"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -86,15 +84,14 @@
    ],
    "camera": "descend",
    "set": [
+    "ground",
     "mairie",
-    "tribune",
-    "studio_light",
-    "person",
-    "text3d"
+    "banner",
+    "person"
    ],
-   "onscreen_text": "DISCOURS : JOUR 60",
-   "comic_action": "Descente sur la place : gradins pleins, éboueurs, touristes ; l'horloge affiche « JOUR 60 » et la poursuite se resserre sur la silhouette de l'Orateur.",
-   "expected_result": "Continuité de l'arc, tension maximale."
+   "onscreen_text": "MÉLENCHONVILLE",
+   "comic_action": "Descente sur la mairie : son horloge tourne à toute vitesse.",
+   "expected_result": "La ville et son camp posés en une image."
   },
   {
    "id": "s2",
@@ -103,13 +100,13 @@
    ],
    "camera": "closeup",
    "set": [
-    "tribune",
-    "studio_light",
-    "text3d"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "DERNIER MOT",
-   "comic_action": "Bras levé en contre-jour, poursuite en cercle serré ; le mot « MERCI » apparaît en text3d au-dessus de la tribune puis s'éteint.",
-   "expected_result": "Fausse résolution."
+   "onscreen_text": "J-90",
+   "comic_action": "Un compte à rebours géant s'affiche au-dessus d'un petit stand vert.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s3",
@@ -118,72 +115,124 @@
    ],
    "camera": "orbit",
    "set": [
-    "fountain",
-    "person",
-    "banner"
+    "mairie",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "",
-   "comic_action": "Silence d'une seconde, puis tout le monde se lève ; la fontaine jaillit.",
-   "expected_result": "La règle de l'arc (eau = applaudissements) se réactive."
+   "onscreen_text": "APRÈS L'HEURE",
+   "comic_action": "L'horloge de la mairie transpire, ses aiguilles tremblent.",
+   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
   },
   {
    "id": "s4",
    "narration_ids": [
-    "n4",
-    "n5"
+    "n4"
    ],
    "camera": "street_dolly",
    "set": [
-    "fountain",
-    "bench",
-    "person",
-    "screen",
-    "text3d"
+    "road",
+    "car",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "APPLAUDIMÈTRE : 2,1 M LIKES",
-   "comic_action": "L'eau monte sur les gradins ; un écran géant compte les applaudissements en likes. Les bancs commencent à flotter avec des gens dessus.",
-   "expected_result": "Clin d'œil sourcé à la domination TikTok : la ville compte des likes pendant qu'elle se noie."
+   "onscreen_text": "ULTIMATUM N° 4 512",
+   "comic_action": "Un agent glisse des papiers « ULTIMATUM » sous les essuie-glaces de chaque voiture.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
    "id": "s5",
    "narration_ids": [
-    "n6",
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "shop",
+    "sign",
+    "person"
+   ],
+   "onscreen_text": "CHOISIS TON CAMP",
+   "comic_action": "Devant la boulangerie, deux pancartes : « INSOUMISE » / « FERMÉ ».",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "mairie",
+    "banner",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "2012 · 2017 · 2022 · 2027",
+   "comic_action": "Plan large : quatre affiches de campagne superposées sur la façade, aucune date d'expiration.",
+   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+  },
+  {
+   "id": "s7",
+   "narration_ids": [
     "n7"
    ],
    "camera": "return",
    "set": [
-    "mairie",
-    "banner",
-    "bench",
     "person",
     "tshirt",
-    "text3d"
+    "sign",
+    "shop"
    ],
-   "onscreen_text": "OVATION EN COURS : JOUR 3",
-   "comic_action": "Bancs flottants pleins de gens qui applaudissent ; le ruban de la fontaine (banner) dérive, coupé. Un applaudisseur en t-shirt « LE PAYS BUGUE. MOI AUSSI. » a les mains rouges.",
-   "expected_result": "Chute en inversion : la fin dure plus que le discours."
+   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
+   "comic_action": "Retour : un habitant en t-shirt de la boutique remonte l'horloge.",
+   "expected_result": "Partage ciblé, produit visible."
   }
  ],
  "cta_primary": {
-  "type": "comment",
-  "text": "Tu arrêtes d'applaudir au bout de combien de jours ?"
+  "type": "share",
+  "text": "Envoie ça au pote qui pose des ultimatums et revient toujours."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 67,
- "claims": [],
+ "word_count": 84,
+ "claims": [
+  {
+   "text": "« deux ou trois mois »",
+   "claim_type": "citation_exacte",
+   "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
+   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
+  },
+  {
+   "text": "« après l'heure, ce ne sera plus l'heure »",
+   "claim_type": "citation_exacte",
+   "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
+   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
+  },
+  {
+   "text": "Le seul sans date limite ? Le candidat de 2012, 2017, 2022 et 2027.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+  }
+ ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-age-profession-lieu-de-residence-quel-est-le-profil-des-electeurs",
-   "published": "2022-04-10",
-   "consulted": "2026-11-21",
-   "statut": "fait (chiffre) / mème (cliché)",
-   "used_for": "Inspiration seulement (cliché électorat) : Électorat jeune : en tête chez les moins de 35 ans en 2022 (31 % des 18-24 ans selon Ipsos). Base factuelle du cliché « étudiant en socio, tote bag, lait d'avoine » — le cliché lui-même est notre invention satirique, sans aucune caractéristique protégée."
+   "url": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
+   "date": "2026-07",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte",
+   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "date": "2026-06",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Inversion : la fin dure plus que le début. « Merci » est dit par l'Orateur fictif. Barques remplacées par des bancs flottants (catalogue). Le chiffre TikTok sourcé n'apparaît qu'à l'écran comme applaudimètre. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (M11, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+ "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : l'ultimatum aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure ». Cadre : la cérémonie du mot de la fin. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
 }
