@@ -1287,6 +1287,8 @@ PROFILES = {
     "preview": {"res": (540, 960), "samples": 8, "dof": False, "raytracing": False},
     "final": {"res": (1080, 1920), "samples": 32, "dof": True, "raytracing": True},
     "bench": {"res": (1080, 1920), "samples": 32, "dof": True, "raytracing": True},
+    # GitHub Actions (CPU, Mesa llvmpipe) : même cadre 1080×1920, moins d'échantillons
+    "cloud": {"res": (1080, 1920), "samples": 10, "dof": False, "raytracing": False},
 }
 
 
@@ -1296,6 +1298,8 @@ def main():
     out = job["out_dir"]
     os.makedirs(out, exist_ok=True)
     profile = dict(PROFILES[job.get("profile", "final")])
+    if job.get("quality") in PROFILES:
+        profile = dict(PROFILES[job["quality"]])
     t0 = time.time()
 
     bpy.ops.wm.read_factory_settings(use_empty=True)

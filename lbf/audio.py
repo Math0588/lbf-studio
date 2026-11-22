@@ -45,16 +45,33 @@ def build_narration(ep: dict, out: Path) -> dict:
     segs = {s["id"]: s for s in ep["narration_segments"]}
     durs = {}
     import hashlib
+    from . import tts_azure
+    eng = tts_azure.engine()
+    voice_info = None
+    last_id = ep["narration_segments"][-2]["id"] if len(ep["narration_segments"]) > 1 else None
     for sid, s in segs.items():
         ls = ep.get("voice_length_scale")
-        key = hashlib.sha1((tts.config.get("VOICE_MODEL") + "|" + str(ls) + "|" + s["text"]).encode()).hexdigest()
+        vname = (tts_azure.config.get("AZURE_VOICE") or tts_azure.DEFAULT_VOICE) if eng == "azure" \
+            else tts.config.get("VOICE_MODEL")
+        key = hashlib.sha1((eng + "|" + vname + "|" + str(ls) + "|" + s["text"]).encode()).hexdigest()
         wav, stamp = audio_dir / f"{sid}.wav", audio_dir / f"{sid}.key"
         if wav.exists() and stamp.exists() and stamp.read_text() == key:   # cache : même texte, même voix
             with wave.open(str(wav), "rb") as wf:
                 durs[sid] = wf.getnframes() / float(wf.getframerate())
-        else:
-            durs[sid] = tts.synthesize(s["text"], wav, length_scale=ls)
-            stamp.write_text(key)
+            continue
+        if eng == "azure":
+            try:
+                durs[sid] = tts_azure.synthesize(s["text"], wav, s.get("accent_words"), last=(sid == last_id))
+                voice_info = tts_azure.report()
+                stamp.write_text(key)
+                continue
+            except Exception as e:  # quota, réseau… : secours Piper pour tout l'épisode
+                print(f"[voix] Azure indisponible ({e}) : secours Piper")
+                eng = "piper"
+                key = hashlib.sha1(("piper|" + tts.config.get("VOICE_MODEL") + "|" + str(ls) + "|"
+                                    + s["text"]).encode()).hexdigest()
+        durs[sid] = tts.synthesize(s["text"], wav, length_scale=ls)
+        stamp.write_text(key)
     timeline = []   # (segment_id, start, end)
     shots = []
     t = 0.0
@@ -78,7 +95,7 @@ def build_narration(ep: dict, out: Path) -> dict:
         track[i:i + len(d)] += d[: len(track) - i]
     write_wav(out / "narration.wav", track)
     info = {"total": round(total, 3), "segments": timeline, "shots": shots,
-            "voice": tts.voice_report(tts.config.get("VOICE_MODEL"))}
+            "voice": voice_info if eng == "azure" and voice_info else tts.voice_report(tts.config.get("VOICE_MODEL"))}
     (out / "timeline.json").write_text(json.dumps(info, ensure_ascii=False, indent=2), encoding="utf-8")
     return info
 

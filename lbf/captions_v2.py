@@ -107,6 +107,9 @@ def build(ep: dict, timeline: dict, out_path: Path) -> dict:
             txt = " ".join(ws[:cut]) + "\\N" + " ".join(ws[cut:])
         ev.append((7, "Hook", 0, ho.get("until", 2.4),
                    "{\\an5\\pos(540,360)\\fscx70\\fscy70\\t(0,120,\\fscx104\\fscy104)\\t(120,200,\\fscx100\\fscy100)}" + txt))
+        if ho.get("sub"):
+            y = 360 - (150 if "\\N" in txt else 100)
+            ev.append((7, "PartSub", 0, ho.get("until", 2.4), "{\\an5\\pos(540,%d)}" % y + ho["sub"].upper()))
     pt = ep.get("part_teaser")
     if pt:
         a = _shot_time(timeline, pt["shot"], pt.get("at", 0.0))

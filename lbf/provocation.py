@@ -52,7 +52,9 @@ def apply(ep: dict) -> dict:
     city, key = ep["city_id"], ep["id"]
     nom, ville = NAMES.get(city, city), CITIES.get(city, city)
     autre = CITIES[NEXT.get(city, city)]
-    ep["hook_overlay"] = {"text": _pick(HOOKS, key, "h").format(nom=nom), "until": 2.4}
+    # 1re image = sujet de la vidéo (titre + ville), lisible son coupé et dans l'aperçu du profil
+    title = ep.get("title_cover") or _pick(HOOKS, key, "h").format(nom=nom)
+    ep["hook_overlay"] = {"text": title, "sub": ville.upper(), "until": 2.6}
     title, sub = _pick(SHARE_TITLES, key, "e")
     ep["endcard"] = {"title": title.format(nom=nom), "sub": sub.format(next=autre) + " · t-shirt en bio", "at": 0.3}
     from . import seo                     # légende, hashtags et métadonnées YouTube optimisés pour la recherche

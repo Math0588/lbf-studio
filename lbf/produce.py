@@ -33,6 +33,8 @@ def build_job(ep: dict, timeline: dict, out: Path, profile: str) -> Path:
     job = {"out_dir": str(out / f"render_{profile}"), "profile": profile, "mood": city.get("mood", {}),
            "set": city["set"] + ep.get("extra_set", []), "shots": shots, "events": ep.get("events", []),
            "stills": ep.get("stills", []) if profile != "preview" else []}
+    if config.get("RENDER_QUALITY") and profile == "final":
+        job["quality"] = config.get("RENDER_QUALITY")
     p = out / f"job_{profile}.json"
     p.write_text(json.dumps(job, ensure_ascii=False, indent=1), encoding="utf-8")
     return p
@@ -149,7 +151,8 @@ def produce(ep_path: Path, profile: str = "final", log=print) -> dict:
         voice = tl["voice"]
         credits = ("Crédits et licences\n"
                    f"- {voice['attribution']}\n"
-                   "- Moteur de synthèse : Piper (piper1-gpl, GPL-3.0), utilisé localement.\n"
+                   + ("- Moteur de synthèse : Piper (piper1-gpl, GPL-3.0).\n" if voice.get("engine") != "azure"
+                      else "- Synthèse vocale : Azure AI Speech (voix neuronale standard).\n") +
                    "- Musique et effets : créations originales générées par le projet (lbf/audio.py).\n"
                    "- Fontes : Archivo Black et Anton, SIL Open Font License 1.1.\n"
                    "- Décors, personnages et mascotte : modélisés par le projet dans Blender (GPL pour le logiciel ; "
