@@ -27,3 +27,12 @@ Demande du propriétaire : « ultra provocateur, drôle, blagues sourcées de X 
 5. Le maire, c'est Jupiter : il descend juste crier « Hey ! Hey ! ».
 6. Son bilan sur X : « parfois des erreurs ». Parfois. For sure.
 7. Envoie ça au pote qui croit encore au ruissellement.
+
+## Mise à jour 22/11/2026 : on se fout de la gueule de la PERSONNE (demande du propriétaire)
+- Les gags de situation (« Ici, la mairie… ») demandent trop de contexte. On vise le politicien lui-même, sur des trucs
+  que tout le monde connaît : phrases cultes, gaffes, tics de langage, surnoms publics, mèmes, défaites, retournements
+  de veste, promesses non tenues, image médiatique, com' ratée.
+- Forme : « Dans cette ville, tout le monde vote X. » puis chaque phrase = [truc connu sur X] + [retournement qui le
+  ridiculise]. Une seule phrase de situation absurde au maximum.
+- Contrôle : `python3 -m lbf.viral_lint --strict` (≥ 3 piques sur des faits/mèmes connus et sourcés, ≤ 1 gag de situation).
+- Toujours interdit : physique, vie privée, couple, famille, santé, traits protégés, affaires judiciaires, fait inventé.

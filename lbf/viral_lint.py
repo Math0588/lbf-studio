@@ -14,7 +14,12 @@ from . import editorial
 SOFT_ENDINGS = re.compile(r"\b(en commentaire|dis-moi|dis en commentaire|tague|commente)\b", re.I)
 
 
-def check(script: dict) -> dict:
+STRICT = False   # mode « moquerie de la personne » (activé quand la banque est réécrite)
+SITUATION = re.compile(r"^(ici|à la mairie|la mairie|dans la ville|la ville|au conseil municipal)\b", re.I)
+
+
+def check(script: dict, strict: bool | None = None) -> dict:
+    strict = STRICT if strict is None else strict
     segs = script.get("narration_segments", [])
     block, warn = [], []
     if not segs:
@@ -35,6 +40,13 @@ def check(script: dict) -> dict:
     sourced = [s for s in segs if s.get("claim_type") in ("fait_public", "citation_exacte")]
     if len(sourced) < 2:
         block.append(f"ancrage : {len(sourced)} pique(s) sourcée(s) (mèmes/faits connus), 2 minimum")
+    if strict:
+        # chaque pique vise le politicien lui-même, sur un truc connu ; peu de gags de situation à décoder
+        if len(sourced) < 3:
+            block.append(f"personne : {len(sourced)} pique(s) sur des faits/mèmes connus, 3 minimum")
+        situ = [x["id"] for x in segs[1:-1] if SITUATION.match(x["text"].strip())]
+        if len(situ) > 1:
+            block.append(f"personne : trop de gags de situation ({situ}), 1 maximum")
     if not script.get("claims") and sourced:
         block.append("sources : claims vides alors que des faits/citations sont utilisés")
     said = " ".join(x["text"] for x in segs) + " " + " ".join(
@@ -53,7 +65,10 @@ def check(script: dict) -> dict:
 
 
 if __name__ == "__main__":
-    paths = [Path(a) for a in sys.argv[1:]] or sorted(Path("content/scripts").rglob("*.json"))
+    args = [a for a in sys.argv[1:] if a != "--strict"]
+    if "--strict" in sys.argv:
+        STRICT = True
+    paths = [Path(a) for a in args] or sorted(Path("content/scripts").rglob("*.json"))
     bad = 0
     for p in paths:
         try:
