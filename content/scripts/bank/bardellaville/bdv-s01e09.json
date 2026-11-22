@@ -3,83 +3,75 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-09",
  "format": "A",
- "title_cover": "Le ring light embauché",
+ "title_cover": "Abonnés, pas électeurs",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella… même les RH.",
-  "À la mairie de Bardellaville, un CV dure quinze secondes. À la verticale.",
-  "Cette mairie a recruté son meilleur agent. Il a un interrupteur.",
-  "Ici, on te demande ton meilleur profil avant ton diplôme.",
-  "Où vous voyez-vous dans cinq ans ? À Bardellaville, la seule bonne réponse est un coucher de soleil."
+  "Dans cette ville, tout le monde vote Bardella.",
+  "Ici, la mairie compte les abonnés, pas les habitants.",
+  "Bardellaville : un million de vues, zéro mesure vue.",
+  "Les électeurs de Bardella vont me détester.",
+  "Bienvenue à Bardellaville : abonnés, pas électeurs."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Lui, au moins, ne refuse jamais un débat : il ne parle pas.",
-  "Poste pourvu : badge, bureau, photo officielle. C'est le ring light. Il éclaire la mairie depuis toujours.",
-  "Le ring light obtient une promotion dès la première semaine : chef de service. Son premier arrêté : plus de lumière."
+  "Les Français ont des questions. Lui a des filtres.",
+  "Les Français ont des questions. Lui a des filtres.",
+  "Le budget municipal ? Un swipe vers le haut, et il disparaît."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella… même les RH.",
+   "text": "Dans cette ville, tout le monde vote Bardella. En scrollant.",
    "accent_words": [
-    "RH"
+    "scrollant"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Un CV dure quinze secondes, à la verticale.",
+   "text": "Plus d'un million d'abonnés sur TikTok. Son programme : zéro vue.",
    "accent_words": [
-    "verticale"
+    "zéro vue"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Un plombier montre ses diplômes : on veut son meilleur profil.",
+   "text": "Sa stratégie : des formats courts et dépolitisés. Pour un politique, c'est osé.",
    "accent_words": [
-    "profil"
+    "dépolitisés"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Dernière question : vous dans cinq ans ?",
+   "text": "Ici, le service urbanisme publie des trends au lieu des permis.",
    "accent_words": [
-    "ans"
+    "trends"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n5",
-   "text": "Bonne réponse : un coucher de soleil, cheveux au vent.",
+   "text": "Le budget municipal ? Un swipe vers le haut, et il disparaît.",
    "accent_words": [
-    "vent"
+    "disparaît"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le poste est pourvu : c'est le ring light, embauché à vie.",
+   "text": "Les Français ont des questions. Lui a des filtres.",
    "accent_words": [
-    "ring light"
+    "des filtres"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Lui, au moins, ne refuse jamais un débat : il ne parle pas.",
+   "text": "Envoie ça au pote qui confond abonnés et électeurs.",
    "accent_words": [
-    "débat"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n8",
-   "text": "Envoie ça à ton pote qui postule : une lampe l'a battu.",
-   "accent_words": [
-    "battu"
+    "abonnés"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,122 +80,158 @@
   {
    "id": "s1",
    "narration_ids": [
-    "n1",
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "ground",
+    "mairie",
+    "banner",
+    "person"
+   ],
+   "onscreen_text": "BARDELLAVILLE",
+   "comic_action": "Descente sur la mairie ; la façade défile comme un fil d'actualité.",
+   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
     "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "ring_light",
+    "tripod_camera",
+    "person",
+    "screen"
+   ],
+   "onscreen_text": "ABONNÉS : 1,5 M · PROGRAMME : 0",
+   "comic_action": "Compteur d'abonnés qui s'emballe ; à côté, une vidéo « PROGRAMME » à 0 vue.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "studio_light",
+    "tripod_camera",
+    "table",
+    "person"
+   ],
+   "onscreen_text": "DÉPOLITISÉ",
+   "comic_action": "Plateau de tournage : on retire un à un les dossiers du décor avant de filmer.",
+   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "table",
+    "screen",
+    "sign",
+    "building"
+   ],
+   "onscreen_text": "PERMIS → TREND",
+   "comic_action": "Guichet urbanisme : l'agent danse devant un plan de maison, tampon jamais posé.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n5"
    ],
    "camera": "closeup",
    "set": [
     "screen",
     "text3d",
-    "studio_light",
+    "mairie",
     "person"
    ],
-   "onscreen_text": "CV : 0:15 · FORMAT 9:16",
-   "comic_action": "Gros plan sur un écran vertical « STUDIO EMPLOI » : un CV défile en quinze secondes avec transitions, emojis et musique ; les diplômes passent en 0,2 seconde.",
-   "expected_result": "Image surprenante : le recrutement est une story."
+   "onscreen_text": "BUDGET : SWIPE ↑",
+   "comic_action": "L'écran de la mairie : le tableau du budget glisse vers le haut et s'efface.",
+   "expected_result": "Exagération évidente de la ville, lisible sans le son."
   },
   {
-   "id": "s2",
+   "id": "s6",
    "narration_ids": [
-    "n3"
-   ],
-   "camera": "window_pass",
-   "set": [
-    "table",
-    "person",
-    "ring_light",
-    "sign"
-   ],
-   "onscreen_text": "PROFIL ? LUMIÈRE ? RALENTI ?",
-   "comic_action": "Travelling derrière la vitre du bureau d'entretien : un plombier (cylindre bleu, clé à molette en text3d) pose ses diplômes sur la table. Gérald, de trois-quarts, coche une fiche : « Profil : ok ? Lumière : ok ? Ralenti : ? » Le plombier tente de marcher au ralenti, trébuche.",
-   "expected_result": "Les critères d'embauche mesurent l'image, pas la compétence."
-  },
-  {
-   "id": "s3",
-   "narration_ids": [
-    "n4",
-    "n5"
+    "n6"
    ],
    "camera": "street_dolly",
    "set": [
-    "screen",
     "person",
-    "studio_light",
-    "text3d"
+    "ring_light",
+    "road",
+    "lamp"
    ],
-   "onscreen_text": "DANS 5 ANS : COUCHER DE SOLEIL",
-   "comic_action": "La question s'affiche ; le candidat répond « Chef d'équipe ». Buzzer. Écran : plan large d'un coucher de soleil, une silhouette cheveux au vent (ventilateur hors champ). Ding : « Bonne réponse ».",
-   "expected_result": "Une vision floue tient lieu de projet : on récompense l'image du futur, pas le plan."
+   "onscreen_text": "QUESTIONS → FILTRES",
+   "comic_action": "Une file d'habitants avec des pancartes « ? » ; le ring light les transforme en cœurs. Tenir.",
+   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
   },
   {
-   "id": "s4",
+   "id": "s7",
    "narration_ids": [
-    "n6",
     "n7"
    ],
    "camera": "return",
    "set": [
-    "ring_light",
-    "table",
-    "mairie",
-    "sign",
-    "text3d"
-   ],
-   "onscreen_text": "AGENT DU MOIS : RING LIGHT",
-   "comic_action": "Travelling arrière dans le bureau de la mairie : le ring light, assis derrière un bureau, porte un badge, a sa photo officielle au mur et une plaque « AGENT DU MOIS ». Laisser respirer.",
-   "expected_result": "Chute par inversion : l'objet décroche le poste, parce qu'il fait exactement ce qu'on attend : éclairer."
-  },
-  {
-   "id": "s5",
-   "narration_ids": [
-    "n8"
-   ],
-   "camera": "closeup",
-   "set": [
     "shop",
-    "mascot",
     "tshirt",
-    "ring_light"
+    "person",
+    "sign"
    ],
-   "onscreen_text": "Collection en bio",
-   "comic_action": "Le Coq de vitrine, t-shirt sur le dos, tient une pancarte « CHERCHE EMPLOI. FAIS PAS LAMPE. »",
-   "expected_result": "Partage ciblé, produit réel visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt compte ses likes devant la vitrine.",
+   "expected_result": "Partage ciblé, produit de la boutique visible."
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça à ton pote qui postule : une lampe l'a battu."
+  "text": "Envoie ça au pote qui confond abonnés et électeurs."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 85,
- "claims": [],
- "sources": [
+ "word_count": 75,
+ "claims": [
   {
-   "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
-   "published": "2026-11-04",
-   "consulted": "2026-11-21",
-   "status": "fait public (dépêche AFP : le livre esquisse des « cent jours » sans détailler priorités ni méthode) + opinion (appréciation de l'AFP)",
-   "used_for": "Inspiration seulement : un projet présenté par sa projection (« cent jours ») plutôt que par sa méthode, selon l'AFP. Traduit par la seule réponse acceptée à « où vous voyez-vous dans cinq ans ? » : un coucher de soleil."
+   "segment": "n2",
+   "text": "Plus d'un million d'abonnés sur TikTok. Son programme : zéro vue.",
+   "claim_type": "fait_public",
+   "source": "https://www.connexionfrance.com/news/jordan-bardella-his-unflattering-nickname-and-15m-tik-tok-fans/663977",
+   "note": "Surnom « Bard-est-pas-là » ; environ 1,5 million d'abonnés TikTok en 2024."
   },
   {
-   "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
-   "published": "2024-03-04",
-   "consulted": "2026-11-21",
-   "status": "fait public (refus d'un débat sur une chaîne jugée trop petite) + mème",
-   "used_for": "Thème de l'évitement des débats ; la formule publique n'est pas reprise."
+   "segment": "n3",
+   "text": "Sa stratégie : des formats courts et dépolitisés. Pour un politique, c'est osé.",
+   "claim_type": "fait_public",
+   "source": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
+   "note": "Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits."
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://www.connexionfrance.com/news/jordan-bardella-his-unflattering-nickname-and-15m-tik-tok-fans/663977",
+   "date": "2024-06-11",
+   "consulted": "2026-11-22",
+   "statut": "mème (surnom rapporté comme circulant ; aucun chiffre d'absentéisme repris)",
+   "note": "Surnom « Bard-est-pas-là » ; environ 1,5 million d'abonnés TikTok en 2024."
   },
   {
    "url": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
-   "published": "2024-06-21",
-   "consulted": "2026-11-21",
-   "status": "fait public (AFP : TikTok, POV, selfies, bonbons) + mème (fan edits)",
-   "used_for": "Grammaire TikTok (POV, vertical, story, likes) appliquée aux services de la ville fictive."
+   "date": "2024-06-21",
+   "consulted": "2026-11-22",
+   "statut": "fait (dépêche AFP) + mème",
+   "note": "Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Mécanisme : inversion (l'objet décroche le poste). Le plombier est le héros compétent ; la cible est le critère d'image. Continuité : Gérald ; ajoute bdv-evt-011. Risques vérifiés : pas de citation réelle, pas de chiffre, pas de groupe moqué. | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_bardellaville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+ "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = plus d'un million d'abonnés TikTok (1,5 million en 2024) et une stratégie de formats dépolitisés : beaucoup de vues, aucun programme vu. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
 }
