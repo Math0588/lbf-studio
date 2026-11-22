@@ -1,0 +1,1055 @@
+{
+ "city": "bardellaville",
+ "version": 2,
+ "note": "Décor persistant v2 (style Reels : couleurs franches, personnages cubiques).",
+ "mood": {
+  "view": "Standard",
+  "sky": "#8CCBFF",
+  "sky_strength": 0.9,
+  "sun_energy": 3.4,
+  "sun_color": "#FFF4E0",
+  "sun_rot": [
+   45,
+   8,
+   38
+  ],
+  "sun_soft": 6,
+  "exposure": 0.0
+ },
+ "set": [
+  {
+   "type": "ground",
+   "size": 320,
+   "color": "#5DBB4A"
+  },
+  {
+   "type": "roundabout",
+   "id": "rp_central",
+   "at": [
+    0,
+    0
+   ],
+   "radius": 12,
+   "island": 6.5,
+   "island_color": "#6ACB55"
+  },
+  {
+   "type": "road",
+   "start": [
+    0,
+    12
+   ],
+   "end": [
+    0,
+    24
+   ],
+   "width": 7
+  },
+  {
+   "type": "road",
+   "start": [
+    0,
+    -12
+   ],
+   "end": [
+    0,
+    -120
+   ],
+   "width": 8
+  },
+  {
+   "type": "road",
+   "start": [
+    12,
+    0
+   ],
+   "end": [
+    120,
+    0
+   ],
+   "width": 7
+  },
+  {
+   "type": "road",
+   "start": [
+    -12,
+    0
+   ],
+   "end": [
+    -120,
+    0
+   ],
+   "width": 7
+  },
+  {
+   "type": "ring_light",
+   "id": "rl_central",
+   "at": [
+    0,
+    0
+   ],
+   "radius": 5.2,
+   "height": 4.0,
+   "emit": 22,
+   "light_power": 6000
+  },
+  {
+   "type": "car_orbit",
+   "id": "orbit",
+   "center": [
+    0,
+    0
+   ],
+   "radius": 9.3,
+   "count": 7,
+   "period": 18,
+   "hero_index": 0,
+   "colors": [
+    "#EF233C",
+    "#FFFDF7",
+    "#1649FF",
+    "#F2B134",
+    "#2E8B57",
+    "#8E9AAF",
+    "#F78FB3"
+   ],
+   "hero_driver": {
+    "faces": [
+     "blase",
+     "fatigue"
+    ],
+    "shirt": "#F2B134",
+    "hair": "casquette",
+    "hair_color": "#1649FF",
+    "iris": "bleu"
+   }
+  },
+  {
+   "type": "mairie",
+   "id": "mairie",
+   "at": [
+    0,
+    32
+   ],
+   "width": 20,
+   "height": 11,
+   "color": "#FFF3DC",
+   "style": "mairie",
+   "label": "MAIRIE",
+   "struts": true
+  },
+  {
+   "type": "facade_row",
+   "id": "fonds",
+   "at": [
+    0,
+    35.8,
+    -20
+   ],
+   "count": 11,
+   "spacing": 2.5,
+   "width": 20,
+   "height": 11.5,
+   "colors": [
+    "#FFB3B3",
+    "#B3D9FF",
+    "#FFE08A",
+    "#B8F2B0",
+    "#E0C3FF",
+    "#FFC9A3"
+   ],
+   "styles": [
+    "classic",
+    "modern",
+    "castle",
+    "beach",
+    "factory",
+    "plain"
+   ]
+  },
+  {
+   "type": "studio_light",
+   "id": "spot_g",
+   "at": [
+    -1.3,
+    25.2
+   ],
+   "height": 3.4,
+   "target": [
+    3.5,
+    27,
+    3
+   ],
+   "power": 400
+  },
+  {
+   "type": "studio_light",
+   "id": "spot_d",
+   "at": [
+    8.3,
+    25.2
+   ],
+   "height": 3.4,
+   "target": [
+    3.5,
+    27,
+    3
+   ],
+   "power": 400
+  },
+  {
+   "type": "tribune",
+   "id": "pupitre",
+   "at": [
+    3.5,
+    26.2
+   ],
+   "scale": 1.25,
+   "color": "#1649FF"
+  },
+  {
+   "type": "char",
+   "id": "maire",
+   "at": [
+    3.5,
+    27.3
+   ],
+   "suit": true,
+   "sash": true,
+   "shirt": "#1B2A4A",
+   "pants": "#1B2A4A",
+   "tie": "#1649FF",
+   "hair": "plaque",
+   "hair_color": "#1C1C1C",
+   "skin": "#EBC3A0",
+   "iris": "brun",
+   "faces": [
+    "sourire_pro",
+    "parle_fier",
+    "fier"
+   ]
+  },
+  {
+   "type": "sign",
+   "id": "sign_rep",
+   "at": [
+    12.5,
+    25.0
+   ],
+   "w": 6.4,
+   "h": 3.0,
+   "z": 1.6,
+   "bg": "#FFFDF7",
+   "lines": [
+    {
+     "text": "RÉPONSES",
+     "size": 0.55,
+     "color": "#111827",
+     "emit": 0.0
+    },
+    {
+     "text": "CONCRÈTES",
+     "size": 0.55,
+     "color": "#111827",
+     "emit": 0.0
+    },
+    {
+     "variants": [
+      "CHARGEMENT.",
+      "CHARGEMENT..",
+      "CHARGEMENT..."
+     ],
+     "size": 0.45,
+     "color": "#EF233C",
+     "emit": 0.6
+    }
+   ]
+  },
+  {
+   "type": "crowd",
+   "id": "foule_mairie",
+   "at": [
+    0,
+    16
+   ],
+   "count": 10,
+   "cols": 5,
+   "dx": 1.9,
+   "dy": 1.9,
+   "rot": 180,
+   "faces": [
+    "colere"
+   ],
+   "hand_up_ratio": 0.5,
+   "seed": 7
+  },
+  {
+   "type": "char",
+   "id": "cit1",
+   "at": [
+    -1.8,
+    21.0
+   ],
+   "rot": 185,
+   "faces": [
+    "colere",
+    "choque"
+   ],
+   "shirt": "#EF6F6C",
+   "hair": "herisse",
+   "hair_color": "#6B4423",
+   "hand_up": true
+  },
+  {
+   "type": "char",
+   "id": "cit2",
+   "at": [
+    2.2,
+    21.4
+   ],
+   "rot": 172,
+   "faces": [
+    "choque",
+    "blase"
+   ],
+   "shirt": "#111827",
+   "tee": {
+    "lines": [
+     "EXCELLENTE",
+     "QUESTION."
+    ],
+    "ink": "#FFFDF7"
+   },
+   "hair": "long",
+   "hair_color": "#C9A15B",
+   "iris": "vert",
+   "skin": "#C68642"
+  },
+  {
+   "type": "crowd",
+   "id": "foule",
+   "at": [
+    0,
+    -70
+   ],
+   "count": 12,
+   "cols": 4,
+   "dx": 1.7,
+   "dy": 1.8,
+   "rot": 180,
+   "faces": [
+    "fier"
+   ],
+   "hold": "ring_light",
+   "hold_ratio": 0.85,
+   "seed": 3
+  },
+  {
+   "type": "char",
+   "id": "heros",
+   "at": [
+    -0.6,
+    -63.2
+   ],
+   "rot": 180,
+   "faces": [
+    "fier",
+    "content"
+   ],
+   "hold": "ring_light",
+   "shirt": "#111827",
+   "tee": {
+    "lines": [
+     "LE PAYS BUGUE.",
+     "MOI AUSSI."
+    ],
+    "ink": "#FFFDF7",
+    "size": 0.13
+   },
+   "hair": "meche",
+   "hair_color": "#C9A15B",
+   "iris": "bleu"
+  },
+  {
+   "type": "wall",
+   "id": "boul_mur",
+   "at": [
+    80,
+    84
+   ],
+   "w": 14,
+   "h": 6,
+   "color": "#FCE9D2",
+   "sign": "BOULANGERIE",
+   "sign_color": "#EF233C"
+  },
+  {
+   "type": "counter",
+   "id": "comptoir",
+   "at": [
+    80,
+    80.2
+   ],
+   "w": 5,
+   "price": "2 €"
+  },
+  {
+   "type": "char",
+   "id": "boulanger",
+   "at": [
+    80.2,
+    81.6
+   ],
+   "faces": [
+    "sourire_pro",
+    "fier"
+   ],
+   "shirt": "#FFFFFF",
+   "pants": "#3B3F46",
+   "hair": "beret",
+   "hair_color": "#111827",
+   "iris": "brun",
+   "hold": "baguette"
+  },
+  {
+   "type": "ring_light",
+   "id": "rl_boul",
+   "at": [
+    76,
+    83
+   ],
+   "radius": 1.6,
+   "height": 1.2,
+   "emit": 14,
+   "light_power": 300
+  },
+  {
+   "type": "shop",
+   "id": "boutique",
+   "at": [
+    24,
+    -20
+   ],
+   "size": [
+    11,
+    7,
+    6.5
+   ],
+   "name": "BOUTIQUE",
+   "color": "#FFF3DC"
+  },
+  {
+   "type": "mascot",
+   "id": "coq",
+   "at": [
+    21.5,
+    -25.0,
+    0.95
+   ],
+   "rot": 10,
+   "scale": 0.82,
+   "shirt": {
+    "color": "#111827",
+    "lines": [
+     "EXCELLENTE",
+     "QUESTION."
+    ]
+   }
+  },
+  {
+   "type": "tshirt",
+   "id": "tee_vitrine",
+   "at": [
+    27.0,
+    -25.0,
+    2.6
+   ],
+   "rot": -8,
+   "scale": 0.9,
+   "color": "#F3EBDD",
+   "lines": [
+    "EXCELLENTE",
+    "QUESTION."
+   ],
+   "text_color": "#111827"
+  },
+  {
+   "type": "house",
+   "at": [
+    -13.5,
+    -24
+   ],
+   "rot": -90,
+   "size": [
+    8,
+    7,
+    4.6
+   ],
+   "color": "#F6E3C5",
+   "roof": "#D9483B",
+   "poster": "MON\nMEILLEUR\nPROFIL"
+  },
+  {
+   "type": "house",
+   "at": [
+    13.5,
+    -24
+   ],
+   "rot": 90,
+   "size": [
+    8,
+    7,
+    4.6
+   ],
+   "color": "#DDEBF7",
+   "roof": "#D9483B",
+   "poster": null
+  },
+  {
+   "type": "house",
+   "at": [
+    -13.5,
+    -37
+   ],
+   "rot": -90,
+   "size": [
+    8,
+    7,
+    4.6
+   ],
+   "color": "#F7D9D9",
+   "roof": "#D9483B",
+   "poster": null
+  },
+  {
+   "type": "house",
+   "at": [
+    13.5,
+    -37
+   ],
+   "rot": 90,
+   "size": [
+    8,
+    7,
+    4.6
+   ],
+   "color": "#E3F2D9",
+   "roof": "#D9483B",
+   "poster": "MON\nMEILLEUR\nPROFIL"
+  },
+  {
+   "type": "house",
+   "at": [
+    -13.5,
+    -50
+   ],
+   "rot": -90,
+   "size": [
+    8,
+    7,
+    4.6
+   ],
+   "color": "#FFF1B8",
+   "roof": "#D9483B",
+   "poster": "MON\nMEILLEUR\nPROFIL"
+  },
+  {
+   "type": "house",
+   "at": [
+    13.5,
+    -50
+   ],
+   "rot": 90,
+   "size": [
+    8,
+    7,
+    4.6
+   ],
+   "color": "#E8DDF5",
+   "roof": "#D9483B",
+   "poster": null
+  },
+  {
+   "type": "house",
+   "at": [
+    -13.5,
+    -63
+   ],
+   "rot": -90,
+   "size": [
+    8,
+    7,
+    4.6
+   ],
+   "color": "#FCE1C8",
+   "roof": "#D9483B",
+   "poster": null
+  },
+  {
+   "type": "house",
+   "at": [
+    13.5,
+    -63
+   ],
+   "rot": 90,
+   "size": [
+    8,
+    7,
+    4.6
+   ],
+   "color": "#F6E3C5",
+   "roof": "#D9483B",
+   "poster": "MON\nMEILLEUR\nPROFIL"
+  },
+  {
+   "type": "house",
+   "at": [
+    -13.5,
+    -76
+   ],
+   "rot": -90,
+   "size": [
+    8,
+    7,
+    4.6
+   ],
+   "color": "#DDEBF7",
+   "roof": "#D9483B",
+   "poster": "MON\nMEILLEUR\nPROFIL"
+  },
+  {
+   "type": "house",
+   "at": [
+    13.5,
+    -76
+   ],
+   "rot": 90,
+   "size": [
+    8,
+    7,
+    4.6
+   ],
+   "color": "#F7D9D9",
+   "roof": "#D9483B",
+   "poster": null
+  },
+  {
+   "type": "house",
+   "at": [
+    -13.5,
+    -89
+   ],
+   "rot": -90,
+   "size": [
+    8,
+    7,
+    4.6
+   ],
+   "color": "#E3F2D9",
+   "roof": "#D9483B",
+   "poster": null
+  },
+  {
+   "type": "house",
+   "at": [
+    13.5,
+    -89
+   ],
+   "rot": 90,
+   "size": [
+    8,
+    7,
+    4.6
+   ],
+   "color": "#FFF1B8",
+   "roof": "#D9483B",
+   "poster": "MON\nMEILLEUR\nPROFIL"
+  },
+  {
+   "type": "house",
+   "at": [
+    -13.5,
+    -102
+   ],
+   "rot": -90,
+   "size": [
+    8,
+    7,
+    4.6
+   ],
+   "color": "#E8DDF5",
+   "roof": "#D9483B",
+   "poster": "MON\nMEILLEUR\nPROFIL"
+  },
+  {
+   "type": "house",
+   "at": [
+    13.5,
+    -102
+   ],
+   "rot": 90,
+   "size": [
+    8,
+    7,
+    4.6
+   ],
+   "color": "#FCE1C8",
+   "roof": "#D9483B",
+   "poster": null
+  },
+  {
+   "type": "flag",
+   "at": [
+    -5.6,
+    -20
+   ],
+   "height": 5.5,
+   "w": 1.8
+  },
+  {
+   "type": "tree",
+   "at": [
+    -8.0,
+    -27
+   ],
+   "height": 4.6,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "flag",
+   "at": [
+    5.6,
+    -20
+   ],
+   "height": 5.5,
+   "w": 1.8
+  },
+  {
+   "type": "tree",
+   "at": [
+    8.0,
+    -27
+   ],
+   "height": 4.6,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "flag",
+   "at": [
+    -5.6,
+    -38
+   ],
+   "height": 5.5,
+   "w": 1.8
+  },
+  {
+   "type": "tree",
+   "at": [
+    -8.0,
+    -45
+   ],
+   "height": 4.6,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "flag",
+   "at": [
+    5.6,
+    -38
+   ],
+   "height": 5.5,
+   "w": 1.8
+  },
+  {
+   "type": "tree",
+   "at": [
+    8.0,
+    -45
+   ],
+   "height": 4.6,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "flag",
+   "at": [
+    -5.6,
+    -56
+   ],
+   "height": 5.5,
+   "w": 1.8
+  },
+  {
+   "type": "tree",
+   "at": [
+    -8.0,
+    -63
+   ],
+   "height": 4.6,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "flag",
+   "at": [
+    5.6,
+    -56
+   ],
+   "height": 5.5,
+   "w": 1.8
+  },
+  {
+   "type": "tree",
+   "at": [
+    8.0,
+    -63
+   ],
+   "height": 4.6,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "flag",
+   "at": [
+    -5.6,
+    -74
+   ],
+   "height": 5.5,
+   "w": 1.8
+  },
+  {
+   "type": "tree",
+   "at": [
+    -8.0,
+    -81
+   ],
+   "height": 4.6,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "flag",
+   "at": [
+    5.6,
+    -74
+   ],
+   "height": 5.5,
+   "w": 1.8
+  },
+  {
+   "type": "tree",
+   "at": [
+    8.0,
+    -81
+   ],
+   "height": 4.6,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "flag",
+   "at": [
+    -5.6,
+    -92
+   ],
+   "height": 5.5,
+   "w": 1.8
+  },
+  {
+   "type": "tree",
+   "at": [
+    -8.0,
+    -99
+   ],
+   "height": 4.6,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "flag",
+   "at": [
+    5.6,
+    -92
+   ],
+   "height": 5.5,
+   "w": 1.8
+  },
+  {
+   "type": "tree",
+   "at": [
+    8.0,
+    -99
+   ],
+   "height": 4.6,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "flag",
+   "at": [
+    -5.6,
+    -110
+   ],
+   "height": 5.5,
+   "w": 1.8
+  },
+  {
+   "type": "tree",
+   "at": [
+    -8.0,
+    -117
+   ],
+   "height": 4.6,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "flag",
+   "at": [
+    5.6,
+    -110
+   ],
+   "height": 5.5,
+   "w": 1.8
+  },
+  {
+   "type": "tree",
+   "at": [
+    8.0,
+    -117
+   ],
+   "height": 4.6,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "building",
+   "at": [
+    36,
+    24
+   ],
+   "size": [
+    12,
+    10,
+    15
+   ],
+   "color": "#BDE0FE",
+   "roof": "#7A6558"
+  },
+  {
+   "type": "building",
+   "at": [
+    -36,
+    24
+   ],
+   "size": [
+    12,
+    10,
+    13
+   ],
+   "color": "#FFD6A5",
+   "roof": "#7A6558"
+  },
+  {
+   "type": "building",
+   "at": [
+    -30,
+    -14
+   ],
+   "size": [
+    12,
+    10,
+    17
+   ],
+   "color": "#CAFFBF",
+   "roof": "#7A6558"
+  },
+  {
+   "type": "building",
+   "at": [
+    34,
+    8
+   ],
+   "size": [
+    12,
+    10,
+    12
+   ],
+   "color": "#FFC6FF",
+   "roof": "#7A6558"
+  },
+  {
+   "type": "building",
+   "at": [
+    -46,
+    40
+   ],
+   "size": [
+    12,
+    10,
+    20
+   ],
+   "color": "#A0C4FF",
+   "roof": "#7A6558"
+  },
+  {
+   "type": "building",
+   "at": [
+    46,
+    42
+   ],
+   "size": [
+    12,
+    10,
+    18
+   ],
+   "color": "#FDFFB6",
+   "roof": "#7A6558"
+  },
+  {
+   "type": "tree",
+   "at": [
+    -15,
+    15
+   ],
+   "height": 4.8,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "tree",
+   "at": [
+    15,
+    15
+   ],
+   "height": 4.8,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "tree",
+   "at": [
+    -15,
+    -12
+   ],
+   "height": 4.8,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "tree",
+   "at": [
+    12,
+    -12
+   ],
+   "height": 4.8,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "tree",
+   "at": [
+    -9,
+    40
+   ],
+   "height": 4.8,
+   "color": "#3FA34D"
+  },
+  {
+   "type": "tree",
+   "at": [
+    9,
+    40
+   ],
+   "height": 4.8,
+   "color": "#3FA34D"
+  }
+ ]
+}

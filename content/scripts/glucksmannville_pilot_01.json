@@ -1,0 +1,238 @@
+{
+ "id": "glv-s01e01",
+ "city": "glucksmannville",
+ "synopsis_id": "glv-syn-01",
+ "format": "A",
+ "title_cover": "Le GPS du cap clair",
+ "hook_variants": [
+  "Dans cette ville, tout le monde vote Glucksmann… et le GPS hésite.",
+  "Ici, le GPS commence chaque trajet par : « Il faut un cap clair. »",
+  "Le seul GPS de France qui affiche 360 flèches et appelle ça un cap.",
+  "Ici, le GPS ne recalcule jamais. Il se concerte.",
+  "Dans cette ville, demander son chemin au GPS, c'est ouvrir un débat apaisé."
+ ],
+ "selected_hook": 0,
+ "ending_variants": [
+  "Trois heures plus tard, le GPS annonce, ravi : personne n'est fâché.",
+  "Trois heures plus tard, tu n'as pas bougé. Le GPS, ravi : « Vous êtes arrivé. Personne n'est fâché. »",
+  "Le GPS annonce enfin ta destination : le centre du rond-point. « Vous êtes au cœur du consensus. Garez-vous sur le coussin. »"
+ ],
+ "selected_ending": 0,
+ "narration_segments": [
+  {
+   "id": "n1",
+   "text": "Dans cette ville, tout le monde vote Glucksmann… et le GPS hésite.",
+   "accent_words": [
+    "Glucksmann",
+    "hésite"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Il propose toutes les directions à la fois, en même temps.",
+   "accent_words": [
+    "en même temps"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "À gauche ? Clivant ; à droite ? Aussi ; tout droit ? Concertation.",
+   "accent_words": [
+    "Concertation"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Il ne recalcule pas : il consulte les autres GPS du quartier.",
+   "accent_words": [
+    "consulte"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Dans le vélo cargo à quatre mille euros, les enfants ont grandi.",
+   "accent_words": [
+    "grandi"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Trois heures plus tard, le GPS annonce, ravi : personne n'est fâché.",
+   "accent_words": [
+    "fâché"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Tague l'ami qui met trois heures à choisir un resto.",
+   "accent_words": [
+    "resto"
+   ],
+   "claim_type": "fiction_satirique"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "narration_ids": [
+    "n1"
+   ],
+   "camera": "closeup",
+   "set": [
+    "gps",
+    "screen",
+    "text3d",
+    "car"
+   ],
+   "onscreen_text": "DIRECTION : TOUTES",
+   "comic_action": "Dès la première image, gros plan sur un GPS beige à housse de velours, fixé au pare-brise. À l'écran, la flèche de direction éclate déjà en étoile de flèches qui pointent partout, et le texte « IL FAUT UN CAP CLAIR » s'affiche au-dessus.",
+   "expected_result": "Contradiction immédiate : le texte promet une direction, l'image les montre toutes."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "descend",
+   "set": [
+    "roundabout",
+    "road",
+    "car",
+    "sign",
+    "text3d",
+    "ground",
+    "building"
+   ],
+   "onscreen_text": "",
+   "comic_action": "La caméra monte puis redescend en plongée sur la Place Publique, un rond-point capitonné beige. Au centre, le Panneau des Cap Clairs : un poteau dont les flèches passent de 4 à 12, puis à 36, et s'ouvrent en éventail comme un hérisson. La petite voiture attend à l'entrée du rond-point.",
+   "expected_result": "On comprend la règle de la ville : toutes les directions à la fois, donc aucune.",
+   "new_asset_request": "sign_multi_arrow : poteau à N flèches paramétrable, animable de 4 à 36 flèches ; à défaut, plusieurs sign en rotation autour d'une column."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "roundabout",
+    "car",
+    "gps",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "À GAUCHE ? CLIVANT",
+   "comic_action": "Orbite autour de la voiture arrêtée. Chaque sortie du rond-point s'allume tour à tour, puis se barre d'une étiquette beige : « TROP CLIVANT », « AUSSI », « EN CONSULTATION ». Les roues avant de la voiture tournent à gauche, à droite, puis reviennent au centre.",
+   "expected_result": "Escalade : chaque option est écartée pour ne vexer personne."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4",
+    "n5"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "car_orbit",
+    "roundabout",
+    "gps",
+    "screen",
+    "text3d",
+    "building",
+    "lamp"
+   ],
+   "onscreen_text": "CONCERTATION EN COURS…",
+   "comic_action": "Passage en travelling le long des façades : toutes les voitures de la ville, qui attendent chacune l'avis des autres, tournent lentement autour du rond-point, en orbite. Sur chaque pare-brise, le même écran de GPS affiche « CONCERTATION EN COURS » avec une barre de chargement qui avance puis recule. Les feux de la rue restent bloqués sur l'orange.",
+   "expected_result": "Le flou d'un seul GPS paralyse toute la ville : c'est devenu un système."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "car",
+    "gps",
+    "screen",
+    "text3d",
+    "roundabout",
+    "mascot",
+    "car_orbit"
+   ],
+   "onscreen_text": "PERSONNE N'EST FÂCHÉ",
+   "comic_action": "Un panneau d'horloge en text3d passe de 9:00 à 12:00. Plan serré : la voiture est exactement au même endroit, au centimètre près, avec une fine couche de poussière beige. Pause d'une seconde. Puis l'écran du GPS affiche un petit drapeau d'arrivée et le texte. Derrière, les autres voitures tournent toujours, et Pouf, la mascotte, applaudit poliment au centre du rond-point.",
+   "expected_result": "La chute : le GPS se félicite d'être arrivé nulle part, parce que personne n'a été contrarié."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "sign",
+    "text3d",
+    "mascot"
+   ],
+   "onscreen_text": "Collection en bio",
+   "comic_action": "La caméra recule jusqu'à la vitrine d'une boutique capitonnée. Le t-shirt « À GAUCHE DU CANAPÉ. » y est posé sur un coussin. Pouf passe devant la vitrine en hésitant, deux pas à gauche, deux pas à droite.",
+   "expected_result": "CTA commercial visuel discret, cohérent avec l'univers coussin."
+  }
+ ],
+ "cta_primary": {
+  "type": "share",
+  "text": "Tague l'ami qui met trois heures à choisir un resto."
+ },
+ "cta_commercial": {
+  "type": "visual_product",
+  "text": "Collection en bio",
+  "product_id": "tee-gauche-canape"
+ },
+ "word_count": 83,
+ "claims": [],
+ "sources": [
+  {
+   "url": "https://www.politis.fr/articles/2025/03/raphael-glucksmann-candidat-hypothetique-cherche-projet-politique/",
+   "published": "2025-03-14",
+   "consulted": "2026-11-21",
+   "used_for": "Inspiration seulement : l'article demande si le cap est vraiment si clair et juge le projet à travailler. La phrase « il faut un cap clair » du GPS est une formule générique de langue de bois inventée pour l'objet, jamais attribuée."
+  },
+  {
+   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "published": "2026-06-25",
+   "consulted": "2026-11-21",
+   "used_for": "Inspiration seulement : une vision plutôt qu'un programme, et des critiques qui le situent au « centre gauche, voire centre ». Traduit visuellement par le panneau qui montre toutes les directions."
+  },
+  {
+   "url": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
+   "published": "2026-10-12",
+   "consulted": "2026-11-21",
+   "used_for": "Inspiration seulement : le thème du rassemblement, traduit par toutes les voitures de la ville « rassemblées » en orbite."
+  },
+  {
+   "url": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
+   "published": "2024-04-03",
+   "consulted": "2026-11-21",
+   "status": "blague (vérifié (opinion))",
+   "used_for": "Idée/thème seulement, transformé en gag visuel original : Comparaison ironique à Macron (image « cool », plaire à tout le monde). Thème : le « en même temps » des objets municipaux."
+  },
+  {
+   "url": "https://lejournal.cnrs.fr/print/3123",
+   "published": "2022-06-07",
+   "consulted": "2026-11-21",
+   "status": "cliché électorat (vérifié (cliché décrit et discuté))",
+   "used_for": "Idée/thème seulement, transformé en gag visuel original : Le cliché du « bobo » : cultivé, à l'aise financièrement, centre des grandes villes, vote homogène à gauche — que le chercheur conteste. Garde-fou : la cible re…"
+  }
+ ],
+ "disclosure": "",
+ "editorial_notes": "Pourquoi c'est drôle : l'objet dont la seule fonction est de trancher entre des directions annonce qu'il faut un cap, puis refuse de choisir pour ne vexer aucune sortie. La chute retourne le critère de réussite : « vous êtes arrivé » alors qu'on n'a pas bougé, parce que « personne n'est fâché ». Le mordant vient de l'image (un hérisson de flèches, une ville entière en orbite), pas d'une insulte. Risques vérifiés : aucune citation réelle. « Il faut un cap clair » est dit par un GPS fictif, et la veille n'a trouvé aucune source où Raphaël Glucksmann l'emploie, d'où le claim_type fiction_satirique. Personne n'est nommé dans la narration. Aucun visage réaliste, aucun chiffre électoral, aucun appel au vote, aucune allusion à la vie privée, à la famille, au nom ou à l'origine. « Trop clivant » pour la gauche comme pour la droite reste symétrique et ne cible aucun camp de spectateurs. Produit : tee-gauche-canape, choisi pour l'univers coussin. Variante neutre possible : tee-pays-bugue. Continuité : rond-point capitonné (glv-evt-000), feux orange (glv-evt-002), Pouf (glv-evt-004). L'épisode ajoute glv-evt-005 (les voitures en orbite). || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 83 mots ; mèmes vérifiés intégrés comme thèmes (G5, G6, G14, voir content/veille/memes_glucksmannville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain ». À FAIRE côté décor : l'onscreen_text de s1 (« IL FAUT UN CAP CLAIR ») reprend la formule de la vidéo de référence ; la narration ne l'utilise plus, remplacer par « DESTINATION : À DÉBATTRE » (scènes non modifiées ici, consigne)."
+}

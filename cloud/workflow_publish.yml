@@ -1,0 +1,52 @@
+# À placer dans le dépôt de diffusion sous .github/workflows/publish.yml
+# Tourne toutes les heures (UTC) ; le script décide lui-même s'il est l'heure du créneau Europe/Paris.
+name: Publication quotidienne
+on:
+  schedule:
+    - cron: "33 * * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Publier maintenant (ignore le créneau)"
+        type: boolean
+        default: false
+      check:
+        description: "Vérifier l'envoi à Instagram sans publier"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Publier
+        env:
+          LIVE_PUBLISH: ${{ vars.LIVE_PUBLISH }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_SECRETS_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          IG_UPLOAD_METHOD: ${{ vars.IG_UPLOAD_METHOD }}
+          IG_GRAPH_VERSION: ${{ vars.IG_GRAPH_VERSION }}
+          IG_API_HOST: ${{ vars.IG_API_HOST }}
+          YT_ENABLED: ${{ vars.YT_ENABLED }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python cloud/publisher.py ${{ inputs.force && '--force' || '' }} ${{ inputs.check && '--check' || '' }}
+      - name: Enregistrer l'état (garde aussi le dépôt actif pour le cron)
+        run: |
+          git config user.name "lbf-diffuseur"
+          git config user.email "lbf-diffuseur@users.noreply.github.com"
+          git add state reserve
+          git diff --cached --quiet || git commit -m "état de diffusion $(date -u +%F' '%H:%M)"
+          git push

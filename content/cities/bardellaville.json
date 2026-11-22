@@ -1,0 +1,119 @@
+{
+  "slug": "bardellaville",
+  "name": "Bardellaville",
+  "inspired_by_public_codes_of": "Jordan Bardella (codes publics de communication uniquement)",
+  "disclaimer": "Ville fictive. Aucune politique réellement mise en œuvre.",
+  "central_rule": "Tout fonctionne pour la photo, rien pour l'usage.",
+  "secondary_traits": [
+    "Toute question reçoit une réponse lisse qui commence par « Excellente question » et ne contient jamais la réponse.",
+    "La ville est un plateau de tournage : chaque lieu a son bon angle, son ring light et son décor plat. Ce qui n'est pas dans le cadre n'existe pas ; l'envers du décor (les Coulisses) est le seul endroit où quelque chose marche vraiment.",
+    "On inaugure, on annonce et on publie avant que ça fonctionne : la cérémonie arrive toujours avant le résultat, et le résultat n'arrive jamais."
+  ],
+  "mood": {
+    "architecture": "Façades lisses et symétriques en décor plat, tenues par des étais visibles de l'arrière ; angles arrondis comme un fond de studio (cyclorama) ; tout est orienté vers une caméra, jamais vers la rue.",
+    "materials": "Plastique laqué, bleu marine mat, blanc cyclo, chrome brossé, contreplaqué brut côté coulisses ; aucune trace d'usure du côté filmé, tout est cassé du côté non filmé.",
+    "signage": "Lettres néon minuscules, bandeaux « EN DIRECT », typographie de clip vertical, sous-titres jaunes, barres de chargement ; les panneaux utiles sont en petit, les slogans en énorme.",
+    "light": "Ring lights partout, lumière douce sans ombre, key light chaude côté caméra ; heure dorée artificielle permanente. Côté coulisses : une ampoule nue ou une lampe de poche.",
+    "sound": "Nappe synthé de clip, clic d'obturateur, applaudissements en boîte, bip de chargement, jingle de notification ; dans les coulisses, silence et bruit de photocopieuse."
+  },
+  "map": {
+    "mairie": "Hôtel de Ville-Studio sur la place centrale : une façade de cinéma tenue par des étais, deux projecteurs, une caméra sur trépied et le panneau « Réponses concrètes » bloqué sur « Chargement… ». Derrière, onze façades de rechange alignées. Derrière la douzième, la vraie mairie : une cabane, une lampe de poche, un seul agent.",
+    "centre_ville": "Le rond-point central, unique carrefour de la ville, surmonté d'un ring light géant ; les voitures y tournent en boucle parce que la lumière est trop flatteuse pour en sortir. Autour : la mairie-studio au nord, la boutique du Bordel Français (vitrine du Coq) au sud-est, la boulangerie de Solange au sud-ouest.",
+    "quartiers": [
+      {"id": "q-plateaux", "name": "Quartier des Plateaux", "description": "Centre administratif : mairie-studio, guichet du meilleur profil, régie municipale. Les trottoirs sont des fonds blancs incurvés, on n'y voit jamais d'ombre ni de coin."},
+      {"id": "q-golden", "name": "Les Hauts-de-Golden-Hour", "description": "Quartier résidentiel : tous les immeubles sont orientés vers le couchant, les fenêtres sont des écrans qui diffusent une heure dorée en boucle. On y trouve la copro Résidence Golden Hour et son ascenseur qui ne monte que filmé."},
+      {"id": "q-story", "name": "Zone Story", "description": "Zone commerciale éphémère : supermarché Prix Cadré, salle de sport Bon Angle, restaurant La Table Lumière. Les enseignes changent toutes les vingt-quatre heures, comme des stories."},
+      {"id": "q-plan-large", "name": "Plan Large", "description": "Quartier des équipements : stade aux tribunes peintes, Parc des Arrière-Plans, université à l'amphi inversé, station du métro au plan-logo."},
+      {"id": "q-coulisses", "name": "Les Coulisses", "description": "Absent du plan officiel : l'envers des façades. Étais, câbles, sacs poubelles jamais ramassés, hangar à colis jamais livrés, le seul vrai arbre de la ville et la vraie mairie. Seul Monsieur Lambert ose y aller."}
+    ],
+    "transports": [
+      "Rond-point central au ring light géant (on y entre, on n'en sort pas)",
+      "Bus ligne 1 « Plan Séquence », conduit par Dédé : passe uniquement par les endroits photogéniques",
+      "Métro dont le plan a été dessiné pour ressembler au logo de la ville",
+      "GPS municipal qui répond « Excellente question » à toute demande d'itinéraire",
+      "Route refaite à moitié : uniquement la voie qui passe à l'image"
+    ],
+    "commerces": [
+      "Boulangerie de Solange, « Au Vrai Pain » : le seul commerce où l'on vend quelque chose qui sert",
+      "Supermarché « Prix Cadré » : étiquettes cadrées serré, paquets à une seule face",
+      "Boutique du Bordel Français : vitrine avec le Coq de vitrine et les t-shirts",
+      "Restaurant « La Table Lumière » : plats servis face caméra, dos au client",
+      "Marché de l'heure dorée : sept minutes par jour, sur roulettes",
+      "Office de tourisme et boutique de souvenirs : article phare, l'étai"
+    ],
+    "loisirs": [
+      "Parc des Arrière-Plans : forêt, plage et montagne imprimées, bancs tournés vers le photographe",
+      "Stade Plan Large : tribunes peintes pleines, matchs joués uniquement dans le champ de la caméra",
+      "Salle de sport « Bon Angle » : miroirs, ring lights, haltères en carton",
+      "Fontaine de la place, filmée en permanence au ralenti"
+    ]
+  },
+  "recurring_characters": [
+    {"id": "bdv-char-01", "name": "Gérald Cadrage", "role": "employé municipal (agent d'accueil et chargé de réponses de la mairie-studio)", "look": "Cylindre bleu marine mat, tête sphérique, oreillette blanche, badge rouge « EN DIRECT » ; toujours tourné de trois-quarts vers la caméra.", "running_trait": "Répond à tout par « Excellente question », puis vérifie son reflet dans l'objectif. Ne se met jamais de face, même pour parler à quelqu'un en face."},
+    {"id": "bdv-char-02", "name": "Solange Fournil", "role": "commerçante (boulangère)", "look": "Cube beige poudré de farine, tablier rouge, toque cylindrique blanche ; tient toujours une baguette (bâton doré ou text3d « BAGUETTE »).", "running_trait": "Seule habitante qui veut que les choses marchent pour de vrai. Pose toujours la même question pratique (« D'accord, mais ça sert à quoi ? ») que personne n'entend : son micro n'est jamais éclairé."},
+    {"id": "bdv-char-03", "name": "Dédé Plan-Séquence", "role": "chauffeur du bus ligne 1", "look": "Capsule orange, casquette noire, lunettes de soleil miroir portées jour et nuit, micro-casque.", "running_trait": "Annonce les arrêts comme des prises de tournage (« Mairie, prise douze ») et obéit à une régie invisible dans son oreillette, jamais aux passagers."},
+    {"id": "bdv-char-04", "name": "Monsieur Lambert", "role": "voisin ordinaire", "look": "Sphère grise sur cylindre gris, sac de courses ; toujours légèrement flou (profondeur de champ), car il est classé « arrière-plan humain ».", "running_trait": "Attend quelque chose en fond de chaque épisode (un bus, une réponse, une poubelle ramassée). Héros de l'arc « Derrière les douze façades » : le seul qui va voir l'envers du décor."},
+    {"id": "bdv-char-05", "name": "Le Coq de vitrine", "role": "mascotte (vitrine de la boutique)", "look": "Coq low-poly mat, crête rouge, regard blasé, t-shirt « LE PAYS BUGUE. MOI AUSSI. » ; posé dans la vitrine de la boutique du Bordel Français.", "running_trait": "Immobile dans sa vitrine, il change de pose ou de t-shirt selon ce qui arrive à la ville. C'est le seul habitant qui ne cherche jamais son meilleur angle."}
+  ],
+  "running_gags": [
+    {"id": "bdv-gag-01", "base": "Le panneau « Réponses concrètes » de la mairie-studio est bloqué sur « Chargement… ».", "evolution": [
+      "« Chargement… » en fond de la mairie (bdv-syn-01).",
+      "Il bloque aussi la validation des repas de la cantine, servis à 16 h (bdv-syn-07).",
+      "Lambert retrouve dans les coulisses le carton « RÉPONSES CONCRÈTES — NE PAS OUVRIR AVANT LA PHOTO », jamais livré (bdv-syn-14).",
+      "Après la mise à jour 2.0, le panneau affiche « Mise à jour disponible » (bdv-syn-32).",
+      "Écran bleu du simulateur : « Réponses concrètes : chargement… » (bdv-syn-35)."
+    ]},
+    {"id": "bdv-gag-02", "base": "« Excellente question » : le GPS, l'agent d'accueil, puis tout ce qui parle dans la ville répond ainsi, sans jamais répondre.", "evolution": [
+      "Le GPS du rond-point répond « Excellente question » au conducteur perdu (bdv-syn-01).",
+      "La bio de la mairie, au bout d'un formulaire carrousel, tient en ces deux mots (bdv-syn-33).",
+      "Origine révélée : la vraie réponse fait quatre pages, recadrée au format vertical il ne reste que les deux premiers mots (bdv-syn-15).",
+      "Le simulateur propose trois boutons : « Excellente question », « C'est une excellente question », « Question excellente » (bdv-syn-35)."
+    ]},
+    {"id": "bdv-gag-03", "base": "Les douze arrière-plans : la façade de la mairie est un décor plat, onze façades de rechange attendent derrière.", "evolution": [
+      "Révélation : un problème de fond, douze arrière-plans (bdv-syn-01).",
+      "Télétravail obligatoire devant un arrière-plan officiel ; le n°7 « bibliothèque en chêne » est complet jusqu'à l'an prochain (bdv-syn-10).",
+      "Une bâche imprimée « prairie » cache la montagne de sacs poubelles : treizième arrière-plan (bdv-syn-11).",
+      "La mairie loue ses arrière-plans comme destinations de vacances (bdv-syn-26).",
+      "La mise à jour 2.0 ajoute trois arrière-plans. Toujours aucun fond (bdv-syn-32)."
+    ]}
+  ],
+  "continuity_events": [
+    {"id": "bdv-evt-000", "status": "established", "description": "Le rond-point central a un ring light géant ; les voitures y tournent en boucle.", "since_episode": null},
+    {"id": "bdv-evt-001", "status": "established", "description": "La façade de la mairie est un décor plat tenu par des étais ; onze façades de rechange sont alignées derrière.", "since_episode": "bdv-s01e01"},
+    {"id": "bdv-evt-002", "status": "established", "description": "Le panneau « Réponses concrètes » devant la mairie-studio est bloqué sur « Chargement… ».", "since_episode": "bdv-s01e01"},
+    {"id": "bdv-evt-003", "status": "established", "description": "Le GPS municipal répond « Excellente question » quand on lui demande la sortie.", "since_episode": "bdv-s01e01"},
+    {"id": "bdv-evt-004", "status": "established", "description": "Le Coq de vitrine porte le t-shirt « LE PAYS BUGUE. MOI AUSSI. » dans la vitrine de la boutique.", "since_episode": "bdv-s01e01"},
+    {"id": "bdv-evt-005", "status": "unpublished_idea", "description": "Un guichet du meilleur profil (trois ring lights, tickets « profil gauche / profil droit / trois-quarts flatteur ») est installé à la mairie ; les cartes d'identité portent le portrait de Gérald.", "since_episode": null},
+    {"id": "bdv-evt-006", "status": "unpublished_idea", "description": "Le bus ligne 1 « Plan Séquence » n'a jamais bougé : il est posé dans un studio devant un écran qui fait défiler la ville. L'arrêt Urgences est barré « éclairage trop froid ».", "since_episode": null},
+    {"id": "bdv-evt-007", "status": "unpublished_idea", "description": "Dans les coulisses se trouve un gros bouton rouge « RELANCER LA VILLE » ; il relance la vidéo de présentation, pas la ville.", "since_episode": null},
+    {"id": "bdv-evt-008", "status": "unpublished_idea", "description": "Une plaque phosphorescente « ÉCLAIRAGE RÉTABLI » est vissée devant la mairie ; c'est souvent la seule chose allumée.", "since_episode": null},
+    {"id": "bdv-evt-009", "status": "unpublished_idea", "description": "Les tableaux de l'école sont au format vertical (très hauts, très étroits) ; la maîtresse écrit depuis un élévateur.", "since_episode": null},
+    {"id": "bdv-evt-010", "status": "unpublished_idea", "description": "À la cantine, la photo encadrée du déjeuner est accrochée au mur ; le déjeuner est servi à 16 h.", "since_episode": null},
+    {"id": "bdv-evt-011", "status": "unpublished_idea", "description": "Un ring light a été embauché à la mairie : il a un badge et un bureau.", "since_episode": null},
+    {"id": "bdv-evt-012", "status": "unpublished_idea", "description": "Un agent hors champ fait tout le travail derrière les murs ; sur l'organigramme, son poste s'appelle « Arrière-plan ».", "since_episode": null},
+    {"id": "bdv-evt-013", "status": "unpublished_idea", "description": "Une bâche « prairie » cache la montagne de sacs poubelles derrière la mairie : le treizième arrière-plan.", "since_episode": null},
+    {"id": "bdv-evt-014", "status": "unpublished_idea", "description": "La fenêtre de Monsieur Lambert est un écran vissé qui diffuse une heure dorée en boucle (« vue imprenable »).", "since_episode": null},
+    {"id": "bdv-evt-015", "status": "unpublished_idea", "description": "Le seul vrai arbre de la ville pousse dans les coulisses, sous un panneau « Hors champ. Ne pas arroser : ça fait des reflets. »", "since_episode": null},
+    {"id": "bdv-evt-016", "status": "unpublished_idea", "description": "Dans un hangar des coulisses s'empilent les colis « livrés en story » ; en haut, le carton « RÉPONSES CONCRÈTES ».", "since_episode": null},
+    {"id": "bdv-evt-017", "status": "unpublished_idea", "description": "La vraie mairie est une cabane derrière la douzième façade ; ses réponses de quatre pages sont recadrées en « Excellente question ».", "since_episode": null},
+    {"id": "bdv-evt-018", "status": "unpublished_idea", "description": "Le trépied du clip « Bardellaville soutient ses artisans » bloque la porte de la boulangerie de Solange.", "since_episode": null},
+    {"id": "bdv-evt-019", "status": "unpublished_idea", "description": "L'étai est le souvenir le plus vendu de la boutique de l'office de tourisme.", "since_episode": null},
+    {"id": "bdv-evt-020", "status": "unpublished_idea", "description": "Une affiche géante « Bardellaville, ses espaces aquatiques » montre un nid-de-poule filtré à l'entrée de la ville.", "since_episode": null},
+    {"id": "bdv-evt-021", "status": "unpublished_idea", "description": "L'arrêt Mairie a pour abribus une photo imprimée d'un abribus qui fonctionne.", "since_episode": null},
+    {"id": "bdv-evt-022", "status": "unpublished_idea", "description": "Monsieur Lambert a une « fontaine intérieure » (une fuite éclairée au ring light), facturée dans ses charges.", "since_episode": null},
+    {"id": "bdv-evt-023", "status": "unpublished_idea", "description": "L'avenue principale est refaite à moitié : la voie côté caméra est neuve, l'autre est un cratère « en cours de cadrage ».", "since_episode": null},
+    {"id": "bdv-evt-024", "status": "unpublished_idea", "description": "Le permis de conduire de Bardellaville est valable vingt-quatre heures, comme une story.", "since_episode": null},
+    {"id": "bdv-evt-025", "status": "unpublished_idea", "description": "Après la mise à jour 2.0, la ville compte trois arrière-plans de plus et le panneau des réponses affiche « Mise à jour disponible ».", "since_episode": null}
+  ],
+  "arcs": [
+    {"id": "bdv-arc-01", "title": "La grande inauguration", "episodes": ["bdv-syn-01", "bdv-syn-02", "bdv-syn-03", "bdv-syn-04", "bdv-syn-05"]},
+    {"id": "bdv-arc-02", "title": "La rentrée en format vertical", "episodes": ["bdv-syn-06", "bdv-syn-07", "bdv-syn-08", "bdv-syn-09", "bdv-syn-10"]},
+    {"id": "bdv-arc-03", "title": "Derrière les douze façades", "episodes": ["bdv-syn-11", "bdv-syn-12", "bdv-syn-13", "bdv-syn-14", "bdv-syn-15"]}
+  ],
+  "blender_props_needed": [
+    "ground", "road", "roundabout", "building", "mairie", "facade_set", "ring_light", "studio_light",
+    "tripod_camera", "sign", "car", "car_orbit", "bus", "tree", "lamp", "bench", "bin", "shop", "tshirt",
+    "mascot", "gps", "screen", "text3d", "person", "tribune", "lift_tribune", "table", "form_stack",
+    "traffic_light", "router_lectern", "scroll", "banner", "column", "arch", "fountain"
+  ]
+}

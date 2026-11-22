@@ -1,0 +1,196 @@
+{
+ "id": "mrv-s01e06",
+ "city": "marineville",
+ "synopsis_id": "mrv-syn-06",
+ "format": "A",
+ "title_cover": "L'inauguration de l'enseigne",
+ "hook_variants": [
+  "Marineville inaugure sa nouvelle enseigne, vissée par-dessus l'ancienne.",
+  "Marineville inaugure sa nouvelle enseigne. Par-dessus l'ancienne.",
+  "Marineville inaugure sa nouvelle enseigne. La même que la dernière fois.",
+  "Ici, on coupe un ruban pour célébrer une couche.",
+  "Cette mairie est désormais plus petite que son logo."
+ ],
+ "selected_hook": 0,
+ "ending_variants": [
+  "Tout en haut, plus aucun nom : juste une rose bleue. Comme ça, plus personne ne sait qui a changé.",
+  "Tout en haut, plus de nom du tout. Juste une fleur bleue. Comme ça, personne ne sait qui a changé.",
+  "Plan large : la mairie a l'air posée sous son propre logo. Tout en haut : « On a changé ». Juste en dessous : « On a changé »."
+ ],
+ "selected_ending": 0,
+ "narration_segments": [
+  {
+   "id": "n1",
+   "text": "Marineville inaugure sa nouvelle enseigne, vissée par-dessus l'ancienne.",
+   "accent_words": [
+    "par-dessus"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Ruban, fanfare, chat en nœud papillon : le drap tombe, les anciennes dépassent.",
+   "accent_words": [
+    "dépassent"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "Gérard en visse une pour finir proprement, puis une pour la cohérence.",
+   "accent_words": [
+    "proprement"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "La pile dépasse le toit, et le public se couche pour voir le sommet.",
+   "accent_words": [
+    "sommet"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Tout en haut, plus aucun nom : juste une rose bleue.",
+   "accent_words": [
+    "rose bleue"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Comme ça, plus personne ne sait qui a changé.",
+   "accent_words": [
+    "changé"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Abonne-toi : la prochaine fois, on compte les couches.",
+   "accent_words": [
+    "couches"
+   ],
+   "claim_type": "fiction_satirique"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "narration_ids": [
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "mairie",
+    "sign",
+    "banner",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "",
+   "comic_action": "Descente sur la mairie : la façade est couverte d'un drap bleu ; de profil, on voit déjà l'enseigne épaisse comme un dictionnaire.",
+   "expected_result": "La règle du millefeuille est visible avant même le dévoilement."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "mairie",
+    "tribune",
+    "banner",
+    "mascot",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "ON A CHANGÉ",
+   "comic_action": "Ruban tricolore coupé, Minou en nœud papillon sur la tribune. Le drap tombe : la nouvelle enseigne, et sur les bords, les tranches des anciennes qui dépassent comme un pain de mie.",
+   "expected_result": "Inaugurer une couche."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3",
+    "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "mairie",
+    "sign",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "",
+   "comic_action": "Orbite : Gérard, sur son escabeau, visse une couche, puis une autre ; la pile monte au-dessus du toit. Le public (persons) penche la tête, puis s'allonge sur le dos.",
+   "expected_result": "Escalade verticale.",
+   "new_asset_request": "Escabeau et perceuse de Gérard (new_asset:escabeau_et_perceuse)."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n5",
+    "n6"
+   ],
+   "camera": "return",
+   "set": [
+    "mairie",
+    "sign",
+    "text3d",
+    "mascot"
+   ],
+   "onscreen_text": "",
+   "comic_action": "Plan très large : la pile est deux fois plus haute que la mairie, qui paraît posée sous son logo. Au sommet, la dernière plaque : pas un mot, juste une fleur bleue. On laisse respirer. Minou dort sur la pile.",
+   "expected_result": "Chute : à force de renommer, on n'affiche plus de nom du tout.",
+   "new_asset_request": "Fleur bleue stylisée en text3d ou sign (forme simple)."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "closeup",
+   "set": [
+    "tshirt",
+    "tribune",
+    "banner"
+   ],
+   "onscreen_text": "Collection en bio",
+   "comic_action": "Sur la tribune désertée, un t-shirt « LE PAYS BUGUE. MOI AUSSI. » sert de nappe au pupitre.",
+   "expected_result": "CTA d'abonnement avec rendez-vous crédible + produit visible."
+  }
+ ],
+ "cta_primary": {
+  "type": "follow",
+  "text": "Abonne-toi : la prochaine fois, on compte les couches."
+ },
+ "cta_commercial": {
+  "type": "visual_product",
+  "text": "Collection en bio",
+  "product_id": "tee-pays-bugue"
+ },
+ "word_count": 76,
+ "claims": [],
+ "sources": [
+  {
+   "url": "https://www.europe1.fr/politique/dans-son-nouveau-qg-marine-le-pen-devoile-son-slogan-et-son-logo-de-campagne-2902292",
+   "published": "2016-11-16",
+   "consulted": "2026-11-21",
+   "status": "fait public (logo de campagne : une rose bleue ; ni nom du parti ni flamme)",
+   "used_for": "Inspiration seulement : une enseigne qui finit sans aucun nom, juste une fleur bleue ; le bleu officiel. Aucune citation reprise."
+  },
+  {
+   "url": "https://fr.timesofisrael.com/fn-le-front-change-le-fond-reste-le-meme-estime-la-presse/",
+   "published": "2018-03-12",
+   "consulted": "2026-11-21",
+   "status": "blague (vérifié (moquerie de presse / opinion))",
+   "used_for": "Idée/thème seulement, transformé en gag visuel original : Jeu de mots de presse sur le changement de nom : la façade change, le fond reste. On ne reprend PAS la formule (punchline d'autrui) : on la transforme en gags v…"
+  }
+ ],
+ "disclosure": "",
+ "editorial_notes": "Escalade verticale puis renversement : la couche ultime abandonne le nom, ce qui transpose le logo de campagne sans nom ni sigle en gag de signalétique. Continuité : millefeuille (mrv-gag-01), pile qui dépasse le toit (mrv-evt-015), Minou sur la pile (mrv-evt-002). Rendez-vous « on compte les couches » réutilisable. Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 76 mots ; mèmes vérifiés intégrés comme thèmes (M4, M3, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+}

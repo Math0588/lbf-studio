@@ -1,0 +1,193 @@
+{
+ "id": "mlv-s01e34",
+ "city": "melenchonville",
+ "synopsis_id": "mlv-syn-34",
+ "format": "C",
+ "title_cover": "Ascenseur 6.1",
+ "hook_variants": [
+  "Mise à jour : l'ascenseur-tribune passe en version six point un.",
+  "Mise à jour de la France : l'ascenseur-tribune de La Constituante passe en version six point un.",
+  "Nouveauté : un bouton descendre. Après débat contradictoire.",
+  "Bug connu : l'arrêt d'urgence déclenche une motion d'urgence.",
+  "Correctif : la cabine ne traverse plus le toit. En principe."
+ ],
+ "selected_hook": 0,
+ "ending_variants": [
+  "La séance de clôture l'attendait toujours, quatrième session.",
+  "Odile appuie sur descendre. La cabine descend au sous-sol, puis plus bas, dans un hémicycle souterrain plein de voisins. La séance de clôture l'attendait.",
+  "Le bouton descendre fonctionne. Il faut juste un quorum."
+ ],
+ "selected_ending": 0,
+ "narration_segments": [
+  {
+   "id": "n1",
+   "text": "Mise à jour : l'ascenseur-tribune passe en version six point un.",
+   "accent_words": [
+    "six point un"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Nouveauté : un bouton descendre, après débat contradictoire.",
+   "accent_words": [
+    "descendre"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "Bug connu : l'arrêt d'urgence déclenche une motion d'urgence.",
+   "accent_words": [
+    "motion d'urgence"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Odile, Doc Martens aux pieds, appuie sur descendre : direction sous-sol.",
+   "accent_words": [
+    "Doc Martens",
+    "sous-sol"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Puis plus bas, dans un hémicycle souterrain plein de voisins.",
+   "accent_words": [
+    "hémicycle souterrain"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "La séance de clôture l'attendait toujours, quatrième session.",
+   "accent_words": [
+    "attendait"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Quel bouton tu ajouterais à cet ascenseur ?",
+   "accent_words": [
+    "bouton"
+   ],
+   "claim_type": "fiction_satirique"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "narration_ids": [
+    "n1"
+   ],
+   "camera": "closeup",
+   "set": [
+    "lift_tribune",
+    "screen",
+    "text3d",
+    "studio_light"
+   ],
+   "onscreen_text": "MISE À JOUR : ASCENSEUR 6.1",
+   "comic_action": "La cabine-tribune drapée de velours, avec un petit écran de mise à jour qui charge au-dessus du pupitre.",
+   "expected_result": "Continuité directe avec le pilote, format C reconnaissable."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "orbit",
+   "set": [
+    "lift_tribune",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "BOUTON ↓ : APRÈS DÉBAT",
+   "comic_action": "Orbite : un unique bouton « DESCENDRE » apparaît, protégé par une petite cloche ; deux voisins débattent devant en pointant du doigt.",
+   "expected_result": "Le patch ajoute une procédure, pas une fonction."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "building",
+    "lift_tribune",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "STOP = MOTION D'URGENCE",
+   "comic_action": "La caméra longe la façade : la tribune dépasse légèrement du toit puis redescend ; quelqu'un appuie sur l'arrêt d'urgence, une sonnette de président de séance retentit, tout le palier se rassoit.",
+   "expected_result": "Patch qui aggrave le bug."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n4",
+    "n5"
+   ],
+   "camera": "descend",
+   "set": [
+    "lift_tribune",
+    "table",
+    "person",
+    "banner",
+    "text3d"
+   ],
+   "onscreen_text": "SÉANCE DE CLÔTURE — JOUR 1",
+   "comic_action": "La caméra suit la cabine qui descend sous le sous-sol vers un hémicycle souterrain éclairé en rouge, plein de voisins assis ; la bannière « SÉANCE DE CLÔTURE — JOUR 1 » au fond.",
+   "expected_result": "Chute : la descente mène au pire endroit, la réunion permanente."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n6",
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "lift_tribune",
+    "person",
+    "tshirt",
+    "text3d"
+   ],
+   "onscreen_text": "QUEL BOUTON TU AJOUTES ?",
+   "comic_action": "Dans le hall, Lucien main levée devant les portes ; un voisin en t-shirt « LE PAYS BUGUE. MOI AUSSI. » prend l'escalier.",
+   "expected_result": "CTA question, produit cohérent avec le bug."
+  }
+ ],
+ "cta_primary": {
+  "type": "comment",
+  "text": "Quel bouton tu ajouterais à cet ascenseur ?"
+ },
+ "cta_commercial": {
+  "type": "visual_product",
+  "text": "Collection en bio",
+  "product_id": "tee-pays-bugue"
+ },
+ "word_count": 65,
+ "claims": [],
+ "sources": [
+  {
+   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "published": "2026-06",
+   "consulted": "2026-11-21",
+   "statut": "fait",
+   "used_for": "Inspiration seulement (blague) : Quatrième candidature présidentielle (2012, 2017, 2022, 2027) : ressort comique du « quatrième mandat », « quatrième tournée », « candidat pour la quatrième fois ». Complété par Blue News/AFP (11/11/2025) sur son image de tribun lyrique sujet à des colères."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-age-profession-lieu-de-residence-quel-est-le-profil-des-electeurs",
+   "published": "2022-04-10",
+   "consulted": "2026-11-21",
+   "statut": "fait (chiffre) / mème (cliché)",
+   "used_for": "Inspiration seulement (cliché électorat) : Électorat jeune : en tête chez les moins de 35 ans en 2022 (31 % des 18-24 ans selon Ipsos). Base factuelle du cliché « étudiant en socio, tote bag, lait d'avoine » — le cliché lui-même est notre invention satirique, sans aucune caractéristique protégée."
+  }
+ ],
+ "disclosure": "",
+ "editorial_notes": "Patch qui aggrave le bug ; continuité forte avec le pilote 01 et l'épisode 05 (séance de clôture). CTA « abonne-toi » de la synopsis remplacé par une question précise. Aucun mème réel utilisé, aucune personne réelle. Punch-up 21/11/2026 (ton ultra provocateur demandé) : narration réécrite en phrases courtes (une phrase = un plan), clichés d'électorat chiffrés limités aux goûts et postures, mèmes vérifiés en veille (M9, M11, voir content/veille/). Les répliques sont dites par des habitants, objets ou le maire fictif ; aucune citation attribuée à la personne réelle, aucune allusion judiciaire, aucune caractéristique protégée. Phrases marquées fait_public : faits publics sourcés."
+}

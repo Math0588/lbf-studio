@@ -1,0 +1,232 @@
+{
+ "id": "mcv-s01e32",
+ "city": "macronville",
+ "synopsis_id": "mcv-syn-32",
+ "format": "C",
+ "title_cover": "Mise à jour 5.0",
+ "hook_variants": [
+  "Mise à jour Macronville 5.0 : la ville redémarre.",
+  "Mise à jour Macronville 5.0 disponible. Redémarrage de la ville en cours.",
+  "Patch notes de ta ville : le bouton Descendre a été supprimé.",
+  "Ta ville a été mise à jour sans ton accord. Comme d'habitude.",
+  "Nouveauté : les habitants mécontents sont réexpliqués automatiquement."
+ ],
+ "selected_hook": 0,
+ "ending_variants": [
+  "Progression : quatre-vingt-dix-neuf pour cent, depuis trois ans.",
+  "Progression : 99 %, depuis trois ans. Ne pas éteindre la ville.",
+  "Redémarrage prévu après la prochaine inauguration."
+ ],
+ "selected_ending": 0,
+ "narration_segments": [
+  {
+   "id": "n1",
+   "text": "Mise à jour Macronville 5.0 : la ville redémarre.",
+   "accent_words": [
+    "redémarre"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Patch note : bouton Descendre supprimé, car peu utilisé.",
+   "accent_words": [
+    "utilisé"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "Tous les feux passent en mode en même temps.",
+   "accent_words": [
+    "temps"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Les mécontents seront réexpliqués automatiquement, for sure.",
+   "accent_words": [
+    "sure"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n5",
+   "text": "Problèmes connus : il y a eu parfois des erreurs.",
+   "accent_words": [
+    "erreurs"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n6",
+   "text": "Correctif prévu : aucun, mais un discours de quatre heures.",
+   "accent_words": [
+    "heures"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Progression : quatre-vingt-dix-neuf pour cent, depuis trois ans.",
+   "accent_words": [
+    "ans"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n8",
+   "text": "Écris en commentaire une ligne de patch note pour ta ville.",
+   "accent_words": [
+    "ville"
+   ],
+   "claim_type": "fiction_satirique"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "narration_ids": [
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "mairie",
+    "screen",
+    "building"
+   ],
+   "onscreen_text": "MACRONVILLE 5.0",
+   "comic_action": "Descente sur la Tour : l'écran de façade affiche un écran de mise à jour ; les lampadaires clignotent.",
+   "expected_result": "Format parodique (patch notes) appliqué à une ville."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n2",
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "lift_tribune",
+    "traffic_light",
+    "screen"
+   ],
+   "onscreen_text": "− BOUTON DESCENDRE",
+   "comic_action": "Le bouton « bas » de l'ascenseur disparaît ; en arrière-plan, le feu passe vert et rouge à la fois.",
+   "expected_result": "Continuité : mcv-evt-002 et mcv-evt-000 deviennent des lignes de code."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d"
+   ],
+   "onscreen_text": "AUTO-RÉEXPLICATION : ON",
+   "comic_action": "Une case à cocher 3D « Réexplication automatique » s'active ; texte « for sure » en sous-titre.",
+   "expected_result": "Le désaccord est traité par un réglage logiciel."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n5",
+    "n6"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "screen",
+    "mairie"
+   ],
+   "onscreen_text": "CORRECTIF : AUCUN",
+   "comic_action": "Par la vitre de la Tour, un écran déroule la rubrique « Problèmes connus » ; le curseur s'arrête sur « Correctif prévu : aucun ».",
+   "expected_result": "L'aveu sans conséquence, en langage d'éditeur logiciel."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "descend",
+   "set": [
+    "mairie",
+    "screen",
+    "banner"
+   ],
+   "onscreen_text": "99 % — NE PAS ÉTEINDRE",
+   "comic_action": "Vue aérienne : barre de progression géante bloquée à 99 % sur la façade ; un calendrier défile trois années. Tenir deux secondes.",
+   "expected_result": "La transformation promise ne finit jamais."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n8"
+   ],
+   "camera": "return",
+   "set": [
+    "mairie",
+    "person",
+    "tshirt",
+    "screen"
+   ],
+   "onscreen_text": "TA LIGNE DE PATCH ?",
+   "comic_action": "Plan large du Parvis ; un habitant en t-shirt de la collection fixe la barre de progression.",
+   "expected_result": "Appel à commenter, produit visible."
+  }
+ ],
+ "cta_primary": {
+  "type": "comment",
+  "text": "Écris en commentaire une ligne de patch note pour ta ville."
+ },
+ "cta_commercial": {
+  "type": "visual_product",
+  "text": "Collection en bio",
+  "product_id": "tee-gauche-canape"
+ },
+ "word_count": 73,
+ "claims": [
+  {
+   "text": "« il y a eu parfois des erreurs » : formule exacte du même message (16/11/2026). Reprise comme ligne de patch note fictive.",
+   "claim_type": "citation_exacte",
+   "source": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant"
+  },
+  {
+   "text": "« for sure » : expression répétée par Emmanuel Macron à Davos (janvier 2026), devenue mème. Reprise ici par un personnage fictif, sans attribution.",
+   "claim_type": "citation_exacte",
+   "source": "https://www.sudradio.fr/sud-radio/for-sure-quand-macron-devient-un-phenomene-viral-sur-les-reseaux-sociaux"
+  },
+  {
+   "text": "« en même temps » : tic de langage public documenté (29 occurrences à Toulon le 18/02/2017).",
+   "claim_type": "fait_public",
+   "source": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
+   "date": "2026-11-17",
+   "consulted": "2026-11-21",
+   "statut": "fait public (message publié sur X le 16/11/2026) + réactions/moqueries",
+   "note": "Formules exactes : « j'ai fait de mon mieux » et « il y a eu parfois des erreurs »."
+  },
+  {
+   "url": "https://www.sudradio.fr/sud-radio/for-sure-quand-macron-devient-un-phenomene-viral-sur-les-reseaux-sociaux",
+   "date": "2026-01-29",
+   "consulted": "2026-11-21",
+   "statut": "mème (viralité = fait public rapporté)",
+   "note": "« for sure » répété au Forum de Davos (janvier 2026), remixé sur TikTok, Instagram et X (DJ, parodies)."
+  },
+  {
+   "url": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
+   "date": "2017-05-08",
+   "consulted": "2026-11-21",
+   "statut": "fait public (tic de langage reconnu par l'intéressé)",
+   "note": "« en même temps » : 29 fois au meeting de Toulon (18/02/2017), au moins 216 fois en trois mois."
+  }
+ ],
+ "disclosure": "",
+ "editorial_notes": "Format C. Mécanisme : parodie de format (patch notes). Mèmes vérifiés : « il y a eu parfois des erreurs » (16/11/2026, formule exacte, devenue « problème connu »), « for sure » (2026), « en même temps ». Aucune attribution dans la narration ; claims citation_exacte + sources. T-shirt du plan final : tee-gauche-canape (« À GAUCHE DU CANAPÉ. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+}

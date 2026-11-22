@@ -1,0 +1,207 @@
+{
+ "id": "bdv-s01e35",
+ "city": "bardellaville",
+ "synopsis_id": "bdv-syn-35",
+ "format": "D",
+ "title_cover": "Simulateur : la question",
+ "hook_variants": [
+  "Simulateur de président : tu dois répondre à une vraie question.",
+  "Simulateur de président : tu dois répondre à une question. Une vraie.",
+  "Le niveau le plus dur du jeu : répondre.",
+  "Trois boutons de réponse. Les trois disent la même chose.",
+  "Le boss final de ce jeu est un enfant qui demande « pourquoi »."
+ ],
+ "selected_hook": 0,
+ "ending_variants": [
+  "Le jeu plante : réponses concrètes, chargement.",
+  "Boss final : un enfant qui demande « mais pourquoi ? » cinq fois de suite. Le jeu plante. Écran bleu : réponses concrètes, chargement.",
+  "Le jeu propose un mode facile : « Questions posées par des plateaux amis ». Il se termine en zéro seconde, score parfait."
+ ],
+ "selected_ending": 0,
+ "narration_segments": [
+  {
+   "id": "n1",
+   "text": "Simulateur de président : tu dois répondre à une vraie question.",
+   "accent_words": [
+    "question"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Question : pourquoi le bus ne passe plus jamais ?",
+   "accent_words": [
+    "jamais"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "Trois boutons : excellente question, très bonne question, question excellente.",
+   "accent_words": [
+    "excellente"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Niveau deux : nouveau bouton débloqué, mâcher un bonbon.",
+   "accent_words": [
+    "bonbon"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Niveau trois : refuser le débat, la chaîne est trop petite.",
+   "accent_words": [
+    "petite"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Boss final : un enfant qui demande « mais pourquoi ? » cinq fois.",
+   "accent_words": [
+    "fois"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Le jeu plante : réponses concrètes, chargement.",
+   "accent_words": [
+    "chargement"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n8",
+   "text": "Quelle question ferait planter ta mairie, d'après toi ?",
+   "accent_words": [
+    "toi"
+   ],
+   "claim_type": "fiction_satirique"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "narration_ids": [
+    "n1"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "router_lectern",
+    "text3d"
+   ],
+   "onscreen_text": "NIVEAU 1 : LA QUESTION",
+   "comic_action": "Écran de jeu plein cadre : un pupitre pixelisé (router_lectern) face à un micro. Titre : « SIMULATEUR DE PRÉSIDENT — Niveau 1 : répondre à une question ».",
+   "expected_result": "Image surprenante : répondre est présenté comme une épreuve de jeu vidéo."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n2",
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "bus",
+    "ring_light"
+   ],
+   "onscreen_text": "+10 IMAGE",
+   "comic_action": "Question en bulle : « Pourquoi le bus ne passe plus ? » (en fond, le bus Plan Séquence immobile, callback). Trois boutons identiques : « Excellente question », « C'est une excellente question », « Question excellente ». Clic : « +10 IMAGE », jauge « RÉPONSE : 0 ».",
+   "expected_result": "La langue de bois devient un menu de jeu : toutes les options évitent la réponse."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n4",
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "screen",
+    "facade_set",
+    "router_lectern",
+    "text3d"
+   ],
+   "onscreen_text": "DÉBLOQUÉ : CHANGER DE FOND",
+   "comic_action": "Orbite autour du pupitre : niveau 2, la même question deux fois. Un bouton doré se débloque, « CHANGER D'ARRIÈRE-PLAN » ; derrière le pupitre, les façades défilent (château, plage, bibliothèque n°7). Un autre bouton grisé : « Choisir un plateau plus grand ».",
+   "expected_result": "Escalade : quand on insiste, on change de décor, pas de réponse."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n6",
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "screen",
+    "person",
+    "text3d",
+    "router_lectern"
+   ],
+   "onscreen_text": "RÉPONSES CONCRÈTES : CHARGEMENT…",
+   "comic_action": "Boss final : un petit personnage (cylindre court, casquette) lève la main : « Mais pourquoi ? » ×5, en bulles empilées. Le pupitre tremble, pixelise. Écran bleu plein cadre : « Réponses concrètes : chargement… ». Travelling arrière : la salle d'arcade est vide. Laisser respirer.",
+   "expected_result": "Chute : la question la plus simple fait planter le système ; retour du running gag."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n8"
+   ],
+   "camera": "closeup",
+   "set": [
+    "shop",
+    "mascot",
+    "tshirt",
+    "screen"
+   ],
+   "onscreen_text": "Collection en bio",
+   "comic_action": "Le Coq de vitrine porte le t-shirt ; au-dessus de lui, une bulle « Pourquoi ? » à laquelle il ne répond pas non plus.",
+   "expected_result": "Question à commenter, produit réel visible."
+  }
+ ],
+ "cta_primary": {
+  "type": "comment",
+  "text": "Quelle question ferait planter ta mairie, d'après toi ?"
+ },
+ "cta_commercial": {
+  "type": "visual_product",
+  "text": "Collection en bio",
+  "product_id": "tee-avis-mandat"
+ },
+ "word_count": 81,
+ "claims": [],
+ "sources": [
+  {
+   "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
+   "published": "2024-03-04",
+   "consulted": "2026-11-21",
+   "status": "fait public (refus d'un débat sur une chaîne jugée trop petite ; la formule publique n'est pas reprise)",
+   "used_for": "Inspiration seulement : le choix des plateaux (refus d'un débat jugé trop petit). Traduit par un bouton grisé « Choisir un plateau plus grand » et la variante « plateaux amis ». La formule publique d'origine n'est pas reprise."
+  },
+  {
+   "url": "https://certop.cnrs.fr/wp-content/uploads/2024/07/Jordan-Bardella-sur-TikTok-affiche-son-addiction-aux-bonbons-et-ca-en-dit-long-sur-sa-strategie-de-com.pdf",
+   "published": "2024-07",
+   "consulted": "2026-11-21",
+   "status": "fait public (blague récurrente de son propre compte TikTok : bonbons avant les débats) + opinion",
+   "used_for": "Sachet de bonbons du maire ou du candidat fictif."
+  },
+  {
+   "url": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
+   "published": "2026-05-31",
+   "consulted": "2026-11-21",
+   "status": "opinion (chronique, titre seul lu)",
+   "used_for": "Idée de réponses calibrées et creuses ; la formule de l'auteur n'est pas reprise."
+  }
+ ],
+ "disclosure": "",
+ "editorial_notes": "Format D (Simulateur). Mécanisme : escalade par niveaux de jeu. Continuité : « Excellente question » (bdv-gag-02 étape 4), « Chargement… » (bdv-gag-01 étape 5), bus immobile (e02). Les répliques sont dites par des boutons et un enfant fictif. Risques vérifiés : aucune citation réelle, aucune consigne de vote, l'enfant gagne (on ne se moque pas de lui). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_bardellaville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+}

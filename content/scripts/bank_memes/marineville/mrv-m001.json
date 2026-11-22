@@ -1,0 +1,191 @@
+{
+ "id": "mrv-m001",
+ "city": "marineville",
+ "synopsis_id": "gm-mrv-m001",
+ "format": "A",
+ "anchor": "« Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » (meeting d'Orléans, 25/10/2026)",
+ "situation": "le rond-point",
+ "ressort": "littéralisation",
+ "title_cover": "Le rond-point oiseau",
+ "hook_variants": [
+  "Dans cette ville, tout le monde vote Marine.",
+  "Ici, le rond-point n'a plus de sortie. Juste une rampe.",
+  "Ni à droite, ni à gauche : tout droit vers le ciel.",
+  "Trois cents Clio ont tenté de devenir un oiseau.",
+  "Dans cette ville, même les voitures veulent être l'oiseau."
+ ],
+ "selected_hook": 0,
+ "ending_variants": [
+  "La maire parle fièrement d'un « envol maîtrisé ».",
+  "Bilan : zéro envol, trois cents Clio sur la mairie, et une maire ravie.",
+  "Le rond-point est devenu un nid. Un nid de Clio."
+ ],
+ "selected_ending": 0,
+ "narration_segments": [
+  {
+   "id": "n1",
+   "text": "Dans cette ville, tout le monde vote Marine.",
+   "accent_words": [
+    "Marine"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Ici, on n'est ni l'aile droite ni l'aile gauche : on est l'oiseau.",
+   "accent_words": [
+    "l'oiseau"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "Alors le rond-point a perdu sa sortie droite et sa sortie gauche.",
+   "accent_words": [],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Il reste une rampe vers le ciel, marquée Décollage.",
+   "accent_words": [
+    "Décollage"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Trois cents Clio diesel l'ont prise à fond de quatrième.",
+   "accent_words": [],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Aucune n'a décollé : elles tournent sur le toit de la mairie.",
+   "accent_words": [
+    "sur le toit de la mairie"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "La maire parle fièrement d'un « envol maîtrisé ».",
+   "accent_words": [
+    "envol maîtrisé"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n8",
+   "text": "En commentaire : ta voiture penche aile droite ou aile gauche ?",
+   "accent_words": [],
+   "claim_type": "fiction_satirique"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "narration_ids": [
+    "n1",
+    "n2"
+   ],
+   "camera": "descend",
+   "set": [
+    "roundabout",
+    "car_orbit",
+    "sign",
+    "text3d",
+    "mairie"
+   ],
+   "onscreen_text": "NI DROITE NI GAUCHE",
+   "comic_action": "Plongée sur le rond-point : les panneaux « sortie droite » et « sortie gauche » sont barrés d'une croix rouge ; au centre, une étiquette 3D géante « L'OISEAU ».",
+   "expected_result": "La devise réelle devient une règle de circulation."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n3",
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "roundabout",
+    "road",
+    "lift_tribune",
+    "sign",
+    "car"
+   ],
+   "onscreen_text": "SORTIE : DÉCOLLAGE",
+   "comic_action": "La caméra suit une Clio qui contourne l'îlot : la seule sortie est une plateforme inclinée (lift_tribune) pointée vers le ciel, panneau « DÉCOLLAGE ».",
+   "expected_result": "Littéralisation : l'oiseau, c'est une rampe."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "orbit",
+   "set": [
+    "car_orbit",
+    "lift_tribune",
+    "text3d"
+   ],
+   "onscreen_text": "300 CLIO DIESEL",
+   "comic_action": "Orbite : les voitures foncent l'une après l'autre sur la rampe, fumée grise, compteur rouge « 300 ».",
+   "expected_result": "Escalade chiffrée de l'électorat périurbain."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "return",
+   "set": [
+    "mairie",
+    "car_orbit",
+    "building"
+   ],
+   "onscreen_text": "",
+   "comic_action": "Retour au plan large : les Clio tournent en rond sur le toit plat de la mairie, comme sur un nouveau rond-point.",
+   "expected_result": "Chute visuelle : on ne s'envole pas, on tourne plus haut."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n7",
+    "n8"
+   ],
+   "camera": "closeup",
+   "set": [
+    "tribune",
+    "person",
+    "tshirt",
+    "text3d"
+   ],
+   "onscreen_text": "ENVOL MAÎTRISÉ",
+   "comic_action": "La maire au pupitre, bulle « Envol maîtrisé ». Au premier plan, une passante en t-shirt « À DROITE DU CANAPÉ. ».",
+   "expected_result": "CTA parlé + produit visible."
+  }
+ ],
+ "cta_primary": {
+  "type": "comment",
+  "text": "En commentaire : ta voiture penche aile droite ou aile gauche ?"
+ },
+ "cta_commercial": {
+  "type": "visual_product",
+  "text": "Collection en bio",
+  "product_id": "tee-droite-canape"
+ },
+ "word_count": 85,
+ "claims": [],
+ "sources": [
+  {
+   "url": "https://www.lagazettefrance.fr/article/la-republique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-role-de-sa-campagne",
+   "date": "2026-10-29",
+   "statut": "fait public (phrase prononcée en meeting, rapportée par la presse) ; mème potentiel",
+   "usage": "Phrase réelle reprise comme devise de la ville fictive ; jamais remise dans la bouche de la maire fictive ; le mot « vole » est évité.",
+   "consulted": "2026-11-21"
+  }
+ ],
+ "disclosure": "",
+ "editorial_notes": "Drôle parce que la formule d'équilibriste devient une infrastructure absurde : un rond-point sans sortie latérale. Mème d'ancrage : « Je ne suis ni l'aile droite ni l'aile gauche, je suis l'oiseau » (meeting d'Orléans, 25/10/2026). Vérifications : rien sur l'immigration, l'origine, la religion ou un groupe de population ; aucune allusion judiciaire, même réelle ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; les répliques entre guillemets de la maire ou des habitants sont fictives et absurdes ; chiffres = prix et compteurs de la ville fictive, jamais des statistiques présentées comme réelles ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+}

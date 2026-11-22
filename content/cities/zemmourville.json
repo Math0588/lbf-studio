@@ -1,0 +1,97 @@
+{
+  "slug": "zemmourville",
+  "name": "Zemmourville",
+  "inspired_by_public_codes_of": "Éric Zemmour (codes publics de communication uniquement : nostalgie, « c'était mieux avant », grandeur passée, références historiques et littéraires, ton de chroniqueur)",
+  "disclaimer": "Ville fictive. Aucune politique réellement mise en œuvre. Aucune citation réelle : toutes les phrases sont des fictions satiriques sur une posture passéiste.",
+  "central_rule": "Tout doit revenir en arrière : la ville ne répare rien, elle restaure ; elle n'avance pas, elle commémore.",
+  "secondary_traits": [
+    "Chaque objet moderne est toléré à condition de se comporter comme un objet ancien (le Wi-Fi exige des alexandrins, le GPS recalcule vers le passé).",
+    "Tout défaut devient patrimoine : une fissure est une « patine », une fuite est « d'époque », une panne est une « reconstitution ».",
+    "Les annonces officielles sont rédigées comme des chroniques : passé simple, imparfait du regret, références littéraires et soupirs.",
+    "Le futur est administrativement suspect : il faut justifier de son ancienneté pour exister.",
+    "La grandiloquence est obligatoire : on n'ouvre pas une boulangerie, on « restaure une tradition millénaire » ; on ne change pas une ampoule, on « rallume les Lumières »."
+  ],
+  "mood": {
+    "architecture": "Pierre de taille, arches monumentales, colonnes, frontons gravés ; au loin, un lotissement moderne abandonné sous des draps comme un musée fermé.",
+    "materials": "Pierre beige, laiton patiné, cuir craquelé, parchemin, bois ciré, cire à cacheter rouge (seule couleur vive), verre bombé de vitrine.",
+    "signage": "Panneaux en lettres gothiques sépia, plaques émaillées, dates gravées partout ; les textes doivent rester grands et lisibles en 9:16.",
+    "light": "Lumière dorée de fin d'après-midi, filtre sépia léger, réverbères à halo chaud ; les écrans modernes sont les seules sources froides, toujours en train de virer au sépia.",
+    "sound": "Craquements de vinyle, sabots sur pavés, horloge qui fait « tac-tic » (à l'envers), plume qui gratte, soupirs collectifs."
+  },
+  "map": {
+    "mairie": "Hôtel de ville en pierre avec une horloge de fronton qui tourne à l'envers et la devise gravée « Ici commence hier ». Les horaires affichés : « Ouvert hier, de 9 h à 17 h ».",
+    "centre_ville": "Place de la Grandeur Passée : une fontaine à sec « en hommage à l'eau d'autrefois », une colonne surmontée d'une baguette sous cloche, et un rond-point dont les sorties s'appellent Autrefois, Jadis et Naguère.",
+    "quartiers": [
+      {"id": "q-porte", "name": "La Porte d'Antan", "description": "Arche monumentale à l'entrée de la ville : on y entre en voiture moderne, on en ressort dans une maquette médiévale."},
+      {"id": "q-jadis", "name": "Quartier Jadis", "description": "Vieille ville pavée, commerces « comme avant », plaques commémoratives sur des événements qui n'ont pas eu lieu mais qui auraient été mieux."},
+      {"id": "q-archives", "name": "Cité des Archives", "description": "Quartier administratif : guichets qui délivrent des parchemins, grenier étiqueté « Nuage », routeurs posés sur des pupitres."},
+      {"id": "q-erreur", "name": "Lotissement Erreur de Jeunesse", "description": "Quartier moderne désaffecté transformé en musée : le bus électrique, les trottinettes et les smartphones y sont exposés sous cloche."}
+    ],
+    "transports": [
+      "Ligne 1 : diligence municipale (ex-tram), « modernisation de la nostalgie »",
+      "Routes pavées en cours de « retour à la voie romaine »",
+      "GPS municipal Jadis, qui recalcule l'époque plutôt que l'itinéraire",
+      "Auto-école « Le Rétroviseur » : voitures sans pare-brise, uniquement des rétros"
+    ],
+    "commerces": [
+      "Boulangerie « Au Pain d'Hier » (le pain frais est jugé trop jeune)",
+      "Super-Jadis (caisses automatiques avec un monsieur dedans)",
+      "Agence immobilière « Charme de l'Ancien » (DPE de Louis XIV à Louis XVI)",
+      "Restaurant « La Veille » (plat de la veille uniquement)",
+      "Marché du Goût d'Avant (le goût est vendu en supplément)"
+    ],
+    "loisirs": [
+      "Marche Arrière Fitness (tapis de course qui ne recule que dans le temps)",
+      "Parc des Soupirs (bancs qui s'ouvrent au soupir)",
+      "Stade Noir-et-Blanc (écran géant qui ne diffuse que de vieux matchs)",
+      "Musée des Erreurs de Jeunesse",
+      "Fête de la Nostalgie (reconstitution de la reconstitution de l'an dernier)"
+    ]
+  },
+  "recurring_characters": [
+    {"id": "zmv-char-01", "name": "Le Chroniqueur municipal", "role": "porte-voix officiel de la mairie", "look": "forme simple 3D : cylindre anthracite, lunettes rondes en laiton, petit pupitre portatif accroché devant lui, écharpe sépia", "running_trait": "Commence chaque annonce par « Autrefois, » et finit chaque phrase par un soupir audible."},
+    {"id": "zmv-char-02", "name": "Jadis, le GPS municipal", "role": "GPS de la ville", "look": "boîtier GPS en laiton avec écran sépia et petite manivelle sur le côté", "running_trait": "Ne recalcule jamais l'itinéraire, toujours l'époque ; dit « c'était mieux avant » à la place de « faites demi-tour »."},
+    {"id": "zmv-char-03", "name": "Maître Parchemin", "role": "guichetier du service numérique", "look": "personnage cubique gris clair, manchettes de lustrine, plume géante derrière l'oreille", "running_trait": "Appelle « dématérialisation » le fait de retirer les ordinateurs."},
+    {"id": "zmv-char-04", "name": "Le Cocher de la Ligne 1", "role": "conducteur de la diligence municipale", "look": "silhouette en haut-de-forme, gros gants, lanterne à la main", "running_trait": "Annonce les retards en siècles et les justifie par « l'authenticité »."},
+    {"id": "zmv-char-05", "name": "Le Coq Sépia", "role": "mascotte de la ville", "look": "mascotte coq stylisée, d'abord colorée, qui se décolore un peu plus à chaque épisode", "running_trait": "Toujours en fond, en train de regarder dans un rétroviseur."},
+    {"id": "zmv-char-06", "name": "Le Routeur-Pupitre", "role": "borne Wi-Fi municipale", "look": "routeur noir moderne posé sur un pupitre ancien en bois sculpté, petit écran qui défile comme un parchemin", "running_trait": "Refuse toute connexion qui ne rime pas."}
+  ],
+  "running_gags": [
+    {"id": "zmv-gag-01", "base": "Le GPS Jadis dit « c'était mieux avant » au lieu de « faites demi-tour ».", "evolution": ["Il propose des sorties de rond-point nommées Autrefois, Jadis et Naguère.", "Il recalcule l'époque au lieu de la route et fait franchir la Porte d'Antan.", "Il refuse de guider vers une destination « trop récente » (visite de la ville voisine)."]},
+    {"id": "zmv-gag-02", "base": "Le mot de passe du Wi-Fi est en alexandrins.", "evolution": ["Douze syllabes et césure obligatoires.", "Mot de passe oublié : on reçoit le chant suivant de l'épopée.", "Débit : un vers par seconde ; le Routeur-Pupitre réapparaît en fond avec une épopée de plus en plus longue."]},
+    {"id": "zmv-gag-03", "base": "Tout objet moderne finit sous cloche au Musée des Erreurs de Jeunesse.", "evolution": ["Le bus électrique sous cloche.", "Un smartphone sous cloche, étiquette « Décadence, XXIe s. ».", "Un appartement neuf entier sous cloche, faute d'acheteur."]},
+    {"id": "zmv-gag-04", "base": "L'horloge de la mairie tourne à l'envers.", "evolution": ["La mairie est « ouverte hier ».", "La file d'attente avance à reculons.", "Le calendrier perd la fonction futur après une mise à jour."]},
+    {"id": "zmv-gag-05", "base": "Tout défaut devient patrimoine (« la patine »).", "evolution": ["La baguette de 1974 sous cloche sur une colonne.", "La fuite d'époque de la copro avec visites guidées.", "La panne générale célébrée comme une reconstitution."]},
+    {"id": "zmv-gag-06", "base": "Le Coq Sépia se décolore à chaque épisode.", "evolution": ["Rouge vif avec une plume sépia.", "À moitié sépia.", "Entièrement sépia, exposé sur une colonne."]}
+  ],
+  "continuity_events": [
+    {"id": "zmv-evt-000", "status": "established", "description": "L'horloge du fronton de la mairie tourne à l'envers ; devise gravée « Ici commence hier ».", "since_episode": null},
+    {"id": "zmv-evt-001", "status": "established", "description": "La Porte d'Antan : une arche de pierre à l'entrée de la ville qui transforme tout ce qui la franchit en maquette médiévale.", "since_episode": null},
+    {"id": "zmv-evt-002", "status": "established", "description": "Le rond-point central a trois sorties : Autrefois, Jadis, Naguère.", "since_episode": null},
+    {"id": "zmv-evt-003", "status": "established", "description": "Le Coq Sépia, mascotte, est toujours en fond et regarde dans un rétroviseur.", "since_episode": null},
+    {"id": "zmv-evt-004", "status": "unpublished_idea", "description": "Le Routeur-Pupitre affiche une épopée en alexandrins qui s'allonge d'un chant à chaque apparition.", "since_episode": null},
+    {"id": "zmv-evt-005", "status": "unpublished_idea", "description": "Un grenier de la mairie porte l'étiquette « Nuage » : c'est là que sont stockés les parchemins « téléchargés ».", "since_episode": null},
+    {"id": "zmv-evt-006", "status": "unpublished_idea", "description": "Le bus électrique est exposé sous cloche au Musée des Erreurs de Jeunesse, étiquette « Erreur de jeunesse ».", "since_episode": null},
+    {"id": "zmv-evt-007", "status": "unpublished_idea", "description": "Le calendrier municipal n'a plus de futur : seulement « hier », « avant-hier » et « jadis ».", "since_episode": null},
+    {"id": "zmv-evt-008", "status": "unpublished_idea", "description": "Une baguette de 1974 trône sous cloche au sommet d'une colonne, place de la Grandeur Passée.", "since_episode": null},
+    {"id": "zmv-evt-009", "status": "unpublished_idea", "description": "La fuite d'époque de la copropriété des Remparts, classée et visitable.", "since_episode": null},
+    {"id": "zmv-evt-010", "status": "unpublished_idea", "description": "Le panneau de chantier permanent : « Fin des travaux prévue : 52 av. J.-C. ».", "since_episode": null},
+    {"id": "zmv-evt-011", "status": "unpublished_idea", "description": "Le pot-au-feu originel, gardé sous scellé au restaurant La Veille.", "since_episode": null},
+    {"id": "zmv-evt-012", "status": "unpublished_idea", "description": "Un crieur public suit chaque habitant pour lire ses notifications à voix haute depuis la mise à jour « Patrimoine ».", "since_episode": null},
+    {"id": "zmv-evt-013", "status": "unpublished_idea", "description": "La plaque au futur antérieur laissée chez la ville voisine : « Ici, il y aura eu quelque chose de bien ».", "since_episode": null},
+    {"id": "zmv-evt-014", "status": "unpublished_idea", "description": "Le bouton municipal « Panne du week-end » qui éteint la ville par plaisir.", "since_episode": null}
+  ],
+  "arcs": [
+    {"id": "zmv-arc-01", "title": "Retour vers hier", "episodes": ["zmv-syn-01", "zmv-syn-02", "zmv-syn-03", "zmv-syn-04", "zmv-syn-05"]},
+    {"id": "zmv-arc-02", "title": "La patine obligatoire", "episodes": ["zmv-syn-06", "zmv-syn-11", "zmv-syn-12", "zmv-syn-20", "zmv-syn-21"]},
+    {"id": "zmv-arc-03", "title": "La lenteur des grandes correspondances", "episodes": ["zmv-syn-24", "zmv-syn-32", "zmv-syn-33"]}
+  ],
+  "blender_props_needed": [
+    "ground", "road", "roundabout", "building", "mairie", "facade_set", "sign", "car", "bus", "tree", "lamp", "bench", "bin", "shop", "tshirt", "mascot", "gps", "screen", "text3d", "person", "tribune", "lift_tribune", "table", "form_stack", "traffic_light", "router_lectern", "scroll", "banner", "column", "arch", "fountain",
+    "new_asset_request: diligence (carrosse à deux chevaux stylisés, low-poly)",
+    "new_asset_request: horloge de fronton à aiguilles animables",
+    "new_asset_request: cloche de vitrine en verre",
+    "new_asset_request: plume d'oie et encrier",
+    "new_asset_request: téléphone à cadran mural"
+  ]
+}

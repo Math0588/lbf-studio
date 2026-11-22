@@ -1,0 +1,228 @@
+{
+ "id": "bdv-s01e32",
+ "city": "bardellaville",
+ "synopsis_id": "bdv-syn-32",
+ "format": "C",
+ "title_cover": "Bardellaville 2.0",
+ "hook_variants": [
+  "Bardellaville 2.0 est disponible : toute la ville redémarre.",
+  "Bardellaville 2.0 est disponible. Toute la ville redémarre.",
+  "Mise à jour de la ville : trois arrière-plans en plus. Toujours aucun fond.",
+  "La ville a lu ses notes de version. Personne d'autre.",
+  "Correction de bugs : les bugs ont été mieux éclairés."
+ ],
+ "selected_hook": 0,
+ "ending_variants": [
+  "Correctif : les bugs sont désormais mieux éclairés.",
+  "Redémarrage. Tout est identique, en plus brillant. Correction de bugs : les bugs sont mieux éclairés.",
+  "Notification : « Bardellaville 3.0 disponible. » Les voitures recommencent à tourner autour de la barre de progression."
+ ],
+ "selected_ending": 0,
+ "narration_segments": [
+  {
+   "id": "n1",
+   "text": "Bardellaville 2.0 est disponible : toute la ville redémarre.",
+   "accent_words": [
+    "redémarre"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Nouveauté : filtre bonne mine sur les lampadaires.",
+   "accent_words": [
+    "lampadaires"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "Supprimé : le bouton Réponse, jugé peu utilisé.",
+   "accent_words": [
+    "utilisé"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Ajouté : un répondeur qui récite les mêmes éléments de langage.",
+   "accent_words": [
+    "langage"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Barre de progression au-dessus du rond-point, bloquée à quatre-vingt-dix-neuf pour cent.",
+   "accent_words": [
+    "pour cent"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Les voitures s'arrêtent pour regarder la barre.",
+   "accent_words": [
+    "barre"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Redémarrage : tout est identique, en plus brillant.",
+   "accent_words": [
+    "brillant"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n8",
+   "text": "Correctif : les bugs sont désormais mieux éclairés.",
+   "accent_words": [
+    "éclairés"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n9",
+   "text": "Écris en commentaire la ligne que tu veux dans la prochaine version.",
+   "accent_words": [
+    "version"
+   ],
+   "claim_type": "fiction_satirique"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "narration_ids": [
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "mairie",
+    "screen",
+    "roundabout",
+    "ring_light",
+    "text3d"
+   ],
+   "onscreen_text": "MISE À JOUR DISPONIBLE",
+   "comic_action": "Survol de la ville : sur la façade de la mairie (screen), une notification géante « Bardellaville 2.0 est disponible — Redémarrer maintenant ». Toutes les lumières clignotent.",
+   "expected_result": "Image surprenante : une ville qui se met à jour comme un téléphone."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "mairie",
+    "screen",
+    "scroll",
+    "text3d",
+    "facade_set"
+   ],
+   "onscreen_text": "SUPPRIMÉ : BOUTON RÉPONSE",
+   "comic_action": "Travelling le long de la façade où défilent les notes de version (scroll) : « + Filtre bonne mine sur les lampadaires », « + 3 arrière-plans (château, plage, coucher de soleil n°2) », « − Bouton Réponse (peu utilisé) », « Plan des 100 jours : prévu pour la v3.0 ». Trois nouvelles façades surgissent derrière la mairie.",
+   "expected_result": "Parodie de notes de version : on ajoute de l'image, on supprime l'usage."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n5",
+    "n6"
+   ],
+   "camera": "orbit",
+   "set": [
+    "roundabout",
+    "car_orbit",
+    "screen",
+    "ring_light",
+    "text3d"
+   ],
+   "onscreen_text": "99 %",
+   "comic_action": "Orbite au-dessus du rond-point : une barre de progression géante (screen) avance. Les voitures s'arrêtent pour la regarder (fait rare). 97… 98… 99 %. Elle s'immobilise. Un curseur d'attente tourne sur le ring light.",
+   "expected_result": "Effet retard : l'amélioration promise reste suspendue."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n7",
+    "n8"
+   ],
+   "camera": "return",
+   "set": [
+    "mairie",
+    "sign",
+    "lamp",
+    "text3d",
+    "screen"
+   ],
+   "onscreen_text": "BUGS : MIEUX ÉCLAIRÉS",
+   "comic_action": "Redémarrage. Travelling arrière : la ville est exactement la même, un peu plus brillante. Les nids-de-poule ont un spot dirigé dessus. Dernière ligne des notes : « Correction de bugs : les bugs ont été mieux éclairés. » Le panneau des réponses affiche « Mise à jour disponible ». Laisser respirer.",
+   "expected_result": "Chute : la mise à jour améliore l'éclairage des problèmes, pas les problèmes."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n9"
+   ],
+   "camera": "closeup",
+   "set": [
+    "shop",
+    "mascot",
+    "tshirt",
+    "screen"
+   ],
+   "onscreen_text": "Collection en bio",
+   "comic_action": "Le Coq de vitrine porte le t-shirt ; une petite barre de progression au-dessus de sa tête reste bloquée à 99 %.",
+   "expected_result": "Question à commenter, produit réel visible."
+  }
+ ],
+ "cta_primary": {
+  "type": "comment",
+  "text": "Écris en commentaire la ligne que tu veux dans la prochaine version."
+ },
+ "cta_commercial": {
+  "type": "visual_product",
+  "text": "Collection en bio",
+  "product_id": "tee-droite-fatigue"
+ },
+ "word_count": 82,
+ "claims": [],
+ "sources": [
+  {
+   "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
+   "published": "2026-11-04",
+   "consulted": "2026-11-21",
+   "status": "fait public (dépêche AFP : le livre esquisse des « cent jours » sans détailler priorités ni méthode) + opinion (appréciation de l'AFP)",
+   "used_for": "Inspiration seulement : des « cent jours » esquissés sans priorités ni méthode détaillées (AFP). Traduits par une ligne des notes de version : « Plan des 100 jours : prévu pour la v3.0 »."
+  },
+  {
+   "url": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
+   "published": "2026-11-04",
+   "consulted": "2026-11-21",
+   "status": "fait public (trois livres en deux ans, rapporté par LCP)",
+   "used_for": "Inspiration seulement : la cadence des publications (trois livres en deux ans). Traduite par une ville qui sort des versions plus vite qu'elle ne règle les bugs."
+  },
+  {
+   "url": "https://www.ladn.eu/media-mutants/sur-tiktok-les-militants-rn-peaufinent-leur-strategie-pour-2027/",
+   "published": "2026",
+   "consulted": "2026-11-21",
+   "status": "fait (enquête) + opinion (éléments de langage relayés en continu)",
+   "used_for": "Un répondeur municipal qui récite les mêmes éléments de langage."
+  },
+  {
+   "url": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
+   "published": "2026-05-31",
+   "consulted": "2026-11-21",
+   "status": "opinion (chronique, titre seul lu)",
+   "used_for": "Idée de réponses calibrées et creuses ; la formule de l'auteur n'est pas reprise."
+  }
+ ],
+ "disclosure": "",
+ "editorial_notes": "Format C (Mise à jour). Mécanisme : parodie de notes de version. Continuité : « Chargement… » devient « Mise à jour disponible » (bdv-gag-01 étape 4), trois arrière-plans de plus (bdv-gag-03 étape 5) ; ajoute bdv-evt-025. « 99 % » est fictif (barre de progression). Risques vérifiés : aucune citation, aucun programme réel décrit. | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_bardellaville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+}

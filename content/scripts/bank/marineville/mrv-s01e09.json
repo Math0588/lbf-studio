@@ -1,0 +1,199 @@
+{
+ "id": "mrv-s01e09",
+ "city": "marineville",
+ "synopsis_id": "mrv-syn-29",
+ "format": "A",
+ "title_cover": "La plage recentrée",
+ "hook_variants": [
+  "À Marineville, même la plage a été recentrée.",
+  "Ni trop à gauche, ni trop à droite : bienvenue à la plage de Marineville.",
+  "Ici, les bords de la plage sont interdits. Trop extrêmes.",
+  "Deux mètres carrés de serviettes, cent mètres de sable vide.",
+  "Cette plage est parfaitement centrée. Vue du ciel, c'est autre chose."
+ ],
+ "selected_hook": 0,
+ "ending_variants": [
+  "Vue du ciel, le tas de parasols bien centré dessine une flèche. Elle pointe à droite, évidemment.",
+  "Vue du ciel, le tas de parasols bien centré dessine une grosse flèche. Elle pointe à droite.",
+  "Les parasols sont si serrés qu'ils ne font plus qu'un. Il est bleu, évidemment."
+ ],
+ "selected_ending": 0,
+ "narration_segments": [
+  {
+   "id": "n1",
+   "text": "À Marineville, même la plage a été recentrée.",
+   "accent_words": [
+    "recentrée"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Arrêté municipal : parasols au milieu, ni trop à gauche, ni trop à droite.",
+   "accent_words": [
+    "droite"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "Les bords sont interdits : panneau officiel, zone trop extrême.",
+   "accent_words": [
+    "extrême"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Toute la ville s'entasse sur deux mètres carrés, glacière et barbecue compris.",
+   "accent_words": [
+    "barbecue"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Les serviettes s'empilent comme les enseignes de la mairie.",
+   "accent_words": [
+    "enseignes"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Vue du ciel, le tas de parasols bien centré dessine une flèche.",
+   "accent_words": [
+    "flèche"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Elle pointe à droite, évidemment.",
+   "accent_words": [
+    "droite"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n8",
+   "text": "Envoie ça à l'ami qui pose sa serviette pile au milieu.",
+   "accent_words": [
+    "milieu"
+   ],
+   "claim_type": "fiction_satirique"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "narration_ids": [
+    "n1",
+    "n2"
+   ],
+   "camera": "descend",
+   "set": [
+    "ground",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "PARASOLS : CENTRE",
+   "comic_action": "Descente sur une immense plage de sable vide ; au milieu exact, une grappe de parasols bleus serrés comme dans un métro. Un panneau : « ARRÊTÉ : PARASOLS AU CENTRE ».",
+   "expected_result": "Le recentrage est spatial et littéral.",
+   "new_asset_request": "Parasol (new_asset:parasol)."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "ground",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "ZONE TROP EXTRÊME",
+   "comic_action": "La caméra longe le bord de l'eau, désert : piquets et ruban, panneau « ZONE TROP EXTRÊME ». Une mouette se pose, le panneau la fait reculer d'un bip.",
+   "expected_result": "Les bords sont présentés comme dangereux par principe."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n4",
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "person",
+    "ground",
+    "text3d"
+   ],
+   "onscreen_text": "",
+   "comic_action": "Gros plan sur la grappe : serviettes empilées en couches comme les enseignes de la mairie, un estivant coincé à la verticale entre deux parasols.",
+   "expected_result": "Continuité visuelle : le millefeuille, version serviettes."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n6",
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "ground",
+    "person",
+    "sign",
+    "tripod_camera"
+   ],
+   "onscreen_text": "",
+   "comic_action": "La caméra monte très haut : vu du ciel, le tas de parasols centré forme une grosse flèche qui pointe à droite. On laisse respirer deux secondes.",
+   "expected_result": "Chute : le centre, vu d'en haut, penche."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n8"
+   ],
+   "camera": "closeup",
+   "set": [
+    "tshirt",
+    "ground",
+    "sign"
+   ],
+   "onscreen_text": "Collection en bio",
+   "comic_action": "Sur le sable vide et interdit du bord, un t-shirt « J'AI UN AVIS. PAS DE MANDAT. » sèche seul, étendu bien à plat.",
+   "expected_result": "CTA de partage + produit visible."
+  }
+ ],
+ "cta_primary": {
+  "type": "share",
+  "text": "Envoie ça à l'ami qui pose sa serviette pile au milieu."
+ },
+ "cta_commercial": {
+  "type": "visual_product",
+  "text": "Collection en bio",
+  "product_id": "tee-avis-mandat"
+ },
+ "word_count": 81,
+ "claims": [],
+ "sources": [
+  {
+   "url": "https://www.slate.fr/story/56885/vote-barbecue-vote-fn",
+   "published": "2012 (date exacte non relevée, page 403 à la lecture)",
+   "consulted": "2026-11-21",
+   "status": "cliché électorat (vérifié par résumé de recherche (page non lisible directement) — cliché d'électorat)",
+   "used_for": "Idée/thème seulement, transformé en gag visuel original : Le « vote barbecue » : cliché du périurbain pavillonnaire. Utilisé avec légèreté (glacière, barbecue sur la plage), jamais comme mépris de classe ; Reporterre r…"
+  },
+  {
+   "url": "https://reporterre.net/Pavillon-voiture-et-barbecue-Les-cliches-sur-les-beaufs-servent-le-RN",
+   "published": "non relevée (page 403)",
+   "consulted": "2026-11-21",
+   "status": "cliché électorat (garde-fou (opinion))",
+   "used_for": "Idée/thème seulement, transformé en gag visuel original : Critique du cliché « pavillon, voiture, barbecue ». Garde-fou éditorial : la moquerie vise la mairie fictive et sa com', pas les habitants comme groupe (pas de…"
+  }
+ ],
+ "disclosure": "",
+ "editorial_notes": "Recentrage littéral (tout au milieu) puis révélation par changement d'échelle : le centre forme une flèche vers la droite. Les « bords trop extrêmes » moquent la rhétorique du centre affiché, sans viser aucun groupe. Continuité : parasols en flèche (mrv-evt-020), millefeuille. Clôt l'arc « Le recentrage ». Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 81 mots ; mèmes vérifiés intégrés comme thèmes (M15, M16, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+}

@@ -1,0 +1,191 @@
+{
+ "id": "glv-m007",
+ "city": "glucksmannville",
+ "synopsis_id": "gm-glv-m007",
+ "format": "A",
+ "anchor": "Le live « Au QG » : une heure de parole puis 30 à 45 minutes de questions du chat, sur toutes les plateformes (06/11/2026)",
+ "situation": "la panne de courant",
+ "ressort": "boucle",
+ "title_cover": "Panne à la minute 1",
+ "hook_variants": [
+  "Dans cette ville, tout le monde vote Glucksmann.",
+  "Un live sur toutes les plateformes. Une centrale en moins.",
+  "Ici, la République fait sauter les plombs.",
+  "Trois essais, trois pannes, même phrase.",
+  "La ville éclairée à la bougie, en attendant la fin du live."
+ ],
+ "selected_hook": 0,
+ "ending_variants": [
+  "Troisième essai : la ville s'éclaire désormais à la bougie.",
+  "Toute la ville à la bougie, et le maire qui reprend depuis le début.",
+  "La phrase sur la République n'a jamais dépassé la première minute."
+ ],
+ "selected_ending": 0,
+ "narration_segments": [
+  {
+   "id": "n1",
+   "text": "Dans cette ville, tout le monde vote Glucksmann.",
+   "accent_words": [
+    "Glucksmann"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Le maire diffuse son live Au QG sur toutes les plateformes.",
+   "accent_words": [
+    "Au QG"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n3",
+   "text": "Résultat : la centrale de la ville saute à la première minute.",
+   "accent_words": [
+    "saute à la première minute"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Les écrans s'éteignent au milieu de « la République ».",
+   "accent_words": [],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Le courant revient : le maire reprend depuis le début.",
+   "accent_words": [
+    "reprend depuis le début"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "La centrale resaute à la même phrase, pile au même mot.",
+   "accent_words": [],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Troisième essai : la ville s'éclaire désormais à la bougie.",
+   "accent_words": [
+    "à la bougie"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n8",
+   "text": "Abonne-toi : le live reprend la prochaine fois, depuis le début.",
+   "accent_words": [],
+   "claim_type": "fiction_satirique"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "narration_ids": [
+    "n1",
+    "n2"
+   ],
+   "camera": "descend",
+   "set": [
+    "mairie",
+    "screen",
+    "lamp"
+   ],
+   "onscreen_text": "AU QG : PARTOUT",
+   "comic_action": "Plongée sur la mairie, tous les écrans de la ville allumés sur le même live.",
+   "expected_result": "Ancrage."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n3",
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "lamp",
+    "building"
+   ],
+   "onscreen_text": "PANNE À 00:01",
+   "comic_action": "Les lampadaires s'éteignent en cascade, chronomètre 00:01.",
+   "expected_result": "Situation."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "tribune",
+    "person"
+   ],
+   "onscreen_text": "REPRISE DEPUIS LE DÉBUT",
+   "comic_action": "Le maire, imperturbable, recommence au premier mot quand le courant revient.",
+   "expected_result": "Boucle."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n6"
+   ],
+   "camera": "return",
+   "set": [
+    "lamp",
+    "building"
+   ],
+   "onscreen_text": "PANNE À 00:01 (BIS)",
+   "comic_action": "Même cadre qu'au plan 2 : les lampadaires s'éteignent exactement pareil.",
+   "expected_result": "La boucle se referme."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n7",
+    "n8"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "lamp",
+    "tshirt"
+   ],
+   "onscreen_text": "ABONNE-TOI",
+   "comic_action": "Une famille regarde le live à la bougie ; le père porte « PLUTÔT GAUCHE. TRÈS FATIGUÉ. ».",
+   "expected_result": "CTA d'abonnement + produit."
+  }
+ ],
+ "cta_primary": {
+  "type": "follow",
+  "text": "Abonne-toi : le live reprend la prochaine fois, depuis le début."
+ },
+ "cta_commercial": {
+  "type": "visual_product",
+  "text": "Collection en bio",
+  "product_id": "tee-gauche-fatigue"
+ },
+ "word_count": 83,
+ "claims": [
+  {
+   "segment": "n2",
+   "claim_type": "fait_public",
+   "text": "Le maire diffuse son live Au QG sur toutes les plateformes.",
+   "source_url": "https://lcp.fr/actualites/au-qg-raphael-glucksmann-lance-son-rendez-vous-de-campagne-numerique-ce-vendredi-444843"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://lcp.fr/actualites/au-qg-raphael-glucksmann-lance-son-rendez-vous-de-campagne-numerique-ce-vendredi-444843",
+   "date": "2026-11-06",
+   "statut": "fait public (format de campagne annoncé)",
+   "usage": "Le format est appliqué au Wi-Fi et à la centrale électrique de la ville fictive.",
+   "consulted": "2026-11-21"
+  }
+ ],
+ "disclosure": "",
+ "editorial_notes": "Boucle : le live diffusé partout (format réel) fait sauter la centrale, à la même phrase, à chaque reprise. Mème d'ancrage : Le live « Au QG » : une heure de parole puis 30 à 45 minutes de questions du chat, sur toutes les plateformes (06/11/2026). Vérifications : rien sur son nom, ses origines, sa vie privée, son couple ou son physique ; aucune allusion judiciaire ; aucune fausse citation (les seules phrases réelles sont exactes, sourcées et typées citation_exacte) ; répliques entre guillemets fictives et attribuées à des personnages inventés ; chiffres = prix et compteurs de la ville fictive ; pas d'appel au vote ; un seul CTA parlé ; pas de « demain »."
+}

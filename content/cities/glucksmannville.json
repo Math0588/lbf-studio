@@ -1,0 +1,398 @@
+{
+  "slug": "glucksmannville",
+  "name": "Glucksmannville",
+  "inspired_by_public_codes_of": "Raphaël Glucksmann (codes publics de communication uniquement : ton posé et pesé, recherche du rassemblement, positionnement jugé centriste par ses critiques, vision plutôt que programme, image lisse et rassurante, fan-club ironique des réseaux). Veille sourcée : content/veille/glucksmannville.json",
+  "disclaimer": "Ville fictive. Aucune politique réellement mise en œuvre. Aucune citation réelle : « il faut un cap clair » et les autres formules sont des fictions satiriques de langue de bois, dites par des objets, jamais attribuées à une personne.",
+  "central_rule": "Ici, on cherche l'accord jusqu'à l'immobilité : tout le monde est d'accord sur le cap, à condition de ne jamais le prendre.",
+  "secondary_traits": [
+    "Tout ce qui est dur est capitonné : trottoirs, ronds-points, tables de réunion, poings. On ne tape pas du poing sur la table, on la tapote.",
+    "Chaque objet demande l'avis des autres avant de fonctionner : la boussole consulte l'aiguille, le feu tricolore consulte les voitures, la balance consulte les deux plateaux.",
+    "Toute alternative est fondue en couleur intermédiaire : ni rouge ni vert mais orange, ni chaud ni froid mais tiède, ni blanc ni noir mais beige.",
+    "La ville a une vision mais pas de mode d'emploi : monuments sans plaque, panneaux sans destination, plans sans légende.",
+    "Le possessif doux est partout : « notre rond-point », « notre file d'attente », « notre panne ». Tout appartient à tout le monde, donc personne ne le répare.",
+    "La parole municipale est récitée : un Prompteur souffle le texte à la ville entière, et si le Prompteur bloque, la ville se fige en plein geste."
+  ],
+  "mood": {
+    "architecture": "Pavillons arrondis sans angle, façades capitonnées comme des canapés Chesterfield, colonnes en mousse et fontaines qui coulent dans toutes les directions à faible débit. Au centre, la Place Publique : un cercle de bancs tous tournés les uns vers les autres.",
+    "materials": "Velours beige, mousse à mémoire de forme, lin écru, bois clair poncé, coussins partout. Le seul accent vif est l'orange des feux tricolores, bloqués entre deux couleurs.",
+    "signage": "Panneaux à flèches dans toutes les directions (jusqu'à 360 flèches en éventail), toutes les inscriptions avec « plutôt », « ensemble », « notre ». Lettres arrondies, gros corps, lisibles en 9:16.",
+    "light": "Lumière diffuse sans ombre (« une ombre, ça clive »), ciel blanc laiteux, lampadaires réglés à 50 %. Aucune source dure, sauf la lumière orange des feux.",
+    "sound": "Murmures approbateurs (« hmm-hmm »), applaudissements polis à volume plafonné, musique d'ascenseur, orchestre qui s'accorde sans jamais commencer, coussins qui soupirent quand on s'assoit."
+  },
+  "map": {
+    "mairie": "Hôtel de ville en forme de canapé géant. Au fronton, une boussole monumentale sans aiguille. Sur la porte du bureau du maire, une plaque : « Maire — période d'essai renouvelable ». Horaires : « Ouvert quand tout le monde sera d'accord ». Le beffroi abrite le Réveil municipal, qui sonne en mode « répétition douce ».",
+    "centre_ville": "La Place Publique : un rond-point capitonné. En son centre, le Panneau des Cap Clairs, un poteau couvert de flèches dans toutes les directions, qui s'épanouit en éventail comme un hérisson. Autour, un cercle fermé de bancs face à face.",
+    "quartiers": [
+      {
+        "id": "q-juste-milieu",
+        "name": "Quartier du Juste Milieu",
+        "description": "Tout y est situé exactement à mi-chemin entre deux choses : l'arrêt de bus entre deux arrêts, la boulangerie entre deux rues, l'immeuble entre deux étages."
+      },
+      {
+        "id": "q-coussins",
+        "name": "Les Coussins",
+        "description": "Quartier résidentiel aux murs porteurs en mousse. Rien ne porte, rien ne heurte, tout s'affaisse poliment."
+      },
+      {
+        "id": "q-concertation",
+        "name": "Cité de la Concertation",
+        "description": "Quartier administratif : guichets en cercle, formulaires à une seule case, salles de réunion où les tables sont des poufs."
+      },
+      {
+        "id": "q-tiede",
+        "name": "Zone Tiède",
+        "description": "Zone commerciale où tout est servi à température consensuelle : cantine, restaurants, marché, piscine."
+      }
+    ],
+    "transports": [
+      "Ligne 1 du métro : le plan en étoile relie toutes les stations à toutes les autres, et la rame ne part pas pour n'en vexer aucune",
+      "Bus du Compromis : l'arrêt est placé au point moyen des destinations de tous les passagers, en général au milieu d'un champ",
+      "Cap, le GPS municipal, qui annonce « il faut un cap clair » puis propose toutes les directions",
+      "Feux tricolores bloqués sur l'orange : ni arrêt ni départ",
+      "Auto-école « Aucun Virage » : tourner, c'est prendre position"
+    ],
+    "commerces": [
+      "Boulangerie « Le Juste Milieu » : la baguette tradi-viennoise-campagne, beige et sans croûte",
+      "Supermarché « Ensemble+ » : caddies pluralistes dont chaque roue part dans sa direction",
+      "Restaurant « Je Vous Entends » : le chef écoute chaque table pendant quarante minutes, puis ferme la cuisine",
+      "Marché de la Balance : les balances ne penchent jamais",
+      "Agence de voyages « Un Peu Partout »"
+    ],
+    "loisirs": [
+      "Salle de sport « Gainage Central » : tapis de course omnidirectionnels",
+      "Stade du Match Nul : l'arbitre sort un carton beige",
+      "Kiosque du parc : un orchestre qui s'accorde depuis des années",
+      "Belvédère « Tous les Points de Vue » : longue-vue qui tourne sans jamais s'arrêter",
+      "Fête du Rassemblement : feux d'artifice beiges et silencieux"
+    ]
+  },
+  "recurring_characters": [
+    {
+      "id": "glv-char-01",
+      "name": "Cap, le GPS municipal",
+      "role": "GPS officiel de la ville",
+      "look": "boîtier GPS beige aux coins arrondis, recouvert d'une housse en velours, écran où la flèche se multiplie en étoile",
+      "running_trait": "Annonce « il faut un cap clair », puis propose toutes les directions en même temps. Ne dit jamais « recalcul », il dit « concertation en cours »."
+    },
+    {
+      "id": "glv-char-02",
+      "name": "Le Médiateur municipal",
+      "role": "porte-parole et réconciliateur officiel",
+      "look": "cylindre beige, coussin posé sur la tête comme un chapeau, mains ouvertes paumes vers le ciel en permanence",
+      "running_trait": "Répond à tout par « je vous entends » et hoche la tête à un rythme métronomique. Apporte un coussin pour chaque camp."
+    },
+    {
+      "id": "glv-char-03",
+      "name": "La Boussole Polie",
+      "role": "statue et instrument officiel de la Place Publique",
+      "look": "grande boussole en laiton sans aiguille, socle capitonné",
+      "running_trait": "Demande à l'aiguille absente ce qu'elle en pense. Chaque épisode, un petit écriteau en dessous change : « Nord : à discuter »."
+    },
+    {
+      "id": "glv-char-04",
+      "name": "Le Prompteur",
+      "role": "souffleur municipal",
+      "look": "écran sur pied (screen + tripod) qui suit les habitants, texte défilant en gros",
+      "running_trait": "Souffle à toute la ville ce qu'elle doit dire. Quand il se bloque, tout se fige en plein geste, puis reprend avec gravité."
+    },
+    {
+      "id": "glv-char-05",
+      "name": "Pouf",
+      "role": "mascotte de la ville",
+      "look": "mascotte en forme de pouf beige avec deux petits yeux et des bras courts, un ruban « ENSEMBLE » en travers",
+      "running_trait": "S'assoit sur chaque conflit pour l'aplatir. À chaque épisode il s'élargit un peu, à force d'avoir absorbé des désaccords."
+    },
+    {
+      "id": "glv-char-06",
+      "name": "Le Fan-Club du Troisième Degré",
+      "role": "supporters officiels du maire",
+      "look": "groupe de personnes simples en tribune, banderole et applaudimètre géant",
+      "running_trait": "Applaudit tout avec un enthousiasme visiblement ironique. La mairie, elle, prend chaque applaudissement au premier degré et l'affiche comme sondage."
+    }
+  ],
+  "running_gags": [
+    {
+      "id": "glv-gag-01",
+      "base": "Le panneau directionnel indique toutes les directions.",
+      "evolution": [
+        "4 flèches : nord, sud, est, ouest.",
+        "360 flèches en éventail : le panneau devient un hérisson.",
+        "Les flèches finissent par pointer vers le panneau lui-même : « Vous êtes partout »."
+      ]
+    },
+    {
+      "id": "glv-gag-02",
+      "base": "La boussole n'a pas d'aiguille et demande son avis à l'aiguille absente.",
+      "evolution": [
+        "Écriteau « Nord : à discuter ».",
+        "Écriteau « Nord : groupe de travail constitué ».",
+        "Écriteau « Nord : on en reparle à la prochaine AG »."
+      ]
+    },
+    {
+      "id": "glv-gag-03",
+      "base": "Tout ce qui est dur est capitonné.",
+      "evolution": [
+        "La table de réunion est en mousse.",
+        "Les ralentisseurs sont des poufs.",
+        "Une brique posée sur une balance devient un coussin."
+      ]
+    },
+    {
+      "id": "glv-gag-04",
+      "base": "Les feux tricolores restent bloqués sur l'orange.",
+      "evolution": [
+        "Les voitures attendent poliment.",
+        "Les piétons attendent aussi.",
+        "Le feu orange est déclaré « couleur officielle de la ville » sur une banderole."
+      ]
+    },
+    {
+      "id": "glv-gag-05",
+      "base": "Pouf, la mascotte, s'élargit à chaque épisode en absorbant les désaccords.",
+      "evolution": [
+        "Taille d'un tabouret.",
+        "Taille d'un canapé.",
+        "Taille d'un rond-point : il devient la Place Publique."
+      ]
+    },
+    {
+      "id": "glv-gag-06",
+      "base": "Le Fan-Club du Troisième Degré applaudit, la mairie compte les applaudissements comme des votes d'adhésion.",
+      "evolution": [
+        "L'applaudimètre affiche « Adhésion : 100 % ».",
+        "La banderole ironique est recopiée en devise officielle.",
+        "Le fan-club change de banderole, la mairie la recopie aussi."
+      ]
+    },
+    {
+      "id": "glv-gag-07",
+      "base": "Le Réveil municipal du beffroi sonne en « répétition douce ».",
+      "evolution": [
+        "Il sonne à voix basse.",
+        "Il demande « on se réveille ? plutôt oui ? ».",
+        "Il se rendort de lui-même pour ne brusquer personne."
+      ]
+    }
+  ],
+  "continuity_events": [
+    {
+      "id": "glv-evt-000",
+      "status": "established",
+      "description": "Au centre de la Place Publique (rond-point capitonné), le Panneau des Cap Clairs : un poteau couvert de flèches dans toutes les directions.",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-001",
+      "status": "established",
+      "description": "La Boussole Polie, statue sans aiguille au fronton de la mairie, avec un écriteau qui change : « Nord : à discuter ».",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-002",
+      "status": "established",
+      "description": "Les feux tricolores de la ville sont bloqués sur l'orange.",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-003",
+      "status": "established",
+      "description": "Plaque sur la porte du bureau du maire : « Maire — période d'essai renouvelable ».",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-004",
+      "status": "established",
+      "description": "Pouf, la mascotte, apparaît en fond et s'assoit sur ce qui dépasse.",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-005",
+      "status": "unpublished_idea",
+      "description": "Cap, le GPS, a « rassemblé » toutes les voitures de la ville en orbite permanente autour de la Place Publique.",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-006",
+      "status": "unpublished_idea",
+      "description": "Le fauteuil du maire en mousse à mémoire de forme garde l'empreinte du dernier qui s'est assis, et reste lisse quand c'est le maire.",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-007",
+      "status": "unpublished_idea",
+      "description": "Le carton beige de l'arbitre est encadré à la mairie comme une décision historique.",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-008",
+      "status": "unpublished_idea",
+      "description": "L'arrêt de bus « Compromis », au milieu d'un champ, a désormais un abri et un banc : il est devenu un quartier.",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-009",
+      "status": "unpublished_idea",
+      "description": "La banderole du Fan-Club « ON T'AIME (AU 3e DEGRÉ) » est recopiée au fronton de la mairie, sans les parenthèses.",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-010",
+      "status": "unpublished_idea",
+      "description": "L'orchestre du kiosque s'accorde toujours. Une plaque compte les jours depuis le début de l'accordage.",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-011",
+      "status": "unpublished_idea",
+      "description": "Le colis-coussin géant, trop protégé pour passer les portes, sert de banc public devant l'immeuble.",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-012",
+      "status": "unpublished_idea",
+      "description": "Le Prompteur s'est bloqué une fois : la ville a gardé la pose pendant tout un épisode.",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-013",
+      "status": "unpublished_idea",
+      "description": "La route concertée fait un nœud autour de la mairie et dessert toutes les portes sans mener nulle part.",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-014",
+      "status": "unpublished_idea",
+      "description": "La balance municipale du marché ne penche jamais ; une brique posée dessus devient un coussin.",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-015",
+      "status": "unpublished_idea",
+      "description": "Le thermomètre de la cantine n'a qu'une graduation : « tiède ». Il réapparaît ailleurs (piscine, météo, four).",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-016",
+      "status": "unpublished_idea",
+      "description": "Le coussin géant du feu d'artifice est resté posé sur le toit de la mairie.",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-017",
+      "status": "established",
+      "description": "Le Réveil municipal du beffroi sonne en mode « répétition douce » ; banderole « RÉVEIL EN COURS ».",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-018",
+      "status": "unpublished_idea",
+      "description": "Le mannequin de vitrine recruté comme « Chargé de vision » siège au fond de chaque réunion municipale.",
+      "since_episode": null
+    },
+    {
+      "id": "glv-evt-019",
+      "status": "unpublished_idea",
+      "description": "Les lampadaires de la ville sont réglés à 50 % ; l'interrupteur municipal a deux positions, « plutôt allumé » et « plutôt éteint ».",
+      "since_episode": null
+    }
+  ],
+  "arcs": [
+    {
+      "id": "glv-arc-01",
+      "title": "Le Cap Clair (directions, transports, mouvements qui n'arrivent jamais)",
+      "episodes": [
+        "glv-syn-01",
+        "glv-syn-03",
+        "glv-syn-04",
+        "glv-syn-05",
+        "glv-syn-14",
+        "glv-syn-16",
+        "glv-syn-20",
+        "glv-syn-28"
+      ]
+    },
+    {
+      "id": "glv-arc-02",
+      "title": "Le Grand Coussin (tout ce qui est dur devient mou)",
+      "episodes": [
+        "glv-syn-06",
+        "glv-syn-09",
+        "glv-syn-12",
+        "glv-syn-13",
+        "glv-syn-17",
+        "glv-syn-19",
+        "glv-syn-21",
+        "glv-syn-23",
+        "glv-syn-25",
+        "glv-syn-27"
+      ]
+    },
+    {
+      "id": "glv-arc-03",
+      "title": "Consensus Total (bureaucratie de l'accord)",
+      "episodes": [
+        "glv-syn-02",
+        "glv-syn-07",
+        "glv-syn-08",
+        "glv-syn-10",
+        "glv-syn-15",
+        "glv-syn-18",
+        "glv-syn-24",
+        "glv-syn-26",
+        "glv-syn-33",
+        "glv-syn-34"
+      ]
+    },
+    {
+      "id": "glv-arc-04",
+      "title": "L'Image (lisse, rassurante, récitée, applaudie au troisième degré)",
+      "episodes": [
+        "glv-syn-11",
+        "glv-syn-22",
+        "glv-syn-29",
+        "glv-syn-30",
+        "glv-syn-31",
+        "glv-syn-32",
+        "glv-syn-35"
+      ]
+    }
+  ],
+  "blender_props_needed": [
+    "ground",
+    "road",
+    "roundabout",
+    "building",
+    "mairie",
+    "facade_set",
+    "sign",
+    "car",
+    "car_orbit",
+    "bus",
+    "tree",
+    "lamp",
+    "bench",
+    "bin",
+    "shop",
+    "tshirt",
+    "mascot",
+    "gps",
+    "screen",
+    "text3d",
+    "person",
+    "tribune",
+    "table",
+    "form_stack",
+    "traffic_light",
+    "banner",
+    "column",
+    "arch",
+    "fountain",
+    "tripod_camera",
+    "NOUVEAU (new_asset_request) : compass_no_needle (boussole sans aiguille)",
+    "NOUVEAU (new_asset_request) : pouf_morph (pouf/fauteuil en mousse déformable par shape keys)",
+    "NOUVEAU (new_asset_request) : cushion (coussin générique, matériau velours beige)",
+    "NOUVEAU (new_asset_request) : market_scale (balance à deux plateaux)",
+    "NOUVEAU (new_asset_request) : sign_multi_arrow (poteau à N flèches paramétrable, variante de sign)"
+  ]
+}

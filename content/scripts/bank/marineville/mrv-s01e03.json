@@ -1,0 +1,198 @@
+{
+ "id": "mrv-s01e03",
+ "city": "marineville",
+ "synopsis_id": "mrv-syn-03",
+ "format": "A",
+ "title_cover": "Les rues refaites",
+ "hook_variants": [
+  "À Marineville, on a refait toutes les rues : enfin, leurs panneaux.",
+  "À Marineville, on a refait toutes les rues. Enfin, leurs panneaux.",
+  "Six mois de travaux à Marineville. Pour changer un mot.",
+  "Ici, les lignes blanches ont plus de couches que les enseignes.",
+  "Cette ville a refait toutes ses rues. Sauf les rues."
+ ],
+ "selected_hook": 0,
+ "ending_variants": [
+  "La surface change à chaque fois ; le fond, lui, fait vingt centimètres.",
+  "La forme change, le fond reste. Sauf qu'ici, le fond fait vingt centimètres.",
+  "Repeinte vingt fois, la ligne blanche fait la hauteur d'un trottoir. Ici, on ne répare rien : on épaissit."
+ ],
+ "selected_ending": 0,
+ "narration_segments": [
+  {
+   "id": "n1",
+   "text": "À Marineville, on a refait toutes les rues : enfin, leurs panneaux.",
+   "accent_words": [
+    "panneaux"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Six mois de chantier, déviation obligatoire à droite, évidemment.",
+   "accent_words": [
+    "à droite"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "La rue de la Gare devient rue de la Gare Nouvelle.",
+   "accent_words": [
+    "Nouvelle"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "La gare, elle, n'a pas bougé d'un centimètre.",
+   "accent_words": [
+    "centimètre"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Les lignes blanches sont repeintes vingt fois, au même endroit.",
+   "accent_words": [
+    "endroit"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Les habitants roulent désormais sur une bosse de peinture.",
+   "accent_words": [
+    "bosse"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "La surface change à chaque fois ; le fond, lui, fait vingt centimètres.",
+   "accent_words": [
+    "centimètres"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n8",
+   "text": "Ta rue a changé de nom combien de fois ? Compte en commentaire.",
+   "accent_words": [
+    "Compte"
+   ],
+   "claim_type": "fiction_satirique"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "narration_ids": [
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "ground",
+    "road",
+    "building",
+    "sign",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "RUE DE LA GARE NOUVELLE",
+   "comic_action": "Vue plongeante : rue entière barrée, cônes partout. Au centre de tout ce chantier, Gérard (person, casque jaune) visse un simple mot « NOUVELLE » sous la plaque « RUE DE LA GARE ». Rien d'autre n'a été touché.",
+   "expected_result": "Le chantier géant ne produit qu'un mot.",
+   "new_asset_request": "Optionnel : cônes de chantier (peuvent être remplacés par des bin orange)."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n2",
+    "n3",
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "road",
+    "car",
+    "sign",
+    "building",
+    "roundabout"
+   ],
+   "onscreen_text": "DÉVIATION →",
+   "comic_action": "La caméra suit une voiture qui obéit à la flèche de déviation : droite, droite, droite, rond-point… et se gare pile devant le même bâtiment « GARE », identique, juste sous sa nouvelle plaque.",
+   "expected_result": "Six mois de travaux pour faire le tour du pâté de maisons."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n5",
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "road",
+    "person",
+    "text3d"
+   ],
+   "onscreen_text": "",
+   "comic_action": "Gros plan au ras du sol : un rouleau repasse sur la ligne blanche, qui gagne une couche visible à chaque passage, comme une pile de feuilles. On voit la tranche en strates.",
+   "expected_result": "On ne répare pas, on recouvre.",
+   "new_asset_request": "Ligne blanche en relief animée (bloc blanc qui monte par paliers)."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "road",
+    "car",
+    "sign",
+    "text3d",
+    "building"
+   ],
+   "onscreen_text": "LE FOND : 20 CM",
+   "comic_action": "Retour au cadre du début. Une voiture arrive, tape la ligne blanche devenue muret et saute comme sur un tremplin, sous la plaque « RUE DE LA GARE NOUVELLE ». Atterrissage. Silence. On laisse respirer.",
+   "expected_result": "Chute : la couche cosmétique devient l'obstacle principal."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n8"
+   ],
+   "camera": "closeup",
+   "set": [
+    "tshirt",
+    "sign",
+    "road"
+   ],
+   "onscreen_text": "Collection en bio",
+   "comic_action": "Un t-shirt « J'AI UN AVIS. PAS DE MANDAT. » est scotché sur la barrière de chantier, entre deux autocollants « Nouveau ».",
+   "expected_result": "CTA parlé unique + produit réel visible, sans pub longue."
+  }
+ ],
+ "cta_primary": {
+  "type": "comment",
+  "text": "Ta rue a changé de nom combien de fois ? Compte en commentaire."
+ },
+ "cta_commercial": {
+  "type": "visual_product",
+  "text": "Collection en bio",
+  "product_id": "tee-avis-mandat"
+ },
+ "word_count": 85,
+ "claims": [],
+ "sources": [
+  {
+   "url": "https://fr.timesofisrael.com/fn-le-front-change-le-fond-reste-le-meme-estime-la-presse/",
+   "published": "2018-03-12",
+   "consulted": "2026-11-21",
+   "status": "moquerie de presse / opinion (revue de presse AFP : « le Front change, le fond reste le même »)",
+   "used_for": "Inspiration seulement : l'idée générique « la forme change, le fond reste » est littéralisée par un objet (purée, yaourt, ligne blanche). Aucun jeu de mot d'éditorialiste repris."
+  }
+ ],
+ "disclosure": "",
+ "editorial_notes": "Drôle parce que l'effort colossal (chantier, déviation) accouche d'un adjectif, puis parce que l'accumulation cosmétique devient physiquement dangereuse : littéralisation de « la forme change, le fond reste ». Continuité : plaques « Nouvelle » et lignes en relief (mrv-evt-012). Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 85 mots ; mèmes vérifiés intégrés comme thèmes (M3, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+}

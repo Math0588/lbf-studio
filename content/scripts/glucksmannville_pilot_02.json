@@ -1,0 +1,251 @@
+{
+ "id": "glv-s01e02",
+ "city": "glucksmannville",
+ "synopsis_id": "glv-syn-30",
+ "format": "A",
+ "title_cover": "Le fauteuil sans forme",
+ "hook_variants": [
+  "Dans cette ville, tout le monde vote Glucksmann… même le fauteuil est mou.",
+  "Dans cette mairie, le fauteuil du maire n'a pas de forme. Il prend celle du dernier qui s'est assis.",
+  "Ici, le fauteuil du maire est en mousse à mémoire de forme. Le problème, c'est la mémoire.",
+  "Dans cette mairie, on ne sait pas ce que pense le maire. Mais on sait qui s'est assis avant lui.",
+  "Le fauteuil le plus influençable de France est dans le bureau du maire."
+ ],
+ "selected_hook": 0,
+ "ending_variants": [
+  "Le maire s'assoit, et le fauteuil ne bouge pas. Il n'y avait rien à copier.",
+  "Puis le maire arrive. Il s'assoit. Le fauteuil ne bouge pas. Il n'y a rien à copier.",
+  "Le maire s'assoit. Le fauteuil prend… la forme d'un fauteuil. Sur la porte, la plaque : « Maire — période d'essai renouvelable »."
+ ],
+ "selected_ending": 0,
+ "narration_segments": [
+  {
+   "id": "n1",
+   "text": "Dans cette ville, tout le monde vote Glucksmann… même le fauteuil est mou.",
+   "accent_words": [
+    "Glucksmann",
+    "mou"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Il prend la forme du dernier qui s'est assis.",
+   "accent_words": [
+    "assis"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "Neuf heures, un patron s'assoit : le fauteuil devient mallette.",
+   "accent_words": [
+    "mallette"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Dix heures, une syndicaliste : il devient un tout petit mégaphone.",
+   "accent_words": [
+    "mégaphone"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Midi, tout le monde s'assoit : pouf beige, parfaitement rond.",
+   "accent_words": [
+    "rond"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Communiqué : beau moment de rassemblement.",
+   "accent_words": [
+    "rassemblement"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Le maire s'assoit, et le fauteuil ne bouge pas.",
+   "accent_words": [
+    "pas"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n8",
+   "text": "Il n'y avait rien à copier.",
+   "accent_words": [
+    "copier"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n9",
+   "text": "Après toi, le fauteuil prendrait quelle forme ? Dis-le en commentaire.",
+   "accent_words": [
+    "commentaire"
+   ],
+   "claim_type": "fiction_satirique"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "narration_ids": [
+    "n1",
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "text3d",
+    "sign",
+    "mairie"
+   ],
+   "onscreen_text": "FAUTEUIL DU MAIRE",
+   "comic_action": "Première image : gros plan sur un fauteuil de bureau beige en mousse qui respire et ondule tout seul, comme une pâte qui attend un moule. Une étiquette dorée sur le dossier : « FAUTEUIL DU MAIRE ». Derrière, par la fenêtre, on voit la Boussole Polie sans aiguille du fronton.",
+   "expected_result": "Image intrigante dès la première seconde : un siège de pouvoir qui n'a aucune forme propre.",
+   "new_asset_request": "pouf_morph : fauteuil en mousse avec shape keys (neutre ondulant, mallette, mégaphone, pouf rond, lisse figé). Matériau velours beige."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n3"
+   ],
+   "camera": "orbit",
+   "set": [
+    "table",
+    "person",
+    "text3d",
+    "screen"
+   ],
+   "onscreen_text": "09:00",
+   "comic_action": "Un personnage simple en costume, mallette à la main, s'assoit puis se relève. Le fauteuil se déforme et devient une mallette géante, poignée comprise. L'horloge de l'écran affiche 09:00.",
+   "expected_result": "On comprend le mécanisme : le fauteuil copie le dernier qui s'est assis.",
+   "new_asset_request": "Shape key « mallette » du pouf_morph."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "table",
+    "person",
+    "text3d",
+    "screen"
+   ],
+   "onscreen_text": "10:00",
+   "comic_action": "Un personnage simple en gilet s'assoit et se relève. La mallette fond et se reforme en mégaphone géant pointé vers le plafond. L'horloge passe à 10:00.",
+   "expected_result": "Escalade : le fauteuil passe d'un camp à l'autre en une heure, sans résistance.",
+   "new_asset_request": "Shape key « mégaphone » du pouf_morph."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n5",
+    "n6"
+   ],
+   "camera": "descend",
+   "set": [
+    "table",
+    "person",
+    "text3d",
+    "screen",
+    "mascot",
+    "banner"
+   ],
+   "onscreen_text": "LE RASSEMBLEMENT",
+   "comic_action": "Plongée : huit personnages s'assoient en même temps sur le fauteuil, qui s'élargit et devient un pouf beige parfaitement rond. Pouf, la mascotte, saute au milieu et s'y fond comme un jumeau. Une banderole descend : « LE RASSEMBLEMENT ».",
+   "expected_result": "La forme commune de tout le monde est… une forme sans rien : beige et ronde."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n7",
+    "n8"
+   ],
+   "camera": "closeup",
+   "set": [
+    "table",
+    "person",
+    "text3d",
+    "sign",
+    "mairie"
+   ],
+   "onscreen_text": "",
+   "comic_action": "Tout le monde est sorti, le fauteuil est redevenu neutre et ondulant. Le maire entre : une silhouette simple sans visage détaillé, avec une écharpe beige. Il s'assoit lentement. Gros plan : le fauteuil cesse d'onduler et reste parfaitement lisse, sans aucune empreinte. Deux secondes de silence. Puis la caméra pivote vers la porte du bureau : plaque « MAIRE — PÉRIODE D'ESSAI RENOUVELABLE ».",
+   "expected_result": "La chute : même un fauteuil qui copie tout ne trouve rien à copier chez le maire. On rit d'une posture lisse, pas d'une personne."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n9"
+   ],
+   "camera": "return",
+   "set": [
+    "shop",
+    "tshirt",
+    "sign",
+    "text3d",
+    "mascot",
+    "car_orbit"
+   ],
+   "onscreen_text": "Collection en bio",
+   "comic_action": "La caméra sort par la fenêtre et passe devant une vitrine. Le t-shirt « PLUTÔT GAUCHE. TRÈS FATIGUÉ. » y est posé sur un fauteuil en mousse qui en prend la forme. Au fond, les voitures de l'épisode précédent tournent toujours autour du rond-point.",
+   "expected_result": "CTA commercial visuel, et clin d'œil de continuité pour les habitués (glv-evt-005)."
+  }
+ ],
+ "cta_primary": {
+  "type": "comment",
+  "text": "Après toi, le fauteuil prendrait quelle forme ? Dis-le en commentaire."
+ },
+ "cta_commercial": {
+  "type": "visual_product",
+  "text": "Collection en bio",
+  "product_id": "tee-gauche-fatigue"
+ },
+ "word_count": 85,
+ "claims": [],
+ "sources": [
+  {
+   "url": "https://atlantico.fr/article/rdv/il-est-cool-ce-glucksmann-il-me-rappelle-macron",
+   "published": "2024-04-03",
+   "consulted": "2026-11-21",
+   "used_for": "Inspiration seulement : l'image d'un candidat qui plaît à des publics très différents. Traduite par un objet qui épouse la forme de chacun. Aucune formule du chroniqueur n'est reprise."
+  },
+  {
+   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-glucksmann-celui-qui-avait-envie-detre-un-president-de-gauche-pro-europeen-mais",
+   "published": "2026-06-25",
+   "consulted": "2026-11-21",
+   "used_for": "Inspiration seulement : les critiques qui le situent au « centre gauche, voire centre » ou y voient un « ersatz » de macronisme. Traduites par un siège qui prend la forme de chacun."
+  },
+  {
+   "url": "https://fr.euronews.com/2026/10/12/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
+   "published": "2026-10-12",
+   "consulted": "2026-11-21",
+   "used_for": "Inspiration seulement : le thème du rassemblement, rendu par le pouf rond et beige quand tout le monde s'assoit."
+  },
+  {
+   "url": "https://lcp.fr/actualites/vous-ne-mettez-pas-un-stagiaire-a-la-tete-d-une-entreprise-segolene-royal-etrille",
+   "published": "2026-09-21",
+   "consulted": "2026-11-21",
+   "used_for": "Inspiration seulement : le reproche public d'inexpérience fait par une rivale. Rendu par la plaque de décor « période d'essai renouvelable », sans citation et sans mettre de mots dans la bouche de quiconque."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/06/entretien-philippe-corcuff-raphael-glucksmann-reconduit-une-ligne-sociale-liberale-par-la-timidite-sociale-de-son-programme/",
+   "published": "2026-06-11",
+   "consulted": "2026-11-21",
+   "status": "blague (vérifié (opinion))",
+   "used_for": "Idée/thème seulement, transformé en gag visuel original : Critique de la « timidité sociale » du programme. Thème : le petit mégaphone, la table en mousse, zéro décibel de fermeté."
+  }
+ ],
+ "disclosure": "",
+ "editorial_notes": "Pourquoi c'est drôle : un objet absurde (un fauteuil caméléon) rend visible la critique d'une image qui épouse tous les publics. Les deux premières révélations montent (un camp, puis l'autre). La troisième donne une forme au rassemblement : un pouf beige. La chute est sèche : quand le maire s'assoit, il n'y a « rien à copier ». La pointe est sévère, mais elle vise une posture publique perçue comme lisse, pas l'intelligence ni la personne. Risques vérifiés : aucune citation réelle, personne n'est nommé, le maire est une silhouette générique sans visage réaliste. « Patron » et « syndicaliste » sont des rôles sociaux, pas des groupes protégés, et les deux camps sont traités de façon symétrique. Aucune vie privée, aucune famille, rien sur l'origine, aucun chiffre électoral, aucun appel au vote. La plaque « période d'essai » renvoie à un reproche public d'inexpérience (LCP, 21/09/2026) sans le citer. Produit : tee-gauche-fatigue, dont le « plutôt » rime avec l'univers. Variante neutre possible : tee-avis-mandat. Continuité : plaque de la porte (glv-evt-003), Boussole Polie (glv-evt-001), voitures en orbite de l'épisode 1 (glv-evt-005). L'épisode ajoute glv-evt-006. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 85 mots ; mèmes vérifiés intégrés comme thèmes (G8, G10, G6, voir content/veille/memes_glucksmannville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+}

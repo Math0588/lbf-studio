@@ -1,0 +1,196 @@
+{
+ "id": "mrv-s01e05",
+ "city": "marineville",
+ "synopsis_id": "mrv-syn-05",
+ "format": "A",
+ "title_cover": "Déménager sans bouger",
+ "hook_variants": [
+  "À Marineville, M. Dupont doit déclarer un déménagement sans avoir bougé.",
+  "À Marineville, M. Dupont doit déclarer un déménagement. Il n'a pas bougé.",
+  "M. Dupont a déménagé. Sans bouger d'un centimètre.",
+  "Ici, ta rue perd son nom de famille. Toi, tu perds ton après-midi.",
+  "À Marineville, il faut un justificatif de domicile pour prouver qu'on n'a pas déménagé."
+ ],
+ "selected_hook": 0,
+ "ending_variants": [
+  "Dehors, Gérard visse déjà rue P., tout court. Tampon rouge sur le dossier de M. Dupont : obsolète.",
+  "Dehors, Gérard visse déjà « Rue P. ». Tampon rouge : dossier obsolète.",
+  "M. Dupont rentre chez lui. Sa porte a un nouveau numéro. Le même."
+ ],
+ "selected_ending": 0,
+ "narration_segments": [
+  {
+   "id": "n1",
+   "text": "À Marineville, M. Dupont doit déclarer un déménagement sans avoir bougé.",
+   "accent_words": [
+    "déménagement"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Sa rue Paul-Dumoulin devient rue Paul : le nom de famille faisait vieux.",
+   "accent_words": [
+    "Paul"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "Ici, on garde le prénom et on planque le reste.",
+   "accent_words": [
+    "prénom"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Au guichet : justificatif de l'ancien domicile, qui est aussi le nouveau.",
+   "accent_words": [
+    "nouveau"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Trois exemplaires : ancien nom, nouveau nom, prochain nom.",
+   "accent_words": [
+    "nom"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Dehors, Gérard visse déjà rue P., tout court.",
+   "accent_words": [
+    "P."
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Tampon rouge sur le dossier de M. Dupont : obsolète.",
+   "accent_words": [
+    "obsolète"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n8",
+   "text": "Le pire : le formulaire ou le guichet ? En commentaire.",
+   "accent_words": [
+    "commentaire"
+   ],
+   "claim_type": "fiction_satirique"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "narration_ids": [
+    "n1"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "building",
+    "person",
+    "form_stack",
+    "sign"
+   ],
+   "onscreen_text": "",
+   "comic_action": "Dès l'ouverture : M. Dupont (cube gris) sort de chez lui avec un carton de déménagement… et le pose sur son propre paillasson. Il n'a pas fait un pas.",
+   "expected_result": "Le déménagement immobile est compris en une image.",
+   "new_asset_request": "Optionnel : carton de déménagement (peut être un form_stack fermé)."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n2",
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "sign",
+    "building",
+    "text3d"
+   ],
+   "onscreen_text": "RUE PAUL-DUMOULIN",
+   "comic_action": "Gros plan sur la plaque : un autocollant bleu recouvre « DUMOULIN ». Il ne reste que « RUE PAUL », en police arrondie, avec un petit cœur sur le A.",
+   "expected_result": "Le rebranding efface le nom de famille pour faire plus doux."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n4",
+    "n5"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "table",
+    "form_stack",
+    "person",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "ANCIEN / NOUVEAU / PROCHAIN",
+   "comic_action": "Au guichet, la guichetière pose trois formulaires ; la pile grandit à chaque phrase jusqu'au menton de M. Dupont, qui doit lever la tête pour respirer.",
+   "expected_result": "La bureaucratie anticipe des renommages qui n'ont pas encore eu lieu."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n6",
+    "n7"
+   ],
+   "camera": "window_pass",
+   "set": [
+    "building",
+    "sign",
+    "person",
+    "table",
+    "form_stack",
+    "text3d"
+   ],
+   "onscreen_text": "DOSSIER OBSOLÈTE",
+   "comic_action": "La caméra glisse derrière la fenêtre du guichet : au loin, Gérard visse « RUE P. » sur l'immeuble de M. Dupont. Au premier plan, le tampon rouge s'abat sur la pile. On laisse respirer.",
+   "expected_result": "Chute : le dossier est périmé avant d'être fini."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n8"
+   ],
+   "camera": "closeup",
+   "set": [
+    "tshirt",
+    "table",
+    "form_stack"
+   ],
+   "onscreen_text": "Collection en bio",
+   "comic_action": "Sur le dossier de la chaise du guichet, un t-shirt « À GAUCHE DU CANAPÉ. » ; M. Dupont, épuisé, s'en sert d'oreiller.",
+   "expected_result": "CTA parlé unique + produit réel visible."
+  }
+ ],
+ "cta_primary": {
+  "type": "comment",
+  "text": "Le pire : le formulaire ou le guichet ? En commentaire."
+ },
+ "cta_commercial": {
+  "type": "visual_product",
+  "text": "Collection en bio",
+  "product_id": "tee-gauche-canape"
+ },
+ "word_count": 84,
+ "claims": [],
+ "sources": [
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
+   "published": "2017-02-06",
+   "consulted": "2026-11-21",
+   "status": "opinion / analyse de presse (mise en avant du seul prénom, nom de famille et parti effacés des documents de campagne)",
+   "used_for": "Inspiration seulement : le rebranding qui efface le nom de famille, appliqué à une plaque de rue fictive."
+  }
+ ],
+ "disclosure": "",
+ "editorial_notes": "Drôle par la bureaucratie récursive (justificatif de l'ancien domicile qui est le nouveau) et par le rebranding qui ampute la rue de son nom de famille jusqu'à l'initiale. Inspiré de la communication au prénom seul, transposée à une plaque de rue fictive. Continuité : M. Dupont et son formulaire (mrv-evt-014). Vérifications : aucune personne réelle nommée ni montrée, aucune citation attribuée à une personne réelle, aucun délit, procès, condamnation ou affaire judiciaire évoqué, aucun gag sur l'immigration, l'origine, la religion ou un groupe de population, aucune statistique réelle, pas d'appel au vote, un seul CTA parlé, pas de « demain ». Les mèmes sourcés ne servent que d'inspiration et ne sont jamais énoncés comme faits dans la narration. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 84 mots ; mèmes vérifiés intégrés comme thèmes (M1, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+}

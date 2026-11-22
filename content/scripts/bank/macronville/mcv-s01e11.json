@@ -1,0 +1,201 @@
+{
+ "id": "mcv-s01e11",
+ "city": "macronville",
+ "synopsis_id": "mcv-syn-11",
+ "format": "A",
+ "title_cover": "Le trou classé",
+ "hook_variants": [
+  "Le site le plus visité de Macronville est un trou dans la route.",
+  "Le site le plus visité de Macronville, c'est un trou dans la route.",
+  "Ce nid-de-poule a plus de visiteurs que le musée.",
+  "Visite guidée, boutique, audioguide : bienvenue au trou.",
+  "Ici, on ne rebouche pas le patrimoine."
+ ],
+ "selected_hook": 0,
+ "ending_variants": [
+  "Un guide plante un panneau : Assise Premium, douze euros.",
+  "Monsieur Paul s'assoit au bord, jambes dans le trou. Enfin installé. Un guide plante un panneau : Assise Premium, douze euros.",
+  "Le trou reçoit une plaque de monument historique. La route, elle, n'en a jamais eu."
+ ],
+ "selected_ending": 0,
+ "narration_segments": [
+  {
+   "id": "n1",
+   "text": "Le site le plus visité de Macronville est un trou dans la route.",
+   "accent_words": [
+    "route"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Visites guidées, audioguide en anglais : this is a hole, for sure.",
+   "accent_words": [
+    "sure"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n3",
+   "text": "Boutique de mini-trous en résine à vingt-neuf euros.",
+   "accent_words": [
+    "euros"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Le maire refuse de reboucher : ça casserait la dynamique.",
+   "accent_words": [
+    "dynamique"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Monsieur Paul s'assoit au bord, jambes dans le trou, enfin installé.",
+   "accent_words": [
+    "installé"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Un guide plante un panneau : Assise Premium, douze euros.",
+   "accent_words": [
+    "euros"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Balance en commentaire le monument le plus absurde de ta ville.",
+   "accent_words": [
+    "ville"
+   ],
+   "claim_type": "fiction_satirique"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "narration_ids": [
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "road",
+    "banner",
+    "person",
+    "sign"
+   ],
+   "onscreen_text": "SITE CLASSÉ",
+   "comic_action": "Descente sur l'avenue : une file de visiteurs serpente entre des rubans jusqu'au trou, panneau « Site classé ».",
+   "expected_result": "Le défaut est devenu le monument.",
+   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "closeup",
+   "set": [
+    "sign",
+    "person",
+    "road"
+   ],
+   "onscreen_text": "THIS IS A HOLE. FOR SURE.",
+   "comic_action": "Un guide avec parapluie levé montre le trou ; le texte de l'audioguide s'affiche en sous-titre géant.",
+   "expected_result": "Le mème transformé en commentaire touristique solennel.",
+   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3",
+    "n4"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "shop",
+    "sign",
+    "text3d",
+    "person"
+   ],
+   "onscreen_text": "SOUVENIRS DU TROU",
+   "comic_action": "Travelling sur la boutique : étagères de mini-trous en résine, texte 3D « I DUG MACRONVILLE ». Le maire, en haut sur sa tribune, fait non de la main à un ouvrier qui tient un seau.",
+   "expected_result": "On protège le problème parce qu'il rapporte de l'image."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n5",
+    "n6"
+   ],
+   "camera": "closeup",
+   "set": [
+    "person",
+    "sign",
+    "road"
+   ],
+   "onscreen_text": "ASSISE PREMIUM — 12 €",
+   "comic_action": "Monsieur Paul s'assoit enfin, jambes dans le trou. Un guide plante à côté de lui un panneau tarifaire. Tenir deux secondes.",
+   "expected_result": "Continuité de l'arc 1 : le seul siège de la ville est devenu payant.",
+   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "road",
+    "shop",
+    "person",
+    "tshirt",
+    "banner"
+   ],
+   "onscreen_text": "TON MONUMENT ABSURDE ?",
+   "comic_action": "Plan large : file de touristes, boutique, trou ; un touriste en t-shirt de la collection.",
+   "expected_result": "Appel à commenter, produit visible.",
+   "new_asset_request": "nid-de-poule : disque sombre encastré dans le prop road, rayon animable (à défaut : panneau-texte « TROU »)"
+  }
+ ],
+ "cta_primary": {
+  "type": "comment",
+  "text": "Balance en commentaire le monument le plus absurde de ta ville."
+ },
+ "cta_commercial": {
+  "type": "visual_product",
+  "text": "Collection en bio",
+  "product_id": "tee-droite-canape"
+ },
+ "word_count": 75,
+ "claims": [
+  {
+   "text": "« for sure » : expression répétée par Emmanuel Macron à Davos (janvier 2026), devenue mème. Reprise ici par un personnage fictif, sans attribution.",
+   "claim_type": "citation_exacte",
+   "source": "https://www.sudradio.fr/sud-radio/for-sure-quand-macron-devient-un-phenomene-viral-sur-les-reseaux-sociaux"
+  }
+ ],
+ "sources": [
+  {
+   "url": "https://www.sudradio.fr/sud-radio/for-sure-quand-macron-devient-un-phenomene-viral-sur-les-reseaux-sociaux",
+   "date": "2026-01-29",
+   "consulted": "2026-11-21",
+   "statut": "mème (viralité = fait public rapporté)",
+   "note": "« for sure » répété au Forum de Davos (janvier 2026), remixé sur TikTok, Instagram et X (DJ, parodies)."
+  },
+  {
+   "url": "https://dailydot.com/foshur-memes-macrons-davos-speech-for-sure",
+   "date": "2026-01-23",
+   "consulted": "2026-11-21",
+   "statut": "mème (« foshur » plaqué sur des situations du quotidien)",
+   "note": "Même mécanique : la formule colle à un objet du quotidien. Lunettes de Davos écartées (santé)."
+  }
+ ],
+ "disclosure": "",
+ "editorial_notes": "Arc 2, épisode 4. Mécanisme : inversion de valeur (le défaut devient patrimoine). Mème vérifié : « for sure » transposé en audioguide fictif. Crossover arc 1 : Monsieur Paul trouve enfin un siège, payant. Pose mcv-evt-017. T-shirt du plan final : tee-droite-canape (« À DROITE DU CANAPÉ. »). | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_macronville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+}

@@ -1,0 +1,201 @@
+{
+ "id": "bdv-s01e34",
+ "city": "bardellaville",
+ "synopsis_id": "bdv-syn-34",
+ "format": "D",
+ "title_cover": "Simulateur : la canicule",
+ "hook_variants": [
+  "Simulateur de président, niveau Bardellaville : canicule sur la ville.",
+  "Simulateur de président, niveau Bardellaville : canicule sur la ville. Que fais-tu ?",
+  "Trois choix pour sauver la ville de la chaleur. Le jeu en a déjà choisi un.",
+  "Comment perdre contre une canicule en tournant des vidéos.",
+  "Chaque vidéo sur la chaleur réchauffe la ville d'un degré."
+ ],
+ "selected_hook": 0,
+ "ending_variants": [
+  "Succès débloqué : un été parfaitement maîtrisé.",
+  "Écran de fin : température ressentie, insupportable. Sur la vidéo : fraîche et dynamique. Succès débloqué : été maîtrisé.",
+  "Le jeu propose un niveau bonus : « Inondation ». Choix A : digues. Choix B : pompes. Choix C : une vidéo en bottes. Le curseur glisse sur C."
+ ],
+ "selected_ending": 0,
+ "narration_segments": [
+  {
+   "id": "n1",
+   "text": "Simulateur de président, niveau Bardellaville : canicule sur la ville.",
+   "accent_words": [
+    "ville"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "A, planter des arbres ; B, ouvrir les fontaines ; C, une vidéo.",
+   "accent_words": [
+    "vidéo"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "Le curseur glisse tout seul sur la réponse C.",
+   "accent_words": [
+    "C"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Chaque vidéo exige un ring light, et chaque ring light chauffe d'un degré.",
+   "accent_words": [
+    "degré"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Écran de fin : température ressentie, insupportable.",
+   "accent_words": [
+    "insupportable"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Sur la vidéo : frais, dynamique, et même un peu bronzé.",
+   "accent_words": [
+    "bronzé"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Succès débloqué : un été parfaitement maîtrisé.",
+   "accent_words": [
+    "maîtrisé"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n8",
+   "text": "Toi, tu choisis quoi : A, B ou C ?",
+   "accent_words": [
+    "C"
+   ],
+   "claim_type": "fiction_satirique"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "narration_ids": [
+    "n1"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "studio_light"
+   ],
+   "onscreen_text": "NIVEAU : CANICULE",
+   "comic_action": "Écran de jeu vidéo rétro plein cadre (screen) : « SIMULATEUR DE PRÉSIDENT — Niveau Bardellaville — CANICULE ». Thermomètre text3d qui affiche 38 °C, la ville miniature ondule de chaleur.",
+   "expected_result": "Image surprenante : la gestion de crise transformée en jeu truqué."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n2",
+    "n3"
+   ],
+   "camera": "closeup",
+   "set": [
+    "screen",
+    "text3d",
+    "tree",
+    "fountain"
+   ],
+   "onscreen_text": "A · B · C (C)",
+   "comic_action": "Menu à trois choix, illustrés : A un arbre, B une fontaine, C un trépied et un ventilateur. Le curseur part vers A… et glisse tout seul sur C, avec un bruit de validation.",
+   "expected_result": "Le jeu est truqué : l'image gagne toujours."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "ring_light",
+    "tripod_camera",
+    "person",
+    "studio_light",
+    "text3d"
+   ],
+   "onscreen_text": "39° · 41° · 46°",
+   "comic_action": "Orbite autour de la place : à chaque prise, un ring light de plus s'allume autour du présentateur fictif (cylindre bleu marine), qui sue devant un petit ventilateur. Le thermomètre géant monte d'un degré à chaque clic d'obturateur.",
+   "expected_result": "Escalade : la solution choisie aggrave le problème qu'elle filme."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n5",
+    "n6",
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "screen",
+    "text3d",
+    "tree",
+    "fountain"
+   ],
+   "onscreen_text": "SUCCÈS : ÉTÉ MAÎTRISÉ",
+   "comic_action": "Écran de fin : « Température ressentie : insupportable. Température ressentie sur la vidéo : fraîche et dynamique. » Médaille text3d : « SUCCÈS DÉBLOQUÉ : ÉTÉ MAÎTRISÉ ». Travelling arrière : la fontaine est à sec, l'arbre imprimé a fondu. Laisser respirer.",
+   "expected_result": "Chute : l'écart entre le ressenti réel et le ressenti filmé devient un « succès »."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n8"
+   ],
+   "camera": "closeup",
+   "set": [
+    "shop",
+    "mascot",
+    "tshirt",
+    "screen"
+   ],
+   "onscreen_text": "Collection en bio",
+   "comic_action": "Le Coq de vitrine porte le t-shirt, un mini ventilateur braqué sur la crête, posé devant un petit ring light qui le fait transpirer.",
+   "expected_result": "Question à commenter, produit réel visible."
+  }
+ ],
+ "cta_primary": {
+  "type": "comment",
+  "text": "Toi, tu choisis quoi : A, B ou C ?"
+ },
+ "cta_commercial": {
+  "type": "visual_product",
+  "text": "Collection en bio",
+  "product_id": "tee-droite-canape"
+ },
+ "word_count": 80,
+ "claims": [],
+ "sources": [
+  {
+   "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
+   "published": "2026-11-04",
+   "consulted": "2026-11-21",
+   "status": "fait public + opinion (AFP : cent jours sans priorités ni méthode détaillées)",
+   "used_for": "Thème du programme montré mais jamais livré, dit par le narrateur sur la ville fictive."
+  },
+  {
+   "url": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
+   "published": "2024-06-21",
+   "consulted": "2026-11-21",
+   "status": "fait public (AFP : TikTok, POV, selfies, bonbons) + mème (fan edits)",
+   "used_for": "Grammaire TikTok (POV, vertical, story, likes) appliquée aux services de la ville fictive."
+  }
+ ],
+ "disclosure": "",
+ "editorial_notes": "Format D (Simulateur). Mécanisme : jeu truqué (tous les choix mènent au même). Le présentateur est un cylindre fictif sans traits d'une personne réelle. Pas de source de veille ; climat traité sans chiffre réel (les températures sont des valeurs de jeu). Risques vérifiés : aucune citation, aucune politique réelle décrite. | Punch-up 21/11/2026 (ton ultra provocateur demandé par le propriétaire) : une phrase = un plan, mèmes et surnoms vérifiés en veille (content/veille/memes_bardellaville.json) transformés en objets ou en répliques d'habitants fictifs ; aucune phrase attribuée à la personne réelle, aucune affaire, rien sur la vie privée, l'âge ou une caractéristique protégée. Les prix cités sont ceux de la ville fictive."
+}

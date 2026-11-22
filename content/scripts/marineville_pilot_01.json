@@ -1,0 +1,232 @@
+{
+ "id": "mrv-s01e01",
+ "city": "marineville",
+ "synopsis_id": "mrv-syn-01",
+ "format": "A",
+ "title_cover": "Le rond-point à droite",
+ "hook_variants": [
+  "Dans cette ville, tout le monde vote Marine… et tourne en rond.",
+  "Dans cette ville, même le rond-point est obligé de tourner à droite.",
+  "Ici, toutes les sorties mènent à la mairie. Surtout celles qui n'y mènent pas.",
+  "Bienvenue à Marineville, où le GPS dit « tournez à droite » depuis le début.",
+  "Dans cette ville, on peut aller partout. Tant que c'est à droite."
+ ],
+ "selected_hook": 0,
+ "ending_variants": [
+  "Au centre, panneau neuf, très fier : Ligne droite. Bref, on a changé le nom du rond-point, pas le rond.",
+  "Bilan : on a changé le logo, les panneaux et la peinture. Et le rond-point s'appelle désormais « Ligne droite ».",
+  "On a changé le logo, les panneaux et la peinture. Le GPS, lui, tourne toujours en rond."
+ ],
+ "selected_ending": 0,
+ "narration_segments": [
+  {
+   "id": "n1",
+   "text": "Dans cette ville, tout le monde vote Marine… et tourne en rond.",
+   "accent_words": [
+    "Marine",
+    "rond"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n2",
+   "text": "Toutes les sorties ramènent ici, avec un plein de gazole en moins.",
+   "accent_words": [
+    "gazole"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n3",
+   "text": "Premier tour : la mairie change d'enseigne.",
+   "accent_words": [
+    "enseigne"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Deuxième tour : le logo est rangé dans un rond.",
+   "accent_words": [
+    "dans un rond"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n5",
+   "text": "Le GPS fait la fête : nouvel itinéraire, même cercle.",
+   "accent_words": [
+    "nouvel itinéraire"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n6",
+   "text": "Au centre, panneau neuf, très fier : Ligne droite.",
+   "accent_words": [
+    "Ligne droite"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Bref, on a changé le nom du rond-point, pas le rond.",
+   "accent_words": [
+    "rond"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n8",
+   "text": "Ton record de tours de rond-point, en commentaire.",
+   "accent_words": [
+    "commentaire"
+   ],
+   "claim_type": "fiction_satirique"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "narration_ids": [
+    "n1"
+   ],
+   "camera": "descend",
+   "set": [
+    "ground",
+    "road",
+    "roundabout",
+    "car_orbit",
+    "mairie",
+    "sign"
+   ],
+   "onscreen_text": "TOURNER À DROITE : OBLIGATOIRE",
+   "comic_action": "Dès la première image, vue plongeante sur une voiture qui tourne déjà autour du rond-point. Tous les panneaux autour pointent à droite, y compris un panneau planté au milieu qui pointe à droite… vers la mairie.",
+   "expected_result": "La règle est comprise en une image : ici, on ne peut aller qu'à droite."
+  },
+  {
+   "id": "s2",
+   "narration_ids": [
+    "n2"
+   ],
+   "camera": "street_dolly",
+   "set": [
+    "road",
+    "car",
+    "sign",
+    "building",
+    "tree",
+    "roundabout"
+   ],
+   "onscreen_text": "SORTIE →",
+   "comic_action": "La caméra suit la voiture qui prend fièrement une sortie. La route s'incurve doucement, toujours vers la droite, et rentre dans le même rond-point par l'autre côté. Le panneau « SORTIE → » est le même que celui de départ.",
+   "expected_result": "La sortie est une illusion : toute la ville est une boucle."
+  },
+  {
+   "id": "s3",
+   "narration_ids": [
+    "n3",
+    "n4"
+   ],
+   "camera": "orbit",
+   "set": [
+    "mairie",
+    "text3d",
+    "sign",
+    "studio_light",
+    "car_orbit"
+   ],
+   "onscreen_text": "",
+   "comic_action": "Orbite autour de la mairie, synchronisée avec la voiture. À chaque passage, l'enseigne text3d change : « MAIRIE » → « MAIRIE NOUVELLE » → « NOUVELLE MAIRIE », chaque nouvelle couche apparaissant par-dessus la précédente. La lumière passe du bleu marine au bleu pastel. Le bâtiment, lui, ne bouge pas d'un centimètre.",
+   "expected_result": "Tout change en surface, rien ne change en vrai ; l'enseigne s'épaissit à chaque tour.",
+   "new_asset_request": "Optionnel : animation d'apparition d'enseigne qui se pose par-dessus la précédente avec un léger décalage de profondeur (effet millefeuille)."
+  },
+  {
+   "id": "s4",
+   "narration_ids": [
+    "n5"
+   ],
+   "camera": "closeup",
+   "set": [
+    "gps",
+    "screen",
+    "text3d"
+   ],
+   "onscreen_text": "NOUVEL ITINÉRAIRE !",
+   "comic_action": "Gros plan sur l'écran du GPS : confettis, petite fanfare, « NOUVEL ITINÉRAIRE ! ». En dessous, la carte montre exactement le même cercle que tout à l'heure, avec la même flèche à droite.",
+   "expected_result": "La communication célèbre une nouveauté qui n'existe pas."
+  },
+  {
+   "id": "s5",
+   "narration_ids": [
+    "n6",
+    "n7"
+   ],
+   "camera": "return",
+   "set": [
+    "ground",
+    "road",
+    "roundabout",
+    "car_orbit",
+    "mairie",
+    "sign",
+    "text3d"
+   ],
+   "onscreen_text": "LIGNE DROITE",
+   "comic_action": "La caméra remonte et reprend exactement le cadre du plan d'ouverture. Seule différence : un grand panneau neuf sort du sol au centre du rond-point, « LIGNE DROITE ». La voiture continue de tourner dessous. On laisse respirer deux secondes.",
+   "expected_result": "Chute : renommer suffit à prétendre qu'on va tout droit, alors qu'on tourne toujours en rond."
+  },
+  {
+   "id": "s6",
+   "narration_ids": [
+    "n8"
+   ],
+   "camera": "closeup",
+   "set": [
+    "bench",
+    "tshirt",
+    "sign",
+    "roundabout"
+   ],
+   "onscreen_text": "Collection en bio",
+   "comic_action": "Au bord du rond-point, un t-shirt « LE PAYS BUGUE. MOI AUSSI. » est accroché au panneau ; la voiture passe derrière, encore une fois.",
+   "expected_result": "CTA parlé unique + rappel visuel du produit."
+  }
+ ],
+ "cta_primary": {
+  "type": "comment",
+  "text": "Ton record de tours de rond-point, en commentaire."
+ },
+ "cta_commercial": {
+  "type": "visual_product",
+  "text": "Collection en bio",
+  "product_id": "tee-pays-bugue"
+ },
+ "word_count": 79,
+ "claims": [],
+ "sources": [
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/le-fn-tente-de-renouveler-marine-plutot-que-son-programme-54558",
+   "published": "2017-02-06",
+   "consulted": "2026-11-21",
+   "status": "surnom (vérifié (fait public rapporté + analyse/opinion de presse))",
+   "used_for": "Idée/thème seulement, transformé en gag visuel original : Campagne 2017 centrée sur le seul prénom « Marine » : nom de famille et nom du parti effacés des documents de campagne. Le prénom seul est devenu une marque, ab…"
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
+   "published": "2018-06-01",
+   "consulted": "2026-11-21",
+   "status": "mème (vérifié (fait public))",
+   "used_for": "Idée/thème seulement, transformé en gag visuel original : Le Front national devient Rassemblement national ; la flamme du logo est conservée, désormais rangée dans un cercle. Base du running gag « on change le nom, pas…"
+  },
+  {
+   "url": "https://www.jean-jaures.org/publication/2002-2022-les-ressorts-profonds-de-la-dynamique-frontiste/",
+   "published": "2022-05-25",
+   "consulted": "2026-11-21",
+   "status": "cliché électorat (vérifié (analyse) — cliché d'électorat économique/géographique, aucune caractéristique protégée)",
+   "used_for": "Idée/thème seulement, transformé en gag visuel original : Vote RN plus fort dans le grand périurbain : dépendance à la voiture, poids du prix du gazole, crise des gilets jaunes (ronds-points). Thème : Clio diesel, plei…"
+  }
+ ],
+ "disclosure": "",
+ "editorial_notes": "Drôle parce que la boucle est visible sans contexte (plan d'ouverture = plan final) et que la chute renomme littéralement un cercle en « Ligne droite » : c'est la satire du rebranding (changer le nom plutôt que la trajectoire) en une image. Le ressort « à droite » vise un code de positionnement public et reste dans l'absurde de signalétique. Vérifications : aucune personne réelle nommée ou montrée, aucune citation attribuée, aucun délit, procès ou événement réel évoqué, aucun gag sur un groupe de population, aucune statistique. Un seul CTA parlé. Produit tout public. Continuité : introduit le marquage « Ligne droite » (mrv-evt-010) et le millefeuille d'enseignes repris dans l'épisode 2. || Punch-up 21/11/2026 (ton ultra provocateur) : narration réécrite, une phrase = un plan, 79 mots ; mèmes vérifiés intégrés comme thèmes (M1, M2, M14, voir content/veille/memes_marineville.json). Répliques uniquement d'objets ou d'habitants fictifs, aucune citation réelle, aucune allusion judiciaire, aucun gag sur origine, religion, sexe, orientation, handicap ; prix et chiffres = décor de la ville fictive, pas des statistiques ; pas d'appel au vote ni de « demain »."
+}

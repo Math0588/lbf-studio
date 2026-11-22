@@ -1,0 +1,1018 @@
+[
+  {
+    "id": "glv-syn-01",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "circulation",
+    "title": "Le GPS du cap clair",
+    "daily_problem": "Sortir d'un rond-point sans savoir quelle sortie prendre.",
+    "hook": "Ici, le GPS commence chaque trajet par « il faut un cap clair ». Puis il propose toutes les directions en même temps.",
+    "development_1": "Tourner à gauche ? « Trop clivant. » À droite ? « Aussi. » Tout droit ? « Je vous entends, mais écoutons d'abord les autres GPS. »",
+    "development_2": "L'écran n'affiche plus « recalcul » mais « concertation en cours ». La flèche se divise en deux, en quatre, puis en 360 : un hérisson de flèches. Toutes les voitures de la ville tournent autour du rond-point, chacune attend l'avis des autres.",
+    "visual_punchline": "Trois heures plus tard, la voiture n'a pas bougé d'un centimètre. Le GPS, ravi : « Vous êtes arrivé. Personne n'est fâché. » Derrière, les autres voitures tournent toujours autour du Panneau des Cap Clairs.",
+    "set_needed": [
+      "car",
+      "car_orbit",
+      "gps",
+      "roundabout",
+      "road",
+      "sign",
+      "screen",
+      "text3d",
+      "mascot"
+    ],
+    "new_asset_request": "sign_multi_arrow : poteau à N flèches paramétrable (4 → 360) ; à défaut, plusieurs sign tournés.",
+    "cta_idea": "Tague l'ami qui met trois heures à choisir un resto.",
+    "comic_mechanism": "objet qui se comporte comme un discours (le GPS fait de la langue de bois)",
+    "arc_id": "glv-arc-01",
+    "continuity_uses": [
+      "glv-evt-000",
+      "glv-evt-004"
+    ],
+    "continuity_adds": [
+      "glv-evt-005"
+    ],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-02",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "démarches administratives",
+    "title": "Le formulaire à une case",
+    "daily_problem": "Remplir un formulaire de la mairie.",
+    "hook": "Dans cette mairie, tous les formulaires n'ont qu'une question : « Êtes-vous d'accord ? »",
+    "development_1": "Les réponses possibles : « Oui », « Plutôt oui », « Oui, mais avec nuance ». La case « Non » existe, mais elle est en mousse.",
+    "development_2": "Tu appuies ton stylo sur « Non » : la case s'enfonce comme un coussin, puis se regonfle, vierge. Le guichetier : « Je vous entends. Je coche « plutôt oui » pour vous. »",
+    "visual_punchline": "La pile de formulaires grandit jusqu'au plafond, tous cochés « plutôt oui ». Tampon final, en lettres énormes : « ADOPTÉ À L'UNANIMITÉ — DONT VOUS ».",
+    "set_needed": [
+      "mairie",
+      "table",
+      "form_stack",
+      "person",
+      "text3d",
+      "sign"
+    ],
+    "new_asset_request": "cushion : case de formulaire en mousse qui s'enfonce puis se regonfle.",
+    "cta_idea": "Écris en commentaire la case que tu aurais voulu cocher.",
+    "comic_mechanism": "choix illusoire (le refus est physiquement mou)",
+    "arc_id": "glv-arc-03",
+    "continuity_uses": [
+      "glv-evt-003"
+    ],
+    "continuity_adds": [],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-03",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "métro",
+    "title": "La rame qui ne veut vexer aucune station",
+    "daily_problem": "Attendre un métro qui ne part pas.",
+    "hook": "Ici, la ligne 1 dessert toutes les stations en même temps. Du coup, elle ne part pas.",
+    "development_1": "Le plan du métro est une étoile parfaite : chaque station est reliée à toutes les autres. Annonce : « Ce train dessert toutes les destinations. Merci de patienter pendant qu'il choisit sans choisir. »",
+    "development_2": "Les portes se ferment, se rouvrent, se ferment : une station a exprimé une réserve. Le conducteur organise un tour de table avec les terminus.",
+    "visual_punchline": "La rame finit par avancer… de 30 centimètres dans les deux sens à la fois, s'étire, et reste au milieu du quai. Écran : « Prochaine station : toutes. Départ : ensemble. »",
+    "set_needed": [
+      "screen",
+      "text3d",
+      "person",
+      "sign",
+      "bench",
+      "lamp"
+    ],
+    "new_asset_request": "Rame de métro simple (variante de bus allongé, portes animables) ; à défaut, bus repeint en rame sur un quai.",
+    "cta_idea": "Ta ligne de métro, elle a quelle excuse ? En commentaire.",
+    "comic_mechanism": "paralysie par exhaustivité",
+    "arc_id": "glv-arc-01",
+    "continuity_uses": [
+      "glv-evt-000"
+    ],
+    "continuity_adds": [],
+    "bite_level": "mordante"
+  },
+  {
+    "id": "glv-syn-04",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "bus",
+    "title": "L'arrêt Compromis",
+    "daily_problem": "Le bus ne s'arrête jamais là où tu veux descendre.",
+    "hook": "Ici, le bus ne s'arrête pas où tu veux. Il s'arrête à la moyenne de ce que tout le monde veut.",
+    "development_1": "Toi, tu veux la gare. Ta voisine veut l'hôpital. Le monsieur du fond veut la plage. Le bus calcule le point d'équilibre.",
+    "development_2": "Nouveau passager, nouveau calcul : l'arrêt glisse sur la carte, quitte la ville, passe la rocade. Le chauffeur : « On est tous d'accord, c'est l'essentiel. »",
+    "visual_punchline": "Le bus s'arrête au milieu d'un champ vide. Panneau d'arrêt flambant neuf : « COMPROMIS ». Tout le monde descend, personne n'est arrivé, tout le monde applaudit poliment.",
+    "set_needed": [
+      "bus",
+      "road",
+      "ground",
+      "sign",
+      "person",
+      "screen",
+      "text3d",
+      "tree"
+    ],
+    "cta_idea": "Tague la personne avec qui tu ne trouves jamais de point de rendez-vous.",
+    "comic_mechanism": "compromis géographique littéral (la moyenne mène nulle part)",
+    "arc_id": "glv-arc-01",
+    "continuity_uses": [],
+    "continuity_adds": [
+      "glv-evt-008"
+    ],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-05",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "permis de conduire",
+    "title": "L'auto-école Aucun Virage",
+    "daily_problem": "Passer le permis de conduire.",
+    "hook": "Ici, au permis, tourner est éliminatoire. Tourner, c'est prendre position.",
+    "development_1": "Clignotant à gauche : l'inspecteur note « partisan ». Clignotant à droite : « partisan aussi ». Les deux clignotants en même temps : « Excellent, ça s'appelle les warnings du rassemblement. »",
+    "development_2": "Le créneau ? Il faut se garer exactement entre deux places, à cheval, pour ne léser aucune des deux.",
+    "visual_punchline": "Le candidat qui obtient le permis avec 20/20 n'a jamais quitté le parking. Sur sa feuille : « Aucune prise de position. Conduite exemplaire. »",
+    "set_needed": [
+      "car",
+      "road",
+      "ground",
+      "person",
+      "form_stack",
+      "text3d",
+      "sign",
+      "traffic_light"
+    ],
+    "cta_idea": "Dis en commentaire combien de fois tu as eu ton permis (sois honnête).",
+    "comic_mechanism": "inversion du critère de réussite",
+    "arc_id": "glv-arc-01",
+    "continuity_uses": [
+      "glv-evt-002"
+    ],
+    "continuity_adds": [],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-06",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "logement",
+    "title": "Les murs porteurs en mousse",
+    "daily_problem": "Visiter un appartement avec un agent immobilier.",
+    "hook": "Ici, les murs porteurs sont en mousse. Rien ne porte, mais rien ne heurte.",
+    "development_1": "L'agent : « Immeuble à positionnement souple. Le mur nord n'impose rien au mur sud. » Tu t'appuies au mur : il t'accueille, il t'écoute, il cède.",
+    "development_2": "Le plafond descend doucement pour être à l'écoute des locataires du dessous. L'ascenseur ne monte ni ne descend : il « accompagne ».",
+    "visual_punchline": "Vue extérieure : l'immeuble entier s'affaisse lentement jusqu'à devenir un pouf géant, avec les balcons sur le côté. Plaque : « Bâtiment qui ne prend pas parti pour la verticale ».",
+    "set_needed": [
+      "building",
+      "facade_set",
+      "person",
+      "text3d",
+      "sign",
+      "mascot"
+    ],
+    "new_asset_request": "pouf_morph : shape key permettant à building de s'affaisser en pouf.",
+    "cta_idea": "Ton pire appart visité, en trois mots, en commentaire.",
+    "comic_mechanism": "matériau qui incarne la posture",
+    "arc_id": "glv-arc-02",
+    "continuity_uses": [
+      "glv-evt-004"
+    ],
+    "continuity_adds": [],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-07",
+    "city": "glucksmannville",
+    "format": "B",
+    "domain": "copropriété",
+    "title": "L'AG qui mélange toutes les couleurs",
+    "daily_problem": "Choisir la couleur de la cage d'escalier en assemblée générale de copro.",
+    "hook": "Dans cette copro, on vote la couleur de l'escalier. Toutes les couleurs gagnent.",
+    "development_1": "Le 2e veut du rouge, le 4e du vert, le 5e du bleu. Le syndic : « Ne choisissons pas, additionnons. » Chacun apporte son pot.",
+    "development_2": "Les pots sont versés dans un seau commun et mélangés au fouet électrique, avec gravité, pendant toute la réunion.",
+    "visual_punchline": "La cage d'escalier est repeinte : beige. Tout le monde a gagné, personne ne reconnaît sa couleur. Sur le palier, la banderole déjà imprimée pour toutes les AG : « ON EN REPARLE À LA PROCHAINE ».",
+    "set_needed": [
+      "building",
+      "table",
+      "person",
+      "banner",
+      "text3d",
+      "bin"
+    ],
+    "new_asset_request": "Seau et pots de peinture simples ; à défaut, bin recoloré.",
+    "cta_idea": "Ta copro a voté quoi de pire ? Raconte en commentaire.",
+    "comic_mechanism": "addition des avis = beige",
+    "arc_id": "glv-arc-03",
+    "continuity_uses": [
+      "glv-evt-001"
+    ],
+    "continuity_adds": [],
+    "bite_level": "mordante"
+  },
+  {
+    "id": "glv-syn-08",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "école",
+    "title": "La règle souple",
+    "daily_problem": "Faire mesurer correctement un trait en classe de géométrie.",
+    "hook": "Dans cette école, les règles sont en mousse. Pas les règles de vie : les règles graduées.",
+    "development_1": "Ton trait fait 10 centimètres. La règle s'étire : « Il fait aussi 12, si on écoute toutes les sensibilités. »",
+    "development_2": "Contrôle de maths : 2 + 2 = 4 obtient « plutôt juste ». 2 + 2 = 5 obtient « intéressant, à approfondir ». Tout le monde a 15, la moyenne de la classe est exactement la moyenne.",
+    "visual_punchline": "Le compas de géométrie ne trace plus de cercle : il trace la forme de la personne qui le tient. Bulletin trimestriel : « D'accord avec tout le monde. Félicitations. »",
+    "set_needed": [
+      "table",
+      "screen",
+      "text3d",
+      "person",
+      "form_stack"
+    ],
+    "new_asset_request": "Règle graduée déformable (cube allongé à shape keys).",
+    "cta_idea": "Ton pire prof de maths, il était plutôt règle dure ou règle molle ? En commentaire.",
+    "comic_mechanism": "instrument de mesure qui négocie",
+    "arc_id": "glv-arc-03",
+    "continuity_uses": [],
+    "continuity_adds": [],
+    "bite_level": "mordante"
+  },
+  {
+    "id": "glv-syn-09",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "cantine",
+    "title": "Le plat du jour : consensus",
+    "daily_problem": "Manger à la cantine un plat qui plaît à tout le monde.",
+    "hook": "Ici, la cantine sert un plat conçu pour ne déplaire à personne. Il y a réussi : il ne plaît à personne.",
+    "development_1": "Ni salé ni sucré, ni chaud ni froid, ni dur ni liquide. Couleur : beige. Odeur : en concertation.",
+    "development_2": "Le thermomètre de la cantine n'a qu'une graduation : « tiède ». Les enfants notent le plat : 10/20, à l'unanimité, avec une précision effrayante.",
+    "visual_punchline": "Un enfant renverse son assiette : la purée reste debout en forme de dôme, sans s'étaler, sans tomber, sans prendre parti pour le sol. Pancarte : « Menu validé par toutes les sensibilités ».",
+    "set_needed": [
+      "table",
+      "person",
+      "sign",
+      "text3d",
+      "screen"
+    ],
+    "new_asset_request": "Assiette + dôme de purée beige (sphère aplatie).",
+    "cta_idea": "Le plat de cantine qui t'a traumatisé ? En commentaire.",
+    "comic_mechanism": "moyenne de tout = rien",
+    "arc_id": "glv-arc-02",
+    "continuity_uses": [],
+    "continuity_adds": [
+      "glv-evt-015"
+    ],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-10",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "université",
+    "title": "La thèse sur le cap",
+    "daily_problem": "Soutenir un mémoire devant un jury.",
+    "hook": "Ici, la meilleure thèse de l'année s'intitule « Il faut un cap clair ». Elle fait 900 pages. On ne connaît toujours pas le cap.",
+    "development_1": "Le titre complet s'allonge à l'écran : « … vers une clarification progressive de la nécessité d'envisager collectivement un cap ».",
+    "development_2": "Le jury a douze membres. Ils sont d'accord avec chaque phrase, puis avec la phrase inverse. Question finale : « Et donc, on va où ? » Ovation.",
+    "visual_punchline": "Mention obtenue : « Très nuancé, avec félicitations du consensus ». Les toques des diplômés sont des coussins, qu'ils lancent en l'air, et qui retombent sans bruit.",
+    "set_needed": [
+      "tribune",
+      "table",
+      "person",
+      "screen",
+      "text3d",
+      "scroll"
+    ],
+    "new_asset_request": "cushion : coussins carrés en guise de toques de diplômés.",
+    "cta_idea": "Écris en commentaire le titre de mémoire le plus flou que tu aies vu.",
+    "comic_mechanism": "titre qui s'allonge à l'infini",
+    "arc_id": "glv-arc-03",
+    "continuity_uses": [
+      "glv-evt-000"
+    ],
+    "continuity_adds": [],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-11",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "recrutement",
+    "title": "Le casting du candidat rassurant",
+    "daily_problem": "Passer un entretien d'embauche.",
+    "hook": "Ici, la mairie recrute sur un seul critère : rassurer. Le meilleur candidat est un mannequin de vitrine.",
+    "development_1": "Fiche de poste : « Bien coiffé. Ne contredit pas. Sourit à tout le monde à la fois. Expérience : facultative. »",
+    "development_2": "Les vrais candidats ont des idées : refusés, « profil clivant ». Le mannequin ne dit rien, garde la même expression, garde la même chemise : « profil idéal ».",
+    "visual_punchline": "Photo officielle d'embauche sous le ring light : le mannequin, sans aucun mouvement. Applaudissements polis. On lui accroche un badge « Chargé de vision ».",
+    "set_needed": [
+      "shop",
+      "person",
+      "ring_light",
+      "tripod_camera",
+      "table",
+      "text3d",
+      "sign"
+    ],
+    "cta_idea": "La question d'entretien la plus absurde qu'on t'ait posée ? En commentaire.",
+    "comic_mechanism": "casting d'image (l'objet gagne contre les humains)",
+    "arc_id": "glv-arc-04",
+    "continuity_uses": [
+      "glv-evt-003"
+    ],
+    "continuity_adds": [
+      "glv-evt-018"
+    ],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-12",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "bureau",
+    "title": "Taper du poing sur la table",
+    "daily_problem": "Trancher un désaccord en réunion de bureau.",
+    "hook": "Ici, quand un chef veut taper du poing sur la table, la table est en mousse.",
+    "development_1": "Le poing s'enfonce. Pas un bruit. La table remercie pour ce « partage d'émotion ».",
+    "development_2": "Il tape plus fort : la table s'étale en pouf. Plus fort encore : toute la salle de réunion se capitonne, murs, plafond, PowerPoint.",
+    "visual_punchline": "La décision finit par être prise : Pouf, la mascotte, s'assoit sur le dossier. Le compte rendu sort de l'imprimante : « Décision : on s'est assis dessus. »",
+    "set_needed": [
+      "table",
+      "person",
+      "screen",
+      "text3d",
+      "mascot",
+      "form_stack"
+    ],
+    "new_asset_request": "pouf_morph : table qui s'affaisse en pouf.",
+    "cta_idea": "Tague le collègue qui aurait besoin d'une table en mousse.",
+    "comic_mechanism": "littéralisation d'expression (taper du poing)",
+    "arc_id": "glv-arc-02",
+    "continuity_uses": [
+      "glv-evt-004"
+    ],
+    "continuity_adds": [],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-13",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "boulangerie",
+    "title": "La baguette du juste milieu",
+    "daily_problem": "Acheter une baguette bien cuite.",
+    "hook": "Ici, tu demandes une baguette bien cuite. La boulangère te répond : « Je vous entends. Mais entendons aussi la mie. »",
+    "development_1": "Bien cuite, pas cuite ? Elle sert les deux : une baguette noire d'un côté, blanche de l'autre, coupée en deux dans le sens de la longueur pour que chacun ait sa moitié.",
+    "development_2": "Tradition ou viennoiserie ? On fusionne : la tradi-croissant-campagne, beige, sans croûte, sans goût, au prix moyen de tout le magasin.",
+    "visual_punchline": "La vitrine ne contient plus qu'un seul produit, répété à l'infini : une miche beige parfaitement lisse. Étiquette : « Pain qui ne fâche personne. Ni personne n'en reprend. »",
+    "set_needed": [
+      "shop",
+      "person",
+      "sign",
+      "text3d",
+      "table"
+    ],
+    "new_asset_request": "Pains low-poly (baguette, miche) ; à défaut, cylindres et sphères beiges.",
+    "cta_idea": "Baguette bien cuite ou pas cuite ? Tranche en commentaire, ici c'est interdit.",
+    "comic_mechanism": "fusion compromis qui détruit le produit",
+    "arc_id": "glv-arc-02",
+    "continuity_uses": [],
+    "continuity_adds": [],
+    "bite_level": "mordante"
+  },
+  {
+    "id": "glv-syn-14",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "supermarché",
+    "title": "Le caddie pluraliste",
+    "daily_problem": "Pousser un caddie dont une roue part de travers.",
+    "hook": "Partout, il y a un caddie avec une roue qui part de travers. Ici, c'est la norme : chaque roue a sa sensibilité.",
+    "development_1": "Roue avant gauche vers la gauche, roue avant droite vers la droite, les deux de derrière vers le rayon « Ensemble ». Le caddie tourne sur lui-même avec dignité.",
+    "development_2": "Une affiche explique : « Caddie de rassemblement : aucune roue n'impose sa direction aux autres. » Les clients poussent de toutes leurs forces, avec respect.",
+    "visual_punchline": "Plongée sur le parking : des centaines de caddies tournent sur place en cercles parfaits, comme une chorégraphie. Sortie du magasin : panneau à flèches dans toutes les directions.",
+    "set_needed": [
+      "shop",
+      "person",
+      "sign",
+      "ground",
+      "text3d",
+      "car"
+    ],
+    "new_asset_request": "Caddie low-poly à 4 roues orientables indépendamment.",
+    "cta_idea": "Tague la personne qui choisit toujours le caddie qui part de travers.",
+    "comic_mechanism": "objet = coalition paralysée",
+    "arc_id": "glv-arc-01",
+    "continuity_uses": [
+      "glv-evt-000"
+    ],
+    "continuity_adds": [],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-15",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "restaurant",
+    "title": "Le chef qui vous entend",
+    "daily_problem": "Commander au restaurant quand on a faim.",
+    "hook": "Dans ce restaurant, le chef ne cuisine pas. Il écoute.",
+    "development_1": "Il passe à chaque table, hoche la tête, prend des notes : « Je vous entends. Votre faim est légitime. Celle de la table d'à côté aussi. »",
+    "development_2": "Quarante minutes par table. Il reformule. Il synthétise. Il propose une plateforme commune entre l'entrecôte et le végétarien.",
+    "visual_punchline": "Il revient en cuisine, bouleversé par la richesse des échanges, et éteint les fourneaux : « Service terminé. Merci pour ce beau moment de dialogue. » Les assiettes vides sont servies, joliment dressées.",
+    "set_needed": [
+      "table",
+      "person",
+      "shop",
+      "sign",
+      "text3d",
+      "lamp"
+    ],
+    "cta_idea": "Ton pire temps d'attente au resto ? Donne le chrono en commentaire.",
+    "comic_mechanism": "écoute infinie qui remplace l'action",
+    "arc_id": "glv-arc-03",
+    "continuity_uses": [],
+    "continuity_adds": [],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-16",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "salle de sport",
+    "title": "Le tapis de course omnidirectionnel",
+    "daily_problem": "Faire du cardio à la salle.",
+    "hook": "Ici, le tapis de course ne va pas vers l'avant. Il va dans toutes les directions. Résultat : tu cours sur place.",
+    "development_1": "Le coach : « On ne force pas, on accompagne. » Les haltères sont en mousse. Le chrono affiche « plutôt rapide ».",
+    "development_2": "Tu cours une heure. Le compteur de distance : 0 kilomètre. Le coach : « Superbe dynamique. »",
+    "visual_punchline": "Le compteur de calories s'allume enfin : « 0 calorie brûlée. Aucune n'a été froissée. » Tu repars en sueur, exactement au même endroit.",
+    "set_needed": [
+      "person",
+      "screen",
+      "text3d",
+      "sign",
+      "mascot"
+    ],
+    "new_asset_request": "Tapis de course low-poly avec flèches animées dans 4 directions.",
+    "cta_idea": "Abonne-toi : la prochaine fois, on visite le stade, où l'arbitre a un carton d'une couleur inédite.",
+    "comic_mechanism": "effort maximal, déplacement nul",
+    "arc_id": "glv-arc-01",
+    "continuity_uses": [],
+    "continuity_adds": [],
+    "bite_level": "mordante"
+  },
+  {
+    "id": "glv-syn-17",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "stade",
+    "title": "Le carton beige",
+    "daily_problem": "Regarder un match avec un arbitre qui ne siffle rien.",
+    "hook": "Ici, l'arbitre a un troisième carton. Ni jaune ni rouge : beige.",
+    "development_1": "Tacle par derrière : l'arbitre réunit les deux joueurs : « Je vous entends tous les deux. » Il sort le carton beige : « On en reparle. »",
+    "development_2": "Penalty ? Pas penalty ? La VAR ne tranche pas : elle diffuse les deux angles en même temps, côte à côte, pendant toute la mi-temps.",
+    "visual_punchline": "Coup de sifflet final. Tableau d'affichage : « Score : tout le monde a raison. » En tribune, le carton beige est hissé au mât comme un drapeau.",
+    "set_needed": [
+      "ground",
+      "person",
+      "tribune",
+      "screen",
+      "text3d",
+      "banner",
+      "column"
+    ],
+    "new_asset_request": "Carton d'arbitre (plan rectangulaire) + cages de foot simples.",
+    "cta_idea": "Le match où l'arbitre aurait mérité un carton beige ? En commentaire.",
+    "comic_mechanism": "invention d'un nouvel objet réglementaire",
+    "arc_id": "glv-arc-02",
+    "continuity_uses": [],
+    "continuity_adds": [
+      "glv-evt-007"
+    ],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-18",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "parc",
+    "title": "Le concert en accord parfait",
+    "daily_problem": "Aller au concert gratuit du kiosque, le dimanche.",
+    "hook": "Ici, l'orchestre du parc cherche l'accord parfait. Il s'accorde depuis trois ans.",
+    "development_1": "Le premier violon donne le la. Le hautbois a un léger désaccord. On reprend le la. On consulte le public sur le la.",
+    "development_2": "Les gens arrivent, pique-niquent, vieillissent un peu sur les bancs. Les enfants du premier concert reviennent avec leurs propres enfants.",
+    "visual_punchline": "Le chef d'orchestre lève enfin sa baguette… et annonce l'entracte. L'affiche du kiosque : « Concert : accord parfait. Programme : accordage. » Et une plaque compte les jours.",
+    "set_needed": [
+      "tree",
+      "bench",
+      "person",
+      "sign",
+      "text3d",
+      "lamp",
+      "fountain"
+    ],
+    "new_asset_request": "Kiosque à musique (cylindre + toit conique) ; à défaut, arch + column.",
+    "cta_idea": "Tague le groupe d'amis qui n'arrive jamais à choisir un film.",
+    "comic_mechanism": "jeu de mots visuel (l'accord musical)",
+    "arc_id": "glv-arc-03",
+    "continuity_uses": [],
+    "continuity_adds": [
+      "glv-evt-010"
+    ],
+    "bite_level": "mordante"
+  },
+  {
+    "id": "glv-syn-19",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "collecte des déchets",
+    "title": "Le tri non sélectif",
+    "daily_problem": "Trier ses déchets dans les bonnes poubelles.",
+    "hook": "Ici, le tri sélectif est interdit. Sélectionner, c'est exclure.",
+    "development_1": "Plastique, verre, carton : « On ne va pas opposer les matériaux. » Les trois bacs fusionnent en un seul grand bac beige à trois couvercles.",
+    "development_2": "Le camion arrive, consulte les sacs un par un, et n'en jette aucun : « Chaque déchet a sa place dans notre ville. »",
+    "visual_punchline": "Les sacs s'empilent avec dignité jusqu'au premier étage, chacun avec un petit badge « Bienvenue ». Le panneau du centre de tri : « Tri sélectif : nous refusons de sélectionner ».",
+    "set_needed": [
+      "bin",
+      "road",
+      "building",
+      "sign",
+      "text3d",
+      "person"
+    ],
+    "new_asset_request": "Sacs poubelle empilables (réutiliser l'asset de mcv-syn si disponible).",
+    "cta_idea": "Ta commune trie comment ? Dis-le en commentaire, on compare.",
+    "comic_mechanism": "refus de trier = refus de choisir",
+    "arc_id": "glv-arc-02",
+    "continuity_uses": [],
+    "continuity_adds": [],
+    "bite_level": "mordante"
+  },
+  {
+    "id": "glv-syn-20",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "travaux",
+    "title": "La route concertée",
+    "daily_problem": "Supporter des travaux de voirie qui n'en finissent pas.",
+    "hook": "Ici, avant de refaire une route, la mairie consulte chaque habitant. Chaque habitant veut que la route passe devant chez lui.",
+    "development_1": "La mairie dit oui à tout le monde. Les bulldozers commencent à tracer un tronçon par demande.",
+    "development_2": "La route fait un virage pour la boulangère, une boucle pour le dentiste, un détour par le jardin de chaque retraité.",
+    "visual_punchline": "Vue du ciel : la route forme un énorme nœud autour de la mairie, dessert toutes les portes et ne mène nulle part. Panneau d'inauguration : « Route de tout le monde. Sortie : à l'étude. »",
+    "set_needed": [
+      "road",
+      "building",
+      "mairie",
+      "car",
+      "sign",
+      "text3d",
+      "ground"
+    ],
+    "cta_idea": "Les travaux devant chez toi durent depuis combien de temps ? En commentaire.",
+    "comic_mechanism": "concertation qui tord le réel (escalade cartographique)",
+    "arc_id": "glv-arc-01",
+    "continuity_uses": [],
+    "continuity_adds": [
+      "glv-evt-013"
+    ],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-21",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "panne d'électricité",
+    "title": "La ville à 50 %",
+    "daily_problem": "Une coupure de courant le soir.",
+    "hook": "Ici, la lumière n'est jamais allumée ni éteinte. Elle est à 50 %, pour ne pas opposer le jour et la nuit.",
+    "development_1": "L'interrupteur municipal n'a que deux positions : « plutôt allumé » et « plutôt éteint ». Elles font la même chose.",
+    "development_2": "Grosse panne de courant. Les électriciens arrivent, observent, ne voient aucune différence et rédigent un rapport en trois tomes.",
+    "visual_punchline": "Le courant revient. Personne ne s'en rend compte. Les lampadaires restent tamisés, la ville reste beige. Le rapport final : « Panne résolue. Elle n'avait rien changé. »",
+    "set_needed": [
+      "lamp",
+      "building",
+      "road",
+      "person",
+      "form_stack",
+      "text3d",
+      "sign"
+    ],
+    "cta_idea": "Ta pire panne de courant, c'était pendant quoi ? En commentaire.",
+    "comic_mechanism": "demi-mesure littérale (la panne est indiscernable)",
+    "arc_id": "glv-arc-02",
+    "continuity_uses": [],
+    "continuity_adds": [
+      "glv-evt-019"
+    ],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-22",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "tourisme",
+    "title": "Le belvédère de tous les points de vue",
+    "daily_problem": "Payer une longue-vue de belvédère pour voir le panorama.",
+    "hook": "Ici, la longue-vue du belvédère montre tous les points de vue. Elle ne s'arrête sur aucun.",
+    "development_1": "Tu mets une pièce : la longue-vue tourne lentement sur 360 degrés, puis encore, puis encore. Une voix : « Chaque point de vue est respectable. »",
+    "development_2": "Tu essaies de la bloquer sur la cathédrale : elle glisse poliment vers le parking. Vers la mer : elle glisse vers le parking aussi.",
+    "visual_punchline": "La pièce s'épuise : la longue-vue s'arrête enfin… pile sur toi. Plaque : « Panorama garanti sans parti pris ».",
+    "set_needed": [
+      "column",
+      "person",
+      "sign",
+      "text3d",
+      "ground",
+      "tree",
+      "building"
+    ],
+    "new_asset_request": "Longue-vue de belvédère sur pied (cylindre pivotant).",
+    "cta_idea": "Le panorama le plus surcoté de France ? En commentaire, on arbitre.",
+    "comic_mechanism": "rotation sans fin qui finit en miroir",
+    "arc_id": "glv-arc-04",
+    "continuity_uses": [],
+    "continuity_adds": [],
+    "bite_level": "mordante"
+  },
+  {
+    "id": "glv-syn-23",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "fête municipale",
+    "title": "Le feu d'artifice beige",
+    "daily_problem": "Assister au feu d'artifice de la fête de la ville.",
+    "hook": "Ici, le feu d'artifice est beige et silencieux. Une détonation, ça pourrait cliver.",
+    "development_1": "Première fusée : un petit « pouf » de fumée crème. La foule fait « hmm-hmm » d'approbation.",
+    "development_2": "Le bouquet final est voté en conseil : trois couleurs proposées, une seule retenue, la moyenne. L'applaudimètre est plafonné à « poli ».",
+    "visual_punchline": "La dernière fusée explose en un grand coussin beige qui redescend en flottant, très lentement, et se pose sur le toit de la mairie. Tout le monde rentre se coucher à 21 h 30.",
+    "set_needed": [
+      "mairie",
+      "person",
+      "screen",
+      "text3d",
+      "banner",
+      "lamp"
+    ],
+    "new_asset_request": "cushion géant flottant + particules de fumée beige.",
+    "cta_idea": "Abonne-toi : la prochaine fois, on regarde qui applaudit vraiment dans cette ville.",
+    "comic_mechanism": "spectacle désamorcé",
+    "arc_id": "glv-arc-02",
+    "continuity_uses": [
+      "glv-evt-004"
+    ],
+    "continuity_adds": [
+      "glv-evt-016"
+    ],
+    "bite_level": "mordante"
+  },
+  {
+    "id": "glv-syn-24",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "conseil de quartier",
+    "title": "Le groupe de travail sur les groupes de travail",
+    "daily_problem": "Faire réparer un lampadaire en conseil de quartier.",
+    "hook": "Ici, pour réparer un lampadaire, il faut un groupe de travail. Pour créer le groupe de travail, il faut un groupe de travail.",
+    "development_1": "Premier groupe : « Faut-il envisager de réparer ? » Deuxième groupe : « Comment envisager d'envisager ? »",
+    "development_2": "L'organigramme à l'écran s'enroule en spirale. Chaque case ouvre une case plus petite, avec un coussin pour chaque participant.",
+    "visual_punchline": "Au centre de la spirale, la dernière case dit : « Groupe de travail sur les groupes de travail », avec une flèche qui pointe vers elle-même. Dehors, le lampadaire est toujours éteint, et Pouf s'est assis dessous.",
+    "set_needed": [
+      "screen",
+      "table",
+      "person",
+      "lamp",
+      "text3d",
+      "mascot",
+      "form_stack"
+    ],
+    "cta_idea": "La réunion la plus inutile de ta vie, en une phrase, en commentaire.",
+    "comic_mechanism": "bureaucratie récursive",
+    "arc_id": "glv-arc-03",
+    "continuity_uses": [
+      "glv-evt-004"
+    ],
+    "continuity_adds": [],
+    "bite_level": "mordante"
+  },
+  {
+    "id": "glv-syn-25",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "livraison",
+    "title": "Le colis trop protégé",
+    "daily_problem": "Recevoir un colis fragile sans qu'il soit cassé.",
+    "hook": "Ici, les colis fragiles sont protégés comme le consensus : tellement qu'on ne peut plus les ouvrir.",
+    "development_1": "Ton petit vase arrive dans un coussin. Le coussin est dans un coussin. Le livreur sonne avec le coude, pour ne brusquer personne.",
+    "development_2": "À chaque couche, une étiquette : « Fragile », « Très fragile », « À ne pas contrarier ». Le colis grossit pendant le trajet.",
+    "visual_punchline": "Le colis arrive : un pouf géant, plus large que la porte. Il reste sur le trottoir. Les voisins s'y assoient. La mairie l'inaugure : « Nouveau lieu de concertation ».",
+    "set_needed": [
+      "building",
+      "person",
+      "road",
+      "sign",
+      "text3d",
+      "mascot",
+      "car"
+    ],
+    "new_asset_request": "cushion : colis-coussin qui gonfle par couches (scale animé).",
+    "cta_idea": "Tague l'ami qui garde tous les papiers bulle « au cas où ».",
+    "comic_mechanism": "protection en escalade",
+    "arc_id": "glv-arc-02",
+    "continuity_uses": [],
+    "continuity_adds": [
+      "glv-evt-011"
+    ],
+    "bite_level": "piquante"
+  },
+  {
+    "id": "glv-syn-26",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "nouvelles technologies",
+    "title": "L'assistant vocal qui mérite un débat",
+    "daily_problem": "Demander l'heure à son assistant vocal.",
+    "hook": "Ici, l'enceinte connectée de la mairie répond à tout : « C'est une question importante, qui mérite un débat apaisé. »",
+    "development_1": "« Quelle heure il est ? » — « Il y a plusieurs heures. Toutes sont légitimes. » L'horloge du salon fait tourner ses aiguilles dans les deux sens.",
+    "development_2": "« Il fait chaud dehors ? » — « Certains disent chaud, d'autres froid. Retenons : tiède. » « Allume la lumière. » — « À 50 %, ensemble. »",
+    "visual_punchline": "Tu lui demandes enfin de s'éteindre. Elle réfléchit, puis organise un sondage auprès des autres enceintes de l'immeuble. Résultat affiché sur toutes les fenêtres : « Plutôt non ».",
+    "set_needed": [
+      "screen",
+      "person",
+      "building",
+      "text3d",
+      "lamp",
+      "table"
+    ],
+    "new_asset_request": "Enceinte connectée (cylindre avec anneau lumineux).",
+    "cta_idea": "Pose en commentaire la question à laquelle cette enceinte répondrait le pire.",
+    "comic_mechanism": "réponse évasive en escalade",
+    "arc_id": "glv-arc-03",
+    "continuity_uses": [],
+    "continuity_adds": [],
+    "bite_level": "mordante"
+  },
+  {
+    "id": "glv-syn-27",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "marché",
+    "title": "La balance qui ne penche jamais",
+    "daily_problem": "Faire peser ses fruits au marché.",
+    "hook": "Au marché de cette ville, la balance ne penche jamais. Jamais. Pour personne.",
+    "development_1": "Une pastèque d'un côté, une plume de l'autre : parfaitement à l'horizontale. Le marchand, fier : « Ici, rien ne pèse plus lourd que rien. »",
+    "development_2": "On essaie un sac de patates contre une cerise. Puis le marchand lui-même contre une feuille de salade. Horizontal. Les clients paient tous le même prix : « le prix médian ».",
+    "visual_punchline": "Un enfant pose une brique d'un côté. La balance ne penche toujours pas… et la brique devient lentement un coussin. Pancarte : « Balance municipale : aucune inclinaison constatée depuis sa fondation ».",
+    "set_needed": [
+      "shop",
+      "table",
+      "person",
+      "sign",
+      "text3d"
+    ],
+    "new_asset_request": "market_scale : balance à deux plateaux ; cushion morph pour la brique.",
+    "cta_idea": "Écris en commentaire ce que tu poserais sur cette balance pour la faire pencher.",
+    "comic_mechanism": "objet qui refuse de pencher (littéralisation)",
+    "arc_id": "glv-arc-02",
+    "continuity_uses": [],
+    "continuity_adds": [
+      "glv-evt-014"
+    ],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-28",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "vacances",
+    "title": "Destination un peu partout",
+    "daily_problem": "Choisir une destination de vacances en famille.",
+    "hook": "Ici, l'agence de voyages vend une seule formule : « Un peu partout, pas trop loin, pas trop près. »",
+    "development_1": "Mer ou montagne ? On calcule le point exactement à mi-chemin. La valise contient un maillot, un anorak, une crème solaire et une écharpe.",
+    "development_2": "Le billet indique : « Départ : ici. Arrivée : moyenne pondérée de vos envies. » Tu montes dans le bus. Il fait le tour du rond-point.",
+    "visual_punchline": "Carte postale envoyée aux amis : une photo de la Place Publique, avec la mention « Bons baisers de nulle part en particulier ». Au dos, le timbre est beige.",
+    "set_needed": [
+      "shop",
+      "bus",
+      "roundabout",
+      "sign",
+      "text3d",
+      "person",
+      "screen"
+    ],
+    "cta_idea": "Tague la personne avec qui tu ne seras jamais d'accord sur les vacances.",
+    "comic_mechanism": "promesse vs réalité (le voyage immobile)",
+    "arc_id": "glv-arc-01",
+    "continuity_uses": [
+      "glv-evt-000",
+      "glv-evt-008"
+    ],
+    "continuity_adds": [],
+    "bite_level": "piquante"
+  },
+  {
+    "id": "glv-syn-29",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "visite d'une ville voisine",
+    "title": "Le rassemblement réussi",
+    "daily_problem": "Réconcilier deux voisins qui se disputent.",
+    "hook": "Le Médiateur de cette ville part réconcilier la ville voisine. Il y arrive. Tout le monde se rassemble… contre lui.",
+    "development_1": "Il arrive avec un coussin pour chaque camp, un pour chaque nuance, et un en réserve pour les indécis.",
+    "development_2": "Il écoute la gauche de la rue, la droite de la rue, le trottoir du milieu. À chaque phrase : « Je vous entends. » Au bout d'une heure, les deux camps ont enfin un point commun.",
+    "visual_punchline": "Plan large : les deux camps, bras dessus bras dessous, raccompagnent le Médiateur à la frontière de la ville en lui rendant tous ses coussins. Panneau de sortie : « Mission réussie : rassemblement total ». En fond, un détail d'une autre ville de la série.",
+    "set_needed": [
+      "road",
+      "person",
+      "sign",
+      "text3d",
+      "arch",
+      "building",
+      "ring_light"
+    ],
+    "new_asset_request": "cushion (pile de coussins portée à bout de bras).",
+    "cta_idea": "Dans quelle ville de la série on l'envoie la prochaine fois ? Dis-le en commentaire.",
+    "comic_mechanism": "réussite paradoxale (l'objectif atteint par le mauvais bout)",
+    "arc_id": "glv-arc-04",
+    "continuity_uses": [],
+    "continuity_adds": [],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-30",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "mairie",
+    "title": "Le fauteuil sans forme",
+    "daily_problem": "Être reçu par le maire.",
+    "hook": "Dans cette mairie, le fauteuil du maire n'a pas de forme. Il prend celle du dernier qui s'est assis.",
+    "development_1": "À 9 h, un patron s'assoit : le fauteuil devient une mallette. À 10 h, une syndicaliste : il devient un mégaphone.",
+    "development_2": "À midi, tout le monde s'assoit en même temps : le fauteuil devient un pouf beige parfaitement rond. Dossier de presse : « Le rassemblement ».",
+    "visual_punchline": "Le maire arrive enfin. Il s'assoit. Le fauteuil ne bouge pas : il n'y a rien à copier. Plaque sur la porte : « Maire — période d'essai renouvelable ».",
+    "set_needed": [
+      "mairie",
+      "table",
+      "person",
+      "text3d",
+      "sign",
+      "screen",
+      "mascot"
+    ],
+    "new_asset_request": "pouf_morph : fauteuil en mousse avec shape keys (mallette, mégaphone, pouf rond, neutre).",
+    "cta_idea": "Quelle forme prendrait le fauteuil après toi ? En commentaire.",
+    "comic_mechanism": "mémoire de forme = absence de forme propre",
+    "arc_id": "glv-arc-04",
+    "continuity_uses": [
+      "glv-evt-003",
+      "glv-evt-001",
+      "glv-evt-005"
+    ],
+    "continuity_adds": [
+      "glv-evt-006"
+    ],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-31",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "mairie",
+    "title": "Le Réveil municipal",
+    "daily_problem": "Se réveiller le matin pour aller travailler.",
+    "hook": "Ici, le grand réveil du beffroi doit réveiller la ville. Il sonne si doucement que personne ne l'entend.",
+    "development_1": "6 h : le réveil chuchote. 6 h 05 : il demande « on se réveille ? plutôt oui ? ». 6 h 10 : il propose un report pour ne brusquer personne.",
+    "development_2": "Une pétition demande un réveil plus fort. Le réveil la reçoit, l'écoute, la remercie et se met en mode « répétition douce ».",
+    "visual_punchline": "À midi, toute la ville dort encore. Le réveil, lui, a fini par se rendormir. Sur la banderole du beffroi : « RÉVEIL EN COURS ».",
+    "set_needed": [
+      "mairie",
+      "column",
+      "building",
+      "banner",
+      "text3d",
+      "lamp",
+      "person"
+    ],
+    "new_asset_request": "Grand réveil à cloches posé sur le beffroi (sphère + deux cloches).",
+    "cta_idea": "Abonne-toi : la prochaine fois, on visite la mairie où le fauteuil du maire n'a pas de forme.",
+    "comic_mechanism": "effet retard (l'outil d'urgence devient sédatif)",
+    "arc_id": "glv-arc-04",
+    "continuity_uses": [
+      "glv-evt-017"
+    ],
+    "continuity_adds": [],
+    "bite_level": "mordante"
+  },
+  {
+    "id": "glv-syn-32",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "circulation",
+    "title": "Le feu qui récite",
+    "daily_problem": "Attendre au feu rouge.",
+    "hook": "Ici, le feu tricolore ne passe au vert qu'après avoir récité son texte. En entier. Avec gravité.",
+    "development_1": "Le Prompteur, sur le trottoir, lui souffle chaque mot. Le feu récite sans cligner, avec une diction de fin d'année scolaire.",
+    "development_2": "Un mot saute, le Prompteur se bloque. Toute la rue se fige en plein geste : piétons, pigeons, voitures, un cycliste à moitié sur sa selle.",
+    "visual_punchline": "Le feu reste coincé sur l'orange : ni arrêt ni départ. Une banderole descend du balcon de la mairie : « Orange : couleur officielle de la ville ».",
+    "set_needed": [
+      "traffic_light",
+      "screen",
+      "tripod_camera",
+      "road",
+      "car",
+      "person",
+      "banner",
+      "text3d"
+    ],
+    "cta_idea": "Combien de temps tu as déjà attendu au même feu ? En commentaire.",
+    "comic_mechanism": "texte récité qui fige le monde",
+    "arc_id": "glv-arc-04",
+    "continuity_uses": [
+      "glv-evt-002"
+    ],
+    "continuity_adds": [
+      "glv-evt-012"
+    ],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-33",
+    "city": "glucksmannville",
+    "format": "C",
+    "domain": "nouvelles technologies",
+    "title": "Mise à jour « Nuance » du clavier",
+    "daily_problem": "Écrire un message clair sur son ordinateur.",
+    "hook": "Mise à jour de la France, version Glucksmannville : la touche « Supprimer » s'appelle désormais « Nuancer ».",
+    "development_1": "Tu tapes « non ». Correcteur automatique : « non, mais ». Tu tapes « je refuse ». Correcteur : « je m'interroge ».",
+    "development_2": "La touche Entrée devient « Écouter » : elle n'envoie rien, elle te demande si tu es sûr d'avoir entendu tout le monde. La touche Échap a été retirée.",
+    "visual_punchline": "Ctrl+Z fonctionne encore. Mais il n'annule pas ce que tu as écrit : il annule ce que tu allais décider. Notes de version : « Correctif : les phrases qui finissent ».",
+    "set_needed": [
+      "screen",
+      "table",
+      "person",
+      "text3d"
+    ],
+    "new_asset_request": "Clavier low-poly à touches remplaçables (texte sur keycaps).",
+    "cta_idea": "Écris ta phrase la plus tranchée en commentaire : on la passe au correcteur de Glucksmannville.",
+    "comic_mechanism": "mise à jour qui dégrade (correcteur évasif)",
+    "arc_id": "glv-arc-03",
+    "continuity_uses": [],
+    "continuity_adds": [],
+    "bite_level": "mordante"
+  },
+  {
+    "id": "glv-syn-34",
+    "city": "glucksmannville",
+    "format": "D",
+    "domain": "conseil de quartier",
+    "title": "Simulateur de président : mode Concertation",
+    "daily_problem": "Prendre une décision dans un jeu de gestion.",
+    "hook": "Simulateur de président, mode Glucksmannville : le bouton « Décider » est grisé.",
+    "development_1": "Les boutons disponibles : « Consulter », « Écouter », « Nuancer », « Rassembler ». Chaque clic ouvre une nouvelle fenêtre de consultation.",
+    "development_2": "Au bout de 40 fenêtres, l'écran est entièrement recouvert de pop-ups « Votre avis compte ». L'ordinateur ventile de plus en plus fort.",
+    "visual_punchline": "Écran de fin : « Partie terminée. Personne ne vous déteste. Personne ne sait pourquoi. » Score affiché : « Sympathie 100 / Direction : à discuter ».",
+    "set_needed": [
+      "screen",
+      "text3d",
+      "person",
+      "table",
+      "router_lectern"
+    ],
+    "cta_idea": "Abonne-toi : la prochaine fois, on lance le simulateur dans une autre ville de la série.",
+    "comic_mechanism": "jeu vidéo verrouillé (interface comme discours)",
+    "arc_id": "glv-arc-03",
+    "continuity_uses": [
+      "glv-evt-001"
+    ],
+    "continuity_adds": [],
+    "bite_level": "très mordante"
+  },
+  {
+    "id": "glv-syn-35",
+    "city": "glucksmannville",
+    "format": "A",
+    "domain": "fête municipale",
+    "title": "L'applaudimètre au premier degré",
+    "daily_problem": "Distinguer un compliment sincère d'une moquerie.",
+    "hook": "Dans cette ville, le fan-club du maire applaudit tout au troisième degré. La mairie compte tout au premier.",
+    "development_1": "Le fan-club brandit « ON T'AIME (AU 3e DEGRÉ) ». L'applaudimètre de la mairie ne lit pas les parenthèses : « Adhésion : 100 % ».",
+    "development_2": "Plus le fan-club exagère, plus les courbes montent. Le service com' imprime les banderoles moqueuses en grand et les distribue comme des affiches officielles.",
+    "visual_punchline": "La devise gravée au fronton de la mairie : « ON T'AIME », sans les parenthèses. En tribune, le fan-club se regarde, déroule une nouvelle banderole… et la mairie la recopie aussitôt.",
+    "set_needed": [
+      "tribune",
+      "person",
+      "banner",
+      "screen",
+      "mairie",
+      "text3d",
+      "studio_light"
+    ],
+    "cta_idea": "Écris en commentaire un compliment au troisième degré pour ta mairie : les meilleurs pourront apparaître en fond d'un prochain épisode.",
+    "comic_mechanism": "malentendu de degré (l'ironie prise au sérieux)",
+    "arc_id": "glv-arc-04",
+    "continuity_uses": [
+      "glv-evt-003"
+    ],
+    "continuity_adds": [
+      "glv-evt-009"
+    ],
+    "bite_level": "très mordante"
+  }
+]
