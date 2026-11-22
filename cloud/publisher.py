@@ -7,7 +7,7 @@ dans le runner, puis envoyée directement à Instagram (envoi « resumable » ve
 
 Garanties :
 - LIVE_PUBLISH != "true"  → simulation explicite, jamais de statut « published ».
-- Au plus 1 publication par jour (Europe/Paris), pas de rattrapage après panne.
+- Créneaux Europe/Paris (state/control.json « slots »), pas de rafale après panne (2 h 30 minimum).
 - Identifiant du conteneur persisté AVANT publication ; un timeout donne « publication_uncertain »
   puis une réconciliation (lecture des derniers médias) au lieu d'un nouvel essai aveugle.
 - Le jeton n'est jamais écrit dans les journaux.
@@ -129,6 +129,40 @@ def maybe_refresh_token():
 # ----------------------------------------------------------------------------- publication
 
 RELEASE = "reserve"
+# Vidéos fabriquées dans GitHub Actions par le dépôt studio (release publique « reserve »)
+STUDIO = os.environ.get("STUDIO_REPO", "").strip() or "Math0588/lbf-studio"
+STUDIO_DL = f"https://github.com/{STUDIO}/releases/download/reserve"
+
+
+def _get(url, timeout=30):
+    with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "lbf-diffusion"}),
+                                timeout=timeout) as r:
+        return r.read()
+
+
+def studio_index() -> list:
+    """File d'attente du studio (ordre de fabrication). Vide si le studio n'est pas encore public."""
+    try:
+        return json.loads(_get(f"{STUDIO_DL}/index.json")).get("items", [])
+    except Exception as e:
+        log(f"Studio indisponible ({type(e).__name__}) : réserve locale seulement")
+        return []
+
+
+def studio_meta(ep_id) -> dict:
+    return json.loads(_get(f"{STUDIO_DL}/{ep_id}.json"))
+
+
+def public_url(name: str) -> str:
+    """URL directe (fichier public de la release studio), redirection résolue pour Meta."""
+    req = urllib.request.Request(f"{STUDIO_DL}/{name}", method="HEAD", headers={"User-Agent": "lbf-diffusion"})
+    try:
+        urllib.request.build_opener(_NoRedirect).open(req, timeout=30)
+    except urllib.error.HTTPError as e:
+        if e.code in (301, 302, 303, 307, 308) and e.headers.get("Location"):
+            return e.headers["Location"]
+        raise
+    return f"{STUDIO_DL}/{name}"
 
 
 def gh(*args):
@@ -213,11 +247,14 @@ def wait_container(cid: str, minutes: int = 15) -> dict:
     return s
 
 
-def create_container(ep_id: str, params: dict) -> tuple[str, str]:
+def create_container(ep_id: str, params: dict, studio: bool = False) -> tuple[str, str]:
     """Crée le conteneur Reels et y met la vidéo. Méthode « url » (lien signé, défaut) ou « resumable »
     (envoi direct). Renvoie (id du conteneur, méthode utilisée)."""
     user_id = env("IG_USER_ID")
     method = env("IG_UPLOAD_METHOD") or "url"
+    if studio:
+        c = call("POST", f"{user_id}/media", {**params, "media_type": "REELS", "video_url": public_url(f"{ep_id}.mp4")})
+        return c["id"], "url_studio"
     if method == "resumable":
         video = ensure_local(ep_id)
         c = call("POST", f"{user_id}/media", {**params, "media_type": "REELS", "upload_type": "resumable"})
@@ -231,8 +268,15 @@ def create_container(ep_id: str, params: dict) -> tuple[str, str]:
     return c["id"], "url"
 
 
-def next_episode(queue, pubs, assets=frozenset()):
-    done = {p["episode_id"] for p in pubs if p["status"] in ("published", "publication_uncertain", "failed")}
+def next_episode(queue, pubs, assets=frozenset(), studio=None):
+    done = {p["episode_id"] for p in pubs if p["status"] in ("published", "publication_uncertain", "failed")
+            and not p.get("retry")}
+    # 1) vidéos du studio cloud, dans l'ordre de fabrication (elles remplacent les anciennes versions locales)
+    for it in studio or []:
+        if it["id"] not in done:
+            return {"episode_id": it["id"], "source": "studio", "title": it.get("title")}
+    studio_ids = {it["id"] for it in studio or []}
+    queue = [q for q in queue if q["episode_id"] not in studio_ids and q["episode_id"] not in SUPERSEDED]
     fresh = []
     for item in queue:
         exp = item.get("expires")
@@ -244,6 +288,9 @@ def next_episode(queue, pubs, assets=frozenset()):
         if item["episode_id"] not in done and has_video(item["episode_id"], assets):
             return item
     return None
+
+
+SUPERSEDED = {"mcv-s01e01", "glv-s01e01"}   # anciennes histoires : remplacées par les versions réécrites du studio
 
 
 def reconcile(pub, user_id):
@@ -262,14 +309,20 @@ def publish_one(item, pubs):
     user_id = env("IG_USER_ID")
     ep_id = item["episode_id"]
     folder = RESERVE / ep_id
-    caption = (folder / "caption.txt").read_text(encoding="utf-8")
-    manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
+    from_studio = item.get("source") == "studio"
+    if from_studio:
+        meta = studio_meta(ep_id)
+        caption, manifest = meta["caption"], meta.get("manifest", {})
+    else:
+        caption = (folder / "caption.txt").read_text(encoding="utf-8")
+        manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
     thumb = int(manifest.get("thumb_offset_ms", 300))
     pub = {"episode_id": ep_id, "status": "publishing", "attempt_at": now().isoformat(),
            "video_sha256": manifest.get("video_sha256"), "caption_head": caption[:60]}
 
     if env("LIVE_PUBLISH") != "true":
         pub.update(status="simulated", note="LIVE_PUBLISH=false : aucune requête envoyée à Instagram",
+                   source="studio" if from_studio else "local",
                    would_post={"upload": "resumable", "video": f"release {RELEASE}/{ep_id}.mp4",
                                "thumb_offset_ms": thumb, "caption_chars": len(caption)})
         pubs.append(pub)
@@ -280,7 +333,13 @@ def publish_one(item, pubs):
     log(f"Quota : {lim}")
     pubs.append(pub)
     save("publications.json", pubs)
-    cid, how = create_container(ep_id, {"caption": caption, "thumb_offset": thumb, "share_to_feed": "true"})
+    params = {"caption": caption, "thumb_offset": thumb, "share_to_feed": "true"}
+    if from_studio:  # couverture avec le titre de la vidéo (grille du profil et fil)
+        try:
+            params["cover_url"] = public_url(f"{ep_id}.jpg")
+        except Exception as e:
+            log(f"Couverture indisponible ({e}) : image extraite de la vidéo")
+    cid, how = create_container(ep_id, params, studio=from_studio)
     c = {"id": cid}
     pub.update(container_id=cid, upload=how)
     save("publications.json", pubs)
@@ -322,7 +381,7 @@ def publish_youtube(item):
     """Module optionnel YouTube Shorts : jamais bloquant pour Instagram, jamais deux fois le même épisode."""
     sys.path.insert(0, str(Path(__file__).parent))
     import youtube
-    if not youtube.enabled():
+    if not youtube.enabled() or item.get("source") == "studio":
         return
     yts = load("youtube.json", [])
     if any(y["episode_id"] == item["episode_id"] and y.get("video_id") for y in yts):
@@ -387,7 +446,7 @@ def check_upload():
     """Vérification sans publication : pour chaque méthode d'envoi, conteneur + vidéo + traitement Meta, puis arrêt
     AVANT media_publish. Les conteneurs non publiés expirent seuls sous 24 h ; rien n'apparaît sur le compte."""
     queue = json.loads((RESERVE / "queue.json").read_text(encoding="utf-8")) if (RESERVE / "queue.json").exists() else []
-    item = next_episode(queue, load("publications.json", []), release_assets())
+    item = next_episode(queue, load("publications.json", []), release_assets(), studio_index())
     if not item:
         log("CHECK : aucune vidéo dans la réserve")
         return 1
@@ -395,7 +454,8 @@ def check_upload():
     for method in ("url", "resumable"):
         os.environ["IG_UPLOAD_METHOD"] = method
         try:
-            cid, how = create_container(ep_id, {"caption": "vérification technique", "share_to_feed": "false"})
+            cid, how = create_container(ep_id, {"caption": "vérification technique", "share_to_feed": "false"},
+                                        studio=item.get("source") == "studio")
             st = wait_container(cid, 12)
             log(f"CHECK {method} : méthode effective {how}, statut {st.get('status_code')} ({st.get('status')})")
             if st.get("status_code") == "FINISHED" and how == method:
@@ -424,7 +484,7 @@ def main():
     assets = release_assets()
     cleanup(pubs, assets)
     today = now().date().isoformat()
-    slots = control.get("slots") or [x.strip() for x in env("PUBLISH_SLOTS", "12:30,19:00").split(",") if x.strip()]
+    slots = control.get("slots") or [x.strip() for x in env("PUBLISH_SLOTS", "08:30,12:30,19:00,22:00").split(",") if x.strip()]
     counted = ("published", "publishing", "publication_uncertain") + \
         (() if env("LIVE_PUBLISH") == "true" else ("simulated",))   # un essai à blanc n'occupe pas un vrai créneau
     done_today = [p for p in pubs if p.get("attempt_at", "")[:10] == today and p["status"] in counted]
@@ -435,15 +495,18 @@ def main():
             return 0
         if done_today:
             last = max(dt.datetime.fromisoformat(p["attempt_at"]) for p in done_today)
-            if (now() - last).total_seconds() < 3 * 3600:
+            if (now() - last).total_seconds() < 2.5 * 3600:
                 log("Moins de 3 h depuis la dernière publication : pas de rafale après une panne.")
                 return 0
-    item = next_episode(queue, pubs, assets)
+    studio = studio_index()
+    item = next_episode(queue, pubs, assets, studio)
     if not item:
-        notify("reserve", "Réserve vide : aucune vidéo prête. Allumer le PC pour produire.")
+        notify("reserve", "Réserve vide : aucune vidéo prête (la fabrication cloud tourne 5 fois par jour).")
         save("publications.json", pubs)
         return 0
-    remaining = len([q for q in queue if has_video(q["episode_id"], assets)]) - 1
+    done_ids = {p["episode_id"] for p in pubs if p["status"] == "published"}
+    remaining = len([i for i in studio if i["id"] not in done_ids]) - 1 if studio else \
+        len([q for q in queue if has_video(q["episode_id"], assets)]) - 1
     if remaining < 3:
         notify("reserve", f"Réserve basse : {remaining} vidéo(s) après celle-ci.")
     pub = publish_one(item, pubs)
