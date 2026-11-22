@@ -5,22 +5,22 @@
  "format": "A",
  "length": "court",
  "title_cover": "Gendre sans chiffrage",
- "anchor": "étiquette « gendre idéal » répandue dans la presse people (rien sur la vie privée) : rassure tout le monde, ne répond à personne.",
+ "anchor": "l'étiquette « gendre idéal » : plaire à tous, ne répondre à personne",
  "meme_key": "GENDRE",
  "situation": "Gendre sans chiffrage",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "ressort": "un thème unique en escalade : truc connu, trois crans, chute retournée",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, le CV parfait tient en deux mots : gendre idéal.",
-  "Bardellaville : il plaît à tout le monde, il ne répond à personne.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : gendre sans chiffrage."
+  "Dans cette ville, tout le monde vote Bardella. Ta belle-mère aussi.",
+  "Bardella, gendre idéal. Programme, pas idéal.",
+  "Bardellaville : il plaît à tout le monde.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Gendre sans chiffrage."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le gendre idéal, c'est celui qui plaît à tout le monde et ne répond à personne.",
-  "Le gendre idéal : il apporte des fleurs, jamais de chiffrage.",
-  "À l'agence pour l'emploi, le CV parfait tient en deux mots : gendre idéal."
+  "Le gendre idéal plaît à tout le monde, et ne répond à personne.",
+  "Il plaît à tout le monde, ne répond à personne.",
+  "Des fleurs, jamais de chiffrage."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -34,7 +34,7 @@
   },
   {
    "id": "n2",
-   "text": "Son étiquette dans la presse people : le gendre idéal.",
+   "text": "Son étiquette favorite dans la presse people : le gendre idéal.",
    "accent_words": [
     "gendre idéal"
    ],
@@ -42,33 +42,33 @@
   },
   {
    "id": "n3",
-   "text": "À la télé, un portrait tout en douceur : peu de questions politiques.",
+   "text": "Le gendre idéal ne contrarie personne : à la télé, interview tout en douceur.",
    "accent_words": [
-    "peu de questions"
+    "douceur"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le gendre idéal : il apporte des fleurs, jamais de chiffrage.",
+   "text": "Il ne fâche pas les patrons non plus : deux heures avec le Medef.",
    "accent_words": [
-    "jamais de chiffrage"
+    "Medef"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "À l'agence pour l'emploi, le CV parfait tient en deux mots : gendre idéal.",
+   "text": "Bientôt, il apportera des fleurs au lieu d'un chiffrage.",
    "accent_words": [
-    "gendre idéal"
+    "fleurs"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Le gendre idéal, c'est celui qui plaît à tout le monde et ne répond à personne.",
+   "text": "Le gendre idéal plaît à tout le monde, et ne répond à personne.",
    "accent_words": [
-    "ne répond à personne"
+    "personne"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -76,7 +76,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui le présenterait à ses parents.",
    "accent_words": [
-    "ses parents"
+    "parents"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -94,9 +94,19 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; une affiche 4x3 « GENDRE IDÉAL » sur la façade.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "TA BELLE-MÈRE AUSSI",
+   "comic_action": "Descente sur la ville ; banderole « TA BELLE-MÈRE AUSSI » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -107,12 +117,23 @@
    "set": [
     "screen",
     "text3d",
-    "mairie",
-    "person"
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "GENDRE IDÉAL",
-   "comic_action": "L'écran affiche des couvertures de magazines qui défilent, toutes avec la même étiquette.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "LE GENDRE IDÉAL",
+   "comic_action": "Écran géant : « LE GENDRE IDÉAL ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "clap"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -121,14 +142,26 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
     "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "BILAN : —",
-   "comic_action": "Plateau télé : une étiquette géante posée sur un pupitre vide.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "INTERVIEW EN DOUCEUR",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « INTERVIEW EN DOUCEUR ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -137,14 +170,26 @@
    ],
    "camera": "window_pass",
    "set": [
-    "shop",
+    "table",
+    "building",
     "person",
-    "sign",
     "text3d"
    ],
-   "onscreen_text": "FLEURS ✓ · CHIFFRAGE ✗",
-   "comic_action": "Fleuriste : un bouquet emballé dans une page de programme blanche.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "2 H AVEC LE MEDEF",
+   "comic_action": "Salon feutré, table dressée ; carton « 2 H AVEC LE MEDEF ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -154,29 +199,53 @@
    "camera": "window_pass",
    "set": [
     "table",
-    "screen",
-    "sign",
-    "building"
+    "building",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "CV : 2 MOTS",
-   "comic_action": "Guichet : un CV d'une ligne est tamponné « EMBAUCHÉ ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DES FLEURS, PAS DE CHIFFRAGE",
+   "comic_action": "Salon feutré, table dressée ; carton « DES FLEURS, PAS DE CHIFFRAGE ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "table",
-    "person",
-    "screen",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "RÉPONSE : PLUS TARD",
-   "comic_action": "Table de repas : tout le monde lui pose une question, il ressert le dessert. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "NE RÉPOND À PERSONNE",
+   "comic_action": "Plan final, tenir une seconde : « NE RÉPOND À PERSONNE ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -190,9 +259,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt tient un bouquet, gêné.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE CONQUIS",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE CONQUIS ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -204,21 +281,28 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 85,
+ "word_count": 82,
  "claims": [
   {
    "segment": "n2",
-   "text": "Son étiquette dans la presse people : le gendre idéal.",
+   "text": "Son étiquette favorite dans la presse people : le gendre idéal.",
    "claim_type": "fait_public",
    "source": "https://www.purebreak.com/diapo/-c-est-le-gendre-ideal-delphine-wespiser-assume-adorer-jordan-bardella-et-lui-predit-un-avenir-presidentiel/248250",
    "note": "Étiquette « gendre idéal » (rien sur la vie privée)."
   },
   {
    "segment": "n3",
-   "text": "À la télé, un portrait tout en douceur : peu de questions politiques.",
+   "text": "Le gendre idéal ne contrarie personne : à la télé, interview tout en douceur.",
    "claim_type": "fait_public",
    "source": "https://www.yahoo.com/news/soft-focus-interview-positions-bardella-084104725.html",
    "note": "Portrait télévisé « soft-focus » : séances de sport, ambiance intime, peu de questions politiques."
+  },
+  {
+   "segment": "n4",
+   "text": "Il ne fâche pas les patrons non plus : deux heures avec le Medef.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/bardella-rencontre-en-tete-a-tete-le-medef-une-premiere-pour-le-rn-435456",
+   "note": "Tête-à-tête de plus de deux heures avec le Medef, une première pour le RN (20/04/2026 selon la presse)."
   }
  ],
  "sources": [
@@ -226,7 +310,7 @@
    "url": "https://www.purebreak.com/diapo/-c-est-le-gendre-ideal-delphine-wespiser-assume-adorer-jordan-bardella-et-lui-predit-un-avenir-presidentiel/248250",
    "date": "2024-02",
    "consulted": "2026-11-22",
-   "statut": "opinion / cliché très répandu",
+   "statut": "opinion / cliché",
    "note": "Étiquette « gendre idéal » (rien sur la vie privée)."
   },
   {
@@ -235,8 +319,15 @@
    "consulted": "2026-11-22",
    "statut": "fait + opinion (Reuters)",
    "note": "Portrait télévisé « soft-focus » : séances de sport, ambiance intime, peu de questions politiques."
+  },
+  {
+   "url": "https://lcp.fr/actualites/bardella-rencontre-en-tete-a-tete-le-medef-une-premiere-pour-le-rn-435456",
+   "date": "2026-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Tête-à-tête de plus de deux heures avec le Medef, une première pour le RN (20/04/2026 selon la presse)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = étiquette « gendre idéal » répandue dans la presse people (rien sur la vie privée) : rassure tout le monde, ne répond à personne. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = l'étiquette « gendre idéal » : plaire à tous, ne répondre à personne. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

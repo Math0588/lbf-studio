@@ -3,75 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-03",
  "format": "A",
- "title_cover": "Sept bancs, zéro assise",
+ "title_cover": "Premiers ministres jetables",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, le banc public change plus souvent que le gouvernement. Presque.",
-  "Sept Premiers ministres, zéro banc qui tient.",
-  "Les macronistes vont détester ce banc.",
-  "Macronville : même le mobilier urbain est en période d'essai."
+  "Depuis 2017, il a usé sept Premiers ministres. Record de Mitterrand égalé.",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Premiers ministres jetables : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Premiers ministres jetables."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Huitième banc déjà commandé. Mode d'emploi : surtout, ne pas s'attacher.",
-  "Le maire appelle ça la stabilité. Le banc appelle ça un CDD.",
-  "Sept bancs, sept rubans coupés, toujours personne d'assis."
+  "Sept Premiers ministres. Le seul qui ne démissionne jamais, c'est lui.",
+  "Sept Premiers ministres, un seul indéboulonnable : celui qui les nomme.",
+  "Entre deux, des mois d'affaires courantes : le pays en pilote automatique."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Debout, faute de banc.",
+   "text": "Dans cette ville, tout le monde vote Macron. Premiers ministres jetables.",
    "accent_words": [
-    "Debout"
+    "jetables"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le banc du square change tous les trois mois. Comme Matignon.",
+   "text": "Depuis 2017, il a usé sept Premiers ministres. Record de Mitterrand égalé.",
    "accent_words": [
-    "Matignon"
+    "égalé"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Sept Premiers ministres depuis 2017 : record de Mitterrand égalé.",
+   "text": "Le septième, Lecornu, tient vingt-sept jours. Record de brièveté.",
    "accent_words": [
-    "Sept"
+    "brièveté"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le plus court a tenu vingt-sept jours. Un yaourt tient plus longtemps.",
+   "text": "Il démissionne un lundi. Le vendredi, Macron le renomme. Même mec.",
    "accent_words": [
-    "vingt-sept jours"
+    "Même mec"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Il démissionne le lundi, revient le vendredi. Le CDD à rebond.",
+   "text": "Entre deux, des mois d'affaires courantes : le pays en pilote automatique.",
    "accent_words": [
-    "revient"
+    "automatique"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Huitième banc déjà commandé. Mode d'emploi : surtout, ne pas s'attacher.",
+   "text": "Sept Premiers ministres. Le seul qui ne démissionne jamais, c'est lui.",
    "accent_words": [
-    "ne pas s'attacher"
+    "jamais"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui croyait que le dernier était le bon.",
+   "text": "Envoie ça au pote qui change de boulot tous les trois mois.",
    "accent_words": [
-    "le dernier"
+    "mois"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,46 +85,87 @@
    "camera": "descend",
    "set": [
     "ground",
-    "tree",
-    "bench",
-    "lamp",
-    "person"
+    "mairie",
+    "banner",
+    "person",
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur le square : arbres, banc, réverbère.",
-   "expected_result": "Le square posé."
+   "comic_action": "Descente sur la ville ; banderole « PREMIERS MINISTRES JETABLES » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "bench",
-    "tree",
+    "facade_row",
     "person",
+    "text3d",
     "sign"
    ],
-   "onscreen_text": "UN BANC TOUS LES 3 MOIS",
-   "comic_action": "Le banc du square est dévissé et remplacé par un banc identique ; plaque « BANC N°7 ».",
-   "expected_result": "Le décor du gag."
+   "onscreen_text": "7 PREMIERS MINISTRES",
+   "comic_action": "Une file de Premiers ministres cubiques sort de la mairie un par un ; un compteur 3D grimpe de 1 à 7.",
+   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "facade_row",
-    "person",
-    "sign",
-    "text3d"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "7 PREMIERS MINISTRES",
-   "comic_action": "Une file d'adjoints passe devant la porte de la mairie ; un compteur « 1, 2, 3… 7 » s'allume.",
-   "expected_result": "La valse des Premiers ministres en compteur."
+   "onscreen_text": "27 JOURS",
+   "comic_action": "Écran géant : un calendrier perd ses pages à toute vitesse ; à la 27e, le Premier ministre sort avec son carton.",
+   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s4",
@@ -133,13 +174,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "mairie",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "27 JOURS",
-   "comic_action": "Écran géant : un yaourt et un Premier ministre côte à côte, dates de péremption comparées.",
-   "expected_result": "La pique s'affiche en écran."
+   "onscreen_text": "DÉMISSION → RETOUR",
+   "comic_action": "Le même Premier ministre sort de la mairie avec un carton, fait demi-tour, et le maire lui rouvre la porte.",
+   "expected_result": "Escalade 2 : encore plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s5",
@@ -148,13 +203,28 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "person",
-    "mairie",
-    "sign"
+    "car_orbit",
+    "roundabout",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "DÉMISSION → RETOUR",
-   "comic_action": "Le même adjoint sort de la mairie avec un carton, fait demi-tour, rentre, ressort, rentre.",
-   "expected_result": "Démission et retour en boucle."
+   "onscreen_text": "AFFAIRES COURANTES",
+   "comic_action": "Des voitures tournent sans fin autour du rond-point, personne au volant ; panneau « AFFAIRES COURANTES ».",
+   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "spin",
+     "visage": "blase",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "fatigue",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s6",
@@ -163,14 +233,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "bench",
-    "tree",
-    "person",
-    "sign"
+    "tribune",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "BANC N°8 EN COMMANDE",
-   "comic_action": "Un camion livre un banc emballé ; étiquette « N°8 » ; les habitants n'osent pas déballer.",
-   "expected_result": "Le décor du gag."
+   "onscreen_text": "LUI, JAMAIS",
+   "comic_action": "Le maire seul sur sa tribune, immobile, pendant que sept silhouettes défilent derrière lui avec des cartons.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s7",
@@ -179,82 +262,96 @@
    ],
    "camera": "return",
    "set": [
-    "tree",
-    "bench",
+    "road",
     "person",
-    "tshirt"
+    "tshirt",
+    "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur le square ; un habitant en t-shirt de la collection sur le banc.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : la valse des Premiers ministres (sept depuis 2017).",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui croyait que le dernier était le bon."
+  "text": "Envoie ça au pote qui change de boulot tous les trois mois."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 79,
+ "word_count": 78,
  "claims": [
   {
-   "text": "Le banc du square change tous les trois mois. Comme Matignon.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
-   "note": "Valse des ministres, affaires courantes, année record. Détourné dans la ville fictive."
-  },
-  {
-   "text": "Sept Premiers ministres depuis 2017 : record de Mitterrand égalé.",
+   "text": "Depuis 2017, il a usé sept Premiers ministres. Record de Mitterrand égalé.",
    "claim_type": "fait_public",
    "source": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
-   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
+   "note": "Sept Premiers ministres depuis 2017 (Philippe, Castex, Borne, Attal, Barnier, Bayrou, Lecornu) ; record de Mitterrand égalé selon la presse."
   },
   {
-   "text": "Le plus court a tenu vingt-sept jours. Un yaourt tient plus longtemps.",
+   "text": "Le septième, Lecornu, tient vingt-sept jours. Record de brièveté.",
    "claim_type": "fait_public",
    "source": "https://www.sudradio.fr/sud-radio/27-jours-24h-chrono-sebastien-lecornu-un-premier-ministre-de-tous-les-records",
-   "note": "Premier ministre le plus éphémère de la Ve République (27 jours)."
+   "note": "Lecornu, Premier ministre le plus éphémère de la Ve République (27 jours)."
   },
   {
-   "text": "Il démissionne le lundi, revient le vendredi. Le CDD à rebond.",
+   "text": "Il démissionne un lundi. Le vendredi, Macron le renomme. Même mec.",
    "claim_type": "fait_public",
    "source": "https://www.parismatch.be/actualites/monde/2025/10/10/france-emmanuel-macron-reconduit-sebastien-lecornu-comme-premier-ministre-LIQZQK4X7JCTTF65GLJQZJ7EME/",
-   "note": "Lecornu démissionne le 06/10/2025, reconduit le 10/10/2025."
+   "note": "Lecornu démissionne le 06/10/2025 ; Macron le reconduit le 10/10/2025."
+  },
+  {
+   "text": "Entre deux, des mois d'affaires courantes : le pays en pilote automatique.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
+   "note": "Valse des ministres, mois d'affaires courantes : une année politique record."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
-   "date": "2025",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Valse des ministres, affaires courantes, année record."
-  },
-  {
    "url": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
    "date": "2025-10",
    "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
+   "statut": "fait public",
+   "note": "Sept Premiers ministres depuis 2017 (Philippe, Castex, Borne, Attal, Barnier, Bayrou, Lecornu) ; record de Mitterrand égalé selon la presse."
   },
   {
    "url": "https://www.sudradio.fr/sud-radio/27-jours-24h-chrono-sebastien-lecornu-un-premier-ministre-de-tous-les-records",
    "date": "2025-10",
    "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Premier ministre le plus éphémère de la Ve République (27 jours)."
+   "statut": "fait public",
+   "note": "Lecornu, Premier ministre le plus éphémère de la Ve République (27 jours)."
   },
   {
    "url": "https://www.parismatch.be/actualites/monde/2025/10/10/france-emmanuel-macron-reconduit-sebastien-lecornu-comme-premier-ministre-LIQZQK4X7JCTTF65GLJQZJ7EME/",
    "date": "2025-10-10",
    "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Lecornu démissionne le 06/10/2025, reconduit le 10/10/2025."
+   "statut": "fait public",
+   "note": "Lecornu démissionne le 06/10/2025 ; Macron le reconduit le 10/10/2025."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
+   "date": "2025",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Valse des ministres, mois d'affaires courantes : une année politique record."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : la valse des Premiers ministres (sept depuis 2017, record de brièveté, démission puis retour) racontée par le banc du square. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — la valse des Premiers ministres (sept depuis 2017). Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-18",
  "format": "A",
- "title_cover": "Matignon, recalé",
+ "title_cover": "Matignon, pas appelé",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : la fac où l'on révise pour Matignon.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, le partiel porte sur une promesse de 2022.",
-  "Mélenchonville : l'examen où personne n'est nommé."
+  "Dans cette ville, tout le monde vote Mélenchon. Premier ministre, au moins.",
+  "Mélenchon voulait être Premier ministre. Il attend encore l'appel.",
+  "Les fans de Méluche vont me bloquer.",
+  "Bienvenue à Mélenchonville : matignon, pas appelé.",
+  "Mélenchon en une vidéo : matignon, pas appelé."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Note finale : zéro. Vingt pages pour réclamer Matignon.",
-  "Matignon ? Toujours en option, jamais au programme.",
-  "Copie notée zéro, candidature notée quatre."
+  "Élisez-moi Premier ministre, élisez-moi président : il demande tout, il n'obtient rien.",
+  "Il a demandé Matignon, puis l'Élysée. Réponse : messagerie.",
+  "Matignon n'a jamais appelé. Alors il vise l'étage au-dessus : l'Élysée, quatrième essai."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Sortez une copie.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Premier ministre, au moins.",
    "accent_words": [
-    "Sortez une copie"
+    "Premier ministre, au moins"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sujet du partiel : citez le slogan des législatives 2022.",
+   "text": "Législatives 2022, son slogan : « Élisez-moi Premier ministre ».",
    "accent_words": [
-    "slogan"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Réponse : « Élisez-moi Premier ministre ». Un point.",
-   "accent_words": [
-    "Un point"
+    "Élisez-moi Premier ministre"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "Question deux : qui a été nommé Premier ministre ? Pas lui. Deux points.",
+   "id": "n3",
+   "text": "Petit détail : il n'était même pas candidat à la députation.",
    "accent_words": [
-    "Pas lui"
+    "la députation"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n4",
+   "text": "Et un Premier ministre, c'est le président qui le nomme. Pas l'affiche.",
+   "accent_words": [
+    "Pas l'affiche"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le surveillant lit l'énoncé pendant une heure sept, comme au Bourget.",
+   "text": "Matignon n'a jamais appelé. Alors il vise l'étage au-dessus : l'Élysée, quatrième essai.",
    "accent_words": [
-    "une heure sept"
+    "l'Élysée, quatrième essai"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Note finale : zéro. Vingt pages pour réclamer Matignon.",
+   "text": "Élisez-moi Premier ministre, élisez-moi président : il demande tout, il n'obtient rien.",
    "accent_words": [
-    "zéro"
+    "n'obtient rien"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui se voit chef avant d'avoir le poste.",
+   "text": "Envoie ça au pote qui se nomme capitaine avant le coup d'envoi.",
    "accent_words": [
-    "chef"
+    "coup d'envoi"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un amphi ; banderole « PARTIEL : SCIENCE PO-LITIQUE ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · MATIGNON, PAS APPELÉ",
+   "comic_action": "Descente sur la ville : banderole « MATIGNON, PAS APPELÉ », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,44 +113,66 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
-    "text3d",
-    "person"
+    "banner",
+    "person",
+    "tribune"
    ],
-   "onscreen_text": "SUJET N° 1",
-   "comic_action": "Gros plan sur une copie : la question imprimée en rouge.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "« ÉLISEZ-MOI PREMIER MINISTRE »",
+   "comic_action": "Affiche géante déroulée sur la façade.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "pancarte"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "scroll",
-    "text3d",
-    "person"
+    "form_stack",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "1 POINT",
-   "comic_action": "La réponse s'écrit toute seule sur un parchemin ; un tampon « +1 ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "CANDIDAT DÉPUTÉ : NON",
+   "comic_action": "Un bulletin vierge s'envole au vent.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "person",
+    "mairie",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "PAS LUI : 2 POINTS",
-   "comic_action": "Orbite autour de l'amphi : tous les étudiants écrivent « PAS LUI » en même temps.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "NOMINATION : PAS LUI",
+   "comic_action": "Le téléphone de la mairie ne sonne pas.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase",
+     "objet": "phone"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -146,13 +181,20 @@
    ],
    "camera": "closeup",
    "set": [
-    "tribune",
-    "studio_light",
-    "person"
+    "lift_tribune",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "ÉNONCÉ : 1 H 07",
-   "comic_action": "Le surveillant déclame depuis une chaire, l'horloge de l'amphi s'accélère.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "ÉTAGE SUIVANT : ÉLYSÉE",
+   "comic_action": "La tribune-ascenseur saute un étage… et redescend.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -161,14 +203,26 @@
    ],
    "camera": "descend",
    "set": [
-    "table",
-    "form_stack",
-    "text3d",
-    "person"
+    "tribune",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "0 / 20",
-   "comic_action": "Plan large : une copie de vingt pages, titrée « MATIGNON », barrée d'un énorme zéro.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "DEMANDÉ : TOUT · OBTENU : 0",
+   "comic_action": "Deux affiches côte à côte, tampon « REFUSÉ ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s7",
@@ -182,39 +236,53 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique sort de l'amphi avec sa copie.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui se voit chef avant d'avoir le poste."
+  "text": "Envoie ça au pote qui se nomme capitaine avant le coup d'envoi."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 76,
+ "word_count": 82,
  "claims": [
   {
-   "text": "« Élisez-moi Premier ministre »",
+   "text": "Législatives 2022, son slogan : « Élisez-moi Premier ministre ».",
    "claim_type": "citation_exacte",
    "source": "https://www.lnc.nc/article-direct/politique/france/melenchon-veut-etre-elu-premier-ministre-aux-legislatives",
    "note": "« Élisez-moi Premier ministre » (législatives 2022) ; il n'a pas été nommé."
   },
   {
-   "text": "Question deux : qui a été nommé Premier ministre ? Pas lui. Deux points.",
+   "text": "Petit détail : il n'était même pas candidat à la députation.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/legislatives-jean-luc-melenchon-ne-sera-pas-candidat-112719",
+   "note": "Législatives 2022 : il annonce qu'il ne sera pas candidat à la députation, tout en demandant à être Premier ministre."
+  },
+  {
+   "text": "Et un Premier ministre, c'est le président qui le nomme. Pas l'affiche.",
    "claim_type": "fait_public",
    "source": "https://www.lnc.nc/article-direct/politique/france/melenchon-veut-etre-elu-premier-ministre-aux-legislatives",
    "note": "« Élisez-moi Premier ministre » (législatives 2022) ; il n'a pas été nommé."
   },
   {
-   "text": "Le surveillant lit l'énoncé pendant une heure sept, comme au Bourget.",
+   "text": "Matignon n'a jamais appelé. Alors il vise l'étage au-dessus : l'Élysée, quatrième essai.",
    "claim_type": "fait_public",
-   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
-   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
+   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "sources": [
@@ -222,17 +290,24 @@
    "url": "https://www.lnc.nc/article-direct/politique/france/melenchon-veut-etre-elu-premier-ministre-aux-legislatives",
    "date": "2022-04",
    "consulted": "2026-11-22",
-   "statut": "citation exacte",
+   "statut": "citation_exacte",
    "note": "« Élisez-moi Premier ministre » (législatives 2022) ; il n'a pas été nommé."
   },
   {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
-   "date": "2026-11",
+   "url": "https://lcp.fr/actualites/legislatives-jean-luc-melenchon-ne-sera-pas-candidat-112719",
+   "date": "2022-05-12",
    "consulted": "2026-11-22",
-   "statut": "fait (analyse lexicale)",
-   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
+   "statut": "fait",
+   "note": "Législatives 2022 : il annonce qu'il ne sera pas candidat à la députation, tout en demandant à être Premier ministre."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "date": "2026-06",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « Élisez-moi Premier ministre » (2022), jamais nommé. Cadre : le partiel à la fac. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Matignon, pas appelé. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

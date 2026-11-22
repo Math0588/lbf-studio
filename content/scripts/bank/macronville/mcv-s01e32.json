@@ -3,75 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-32",
  "format": "C",
- "title_cover": "Mise à jour 5.0",
+ "title_cover": "Nouveau logo",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, l'appli se met à jour. Le pays, non.",
-  "Macronville : version 5.0, mêmes bugs depuis 2017.",
-  "La transformation profonde a un bouton mise à jour.",
-  "Les macronistes vont redémarrer pour voir si ça marche."
+  "2016 : il crée En Marche. Initiales : E.M., comme Emmanuel Macron.",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Nouveau logo : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Nouveau logo."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Notes de version : stabilité améliorée. Sept Premiers ministres plus tard.",
-  "Mise à jour terminée. Redémarrage prévu en mai 2027.",
-  "Transformation profonde : le logo a changé."
+  "Trois noms, un bilan : 3 595 milliards de dette. Elle, personne ne l'a rebaptisée.",
+  "Il a changé trois fois le nom du parti. La dette, elle, a gardé le sien.",
+  "Son expression fétiche : « transformation profonde ». Du logo, surtout."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Version 5.0.",
+   "text": "Dans cette ville, tout le monde vote Macron. Nouveau logo.",
    "accent_words": [
-    "5.0"
+    "logo"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "L'appli municipale fait une mise à jour par semaine. Rien ne change.",
+   "text": "2016 : il crée En Marche. Initiales : E.M., comme Emmanuel Macron.",
    "accent_words": [
-    "Rien ne change"
+    "Macron"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Nom de code : « transformation profonde ». Son expression la plus fréquente.",
+   "text": "Puis La République en marche. Le même monogramme, avec plus de mots.",
    "accent_words": [
-    "transformation profonde"
+    "mots"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n4",
+   "text": "2022 : rebaptisé Renaissance. Le parti renaît, le bilan non.",
+   "accent_words": [
+    "non"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n5",
+   "text": "Son expression fétiche : « transformation profonde ». Du logo, surtout.",
+   "accent_words": [
+    "surtout"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "Nouveautés : nouveau logo, nouveau Premier ministre, mêmes bugs.",
-   "accent_words": [
-    "mêmes bugs"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n5",
-   "text": "Le bouton annuler ? Retiré. Tout passe en 49.3.",
-   "accent_words": [
-    "49.3"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n6",
-   "text": "Notes de version : stabilité améliorée. Sept Premiers ministres plus tard.",
+   "text": "Trois noms, un bilan : 3 595 milliards de dette. Elle, personne ne l'a rebaptisée.",
    "accent_words": [
-    "Sept Premiers ministres"
+    "rebaptisée"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui installe les mises à jour sans les lire.",
+   "text": "Envoie ça au pote qui change de pseudo après chaque embrouille.",
    "accent_words": [
-    "sans les lire"
+    "embrouille"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,11 +88,25 @@
     "mairie",
     "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
-   "expected_result": "La ville et son camp posés en une seconde."
+   "comic_action": "Descente sur la ville ; banderole « NOUVEAU LOGO » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,75 +115,143 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
+    "banner",
     "text3d",
-    "gps"
+    "person"
    ],
-   "onscreen_text": "MISE À JOUR…",
-   "comic_action": "Écran de l'application municipale : chargement, mise à jour, chargement.",
-   "expected_result": "L'appli porte la pique."
+   "onscreen_text": "EN MARCHE = E.M.",
+   "comic_action": "Une banderole « EN MARCHE ! » ; les lettres E et M s'allument en grand, comme une signature.",
+   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "building",
-    "scroll",
-    "text3d",
-    "person"
+    "banner",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "« TRANSFORMATION PROFONDE »",
-   "comic_action": "Un grand rouleau « TRANSFORMATION » se déroule sur la façade ; derrière, rien n'a bougé.",
-   "expected_result": "Le slogan cache l'immobilité."
+   "onscreen_text": "LA RÉPUBLIQUE EN MARCHE",
+   "comic_action": "La banderole s'allonge, s'allonge, jusqu'à sortir du cadre.",
+   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
-    "text3d",
-    "gps"
+    "banner",
+    "mairie",
+    "text3d"
    ],
-   "onscreen_text": "NOUVEAU LOGO, MÊMES BUGS",
-   "comic_action": "Écran de l'application municipale : chargement, mise à jour, chargement.",
-   "expected_result": "L'appli porte la pique."
+   "onscreen_text": "RENAISSANCE",
+   "comic_action": "On repeint la façade : « RENAISSANCE » ; derrière la peinture fraîche, rien n'a bougé.",
+   "expected_result": "Escalade 2 : encore plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "clap",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "tribune",
+    "screen",
     "text3d",
     "person"
    ],
-   "onscreen_text": "ANNULER : INDISPONIBLE",
-   "comic_action": "Le maire cubique tamponne « ADOPTÉ » sur le texte ; les mains levées de la salle restent en l'air, ignorées.",
-   "expected_result": "Le 49.3 en tampon."
+   "onscreen_text": "« TRANSFORMATION PROFONDE »",
+   "comic_action": "Un écran affiche un logo qui change de couleur toutes les secondes, et rien d'autre.",
+   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "facade_row",
-    "person",
-    "sign",
-    "text3d"
+    "screen",
+    "text3d",
+    "building"
    ],
-   "onscreen_text": "STABILITÉ AMÉLIORÉE (7 PM)",
-   "comic_action": "Une file d'adjoints passe devant la porte de la mairie ; un compteur « 1, 2, 3… 7 » s'allume.",
-   "expected_result": "La valse des Premiers ministres en compteur."
+   "onscreen_text": "3 595 MDS : MÊME NOM",
+   "comic_action": "Le compteur de dette, lui, garde son étiquette d'origine, en très gros.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s7",
@@ -178,82 +260,102 @@
    ],
    "camera": "return",
    "set": [
-    "mairie",
+    "road",
     "person",
     "tshirt",
-    "banner"
+    "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : les changements de nom du parti (En Marche, LREM, Renaissance) et la « transformation profonde ».",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui installe les mises à jour sans les lire."
+  "text": "Envoie ça au pote qui change de pseudo après chaque embrouille."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 77,
+ "word_count": 81,
  "claims": [
+  {
+   "text": "2016 : il crée En Marche. Initiales : E.M., comme Emmanuel Macron.",
+   "claim_type": "fait_public",
+   "source": "https://en.wikipedia.org/wiki/Renaissance_(French_political_party)",
+   "note": "En Marche ! (EM, mêmes initiales que son fondateur), puis La République en marche, puis Renaissance (2022)."
+  },
+  {
+   "text": "Puis La République en marche. Le même monogramme, avec plus de mots.",
+   "claim_type": "fait_public",
+   "source": "https://en.wikipedia.org/wiki/Renaissance_(French_political_party)",
+   "note": "En Marche ! (EM, mêmes initiales que son fondateur), puis La République en marche, puis Renaissance (2022)."
+  },
+  {
+   "text": "2022 : rebaptisé Renaissance. Le parti renaît, le bilan non.",
+   "claim_type": "fait_public",
+   "source": "https://telquel.ma/instant-t/2022/05/05/france-le-parti-presidentiel-lrem-change-de-nom-et-devient-renaissance_1765644/",
+   "note": "Le parti présidentiel LREM change de nom et devient Renaissance."
+  },
   {
    "text": "« transformation profonde »",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
-   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
+   "note": "Florilège : « on met un pognon de dingue dans les minima sociaux » (06/2018), « je traverse la rue, je vous en trouve » (09/2018), « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde » (expression la plus fréquente)."
   },
   {
-   "text": "Nouveautés : nouveau logo, nouveau Premier ministre, mêmes bugs.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
-   "note": "Valse des ministres, affaires courantes, année record. Détourné dans la ville fictive."
-  },
-  {
-   "text": "Le bouton annuler ? Retiré. Tout passe en 49.3.",
-   "claim_type": "fiction_satirique",
-   "source": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
-   "note": "Réforme des retraites (64 ans) adoptée par 49.3, sans vote des députés. Détourné dans la ville fictive."
-  },
-  {
-   "text": "Notes de version : stabilité améliorée. Sept Premiers ministres plus tard.",
+   "text": "Trois noms, un bilan : 3 595 milliards de dette. Elle, personne ne l'a rebaptisée.",
    "claim_type": "fait_public",
-   "source": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
-   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
+   "source": "https://www.insee.fr/fr/statistiques/9053525",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
   }
  ],
  "sources": [
   {
+   "url": "https://en.wikipedia.org/wiki/Renaissance_(French_political_party)",
+   "date": "consultée 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "En Marche ! (EM, mêmes initiales que son fondateur), puis La République en marche, puis Renaissance (2022)."
+  },
+  {
+   "url": "https://telquel.ma/instant-t/2022/05/05/france-le-parti-presidentiel-lrem-change-de-nom-et-devient-renaissance_1765644/",
+   "date": "2022-05-05",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Le parti présidentiel LREM change de nom et devient Renaissance."
+  },
+  {
    "url": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
    "date": "2021-08-11",
    "consulted": "2026-11-22",
-   "statut": "citations exactes vérifiées",
-   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
+   "statut": "fait (citations exactes vérifiées)",
+   "note": "Florilège : « on met un pognon de dingue dans les minima sociaux » (06/2018), « je traverse la rue, je vous en trouve » (09/2018), « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde » (expression la plus fréquente)."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
-   "date": "2025",
+   "url": "https://www.insee.fr/fr/statistiques/9053525",
+   "date": "2026-09-29",
    "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Valse des ministres, affaires courantes, année record."
-  },
-  {
-   "url": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
-   "date": "2023-03-16",
-   "consulted": "2026-11-22",
-   "statut": "fait public",
-   "note": "Réforme des retraites (64 ans) adoptée par 49.3, sans vote des députés."
-  },
-  {
-   "url": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
-   "date": "2025-10",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Sept Premiers ministres depuis 2017 ; record de Mitterrand égalé selon la presse."
+   "statut": "fait public (statistique)",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « transformation profonde », son expression la plus fréquente, en mises à jour qui ne changent rien (49.3, sept Premiers ministres). Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — les changements de nom du parti (En Marche, LREM, Renaissance) et la « transformation profonde ». Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

@@ -5,17 +5,17 @@
  "format": "B",
  "title_cover": "Blogueur média",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, le maire commente les audiences. Surtout celles des autres.",
-  "Bardellaville : la télé municipale affiche une mire quand il parle.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : blogueur média."
+  "Dans cette ville, tout le monde vote Bardella. Sauf la télécommande.",
+  "Bardella moque les audiences de Quotidien. Mauvaise idée.",
+  "Bardellaville : la télécommande a voté.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Blogueur média."
  ],
  "selected_hook": 0,
  "ending_variants": [
   "Vider le 20 heures et commenter l'audience des autres : niveau blogueur, confirmé.",
-  "Le même soir, Quotidien grimpait. Merci pour la pub.",
-  "Ici, la télé municipale coupe dès qu'il parle. Les habitants appellent ça la pause."
+  "Niveau blogueur, confirmé.",
+  "Il moque les audiences, il vide le 20 heures."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -29,33 +29,33 @@
   },
   {
    "id": "n2",
-   "text": "Il se moque des audiences de Quotidien. Barthès le traite de blogueur média.",
+   "text": "Il se moque des audiences de Quotidien. Barthès le traite de « blogueur média ».",
    "accent_words": [
-    "blogueur média"
+    "média"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Son passage au 20 heures de France 2 ? Plus bas niveau.",
+   "text": "Son passage au 20 heures de France 2 ? Audience au plus bas niveau.",
    "accent_words": [
-    "Plus bas niveau"
+    "plus bas niveau"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le même soir, Quotidien grimpait sur TMC. Merci pour la pub.",
+   "text": "Le même soir, Quotidien grimpe sur TMC. Merci pour la pub.",
    "accent_words": [
-    "Merci pour la pub"
+    "pub"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Ici, quand il passe à la télé, c'est la pause municipale.",
+   "text": "Quotidien attend sa prochaine pique avec le champagne.",
    "accent_words": [
-    "la pause"
+    "champagne"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -71,7 +71,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui se moque des audiences des autres.",
    "accent_words": [
-    "audiences"
+    "autres"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; une télécommande géante pointée vers la façade.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "SAUF LA TÉLÉCOMMANDE",
+   "comic_action": "Descente sur la ville ; banderole « SAUF LA TÉLÉCOMMANDE » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    },
+    {
+     "who": "foule",
+     "visage": "dort"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,14 +111,27 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
     "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "BLOGUEUR MÉDIA",
-   "comic_action": "Plateau : un badge « BLOGUEUR » se colle tout seul sur le pupitre du maire.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« BLOGUEUR MÉDIA »",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « « BLOGUEUR MÉDIA » ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "geste": "clap",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,14 +140,25 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
+    "studio_light",
     "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "text3d"
    ],
    "onscreen_text": "20 H : PLUS BAS NIVEAU",
-   "comic_action": "Écran : courbe d'audience qui plonge au moment où il apparaît.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « 20 H : PLUS BAS NIVEAU ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shake",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "visage": "dort"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -134,44 +169,80 @@
    "set": [
     "screen",
     "text3d",
-    "mairie",
-    "person"
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "QUOTIDIEN ↑",
-   "comic_action": "Deuxième courbe qui monte en flèche, petite fanfare.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "QUOTIDIEN : EN HAUSSE",
+   "comic_action": "Écran géant : « QUOTIDIEN : EN HAUSSE ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content"
+    },
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
-    "building",
+    "screen",
+    "text3d",
     "person",
-    "bin"
+    "studio_light"
    ],
-   "onscreen_text": "PAUSE MUNICIPALE",
-   "comic_action": "Rue : à chaque apparition du maire à l'écran, les fenêtres s'éteignent une à une.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "QUOTIDIEN SORT LE CHAMPAGNE",
+   "comic_action": "Écran géant : « QUOTIDIEN SORT LE CHAMPAGNE ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content",
+     "objet": "verre"
+    },
+    {
+     "who": "foule",
+     "geste": "clap"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie"
+    "screen"
    ],
-   "onscreen_text": "BLOGUEUR : CERTIFIÉ",
-   "comic_action": "Un tampon « CERTIFIÉ BLOGUEUR » s'abat sur une feuille d'audience. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "NIVEAU BLOGUEUR : CONFIRMÉ",
+   "comic_action": "Plan final, tenir une seconde : « NIVEAU BLOGUEUR : CONFIRMÉ ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +256,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt zappe nerveusement.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE CRITIQUE TÉLÉ",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE CRITIQUE TÉLÉ ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,25 +278,25 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 82,
+ "word_count": 83,
  "claims": [
   {
    "segment": "n2",
-   "text": "Il se moque des audiences de Quotidien. Barthès le traite de blogueur média.",
-   "claim_type": "fait_public",
+   "text": "Il se moque des audiences de Quotidien. Barthès le traite de « blogueur média ».",
+   "claim_type": "citation_exacte",
    "source": "https://www.ozap.com/actu/un-blogueur-media-jordan-bardella-se-moque-des-audiences-de-quotidien-yann-barthes-riposte/656734",
    "note": "Il ironise sur les audiences de Quotidien ; Yann Barthès le qualifie de « blogueur média »."
   },
   {
    "segment": "n3",
-   "text": "Son passage au 20 heures de France 2 ? Plus bas niveau.",
+   "text": "Son passage au 20 heures de France 2 ? Audience au plus bas niveau.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/audiences-access-20h-jordan-bardella-fait-chuter-le-20-heures-de-france-2-a-son-plus-bas-niveau-quotidien-en-forte-hausse-sur-tmc/654472",
    "note": "Son passage fait chuter le 20 heures de France 2 à son plus bas niveau ; Quotidien en forte hausse sur TMC."
   },
   {
    "segment": "n4",
-   "text": "Le même soir, Quotidien grimpait sur TMC. Merci pour la pub.",
+   "text": "Le même soir, Quotidien grimpe sur TMC. Merci pour la pub.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/audiences-access-20h-jordan-bardella-fait-chuter-le-20-heures-de-france-2-a-son-plus-bas-niveau-quotidien-en-forte-hausse-sur-tmc/654472",
    "note": "Son passage fait chuter le 20 heures de France 2 à son plus bas niveau ; Quotidien en forte hausse sur TMC."
@@ -228,17 +307,17 @@
    "url": "https://www.ozap.com/actu/un-blogueur-media-jordan-bardella-se-moque-des-audiences-de-quotidien-yann-barthes-riposte/656734",
    "date": "2026-09-01",
    "consulted": "2026-11-22",
-   "statut": "fait",
+   "statut": "fait + citation",
    "note": "Il ironise sur les audiences de Quotidien ; Yann Barthès le qualifie de « blogueur média »."
   },
   {
    "url": "https://www.ozap.com/actu/audiences-access-20h-jordan-bardella-fait-chuter-le-20-heures-de-france-2-a-son-plus-bas-niveau-quotidien-en-forte-hausse-sur-tmc/654472",
    "date": "2026 (date exacte non relevée)",
    "consulted": "2026-11-22",
-   "statut": "fait (audiences)",
+   "statut": "fait",
    "note": "Son passage fait chuter le 20 heures de France 2 à son plus bas niveau ; Quotidien en forte hausse sur TMC."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = il raille les audiences de Quotidien, Barthès le traite de « blogueur média » ; son passage au 20 heures de France 2 l'avait fait chuter à son plus bas niveau. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = il se moque des audiences des autres, puis fait chuter le 20 heures. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

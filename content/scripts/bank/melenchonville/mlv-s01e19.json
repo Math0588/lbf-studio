@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-19",
  "format": "A",
- "title_cover": "Seul postulant",
+ "title_cover": "Seul en lice",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : l'offre d'emploi a toujours le même candidat.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, le recrutement se fait sans concurrent.",
-  "Mélenchonville : le stage le plus long de France."
+  "Dans cette ville, tout le monde vote Mélenchon. Il n'y a que lui.",
+  "Mélenchon a gagné son élection interne. Contre personne.",
+  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
+  "Bienvenue à Mélenchonville : seul en lice.",
+  "Mélenchon en une vidéo : seul en lice."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Période d'essai : quinze ans. Toujours pas titularisé à l'Élysée.",
-  "Quinze ans de stage, zéro titularisation.",
-  "Le seul recrutement sans concurrence de la ville."
+  "Imbattable chez lui, battu partout ailleurs depuis 2012.",
+  "Cent pour cent chez lui. Toujours zéro président ailleurs.",
+  "Les plus critiques ? Pas réinvestis en 2024. Ça aide l'unanimité."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. On recrute.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Il n'y a que lui.",
    "accent_words": [
-    "On recrute"
+    "que lui"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Offre d'emploi : candidat à la présidentielle. Même postulant depuis 2012.",
+   "text": "Pour 2027, son camp l'investit : aucune autre candidature proposée.",
    "accent_words": [
-    "Même postulant"
+    "aucune autre candidature proposée"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Entretien express : aucune autre candidature, aucune opposition. Embauché.",
+   "text": "Aucune opposition exprimée non plus. Score parfait.",
    "accent_words": [
-    "Embauché"
+    "Score parfait"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Expérience : trois présidentielles perdues. Ici, ça compte comme de l'ancienneté.",
+   "text": "En juin, il annonce même « La primaire est finie ». Primaire sans adversaire.",
    "accent_words": [
-    "l'ancienneté"
+    "Primaire sans adversaire"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n5",
+   "text": "Les plus critiques ? Pas réinvestis en 2024. Ça aide l'unanimité.",
+   "accent_words": [
+    "Ça aide l'unanimité"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n5",
-   "text": "Le DRH ose parler de primaire. Muté aux archives.",
-   "accent_words": [
-    "Muté aux archives"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n6",
-   "text": "Période d'essai : quinze ans. Toujours pas titularisé à l'Élysée.",
+   "text": "Imbattable chez lui, battu partout ailleurs depuis 2012.",
    "accent_words": [
-    "quinze ans"
+    "depuis 2012"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui postule au même job depuis 2012.",
+   "text": "Envoie ça au pote qui gagne au Monopoly parce qu'il joue seul.",
    "accent_words": [
-    "depuis 2012"
+    "joue seul"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un bureau ; affiche « RECRUTE : CANDIDAT ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · SEUL EN LICE",
+   "comic_action": "Descente sur la ville : banderole « SEUL EN LICE », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,13 +113,20 @@
    ],
    "camera": "closeup",
    "set": [
-    "sign",
-    "text3d",
+    "table",
+    "form_stack",
     "person"
    ],
-   "onscreen_text": "CANDIDAT H/F · DEPUIS 2012",
-   "comic_action": "Gros plan sur l'annonce punaisée, jaunie, le même nom écrit quatre fois.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "AUTRES CANDIDATS : 0",
+   "comic_action": "Une urne interne avec un seul bulletin dedans.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,44 +135,65 @@
    ],
    "camera": "orbit",
    "set": [
-    "table",
-    "person",
+    "screen",
     "text3d",
-    "form_stack"
+    "person"
    ],
-   "onscreen_text": "1 CANDIDAT · 0 OPPOSANT",
-   "comic_action": "Orbite autour d'une salle d'attente : une seule chaise, occupée.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "OPPOSITION : 0 %",
+   "comic_action": "Tableau de vote à 100 %, applaudissements enregistrés.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "sourire_pro"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "form_stack",
+    "tribune",
+    "banner",
     "person"
    ],
-   "onscreen_text": "ANCIENNETÉ : 3 DÉFAITES",
-   "comic_action": "Le recruteur tamponne « SENIOR » sur un CV de trois pages de campagnes.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« LA PRIMAIRE EST FINIE »",
+   "comic_action": "Coup de sifflet final sur un terrain vide.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "building",
+    "bin",
     "person",
-    "form_stack"
+    "sign"
    ],
-   "onscreen_text": "PRIMAIRE ? ARCHIVES",
-   "comic_action": "Travelling : le DRH descend à la cave avec un carton marqué « PRIMAIRE ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CRITIQUES : NON RÉINVESTIS",
+   "comic_action": "Trois chaises rangées sur le trottoir.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -161,14 +202,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
-    "sign",
+    "lift_tribune",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "PÉRIODE D'ESSAI : 15 ANS",
-   "comic_action": "Plan large : un badge « STAGIAIRE » usé jusqu'à la corde, épinglé depuis 2012.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "CHEZ LUI 100 % · AILLEURS 0",
+   "comic_action": "Coupe dorée à la maison, tribune vide dehors.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s7",
@@ -182,55 +235,62 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique dépose un CV identique, encore.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui postule au même job depuis 2012."
+  "text": "Envoie ça au pote qui gagne au Monopoly parce qu'il joue seul."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 71,
+ "word_count": 75,
  "claims": [
   {
-   "text": "Offre d'emploi : candidat à la présidentielle. Même postulant depuis 2012.",
-   "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
-  },
-  {
-   "text": "Entretien express : aucune autre candidature, aucune opposition. Embauché.",
+   "text": "Pour 2027, son camp l'investit : aucune autre candidature proposée.",
    "claim_type": "fait_public",
    "source": "https://www.europe1.fr/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-930947",
    "note": "Selon la direction de LFI (AFP) : aucune autre candidature proposée, aucune opposition exprimée."
   },
   {
-   "text": "Expérience : trois présidentielles perdues. Ici, ça compte comme de l'ancienneté.",
+   "text": "Aucune opposition exprimée non plus. Score parfait.",
    "claim_type": "fait_public",
-   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; Union populaire (2022)."
+   "source": "https://www.europe1.fr/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-930947",
+   "note": "Selon la direction de LFI (AFP) : aucune autre candidature proposée, aucune opposition exprimée."
   },
   {
-   "text": "Période d'essai : quinze ans. Toujours pas titularisé à l'Élysée.",
+   "text": "En juin, il annonce même « La primaire est finie ». Primaire sans adversaire.",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
+   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
+  },
+  {
+   "text": "Les plus critiques ? Pas réinvestis en 2024. Ça aide l'unanimité.",
    "claim_type": "fait_public",
-   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
+   "source": "https://www.letemps.ch/monde/europe/a-deux-semaines-des-legislatives-une-purge-au-sein-de-la-france-insoumise-chahute-deja-le-nouveau-front-populaire",
+   "note": "Législatives 2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge »."
+  },
+  {
+   "text": "Imbattable chez lui, battu partout ailleurs depuis 2012.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
-  {
-   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
-   "date": "2026-06",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
-  },
   {
    "url": "https://www.europe1.fr/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-930947",
    "date": "2026-05-03",
@@ -239,13 +299,27 @@
    "note": "Selon la direction de LFI (AFP) : aucune autre candidature proposée, aucune opposition exprimée."
   },
   {
+   "url": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
+   "date": "2026-06-07",
+   "consulted": "2026-11-22",
+   "statut": "citation_exacte",
+   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
+  },
+  {
+   "url": "https://www.letemps.ch/monde/europe/a-deux-semaines-des-legislatives-une-purge-au-sein-de-la-france-insoumise-chahute-deja-le-nouveau-front-populaire",
+   "date": "2024-06",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Législatives 2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge »."
+  },
+  {
    "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
    "date": "consulté 2026-11-22",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; Union populaire (2022)."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : investiture 2027 sans autre candidature ni opposition ; quatrième candidature. Cadre : l'entretien de stage. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Seul en lice. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

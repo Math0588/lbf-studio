@@ -115,7 +115,51 @@ TEE_LINES = ["LE PAYS BUGUE.", "MOI AUSSI."]
 GESTES = {"point", "wave", "cheer", "facepalm", "shrug", "jump", "fall", "spin", "bow", "nod", "shake", "clap",
           "arms_up", "cross_arms", "cough", "manif"}
 VISAGES = {"blase", "choque", "colere", "content", "dort", "fatigue", "fier", "neutre", "parle", "sourire_pro"}
-OBJETS = {"phone", "verre", "baguette", "micro", "pancarte", "ring_light"}
+OBJETS = {"phone", "verre", "baguette", "micro", "pancarte", "ring_light", "matcha", "brosse_a_dents", "billets"}
+# Affiches de propagande de chaque ville (absurde assumé ; caricature cubique, jamais un vrai visage)
+PROPAGANDE = {
+    "melenchonville": {"bg": "#C8102E", "accent": "#F2B134", "slogans": ["TAXONS TOUT", "RÉPUBLIQUE DE MÉLUCHE", "LE BRUIT ET LA FUREUR"]},
+    "bardellaville": {"bg": "#1649FF", "accent": "#FFFDF7", "slogans": ["TOUS AVEC JORDAN", "SOURIS, TU ES FILMÉ", "UN SELFIE PAR JOUR"]},
+    "macronville": {"bg": "#0B1B3F", "accent": "#1649FF", "slogans": ["EN MÊME TEMPS", "TRAVERSE LA RUE", "FOR SURE"]},
+    "glucksmannville": {"bg": "#E8C9C0", "accent": "#9BC46B", "slogans": ["MATCHA POUR TOUS", "UN CAP. PEUT-ÊTRE.", "NOTRE GAUCHE"]},
+    "zemmourville": {"bg": "#6B5A3E", "accent": "#D8CCB2", "slogans": ["C'ÉTAIT MIEUX AVANT", "BEN VOYONS", "RETOUR EN 1965"]},
+    "marineville": {"bg": "#22306B", "accent": "#FFFDF7", "slogans": ["NOUVEAU NOM", "MÊME PROGRAMME", "MARINE ET C'EST TOUT"]},
+}
+
+
+def _stable(x: str) -> int:
+    import hashlib
+    return int(hashlib.sha1(x.encode()).hexdigest(), 16)
+
+
+def cine(kind: str, cx: float, cy: float) -> list | None:
+    """Mouvements de caméra « cinématiques » pour les plans larges (orbite, grue, travelling avant, zoom)."""
+    import math
+    if kind == "orbit":
+        keys = []
+        for i, a in enumerate((-55, -20, 15, 50)):
+            r = math.radians(a)
+            keys.append({"t": i / 3, "loc": [cx + 13 * math.sin(r), cy - 13 * math.cos(r), 6.5], "look": [cx, cy, 1.8]})
+        return keys
+    if kind in ("descend", "crane"):
+        return [{"t": 0, "loc": [cx + 3, cy - 12, 24], "look": [cx, cy, 0.5]},
+                {"t": 1, "loc": [cx + 1.5, cy - 9, 4.2], "look": [cx, cy, 2.0]}]
+    if kind in ("dolly_in", "street_dolly"):
+        return [{"t": 0, "loc": [cx + 0.5, cy - 24, 3.2], "look": [cx, cy, 2.2], "lens": 24},
+                {"t": 1, "loc": [cx + 0.3, cy - 8, 2.8], "look": [cx, cy, 2.3], "lens": 35}]
+    if kind == "whip":
+        return [{"t": 0, "loc": [cx + 8, cy - 12, 5], "look": [cx + 18, cy + 4, 2]},
+                {"t": 0.18, "loc": [cx + 6, cy - 11, 4.5], "look": [cx, cy, 2]},
+                {"t": 1, "loc": [cx + 4, cy - 9, 4], "look": [cx, cy, 2.2]}]
+    return None
+
+
+def affiche(city: str, aid: str, at, texte: str | None = None, rot: float = 0) -> dict:
+    pg = PROPAGANDE.get(city, {"bg": "#C8102E", "accent": "#F2B134", "slogans": [""]})
+    m = MAYORS.get(city, {})
+    return {"type": "affiche", "id": aid, "at": at, "rot": rot, "bg": pg["bg"], "accent": pg["accent"],
+            "texte": (texte or pg["slogans"][_stable(aid) % len(pg["slogans"])]), "hair": m.get("hair", "court"),
+            "hair_color": m.get("hair_color", "#3A2A1F"), "iris": m.get("iris", "brun"), "face": "fier"}
 SURNAMES = {"bardellaville": "Bardella", "melenchonville": "Mélenchon", "macronville": "Macron",
             "zemmourville": "Zemmour", "marineville": "Marine|Le Pen", "glucksmannville": "Glucksmann"}
 
@@ -205,6 +249,21 @@ def plan(script: dict) -> dict:
                 d["rot"] = 90
             extra.append(d)
         acts = [a for a in sc.get("actions", []) if isinstance(a, dict)]
+        gags = [g for g in sc.get("gags", []) if isinstance(g, dict)]
+        for gi, g in enumerate(gags[:2]):
+            gx, gy = (cx + 3.6, cy + 4.5) if gi == 0 else (cx - 3.6, cy + 4.0)
+            if g.get("type") == "affiche":
+                extra.append(affiche(city, f"{sc['id']}_aff{gi}", [gx, gy], g.get("texte")))
+            elif g.get("type") == "chien":
+                extra.append({"type": "chien", "id": f"{sc['id']}_chien", "at": [cx + 1.6, cy - 1.8], "rot": -35,
+                              "tee": g.get("tee") or SURNAMES.get(city, "").split("|")[0],
+                              "tee_color": PROPAGANDE.get(city, {}).get("bg", "#1649FF")})
+            elif g.get("type") == "prix" and g.get("texte"):
+                extra.append({"type": "sign", "id": f"{sc['id']}_prix{gi}", "at": [gx, gy - 1], "w": 3.4, "h": 1.3,
+                              "z": 1.4, "bg": "#FFFDF7",
+                              "lines": [{"text": g["texte"].upper()[:20], "size": 0.42, "color": "#C8102E", "emit": 0.4}]})
+        if not any(g.get("type") == "affiche" for g in gags):
+            extra.append(affiche(city, f"{sc['id']}_affbg", [cx + 4.2, cy + 5.5]))   # propagande en fond
         # le politicien est à l'écran quand on parle de lui (moquerie de la personne) ou quand il doit agir
         if any(a.get("who") == "maire" for a in acts) or (k > 0 and not is_cta and
                                                          re.search(SURNAMES.get(city, "^$"), text_all)):
@@ -250,7 +309,10 @@ def plan(script: dict) -> dict:
             if k == 0 and j == 0:
                 wide = False  # un visage dès la première seconde
                 first_close_done = True
-            if has_mayor:
+            cin = cine(sc.get("camera") or ["orbit", "dolly_in", "descend", "whip"][k % 4], cx, cy + 1)
+            if has_mayor and j == 0 and k % 2 == 1 and k > 0 and cin:
+                keys, wide = cin, True     # une scène sur deux : plan cinématique large, le maire dans le décor
+            elif has_mayor:
                 if j % 2 == 0:
                     keys = [{"t": 0, "loc": [cx + 0.5, cy - 3.4, 3.3], "look": [cx, cy + 2.0, 2.85]},
                             {"t": 1, "loc": [cx + 0.4, cy - 2.8, 3.2], "look": [cx, cy + 2.0, 2.85]}]
@@ -263,15 +325,18 @@ def plan(script: dict) -> dict:
                     events.append({"type": "talk", "target": f"{sc['id']}_maire", "rest": MAYORS[city]["faces"][0],
                                    "open": MAYORS[city]["faces"][1], "shot": sid, "at": 0.05, "until": 0.9})
             elif wide:
-                keys = [{"t": 0, "loc": [cx + 7, cy - 16, 11], "look": [cx, cy, 1.5]},
-                        {"t": 1, "loc": [cx + 4, cy - 11, 6], "look": [cx, cy, 2]}]
+                keys = cine(sc.get("camera", ""), cx, cy) or \
+                    [{"t": 0, "loc": [cx + 7, cy - 16, 11], "look": [cx, cy, 1.5]},
+                     {"t": 1, "loc": [cx + 4, cy - 11, 6], "look": [cx, cy, 2]}]
             else:
                 keys = [{"t": 0, "loc": [cx + 0.6, cy - 3.6, 2.95], "look": [cx, cy, 2.65]},
                         {"t": 1, "loc": [cx + 0.4, cy - 2.9, 2.85], "look": [cx, cy, 2.65]}]
             if any(a.get("who") == "foule" or a.get("geste") == "manif" for a in acts) and j == 0:
                 # la foule / la manif doit se voir : plan large en plongée sur toute la scène
-                keys = [{"t": 0, "loc": [cx + 6, cy - 19, 9], "look": [cx, cy - 3, 1.6]},
-                        {"t": 1, "loc": [cx + 4, cy - 15, 7], "look": [cx, cy - 3, 1.8]}]
+                keys = cine(sc.get("camera", "") if sc.get("camera") in ("orbit", "descend", "crane", "whip") else "",
+                            cx, cy - 3) or \
+                    [{"t": 0, "loc": [cx + 6, cy - 19, 9], "look": [cx, cy - 3, 1.6]},
+                     {"t": 1, "loc": [cx + 4, cy - 15, 7], "look": [cx, cy - 3, 1.8]}]
                 wide = True
             shots.append({"id": sid, "narration_ids": [nid], "keys": keys, "lens": 26 if wide else 33,
                           "lead_in": 0.08 if shots else 0.05, "tail": 0.12, "dof": False,
@@ -305,6 +370,8 @@ def plan(script: dict) -> dict:
     if shots:
         first_id, last_id = shots[0]["id"], shots[-1]["id"]
         stickers = [st for st in stickers if st["shot"] not in (first_id, last_id)]
+    for i, y in enumerate((-30, -62, -84)):
+        extra.append(affiche(city, f"rue_aff{i}", [9.6 if i % 2 else -9.6, y], rot=0))
     # insert produit (muet) puis plan final aérien avec carte de fin
     slogan = TEE_LINES
     sx, sy = SHOP_SPOT

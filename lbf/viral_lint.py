@@ -14,7 +14,8 @@ from . import editorial
 SOFT_ENDINGS = re.compile(r"\b(en commentaire|dis-moi|dis en commentaire|tague|commente)\b", re.I)
 
 
-STRICT = False   # mode « moquerie de la personne » (activé quand la banque est réécrite)
+STRICT = False
+HISTOIRE = False  # format « histoire absurde » : 1 point de départ sourcé suffit, gags de situation autorisés   # mode « moquerie de la personne » (activé quand la banque est réécrite)
 SITUATION = re.compile(r"^(ici|à la mairie|la mairie|dans la ville|la ville|au conseil municipal)\b", re.I)
 
 
@@ -38,8 +39,8 @@ def check(script: dict, strict: bool | None = None) -> dict:
     if long:
         warn.append(f"phrases longues (>16 mots) : {long}")
     sourced = [s for s in segs if s.get("claim_type") in ("fait_public", "citation_exacte")]
-    if len(sourced) < 2:
-        block.append(f"ancrage : {len(sourced)} pique(s) sourcée(s) (mèmes/faits connus), 2 minimum")
+    if len(sourced) < (1 if HISTOIRE else 2):
+        block.append(f"ancrage : {len(sourced)} pique(s) sourcée(s) (mèmes/faits connus), {1 if HISTOIRE else 2} minimum")
     if strict:
         # chaque pique vise le politicien lui-même, sur un truc connu ; peu de gags de situation à décoder
         if len(sourced) < 3:
@@ -65,9 +66,12 @@ def check(script: dict, strict: bool | None = None) -> dict:
 
 
 if __name__ == "__main__":
-    args = [a for a in sys.argv[1:] if a != "--strict"]
+    args = [a for a in sys.argv[1:] if a not in ("--strict", "--histoire")]
     if "--strict" in sys.argv:
         STRICT = True
+    if "--histoire" in sys.argv:
+        HISTOIRE = True
+        args = [a for a in args if a != "--histoire"]
     paths = [Path(a) for a in args] or sorted(Path("content/scripts").rglob("*.json"))
     bad = 0
     for p in paths:

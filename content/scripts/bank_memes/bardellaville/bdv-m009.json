@@ -4,23 +4,23 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Il sait, toi non",
- "anchor": "livre « Ce que veulent les Français », présenté comme « celui des Français » : un rayon unique décide pour toi.",
+ "title_cover": "Il sait pour toi",
+ "anchor": "« Ce que veulent les Français » : il sait ce que tu veux",
  "meme_key": "CQVLF",
- "situation": "Il sait, toi non",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "situation": "Il sait pour toi",
+ "ressort": "un thème unique en escalade : truc connu, trois crans, chute retournée",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, un seul rayon décide de ce que tu veux.",
-  "Bardellaville : il sait ce que tu veux, pas comment le payer.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : il sait, toi non."
+  "Dans cette ville, tout le monde vote Bardella. Il sait pour toi.",
+  "Bardella sait ce que tu veux. Il l'a écrit.",
+  "Bardellaville : tes envies, en librairie, prix fort.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Il sait pour toi."
  ],
  "selected_hook": 0,
  "ending_variants": [
   "Il sait ce que veulent les Français. Pas comment le payer.",
-  "Panier type : pouvoir d'achat en sachet, bon sens en poudre, retraite en option.",
-  "Tu voulais des pâtes ? Le caissier sait mieux que toi : un selfie."
+  "Il sait ce que tu veux. Pas comment le payer.",
+  "Le livre des Français, le chèque pour lui."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -28,15 +28,15 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Bardella. Il sait pour toi.",
    "accent_words": [
-    "ce que tu veux"
+    "pour toi"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son livre : Ce que veulent les Français. Spoiler : un livre de lui.",
+   "text": "Son deuxième livre s'intitule Ce que veulent les Français.",
    "accent_words": [
-    "un livre de lui"
+    "Ce que veulent les Français"
    ],
    "claim_type": "fait_public"
   },
@@ -44,23 +44,23 @@
    "id": "n3",
    "text": "Sa formule : « Ce livre n'est pas le mien, c'est celui des Français ».",
    "accent_words": [
-    "celui des Français"
+    "Français"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Au supermarché, un seul rayon décide ce que tu veux.",
+   "text": "Ce que veulent les Français, apparemment : lui verser plus d'un million de droits.",
    "accent_words": [
-    "un seul rayon"
+    "un million"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Panier type : bon sens en poudre, retraite en option.",
+   "text": "Prochain tome : ce que pensent les Français, rédigé sans eux.",
    "accent_words": [
-    "retraite en option"
+    "sans eux"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -68,7 +68,7 @@
    "id": "n6",
    "text": "Il sait ce que veulent les Français. Pas comment le payer.",
    "accent_words": [
-    "comment le payer"
+    "payer"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -76,7 +76,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui le laisse décider de ce qu'il veut.",
    "accent_words": [
-    "ce qu'il veut"
+    "veut"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -94,9 +94,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; un panneau « VOS ENVIES : DÉJÀ DÉCIDÉES ».",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "IL SAIT POUR TOI",
+   "comic_action": "Descente sur la ville ; banderole « IL SAIT POUR TOI » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -110,9 +121,20 @@
     "person",
     "text3d"
    ],
-   "onscreen_text": "CE QUE VOUS VOULEZ : MOI",
-   "comic_action": "Gros plan : la couverture s'ouvre sur un miroir.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "CE QUE VEULENT LES FRANÇAIS",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « CE QUE VEULENT LES FRANÇAIS ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "clap"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -121,62 +143,110 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "table",
+    "form_stack",
+    "person",
+    "text3d"
    ],
    "onscreen_text": "« CELUI DES FRANÇAIS »",
-   "comic_action": "L'écran affiche la phrase ; une étiquette de prix glisse en dessous.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « « CELUI DES FRANÇAIS » ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "screen",
+    "text3d",
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "RAYON UNIQUE",
-   "comic_action": "Vitrine : un seul rayon, un seul produit, une flèche « VOUS ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "1 MILLION DE DROITS",
+   "comic_action": "Compteur géant sur l'écran : « 1 MILLION DE DROITS ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cheer",
+     "visage": "content"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "shop",
     "table",
+    "form_stack",
     "person",
-    "banner"
+    "text3d"
    ],
-   "onscreen_text": "PANIER : BON SENS EN POUDRE",
-   "comic_action": "Un caddie rempli de sachets étiquetés « BON SENS », un ticket « RETRAITE : OPTION ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TOME 4 : SANS EUX",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « TOME 4 : SANS EUX ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie"
+    "screen"
    ],
-   "onscreen_text": "FINANCEMENT : ?",
-   "comic_action": "Tampon « PAYÉ PAR ? » sur une liste de courses interminable. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "COMMENT PAYER ? MYSTÈRE",
+   "comic_action": "Plan final, tenir une seconde : « COMMENT PAYER ? MYSTÈRE ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -190,9 +260,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt attend qu'on choisisse pour lui.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE INDÉCIS",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE INDÉCIS ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -208,28 +286,49 @@
  "claims": [
   {
    "segment": "n2",
-   "text": "Son livre : Ce que veulent les Français. Spoiler : un livre de lui.",
+   "text": "Son deuxième livre s'intitule Ce que veulent les Français.",
    "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
+   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
+  },
+  {
+   "segment": "n3",
+   "text": "Sa formule : « Ce livre n'est pas le mien, c'est celui des Français ».",
+   "claim_type": "citation_exacte",
    "source": "https://www.europe1.fr/politique/ce-livre-nest-pas-le-mien-cest-celui-des-francais-en-sondant-le-pays-jordan-bardella-se-prepare-a-lexercice-du-pouvoir-869191",
    "note": "Livre « Ce que veulent les Français » : « Ce livre n'est pas le mien, c'est celui des Français »."
   },
   {
-   "segment": "n3",
-   "text": "« Ce livre n'est pas le mien, c'est celui des Français »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.europe1.fr/politique/ce-livre-nest-pas-le-mien-cest-celui-des-francais-en-sondant-le-pays-jordan-bardella-se-prepare-a-lexercice-du-pouvoir-869191",
-   "note": "Livre « Ce que veulent les Français » : « Ce livre n'est pas le mien, c'est celui des Français »."
+   "segment": "n4",
+   "text": "Ce que veulent les Français, apparemment : lui verser plus d'un million de droits.",
+   "claim_type": "fait_public",
+   "source": "https://www.letribunaldunet.fr/politique/bardella-million-euros-livres-declaration-revenus.html",
+   "note": "1 035 178 € de droits d'auteur avant impôts déclarés à la HATVP (livres chez Fayard)."
   }
  ],
  "sources": [
   {
+   "url": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
+   "date": "2026-11-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
+  },
+  {
    "url": "https://www.europe1.fr/politique/ce-livre-nest-pas-le-mien-cest-celui-des-francais-en-sondant-le-pays-jordan-bardella-se-prepare-a-lexercice-du-pouvoir-869191",
    "date": "2025-10-29",
    "consulted": "2026-11-22",
-   "statut": "citation (titre Europe 1) + fait",
+   "statut": "citation exacte",
    "note": "Livre « Ce que veulent les Français » : « Ce livre n'est pas le mien, c'est celui des Français »."
+  },
+  {
+   "url": "https://www.letribunaldunet.fr/politique/bardella-million-euros-livres-declaration-revenus.html",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "fait (déclaration HATVP rapportée)",
+   "note": "1 035 178 € de droits d'auteur avant impôts déclarés à la HATVP (livres chez Fayard)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = livre « Ce que veulent les Français », présenté comme « celui des Français » : un rayon unique décide pour toi. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = « Ce que veulent les Français » : il sait ce que tu veux. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

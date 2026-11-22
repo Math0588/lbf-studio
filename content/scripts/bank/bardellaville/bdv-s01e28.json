@@ -3,75 +3,75 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-28",
  "format": "A",
- "title_cover": "Le fantôme filmé",
+ "title_cover": "Toujours un accident",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, le maire est un hologramme en vacances.",
-  "Bardellaville : le fantôme le mieux éclairé de France.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : le fantôme filmé."
+  "Dans cette ville, tout le monde vote Bardella. Même sur l'histoire.",
+  "Bardella et Jean-Marie Le Pen : la phrase de 2023.",
+  "Bardellaville : l'histoire, c'est un détail.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Toujours un accident."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le seul endroit où il ne manque jamais : le cadre.",
-  "Ses adversaires parlent de député fantôme. Ici, le fantôme a un ring light.",
-  "Conseil de quartier : le pupitre du maire répond tout seul, en audio enregistré."
+  "Un détail, une maladresse : chez eux, l'histoire est toujours un accident.",
+  "Chez eux, l'histoire est toujours un accident.",
+  "Un détail, puis une maladresse."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Le maire ? En déplacement.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Même sur l'histoire.",
    "accent_words": [
-    "En déplacement"
+    "histoire"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Conseil de quartier : son pupitre répond seul, en audio.",
+   "text": "En 2023 : « Je ne crois pas que Jean-Marie Le Pen était antisémite ».",
    "accent_words": [
-    "en audio"
+    "antisémite"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Son surnom en ligne, Bard-est-pas-là, est gravé sur sa plaque.",
+   "text": "Ce fondateur avait qualifié les chambres à gaz de « point de détail ».",
    "accent_words": [
-    "Bard-est-pas-là"
+    "détail"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Ses adversaires parlent de député fantôme. Ici, le fantôme a un ring light.",
+   "text": "Son propre parti l'a exclu en 2015 pour l'avoir répété.",
    "accent_words": [
-    "ring light"
+    "exclu"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Les habitants questionnent son portrait : même silence, mais lui est là.",
+   "text": "Quatre jours plus tard, rétropédalage : une maladresse, dit-il.",
    "accent_words": [
-    "lui est là"
+    "maladresse"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Le seul endroit où il ne manque jamais : le cadre.",
+   "text": "Un détail, une maladresse : chez eux, l'histoire est toujours un accident.",
    "accent_words": [
-    "le cadre"
+    "un accident"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui le défend sans l'avoir jamais vu en séance.",
+   "text": "Envoie ça au pote qui croit que le RN a fait le ménage.",
    "accent_words": [
-    "en séance"
+    "ménage"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,41 +89,76 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; panneau « DE RETOUR BIENTÔT » vissé sur la porte.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "MÊME SUR L'HISTOIRE",
+   "comic_action": "Descente sur la ville ; banderole « MÊME SUR L'HISTOIRE » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "tribune",
-    "router_lectern",
     "studio_light",
+    "screen",
     "text3d"
    ],
-   "onscreen_text": "RÉPONSE PRÉENREGISTRÉE",
-   "comic_action": "Un pupitre vide grésille une réponse en boucle ; les habitants se regardent.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "« JE NE CROIS PAS »",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « « JE NE CROIS PAS » ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "table",
-    "screen",
-    "sign",
-    "building"
+    "scroll",
+    "column",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "BARD-EST-PAS-LÀ",
-   "comic_action": "Gros plan sur une plaque dorée de bureau, gravée du surnom.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« POINT DE DÉTAIL »",
+   "comic_action": "Parchemin d'archives déroulé entre deux colonnes ; en lettres 3D « « POINT DE DÉTAIL » ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "cross_arms"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -132,46 +167,82 @@
    ],
    "camera": "closeup",
    "set": [
-    "ring_light",
-    "tripod_camera",
-    "person",
-    "screen"
+    "scroll",
+    "column",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "FANTÔME : BIEN ÉCLAIRÉ",
-   "comic_action": "Un drap blanc sur trépied, éclairé par un ring light, compteur d'abonnés qui monte.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "EXCLU EN 2015",
+   "comic_action": "Parchemin d'archives déroulé entre deux colonnes ; en lettres 3D « EXCLU EN 2015 ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shake"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "column",
-    "mairie",
-    "text3d",
-    "person"
+    "tribune",
+    "studio_light",
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "PORTRAIT : PRÉSENT",
-   "comic_action": "Entre deux colonnes, un portrait encadré face à une file de questions.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RÉTROPÉDALAGE : MALADRESSE",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « RÉTROPÉDALAGE : MALADRESSE ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "choque",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
+    "tribune",
     "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "PRÉSENT : DANS LE CADRE",
-   "comic_action": "Caméra sur trépied : il apparaît pile au centre ; hors champ, le bureau vide. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "TOUJOURS UN ACCIDENT",
+   "comic_action": "Plan final, tenir une seconde : « TOUJOURS UN ACCIDENT ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,53 +256,82 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt agite un drapeau devant une salle vide.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE CONVAINCU",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE CONVAINCU ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui le défend sans l'avoir jamais vu en séance."
+  "text": "Envoie ça au pote qui croit que le RN a fait le ménage."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 82,
+ "word_count": 84,
  "claims": [
   {
+   "segment": "n2",
+   "text": "En 2023 : « Je ne crois pas que Jean-Marie Le Pen était antisémite ».",
+   "claim_type": "citation_exacte",
+   "source": "https://fr.timesofisrael.com/pour-bardella-jean-marie-le-pen-netait-pas-antisemite/",
+   "note": "Sur BFMTV : « Je ne crois pas que Jean-Marie Le Pen était antisémite » ; quatre jours plus tard il parle de maladresse."
+  },
+  {
    "segment": "n3",
-   "text": "Son surnom en ligne, Bard-est-pas-là, est gravé sur sa plaque.",
-   "claim_type": "fait_public",
-   "source": "https://www.connexionfrance.com/news/jordan-bardella-his-unflattering-nickname-and-15m-tik-tok-fans/663977",
-   "note": "Surnom « Bard-est-pas-là » ; environ 1,5 million d'abonnés TikTok en 2024."
+   "text": "Ce fondateur avait qualifié les chambres à gaz de « point de détail ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.universalis.fr/evenement/13-21-septembre-1987-indignation-apres-les-declarations-de-jean-marie-le-pen-sur-les-chambres-a-gaz/",
+   "note": "Grand Jury RTL-Le Monde : Jean-Marie Le Pen qualifie les chambres à gaz de « point de détail » de l'histoire de la Deuxième Guerre mondiale."
   },
   {
    "segment": "n4",
-   "text": "Ses adversaires parlent de député fantôme. Ici, le fantôme a un ring light.",
+   "text": "Son propre parti l'a exclu en 2015 pour l'avoir répété.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
-   "note": "Thème du « député fantôme » ; aucun chiffre repris."
+   "source": "https://www.universalis.fr/evenement/20-aout-2015-exclusion-de-jean-marie-le-pen-du-front-national/",
+   "note": "Le bureau exécutif du FN exclut son fondateur Jean-Marie Le Pen, après de nouveaux propos sur les chambres à gaz."
+  },
+  {
+   "segment": "n5",
+   "text": "Quatre jours plus tard, rétropédalage : une maladresse, dit-il.",
+   "claim_type": "fait_public",
+   "source": "https://fr.timesofisrael.com/pour-bardella-jean-marie-le-pen-netait-pas-antisemite/",
+   "note": "Sur BFMTV : « Je ne crois pas que Jean-Marie Le Pen était antisémite » ; quatre jours plus tard il parle de maladresse."
   }
  ],
  "sources": [
   {
-   "url": "https://www.connexionfrance.com/news/jordan-bardella-his-unflattering-nickname-and-15m-tik-tok-fans/663977",
-   "date": "2024-06-11",
+   "url": "https://fr.timesofisrael.com/pour-bardella-jean-marie-le-pen-netait-pas-antisemite/",
+   "date": "2023-11-05",
    "consulted": "2026-11-22",
-   "statut": "mème (surnom rapporté comme circulant ; aucun chiffre d'absentéisme repris)",
-   "note": "Surnom « Bard-est-pas-là » ; environ 1,5 million d'abonnés TikTok en 2024."
+   "statut": "citation exacte + fait",
+   "note": "Sur BFMTV : « Je ne crois pas que Jean-Marie Le Pen était antisémite » ; quatre jours plus tard il parle de maladresse."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
-   "date": "2024",
+   "url": "https://www.universalis.fr/evenement/13-21-septembre-1987-indignation-apres-les-declarations-de-jean-marie-le-pen-sur-les-chambres-a-gaz/",
+   "date": "1987-09-13",
    "consulted": "2026-11-22",
-   "statut": "opinion (critiques d'adversaires)",
-   "note": "Thème du « député fantôme » ; aucun chiffre repris."
+   "statut": "fait + citation exacte",
+   "note": "Grand Jury RTL-Le Monde : Jean-Marie Le Pen qualifie les chambres à gaz de « point de détail » de l'histoire de la Deuxième Guerre mondiale."
+  },
+  {
+   "url": "https://www.universalis.fr/evenement/20-aout-2015-exclusion-de-jean-marie-le-pen-du-front-national/",
+   "date": "2015-08-20",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Le bureau exécutif du FN exclut son fondateur Jean-Marie Le Pen, après de nouveaux propos sur les chambres à gaz."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = surnom « Bard-est-pas-là » et thème du « député fantôme » porté par ses adversaires (aucun chiffre repris). Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = « Je ne crois pas que Jean-Marie Le Pen était antisémite » (2023), puis la « maladresse ». Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

@@ -5,17 +5,17 @@
  "format": "B",
  "title_cover": "Trop docile pour Praud",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, même CNews trouve le maire trop sage.",
-  "Bardellaville : l'antisystème a sa loge et son badge.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : trop docile pour praud."
+  "Dans cette ville, tout le monde vote Bardella. Même CNews trouve ça mou.",
+  "Même Pascal Praud trouve Bardella trop docile.",
+  "Bardellaville : la révolution, avec badge et loge.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Trop docile pour Praud."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le rebelle le plus invité de France : la révolution, en prime time.",
-  "Ici, l'antisystème a sa loge, son badge et son parking réservé.",
-  "Quand Praud te trouve trop docile, t'es plus un rebelle : t'es un invité régulier."
+  "Quand Praud te trouve trop docile, t'es plus un rebelle : t'es un invité régulier.",
+  "Pas un rebelle : un invité régulier.",
+  "L'antisystème a son parking réservé."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,7 +23,7 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Bardella. Même CNews trouve ça mou.",
    "accent_words": [
-    "mou"
+    "CNews"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -37,33 +37,33 @@
   },
   {
    "id": "n3",
-   "text": "Quand Praud te trouve trop docile, t'es plus un rebelle : t'es un invité régulier.",
+   "text": "Il faut dire : deux heures en tête-à-tête avec le Medef, une première.",
    "accent_words": [
-    "invité régulier"
+    "Medef"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Ici, l'antisystème a sa loge, son badge et son parking réservé.",
+   "text": "Et une séquence sur Trump devenue le mème du cirage de pompes.",
+   "accent_words": [
+    "cirage de pompes"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n5",
+   "text": "L'antisystème a son badge, sa loge et son parking réservé.",
    "accent_words": [
     "parking réservé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n5",
-   "text": "Il dénonce les élites entre deux plateaux et deux heures au Medef.",
-   "accent_words": [
-    "deux heures au Medef"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
    "id": "n6",
-   "text": "Le rebelle le plus invité de France : la révolution, en prime time.",
+   "text": "Quand Praud te trouve trop docile, t'es plus un rebelle : t'es un invité régulier.",
    "accent_words": [
-    "prime time"
+    "invité régulier"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,9 +89,19 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; un panneau « ANTISYSTÈME » accroché de travers.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "MÊME CNEWS TROUVE ÇA MOU",
+   "comic_action": "Descente sur la ville ; banderole « MÊME CNEWS TROUVE ÇA MOU » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "perso",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,78 +110,139 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
     "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "screen",
+    "text3d"
    ],
    "onscreen_text": "SOUMIS AU SYSTÈME ?",
-   "comic_action": "Plateau télé : le pupitre du maire recule d'un pas sous les projecteurs.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « SOUMIS AU SYSTÈME ? ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shake",
+     "visage": "choque",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "tribune",
-    "studio_light",
-    "text3d",
-    "person"
+    "table",
+    "building",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "REBELLE : INVITÉ RÉGULIER",
-   "comic_action": "Badge « INVITÉ PERMANENT » épinglé sur un blouson de rebelle.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "2 H AVEC LE MEDEF",
+   "comic_action": "Salon feutré, table dressée ; carton « 2 H AVEC LE MEDEF ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "car",
-    "road",
-    "gps",
-    "sign"
+    "tribune",
+    "studio_light",
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "PLACE RÉSERVÉE : ANTISYSTÈME",
-   "comic_action": "Une voiture se gare sur une place peinte « ANTISYSTÈME », barrière qui se lève.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CIRAGE DE POMPES",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « CIRAGE DE POMPES ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "arch",
-    "column",
+    "building",
+    "sign",
     "person",
-    "studio_light"
+    "banner"
    ],
-   "onscreen_text": "ÉLITES : DÉNONCÉES (ENTRE DEUX DÎNERS)",
-   "comic_action": "Sous une arche, il trinque avec des costumes, puis enchaîne sur un plateau.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "ANTISYSTÈME : PARKING RÉSERVÉ",
+   "comic_action": "Porte d'entrée gardée ; panneau « ANTISYSTÈME : PARKING RÉSERVÉ ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "content"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "lift_tribune",
     "tribune",
-    "person",
-    "banner"
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "RÉVOLUTION : 20 H 45",
-   "comic_action": "La tribune s'élève ; un régisseur fait signe « pub dans dix secondes ». Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "INVITÉ RÉGULIER",
+   "comic_action": "Plan final, tenir une seconde : « INVITÉ RÉGULIER ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +256,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt, poing levé, devant une télé.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE REBELLE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE REBELLE ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,7 +278,7 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 83,
+ "word_count": 82,
  "claims": [
   {
    "segment": "n2",
@@ -209,11 +288,18 @@
    "note": "Pascal Praud lui reproche sa soumission au système médiatique."
   },
   {
-   "segment": "n5",
-   "text": "Il dénonce les élites entre deux plateaux et deux heures au Medef.",
+   "segment": "n3",
+   "text": "Il faut dire : deux heures en tête-à-tête avec le Medef, une première.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/bardella-rencontre-en-tete-a-tete-le-medef-une-premiere-pour-le-rn-435456",
-   "note": "Tête-à-tête avec le Medef, une première pour le RN (plus de deux heures le 20/04/2026 selon la presse)."
+   "note": "Tête-à-tête de plus de deux heures avec le Medef, une première pour le RN (20/04/2026 selon la presse)."
+  },
+  {
+   "segment": "n4",
+   "text": "Et une séquence sur Trump devenue le mème du cirage de pompes.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/je-lai-atomise-roselyne-bachelot-reagit-a-sa-sequence-virale-avec-jordan-bardella-dans-quelle-epoque-sur-france-2/653011",
+   "note": "« Quelle Époque ! » : séquence admirative sur Trump, mème du cirage de pompes ; Roselyne Bachelot : « Je l'ai atomisé »."
   }
  ],
  "sources": [
@@ -221,7 +307,7 @@
    "url": "https://www.ozap.com/actu/vous-encensiez-eric-zemmour-sur-cnews-jordan-bardella-saccroche-en-direct-avec-pascal-praud-qui-lui-reproche-sa-soumission-au-systeme-mediatique/647561",
    "date": "2025 (date exacte non relevée)",
    "consulted": "2026-11-22",
-   "statut": "fait (échange en direct)",
+   "statut": "fait",
    "note": "Pascal Praud lui reproche sa soumission au système médiatique."
   },
   {
@@ -229,9 +315,16 @@
    "date": "2026-04",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Tête-à-tête avec le Medef, une première pour le RN (plus de deux heures le 20/04/2026 selon la presse)."
+   "note": "Tête-à-tête de plus de deux heures avec le Medef, une première pour le RN (20/04/2026 selon la presse)."
+  },
+  {
+   "url": "https://www.ozap.com/actu/je-lai-atomise-roselyne-bachelot-reagit-a-sa-sequence-virale-avec-jordan-bardella-dans-quelle-epoque-sur-france-2/653011",
+   "date": "2025-12-22",
+   "consulted": "2026-11-22",
+   "statut": "fait + citation exacte",
+   "note": "« Quelle Époque ! » : séquence admirative sur Trump, mème du cirage de pompes ; Roselyne Bachelot : « Je l'ai atomisé »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = sur CNews, Pascal Praud lui reproche sa soumission au système médiatique : l'antisystème recadré par CNews. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = l'antisystème recadré pour soumission par Pascal Praud. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

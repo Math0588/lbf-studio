@@ -3,75 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-15",
  "format": "A",
- "title_cover": "Baguette sur abonnement",
+ "title_cover": "Se payer un costard",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, la baguette demande ton RIB.",
-  "Macronville : le pain en abonnement, résiliable par recommandé.",
-  "La start-up nation a disrupté la baguette.",
-  "Les macronistes vont s'abonner direct."
+  "2016, à un syndicaliste en t-shirt : pour « se payer un costard », travaillez.",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Se payer un costard : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. En costard, si possible."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Moralité : bosse pour ta baguette. Le costard, ce sera au prochain quinquennat.",
-  "Une baguette, un abonnement, et un conseil : travaille.",
-  "Le costard, c'était l'objectif. La baguette, c'est le budget."
+  "Dix ans après, toujours pas de costard. Le pays, lui, a perdu sa chemise.",
+  "Pour se payer un costard, il faut travailler. Pour payer la dette, il faut combien de vies ?",
+  "L'État s'en offre un sur mesure : 3 595 milliards de dette."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Même la boulangère.",
+   "text": "Dans cette ville, tout le monde vote Macron. En costard, si possible.",
    "accent_words": [
-    "boulangère"
+    "costard"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La baguette passe en abonnement : 39 euros par mois, résiliation par courrier.",
+   "text": "2016, à un syndicaliste en t-shirt : pour « se payer un costard », travaillez.",
    "accent_words": [
-    "abonnement"
+    "travaillez"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Trop cher ? Il a la recette : travailler pour « se payer un costard ».",
+   "text": "Alors on travaille. Jusqu'à 64 ans, réforme au 49.3.",
    "accent_words": [
-    "costard"
+    "49.3"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Les croissants ? Réservés aux « premiers de cordée ».",
+   "text": "Les gros costards, eux, ne paient plus l'ISF depuis 2018.",
    "accent_words": [
-    "premiers de cordée"
+    "2018"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "La boulangère proteste ? Qu'elle traverse la rue.",
+   "text": "L'État s'en offre un sur mesure : 3 595 milliards de dette.",
    "accent_words": [
-    "traverse la rue"
+    "dette"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Moralité : bosse pour ta baguette. Le costard, ce sera au prochain quinquennat.",
+   "text": "Dix ans après, toujours pas de costard. Le pays, lui, a perdu sa chemise.",
    "accent_words": [
-    "prochain quinquennat"
+    "chemise"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui paie déjà trois abonnements inutiles.",
+   "text": "Envoie ça au pote qui bosse dur et attend toujours son costard.",
    "accent_words": [
-    "abonnements"
+    "costard"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -84,78 +84,145 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "facade_row",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "sign"
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
-   "expected_result": "Le commerce du jour posé."
+   "comic_action": "Descente sur la ville ; banderole « SE PAYER UN COSTARD » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "shop",
-    "sign",
     "person",
+    "shop",
     "text3d"
    ],
-   "onscreen_text": "BAGUETTE : 39 €/MOIS",
-   "comic_action": "Gros plan sur la vitrine de la boulangerie : prix géants.",
-   "expected_result": "Le commerce sert de support à la pique."
+   "onscreen_text": "« SE PAYER UN COSTARD »",
+   "comic_action": "Devant une boutique de costumes, le maire montre la vitrine du doigt à un habitant en t-shirt.",
+   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "tshirt",
-    "sign",
-    "person"
+    "building",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "« SE PAYER UN COSTARD »",
-   "comic_action": "Vitrine : un costard étiqueté « TRAVAILLE » ; un habitant compte ses pièces.",
-   "expected_result": "La petite phrase en vitrine."
+   "onscreen_text": "JUSQU'À 64 ANS",
+   "comic_action": "L'habitant en t-shirt grimpe un escalier sans fin ; en haut, une étiquette « 64 ».",
+   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "clap",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
     "shop",
-    "sign",
-    "person",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "CROISSANT PREMIUM",
-   "comic_action": "Deux files à la caisse : « PREMIERS DE CORDÉE » (vide, rapide) et « LES AUTRES » (immense).",
-   "expected_result": "Le surnom devient une signalétique."
+   "onscreen_text": "ISF : SUPPRIMÉ",
+   "comic_action": "Dans la boutique, un client fortuné sort avec dix costumes ; l'étiquette « ISF » tombe à la poubelle.",
+   "expected_result": "Escalade 2 : encore plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
-    "road",
-    "sign",
-    "person",
-    "traffic_light"
+    "screen",
+    "text3d",
+    "building"
    ],
-   "onscreen_text": "TRAVERSE LA RUE",
-   "comic_action": "Un habitant traverse le passage piéton ; le panneau « EMPLOI » recule d'un mètre à chaque pas.",
-   "expected_result": "Le mème « traverser la rue » devient une infrastructure."
+   "onscreen_text": "3 595 MDS SUR MESURE",
+   "comic_action": "Un tailleur prend les mesures d'une tour : le ruban affiche 3 595 milliards.",
+   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,14 +231,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "shop",
-    "tshirt",
-    "sign",
-    "person"
+    "person",
+    "text3d",
+    "sign"
    ],
-   "onscreen_text": "COSTARD : QUINQUENNAT SUIVANT",
-   "comic_action": "Vitrine : le costard est mis sous cloche, étiquette « DISPONIBLE EN 2032 ».",
-   "expected_result": "La petite phrase en vitrine."
+   "onscreen_text": "LE PAYS A PERDU SA CHEMISE",
+   "comic_action": "Une chemise géante s'envole au-dessus de la carte de France ; l'habitant, toujours en t-shirt, hausse les épaules.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,26 +260,40 @@
    ],
    "camera": "return",
    "set": [
-    "shop",
-    "tshirt",
+    "road",
     "person",
+    "tshirt",
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « se payer un costard, c'est de travailler » (2016).",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui paie déjà trois abonnements inutiles."
+  "text": "Envoie ça au pote qui bosse dur et attend toujours son costard."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 81,
+ "word_count": 84,
  "claims": [
   {
    "text": "« se payer un costard »",
@@ -208,16 +302,22 @@
    "note": "« La meilleure façon de se payer un costard, c'est de travailler » (Lunel, 2016)."
   },
   {
-   "text": "« premiers de cordée »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
-   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »)."
+   "text": "Alors on travaille. Jusqu'à 64 ans, réforme au 49.3.",
+   "claim_type": "fait_public",
+   "source": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
+   "note": "Réforme des retraites (départ à 64 ans) adoptée par le 49.3, sans vote des députés."
   },
   {
-   "text": "La boulangère proteste ? Qu'elle traverse la rue.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
-   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements. Détourné dans la ville fictive."
+   "text": "Les gros costards, eux, ne paient plus l'ISF depuis 2018.",
+   "claim_type": "fait_public",
+   "source": "https://www.vie-publique.fr/en-bref/291443-impot-de-solidarite-sur-la-fortune-isf-le-cout-de-son-remplacement",
+   "note": "ISF supprimé en 2018 et remplacé par l'IFI, qui ne taxe plus que l'immobilier ; coût du remplacement évalué par vie-publique."
+  },
+  {
+   "text": "L'État s'en offre un sur mesure : 3 595 milliards de dette.",
+   "claim_type": "fait_public",
+   "source": "https://www.insee.fr/fr/statistiques/9053525",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
   }
  ],
  "sources": [
@@ -225,24 +325,31 @@
    "url": "https://www.letemps.ch/opinions/emmanuel-macron-my-tailor-is-rich",
    "date": "2016",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (fragment)",
+   "statut": "citation exacte",
    "note": "« La meilleure façon de se payer un costard, c'est de travailler » (Lunel, 2016)."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
-   "date": "2017",
+   "url": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
+   "date": "2023-03-16",
    "consulted": "2026-11-22",
-   "statut": "fait + opinion",
-   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »)."
+   "statut": "fait public",
+   "note": "Réforme des retraites (départ à 64 ans) adoptée par le 49.3, sans vote des députés."
   },
   {
-   "url": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
-   "date": "2018-09-17",
+   "url": "https://www.vie-publique.fr/en-bref/291443-impot-de-solidarite-sur-la-fortune-isf-le-cout-de-son-remplacement",
+   "date": "non relevée",
    "consulted": "2026-11-22",
-   "statut": "citation exacte + mème",
-   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
+   "statut": "fait public",
+   "note": "ISF supprimé en 2018 et remplacé par l'IFI, qui ne taxe plus que l'immobilier ; coût du remplacement évalué par vie-publique."
+  },
+  {
+   "url": "https://www.insee.fr/fr/statistiques/9053525",
+   "date": "2026-09-29",
+   "consulted": "2026-11-22",
+   "statut": "fait public (statistique)",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « se payer un costard » (2016) retourné contre le prix du quotidien : la baguette en abonnement. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — « se payer un costard, c'est de travailler » (2016). Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

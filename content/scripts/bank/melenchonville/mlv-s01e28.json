@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-28",
  "format": "A",
- "title_cover": "Hors de ma vue",
+ "title_cover": "Tu hors de ma vue",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : la box internet chante Wejdene.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, le Wi-Fi te dit : tu hors de ma vue.",
-  "Mélenchonville : le malaise TikTok est un service public."
+  "Dans cette ville, tout le monde vote Mélenchon. Version TikTok.",
+  "Mélenchon a chanté Wejdene. Internet n'a jamais oublié.",
+  "Les insoumis vont me détester.",
+  "Bienvenue à Mélenchonville : tu hors de ma vue.",
+  "Mélenchon en une vidéo : tu hors de ma vue."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Six ans plus tard : deux millions de likes, l'Élysée toujours hors de vue.",
-  "Des likes plein la box, l'Élysée hors de vue.",
-  "Le tube de 2020 tourne encore. Le score, aussi."
+  "« Tu hors de ma vue », chantait-il. L'Élysée l'a pris au mot depuis 2012.",
+  "Hors de ma vue, chantait-il. L'Élysée a obéi.",
+  "Ses fans, les zinzinsoumis, en font des edits au ralenti."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Même la box.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Version TikTok.",
    "accent_words": [
-    "Même la box"
+    "Version TikTok"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2020, il répond à Macron sur TikTok en citant Wejdene.",
+   "text": "Sur TikTok, en 2020, il reprend Wejdene : « Tu hors de ma vue ».",
    "accent_words": [
-    "Wejdene"
-   ],
-   "claim_type": "fait_public"
-  },
-  {
-   "id": "n3",
-   "text": "Les paroles : « Tu hors de ma vue ». Les internautes ont surtout ri.",
-   "accent_words": [
-    "surtout ri"
+    "ma vue"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "Ici, la box redémarre en chantant Wejdene. Personne n'a demandé.",
+   "id": "n3",
+   "text": "Les réactions ? Surtout des moqueries.",
    "accent_words": [
-    "Personne"
+    "Surtout des moqueries"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n4",
+   "text": "Six ans après : deux millions de likes en un mois.",
+   "accent_words": [
+    "un mois"
+   ],
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Il renvoyait les bacheliers vers Parcoursup. La box aussi : connexion refusée.",
+   "text": "Ses fans, les zinzinsoumis, en font des edits au ralenti.",
    "accent_words": [
-    "connexion refusée"
+    "au ralenti"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Six ans plus tard : deux millions de likes, l'Élysée toujours hors de vue.",
+   "text": "« Tu hors de ma vue », chantait-il. L'Élysée l'a pris au mot depuis 2012.",
    "accent_words": [
-    "hors de vue"
+    "depuis 2012"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui cite des tubes TikTok en réunion.",
+   "text": "Envoie ça au pote qui cite des sons TikTok en réunion.",
    "accent_words": [
-    "tubes TikTok"
+    "en réunion"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "router_lectern",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un salon : une box internet trône sur un pupitre.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · TU HORS DE MA VUE",
+   "comic_action": "Descente sur la ville : banderole « TU HORS DE MA VUE », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,13 +113,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "person",
     "ring_light",
-    "tripod_camera"
+    "screen",
+    "person"
    ],
-   "onscreen_text": "TIKTOK 2020",
-   "comic_action": "Un habitant rejoue la scène sous ring light dans un couloir de métro en carton.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« TU HORS DE MA VUE »",
+   "comic_action": "Le maire chante face à un anneau lumineux.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "phone"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s3",
@@ -119,24 +146,39 @@
     "text3d",
     "person"
    ],
-   "onscreen_text": "TU HORS DE MA VUE",
-   "comic_action": "Orbite autour d'un écran couvert d'émojis qui pleurent de rire.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "RÉACTIONS : MOQUERIES",
+   "comic_action": "Commentaires rieurs qui défilent à l'écran.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "router_lectern",
-    "text3d",
-    "person"
+    "screen",
+    "ring_light",
+    "text3d"
    ],
-   "onscreen_text": "REDÉMARRAGE EN MUSIQUE",
-   "comic_action": "La box s'allume, ses voyants dansent en rythme ; l'habitant se bouche les oreilles.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "2 MILLIONS DE LIKES",
+   "comic_action": "Le compteur de cœurs explose.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "jump",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -145,13 +187,21 @@
    ],
    "camera": "closeup",
    "set": [
-    "router_lectern",
-    "screen",
-    "text3d"
+    "ring_light",
+    "tripod_camera",
+    "person"
    ],
-   "onscreen_text": "VA CHECKER PARCOURSUP",
-   "comic_action": "L'écran affiche « CONNEXION REFUSÉE — VOIR PARCOURSUP ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "ZINZINSOUMIS",
+   "comic_action": "Trois fans filment l'écran en slow motion.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +210,20 @@
    ],
    "camera": "descend",
    "set": [
-    "screen",
     "mairie",
+    "sign",
     "text3d"
    ],
    "onscreen_text": "ÉLYSÉE : HORS DE VUE",
-   "comic_action": "Plan large : compteur de likes énorme sur la façade, panneau « ÉLYSÉE » minuscule à l'horizon.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "comic_action": "Un palais s'éloigne à l'horizon à chaque pas du maire.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,45 +237,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique débranche la box.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui cite des tubes TikTok en réunion."
+  "text": "Envoie ça au pote qui cite des sons TikTok en réunion."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 84,
+ "word_count": 78,
  "claims": [
   {
-   "text": "En 2020, il répond à Macron sur TikTok en citant Wejdene.",
-   "claim_type": "fait_public",
-   "source": "https://www.journaldugeek.com/2020/07/09/macron-melenchon-clash-tiktok/",
-   "note": "TikTok en réponse à Macron, paroles de Wejdene « Tu hors de ma vue », renvoi vers Parcoursup ; réactions moqueuses."
-  },
-  {
-   "text": "« Tu hors de ma vue »",
+   "text": "Sur TikTok, en 2020, il reprend Wejdene : « Tu hors de ma vue ».",
    "claim_type": "citation_exacte",
    "source": "https://www.journaldugeek.com/2020/07/09/macron-melenchon-clash-tiktok/",
-   "note": "TikTok en réponse à Macron, paroles de Wejdene « Tu hors de ma vue », renvoi vers Parcoursup ; réactions moqueuses."
+   "note": "TikTok en réponse à Macron, paroles de Wejdene « Tu hors de ma vue » ; réactions moqueuses."
   },
   {
-   "text": "Il renvoyait les bacheliers vers Parcoursup. La box aussi : connexion refusée.",
+   "text": "Les réactions ? Surtout des moqueries.",
    "claim_type": "fait_public",
    "source": "https://www.journaldugeek.com/2020/07/09/macron-melenchon-clash-tiktok/",
-   "note": "TikTok en réponse à Macron, paroles de Wejdene « Tu hors de ma vue », renvoi vers Parcoursup ; réactions moqueuses."
+   "note": "TikTok en réponse à Macron, paroles de Wejdene « Tu hors de ma vue » ; réactions moqueuses."
   },
   {
-   "text": "Six ans plus tard : deux millions de likes, l'Élysée toujours hors de vue.",
+   "text": "Six ans après : deux millions de likes en un mois.",
    "claim_type": "fait_public",
    "source": "https://www.sudradio.fr/sud-radio/presidentielle-2027-melenchon-prend-la-tete-de-la-bataille-sur-les-reseaux-sociaux",
    "note": "Plus de 2,1 millions de likes TikTok en septembre 2026 ; 1,2 million de mentions."
+  },
+  {
+   "text": "Ses fans, les zinzinsoumis, en font des edits au ralenti.",
+   "claim_type": "fait_public",
+   "source": "https://www.ladn.eu/media-mutants/comment-la-france-insoumise-a-fait-de-ledit-video-son-arme-pour-2027/",
+   "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique) ; fans surnommés « zinzinsoumis »."
+  },
+  {
+   "text": "« Tu hors de ma vue », chantait-il. L'Élysée l'a pris au mot depuis 2012.",
+   "claim_type": "citation_exacte",
+   "source": "https://www.journaldugeek.com/2020/07/09/macron-melenchon-clash-tiktok/",
+   "note": "TikTok en réponse à Macron, paroles de Wejdene « Tu hors de ma vue » ; réactions moqueuses."
+  },
+  {
+   "text": "« Tu hors de ma vue », chantait-il. L'Élysée l'a pris au mot depuis 2012.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
@@ -226,17 +303,31 @@
    "url": "https://www.journaldugeek.com/2020/07/09/macron-melenchon-clash-tiktok/",
    "date": "2020-07-09",
    "consulted": "2026-11-22",
-   "statut": "fait + mème",
-   "note": "TikTok en réponse à Macron, paroles de Wejdene « Tu hors de ma vue », renvoi vers Parcoursup ; réactions moqueuses."
+   "statut": "citation_exacte",
+   "note": "TikTok en réponse à Macron, paroles de Wejdene « Tu hors de ma vue » ; réactions moqueuses."
   },
   {
    "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-melenchon-prend-la-tete-de-la-bataille-sur-les-reseaux-sociaux",
    "date": "2026-10",
    "consulted": "2026-11-22",
-   "statut": "fait (rapporté)",
+   "statut": "fait",
    "note": "Plus de 2,1 millions de likes TikTok en septembre 2026 ; 1,2 million de mentions."
+  },
+  {
+   "url": "https://www.ladn.eu/media-mutants/comment-la-france-insoumise-a-fait-de-ledit-video-son-arme-pour-2027/",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique) ; fans surnommés « zinzinsoumis »."
+  },
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le TikTok de 2020 où il cite Wejdene pour répondre à Macron. Cadre : la box internet. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Tu hors de ma vue. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

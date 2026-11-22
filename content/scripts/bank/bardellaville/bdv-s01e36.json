@@ -5,17 +5,17 @@
  "format": "A",
  "title_cover": "La notice sans meuble",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, le mode d'emploi sort avant l'appareil.",
-  "Bardellaville : le moniteur d'auto-école n'a pas le permis, mais il a écrit le livre.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : la notice sans meuble."
+  "Dans cette ville, tout le monde vote Bardella. Gouverner, c'est un livre.",
+  "Bardella publie Gouverner. Sans avoir gouverné.",
+  "Bardellaville : la notice est sortie, le meuble jamais.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : La notice sans meuble."
  ],
  "selected_hook": 0,
  "ending_variants": [
   "Il a sorti la notice avant de trouver le meuble.",
-  "C'est comme un guide de voyage écrit depuis le canapé.",
-  "Ici, le moniteur d'auto-école n'a pas le permis. Mais il a écrit le livre."
+  "La notice avant le meuble.",
+  "Un manuel écrit par quelqu'un qui n'a jamais monté le meuble."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,13 +23,13 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Bardella. Gouverner, c'est un livre.",
    "accent_words": [
-    "un livre"
+    "Gouverner"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son nouveau livre s'appelle Gouverner.",
+   "text": "Novembre 2026, son nouveau livre s'appelle Gouverner.",
    "accent_words": [
     "Gouverner"
    ],
@@ -37,33 +37,33 @@
   },
   {
    "id": "n3",
-   "text": "Écrit par un candidat qui n'a jamais gouverné. Cent jours prévus, méthode absente.",
+   "text": "Écrit par un candidat qui n'a jamais gouverné. Méthode : pas détaillée.",
    "accent_words": [
-    "jamais gouverné"
+    "pas détaillée"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "C'est comme un guide de voyage écrit depuis le canapé.",
+   "text": "Soirée de lancement : des journalistes refoulés. Première décision de gouvernement.",
    "accent_words": [
-    "depuis le canapé"
+    "gouvernement"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Ici, le moniteur d'auto-école n'a pas le permis. Mais il a écrit le livre.",
+   "text": "En librairie, il entre neuvième, doublé par le programme de Mélenchon.",
    "accent_words": [
-    "écrit le livre"
+    "neuvième"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
    "text": "Il a sorti la notice avant de trouver le meuble.",
    "accent_words": [
-    "la notice"
+    "meuble"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,9 +89,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; un livre géant posé à la place du drapeau.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "GOUVERNER, LE LIVRE",
+   "comic_action": "Descente sur la ville ; banderole « GOUVERNER, LE LIVRE » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -106,8 +117,19 @@
     "text3d"
    ],
    "onscreen_text": "GOUVERNER",
-   "comic_action": "Gros plan sur la couverture, qui s'ouvre sur un sommaire très aéré.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « GOUVERNER ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "clap"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,62 +138,110 @@
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
     "table",
+    "form_stack",
     "person",
     "text3d"
    ],
-   "onscreen_text": "EXPÉRIENCE : 0 JOUR",
-   "comic_action": "Un parchemin CV se déroule : ligne « GOUVERNEMENT » vide.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "MÉTHODE : PAS DÉTAILLÉE",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « MÉTHODE : PAS DÉTAILLÉE ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
-    "tree",
-    "bench",
-    "lamp",
-    "person"
+    "building",
+    "sign",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "GUIDE DU MONDE (DEPUIS LE CANAPÉ)",
-   "comic_action": "Au parc, un auteur sur un banc écrit « La montagne » en regardant une affiche de montagne.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "1RE DÉCISION : REFOULER",
+   "comic_action": "Porte d'entrée gardée ; panneau « 1RE DÉCISION : REFOULER ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "car",
-    "road",
-    "gps",
-    "sign"
+    "table",
+    "form_stack",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "MONITEUR : SANS PERMIS",
-   "comic_action": "Voiture d'auto-école : le moniteur lit son propre livre, la voiture n'a jamais démarré.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "9E, DOUBLÉ PAR MÉLENCHON",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « 9E, DOUBLÉ PAR MÉLENCHON ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "NOTICE ✓ · MEUBLE ✗",
-   "comic_action": "Vitrine : une notice de montage déployée, aucun meuble, des vis partout. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LA NOTICE SANS LE MEUBLE",
+   "comic_action": "Plan final, tenir une seconde : « LA NOTICE SANS LE MEUBLE ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +255,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt, livre en main, cherche le mode d'emploi du mode d'emploi.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE PRÊT",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE PRÊT ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -199,21 +277,35 @@
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 78,
+ "word_count": 77,
  "claims": [
   {
    "segment": "n2",
-   "text": "Son nouveau livre s'appelle Gouverner.",
+   "text": "Novembre 2026, son nouveau livre s'appelle Gouverner.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
    "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
   },
   {
    "segment": "n3",
-   "text": "Écrit par un candidat qui n'a jamais gouverné. Cent jours prévus, méthode absente.",
+   "text": "Écrit par un candidat qui n'a jamais gouverné. Méthode : pas détaillée.",
    "claim_type": "fait_public",
    "source": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
    "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
+  },
+  {
+   "segment": "n4",
+   "text": "Soirée de lancement : des journalistes refoulés. Première décision de gouvernement.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
+   "note": "Image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement du livre « Gouverner » ; reprend un mème préexistant."
+  },
+  {
+   "segment": "n5",
+   "text": "En librairie, il entre neuvième, doublé par le programme de Mélenchon.",
+   "claim_type": "fait_public",
+   "source": "https://www.24matins.fr/le-programme-de-melenchon-en-librairie-distance-bardella-nettement-1424131",
+   "note": "« Le programme de Mélenchon en librairie distance Bardella nettement » ; « Gouverner » entré 9e (Edistat, semaine partielle)."
   }
  ],
  "sources": [
@@ -228,10 +320,24 @@
    "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
    "date": "2026-11-04",
    "consulted": "2026-11-22",
-   "statut": "fait + appréciation AFP",
+   "statut": "fait + opinion (appréciation AFP)",
    "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
+  },
+  {
+   "url": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
+   "date": "2026-11-05",
+   "consulted": "2026-11-22",
+   "statut": "fait (publication sur X du 04/11/2026) ; texte exact de l'image",
+   "note": "Image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement du livre « Gouverner » ; reprend un mème préexistant."
+  },
+  {
+   "url": "https://www.24matins.fr/le-programme-de-melenchon-en-librairie-distance-bardella-nettement-1424131",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "« Le programme de Mélenchon en librairie distance Bardella nettement » ; « Gouverner » entré 9e (Edistat, semaine partielle)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = il publie « Gouverner » (cent jours sans méthode détaillée) sans avoir jamais gouverné. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = Gouverner, le livre d'un homme qui n'a jamais gouverné. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

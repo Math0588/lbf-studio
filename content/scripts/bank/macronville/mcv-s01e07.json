@@ -6,66 +6,66 @@
  "title_cover": "Pas réformable",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, même le banc est pas réformable.",
-  "Macronville a commandé une étude de 300 pages sur un banc.",
-  "Bienvenue chez les Gaulois réfractaires.",
-  "Les macronistes vont trouver ça pas réformable."
+  "En 2017, depuis Bucarest, il décrète la France « pas réformable ».",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Pas réformable : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Sauf les réfractaires."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Puis elle est suspendue en 2025. Pas réformable, qui, déjà ?",
-  "La ville n'est pas réformable. La réforme non plus, visiblement.",
-  "Le rapport conclut : refaire un rapport."
+  "Pas réformable, la France ? C'est surtout sa réforme qui ne tenait pas.",
+  "Il voulait réformer les Gaulois. Les Gaulois ont réformé sa réforme.",
+  "Puis suspendue en 2025, pour sauver un gouvernement."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Sans broncher.",
-   "accent_words": [
-    "broncher"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n2",
-   "text": "La mairie commande une étude sur l'assise. Trois cents pages, zéro banc.",
-   "accent_words": [
-    "zéro banc"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Conclusion du rapport : la ville n'est « pas réformable ».",
-   "accent_words": [
-    "pas réformable"
-   ],
-   "claim_type": "citation_exacte"
-  },
-  {
-   "id": "n4",
-   "text": "Les habitants ? Classés Gaulois réfractaires, catégorie premium.",
+   "text": "Dans cette ville, tout le monde vote Macron. Sauf les réfractaires.",
    "accent_words": [
     "réfractaires"
    ],
    "claim_type": "fiction_satirique"
   },
   {
-   "id": "n5",
-   "text": "Pendant ce temps, sa réforme des retraites passe au 49.3. Sans vote.",
+   "id": "n2",
+   "text": "En 2017, depuis Bucarest, il décrète la France « pas réformable ».",
    "accent_words": [
-    "Sans vote"
+    "réformable"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n3",
+   "text": "En 2018, il en rajoute : un peuple de « Gaulois réfractaires ».",
+   "accent_words": [
+    "réfractaires"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n4",
+   "text": "Sa grande réforme des retraites ? Passée sans vote, au 49.3.",
+   "accent_words": [
+    "49.3"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n5",
+   "text": "Puis suspendue en 2025, pour sauver un gouvernement.",
+   "accent_words": [
+    "gouvernement"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Puis elle est suspendue en 2025. Pas réformable, qui, déjà ?",
+   "text": "Pas réformable, la France ? C'est surtout sa réforme qui ne tenait pas.",
    "accent_words": [
-    "qui, déjà"
+    "tenait"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
@@ -88,57 +88,112 @@
     "mairie",
     "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
-   "expected_result": "La ville et son camp posés en une seconde."
+   "comic_action": "Descente sur la ville ; banderole « PAS RÉFORMABLE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "scroll",
+    "tribune",
     "text3d",
     "person"
    ],
-   "onscreen_text": "300 PAGES, 0 BANC",
-   "comic_action": "Un parchemin se déroule à n'en plus finir devant l'habitant.",
-   "expected_result": "Le texte interminable."
+   "onscreen_text": "« PAS RÉFORMABLE »",
+   "comic_action": "Le maire, sur une tribune, tamponne « PAS RÉFORMABLE » sur une carte de France géante.",
+   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "blase",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "form_stack",
+    "person",
     "text3d",
-    "table"
+    "sign"
    ],
-   "onscreen_text": "« PAS RÉFORMABLE »",
-   "comic_action": "Pile de dossiers tamponnés « PAS RÉFORMABLE » ; le tampon s'abat en rythme.",
-   "expected_result": "La petite phrase en tampon."
+   "onscreen_text": "« GAULOIS RÉFRACTAIRES »",
+   "comic_action": "Des habitants reçoivent chacun un casque gaulois en carton ; le maire distribue, sourire de com'.",
+   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
-    "bus",
-    "person",
-    "sign",
-    "facade_row"
+    "lift_tribune",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "GAULOIS RÉFRACTAIRES",
-   "comic_action": "Bus touristique ; le guide montre du doigt les habitants « réfractaires » qui refusent de bouger.",
-   "expected_result": "La formule devient attraction."
+   "onscreen_text": "49.3 : SANS VOTE",
+   "comic_action": "Une tribune élévatrice soulève la réforme au-dessus de la foule ; les mains levées pour voter restent en bas.",
+   "expected_result": "Escalade 2 : encore plus gros.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "arms_up",
+     "visage": "colere",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "clap",
+     "visage": "fier",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s5",
@@ -147,29 +202,56 @@
    ],
    "camera": "closeup",
    "set": [
-    "tribune",
+    "bench",
     "text3d",
     "person"
    ],
-   "onscreen_text": "49.3",
-   "comic_action": "Le maire cubique tamponne « ADOPTÉ » sur le texte ; les mains levées de la salle restent en l'air, ignorées.",
-   "expected_result": "Le 49.3 en tampon."
+   "onscreen_text": "SUSPENDUE",
+   "comic_action": "La réforme redescend et s'écrase sur un banc, étiquette « SUSPENDUE ».",
+   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "sign",
-    "person",
-    "bench",
-    "road"
+    "mairie",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "SUSPENDUE",
-   "comic_action": "Panneau « RETRAITE : 64 » qu'on repousse d'un mètre, puis qu'on recouvre d'un ruban « SUSPENDU ».",
-   "expected_result": "La réforme en panneau mobile."
+   "onscreen_text": "QUI EST PAS RÉFORMABLE ?",
+   "comic_action": "Le tampon « PAS RÉFORMABLE » se retourne tout seul et se colle sur la porte de la mairie.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s7",
@@ -178,14 +260,28 @@
    ],
    "camera": "return",
    "set": [
-    "mairie",
+    "road",
     "person",
     "tshirt",
-    "banner"
+    "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : la France « pas réformable » selon lui, et sa propre réforme qui recule.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -197,31 +293,31 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 75,
+ "word_count": 79,
  "claims": [
   {
    "text": "« pas réformable »",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/faineants-pas-reformable-macron-regrette-les-polemiques-77622",
-   "note": "« Pas réformable » (Bucarest, 2017) ; le président regrette les polémiques."
+   "note": "France « pas réformable » (Bucarest, 2017) ; le président regrette ensuite les polémiques."
   },
   {
-   "text": "Les habitants ? Classés Gaulois réfractaires, catégorie premium.",
-   "claim_type": "fiction_satirique",
+   "text": "« Gaulois réfractaires »",
+   "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
-   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde ». Détourné dans la ville fictive."
+   "note": "Florilège : « on met un pognon de dingue dans les minima sociaux » (06/2018), « je traverse la rue, je vous en trouve » (09/2018), « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde » (expression la plus fréquente)."
   },
   {
-   "text": "Pendant ce temps, sa réforme des retraites passe au 49.3. Sans vote.",
+   "text": "Sa grande réforme des retraites ? Passée sans vote, au 49.3.",
    "claim_type": "fait_public",
    "source": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
-   "note": "Réforme des retraites (64 ans) adoptée par 49.3, sans vote des députés."
+   "note": "Réforme des retraites (départ à 64 ans) adoptée par le 49.3, sans vote des députés."
   },
   {
-   "text": "Puis elle est suspendue en 2025. Pas réformable, qui, déjà ?",
+   "text": "Puis suspendue en 2025, pour sauver un gouvernement.",
    "claim_type": "fait_public",
    "source": "https://www.letemps.ch/monde/la-suspension-de-la-reforme-des-retraites-est-approuvee-par-l-assemblee-nationale-fracturant-la-gauche-au-passage",
-   "note": "Suspension de la réforme des retraites votée à l'Assemblée (255 voix contre 146)."
+   "note": "Suspension de la réforme des retraites votée à l'Assemblée (255 voix contre 146), concession pour sauver le gouvernement."
   }
  ],
  "sources": [
@@ -229,31 +325,31 @@
    "url": "https://www.publicsenat.fr/actualites/politique/faineants-pas-reformable-macron-regrette-les-polemiques-77622",
    "date": "2017",
    "consulted": "2026-11-22",
-   "statut": "citation exacte (fragment)",
-   "note": "« Pas réformable » (Bucarest, 2017) ; le président regrette les polémiques."
+   "statut": "fait public",
+   "note": "France « pas réformable » (Bucarest, 2017) ; le président regrette ensuite les polémiques."
   },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
    "date": "2021-08-11",
    "consulted": "2026-11-22",
-   "statut": "citations exactes vérifiées",
-   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
+   "statut": "fait (citations exactes vérifiées)",
+   "note": "Florilège : « on met un pognon de dingue dans les minima sociaux » (06/2018), « je traverse la rue, je vous en trouve » (09/2018), « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde » (expression la plus fréquente)."
   },
   {
    "url": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
    "date": "2023-03-16",
    "consulted": "2026-11-22",
    "statut": "fait public",
-   "note": "Réforme des retraites (64 ans) adoptée par 49.3, sans vote des députés."
+   "note": "Réforme des retraites (départ à 64 ans) adoptée par le 49.3, sans vote des députés."
   },
   {
    "url": "https://www.letemps.ch/monde/la-suspension-de-la-reforme-des-retraites-est-approuvee-par-l-assemblee-nationale-fracturant-la-gauche-au-passage",
    "date": "2025-11-12",
    "consulted": "2026-11-22",
    "statut": "fait public",
-   "note": "Suspension de la réforme des retraites votée à l'Assemblée (255 voix contre 146)."
+   "note": "Suspension de la réforme des retraites votée à l'Assemblée (255 voix contre 146), concession pour sauver le gouvernement."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « pas réformable » (2017) retourné : la réforme des retraites passée au 49.3 puis suspendue. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — la France « pas réformable » selon lui, et sa propre réforme qui recule. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

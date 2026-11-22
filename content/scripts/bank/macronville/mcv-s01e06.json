@@ -3,75 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-06",
  "format": "A",
- "title_cover": "Révolution au ruban",
+ "title_cover": "Révolution, tome 2",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, on inaugure même ce qui n'existe pas.",
-  "Macronville : le ruban le plus cher du monde.",
-  "Le banc invisible de Macronville a coûté une fortune.",
-  "Ici, la révolution tient dans un ruban."
+  "Son livre de campagne, en 2016, s'appelait carrément Révolution.",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Révolution, tome 2 : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Vive la révolution."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Facture : 3 595 milliards de dette. Pour un banc invisible, c'est cher.",
-  "Le premier qui s'assoit tombe. Ça, c'est le bilan.",
-  "Dix ans de révolution, un ruban tricolore. Applaudissez."
+  "Dix ans après Révolution, son bilan tient en un post : « parfois des erreurs ».",
+  "Il promettait Révolution. On a eu la saison 2 de l'ancien monde.",
+  "Révolution numéro trois : sept Premiers ministres. Ça, c'est de la rotation."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Ruban compris.",
+   "text": "Dans cette ville, tout le monde vote Macron. Vive la révolution.",
    "accent_words": [
-    "Ruban"
+    "révolution"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le maire inaugure un banc. Problème : il n'y a pas de banc.",
-   "accent_words": [
-    "pas de banc"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Sur la plaque, gravé : nouveau monde. Le square, lui, date de 1970.",
-   "accent_words": [
-    "1970"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "Son livre de 2016 s'appelait Révolution. Dix ans après : un ruban.",
+   "text": "Son livre de campagne, en 2016, s'appelait carrément Révolution.",
    "accent_words": [
     "Révolution"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n5",
-   "text": "Photo, applaudissements, post LinkedIn : le vide est officiellement lancé.",
+   "id": "n3",
+   "text": "Révolution numéro un : supprimer l'ISF. Robespierre en tremble encore.",
    "accent_words": [
-    "le vide"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n6",
-   "text": "Facture : 3 595 milliards de dette. Pour un banc invisible, c'est cher.",
-   "accent_words": [
-    "invisible"
+    "encore"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui applaudit encore les inaugurations.",
+   "id": "n4",
+   "text": "Révolution numéro deux : la retraite à 64 ans, au 49.3.",
    "accent_words": [
-    "applaudit"
+    "49.3"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n5",
+   "text": "Révolution numéro trois : sept Premiers ministres. Ça, c'est de la rotation.",
+   "accent_words": [
+    "rotation"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n6",
+   "text": "Dix ans après Révolution, son bilan tient en un post : « parfois des erreurs ».",
+   "accent_words": [
+    "erreurs"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui annonce une révolution et change juste de logo.",
+   "accent_words": [
+    "logo"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -88,11 +88,25 @@
     "mairie",
     "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente rapide sur la mairie ; banderole municipale ; habitants qui traversent la place.",
-   "expected_result": "La ville et son camp posés en une seconde."
+   "comic_action": "Descente sur la ville ; banderole « RÉVOLUTION, TOME 2 » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,75 +115,144 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "banner",
-    "person",
-    "sign",
-    "ground"
+    "table",
+    "scroll",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "INAUGURATION : RIEN",
-   "comic_action": "Le maire cubique coupe un ruban tricolore devant… rien. Applaudissements polis.",
-   "expected_result": "L'inauguration à vide."
+   "onscreen_text": "RÉVOLUTION (2016)",
+   "comic_action": "Un exemplaire géant du livre « RÉVOLUTION » trône sur une table ; le maire le caresse, l'air inspiré.",
+   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "sign",
+    "building",
     "text3d",
-    "road"
+    "person"
    ],
-   "onscreen_text": "NOUVEAU MONDE (1970)",
-   "comic_action": "Gros plan sur un panneau municipal.",
-   "expected_result": "La pique s'affiche en panneau."
+   "onscreen_text": "RÉVOLUTION N°1 : ISF",
+   "comic_action": "Une barricade de coussins devant une tour de luxe ; le panneau « ISF » est retiré avec des gants blancs.",
+   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "scroll",
+    "lift_tribune",
     "text3d",
     "person"
    ],
-   "onscreen_text": "RÉVOLUTION → RUBAN",
-   "comic_action": "Un livre géant « RÉVOLUTION » s'ouvre : il n'en sort qu'un ruban tricolore.",
-   "expected_result": "Le texte interminable."
+   "onscreen_text": "RÉVOLUTION N°2 : 64 ANS",
+   "comic_action": "Une tribune élévatrice monte le chiffre 64 tout en haut ; en bas, les habitants lèvent la tête.",
+   "expected_result": "Escalade 2 : encore plus gros.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "colere",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "window_pass",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "mairie",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "LE VIDE EST LANCÉ",
-   "comic_action": "Post LinkedIn géant sur l'écran : « Fier d'annoncer… » ; trois likes.",
-   "expected_result": "La com' remplace le résultat."
+   "onscreen_text": "RÉVOLUTION N°3 : ×7",
+   "comic_action": "Sept Premiers ministres font la ronde devant la mairie, comme un manège.",
+   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "spin",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
-    "building",
-    "text3d",
     "screen",
-    "person"
+    "text3d",
+    "mairie"
    ],
-   "onscreen_text": "3 595 MILLIARDS",
-   "comic_action": "Compteur géant sur la façade de la tour : les chiffres montent et débordent du bâtiment.",
-   "expected_result": "La dette en compteur municipal."
+   "onscreen_text": "« PARFOIS DES ERREURS »",
+   "comic_action": "Écran géant sur la mairie : le livre « RÉVOLUTION » se referme, remplacé par un post minuscule.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s7",
@@ -178,38 +261,70 @@
    ],
    "camera": "return",
    "set": [
-    "mairie",
+    "road",
     "person",
     "tshirt",
-    "banner"
+    "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la mairie ; un passant en t-shirt de la boutique devant la banderole.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : son livre « Révolution » (2016) comparé au bilan.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui applaudit encore les inaugurations."
+  "text": "Envoie ça au pote qui annonce une révolution et change juste de logo."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 80,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Son livre de 2016 s'appelait Révolution. Dix ans après : un ruban.",
+   "text": "Son livre de campagne, en 2016, s'appelait carrément Révolution.",
    "claim_type": "fait_public",
    "source": "https://actualitte.com/article/30445/presse/revolution-le-livre-programme-d-emmanuel-macron",
    "note": "Livre-programme « Révolution » (XO, 24/11/2016)."
   },
   {
-   "text": "Facture : 3 595 milliards de dette. Pour un banc invisible, c'est cher.",
+   "text": "Révolution numéro un : supprimer l'ISF. Robespierre en tremble encore.",
    "claim_type": "fait_public",
-   "source": "https://www.insee.fr/fr/statistiques/9053525",
-   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
+   "source": "https://www.vie-publique.fr/en-bref/291443-impot-de-solidarite-sur-la-fortune-isf-le-cout-de-son-remplacement",
+   "note": "ISF supprimé en 2018 et remplacé par l'IFI, qui ne taxe plus que l'immobilier ; coût du remplacement évalué par vie-publique."
+  },
+  {
+   "text": "Révolution numéro deux : la retraite à 64 ans, au 49.3.",
+   "claim_type": "fait_public",
+   "source": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
+   "note": "Réforme des retraites (départ à 64 ans) adoptée par le 49.3, sans vote des députés."
+  },
+  {
+   "text": "Révolution numéro trois : sept Premiers ministres. Ça, c'est de la rotation.",
+   "claim_type": "fait_public",
+   "source": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "note": "Sept Premiers ministres depuis 2017 (Philippe, Castex, Borne, Attal, Barnier, Bayrou, Lecornu) ; record de Mitterrand égalé selon la presse."
+  },
+  {
+   "text": "« parfois des erreurs »",
+   "claim_type": "citation_exacte",
+   "source": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
+   "note": "Bilan publié sur X dix ans après sa candidature : « il y a eu parfois des erreurs », « j'ai fait de mon mieux »."
   }
  ],
  "sources": [
@@ -221,13 +336,34 @@
    "note": "Livre-programme « Révolution » (XO, 24/11/2016)."
   },
   {
-   "url": "https://www.insee.fr/fr/statistiques/9053525",
-   "date": "2026-09-29",
+   "url": "https://www.vie-publique.fr/en-bref/291443-impot-de-solidarite-sur-la-fortune-isf-le-cout-de-son-remplacement",
+   "date": "non relevée",
    "consulted": "2026-11-22",
-   "statut": "fait public (Insee)",
-   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
+   "statut": "fait public",
+   "note": "ISF supprimé en 2018 et remplacé par l'IFI, qui ne taxe plus que l'immobilier ; coût du remplacement évalué par vie-publique."
+  },
+  {
+   "url": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
+   "date": "2023-03-16",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Réforme des retraites (départ à 64 ans) adoptée par le 49.3, sans vote des députés."
+  },
+  {
+   "url": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "date": "2025-10",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Sept Premiers ministres depuis 2017 (Philippe, Castex, Borne, Attal, Barnier, Bayrou, Lecornu) ; record de Mitterrand égalé selon la presse."
+  },
+  {
+   "url": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
+   "date": "2026-11-17",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (post X)",
+   "note": "Bilan publié sur X dix ans après sa candidature : « il y a eu parfois des erreurs », « j'ai fait de mon mieux »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : le livre « Révolution » (2016) face à une inauguration de rien ; facture finale = la dette record. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — son livre « Révolution » (2016) comparé au bilan. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

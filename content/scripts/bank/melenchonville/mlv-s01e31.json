@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-31",
  "format": "C",
- "title_cover": "Constituante permanente",
+ "title_cover": "Sixième, en attente",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le conseil de quartier écrit une Constitution par semaine.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, même le banc public a son préambule.",
-  "Mélenchonville : la République numéro six, version bêta."
+  "Dans cette ville, tout le monde vote Mélenchon. Version six.",
+  "Mélenchon promet une nouvelle République. Il garde l'ancien candidat.",
+  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
+  "Bienvenue à Mélenchonville : sixième, en attente.",
+  "Mélenchon en une vidéo : sixième, en attente."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La Constitution est prête. Il manque un article : comment on s'arrête.",
-  "Une Constitution parfaite, sans article pour lever la séance.",
-  "Version 6.4 installée. Bugs : tous."
+  "La Sixième République peut attendre. Le quatrième Mélenchon, lui, est prêt.",
+  "Nouvelle République, ancien candidat : la mise à jour a oublié un fichier.",
+  "Une République toute neuve, mais le même candidat qu'en 2012."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Version 6.0.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Version six.",
    "accent_words": [
-    "Version 6.0"
+    "Version six"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le conseil de quartier s'est proclamé Constituante. Il réécrit l'ordre du jour.",
+   "text": "Sa grande idée depuis 2012 : une Sixième République.",
    "accent_words": [
-    "Constituante"
+    "une Sixième République"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Son programme promet une Sixième République. Ici, on est déjà à la version 6.4.",
+   "text": "Programme 2027 : la voilà reléguée en fin d'ouvrage.",
    "accent_words": [
-    "version 6.4"
+    "fin d'ouvrage"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Chaque lampadaire a son article. Le banc a son préambule.",
+   "text": "Au Bourget, il propose plutôt de changer la devise. La Constitution attendra.",
    "accent_words": [
-    "préambule"
+    "La Constitution attendra"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Au Bourget, il a dit peuple treize fois. Ici, chaque article le dit quatorze.",
+   "text": "Une République toute neuve, mais le même candidat qu'en 2012.",
    "accent_words": [
-    "quatorze"
+    "qu'en 2012"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "La Constitution est prête. Il manque un article : comment on s'arrête.",
+   "text": "La Sixième République peut attendre. Le quatrième Mélenchon, lui, est prêt.",
    "accent_words": [
-    "comment on s'arrête"
+    "est prêt"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui propose de tout refaire, mais jamais de finir.",
+   "text": "Envoie ça au pote qui veut tout refaire sans jamais finir.",
    "accent_words": [
-    "finir"
+    "jamais finir"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur une salle de quartier ; banderole « CONSTITUANTE DU QUARTIER ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · SIXIÈME, EN ATTENTE",
+   "comic_action": "Descente sur la ville : banderole « SIXIÈME, EN ATTENTE », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,13 +113,21 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
-    "person"
+    "column",
+    "arch",
+    "text3d"
    ],
-   "onscreen_text": "ORDRE DU JOUR V12",
-   "comic_action": "Un habitant raye l'ordre du jour et le réécrit, puis recommence.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "6E RÉPUBLIQUE",
+   "comic_action": "Une arche neuve s'élève, encore sous bâche.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,13 +136,20 @@
    ],
    "camera": "orbit",
    "set": [
-    "screen",
+    "scroll",
     "text3d",
-    "person"
+    "table"
    ],
-   "onscreen_text": "RÉPUBLIQUE V6.4",
-   "comic_action": "Orbite autour d'un écran : barre de mise à jour « 6.4 », bloquée à 99 %.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "DERNIÈRE PAGE",
+   "comic_action": "Le parchemin se déroule jusqu'à la toute fin.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -130,14 +158,20 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "lamp",
-    "bench",
-    "sign",
-    "text3d"
+    "column",
+    "text3d",
+    "sign"
    ],
-   "onscreen_text": "ARTICLE 12 : LAMPADAIRE",
-   "comic_action": "Travelling : chaque lampadaire porte une plaque d'article de loi.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "NOUVELLE DEVISE D'ABORD",
+   "comic_action": "On repeint le fronton ; l'arche reste sous bâche.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -147,12 +181,25 @@
    "camera": "closeup",
    "set": [
     "tribune",
-    "person",
-    "text3d"
+    "banner",
+    "person"
    ],
-   "onscreen_text": "PEUPLE ×14",
-   "comic_action": "Un habitant au pupitre ; un compteur « PEUPLE » dépasse 13 et passe à 14.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "MÊME CANDIDAT DEPUIS 2012",
+   "comic_action": "Affiche 2012 recollée, juste la date changée.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s6",
@@ -161,13 +208,20 @@
    ],
    "camera": "descend",
    "set": [
-    "scroll",
-    "building",
+    "arch",
+    "banner",
     "text3d"
    ],
-   "onscreen_text": "ARTICLE MANQUANT : FIN",
-   "comic_action": "Plan large : un parchemin immense sort de la salle et fait le tour du pâté de maisons.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "4E MÉLENCHON : PRÊT",
+   "comic_action": "La bâche tombe : derrière l'arche, une affiche « 2027 ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "fier"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -181,51 +235,85 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique éteint la lumière, la séance continue.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui propose de tout refaire, mais jamais de finir."
+  "text": "Envoie ça au pote qui veut tout refaire sans jamais finir."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 85,
+ "word_count": 72,
  "claims": [
   {
-   "text": "Son programme promet une Sixième République. Ici, on est déjà à la version 6.4.",
+   "text": "Sa grande idée depuis 2012 : une Sixième République.",
    "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
-   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   },
   {
-   "text": "Au Bourget, il a dit peuple treize fois. Ici, chaque article le dit quatorze.",
+   "text": "Programme 2027 : la voilà reléguée en fin d'ouvrage.",
    "claim_type": "fait_public",
-   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
-   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
+   "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+   "note": "Programme 2027 : 1 069 mesures, dont 238 nouvelles ; la VIe République reléguée en fin d'ouvrage."
+  },
+  {
+   "text": "Au Bourget, il propose plutôt de changer la devise. La Constitution attendra.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+  },
+  {
+   "text": "Une République toute neuve, mais le même candidat qu'en 2012.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "sources": [
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+  },
   {
    "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
    "date": "2026-11",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
+   "note": "Programme 2027 : 1 069 mesures, dont 238 nouvelles ; la VIe République reléguée en fin d'ouvrage."
   },
   {
-   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
-   "date": "2026-11",
+   "url": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "date": "2026-11-07",
    "consulted": "2026-11-22",
-   "statut": "fait (analyse lexicale)",
-   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
+   "statut": "fait",
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "date": "2026-06",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : la Constituante et la VIe République promises, en version infinie. Cadre : le conseil de quartier. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Sixième, en attente. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

@@ -4,23 +4,23 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Débat sur abonnement",
- "anchor": "européennes 2024 : débat refusé sur Public Sénat, chaîne jugée trop petite ; débats conditionnés à l'audience.",
+ "title_cover": "Audience minimum",
+ "anchor": "les débats sous condition d'audience (chaîne trop petite)",
  "meme_key": "DEBAT",
- "situation": "Débat sur abonnement",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "situation": "Audience minimum",
+ "ressort": "un thème unique en escalade : truc connu, trois crans, chute retournée",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, pour poser une question au maire, il faut dix mille abonnés.",
-  "Bardellaville : trop petite, la chaîne ; jamais trop petite, l'excuse.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : débat sur abonnement."
+  "Dans cette ville, tout le monde vote Bardella. Débats sur abonnement.",
+  "Bardella ne débat que devant assez de monde. Problème.",
+  "Bardellaville : débat réservé aux grandes audiences.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Audience minimum."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Trop petite, la chaîne. Jamais trop petite, l'excuse.",
-  "Le conseil de quartier, quarante habitants, est officiellement trop petit.",
-  "Pour qu'il réponde : un million d'abonnés et un plateau climatisé."
+  "Il mesure l'audience des autres. La sienne, il la vide.",
+  "Il mesure l'audience des autres, il vide la sienne.",
+  "Trop petite, la chaîne. Trop petite, l'audience."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -28,13 +28,13 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Bardella. Débats sur abonnement.",
    "accent_words": [
-    "sur abonnement"
+    "abonnement"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2024, il refuse un débat des européennes : chaîne jugée trop petite.",
+   "text": "2024 : il refuse un débat des européennes, chaîne jugée trop petite.",
    "accent_words": [
     "trop petite"
    ],
@@ -42,41 +42,41 @@
   },
   {
    "id": "n3",
-   "text": "Seule grande tête de liste absente. Les autres débattent, lui calcule l'audience.",
+   "text": "Seule grande tête de liste absente. Les autres débattent, lui compte l'audience.",
    "accent_words": [
-    "l'audience"
+    "compte l'audience"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Ici, pour poser une question au maire, il faut dix mille abonnés.",
+   "text": "Ironie : son passage au 20 heures fait le plus bas niveau d'audience.",
    "accent_words": [
-    "dix mille"
+    "plus bas niveau"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le conseil de quartier, quarante habitants, est officiellement trop petit.",
+   "text": "Trop petite, la chaîne. Trop petite, l'audience. Bientôt, trop petite, la France.",
    "accent_words": [
-    "trop petit"
+    "France"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Trop petite, la chaîne. Jamais trop petite, l'excuse.",
+   "text": "Il mesure l'audience des autres. La sienne, il la vide.",
    "accent_words": [
-    "l'excuse"
+    "vide"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui refuse de s'expliquer s'il n'y a pas assez de monde.",
+   "text": "Envoie ça au pote qui refuse de parler s'il n'y a pas assez de monde.",
    "accent_words": [
-    "assez de monde"
+    "monde"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -94,9 +94,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; une borne « DÉBAT : INSÉREZ VOTRE AUDIENCE ».",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "DÉBATS SUR ABONNEMENT",
+   "comic_action": "Descente sur la ville ; banderole « DÉBATS SUR ABONNEMENT » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -110,25 +121,48 @@
     "studio_light",
     "text3d"
    ],
-   "onscreen_text": "CHAÎNE : TROP PETITE",
-   "comic_action": "Un pupitre minuscule ; le maire cubique le toise et s'en va.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "CHAÎNE TROP PETITE",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « CHAÎNE TROP PETITE ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
+    "tribune",
+    "router_lectern",
     "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "AUDIENCE : À VÉRIFIER",
-   "comic_action": "Plateau : cinq débatteurs ; dans la coulisse, il compte sur une calculette.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "IL COMPTE L'AUDIENCE",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « IL COMPTE L'AUDIENCE ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -137,46 +171,81 @@
    ],
    "camera": "closeup",
    "set": [
-    "ring_light",
-    "tripod_camera",
-    "person",
-    "screen"
+    "tribune",
+    "studio_light",
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "QUESTION : 10 K ABONNÉS",
-   "comic_action": "Un habitant tend son téléphone : compteur insuffisant, micro refusé.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "20 H : PLUS BAS NIVEAU",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « 20 H : PLUS BAS NIVEAU ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "visage": "dort"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "column",
-    "mairie",
+    "screen",
     "text3d",
-    "person"
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "CONSEIL : TROP PETIT",
-   "comic_action": "Entre deux colonnes, quarante habitants sous un panneau « NON ÉLIGIBLE AU MAIRE ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TROP PETITE, LA FRANCE ?",
+   "comic_action": "Écran géant : « TROP PETITE, LA FRANCE ? ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie"
+    "screen"
    ],
-   "onscreen_text": "EXCUSE : TAILLE XXL",
-   "comic_action": "Un tampon géant « TROP PETIT » s'abat sur une invitation. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "SON AUDIENCE : VIDÉE",
+   "comic_action": "Plan final, tenir une seconde : « SON AUDIENCE : VIDÉE ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -190,35 +259,50 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt compte la foule avant d'ouvrir la bouche.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE DIFFICILE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE DIFFICILE ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui refuse de s'expliquer s'il n'y a pas assez de monde."
+  "text": "Envoie ça au pote qui refuse de parler s'il n'y a pas assez de monde."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 81,
+ "word_count": 85,
  "claims": [
   {
    "segment": "n2",
-   "text": "En 2024, il refuse un débat des européennes : chaîne jugée trop petite.",
+   "text": "2024 : il refuse un débat des européennes, chaîne jugée trop petite.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
    "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   },
   {
    "segment": "n3",
-   "text": "Seule grande tête de liste absente. Les autres débattent, lui calcule l'audience.",
+   "text": "Seule grande tête de liste absente. Les autres débattent, lui compte l'audience.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
    "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
+  },
+  {
+   "segment": "n4",
+   "text": "Ironie : son passage au 20 heures fait le plus bas niveau d'audience.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/audiences-access-20h-jordan-bardella-fait-chuter-le-20-heures-de-france-2-a-son-plus-bas-niveau-quotidien-en-forte-hausse-sur-tmc/654472",
+   "note": "Son passage fait chuter le 20 heures de France 2 à son plus bas niveau ; Quotidien en forte hausse sur TMC."
   }
  ],
  "sources": [
@@ -226,10 +310,17 @@
    "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
    "date": "2024-03-04",
    "consulted": "2026-11-22",
-   "statut": "fait (refus) + mème (réactions)",
+   "statut": "fait",
    "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
+  },
+  {
+   "url": "https://www.ozap.com/actu/audiences-access-20h-jordan-bardella-fait-chuter-le-20-heures-de-france-2-a-son-plus-bas-niveau-quotidien-en-forte-hausse-sur-tmc/654472",
+   "date": "2026 (date exacte non relevée)",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Son passage fait chuter le 20 heures de France 2 à son plus bas niveau ; Quotidien en forte hausse sur TMC."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = européennes 2024 : débat refusé sur Public Sénat, chaîne jugée trop petite ; débats conditionnés à l'audience. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = les débats sous condition d'audience (chaîne trop petite). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

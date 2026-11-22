@@ -3,75 +3,75 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-32",
  "format": "C",
- "title_cover": "Mise à jour 2.0",
+ "title_cover": "Nous verrons",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, la ville se met à jour. Le programme, jamais.",
-  "Bardellaville 2.0 : encore plus lisse.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : mise à jour 2.0."
+  "Dans cette ville, tout le monde vote Bardella. On verra.",
+  "Le programme de Bardella en deux mots : nous verrons.",
+  "Bardellaville : on verra. Toujours.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Nous verrons."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Prochaine version : un programme. Date de sortie : non communiquée.",
-  "Bug connu : toute question précise fait planter le maire.",
-  "Correctif : la touche Chiffrage a été retirée, jugée peu utilisée."
+  "Nous verrons : tout le programme tient dedans.",
+  "Nous verrons : tout le programme tient dedans.",
+  "Deux mots, zéro engagement."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Mise à jour disponible.",
+   "text": "Dans cette ville, tout le monde vote Bardella. On verra.",
    "accent_words": [
-    "Mise à jour"
+    "verra"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Version 2.0 : réponses calibrées, encore plus lisses, encore plus creuses.",
+   "text": "Juin 2024 : abroger la réforme des retraites ? Sur RTL : « Nous verrons ».",
    "accent_words": [
-    "creuses"
+    "verrons"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n3",
+   "text": "Les autres mesures ? Après un audit des comptes. Nous verrons.",
+   "accent_words": [
+    "audit"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n3",
-   "text": "Correctif : la touche Chiffrage a été retirée, jugée peu utilisée.",
-   "accent_words": [
-    "Chiffrage"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n4",
-   "text": "Plan cent jours inclus. Méthode : non fournie avec l'appareil.",
+   "text": "Matignon ? Pas sans majorité absolue. Il n'y en a pas eu.",
    "accent_words": [
-    "non fournie"
+    "eu"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Bug connu : toute question précise fait planter le maire.",
+   "text": "2026 : il examine même un report de l'âge légal. Nous verrons, en marche arrière.",
    "accent_words": [
-    "planter"
+    "Nous verrons"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Prochaine version : un programme. Date de sortie : non communiquée.",
+   "text": "Nous verrons : tout le programme tient dedans.",
    "accent_words": [
-    "non communiquée"
+    "dedans"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui attend la mise à jour depuis trois livres.",
+   "text": "Envoie ça au pote qui répond nous verrons à tout.",
    "accent_words": [
-    "trois livres"
+    "tout"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE 2.0",
-   "comic_action": "Descente sur la mairie ; barre de téléchargement géante sur la façade.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "ON VERRA",
+   "comic_action": "Descente sur la ville ; banderole « ON VERRA » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,62 +111,110 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
+    "studio_light",
     "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "NOUVEAUTÉ : + LISSE",
-   "comic_action": "Écran : notes de version qui défilent, chaque ligne commence par « Amélioration ».",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« NOUS VERRONS »",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « « NOUS VERRONS » ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "screen",
+    "text3d",
+    "table",
+    "form_stack"
    ],
-   "onscreen_text": "TOUCHE CHIFFRAGE : RETIRÉE",
-   "comic_action": "Un clavier géant en vitrine ; un agent arrache une touche et la jette.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "APRÈS UN AUDIT",
+   "comic_action": "Compteur géant sur l'écran : « APRÈS UN AUDIT ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
-    "person",
-    "text3d"
+    "screen",
+    "banner",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "MÉTHODE : NON FOURNIE",
-   "comic_action": "Une boîte « CENT JOURS » ouverte : à l'intérieur, que du papier bulle.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "MAJORITÉ ? PAS EUE",
+   "comic_action": "Soirée électorale : l'écran affiche « MAJORITÉ ? PAS EUE ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "tribune",
-    "router_lectern",
-    "studio_light",
-    "text3d"
+    "scroll",
+    "form_stack",
+    "table",
+    "person"
    ],
-   "onscreen_text": "ERREUR 404 : RÉPONSE",
-   "comic_action": "Un journaliste pose une question ; le pupitre affiche un sablier, puis redémarre.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "NOUS VERRONS EN MARCHE ARRIÈRE",
+   "comic_action": "Formulaire de retraite déplié ; en gros « NOUS VERRONS EN MARCHE ARRIÈRE ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,14 +223,26 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
+    "tribune",
+    "studio_light",
     "text3d",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "PROGRAMME : BIENTÔT",
-   "comic_action": "Une affiche « BIENTÔT » collée sur une autre affiche « BIENTÔT ». Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "TOUT LE PROGRAMME",
+   "comic_action": "Plan final, tenir une seconde : « TOUT LE PROGRAMME ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,53 +256,99 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt fixe une barre de chargement bloquée.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE INDÉCIS",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE INDÉCIS ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui attend la mise à jour depuis trois livres."
+  "text": "Envoie ça au pote qui répond nous verrons à tout."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 78,
+ "word_count": 82,
  "claims": [
   {
    "segment": "n2",
-   "text": "Version 2.0 : réponses calibrées, encore plus lisses, encore plus creuses.",
+   "text": "Juin 2024 : abroger la réforme des retraites ? Sur RTL : « Nous verrons ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.boursorama.com/bourse/actualites/retraites-jordan-bardella-n-est-plus-si-presse-d-abroger-la-reforme-de-macron-101b949b9967c92520b3be1c9ef2c30f",
+   "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
+  },
+  {
+   "segment": "n3",
+   "text": "Les autres mesures ? Après un audit des comptes. Nous verrons.",
    "claim_type": "fait_public",
-   "source": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
-   "note": "Candidat aux réponses calibrées et creuses."
+   "source": "https://www.publicsenat.fr/actualites/politique/reforme-des-retraites-impots-prix-planchers-comment-le-rn-reajuste-son-programme-au-fil-de-la-campagne",
+   "note": "Retraites, impôts, prix planchers : le RN réajuste son programme au fil de la campagne ; audit des comptes avant certaines mesures."
   },
   {
    "segment": "n4",
-   "text": "Plan cent jours inclus. Méthode : non fournie avec l'appareil.",
+   "text": "Matignon ? Pas sans majorité absolue. Il n'y en a pas eu.",
    "claim_type": "fait_public",
-   "source": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
-   "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
+   "source": "https://lcp.fr/actualites/matignon-jordan-bardella-reclame-une-majorite-absolue-pour-gouverner-gabriel-attal",
+   "note": "Pas de Matignon sans majorité absolue. ; Soir du second tour : RN troisième ; il dénonce « l'alliance du déshonneur ».",
+   "sources_complementaires": [
+    "https://www.publicsenat.fr/actualites/politique/legislatives-jordan-bardella-denonce-lalliance-du-deshonneur-entre-lexecutif-et-la-gauche"
+   ]
+  },
+  {
+   "segment": "n5",
+   "text": "2026 : il examine même un report de l'âge légal. Nous verrons, en marche arrière.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/au-rn-la-reforme-des-retraites-divise-jordan-bardella-et-marine-le-pen-sur-le-programme-pour-la-presidentielle-2027",
+   "note": "Bardella prend ses distances avec la réforme de Marine Le Pen, dit « examiner » un report de l'âge légal, juge le dossier inflammable (d'après Le Monde, mai 2026)."
   }
  ],
  "sources": [
   {
-   "url": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
-   "date": "2026-05-31",
+   "url": "https://www.boursorama.com/bourse/actualites/retraites-jordan-bardella-n-est-plus-si-presse-d-abroger-la-reforme-de-macron-101b949b9967c92520b3be1c9ef2c30f",
+   "date": "2024-06-12",
    "consulted": "2026-11-22",
-   "statut": "opinion (chronique ; formule de l'auteur non reprise)",
-   "note": "Candidat aux réponses calibrées et creuses."
+   "statut": "fait + citation exacte",
+   "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
   },
   {
-   "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
-   "date": "2026-11-04",
+   "url": "https://www.publicsenat.fr/actualites/politique/reforme-des-retraites-impots-prix-planchers-comment-le-rn-reajuste-son-programme-au-fil-de-la-campagne",
+   "date": "2024-06",
    "consulted": "2026-11-22",
-   "statut": "fait + appréciation AFP",
-   "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
+   "statut": "fait",
+   "note": "Retraites, impôts, prix planchers : le RN réajuste son programme au fil de la campagne ; audit des comptes avant certaines mesures."
+  },
+  {
+   "url": "https://lcp.fr/actualites/matignon-jordan-bardella-reclame-une-majorite-absolue-pour-gouverner-gabriel-attal",
+   "date": "2024-06-17",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Pas de Matignon sans majorité absolue."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/legislatives-jordan-bardella-denonce-lalliance-du-deshonneur-entre-lexecutif-et-la-gauche",
+   "date": "2024-07-07",
+   "consulted": "2026-11-22",
+   "statut": "fait + citation exacte",
+   "note": "Soir du second tour : RN troisième ; il dénonce « l'alliance du déshonneur »."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/au-rn-la-reforme-des-retraites-divise-jordan-bardella-et-marine-le-pen-sur-le-programme-pour-la-presidentielle-2027",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Bardella prend ses distances avec la réforme de Marine Le Pen, dit « examiner » un report de l'âge légal, juge le dossier inflammable (d'après Le Monde, mai 2026)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = réponses calibrées et creuses (chronique Libération) et cent jours sans méthode : les notes de version de la ville. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = « Nous verrons » (retraites 2024) : le programme au conditionnel (refrain). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

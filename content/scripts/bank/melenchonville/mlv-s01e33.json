@@ -3,67 +3,67 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-33",
  "format": "A",
- "title_cover": "Jumelé avec les patrons",
+ "title_cover": "Dîner avec le CAC",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : jumelée avec la ville des grands patrons.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, on taxe les riches, puis on dîne avec eux.",
-  "Mélenchonville : le jumelage le plus cordial de la gauche."
+  "Dans cette ville, tout le monde vote Mélenchon. Table pour quatorze.",
+  "Mélenchon veut taxer les riches. Il dîne avec eux d'abord.",
+  "Celle-là, Méluche ne la partagera pas.",
+  "Bienvenue à Mélenchonville : dîner avec le CAC.",
+  "Mélenchon en une vidéo : dîner avec le CAC."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Taxer les riches le jour, dîner avec eux le soir : ça s'appelle le dialogue.",
-  "Trois heures de dîner, zéro désaccord réglé.",
-  "La lutte des classes, en menu dégustation."
+  "Taxer les riches au meeting, trinquer avec eux après : le rapport de force, version dessert.",
+  "Trois heures à table avec le CAC 40 : la révolution passe au dessert.",
+  "Pourtant, au Bourget, sa salle chantait Taxer les riches."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Jumelage signé.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Table pour quatorze.",
    "accent_words": [
-    "Jumelage signé"
+    "Table pour quatorze"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "La ville se jumelle avec Patronville. Cérémonie : trois heures de dîner.",
+   "text": "En novembre, il dîne trois heures avec treize grands patrons.",
    "accent_words": [
-    "trois heures"
+    "grands patrons"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Comme en novembre, quand il dîne avec treize grands patrons.",
+   "text": "Trois heures ! Plus long que son discours du Bourget, une heure sept.",
    "accent_words": [
-    "treize grands patrons"
+    "heure sept"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Ambiance cordiale, désaccords intacts. Le fromage, lui, a fait l'unanimité.",
+   "text": "Ambiance cordiale, désaccords intacts. Personne n'a été taxé au dessert.",
    "accent_words": [
-    "l'unanimité"
+    "au dessert"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Au dessert, on scande « Taxer les riches ». Les riches reprennent du café.",
+   "text": "Pourtant, au Bourget, sa salle chantait Taxer les riches.",
    "accent_words": [
-    "reprennent du café"
+    "les riches"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Taxer les riches le jour, dîner avec eux le soir : ça s'appelle le dialogue.",
+   "text": "Taxer les riches au meeting, trinquer avec eux après : le rapport de force, version dessert.",
    "accent_words": [
-    "le dialogue"
+    "version dessert"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,9 +89,22 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur la mairie ; banderole « JUMELAGE AVEC PATRONVILLE ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · DÎNER AVEC LE CAC",
+   "comic_action": "Descente sur la ville : banderole « DÎNER AVEC LE CAC », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -102,11 +115,19 @@
    "set": [
     "table",
     "person",
-    "banner"
+    "studio_light"
    ],
-   "onscreen_text": "JUMELAGE : DÎNER",
-   "comic_action": "Une longue table dressée sur le parvis, nappe blanche, verres en cristal.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DÎNER : 13 PATRONS",
+   "comic_action": "Grande table dressée, treize chaises en cuir.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "verre"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,42 +137,64 @@
    "camera": "orbit",
    "set": [
     "table",
-    "person",
-    "text3d"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "13 PATRONS",
-   "comic_action": "Orbite : treize convives en costume, une chaise au bout pour le maire.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "3 H > 1 H 07",
+   "comic_action": "Un chronomètre géant au milieu des plats.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
     "table",
     "text3d",
     "person"
    ],
-   "onscreen_text": "FROMAGE : UNANIMITÉ",
-   "comic_action": "Gros plan sur le plateau de fromages, toutes les mains levées dessus.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "TAXE AU DESSERT : 0",
+   "comic_action": "Le serveur apporte le dessert ; personne ne paie.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "objet": "verre"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "table",
+    "tribune",
     "person",
     "banner"
    ],
    "onscreen_text": "TAXER LES RICHES",
-   "comic_action": "Travelling : la foule chante derrière les barrières, les convives tendent leur tasse.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "comic_action": "Retour en arrière : la foule scande, poings levés.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "arms_up",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,14 +203,21 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
     "table",
-    "text3d",
-    "person"
+    "tribune",
+    "text3d"
    ],
-   "onscreen_text": "LE DIALOGUE",
-   "comic_action": "Plan large : à gauche, la manif ; à droite, le dîner ; les deux sous la même banderole.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "RAPPORT DE FORCE : DESSERT",
+   "comic_action": "Écran partagé : le meeting, puis le dîner aux bougies.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro",
+     "objet": "verre"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -181,9 +231,17 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique ramasse les miettes.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -195,23 +253,35 @@
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 80,
+ "word_count": 78,
  "claims": [
   {
-   "text": "Comme en novembre, quand il dîne avec treize grands patrons.",
+   "text": "En novembre, il dîne trois heures avec treize grands patrons.",
    "claim_type": "fait_public",
    "source": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
    "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
   },
   {
-   "text": "Ambiance cordiale, désaccords intacts. Le fromage, lui, a fait l'unanimité.",
+   "text": "Trois heures ! Plus long que son discours du Bourget, une heure sept.",
    "claim_type": "fait_public",
    "source": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
    "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
   },
   {
-   "text": "« Taxer les riches »",
-   "claim_type": "citation_exacte",
+   "text": "Trois heures ! Plus long que son discours du Bourget, une heure sept.",
+   "claim_type": "fait_public",
+   "source": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
+   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
+  },
+  {
+   "text": "Ambiance cordiale, désaccords intacts. Personne n'a été taxé au dessert.",
+   "claim_type": "fait_public",
+   "source": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
+   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
+  },
+  {
+   "text": "Pourtant, au Bourget, sa salle chantait Taxer les riches.",
+   "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
    "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
   }
@@ -225,6 +295,13 @@
    "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
   },
   {
+   "url": "https://institutmontaigne.org/expressions/paroles-de-candidats-au-bourget-jean-luc-melenchon-et-la-defense-des-causes-communes",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Le Bourget : environ 1 h 07, 6 821 mots, « peuple » 13 fois."
+  },
+  {
    "url": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
    "date": "2026-11-07",
    "consulted": "2026-11-22",
@@ -233,5 +310,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le dîner de trois heures avec treize grands patrons (novembre 2026) face à « Taxer les riches ». Cadre : le jumelage de la ville. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Dîner avec le CAC. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

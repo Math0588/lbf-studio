@@ -3,75 +3,75 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-26",
  "format": "A",
- "title_cover": "Politique sans politique",
+ "title_cover": "Pas l'arbre généalogique",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, on fait de la politique sans en parler.",
-  "Bardellaville : le budget n'est pas assez viral pour exister.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : politique sans politique."
+  "Dans cette ville, tout le monde vote Bardella. Le parti, lui, a un passé.",
+  "Le parti de Bardella a changé de nom. Pas d'histoire.",
+  "Bardellaville : nouvelle enseigne, vieilles archives.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Pas l'arbre généalogique."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Un politique dépolitisé, c'est un pompier qui poste des vidéos de bougies.",
-  "Le budget ? Pas assez viral. Le logement ? Pas assez vertical.",
-  "À la mairie, les réunions publiques sont remplacées par des unboxings."
+  "Ils ont changé le nom. Pas l'arbre généalogique du parti.",
+  "Ils ont changé le nom. Pas l'arbre généalogique.",
+  "Nouveau nom, mêmes archives."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Sans parler politique.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Le parti, lui, a un passé.",
    "accent_words": [
-    "Sans parler politique"
+    "passé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sa stratégie TikTok : des formats courts et dépolitisés. Pour un politique.",
+   "text": "Il préside un parti fondé en 1972 avec d'anciens de la Collaboration.",
    "accent_words": [
-    "dépolitisés"
+    "Collaboration"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Bonbons, coulisses, selfies : tout y passe, sauf un chiffrage.",
+   "text": "Premier trésorier du FN : Pierre Bousquet, ancien de la Waffen-SS.",
    "accent_words": [
-    "chiffrage"
+    "Waffen-SS"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "À la mairie, les réunions publiques sont remplacées par des unboxings.",
+   "text": "Le fondateur a qualifié les chambres à gaz de « point de détail ».",
    "accent_words": [
-    "unboxings"
+    "détail"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n5",
-   "text": "Le budget ? Pas assez viral. Le logement ? Pas assez vertical.",
+   "text": "2018 : on change le nom. FN devient RN.",
    "accent_words": [
-    "vertical"
+    "nom"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Un politique dépolitisé, c'est un pompier qui poste des vidéos de bougies.",
+   "text": "Ils ont changé le nom. Pas l'arbre généalogique du parti.",
    "accent_words": [
-    "bougies"
+    "arbre généalogique"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui suit la politique en vidéos de quinze secondes.",
+   "text": "Envoie ça au pote qui croit que le RN est né en 2018.",
    "accent_words": [
-    "quinze secondes"
+    "2018"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; panneau « SUJETS QUI FÂCHENT : HORS CADRE ».",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "LE PARTI A UN PASSÉ",
+   "comic_action": "Descente sur la ville ; banderole « LE PARTI A UN PASSÉ » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,14 +111,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "ring_light",
-    "tripod_camera",
-    "person",
-    "screen"
+    "scroll",
+    "column",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "DÉPOLITISÉ ✓",
-   "comic_action": "Sous ring light, une case « POLITIQUE » est décochée avant de lancer l'enregistrement.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "FONDÉ EN 1972",
+   "comic_action": "Parchemin d'archives déroulé entre deux colonnes ; en lettres 3D « FONDÉ EN 1972 ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,62 +139,108 @@
    ],
    "camera": "closeup",
    "set": [
-    "studio_light",
-    "tripod_camera",
-    "table",
+    "scroll",
+    "column",
+    "text3d",
     "person"
    ],
-   "onscreen_text": "CHIFFRAGE : NON TROUVÉ",
-   "comic_action": "Sur la table de tournage : bonbons, perche, miroir ; une calculatrice est poussée hors champ.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "1ER TRÉSORIER : EX-WAFFEN-SS",
+   "comic_action": "Parchemin d'archives déroulé entre deux colonnes ; en lettres 3D « 1ER TRÉSORIER : EX-WAFFEN-SS ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shake"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "table",
-    "screen",
-    "sign",
-    "building"
+    "scroll",
+    "column",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "CONSEIL = UNBOXING",
-   "comic_action": "Par la fenêtre : un élu ouvre lentement un carton « BUDGET » devant une caméra ; il est vide.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "« POINT DE DÉTAIL »",
+   "comic_action": "Parchemin d'archives déroulé entre deux colonnes ; en lettres 3D « « POINT DE DÉTAIL » ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    },
+    {
+     "who": "foule",
+     "geste": "cross_arms"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "facade_row",
-    "facade_set",
-    "person",
-    "banner"
+    "banner",
+    "arch",
+    "text3d",
+    "facade_set"
    ],
-   "onscreen_text": "LOGEMENT : FORMAT REFUSÉ",
-   "comic_action": "Rangée de façades : un immeuble couché est refusé, un immeuble étroit et haut est validé.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "FN → RN",
+   "comic_action": "Sous une arche, on change l'enseigne ; banderole « FN → RN ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "road",
-    "building",
-    "person",
-    "bin"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "POMPIER · BOUGIES",
-   "comic_action": "Une rue enfumée ; un camion de pompier filme une bougie parfumée. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "PAS L'ARBRE GÉNÉALOGIQUE",
+   "comic_action": "Plan final, tenir une seconde : « PAS L'ARBRE GÉNÉALOGIQUE ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,46 +254,102 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt fait défiler son écran à toute vitesse.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI A OUBLIÉ",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI A OUBLIÉ ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui suit la politique en vidéos de quinze secondes."
+  "text": "Envoie ça au pote qui croit que le RN est né en 2018."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 81,
+ "word_count": 83,
  "claims": [
   {
    "segment": "n2",
-   "text": "Sa stratégie TikTok : des formats courts et dépolitisés. Pour un politique.",
+   "text": "Il préside un parti fondé en 1972 avec d'anciens de la Collaboration.",
    "claim_type": "fait_public",
-   "source": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
-   "note": "Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits."
+   "source": "https://www.publicsenat.fr/actualites/politique/de-l-activisme-radical-a-la-normalisation-retour-sur-les-50-ans-du-fn-222269",
+   "note": "FN créé le 5 octobre 1972, vitrine d'Ordre nouveau ; statuts déposés par un ancien Waffen-SS (Bousquet) et Jean-Marie Le Pen ; flamme calquée sur celle du MSI italien. ; Naissance du FN en 1972 : Jean-Marie Le Pen rassemble d'anciens collaborateurs, des vétérans de la Waffen-SS et des partisans de l'Algérie française.",
+   "sources_complementaires": [
+    "https://www.rtbf.be/article/comment-est-ne-le-front-national-10853858"
+   ]
   },
   {
    "segment": "n3",
-   "text": "Bonbons, coulisses, selfies : tout y passe, sauf un chiffrage.",
+   "text": "Premier trésorier du FN : Pierre Bousquet, ancien de la Waffen-SS.",
    "claim_type": "fait_public",
-   "source": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
-   "note": "Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits."
+   "source": "https://en.wikipedia.org/wiki/Pierre_Bousquet",
+   "note": "Pierre Bousquet, ancien de la division Charlemagne de la Waffen-SS, membre fondateur et premier trésorier du Front national (1972). ; FN créé le 5 octobre 1972, vitrine d'Ordre nouveau ; statuts déposés par un ancien Waffen-SS (Bousquet) et Jean-Marie Le Pen ; flamme calquée sur celle du MSI italien.",
+   "sources_complementaires": [
+    "https://www.publicsenat.fr/actualites/politique/de-l-activisme-radical-a-la-normalisation-retour-sur-les-50-ans-du-fn-222269"
+   ]
+  },
+  {
+   "segment": "n4",
+   "text": "Le fondateur a qualifié les chambres à gaz de « point de détail ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.universalis.fr/evenement/13-21-septembre-1987-indignation-apres-les-declarations-de-jean-marie-le-pen-sur-les-chambres-a-gaz/",
+   "note": "Grand Jury RTL-Le Monde : Jean-Marie Le Pen qualifie les chambres à gaz de « point de détail » de l'histoire de la Deuxième Guerre mondiale."
+  },
+  {
+   "segment": "n5",
+   "text": "2018 : on change le nom. FN devient RN.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
+   "note": "Le Front national devient Rassemblement national ; la flamme du logo est conservée, rangée dans un cercle."
   }
  ],
  "sources": [
   {
-   "url": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
-   "date": "2024-06-21",
+   "url": "https://www.publicsenat.fr/actualites/politique/de-l-activisme-radical-a-la-normalisation-retour-sur-les-50-ans-du-fn-222269",
+   "date": "2022-10",
    "consulted": "2026-11-22",
-   "statut": "fait (dépêche AFP) + mème",
-   "note": "Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits."
+   "statut": "fait (histoire)",
+   "note": "FN créé le 5 octobre 1972, vitrine d'Ordre nouveau ; statuts déposés par un ancien Waffen-SS (Bousquet) et Jean-Marie Le Pen ; flamme calquée sur celle du MSI italien."
+  },
+  {
+   "url": "https://www.rtbf.be/article/comment-est-ne-le-front-national-10853858",
+   "date": "date non relevée",
+   "consulted": "2026-11-22",
+   "statut": "fait (histoire)",
+   "note": "Naissance du FN en 1972 : Jean-Marie Le Pen rassemble d'anciens collaborateurs, des vétérans de la Waffen-SS et des partisans de l'Algérie française."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Pierre_Bousquet",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait (encyclopédie)",
+   "note": "Pierre Bousquet, ancien de la division Charlemagne de la Waffen-SS, membre fondateur et premier trésorier du Front national (1972)."
+  },
+  {
+   "url": "https://www.universalis.fr/evenement/13-21-septembre-1987-indignation-apres-les-declarations-de-jean-marie-le-pen-sur-les-chambres-a-gaz/",
+   "date": "1987-09-13",
+   "consulted": "2026-11-22",
+   "statut": "fait + citation exacte",
+   "note": "Grand Jury RTL-Le Monde : Jean-Marie Le Pen qualifie les chambres à gaz de « point de détail » de l'histoire de la Deuxième Guerre mondiale."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
+   "date": "2018-06-01",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Le Front national devient Rassemblement national ; la flamme du logo est conservée, rangée dans un cercle."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = stratégie TikTok de formats courts et dépolitisés (AFP) : un politique qui évite la politique. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = l'histoire du parti qu'il préside (fondation 1972, premier trésorier, « point de détail », changement de nom). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

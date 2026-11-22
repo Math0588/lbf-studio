@@ -3,19 +3,19 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-23",
  "format": "A",
- "title_cover": "26 000 inscrits",
+ "title_cover": "26 000 selon lui",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : la salle de sport compte ses abonnés au doigt mouillé.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, trois sportifs font vingt-six mille, selon le comptage maison.",
-  "Mélenchonville : la salle qui revendique plus qu'elle n'accueille."
+  "Dans cette ville, tout le monde vote Mélenchon. Selon les organisateurs.",
+  "Mélenchon compte ses foules. Avec une calculette généreuse.",
+  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
+  "Bienvenue à Mélenchonville : 26 000 selon lui.",
+  "Mélenchon en une vidéo : 26 000 selon lui."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Bilan : vingt-six mille abonnés au compteur, trois personnes sur le tapis.",
-  "Dix mille attendus, vingt-six mille revendiqués, trois sur le tapis.",
-  "Le comptage maison : ça muscle surtout les chiffres."
+  "Vingt-six mille revendiqués, des millions de likes, et dans les urnes : troisième.",
+  "Revendiqué : énorme. Compté dans l'urne : troisième.",
+  "Deux millions de likes sur TikTok : ça, au moins, c'est compté."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -29,7 +29,7 @@
   },
   {
    "id": "n2",
-   "text": "À Saint-Denis, on attendait dix mille personnes. Il en a revendiqué vingt-six mille.",
+   "text": "À Saint-Denis, dix mille personnes attendues. Son camp en revendique vingt-six mille.",
    "accent_words": [
     "vingt-six mille"
    ],
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "Ici, la salle de sport compte pareil. Trois inscrits, vingt-six mille revendiqués.",
+   "text": "Deux fois et demie la prévision. Même la calculette est insoumise.",
    "accent_words": [
-    "Trois inscrits"
+    "est insoumise"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le coach annonce que la primaire est finie. Laquelle ? Mystère.",
+   "text": "Ses médias revendiquent aussi la centaine de millions de vues. Toujours en revendiqué.",
    "accent_words": [
-    "Mystère"
+    "Toujours en revendiqué"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Les pompes ? Dix faites, cent revendiquées.",
+   "text": "Deux millions de likes sur TikTok : ça, au moins, c'est compté.",
    "accent_words": [
-    "cent revendiquées"
+    "c'est compté"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Bilan : vingt-six mille abonnés au compteur, trois personnes sur le tapis.",
+   "text": "Vingt-six mille revendiqués, des millions de likes, et dans les urnes : troisième.",
    "accent_words": [
-    "trois personnes"
+    "troisième"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui va une fois à la salle et en parle un mois.",
+   "text": "Envoie ça au pote qui arrondit ses abonnés au million supérieur.",
    "accent_words": [
-    "un mois"
+    "million supérieur"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,43 +85,77 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur une salle de sport ; banderole « 26 000 INSCRITS ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · 26 000 SELON LUI",
+   "comic_action": "Descente sur la ville : banderole « 26 000 SELON LUI », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "tribune",
     "person",
-    "text3d"
+    "banner"
    ],
    "onscreen_text": "10 000 → 26 000",
-   "comic_action": "Orbite autour d'un compteur qui saute de 10 000 à 26 000 sans passer par les chiffres entre.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "comic_action": "Compteur de foule qui s'emballe au-dessus d'une salle à moitié pleine.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "person",
-    "sign",
-    "text3d"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "3 PRÉSENTS · 26 000 REVENDIQUÉS",
-   "comic_action": "Trois habitants sur des tapis de course ; l'écran d'accueil annonce 26 000.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CALCULETTE INSOUMISE",
+   "comic_action": "Une calculette géante affiche des chiffres qui gonflent.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -130,13 +164,20 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "person",
-    "banner",
-    "sign"
+    "screen",
+    "ring_light",
+    "text3d"
    ],
-   "onscreen_text": "PRIMAIRE : FINIE (LAQUELLE ?)",
-   "comic_action": "Travelling : le coach au mégaphone, les trois sportifs se regardent sans comprendre.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "100 MILLIONS (REVENDIQUÉS)",
+   "comic_action": "Compteur de vues avec une petite étoile « selon nous ».",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -145,12 +186,21 @@
    ],
    "camera": "closeup",
    "set": [
-    "person",
-    "text3d"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "100 POMPES (10)",
-   "comic_action": "Gros plan sur le coach qui ajoute un zéro au tableau, discrètement.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "2 MILLIONS DE LIKES",
+   "comic_action": "Des cœurs pleuvent sur la place.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "jump",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -159,13 +209,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
+    "lift_tribune",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "26 000 / 3",
-   "comic_action": "Plan large : la salle quasi vide sous un panneau lumineux « COMPLET ».",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "URNES : 3E",
+   "comic_action": "Une urne transparente s'allume avec « 3E » dessus.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s7",
@@ -179,33 +242,53 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique se prend en selfie devant l'haltère.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui va une fois à la salle et en parle un mois."
+  "text": "Envoie ça au pote qui arrondit ses abonnés au million supérieur."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 82,
+ "word_count": 83,
  "claims": [
   {
-   "text": "À Saint-Denis, on attendait dix mille personnes. Il en a revendiqué vingt-six mille.",
+   "text": "À Saint-Denis, dix mille personnes attendues. Son camp en revendique vingt-six mille.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
+   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
   },
   {
-   "text": "Le coach annonce que la primaire est finie. Laquelle ? Mystère.",
+   "text": "Ses médias revendiquent aussi la centaine de millions de vues. Toujours en revendiqué.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
+   "source": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
+   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
+  },
+  {
+   "text": "Deux millions de likes sur TikTok : ça, au moins, c'est compté.",
+   "claim_type": "fait_public",
+   "source": "https://www.sudradio.fr/sud-radio/presidentielle-2027-melenchon-prend-la-tete-de-la-bataille-sur-les-reseaux-sociaux",
+   "note": "Plus de 2,1 millions de likes TikTok en septembre 2026 ; 1,2 million de mentions."
+  },
+  {
+   "text": "Vingt-six mille revendiqués, des millions de likes, et dans les urnes : troisième.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
@@ -214,9 +297,30 @@
    "date": "2026-06-07",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
+   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
+  },
+  {
+   "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-melenchon-prend-la-tete-de-la-bataille-sur-les-reseaux-sociaux",
+   "date": "2026-10",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Plus de 2,1 millions de likes TikTok en septembre 2026 ; 1,2 million de mentions."
+  },
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues. Cadre : la salle de sport. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : 26 000 selon lui. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

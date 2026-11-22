@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-32",
  "format": "D",
- "title_cover": "Six plages, zéro bronzage",
+ "title_cover": "Personne sacrée",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le maire bronze en six exemplaires.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, même les vacances se passent en hologramme.",
-  "Mélenchonville : la plage où les serviettes forment un hémicycle."
+  "Dans cette ville, tout le monde vote Mélenchon. Ne touchez à rien.",
+  "Mélenchon est sacré. C'est lui qui le dit.",
+  "Les insoumis vont me détester.",
+  "Bienvenue à Mélenchonville : personne sacrée.",
+  "Mélenchon en une vidéo : personne sacrée."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Six maires à la plage, et pourtant aucun au second tour.",
-  "Six hologrammes à la plage, zéro au second tour.",
-  "Partout en même temps, jamais au bon endroit."
+  "Lui, on n'y touche pas. Ses scores, si : quatrième, quatrième, troisième.",
+  "Lui, on n'y touche pas. Ses défaites, tout le monde les connaît.",
+  "Si sacré que personne, chez lui, ne se présente contre lui."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. En six exemplaires.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Ne touchez à rien.",
    "accent_words": [
-    "En six exemplaires"
+    "Ne touchez à rien"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "En 2017, il finit sa campagne avec six hologrammes en même temps.",
+   "text": "En 2018, en direct, il lance : « ma personne est sacrée ».",
    "accent_words": [
-    "six hologrammes"
+    "ma personne est sacrée"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n3",
+   "text": "Même jour : « La République, c'est moi ! ».",
+   "accent_words": [
+    "La République, c'est moi"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n4",
+   "text": "En 2026, il parle d'« audace déraisonnable ». Pas d'excuse.",
+   "accent_words": [
+    "Pas d'excuse"
+   ],
+   "claim_type": "citation_exacte"
+  },
+  {
+   "id": "n5",
+   "text": "Si sacré que personne, chez lui, ne se présente contre lui.",
+   "accent_words": [
+    "contre lui"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n3",
-   "text": "Ici, le maire part en vacances pareil : six plages, zéro bronzage.",
-   "accent_words": [
-    "zéro bronzage"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n4",
-   "text": "Chaque serviette a son discours projeté. Les mouettes fuient.",
-   "accent_words": [
-    "Les mouettes fuient"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n5",
-   "text": "Le sable s'organise en hémicycle. Le château de sable vote sa Constituante.",
-   "accent_words": [
-    "Constituante"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n6",
-   "text": "Six maires à la plage, et pourtant aucun au second tour.",
+   "text": "Lui, on n'y touche pas. Ses scores, si : quatrième, quatrième, troisième.",
    "accent_words": [
-    "aucun au second tour"
+    "quatrième, quatrième, troisième"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui envoie des vocaux de trois minutes en vacances.",
+   "text": "Envoie ça au pote qui interdit qu'on touche à sa manette.",
    "accent_words": [
-    "vocaux"
+    "sa manette"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,58 +85,100 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "person",
-    "studio_light"
+    "mairie",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur une plage : six projecteurs plantés dans le sable.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · PERSONNE SACRÉE",
+   "comic_action": "Descente sur la ville : banderole « PERSONNE SACRÉE », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "studio_light",
+    "ring_light",
     "person",
     "text3d"
    ],
-   "onscreen_text": "×6",
-   "comic_action": "Orbite : six maires projetés identiques font le même geste.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« MA PERSONNE EST SACRÉE »",
+   "comic_action": "Le maire tend le bras vers la caméra pour faire reculer tout le monde.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "phone"
+    },
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "person",
+    "tribune",
     "studio_light",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "6 PLAGES · 0 BRONZAGE",
-   "comic_action": "Travelling le long de six plages : un maire translucide sur chaque serviette, toujours pâle.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "« LA RÉPUBLIQUE, C'EST MOI ! »",
+   "comic_action": "Une auréole lumineuse s'allume au-dessus du pupitre.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "colere",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "person",
-    "studio_light",
+    "screen",
+    "tribune",
     "text3d"
    ],
-   "onscreen_text": "DISCOURS DE PLAGE",
-   "comic_action": "Gros plan : un hologramme gesticule, des mouettes s'envolent en panique.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "« AUDACE DÉRAISONNABLE »",
+   "comic_action": "Un écran rejoue la scène, le maire hoche la tête.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -146,12 +188,19 @@
    "camera": "closeup",
    "set": [
     "table",
-    "person",
-    "text3d"
+    "form_stack",
+    "person"
    ],
-   "onscreen_text": "CHÂTEAU : CONSTITUANTE",
-   "comic_action": "Des serviettes en demi-cercle autour d'un château de sable surmonté d'un drapeau rouge.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CANDIDATS CONTRE LUI : 0",
+   "comic_action": "Urne avec un seul bulletin, sous vitrine.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "bow",
+     "visage": "neutre"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +209,20 @@
    ],
    "camera": "descend",
    "set": [
-    "studio_light",
+    "lift_tribune",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "6 MAIRES · 0 SECOND TOUR",
-   "comic_action": "Plan large : six projections sur la plage ; un panneau « SECOND TOUR » planté dans l'eau, inaccessible.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "4E · 4E · 3E",
+   "comic_action": "L'auréole grésille et s'éteint.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,51 +236,98 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique éteint un projecteur.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui envoie des vocaux de trois minutes en vacances."
+  "text": "Envoie ça au pote qui interdit qu'on touche à sa manette."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 80,
+ "word_count": 79,
  "claims": [
   {
-   "text": "En 2017, il finit sa campagne avec six hologrammes en même temps.",
-   "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/non-classe/melenchon-six-hologrammes-pour-conclure-une-campagne-de-ferveur-populaire-58921",
-   "note": "Fin de campagne 2017 : six hologrammes simultanés."
+   "text": "En 2018, en direct, il lance : « ma personne est sacrée ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/non-classe/perquisitions-a-lfi-quotidien-devoile-la-totalite-de-ses-images-145284",
+   "note": "« Personne ne me touche, ma personne est sacrée, je suis parlementaire » : vidéo en direct publique du 16/10/2018. Seule la phrase filmée est reprise."
   },
   {
-   "text": "Six maires à la plage, et pourtant aucun au second tour.",
+   "text": "Même jour : « La République, c'est moi ! ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
+   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
+  },
+  {
+   "text": "En 2026, il parle d'« audace déraisonnable ». Pas d'excuse.",
+   "claim_type": "citation_exacte",
+   "source": "https://lcp.fr/actualites/la-republique-c-est-moi-jean-luc-melenchon-assume-un-moment-d-audace-deraisonnable",
+   "note": "Mardis de l'Essec (27/10/2026) : il assume une « audace déraisonnable », « je n'ai pas de regrets », pas au sens du Roi-Soleil mais « le peuple, sa représentation, c'est moi »."
+  },
+  {
+   "text": "Si sacré que personne, chez lui, ne se présente contre lui.",
+   "claim_type": "fait_public",
+   "source": "https://www.europe1.fr/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-930947",
+   "note": "Selon la direction de LFI (AFP) : aucune autre candidature proposée, aucune opposition exprimée."
+  },
+  {
+   "text": "Lui, on n'y touche pas. Ses scores, si : quatrième, quatrième, troisième.",
    "claim_type": "fait_public",
    "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; Union populaire (2022)."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
   {
-   "url": "https://www.publicsenat.fr/actualites/non-classe/melenchon-six-hologrammes-pour-conclure-une-campagne-de-ferveur-populaire-58921",
-   "date": "2017-04-18",
+   "url": "https://www.publicsenat.fr/actualites/non-classe/perquisitions-a-lfi-quotidien-devoile-la-totalite-de-ses-images-145284",
+   "date": "2018-10",
+   "consulted": "2026-11-22",
+   "statut": "citation_exacte",
+   "note": "« Personne ne me touche, ma personne est sacrée, je suis parlementaire » : vidéo en direct publique du 16/10/2018. Seule la phrase filmée est reprise."
+  },
+  {
+   "url": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
+   "date": "2018-10-17",
+   "consulted": "2026-11-22",
+   "statut": "citation_exacte",
+   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
+  },
+  {
+   "url": "https://lcp.fr/actualites/la-republique-c-est-moi-jean-luc-melenchon-assume-un-moment-d-audace-deraisonnable",
+   "date": "2026-10-28",
+   "consulted": "2026-11-22",
+   "statut": "citation_exacte",
+   "note": "Mardis de l'Essec (27/10/2026) : il assume une « audace déraisonnable », « je n'ai pas de regrets », pas au sens du Roi-Soleil mais « le peuple, sa représentation, c'est moi »."
+  },
+  {
+   "url": "https://www.europe1.fr/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-930947",
+   "date": "2026-05-03",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Fin de campagne 2017 : six hologrammes simultanés."
+   "note": "Selon la direction de LFI (AFP) : aucune autre candidature proposée, aucune opposition exprimée."
   },
   {
    "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
    "date": "consulté 2026-11-22",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; Union populaire (2022)."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : les six hologrammes simultanés de 2017, en vacances. Cadre : les congés à la plage. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Personne sacrée. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-17",
  "format": "A",
- "title_cover": "L'Avenir en commun",
+ "title_cover": "Le Père Noël rouge",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : un seul menu, un seul chef, un seul micro.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, la cantine sert L'Avenir en commun, et c'est des lentilles.",
-  "Mélenchonville : le self où le plateau passe en AG."
+  "Dans cette ville, tout le monde vote Mélenchon. Noël avant l'heure.",
+  "Mélenchon distribue tout à tout le monde. La facture arrive après.",
+  "Celle-là, Méluche ne la partagera pas.",
+  "Bienvenue à Mélenchonville : le Père Noël rouge.",
+  "Mélenchon en une vidéo : le Père Noël rouge."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "L'avenir en commun, d'accord. Mais le micro, lui, n'est jamais partagé.",
-  "Tout est en commun. Sauf le micro.",
-  "L'avenir est partagé ; la parole, confisquée."
+  "Tout pour tout le monde, payé plus tard : même le Père Noël a un budget.",
+  "Tout est offert. Le devis, lui, arrive l'an prochain.",
+  "Et la facture ? Le chiffrage arrive début 2027. Après les cadeaux."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. À table.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Noël avant l'heure.",
    "accent_words": [
-    "À table"
+    "Noël avant l'heure"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son programme s'appelle L'Avenir en commun. À la cantine, c'est le menu unique.",
+   "text": "Son programme 2027 promet le SMIC à 1 700 euros net. Immédiatement.",
    "accent_words": [
-    "menu unique"
+    "Immédiatement"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Le chef monte à la tribune, louche levée : lentilles pour tout le monde.",
+   "text": "La retraite à 60 ans aussi. En deux étapes, mais promis.",
    "accent_words": [
-    "lentilles"
+    "mais promis"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Un élève demande des frites. On l'accuse de rouler pour le grand capital.",
+   "text": "Prix bloqués et point d'indice plus 10 %.",
    "accent_words": [
-    "grand capital"
+    "10 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le dessert ? Reporté à la Sixième République, en fin de programme.",
+   "text": "Et la facture ? Le chiffrage arrive début 2027. Après les cadeaux.",
    "accent_words": [
-    "Reporté"
+    "Après les cadeaux"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "L'avenir en commun, d'accord. Mais le micro, lui, n'est jamais partagé.",
+   "text": "Tout pour tout le monde, payé plus tard : même le Père Noël a un budget.",
    "accent_words": [
-    "jamais partagé"
+    "un budget"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui partage tout, sauf la parole.",
+   "text": "Envoie ça au pote qui promet de rembourser le mois prochain.",
    "accent_words": [
-    "la parole"
+    "mois prochain"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur la cantine ; banderole « MENU : L'AVENIR EN COMMUN ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · LE PÈRE NOËL ROUGE",
+   "comic_action": "Descente sur la ville : banderole « LE PÈRE NOËL ROUGE », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,14 +113,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "sign",
-    "text3d",
-    "person"
+    "tribune",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "MENU UNIQUE",
-   "comic_action": "L'ardoise du jour n'a qu'une ligne : « L'AVENIR EN COMMUN ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "SMIC : 1 700 € NET",
+   "comic_action": "Le maire distribue des enveloppes depuis la tribune.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "pancarte"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,28 +142,48 @@
    ],
    "camera": "orbit",
    "set": [
-    "tribune",
+    "bench",
     "person",
-    "table"
+    "text3d"
    ],
-   "onscreen_text": "LENTILLES POUR TOUS",
-   "comic_action": "Orbite : le cuisinier harangue la file depuis un pupitre, louche brandie.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RETRAITE À 60 ANS",
+   "comic_action": "Un banc public se déplie en transat.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "jump",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "person",
-    "table",
+    "shop",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "FRITES = CAPITAL",
-   "comic_action": "Un plateau avec une frite est mis sous scellés ; murmures dans la file.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PRIX BLOQUÉS",
+   "comic_action": "Les étiquettes du magasin se figent sous un cadenas.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content"
+    },
+    {
+     "who": "perso",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s5",
@@ -146,13 +192,20 @@
    ],
    "camera": "closeup",
    "set": [
+    "form_stack",
     "table",
-    "sign",
     "text3d"
    ],
-   "onscreen_text": "DESSERT : VIE RÉP.",
-   "comic_action": "Le chariot des desserts part sur un rail vers une porte « 2027 ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "FACTURE : PLUS TARD",
+   "comic_action": "Une facture géante reste coincée sous la hotte.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -161,14 +214,26 @@
    ],
    "camera": "descend",
    "set": [
-    "tribune",
-    "table",
-    "person",
+    "mascot",
+    "banner",
     "text3d"
    ],
-   "onscreen_text": "MICRO : PRIVÉ",
-   "comic_action": "Plan large : tout le monde mange la même chose ; un seul micro, une seule main dessus.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "PÈRE NOËL : BUDGET VALIDÉ",
+   "comic_action": "Une mascotte de Père Noël tend un devis au maire.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s7",
@@ -182,51 +247,64 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique ramène son plateau, intact.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui partage tout, sauf la parole."
+  "text": "Envoie ça au pote qui promet de rembourser le mois prochain."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 83,
+ "word_count": 81,
  "claims": [
   {
-   "text": "Son programme s'appelle L'Avenir en commun. À la cantine, c'est le menu unique.",
+   "text": "Son programme 2027 promet le SMIC à 1 700 euros net. Immédiatement.",
    "claim_type": "fait_public",
-   "source": "https://programme.lafranceinsoumise.fr/wp-content/uploads/2025/02/A5-PROGRAMME-SITE.pdf",
-   "note": "Programme « L'Avenir en commun » (document du mouvement)."
+   "source": "https://www.economiematin.fr/?p=238883",
+   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
   },
   {
-   "text": "Le dessert ? Reporté à la Sixième République, en fin de programme.",
+   "text": "La retraite à 60 ans aussi. En deux étapes, mais promis.",
    "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
-   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
+   "source": "https://www.economiematin.fr/?p=238883",
+   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
+  },
+  {
+   "text": "Prix bloqués et point d'indice plus 10 %.",
+   "claim_type": "fait_public",
+   "source": "https://www.economiematin.fr/?p=238883",
+   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
+  },
+  {
+   "text": "Et la facture ? Le chiffrage arrive début 2027. Après les cadeaux.",
+   "claim_type": "fait_public",
+   "source": "https://www.economiematin.fr/?p=238883",
+   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
   }
  ],
  "sources": [
   {
-   "url": "https://programme.lafranceinsoumise.fr/wp-content/uploads/2025/02/A5-PROGRAMME-SITE.pdf",
-   "date": "2025-02",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Programme « L'Avenir en commun » (document du mouvement)."
-  },
-  {
-   "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+   "url": "https://www.economiematin.fr/?p=238883",
    "date": "2026-11",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Programme 2027 : 1 069 mesures, la VIe République reléguée en fin d'ouvrage."
+   "note": "Programme 2027 : SMIC à 1 700 € net immédiatement (1 600 € dans le programme NFP 2024), retraite à 60 ans après 40 annuités en deux étapes, blocage des prix (alimentation, énergie, carburant), interdiction de la réduflation, point d'indice +10 %, pas de retraite sous le SMIC ; chiffrage promis début 2027."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le programme « L'Avenir en commun » pris au pied de la lettre. Cadre : la cantine. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Le Père Noël rouge. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

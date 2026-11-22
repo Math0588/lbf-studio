@@ -5,73 +5,73 @@
  "format": "A",
  "title_cover": "La France en canapé",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : la Nouvelle France tient dans un décor.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, les réunions ont un canapé et pas d'ordre du jour.",
-  "Mélenchonville : la ville en carton-pâte, mais immersive."
+  "Dans cette ville, tout le monde vote Mélenchon. Dans le décor.",
+  "Mélenchon a présenté sa Nouvelle France. Sur un canapé.",
+  "Les insoumis vont me détester.",
+  "Bienvenue à Mélenchonville : la France en canapé.",
+  "Mélenchon en une vidéo : la France en canapé."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La Nouvelle France tient dans un décor. Démonté après le meeting.",
-  "Un canapé, un comptoir, une France en kit.",
-  "La Nouvelle France : livrée en décor, montage non compris."
+  "Une Nouvelle France en kit, démontée après le meeting. Comme ses campagnes.",
+  "La Nouvelle France tient dans un camion de décor.",
+  "Et la salle scande Taxer les riches, debout devant le décor."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Réunion à 9 h.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Dans le décor.",
    "accent_words": [
-    "Réunion à 9 h"
+    "Dans le décor"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Au Bourget, la scène avait un canapé et un comptoir de café. Pour faire peuple.",
+   "text": "Au Bourget, sa Nouvelle France tient sur scène : un canapé, un comptoir.",
    "accent_words": [
-    "faire peuple"
+    "un canapé, un comptoir"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ici, chaque réunion se tient sur un canapé. Zéro boulot, mais immersif.",
+   "text": "Le café est en décor. La France, on verra.",
    "accent_words": [
-    "immersif"
+    "La France, on verra"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le slide unique s'intitule : Nouvelle France. Slide deux : en chargement.",
+   "text": "Le programme, lui, est vendu sur place. Le salon est payant.",
    "accent_words": [
-    "en chargement"
+    "Le salon est payant"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Pause café au comptoir en carton. Le café est en option.",
+   "text": "Et la salle scande Taxer les riches, debout devant le décor.",
    "accent_words": [
-    "en option"
+    "le décor"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "La Nouvelle France tient dans un décor. Démonté après le meeting.",
+   "text": "Une Nouvelle France en kit, démontée après le meeting. Comme ses campagnes.",
    "accent_words": [
-    "Démonté"
+    "Comme ses campagnes"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui fait des réunions pour préparer les réunions.",
+   "text": "Envoie ça au pote qui refait la déco au lieu de faire le ménage.",
    "accent_words": [
-    "réunions"
+    "le ménage"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,74 +85,115 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un open space ; banderole « NOUVELLE FRANCE ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · LA FRANCE EN CANAPÉ",
+   "comic_action": "Descente sur la ville : banderole « LA FRANCE EN CANAPÉ », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "tribune",
     "table",
-    "person",
     "studio_light"
    ],
-   "onscreen_text": "CANAPÉ · COMPTOIR",
-   "comic_action": "Orbite autour d'une scène : un canapé, un faux comptoir, un projecteur.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "NOUVELLE FRANCE : DÉCOR",
+   "comic_action": "Scène de théâtre : canapé, faux comptoir, projecteurs.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
     "table",
-    "person",
-    "screen"
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "RÉUNION IMMERSIVE",
-   "comic_action": "Six collègues enfoncés dans un canapé, l'ordinateur posé sur l'accoudoir, personne ne tape.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "CAFÉ : EN CARTON",
+   "comic_action": "Un spectateur soulève une tasse, elle reste collée au comptoir.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase",
+     "objet": "verre"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "table",
+    "form_stack",
+    "sign"
    ],
-   "onscreen_text": "SLIDE 2 : CHARGEMENT…",
-   "comic_action": "L'écran affiche « NOUVELLE FRANCE », puis un sablier qui tourne.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "PROGRAMME : PAYANT",
+   "comic_action": "Étiquette de prix accrochée au canapé.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "table",
-    "sign",
-    "person"
+    "tribune",
+    "person",
+    "banner"
    ],
-   "onscreen_text": "CAFÉ : OPTION",
-   "comic_action": "Travelling : le comptoir est une façade en carton, la machine est peinte.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TAXER LES RICHES",
+   "comic_action": "Foule poings levés devant le canapé.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "arms_up",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -161,14 +202,20 @@
    ],
    "camera": "descend",
    "set": [
-    "tribune",
-    "table",
+    "facade_set",
     "text3d",
     "person"
    ],
-   "onscreen_text": "DÉCOR DÉMONTÉ",
-   "comic_action": "Plan large : des techniciens emportent le canapé et le comptoir ; il ne reste qu'un pupitre.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "NOUVELLE FRANCE : DÉMONTÉE",
+   "comic_action": "Des techniciens replient le décor ; il ne reste que le pupitre.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "fatigue"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -182,30 +229,44 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique s'assoit dans le canapé, seul.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui fait des réunions pour préparer les réunions."
+  "text": "Envoie ça au pote qui refait la déco au lieu de faire le ménage."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 85,
+ "word_count": 81,
  "claims": [
   {
-   "text": "Au Bourget, la scène avait un canapé et un comptoir de café. Pour faire peuple.",
+   "text": "Au Bourget, sa Nouvelle France tient sur scène : un canapé, un comptoir.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
    "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
   },
   {
-   "text": "Le slide unique s'intitule : Nouvelle France. Slide deux : en chargement.",
+   "text": "Le programme, lui, est vendu sur place. Le salon est payant.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
+   "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
+  },
+  {
+   "text": "Et la salle scande Taxer les riches, debout devant le décor.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
    "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
@@ -221,5 +282,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : la « Nouvelle France » du Bourget, mise en scène avec canapé et comptoir de café. Cadre : la réunion de bureau. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : La France en canapé. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

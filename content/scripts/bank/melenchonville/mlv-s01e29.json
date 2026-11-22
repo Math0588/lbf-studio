@@ -3,19 +3,19 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-29",
  "format": "A",
- "title_cover": "Formulaire tortue",
+ "title_cover": "La tortue, 4e course",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : l'administration avance au rythme de la tortue.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, ton dossier est traité par le totem du parti.",
-  "Mélenchonville : la seule mairie qui revendique sa lenteur."
+  "Dans cette ville, tout le monde vote Mélenchon. Lentement.",
+  "Mélenchon a choisi la tortue. Elle court encore.",
+  "Celle-là, Méluche ne la partagera pas.",
+  "Bienvenue à Mélenchonville : la tortue, 4e course.",
+  "Mélenchon en une vidéo : la tortue, 4e course."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ton dossier sera traité en 2027. Même délai que la victoire.",
-  "Lentement, sûrement, et toujours derrière.",
-  "Le formulaire avance. La victoire, beaucoup moins."
+  "Rien ne sert de courir, disait la fable. Lui court depuis 2012 et n'arrive jamais.",
+  "La fable promettait l'arrivée. Elle a oublié de préciser quand.",
+  "En 2027, il reprend le départ. Quatrième course."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -29,49 +29,49 @@
   },
   {
    "id": "n2",
-   "text": "Son totem de campagne, c'est la tortue. Ici, c'est le logo de l'administration.",
+   "text": "Son animal totem, c'est la tortue de la fable : rien ne sert de courir.",
    "accent_words": [
-    "la tortue"
+    "de courir"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Ton formulaire avance d'une case par semaine. C'est le totem.",
+   "text": "Dans la fable, la tortue gagne. Lui part en 2012 : quatrième.",
    "accent_words": [
-    "une case par semaine"
+    "quatrième"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le guichet vante la fable : rien ne sert de courir.",
+   "text": "Il repart en 2017 : quatrième encore. En 2022 : troisième.",
    "accent_words": [
-    "rien ne sert de courir"
+    "troisième"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "La tortue court depuis 2012. Le guichet aussi.",
+   "text": "En 2027, il reprend le départ. Quatrième course.",
    "accent_words": [
-    "depuis 2012"
+    "Quatrième course"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Ton dossier sera traité en 2027. Même délai que la victoire.",
+   "text": "Rien ne sert de courir, disait la fable. Lui court depuis 2012 et n'arrive jamais.",
    "accent_words": [
-    "la victoire"
+    "n'arrive jamais"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui répond à ses mails au rythme d'une tortue.",
+   "text": "Envoie ça au pote qui dit j'arrive depuis une heure.",
    "accent_words": [
-    "tortue"
+    "une heure"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,22 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur la mairie ; logo géant : une tortue.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · LA TORTUE, 4E COURSE",
+   "comic_action": "Descente sur la ville : banderole « LA TORTUE, 4E COURSE », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,57 +114,91 @@
    "camera": "closeup",
    "set": [
     "mascot",
-    "sign",
-    "person"
+    "road",
+    "sign"
    ],
-   "onscreen_text": "LOGO OFFICIEL",
-   "comic_action": "La mascotte tortue accueille au guichet, en tenue de fonctionnaire.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "TOTEM : LA TORTUE",
+   "comic_action": "Une mascotte tortue sur la ligne de départ.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "form_stack",
-    "table",
+    "road",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "CASE 1 / 1 069",
-   "comic_action": "Gros plan : un stylo remplit une case, puis s'arrête pour la semaine.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "2012 : 4E",
+   "comic_action": "La tortue s'arrête au panneau « 4 ».",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "sign",
-    "person",
-    "table"
+    "road",
+    "traffic_light",
+    "text3d"
    ],
-   "onscreen_text": "RIEN NE SERT DE COURIR",
-   "comic_action": "Orbite autour d'un panneau La Fontaine accroché au-dessus du guichet.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "2017 : 4E · 2022 : 3E",
+   "comic_action": "Feu rouge qui bloque la tortue juste avant l'arrivée.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "person",
-    "mascot",
-    "sign"
+    "road",
+    "banner",
+    "mascot"
    ],
-   "onscreen_text": "FILE DEPUIS 2012",
-   "comic_action": "Travelling : la file d'attente sort de la mairie et fait le tour du quartier.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "4E COURSE",
+   "comic_action": "La tortue se remet sur la ligne, dossard « 4 ».",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +207,20 @@
    ],
    "camera": "descend",
    "set": [
-    "mairie",
-    "form_stack",
+    "road",
+    "sign",
     "text3d"
    ],
-   "onscreen_text": "DÉLAI : 2027",
-   "comic_action": "Plan large : le dossier part sur le dos de la tortue, vers une porte marquée « 2027 ».",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "ARRIVÉE : JAMAIS",
+   "comic_action": "La ligne d'arrivée recule à chaque pas de la tortue.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,30 +234,50 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique dort sur la chaise d'attente.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui répond à ses mails au rythme d'une tortue."
+  "text": "Envoie ça au pote qui dit j'arrive depuis une heure."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 75,
+ "word_count": 80,
  "claims": [
   {
-   "text": "Son totem de campagne, c'est la tortue. Ici, c'est le logo de l'administration.",
+   "text": "Son animal totem, c'est la tortue de la fable : rien ne sert de courir.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
+   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
   },
   {
-   "text": "La tortue court depuis 2012. Le guichet aussi.",
+   "text": "Dans la fable, la tortue gagne. Lui part en 2012 : quatrième.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+  },
+  {
+   "text": "Il repart en 2017 : quatrième encore. En 2022 : troisième.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+  },
+  {
+   "text": "En 2027, il reprend le départ. Quatrième course.",
    "claim_type": "fait_public",
    "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
    "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
@@ -215,7 +289,14 @@
    "date": "2026-06-07",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
+   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
+  },
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   },
   {
    "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
@@ -226,5 +307,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : la tortue, totem de campagne, appliquée à l'administration. Cadre : le guichet administratif. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : La tortue, 4e course. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

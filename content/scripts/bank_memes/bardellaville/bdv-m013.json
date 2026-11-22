@@ -4,31 +4,31 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Gainé sauf le fond",
- "anchor": "portrait télé « soft-focus » (Reuters) : sport, ambiance intime, peu de questions ; la salle municipale vend des muscles sans questions.",
+ "title_cover": "Jeu de jambes",
+ "anchor": "l'interview sport tout en douceur et l'esquive comme discipline",
  "meme_key": "SOFT",
- "situation": "Gainé sauf le fond",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "situation": "Jeu de jambes",
+ "ressort": "un thème unique en escalade : truc connu, trois crans, chute retournée",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, la salle de sport garantit zéro question.",
-  "Bardellaville : gainé de partout, sauf sur le fond.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : gainé sauf le fond."
+  "Dans cette ville, tout le monde vote Bardella. Échauffement compris.",
+  "Le programme sportif de Bardella : esquive, esquive, dédicace.",
+  "Bardellaville : la salle de sport du débat évité.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Jeu de jambes."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Gainé de partout, sauf sur le fond.",
-  "Séance spéciale : esquive latérale, trois séries de vingt.",
-  "Coach personnel : une caméra qui ne demande jamais rien."
+  "Le seul muscle qu'il travaille vraiment : le jeu de jambes.",
+  "Le seul muscle travaillé : le jeu de jambes.",
+  "Trois séries d'esquives, zéro débat."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Et soulève peu.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Échauffement compris.",
    "accent_words": [
-    "soulève peu"
+    "compris"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -36,47 +36,47 @@
    "id": "n2",
    "text": "Reuters décrit une interview télé tout en douceur, entre deux séances de sport.",
    "accent_words": [
-    "en douceur"
+    "séances de sport"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Peu de questions politiques. Beaucoup de répétitions.",
+   "text": "Exercice préféré : l'esquive latérale. Débats de Public Sénat, refusés.",
    "accent_words": [
-    "Peu de questions"
+    "esquive latérale"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "La salle municipale vend donc l'abonnement : gainage, zéro question.",
+   "text": "Deuxième série : le débat de France 24, annulé à la dernière minute.",
    "accent_words": [
-    "zéro question"
+    "dernière minute"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Séance spéciale : esquive latérale, trois séries de vingt.",
+   "text": "Récupération active : une heure et demie de dédicaces à Châlons.",
    "accent_words": [
-    "esquive latérale"
+    "dédicaces"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Gainé de partout, sauf sur le fond.",
+   "text": "Le seul muscle qu'il travaille vraiment : le jeu de jambes.",
    "accent_words": [
-    "sauf sur le fond"
+    "jeu de jambes"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui préfère une interview muscu à un débat.",
+   "text": "Envoie ça au pote qui sèche les débats mais jamais la salle.",
    "accent_words": [
-    "interview muscu"
+    "salle"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -94,9 +94,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; des haltères en carton sur le perron.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "ÉCHAUFFEMENT",
+   "comic_action": "Descente sur la ville ; banderole « ÉCHAUFFEMENT » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "jump",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,78 +116,136 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
     "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "INTERVIEW : MODE DOUX",
-   "comic_action": "Plateau en flou artistique, violons, un tapis de course qui tourne.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "INTERVIEW EN SALLE DE SPORT",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « INTERVIEW EN SALLE DE SPORT ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "jump",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "ring_light",
-    "tripod_camera",
-    "person",
-    "screen"
+    "tribune",
+    "router_lectern",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "QUESTIONS : 2 · RÉPÉTITIONS : 200",
-   "comic_action": "Sous ring light, un compteur de répétitions s'emballe, celui des questions reste figé.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "ESQUIVE LATÉRALE",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « ESQUIVE LATÉRALE ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "person",
-    "sign",
+    "tribune",
+    "router_lectern",
+    "studio_light",
     "text3d"
    ],
-   "onscreen_text": "ABONNEMENT SANS QUESTION",
-   "comic_action": "Vitrine de salle de sport : affiche « ICI, ON NE VOUS DEMANDE RIEN ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SÉRIE 2 : ANNULÉ",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « SÉRIE 2 : ANNULÉ ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "content"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "ground",
-    "banner",
+    "road",
     "person",
-    "text3d"
+    "banner",
+    "ring_light"
    ],
-   "onscreen_text": "ESQUIVE : 3×20",
-   "comic_action": "Habitants qui font des pas chassés pour éviter un micro tendu.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RÉCUP : DÉDICACES",
+   "comic_action": "Travelling sur une file de téléphones levés ; banderole « RÉCUP : DÉDICACES ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "jump"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "FOND : NON TRAVAILLÉ",
-   "comic_action": "L'écran affiche une fiche d'entraînement : ligne « FOND » barrée. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "JEU DE JAMBES",
+   "comic_action": "Plan final, tenir une seconde : « JEU DE JAMBES ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -190,21 +259,29 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt fait des curls avec un livre.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE SPORTIF",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE SPORTIF ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui préfère une interview muscu à un débat."
+  "text": "Envoie ça au pote qui sèche les débats mais jamais la salle."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-excellente-question"
  },
- "word_count": 69,
+ "word_count": 80,
  "claims": [
   {
    "segment": "n2",
@@ -215,10 +292,24 @@
   },
   {
    "segment": "n3",
-   "text": "Peu de questions politiques. Beaucoup de répétitions.",
+   "text": "Exercice préféré : l'esquive latérale. Débats de Public Sénat, refusés.",
    "claim_type": "fait_public",
-   "source": "https://www.yahoo.com/news/soft-focus-interview-positions-bardella-084104725.html",
-   "note": "Portrait télévisé « soft-focus » : séances de sport, ambiance intime, peu de questions politiques."
+   "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
+   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
+  },
+  {
+   "segment": "n4",
+   "text": "Deuxième série : le débat de France 24, annulé à la dernière minute.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/jordan-bardella-rn-annule-a-la-derniere-minute-sa-participation-au-debat-de-france-24-et-se-rend-sur-bfmtv/577151",
+   "note": "Annule à la dernière minute sa participation au débat de France 24 et se rend sur BFMTV."
+  },
+  {
+   "segment": "n5",
+   "text": "Récupération active : une heure et demie de dédicaces à Châlons.",
+   "claim_type": "fait_public",
+   "source": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
+   "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
   }
  ],
  "sources": [
@@ -228,8 +319,29 @@
    "consulted": "2026-11-22",
    "statut": "fait + opinion (Reuters)",
    "note": "Portrait télévisé « soft-focus » : séances de sport, ambiance intime, peu de questions politiques."
+  },
+  {
+   "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
+   "date": "2024-03-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
+  },
+  {
+   "url": "https://www.ozap.com/actu/jordan-bardella-rn-annule-a-la-derniere-minute-sa-participation-au-debat-de-france-24-et-se-rend-sur-bfmtv/577151",
+   "date": "2019",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Annule à la dernière minute sa participation au débat de France 24 et se rend sur BFMTV."
+  },
+  {
+   "url": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
+   "date": "2026-08-29",
+   "consulted": "2026-11-22",
+   "statut": "fait (AFP)",
+   "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = portrait télé « soft-focus » (Reuters) : sport, ambiance intime, peu de questions ; la salle municipale vend des muscles sans questions. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = l'interview sport tout en douceur et l'esquive comme discipline. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

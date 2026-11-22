@@ -3,75 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-10",
  "format": "A",
- "title_cover": "Le bus à crédit",
+ "title_cover": "Quoi qu'il en coûte",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, le bus est gratuit. La facture, non.",
-  "Macronville : le bus quoi qu'il en coûte. Il en coûte.",
-  "Le bus le plus cher du monde roule à Macronville.",
-  "Les macronistes vont rater ce bus."
+  "Mars 2020, il sort le chéquier : « quoi qu'il en coûte ».",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Quoi qu'il en coûte : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Quoi qu'il en coûte."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Terminus en mai 2027. La facture, elle, continue sans chauffeur.",
-  "Quoi qu'il en coûte : maintenant, on sait combien.",
-  "Le bus est arrivé. La facture aussi."
+  "« Quoi qu'il en coûte », il avait dit. Personne n'avait demandé à qui.",
+  "Quoi qu'il en coûte : la phrase était gratuite, la facture beaucoup moins.",
+  "Puis Fitch dégrade la note. La facture a même un bulletin."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Le bus, lui, ne passe plus.",
+   "text": "Dans cette ville, tout le monde vote Macron. Quoi qu'il en coûte.",
    "accent_words": [
-    "ne passe plus"
+    "Quoi qu'il en coûte"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Le nouveau bus est gratuit. Devise sur la carrosserie : « quoi qu'il en coûte ».",
+   "text": "Mars 2020, il sort le chéquier : « quoi qu'il en coûte ».",
    "accent_words": [
-    "quoi qu'il en coûte"
+    "coûte"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Il en a coûté : dette publique à 119 % du PIB.",
+   "text": "Il en a coûté : 3 595 milliards de dette publique.",
    "accent_words": [
-    "119 %"
+    "publique"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Du coup, ticket à dix euros. Gratuit et payant, en même temps.",
+   "text": "Puis 119 % du PIB. Plus haut qu'au pic du Covid.",
    "accent_words": [
-    "en même temps"
+    "Covid"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Le chauffeur démissionne, puis il est renommé quatre jours après.",
+   "text": "Puis Fitch dégrade la note. La facture a même un bulletin.",
    "accent_words": [
-    "renommé"
+    "bulletin"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Terminus en mai 2027. La facture, elle, continue sans chauffeur.",
+   "text": "« Quoi qu'il en coûte », il avait dit. Personne n'avait demandé à qui.",
    "accent_words": [
-    "sans chauffeur"
+    "qui"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui croit que gratuit, c'est gratuit.",
+   "text": "Envoie ça au pote qui dit je t'invite, puis te tend l'addition.",
    "accent_words": [
-    "gratuit"
+    "l'addition"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -84,15 +84,29 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "bus",
-    "sign",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "facade_row"
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur l'arrêt de bus ; le bus arrive.",
-   "expected_result": "Le transport du jour posé."
+   "comic_action": "Descente sur la ville ; banderole « QUOI QU'IL EN COÛTE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,76 +115,143 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "bus",
-    "road",
-    "sign",
-    "person"
+    "tribune",
+    "screen",
+    "text3d"
    ],
    "onscreen_text": "« QUOI QU'IL EN COÛTE »",
-   "comic_action": "Travelling le long du bus ; écran de destination qui défile.",
-   "expected_result": "Le bus porte la pique."
+   "comic_action": "Le maire sort un chéquier géant et signe sans regarder ; les chèques s'envolent au-dessus de la place.",
+   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "building",
-    "text3d",
     "screen",
-    "person"
+    "text3d",
+    "building"
    ],
-   "onscreen_text": "119 % DU PIB",
-   "comic_action": "Compteur géant sur la façade de la tour : les chiffres montent et débordent du bâtiment.",
-   "expected_result": "La dette en compteur municipal."
+   "onscreen_text": "3 595 MILLIARDS",
+   "comic_action": "Un compteur géant sur une tour grimpe sans s'arrêter jusqu'à 3 595 milliards.",
+   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "descend",
    "set": [
-    "traffic_light",
-    "road",
-    "car"
+    "building",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "GRATUIT / 10 €",
-   "comic_action": "Feu allumé rouge et vert en même temps ; les voitures avancent et reculent.",
-   "expected_result": "Le tic devient un feu tricolore."
+   "onscreen_text": "119 % DU PIB",
+   "comic_action": "La tour du compteur dépasse la colonne « PIC COVID » et continue de monter.",
+   "expected_result": "Escalade 2 : encore plus gros.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "clap",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
-    "person",
-    "mairie",
-    "sign"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "CHAUFFEUR N°2 (LE MÊME)",
-   "comic_action": "Le même adjoint sort de la mairie avec un carton, fait demi-tour, rentre, ressort, rentre.",
-   "expected_result": "Démission et retour en boucle."
+   "onscreen_text": "NOTE DÉGRADÉE",
+   "comic_action": "Un bulletin de notes géant tombe sur la place : « FRANCE : A+ », le « AA- » barré en rouge.",
+   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "bus",
-    "road",
-    "sign",
+    "table",
+    "form_stack",
     "person"
    ],
-   "onscreen_text": "TERMINUS 2027",
-   "comic_action": "Le bus s'arrête au terminus ; une remorque « FACTURE » détachée continue de rouler seule.",
-   "expected_result": "Le bus porte la pique."
+   "onscreen_text": "À QUI ?",
+   "comic_action": "Le maire repousse la facture sur la table ; elle glisse jusqu'à un habitant.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,13 +266,27 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « quoi qu'il en coûte » (2020) et la facture qui suit.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui croit que gratuit, c'est gratuit."
+  "text": "Envoie ça au pote qui dit je t'invite, puis te tend l'addition."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -204,31 +299,31 @@
    "text": "« quoi qu'il en coûte »",
    "claim_type": "citation_exacte",
    "source": "https://www.elysee.fr/emmanuel-macron/2020/03/12/adresse-aux-francais",
-   "note": "« Quoi qu'il en coûte » (adresse du 12/03/2020)."
+   "note": "« Quoi qu'il en coûte » (adresse aux Français du 12/03/2020)."
   },
   {
-   "text": "Il en a coûté : dette publique à 119 % du PIB.",
+   "text": "Il en a coûté : 3 595 milliards de dette publique.",
+   "claim_type": "fait_public",
+   "source": "https://www.insee.fr/fr/statistiques/9053525",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
+  },
+  {
+   "text": "Puis 119 % du PIB. Plus haut qu'au pic du Covid.",
    "claim_type": "fait_public",
    "source": "https://fr.euronews.com/2026/09/29/la-dette-publique-francaise-senvole-a-119-du-pib",
-   "note": "Dette à 119 % du PIB, au-dessus du pic Covid."
+   "note": "Dette publique à 119 % du PIB, au-dessus du pic du Covid."
   },
   {
-   "text": "Du coup, ticket à dix euros. Gratuit et payant, en même temps.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
-   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois. Détourné dans la ville fictive."
+   "text": "Puis Fitch dégrade la note. La facture a même un bulletin.",
+   "claim_type": "fait_public",
+   "source": "https://www.lalibre.be/economie/conjoncture/2025/09/12/fitch-degrade-la-note-de-la-france-pointant-ses-finances-publiques-degradees-NTOHYWJ4WRFQDFTGUSTL7YRM2M/",
+   "note": "L'agence Fitch dégrade la note de la France (AA- à A+), en pointant ses finances publiques dégradées."
   },
   {
-   "text": "Le chauffeur démissionne, puis il est renommé quatre jours après.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.parismatch.be/actualites/monde/2025/10/10/france-emmanuel-macron-reconduit-sebastien-lecornu-comme-premier-ministre-LIQZQK4X7JCTTF65GLJQZJ7EME/",
-   "note": "Lecornu démissionne le 06/10/2025, reconduit le 10/10/2025. Détourné dans la ville fictive."
-  },
-  {
-   "text": "Terminus en mai 2027. La facture, elle, continue sans chauffeur.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
-   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027. Détourné dans la ville fictive."
+   "text": "« Quoi qu'il en coûte »",
+   "claim_type": "citation_exacte",
+   "source": "https://www.elysee.fr/emmanuel-macron/2020/03/12/adresse-aux-francais",
+   "note": "« Quoi qu'il en coûte » (adresse aux Français du 12/03/2020)."
   }
  ],
  "sources": [
@@ -237,37 +332,30 @@
    "date": "2020-03-12",
    "consulted": "2026-11-22",
    "statut": "citation exacte",
-   "note": "« Quoi qu'il en coûte » (adresse du 12/03/2020)."
+   "note": "« Quoi qu'il en coûte » (adresse aux Français du 12/03/2020)."
+  },
+  {
+   "url": "https://www.insee.fr/fr/statistiques/9053525",
+   "date": "2026-09-29",
+   "consulted": "2026-11-22",
+   "statut": "fait public (statistique)",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
   },
   {
    "url": "https://fr.euronews.com/2026/09/29/la-dette-publique-francaise-senvole-a-119-du-pib",
    "date": "2026-09-29",
    "consulted": "2026-11-22",
    "statut": "fait public",
-   "note": "Dette à 119 % du PIB, au-dessus du pic Covid."
+   "note": "Dette publique à 119 % du PIB, au-dessus du pic du Covid."
   },
   {
-   "url": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
-   "date": "2017-05-08",
+   "url": "https://www.lalibre.be/economie/conjoncture/2025/09/12/fitch-degrade-la-note-de-la-france-pointant-ses-finances-publiques-degradees-NTOHYWJ4WRFQDFTGUSTL7YRM2M/",
+   "date": "2025-09-12",
    "consulted": "2026-11-22",
-   "statut": "fait (comptage presse) + mème",
-   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois."
-  },
-  {
-   "url": "https://www.parismatch.be/actualites/monde/2025/10/10/france-emmanuel-macron-reconduit-sebastien-lecornu-comme-premier-ministre-LIQZQK4X7JCTTF65GLJQZJ7EME/",
-   "date": "2025-10-10",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Lecornu démissionne le 06/10/2025, reconduit le 10/10/2025."
-  },
-  {
-   "url": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
-   "date": "2026-11",
-   "consulted": "2026-11-22",
-   "statut": "fait rapporté",
-   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027."
+   "statut": "fait public",
+   "note": "L'agence Fitch dégrade la note de la France (AA- à A+), en pointant ses finances publiques dégradées."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « quoi qu'il en coûte » (2020) : le bus gratuit dont la facture continue après le terminus. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — « quoi qu'il en coûte » (2020) et la facture qui suit. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

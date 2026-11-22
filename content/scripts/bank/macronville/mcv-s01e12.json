@@ -3,75 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-12",
  "format": "A",
- "title_cover": "Ceux qui rebouchent",
+ "title_cover": "Ceux qui ne sont rien",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, ceux qui réparent ne sont rien.",
-  "Macronville : le voisin bosse, le maire coupe le ruban.",
-  "Les gens qui ne sont rien ont rebouché la rue.",
-  "Les macronistes vont s'attribuer cette vidéo."
+  "En 2017, il oppose ceux qui réussissent et « les gens qui ne sont rien ».",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Ceux qui ne sont rien : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Enfin, ceux qui comptent."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Ceux qui ne sont rien bouchent les trous. Ceux qui réussissent coupent le ruban.",
-  "Le voisin a rebouché. Le maire a posté.",
-  "Le trou est réparé. Le mérite, lui, a traversé la rue."
+  "Dix ans après, 82 % ne lui font plus confiance. Les riens sont majoritaires.",
+  "Les gens qui ne sont rien sont devenus 82 %. Ça fait du monde.",
+  "Et ils règlent les 3 595 milliards de dette."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Ou presque.",
+   "text": "Dans cette ville, tout le monde vote Macron. Enfin, ceux qui comptent.",
    "accent_words": [
-    "presque"
+    "comptent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Un voisin rebouche le trou lui-même, pelle et seau.",
+   "text": "En 2017, il oppose ceux qui réussissent et « les gens qui ne sont rien ».",
    "accent_words": [
-    "lui-même"
+    "rien"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Pour la mairie, il fait partie des « gens qui ne sont rien ».",
+   "text": "Ceux qui ne sont rien bossent jusqu'à 64 ans.",
    "accent_words": [
-    "ne sont rien"
+    "ans"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Le lendemain, le maire inaugure la rue réparée. Ruban, photo, LinkedIn.",
+   "text": "Ceux qui réussissent ne paient plus l'ISF depuis 2018.",
    "accent_words": [
-    "Ruban"
+    "2018"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Il demande un vrai boulot ? « Je traverse la rue, je vous en trouve ».",
+   "text": "Et ils règlent les 3 595 milliards de dette.",
    "accent_words": [
-    "traverse la rue"
+    "dette"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Ceux qui ne sont rien bouchent les trous. Ceux qui réussissent coupent le ruban.",
+   "text": "Dix ans après, 82 % ne lui font plus confiance. Les riens sont majoritaires.",
    "accent_words": [
-    "coupent le ruban"
+    "majoritaires"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui bosse pendant que son chef poste.",
+   "text": "Envoie ça au pote qui fait tourner la boîte sans être dans l'organigramme.",
    "accent_words": [
-    "son chef poste"
+    "l'organigramme"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -84,15 +84,29 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "facade_row",
-    "lamp",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
-   "expected_result": "Le décor de rue posé."
+   "comic_action": "Descente sur la ville ; banderole « CEUX QUI NE SONT RIEN » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,46 +115,85 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "sign",
-    "person",
-    "text3d"
+    "tribune",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "RÉPARÉ PAR UN VOISIN",
-   "comic_action": "Un habitant rebouche seul le nid-de-poule, pelle et seau ; personne ne l'aide.",
-   "expected_result": "Le trou devient le personnage."
+   "onscreen_text": "« LES GENS QUI NE SONT RIEN »",
+   "comic_action": "Le maire trace une ligne au sol : d'un côté un podium doré, de l'autre une foule en gris.",
+   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "cross_arms",
+     "visage": "colere",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
+    "building",
     "person",
-    "sign",
-    "road",
-    "facade_row"
+    "text3d"
    ],
-   "onscreen_text": "« GENS QUI NE SONT RIEN »",
-   "comic_action": "Des passants portent une étiquette « RIEN » ; un cortège passe sans les voir.",
-   "expected_result": "La petite phrase devient une étiquette."
+   "onscreen_text": "64 ANS",
+   "comic_action": "Les habitants en gris portent des cartons jusqu'au chiffre 64, en haut d'un immeuble.",
+   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "clap",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "banner",
-    "person",
-    "sign",
-    "ground"
+    "building",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "INAUGURATION",
-   "comic_action": "Le maire cubique coupe un ruban tricolore devant… rien. Applaudissements polis.",
-   "expected_result": "L'inauguration à vide."
+   "onscreen_text": "ISF : 0",
+   "comic_action": "Sur le podium doré, un homme en costume déchire son avis d'ISF en confettis.",
+   "expected_result": "Escalade 2 : encore plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "colere",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s5",
@@ -149,30 +202,56 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "road",
-    "sign",
-    "person",
-    "traffic_light"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "« JE TRAVERSE LA RUE »",
-   "comic_action": "Un habitant traverse le passage piéton ; le panneau « EMPLOI » recule d'un mètre à chaque pas.",
-   "expected_result": "Le mème « traverser la rue » devient une infrastructure."
+   "onscreen_text": "DETTE : 3 595 MDS",
+   "comic_action": "La facture géante de la dette roule jusqu'au côté gris et s'arrête sur leurs pieds.",
+   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "fall",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "banner",
-    "person",
-    "sign",
-    "ground"
+    "screen",
+    "text3d",
+    "mairie"
    ],
-   "onscreen_text": "RIEN / RÉUSSITE",
-   "comic_action": "Split : à gauche le voisin couvert de ciment, à droite le maire et ses ciseaux dorés.",
-   "expected_result": "L'inauguration à vide."
+   "onscreen_text": "82 %",
+   "comic_action": "Le côté gris grossit, grossit, jusqu'à pousser le podium doré hors du cadre.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "arms_up",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s7",
@@ -187,38 +266,64 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : « les gens qui ne sont rien » (2017), qui finissent par payer et peser.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui bosse pendant que son chef poste."
+  "text": "Envoie ça au pote qui fait tourner la boîte sans être dans l'organigramme."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 85,
+ "word_count": 82,
  "claims": [
   {
-   "text": "« gens qui ne sont rien »",
+   "text": "« les gens qui ne sont rien »",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
-   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
+   "note": "Florilège : « on met un pognon de dingue dans les minima sociaux » (06/2018), « je traverse la rue, je vous en trouve » (09/2018), « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde » (expression la plus fréquente)."
   },
   {
-   "text": "« Je traverse la rue, je vous en trouve »",
-   "claim_type": "citation_exacte",
-   "source": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
-   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
+   "text": "Ceux qui ne sont rien bossent jusqu'à 64 ans.",
+   "claim_type": "fait_public",
+   "source": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
+   "note": "Réforme des retraites (départ à 64 ans) adoptée par le 49.3, sans vote des députés."
   },
   {
-   "text": "Ceux qui ne sont rien bouchent les trous. Ceux qui réussissent coupent le ruban.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
-   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde ». Détourné dans la ville fictive."
+   "text": "Ceux qui réussissent ne paient plus l'ISF depuis 2018.",
+   "claim_type": "fait_public",
+   "source": "https://www.vie-publique.fr/en-bref/291443-impot-de-solidarite-sur-la-fortune-isf-le-cout-de-son-remplacement",
+   "note": "ISF supprimé en 2018 et remplacé par l'IFI, qui ne taxe plus que l'immobilier ; coût du remplacement évalué par vie-publique."
+  },
+  {
+   "text": "Et ils règlent les 3 595 milliards de dette.",
+   "claim_type": "fait_public",
+   "source": "https://www.insee.fr/fr/statistiques/9053525",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
+  },
+  {
+   "text": "Dix ans après, 82 % ne lui font plus confiance. Les riens sont majoritaires.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/sondage-82-des-francais-ne-font-pas-confiance-a-emmanuel-macron-qui-bat-le-record-dimpopularite-de-francois-hollande-a-lelysee",
+   "note": "82 % des Français ne lui font pas confiance ; il bat le record d'impopularité de François Hollande."
   }
  ],
  "sources": [
@@ -226,17 +331,38 @@
    "url": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
    "date": "2021-08-11",
    "consulted": "2026-11-22",
-   "statut": "citations exactes vérifiées",
-   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
+   "statut": "fait (citations exactes vérifiées)",
+   "note": "Florilège : « on met un pognon de dingue dans les minima sociaux » (06/2018), « je traverse la rue, je vous en trouve » (09/2018), « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde » (expression la plus fréquente)."
   },
   {
-   "url": "https://www.parismatch.be/actualites/politique/2018/09/17/du-travail-je-traverse-la-rue-je-vous-en-trouve-la-phrase-de-macron-cree-la-polemique-MINT4FY7ZNGUJOJQW5JIHQF3TM/",
-   "date": "2018-09-17",
+   "url": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
+   "date": "2023-03-16",
    "consulted": "2026-11-22",
-   "statut": "citation exacte + mème",
-   "note": "« Je traverse la rue, je vous en trouve » (15/09/2018) et ses détournements."
+   "statut": "fait public",
+   "note": "Réforme des retraites (départ à 64 ans) adoptée par le 49.3, sans vote des députés."
+  },
+  {
+   "url": "https://www.vie-publique.fr/en-bref/291443-impot-de-solidarite-sur-la-fortune-isf-le-cout-de-son-remplacement",
+   "date": "non relevée",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "ISF supprimé en 2018 et remplacé par l'IFI, qui ne taxe plus que l'immobilier ; coût du remplacement évalué par vie-publique."
+  },
+  {
+   "url": "https://www.insee.fr/fr/statistiques/9053525",
+   "date": "2026-09-29",
+   "consulted": "2026-11-22",
+   "statut": "fait public (statistique)",
+   "note": "Dette publique : 3 595,5 milliards d'euros fin juin 2026."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/sondage-82-des-francais-ne-font-pas-confiance-a-emmanuel-macron-qui-bat-le-record-dimpopularite-de-francois-hollande-a-lelysee",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "fait public (sondage)",
+   "note": "82 % des Français ne lui font pas confiance ; il bat le record d'impopularité de François Hollande."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : « les gens qui ne sont rien » (2017) : le voisin rebouche, le maire coupe le ruban. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — « les gens qui ne sont rien » (2017), qui finissent par payer et peser. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

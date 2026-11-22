@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-25",
  "format": "A",
- "title_cover": "Fâchés, pas fachos",
+ "title_cover": "Fâché avec tous",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : traverser la rue, c'est une manif.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, le passage piéton a sa banderole.",
-  "Mélenchonville : la ville où même le trottoir est en colère."
+  "Dans cette ville, tout le monde vote Mélenchon. Tout le monde est fâché.",
+  "Mélenchon parle aux fâchés. Normal, il l'est avec tout le monde.",
+  "Celle-là, Méluche ne la partagera pas.",
+  "Bienvenue à Mélenchonville : fâché avec tous.",
+  "Mélenchon en une vidéo : fâché avec tous."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le cortège n'atteint jamais l'autre trottoir : il est fâché avec lui.",
-  "Fâchés avec le PS, avec les écolos, avec le trottoir.",
-  "Le cortège tourne en rond : il s'est fâché avec la ligne droite."
+  "Pas facho, d'accord. Juste fâché avec tout le monde.",
+  "Pas facho, juste fâché. Avec absolument tout le monde.",
+  "Fâché avec le PS, rupture actée. Fâché avec Ruffin, divorce consommé."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Même pour traverser.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Tout le monde est fâché.",
    "accent_words": [
-    "Même pour traverser"
+    "est fâché"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, traverser la rue se fait en cortège. Banderole obligatoire.",
+   "text": "2017, aux électeurs en colère : « Fâchés mais pas fachos ».",
    "accent_words": [
-    "cortège"
+    "Fâchés mais pas fachos"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Le slogan du passage piéton : « Fâchés mais pas fachos ».",
+   "text": "Fâché, lui ? En 2018, il hurle « La République, c'est moi ! ».",
    "accent_words": [
-    "Fâchés"
+    "c'est moi"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Sa formule pour les électeurs en colère. Ici, tout le monde est fâché.",
+   "text": "Fâché avec TF1, qui ne l'avait même pas invité.",
    "accent_words": [
-    "fâché"
+    "pas invité"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Fâché contre le feu, fâché contre le trottoir, fâché contre le PS.",
+   "text": "Fâché avec le PS, rupture actée. Fâché avec Ruffin, divorce consommé.",
    "accent_words": [
-    "le PS"
+    "divorce consommé"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Le cortège n'atteint jamais l'autre trottoir : il est fâché avec lui.",
+   "text": "Pas facho, d'accord. Juste fâché avec tout le monde.",
    "accent_words": [
-    "fâché avec lui"
+    "le monde"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote fâché avec tout le monde, sauf avec son chef.",
+   "text": "Envoie ça au pote fâché avec la moitié de ses contacts.",
    "accent_words": [
-    "son chef"
+    "ses contacts"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,59 +85,106 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un passage piéton envahi par un cortège.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · FÂCHÉ AVEC TOUS",
+   "comic_action": "Descente sur la ville : banderole « FÂCHÉ AVEC TOUS », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
     "banner",
     "person",
-    "traffic_light"
+    "tribune"
    ],
-   "onscreen_text": "TRAVERSÉE EN CORTÈGE",
-   "comic_action": "Travelling : trente habitants traversent en rang serré derrière une banderole.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "« FÂCHÉS MAIS PAS FACHOS »",
+   "comic_action": "Banderole tendue au-dessus d'une foule renfrognée.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "micro"
+    },
+    {
+     "who": "foule",
+     "geste": "cross_arms",
+     "visage": "colere",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "banner",
-    "text3d",
-    "person"
+    "tribune",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "FÂCHÉS MAIS PAS FACHOS",
-   "comic_action": "Gros plan sur la banderole, peinte à la main.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« LA RÉPUBLIQUE, C'EST MOI ! »",
+   "comic_action": "Le maire crie, les vitres tremblent.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "colere",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "person",
-    "sign",
-    "text3d"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "TOUS FÂCHÉS",
-   "comic_action": "Orbite : même le bonhomme vert du feu a les sourcils froncés.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "TF1 : PAS INVITÉ",
+   "comic_action": "Le maire tourne le dos à un plateau télé vide.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "colere"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s5",
@@ -146,13 +193,20 @@
    ],
    "camera": "closeup",
    "set": [
-    "traffic_light",
-    "person",
-    "text3d"
+    "facade_set",
+    "road",
+    "person"
    ],
-   "onscreen_text": "FÂCHÉ ×3",
-   "comic_action": "Un habitant engueule le feu, puis le trottoir, puis une affiche rose.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PS : NON · RUFFIN : NON",
+   "comic_action": "Deux portes qui claquent l'une après l'autre.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -161,13 +215,20 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "person",
-    "banner"
+    "tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "TRAVERSÉE : ÉCHEC",
-   "comic_action": "Plan large : le cortège fait demi-tour au milieu de la rue, poing levé vers le trottoir d'en face.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "FÂCHÉ AVEC TOUT LE MONDE",
+   "comic_action": "Le maire seul à la tribune, poings serrés, salle vide.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -181,33 +242,65 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique traverse seul, tranquille.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote fâché avec tout le monde, sauf avec son chef."
+  "text": "Envoie ça au pote fâché avec la moitié de ses contacts."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 83,
+ "word_count": 79,
  "claims": [
   {
-   "text": "« Fâchés mais pas fachos »",
+   "text": "2017, aux électeurs en colère : « Fâchés mais pas fachos ».",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/fn-melenchon-reitere-son-appel-aux-electeurs-faches-mais-pas-fachos-77625",
    "note": "« Fâchés mais pas fachos »."
   },
   {
-   "text": "Sa formule pour les électeurs en colère. Ici, tout le monde est fâché.",
+   "text": "Fâché, lui ? En 2018, il hurle « La République, c'est moi ! ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
+   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
+  },
+  {
+   "text": "Fâché avec TF1, qui ne l'avait même pas invité.",
    "claim_type": "fait_public",
-   "source": "https://www.publicsenat.fr/actualites/politique/fn-melenchon-reitere-son-appel-aux-electeurs-faches-mais-pas-fachos-77625",
-   "note": "« Fâchés mais pas fachos »."
+   "source": "https://www.ozap.com/actu/furieux-contre-tf1-jean-luc-melenchon-annule-sa-venue-au-20-heures-ce-soir/657784",
+   "note": "Novembre 2026 : il annonce sur X annuler sa venue au 20 h de TF1."
+  },
+  {
+   "text": "Fâché avec TF1, qui ne l'avait même pas invité.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/affaire-de-jean-luc-melenchon-au-20-heures-tf1-dement-le-leader-de-lfi-et-affirme-quil-netait-pas-invite-ce-lundi-soir/657792",
+   "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
+  },
+  {
+   "text": "Fâché avec le PS, rupture actée. Fâché avec Ruffin, divorce consommé.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
+   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
+  },
+  {
+   "text": "Fâché avec le PS, rupture actée. Fâché avec Ruffin, divorce consommé.",
+   "claim_type": "fait_public",
+   "source": "https://www.slate.fr/politique/francois-ruffin-jean-luc-melenchon-rupture-divorce-lfi-france-insoumise-election-presidentielle-2027-strategie-gauche",
+   "note": "Ruffin–Mélenchon : « le divorce est désormais consommé »."
   }
  ],
  "sources": [
@@ -215,10 +308,45 @@
    "url": "https://www.publicsenat.fr/actualites/politique/fn-melenchon-reitere-son-appel-aux-electeurs-faches-mais-pas-fachos-77625",
    "date": "2017",
    "consulted": "2026-11-22",
-   "statut": "citation exacte",
+   "statut": "citation_exacte",
    "note": "« Fâchés mais pas fachos »."
+  },
+  {
+   "url": "https://www.ozap.com/actu/-la-republique-c-est-moi-les-images-hallucinantes-de-la-fureur-de-jean-luc-melenchon-dans-quotidien/568552",
+   "date": "2018-10-17",
+   "consulted": "2026-11-22",
+   "statut": "citation_exacte",
+   "note": "« La République, c'est moi ! » : phrase criée face caméra le 16/10/2018 au siège de LFI (images publiques diffusées par Quotidien). Seule la phrase filmée est reprise, sans rien sur la procédure."
+  },
+  {
+   "url": "https://www.ozap.com/actu/furieux-contre-tf1-jean-luc-melenchon-annule-sa-venue-au-20-heures-ce-soir/657784",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Novembre 2026 : il annonce sur X annuler sa venue au 20 h de TF1."
+  },
+  {
+   "url": "https://www.ozap.com/actu/affaire-de-jean-luc-melenchon-au-20-heures-tf1-dement-le-leader-de-lfi-et-affirme-quil-netait-pas-invite-ce-lundi-soir/657792",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
+  },
+  {
+   "url": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
+   "date": "2026-07",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
+  },
+  {
+   "url": "https://www.slate.fr/politique/francois-ruffin-jean-luc-melenchon-rupture-divorce-lfi-france-insoumise-election-presidentielle-2027-strategie-gauche",
+   "date": "2025",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Ruffin–Mélenchon : « le divorce est désormais consommé »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « Fâchés mais pas fachos », sa formule pour les électeurs en colère. Cadre : le passage piéton en cortège. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Fâché avec tous. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

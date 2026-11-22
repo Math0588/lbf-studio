@@ -858,6 +858,17 @@ def held_prop(kind, pid, r):
     elif kind == "micro":
         cyl(pid + "_mic", 0.05, 0.45, (0.55, -0.95, 2.15), mat("#22252C", 0.4), r, rot=(-30, 0, 0))
         sphere(pid + "_mich", 0.11, (0.55, -1.08, 2.37), mat("#5B6068", 0.5), r)
+    elif kind == "matcha":      # gobelet vert, couvercle, paille
+        cyl(pid + "_mt", 0.15, 0.45, (0.62, -1.0, 2.05), mat("#9BC46B", 0.5), r, r2=0.12)
+        cyl(pid + "_mtl", 0.16, 0.05, (0.62, -1.0, 2.3), mat("#FFFDF7", 0.4), r)
+        cyl(pid + "_mtp", 0.02, 0.35, (0.66, -1.0, 2.45), mat("#2E8B57", 0.4), r, rot=(0, 12, 0))
+    elif kind == "brosse_a_dents":
+        box(pid + "_bd", (0.07, 0.07, 0.8), (0.55, -1.05, 2.25), mat(PAL["blue"], 0.4), r, rot=(20, 0, 0))
+        box(pid + "_bdp", (0.08, 0.12, 0.16), (0.55, -1.2, 2.62), mat("#FFFDF7", 0.6), r, rot=(20, 0, 0))
+    elif kind == "billets":
+        for i in range(3):
+            box(pid + f"_bl{i}", (0.6, 0.02, 0.3), (0.6, -1.0 - i * 0.03, 2.1 + i * 0.04), mat("#7BC47F", 0.7), r,
+                rot=(15, 0, 8 * i))
     elif kind == "pancarte":
         cyl(pid + "_pst", 0.05, 1.6, (0.7, -0.2, 3.2), mat(PAL["wood"], 0.8), r)
         box(pid + "_pbd", (1.4, 0.06, 0.8), (0.7, -0.2, 4.1), mat(PAL["white"], 0.7), r)
@@ -1025,10 +1036,55 @@ def p_wall(p):
         text(pid + "_sign", p["sign"], 0.6, (0, -0.2, h * 0.8), mat(p.get("sign_color", PAL["blue"]), 0.5), r)
 
 
+def p_affiche(p):
+    """Affiche de propagande du maire (caricature cubique, jamais un portrait réaliste) + slogan."""
+    pid, r = root(p, "affiche")
+    w, h, z = p.get("w", 2.6), p.get("h", 3.6), p.get("z", 0.6)
+    bg = p.get("bg", "#C8102E")
+    cyl(pid + "_post", 0.08, z + 0.2, (0, 0.15, (z + 0.2) / 2), mat("#5B6068", 0.5, metal=0.5), parent=r)
+    box(pid + "_board", (w, 0.12, h), (0, 0, z + h / 2), mat(bg, 0.55), parent=r)
+    box(pid + "_sun", (w * 0.8, 0.02, w * 0.8), (0, -0.07, z + h * 0.62), mat(p.get("accent", "#F2B134"), 0.6, 0.6),
+        parent=r, rot=(0, 45, 0))
+    head = empty(pid + "_head", (0, -0.1, z + h * 0.62), 0, r)
+    head.scale = (0.95, 0.95, 0.95)
+    box(pid + "_hb", (0.98, 0.3, 0.98), (0, 0.1, 0), mat(p.get("skin", "#E8B98F"), 0.7), head)
+    quad(pid + "_face", 0.96, 0.96, (0, -0.06, 0), face_mat(p.get("face", "fier"), p.get("iris", "brun")), head)
+    hc = mat(p.get("hair_color", "#3A2A1F"), 0.85)
+    for i, (sz, loc) in enumerate(HAIR.get(p.get("hair", "court"), [])):
+        box(pid + f"_h{i}", (sz[0], min(sz[1], 0.3), sz[2]), (loc[0], 0.1, loc[2]), hc, head)
+    box(pid + "_band", (w, 0.03, 0.75), (0, -0.075, z + 0.55), mat("#111827", 0.5), parent=r)
+    txt = (p.get("texte") or "").upper()[:22]
+    sz = min(0.42, 2.3 / max(1, len(txt)) * 1.6)
+    text(pid + "_t", txt, sz, (0, -0.1, z + 0.45), mat("#FFFDF7", 0.4, 1.0), parent=r, fontname="Anton-Regular.ttf")
+
+
+def p_chien(p):
+    """Chien cubique, t-shirt à l'effigie du maire en option."""
+    pid, r = root(p, "chien")
+    fur = mat(p.get("color", "#C9A15B"), 0.85)
+    box(pid + "_body", (0.55, 1.1, 0.5), (0, 0, 0.6), fur, r)
+    for x in (-0.18, 0.18):
+        for y in (-0.38, 0.38):
+            box(pid + f"_leg{x}{y}", (0.14, 0.14, 0.4), (x, y, 0.2), fur, r)
+    box(pid + "_head", (0.45, 0.45, 0.42), (0, -0.7, 0.95), fur, r)
+    box(pid + "_snout", (0.24, 0.22, 0.18), (0, -0.98, 0.88), mat("#3A2A1F", 0.6), r)
+    for x in (-0.16, 0.16):
+        box(pid + f"_ear{x}", (0.1, 0.14, 0.26), (x, -0.62, 1.2), mat("#7A5A33", 0.85), r)
+        box(pid + f"_eye{x}", (0.07, 0.02, 0.07), (x * 0.7, -0.93, 1.03), mat("#111827", 0.3), r)
+    box(pid + "_tail", (0.08, 0.35, 0.08), (0, 0.65, 0.85), fur, r, rot=(35, 0, 0))
+    if p.get("tee"):
+        box(pid + "_tee", (0.6, 0.8, 0.52), (0, -0.05, 0.62), mat(p.get("tee_color", PAL["blue"]), 0.7), r)
+        text(pid + "_teet", p["tee"].upper()[:10], 0.16, (0.31, -0.05, 0.66), mat("#FFFDF7", 0.5), r,
+             rot=(90, 0, 90), fontname="Anton-Regular.ttf")
+        text(pid + "_teet2", p["tee"].upper()[:10], 0.16, (-0.31, -0.05, 0.66), mat("#FFFDF7", 0.5), r,
+             rot=(90, 0, -90), fontname="Anton-Regular.ttf")
+
+
 PROPS = {
     "ground": p_ground, "road": p_road, "roundabout": p_roundabout, "ring_light": p_ring_light,
     "building": p_building, "mairie": p_facade_set, "facade_set": p_facade_set, "facade_row": p_facade_row,
     "studio_light": p_studio_light, "tripod_camera": p_tripod_camera, "sign": p_sign, "car": p_car,
+    "affiche": p_affiche, "chien": p_chien,
     "car_orbit": p_car_orbit, "tree": p_tree, "lamp": p_lamp, "bench": p_bench, "bin": p_bin,
     "person": p_person, "tshirt": p_tshirt, "mascot": p_mascot, "shop": p_shop, "text3d": p_text3d,
     "tribune": p_tribune, "traffic_light": p_traffic_light, "form_stack": p_form_stack, "column": p_column,

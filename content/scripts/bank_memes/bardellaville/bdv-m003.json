@@ -4,79 +4,79 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Chantier sans pelle",
- "anchor": "le livre « Gouverner » promet cent jours à Matignon sans détailler priorités ni méthode (AFP) : un chantier de cent jours sans outils.",
+ "title_cover": "Avant GTA VI",
+ "anchor": "il jouera à GTA VI ; le mème « avant GTA VI » appliqué à son programme",
  "meme_key": "CENT",
- "situation": "Chantier sans pelle",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "situation": "Avant GTA VI",
+ "ressort": "un thème unique en escalade : truc connu, trois crans, chute retournée",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, le chantier du siècle a une banderole et zéro pelle.",
-  "Bardellaville : cent jours de travaux, zéro coup de pioche.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : chantier sans pelle."
+  "Dans cette ville, tout le monde vote Bardella. Manette en main.",
+  "GTA VI est sorti. Le programme de Bardella, pas encore.",
+  "Bardellaville : tout arrive avant son programme.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Avant GTA VI."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Cent jours sans méthode : pas un programme, un minuteur de cuisine.",
-  "Jour cinquante : on inaugure la maquette de la banderole.",
-  "Ici, le chantier du siècle a une banderole, un drone et zéro pelle."
+  "GTA VI est sorti avant son programme : le mème s'est réalisé.",
+  "GTA VI est sorti avant son programme.",
+  "Le mème avait raison."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Le chantier commence bientôt.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Manette en main.",
    "accent_words": [
-    "bientôt"
+    "Manette"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Son livre esquisse cent jours à Matignon, sans priorités ni méthode détaillées.",
+   "text": "Sur RMC, il annonce qu'il va jouer à GTA VI, évidemment.",
    "accent_words": [
-    "ni méthode"
+    "GTA VI"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Trois livres en deux ans, et toujours pas de plan de chantier.",
+   "text": "GTA VI a fini par sortir. Son programme chiffré, toujours en chargement.",
    "accent_words": [
-    "plan de chantier"
+    "programme chiffré"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n4",
+   "text": "Les cent jours de Gouverner ? Méthode pas détaillée. Même GTA a un tutoriel.",
+   "accent_words": [
+    "Méthode"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "Ici, le chantier du siècle a une banderole, un drone et zéro pelle.",
-   "accent_words": [
-    "zéro pelle"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n5",
-   "text": "Jour quatre-vingt-dix-neuf : le maire coupe le ruban d'un trou.",
+   "text": "Les retraites ? « Nous verrons ». Sauvegarde impossible.",
    "accent_words": [
-    "d'un trou"
+    "Sauvegarde"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n6",
-   "text": "Cent jours sans méthode : pas un programme, un minuteur de cuisine.",
+   "text": "GTA VI est sorti avant son programme : le mème s'est réalisé.",
    "accent_words": [
-    "minuteur"
+    "réalisé"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui attend encore le jour un.",
+   "text": "Envoie ça au pote qui attend encore son programme, manette en main.",
    "accent_words": [
-    "jour un"
+    "manette"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -94,9 +94,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; banderole « CHANTIER DU SIÈCLE », aucun engin.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "MANETTE EN MAIN",
+   "comic_action": "Descente sur la ville ; banderole « MANETTE EN MAIN » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "jump",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,14 +116,25 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
-    "person",
-    "text3d"
+    "screen",
+    "tripod_camera",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "100 JOURS · MÉTHODE : ?",
-   "comic_action": "Livre ouvert sur un planning dont toutes les cases sont vides.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "IL VA JOUER À GTA VI",
+   "comic_action": "Manette et écran de jeu : « IL VA JOUER À GTA VI ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cheer",
+     "visage": "content"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -121,62 +143,109 @@
    ],
    "camera": "closeup",
    "set": [
-    "scroll",
-    "table",
-    "person",
-    "text3d"
+    "screen",
+    "tripod_camera",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "PLAN : INTROUVABLE",
-   "comic_action": "Un parchemin « PLAN DE CHANTIER » se déroule, blanc.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "PROGRAMME : CHARGEMENT",
+   "comic_action": "Manette et écran de jeu : « PROGRAMME : CHARGEMENT ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
-    "building",
+    "table",
+    "form_stack",
     "person",
-    "bin"
+    "text3d"
    ],
-   "onscreen_text": "PELLES : 0",
-   "comic_action": "Une rue barrée, un drone filme une banderole, un ouvrier attend sans outil.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PAS DE TUTORIEL",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « PAS DE TUTORIEL ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
-    "lift_tribune",
-    "tribune",
-    "person",
-    "banner"
+    "screen",
+    "tripod_camera",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "INAUGURATION DU TROU",
-   "comic_action": "La tribune s'élève devant un nid-de-poule ; ruban tricolore, ciseaux dorés.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "SAUVEGARDE IMPOSSIBLE",
+   "comic_action": "Manette et écran de jeu : « SAUVEGARDE IMPOSSIBLE ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "screen",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie",
-    "person"
+    "screen"
    ],
-   "onscreen_text": "00:00 · RIEN N'A CUIT",
-   "comic_action": "L'écran affiche un minuteur qui sonne au-dessus d'une casserole vide. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "AVANT GTA VI : CONFIRMÉ",
+   "comic_action": "Plan final, tenir une seconde : « AVANT GTA VI : CONFIRMÉ ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -190,14 +259,22 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt fixe un calendrier « J-100 ».",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE GAMER",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE GAMER ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui attend encore le jour un."
+  "text": "Envoie ça au pote qui attend encore son programme, manette en main."
  },
  "cta_commercial": {
   "type": "visual_product",
@@ -208,35 +285,59 @@
  "claims": [
   {
    "segment": "n2",
-   "text": "Son livre esquisse cent jours à Matignon, sans priorités ni méthode détaillées.",
+   "text": "Sur RMC, il annonce qu'il va jouer à GTA VI, évidemment.",
+   "claim_type": "fait_public",
+   "source": "https://www.franceinfo.fr/culture/jeux-video/gta-vi/mmes-montages-video-et-propositions-electorales-quand-les-politiques-s-emparent-de-la-sortie-de-gta-vi_8289689.html",
+   "note": "Sortie de GTA VI : les politiques s'en emparent ; sur RMC, il dit qu'il va essayer le jeu. ; Sur RMC (Les Grandes Gueules, 16/11/2026), il dit attendre et vouloir jouer à GTA VI ; contradiction relevée avec la droite qui critique ces jeux.",
+   "sources_complementaires": [
+    "https://www.letribunaldunet.fr/politique/bardella-gta-vi-grandes-gueules-rmc.html"
+   ]
+  },
+  {
+   "segment": "n4",
+   "text": "Les cent jours de Gouverner ? Méthode pas détaillée. Même GTA a un tutoriel.",
    "claim_type": "fait_public",
    "source": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
    "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
   },
   {
-   "segment": "n3",
-   "text": "Trois livres en deux ans, et toujours pas de plan de chantier.",
-   "claim_type": "fait_public",
-   "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
-   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
+   "segment": "n5",
+   "text": "Les retraites ? « Nous verrons ». Sauvegarde impossible.",
+   "claim_type": "citation_exacte",
+   "source": "https://www.boursorama.com/bourse/actualites/retraites-jordan-bardella-n-est-plus-si-presse-d-abroger-la-reforme-de-macron-101b949b9967c92520b3be1c9ef2c30f",
+   "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
   }
  ],
  "sources": [
   {
+   "url": "https://www.franceinfo.fr/culture/jeux-video/gta-vi/mmes-montages-video-et-propositions-electorales-quand-les-politiques-s-emparent-de-la-sortie-de-gta-vi_8289689.html",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait (paraphrase, sans guillemets)",
+   "note": "Sortie de GTA VI : les politiques s'en emparent ; sur RMC, il dit qu'il va essayer le jeu."
+  },
+  {
+   "url": "https://www.letribunaldunet.fr/politique/bardella-gta-vi-grandes-gueules-rmc.html",
+   "date": "2026-11-19",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Sur RMC (Les Grandes Gueules, 16/11/2026), il dit attendre et vouloir jouer à GTA VI ; contradiction relevée avec la droite qui critique ces jeux."
+  },
+  {
    "url": "https://www.lagazettefrance.fr/article/apres-des-jours-sans-bardella-reve-deja-de-ses-cent-jours-a-matignon",
    "date": "2026-11-04",
    "consulted": "2026-11-22",
-   "statut": "fait + appréciation AFP",
+   "statut": "fait + opinion (appréciation AFP)",
    "note": "Le livre « Gouverner » esquisse des « cent jours » à Matignon sans détailler priorités ni méthode."
   },
   {
-   "url": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
-   "date": "2026-11-04",
+   "url": "https://www.boursorama.com/bourse/actualites/retraites-jordan-bardella-n-est-plus-si-presse-d-abroger-la-reforme-de-macron-101b949b9967c92520b3be1c9ef2c30f",
+   "date": "2024-06-12",
    "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
+   "statut": "fait + citation exacte",
+   "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = le livre « Gouverner » promet cent jours à Matignon sans détailler priorités ni méthode (AFP) : un chantier de cent jours sans outils. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = il jouera à GTA VI ; le mème « avant GTA VI » appliqué à son programme. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

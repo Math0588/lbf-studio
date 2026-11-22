@@ -5,73 +5,73 @@
  "format": "A",
  "title_cover": "TF1, puis boycott",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le colis est livré, puis boycotté.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, on annonce sur TF1 et on boude TF1.",
-  "Mélenchonville : la ville qui renvoie le colis après l'avoir commandé."
+  "Dans cette ville, tout le monde vote Mélenchon. Sauf TF1.",
+  "Mélenchon boycotte TF1. TF1 ne l'avait pas invité.",
+  "Attention : vidéo plus courte qu'un discours de Mélenchon.",
+  "Bienvenue à Mélenchonville : tF1, puis boycott.",
+  "Mélenchon en une vidéo : tF1, puis boycott."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "TF1 sert à annoncer, puis à boycotter. Service après-vente compris.",
-  "Il annonce sur TF1, il boude TF1, il revient sur TF1.",
-  "Le boycott, c'est seulement entre deux annonces."
+  "Boycotter qui ne t'invite pas : la seule bataille gagnée d'avance.",
+  "Il boycotte ceux qui ne l'invitent pas. Imbattable.",
+  "Il promet de passer « le moins possible » sur les chaînes d'info. Facile."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Livraison en cours.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Sauf TF1.",
    "accent_words": [
-    "Livraison en cours"
+    "Sauf TF1"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ses candidatures ? Annoncées sur TF1 en 2016, en 2020, puis en 2026.",
+   "text": "Ses candidatures ? Annoncées au 20 h de TF1, en 2016, 2020 et 2026.",
    "accent_words": [
-    "TF1"
+    "et 2026"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "En novembre, il boycotte le 20 h de TF1. Colis refusé.",
+   "text": "Novembre 2026 : sur X, il boycotte le 20 h de TF1.",
    "accent_words": [
-    "Colis refusé"
+    "de TF1"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "TF1 répond : il n'était même pas invité ce soir-là.",
+   "text": "TF1 répond qu'il n'était même pas invité ce soir-là.",
    "accent_words": [
-    "pas invité"
+    "ce soir-là"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Ici, le maire renvoie le colis, puis réclame le suivant.",
+   "text": "Il promet de passer « le moins possible » sur les chaînes d'info. Facile.",
    "accent_words": [
-    "le suivant"
+    "Facile"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n6",
-   "text": "TF1 sert à annoncer, puis à boycotter. Service après-vente compris.",
+   "text": "Boycotter qui ne t'invite pas : la seule bataille gagnée d'avance.",
    "accent_words": [
-    "après-vente"
+    "gagnée d'avance"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui boycotte une appli, mais garde son compte.",
+   "text": "Envoie ça au pote qui quitte une soirée où il n'était pas invité.",
    "accent_words": [
-    "garde son compte"
+    "pas invité"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "road",
-    "car",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur une camionnette de livraison marquée « TF1 ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · TF1, PUIS BOYCOTT",
+   "comic_action": "Descente sur la ville : banderole « TF1, PUIS BOYCOTT », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,60 +113,93 @@
    ],
    "camera": "closeup",
    "set": [
-    "car",
-    "sign",
-    "text3d",
-    "person"
+    "screen",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "LIVRÉ PAR TF1 ×3",
-   "comic_action": "Trois colis identiques, étiquette « CANDIDATURE », sortent de la camionnette.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "ANNONCÉ SUR TF1 × 3",
+   "comic_action": "Trois écrans montrent le même plateau du 20 h.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "street_dolly",
+   "camera": "orbit",
    "set": [
-    "road",
+    "screen",
     "person",
-    "car",
-    "sign"
+    "text3d"
    ],
-   "onscreen_text": "COLIS REFUSÉ",
-   "comic_action": "Travelling : le maire referme la porte au nez du livreur.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "BOYCOTT TF1",
+   "comic_action": "Le maire tape un message rageur sur son téléphone.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere",
+     "objet": "phone"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
     "screen",
     "text3d",
     "person"
    ],
-   "onscreen_text": "PAS INVITÉ",
-   "comic_action": "Le livreur montre son bon : « AUCUNE LIVRAISON PRÉVUE ».",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "TF1 : PAS INVITÉ",
+   "comic_action": "Plateau du 20 h, chaise vide étiquetée « NON INVITÉ ».",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "car",
-    "person",
-    "sign"
+    "screen",
+    "tripod_camera",
+    "text3d"
    ],
-   "onscreen_text": "RETOUR → RENVOI",
-   "comic_action": "Orbite : le même colis fait trois allers-retours entre la mairie et la camionnette.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "« LE MOINS POSSIBLE »",
+   "comic_action": "Une caméra éteinte, voyant rouge coupé.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -162,14 +208,20 @@
    ],
    "camera": "descend",
    "set": [
-    "car",
-    "mairie",
-    "text3d",
-    "person"
+    "screen",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "SAV COMPRIS",
-   "comic_action": "Plan large : la camionnette TF1 garée devant la mairie, moteur allumé, prête pour 2032.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "VICTOIRE PAR FORFAIT",
+   "comic_action": "Coupe dorée posée sur une chaise de plateau vide.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -183,39 +235,53 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique signe le bon de livraison.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui boycotte une appli, mais garde son compte."
+  "text": "Envoie ça au pote qui quitte une soirée où il n'était pas invité."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 77,
+ "word_count": 83,
  "claims": [
   {
-   "text": "Ses candidatures ? Annoncées sur TF1 en 2016, en 2020, puis en 2026.",
+   "text": "Ses candidatures ? Annoncées au 20 h de TF1, en 2016, 2020 et 2026.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/presidentielle-jean-luc-melenchon-officialise-sa-candidature-pour-2027-435851",
-   "note": "Candidature annoncée sur TF1, comme ses annonces de février 2016 et novembre 2020 (rapporté par la presse). / Candidature 2027 officialisée au 20 h de TF1 : quatrième campagne."
+   "note": "Candidature annoncée au 20 h de TF1, comme ses annonces de février 2016 et novembre 2020."
   },
   {
-   "text": "En novembre, il boycotte le 20 h de TF1. Colis refusé.",
+   "text": "Novembre 2026 : sur X, il boycotte le 20 h de TF1.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/furieux-contre-tf1-jean-luc-melenchon-annule-sa-venue-au-20-heures-ce-soir/657784",
    "note": "Novembre 2026 : il annonce sur X annuler sa venue au 20 h de TF1."
   },
   {
-   "text": "TF1 répond : il n'était même pas invité ce soir-là.",
+   "text": "TF1 répond qu'il n'était même pas invité ce soir-là.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/affaire-de-jean-luc-melenchon-au-20-heures-tf1-dement-le-leader-de-lfi-et-affirme-quil-netait-pas-invite-ce-lundi-soir/657792",
    "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
+  },
+  {
+   "text": "Il promet de passer « le moins possible » sur les chaînes d'info. Facile.",
+   "claim_type": "citation_exacte",
+   "source": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
+   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
   }
  ],
  "sources": [
@@ -224,14 +290,7 @@
    "date": "2026-05-03",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Candidature annoncée sur TF1, comme ses annonces de février 2016 et novembre 2020 (rapporté par la presse)."
-  },
-  {
-   "url": "https://www.lalibre.be/international/europe/2026/05/03/jean-luc-melenchon-officialise-sa-candidature-a-la-presidentielle-2027-62WVGQMVUREGHCOMM2PKZ2DE7M/",
-   "date": "2026-05-03",
-   "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Candidature 2027 officialisée au 20 h de TF1 : quatrième campagne."
+   "note": "Candidature annoncée au 20 h de TF1, comme ses annonces de février 2016 et novembre 2020."
   },
   {
    "url": "https://www.ozap.com/actu/furieux-contre-tf1-jean-luc-melenchon-annule-sa-venue-au-20-heures-ce-soir/657784",
@@ -246,8 +305,15 @@
    "consulted": "2026-11-22",
    "statut": "fait",
    "note": "TF1 dément et affirme qu'il n'était pas invité ce lundi soir."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/comment-jean-luc-melenchon-tourne-le-dos-aux-medias-traditionnels-pour-en-faire-un-argument-de-campagne",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "citation_exacte",
+   "note": "Promet de passer « le moins possible » sur les chaînes d'info ; LFI revendique « la centaine de millions » de vues."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : candidatures annoncées sur TF1 (2016, 2020, 2026), puis le 20 h boycotté — et TF1 qui dit qu'il n'était pas invité. Cadre : la livraison de colis. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : TF1, puis boycott. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

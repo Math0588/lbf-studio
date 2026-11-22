@@ -5,31 +5,31 @@
  "format": "A",
  "title_cover": "Chaîne trop petite",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, le bus ne s'arrête qu'aux arrêts avec assez d'audience.",
-  "Bardellaville : trop petit pour débattre, jamais trop petit pour un selfie.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : chaîne trop petite."
+  "Dans cette ville, tout le monde vote Bardella. Si la chaîne est assez grande.",
+  "Bardella refuse un débat : la chaîne est trop petite.",
+  "Bardellaville : débats sur audience minimum.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Chaîne trop petite."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Il ne fuit pas les débats : il attend qu'on les organise sur TikTok.",
-  "Trop petite pour débattre, mais jamais trop petite pour un selfie de foire.",
-  "Seule grande tête de liste absente. Le pupitre a fait de la figuration."
+  "Trop petite pour un débat, la chaîne. Jamais trop petite, l'excuse.",
+  "Jamais trop petite, l'excuse.",
+  "Trop petit pour débattre, assez grand pour un selfie."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Le débat, en option.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Si la chaîne est assez grande.",
    "accent_words": [
-    "en option"
+    "assez grande"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Européennes 2024 : débat refusé sur Public Sénat, chaîne jugée trop petite.",
+   "text": "Européennes 2024 : il refuse les débats de Public Sénat, chaîne jugée trop petite.",
    "accent_words": [
     "trop petite"
    ],
@@ -37,41 +37,41 @@
   },
   {
    "id": "n3",
-   "text": "Seule grande tête de liste absente. Le pupitre a fait de la figuration.",
+   "text": "Seule grande tête de liste absente.",
    "accent_words": [
-    "figuration"
+    "absente"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Ici, le bus ne s'arrête qu'aux arrêts avec assez d'audience.",
+   "text": "France 24, en 2019 ? Annulé à la dernière minute. Trop petit aussi.",
    "accent_words": [
-    "assez d'audience"
+    "Trop petit"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Trop petite pour un débat, la chaîne. Une foire à selfies, c'est assez grand.",
+   "text": "Une heure et demie de selfies à Châlons ? Assez grand, ça.",
    "accent_words": [
-    "assez grand"
+    "Assez grand"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Il ne fuit pas les débats : il attend qu'on les organise sur TikTok.",
+   "text": "Trop petite pour un débat, la chaîne. Jamais trop petite, l'excuse.",
    "accent_words": [
-    "sur TikTok"
+    "excuse"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui trouve qu'un débat, c'est surcoté.",
+   "text": "Envoie ça au pote qui ne s'explique que devant un grand public.",
    "accent_words": [
-    "surcoté"
+    "grand public"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; une case « DÉBAT » cochée « facultatif » sur la porte.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "CHAÎNE ASSEZ GRANDE ?",
+   "comic_action": "Descente sur la ville ; banderole « CHAÎNE ASSEZ GRANDE ? » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,41 +116,75 @@
     "studio_light",
     "text3d"
    ],
-   "onscreen_text": "CHAÎNE : TROP PETITE",
-   "comic_action": "Un mini-plateau ; un mètre ruban mesure la caméra, verdict « INSUFFISANT ».",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "CHAÎNE TROP PETITE",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « CHAÎNE TROP PETITE ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
+    "tribune",
+    "router_lectern",
     "studio_light",
-    "tripod_camera",
-    "table",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "PUPITRE : FIGURANT",
-   "comic_action": "Cinq pupitres occupés, le sixième seul sous un projecteur, étiquette au nom du maire.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "PUPITRE VIDE",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « PUPITRE VIDE ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "bus",
-    "road",
-    "person",
-    "sign"
+    "tribune",
+    "studio_light",
+    "screen",
+    "text3d"
    ],
-   "onscreen_text": "ARRÊT : AUDIENCE INSUFFISANTE",
-   "comic_action": "Le bus passe devant un petit arrêt plein de monde sans ralentir.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "FRANCE 24 : TROP PETIT",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « FRANCE 24 : TROP PETIT ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -148,30 +193,54 @@
    ],
    "camera": "street_dolly",
    "set": [
-    "person",
-    "ring_light",
     "road",
-    "lamp"
+    "person",
+    "banner",
+    "ring_light"
    ],
-   "onscreen_text": "FOIRE : OK · DÉBAT : NON",
-   "comic_action": "Allée de foire, perches à selfie ; le maire cubique s'y arrête volontiers.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "SELFIE : ASSEZ GRAND",
+   "comic_action": "Travelling sur une file de téléphones levés ; banderole « SELFIE : ASSEZ GRAND ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "ring_light"
+    },
+    {
+     "who": "foule",
+     "geste": "jump"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "ring_light",
-    "tripod_camera",
-    "person",
+    "tribune",
+    "studio_light",
+    "text3d",
     "screen"
    ],
-   "onscreen_text": "DÉBAT : SI 1 M DE VUES",
-   "comic_action": "Ring light allumé, deux trépieds ; un seul personnage, qui débat avec son reflet. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "L'EXCUSE, JAMAIS TROP PETITE",
+   "comic_action": "Plan final, tenir une seconde : « L'EXCUSE, JAMAIS TROP PETITE ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,39 +254,54 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt baille devant un écran de débat.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE DIFFICILE",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE DIFFICILE ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui trouve qu'un débat, c'est surcoté."
+  "text": "Envoie ça au pote qui ne s'explique que devant un grand public."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 85,
+ "word_count": 82,
  "claims": [
   {
    "segment": "n2",
-   "text": "Européennes 2024 : débat refusé sur Public Sénat, chaîne jugée trop petite.",
+   "text": "Européennes 2024 : il refuse les débats de Public Sénat, chaîne jugée trop petite.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
    "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   },
   {
    "segment": "n3",
-   "text": "Seule grande tête de liste absente. Le pupitre a fait de la figuration.",
+   "text": "Seule grande tête de liste absente.",
    "claim_type": "fait_public",
    "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
    "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
   },
   {
+   "segment": "n4",
+   "text": "France 24, en 2019 ? Annulé à la dernière minute. Trop petit aussi.",
+   "claim_type": "fait_public",
+   "source": "https://www.ozap.com/actu/jordan-bardella-rn-annule-a-la-derniere-minute-sa-participation-au-debat-de-france-24-et-se-rend-sur-bfmtv/577151",
+   "note": "Annule à la dernière minute sa participation au débat de France 24 et se rend sur BFMTV."
+  },
+  {
    "segment": "n5",
-   "text": "Trop petite pour un débat, la chaîne. Une foire à selfies, c'est assez grand.",
+   "text": "Une heure et demie de selfies à Châlons ? Assez grand, ça.",
    "claim_type": "fait_public",
    "source": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
    "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
@@ -228,17 +312,24 @@
    "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
    "date": "2024-03-04",
    "consulted": "2026-11-22",
-   "statut": "fait (refus) + mème (réactions)",
+   "statut": "fait",
    "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
+  },
+  {
+   "url": "https://www.ozap.com/actu/jordan-bardella-rn-annule-a-la-derniere-minute-sa-participation-au-debat-de-france-24-et-se-rend-sur-bfmtv/577151",
+   "date": "2019",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Annule à la dernière minute sa participation au débat de France 24 et se rend sur BFMTV."
   },
   {
    "url": "https://www.lagazettefrance.fr/article/a-la-foire-de-chalons-la-bardellamania-ne-faiblit-pas",
    "date": "2026-08-29",
    "consulted": "2026-11-22",
-   "statut": "fait (reportage AFP)",
+   "statut": "fait (AFP)",
    "note": "Bardellamania à la foire de Châlons : selfies, nuée de téléphones levés, près d'une heure et demie d'attente pour une dédicace."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = européennes 2024 : refus des débats de Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = le débat refusé sur Public Sénat, chaîne « trop petite » (refrain). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

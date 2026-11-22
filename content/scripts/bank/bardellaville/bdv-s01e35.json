@@ -3,75 +3,75 @@
  "city": "bardellaville",
  "synopsis_id": "bdv-syn-35",
  "format": "D",
- "title_cover": "Simulateur de président",
+ "title_cover": "Premier ministre, en théorie",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, le simulateur de président se gagne sans répondre.",
-  "Bardellaville : niveau facile, réponses toutes faites.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : simulateur de président."
+  "Dans cette ville, tout le monde vote Bardella. Premier ministre. En théorie.",
+  "Bardella Premier ministre ? Il a écrit le livre à la place.",
+  "Bardellaville : le poste en préface.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Premier ministre, en théorie."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Score final : cent pour cent d'aisance, zéro pour cent de réponse.",
-  "Trois boutons : excellente question, très bonne question, question excellente.",
-  "Si la question insiste, le jeu propose une pause bonbon."
+  "Premier ministre en théorie, auteur en pratique : son seul poste, c'est la préface.",
+  "Son seul poste : la préface.",
+  "Annoncé à Matignon, arrivé en librairie."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. Niveau facile.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Premier ministre. En théorie.",
    "accent_words": [
-    "Niveau facile"
+    "Premier ministre"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Simulateur de président : une vraie question tombe sur le pupitre.",
+   "text": "Juin 2024, Marine Le Pen l'annonce : ce sera lui, à Matignon.",
    "accent_words": [
-    "vraie question"
+    "Matignon"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Une chronique parle de réponses calibrées : le jeu n'a que trois boutons identiques.",
+   "text": "Sa condition à lui : une majorité absolue, sinon rien.",
    "accent_words": [
-    "trois boutons identiques"
+    "majorité absolue"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Comme sur son TikTok, une question qui insiste déclenche une pause bonbon.",
+   "text": "Le 7 juillet, le RN finit troisième. Ce fut rien.",
    "accent_words": [
-    "pause bonbon"
+    "troisième"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Bonus : dire bon sens deux fois, Français trois fois. Niveau suivant.",
+   "text": "Depuis, il a écrit Gouverner. Le manuel du poste qu'il n'a pas eu.",
    "accent_words": [
-    "Niveau suivant"
+    "Gouverner"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Score final : cent pour cent d'aisance, zéro pour cent de réponse.",
+   "text": "Premier ministre en théorie, auteur en pratique : son seul poste, c'est la préface.",
    "accent_words": [
-    "zéro pour cent"
+    "préface"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui gagne tous ses débats sans rien dire.",
+   "text": "Envoie ça au pote qui l'appelait déjà monsieur le Premier ministre.",
    "accent_words": [
-    "sans rien dire"
+    "monsieur le Premier ministre"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -89,9 +89,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; écran « PRESS START » géant sur la façade.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "PREMIER MINISTRE ?",
+   "comic_action": "Descente sur la ville ; banderole « PREMIER MINISTRE ? » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,13 +112,24 @@
    "camera": "orbit",
    "set": [
     "tribune",
-    "router_lectern",
-    "studio_light",
-    "text3d"
+    "lift_tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "QUESTION : VRAIE",
-   "comic_action": "Plateau de jeu : une question en text3d tombe sur un pupitre, alarme.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LUI À MATIGNON",
+   "comic_action": "Meeting : la tribune s'élève, banderole « LUI À MATIGNON ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,30 +138,53 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
+    "studio_light",
     "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "A · B · C = PAREIL",
-   "comic_action": "L'écran affiche trois boutons identiques ; le curseur hésite pour la forme.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "MAJORITÉ ABSOLUE OU RIEN",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « MAJORITÉ ABSOLUE OU RIEN ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier",
+     "objet": "micro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "shop",
-    "person",
-    "sign",
-    "text3d"
+    "screen",
+    "banner",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "PAUSE BONBON",
-   "comic_action": "Un distributeur de bonbons apparaît à l'écran, la question disparaît.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "RN : TROISIÈME",
+   "comic_action": "Soirée électorale : l'écran affiche « RN : TROISIÈME ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -148,30 +193,54 @@
    ],
    "camera": "closeup",
    "set": [
-    "ring_light",
-    "tripod_camera",
+    "table",
+    "form_stack",
     "person",
-    "screen"
+    "text3d"
    ],
-   "onscreen_text": "+100 POINTS : BON SENS",
-   "comic_action": "Ring light qui clignote à chaque mot-clé, compteur de points qui grimpe.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "LE MANUEL DU POSTE RATÉ",
+   "comic_action": "Table de dédicace, piles de livres ; en lettres 3D « LE MANUEL DU POSTE RATÉ ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "form_stack",
+    "tribune",
+    "studio_light",
     "text3d",
-    "mairie"
+    "screen"
    ],
-   "onscreen_text": "AISANCE 100 % · RÉPONSE 0 %",
-   "comic_action": "Tableau des scores : coupe dorée attribuée à un pupitre vide. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "SON SEUL POSTE : LA PRÉFACE",
+   "comic_action": "Plan final, tenir une seconde : « SON SEUL POSTE : LA PRÉFACE ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,53 +254,89 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE GAMER",
-   "comic_action": "Retour à la boutique : un passant en t-shirt, manette en main, appuie sur un seul bouton.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE PRESSÉ",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE PRESSÉ ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui gagne tous ses débats sans rien dire."
+  "text": "Envoie ça au pote qui l'appelait déjà monsieur le Premier ministre."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 83,
+ "word_count": 82,
  "claims": [
   {
-   "segment": "n3",
-   "text": "Une chronique parle de réponses calibrées : le jeu n'a que trois boutons identiques.",
+   "segment": "n2",
+   "text": "Juin 2024, Marine Le Pen l'annonce : ce sera lui, à Matignon.",
    "claim_type": "fait_public",
-   "source": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
-   "note": "Candidat aux réponses calibrées et creuses."
+   "source": "https://fr.euronews.com/2024/06/11/marine-le-pen-soutient-jordan-bardella-au-poste-de-premier-ministre",
+   "note": "Marine Le Pen soutient Jordan Bardella pour Matignon."
+  },
+  {
+   "segment": "n3",
+   "text": "Sa condition à lui : une majorité absolue, sinon rien.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/matignon-jordan-bardella-reclame-une-majorite-absolue-pour-gouverner-gabriel-attal",
+   "note": "Pas de Matignon sans majorité absolue."
   },
   {
    "segment": "n4",
-   "text": "Comme sur son TikTok, une question qui insiste déclenche une pause bonbon.",
+   "text": "Le 7 juillet, le RN finit troisième. Ce fut rien.",
    "claim_type": "fait_public",
-   "source": "https://certop.cnrs.fr/wp-content/uploads/2024/07/Jordan-Bardella-sur-TikTok-affiche-son-addiction-aux-bonbons-et-ca-en-dit-long-sur-sa-strategie-de-com.pdf",
-   "note": "Blague récurrente de son TikTok : il a toujours faim et pioche des bonbons, surtout avant un débat."
+   "source": "https://www.publicsenat.fr/actualites/politique/legislatives-jordan-bardella-denonce-lalliance-du-deshonneur-entre-lexecutif-et-la-gauche",
+   "note": "Soir du second tour : RN troisième ; il dénonce « l'alliance du déshonneur »."
+  },
+  {
+   "segment": "n5",
+   "text": "Depuis, il a écrit Gouverner. Le manuel du poste qu'il n'a pas eu.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
+   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
   }
  ],
  "sources": [
   {
-   "url": "https://www.liberation.fr/idees-et-debats/opinions/bardella-le-bulldozer-robotique-et-creux-peut-il-tenir-lepreuve-dune-campagne-20260531_E3ZLAVZU6VFTLICQ24GXHKSX6A/",
-   "date": "2026-05-31",
+   "url": "https://fr.euronews.com/2024/06/11/marine-le-pen-soutient-jordan-bardella-au-poste-de-premier-ministre",
+   "date": "2024-06-11",
    "consulted": "2026-11-22",
-   "statut": "opinion (chronique ; formule de l'auteur non reprise)",
-   "note": "Candidat aux réponses calibrées et creuses."
+   "statut": "fait",
+   "note": "Marine Le Pen soutient Jordan Bardella pour Matignon."
   },
   {
-   "url": "https://certop.cnrs.fr/wp-content/uploads/2024/07/Jordan-Bardella-sur-TikTok-affiche-son-addiction-aux-bonbons-et-ca-en-dit-long-sur-sa-strategie-de-com.pdf",
-   "date": "2024-07",
+   "url": "https://lcp.fr/actualites/matignon-jordan-bardella-reclame-une-majorite-absolue-pour-gouverner-gabriel-attal",
+   "date": "2024-06-17",
    "consulted": "2026-11-22",
-   "statut": "fait (contenu public de son compte TikTok) + opinion (analyse)",
-   "note": "Blague récurrente de son TikTok : il a toujours faim et pioche des bonbons, surtout avant un débat."
+   "statut": "fait",
+   "note": "Pas de Matignon sans majorité absolue."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/legislatives-jordan-bardella-denonce-lalliance-du-deshonneur-entre-lexecutif-et-la-gauche",
+   "date": "2024-07-07",
+   "consulted": "2026-11-22",
+   "statut": "fait + citation exacte",
+   "note": "Soir du second tour : RN troisième ; il dénonce « l'alliance du déshonneur »."
+  },
+  {
+   "url": "https://lcp.fr/actualites/trois-livres-en-deux-ans-pourquoi-jordan-bardella-multiplie-les-sorties-en-librairie",
+   "date": "2026-11-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Trois livres en deux ans (« Ce que je cherche », « Ce que veulent les Français », « Gouverner ») et tournées de dédicaces."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = réponses calibrées (chronique Libération) et bonbons d'avant-débat (son TikTok) : le jeu vidéo de la ville. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = le Premier ministre annoncé de 2024, jamais nommé. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

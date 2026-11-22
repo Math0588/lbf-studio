@@ -4,31 +4,31 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Fête sans musique",
- "anchor": "montage TikTok sur « melodrama » (plus de 5 millions de vues) ; Theodora : « Je ne partagerai jamais vos idées » ; la fête municipale sans artistes.",
+ "title_cover": "Collection de non",
+ "anchor": "tout le monde lui dit non (Theodora, patrons, Mbappé)",
  "meme_key": "MELO",
- "situation": "Fête sans musique",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "situation": "Collection de non",
+ "ressort": "un thème unique en escalade : truc connu, trois crans, chute retournée",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, la fête municipale se fait sur la musique d'attente.",
-  "Bardellaville : tous les artistes ont dit non.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : fête sans musique."
+  "Dans cette ville, tout le monde vote Bardella. Les autres, non.",
+  "Bardella collectionne les vues. Et les refus.",
+  "Bardellaville : la chanteuse, le patron et le footballeur disent non.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Collection de non."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "La fête se fait sur la musique d'attente : la seule qui n'a pas dit non.",
-  "Deuxième artiste : refus. Troisième : refus en majuscules.",
-  "Ici, la fête municipale veut son clip. Premier artiste contacté : refus."
+  "Il collectionne les vues. Les autres lui collectionnent les non.",
+  "Les autres lui collectionnent les non.",
+  "Des millions de vues, trois non."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Bardella. La musique, moins.",
+   "text": "Dans cette ville, tout le monde vote Bardella. Les autres, non.",
    "accent_words": [
-    "La musique"
+    "non"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -42,33 +42,33 @@
   },
   {
    "id": "n3",
-   "text": "Theodora l'avait prévenu : « Je ne partagerai jamais vos idées ».",
+   "text": "La chanteuse Theodora : « Je ne partagerai jamais vos idées ». Premier non.",
    "accent_words": [
-    "jamais"
+    "non"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n4",
-   "text": "Ici, la fête municipale veut son clip. Premier artiste contacté : refus.",
+   "text": "Les grands patrons qu'il courtise ? Toujours sceptiques. Deuxième non.",
    "accent_words": [
-    "refus"
+    "sceptiques"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Deuxième : refus. Troisième : refus en majuscules.",
+   "text": "Mbappé critique le RN publiquement. Troisième non, en mondovision.",
    "accent_words": [
-    "majuscules"
+    "Troisième non"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "La fête se fait sur la musique d'attente : la seule qui n'a pas dit non.",
+   "text": "Il collectionne les vues. Les autres lui collectionnent les non.",
    "accent_words": [
-    "musique d'attente"
+    "non"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -76,7 +76,7 @@
    "id": "n7",
    "text": "Envoie ça au pote qui croit qu'un son viral, c'est un soutien.",
    "accent_words": [
-    "un soutien"
+    "soutien"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -94,9 +94,19 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; une scène de concert, platines débranchées.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "LES AUTRES : NON",
+   "comic_action": "Descente sur la ville ; banderole « LES AUTRES : NON » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cross_arms"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -110,9 +120,21 @@
     "person",
     "screen"
    ],
-   "onscreen_text": "5 M DE VUES",
-   "comic_action": "Ring light et trépied : un compteur de vues explose.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "5 MILLIONS DE VUES",
+   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « 5 MILLIONS DE VUES ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "sourire_pro",
+     "objet": "ring_light"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -121,14 +143,26 @@
    ],
    "camera": "closeup",
    "set": [
+    "tribune",
+    "studio_light",
     "screen",
-    "text3d",
-    "mairie",
-    "person"
+    "text3d"
    ],
-   "onscreen_text": "« JAMAIS »",
-   "comic_action": "L'écran géant affiche la phrase ; la musique s'arrête net.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "NON N° 1",
+   "comic_action": "Plateau télé : pupitre et projecteurs, l'écran affiche « NON N° 1 ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "perso",
+     "geste": "clap",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s4",
@@ -138,13 +172,25 @@
    "camera": "window_pass",
    "set": [
     "table",
-    "screen",
-    "sign",
-    "building"
+    "building",
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "ARTISTE 1 : NON",
-   "comic_action": "Par la fenêtre, un agent raccroche le téléphone, dépité.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "NON N° 2",
+   "comic_action": "Salon feutré, table dressée ; carton « NON N° 2 ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cross_arms",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s5",
@@ -153,14 +199,25 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
+    "screen",
     "text3d",
-    "mairie"
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "NON · NON · NON",
-   "comic_action": "Trois lettres de refus tombent sur la table, la dernière en lettres énormes.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "NON N° 3",
+   "comic_action": "Écran géant : « NON N° 3 ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -169,14 +226,26 @@
    ],
    "camera": "orbit",
    "set": [
-    "ground",
-    "banner",
-    "person",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "PLAYLIST : MUSIQUE D'ATTENTE",
-   "comic_action": "Les habitants dansent mollement sur une mélodie de standard téléphonique. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "COLLECTION DE NON",
+   "comic_action": "Plan final, tenir une seconde : « COLLECTION DE NON ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -190,9 +259,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt chante faux devant la vitrine.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE VIRAL",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE VIRAL ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -204,7 +281,7 @@
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 82,
+ "word_count": 77,
  "claims": [
   {
    "segment": "n2",
@@ -215,10 +292,24 @@
   },
   {
    "segment": "n3",
-   "text": "« Je ne partagerai jamais vos idées »",
+   "text": "La chanteuse Theodora : « Je ne partagerai jamais vos idées ». Premier non.",
    "claim_type": "citation_exacte",
    "source": "https://www.rtbf.be/article/je-ne-partagerai-jamais-vos-idees-theodora-denonce-l-utilisation-de-sa-chanson-par-jordan-bardella-11648514",
    "note": "Montage TikTok sur « melodrama », plus de 5 millions de vues ; Theodora : « Je ne partagerai jamais vos idées »."
+  },
+  {
+   "segment": "n4",
+   "text": "Les grands patrons qu'il courtise ? Toujours sceptiques. Deuxième non.",
+   "claim_type": "fait_public",
+   "source": "https://www.slate.fr/politique/rassemblement-national-seduire-patrons-cac-40-ouvriers-vote-populaire-presidentielle-2027-election-le-pen-bardella",
+   "note": "Les grands patrons courtisés par Jordan Bardella restent sceptiques."
+  },
+  {
+   "segment": "n5",
+   "text": "Mbappé critique le RN publiquement. Troisième non, en mondovision.",
+   "claim_type": "fait_public",
+   "source": "https://www.europe1.fr/politique/kylian-mbappe-quitte-le-psg-le-club-gagne-la-ligue-des-champions-jordan-bardella-repond-a-la-star-des-bleus-apres-ses-critiques-du-rn-934142",
+   "note": "Réponse à Mbappé : quand Mbappé quitte le PSG, le club gagne la Ligue des champions."
   }
  ],
  "sources": [
@@ -226,10 +317,24 @@
    "url": "https://www.rtbf.be/article/je-ne-partagerai-jamais-vos-idees-theodora-denonce-l-utilisation-de-sa-chanson-par-jordan-bardella-11648514",
    "date": "2025-12-15",
    "consulted": "2026-11-22",
-   "statut": "fait",
+   "statut": "fait + citation exacte",
    "note": "Montage TikTok sur « melodrama », plus de 5 millions de vues ; Theodora : « Je ne partagerai jamais vos idées »."
+  },
+  {
+   "url": "https://www.slate.fr/politique/rassemblement-national-seduire-patrons-cac-40-ouvriers-vote-populaire-presidentielle-2027-election-le-pen-bardella",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "fait + opinion",
+   "note": "Les grands patrons courtisés par Jordan Bardella restent sceptiques."
+  },
+  {
+   "url": "https://www.europe1.fr/politique/kylian-mbappe-quitte-le-psg-le-club-gagne-la-ligue-des-champions-jordan-bardella-repond-a-la-star-des-bleus-apres-ses-critiques-du-rn-934142",
+   "date": "2026-05-13",
+   "consulted": "2026-11-22",
+   "statut": "fait (paraphrase, sans guillemets)",
+   "note": "Réponse à Mbappé : quand Mbappé quitte le PSG, le club gagne la Ligue des champions."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = montage TikTok sur « melodrama » (plus de 5 millions de vues) ; Theodora : « Je ne partagerai jamais vos idées » ; la fête municipale sans artistes. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = tout le monde lui dit non (Theodora, patrons, Mbappé). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

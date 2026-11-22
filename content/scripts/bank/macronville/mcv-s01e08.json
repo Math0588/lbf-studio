@@ -3,25 +3,25 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-08",
  "format": "A",
- "title_cover": "Grand débat du trou",
+ "title_cover": "Sept heures de micro",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, un nid-de-poule a droit à sept heures de débat.",
-  "Macronville : on ne rebouche pas, on consulte.",
-  "Le trou le plus écouté de France est à Macronville.",
-  "Les macronistes vont vouloir en débattre."
+  "Grand débat de 2019 : près de sept heures de micro, veste tombée.",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Sept heures de micro : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Et lui, il parle."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le débat continue. Le trou, lui, vient d'être nommé Premier ministre.",
-  "Sept heures de débat plus tard, le trou a pris du galon.",
-  "Le trou n'est pas réparé, mais il a été entendu."
+  "Le jour où il fait court : « parfois des erreurs ». Lesquelles ? Silence.",
+  "Sept heures pour s'expliquer, une ligne pour s'excuser. Sans détail.",
+  "82 % ne le croient plus ? Il faut mieux expliquer."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Et tout le monde parle.",
+   "text": "Dans cette ville, tout le monde vote Macron. Et lui, il parle.",
    "accent_words": [
     "parle"
    ],
@@ -29,47 +29,47 @@
   },
   {
    "id": "n2",
-   "text": "Un nid-de-poule apparaît. Le maire lance un grand débat.",
+   "text": "Grand débat de 2019 : près de sept heures de micro, veste tombée.",
    "accent_words": [
-    "grand débat"
+    "tombée"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Sept heures de micro, veste tombée. Le trou écoute poliment.",
+   "text": "Salon de l'agriculture 2026 : douze heures. Il parle encore.",
    "accent_words": [
-    "Sept heures"
+    "encore"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Verdict : le trou est réfractaire au changement. Il refuse de bouger.",
+   "text": "Pendant ce temps, sept Premiers ministres défilent. Lui garde le micro.",
    "accent_words": [
-    "réfractaire"
+    "micro"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Budget voté : un « pognon de dingue ». Le trou s'agrandit.",
+   "text": "82 % ne le croient plus ? Il faut mieux expliquer.",
    "accent_words": [
-    "s'agrandit"
+    "expliquer"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n6",
+   "text": "Le jour où il fait court : « parfois des erreurs ». Lesquelles ? Silence.",
+   "accent_words": [
+    "Silence"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n6",
-   "text": "Le débat continue. Le trou, lui, vient d'être nommé Premier ministre.",
-   "accent_words": [
-    "Premier ministre"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n7",
-   "text": "Envoie ça au pote qui organise une réunion pour chaque problème.",
+   "text": "Envoie ça au pote qui monopolise la parole en réunion.",
    "accent_words": [
     "réunion"
    ],
@@ -84,15 +84,29 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "facade_row",
-    "lamp",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "car"
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la rue principale, façades alignées, passants pressés.",
-   "expected_result": "Le décor de rue posé."
+   "comic_action": "Descente sur la ville ; banderole « SEPT HEURES DE MICRO » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s2",
@@ -101,78 +115,146 @@
    ],
    "camera": "descend",
    "set": [
-    "road",
-    "sign",
-    "person",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "person"
    ],
-   "onscreen_text": "GRAND DÉBAT DU TROU",
-   "comic_action": "Plongée sur le nid-de-poule au milieu de la route, entouré de rubalise.",
-   "expected_result": "Le trou devient le personnage."
+   "onscreen_text": "7 HEURES DE MICRO",
+   "comic_action": "Le maire en bras de chemise au micro ; une horloge géante tourne en accéléré, la foule s'endort.",
+   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "parle",
+     "objet": "micro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "fall",
+     "visage": "dort",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "tribune",
-    "table",
+    "shop",
     "person",
-    "studio_light"
+    "text3d"
    ],
-   "onscreen_text": "7 HEURES",
-   "comic_action": "Le maire cubique tombe la veste et parle ; l'horloge fait trois tours ; le public dort.",
-   "expected_result": "Le grand débat sans fin."
+   "onscreen_text": "12 HEURES AU SALON",
+   "comic_action": "Le maire passe d'un stand à l'autre en parlant ; les commerçants rangent, ferment, il parle toujours.",
+   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "parle",
+     "objet": "micro",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "descend",
+   "camera": "closeup",
    "set": [
-    "road",
-    "sign",
+    "mairie",
     "person",
     "text3d"
    ],
-   "onscreen_text": "TROU RÉFRACTAIRE",
-   "comic_action": "Plongée sur le nid-de-poule au milieu de la route, entouré de rubalise.",
-   "expected_result": "Le trou devient le personnage."
+   "onscreen_text": "7 PREMIERS MINISTRES",
+   "comic_action": "Sept Premiers ministres passent devant lui avec un carton ; il ne lâche pas son micro.",
+   "expected_result": "Escalade 2 : encore plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "parle",
+     "objet": "micro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "wave",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "table",
     "screen",
     "text3d",
-    "form_stack"
+    "person"
    ],
-   "onscreen_text": "« POGNON DE DINGUE »",
-   "comic_action": "Guichet des aides : compteur géant qui défile ; la pile de formulaires s'effondre.",
-   "expected_result": "La formule réelle étiquette un guichet absurde."
+   "onscreen_text": "82 % : PLUS CONFIANCE",
+   "comic_action": "Écran géant : 82 % ; le maire déroule un tableau de pédagogie encore plus long.",
+   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "blase",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
-    "facade_row",
-    "person",
-    "sign",
-    "text3d"
+    "screen",
+    "text3d",
+    "mairie"
    ],
-   "onscreen_text": "TROU → MATIGNON",
-   "comic_action": "Une écharpe tricolore se pose autour du nid-de-poule ; applaudissements.",
-   "expected_result": "La valse des Premiers ministres en compteur."
+   "onscreen_text": "« PARFOIS DES ERREURS »",
+   "comic_action": "Pour la première fois, le micro se tait ; l'écran affiche « ERREURS : » puis rien.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "neutre",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s7",
@@ -187,50 +269,64 @@
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large sur la rue ; un habitant en t-shirt de la boutique se retourne vers la caméra.",
-   "expected_result": "Appel au partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : le président qui parle, parle, parle (grand débat, Salon).",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui organise une réunion pour chaque problème."
+  "text": "Envoie ça au pote qui monopolise la parole en réunion."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-canape"
  },
- "word_count": 78,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Un nid-de-poule apparaît. Le maire lance un grand débat.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
-   "note": "Grand débat : près de sept heures face aux maires, veste tombée. Détourné dans la ville fictive."
-  },
-  {
-   "text": "Sept heures de micro, veste tombée. Le trou écoute poliment.",
+   "text": "Grand débat de 2019 : près de sept heures de micro, veste tombée.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
    "note": "Grand débat : près de sept heures face aux maires, veste tombée."
   },
   {
-   "text": "Verdict : le trou est réfractaire au changement. Il refuse de bouger.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
-   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde ». Détourné dans la ville fictive."
+   "text": "Salon de l'agriculture 2026 : douze heures. Il parle encore.",
+   "claim_type": "fait_public",
+   "source": "https://mediaterranee.com/2422026-salon-de-lagriculture-un-rail-geant-de-farine-pour-pieger-macron.html",
+   "note": "Salon de l'agriculture 2026 : environ douze heures dans les allées, interpellations d'agriculteurs."
   },
   {
-   "text": "« pognon de dingue »",
+   "text": "Pendant ce temps, sept Premiers ministres défilent. Lui garde le micro.",
+   "claim_type": "fait_public",
+   "source": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "note": "Sept Premiers ministres depuis 2017 (Philippe, Castex, Borne, Attal, Barnier, Bayrou, Lecornu) ; record de Mitterrand égalé selon la presse."
+  },
+  {
+   "text": "82 % ne le croient plus ? Il faut mieux expliquer.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/sondage-82-des-francais-ne-font-pas-confiance-a-emmanuel-macron-qui-bat-le-record-dimpopularite-de-francois-hollande-a-lelysee",
+   "note": "82 % des Français ne lui font pas confiance ; il bat le record d'impopularité de François Hollande."
+  },
+  {
+   "text": "« parfois des erreurs »",
    "claim_type": "citation_exacte",
-   "source": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
-   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
-  },
-  {
-   "text": "Le débat continue. Le trou, lui, vient d'être nommé Premier ministre.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
-   "note": "Valse des ministres, affaires courantes, année record. Détourné dans la ville fictive."
+   "source": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
+   "note": "Bilan publié sur X dix ans après sa candidature : « il y a eu parfois des erreurs », « j'ai fait de mon mieux ». Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027 ; moqueries en réponse."
   }
  ],
  "sources": [
@@ -238,24 +334,45 @@
    "url": "https://www.publicsenat.fr/actualites/politique/grand-oral-marathon-pour-macron-devant-des-maires-sans-concession-136925",
    "date": "2019-01-15",
    "consulted": "2026-11-22",
-   "statut": "fait",
+   "statut": "fait public",
    "note": "Grand débat : près de sept heures face aux maires, veste tombée."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/politique/au-dela-des-carabistouilles-et-du-pognon-de-dingue-ce-que-disent-les-mots-de",
-   "date": "2021-08-11",
+   "url": "https://mediaterranee.com/2422026-salon-de-lagriculture-un-rail-geant-de-farine-pour-pieger-macron.html",
+   "date": "2026-02-24",
    "consulted": "2026-11-22",
-   "statut": "citations exactes vérifiées",
-   "note": "« pognon de dingue », « Gaulois réfractaires », « les gens qui ne sont rien », « poudre de perlimpinpin », « carabistouilles », « transformation profonde »."
+   "statut": "fait public",
+   "note": "Salon de l'agriculture 2026 : environ douze heures dans les allées, interpellations d'agriculteurs."
   },
   {
-   "url": "https://www.publicsenat.fr/actualites/institutions/valse-des-ministres-affaires-courantes-les-chiffres-fous-dune-annee-politique-record",
-   "date": "2025",
+   "url": "https://www.connexionfrance.com/news/can-you-name-in-order-frances-seven-prime-ministers-since-2017/743426",
+   "date": "2025-10",
    "consulted": "2026-11-22",
-   "statut": "fait",
-   "note": "Valse des ministres, affaires courantes, année record."
+   "statut": "fait public",
+   "note": "Sept Premiers ministres depuis 2017 (Philippe, Castex, Borne, Attal, Barnier, Bayrou, Lecornu) ; record de Mitterrand égalé selon la presse."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/sondage-82-des-francais-ne-font-pas-confiance-a-emmanuel-macron-qui-bat-le-record-dimpopularite-de-francois-hollande-a-lelysee",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "fait public (sondage)",
+   "note": "82 % des Français ne lui font pas confiance ; il bat le record d'impopularité de François Hollande."
+  },
+  {
+   "url": "https://lcp.fr/actualites/il-y-a-eu-parfois-des-erreurs-emmanuel-macron-affirme-avoir-fait-de-son-mieux-pendant",
+   "date": "2026-11-17",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (post X)",
+   "note": "Bilan publié sur X dix ans après sa candidature : « il y a eu parfois des erreurs », « j'ai fait de mon mieux »."
+  },
+  {
+   "url": "https://www.letribunaldunet.fr/politique/macron-message-dix-ans-candidature-erreurs.html",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "fait public + réactions",
+   "note": "Le message ne détaille aucune des erreurs ; mandat jusqu'en mai 2027 ; moqueries en réponse."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : le grand débat (sept heures, veste tombée) appliqué à un nid-de-poule, qui finit nommé Premier ministre. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — le président qui parle, parle, parle (grand débat, Salon). Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

@@ -3,57 +3,57 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-17",
  "format": "A",
- "title_cover": "Frites de coalition",
+ "title_cover": "Tout le monde dit non",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, même la frite refuse la coalition.",
-  "Macronville : le cornet de frites de Lisnard à Glucksmann.",
-  "La mayonnaise de la troisième force n'a pas pris.",
-  "Les macronistes vont manger seuls."
+  "Fin 2026, il rêve d'une coalition « de Lisnard à Glucksmann ».",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Tout le monde dit non : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Tout le monde, vraiment."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Dix ans d'en même temps. Plus personne ne veut partager ses frites.",
-  "Le cornet unique finit à la poubelle. Personne n'a mordu.",
-  "Une coalition de frites : tout le monde refuse la sauce."
+  "Tout le monde à sa table ? Il a réussi une union : celle des refus.",
+  "Une coalition de tout le monde. Tout le monde a décliné.",
+  "Son porte-parole parle de « tentatives désespérées »."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Enfin, ceux qui restent.",
+   "text": "Dans cette ville, tout le monde vote Macron. Tout le monde, vraiment.",
    "accent_words": [
-    "ceux qui restent"
+    "vraiment"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "À la friterie, le maire propose un cornet unique, droite et gauche.",
+   "text": "Fin 2026, il rêve d'une coalition « de Lisnard à Glucksmann ».",
    "accent_words": [
-    "cornet unique"
+    "Glucksmann"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "En vrai, il rêve d'une coalition de Lisnard à Glucksmann.",
+   "text": "De la droite à la gauche : son en même temps, version mariage forcé.",
    "accent_words": [
-    "coalition"
+    "forcé"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Glucksmann répond que ça « décrédibilise la politique ». La frite aussi.",
+   "text": "Réponse de Glucksmann : l'idée « décrédibilise la politique ».",
    "accent_words": [
-    "décrédibilise"
+    "politique"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n5",
-   "text": "Son camp parle de « tentatives désespérées ». La mayonnaise ne prend pas.",
+   "text": "Son porte-parole parle de « tentatives désespérées ».",
    "accent_words": [
     "désespérées"
    ],
@@ -61,9 +61,9 @@
   },
   {
    "id": "n6",
-   "text": "Dix ans d'en même temps. Plus personne ne veut partager ses frites.",
+   "text": "Tout le monde à sa table ? Il a réussi une union : celle des refus.",
    "accent_words": [
-    "Plus personne"
+    "refus"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -84,44 +84,87 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "facade_row",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "sign"
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
-   "expected_result": "Le commerce du jour posé."
+   "comic_action": "Descente sur la ville ; banderole « TOUT LE MONDE DIT NON » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "orbit",
+   "camera": "descend",
    "set": [
     "table",
     "person",
     "banner"
    ],
-   "onscreen_text": "CORNET UNIQUE",
-   "comic_action": "Table ronde : le maire cubique tire des chaises vers lui ; tous les invités repartent avec la leur.",
-   "expected_result": "La coalition que personne ne veut."
+   "onscreen_text": "« DE LISNARD À GLUCKSMANN »",
+   "comic_action": "Le maire dresse une table immense avec des chaises de toutes les couleurs ; il attend, cartons d'invitation à la main.",
+   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "table",
-    "person",
-    "banner"
+    "traffic_light",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "DE LISNARD À GLUCKSMANN",
-   "comic_action": "Table ronde : le maire cubique tire des chaises vers lui ; tous les invités repartent avec la leur.",
-   "expected_result": "La coalition que personne ne veut."
+   "onscreen_text": "EN MÊME TEMPS",
+   "comic_action": "Un feu tricolore s'allume rouge et vert à la fois au-dessus de la table.",
+   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "choque",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "fier",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s4",
@@ -130,44 +173,85 @@
    ],
    "camera": "closeup",
    "set": [
-    "screen",
+    "table",
     "text3d",
     "person"
    ],
-   "onscreen_text": "« DÉCRÉDIBILISE LA POLITIQUE »",
-   "comic_action": "Gros plan sur un écran géant en ville.",
-   "expected_result": "La pique s'affiche en écran."
+   "onscreen_text": "« DÉCRÉDIBILISE »",
+   "comic_action": "Une chaise rose se retire de la table toute seule et s'en va.",
+   "expected_result": "Escalade 2 : encore plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
     "table",
-    "sign",
-    "person",
-    "fountain"
+    "text3d",
+    "person"
    ],
    "onscreen_text": "« TENTATIVES DÉSESPÉRÉES »",
-   "comic_action": "Table de restaurant ; la carte-ardoise affiche les prix.",
-   "expected_result": "Le restaurant porte la pique."
+   "comic_action": "Une deuxième chaise part en marche arrière ; le carton d'invitation revient à l'envoyeur.",
+   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "table",
     "person",
-    "banner"
+    "text3d"
    ],
-   "onscreen_text": "CORNET : 1 PERSONNE",
-   "comic_action": "Le maire seul à la table ronde, un cornet géant devant lui ; toutes les chaises vides.",
-   "expected_result": "La coalition que personne ne veut."
+   "onscreen_text": "L'UNION DES REFUS",
+   "comic_action": "Toutes les chaises vides forment un cercle autour du maire, seul à table.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s7",
@@ -176,14 +260,28 @@
    ],
    "camera": "return",
    "set": [
-    "shop",
-    "tshirt",
+    "road",
     "person",
+    "tshirt",
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : la coalition « de Lisnard à Glucksmann », refusée.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -195,37 +293,31 @@
   "text": "Collection en bio",
   "product_id": "tee-droite-canape"
  },
- "word_count": 83,
+ "word_count": 84,
  "claims": [
   {
-   "text": "À la friterie, le maire propose un cornet unique, droite et gauche.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
-   "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle. Détourné dans la ville fictive."
-  },
-  {
-   "text": "En vrai, il rêve d'une coalition de Lisnard à Glucksmann.",
-   "claim_type": "fait_public",
+   "text": "« de Lisnard à Glucksmann »",
+   "claim_type": "citation_exacte",
    "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
    "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
+  },
+  {
+   "text": "De la droite à la gauche : son en même temps, version mariage forcé.",
+   "claim_type": "fait_public",
+   "source": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
+   "note": "« En même temps » : 29 fois au meeting de Toulon (18/02/2017), au moins 216 fois en trois mois ; devenu mème."
   },
   {
    "text": "« décrédibilise la politique »",
    "claim_type": "citation_exacte",
    "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann-afp-753ca015d95ec4b0d3e2f01c3cb76e945a72ac72",
-   "note": "Glucksmann : l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
+   "note": "Glucksmann juge que l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
   },
   {
    "text": "« tentatives désespérées »",
    "claim_type": "citation_exacte",
    "source": "https://www.boursedirect.fr/fr/actualites/categorie/politique/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann-afp-753ca015d95ec4b0d3e2f01c3cb76e945a72ac72",
-   "note": "Glucksmann : l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
-  },
-  {
-   "text": "Dix ans d'en même temps. Plus personne ne veut partager ses frites.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
-   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois. Détourné dans la ville fictive."
+   "note": "Glucksmann juge que l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
   }
  ],
  "sources": [
@@ -233,24 +325,24 @@
    "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/macron-pour-une-coalition-de-lisnard-a-glucksmann-avant-la-presidentielle-afp-63e49a12eb87a29358ada8273b674de671142212",
    "date": "2026-11",
    "consulted": "2026-11-22",
-   "statut": "fait public (AFP)",
+   "statut": "fait public (dépêche AFP)",
    "note": "Macron souhaite une coalition « de Lisnard à Glucksmann » avant la présidentielle."
-  },
-  {
-   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann-afp-753ca015d95ec4b0d3e2f01c3cb76e945a72ac72",
-   "date": "2026-11",
-   "consulted": "2026-11-22",
-   "statut": "citation exacte (AFP)",
-   "note": "Glucksmann : l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
   },
   {
    "url": "https://www.parismatch.be/actualites/politique/2017/05/08/emmanuel-macron-ce-que-ses-mots-disent-de-lui-P3ZEG5YQV5GDZDIX7IXCSFXNXQ/",
    "date": "2017-05-08",
    "consulted": "2026-11-22",
    "statut": "fait (comptage presse) + mème",
-   "note": "« En même temps » : 29 fois à Toulon (18/02/2017), au moins 216 fois en trois mois."
+   "note": "« En même temps » : 29 fois au meeting de Toulon (18/02/2017), au moins 216 fois en trois mois ; devenu mème."
+  },
+  {
+   "url": "https://www.boursedirect.fr/fr/actualites/categorie/politique/la-large-coalition-suggeree-par-macron-decredibilise-la-politique-estime-glucksmann-afp-753ca015d95ec4b0d3e2f01c3cb76e945a72ac72",
+   "date": "2026-11",
+   "consulted": "2026-11-22",
+   "statut": "citation exacte (dépêche AFP)",
+   "note": "Glucksmann juge que l'idée « décrédibilise la politique » ; son porte-parole parle de « tentatives désespérées »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : la coalition « de Lisnard à Glucksmann » (novembre 2026) refusée par tous, version friterie. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — la coalition « de Lisnard à Glucksmann », refusée. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

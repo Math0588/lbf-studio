@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-22",
  "format": "A",
- "title_cover": "Serveur insoumis",
+ "title_cover": "GTA, art total",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le resto où le serveur refuse de servir.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, tout le monde est insoumis, sauf face au chef.",
-  "Mélenchonville : la carte des desserts passe en motion."
+  "Dans cette ville, tout le monde vote Mélenchon. Manette en main.",
+  "Mélenchon défend GTA VI. Enfin un jeu où il peut gagner ?",
+  "Les fans de Méluche vont me bloquer.",
+  "Bienvenue à Mélenchonville : gTA, art total.",
+  "Mélenchon en une vidéo : gTA, art total."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Résultat : personne n'a mangé, mais tout le monde a applaudi le chef.",
-  "Insoumis à tout, sauf au micro du chef.",
-  "Le restaurant ferme. Le chef, lui, est réinvesti."
+  "Le jeu vidéo, il connaît : trois parties perdues, il relance.",
+  "Trois parties perdues, il relance : le joueur le plus têtu de France.",
+  "En 2017, il jouait déjà en hologramme, sur six écrans."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. L'addition, s'il vous plaît.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Manette en main.",
    "accent_words": [
-    "L'addition, s'il vous plaît"
+    "Manette en main"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Ici, le serveur est insoumis. Il refuse de prendre la commande.",
+   "text": "Sortie de GTA VI : pour lui, le jeu vidéo est un art, pas une marchandise.",
    "accent_words": [
-    "refuse"
+    "une marchandise"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Le cuisinier aussi. Il refuse de cuire.",
+   "text": "Il promet même d'ouvrir le chantier des droits des joueurs en 2027.",
    "accent_words": [
-    "refuse de cuire"
+    "en 2027"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Mais pour choisir le candidat, zéro opposition. Insoumis, sauf au chef.",
+   "text": "Normal : sa campagne vit d'edits et de millions de likes.",
    "accent_words": [
-    "sauf au chef"
+    "de likes"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "L'addition se vote. Débat : trois heures, comme son dîner avec treize patrons.",
+   "text": "En 2017, il jouait déjà en hologramme, sur six écrans.",
    "accent_words": [
-    "trois heures"
+    "six écrans"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Résultat : personne n'a mangé, mais tout le monde a applaudi le chef.",
+   "text": "Le jeu vidéo, il connaît : trois parties perdues, il relance.",
    "accent_words": [
-    "applaudi le chef"
+    "il relance"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote insoumis qui obéit à son groupe WhatsApp.",
+   "text": "Envoie ça au pote qui recommence la même mission depuis 2012.",
    "accent_words": [
-    "obéit"
+    "depuis 2012"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "shop",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur une brasserie rouge ; banderole « CHEZ LES INSOUMIS ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · GTA, ART TOTAL",
+   "comic_action": "Descente sur la ville : banderole « GTA, ART TOTAL », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,58 +113,88 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "person",
-    "sign"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "COMMANDE : REFUSÉE",
-   "comic_action": "Le serveur croise les bras devant la table, carnet fermé.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "GTA VI : C'EST DE L'ART",
+   "comic_action": "Un écran géant affiche une jaquette de jeu dans un cadre de musée.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
-    "table",
-    "person",
+    "screen",
+    "tribune",
     "text3d"
    ],
-   "onscreen_text": "CUISSON : NON",
-   "comic_action": "En cuisine, le cuistot tient une pancarte « JE NE CUIRAI PAS ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DROITS DES JOUEURS : 2027",
+   "comic_action": "Pupitre décoré d'une manette géante.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "orbit",
+   "camera": "street_dolly",
    "set": [
-    "tribune",
-    "person",
-    "table"
+    "ring_light",
+    "screen",
+    "person"
    ],
-   "onscreen_text": "INSOUMIS SAUF AU CHEF",
-   "comic_action": "Orbite : toute la brigade se met au garde-à-vous quand le chef entre.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "EDITS · LIKES",
+   "comic_action": "Mur d'écrans de fans en train de monter des vidéos.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "jump",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
-    "person"
+    "screen",
+    "tribune",
+    "studio_light"
    ],
-   "onscreen_text": "ADDITION : AG",
-   "comic_action": "Travelling le long des tables : mains levées, l'addition passe de main en main.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "MODE MULTIJOUEUR × 6",
+   "comic_action": "Six projections du maire qui jouent en même temps.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "fier"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +203,26 @@
    ],
    "camera": "descend",
    "set": [
-    "table",
-    "person",
-    "text3d"
+    "screen",
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "0 REPAS · 100 % D'OVATION",
-   "comic_action": "Plan large : assiettes vides, salle debout qui applaudit un pupitre.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "GAME OVER × 3",
+   "comic_action": "Écran « GAME OVER » qui clignote trois fois, puis « CONTINUER ? ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,51 +236,130 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique se sert lui-même en cuisine.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote insoumis qui obéit à son groupe WhatsApp."
+  "text": "Envoie ça au pote qui recommence la même mission depuis 2012."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 78,
+ "word_count": 82,
  "claims": [
   {
-   "text": "Mais pour choisir le candidat, zéro opposition. Insoumis, sauf au chef.",
+   "text": "Sortie de GTA VI : pour lui, le jeu vidéo est un art, pas une marchandise.",
    "claim_type": "fait_public",
-   "source": "https://www.europe1.fr/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-930947",
-   "note": "Selon la direction de LFI (AFP) : aucune autre candidature proposée, aucune opposition exprimée."
+   "source": "https://www.franceinfo.fr/culture/jeux-video/gta-vi/mmes-montages-video-et-propositions-electorales-quand-les-politiques-s-emparent-de-la-sortie-de-gta-vi_8289689.html",
+   "note": "Sortie de GTA VI (19/11/2026) : les politiques s'en emparent ; Mélenchon défend le jeu vidéo comme un art (formule exacte non revérifiée : paraphrase sans guillemets)."
   },
   {
-   "text": "L'addition se vote. Débat : trois heures, comme son dîner avec treize patrons.",
+   "text": "Sortie de GTA VI : pour lui, le jeu vidéo est un art, pas une marchandise.",
    "claim_type": "fait_public",
-   "source": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
-   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
+   "source": "https://www.xboxygen.com/News/361205-gta-6-en-code-et-fin-du-jeu-physique-sur-playstation-jean-luc-melenchon-veut-proteger-les-droits-des-joueurs",
+   "note": "Sur X : le jeu vidéo n'est pas une simple marchandise mais un bien culturel ; il ouvrira le chantier des droits des joueurs en 2027."
+  },
+  {
+   "text": "Il promet même d'ouvrir le chantier des droits des joueurs en 2027.",
+   "claim_type": "fait_public",
+   "source": "https://www.xboxygen.com/News/361205-gta-6-en-code-et-fin-du-jeu-physique-sur-playstation-jean-luc-melenchon-veut-proteger-les-droits-des-joueurs",
+   "note": "Sur X : le jeu vidéo n'est pas une simple marchandise mais un bien culturel ; il ouvrira le chantier des droits des joueurs en 2027."
+  },
+  {
+   "text": "Normal : sa campagne vit d'edits et de millions de likes.",
+   "claim_type": "fait_public",
+   "source": "https://www.ladn.eu/media-mutants/comment-la-france-insoumise-a-fait-de-ledit-video-son-arme-pour-2027/",
+   "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique) ; fans surnommés « zinzinsoumis »."
+  },
+  {
+   "text": "Normal : sa campagne vit d'edits et de millions de likes.",
+   "claim_type": "fait_public",
+   "source": "https://www.sudradio.fr/sud-radio/presidentielle-2027-melenchon-prend-la-tete-de-la-bataille-sur-les-reseaux-sociaux",
+   "note": "Plus de 2,1 millions de likes TikTok en septembre 2026 ; 1,2 million de mentions."
+  },
+  {
+   "text": "En 2017, il jouait déjà en hologramme, sur six écrans.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/non-classe/melenchon-six-hologrammes-pour-conclure-une-campagne-de-ferveur-populaire-58921",
+   "note": "Fin de campagne 2017 : six hologrammes simultanés."
+  },
+  {
+   "text": "Le jeu vidéo, il connaît : trois parties perdues, il relance.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+  },
+  {
+   "text": "Le jeu vidéo, il connaît : trois parties perdues, il relance.",
+   "claim_type": "fait_public",
+   "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "sources": [
   {
-   "url": "https://www.europe1.fr/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-930947",
-   "date": "2026-05-03",
+   "url": "https://www.franceinfo.fr/culture/jeux-video/gta-vi/mmes-montages-video-et-propositions-electorales-quand-les-politiques-s-emparent-de-la-sortie-de-gta-vi_8289689.html",
+   "date": "2026-11-19",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Selon la direction de LFI (AFP) : aucune autre candidature proposée, aucune opposition exprimée."
+   "note": "Sortie de GTA VI (19/11/2026) : les politiques s'en emparent ; Mélenchon défend le jeu vidéo comme un art (formule exacte non revérifiée : paraphrase sans guillemets)."
   },
   {
-   "url": "https://www.sudradio.fr/sud-radio/les-coulisses-du-diner-entre-melenchon-et-13-grands-patrons-francais-dont-arnault-bompard-et-pouyanne",
-   "date": "2026-11-17",
+   "url": "https://www.xboxygen.com/News/361205-gta-6-en-code-et-fin-du-jeu-physique-sur-playstation-jean-luc-melenchon-veut-proteger-les-droits-des-joueurs",
+   "date": "2026-07",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Dîner avec treize grands patrons : trois heures, ambiance cordiale, désaccords intacts."
+   "note": "Sur X : le jeu vidéo n'est pas une simple marchandise mais un bien culturel ; il ouvrira le chantier des droits des joueurs en 2027."
+  },
+  {
+   "url": "https://www.ladn.eu/media-mutants/comment-la-france-insoumise-a-fait-de-ledit-video-son-arme-pour-2027/",
+   "date": "2026",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Edits vidéo pro-Mélenchon (ralentis, musique épique) ; fans surnommés « zinzinsoumis »."
+  },
+  {
+   "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-melenchon-prend-la-tete-de-la-bataille-sur-les-reseaux-sociaux",
+   "date": "2026-10",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Plus de 2,1 millions de likes TikTok en septembre 2026 ; 1,2 million de mentions."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/non-classe/melenchon-six-hologrammes-pour-conclure-une-campagne-de-ferveur-populaire-58921",
+   "date": "2017-04-18",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Fin de campagne 2017 : six hologrammes simultanés."
+  },
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+  },
+  {
+   "url": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
+   "date": "2026-06",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « insoumis » pris au pied de la lettre, sauf face au chef (investiture sans opposition). Cadre : le restaurant. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : GTA, art total. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

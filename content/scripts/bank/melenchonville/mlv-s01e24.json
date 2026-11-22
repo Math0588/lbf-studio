@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-24",
  "format": "A",
- "title_cover": "Vainqueur avant match",
+ "title_cover": "Primaire sans match",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : le stade où le match est gagné avant le coup d'envoi.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, on déclare la primaire finie avant de l'avoir jouée.",
-  "Mélenchonville : zéro à zéro, victoire revendiquée."
+  "Dans cette ville, tout le monde vote Mélenchon. Match plié d'avance.",
+  "Mélenchon a gagné la primaire. Il n'y avait pas de primaire.",
+  "Les insoumis vont me détester.",
+  "Bienvenue à Mélenchonville : primaire sans match.",
+  "Mélenchon en une vidéo : primaire sans match."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Score final : zéro à zéro. Il le fête comme une victoire au premier tour.",
-  "Champion autoproclamé, troisième au classement.",
-  "Il gagne tous les matchs qu'on ne joue pas."
+  "La primaire, il la gagne contre personne. La présidentielle, il la perd contre tout le monde.",
+  "Champion sans match, perdant à chaque vrai match.",
+  "Juillet : il rompt avec le PS et laisse quelques mois aux Écologistes."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Coup d'envoi.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Match plié d'avance.",
    "accent_words": [
-    "Coup d'envoi"
+    "Match plié d'avance"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Avant le match, il annonce « La primaire est finie ». L'arbitre n'a pas sifflé.",
+   "text": "Juin 2026 à Saint-Denis, il proclame : « La primaire est finie ».",
    "accent_words": [
-    "pas sifflé"
+    "La primaire est finie"
    ],
    "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Les autres équipes de gauche réclament un tournoi. Il gagne par forfait.",
+   "text": "Quelle primaire ? Aucune n'a eu lieu. Victoire par forfait.",
    "accent_words": [
-    "par forfait"
+    "Victoire par forfait"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n4",
-   "text": "Le PS veut jouer ? Rupture actée en juillet, carton rouge.",
+   "text": "Son camp l'investit sans autre candidature, sans opposition.",
    "accent_words": [
-    "carton rouge"
+    "sans opposition"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Un hors-jeu ? Assemblée générale sur la pelouse, quatre-vingt-dix minutes.",
+   "text": "Juillet : il rompt avec le PS et laisse quelques mois aux Écologistes.",
    "accent_words": [
-    "Assemblée générale"
+    "aux Écologistes"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Score final : zéro à zéro. Il le fête comme une victoire au premier tour.",
+   "text": "La primaire, il la gagne contre personne. La présidentielle, il la perd contre tout le monde.",
    "accent_words": [
-    "victoire"
+    "le monde"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui se déclare champion avant le match.",
+   "text": "Envoie ça au pote qui se déclare champion avant le coup d'envoi.",
    "accent_words": [
-    "champion"
+    "coup d'envoi"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "person",
+    "mairie",
     "banner",
-    "sign"
+    "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un petit stade ; banderole « VAINQUEUR ».",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · PRIMAIRE SANS MATCH",
+   "comic_action": "Descente sur la ville : banderole « PRIMAIRE SANS MATCH », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,13 +113,21 @@
    ],
    "camera": "closeup",
    "set": [
-    "person",
-    "text3d",
-    "sign"
+    "tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "LA PRIMAIRE EST FINIE",
-   "comic_action": "Le capitaine lève la coupe au centre du terrain, l'arbitre tient encore le ballon sous le bras.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "« LA PRIMAIRE EST FINIE »",
+   "comic_action": "Le maire siffle la fin d'un match qui n'a pas commencé.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,43 +136,70 @@
    ],
    "camera": "orbit",
    "set": [
-    "person",
-    "banner",
-    "sign"
+    "ground",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "FORFAIT",
-   "comic_action": "Orbite : les autres équipes arrivent avec leurs sacs, les cages ont été démontées.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PRIMAIRE : 0 MATCH",
+   "comic_action": "Terrain vide, cages sans gardien.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "person",
-    "text3d",
-    "sign"
+    "table",
+    "form_stack",
+    "text3d"
    ],
-   "onscreen_text": "PS : CARTON ROUGE",
-   "comic_action": "Gros plan : un carton rouge brandi vers un joueur en maillot rose.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "ADVERSAIRES : 0",
+   "comic_action": "Une feuille de match avec une seule équipe.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "sourire_pro"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "person",
-    "table",
-    "form_stack"
+    "facade_set",
+    "sign",
+    "person"
    ],
-   "onscreen_text": "HORS-JEU : AG",
-   "comic_action": "Travelling : les joueurs assis en rond au milieu du terrain, mains levées.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PS : CARTON ROUGE",
+   "comic_action": "Carton rouge brandi devant une porte rose.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere"
+    },
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +208,26 @@
    ],
    "camera": "descend",
    "set": [
-    "screen",
-    "text3d",
-    "person"
+    "lift_tribune",
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "0 - 0 = VICTOIRE",
-   "comic_action": "Plan large : tableau d'affichage 0-0, feu d'artifice, un seul joueur fait le tour d'honneur.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "PRIMAIRE 1 · PRÉSIDENTIELLE 0",
+   "comic_action": "Tableau de score qui bascule.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,33 +241,53 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique ramasse le ballon, jamais joué.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui se déclare champion avant le match."
+  "text": "Envoie ça au pote qui se déclare champion avant le coup d'envoi."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-droite-fatigue"
  },
- "word_count": 84,
+ "word_count": 83,
  "claims": [
   {
-   "text": "« La primaire est finie »",
+   "text": "Juin 2026 à Saint-Denis, il proclame : « La primaire est finie ».",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
+   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
   },
   {
-   "text": "Le PS veut jouer ? Rupture actée en juillet, carton rouge.",
+   "text": "Son camp l'investit sans autre candidature, sans opposition.",
+   "claim_type": "fait_public",
+   "source": "https://www.europe1.fr/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-930947",
+   "note": "Selon la direction de LFI (AFP) : aucune autre candidature proposée, aucune opposition exprimée."
+  },
+  {
+   "text": "Juillet : il rompt avec le PS et laisse quelques mois aux Écologistes.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
    "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
+  },
+  {
+   "text": "La primaire, il la gagne contre personne. La présidentielle, il la perd contre tout le monde.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "sources": [
@@ -214,17 +295,31 @@
    "url": "https://www.publicsenat.fr/actualites/politique/a-saint-denis-melenchon-frappe-fort-et-veut-simposer-comme-le-candidat-du-vote-utile-a-gauche",
    "date": "2026-06-07",
    "consulted": "2026-11-22",
+   "statut": "citation_exacte",
+   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem ; se pose en candidat du vote utile à gauche."
+  },
+  {
+   "url": "https://www.europe1.fr/politique/presidentielle-2027-jean-luc-melenchon-officialise-sa-candidature-930947",
+   "date": "2026-05-03",
+   "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Saint-Denis : 26 000 personnes revendiquées pour 10 000 attendues ; « La primaire est finie » ; la tortue, totem de campagne."
+   "note": "Selon la direction de LFI (AFP) : aucune autre candidature proposée, aucune opposition exprimée."
   },
   {
    "url": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
    "date": "2026-07",
    "consulted": "2026-11-22",
-   "statut": "citation exacte",
+   "statut": "fait",
    "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
+  },
+  {
+   "url": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "date": "consulté 2026-11-22",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : « La primaire est finie » (Saint-Denis) et la rupture avec le PS. Cadre : le match de foot. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Primaire sans match. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

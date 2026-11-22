@@ -3,75 +3,75 @@
  "city": "macronville",
  "synopsis_id": "mcv-syn-22",
  "format": "A",
- "title_cover": "Resto du ruissellement",
+ "title_cover": "Premiers de cordée",
  "hook_variants": [
   "Dans cette ville, tout le monde vote Macron.",
-  "Ici, les miettes ruissellent depuis 2017. Enfin, normalement.",
-  "Macronville : le resto où l'addition descend, pas le dessert.",
-  "Le ruissellement, version restaurant.",
-  "Les macronistes vont commander un ruissellement à point."
+  "En 2017, il vante les « premiers de cordée ». Les autres suivent.",
+  "Les électeurs de Macron vont détester celle-là.",
+  "Premiers de cordée : l'histoire en trente secondes.",
+  "Dans cette ville, tout le monde vote Macron. Encordés."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Les « premiers de cordée » ont mangé. Les autres ont eu l'addition.",
-  "Le ruissellement est arrivé : c'est la note.",
-  "En haut le dessert, en bas la facture."
+  "Les premiers de cordée sont au sommet. Les autres portent la corde. Et la dette.",
+  "Les premiers de cordée en haut, les autres en bas, et la corde coûte 3 595 milliards.",
+  "Pour les derniers de cordée : la retraite à 64 ans, au 49.3."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Macron. Au resto, surtout.",
+   "text": "Dans cette ville, tout le monde vote Macron. Encordés.",
    "accent_words": [
-    "Au resto"
+    "Encordés"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Au resto du ruissellement, les riches dînent au dernier étage.",
+   "text": "En 2017, il vante les « premiers de cordée ». Les autres suivent.",
    "accent_words": [
-    "dernier étage"
+    "suivent"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Les miettes doivent couler jusqu'en bas. Promis depuis 2017.",
+   "text": "Pour les premiers, l'ISF saute dès 2018.",
    "accent_words": [
-    "Promis"
+    "2018"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "En bas, on attend toujours. La nappe est sèche.",
+   "text": "Puis la flat tax : 30 % tout rond sur les revenus du capital.",
    "accent_words": [
-    "sèche"
+    "capital"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "L'ISF a sauté en 2018. L'addition des riches, avec.",
+   "text": "Pour les derniers de cordée : la retraite à 64 ans, au 49.3.",
    "accent_words": [
-    "ISF"
+    "49.3"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Les « premiers de cordée » ont mangé. Les autres ont eu l'addition.",
+   "text": "Les premiers de cordée sont au sommet. Les autres portent la corde. Et la dette.",
    "accent_words": [
-    "l'addition"
+    "dette"
    ],
-   "claim_type": "citation_exacte"
+   "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui attend encore les miettes.",
+   "text": "Envoie ça au pote qui porte tout le sac en randonnée.",
    "accent_words": [
-    "miettes"
+    "randonnée"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -84,30 +84,58 @@
    ],
    "camera": "descend",
    "set": [
-    "shop",
-    "facade_row",
+    "ground",
+    "mairie",
+    "banner",
     "person",
-    "sign"
+    "tree"
    ],
    "onscreen_text": "MACRONVILLE",
-   "comic_action": "Descente sur la rue commerçante ; enseigne qui clignote.",
-   "expected_result": "Le commerce du jour posé."
+   "comic_action": "Descente sur la ville ; banderole « PREMIERS DE CORDÉE » sur la mairie ; le maire caricaturé salue, sourire figé.",
+   "expected_result": "La ville et le thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "neutre",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s2",
    "narration_ids": [
     "n2"
    ],
-   "camera": "descend",
+   "camera": "window_pass",
    "set": [
     "building",
-    "fountain",
     "person",
     "text3d"
    ],
-   "onscreen_text": "RESTO DU RUISSELLEMENT",
-   "comic_action": "Fontaine dorée au sommet d'une tour : l'eau reste en haut ; en bas, un gobelet vide.",
-   "expected_result": "Le ruissellement, littéral et à sec."
+   "onscreen_text": "« PREMIERS DE CORDÉE »",
+   "comic_action": "Une cordée escalade une tour ; en tête, un homme en costume ; derrière, des habitants chargés de sacs.",
+   "expected_result": "Le truc connu, posé clairement et lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "quand": 0.0
+    },
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "fatigue",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s3",
@@ -116,46 +144,86 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "sign",
-    "person",
-    "fountain"
+    "building",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "MIETTES : EN ATTENTE",
-   "comic_action": "Table de restaurant ; la carte-ardoise affiche les prix.",
-   "expected_result": "Le restaurant porte la pique."
+   "onscreen_text": "ISF : DÉCROCHÉ",
+   "comic_action": "Le premier de cordée détache son sac « ISF », qui tombe dans le vide.",
+   "expected_result": "Escalade 1 : le même thème, en plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "colere",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
-    "table",
-    "sign",
-    "person",
-    "fountain"
+    "screen",
+    "text3d",
+    "person"
    ],
-   "onscreen_text": "NAPPE SÈCHE",
-   "comic_action": "Table de restaurant ; la carte-ardoise affiche les prix.",
-   "expected_result": "Le restaurant porte la pique."
+   "onscreen_text": "FLAT TAX 30 %",
+   "comic_action": "Au sommet, un écran affiche « 30 % » ; le premier de cordée trinque.",
+   "expected_result": "Escalade 2 : encore plus gros.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "cheer",
+     "visage": "fier",
+     "objet": "verre",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "clap",
+     "visage": "sourire_pro",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "closeup",
+   "camera": "orbit",
    "set": [
     "building",
-    "sign",
-    "text3d",
-    "person"
+    "person",
+    "text3d"
    ],
-   "onscreen_text": "ISF : RAYÉ",
-   "comic_action": "Panneau « ISF » dévissé de la tour et remplacé par un panneau minuscule « IFI ».",
-   "expected_result": "La suppression devient un changement d'enseigne."
+   "onscreen_text": "LES DERNIERS : 64 ANS",
+   "comic_action": "Tout en bas, les derniers de cordée reçoivent un sac supplémentaire marqué « 64 ».",
+   "expected_result": "Escalade 3 : le thème appliqué au plus énorme.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "fall",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s6",
@@ -164,14 +232,27 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "sign",
+    "building",
     "person",
-    "fountain"
+    "text3d"
    ],
-   "onscreen_text": "L'ADDITION, C'EST POUR TOI",
-   "comic_action": "Le serveur descend l'escalier avec une note interminable et la tend à la table du bas.",
-   "expected_result": "Le restaurant porte la pique."
+   "onscreen_text": "ILS PORTENT LA CORDE",
+   "comic_action": "Plan large : le sommet est une terrasse VIP ; la corde entière repose sur les épaules des derniers.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shake",
+     "visage": "fatigue",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "arms_up",
+     "visage": "content",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,50 +261,64 @@
    ],
    "camera": "return",
    "set": [
-    "shop",
-    "tshirt",
+    "road",
     "person",
+    "tshirt",
     "sign"
    ],
    "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour large devant la boutique ; un habitant en t-shirt de la collection sort, hausse les épaules.",
-   "expected_result": "Partage ciblé, produit visible."
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique montre l'écran du doigt ; le maire, derrière, garde son sourire de com'. Rappel du thème : les « premiers de cordée » (2017) et ceux qui portent la corde.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "quand": 0.0
+    },
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro",
+     "quand": 0.5
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui attend encore les miettes."
+  "text": "Envoie ça au pote qui porte tout le sac en randonnée."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-gauche-fatigue"
  },
- "word_count": 70,
+ "word_count": 82,
  "claims": [
-  {
-   "text": "Au resto du ruissellement, les riches dînent au dernier étage.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
-   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »). Détourné dans la ville fictive."
-  },
-  {
-   "text": "Les miettes doivent couler jusqu'en bas. Promis depuis 2017.",
-   "claim_type": "fiction_satirique",
-   "source": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
-   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »). Détourné dans la ville fictive."
-  },
-  {
-   "text": "L'ISF a sauté en 2018. L'addition des riches, avec.",
-   "claim_type": "fait_public",
-   "source": "https://www.vie-publique.fr/en-bref/291443-impot-de-solidarite-sur-la-fortune-isf-le-cout-de-son-remplacement",
-   "note": "ISF supprimé et remplacé par l'IFI (immobilier seul) en 2018 ; origine du surnom « président des riches »."
-  },
   {
    "text": "« premiers de cordée »",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/les-mots-de-macron-79645",
-   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »)."
+   "note": "Petites phrases : « premiers de cordée » (2017), salariées « illettrées » de l'abattoir Gad (2014, excuses ensuite), « se payer un costard »."
+  },
+  {
+   "text": "Pour les premiers, l'ISF saute dès 2018.",
+   "claim_type": "fait_public",
+   "source": "https://www.vie-publique.fr/en-bref/291443-impot-de-solidarite-sur-la-fortune-isf-le-cout-de-son-remplacement",
+   "note": "ISF supprimé en 2018 et remplacé par l'IFI, qui ne taxe plus que l'immobilier ; coût du remplacement évalué par vie-publique."
+  },
+  {
+   "text": "Puis la flat tax : 30 % tout rond sur les revenus du capital.",
+   "claim_type": "fait_public",
+   "source": "https://www.institutmontaigne.org/macron-les-12-mois-de-jupiter/en/economy-and-budget/",
+   "note": "Loi de finances 2018 : prélèvement forfaitaire unique (« flat tax ») de 30 % sur les revenus du capital, et ISF remplacé par l'IFI."
+  },
+  {
+   "text": "Pour les derniers de cordée : la retraite à 64 ans, au 49.3.",
+   "claim_type": "fait_public",
+   "source": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
+   "note": "Réforme des retraites (départ à 64 ans) adoptée par le 49.3, sans vote des députés."
   }
  ],
  "sources": [
@@ -232,16 +327,30 @@
    "date": "2017",
    "consulted": "2026-11-22",
    "statut": "fait + opinion",
-   "note": "« Premiers de cordée », ruissellement ; petites phrases (« se payer un costard »)."
+   "note": "Petites phrases : « premiers de cordée » (2017), salariées « illettrées » de l'abattoir Gad (2014, excuses ensuite), « se payer un costard »."
   },
   {
    "url": "https://www.vie-publique.fr/en-bref/291443-impot-de-solidarite-sur-la-fortune-isf-le-cout-de-son-remplacement",
    "date": "non relevée",
    "consulted": "2026-11-22",
    "statut": "fait public",
-   "note": "ISF supprimé et remplacé par l'IFI (immobilier seul) en 2018 ; origine du surnom « président des riches »."
+   "note": "ISF supprimé en 2018 et remplacé par l'IFI, qui ne taxe plus que l'immobilier ; coût du remplacement évalué par vie-publique."
+  },
+  {
+   "url": "https://www.institutmontaigne.org/macron-les-12-mois-de-jupiter/en/economy-and-budget/",
+   "date": "2018",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Loi de finances 2018 : prélèvement forfaitaire unique (« flat tax ») de 30 % sur les revenus du capital, et ISF remplacé par l'IFI."
+  },
+  {
+   "url": "https://acteurspublics.fr/articles/reforme-des-retraites-le-gouvernement-degaine-le-49-3/",
+   "date": "2023-03-16",
+   "consulted": "2026-11-22",
+   "statut": "fait public",
+   "note": "Réforme des retraites (départ à 64 ans) adoptée par le 49.3, sans vote des députés."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style tacle : « Dans cette ville, tout le monde vote Macron » + piques frontales, une par plan). Angle principal : le ruissellement promis depuis 2017 et l'ISF supprimé, servis au restaurant : les premiers de cordée mangent, les autres paient. Citations « » exactes et sourcées (claims/sources) ; paraphrases de mèmes sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
+ "editorial_notes": "Réécriture 22/11/2026 (2) : un seul thème qui monte en puissance — les « premiers de cordée » (2017) et ceux qui portent la corde. Phrase 2 = le truc connu (sourcé), phrases 3 à 5 = escalades sur le même thème, phrase 6 = chute retournée contre lui, phrase 7 = partage ciblé. Citations « » exactes et sourcées (claims/sources) ; paraphrases sans guillemets ; exagérations évidentes. Chaque scène porte des « actions » qui illustrent littéralement la phrase. Rien sur la vie privée, le couple, la famille, la santé, le physique, l'âge, l'origine ; aucune affaire judiciaire ; pas d'appel au vote ; on moque le politicien, pas ses électeurs."
 }

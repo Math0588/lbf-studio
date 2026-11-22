@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-16",
  "format": "A",
- "title_cover": "Fraternité exclue",
+ "title_cover": "Fraternité, supprimée",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : la devise de l'école a perdu un mot.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, la fraternité est privée de récré.",
-  "Mélenchonville : liberté, égalité, et le reste en AG."
+  "Dans cette ville, tout le monde vote Mélenchon. Fraternité en option.",
+  "Mélenchon a réécrit la devise. Un mot a sauté.",
+  "Les insoumis vont me détester.",
+  "Bienvenue à Mélenchonville : fraternité, supprimée.",
+  "Mélenchon en une vidéo : fraternité, supprimée."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Normal : en 2024, trois députés critiques n'ont pas été réinvestis. Fraternité, en option.",
-  "La fraternité ? Exclue du fronton, comme d'autres du parti.",
-  "Trois mots sur le fronton, dont un remplaçant."
+  "Il n'a pas supprimé la fraternité du fronton. Il l'avait déjà supprimée du parti.",
+  "La fraternité a quitté le fronton. Elle avait déjà quitté le parti.",
+  "Le PS, frère de la NUPES ? Rupture actée en juillet."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Même la récré.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Fraternité en option.",
    "accent_words": [
-    "Même la récré"
+    "Fraternité en option"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sur le fronton de l'école, la devise a changé.",
+   "text": "Au Bourget, il propose une devise : « Liberté, égalité, solidarité ».",
    "accent_words": [
-    "a changé"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n3",
-   "text": "Au Bourget, il a proposé « Liberté, égalité, solidarité ».",
-   "accent_words": [
-    "solidarité"
+    "Liberté, égalité, solidarité"
    ],
    "claim_type": "citation_exacte"
   },
   {
-   "id": "n4",
-   "text": "La fraternité a sauté. Ici, elle est collée au coin.",
+   "id": "n3",
+   "text": "Adieu fraternité. Logique : en 2024, ses frondeurs n'étaient pas réinvestis.",
    "accent_words": [
-    "au coin"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n5",
-   "text": "Pour jouer à chat, il faut une motion. Pour la marelle, une Constituante.",
-   "accent_words": [
-    "une Constituante"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n6",
-   "text": "Normal : en 2024, trois députés critiques n'ont pas été réinvestis. Fraternité, en option.",
-   "accent_words": [
-    "en option"
+    "pas réinvestis"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui veut réécrire la devise, mais pas faire la vaisselle.",
+   "id": "n4",
+   "text": "Ruffin, l'ancien frère d'armes ? Divorce consommé.",
    "accent_words": [
-    "la vaisselle"
+    "Divorce consommé"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n5",
+   "text": "Le PS, frère de la NUPES ? Rupture actée en juillet.",
+   "accent_words": [
+    "Rupture actée en juillet"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n6",
+   "text": "Il n'a pas supprimé la fraternité du fronton. Il l'avait déjà supprimée du parti.",
+   "accent_words": [
+    "du parti"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui se brouille avec toute sa bande de soirée.",
+   "accent_words": [
+    "de soirée"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
+    "mairie",
     "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur une école ; on décroche une lettre du fronton.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · FRATERNITÉ, SUPPRIMÉE",
+   "comic_action": "Descente sur la ville : banderole « FRATERNITÉ, SUPPRIMÉE », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -100,13 +113,21 @@
    ],
    "camera": "closeup",
    "set": [
-    "building",
-    "text3d",
-    "person"
+    "column",
+    "arch",
+    "text3d"
    ],
-   "onscreen_text": "DEVISE : MISE À JOUR",
-   "comic_action": "Gros plan : un ouvrier dévisse le mot « FRATERNITÉ » du fronton.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "« LIBERTÉ, ÉGALITÉ, SOLIDARITÉ »",
+   "comic_action": "Sur un fronton, le mot FRATERNITÉ est décollé à la spatule.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "fier",
+     "objet": "micro"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -115,43 +136,70 @@
    ],
    "camera": "orbit",
    "set": [
-    "building",
-    "banner",
-    "text3d"
+    "facade_row",
+    "person",
+    "sign"
    ],
-   "onscreen_text": "LIBERTÉ ÉGALITÉ SOLIDARITÉ",
-   "comic_action": "Orbite : le nouveau mot « SOLIDARITÉ » est hissé à la grue, un peu de travers.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "FRONDEURS : DEHORS",
+   "comic_action": "Trois militants raccompagnés à la porte, fronton en fond.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "fall",
+     "visage": "choque"
+    },
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
+    "road",
     "person",
-    "sign",
-    "text3d"
+    "car"
    ],
-   "onscreen_text": "FRATERNITÉ : AU COIN",
-   "comic_action": "Dans la cour, les lettres « FRATERNITÉ » sont alignées face au mur, au coin.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RUFFIN : EX-FRÈRE",
+   "comic_action": "Deux silhouettes se tournent le dos et partent chacune de leur côté.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "wave",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "person",
-    "table",
-    "form_stack"
+    "facade_set",
+    "sign",
+    "text3d"
    ],
-   "onscreen_text": "MOTION : CHAT",
-   "comic_action": "Travelling : des élèves votent à main levée avant de courir.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PS : RUPTURE",
+   "comic_action": "Une porte rose claque, une photo de groupe tombe.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "foule",
+     "geste": "facepalm",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -160,13 +208,20 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
+    "column",
     "text3d",
-    "person"
+    "banner"
    ],
-   "onscreen_text": "FRATERNITÉ : EN OPTION",
-   "comic_action": "Plan large : le mot « FRATERNITÉ » est raccompagné à la grille de l'école, avec un carton.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "FRATERNITÉ : DÉJÀ SUPPRIMÉE",
+   "comic_action": "Le mot FRATERNITÉ part à la benne avec trois chaises.",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -180,33 +235,53 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique recolle une lettre au fronton.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui veut réécrire la devise, mais pas faire la vaisselle."
+  "text": "Envoie ça au pote qui se brouille avec toute sa bande de soirée."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 81,
+ "word_count": 79,
  "claims": [
   {
-   "text": "« Liberté, égalité, solidarité »",
+   "text": "Au Bourget, il propose une devise : « Liberté, égalité, solidarité ».",
    "claim_type": "citation_exacte",
    "source": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
    "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
   },
   {
-   "text": "Normal : en 2024, trois députés critiques n'ont pas été réinvestis. Fraternité, en option.",
+   "text": "Adieu fraternité. Logique : en 2024, ses frondeurs n'étaient pas réinvestis.",
    "claim_type": "fait_public",
    "source": "https://www.letemps.ch/monde/europe/a-deux-semaines-des-legislatives-une-purge-au-sein-de-la-france-insoumise-chahute-deja-le-nouveau-front-populaire",
-   "note": "2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge »."
+   "note": "Législatives 2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge »."
+  },
+  {
+   "text": "Ruffin, l'ancien frère d'armes ? Divorce consommé.",
+   "claim_type": "fait_public",
+   "source": "https://www.slate.fr/politique/francois-ruffin-jean-luc-melenchon-rupture-divorce-lfi-france-insoumise-election-presidentielle-2027-strategie-gauche",
+   "note": "Ruffin–Mélenchon : « le divorce est désormais consommé »."
+  },
+  {
+   "text": "Le PS, frère de la NUPES ? Rupture actée en juillet.",
+   "claim_type": "fait_public",
+   "source": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
+   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
   }
  ],
  "sources": [
@@ -214,7 +289,7 @@
    "url": "https://www.publicsenat.fr/actualites/politique/il-est-lheure-de-tout-changer-au-bourget-lfi-met-en-scene-sa-nouvelle-france",
    "date": "2026-11-07",
    "consulted": "2026-11-22",
-   "statut": "fait",
+   "statut": "citation_exacte",
    "note": "Le Bourget : décors de canapé et de comptoir de café, « Nouvelle France », devise « Liberté, égalité, solidarité », programme vendu sur place, salle qui scande « Taxer les riches »."
   },
   {
@@ -222,9 +297,23 @@
    "date": "2024-06",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge »."
+   "note": "Législatives 2024 : Corbière, Garrido, Simonnet non réinvestis ; une sortante dénonce une « purge »."
+  },
+  {
+   "url": "https://www.slate.fr/politique/francois-ruffin-jean-luc-melenchon-rupture-divorce-lfi-france-insoumise-election-presidentielle-2027-strategie-gauche",
+   "date": "2025",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Ruffin–Mélenchon : « le divorce est désormais consommé »."
+  },
+  {
+   "url": "https://lcp.fr/actualites/apres-l-heure-ce-ne-sera-plus-l-heure-melenchon-acte-la-rupture-avec-le-ps-et-presse-les",
+   "date": "2026-07",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Rupture actée avec le PS ; aux Écologistes : « deux ou trois mois », « après l'heure, ce ne sera plus l'heure »."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : la devise proposée au Bourget : « Liberté, égalité, solidarité ». Cadre : la cour de récré. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Fraternité, supprimée. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

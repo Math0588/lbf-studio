@@ -4,23 +4,23 @@
  "synopsis_id": null,
  "format": "A",
  "length": "court",
- "title_cover": "Tampon partout",
- "anchor": "image « Vu et s'en tape » publiée sur X le 04/11/2026 après l'éviction de journalistes de sa soirée de lancement : devenue le logo de la mairie fictive.",
+ "title_cover": "Vu et s'en tape",
+ "anchor": "« Vu et s'en tape » (refrain)",
  "meme_key": "VU",
- "situation": "Tampon partout",
- "ressort": "tacle frontal : setup court puis retournement sec, une pique par plan",
+ "situation": "Vu et s'en tape",
+ "ressort": "un thème unique en escalade : truc connu, trois crans, chute retournée",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, la mairie répond à tout avec un seul tampon.",
-  "Bardellaville : réclamations vues, jamais traitées.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : tampon partout."
+  "Dans cette ville, tout le monde vote Bardella. Réclamations : vues.",
+  "Bardella a une réponse pour tout : vu.",
+  "Bardellaville : tout est vu, rien n'est fait.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Vu et s'en tape."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Le service public le plus rapide : il voit tout, ne fait rien.",
-  "Le service public le plus rapide de France : il voit tout, il ne fait rien.",
-  "Fuite d'eau ? Vu. Bus supprimé ? Vu. Loyer doublé ? Vu."
+  "Il voit tout, s'en tape de tout : le seul service public qui marche.",
+  "Il voit tout, s'en tape de tout.",
+  "Vu. Et rien d'autre."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -34,49 +34,49 @@
   },
   {
    "id": "n2",
-   "text": "Journalistes refoulés de sa soirée ? Réponse sur X : Vu et s'en tape.",
+   "text": "Journalistes refoulés de sa soirée ? Sur X : « Vu et s'en tape ».",
    "accent_words": [
-    "Vu et s'en tape"
+    "tape"
    ],
-   "claim_type": "fait_public"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n3",
-   "text": "Un mème déjà connu. Ici, c'est le logo de la mairie.",
+   "text": "Les débats de Public Sénat ? Vu. Refusé.",
    "accent_words": [
-    "logo de la mairie"
+    "Refusé"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "Fuite d'eau ? Vu. Bus supprimé ? Vu. Loyer doublé ? Vu.",
+   "text": "L'abrogation de la réforme des retraites ? Vu. « Nous verrons ».",
    "accent_words": [
-    "Vu"
+    "verrons"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "citation_exacte"
   },
   {
    "id": "n5",
-   "text": "Les pétitions finissent tamponnées, puis en confettis pour ses meetings.",
+   "text": "Le Parlement européen ? Vu de loin, disent ses adversaires.",
    "accent_words": [
-    "confettis"
+    "adversaires"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n6",
-   "text": "Le service public le plus rapide : il voit tout, ne fait rien.",
+   "text": "Il voit tout, s'en tape de tout : le seul service public qui marche.",
    "accent_words": [
-    "ne fait rien"
+    "service public"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n7",
-   "text": "Envoie ça au pote qui croit qu'un tampon, c'est une politique.",
+   "text": "Envoie ça au pote qui laisse tout le monde en vu.",
    "accent_words": [
-    "tampon"
+    "en vu"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -94,9 +94,21 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; un tampon « VU » géant écrasé sur la façade.",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "RÉCLAMATIONS : VUES",
+   "comic_action": "Descente sur la ville ; banderole « RÉCLAMATIONS : VUES » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,14 +117,26 @@
    ],
    "camera": "closeup",
    "set": [
-    "table",
-    "form_stack",
+    "screen",
     "text3d",
-    "mairie"
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "VU ET S'EN TAPE",
-   "comic_action": "Un tampon rouge s'abat sur une carte de presse posée sur la table.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "« VU ET S'EN TAPE »",
+   "comic_action": "Écran géant : « « VU ET S'EN TAPE » ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s3",
@@ -121,62 +145,109 @@
    ],
    "camera": "orbit",
    "set": [
-    "column",
-    "mairie",
-    "text3d",
-    "person"
+    "tribune",
+    "router_lectern",
+    "studio_light",
+    "text3d"
    ],
-   "onscreen_text": "LOGO : VU",
-   "comic_action": "Entre deux colonnes, on hisse un drapeau orné du tampon.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "DÉBAT : VU",
+   "comic_action": "Plateau de débat, deux pupitres ; en grand « DÉBAT : VU ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "cross_arms",
+     "visage": "fier"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "closeup",
    "set": [
-    "road",
-    "building",
-    "person",
-    "bin"
+    "scroll",
+    "form_stack",
+    "table",
+    "person"
    ],
-   "onscreen_text": "FUITE : VU · BUS : VU",
-   "comic_action": "Travelling : chaque problème de la rue porte un autocollant rouge « VU ».",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "RETRAITES : VU",
+   "comic_action": "Formulaire de retraite déplié ; en gros « RETRAITES : VU ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "descend",
+   "camera": "orbit",
    "set": [
-    "lift_tribune",
     "tribune",
-    "person",
-    "banner"
+    "lift_tribune",
+    "banner",
+    "person"
    ],
-   "onscreen_text": "PÉTITIONS → CONFETTIS",
-   "comic_action": "La tribune s'élève sous une pluie de confettis découpés dans des pétitions.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "PARLEMENT : VU DE LOIN",
+   "comic_action": "Meeting : la tribune s'élève, banderole « PARLEMENT : VU DE LOIN ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shrug"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "table",
-    "screen",
-    "sign",
-    "building"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "TEMPS DE TRAITEMENT : 0 S",
-   "comic_action": "Guichet : un agent tamponne à la chaîne sans lire. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "LE SERVICE PUBLIC QUI MARCHE",
+   "comic_action": "Plan final, tenir une seconde : « LE SERVICE PUBLIC QUI MARCHE ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -190,35 +261,57 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt se fait tamponner « VU » sur le front.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE QUI LAISSE EN VU",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE QUI LAISSE EN VU ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui croit qu'un tampon, c'est une politique."
+  "text": "Envoie ça au pote qui laisse tout le monde en vu."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-avis-mandat"
  },
- "word_count": 82,
+ "word_count": 81,
  "claims": [
   {
    "segment": "n2",
-   "text": "Journalistes refoulés de sa soirée ? Réponse sur X : Vu et s'en tape.",
-   "claim_type": "fait_public",
+   "text": "Journalistes refoulés de sa soirée ? Sur X : « Vu et s'en tape ».",
+   "claim_type": "citation_exacte",
    "source": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
-   "note": "Image « Vu et s'en tape » publiée après l'éviction de journalistes de la soirée de lancement du livre « Gouverner »."
+   "note": "Image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement du livre « Gouverner » ; reprend un mème préexistant."
   },
   {
    "segment": "n3",
-   "text": "Un mème déjà connu. Ici, c'est le logo de la mairie.",
+   "text": "Les débats de Public Sénat ? Vu. Refusé.",
    "claim_type": "fait_public",
-   "source": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
-   "note": "Image « Vu et s'en tape » publiée après l'éviction de journalistes de la soirée de lancement du livre « Gouverner »."
+   "source": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
+   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
+  },
+  {
+   "segment": "n4",
+   "text": "L'abrogation de la réforme des retraites ? Vu. « Nous verrons ».",
+   "claim_type": "citation_exacte",
+   "source": "https://www.boursorama.com/bourse/actualites/retraites-jordan-bardella-n-est-plus-si-presse-d-abroger-la-reforme-de-macron-101b949b9967c92520b3be1c9ef2c30f",
+   "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
+  },
+  {
+   "segment": "n5",
+   "text": "Le Parlement européen ? Vu de loin, disent ses adversaires.",
+   "claim_type": "fait_public",
+   "source": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
+   "note": "Critiques sur l'assiduité au Parlement européen (thème du député fantôme) ; aucun chiffre repris."
   }
  ],
  "sources": [
@@ -226,10 +319,31 @@
    "url": "https://www.ozap.com/actu/vu-et-sen-tape-la-reponse-lunaire-de-jordan-bardella-aux-journalistes-refoules-a-lentree-de-la-soiree-de-lancement-de-son-livre/657851",
    "date": "2026-11-05",
    "consulted": "2026-11-22",
-   "statut": "fait public (publication X du 04/11/2026) + mème préexistant",
-   "note": "Image « Vu et s'en tape » publiée après l'éviction de journalistes de la soirée de lancement du livre « Gouverner »."
+   "statut": "fait (publication sur X du 04/11/2026) ; texte exact de l'image",
+   "note": "Image « Vu et s'en tape » publiée sur X après l'éviction de journalistes de la soirée de lancement du livre « Gouverner » ; reprend un mème préexistant."
+  },
+  {
+   "url": "https://www.ozap.com/actu/-et-pourquoi-pas-coquelicot-tv-jordan-bardella-refuse-de-participer-aux-debats-des-europeennes-sur-public-senat/642727",
+   "date": "2024-03-04",
+   "consulted": "2026-11-22",
+   "statut": "fait",
+   "note": "Refus des débats des européennes sur Public Sénat, chaîne jugée trop petite ; seule grande tête de liste absente."
+  },
+  {
+   "url": "https://www.boursorama.com/bourse/actualites/retraites-jordan-bardella-n-est-plus-si-presse-d-abroger-la-reforme-de-macron-101b949b9967c92520b3be1c9ef2c30f",
+   "date": "2024-06-12",
+   "consulted": "2026-11-22",
+   "statut": "fait + citation exacte",
+   "note": "Interrogé sur RTL sur l'abrogation de la réforme des retraites : « Nous verrons » ; abrogation renvoyée à plus tard et à un audit."
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/au-parlement-europeen-jordan-bardella-peine-a-se-normaliser",
+   "date": "2024",
+   "consulted": "2026-11-22",
+   "statut": "opinion (critiques d'adversaires)",
+   "note": "Critiques sur l'assiduité au Parlement européen (thème du député fantôme) ; aucun chiffre repris."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = image « Vu et s'en tape » publiée sur X le 04/11/2026 après l'éviction de journalistes de sa soirée de lancement : devenue le logo de la mairie fictive. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = « Vu et s'en tape » (refrain). Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

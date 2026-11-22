@@ -3,75 +3,75 @@
  "city": "melenchonville",
  "synopsis_id": "mlv-syn-34",
  "format": "C",
- "title_cover": "Ascenseur bloqué",
+ "title_cover": "Jamais au dernier étage",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Mélenchon.",
-  "Bienvenue à Mélenchonville : l'ascenseur ne monte jamais au dernier étage.",
-  "Les électeurs de Mélenchon vont me détester.",
-  "Ici, l'ascenseur s'arrête toujours un palier trop tôt.",
-  "Mélenchonville : quatrième, quatrième, troisième."
+  "Dans cette ville, tout le monde vote Mélenchon. Jamais élu président.",
+  "Mélenchon prend l'ascenseur pour l'Élysée depuis 2012.",
+  "Les fans de Méluche vont me bloquer.",
+  "Bienvenue à Mélenchonville : jamais au dernier étage.",
+  "Mélenchon en une vidéo : jamais au dernier étage."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "2027 : il réappuie sur le bouton. L'écran affiche : quatrième tentative.",
-  "Quinze ans d'ascenseur, toujours pas de palier présidentiel.",
-  "L'ascenseur social est en panne. Le candidat, jamais."
+  "Quatre candidatures, zéro second tour : il bat surtout son record de persévérance.",
+  "L'ascenseur s'arrête toujours un étage trop bas.",
+  "2027 : il rappuie sur le bouton. Quatrième tentative."
  ],
  "selected_ending": 0,
  "narration_segments": [
   {
    "id": "n1",
-   "text": "Dans cette ville, tout le monde vote Mélenchon. Même l'ascenseur.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Jamais élu président.",
    "accent_words": [
-    "Même l'ascenseur"
+    "Jamais élu président"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n2",
-   "text": "Ici, l'ascenseur compte à l'envers : le premier étage, c'est l'Élysée.",
+   "text": "2012 : il finit quatrième, avec 11 %.",
    "accent_words": [
-    "l'Élysée"
+    "11 %"
    ],
-   "claim_type": "fiction_satirique"
+   "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "2012 : il s'arrête au quatrième. 2017 : encore au quatrième.",
+   "text": "2017 : quatrième encore, avec presque 20 %. Il grimpe sans monter.",
    "accent_words": [
-    "quatrième"
+    "Il grimpe sans monter"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n4",
-   "text": "2022 : troisième étage, à 421 420 voix du palier.",
+   "text": "2022 : troisième, à 421 420 voix du second tour.",
    "accent_words": [
-    "troisième étage"
+    "second tour"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n5",
-   "text": "Nouveauté : un bouton descendre, après débat contradictoire de deux heures.",
+   "text": "2027 : il rappuie sur le bouton. Quatrième tentative.",
    "accent_words": [
-    "deux heures"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
-   "id": "n6",
-   "text": "2027 : il réappuie sur le bouton. L'écran affiche : quatrième tentative.",
-   "accent_words": [
-    "quatrième tentative"
+    "Quatrième tentative"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n7",
-   "text": "Envoie ça au pote qui appuie dix fois sur le bouton de l'ascenseur.",
+   "id": "n6",
+   "text": "Quatre candidatures, zéro second tour : il bat surtout son record de persévérance.",
    "accent_words": [
-    "dix fois"
+    "de persévérance"
+   ],
+   "claim_type": "fiction_satirique"
+  },
+  {
+   "id": "n7",
+   "text": "Envoie ça au pote qui repasse le code pour la quatrième fois.",
+   "accent_words": [
+    "quatrième fois"
    ],
    "claim_type": "fiction_satirique"
   }
@@ -85,13 +85,26 @@
    "camera": "descend",
    "set": [
     "ground",
-    "building",
-    "lift_tribune",
+    "mairie",
+    "banner",
     "person"
    ],
-   "onscreen_text": "MÉLENCHONVILLE",
-   "comic_action": "Descente sur un immeuble : l'ascenseur est une petite tribune rouge.",
-   "expected_result": "La ville et son camp posés en une image."
+   "onscreen_text": "MÉLENCHONVILLE · JAMAIS AU DERNIER ÉTAGE",
+   "comic_action": "Descente sur la ville : banderole « JAMAIS AU DERNIER ÉTAGE », foule massée devant la mairie.",
+   "expected_result": "La ville et son thème posés en une image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer",
+     "visage": "content",
+     "quand": 0.3
+    }
+   ]
   },
   {
    "id": "s2",
@@ -104,55 +117,88 @@
     "text3d",
     "person"
    ],
-   "onscreen_text": "1ER = ÉLYSÉE",
-   "comic_action": "Gros plan sur le panneau d'étages : « 1 = ÉLYSÉE » en doré, tout en haut.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "2012 : 4E",
+   "comic_action": "Une tribune-ascenseur s'arrête au quatrième.",
+   "expected_result": "Le truc connu, posé clairement, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "sourire_pro"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "building",
     "lift_tribune",
-    "person",
-    "text3d"
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "2012 : 4E · 2017 : 4E",
-   "comic_action": "La caméra glisse le long de la façade : la cabine s'arrête deux fois au même palier.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "2017 : 4E",
+   "comic_action": "L'ascenseur remonte… et se bloque au même étage.",
+   "expected_result": "Escalade 1 sur le même thème, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "facepalm",
+     "visage": "fatigue"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "closeup",
+   "camera": "street_dolly",
    "set": [
     "lift_tribune",
     "text3d",
-    "person"
+    "sign"
    ],
-   "onscreen_text": "2022 : 3E · -421 420",
-   "comic_action": "La cabine s'arrête entre deux étages ; un compteur rouge affiche -421 420.",
-   "expected_result": "Le fait ou la citation réelle, retourné en gag visuel lisible sans le son."
+   "onscreen_text": "2022 : 3E (−421 420)",
+   "comic_action": "Les portes s'ouvrent sur un palier un mètre trop bas.",
+   "expected_result": "Escalade 2, plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "jump",
+     "visage": "choque"
+    },
+    {
+     "who": "foule",
+     "geste": "shake",
+     "visage": "choque",
+     "quand": 0.4
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "orbit",
+   "camera": "closeup",
    "set": [
     "lift_tribune",
-    "person",
-    "table"
+    "banner",
+    "text3d"
    ],
-   "onscreen_text": "DESCENDRE : DÉBAT",
-   "comic_action": "Orbite : les voisins en AG sur le palier, autour d'un unique bouton.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "TENTATIVE N° 4",
+   "comic_action": "Le maire appuie frénétiquement sur le bouton.",
+   "expected_result": "Escalade 3, la plus énorme, lisible sans le son.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "point",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s6",
@@ -161,13 +207,26 @@
    ],
    "camera": "descend",
    "set": [
-    "building",
     "lift_tribune",
-    "text3d"
+    "text3d",
+    "banner"
    ],
-   "onscreen_text": "TENTATIVE N° 4",
-   "comic_action": "Plan large : la cabine repart du rez-de-chaussée, toute l'immeuble soupire.",
-   "expected_result": "Chute : la pique la plus dure, tenue une seconde."
+   "onscreen_text": "SECOND TOUR : 0",
+   "comic_action": "Écran d'ascenseur : « HORS SERVICE DEPUIS 2012 ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenu une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "shrug",
+     "visage": "blase"
+    },
+    {
+     "who": "foule",
+     "geste": "clap",
+     "visage": "content",
+     "quand": 0.5
+    }
+   ]
   },
   {
    "id": "s7",
@@ -181,36 +240,56 @@
     "sign",
     "shop"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE INSOUMIS",
-   "comic_action": "Retour : un habitant en t-shirt de la boutique prend l'escalier.",
-   "expected_result": "Partage ciblé, produit visible."
+   "onscreen_text": "ENVOIE ÇA À TON POTE",
+   "comic_action": "Retour large : un habitant en t-shirt de la boutique se tourne vers la caméra, téléphone en main.",
+   "expected_result": "Partage ciblé, produit visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "sourire_pro",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
   "type": "share",
-  "text": "Envoie ça au pote qui appuie dix fois sur le bouton de l'ascenseur."
+  "text": "Envoie ça au pote qui repasse le code pour la quatrième fois."
  },
  "cta_commercial": {
   "type": "visual_product",
   "text": "Collection en bio",
   "product_id": "tee-pays-bugue"
  },
- "word_count": 78,
+ "word_count": 75,
  "claims": [
   {
-   "text": "2012 : il s'arrête au quatrième. 2017 : encore au quatrième.",
+   "text": "Dans cette ville, tout le monde vote Mélenchon. Jamais élu président.",
    "claim_type": "fait_public",
    "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; Union populaire (2022)."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   },
   {
-   "text": "2022 : troisième étage, à 421 420 voix du palier.",
+   "text": "2012 : il finit quatrième, avec 11 %.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+  },
+  {
+   "text": "2017 : quatrième encore, avec presque 20 %. Il grimpe sans monter.",
+   "claim_type": "fait_public",
+   "source": "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
+  },
+  {
+   "text": "2022 : troisième, à 421 420 voix du second tour.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850",
    "note": "Second tour 2022 raté d'environ 421 420 voix."
   },
   {
-   "text": "2027 : il réappuie sur le bouton. L'écran affiche : quatrième tentative.",
+   "text": "2027 : il rappuie sur le bouton. Quatrième tentative.",
    "claim_type": "fait_public",
    "source": "https://www.politis.fr/articles/2026/06/analyse-presidentielle-melenchon-a-lassaut-de-son-4e-tour/",
    "note": "Quatrième candidature présidentielle (2012, 2017, 2022, 2027)."
@@ -222,7 +301,7 @@
    "date": "consulté 2026-11-22",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; Union populaire (2022)."
+   "note": "Présidentielles : 2012 quatrième (11,10 %), 2017 quatrième (19,58 %), 2022 troisième (21,95 %) ; jamais élu président ; programme de VIe République depuis 2012."
   },
   {
    "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-jean-luc-melenchon-rate-la-marche-de-peu-encore-une-fois-201850",
@@ -240,5 +319,5 @@
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture tacle 22/11/2026 — angle principal : le palmarès présidentiel : quatrième, quatrième, troisième. Cadre : l'ascenseur de l'immeuble. Citations « » exactes et sourcées (claims) ; paraphrases sans guillemets ; exagérations de la ville fictive évidentes. Rien sur la vie privée, la famille, la santé, l'âge ni les affaires judiciaires ; aucun électeur visé."
+ "editorial_notes": "Réécriture « on se moque de la personne » 22/11/2026 (STYLE_TACLE, mises à jour 1 et 2) — thème unique : Jamais au dernier étage. Citations « » exactes et sourcées ; paraphrases sans guillemets ; hyperboles évidentes. Rien sur le physique, la vie privée, la famille, la santé, l'âge, les traits protégés ni les affaires judiciaires."
 }

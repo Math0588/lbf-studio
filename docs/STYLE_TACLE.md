@@ -53,3 +53,19 @@ Exemple (thème « for sure ») :
 - Le pays qui coule ? « For sure », en anglais, pour que personne ne comprenne.
 - Son bilan sur X : « parfois des erreurs ». Lesquelles ? For sure.
 - Envoie ça au pote qui dit « for sure » sans parler anglais.
+
+## Mise à jour 22/11/2026 (3) : une HISTOIRE ABSURDE (format qui remplace la liste de piques)
+Référence du propriétaire : « c'est what the fuck, mais il y a une vraie trame ». Toujours absurde, c'est le plus important.
+1. « Dans cette ville, tout le monde vote X. » (+ un détail absurde : même le chien porte un t-shirt X)
+2. Le point de départ = un truc connu de X (position, slogan, citation, mème), sourcé.
+3–5. On le prend AU PIED DE LA LETTRE et ça dégénère, cause → conséquence → pire conséquence, dans la ville.
+6. Chute qui retombe sur X lui-même.
+7. « Envoie ça au pote qui… »
+Exemples d'esprit :
+- Mélenchon : « taxer les riches » → les riches partent en courant → plus personne à taxer → les habitants se taxent
+  entre eux → baston générale pour savoir qui taxe qui → Mélenchon taxe… la tortue.
+- Bardella : tout le monde a la brosse à dents Bardella, le chien en t-shirt Bardella, selfie obligatoire au réveil…
+- Glucksmann : le matcha à 10,50 €, le lait d'avoine, la mairie au cap pas clair.
+Gags visuels (champ « gags » de chaque scène) : affiches de propagande du politicien, chien en t-shirt, prix délirants,
+objets à son effigie. Gestes et expressions (champ « actions ») qui jouent littéralement la phrase.
+Contrôle : `python3 -m lbf.viral_lint --histoire` (≥ 1 point de départ sourcé, formule d'ouverture, partage ciblé).

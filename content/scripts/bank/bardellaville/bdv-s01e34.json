@@ -5,17 +5,17 @@
  "format": "D",
  "title_cover": "Sweat ou cravate",
  "hook_variants": [
-  "Dans cette ville, tout le monde vote Bardella.",
-  "Ici, le maire a deux discours : un en sweat, un en cravate.",
-  "Bardellaville : la caissière le matin, l'actionnaire le soir.",
-  "Les électeurs de Bardella vont me détester.",
-  "Bienvenue à Bardellaville : sweat ou cravate."
+  "Dans cette ville, tout le monde vote Bardella. En sweat ou en costume.",
+  "Bardella en sweat, Bardella en cravate : deux discours.",
+  "Bardellaville : un menu, pas une ligne.",
+  "Les fans de Bardella vont me détester.",
+  "Bienvenue à Bardellaville. Au programme : Sweat ou cravate."
  ],
  "selected_hook": 0,
  "ending_variants": [
-  "Un discours pour l'ouvrier, un pour le CAC 40 : pas une ligne, un menu.",
-  "Les deux discours se croisent dans l'ascenseur. Ils ne se reconnaissent pas.",
-  "Le matin, il défend la caissière. Le soir, il rassure l'actionnaire."
+  "Un discours pour la caissière, un pour le CAC 40 : pas une ligne, un menu.",
+  "Pas une ligne, un menu.",
+  "Pouvoir d'achat le matin, Medef le soir."
  ],
  "selected_ending": 0,
  "narration_segments": [
@@ -23,47 +23,47 @@
    "id": "n1",
    "text": "Dans cette ville, tout le monde vote Bardella. En sweat ou en costume.",
    "accent_words": [
-    "en costume"
+    "sweat"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n2",
-   "text": "Sur TikTok, pouvoir d'achat. Devant les patrons, une ligne plus libérale.",
+   "text": "Sur TikTok, il parle pouvoir d'achat, formats courts, coulisses.",
    "accent_words": [
-    "plus libérale"
+    "pouvoir d'achat"
    ],
    "claim_type": "fait_public"
   },
   {
    "id": "n3",
-   "text": "Deux heures en tête-à-tête au Medef, une première pour son parti.",
+   "text": "Devant les patrons, la presse note une ligne nettement plus libérale.",
+   "accent_words": [
+    "libérale"
+   ],
+   "claim_type": "fait_public"
+  },
+  {
+   "id": "n4",
+   "text": "Deux heures en tête-à-tête avec le Medef, une première pour son parti.",
    "accent_words": [
     "Medef"
    ],
    "claim_type": "fait_public"
   },
   {
-   "id": "n4",
-   "text": "Le matin, il défend la caissière. Le soir, il rassure l'actionnaire.",
-   "accent_words": [
-    "l'actionnaire"
-   ],
-   "claim_type": "fiction_satirique"
-  },
-  {
    "id": "n5",
    "text": "Les deux discours se croisent dans l'ascenseur. Ils ne se reconnaissent pas.",
    "accent_words": [
-    "ne se reconnaissent pas"
+    "reconnaissent"
    ],
    "claim_type": "fiction_satirique"
   },
   {
    "id": "n6",
-   "text": "Un discours pour l'ouvrier, un pour le CAC 40 : pas une ligne, un menu.",
+   "text": "Un discours pour la caissière, un pour le CAC 40 : pas une ligne, un menu.",
    "accent_words": [
-    "un menu"
+    "menu"
    ],
    "claim_type": "fiction_satirique"
   },
@@ -89,9 +89,20 @@
     "banner",
     "person"
    ],
-   "onscreen_text": "BARDELLAVILLE",
-   "comic_action": "Descente sur la mairie ; deux portes : « SWEAT » et « COSTUME ».",
-   "expected_result": "La ville et son camp posés en une image, pique d'entrée."
+   "onscreen_text": "SWEAT OU CRAVATE",
+   "comic_action": "Descente sur la ville ; banderole « SWEAT OU CRAVATE » sur la mairie.",
+   "expected_result": "Le thème posé dès la première image.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s2",
@@ -105,73 +116,133 @@
     "person",
     "screen"
    ],
-   "onscreen_text": "TIKTOK : PEUPLE · SALON : PATRONS",
-   "comic_action": "Écran partagé : selfie en sweat sous ring light, puis poignée de main en costume.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "TIKTOK : POUVOIR D'ACHAT",
+   "comic_action": "Sous un ring light, le téléphone filme ; l'écran affiche « TIKTOK : POUVOIR D'ACHAT ».",
+   "expected_result": "Le truc connu, sourcé, compris sans suivre la politique.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "wave",
+     "visage": "content",
+     "objet": "ring_light"
+    },
+    {
+     "who": "foule",
+     "geste": "cheer"
+    }
+   ]
   },
   {
    "id": "s3",
    "narration_ids": [
     "n3"
    ],
-   "camera": "orbit",
+   "camera": "window_pass",
    "set": [
-    "arch",
-    "column",
+    "table",
+    "building",
     "person",
-    "studio_light"
+    "text3d"
    ],
-   "onscreen_text": "MEDEF : TAPIS ROUGE",
-   "comic_action": "Sous une arche, tapis rouge et fauteuils ; chrono qui affiche 2:00.",
-   "expected_result": "Fait ou citation sourcé(e) rendu(e) visuel(le), reconnaissable sans le son."
+   "onscreen_text": "PATRONS : LIGNE LIBÉRALE",
+   "comic_action": "Salon feutré, table dressée ; carton « PATRONS : LIGNE LIBÉRALE ».",
+   "expected_result": "Escalade 1 : même thème, un cran plus gros.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "choque"
+    }
+   ]
   },
   {
    "id": "s4",
    "narration_ids": [
     "n4"
    ],
-   "camera": "street_dolly",
+   "camera": "window_pass",
    "set": [
-    "shop",
     "table",
+    "building",
     "person",
-    "banner"
+    "text3d"
    ],
-   "onscreen_text": "8 H CAISSIÈRE · 20 H ACTIONNAIRE",
-   "comic_action": "Marché le matin, poignées de main ; même décor le soir, flûtes de champagne.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "2 H AVEC LE MEDEF",
+   "comic_action": "Salon feutré, table dressée ; carton « 2 H AVEC LE MEDEF ».",
+   "expected_result": "Escalade 2 : même thème, encore plus énorme.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "nod",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "facepalm",
+     "visage": "blase"
+    }
+   ]
   },
   {
    "id": "s5",
    "narration_ids": [
     "n5"
    ],
-   "camera": "window_pass",
+   "camera": "closeup",
    "set": [
-    "table",
     "screen",
-    "sign",
-    "building"
+    "text3d",
+    "person",
+    "studio_light"
    ],
-   "onscreen_text": "DISCOURS A ≠ DISCOURS B",
-   "comic_action": "Par la fenêtre : deux pancartes-discours se croisent dans un couloir, hochent la tête, poliment.",
-   "expected_result": "Exagération évidente de la ville, lisible sans le son."
+   "onscreen_text": "DEUX DISCOURS, ZÉRO LIEN",
+   "comic_action": "Écran géant : « DEUX DISCOURS, ZÉRO LIEN ».",
+   "expected_result": "Escalade 3 : le thème poussé à l'absurde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "spin",
+     "visage": "choque"
+    },
+    {
+     "who": "perso",
+     "geste": "shrug",
+     "visage": "content"
+    }
+   ]
   },
   {
    "id": "s6",
    "narration_ids": [
     "n6"
    ],
-   "camera": "window_pass",
+   "camera": "orbit",
    "set": [
-    "table",
-    "person",
-    "screen",
-    "text3d"
+    "tribune",
+    "studio_light",
+    "text3d",
+    "screen"
    ],
-   "onscreen_text": "MENU À LA CARTE",
-   "comic_action": "Un serveur tend deux cartes différentes au même client. Tenir.",
-   "expected_result": "Chute : la pique la plus dure, tenir une seconde de silence."
+   "onscreen_text": "PAS UNE LIGNE : UN MENU",
+   "comic_action": "Plan final, tenir une seconde : « PAS UNE LIGNE : UN MENU ».",
+   "expected_result": "Chute : le thème retourné contre lui, tenir une seconde.",
+   "actions": [
+    {
+     "who": "maire",
+     "geste": "bow",
+     "visage": "sourire_pro"
+    },
+    {
+     "who": "perso",
+     "geste": "cross_arms",
+     "visage": "colere"
+    }
+   ]
   },
   {
    "id": "s7",
@@ -185,9 +256,17 @@
     "person",
     "sign"
    ],
-   "onscreen_text": "ENVOIE ÇA À TON POTE",
-   "comic_action": "Retour à la boutique : un passant en t-shirt essaie une cravate par-dessus son sweat.",
-   "expected_result": "Partage ciblé, produit de la boutique visible."
+   "onscreen_text": "ENVOIE AU POTE CONVAINCU",
+   "comic_action": "Retour à la boutique : un passant en t-shirt de la collection, panneau « ENVOIE AU POTE CONVAINCU ».",
+   "expected_result": "Partage ciblé lié au thème, produit de la boutique visible.",
+   "actions": [
+    {
+     "who": "perso",
+     "geste": "point",
+     "visage": "content",
+     "objet": "phone"
+    }
+   ]
   }
  ],
  "cta_primary": {
@@ -203,25 +282,39 @@
  "claims": [
   {
    "segment": "n2",
-   "text": "Sur TikTok, pouvoir d'achat. Devant les patrons, une ligne plus libérale.",
+   "text": "Sur TikTok, il parle pouvoir d'achat, formats courts, coulisses.",
+   "claim_type": "fait_public",
+   "source": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
+   "note": "Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits."
+  },
+  {
+   "segment": "n3",
+   "text": "Devant les patrons, la presse note une ligne nettement plus libérale.",
    "claim_type": "fait_public",
    "source": "https://www.publicsenat.fr/actualites/politique/presidentielle-une-inclinaison-liberale-plus-prononcee-au-rn-incarnee-par-jordan-bardella-ne-sera-pas-forcement-de-nature-a-rebuter-son-electorat",
    "note": "Inclinaison libérale plus prononcée au RN, incarnée par Jordan Bardella."
   },
   {
-   "segment": "n3",
-   "text": "Deux heures en tête-à-tête au Medef, une première pour son parti.",
+   "segment": "n4",
+   "text": "Deux heures en tête-à-tête avec le Medef, une première pour son parti.",
    "claim_type": "fait_public",
    "source": "https://lcp.fr/actualites/bardella-rencontre-en-tete-a-tete-le-medef-une-premiere-pour-le-rn-435456",
-   "note": "Tête-à-tête avec le Medef, une première pour le RN (plus de deux heures le 20/04/2026 selon la presse)."
+   "note": "Tête-à-tête de plus de deux heures avec le Medef, une première pour le RN (20/04/2026 selon la presse)."
   }
  ],
  "sources": [
   {
+   "url": "https://www.dhnet.be/actu/monde/2024/06/21/bonbons-pastis-et-seflies-la-strategie-de-jordan-bardella-sur-tiktok-pour-seduire-les-jeunes-XUTPN3LRNFA3LF7IBUQ4TFAWOU/",
+   "date": "2024-06-21",
+   "consulted": "2026-11-22",
+   "statut": "fait (dépêche AFP) + mème",
+   "note": "Stratégie TikTok : formats courts dépolitisés, POV, coulisses, selfies, bonbons avant un débat, fan edits."
+  },
+  {
    "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-une-inclinaison-liberale-plus-prononcee-au-rn-incarnee-par-jordan-bardella-ne-sera-pas-forcement-de-nature-a-rebuter-son-electorat",
    "date": "2026",
    "consulted": "2026-11-22",
-   "statut": "analyse",
+   "statut": "fait + analyse",
    "note": "Inclinaison libérale plus prononcée au RN, incarnée par Jordan Bardella."
   },
   {
@@ -229,9 +322,9 @@
    "date": "2026-04",
    "consulted": "2026-11-22",
    "statut": "fait",
-   "note": "Tête-à-tête avec le Medef, une première pour le RN (plus de deux heures le 20/04/2026 selon la presse)."
+   "note": "Tête-à-tête de plus de deux heures avec le Medef, une première pour le RN (20/04/2026 selon la presse)."
   }
  ],
  "disclosure": "",
- "editorial_notes": "Réécriture 22/11/2026 (style « tacle », docs/STYLE_TACLE.md) : angle principal = inclinaison libérale plus prononcée incarnée par Jordan Bardella, face au discours pouvoir d'achat ; deux discours selon le public. Citations « » uniquement exactes et sourcées (citation_exacte) ; mèmes paraphrasés sans guillemets ; exagérations de la ville = fiction_satirique. Rien sur l'immigration, l'origine, la religion, la vie privée, la famille, la santé, le physique, l'âge ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain ». Éléments écartés de la veille respectés."
+ "editorial_notes": "Réécriture 22/11/2026 (docs/STYLE_TACLE.md, mises à jour (1) et (2)) : UN thème = deux discours : pouvoir d'achat sur TikTok, ligne libérale devant les patrons. Structure : accroche, truc connu sourcé, trois escalades sur le même thème, chute qui le retourne, partage lié au thème. On vise la personne publique (formules, gaffes, com', bilan, histoire du parti), jamais les électeurs. Citations « » exactes et sourcées uniquement ; paraphrases sans guillemets. Rien sur le physique, la vie privée, la famille (hors fait politique public), la santé, les traits protégés, l'immigration, la religion ni les affaires judiciaires ; pas d'appel au vote ; pas de « demain »."
 }

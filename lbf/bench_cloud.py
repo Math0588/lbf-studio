@@ -11,11 +11,13 @@ from pathlib import Path
 from . import audio, config, planner_v2, produce
 
 q = sys.argv[1] if len(sys.argv) > 1 else "cloud"
-script = json.loads((config.CONTENT / "scripts" / "macronville_pilot_01.json").read_text(encoding="utf-8"))
+script = json.loads((config.CONTENT / "scripts" / "melenchonville_pilot_01.json").read_text(encoding="utf-8"))
 # gestes de test
+script["scenes"][1]["gags"] = [{"type": "affiche", "texte": "TAXONS TOUT"}, {"type": "chien", "tee": "MÉLUCHE"}]
+script["scenes"][2]["gags"] = [{"type": "prix", "texte": "MATCHA 10,50 €"}]
 script["scenes"][1]["actions"] = [{"who": "perso", "geste": "shrug", "visage": "blase"},
                                   {"who": "maire", "geste": "point", "visage": "fier", "quand": 0.1}]
-script["scenes"][2]["actions"] = [{"who": "foule", "geste": "manif"}, {"who": "maire", "geste": "cough", "visage": "blase"}]
+script["scenes"][2]["actions"] = [{"who": "foule", "geste": "manif"}, {"who": "maire", "geste": "cough", "visage": "blase", "objet": "matcha"}]
 script["scenes"][4]["actions"] = [{"who": "maire", "geste": "arms_up", "visage": "colere", "quand": 0.05},
                                   {"who": "foule", "geste": "jump", "quand": 0.05}]
 sp = config.OUTPUT / "bench_script.json"
@@ -33,7 +35,7 @@ for s in tl["shots"]:
     starts[s["id"]] = (fr, round(s["dur"] * 30))
     fr += round(s["dur"] * 30)
 picks = []
-for sid in ("s2a", "s3a", "s5a"):
+for sid in ("s2a", "s3a", "s4a"):
     a, n = starts[sid]
     picks += [a + int(n * x) for x in (0.1, 0.45, 0.8)]
 j["quality"], j["stills"], j["out_dir"] = q, [], str(out / f"render_{q}")
