@@ -1290,7 +1290,7 @@ PROFILES = {
     # GitHub Actions (CPU, Mesa llvmpipe) : même cadre 1080×1920, moins d'échantillons
     "cloud": {"res": (1080, 1920), "samples": 10, "dof": False, "raytracing": False},
     # secours si le CPU est trop lent : 720×1280 agrandi au montage, une image sur deux (dupliquée)
-    "fast": {"res": (720, 1280), "samples": 4, "dof": False, "raytracing": False, "step": 2},
+    "fast": {"res": (720, 1280), "samples": 5, "dof": False, "raytracing": False, "step": 2},
 }
 
 
