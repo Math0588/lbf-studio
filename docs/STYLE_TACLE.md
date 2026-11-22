@@ -69,3 +69,9 @@ Exemples d'esprit :
 Gags visuels (champ « gags » de chaque scène) : affiches de propagande du politicien, chien en t-shirt, prix délirants,
 objets à son effigie. Gestes et expressions (champ « actions ») qui jouent littéralement la phrase.
 Contrôle : `python3 -m lbf.viral_lint --histoire` (≥ 1 point de départ sourcé, formule d'ouverture, partage ciblé).
+
+## Règle permanente (22/11/2026, propriétaire)
+- TOUJOURS extrêmement absurde : l'escalade va jusqu'à l'image délirante (la ville entière, les animaux, les objets, le cosmos…).
+- Les idées du propriétaire sont des exemples : chaque épisode doit inventer son propre point de départ et sa propre escalade.
+- Provoquer le camp d'en face (rivalités dans provocation.py) pour les commentaires et les partages, toujours sur des
+  faits/mèmes sourcés, jamais par des insultes ou des clichés ethniques/religieux sur les électeurs.
