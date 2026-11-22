@@ -19,7 +19,8 @@ from . import config
 
 STATE = config.ROOT / "state" / "studio.json"
 RELEASE = "reserve"
-PRIORITY = ["macronville_pilot_01.json", "glucksmannville_pilot_01.json",
+PRIORITY = ["mcv-x01.json", "glv-x01.json", "zmv-x01.json",   # versions punchy (~20 s), fabriquées sur le PC
+            "macronville_pilot_01.json", "glucksmannville_pilot_01.json",
             # actualité : Teddy Riner candidat (9/11/2026) ; nouvelles villes
             "rnv-s01e09.json", "dfv-s01e01.json", "rnv-s01e01.json", "dfv-s01e13.json"]
 ALREADY_PUBLISHED = {"bdv-s01e01"}   # publié avant la fabrication cloud

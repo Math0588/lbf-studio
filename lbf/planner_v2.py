@@ -428,7 +428,7 @@ def plan(script: dict) -> dict:
     ep = {
         "id": script["id"], "version": 2, "city_id": city, "season": 1,
         "episode_number": int(num.group(1)) if num else 0, "format": script.get("format", "A"),
-        "length": "court", "caption_style": "words", "voice_length_scale": 0.88,
+        "length": "court", "caption_style": "words", "voice_length_scale": script.get("voice_length_scale", 0.88),
         "title_cover": script["title_cover"], "hook_variants": script.get("hook_variants", []),
         "selected_hook": script.get("selected_hook", 0), "ending_variants": script.get("ending_variants", []),
         "selected_ending": script.get("selected_ending", 0), "narration_segments": script["narration_segments"],
