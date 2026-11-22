@@ -368,6 +368,12 @@ def publish_one(item, pubs):
     try:
         r = call("POST", f"{user_id}/media_publish", {"creation_id": c["id"]}, timeout=90)
         pub.update(status="published", media_id=r["id"], published_at=now().isoformat())
+        if from_studio and meta.get("premier_commentaire"):
+            try:   # lance le débat : premier commentaire du compte (les deux camps face à face)
+                call("POST", f"{r['id']}/comments", {"message": meta["premier_commentaire"]})
+                pub["premier_commentaire"] = True
+            except ApiError as e:
+                pub["premier_commentaire"] = f"refusé ({e.status})"
         try:
             m = call("GET", r["id"], {"fields": "permalink"})
             pub["permalink"] = m.get("permalink")
