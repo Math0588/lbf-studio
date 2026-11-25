@@ -19,10 +19,10 @@ from . import config
 
 STATE = config.ROOT / "state" / "studio.json"
 RELEASE = "reserve"
-PRIORITY = ["mcv-x01.json", "glv-x01.json", "zmv-x01.json",   # versions punchy (~20 s), fabriquées sur le PC
-            "macronville_pilot_01.json", "glucksmannville_pilot_01.json",
-            # actualité : Teddy Riner candidat (9/11/2026) ; nouvelles villes
-            "rnv-s01e09.json", "dfv-s01e01.json", "rnv-s01e01.json", "dfv-s01e13.json"]
+PRIORITY = [f"{i}.json" for i in (   # accroche v3 (teaser dans la 1re seconde) + sound design v2, villes alternées
+    "mcv-u03", "mlv-u05", "zmv-u04", "bdv-u03", "glv-u04", "mrv-u05", "mcv-u05", "mlv-u04", "zmv-u05", "bdv-u02",
+    "glv-u06", "mrv-u04", "mcv-u04", "mlv-u06", "zmv-u03", "bdv-u05", "glv-u03", "mcv-u06", "mlv-u03", "zmv-u06",
+    "bdv-u04", "glv-u05")]
 ALREADY_PUBLISHED = {"bdv-s01e01"}   # publié avant la fabrication cloud
 MAX_ATTEMPTS = 2
 

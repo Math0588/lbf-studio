@@ -75,3 +75,6 @@ Contrôle : `python3 -m lbf.viral_lint --histoire` (≥ 1 point de départ sourc
 - Les idées du propriétaire sont des exemples : chaque épisode doit inventer son propre point de départ et sa propre escalade.
 - Provoquer le camp d'en face (rivalités dans provocation.py) pour les commentaires et les partages, toujours sur des
   faits/mèmes sourcés, jamais par des insultes ou des clichés ethniques/religieux sur les électeurs.
+
+## Mise à jour 4 : accroche v3 (25/11)
+Chaque nouveau script commence par un **teaser** de 10 mots maximum : l'image la plus absurde de l'histoire, avec le nom du politicien, sans l'expliquer (fossé de curiosité). Ensuite « Dans cette ville, tout le monde vote X. ». Champ `role: "teaser"` sur le segment `n0`. Voir `docs/VIRALITE.md`.

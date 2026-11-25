@@ -29,13 +29,20 @@ def check(script: dict, strict: bool | None = None) -> dict:
     if not segs:
         return {"ok": False, "blocking": ["aucune narration"], "warnings": []}
     first, last = segs[0]["text"], segs[-1]["text"]
+    # accroche v3 : une phrase « teaser » (≤ 10 mots, l'image la plus absurde de l'histoire, sans l'expliquer)
+    # peut précéder « Dans cette ville… » : la promesse tombe dans la 1re seconde (fossé de curiosité)
+    teaser = segs[0].get("role") == "teaser"
+    if teaser:
+        if len(first.split()) > 10:
+            block.append("accroche : le teaser doit faire 10 mots maximum")
+        first = segs[1]["text"] if len(segs) > 1 else ""
     if not first.lower().startswith("dans cette ville, tout le monde vote"):
-        block.append("accroche : la 1re phrase doit être « Dans cette ville, tout le monde vote X. »")
+        block.append("accroche : la 1re phrase (après le teaser éventuel) doit être « Dans cette ville, tout le monde vote X. »")
     if not re.match(r"envoie[- ]ça", last, re.I):
         block.append("fin : la dernière phrase doit être un partage ciblé « Envoie ça au pote qui… »")
     if SOFT_ENDINGS.search(last):
         warn.append("fin : appel au commentaire (moins fort que l'envoi en message)")
-    n = len(segs)
+    n = len(segs) - (1 if teaser else 0)
     if not 5 <= n <= 9:
         block.append(f"rythme : {n} phrases (5 à 9 attendues, une pique par plan)")
     long = [s["id"] for s in segs if len(s["text"].split()) > 16]

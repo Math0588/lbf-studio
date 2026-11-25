@@ -162,43 +162,163 @@ def _hat(dur=0.06, seed=0):
     return x * np.exp(-np.arange(n) / SR * 60) * 0.3
 
 
-def make_music(total: float, path: Path, bpm: float = 104, seed: int = 1) -> None:
-    """Petite boucle « pizzicato ironique » en do majeur, originale et générée localement."""
+def _noise(n, seed=0):
+    return np.random.default_rng(seed).standard_normal(n).astype(np.float32)
+
+
+def _clap(seed=0):
+    n = int(0.16 * SR)
+    x = np.diff(_noise(n, seed), prepend=0)
+    t = np.arange(n) / SR
+    body = np.sin(2 * np.pi * 185 * t) * np.exp(-t * 40)
+    return ((x * 0.6 + body * 0.5) * np.exp(-t * 28)).astype(np.float32)
+
+
+def _sub(freq, dur):
+    """Basse 808 : sinus qui glisse légèrement, saturé (porte sur les haut-parleurs de téléphone)."""
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    f = freq * (1 + 0.6 * np.exp(-t * 30))
+    y = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.minimum(1, t / 0.004) * np.exp(-t * 2.2)
+    return np.tanh(y * 2.2).astype(np.float32) * 0.8
+
+
+def _stab(freqs, dur, bright=0.8):
+    """Accord bref façon cordes staccato (harmoniques additives)."""
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    y = np.zeros(n, dtype=np.float32)
+    for f in freqs:
+        for k in range(1, 6):
+            y += np.sin(2 * np.pi * f * k * t) * (bright ** (k - 1)) / k
+    return (y / len(freqs) * _env(n, 0.006, 0.12)).astype(np.float32)
+
+
+def _crash(dur=0.9, seed=3):
+    n = int(dur * SR)
+    x = np.diff(_noise(n, seed), prepend=0)
+    return (x * np.exp(-np.arange(n) / SR * 4.5) * 0.35).astype(np.float32)
+
+
+def _riser(dur=0.6, seed=5):
+    n = int(dur * SR)
+    x = _noise(n, seed)
+    y = np.zeros(n, dtype=np.float32)
+    acc = 0.0
+    for j in range(n):                       # filtre qui s'ouvre : souffle montant
+        a = 0.01 + 0.6 * (j / n) ** 2
+        acc += a * (x[j] - acc)
+        y[j] = acc
+    return y * np.linspace(0, 1, n) ** 2 * 0.9
+
+
+STYLES = ("pizz", "trap", "marche", "tension")
+_BPM = {"pizz": 104, "trap": 140, "marche": 116, "tension": 124}
+
+
+def _put(mix, sig, t, gain=1.0):
+    k = int(t * SR)
+    if 0 <= k < len(mix):
+        seg = sig[: len(mix) - k] * gain
+        mix[k:k + len(seg)] += seg
+
+
+def make_music(total: float, path: Path, bpm: float | None = None, seed: int = 1, cuts: list | None = None,
+               punch: tuple | None = None, style: str | None = None) -> str:
+    """Musique originale générée localement (aucune licence), différente d'un épisode à l'autre :
+    4 ambiances × tonalité variable. Pleine énergie dès 0 s, accents sur les coupes, silence juste avant
+    la chute (la phrase drôle tombe dans le vide, puis le boom), fin sèche qui reboucle sur le début."""
+    style = style or STYLES[seed % len(STYLES)]
+    bpm = bpm or _BPM[style]
+    tr = 2 ** (((seed // 7) % 8 - 3) / 12)          # transposition : -3 à +4 demi-tons
     beat = 60 / bpm
+    step = beat / 2
     n = int((total + 1) * SR)
     mix = np.zeros(n, dtype=np.float32)
-    notes = {"C4": 261.63, "D4": 293.66, "E4": 329.63, "F4": 349.23, "G4": 392.0, "A4": 440.0, "B3": 246.94,
-             "G3": 196.0, "C5": 523.25, "A3": 220.0, "F3": 174.61}
-    motif = ["C4", "E4", "G4", "E4", "F4", "A4", "G4", None, "E4", "D4", "C4", "D4", "E4", None, "G3", None]
-    bass = ["C3", "C3", "F3", "G3"]
-    bfreq = {"C3": 130.81, "F3": 174.61, "G3": 196.0}
-    step = beat / 2
-    i = 0
-    t = 0.0
+    C = {"C3": 130.81, "D3": 146.83, "Eb3": 155.56, "F3": 174.61, "G3": 196.0, "Ab3": 207.65, "Bb3": 233.08,
+         "C4": 261.63, "D4": 293.66, "Eb4": 311.13, "E4": 329.63, "F4": 349.23, "G4": 392.0, "A4": 440.0,
+         "B3": 246.94, "A3": 220.0, "C5": 523.25, "G2": 98.0, "C2": 65.41, "F2": 87.31, "Ab2": 103.83, "Bb2": 116.54}
+    f = lambda k: C[k] * tr
+    i, t = 0, 0.0
     while t < total + 0.5:
-        nt = motif[i % len(motif)]
-        if nt:
-            s = _pluck(notes[nt], step * 1.6, 0.6) * 0.22
-            k = int(t * SR)
-            mix[k:k + len(s)] += s[: n - k]
-        if i % 2 == 0:
-            h = _hat(seed=i) * 0.25
-            k = int(t * SR)
-            mix[k:k + len(h)] += h[: n - k]
-        if i % 4 == 0:
-            kk = _kick() * 0.5
-            k = int(t * SR)
-            mix[k:k + len(kk)] += kk[: n - k]
-        if i % 8 == 0:
-            b = _pluck(bfreq[bass[(i // 8) % 4]], beat * 3.5, 0.2) * 0.3
-            k = int(t * SR)
-            mix[k:k + len(b)] += b[: n - k]
+        if style == "pizz":                                       # ironique, comédie
+            motif = ["C4", "E4", "G4", "E4", "F4", "A4", "G4", None, "E4", "D4", "C4", "D4", "E4", None, "G3", None]
+            nt = motif[i % 16]
+            if nt:
+                _put(mix, _pluck(f(nt), step * 1.6, 0.6), t, 0.22)
+            if i % 2 == 0:
+                _put(mix, _hat(seed=i), t, 0.25)
+            if i % 4 == 0:
+                _put(mix, _kick(), t, 0.5)
+            if i % 8 == 0:
+                _put(mix, _pluck(f(["C3", "C3", "F3", "G3"][(i // 8) % 4]), beat * 3.5, 0.2), t, 0.3)
+        elif style == "trap":                                     # énergie réseaux : 808 + charleston rapide
+            _put(mix, _hat(0.04, seed=i), t, 0.18)
+            if i % 4 == 2:
+                _put(mix, _hat(0.04, seed=i + 99), t + step / 2, 0.12)   # roulement
+            if i % 8 == 0:
+                _put(mix, _kick(), t, 0.55)
+                _put(mix, _sub(f(["C2", "C2", "Ab2", "Bb2"][(i // 16) % 4]), beat * 1.8), t, 0.45)
+            if i % 8 == 4:
+                _put(mix, _clap(seed=i), t, 0.4)
+            if i % 16 == 0:
+                _put(mix, _pluck(f(["C4", "Eb4", "G4"][(i // 16) % 3]) * 2, step * 3, 0.9), t, 0.1)
+        elif style == "marche":                                   # fanfare absurde (oum-pa)
+            if i % 4 == 0:
+                _put(mix, _pluck(f(["C3", "G2", "F2", "G2"][(i // 4) % 4]), beat * 0.9, 0.3), t, 0.42)
+                _put(mix, _kick(), t, 0.35)
+            if i % 4 == 2:
+                _put(mix, _stab([f("C4"), f("E4"), f("G4")] if (i // 8) % 2 == 0 else [f("B3"), f("D4"), f("G4")],
+                                beat * 0.5, 0.6), t, 0.2)
+                _put(mix, _hat(0.05, seed=i), t, 0.2)
+            if i % 16 == 14:
+                _put(mix, _pluck(f("C5"), step, 0.9), t, 0.12)
+        else:                                                     # tension : ostinato mineur, suspense
+            if i % 2 == 0:
+                _put(mix, _stab([f(["C3", "C3", "Eb3", "D3"][(i // 8) % 4]), f("G3")], step * 0.9, 0.7), t, 0.24)
+            if i % 4 == 0:
+                _put(mix, _kick(), t, 0.45)
+            if i % 8 == 4:
+                _put(mix, _clap(seed=i), t, 0.22)
+            if i % 32 == 0:
+                _put(mix, _sub(f("C2"), beat * 3), t, 0.3)
         i += 1
         t += step
-    fade = int(0.8 * SR)
-    mix[-fade:] *= np.linspace(1, 0, fade)
+    for c in cuts or []:                                          # accent sur chaque coupe
+        _put(mix, _kick(), c, 0.35)
+        _put(mix, _crash(0.5, seed=int(c * 10)), c, 0.25)
+    if punch:                                                     # montée, puis vide sous la chute, puis retour
+        a, b = punch
+        r = _riser(0.6)
+        _put(mix, r, max(0.0, a - 0.25 - 0.6), 0.5)
+        ka, kb = int(max(0, a - 0.25) * SR), int(min(total, b + 0.05) * SR)
+        fd = int(0.02 * SR)
+        if kb - ka > 2 * fd:
+            mix[ka:ka + fd] *= np.linspace(1, 0, fd)
+            mix[ka + fd:kb] = 0
+            mix[kb:kb + fd] *= np.linspace(0, 1, fd)
+            _put(mix, _crash(0.9), b + 0.05, 0.5)
+    mix = mix[: int(total * SR)]
+    fd = int(0.03 * SR)                                           # fin sèche (pas de fondu long) : la boucle repart
+    mix[-fd:] *= np.linspace(1, 0, fd)
     mix /= max(1e-6, np.abs(mix).max()) / 0.7
-    write_wav(path, mix[: int(total * SR)])
+    write_wav(path, mix)
+    return style
+
+
+def hook_hit(path: Path) -> None:
+    """Impact à 0 s sur la piste d'effets : arrêt du pouce dès la première image."""
+    d = read_wav(path)
+    hit = np.zeros(int(0.6 * SR), dtype=np.float32)
+    k = _kick(0.5) * 0.9
+    hit[: len(k)] += k
+    c = _crash(0.6, seed=11)
+    hit[: len(c)] += c * 0.8
+    s = _sub(55.0, 0.5)
+    hit[: len(s)] += s * 0.5
+    n = min(len(d), len(hit))
+    d[:n] += hit[:n] * 0.8
+    write_wav(path, d)
 
 
 def make_whooshes(times: list, total: float, path: Path) -> None:
@@ -222,21 +342,27 @@ def make_whooshes(times: list, total: float, path: Path) -> None:
     write_wav(path, out[: int(total * SR)])
 
 
+# Volume final : -14 LUFS est le repère courant des réseaux, beaucoup de créateurs poussent vers -12/-10
+# pour plus d'impact dans le fil ; -12 avec crête à -1 dB (aucune saturation).
+LUFS = -12
+
+
 def mix(out: Path, total: float) -> dict:
     """Voix au premier plan, musique atténuée sous la voix (sidechain), normalisation EBU R128 en 2 passes."""
     raw = out / "mix_raw.wav"
     fc = ("[1:a]volume=0.32[m];[m][0:a]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=350[md];"
-          "[0:a]highpass=f=70,acompressor=threshold=0.1:ratio=3:attack=5:release=120,volume=1.0[v];"
+          "[0:a]highpass=f=80,equalizer=f=250:t=q:w=1.2:g=-2.5,equalizer=f=3500:t=q:w=1.0:g=3,"
+          "acompressor=threshold=0.08:ratio=4:attack=4:release=100:makeup=1.5,volume=1.0[v];"
           "[2:a]volume=0.5[w];[v][md][w]amix=inputs=3:normalize=0:duration=first[a]")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", "narration.wav", "-i", "music.wav", "-i",
                     "whoosh.wav", "-filter_complex", fc, "-map", "[a]", "-ar", str(SR), "-ac", "2", raw.name],
                    cwd=out, check=True)
     p = subprocess.run(["ffmpeg", "-hide_banner", "-i", raw.name, "-af",
-                        "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json", "-f", "null", "-"],
+                        f"loudnorm=I={LUFS}:TP=-1:LRA=9:print_format=json", "-f", "null", "-"],
                        cwd=out, capture_output=True, text=True, encoding="utf-8", errors="replace")
     js = p.stderr[p.stderr.rfind("{"): p.stderr.rfind("}") + 1]
     m = json.loads(js)
-    af = (f"loudnorm=I=-14:TP=-1.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
+    af = (f"loudnorm=I={LUFS}:TP=-1:LRA=9:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
           f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw.name, "-af", af, "-ar", str(SR), "mix.wav"],
                    cwd=out, check=True)

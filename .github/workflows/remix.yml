@@ -1,0 +1,33 @@
+# Remixe le son des vidéos déjà en réserve avec le sound design actuel (image inchangée). Voir lbf/remix_audio.py.
+name: Remix son
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "Identifiants séparés par des espaces (vide : vidéos non publiées à voix enregistrée)"
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: remix
+  cancel-in-progress: false
+jobs:
+  remix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      GH_TOKEN: ${{ github.token }}
+      VOICE_MODEL: fr_FR-siwis-medium
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-cloud.txt
+      - name: Paquets
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q -r requirements-cloud.txt
+      - name: Remixer
+        run: python -m lbf.remix_audio ${{ inputs.ids }}

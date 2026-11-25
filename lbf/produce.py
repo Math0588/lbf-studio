@@ -135,8 +135,13 @@ def produce(ep_path: Path, profile: str = "final", log=print) -> dict:
 
     t = time.time()
     cuts = [s["start"] for s in tl["shots"][1:]]
-    audio.make_music(tl["total"], out / "music.wav")
+    import hashlib
+    seed = int(hashlib.sha1(ep["id"].encode()).hexdigest(), 16) % 10007
+    segs = tl["segments"]
+    punch = (segs[-2]["start"], segs[-2]["end"]) if len(segs) >= 3 else None   # la chute (avant-dernière phrase)
+    report["musique"] = audio.make_music(tl["total"], out / "music.wav", seed=seed, cuts=cuts, punch=punch)
     audio.make_whooshes(cuts, tl["total"], out / "whoosh.wav")
+    audio.hook_hit(out / "whoosh.wav")
     if config.get("MEME_SFX") != "false":
         qc = [tuple(c) for c in tl.get("quote_cues", [])]
         report["sfx"] = [c for c in audio.meme_cues(ep, tl) if c[1] not in {q[1] for q in qc}] + qc
