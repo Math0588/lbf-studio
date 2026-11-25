@@ -1,0 +1,44 @@
+# Auteur automatique (format v4, Gemini) : écrit de nouveaux scripts quand le stock baisse. Voir lbf/auteur.py.
+name: Auteur
+on:
+  workflow_dispatch:
+    inputs:
+      n:
+        description: "Nombre de scripts à écrire"
+        default: "3"
+      force:
+        description: "Écrire même si le stock est suffisant"
+        type: boolean
+        default: false
+  schedule:
+    - cron: "11 */8 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: auteur
+  cancel-in-progress: false
+jobs:
+  auteur:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_TEXT_MODEL: ${{ vars.GEMINI_TEXT_MODEL }}
+      AUTEUR_NOTE_MIN: ${{ vars.AUTEUR_NOTE_MIN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-cloud.txt
+      - name: Dépendances
+        run: pip install -q -r requirements-cloud.txt
+      - name: Écrire
+        run: python -m lbf.auteur --n "${{ inputs.n || '3' }}" ${{ inputs.force && '--force' || '' }}
+      - name: Enregistrer
+        run: |
+          git config user.name "LBF"; git config user.email "lbf-studio@users.noreply.github.com"
+          git add content/scripts/bank_auto state/faits_utilises.json state/auteur_log.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -qm "auteur : nouveaux scripts v4 $(date -u +%F' '%H:%M)"
+          for i in 1 2 3 4; do git pull -q --rebase -X theirs && git push -q && break; sleep $((RANDOM % 20 + 5)); done || true

@@ -81,7 +81,8 @@ def bank_scripts() -> list[Path]:
         per_city.setdefault(c, []).append(p)
     for c in CITY_ORDER:
         # banque « ultra » (scénarios les plus provocants) en tête, puis la banque de série
-        bank = sorted((config.CONTENT / "scripts" / "bank_ultra" / c).glob("*.json")) + \
+        bank = sorted((config.CONTENT / "scripts" / "bank_auto" / c).glob("*.json")) + \
+            sorted((config.CONTENT / "scripts" / "bank_ultra" / c).glob("*.json")) + \
             sorted((config.CONTENT / "scripts" / "bank" / c).glob("*.json"))
         memes = sorted((config.CONTENT / "scripts" / "bank_memes" / c).glob("*.json"))
         mixed = []  # alterne scripts de série et scripts ancrés sur un mème réel

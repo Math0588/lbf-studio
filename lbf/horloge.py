@@ -154,6 +154,7 @@ def main() -> int:
     t0 = time.time()
     fired = set()        # créneaux déjà déclenchés par ce passage
     last_prod = 0.0
+    last_auteur = 0.0
     slots, slots_at = DEFAULT_SLOTS, 0.0
     log(f"démarrage (jeton diffuseur : {'oui' if DIFF_TOKEN else 'non'})")
     while time.time() - t0 < LIFETIME_S:
@@ -170,6 +171,10 @@ def main() -> int:
                     fired.add(key)
                     log(f"créneau {s}" + (" (relance)" if k else ""))
                     dispatch_publish()
+        if time.time() - last_auteur > 6 * 3600:     # l'auteur écrit de nouveaux scripts si le stock baisse
+            last_auteur = time.time()
+            r = gh("workflow", "run", "auteur.yml", "-R", REPO, "--ref", "main")
+            log("auteur sollicité" if r.returncode == 0 else f"auteur : {r.stderr.strip()[:160]}")
         if time.time() - last_prod > 1800:
             last_prod = time.time()
             try:
