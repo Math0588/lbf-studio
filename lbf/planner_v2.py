@@ -387,6 +387,7 @@ def plan(script: dict) -> dict:
             extra.append({"type": "tribune", "id": f"{sc['id']}_pupitre", "at": [cx, cy + 0.9], "scale": 1.25,
                           "color": "#1649FF"})
             md = dict(MAYORS[city])
+            md.update(script.get("mayor_look") or {})   # apparence propre à l'histoire (ex. maire en sucre)
             md["faces"] = list(dict.fromkeys(md["faces"] + faces_of["maire"]))
             if hold_of.get("maire"):
                 md["hold"] = hold_of["maire"]
