@@ -7,7 +7,7 @@ moteur suivant prend l'épisode entier (jamais deux voix dans une vidéo).
 
 Réglages (variables du dépôt, facultatives) :
   GEMINI_TTS_MODEL  (défaut gemini-2.5-flash-preview-tts)
-  GEMINI_VOICE      (défaut Puck : masculine, enjouée ; autres : Fenrir, Charon, Orus, Algenib…)
+  GEMINI_VOICE      (défaut Charon, choisie par le propriétaire ; autres : Puck, Fenrir, Orus…)
   GEMINI_STYLE      consigne de ton (défaut ci-dessous)
 """
 from __future__ import annotations
@@ -25,7 +25,7 @@ from . import config
 
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 DEFAULT_MODEL = "gemini-2.5-flash-preview-tts"
-DEFAULT_VOICE = "Puck"
+DEFAULT_VOICE = "Charon"   # choisie par le propriétaire le 25/11 (posée, pince-sans-rire)
 DEFAULT_STYLE = ("Lis ce texte en français de France, sans aucun accent étranger, comme un humoriste qui se moque : "
                  "ton sarcastique, pince-sans-rire et punchy, débit rapide d'une vidéo TikTok, énergie haute. "
                  "Marque un silence net d'une demi-seconde entre chaque ligne. Ne lis que le texte, pas cette consigne :")

@@ -69,15 +69,31 @@ CLAIM_H = 5
 RUN_TAG = os.environ.get("GITHUB_RUN_ID") or "local"
 
 
+_RUN_LIVE: dict = {}
+
+
+def _run_live(tag: str) -> bool:
+    """La réservation appartient-elle à un passage encore en cours ? (annulé ou fini : réservation libérée)"""
+    if tag == RUN_TAG or not tag.isdigit():
+        return True
+    if tag not in _RUN_LIVE:
+        r = gh("run", "view", tag, "--json", "status", check=False)
+        try:
+            _RUN_LIVE[tag] = json.loads(r.stdout).get("status") != "completed" if r.returncode == 0 else True
+        except json.JSONDecodeError:
+            _RUN_LIVE[tag] = True
+    return _RUN_LIVE[tag]
+
+
 def claims(assets: dict | None = None) -> dict:
-    """id → [(date, run)] des réservations encore valides."""
+    """id → [(date, run)] des réservations encore valides (moins de CLAIM_H heures ET passage encore en cours)."""
     assets = release_assets() if assets is None else assets
     lim = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=CLAIM_H)).isoformat()
     out = {}
     for n, at in assets.items():
         if n.endswith(".encours") and n.count(".") >= 2:
             sid, tag = n[:-len(".encours")].rsplit(".", 1)
-            if (at or "9") >= lim[:19]:
+            if (at or "9") >= lim[:19] and _run_live(tag):
                 out.setdefault(sid, []).append((at, tag))
     return out
 
