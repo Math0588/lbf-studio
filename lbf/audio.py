@@ -65,6 +65,21 @@ def build_narration(ep: dict, out: Path) -> dict:
         except Exception as e:
             durs = {}
             print(f"[voix] ElevenLabs indisponible ({str(e)[:240]}) : secours {eng}", flush=True)
+    from . import tts_chatterbox
+    if not ext_files and eng != "elevenlabs_api" and tts_chatterbox.wanted():
+        # voix open source Chatterbox (MIT) : tout l'épisode en un appel, sinon rien
+        try:
+            import shutil as _sh
+            ids = list(segs)
+            dd = tts_chatterbox.synthesize_all([segs[i]["text"] for i in ids], audio_dir / "cbx")
+            for i, sid in enumerate(ids):
+                _sh.copyfile(audio_dir / "cbx" / f"seg_{i}.wav", audio_dir / f"{sid}.wav")
+                durs[sid] = dd[i]
+            eng = "elevenlabs_api"          # même chemin : narration déjà prête, on saute la boucle de synthèse
+            voice_info = tts_chatterbox.report()
+        except Exception as e:
+            durs = {}
+            print(f"[voix] Chatterbox indisponible ({str(e)[:240]}) : secours {eng}", flush=True)
     last_id = ep["narration_segments"][-2]["id"] if len(ep["narration_segments"]) > 1 else None
     for sid, s in segs.items():
         if eng == "elevenlabs_api":
@@ -128,7 +143,7 @@ def build_narration(ep: dict, out: Path) -> dict:
         track[i:i + len(d)] += d[: len(track) - i]
     write_wav(out / "narration.wav", track)
     info = {"total": round(total, 3), "segments": timeline, "shots": shots, "quote_cues": quote_cues,
-            "voice": voice_info if eng in ("azure", "externe") and voice_info else tts.voice_report(tts.config.get("VOICE_MODEL"))}
+            "voice": voice_info if eng in ("azure", "externe", "elevenlabs_api") and voice_info else tts.voice_report(tts.config.get("VOICE_MODEL"))}
     (out / "timeline.json").write_text(json.dumps(info, ensure_ascii=False, indent=2), encoding="utf-8")
     return info
 

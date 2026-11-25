@@ -226,6 +226,12 @@ def main():
     st = load_state()
     ensure_release()
     made = 0
+    # voix de secours (Piper) jugée trop mauvaise : on ne fabrique qu'avec ElevenLabs, Chatterbox ou Azure
+    from . import tts_azure, tts_chatterbox, tts_elevenlabs
+    if os.environ.get("REQUIRE_GOOD_VOICE", "true") == "true" and not (
+            tts_elevenlabs.available() or tts_chatterbox.available() or tts_azure.available()):
+        print("[studio] aucune voix de qualité disponible (ElevenLabs, Chatterbox, Azure) : rien fabriqué", flush=True)
+        return 0
     # passages lancés ensemble : départs décalés, puis chacun prend le premier script non réservé
     slot = int(os.environ.get("SLOT", "0") or 0)
     time.sleep(min(slot, 20) * 25)
