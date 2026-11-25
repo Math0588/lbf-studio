@@ -26,7 +26,7 @@ def available() -> bool:
 
 def wanted() -> bool:
     e = (config.get("TTS_ENGINE") or "auto").lower()
-    return available() and e in ("auto", "chatterbox")
+    return available() and e == "chatterbox"      # jugé médiocre (accent) : seulement sur demande explicite
 
 
 def synthesize_all(texts: list[str], out_dir: Path, seed: int = 7) -> list[float]:

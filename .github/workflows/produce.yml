@@ -41,31 +41,15 @@ jobs:
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
       ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
       ELEVENLABS_MODEL: ${{ vars.ELEVENLABS_MODEL }}
-      CBX_EXAGGERATION: ${{ vars.CBX_EXAGGERATION }}
-      CBX_CFG: ${{ vars.CBX_CFG }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_TTS_MODEL: ${{ vars.GEMINI_TTS_MODEL }}
+      GEMINI_VOICE: ${{ vars.GEMINI_VOICE }}
+      GEMINI_STYLE: ${{ vars.GEMINI_STYLE }}
       VOICE_MODEL: fr_FR-siwis-medium
       MIN_FREE_DISK_GB: "3"
       BLENDER_PATH: /usr/local/bin/blender
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        id: py311
-        with:
-          python-version: "3.11"
-      - name: Voix open source en cache (Chatterbox + modèles)
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/cbx
-            ~/.cache/huggingface
-          key: cbx-v1-${{ runner.os }}-${{ steps.py311.outputs.python-version }}
-      - name: Voix Chatterbox (Resemble AI, licence MIT, CPU)
-        run: |
-          if [ ! -x ~/cbx/bin/python ]; then
-            ${{ steps.py311.outputs.python-path }} -m venv ~/cbx
-            ~/cbx/bin/pip install -q --extra-index-url https://download.pytorch.org/whl/cpu chatterbox-tts
-          fi
-          echo "CBX_PYTHON=$HOME/cbx/bin/python" >> "$GITHUB_ENV"
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"

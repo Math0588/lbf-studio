@@ -65,6 +65,21 @@ def build_narration(ep: dict, out: Path) -> dict:
         except Exception as e:
             durs = {}
             print(f"[voix] ElevenLabs indisponible ({str(e)[:240]}) : secours {eng}", flush=True)
+    from . import tts_gemini
+    if not ext_files and eng != "elevenlabs_api" and tts_gemini.wanted():
+        # voix Google Gemini (clé gratuite) : une requête pour tout l'épisode, découpée phrase par phrase
+        try:
+            import shutil as _sh
+            ids = list(segs)
+            dd = tts_gemini.synthesize_all([segs[i]["text"] for i in ids], audio_dir / "gemini")
+            for i, sid in enumerate(ids):
+                _sh.copyfile(audio_dir / "gemini" / f"seg_{i}.wav", audio_dir / f"{sid}.wav")
+                durs[sid] = dd[i]
+            eng = "elevenlabs_api"          # même chemin : narration prête, on saute la boucle de synthèse
+            voice_info = tts_gemini.report()
+        except Exception as e:
+            durs = {}
+            print(f"[voix] Gemini indisponible ({str(e)[:240]}) : secours {eng}", flush=True)
     from . import tts_chatterbox
     if not ext_files and eng != "elevenlabs_api" and tts_chatterbox.wanted():
         # voix open source Chatterbox (MIT) : tout l'épisode en un appel, sinon rien

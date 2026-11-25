@@ -1,49 +1,53 @@
-# Essai de voix open source (Chatterbox Multilingual, MIT) sur un script : échantillons dans la release « bench ».
+# Essai de voix Gemini (clé gratuite, secret GEMINI_API_KEY) sur un script : échantillons dans la release « bench ».
 name: Essai voix
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      voix:
+        description: "Voix Gemini à essayer (séparées par des espaces)"
+        default: "Puck Fenrir Charon"
+      script:
+        description: "Script"
+        default: "content/scripts/bank_ultra/glucksmannville/glv-u07.json"
 permissions:
   contents: write
 jobs:
   essai:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 30
     env:
       GH_TOKEN: ${{ github.token }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_TTS_MODEL: ${{ vars.GEMINI_TTS_MODEL }}
+      GEMINI_STYLE: ${{ vars.GEMINI_STYLE }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-      - name: Modèles en cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/huggingface
-          key: hf-chatterbox-mtl-v1
-      - name: Installer Chatterbox (CPU)
-        run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
-          python -m venv /opt/cbx
-          /opt/cbx/bin/pip install -q --extra-index-url https://download.pytorch.org/whl/cpu chatterbox-tts
-          /opt/cbx/bin/pip list 2>/dev/null | grep -i -E "torch|chatterbox"
+          python-version: "3.12"
       - name: Synthétiser
         run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q numpy
+          if [ -z "$GEMINI_API_KEY" ]; then echo "::error::secret GEMINI_API_KEY absent"; exit 1; fi
           mkdir -p essai
-          python3 - <<'PY'
-          import json
-          s = json.load(open("content/scripts/bank_ultra/glucksmannville/glv-u07.json", encoding="utf-8"))
-          lines = [n["text"].replace("«", "").replace("»", "") for n in s["narration_segments"]]
-          for name, cfg in (("A", 0.3), ("B", 0.0)):
-              json.dump({"items": [{"text": t, "out": f"essai/{name}_{i}.wav"} for i, t in enumerate(lines)],
-                         "ref": None, "exaggeration": 0.7, "cfg": cfg, "seed": 7}, open(f"essai/{name}.json", "w"))
+          for v in ${{ inputs.voix }}; do
+            GEMINI_VOICE=$v python3 - "$v" "${{ inputs.script }}" <<'PY'
+          import json, subprocess, sys, pathlib
+          from lbf import tts_gemini
+          v, sp = sys.argv[1], sys.argv[2]
+          s = json.load(open(sp, encoding="utf-8"))
+          d = pathlib.Path(f"essai/{v}")
+          durs = tts_gemini.synthesize_all([n["text"] for n in s["narration_segments"]], d)
+          print(v, "durées :", [round(x, 2) for x in durs], "total", round(sum(durs), 1), "s", flush=True)
+          lst = d / "liste.txt"
+          lst.write_text("".join(f"file 'seg_{i}.wav'\nfile '../../silence.wav'\n" for i in range(len(durs))))
           PY
-          /opt/cbx/bin/python tools/cbx_worker.py essai/A.json
-          /opt/cbx/bin/python tools/cbx_worker.py essai/B.json
-      - name: Assembler et publier
-        run: |
-          for v in A B; do
-            ls essai/${v}_*.wav | sort -V | sed "s/^/file '/; s/$/'/" | sed "s#file 'essai/#file '#" > essai/${v}.txt
-            (cd essai && ffmpeg -y -loglevel error -f concat -safe 0 -i ${v}.txt -af "apad=pad_dur=0.3" -b:a 160k voix_chatterbox_${v}.mp3)
+          done
+          ffmpeg -y -loglevel error -f lavfi -i anullsrc=r=48000:cl=mono -t 0.32 silence.wav
+          for v in ${{ inputs.voix }}; do
+            (cd essai/$v && ffmpeg -y -loglevel error -f concat -safe 0 -i liste.txt -b:a 160k ../voix_gemini_$v.mp3)
           done
           ls -la essai/*.mp3
           gh release view bench >/dev/null 2>&1 || gh release create bench --title "Essais" --notes "Essais techniques" --latest=false
-          gh release upload bench essai/voix_chatterbox_A.mp3 essai/voix_chatterbox_B.mp3 --clobber
+          gh release upload bench essai/*.mp3 --clobber

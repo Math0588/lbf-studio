@@ -181,7 +181,8 @@ def produce(ep_path: Path, profile: str = "final", log=print) -> dict:
                    f"- {voice['attribution']}\n"
                    + ({"azure": "- Synthèse vocale : Azure AI Speech (voix neuronale standard).\n",
                        "elevenlabs": "- Synthèse vocale : ElevenLabs.\n",
-                       "chatterbox": "- Synthèse vocale : Chatterbox Multilingual (Resemble AI, licence MIT).\n"}.get(voice.get("engine"),
+                       "chatterbox": "- Synthèse vocale : Chatterbox Multilingual (Resemble AI, licence MIT).\n",
+                       "gemini": "- Synthèse vocale : Google Gemini TTS.\n"}.get(voice.get("engine"),
                                                                             "- Moteur de synthèse : Piper (piper1-gpl, GPL-3.0).\n")) +
                    "- Musique et effets : créations originales générées par le projet (lbf/audio.py).\n"
                    "- Fontes : Archivo Black et Anton, SIL Open Font License 1.1.\n"
