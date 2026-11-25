@@ -28,7 +28,7 @@ from pathlib import Path
 from . import config, editorial, planner_v2, viral_lint
 
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-MODELS = ["gemini-2.5-pro", "gemini-2.5-flash"]
+MODELS = ["gemini-3.1-pro-preview", "gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-flash"]  # 2.5 Pro retiré par Google
 SCRIPTS = config.CONTENT / "scripts"
 AUTO = SCRIPTS / "bank_auto"
 USED = config.ROOT / "state" / "faits_utilises.json"
@@ -135,8 +135,8 @@ def gemini(prompt: str, temperature: float = 1.0) -> dict:
                 return json.loads(txt[txt.find("{"): txt.rfind("}") + 1])
             except urllib.error.HTTPError as e:
                 last = f"{model} {e.code} {e.read()[:200].decode('utf-8', 'replace')}"
-                if e.code == 429 and attempt < 2:
-                    time.sleep(40)
+                if e.code in (429, 500, 503) and attempt < 2:   # limite par minute ou surcharge : on patiente
+                    time.sleep(45 * (attempt + 1))
                     continue
                 break                                  # modèle indisponible ou quota du jour : modèle suivant
             except (KeyError, IndexError, ValueError) as e:
@@ -304,11 +304,7 @@ def write_one(city: str, claim: dict, sid: str, avoid: list[str]) -> dict | None
                   + f"« {claim['text']} » (source : {claim['source']})"
                   + ("\n\nSITUATIONS DÉJÀ UTILISÉES (trouve autre chose) : " + " ; ".join(avoid[-25:]) if avoid else "")
                   + feedback + "\n\nÉcris 3 versions TRÈS DIFFÉRENTES (3 situations différentes).\n" + FORMAT)
-        try:
-            versions = gemini(prompt, 1.0).get("versions", [])[:3]
-        except RuntimeError as e:
-            log(str(e))
-            return None
+        versions = gemini(prompt, 1.0).get("versions", [])[:3]
         cands = []
         for k, v in enumerate(versions):
             s = to_script(v, city, sid, claim)
@@ -322,11 +318,7 @@ def write_one(city: str, claim: dict, sid: str, avoid: list[str]) -> dict | None
             continue
         txt = "\n\n".join(f"VERSION {k} — « {s['title_cover']} » ({s['situation']})\n" + "\n".join(
             f"  [{n.get('lien') or n.get('role') or 'cta'}] {n['text']}" for n in s["narration_segments"]) for k, s in cands)
-        try:
-            notes = {n["version"]: n for n in gemini(JUGE + "\n\n" + txt, 0.2).get("notes", [])}
-        except RuntimeError as e:
-            log(str(e))
-            return None
+        notes = {n["version"]: n for n in gemini(JUGE + "\n\n" + txt, 0.2).get("notes", [])}
         best = max(cands, key=lambda c: float(notes.get(c[0], {}).get("global", 0)))
         nb = notes.get(best[0], {})
         log(f"tour {tour + 1} : meilleure version {best[0]} « {best[1]['title_cover']} » note {nb.get('global')} — {nb.get('critique', '')}")
@@ -371,12 +363,16 @@ def main() -> int:
             MAIN.remove(city)
             continue
         claim = random.choice(facts)
-        used.add(claim["text"].strip())
         nums = [int(re.sub(r"\D", "", Path(p).stem.split("-a")[-1]) or 0)
                 for p in glob.glob(str(AUTO / city / f"{PREFIX[city]}-a*.json"))]
         sid = f"{PREFIX[city]}-a{max(nums, default=0) + 1:03d}"
         log(f"{sid} : {NAMES[city]} — fait : {claim['text'][:90]}")
-        s = write_one(city, claim, sid, avoid)
+        try:
+            s = write_one(city, claim, sid, avoid)
+        except RuntimeError as e:          # Gemini indisponible : on s'arrête, le fait reste disponible
+            log(f"arrêt : {e}")
+            break
+        used.add(claim["text"].strip())    # fait consommé (script écrit, ou refusé par le critique 3 fois)
         journal.append({"at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"), "id": sid,
                         "fait": claim["text"], "ok": bool(s), "titre": s and s["title_cover"],
                         "notes": s and s.get("notes_critique")})
