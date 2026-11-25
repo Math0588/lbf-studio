@@ -227,6 +227,73 @@ def _quote(text: str) -> str | None:
     return m.group(1).strip() if m else None
 
 
+
+# ------------------------------------------------------------------ ce que dit la voix doit se voir
+_ILLU_GAGS = [   # (motif dans la phrase, gag à montrer)
+    (r"\bchats?\b", {"type": "animal", "espece": "chat"}), (r"\bpigeons?\b", {"type": "animal", "espece": "pigeon"}),
+    (r"\bvaches?\b", {"type": "animal", "espece": "vache"}), (r"\btortues?\b", {"type": "animal", "espece": "tortue"}),
+    (r"\bmoutons?\b", {"type": "animal", "espece": "mouton"}), (r"\bcanards?\b", {"type": "animal", "espece": "canard"}),
+    (r"\bchiens?\b", {"type": "chien"}),
+    (r"extraterrestre|\balien|soucoupe", {"type": "perso", "qui": "alien"}), (r"\brobots?\b", {"type": "perso", "qui": "robot"}),
+    (r"\bbébés?\b", {"type": "perso", "qui": "bebe"}), (r"\bmamies?\b|grand-mère", {"type": "perso", "qui": "mamie"}),
+    (r"gilets? jaunes?", {"type": "gilets_jaunes"}), (r"\baffiches?\b|\bportraits?\b|\bposters?\b", {"type": "affiche"}),
+]
+_ILLU_ACTS = [   # (motif, geste, visage) : le geste du personnage colle au verbe
+    (r"\btouss|\btoux\b|raclement", "cough", "blase"), (r"applaudi|ovation|bravo", "clap", "content"),
+    (r"manif|défil|cortège|\bgrève", "manif", "colere"), (r"\bfête|danse|célèbr|cotillon", "cheer", "content"),
+    (r"\btomb|chute\b|s'effondr|trébuch", "fall", "choque"), (r"\bsaut|sursaut|bond", "jump", "choque"),
+    (r"\bpleur|désespo|honte", "facepalm", "blase"), (r"\bsalue|bonjour|coucou", "wave", "sourire_pro"),
+    (r"\bmontre\b|désigne|pointe", "point", "fier"), (r"\brefus|interdi|\bbanni|confisqu", "shake", "colere"),
+    (r"\bdort|sommeil|endor", "shrug", "dort"),
+]
+_ILLU_OBJ = [(r"matcha", "matcha"), (r"\bbillets?\b|\beuros?\b|€|argent|\bbudget|\bbanque|milliard|impôt|taxe", "billets"),
+             (r"selfie|téléphone|tiktok|\bstory\b|abonnés", "phone"), (r"\bmicro\b|discours|meeting|tribune", "micro"),
+             (r"baguette|boulang|\bpain\b", "baguette"), (r"brosse à dents", "brosse_a_dents"),
+             (r"ring light", "ring_light"), (r"pancarte|banderole", "pancarte"), (r"\bverres?\b", "verre")]
+
+
+def illustrer(sc: dict, texte: str, maire_nomme: bool) -> dict:
+    """Ajoute à la scène ce que la narration mentionne et que le moteur sait montrer (animal, perso, objet tenu,
+    geste) s'il n'y est pas déjà : la voix et l'image racontent la même chose. Les éléments cités passent en
+    premier (la scène n'en affiche que deux)."""
+    t = texte.lower()
+    gags = [g for g in sc.get("gags", []) if isinstance(g, dict)]
+    acts = [a for a in sc.get("actions", []) if isinstance(a, dict)]
+    cites = []
+    for pat, g in _ILLU_GAGS:
+        if re.search(pat, t):
+            same = [x for x in gags if x.get("type") == g["type"] and x.get("espece") == g.get("espece")
+                    and x.get("qui") == g.get("qui")]
+            cites.append(same[0] if same else dict(g))
+    if cites:
+        gags = cites[:2] + [g for g in gags if g not in cites]
+    who = "maire" if maire_nomme or any(a.get("who") == "maire" for a in acts) else "foule"
+    for pat, geste, visage in _ILLU_ACTS:
+        if re.search(pat, t) and not any(a.get("geste") == geste for a in acts):
+            acts.append({"who": "foule" if geste in ("manif", "clap", "cheer") else who, "geste": geste,
+                         "visage": visage, "quand": 0.35, "auto": True})
+            break   # un geste ajouté par phrase suffit (lisibilité)
+    for pat, obj in _ILLU_OBJ:
+        if re.search(pat, t) and not any(a.get("objet") == obj for a in acts):
+            tenant = next((a for a in acts if a.get("who") == who and not a.get("objet")), None)
+            if tenant:
+                tenant["objet"] = obj
+            else:
+                acts.append({"who": who, "geste": "nod", "visage": "fier", "quand": 0.1, "objet": obj, "auto": True})
+            break
+    return {**sc, "gags": gags, "actions": acts}
+
+def _noms_maire(city: str) -> list[str]:
+    """Nom du politicien de la ville, sans accents (macronville → macron, melenchonville → melenchon)."""
+    nom = (city or "").replace("ville", "")
+    return [x for x in (nom, "le maire", "la maire") if x]
+
+
+def _sans_accents(t: str) -> str:
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", t) if unicodedata.category(c) != "Mn")
+
+
 def plan(script: dict) -> dict:
     city = script["city"]
     ensure_set_v2(city)
@@ -262,6 +329,8 @@ def plan(script: dict) -> dict:
             if pn == "car":
                 d["rot"] = 90
             extra.append(d)
+        texte = " ".join(segs[n]["text"] for n in sc.get("narration_ids", []) if n in segs)
+        sc = illustrer(sc, texte, any(k in _sans_accents(texte.lower()) for k in _noms_maire(city)))
         acts = [a for a in sc.get("actions", []) if isinstance(a, dict)]
         gags = [g for g in sc.get("gags", []) if isinstance(g, dict)]
         for gi, g in enumerate(gags[:2]):

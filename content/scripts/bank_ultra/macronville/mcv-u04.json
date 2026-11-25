@@ -90,9 +90,47 @@
   ],
   "scenes": [
     {
+      "id": "s0",
+      "narration_ids": [
+        "n0"
+      ],
+      "camera": "dolly_in",
+      "set": [
+        "table",
+        "person",
+        "text3d"
+      ],
+      "onscreen_text": "BANQUE VIDE",
+      "comic_action": "Flash-forward : Le maire renverse la boîte du Cluedo pour trouver des billets, puis secoue la tirelire de la mamie au-dessus du plateau.",
+      "expected_result": "L'image la plus absurde de l'histoire, montrée avant d'être expliquée.",
+      "actions": [
+        {
+          "who": "maire",
+          "geste": "shake",
+          "visage": "fier",
+          "quand": 0.0
+        },
+        {
+          "who": "perso",
+          "geste": "facepalm",
+          "visage": "colere",
+          "quand": 0.4
+        }
+      ],
+      "gags": [
+        {
+          "type": "perso",
+          "qui": "mamie"
+        },
+        {
+          "type": "prix",
+          "texte": "TIRELIRE : 0 €"
+        }
+      ]
+    },
+    {
       "id": "s1",
       "narration_ids": [
-        "n0",
         "n1"
       ],
       "camera": "descend",

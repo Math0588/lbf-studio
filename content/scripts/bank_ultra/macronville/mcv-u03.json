@@ -90,9 +90,47 @@
   ],
   "scenes": [
     {
+      "id": "s0",
+      "narration_ids": [
+        "n0"
+      ],
+      "camera": "dolly_in",
+      "set": [
+        "road",
+        "sign",
+        "person"
+      ],
+      "onscreen_text": "IMPÔT SUR LA MALCHANCE",
+      "comic_action": "Flash-forward : Un guichet est installé en pleine rue ; un passant qui trébuche reçoit aussitôt un avis d'imposition.",
+      "expected_result": "L'image la plus absurde de l'histoire, montrée avant d'être expliquée.",
+      "actions": [
+        {
+          "who": "perso",
+          "geste": "fall",
+          "visage": "choque",
+          "quand": 0.0
+        },
+        {
+          "who": "maire",
+          "geste": "point",
+          "visage": "sourire_pro",
+          "quand": 0.5
+        }
+      ],
+      "gags": [
+        {
+          "type": "affiche",
+          "texte": "TAXE SUR LA POISSE"
+        },
+        {
+          "type": "prix",
+          "texte": "TRÉBUCHER : 5 €"
+        }
+      ]
+    },
+    {
       "id": "s1",
       "narration_ids": [
-        "n0",
         "n1"
       ],
       "camera": "descend",

@@ -78,3 +78,8 @@ Contrôle : `python3 -m lbf.viral_lint --histoire` (≥ 1 point de départ sourc
 
 ## Mise à jour 4 : accroche v3 (25/11)
 Chaque nouveau script commence par un **teaser** de 10 mots maximum : l'image la plus absurde de l'histoire, avec le nom du politicien, sans l'expliquer (fossé de curiosité). Ensuite « Dans cette ville, tout le monde vote X. ». Champ `role: "teaser"` sur le segment `n0`. Voir `docs/VIRALITE.md`.
+
+## Mise à jour 5 : la voix et l'image disent la même chose (25/11)
+- Le teaser (n0) a son propre plan, **flash-forward** de la scène qu'il décrit (scène `s0`, copie de la scène concernée).
+- Le planificateur ajoute automatiquement à chaque scène ce que la phrase mentionne et que le moteur sait montrer : animal (chat, pigeon, vache, tortue, mouton, canard, chien), perso (alien, robot, bébé, mamie), gilets jaunes, affiche, objet tenu (matcha, billets, téléphone, micro, baguette, verre…), geste lié au verbe (tousse, applaudit, manif, tombe, saute, refuse, salue, montre…).
+- Écrire donc des phrases **visuelles** : un objet ou un animal concret par phrase, un verbe d'action.
