@@ -29,6 +29,8 @@ def check(script: dict, strict: bool | None = None) -> dict:
     if not segs:
         return {"ok": False, "blocking": ["aucune narration"], "warnings": []}
     first, last = segs[0]["text"], segs[-1]["text"]
+    if script.get("format_v4"):
+        return _check_v4(script, segs, block, warn)
     # accroche v3 : une phrase « teaser » (≤ 10 mots, l'image la plus absurde de l'histoire, sans l'expliquer)
     # peut précéder « Dans cette ville… » : la promesse tombe dans la 1re seconde (fossé de curiosité)
     teaser = segs[0].get("role") == "teaser"
@@ -96,3 +98,37 @@ if __name__ == "__main__":
             bad += 1
             print(f"✗ {p} : {r['blocking']}")
     print(f"{len(paths)} fichiers, {bad} refusés")
+
+
+LIENS = {"mais", "donc", "car", "alors"}
+
+
+def _check_v4(script: dict, segs: list, block: list, warn: list) -> dict:
+    """Format v4 (25/11) : UNE situation précise, accroche qui plonge dedans, chaque réplique découle de la
+    précédente (« mais » / « donc », règle des scénaristes de South Park), aucun élément gratuit, jamais la
+    formule « Dans cette ville »."""
+    first, last = segs[0]["text"], segs[-1]["text"]
+    if len((script.get("situation") or "").split()) < 8:
+        block.append("situation : décrire la situation précise (lieu, moment, enjeu) dans « situation »")
+    if segs[0].get("role") != "accroche" or len(first.split()) > 12:
+        block.append("accroche : 1re réplique « accroche » de 12 mots maximum, au cœur de la situation")
+    if any(s["text"].lower().startswith("dans cette ville") for s in segs):
+        block.append("accroche : formule « Dans cette ville… » interdite en v4 (générique, répétée)")
+    sans_lien = [s["id"] for s in segs[1:-1] if s.get("lien") not in LIENS]
+    if sans_lien:
+        block.append(f"enchaînement : répliques sans lien « mais / donc / car » avec la précédente : {sans_lien}")
+    if not re.match(r"envoie[- ]ça", last, re.I):
+        block.append("fin : la dernière phrase doit être un partage ciblé « Envoie ça au pote qui… »")
+    if not 5 <= len(segs) - 1 <= 9:
+        block.append(f"rythme : {len(segs) - 1} répliques après l'accroche (5 à 9)")
+    long = [s["id"] for s in segs if len(s["text"].split()) > 16]
+    if long:
+        warn.append(f"phrases longues (>16 mots) : {long}")
+    if not [s for s in segs if s.get("claim_type") in ("fait_public", "citation_exacte")]:
+        block.append("ancrage : au moins un fait ou une citation réels et sourcés")
+    if not script.get("claims"):
+        block.append("sources : claims vides")
+    said = " ".join(x["text"] for x in segs) + " " + script.get("title_cover", "")
+    if re.search(r"\bsuicid", said, re.I):
+        block.append("mot bridé par Instagram (suicide)")
+    return {"ok": not block, "blocking": block, "warnings": warn}

@@ -16,7 +16,7 @@
 Limites : beaucoup de chiffres qui circulent (« +29 % de portée », « 71 % décident en 3 s »…) viennent de blogs
 d'outils et ne sont pas vérifiés : on applique les principes, pas les pourcentages.
 
-## Scénario (format v3)
+## Scénario (format v4 : voir STYLE_TACLE.md, mise à jour 6 ; le v3 ci-dessous est remplacé)
 
 1. **Teaser** (≤ 10 mots) : l'image la plus absurde de l'histoire, avec le nom du politicien, sans l'expliquer.
 2. « **Dans cette ville, tout le monde vote X.** » + le détail absurde (la signature de la page).

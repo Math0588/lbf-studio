@@ -139,6 +139,8 @@ def next_script(st: dict, offset: int = 0, exclude: tuple = ()) -> Path | None:
             continue
         if sc.get("a_verifier"):              # fait pas assez sourcé : en attente de vérification
             continue
+        if os.environ.get("ONLY_V4", "true") == "true" and not sc.get("format_v4"):
+            continue                           # chaque Reel : une situation précise, accroche directe, mais/donc
         if skip:
             skip -= 1
             continue

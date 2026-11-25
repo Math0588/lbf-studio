@@ -23,7 +23,7 @@ def check(ep: dict) -> dict:
     segs = ep.get("narration_segments", [])
     words = sum(len(s["text"].split()) for s in segs)
     lo, hi = (50, 85) if ep.get("length", "court") == "court" else (70, 140)
-    if (ep.get("narration_segments") or [{}])[0].get("role") == "teaser":
+    if (ep.get("narration_segments") or [{}])[0].get("role") in ("teaser", "accroche"):
         hi += 10   # accroche v3 : le teaser d'ouverture (≤ 10 mots) s'ajoute au format habituel
     if not lo <= words <= hi:
         issues.append(f"Nombre de mots hors cible : {words} ({lo}–{hi})")

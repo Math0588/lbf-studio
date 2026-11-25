@@ -388,6 +388,7 @@ def plan(script: dict) -> dict:
                           "color": "#1649FF"})
             md = dict(MAYORS[city])
             md.update(script.get("mayor_look") or {})   # apparence propre à l'histoire (ex. maire en sucre)
+            md.update(sc.get("mayor_look") or {})       # … et propre à la scène (ex. il rapetisse en fondant)
             md["faces"] = list(dict.fromkeys(md["faces"] + faces_of["maire"]))
             if hold_of.get("maire"):
                 md["hold"] = hold_of["maire"]

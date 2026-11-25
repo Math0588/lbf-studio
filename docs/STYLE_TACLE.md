@@ -83,3 +83,13 @@ Chaque nouveau script commence par un **teaser** de 10 mots maximum : l'image la
 - Le teaser (n0) a son propre plan, **flash-forward** de la scène qu'il décrit (scène `s0`, copie de la scène concernée).
 - Le planificateur ajoute automatiquement à chaque scène ce que la phrase mentionne et que le moteur sait montrer : animal (chat, pigeon, vache, tortue, mouton, canard, chien), perso (alien, robot, bébé, mamie), gilets jaunes, affiche, objet tenu (matcha, billets, téléphone, micro, baguette, verre…), geste lié au verbe (tousse, applaudit, manif, tombe, saute, refuse, salue, montre…).
 - Écrire donc des phrases **visuelles** : un objet ou un animal concret par phrase, un verbe d'action.
+
+## Mise à jour 6 : format v4, pour CHAQUE Reel (25/11, demande du propriétaire)
+Fini la formule « Dans cette ville, tout le monde vote X » (générique, répétée = on scrolle) et fini les éléments sans lien.
+1. **Une situation précise** (lieu, moment, enjeu) écrite dans `situation`. Ex. : « Plateau télé, débat de 20 h : Glucksmann fond sous la pression. »
+2. **Accroche** (`role: "accroche"`, ≤ 12 mots) : on plonge directement dans la situation, avec le nom du politicien et l'image absurde. Ex. : « 20 h, plateau télé : Glucksmann est en train de fondre. »
+3. **Chaque réplique découle de la précédente** : champ `lien` = « mais » ou « donc » (ou « car »), jamais « et puis » (règle des scénaristes de South Park). Chaque tentative du personnage empire la situation.
+4. Un fait ou une citation réels et sourcés au service de la situation (ex. « Moi, les hésitations, je les aime »).
+5. Aucun élément gratuit : chaque animal, objet ou personnage sert l'histoire et se voit à l'écran ; l'image suit l'action (ex. le maire rapetisse plan après plan via `mayor_look` par scène).
+6. Chute qui vise la personne, puis « Envoie ça au pote qui… ». Toujours provoquer le camp rival.
+La fabrication ne prend plus que les scripts `format_v4: true` (variable ONLY_V4).
