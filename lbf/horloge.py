@@ -51,9 +51,14 @@ def gh(*args, token: str | None = None, check: bool = False) -> subprocess.Compl
 
 
 def diff_file(path: str):
-    """Fichier d'état du diffuseur (dépôt privé), via DIFFUSION_TOKEN."""
+    """Fichier d'état du diffuseur : lecture publique (dépôt public), sinon via DIFFUSION_TOKEN."""
     if not DIFF_TOKEN:
-        return None
+        import urllib.request
+        try:
+            return json.loads(urllib.request.urlopen(f"https://raw.githubusercontent.com/{DIFF}/main/{path}",
+                                                     timeout=30).read())
+        except Exception:
+            return None
     r = gh("api", f"repos/{DIFF}/contents/{path}", "-H", "Accept: application/vnd.github.raw", token=DIFF_TOKEN)
     if r.returncode != 0:
         log(f"lecture {path} impossible : {r.stderr.strip()[:160]}")
@@ -113,7 +118,9 @@ def reserve_left(assets: list[dict]) -> int | None:
     for p in pubs:
         if p.get("status") == "failed":
             fails[p["episode_id"]] = fails.get(p["episode_id"], 0) + 1
-    ready = {a["name"][:-4] for a in assets if a["name"].endswith(".mp4")}
+    cutoff = (diff_file("state/control.json") or {}).get("min_video_date", "")   # seules les nouvelles versions comptent
+    ready = {a["name"][:-4] for a in assets if a["name"].endswith(".mp4")
+             and (a.get("updated_at") or a.get("created_at") or "") >= cutoff}
     return len([i for i in ready if i not in done and i not in SUPERSEDED and fails.get(i, 0) < 2])
 
 
