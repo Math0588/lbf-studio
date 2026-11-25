@@ -19,7 +19,7 @@
     "scale": 1.3
   },
   "hook_variants": [
-    "Glucksmann, tête de glucide. Même les pigeons le croquent.",
+    "Glucksmann, tête de glucide, fond dans son matcha.",
     "Dans cette ville, tout le monde vote Glucksmann. Même le pigeon boit du matcha."
   ],
   "selected_hook": 0,
@@ -30,9 +30,10 @@
   "narration_segments": [
     {
       "id": "n0",
-      "text": "Glucksmann, tête de glucide. Même les pigeons le croquent.",
+      "text": "Glucksmann, tête de glucide, fond dans son matcha.",
       "accent_words": [
-        "tête de glucide"
+        "tête de glucide",
+        "matcha"
       ],
       "claim_type": "fiction_satirique",
       "role": "teaser"
@@ -72,8 +73,9 @@
     },
     {
       "id": "n5",
-      "text": "Les pigeons débarquent par milliers. Premier électorat.",
+      "text": "Les pigeons débarquent en tote bag. Premier électorat.",
       "accent_words": [
+        "tote bag",
         "Premier électorat"
       ],
       "claim_type": "fiction_satirique"
@@ -111,38 +113,31 @@
       ],
       "camera": "dolly_in",
       "set": [
-        "ground",
-        "mairie",
-        "bench",
+        "shop",
+        "table",
+        "sign",
         "person"
       ],
       "onscreen_text": "TÊTE DE GLUCIDE",
-      "comic_action": "Flash-forward : le maire, cube blanc géant façon morceau de sucre, assis sur un banc ; des pigeons lui picorent les épaules.",
+      "comic_action": "Flash-forward : au bar à matcha (16 € le verre), le maire en sucre géant boit et s'affaisse en fondant.",
       "expected_result": "L'image la plus absurde de l'histoire, montrée avant d'être expliquée.",
       "actions": [
         {
           "who": "maire",
-          "geste": "shrug",
-          "visage": "blase",
-          "quand": 0.0,
-          "objet": "matcha"
-        },
-        {
-          "who": "foule",
-          "geste": "point",
+          "geste": "fall",
           "visage": "choque",
-          "quand": 0.5
+          "quand": 0.55,
+          "objet": "matcha"
         }
       ],
       "gags": [
         {
-          "type": "animal",
-          "espece": "pigeon",
-          "tee": "GLUCIDE"
+          "type": "prix",
+          "texte": "16 €"
         },
         {
           "type": "affiche",
-          "texte": "100 % SUCRE"
+          "texte": "MATCHA BIO"
         }
       ]
     },
@@ -321,7 +316,7 @@
         {
           "type": "animal",
           "espece": "pigeon",
-          "tee": "GLUCIDE"
+          "tee": "TOTE BAG"
         },
         {
           "type": "affiche",
