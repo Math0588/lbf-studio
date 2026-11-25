@@ -39,6 +39,10 @@ def write_wav(path: Path, data: np.ndarray, stereo: bool = False) -> None:
         wf.writeframes(pcm.tobytes())
 
 
+class VoixIndisponible(RuntimeError):
+    """La voix de secours (Piper) est refusée : la vidéo est reportée, sans pénaliser le script."""
+
+
 def build_narration(ep: dict, out: Path) -> dict:
     """Synthétise chaque segment, calcule la durée de chaque plan depuis l'audio réel, écrit narration.wav."""
     audio_dir = out / "audio"
@@ -96,6 +100,8 @@ def build_narration(ep: dict, out: Path) -> dict:
             durs = {}
             print(f"[voix] Chatterbox indisponible ({str(e)[:240]}) : secours {eng}", flush=True)
     last_id = ep["narration_segments"][-2]["id"] if len(ep["narration_segments"]) > 1 else None
+    if eng == "piper" and not ext_files and tts.config.get("REQUIRE_GOOD_VOICE") != "false":
+        raise VoixIndisponible("aucune voix de qualité n'a répondu (quota Gemini ? clé absente ?) : vidéo reportée")
     for sid, s in segs.items():
         if eng == "elevenlabs_api":
             break

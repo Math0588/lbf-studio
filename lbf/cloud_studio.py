@@ -19,8 +19,9 @@ from . import config
 
 STATE = config.ROOT / "state" / "studio.json"
 RELEASE = "reserve"
-PRIORITY = [f"{i}.json" for i in (   # accroche v3 (teaser dans la 1re seconde) + sound design v2, villes alternées
-    "glv-u07", "mcv-u03", "mlv-u05", "zmv-u04", "bdv-u03", "glv-u04", "mrv-u05", "mcv-u05", "mlv-u04", "zmv-u05", "bdv-u02",
+PRIORITY = [f"{i}.json" for i in (   # format v4 d'abord (seul format fabriqué), villes alternées
+    "glv-u07", "mcv-u07", "bdv-u07", "mlv-u07", "zmv-u07", "mrv-u07", "bdv-u08", "mlv-u08",
+    "mcv-u03", "mlv-u05", "zmv-u04", "bdv-u03", "glv-u04", "mrv-u05", "mcv-u05", "mlv-u04", "zmv-u05", "bdv-u02",
     "glv-u06", "mrv-u04", "mcv-u04", "mlv-u06", "zmv-u03", "bdv-u05", "glv-u03", "mcv-u06", "mlv-u03", "zmv-u06",
     "bdv-u04", "glv-u05")]
 ALREADY_PUBLISHED = {"bdv-s01e01"}   # publié avant la fabrication cloud
@@ -271,6 +272,11 @@ def main():
         try:
             r = produce_one(st, sc)
         except Exception as e:
+            from .audio import VoixIndisponible
+            if isinstance(e, VoixIndisponible):      # quota de voix épuisé : on s'arrête, sans pénaliser le script
+                print(f"[studio] {sid} reporté : {e}", flush=True)
+                unclaim(sid)
+                break
             print(f"[studio] échec {sc.name} : {type(e).__name__} {str(e)[:500]}", flush=True)
             sid = json.loads(sc.read_text(encoding="utf-8"))["id"]
             st["attempts"][sid] = st["attempts"].get(sid, 0) + 1
