@@ -30,7 +30,7 @@ def wanted() -> bool:
 
 
 def synthesize_all(texts: list[str], out_dir: Path, seed: int = 7) -> list[float]:
-    """Toutes les phrases → wav mono 48 kHz (silences de bord retirés, débit ×1,05). Renvoie les durées."""
+    """Toutes les phrases → wav mono 48 kHz (silences de bord retirés, débit ×1,18 par défaut (CBX_TEMPO) : Chatterbox parle plus lentement qu'ElevenLabs). Renvoie les durées."""
     from .tts_elevenlabs import clean
     out_dir.mkdir(parents=True, exist_ok=True)
     raw = [out_dir / f"cbx_{i}.wav" for i in range(len(texts))]
@@ -46,7 +46,7 @@ def synthesize_all(texts: list[str], out_dir: Path, seed: int = 7) -> list[float
     for i, r in enumerate(raw):
         w = out_dir / f"seg_{i}.wav"
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(r), "-af",
-                        f"{trim},areverse,{trim},areverse,atempo=1.05", "-ar", "48000", "-ac", "1", str(w)], check=True)
+                        f"{trim},areverse,{trim},areverse,atempo={float(config.get('CBX_TEMPO') or 1.18)}", "-ar", "48000", "-ac", "1", str(w)], check=True)
         with wave.open(str(w), "rb") as wf:
             durs.append(wf.getnframes() / float(wf.getframerate()))
     return durs
