@@ -51,8 +51,17 @@ def build(ep: dict, timeline: dict, out_path: Path) -> dict:
     for seg in timeline["segments"]:
         s = segs[seg["id"]]
         cards = word_cards(s["text"])
-        tot = sum(_weight(c) for c in cards) or 1
         t, dur = seg["start"], seg["end"] - seg["start"]
+        while len(cards) > 1:            # voix rapide : chaque carton reste au moins 0,2 s (lisible, sans clignoter)
+            tot = sum(_weight(c) for c in cards) or 1
+            short = [i for i, c in enumerate(cards) if dur * _weight(c) / tot < 0.2]
+            if not short:
+                break
+            i = short[0]
+            j = i + 1 if i + 1 < len(cards) else i - 1
+            a, b = min(i, j), max(i, j)
+            cards[a:b + 1] = [cards[a] + " " + cards[b]]
+        tot = sum(_weight(c) for c in cards) or 1
         acc = [a.lower() for a in s.get("accent_words", []) if a]
         for c in cards:
             d = dur * _weight(c) / tot

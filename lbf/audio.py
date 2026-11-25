@@ -394,12 +394,13 @@ def mix(out: Path, total: float) -> dict:
                     "whoosh.wav", "-filter_complex", fc, "-map", "[a]", "-ar", str(SR), "-ac", "2", raw.name],
                    cwd=out, check=True)
     p = subprocess.run(["ffmpeg", "-hide_banner", "-i", raw.name, "-af",
-                        f"loudnorm=I={LUFS}:TP=-1:LRA=9:print_format=json", "-f", "null", "-"],
+                        f"loudnorm=I={LUFS}:TP=-2:LRA=9:print_format=json", "-f", "null", "-"],
                        cwd=out, capture_output=True, text=True, encoding="utf-8", errors="replace")
     js = p.stderr[p.stderr.rfind("{"): p.stderr.rfind("}") + 1]
     m = json.loads(js)
-    af = (f"loudnorm=I={LUFS}:TP=-1:LRA=9:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
-          f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true")
+    af = (f"loudnorm=I={LUFS}:TP=-2:LRA=9:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
+          f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true,"
+          "alimiter=limit=0.75:attack=2:release=60:level=0")   # crête garantie sous −1 dBFS même après encodage AAC
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw.name, "-af", af, "-ar", str(SR), "mix.wav"],
                    cwd=out, check=True)
     return m
