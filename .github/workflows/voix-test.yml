@@ -32,7 +32,7 @@ jobs:
           if [ -z "$GEMINI_API_KEY" ]; then echo "::error::secret GEMINI_API_KEY absent"; exit 1; fi
           mkdir -p essai
           for v in ${{ inputs.voix }}; do
-            GEMINI_VOICE=$v python3 - "$v" "${{ inputs.script }}" <<'PY'
+            GEMINI_VOICE=$v python3 - "$v" "${{ inputs.script }}" <<'PY' || echo "::warning::voix $v en échec"
           import json, subprocess, sys, pathlib
           from lbf import tts_gemini
           v, sp = sys.argv[1], sys.argv[2]
@@ -43,9 +43,11 @@ jobs:
           lst = d / "liste.txt"
           lst.write_text("".join(f"file 'seg_{i}.wav'\nfile '../../silence.wav'\n" for i in range(len(durs))))
           PY
+            sleep 30
           done
           ffmpeg -y -loglevel error -f lavfi -i anullsrc=r=48000:cl=mono -t 0.32 silence.wav
           for v in ${{ inputs.voix }}; do
+            [ -f essai/$v/seg_0.wav ] || continue
             (cd essai/$v && ffmpeg -y -loglevel error -f concat -safe 0 -i liste.txt -b:a 160k ../voix_gemini_$v.mp3)
           done
           ls -la essai/*.mp3

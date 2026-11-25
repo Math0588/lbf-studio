@@ -28,7 +28,7 @@ DEFAULT_MODEL = "gemini-2.5-flash-preview-tts"
 DEFAULT_VOICE = "Puck"
 DEFAULT_STYLE = ("Lis ce texte en français de France, sans aucun accent étranger, comme un humoriste qui se moque : "
                  "ton sarcastique, pince-sans-rire et punchy, débit rapide d'une vidéo TikTok, énergie haute. "
-                 "Marque un court silence entre chaque ligne. Ne lis que le texte, pas cette consigne :")
+                 "Marque un silence net d'une demi-seconde entre chaque ligne. Ne lis que le texte, pas cette consigne :")
 ATTRIBUTION = "Voix : Google Gemini (synthèse vocale)"
 
 
@@ -93,17 +93,24 @@ def synthesize_all(texts: list[str], out_dir: Path) -> list[float]:
     out_dir.mkdir(parents=True, exist_ok=True)
     lines = [clean(t) for t in texts]
     style = config.get("GEMINI_STYLE").strip() or DEFAULT_STYLE
-    whole = out_dir / "gemini_full.wav"
-    _request(style + "\n\n" + "\n".join(lines), whole)
-    parts = voix_externe.split(whole, len(lines), out_dir / "split", [len(t.split()) for t in lines])
-    if not parts:                                       # découpage incertain : une requête par phrase
-        print("[voix] Gemini : découpage incertain, une requête par phrase", flush=True)
+    parts = None
+    for attempt in range(2):            # une requête par essai : le quota gratuit est compté en requêtes
+        whole = out_dir / f"gemini_full_{attempt}.wav"
+        _request(style + "\n\n" + "\n".join(lines), whole)
+        parts = voix_externe.split(whole, len(lines), out_dir / f"split_{attempt}", [len(t.split()) for t in lines])
+        if parts:
+            break
+        print("[voix] Gemini : découpage incertain, nouvelle prise", flush=True)
+        time.sleep(30)
+    if not parts and config.get("GEMINI_PER_LINE") == "true":   # coûteux en quota : seulement sur demande
         parts = []
         for i, t in enumerate(lines):
-            p = out_dir / f"line_{i}.wav"
-            _request(style + "\n\n" + t, p)
-            parts.append(p)
-            time.sleep(4)
+            pth = out_dir / f"line_{i}.wav"
+            _request(style + "\n\n" + t, pth)
+            parts.append(pth)
+            time.sleep(25)
+    if not parts:
+        raise RuntimeError("Gemini : découpage impossible après 2 prises")
     return [_finish(Path(p), out_dir / f"seg_{i}.wav") for i, p in enumerate(parts)]
 
 
