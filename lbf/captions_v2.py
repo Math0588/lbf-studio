@@ -19,6 +19,12 @@ def word_cards(text: str) -> list[str]:
     raw = text.replace("«", "").replace("»", "").replace("“", "").replace("”", "").split()
     cards, buf = [], ""
     for w in raw:
+        if not w.strip(",.:;!?…—-–") and (cards or buf):   # ponctuation isolée (« télé : ») : collée au mot d'avant
+            if buf:
+                buf += " " + w
+            else:
+                cards[-1] += " " + w
+            continue
         cur = (buf + " " + w).strip() if buf else w
         bare = w.lower().strip(",.:;!?…")
         if (bare in SHORT or len(bare) <= 2) and len(cur) < 14 and not w.endswith((".", "?", "!", ":", ",")):

@@ -1,0 +1,47 @@
+# Format « edit » (vraies photos libres, montage rapide) : photos Wikimedia + rendu d'un script, dans la release « bench ».
+name: Edit
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: "Script"
+        default: "content/scripts/bank_ultra/glucksmannville/glv-u07.json"
+      voix:
+        description: "Narration existante (URL d'un mp3), sinon voix Gemini"
+        default: ""
+permissions:
+  contents: write
+jobs:
+  edit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Paquets
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q numpy
+      - name: Photos libres (Wikimedia Commons)
+        run: |
+          city=$(python3 -c "import json;print(json.load(open('${{ inputs.script }}'))['city'])")
+          echo "CITY=$city" >> "$GITHUB_ENV"
+          [ -f "assets/photos/$city/photos.json" ] || python3 -m lbf.photos "$city"
+          cat "assets/photos/$city/photos.json" | head -c 1500
+      - name: Rendre
+        run: |
+          if [ -n "${{ inputs.voix }}" ]; then curl -sL -o voix.mp3 "${{ inputs.voix }}"; V="--voix voix.mp3"; fi
+          python3 -m lbf.edit_v5 "${{ inputs.script }}" sortie $V
+          cat sortie/credits.txt
+      - name: Publier l'essai et garder les photos
+        run: |
+          id=$(python3 -c "import json;print(json.load(open('${{ inputs.script }}'))['id'])")
+          gh release upload bench "sortie/${id}_edit.mp4" --clobber
+          git config user.name "LBF"; git config user.email "lbf-studio@users.noreply.github.com"
+          git add assets/photos && (git diff --cached --quiet || git commit -qm "photos libres : $CITY")
+          for i in 1 2 3; do git pull -q --rebase -X theirs && git push -q && break; sleep 5; done || true
