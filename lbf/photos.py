@@ -53,8 +53,8 @@ def fetch(city: str, n: int = 12) -> list[dict]:
         if re.search(r"signature|logo|carte|map|affiche|poster|tract|graph", title, re.I):
             continue
         last = name.split()[-1].lower()
-        if last not in title.lower() and last not in _clean(meta.get("ImageDescription", {}).get("value", "")).lower():
-            continue
+        if last not in title.lower().replace("é", "e").replace("ë", "e") and last not in title.lower():
+            continue                     # le nom doit être dans le titre (pas une photo de groupe où il passe)
         portrait = ii["height"] >= ii["width"] * 0.8
         cands.append((0 if portrait else 1, -ii["width"], {
             "title": title, "url": ii.get("thumburl") or ii["url"], "page": ii.get("descriptionurl", ""),
