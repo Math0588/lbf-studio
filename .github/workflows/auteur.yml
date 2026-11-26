@@ -20,7 +20,7 @@ concurrency:
 jobs:
   auteur:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     env:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       GEMINI_TEXT_MODEL: ${{ vars.GEMINI_TEXT_MODEL }}

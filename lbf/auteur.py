@@ -28,7 +28,8 @@ from pathlib import Path
 from . import config, editorial, planner_v2, viral_lint
 
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-MODELS = ["gemini-3.1-pro-preview", "gemini-3-pro-preview", "gemini-3-flash-preview", "gemini-2.5-flash"]  # 2.5 Pro retiré par Google
+MODELS = ["gemini-3.1-pro-preview", "gemini-3-flash-preview", "gemini-2.5-flash"]  # 2.5 Pro et 3 Pro retirés par Google
+_EPUISES: set = set()   # modèles dont le quota du jour est épuisé (sautés pour le reste du passage)
 SCRIPTS = config.CONTENT / "scripts"
 AUTO = SCRIPTS / "bank_auto"
 USED = config.ROOT / "state" / "faits_utilises.json"
@@ -77,9 +78,16 @@ FORMAT V4 (obligatoire) :
 - Avant-dernière réplique = CHUTE : un retournement qui vise la PERSONNE (son ego, sa contradiction, son bilan,
   son positionnement), drôle et cinglant. C'est la phrase qu'on cite en commentaire.
 - Dernière réplique = « Envoie ça au pote qui… » : un pote PRÉCIS et reconnaissable (pas « qui vote X »).
+  Idéalement, elle fait ÉCHO à l'accroche (mêmes mots, même image) pour que la vidéo BOUCLE sans couture et
+  soit revue plusieurs fois (le temps de visionnage est le signal n°1). Le dernier plan reprend le décor du 1er.
+- Le texte à l'écran du dernier plan est une QUESTION CLIVANTE entre deux camps (« TEAM X OU TEAM Y ? ») :
+  elle déclenche les commentaires.
+- Rythme : un changement de plan, d'image ou de son toutes les 2-3 secondes (rupture de motif).
 - Provoque le camp adverse : {rival} doit en prendre pour son grade dans l'histoire, sans insulte.
 - Ton : ultra provocateur, insolent, absurde, très drôle, références et mèmes français connus. Phrases
-  courtes et orales (≤ 16 mots), 7 à 9 répliques au total, 75 à 92 mots au total.
+  courtes et orales (≤ 16 mots), 7 à 9 répliques au total, 75 à 88 mots AU TOTAL (compte-les !).
+  L'accroche fait 12 mots MAXIMUM (compte-les). Champ « lien » : « accroche » pour la 1re, « car », « donc » ou
+  « mais » pour toutes les suivantes (la chute est un « mais »), « cta » pour la dernière.
 - AUCUN élément gratuit : chaque animal, objet, personnage sert l'histoire et doit pouvoir se VOIR à l'écran.
 
 INTERDITS : fausse citation, délit ou affaire inventés, vie privée, physique réel, origine, religion, sexualité,
@@ -122,7 +130,7 @@ def gemini(prompt: str, temperature: float = 1.0) -> dict:
     """Appel texte Gemini en JSON ; essaie Pro puis Flash (quota gratuit), avec attente si limite par minute."""
     models = [config.get("GEMINI_TEXT_MODEL")] if config.get("GEMINI_TEXT_MODEL") else MODELS
     last = None
-    for model in models:
+    for model in [m for m in models if m not in _EPUISES]:
         for attempt in range(3):
             body = {"contents": [{"parts": [{"text": prompt}]}],
                     "generationConfig": {"temperature": temperature, "responseMimeType": "application/json"}}
@@ -135,10 +143,12 @@ def gemini(prompt: str, temperature: float = 1.0) -> dict:
                 return json.loads(txt[txt.find("{"): txt.rfind("}") + 1])
             except urllib.error.HTTPError as e:
                 last = f"{model} {e.code} {e.read()[:200].decode('utf-8', 'replace')}"
-                if e.code in (429, 500, 503) and attempt < 2:   # limite par minute ou surcharge : on patiente
-                    time.sleep(45 * (attempt + 1))
+                if e.code in (500, 503) and attempt < 2:        # surcharge passagère : on patiente
+                    time.sleep(30 * (attempt + 1))
                     continue
-                break                                  # modèle indisponible ou quota du jour : modèle suivant
+                if e.code in (404, 429):                          # retiré, ou quota épuisé : modèle suivant
+                    _EPUISES.add(model)
+                break
             except (KeyError, IndexError, ValueError) as e:
                 last = f"{model} réponse illisible ({e})"
                 time.sleep(5)
@@ -216,6 +226,8 @@ def to_script(v: dict, city: str, sid: str, claim: dict) -> dict:
             n["role"] = "accroche"
         elif role in ("car", "donc", "mais", "alors"):
             n["lien"] = role
+        elif i < len(lines) - 1:
+            n["lien"] = "mais"          # la chute est un retournement
         segs.append(n)
         acts = []
         for who in ("maire", "foule"):
