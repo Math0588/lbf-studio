@@ -75,7 +75,8 @@ def build_narration(ep: dict, out: Path) -> dict:
         try:
             import shutil as _sh
             ids = list(segs)
-            dd = tts_gemini.synthesize_all([segs[i]["text"] for i in ids], audio_dir / "gemini")
+            style = ep.get("style_voix") or (tts_gemini.STYLE_POSE if ep.get("format_v5") else None)
+            dd = tts_gemini.synthesize_all([segs[i]["text"] for i in ids], audio_dir / "gemini", style)
             for i, sid in enumerate(ids):
                 _sh.copyfile(audio_dir / "gemini" / f"seg_{i}.wav", audio_dir / f"{sid}.wav")
                 durs[sid] = dd[i]

@@ -29,6 +29,8 @@ def check(script: dict, strict: bool | None = None) -> dict:
     if not segs:
         return {"ok": False, "blocking": ["aucune narration"], "warnings": []}
     first, last = segs[0]["text"], segs[-1]["text"]
+    if script.get("format_v5"):
+        return _check_v5(script, segs, block, warn)
     if script.get("format_v4"):
         return _check_v4(script, segs, block, warn)
     # accroche v3 : une phrase « teaser » (≤ 10 mots, l'image la plus absurde de l'histoire, sans l'expliquer)
@@ -129,6 +131,27 @@ def _check_v4(script: dict, segs: list, block: list, warn: list) -> dict:
     if not script.get("claims"):
         block.append("sources : claims vides")
     said = " ".join(x["text"] for x in segs) + " " + script.get("title_cover", "")
+    if re.search(r"\bsuicid", said, re.I):
+        block.append("mot bridé par Instagram (suicide)")
+    return {"ok": not block, "blocking": block, "warnings": warn}
+
+
+def _check_v5(script: dict, segs: list, block: list, warn: list) -> dict:
+    """Format v5 « histoire de ville » (modèle validé par le propriétaire, 26/11) : la ville a le caractère du
+    politicien (tirée de son vrai tic ou mème), une mini-quête, une chute qui relie tout (rappel), voix posée,
+    45-60 s, et un « Partie 2 » à la fin pour faire revenir."""
+    if len((script.get("situation") or "").split()) < 8:
+        block.append("situation : décrire le caractère de la ville et la mini-quête dans « situation »")
+    if not 9 <= len(segs) <= 15:
+        block.append(f"rythme : {len(segs)} répliques (9 à 15 pour 45-60 s)")
+    if not segs[-1]["text"].lower().startswith("partie 2"):
+        block.append("fin : la dernière réplique annonce la suite (« Partie 2 : … »)")
+    long = [s["id"] for s in segs if len(s["text"].split()) > 18]
+    if long:
+        warn.append(f"phrases longues (>18 mots) : {long}")
+    if not [s for s in segs if s.get("claim_type") in ("fait_public", "citation_exacte")] or not script.get("claims"):
+        block.append("ancrage : au moins un fait ou une citation réels et sourcés")
+    said = " ".join(s["text"] for s in segs) + " " + script.get("title_cover", "")
     if re.search(r"\bsuicid", said, re.I):
         block.append("mot bridé par Instagram (suicide)")
     return {"ok": not block, "blocking": block, "warnings": warn}

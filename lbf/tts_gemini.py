@@ -29,6 +29,10 @@ DEFAULT_VOICE = "Charon"   # choisie par le propriétaire le 25/11 (posée, pinc
 DEFAULT_STYLE = ("Lis ce texte en français de France, sans aucun accent étranger, comme un humoriste qui se moque : "
                  "ton sarcastique, pince-sans-rire et punchy, débit rapide d'une vidéo TikTok, énergie haute. "
                  "Marque un silence net d'une demi-seconde entre chaque ligne. Ne lis que le texte, pas cette consigne :")
+STYLE_POSE = ("Lis ce texte en français de France, sans aucun accent étranger, avec une voix POSÉE de narrateur de "
+              "documentaire : ton calme, pince-sans-rire, comme si tout ce que tu racontes était parfaitement normal, "
+              "débit tranquille, petites pauses avant les chutes. Marque un silence net d'une demi-seconde entre "
+              "chaque ligne. Ne lis que le texte, pas cette consigne :")
 ATTRIBUTION = "Voix : Google Gemini (synthèse vocale)"
 
 
@@ -86,13 +90,13 @@ def _finish(src: Path, dst: Path) -> float:
         return wf.getnframes() / float(wf.getframerate())
 
 
-def synthesize_all(texts: list[str], out_dir: Path) -> list[float]:
+def synthesize_all(texts: list[str], out_dir: Path, style: str | None = None) -> list[float]:
     """Toutes les phrases d'un épisode → seg_i.wav (48 kHz mono). Renvoie les durées."""
     from . import voix_externe
     from .tts_elevenlabs import clean
     out_dir.mkdir(parents=True, exist_ok=True)
     lines = [clean(t) for t in texts]
-    style = config.get("GEMINI_STYLE").strip() or DEFAULT_STYLE
+    style = style or config.get("GEMINI_STYLE").strip() or DEFAULT_STYLE
     parts = None
     for attempt in range(2):            # une requête par essai : le quota gratuit est compté en requêtes
         whole = out_dir / f"gemini_full_{attempt}.wav"

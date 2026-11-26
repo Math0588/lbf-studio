@@ -20,7 +20,7 @@ from . import config
 STATE = config.ROOT / "state" / "studio.json"
 RELEASE = "reserve"
 PRIORITY = [f"{i}.json" for i in (   # format v4 d'abord (seul format fabriqué), villes alternées
-    "bdv-u09", "glv-u07", "mcv-u07", "bdv-u07", "mlv-u07", "zmv-u07", "mrv-u07", "bdv-u08", "mlv-u08",
+    "mcv-h01", "bdv-u09", "glv-u07", "mcv-u07", "bdv-u07", "mlv-u07", "zmv-u07", "mrv-u07", "bdv-u08", "mlv-u08",
     "mcv-u03", "mlv-u05", "zmv-u04", "bdv-u03", "glv-u04", "mrv-u05", "mcv-u05", "mlv-u04", "zmv-u05", "bdv-u02",
     "glv-u06", "mrv-u04", "mcv-u04", "mlv-u06", "zmv-u03", "bdv-u05", "glv-u03", "mcv-u06", "mlv-u03", "zmv-u06",
     "bdv-u04", "glv-u05")]
@@ -156,7 +156,7 @@ def next_script(st: dict, offset: int = 0, exclude: tuple = ()) -> Path | None:
             continue
         if sc.get("a_verifier"):              # fait pas assez sourcé : en attente de vérification
             continue
-        if os.environ.get("ONLY_V4", "true") == "true" and not sc.get("format_v4"):
+        if os.environ.get("ONLY_V4", "true") == "true" and not (sc.get("format_v4") or sc.get("format_v5")):
             continue                           # chaque Reel : une situation précise, accroche directe, mais/donc
         if skip:
             skip -= 1

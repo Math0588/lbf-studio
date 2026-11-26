@@ -76,9 +76,12 @@ def apply(ep: dict) -> dict:
     rival = RIVAL.get(city, NEXT.get(city, city))
     tag = _pick(HOOKS_CAMP, key, "t").format(fans=FANS.get(city, nom).upper(), rivaux=FANS.get(rival, "").upper())
     ep["hook_overlay"] = {"text": title, "tag": tag, "sub": ville.upper(), "until": 2.8}
-    ep["endcard"] = {"title": f"Envoie ça à ton pote qui vote {nom}",
-                     "sub": f"PROCHAINE VILLE : {CITIES.get(rival, rival).upper()}\\NLES {FANS.get(rival, '').upper()}, PRÉPAREZ-VOUS",
-                     "at": 0.3}
+    if ep.get("format_v5"):   # histoire de ville : on fait revenir pour la suite (modèle validé par le propriétaire)
+        ep["endcard"] = {"title": "Abonne-toi", "sub": "POUR LA PROCHAINE HISTOIRE", "at": 0.3}
+    else:
+        ep["endcard"] = {"title": f"Envoie ça à ton pote qui vote {nom}",
+                         "sub": f"PROCHAINE VILLE : {CITIES.get(rival, rival).upper()}\\NLES {FANS.get(rival, '').upper()}, PRÉPAREZ-VOUS",
+                         "at": 0.3}
     ep["premier_commentaire"] = (f"Bataille de commentaires 👇 Les {FANS.get(city, nom)} défendent {ville}, "
                                  f"les {FANS.get(rival, '')} préparent {CITIES.get(rival, rival)}. Qui a la ville la plus absurde ?")
     from . import seo                     # légende, hashtags et métadonnées YouTube optimisés pour la recherche

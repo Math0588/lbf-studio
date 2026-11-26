@@ -504,7 +504,9 @@ def plan(script: dict) -> dict:
         "selected_hook": script.get("selected_hook", 0), "ending_variants": script.get("ending_variants", []),
         "selected_ending": script.get("selected_ending", 0), "narration_segments": script["narration_segments"],
         "scenes": shots, "events": events, "extra_set": extra, "stickers": stickers, "bubbles": bubbles,
-        "endcard": {"title": "Abonne-toi", "sub": f"prochaine ville : {NEXT_CITY[city]} · t-shirt en bio", "at": 0.35},
+        "endcard": ({"title": "Abonne-toi", "sub": "pour la prochaine histoire", "at": 0.35} if script.get("format_v5")
+                    else {"title": "Abonne-toi", "sub": f"prochaine ville : {NEXT_CITY[city]} · t-shirt en bio", "at": 0.35}),
+        "format_v5": bool(script.get("format_v5")), "style_voix": script.get("style_voix"),
         "stills": [{"name": "still_cover", "shot": shots[0]["id"], "at": 0.6}], "cover_still": "still_cover",
         "cta_primary": script.get("cta_primary"), "cta_commercial": script.get("cta_commercial"),
         "sources": script.get("sources", []), "claims": script.get("claims", []), "product_ids": [PRODUCT],
