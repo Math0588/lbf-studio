@@ -138,16 +138,26 @@ def gemini(prompt: str, temperature: float = 1.0) -> dict:
                                          headers={"x-goog-api-key": config.get("GEMINI_API_KEY").strip(),
                                                   "Content-Type": "application/json"})
             try:
-                data = json.loads(urllib.request.urlopen(req, timeout=300).read())
+                data = json.loads(urllib.request.urlopen(req, timeout=240).read())
                 txt = "".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"])
                 return json.loads(txt[txt.find("{"): txt.rfind("}") + 1])
             except urllib.error.HTTPError as e:
-                last = f"{model} {e.code} {e.read()[:200].decode('utf-8', 'replace')}"
-                if e.code in (500, 503) and attempt < 2:        # surcharge passagère : on patiente
-                    time.sleep(30 * (attempt + 1))
-                    continue
-                if e.code in (404, 429):                          # retiré, ou quota épuisé : modèle suivant
+                body = e.read()[:1500].decode("utf-8", "replace")
+                last = f"{model} {e.code} {body[:160]}"
+                jour = e.code == 429 and ("perday" in body.replace("_", "").lower() or "free_tier_requests" in body
+                                          and "minute" not in body.lower())
+                if e.code == 404 or jour:                         # retiré, ou quota du jour épuisé : modèle suivant
                     _EPUISES.add(model)
+                    break
+                if e.code in (429, 500, 503) and attempt < 2:     # limite par minute ou surcharge : on patiente
+                    time.sleep(65)
+                    continue
+                break
+            except OSError as e:                                  # délai dépassé, coupure réseau
+                last = f"{model} réseau ({type(e).__name__})"
+                if attempt < 1:
+                    time.sleep(15)
+                    continue
                 break
             except (KeyError, IndexError, ValueError) as e:
                 last = f"{model} réponse illisible ({e})"
